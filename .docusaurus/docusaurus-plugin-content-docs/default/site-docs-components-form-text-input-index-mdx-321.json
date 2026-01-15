@@ -1,0 +1,131 @@
+{
+  "id": "components/form/text-input/index",
+  "title": "Text Input",
+  "description": "Allows users to enter any type of text",
+  "source": "@site/docs/components/form/text-input/index.mdx",
+  "sourceDirName": "components/form/text-input",
+  "slug": "/components/form/text-input/",
+  "permalink": "/docs/components/form/text-input/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/form/text-input/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Text Input",
+    "description": "Allows users to enter any type of text",
+    "maturity": "deployed",
+    "platforms": [
+      "web",
+      "mobile"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-text-input",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Text+input%22",
+    "related": [
+      {
+        "name": "Textarea",
+        "url": "../textarea",
+        "description": "For multi-line text"
+      },
+      {
+        "name": "Telephone Input",
+        "url": "../telephone-input",
+        "description": "For phone numbers"
+      },
+      {
+        "name": "Date Input",
+        "url": "../date-input",
+        "description": "For date entry"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "Collecting open-ended text responses from users"
+        },
+        {
+          "value": "Requesting names, email addresses, or similar personal information"
+        },
+        {
+          "value": "Accepting currency amounts or numeric values"
+        },
+        {
+          "value": "Fields where autocomplete functionality would enhance user experience"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "For selecting from predefined options (use [Select](../select) or [Radio Button](../radio-button))"
+        },
+        {
+          "value": "For multiple-line text responses (use [Textarea](../textarea))"
+        },
+        {
+          "value": "When a date picker would be more appropriate (use [Date Input](../date-input))"
+        }
+      ]
+    },
+    "accessibility": [
+      {
+        "value": "Use descriptive labels for all inputs"
+      },
+      {
+        "value": "Use `message-aria-describedby` for additional screen reader context"
+      },
+      {
+        "value": "Error messages are announced to assistive technologies"
+      },
+      {
+        "value": "Error states use color plus additional visual indicators"
+      },
+      {
+        "value": "Required indicators are communicated via text, not symbols alone"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Default",
+        "description": "Default",
+        "storyId": "uswds-va-text-input--default",
+        "height": 120
+      },
+      {
+        "title": "With hint text",
+        "description": "With hint text",
+        "storyId": "uswds-va-text-input--with-hint-text",
+        "height": 140
+      },
+      {
+        "title": "With error",
+        "description": "With error",
+        "storyId": "uswds-va-text-input--error",
+        "height": 150
+      },
+      {
+        "title": "Currency",
+        "description": "Currency",
+        "storyId": "uswds-va-text-input--currency",
+        "height": 120
+      },
+      {
+        "title": "With character count",
+        "description": "With character count",
+        "storyId": "uswds-va-text-input--with-charcount",
+        "height": 140
+      }
+    ],
+    "code_usage": "<!-- Basic text input -->\n<va-text-input\n  label=\"First name\"\n  name=\"firstName\"\n  required\n></va-text-input>\n\n<!-- With validation -->\n<va-text-input\n  label=\"Email address\"\n  type=\"email\"\n  name=\"email\"\n  required\n  hint=\"We'll use this to contact you\"\n></va-text-input>\n\n<!-- Currency input -->\n<va-text-input\n  label=\"Monthly income\"\n  type=\"number\"\n  currency\n  hint=\"Enter amount in dollars\"\n  min=\"0\"\n  step=\"0.01\"\n  name=\"income\"\n></va-text-input>\n\n<!-- With character count -->\n<va-text-input\n  label=\"Description\"\n  name=\"description\"\n  maxlength=\"100\"\n  charcount\n></va-text-input>\n",
+    "component_tag": "va-text-input"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Telephone Input",
+    "permalink": "/docs/components/form/telephone-input/"
+  },
+  "next": {
+    "title": "Textarea",
+    "permalink": "/docs/components/form/textarea/"
+  }
+}

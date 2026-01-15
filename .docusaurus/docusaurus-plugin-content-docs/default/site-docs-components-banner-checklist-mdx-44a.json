@@ -1,0 +1,21 @@
+{
+  "id": "components/banner/checklist",
+  "title": "Banner - Component checklist",
+  "description": "Maturity and asset checklist for the Banner component",
+  "source": "@site/docs/components/banner/checklist.mdx",
+  "sourceDirName": "components/banner",
+  "slug": "/components/banner/checklist",
+  "permalink": "/docs/components/banner/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/banner/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Banner - Component checklist",
+    "description": "Maturity and asset checklist for the Banner component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

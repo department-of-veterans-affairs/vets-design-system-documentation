@@ -1,0 +1,20 @@
+{
+  "id": "components/form/combo-box/checklist",
+  "title": "Combo Box - Component checklist",
+  "description": "Maturity and asset checklist for the Combo Box component",
+  "source": "@site/docs/components/form/combo-box/checklist.mdx",
+  "sourceDirName": "components/form/combo-box",
+  "slug": "/components/form/combo-box/checklist",
+  "permalink": "/docs/components/form/combo-box/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/form/combo-box/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Combo Box - Component checklist",
+    "description": "Maturity and asset checklist for the Combo Box component",
+    "sidebar_label": "Checklist"
+  }
+}

@@ -1,0 +1,39 @@
+---
+cms_editable: true
+title: Icon
+description: Communicates meaning, actions, status, or feedback visually
+maturity: use-with-caution
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-icon
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+storybook: https://design.va.gov/storybook/?path=/docs/uswds-va-icon--docs
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Icon%22
+examples:
+  - title: Default sizes
+    description: Default sizes
+    storyId: uswds-va-icon--default
+    height: 150
+  - title: Icon gallery
+    description: Icon gallery
+    storyId: uswds-va-icon--all-icons
+    height: 400
+
+code_usage: |
+  <!-- Basic icon -->
+  <va-icon icon="medical_services" size="3"></va-icon>
+  
+  <!-- With screen reader text for semantic icons -->
+  <va-icon icon="warning" size="4" srtext="Warning"></va-icon>
+  
+  <!-- Decorative icon (no srtext needed) -->
+  <va-icon icon="check_circle" size="3"></va-icon>
+
+component_tag: va-icon
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

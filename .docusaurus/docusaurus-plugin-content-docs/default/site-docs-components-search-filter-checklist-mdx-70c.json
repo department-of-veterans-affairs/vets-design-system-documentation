@@ -1,0 +1,21 @@
+{
+  "id": "components/search-filter/checklist",
+  "title": "Search filter - Component checklist",
+  "description": "Maturity and asset checklist for the Search filter component",
+  "source": "@site/docs/components/search-filter/checklist.mdx",
+  "sourceDirName": "components/search-filter",
+  "slug": "/components/search-filter/checklist",
+  "permalink": "/docs/components/search-filter/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/search-filter/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Search filter - Component checklist",
+    "description": "Maturity and asset checklist for the Search filter component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

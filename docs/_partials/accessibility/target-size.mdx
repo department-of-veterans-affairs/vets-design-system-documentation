@@ -1,0 +1,15 @@
+### Touch target size
+
+Interactive elements must have adequate touch target sizes for users with motor impairments or those using touch devices.
+
+**Requirements:**
+- **Minimum size:** 44×44 CSS pixels (WCAG 2.2 Level AA)
+- **Recommended size:** 48×48 CSS pixels for better usability
+- **Spacing:** At least 8px between adjacent interactive elements
+
+**Why this matters:**
+- Users with motor impairments may have difficulty tapping small targets
+- Touch screens require larger targets than mouse pointers
+- Prevents accidental activation of adjacent elements
+
+The Button component meets these requirements by default. Don't override the padding or min-height to make buttons smaller than the minimum target size.

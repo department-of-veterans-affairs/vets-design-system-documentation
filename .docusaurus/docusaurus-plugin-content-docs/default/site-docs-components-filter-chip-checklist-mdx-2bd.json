@@ -1,0 +1,21 @@
+{
+  "id": "components/filter-chip/checklist",
+  "title": "Filter chip - Component checklist",
+  "description": "Maturity and asset checklist for the Filter chip component",
+  "source": "@site/docs/components/filter-chip/checklist.mdx",
+  "sourceDirName": "components/filter-chip",
+  "slug": "/components/filter-chip/checklist",
+  "permalink": "/docs/components/filter-chip/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/filter-chip/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Filter chip - Component checklist",
+    "description": "Maturity and asset checklist for the Filter chip component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

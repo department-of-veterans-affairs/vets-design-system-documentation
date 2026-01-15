@@ -1,0 +1,30 @@
+---
+cms_editable: true
+title: Footer
+description: Provides consistent navigation to secondary information on VA.gov
+maturity: deployed
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-footer
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Footer%22
+variations:
+  - name: Footer - Minimal
+    url: ./footer-minimal
+    description: Simplified footer for form flows
+related:
+  - name: Header
+    url: /docs/components/header/
+    description: Page header component
+usage:
+  when_to_use:
+    - value: Required for providing additional navigation facilitating information discovery across VA.gov
+  when_to_consider_else:
+    - value: "**Footer - Minimal**: Use when navigation away disrupts task completion. Particularly appropriate for form flows where interruption risks user input loss."
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

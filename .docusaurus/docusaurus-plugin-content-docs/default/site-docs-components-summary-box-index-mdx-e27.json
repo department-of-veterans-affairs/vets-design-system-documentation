@@ -1,0 +1,124 @@
+{
+  "id": "components/summary-box/index",
+  "title": "Summary box",
+  "description": "Highlights the most important information on a page",
+  "source": "@site/docs/components/summary-box/index.mdx",
+  "sourceDirName": "components/summary-box",
+  "slug": "/components/summary-box/",
+  "permalink": "/docs/components/summary-box/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/summary-box/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Summary box",
+    "description": "Highlights the most important information on a page",
+    "maturity": "deployed",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-summary-box",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "storybook": "https://design.va.gov/storybook/?path=/docs/uswds-va-summary-box--docs",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Summary+box%22",
+    "related": [
+      {
+        "name": "Alert",
+        "url": "/docs/components/alert/",
+        "description": "For time-sensitive information"
+      },
+      {
+        "name": "Card",
+        "url": "/docs/components/card",
+        "description": "For linking to related content"
+      },
+      {
+        "name": "Additional info",
+        "url": "/docs/components/additional-info",
+        "description": "For contextual information in forms"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "Highlight the most important information on a page"
+        },
+        {
+          "value": "Present evergreen content (not time-sensitive)"
+        },
+        {
+          "value": "Display key details readers shouldn't miss, such as eligibility criteria or coverage details under VA benefits"
+        },
+        {
+          "value": "Position near the top of the page after the main heading and introductory text"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "Basic overview information that doesn't require special emphasis"
+        },
+        {
+          "value": "Related content linking to other pages (use [Link - Collection](/docs/components/link/collection) or [Cards](/docs/components/card) instead)"
+        },
+        {
+          "value": "Table of contents functionality (use On this page component)"
+        },
+        {
+          "value": "Dynamic content added via user interaction (use [Alert](/docs/components/alert/) component)"
+        },
+        {
+          "value": "Time-sensitive messaging (use [Alert](/docs/components/alert/) component)"
+        },
+        {
+          "value": "Multiple sibling content chunks (use [Accordions](/docs/components/accordion))"
+        },
+        {
+          "value": "Additional contextual information in forms (use [Additional Info](/docs/components/additional-info) component)"
+        }
+      ]
+    },
+    "content_considerations": [
+      {
+        "value": "Keep content brief and concise"
+      },
+      {
+        "value": "If content exceeds 5 bullet points, contains bullets longer than 20 words, or requires headers/images/buttons, use standard body text, headings, and lists instead"
+      },
+      {
+        "value": "Supports heading levels h2-h4, paragraphs, lists, emphasis, and links"
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Use appropriate heading levels within the summary box"
+      },
+      {
+        "value": "Ensure sufficient color contrast for all text"
+      },
+      {
+        "value": "Content should be readable by screen readers in a logical order"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Default",
+        "description": "Default",
+        "storyId": "uswds-va-summary-box--default",
+        "height": 200
+      }
+    ],
+    "code_usage": "<va-summary-box>\n  <h3 slot=\"headline\">Key eligibility requirements</h3>\n  <ul>\n    <li>You must be a Veteran</li>\n    <li>You must have served at least 90 days</li>\n    <li>You must have been honorably discharged</li>\n  </ul>\n</va-summary-box>\n",
+    "component_tag": "va-summary-box"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Snackbar",
+    "permalink": "/docs/components/snackbar/"
+  },
+  "next": {
+    "title": "Table",
+    "permalink": "/docs/components/table/"
+  }
+}

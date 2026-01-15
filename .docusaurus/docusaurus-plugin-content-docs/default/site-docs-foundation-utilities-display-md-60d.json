@@ -1,0 +1,29 @@
+{
+  "id": "foundation/utilities/display",
+  "title": "Display",
+  "description": "CSS classes to control an element's display property for layout and visibility.",
+  "source": "@site/docs/foundation/utilities/display.md",
+  "sourceDirName": "foundation/utilities",
+  "slug": "/foundation/utilities/display",
+  "permalink": "/docs/foundation/utilities/display",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/utilities/display.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Display",
+    "description": "CSS classes to control an element's display property for layout and visibility.",
+    "sidebar_position": 4
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Border",
+    "permalink": "/docs/foundation/utilities/border"
+  },
+  "next": {
+    "title": "Flexbox",
+    "permalink": "/docs/foundation/utilities/flexbox"
+  }
+}

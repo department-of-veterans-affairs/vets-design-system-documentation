@@ -1,0 +1,118 @@
+{
+  "id": "patterns/ask-users-for/housing-status/index",
+  "title": "Housing status",
+  "description": "Follow this pattern to ask Veterans about their current housing situation in a trauma-informed way.",
+  "source": "@site/docs/patterns/ask-users-for/housing-status/index.mdx",
+  "sourceDirName": "patterns/ask-users-for/housing-status",
+  "slug": "/patterns/ask-users-for/housing-status/",
+  "permalink": "/docs/patterns/ask-users-for/housing-status/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/patterns/ask-users-for/housing-status/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 15,
+  "frontMatter": {
+    "title": "Housing status",
+    "description": "Follow this pattern to ask Veterans about their current housing situation in a trauma-informed way.",
+    "cms_editable": true,
+    "category": "ask-users-for",
+    "maturity": "use-with-caution",
+    "sidebar_position": 15,
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms",
+    "github": "https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-housing-status%22",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Ask+users+for...+Housing+status%22",
+    "intro": "Use this pattern to ask Veterans about their current housing situation, allowing them to accurately disclose their living circumstances including potential housing instability.",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Collecting housing information.** When you need to gather information about a Veteran's housing or living situation."
+        },
+        {
+          "value": "**Assessing housing instability.** When forms need to identify temporary living arrangements or housing risks."
+        }
+      ],
+      "design_principles": [
+        {
+          "value": "**Use criteria-based self-identification.** Rather than a simple yes/no homelessness question, use a series of criteria to help users self-identify their circumstances."
+        },
+        {
+          "value": "**Apply conditional logic.** Route users to appropriate follow-up questions based on their housing situation."
+        },
+        {
+          "value": "**Consider point-of-contact.** Optionally collect emergency contact information for housing-unstable Veterans."
+        }
+      ],
+      "when_not_to_use": [
+        {
+          "value": "**API limitations.** When the backend API cannot accommodate the gathered information."
+        }
+      ]
+    },
+    "examples": [
+      {
+        "title": "Housing criteria checklist",
+        "description": "Series of checkboxes allowing users to identify their housing circumstances."
+      },
+      {
+        "title": "Conditional mailing address",
+        "description": "Mailing address collection that appears based on housing status selection."
+      }
+    ],
+    "how_to_build": {
+      "intro": "The housing status pattern uses conditional logic to route users appropriately.",
+      "steps": [
+        {
+          "value": "Present housing criteria as checkboxes for self-identification."
+        },
+        {
+          "value": "Affirmative responses to housing instability options direct users to mailing address question."
+        },
+        {
+          "value": "'Other housing risks' responses route to a secondary form before mailing address."
+        },
+        {
+          "value": "'None apply' responses proceed directly to the address pattern."
+        },
+        {
+          "value": "Optionally collect point-of-contact information."
+        }
+      ],
+      "components_used": [
+        {
+          "name": "Checkbox",
+          "url": "/docs/components/form/checkbox"
+        },
+        {
+          "name": "Radio button",
+          "url": "/docs/components/form/radio-button"
+        },
+        {
+          "name": "Additional info",
+          "url": "/docs/components/additional-info"
+        }
+      ]
+    },
+    "code_usage": "**Production example:**\n- Form 20-10207: Request priority processing for an existing claim\n\nSee the [vets-website repository](https://github.com/department-of-veterans-affairs/vets-website) for implementation details.\n",
+    "accessibility": [
+      {
+        "value": "Ensure all form controls are keyboard accessible."
+      },
+      {
+        "value": "Provide clear labels that don't stigmatize housing-unstable users."
+      },
+      {
+        "value": "Use trauma-informed language throughout the pattern."
+      }
+    ]
+  },
+  "sidebar": "patternsSidebar",
+  "previous": {
+    "title": "Contact preferences",
+    "permalink": "/docs/patterns/ask-users-for/contact-preferences/"
+  },
+  "next": {
+    "title": "Marital information",
+    "permalink": "/docs/patterns/ask-users-for/marital-information/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "components/deprecated/notification/index",
+  "title": "Notification",
+  "description": "Deprecated notification component",
+  "source": "@site/docs/components/deprecated/notification/index.mdx",
+  "sourceDirName": "components/deprecated/notification",
+  "slug": "/components/deprecated/notification/",
+  "permalink": "/docs/components/deprecated/notification/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/deprecated/notification/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Notification",
+    "description": "Deprecated notification component"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Input message",
+    "permalink": "/docs/components/deprecated/input-message/"
+  }
+}

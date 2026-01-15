@@ -1,0 +1,29 @@
+{
+  "id": "foundation/layout/index",
+  "title": "Layout",
+  "description": "Page structure and grid system fundamentals for VA.gov",
+  "source": "@site/docs/foundation/layout/index.md",
+  "sourceDirName": "foundation/layout",
+  "slug": "/foundation/layout/",
+  "permalink": "/docs/foundation/layout/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/layout/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Layout",
+    "description": "Page structure and grid system fundamentals for VA.gov",
+    "sidebar_position": 1
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Foundation",
+    "permalink": "/docs/foundation/"
+  },
+  "next": {
+    "title": "Flexbox Grid",
+    "permalink": "/docs/foundation/layout/flexbox-grid"
+  }
+}

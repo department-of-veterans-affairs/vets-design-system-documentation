@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/specific-topics-and-programs/sign-in-and-identity-verification",
+  "title": "Sign in and identity verification",
+  "description": "Language standards for discussing VA sign-in accounts and identity verification processes.",
+  "source": "@site/docs/content-style-guide/specific-topics-and-programs/sign-in-and-identity-verification.md",
+  "sourceDirName": "content-style-guide/specific-topics-and-programs",
+  "slug": "/content-style-guide/specific-topics-and-programs/sign-in-and-identity-verification",
+  "permalink": "/docs/content-style-guide/specific-topics-and-programs/sign-in-and-identity-verification",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/specific-topics-and-programs/sign-in-and-identity-verification.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Sign in and identity verification",
+    "description": "Language standards for discussing VA sign-in accounts and identity verification processes.",
+    "sidebar_position": 3
+  }
+}

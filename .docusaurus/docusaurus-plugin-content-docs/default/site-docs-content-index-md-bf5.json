@@ -1,0 +1,25 @@
+{
+  "id": "content/index",
+  "title": "Content Style Guide",
+  "description": "VA.gov content standards for clear, consistent, accessible communication",
+  "source": "@site/docs/content/index.md",
+  "sourceDirName": "content",
+  "slug": "/content/",
+  "permalink": "/docs/content/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Content Style Guide",
+    "description": "VA.gov content standards for clear, consistent, accessible communication",
+    "sidebar_position": 1
+  },
+  "sidebar": "contentSidebar",
+  "next": {
+    "title": "Plain Language",
+    "permalink": "/docs/content/plain-language"
+  }
+}

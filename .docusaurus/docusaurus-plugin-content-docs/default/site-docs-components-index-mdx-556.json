@@ -1,0 +1,26 @@
+{
+  "id": "components/index",
+  "title": "Components",
+  "description": "Reusable UI building blocks for VA.gov",
+  "source": "@site/docs/components/index.mdx",
+  "sourceDirName": "components",
+  "slug": "/components/",
+  "permalink": "/docs/components/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/index",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Components",
+    "description": "Reusable UI building blocks for VA.gov",
+    "sidebar_position": 1
+  },
+  "sidebar": "componentsSidebar",
+  "next": {
+    "title": "Accordion",
+    "permalink": "/docs/components/accordion/"
+  }
+}

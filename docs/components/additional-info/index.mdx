@@ -1,0 +1,69 @@
+---
+cms_editable: true
+title: Additional Info
+description: Disclosure widget that reveals helpful contextual content
+maturity: best-practice
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-additional-info
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+storybook: https://design.va.gov/storybook/?path=/docs/uswds-va-additional-info--docs
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Additional+info%22
+related:
+  - name: Accordion
+    url: ../accordion
+    description: For series of expandable content
+  - name: Alert - Expandable
+    url: /docs/components/alert/alert-expandable
+    description: For important page information
+usage:
+  when_to_use:
+    - value: Revealing helpful background information about applications, processes, or form steps
+    - value: Clarifying outcomes for user input with expanded guidance
+    - value: Information closely tied to specific inputs
+    - value: Clarifying form questions with brief explanations
+    - value: Content organized under current headings providing context
+    - value: Information not applicable to all users
+  when_to_consider_else:
+    - value: "**Series of content outside forms**: Use [Accordion](/docs/components/accordion) instead"
+    - value: "**Too much content**: Limit to critical information; consider linking elsewhere"
+    - value: "**Required content**: If most people need it to complete the main task, don't hide it"
+    - value: "**Content requiring new headings**: Use Accordion for substantial content organization"
+    - value: "**Error messages**: Don't use for critical or timely information"
+    - value: "**Inside Alerts**: Use [Alert - Expandable](/docs/components/alert/alert-expandable) instead"
+content_considerations:
+  - value: Use statements over questions for trigger text (e.g., "Why we ask for this information")
+  - value: Single sentence or fragment for titles with no ending punctuation
+  - value: Limit expanded content to fewer than 500 characters
+  - value: Use lists generously to improve scannability
+accessibility:
+  - value: The trigger uses `aria-expanded` to communicate state
+  - value: Content is properly associated with the trigger
+  - value: Keyboard accessible via Enter and Space keys
+  - value: Focus management maintains logical flow
+examples:
+  - title: Default
+    description: Default
+    storyId: uswds-va-additional-info--default
+    height: 150
+  - title: No Border
+    description: No Border
+    storyId: uswds-va-additional-info--no-border
+    height: 150
+code_usage: |
+  <va-additional-info trigger="Why we ask for this information">
+    <p>We use this information to verify your identity and process your request.</p>
+  </va-additional-info>
+
+  <!-- Without border -->
+  <va-additional-info trigger="Learn more" disable-border>
+    <p>Additional context without the left border.</p>
+  </va-additional-info>
+component_tag: va-additional-info
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

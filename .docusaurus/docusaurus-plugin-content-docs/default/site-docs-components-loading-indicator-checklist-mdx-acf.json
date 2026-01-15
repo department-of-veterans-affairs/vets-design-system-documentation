@@ -1,0 +1,21 @@
+{
+  "id": "components/loading-indicator/checklist",
+  "title": "Loading indicator - Component checklist",
+  "description": "Maturity and asset checklist for the Loading indicator component",
+  "source": "@site/docs/components/loading-indicator/checklist.mdx",
+  "sourceDirName": "components/loading-indicator",
+  "slug": "/components/loading-indicator/checklist",
+  "permalink": "/docs/components/loading-indicator/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/loading-indicator/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Loading indicator - Component checklist",
+    "description": "Maturity and asset checklist for the Loading indicator component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

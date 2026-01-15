@@ -1,0 +1,48 @@
+{
+  "componentName": "Button",
+  "webCompleted": "August 15, 2025",
+  "mobileCompleted": "August 20, 2025",
+  "maturity": [
+    { "name": "Guidance", "webScore": true, "mobileScore": true },
+    { "name": "Research", "webScore": true, "mobileScore": true },
+    { "name": "Stability", "webScore": true, "mobileScore": true },
+    { "name": "Adoption", "webScore": true, "mobileScore": true }
+  ],
+  "codeAssets": [
+    { "name": "Variations", "webScore": true, "mobileScore": true },
+    { "name": "Responsive", "webScore": true, "mobileScore": true },
+    { "name": "Interactive states", "webScore": true, "mobileScore": true },
+    { "name": "Tokens", "webScore": "n/a", "mobileScore": "n/a" },
+    { "name": "Internationalization", "webScore": "n/a", "mobileScore": "n/a" }
+  ],
+  "visualAssets": [
+    { "name": "Variations", "webScore": true, "mobileScore": true },
+    { "name": "Responsive", "webScore": true, "mobileScore": true },
+    { "name": "Interactive states", "webScore": true, "mobileScore": true },
+    { "name": "Tokens", "webScore": "n/a", "mobileScore": "n/a" }
+  ],
+  "accessibility": {
+    "web": {
+      "platform": "web",
+      "lastAuditDate": "August 2025",
+      "codeReview": "pass",
+      "readability": "pass",
+      "automatedScans": "pass",
+      "useOfColor": "pass",
+      "textResizing": "pass",
+      "screenReaders": "pass",
+      "inputMethods": "pass"
+    },
+    "mobile": {
+      "platform": "mobile",
+      "lastAuditDate": "August 2025",
+      "codeReview": "pass",
+      "readability": "pass",
+      "automatedScans": "pass",
+      "useOfColor": "pass",
+      "textResizing": "pass",
+      "screenReaders": "pass",
+      "inputMethods": "pass"
+    }
+  }
+}

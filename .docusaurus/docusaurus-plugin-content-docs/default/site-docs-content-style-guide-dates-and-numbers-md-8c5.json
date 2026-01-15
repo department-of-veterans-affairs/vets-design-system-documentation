@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/dates-and-numbers",
+  "title": "Dates, times, phone numbers, and addresses",
+  "description": "Guidelines for formatting dates, times, phone numbers, and addresses on VA.gov.",
+  "source": "@site/docs/content-style-guide/dates-and-numbers.md",
+  "sourceDirName": "content-style-guide",
+  "slug": "/content-style-guide/dates-and-numbers",
+  "permalink": "/docs/content-style-guide/dates-and-numbers",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/dates-and-numbers.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "title": "Dates, times, phone numbers, and addresses",
+    "description": "Guidelines for formatting dates, times, phone numbers, and addresses on VA.gov.",
+    "sidebar_position": 9
+  }
+}

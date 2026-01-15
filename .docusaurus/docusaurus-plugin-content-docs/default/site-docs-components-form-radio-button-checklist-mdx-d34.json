@@ -1,0 +1,20 @@
+{
+  "id": "components/form/radio-button/checklist",
+  "title": "Radio Button - Component checklist",
+  "description": "Maturity and asset checklist for the Radio Button component",
+  "source": "@site/docs/components/form/radio-button/checklist.mdx",
+  "sourceDirName": "components/form/radio-button",
+  "slug": "/components/form/radio-button/checklist",
+  "permalink": "/docs/components/form/radio-button/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/form/radio-button/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Radio Button - Component checklist",
+    "description": "Maturity and asset checklist for the Radio Button component",
+    "sidebar_label": "Checklist"
+  }
+}

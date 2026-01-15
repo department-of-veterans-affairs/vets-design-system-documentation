@@ -1,0 +1,50 @@
+---
+cms_editable: true
+title: Banner - Promo
+description: Deprecated promotional banner component
+maturity: deprecated
+---
+import Link from '@docusaurus/Link';
+
+# Banner - Promo
+
+:::danger Deprecated Component
+This component is deprecated and should not be used in new development. Please use the [Banner](/docs/components/banner/) component instead.
+:::
+
+## Overview
+
+The Banner - Promo component was previously used for promotional messaging and marketing content on VA.gov. This component has been deprecated in favor of using the standard Banner component.
+
+- - -
+
+## Migration
+
+### Replace with Banner
+
+Use the standard [Banner](/docs/components/banner/) component for all banner needs:
+
+```html
+<va-banner
+  headline="Important announcement"
+  type="info"
+>
+  <p>Your promotional message content here.</p>
+</va-banner>
+```
+
+- - -
+
+## Why was this deprecated?
+
+* **Consolidation**: The design system consolidated banner variants to reduce complexity
+* **Consistency**: A single Banner component provides more consistent implementation across VA.gov
+* **Maintenance**: Fewer component variants reduce maintenance burden
+
+- - -
+
+## Replacement
+
+<Link to="/docs/components/banner/" className="button button--primary">
+  View Banner Component →
+</Link>

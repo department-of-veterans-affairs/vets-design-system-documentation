@@ -1,0 +1,28 @@
+{
+  "id": "components/deprecated/input-message/index",
+  "title": "Input message",
+  "description": "Deprecated input validation message component",
+  "source": "@site/docs/components/deprecated/input-message/index.mdx",
+  "sourceDirName": "components/deprecated/input-message",
+  "slug": "/components/deprecated/input-message/",
+  "permalink": "/docs/components/deprecated/input-message/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/deprecated/input-message/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Input message",
+    "description": "Deprecated input validation message component"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Banner - Promo",
+    "permalink": "/docs/components/deprecated/banner-promo/"
+  },
+  "next": {
+    "title": "Notification",
+    "permalink": "/docs/components/deprecated/notification/"
+  }
+}

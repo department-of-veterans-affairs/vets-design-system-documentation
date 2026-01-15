@@ -1,0 +1,25 @@
+{
+  "id": "foundation/image-aspect-ratios",
+  "title": "Image Aspect Ratios",
+  "description": "Standard aspect ratios for images and banners on VA.gov",
+  "source": "@site/docs/foundation/image-aspect-ratios.md",
+  "sourceDirName": "foundation",
+  "slug": "/foundation/image-aspect-ratios",
+  "permalink": "/docs/foundation/image-aspect-ratios",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/image-aspect-ratios.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "title": "Image Aspect Ratios",
+    "description": "Standard aspect ratios for images and banners on VA.gov",
+    "sidebar_position": 8
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Logos",
+    "permalink": "/docs/foundation/logos"
+  }
+}

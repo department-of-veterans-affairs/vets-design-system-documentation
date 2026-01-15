@@ -1,0 +1,18 @@
+{
+  "id": "story-embed-test",
+  "title": "StoryEmbed Component Test",
+  "description": "Testing the updated StoryEmbed component with working iframe fixes",
+  "source": "@site/docs/story-embed-test.mdx",
+  "sourceDirName": ".",
+  "slug": "/story-embed-test",
+  "permalink": "/docs/story-embed-test",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/story-embed-test.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "StoryEmbed Component Test",
+    "description": "Testing the updated StoryEmbed component with working iframe fixes"
+  }
+}

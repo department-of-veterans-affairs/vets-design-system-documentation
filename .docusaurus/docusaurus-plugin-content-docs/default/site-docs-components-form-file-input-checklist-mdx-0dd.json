@@ -1,0 +1,20 @@
+{
+  "id": "components/form/file-input/checklist",
+  "title": "File Input - Component checklist",
+  "description": "Maturity and asset checklist for the File Input component",
+  "source": "@site/docs/components/form/file-input/checklist.mdx",
+  "sourceDirName": "components/form/file-input",
+  "slug": "/components/form/file-input/checklist",
+  "permalink": "/docs/components/form/file-input/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/form/file-input/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "File Input - Component checklist",
+    "description": "Maturity and asset checklist for the File Input component",
+    "sidebar_label": "Checklist"
+  }
+}

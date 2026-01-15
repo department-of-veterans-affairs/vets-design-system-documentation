@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/we-us-you",
+  "title": "We, us, you",
+  "description": "Guidelines for using first-person and second-person pronouns to create person-to-person communication.",
+  "source": "@site/docs/content-style-guide/we-us-you.md",
+  "sourceDirName": "content-style-guide",
+  "slug": "/content-style-guide/we-us-you",
+  "permalink": "/docs/content-style-guide/we-us-you",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/we-us-you.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 20,
+  "frontMatter": {
+    "title": "We, us, you",
+    "description": "Guidelines for using first-person and second-person pronouns to create person-to-person communication.",
+    "sidebar_position": 20
+  }
+}

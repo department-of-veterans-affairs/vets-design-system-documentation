@@ -1,0 +1,29 @@
+{
+  "id": "foundation/utilities/text-align",
+  "title": "Text align",
+  "description": "CSS classes for controlling text alignment.",
+  "source": "@site/docs/foundation/utilities/text-align.md",
+  "sourceDirName": "foundation/utilities",
+  "slug": "/foundation/utilities/text-align",
+  "permalink": "/docs/foundation/utilities/text-align",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/utilities/text-align.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 16,
+  "frontMatter": {
+    "title": "Text align",
+    "description": "CSS classes for controlling text alignment.",
+    "sidebar_position": 16
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Position",
+    "permalink": "/docs/foundation/utilities/position"
+  },
+  "next": {
+    "title": "Text color",
+    "permalink": "/docs/foundation/utilities/text-color"
+  }
+}

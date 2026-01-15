@@ -1,0 +1,138 @@
+{
+  "id": "patterns/ask-users-for/social-security-number/index",
+  "title": "Social Security or VA file number",
+  "description": "Follow this pattern to collect or display a person's Social Security Number or VA file number.",
+  "source": "@site/docs/patterns/ask-users-for/social-security-number/index.mdx",
+  "sourceDirName": "patterns/ask-users-for/social-security-number",
+  "slug": "/patterns/ask-users-for/social-security-number/",
+  "permalink": "/docs/patterns/ask-users-for/social-security-number/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/patterns/ask-users-for/social-security-number/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "title": "Social Security or VA file number",
+    "description": "Follow this pattern to collect or display a person's Social Security Number or VA file number.",
+    "cms_editable": true,
+    "category": "ask-users-for",
+    "maturity": "deployed",
+    "sidebar_position": 7,
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms",
+    "github": "https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-ssn%22",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Ask+users+for...+SSN%22",
+    "intro": "Use this pattern when collecting or displaying identifying numbers for Veterans and non-Veterans, including Social Security Numbers (9 digits), VA file numbers (8-9 digits), and Military Service numbers.",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Collecting identity information.** When you need SSN or VA file number for application identification purposes."
+        },
+        {
+          "value": "**Displaying prefilled information.** When showing existing identity information to authenticated users."
+        }
+      ],
+      "design_principles": [
+        {
+          "value": "**Use single text input fields.** Do not split SSN into 3 separate input fields."
+        },
+        {
+          "value": "**Avoid abbreviations.** Use the full term 'Social Security number' rather than 'SSN'."
+        },
+        {
+          "value": "**Accept flexible formatting.** Allow spaces, dashes, or no formatting in user input."
+        },
+        {
+          "value": "**Auto-mask input.** Display with dashes upon blur for consistency."
+        },
+        {
+          "value": "**Prefill when possible.** Use existing data from VA systems when available."
+        }
+      ],
+      "when_not_to_use": [
+        {
+          "value": "**Already on file for IAL2 users.** When users are authenticated and identity-proofed with SSN already on file, use the prefilled information pattern instead."
+        }
+      ]
+    },
+    "examples": [
+      {
+        "title": "Collect SSN or VA file number",
+        "description": "Form fields requesting both Social Security and VA file numbers."
+      },
+      {
+        "title": "Display prefilled information",
+        "description": "Card showing last four digits of Social Security number for verification."
+      }
+    ],
+    "how_to_build": {
+      "intro": "The pattern handles collection and display of sensitive identity numbers.",
+      "steps": [
+        {
+          "value": "Use single text input fields for SSN (not split into 3 parts)."
+        },
+        {
+          "value": "Offer both SSN and VA file number fields for unauthenticated users."
+        },
+        {
+          "value": "For authenticated IAL2 users, SSN is uneditable when already on file."
+        },
+        {
+          "value": "For non-Veteran applicants, request only the applicable person's SSN."
+        },
+        {
+          "value": "Auto-mask input with dashes upon blur."
+        },
+        {
+          "value": "Validate appropriately based on expected format."
+        }
+      ],
+      "components_used": [
+        {
+          "name": "Text input",
+          "url": "/docs/components/form/text-input"
+        },
+        {
+          "name": "Card",
+          "url": "/docs/components/card"
+        }
+      ]
+    },
+    "code_usage": "The `ssnPattern` is available as a web-component pattern in the VA Forms library.\n\n```jsx\nimport { ssnPattern } from '@department-of-veterans-affairs/platform-forms-system/patterns';\n```\n\nFor screen reader accessibility, use the `formatNumberForScreenReader` utility:\n\n```javascript\nimport { formatNumberForScreenReader } from '@department-of-veterans-affairs/platform-forms-system/utilities';\n\nconst formattedNumber = formatNumberForScreenReader(123456789);\n```\n",
+    "content_specs": [
+      {
+        "field": "Social Security number",
+        "hint_text": "You must enter a Social Security number or VA file number",
+        "error_message": "Enter a valid 9-digit Social Security number (dashes allowed)"
+      },
+      {
+        "field": "VA file number",
+        "hint_text": null,
+        "error_message": "Enter a valid VA file number"
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Use the formatNumberForScreenReader utility for proper screen reader announcement of masked numbers."
+      },
+      {
+        "value": "Ensure form fields have visible, associated labels."
+      },
+      {
+        "value": "Provide clear error messages that explain the expected format."
+      },
+      {
+        "value": "When displaying masked numbers, announce them in a screen reader friendly format."
+      }
+    ]
+  },
+  "sidebar": "patternsSidebar",
+  "previous": {
+    "title": "Signature",
+    "permalink": "/docs/patterns/ask-users-for/signature/"
+  },
+  "next": {
+    "title": "Files",
+    "permalink": "/docs/patterns/ask-users-for/files/"
+  }
+}

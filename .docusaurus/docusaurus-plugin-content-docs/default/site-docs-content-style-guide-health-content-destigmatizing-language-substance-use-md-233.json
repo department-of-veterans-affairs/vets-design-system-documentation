@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/health-content/destigmatizing-language-substance-use",
+  "title": "Destigmatizing language in substance use",
+  "description": "Guidelines for using respectful, person-first language when discussing substance use disorders.",
+  "source": "@site/docs/content-style-guide/health-content/destigmatizing-language-substance-use.md",
+  "sourceDirName": "content-style-guide/health-content",
+  "slug": "/content-style-guide/health-content/destigmatizing-language-substance-use",
+  "permalink": "/docs/content-style-guide/health-content/destigmatizing-language-substance-use",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/health-content/destigmatizing-language-substance-use.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Destigmatizing language in substance use",
+    "description": "Guidelines for using respectful, person-first language when discussing substance use disorders.",
+    "sidebar_position": 3
+  }
+}

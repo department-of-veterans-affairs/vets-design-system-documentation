@@ -1,0 +1,20 @@
+{
+  "id": "components/form/select/checklist",
+  "title": "Select - Component checklist",
+  "description": "Maturity and asset checklist for the Select component",
+  "source": "@site/docs/components/form/select/checklist.mdx",
+  "sourceDirName": "components/form/select",
+  "slug": "/components/form/select/checklist",
+  "permalink": "/docs/components/form/select/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/form/select/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Select - Component checklist",
+    "description": "Maturity and asset checklist for the Select component",
+    "sidebar_label": "Checklist"
+  }
+}

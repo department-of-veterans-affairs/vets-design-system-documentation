@@ -1,0 +1,21 @@
+{
+  "id": "components/critical-action/checklist",
+  "title": "Critical Action - Component checklist",
+  "description": "Maturity and asset checklist for the Critical Action component",
+  "source": "@site/docs/components/critical-action/checklist.mdx",
+  "sourceDirName": "components/critical-action",
+  "slug": "/components/critical-action/checklist",
+  "permalink": "/docs/components/critical-action/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/critical-action/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Critical Action - Component checklist",
+    "description": "Maturity and asset checklist for the Critical Action component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

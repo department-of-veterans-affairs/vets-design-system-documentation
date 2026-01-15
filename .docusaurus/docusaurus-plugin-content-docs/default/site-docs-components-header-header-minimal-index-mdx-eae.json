@@ -1,0 +1,87 @@
+{
+  "id": "components/header/header-minimal/index",
+  "title": "Header - Minimal",
+  "description": "Simplified header for focused user experiences",
+  "source": "@site/docs/components/header/header-minimal/index.mdx",
+  "sourceDirName": "components/header/header-minimal",
+  "slug": "/components/header/header-minimal/",
+  "permalink": "/docs/components/header/header-minimal/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/header/header-minimal/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Header - Minimal",
+    "description": "Simplified header for focused user experiences",
+    "maturity": "use-with-caution",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-header-minimal",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Header+-+Minimal%22",
+    "related": [
+      {
+        "name": "Header",
+        "url": "/docs/components/header/",
+        "description": "Full header with navigation"
+      },
+      {
+        "name": "Footer - Minimal",
+        "url": "/docs/components/footer/footer-minimal",
+        "description": "Pair with minimal header"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Form completion**: Reduce the chance of a user leaving a form, process, or task before completing required steps"
+        },
+        {
+          "value": "**Time-sensitive tasks**: Situations requiring users to complete actions quickly"
+        },
+        {
+          "value": "**Custom experiences**: Tasks outside standard VA.gov information architecture or with distinct navigation patterns"
+        }
+      ]
+    },
+    "content_considerations": [
+      {
+        "value": "Form titles should use plain language describing the benefit or service"
+      },
+      {
+        "value": "Maximum 52 characters for titles"
+      },
+      {
+        "value": "Form subtitle should exclude \"Equal to\" before full PDF form titles"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Default",
+        "description": "Default",
+        "storyId": "uswds-va-header-minimal--default",
+        "height": 150
+      },
+      {
+        "title": "With subheader",
+        "description": "With subheader",
+        "storyId": "uswds-va-header-minimal--with-subheader",
+        "height": 180
+      }
+    ],
+    "code_usage": "<va-header-minimal\n  header=\"Apply for VA health care\"\n  subheader=\"VA Form 10-10EZ\"\n></va-header-minimal>\n",
+    "component_tag": "va-header-minimal"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Header",
+    "permalink": "/docs/components/header/"
+  },
+  "next": {
+    "title": "Icon",
+    "permalink": "/docs/components/icon/"
+  }
+}

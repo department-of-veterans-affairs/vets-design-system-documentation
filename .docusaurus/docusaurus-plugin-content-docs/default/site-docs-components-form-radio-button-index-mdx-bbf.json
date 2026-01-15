@@ -1,0 +1,81 @@
+{
+  "id": "components/form/radio-button/index",
+  "title": "Radio Button",
+  "description": "Allows users to select exactly one choice from a group",
+  "source": "@site/docs/components/form/radio-button/index.mdx",
+  "sourceDirName": "components/form/radio-button",
+  "slug": "/components/form/radio-button/",
+  "permalink": "/docs/components/form/radio-button/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/form/radio-button/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Radio Button",
+    "description": "Allows users to select exactly one choice from a group",
+    "maturity": "deployed",
+    "platforms": [
+      "web",
+      "mobile"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-radio",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Radio+button%22",
+    "related": [
+      {
+        "name": "Checkbox",
+        "url": "../checkbox",
+        "description": "For multiple selections"
+      },
+      {
+        "name": "Select",
+        "url": "../select",
+        "description": "For 6-15 options"
+      },
+      {
+        "name": "Combo Box",
+        "url": "../combo-box",
+        "description": "For searchable options"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Default",
+        "description": "Default",
+        "storyId": "uswds-va-radio--default",
+        "height": 200
+      },
+      {
+        "title": "Tile variant",
+        "description": "Tile variant",
+        "storyId": "uswds-va-radio--tile",
+        "height": 300
+      },
+      {
+        "title": "With hint text",
+        "description": "With hint text",
+        "storyId": "uswds-va-radio--hint",
+        "height": 220
+      },
+      {
+        "title": "With error",
+        "description": "With error",
+        "storyId": "uswds-va-radio--error",
+        "height": 220
+      }
+    ],
+    "code_usage": "<va-radio\n  label=\"What is your preferred contact method?\"\n  required\n>\n  <va-radio-option label=\"Email\" value=\"email\"></va-radio-option>\n  <va-radio-option label=\"Phone\" value=\"phone\"></va-radio-option>\n  <va-radio-option label=\"Mail\" value=\"mail\"></va-radio-option>\n</va-radio>\n",
+    "component_tag": "va-radio"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Progress Bar - Segmented",
+    "permalink": "/docs/components/form/progress-bar-segmented/"
+  },
+  "next": {
+    "title": "Select",
+    "permalink": "/docs/components/form/select/"
+  }
+}

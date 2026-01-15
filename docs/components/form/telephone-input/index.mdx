@@ -1,0 +1,66 @@
+---
+cms_editable: true
+title: Telephone Input
+description: Helps users enter telephone numbers with country code support
+maturity: use-with-caution
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-telephone-input
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Telephone+input%22
+related:
+  - name: Combo Box
+    url: ../combo-box
+    description: Country code selector component
+  - name: Text Input
+    url: ../text-input
+    description: Phone number input field
+usage:
+  when_to_use:
+    - value: Collecting domestic U.S. and international phone numbers
+    - value: Allowing users to enter numbers in familiar formats (spaces, hyphens, brackets, dashes accepted)
+    - value: Need to gather multiple phone numbers on a single page with unique labeling
+  when_to_consider_else:
+    - value: Avoid if phone number collection isn't necessary for the service
+accessibility:
+  - value: "**Keyboard Navigation**: Tab to combo box, use arrow keys for options, Enter to select"
+  - value: "**Focus Indicator**: Clear outline appears on focused elements"
+  - value: "**Screen Readers**: Combo box announces as \"Country code\" with selected country"
+  - value: "**Flag Images**: Decorative flags have undefined alt text (appropriate for non-informative icons)"
+  - value: "**Error Prevention**: Real-time validation prevents form submission with invalid numbers"
+examples:
+  - title: Default
+    description: Default
+    storyId: uswds-va-telephone-input--default
+    height: 150
+  - title: Without country selector
+    description: Without country selector
+    storyId: uswds-va-telephone-input--no-country
+    height: 120
+  - title: With error
+    description: With error
+    storyId: uswds-va-telephone-input--error
+    height: 170
+code_usage: |
+  <!-- With country selector -->
+  <va-telephone-input
+    label="Home phone number"
+    name="homePhone"
+    required
+  ></va-telephone-input>
+
+  <!-- Without country selector -->
+  <va-telephone-input
+    label="Phone number"
+    name="phone"
+    no-country
+    required
+  ></va-telephone-input>
+component_tag: va-telephone-input
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

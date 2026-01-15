@@ -1,0 +1,136 @@
+{
+  "id": "patterns/ask-users-for/relationship/index",
+  "title": "Relationship to Veteran",
+  "description": "Follow this pattern to collect information about a user's relationship to a Veteran.",
+  "source": "@site/docs/patterns/ask-users-for/relationship/index.mdx",
+  "sourceDirName": "patterns/ask-users-for/relationship",
+  "slug": "/patterns/ask-users-for/relationship/",
+  "permalink": "/docs/patterns/ask-users-for/relationship/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/patterns/ask-users-for/relationship/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 18,
+  "frontMatter": {
+    "title": "Relationship to Veteran",
+    "description": "Follow this pattern to collect information about a user's relationship to a Veteran.",
+    "cms_editable": true,
+    "category": "ask-users-for",
+    "maturity": "deployed",
+    "sidebar_position": 18,
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms",
+    "github": "https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-relationship%22",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Ask+users+for...+Relationship%22",
+    "intro": "Use this pattern when collecting relationship information from non-Veterans, such as caregivers or family members completing forms on behalf of a Veteran.",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Non-Veteran applicants.** When collecting relationship information from caregivers or family members filling out applications."
+        }
+      ],
+      "design_principles": [
+        {
+          "value": "**Use dropdown or radio buttons.** Either form control works equally well for this pattern."
+        },
+        {
+          "value": "**Standard options.** Include: Spouse, Child, Parent, Executor/Administrator, or Other."
+        },
+        {
+          "value": "**Always provide Other.** Include an 'Other' option for relationships not fitting standard categories."
+        },
+        {
+          "value": "**Use conditional reveals.** Implement conditionally revealed fields to reduce visual clutter."
+        },
+        {
+          "value": "**Limit reveals per page.** Limit conditional reveals to one per page for clarity."
+        },
+        {
+          "value": "**Place trigger last.** Place the option that triggers a reveal last to support keyboard navigation."
+        }
+      ]
+    },
+    "examples": [
+      {
+        "title": "Relationship dropdown",
+        "description": "Dropdown menu with standard relationship options and Other."
+      },
+      {
+        "title": "Relationship radio buttons",
+        "description": "Radio button list with conditional text field for Other option."
+      }
+    ],
+    "how_to_build": {
+      "intro": "The relationship pattern uses either dropdown or radio buttons with conditional fields.",
+      "steps": [
+        {
+          "value": "Choose dropdown or radio buttons based on form context."
+        },
+        {
+          "value": "Include standard options: Spouse, Child, Parent, Executor/Administrator, Other."
+        },
+        {
+          "value": "For 'Other' option, use a conditionally revealed text field."
+        },
+        {
+          "value": "Use self-explanatory labels for revealed fields (avoid generic 'Other' labels)."
+        },
+        {
+          "value": "Craft specific prompts like 'Since your relationship with the Veteran was not listed, please describe it here.'"
+        },
+        {
+          "value": "Create distinct error messages for main fields and revealed fields."
+        }
+      ],
+      "components_used": [
+        {
+          "name": "Radio button",
+          "url": "/docs/components/form/radio-button"
+        },
+        {
+          "name": "Select",
+          "url": "/docs/components/form/select"
+        },
+        {
+          "name": "Text input",
+          "url": "/docs/components/form/text-input"
+        }
+      ]
+    },
+    "content_specs": [
+      {
+        "field": "Relationship to Veteran",
+        "hint_text": null,
+        "error_message": "Please select your relationship to the Veteran"
+      },
+      {
+        "field": "Other relationship (revealed)",
+        "hint_text": null,
+        "error_message": "Please describe your relationship to the Veteran"
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Ensure newly revealed fields are keyboard-accessible."
+      },
+      {
+        "value": "Tab order should flow naturally into revealed content."
+      },
+      {
+        "value": "Maintain separate error states for main and conditional fields."
+      },
+      {
+        "value": "Focus should move to the revealed field when it appears."
+      }
+    ]
+  },
+  "sidebar": "patternsSidebar",
+  "previous": {
+    "title": "Race and ethnicity",
+    "permalink": "/docs/patterns/ask-users-for/race-and-ethnicity/"
+  },
+  "next": {
+    "title": "Help users to...",
+    "permalink": "/docs/category/help-users-to"
+  }
+}

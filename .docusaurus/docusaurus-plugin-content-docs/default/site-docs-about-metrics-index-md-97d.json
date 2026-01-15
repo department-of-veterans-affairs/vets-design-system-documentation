@@ -1,0 +1,30 @@
+{
+  "id": "about/metrics/index",
+  "title": "Metrics",
+  "description": "Design system health metrics including component usage and issue tracking.",
+  "source": "@site/docs/about/metrics/index.md",
+  "sourceDirName": "about/metrics",
+  "slug": "/about/metrics/",
+  "permalink": "/docs/about/metrics/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/about/metrics/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Metrics",
+    "description": "Design system health metrics including component usage and issue tracking.",
+    "sidebar_label": "Overview",
+    "sidebar_position": 1
+  },
+  "sidebar": "aboutSidebar",
+  "previous": {
+    "title": "Component Documentation Guide",
+    "permalink": "/docs/about/component-documentation-guide"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/about/naming-conventions/"
+  }
+}

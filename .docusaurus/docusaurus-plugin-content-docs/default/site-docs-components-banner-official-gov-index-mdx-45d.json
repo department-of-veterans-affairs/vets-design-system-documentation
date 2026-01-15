@@ -1,0 +1,54 @@
+{
+  "id": "components/banner/official-gov/index",
+  "title": "Banner - Official Gov",
+  "description": "Identifies official U.S. government websites and helps visitors understand security measures",
+  "source": "@site/docs/components/banner/official-gov/index.mdx",
+  "sourceDirName": "components/banner/official-gov",
+  "slug": "/components/banner/official-gov/",
+  "permalink": "/docs/components/banner/official-gov/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/banner/official-gov/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Banner - Official Gov",
+    "description": "Identifies official U.S. government websites and helps visitors understand security measures",
+    "maturity": "deployed",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-official-gov-banner",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Banner+-+Official+gov%22",
+    "related": [
+      {
+        "name": "Banner",
+        "url": "/docs/components/banner/",
+        "description": "For general announcements"
+      },
+      {
+        "name": "Banner - Maintenance",
+        "url": "/docs/components/banner/maintenance",
+        "description": "For system maintenance notifications"
+      },
+      {
+        "name": "Header",
+        "url": "/docs/components/header/",
+        "description": "Page header that appears below this banner"
+      }
+    ],
+    "code_usage": "<va-official-gov-banner\n  tld=\"gov\"\n></va-official-gov-banner>\n",
+    "component_tag": "va-official-gov-banner"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Banner - Maintenance",
+    "permalink": "/docs/components/banner/maintenance/"
+  },
+  "next": {
+    "title": "Breadcrumbs",
+    "permalink": "/docs/components/breadcrumbs/"
+  }
+}

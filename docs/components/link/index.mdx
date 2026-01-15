@@ -1,0 +1,86 @@
+---
+cms_editable: true
+title: Link
+description: Navigation element for internal and external pages
+maturity: deployed
+platforms:
+  - web
+  - mobile
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-link
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+storybook: https://design.va.gov/storybook/?path=/docs/uswds-va-link--docs
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Link%22
+variations:
+  - name: Link - Action
+    url: ./action
+    description: Prominent calls to action
+  - name: Link - Collection
+    url: ./collection
+    description: Groups of related links
+related:
+  - name: Button
+    url: /docs/components/button/
+    description: For actions, not navigation
+usage:
+  when_to_use:
+    - value: Navigation between pages (internal or external)
+    - value: Navigation within a page using anchors/jump links
+    - value: Opening relevant applications via email addresses or phone numbers
+    - value: Collections and Hub pages
+    - value: Less prominent links needing less emphasis than Action links
+    - value: As breadcrumb replacement in multi-step forms
+    - value: Short forms with few concise steps
+    - value: Downloading files (PDFs, Excel files, etc.)
+    - value: Linking to external websites; must indicate external status
+  when_to_consider_else:
+    - value: "**Use buttons for actions:** Form submissions, state changes, \"Add,\" \"Close,\" \"Cancel,\" \"Save\""
+    - value: "**Use Action links for CTAs:** Important calls-to-action requiring visual emphasis"
+    - value: "**Use On this page:** For table of contents with 2+ H2 sections"
+accessibility:
+  - value: "**Material honesty:** Don't style links as buttons or vice versa"
+  - value: "**Keyboard navigation:** Tab to navigate, Enter to activate"
+  - value: "**Purpose clarity:** Link text must indicate destination"
+  - value: "**External links:** Append \"(opens in a new tab)\" text"
+  - value: "**Avoid headers as links:** Headers serve structural purposes"
+examples:
+  - title: Default
+    description: Default
+    storyId: uswds-va-link--default
+    height: 80
+  - title: External
+    description: External
+    storyId: uswds-va-link--external
+    height: 80
+  - title: Download
+    description: Download
+    storyId: uswds-va-link--download
+    height: 80
+  - title: Back
+    description: Back
+    storyId: uswds-va-link--back
+    height: 80
+code_usage: |
+  <!-- Default link -->
+  <va-link href="/page" text="Link text"></va-link>
+
+  <!-- External link -->
+  <va-link href="https://example.com" text="External site"></va-link>
+
+  <!-- Download link -->
+  <va-link
+    download
+    filetype="PDF"
+    href="/file.pdf"
+    text="Download form"
+  ></va-link>
+
+  <!-- Back link -->
+  <va-link href="/previous" text="Back"></va-link>
+component_tag: va-link
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

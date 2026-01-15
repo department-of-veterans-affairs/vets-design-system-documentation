@@ -1,0 +1,126 @@
+{
+  "id": "patterns/help-users-to/manage-benefits-and-tools/index",
+  "title": "Manage benefits and tools",
+  "description": "Follow this pattern to help users manage their benefits and tools through a structured list interface.",
+  "source": "@site/docs/patterns/help-users-to/manage-benefits-and-tools/index.mdx",
+  "sourceDirName": "patterns/help-users-to/manage-benefits-and-tools",
+  "slug": "/patterns/help-users-to/manage-benefits-and-tools/",
+  "permalink": "/docs/patterns/help-users-to/manage-benefits-and-tools/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/patterns/help-users-to/manage-benefits-and-tools/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "title": "Manage benefits and tools",
+    "description": "Follow this pattern to help users manage their benefits and tools through a structured list interface.",
+    "cms_editable": true,
+    "category": "help-users-to",
+    "maturity": "use-with-caution",
+    "sidebar_position": 12,
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms",
+    "github": "https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-manage-benefits%22",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Help+users+to...+Manage+benefits%22",
+    "intro": "Use this pattern to help users manage their benefits and tools through a structured service list interface.",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Benefits enrollment.** Displaying benefits or tools users are currently enrolled in."
+        },
+        {
+          "value": "**Tool access.** Showing tools users have access to."
+        },
+        {
+          "value": "**Service list implementation.** When implementing the Service List Item component."
+        }
+      ],
+      "design_principles": [
+        {
+          "value": "**Scannable.** Limited amount of information per list object."
+        },
+        {
+          "value": "**Consistent hierarchy.** Consistent content and hierarchy across all list items."
+        },
+        {
+          "value": "**Uniform functionality.** Uniform supporting functionality for sorting/filtering."
+        }
+      ],
+      "when_not_to_use": [
+        {
+          "value": "**Non-benefit items.** Don't use for non-benefit/non-tool items."
+        },
+        {
+          "value": "**Interactive forms.** When showing benefits within interactive forms with checkboxes."
+        },
+        {
+          "value": "**Unordered lists.** For unordered list content, use the List component instead."
+        },
+        {
+          "value": "**Search results.** For global search results, use the Search Results Template."
+        }
+      ]
+    },
+    "examples": [
+      {
+        "title": "Benefits list",
+        "description": "Disability compensation, education, housing, life insurance, pension, VRE displayed as service list items."
+      },
+      {
+        "title": "Tools list",
+        "description": "Appointments, claims, prescriptions, secure messages, medical records displayed as service list items."
+      }
+    ],
+    "how_to_build": {
+      "intro": "Stack Service List Items vertically with critical actions at the top.",
+      "steps": [
+        {
+          "value": "Stack Service List Items vertically."
+        },
+        {
+          "value": "Items with Critical Action components appear at the top."
+        },
+        {
+          "value": "Display order follows content needs (alphabetical, date-based, etc.)."
+        },
+        {
+          "value": "Use tags for status indicators."
+        }
+      ],
+      "components_used": [
+        {
+          "name": "Service List Item",
+          "url": "/docs/components/service-list-item"
+        },
+        {
+          "name": "Critical Action",
+          "url": "/docs/components/critical-action"
+        },
+        {
+          "name": "Tag",
+          "url": "/docs/components/tag"
+        }
+      ]
+    },
+    "accessibility": [
+      {
+        "value": "Headings and links must be descriptive and unique."
+      },
+      {
+        "value": "Support screen reader navigation through stacked items."
+      },
+      {
+        "value": "Ensure status indicators don't rely solely on color."
+      }
+    ]
+  },
+  "sidebar": "patternsSidebar",
+  "previous": {
+    "title": "Keep a record of submitted information",
+    "permalink": "/docs/patterns/help-users-to/keep-a-record-of-submitted-information/"
+  },
+  "next": {
+    "title": "Navigate a long list",
+    "permalink": "/docs/patterns/help-users-to/navigate-a-long-list/"
+  }
+}

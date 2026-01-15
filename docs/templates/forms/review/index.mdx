@@ -1,0 +1,76 @@
+---
+title: Review
+description: Template for users to examine submitted information and make revisions before final submission.
+cms_editable: true
+category: forms
+maturity: deployed
+sidebar_position: 6
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms
+github: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22template-review%22
+
+intro: This template enables users to examine submitted information and make revisions as needed. It implements the "check answers" pattern at the conclusion of form workflows.
+
+usage:
+  when_to_use:
+    - value: "**Final review.** Before users submit their form or application."
+    - value: "**Check answers pattern.** Implementing the check answers pattern at workflow conclusion."
+    - value: "**Edit capability.** When users need to modify entries before submission."
+
+structure:
+  intro: The Review page displays user-provided information organized by form chapter or step, with options to edit entries before final submission.
+  sections:
+    - title: Page Title and Subtitle
+      description: "H1 formatted as 'Review [Form name]' or 'Review application,' followed by form number."
+    - title: Progress Bar - Segmented
+      description: Shows review as the final step in the process.
+    - title: Review Steps/Chapters - Expanded
+      description: Bordered accordions containing form fields and user-entered values; each section includes an 'Edit' button when open.
+    - title: Review Steps/Chapters - Collapsed
+      description: All accordions launch in collapsed state for scannability.
+    - title: Penalty Notice
+      description: Required legal notice component for application finalization.
+    - title: Privacy Agreement
+      description: Standard component (replaced by signature pattern for forms requiring wet signatures).
+    - title: Button Group
+      description: Secondary 'Back' button and primary 'Submit application' button.
+    - title: Autosave
+      description: Displays last saved timestamp via success alert.
+    - title: Finish Application Later
+      description: Exit link preserving user progress.
+    - title: Need Help?
+      description: Contact information component.
+  components_used:
+    - name: Accordion
+      url: /docs/components/accordion
+      description: Bordered variant
+    - name: Progress bar - segmented
+      url: /docs/components/form/progress-bar-segmented
+    - name: Penalty notice
+      url: /docs/components/form/penalty-notice
+    - name: Privacy agreement
+      url: /docs/components/form/privacy-agreement
+    - name: Button group
+      url: /docs/components/button
+    - name: Alert
+      url: /docs/components/alert
+      description: Autosave success alert
+    - name: Need help
+      url: /docs/components/form/need-help
+
+content_guidelines:
+  - value: "Organize information by form chapter or step for easy scanning."
+  - value: "Each accordion section should include an 'Edit' button when expanded."
+  - value: "Include the penalty notice before final submission."
+  - value: "Show last saved timestamp for user confidence."
+
+accessibility:
+  - value: "Accordion sections must be navigable by keyboard."
+  - value: "Edit buttons must have clear accessible labels indicating what they edit."
+  - value: "Success alerts for autosave should be announced to screen readers."
+  - value: "Follow VA.gov form accessibility guidelines."
+---
+
+import TemplatePage from '@site/src/components/TemplatePage';
+
+<TemplatePage frontMatter={frontMatter} />
+

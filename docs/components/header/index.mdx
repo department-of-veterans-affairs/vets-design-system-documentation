@@ -1,0 +1,33 @@
+---
+cms_editable: true
+title: Header
+description: Helps users identify where they are and navigate to main sections
+maturity: deployed
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-header
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Header%22
+variations:
+  - name: Header - Minimal
+    url: ./header-minimal
+    description: Simplified header for form flows
+related:
+  - name: Banner - Official Gov
+    url: /docs/components/banner/official-gov
+    description: Government website identifier
+  - name: Footer
+    url: /docs/components/footer/
+    description: Page footer component
+usage:
+  when_to_use:
+    - value: The header is required to provide global navigation
+    - value: Needed on nearly all pages within the va.gov domain
+    - value: Appears at the top of each page
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

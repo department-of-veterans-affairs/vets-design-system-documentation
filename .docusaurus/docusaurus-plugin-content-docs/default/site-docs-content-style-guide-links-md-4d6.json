@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/links",
+  "title": "Links",
+  "description": "Guidelines for writing effective link text that tells users what action to take and where to go.",
+  "source": "@site/docs/content-style-guide/links.md",
+  "sourceDirName": "content-style-guide",
+  "slug": "/content-style-guide/links",
+  "permalink": "/docs/content-style-guide/links",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/links.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 13,
+  "frontMatter": {
+    "title": "Links",
+    "description": "Guidelines for writing effective link text that tells users what action to take and where to go.",
+    "sidebar_position": 13
+  }
+}

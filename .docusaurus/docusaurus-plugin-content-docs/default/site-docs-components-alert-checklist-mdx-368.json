@@ -1,0 +1,21 @@
+{
+  "id": "components/alert/checklist",
+  "title": "Alert - Component checklist",
+  "description": "Maturity and asset checklist for the Alert component",
+  "source": "@site/docs/components/alert/checklist.mdx",
+  "sourceDirName": "components/alert",
+  "slug": "/components/alert/checklist",
+  "permalink": "/docs/components/alert/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/alert/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Alert - Component checklist",
+    "description": "Maturity and asset checklist for the Alert component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

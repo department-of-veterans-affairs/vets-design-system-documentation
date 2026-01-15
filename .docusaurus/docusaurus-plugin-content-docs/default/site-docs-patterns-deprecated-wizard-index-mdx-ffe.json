@@ -1,0 +1,124 @@
+{
+  "id": "patterns/deprecated/wizard/index",
+  "title": "Wizard",
+  "description": "This deprecated pattern was designed to guide users through complex VA benefit eligibility pathways with a series of questions.",
+  "source": "@site/docs/patterns/deprecated/wizard/index.mdx",
+  "sourceDirName": "patterns/deprecated/wizard",
+  "slug": "/patterns/deprecated/wizard/",
+  "permalink": "/docs/patterns/deprecated/wizard/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/patterns/deprecated/wizard/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Wizard",
+    "description": "This deprecated pattern was designed to guide users through complex VA benefit eligibility pathways with a series of questions.",
+    "cms_editable": true,
+    "category": "deprecated",
+    "maturity": "deprecated",
+    "sidebar_position": 4,
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms",
+    "github": "https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-wizard%22",
+    "intro": "The wizard pattern was designed to guide users through complex VA benefit eligibility pathways. It is deprecated due to difficult-to-solve accessibility issues. Use the \"Complete a sub-task\" pattern instead.",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Complex eligibility.** Previously used to help users understand complex eligibility requirements for VA benefits."
+        },
+        {
+          "value": "**One question at a time.** Presented one question at a time to avoid showing irrelevant content."
+        },
+        {
+          "value": "**Branching logic.** Used branching logic to direct users to optimal pathways based on their circumstances."
+        }
+      ],
+      "design_principles": [
+        {
+          "value": "**Deprecated.** This pattern is deprecated due to accessibility issues."
+        },
+        {
+          "value": "**Use sub-task pattern.** Replace with the 'Complete a sub-task' pattern."
+        }
+      ],
+      "when_not_to_use": [
+        {
+          "value": "**All new implementations.** Do not use this pattern for any new implementations."
+        },
+        {
+          "value": "**Accessibility concerns.** This pattern has difficult-to-solve accessibility issues that negatively impact screen reader users and keyboard navigation."
+        }
+      ]
+    },
+    "examples": [
+      {
+        "title": "Eligibility wizard",
+        "description": "Series of plain-language questions with conditional logic determining next questions."
+      }
+    ],
+    "how_to_build": {
+      "intro": "This pattern is deprecated. Use the \"Complete a sub-task\" pattern instead.",
+      "steps": [
+        {
+          "value": "This pattern is deprecated and should not be used in new implementations."
+        },
+        {
+          "value": "Replace with the 'Complete a sub-task' pattern."
+        },
+        {
+          "value": "Contact the Design System Council or CollabCycle team for implementation guidance."
+        }
+      ],
+      "components_used": [
+        {
+          "name": "Button",
+          "url": "/docs/components/button"
+        },
+        {
+          "name": "Radio button",
+          "url": "/docs/components/form/radio-button"
+        }
+      ]
+    },
+    "content_considerations": [
+      {
+        "value": "For teams unable to immediately migrate, minimize accessibility issues by asking qualifying questions upfront in forms."
+      },
+      {
+        "value": "Keep newly added content below triggering elements."
+      },
+      {
+        "value": "Limit added content to one question or clarification."
+      },
+      {
+        "value": "Avoid static content between interactive elements."
+      },
+      {
+        "value": "Consult accessibility specialists for complex branching scenarios."
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "**Screen reader issues.** New content added via conditional logic wasn't properly announced to screen readers."
+      },
+      {
+        "value": "**No clear endpoint.** No clear endpoint for the wizard experience."
+      },
+      {
+        "value": "**Tab navigation.** Users could accidentally tab out of the wizard flow."
+      },
+      {
+        "value": "**Nested fieldsets.** Nested fieldsets created confusion as screen readers don't announce fieldset endings."
+      },
+      {
+        "value": "**Dynamic content.** Dynamic show/hide behavior for results was unreliable for assistive technology."
+      }
+    ]
+  },
+  "sidebar": "patternsSidebar",
+  "previous": {
+    "title": "Know how their information is updated",
+    "permalink": "/docs/patterns/deprecated/know-how-their-information-is-updated/"
+  }
+}

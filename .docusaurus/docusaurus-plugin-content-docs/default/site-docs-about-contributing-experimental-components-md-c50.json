@@ -1,0 +1,29 @@
+{
+  "id": "about/contributing/experimental-components",
+  "title": "Experimental components and patterns",
+  "description": "Understanding and using experimental components and patterns in the VA Design System.",
+  "source": "@site/docs/about/contributing/experimental-components.md",
+  "sourceDirName": "about/contributing",
+  "slug": "/about/contributing/experimental-components",
+  "permalink": "/docs/about/contributing/experimental-components",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/about/contributing/experimental-components.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Experimental components and patterns",
+    "description": "Understanding and using experimental components and patterns in the VA Design System.",
+    "sidebar_position": 2
+  },
+  "sidebar": "aboutSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/about/contributing/"
+  },
+  "next": {
+    "title": "Design principles",
+    "permalink": "/docs/about/principles"
+  }
+}

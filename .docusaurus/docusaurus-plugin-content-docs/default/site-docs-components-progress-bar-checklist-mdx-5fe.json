@@ -1,0 +1,21 @@
+{
+  "id": "components/progress-bar/checklist",
+  "title": "Progress bar - Activity - Component checklist",
+  "description": "Maturity and asset checklist for the Progress bar - Activity component",
+  "source": "@site/docs/components/progress-bar/checklist.mdx",
+  "sourceDirName": "components/progress-bar",
+  "slug": "/components/progress-bar/checklist",
+  "permalink": "/docs/components/progress-bar/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/progress-bar/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Progress bar - Activity - Component checklist",
+    "description": "Maturity and asset checklist for the Progress bar - Activity component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

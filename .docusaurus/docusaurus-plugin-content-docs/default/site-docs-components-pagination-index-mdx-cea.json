@@ -1,0 +1,103 @@
+{
+  "id": "components/pagination/index",
+  "title": "Pagination",
+  "description": "Navigation for paginated content",
+  "source": "@site/docs/components/pagination/index.mdx",
+  "sourceDirName": "components/pagination",
+  "slug": "/components/pagination/",
+  "permalink": "/docs/components/pagination/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/pagination/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Pagination",
+    "description": "Navigation for paginated content",
+    "maturity": "deployed",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-pagination",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "storybook": "https://design.va.gov/storybook/?path=/docs/uswds-va-pagination--docs",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Pagination%22",
+    "related": [
+      {
+        "name": "Table",
+        "url": "../table",
+        "description": "Often used with pagination"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "Displaying content divided across multiple pages"
+        },
+        {
+          "value": "Large lists or search results that need segmentation"
+        },
+        {
+          "value": "Content-heavy applications requiring navigation between sections"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "For single-page content"
+        },
+        {
+          "value": "When infinite scroll is more appropriate"
+        },
+        {
+          "value": "For minimal content that doesn't require segmentation"
+        }
+      ]
+    },
+    "accessibility": [
+      {
+        "value": "Component includes proper ARIA labels for navigation"
+      },
+      {
+        "value": "`aria-label-suffix` attribute allows customization of button announcements"
+      },
+      {
+        "value": "Supports keyboard navigation between pages"
+      },
+      {
+        "value": "Current page is indicated to screen readers"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Default",
+        "description": "Default",
+        "storyId": "uswds-va-pagination--default",
+        "height": 100
+      },
+      {
+        "title": "With Middle Pages",
+        "description": "With Middle Pages",
+        "storyId": "uswds-va-pagination--with-middle-pages",
+        "height": 100
+      },
+      {
+        "title": "Unbounded",
+        "description": "Unbounded",
+        "storyId": "uswds-va-pagination--unbounded",
+        "height": 100
+      }
+    ],
+    "code_usage": "<va-pagination\n  page=\"1\"\n  pages=\"10\"\n></va-pagination>\n\n<!-- Unbounded (unknown total) -->\n<va-pagination\n  page=\"3\"\n  pages=\"10\"\n  unbounded\n></va-pagination>\n",
+    "component_tag": "va-pagination"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "On this page",
+    "permalink": "/docs/components/on-this-page/"
+  },
+  "next": {
+    "title": "Process List",
+    "permalink": "/docs/components/process-list/"
+  }
+}

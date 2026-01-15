@@ -1,0 +1,29 @@
+{
+  "id": "accessibility/focus-management",
+  "title": "Focus management",
+  "description": "Best practices for managing keyboard focus to ensure accessible navigation.",
+  "source": "@site/docs/accessibility/focus-management.md",
+  "sourceDirName": "accessibility",
+  "slug": "/accessibility/focus-management",
+  "permalink": "/docs/accessibility/focus-management",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/accessibility/focus-management.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Focus management",
+    "description": "Best practices for managing keyboard focus to ensure accessible navigation.",
+    "sidebar_position": 6
+  },
+  "sidebar": "accessibilitySidebar",
+  "previous": {
+    "title": "Accessibility testing",
+    "permalink": "/docs/accessibility/testing"
+  },
+  "next": {
+    "title": "Screen reader announcements",
+    "permalink": "/docs/accessibility/screen-reader-announcements"
+  }
+}

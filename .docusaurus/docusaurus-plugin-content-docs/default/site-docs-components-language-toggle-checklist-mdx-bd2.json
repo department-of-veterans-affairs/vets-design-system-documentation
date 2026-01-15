@@ -1,0 +1,21 @@
+{
+  "id": "components/language-toggle/checklist",
+  "title": "Language toggle - Component checklist",
+  "description": "Maturity and asset checklist for the Language toggle component",
+  "source": "@site/docs/components/language-toggle/checklist.mdx",
+  "sourceDirName": "components/language-toggle",
+  "slug": "/components/language-toggle/checklist",
+  "permalink": "/docs/components/language-toggle/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/language-toggle/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Language toggle - Component checklist",
+    "description": "Maturity and asset checklist for the Language toggle component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "components/link/collection/index",
+  "title": "Link - Collection",
+  "description": "Organized groups of links for navigating related content",
+  "source": "@site/docs/components/link/collection/index.mdx",
+  "sourceDirName": "components/link/collection",
+  "slug": "/components/link/collection/",
+  "permalink": "/docs/components/link/collection/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/link/collection/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Link - Collection",
+    "description": "Organized groups of links for navigating related content",
+    "maturity": "deployed",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-link-collection",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Link+-+Collection%22",
+    "related": [
+      {
+        "name": "Link",
+        "url": "/docs/components/link/",
+        "description": "Base link component"
+      },
+      {
+        "name": "Link - Action",
+        "url": "../action",
+        "description": "For calls to action"
+      },
+      {
+        "name": "On this page",
+        "url": "/docs/components/on-this-page",
+        "description": "For table of contents"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "Link to related programs and services within a content section (Related links)"
+        },
+        {
+          "value": "Link to related programs and services within a specific topic (Section links)"
+        },
+        {
+          "value": "Link to pages outside a content section (Major links)"
+        },
+        {
+          "value": "Navigate users to related topics outside a content section (Quick links)"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "**Calls to action:** Use [Link - Action](../action) instead"
+        },
+        {
+          "value": "**Table of contents:** Use [On this page](/docs/components/on-this-page) component"
+        }
+      ]
+    },
+    "examples": [
+      {
+        "title": "Related Links",
+        "description": "Related Links",
+        "storyId": "uswds-va-link-collection--related",
+        "height": 200
+      },
+      {
+        "title": "Major Links",
+        "description": "Major Links",
+        "storyId": "uswds-va-link-collection--major",
+        "height": 200
+      }
+    ]
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Link - Action",
+    "permalink": "/docs/components/link/action/"
+  },
+  "next": {
+    "title": "List",
+    "permalink": "/docs/components/list/"
+  }
+}

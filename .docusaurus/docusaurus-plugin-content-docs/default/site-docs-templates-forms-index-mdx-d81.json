@@ -1,0 +1,107 @@
+{
+  "id": "templates/forms/index",
+  "title": "Forms overview",
+  "description": "Templates and patterns for creating accessible, Veteran-centered forms on VA.gov.",
+  "source": "@site/docs/templates/forms/index.mdx",
+  "sourceDirName": "templates/forms",
+  "slug": "/templates/forms/",
+  "permalink": "/docs/templates/forms/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/templates/forms/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Forms overview",
+    "description": "Templates and patterns for creating accessible, Veteran-centered forms on VA.gov.",
+    "cms_editable": true,
+    "category": "forms",
+    "maturity": "deployed",
+    "sidebar_position": 1,
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms",
+    "github": "https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22template-forms%22",
+    "intro": "This section provides guidance for building benefit applications, multi-step processes, and data collection experiences that serve Veterans and their families.",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Benefit applications.** Forms suited for benefit applications requiring personal information collection."
+        },
+        {
+          "value": "**Multi-step processes.** Processes requiring progress-saving and validation."
+        },
+        {
+          "value": "**Data collection.** Experiences needing validation and error handling."
+        },
+        {
+          "value": "**Authenticated experiences.** Where users review and update their information."
+        }
+      ]
+    },
+    "structure": {
+      "intro": "The complete form journey consists of five key pages that guide users from discovery to confirmation.",
+      "sections": [
+        {
+          "title": "How to Apply",
+          "description": "Drupal landing page outlining eligibility and application details."
+        },
+        {
+          "title": "Introduction",
+          "description": "Sets expectations and provides preparation steps before starting the form."
+        },
+        {
+          "title": "Step Pages",
+          "description": "Core information collection following established patterns."
+        },
+        {
+          "title": "Review",
+          "description": "Allows users to verify and edit their responses before submission."
+        },
+        {
+          "title": "Confirmation",
+          "description": "Explains next steps after successful submission."
+        }
+      ]
+    },
+    "content_guidelines": [
+      {
+        "value": "**One thing per page.** Reduce cognitive load by focusing on single tasks."
+      },
+      {
+        "value": "**Progressive disclosure.** Show only necessary content at each step."
+      },
+      {
+        "value": "**Clear progress indicators.** Help users understand where they are in the process."
+      },
+      {
+        "value": "**Automatic progress-saving.** Preserve user work for authenticated sessions."
+      },
+      {
+        "value": "**Plain language.** Use clear, simple communication throughout."
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Follow VA.gov form accessibility guidelines for all form implementations."
+      },
+      {
+        "value": "Use the VA Forms Library for standardized, accessible functionality."
+      },
+      {
+        "value": "Refer to the Content style guide for appropriate language."
+      },
+      {
+        "value": "See the Guide to Digitizing VA Forms for comprehensive project planning."
+      }
+    ]
+  },
+  "sidebar": "templatesSidebar",
+  "previous": {
+    "title": "Templates",
+    "permalink": "/docs/templates/"
+  },
+  "next": {
+    "title": "How to apply",
+    "permalink": "/docs/templates/forms/how-to-apply/"
+  }
+}

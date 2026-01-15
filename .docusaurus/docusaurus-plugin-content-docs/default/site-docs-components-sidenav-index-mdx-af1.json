@@ -1,0 +1,119 @@
+{
+  "id": "components/sidenav/index",
+  "title": "Side Navigation",
+  "description": "Secondary navigation for moving between related pages",
+  "source": "@site/docs/components/sidenav/index.mdx",
+  "sourceDirName": "components/sidenav",
+  "slug": "/components/sidenav/",
+  "permalink": "/docs/components/sidenav/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/sidenav/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Side Navigation",
+    "description": "Secondary navigation for moving between related pages",
+    "maturity": "deployed",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-sidenav",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library",
+    "storybook": "https://design.va.gov/storybook/?path=/docs/components-va-sidenav--docs",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Side+navigation%22",
+    "related": [
+      {
+        "name": "On this page",
+        "url": "../on-this-page",
+        "description": "For same-page navigation"
+      },
+      {
+        "name": "Header",
+        "url": "../header/",
+        "description": "For site-wide navigation"
+      },
+      {
+        "name": "Tabs",
+        "url": "../tabs",
+        "description": "Alternative organization pattern"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "Display navigational hierarchies of one or two levels"
+        },
+        {
+          "value": "Create sub-navigation for closely related pages"
+        },
+        {
+          "value": "Organize grouped content requiring secondary navigation"
+        },
+        {
+          "value": "Pages that are part of a larger section with 5+ related pages"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "Fewer than 5 pages; may not need full navigation structure"
+        },
+        {
+          "value": "Navigation within a single page; use [On this page](../on-this-page) component instead"
+        },
+        {
+          "value": "Links that aren't closely related or in the same website section"
+        },
+        {
+          "value": "Site-wide navigation; use [Header](../header/) instead"
+        }
+      ]
+    },
+    "content_considerations": [
+      {
+        "value": "Keep navigation labels concise but descriptive"
+      },
+      {
+        "value": "Use consistent naming conventions across related pages"
+      },
+      {
+        "value": "Organize items in logical order (by importance, alphabetically, or workflow)"
+      },
+      {
+        "value": "Limit nesting to two levels maximum for usability"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Default",
+        "description": "Simple link list without categories or hierarchy.",
+        "storyId": "components-va-sidenav--default",
+        "height": 300
+      },
+      {
+        "title": "Categorized links",
+        "description": "Non-clickable headings organizing child pages thematically.",
+        "storyId": "components-va-sidenav--categorized",
+        "height": 350
+      },
+      {
+        "title": "Nested links",
+        "description": "Parent links that also contain child page links.",
+        "storyId": "components-va-sidenav--nested",
+        "height": 400
+      }
+    ],
+    "code_usage": "<va-sidenav header=\"Benefits\">\n  <va-sidenav-item href=\"/health-care\" label=\"Health care\"></va-sidenav-item>\n  <va-sidenav-item href=\"/education\" label=\"Education\"></va-sidenav-item>\n  <va-sidenav-item href=\"/disability\" label=\"Disability\" current-page></va-sidenav-item>\n</va-sidenav>\n",
+    "component_tag": "va-sidenav"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Service List Item",
+    "permalink": "/docs/components/service-list-item/"
+  },
+  "next": {
+    "title": "Snackbar",
+    "permalink": "/docs/components/snackbar/"
+  }
+}

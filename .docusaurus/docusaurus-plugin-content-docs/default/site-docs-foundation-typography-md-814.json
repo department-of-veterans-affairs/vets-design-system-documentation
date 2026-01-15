@@ -1,0 +1,29 @@
+{
+  "id": "foundation/typography",
+  "title": "Typography",
+  "description": "Font families, sizes, weights, and line heights for VA.gov",
+  "source": "@site/docs/foundation/typography.md",
+  "sourceDirName": "foundation",
+  "slug": "/foundation/typography",
+  "permalink": "/docs/foundation/typography",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/typography.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Typography",
+    "description": "Font families, sizes, weights, and line heights for VA.gov",
+    "sidebar_position": 3
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Color Palette",
+    "permalink": "/docs/foundation/color-palette"
+  },
+  "next": {
+    "title": "Spacing Units",
+    "permalink": "/docs/foundation/spacing-units"
+  }
+}

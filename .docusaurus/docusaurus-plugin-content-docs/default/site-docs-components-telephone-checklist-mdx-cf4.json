@@ -1,0 +1,21 @@
+{
+  "id": "components/telephone/checklist",
+  "title": "Telephone - Component checklist",
+  "description": "Maturity and asset checklist for the Telephone component",
+  "source": "@site/docs/components/telephone/checklist.mdx",
+  "sourceDirName": "components/telephone",
+  "slug": "/components/telephone/checklist",
+  "permalink": "/docs/components/telephone/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/telephone/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Telephone - Component checklist",
+    "description": "Maturity and asset checklist for the Telephone component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

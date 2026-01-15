@@ -1,0 +1,72 @@
+---
+cms_editable: true
+title: Alert - Expandable
+description: A minimized alert style that surfaces relevant page information in a collapsible format
+maturity: deployed
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-alert-expandable
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Alert+-+Expandable%22
+related:
+  - name: Alert
+    url: /docs/components/alert/
+    description: Standard alert component for user-triggered responses
+  - name: Additional Info
+    url: /docs/components/additional-info
+    description: For clarifying information and context
+usage:
+  when_to_use:
+    - value: "**Unprompted alerts** - Information already present when the page loads, not triggered by user action"
+    - value: "**In-page alerts** - Content within page sections rather than at the top"
+    - value: "**Progressive disclosure** - Providing more information without forcing navigation away"
+  when_to_consider_else:
+    - value: "**User feedback** - Use standard [Alert](/docs/components/alert/) component for form submissions or user-triggered responses"
+    - value: "**Clarifying information** - Use [Additional Info](/docs/components/additional-info) component instead for question context"
+    - value: "**Error states** - Never collapse errors; use standard Alert variations"
+    - value: "**Page-level alerts** - This component is for section-level alerts only"
+accessibility:
+  - value: "**Static alerts (page load)** - No role needed"
+  - value: "**Time-sensitive info** - Use `role=\"alert\"` (assertive live region)"
+  - value: "**Interactive alerts** - Use `role=\"alertdialog\"` when user acknowledgment required"
+  - value: "**Advisory info** - Use `role=\"status\"` (polite live region)"
+  - value: No auto-dismissal timers
+  - value: Must announce expand/collapse state changes
+  - value: "Focusable elements within alert: headings, body copy, phone numbers, buttons"
+  - value: Use meaningful alt text for informative icons only
+examples:
+  - title: Informational
+    description: Informational
+    storyId: uswds-va-alert-expandable--default
+    height: 150
+  - title: Warning
+    description: Warning
+    storyId: uswds-va-alert-expandable--warning
+    height: 150
+  - title: Success
+    description: Success
+    storyId: uswds-va-alert-expandable--success
+    height: 150
+code_usage: |
+  <va-alert-expandable
+    status="info"
+    trigger="Click to expand for more information"
+  >
+    <p>Expanded content goes here.</p>
+  </va-alert-expandable>
+
+  <!-- Warning variation -->
+  <va-alert-expandable
+    status="warning"
+    trigger="Important notice"
+  >
+    <p>Warning content goes here.</p>
+  </va-alert-expandable>
+component_tag: va-alert-expandable
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

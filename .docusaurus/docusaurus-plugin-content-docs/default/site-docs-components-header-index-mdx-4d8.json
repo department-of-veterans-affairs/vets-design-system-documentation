@@ -1,0 +1,67 @@
+{
+  "id": "components/header/index",
+  "title": "Header",
+  "description": "Helps users identify where they are and navigate to main sections",
+  "source": "@site/docs/components/header/index.mdx",
+  "sourceDirName": "components/header",
+  "slug": "/components/header/",
+  "permalink": "/docs/components/header/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/header/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Header",
+    "description": "Helps users identify where they are and navigate to main sections",
+    "maturity": "deployed",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-header",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Header%22",
+    "variations": [
+      {
+        "name": "Header - Minimal",
+        "url": "./header-minimal",
+        "description": "Simplified header for form flows"
+      }
+    ],
+    "related": [
+      {
+        "name": "Banner - Official Gov",
+        "url": "/docs/components/banner/official-gov",
+        "description": "Government website identifier"
+      },
+      {
+        "name": "Footer",
+        "url": "/docs/components/footer/",
+        "description": "Page footer component"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "The header is required to provide global navigation"
+        },
+        {
+          "value": "Needed on nearly all pages within the va.gov domain"
+        },
+        {
+          "value": "Appears at the top of each page"
+        }
+      ]
+    }
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Textarea",
+    "permalink": "/docs/components/form/textarea/"
+  },
+  "next": {
+    "title": "Header - Minimal",
+    "permalink": "/docs/components/header/header-minimal/"
+  }
+}

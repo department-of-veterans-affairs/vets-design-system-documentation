@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/plain-language/index",
+  "title": "Plain language",
+  "description": "Standards for writing in plain language to help Veterans and their families understand essential information.",
+  "source": "@site/docs/content-style-guide/plain-language/index.md",
+  "sourceDirName": "content-style-guide/plain-language",
+  "slug": "/content-style-guide/plain-language/",
+  "permalink": "/docs/content-style-guide/plain-language/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/plain-language/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Plain language",
+    "description": "Standards for writing in plain language to help Veterans and their families understand essential information.",
+    "sidebar_position": 1
+  }
+}

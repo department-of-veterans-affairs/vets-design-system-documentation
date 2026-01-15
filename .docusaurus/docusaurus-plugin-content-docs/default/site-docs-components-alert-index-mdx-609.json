@@ -1,0 +1,198 @@
+{
+  "id": "components/alert/index",
+  "title": "Alert",
+  "description": "Keeps users informed of important and sometimes time-sensitive changes",
+  "source": "@site/docs/components/alert/index.mdx",
+  "sourceDirName": "components/alert",
+  "slug": "/components/alert/",
+  "permalink": "/docs/components/alert/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/alert/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Alert",
+    "description": "Keeps users informed of important and sometimes time-sensitive changes",
+    "maturity": "best-practice",
+    "platforms": [
+      "web",
+      "mobile"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-alert",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design&node-id=1064%3A2524",
+    "storybook": "https://design.va.gov/storybook/?path=/docs/uswds-va-alert--docs",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Alert+boxes%22",
+    "variations": [
+      {
+        "name": "Alert - Expandable",
+        "url": "./alert-expandable",
+        "description": "For important information that can be collapsed"
+      },
+      {
+        "name": "Alert - Sign-in",
+        "url": "./alert-sign-in",
+        "description": "Specialized alert for authentication flows"
+      }
+    ],
+    "related": [
+      {
+        "name": "Banner",
+        "url": "/docs/components/banner/",
+        "description": "For site-wide announcements"
+      },
+      {
+        "name": "Additional info",
+        "url": "/docs/components/additional-info",
+        "description": "For supplementary information"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "Notify users about system status"
+        },
+        {
+          "value": "Provide access messages when items aren't available"
+        },
+        {
+          "value": "Respond to user actions with feedback messages"
+        },
+        {
+          "value": "Deliver engagement messages encouraging data entry/updates"
+        },
+        {
+          "value": "Display unprompted, in-page alerts"
+        },
+        {
+          "value": "Most use cases and static content pages"
+        },
+        {
+          "value": "Full-width for emergency communication only"
+        },
+        {
+          "value": "Immediate feedback within forms/applications"
+        },
+        {
+          "value": "Sub-alerts creating hierarchy on pages with multiple alerts"
+        },
+        {
+          "value": "Save-in-progress success/error messaging"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "Use [Alert - Expandable](./alert-expandable) for important page information not responding to user feedback"
+        },
+        {
+          "value": "Use [Additional info](/docs/components/additional-info) for clarifying background information"
+        },
+        {
+          "value": "Use [Banner - Maintenance](/docs/components/banner/maintenance) for system maintenance messages"
+        },
+        {
+          "value": "Don't use alerts as the only page content"
+        }
+      ],
+      "behavior": [
+        {
+          "value": "Make alerts dismissible where appropriate"
+        },
+        {
+          "value": "Manage focus after dismissal—move focus to next logical location (next heading or main h1)"
+        },
+        {
+          "value": "Prevents keyboard/screen reader users from losing focus"
+        },
+        {
+          "value": "Don't stack alerts one after another"
+        },
+        {
+          "value": "Order multiple alerts by severity (most critical first, ideally at top)"
+        },
+        {
+          "value": "Place alerts within page body near related content"
+        }
+      ]
+    },
+    "content_considerations": [
+      {
+        "value": "Standard Alerts must contain headings. Slim alerts do not require headings."
+      },
+      {
+        "value": "Keep headings to 50 characters maximum"
+      },
+      {
+        "value": "Use direct, concise, plain language messaging"
+      },
+      {
+        "value": "No other expandable components (like Additional info) within alerts"
+      },
+      {
+        "value": "Acknowledge when issues are system-related, not user-caused"
+      },
+      {
+        "value": "Include educational material when helping resolve errors"
+      },
+      {
+        "value": "Avoid jargon and computer code in messages"
+      },
+      {
+        "value": "Don't overuse notifications—too many overwhelm users"
+      },
+      {
+        "value": "Use an action link when a link is needed—preferred for single, clear call-to-action links"
+      },
+      {
+        "value": "Use correct variations (e.g., Link - Directions for Maps, Telephone component for phone numbers)"
+      },
+      {
+        "value": "Don't use bold text for standard links in alert messages"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Informational",
+        "description": "Provides helpful information requiring user attention, not for negative consequences.",
+        "storyId": "uswds-va-alert--default",
+        "height": 200
+      },
+      {
+        "title": "Warning",
+        "description": "Warns users about negative consequences or issues that have gone wrong.",
+        "storyId": "uswds-va-alert--warning",
+        "height": 200
+      },
+      {
+        "title": "Success",
+        "description": "Indicates successful task completion.",
+        "storyId": "uswds-va-alert--success",
+        "height": 200
+      },
+      {
+        "title": "Error",
+        "description": "Indicates critical issues, failures, or items needing immediate attention.",
+        "storyId": "uswds-va-alert--error",
+        "height": 200
+      },
+      {
+        "title": "Slim",
+        "description": "A condensed variation without headings, useful for immediate feedback and form-specific messaging.",
+        "storyId": "uswds-va-alert--slim",
+        "height": 100
+      }
+    ],
+    "code_usage": "<!-- Informational alert -->\n<va-alert status=\"info\" visible>\n  <h2 slot=\"headline\">Alert headline</h2>\n  <p>Alert body text goes here.</p>\n</va-alert>\n\n<!-- Warning alert -->\n<va-alert status=\"warning\" visible>\n  <h2 slot=\"headline\">Warning headline</h2>\n  <p>Warning message content.</p>\n</va-alert>\n\n<!-- Slim alert -->\n<va-alert status=\"info\" slim>\n  <p>Slim alert message without headline.</p>\n</va-alert>\n\n<!-- Closeable alert -->\n<va-alert status=\"success\" closeable>\n  <h2 slot=\"headline\">Success!</h2>\n  <p>Your changes have been saved.</p>\n</va-alert>\n",
+    "component_tag": "va-alert"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Address block",
+    "permalink": "/docs/components/address-block/"
+  },
+  "next": {
+    "title": "Alert - Expandable",
+    "permalink": "/docs/components/alert/alert-expandable/"
+  }
+}

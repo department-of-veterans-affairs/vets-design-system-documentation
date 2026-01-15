@@ -1,0 +1,182 @@
+.checklist {
+  margin: 1.5rem 0;
+}
+
+.completionDates {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 4px;
+}
+
+.completionDate {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.completionLabel {
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.completionValue {
+  color: var(--ifm-color-emphasis-900);
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--ifm-color-primary);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.table th {
+  font-weight: 600;
+  background-color: var(--ifm-color-emphasis-100);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.scoreColumn {
+  width: 100px;
+  text-align: center !important;
+}
+
+.scoreCell {
+  text-align: center !important;
+}
+
+.criteriaName {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.criteriaDesc {
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* Status icons */
+.statusPass {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ecf3ec;
+  color: #216e1f;
+  font-weight: 700;
+}
+
+.statusFail {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #f8dfe2;
+  color: #b50909;
+  font-weight: 700;
+}
+
+.statusNa {
+  display: inline-block;
+  padding: 0.125rem 0.5rem;
+  border-radius: 4px;
+  background-color: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.statusPending {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: var(--ifm-color-emphasis-500);
+  font-weight: 700;
+}
+
+/* Accessibility audit section */
+.a11ySection {
+  margin-bottom: 1.5rem;
+}
+
+.a11yPlatform {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.auditDate {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* Audit status badges */
+.auditPass {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  background-color: #ecf3ec;
+  color: #216e1f;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.auditConditional {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  background-color: #faf3d1;
+  color: #936f38;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.auditFail {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  background-color: #f8dfe2;
+  color: #b50909;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.auditPending {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  color: var(--ifm-color-emphasis-500);
+  font-weight: 600;
+}

@@ -1,0 +1,29 @@
+{
+  "id": "accessibility/annotations",
+  "title": "Accessibility annotations",
+  "description": "Guidelines for adding accessibility annotations to mockups to communicate meaning, behaviors, and interactions.",
+  "source": "@site/docs/accessibility/annotations.md",
+  "sourceDirName": "accessibility",
+  "slug": "/accessibility/annotations",
+  "permalink": "/docs/accessibility/annotations",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/accessibility/annotations.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Accessibility annotations",
+    "description": "Guidelines for adding accessibility annotations to mockups to communicate meaning, behaviors, and interactions.",
+    "sidebar_position": 4
+  },
+  "sidebar": "accessibilitySidebar",
+  "previous": {
+    "title": "Accessibility for Teams",
+    "permalink": "/docs/accessibility/for-teams"
+  },
+  "next": {
+    "title": "Accessibility testing",
+    "permalink": "/docs/accessibility/testing"
+  }
+}

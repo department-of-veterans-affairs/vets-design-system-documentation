@@ -1,0 +1,29 @@
+{
+  "id": "foundation/utilities/flexbox",
+  "title": "Flexbox",
+  "description": "Flexbox utilities for controlling flex container and flex item properties.",
+  "source": "@site/docs/foundation/utilities/flexbox.md",
+  "sourceDirName": "foundation/utilities",
+  "slug": "/foundation/utilities/flexbox",
+  "permalink": "/docs/foundation/utilities/flexbox",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/utilities/flexbox.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Flexbox",
+    "description": "Flexbox utilities for controlling flex container and flex item properties.",
+    "sidebar_position": 5
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Display",
+    "permalink": "/docs/foundation/utilities/display"
+  },
+  "next": {
+    "title": "Font family",
+    "permalink": "/docs/foundation/utilities/font-family"
+  }
+}

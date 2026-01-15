@@ -1,0 +1,158 @@
+---
+cms_editable: true
+title: Components
+description: Reusable UI building blocks for VA.gov
+sidebar_position: 1
+---
+
+import Link from '@docusaurus/Link';
+
+# Components
+
+Components are interactive building blocks of the VA.gov Design System. They are reusable chunks of code used to create the user interface of VA.gov. Teams at VA.gov use design system components to ensure a consistent user experience for Veterans and their families.
+
+:::info USWDS v3 Migration
+Many components in this library have been updated to align with the U.S. Web Design System (USWDS) v3 while maintaining VA-specific design elements and accessibility requirements.
+:::
+
+---
+
+## Component governance
+
+### Required usage
+
+All teams building on VA.gov **must use v3 components exclusively**. Using a v1 component will be considered a launch-blocking issue.
+
+### No imposter components
+
+Teams must not create custom-coded elements that mimic design system components. This is a design system violation. Exceptions include:
+- Basic HTML `<button>` elements styled as the default button variation
+- Basic HTML `<a>` tags styled as default links
+
+### Components vs. Templates vs. Patterns
+
+| Concept | Description | Example |
+|---------|-------------|---------|
+| **Components** | Smallest UI building blocks | Button, Alert, Card |
+| **Templates** | Single-page layouts combining components | Form introduction page |
+| **Patterns** | Multi-page solutions for user needs | Apply for benefits flow |
+
+---
+
+## Platform availability
+
+Components are available on different platforms:
+
+| Icon | Platform |
+|------|----------|
+| **Web** | Available for VA.gov web applications |
+| **Mobile** | Available for VA mobile app |
+| **Both** | Available on web and mobile platforms |
+
+---
+
+## Component categories
+
+### Feedback & Alerts
+Inform users about important information, status changes, and system messages.
+
+- [Alert](./alert/) - Important and time-sensitive information
+- [Alert - Expandable](./alert/alert-expandable) - Collapsible important information
+- [Alert - Sign-in](./alert/alert-sign-in) - Authentication-related alerts
+- [Banner](./banner/) - Site-wide announcements
+- [Loading indicator](./loading-indicator/) - System processing feedback
+- [Modal](./modal/) - Focused interactions requiring user response
+- [Snackbar](./snackbar/) - Brief feedback messages
+
+### Navigation
+Help users move through the site and understand their location.
+
+- [Back to top](./back-to-top/) - Return to page top
+- [Breadcrumbs](./breadcrumbs/) - Location within site hierarchy
+- [Footer](./footer/) - Site-wide footer navigation
+- [Header](./header/) - Site-wide header navigation
+- [Link](./link/) - Navigation between pages
+- [On this page](./on-this-page/) - Jump links within a page
+- [Pagination](./pagination/) - Navigate multi-page content
+- [Side navigation](./sidenav/) - Section navigation
+- [Tabs](./tabs/) - Switch between related content views
+
+### Actions
+Enable users to take action and interact with the interface.
+
+- [Button](./button/) - Primary and secondary actions
+- [Button group](./button/button-group) - Multiple related buttons
+- [Button - Icon](./button/button-icon) - Tertiary actions with icons
+- [Button - Segmented](./button/button-segmented) - Toggle between options
+- [Critical Action](./critical-action/) - High-stakes confirmations
+- [Link - Action](./link/action) - Prominent call-to-action links
+
+### Form Components
+Collect information from users through forms.
+
+- [Form overview](./form/) - Form component guidance and patterns
+- [Autosave](./form/autosave/) - Save progress indicator
+- [Checkbox](./form/checkbox/) - Multi-select options
+- [Combo box](./form/combo-box/) - Searchable dropdown
+- [Date input](./form/date-input/) - Date selection with dropdowns
+- [File input](./form/file-input/) - File uploads
+- [Label](./form/label/) - Form field labels
+- [Memorable date](./form/memorable-date/) - Date entry with text fields
+- [Need help?](./form/need-help/) - Contact information footer
+- [Penalty notice](./form/penalty-notice/) - Legal disclosure
+- [Prefill](./form/prefill/) - Pre-populated data notice
+- [Privacy Agreement](./form/privacy-agreement/) - Privacy policy acceptance
+- [Progress bar - Segmented](./form/progress-bar-segmented/) - Multi-step form progress
+- [Radio button](./form/radio-button/) - Single-select options
+- [Select](./form/select/) - Dropdown selection
+- [Statement of truth](./form/statement-of-truth/) - Digital signature
+- [Telephone input](./form/telephone-input/) - Phone number entry
+- [Text input](./form/text-input/) - Single-line text entry
+- [Textarea](./form/textarea/) - Multi-line text entry
+
+### Content Display
+Present information and content to users.
+
+- [Accordion](./accordion/) - Expandable content sections
+- [Additional info](./additional-info/) - Supplementary information toggle
+- [Card](./card/) - Grouped content container
+- [Divider](./divider/) - Visual content separator
+- [Icon](./icon/) - Visual symbols and indicators
+- [Link - Collection](./link/collection) - Related links grouped together
+- [List](./list/) - Ordered and unordered content lists
+- [OMB info](./omb-info/) - OMB control number display
+- [Process list](./process-list/) - Step-by-step instructions
+- [Progress bar - Activity](./progress-bar/) - Upload/processing progress
+- [Summary box](./summary-box/) - Key information highlight
+- [Table](./table/) - Tabular data display
+- [Tag](./tag/) - Labels and categories
+- [Telephone](./telephone/) - Phone number display
+- [Text](./text/) - Typography and text styling
+
+### Specialized Components
+VA-specific components for unique use cases.
+
+- [Address block](./address-block/) - Formatted address display
+- [Crisis Line Modal](./modal/crisis-line-modal) - Veterans Crisis Line
+- [Language toggle](./language-toggle/) - Language selection
+- [Search Filter](./search-filter/) - Filter search results
+- [Search Input](./search-input/) - Search functionality
+- [Service List Item](./service-list-item/) - Service offerings display
+
+---
+
+## Deprecated components
+
+The following components are deprecated and should not be used in new development:
+
+- **Banner - Promo** - Use standard [Banner](./banner/) instead
+- **Input message** - Use [Alert](./alert/) (slim variant) instead
+- **Notification** - Use [Alert](./alert/) instead
+
+---
+
+## Resources
+
+- [Component checklist criteria](/docs/about/component-documentation-guide#component-checklist-pages) - Understanding maturity ratings
+- Accessibility guidelines - Building accessible components (coming soon)
+- [Contributing to the design system](/docs/about/contributing/) - How to propose changes

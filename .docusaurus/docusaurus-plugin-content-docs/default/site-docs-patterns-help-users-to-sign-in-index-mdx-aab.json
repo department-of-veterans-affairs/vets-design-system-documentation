@@ -1,0 +1,139 @@
+{
+  "id": "patterns/help-users-to/sign-in/index",
+  "title": "Sign in",
+  "description": "Follow this pattern to help users sign into VA online services and access verified accounts.",
+  "source": "@site/docs/patterns/help-users-to/sign-in/index.mdx",
+  "sourceDirName": "patterns/help-users-to/sign-in",
+  "slug": "/patterns/help-users-to/sign-in/",
+  "permalink": "/docs/patterns/help-users-to/sign-in/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/patterns/help-users-to/sign-in/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Sign in",
+    "description": "Follow this pattern to help users sign into VA online services and access verified accounts.",
+    "cms_editable": true,
+    "category": "help-users-to",
+    "maturity": "use-with-caution",
+    "sidebar_position": 3,
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms",
+    "github": "https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-sign-in%22",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Help+users+to...+Sign+in%22",
+    "intro": "Use this pattern for products requiring or allowing sign-in to VA.gov or VA online services, with tailored alerts for verified vs. unverified access scenarios.",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Products requiring sign-in.** When your product requires users to sign in to VA.gov or VA online services."
+        },
+        {
+          "value": "**Verified account access.** When services need verified account authentication."
+        }
+      ],
+      "design_principles": [
+        {
+          "value": "**Use standard alerts.** Select one of two blue alert variations (required vs. optional sign-in)."
+        },
+        {
+          "value": "**Handle unverified accounts.** Implement all three yellow verification alerts for unverified accounts."
+        },
+        {
+          "value": "**Conditional display.** Alerts display conditionally based on user sign-in status and account type."
+        },
+        {
+          "value": "**Collaborate on custom implementations.** Work with CAIA and identity teams for custom implementations."
+        }
+      ],
+      "when_not_to_use": [
+        {
+          "value": "**Unverified accounts accepted.** Products that accept unverified accounts may need adjustments."
+        },
+        {
+          "value": "**No prefill capability.** Products that allow sign-in without prefill capability."
+        },
+        {
+          "value": "**Alternative incentives.** Products with alternative sign-in incentives (e.g., Intent to File generation)."
+        },
+        {
+          "value": "**My HealtheVet specific.** Products requiring My HealtheVet registration specifically."
+        }
+      ]
+    },
+    "examples": [
+      {
+        "title": "Required sign-in (verified)",
+        "description": "Blue alert indicating sign-in is required for verified accounts."
+      },
+      {
+        "title": "Optional sign-in (verified)",
+        "description": "Blue alert indicating sign-in is optional but recommended."
+      },
+      {
+        "title": "Verify account alerts",
+        "description": "Yellow alerts prompting users to verify with ID.me or Login.gov."
+      }
+    ],
+    "how_to_build": {
+      "intro": "The sign-in pattern uses alert variations based on sign-in requirements and account status.",
+      "steps": [
+        {
+          "value": "Select the appropriate blue alert: required sign-in or optional sign-in."
+        },
+        {
+          "value": "Implement all three yellow verification alerts for unverified accounts."
+        },
+        {
+          "value": "Display alerts conditionally based on user sign-in status."
+        },
+        {
+          "value": "Support account types: Login.gov, ID.me, My HealtheVet."
+        },
+        {
+          "value": "Request identity team review of pull requests."
+        },
+        {
+          "value": "Obtain CAIA content review for any content changes."
+        }
+      ],
+      "components_used": [
+        {
+          "name": "Alert - sign-in",
+          "url": "/docs/components/alert"
+        }
+      ]
+    },
+    "content_considerations": [
+      {
+        "value": "Do not modify alert content without CAIA approval."
+      },
+      {
+        "value": "These alerts typically serve as the sole sign-in messaging."
+      },
+      {
+        "value": "Reference the style guide section on sign-in and identity verification for additional content needs."
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Follow VA.gov accessibility standards for all alert components."
+      },
+      {
+        "value": "Ensure sign-in buttons and links are keyboard accessible."
+      },
+      {
+        "value": "Alert content must be announced to screen readers."
+      }
+    ]
+  },
+  "sidebar": "patternsSidebar",
+  "previous": {
+    "title": "Help users to...",
+    "permalink": "/docs/patterns/help-users-to/"
+  },
+  "next": {
+    "title": "Recover from errors",
+    "permalink": "/docs/patterns/help-users-to/recover-from-errors/"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "id": "components/telephone/index",
+  "title": "Telephone",
+  "description": "Displays clickable phone numbers for calling or messaging",
+  "source": "@site/docs/components/telephone/index.mdx",
+  "sourceDirName": "components/telephone",
+  "slug": "/components/telephone/",
+  "permalink": "/docs/components/telephone/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/telephone/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Telephone",
+    "description": "Displays clickable phone numbers for calling or messaging",
+    "maturity": "best-practice",
+    "platforms": [
+      "web",
+      "mobile"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-telephone",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Telephone%22",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "Display phone numbers that should be clickable for calling or messaging"
+        },
+        {
+          "value": "Present contact information with extensions, international codes, or TTY/SMS capabilities"
+        },
+        {
+          "value": "Make phone numbers accessible on mobile devices"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "When the text is not an actual phone number meant to be called or messaged"
+        },
+        {
+          "value": "For displaying numbers that are purely informational"
+        }
+      ]
+    },
+    "content_considerations": [
+      {
+        "value": "Format phone numbers with hyphens without parentheses: `212-123-1234`"
+      },
+      {
+        "value": "Use \"+1\" prefix only for international audiences"
+      },
+      {
+        "value": "Extensions should use \"ext. 9\" format"
+      },
+      {
+        "value": "Avoid vanity numbers in body copy except for marketing materials"
+      },
+      {
+        "value": "Include area codes for all phone numbers"
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Clickable phone numbers are announced as links by screen readers"
+      },
+      {
+        "value": "The `messageAriaDescribedby` prop can provide additional context"
+      },
+      {
+        "value": "TTY numbers should be clearly labeled for users who need them"
+      },
+      {
+        "value": "Non-clickable numbers should still be formatted consistently"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Default",
+        "description": "Default",
+        "storyId": "uswds-va-telephone--default",
+        "height": 80
+      },
+      {
+        "title": "With extension",
+        "description": "With extension",
+        "storyId": "uswds-va-telephone--with-extension",
+        "height": 80
+      },
+      {
+        "title": "International",
+        "description": "International",
+        "storyId": "uswds-va-telephone--international",
+        "height": 80
+      },
+      {
+        "title": "TTY",
+        "description": "TTY",
+        "storyId": "uswds-va-telephone--tty",
+        "height": 80
+      },
+      {
+        "title": "SMS",
+        "description": "SMS",
+        "storyId": "uswds-va-telephone--sms",
+        "height": 80
+      }
+    ],
+    "code_usage": "<!-- Default phone number -->\n<va-telephone contact=\"8006982411\"></va-telephone>\n\n<!-- With extension -->\n<va-telephone contact=\"8006982411\" extension=\"123\"></va-telephone>\n\n<!-- International format -->\n<va-telephone contact=\"8006982411\" international></va-telephone>\n\n<!-- TTY -->\n<va-telephone contact=\"711\" tty></va-telephone>\n\n<!-- SMS -->\n<va-telephone contact=\"838255\" sms></va-telephone>\n\n<!-- Not clickable (display only) -->\n<va-telephone contact=\"8006982411\" not-clickable></va-telephone>\n",
+    "component_tag": "va-telephone"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Tag - Status",
+    "permalink": "/docs/components/tag/tag-status/"
+  },
+  "next": {
+    "title": "Text",
+    "permalink": "/docs/components/text/"
+  }
+}

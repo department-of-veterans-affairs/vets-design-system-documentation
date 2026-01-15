@@ -1,0 +1,27 @@
+{
+  "id": "ia/url-standards/vanity-urls",
+  "title": "Vanity URLs",
+  "description": "Guidelines for creating short, memorable URLs for campaigns on VA.gov",
+  "source": "@site/docs/ia/url-standards/vanity-urls.md",
+  "sourceDirName": "ia/url-standards",
+  "slug": "/ia/url-standards/vanity-urls",
+  "permalink": "/docs/ia/url-standards/vanity-urls",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/ia/url-standards/vanity-urls.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Vanity URLs",
+    "description": "Guidelines for creating short, memorable URLs for campaigns on VA.gov"
+  },
+  "sidebar": "iaSidebar",
+  "previous": {
+    "title": "Redirects",
+    "permalink": "/docs/ia/url-standards/redirects"
+  },
+  "next": {
+    "title": "VA Health and Benefits App",
+    "permalink": "/docs/ia/va-health-and-benefits-app"
+  }
+}

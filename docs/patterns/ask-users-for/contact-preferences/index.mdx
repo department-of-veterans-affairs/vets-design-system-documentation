@@ -1,0 +1,47 @@
+---
+title: Contact preferences
+description: Follow this pattern to ask users how they'd like to be contacted.
+cms_editable: true
+category: ask-users-for
+maturity: deployed
+sidebar_position: 14
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms
+github: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-contact-preferences%22
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Ask+users+for...+Contact+preferences%22
+
+intro: Use this pattern when you want to ask a user how they'd like to be contacted, allowing them to select a preferred communication method.
+
+usage:
+  when_to_use:
+    - value: "**Capturing preferred contact method.** When your form requires knowing how the user prefers to be contacted."
+    - value: "**Form-specific requirements.** Different forms may have varying contact method options based on stakeholder needs."
+  design_principles:
+    - value: "**Give users one choice.** Allow users to pick one method of contact using radio buttons."
+    - value: "**Vary options by form.** The available contact methods may differ depending on form requirements."
+    - value: "**Work with stakeholders.** Determine what contact information is necessary for each form."
+
+examples:
+  - title: Method of contact
+    description: Radio button list allowing users to select their preferred contact method.
+
+how_to_build:
+  intro: The contact preferences pattern uses radio buttons for single selection.
+  steps:
+    - value: "Present contact methods as a radio button list."
+    - value: "Common options include: Phone, Email, Mail, or Text message."
+    - value: "Ensure options align with what the form/service can actually support."
+    - value: "Collect the corresponding contact information based on the selection."
+  components_used:
+    - name: Radio button
+      url: /docs/components/form/radio-button
+
+accessibility:
+  - value: "Radio buttons must be properly grouped with a fieldset and legend."
+  - value: "Each option must have a visible label."
+  - value: "Ensure keyboard navigation works correctly between options."
+---
+
+import PatternPage from '@site/src/components/PatternPage';
+
+<PatternPage frontMatter={frontMatter} />
+

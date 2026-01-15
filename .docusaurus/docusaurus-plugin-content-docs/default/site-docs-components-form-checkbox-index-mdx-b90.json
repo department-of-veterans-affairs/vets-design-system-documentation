@@ -1,0 +1,126 @@
+{
+  "id": "components/form/checkbox/index",
+  "title": "Checkbox",
+  "description": "Allows users to select one or more items from a list",
+  "source": "@site/docs/components/form/checkbox/index.mdx",
+  "sourceDirName": "components/form/checkbox",
+  "slug": "/components/form/checkbox/",
+  "permalink": "/docs/components/form/checkbox/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/form/checkbox/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Checkbox",
+    "description": "Allows users to select one or more items from a list",
+    "maturity": "deployed",
+    "platforms": [
+      "web",
+      "mobile"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-checkbox",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Checkbox%22",
+    "related": [
+      {
+        "name": "Radio Button",
+        "url": "../radio-button",
+        "description": "For single selection from a list"
+      },
+      {
+        "name": "Select",
+        "url": "../select",
+        "description": "For dropdown selection"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "Multiple selections are needed from a list"
+        },
+        {
+          "value": "Users can select any combination of options"
+        },
+        {
+          "value": "Clear, direct selection mechanisms are required"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "Too many options exist for mobile screen display"
+        },
+        {
+          "value": "Only one selection is allowed (use [Radio Button](../radio-button) instead)"
+        },
+        {
+          "value": "Selecting requires complex conditional logic without progressive disclosure"
+        }
+      ]
+    },
+    "accessibility": [
+      {
+        "value": "**VoiceOver:** \"mixed,\" \"partially selected,\" or \"selected\""
+      },
+      {
+        "value": "**NVDA:** \"partially checked\""
+      },
+      {
+        "value": "**JAWS:** \"mixed\" or \"partially checked\""
+      },
+      {
+        "value": "**Narrator:** \"indeterminate\""
+      },
+      {
+        "value": "Use clear labels describing the controlled group"
+      },
+      {
+        "value": "Provide optional hint text explaining all-select behavior"
+      },
+      {
+        "value": "Employ semantic grouping (fieldset/legend or role=\"group\")"
+      },
+      {
+        "value": "Test with actual screen reader users"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Single Checkbox",
+        "description": "Single Checkbox",
+        "storyId": "uswds-va-checkbox--default",
+        "height": 100
+      },
+      {
+        "title": "Checkbox Group",
+        "description": "Checkbox Group",
+        "storyId": "uswds-va-checkbox-group--default",
+        "height": 200
+      },
+      {
+        "title": "With error",
+        "description": "With error",
+        "storyId": "uswds-va-checkbox-group--error",
+        "height": 220
+      },
+      {
+        "title": "Tile variant",
+        "description": "Tile variant",
+        "storyId": "uswds-va-checkbox-group--tile",
+        "height": 250
+      }
+    ],
+    "code_usage": "<!-- Single checkbox -->\n<va-checkbox\n  label=\"I agree to the terms\"\n  name=\"agreement\"\n  required\n></va-checkbox>\n\n<!-- Checkbox group -->\n<va-checkbox-group\n  label=\"Select your preferred contact methods\"\n  required\n>\n  <va-checkbox label=\"Email\" name=\"contact\" value=\"email\"></va-checkbox>\n  <va-checkbox label=\"Phone\" name=\"contact\" value=\"phone\"></va-checkbox>\n  <va-checkbox label=\"Mail\" name=\"contact\" value=\"mail\"></va-checkbox>\n</va-checkbox-group>\n",
+    "component_tag": "va-checkbox-group"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Autosave",
+    "permalink": "/docs/components/form/autosave/"
+  },
+  "next": {
+    "title": "Combo Box",
+    "permalink": "/docs/components/form/combo-box/"
+  }
+}

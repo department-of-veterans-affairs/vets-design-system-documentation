@@ -1,0 +1,29 @@
+{
+  "id": "about/component-documentation-guide",
+  "title": "Component Documentation Guide",
+  "description": "How to write and update component documentation pages",
+  "source": "@site/docs/about/component-documentation-guide.md",
+  "sourceDirName": "about",
+  "slug": "/about/component-documentation-guide",
+  "permalink": "/docs/about/component-documentation-guide",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/about/component-documentation-guide.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "title": "Component Documentation Guide",
+    "description": "How to write and update component documentation pages",
+    "sidebar_position": 10
+  },
+  "sidebar": "aboutSidebar",
+  "previous": {
+    "title": "Maturity scale",
+    "permalink": "/docs/about/maturity-scale"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/about/metrics/"
+  }
+}

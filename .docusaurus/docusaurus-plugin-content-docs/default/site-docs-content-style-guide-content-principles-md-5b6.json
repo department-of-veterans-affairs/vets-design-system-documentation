@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/content-principles",
+  "title": "Content principles",
+  "description": "Core principles for creating better content on VA.gov that is consistent, conversational, clear, and empathetic.",
+  "source": "@site/docs/content-style-guide/content-principles.md",
+  "sourceDirName": "content-style-guide",
+  "slug": "/content-style-guide/content-principles",
+  "permalink": "/docs/content-style-guide/content-principles",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/content-principles.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Content principles",
+    "description": "Core principles for creating better content on VA.gov that is consistent, conversational, clear, and empathetic.",
+    "sidebar_position": 2
+  }
+}

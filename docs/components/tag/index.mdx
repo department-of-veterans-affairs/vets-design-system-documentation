@@ -1,0 +1,45 @@
+---
+cms_editable: true
+title: Tag
+description: Draws attention to new or important content, categorizes information, or indicates counts
+maturity: deployed
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-tag
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Tag%22
+variations:
+  - name: Tag - Status
+    url: ./tag-status
+    description: For status communication with semantic colors
+usage:
+  when_to_use:
+    - value: Highlight new or important content on a page
+    - value: Categorize results by topic, type, or other classification
+    - value: Indicate quantity or count of items (e.g., unread emails)
+  when_to_consider_else:
+    - value: "**For status communication**: Use [Tag - Status](./tag-status) instead when communicating current state with semantic color meaning"
+    - value: "**Risk of confusion with buttons**: Conduct usability testing if users might mistake tags for interactive elements"
+    - value: "**As page titles**: Use the Eyebrow header style for descriptive titles"
+    - value: "**As links**: Use the Critical Action component if interactivity is needed"
+accessibility:
+  - value: All variations meet WCAG 2.2 AA color contrast requirements
+  - value: Tags are non-interactive, non-focusable elements
+  - value: Should not interfere with Tab key navigation flow
+  - value: Announced as text content without additional context
+  - value: Tag text must be clear and meaningful when heard in isolation
+  - value: For dynamic content updates, use `aria-live="polite"` (non-urgent) or `aria-live="assertive"` (critical)
+  - value: Maintain consistent placement and behavior across the application
+  - value: Use simple language avoiding technical jargon
+code_usage: |
+  <va-tag>New</va-tag>
+
+  <va-tag>Category Name</va-tag>
+component_tag: va-tag
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

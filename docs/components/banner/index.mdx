@@ -1,0 +1,61 @@
+---
+cms_editable: true
+title: Banner
+description: Displays announcements at the top of pages for urgent communications
+maturity: deployed
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-banner
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+storybook: https://design.va.gov/storybook/?path=/docs/uswds-va-banner--docs
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Banner%22
+variations:
+  - name: Banner - Maintenance
+    url: ./maintenance
+    description: For system maintenance notifications
+  - name: Banner - Official Gov
+    url: ./official-gov
+    description: Identifies official government websites
+related:
+  - name: Alert
+    url: /docs/components/alert/
+    description: For user feedback and system messages
+usage:
+  when_to_use:
+    - value: "**Emergency communications:** Government shutdowns or critical VA service disruptions"
+    - value: "**Facility-related notices:** Hours changes, construction, weather alerts, closures, utility outages"
+    - value: "**Veteran actions required:** IRS deadlines, notification sign-ups"
+  when_to_consider_else:
+    - value: "**Alert component:** User feedback, system messages, engagement notifications"
+    - value: "**Banner - Maintenance:** Scheduled downtime announcements"
+    - value: "**CMS components:** Health-related promotions, events, news releases"
+content_considerations:
+  - value: Maximum 70 characters (with spaces)
+  - value: Scan-friendly, eliminate unnecessary detail
+  - value: Maximum 300 characters (with spaces)
+  - value: Link to detail pages for additional information
+examples:
+  - title: Info banner
+    description: Info banner
+    storyId: uswds-va-banner--default
+    height: 150
+  - title: Warning banner
+    description: Warning banner
+    storyId: uswds-va-banner--warning
+    height: 150
+code_usage: |
+  <va-banner
+    headline="Important announcement"
+    type="info"
+    show-close
+  >
+    <p>Banner content with <a href="/details">more details</a>.</p>
+  </va-banner>
+component_tag: va-banner
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

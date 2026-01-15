@@ -1,0 +1,21 @@
+{
+  "id": "components/modal/checklist",
+  "title": "Modal - Component checklist",
+  "description": "Maturity and asset checklist for the Modal component",
+  "source": "@site/docs/components/modal/checklist.mdx",
+  "sourceDirName": "components/modal",
+  "slug": "/components/modal/checklist",
+  "permalink": "/docs/components/modal/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/modal/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Modal - Component checklist",
+    "description": "Maturity and asset checklist for the Modal component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

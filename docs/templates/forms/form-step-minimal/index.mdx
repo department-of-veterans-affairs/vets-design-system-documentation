@@ -1,0 +1,95 @@
+---
+title: Form step - Minimal
+description: A simplified form step template with reduced header/footer to minimize cognitive load.
+cms_editable: true
+category: forms
+maturity: use-with-caution
+sidebar_position: 5
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms
+github: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22template-form-step-minimal%22
+
+intro: This template is for all internal pages of a digitized form that asks Veterans to enter information, select an option, or upload supporting documents. It uses a simplified header/footer to reduce cognitive load.
+
+usage:
+  when_to_use:
+    - value: "**All new forms.** All new forms should use this template per current guidance."
+    - value: "**Multi-page form flows.** Creating multi-page form flows (excluding introduction, review, confirmation pages)."
+    - value: "**Authenticated or unauthenticated.** Forms requiring either authenticated or unauthenticated user experiences."
+  when_not_to_use:
+    - value: "**Introduction pages.** Use the Introduction template instead."
+    - value: "**Review pages.** Use the Review template instead."
+    - value: "**Confirmation pages.** Use the Confirmation template instead."
+    - value: "**Existing forms.** Unless migration investment is justified."
+  usability:
+    - value: "**Request prerequisite information.** Gather information before it's needed in the flow."
+    - value: "**Front-load easier questions.** Start with easier questions for user comfort."
+    - value: "**Group related information.** Organize logically by topic."
+
+structure:
+  intro: The template has authenticated and unauthenticated variations with minimal chrome.
+  sections:
+    - title: Minimal header
+      description: Simplified header with form title and subtitle.
+    - title: Back link
+      description: Navigation to previous step.
+    - title: Segmented progress bar
+      description: Shows current step with step label.
+    - title: Autosave message
+      description: Authenticated only - shows save status.
+    - title: Page header (H1)
+      description: Unique heading describing requested information.
+    - title: Form question content
+      description: The actual form fields for this step.
+    - title: Finish later link
+      description: Authenticated only - save and exit option.
+    - title: Continue button
+      description: Primary action to proceed.
+    - title: Autosave alert
+      description: Authenticated only - confirmation of saved progress.
+    - title: Need help component
+      description: Contact information for assistance.
+    - title: Feedback pattern
+      description: User feedback collection.
+    - title: Minimal footer
+      description: Simplified footer with essential links only.
+  components_used:
+    - name: Minimal header
+      url: /docs/components/header
+    - name: Back link
+      url: /docs/components/link
+    - name: Progress bar - segmented
+      url: /docs/components/progress-bar
+    - name: Additional info
+      url: /docs/components/additional-info
+    - name: Alert
+      url: /docs/components/alert
+      description: Autosave alert
+    - name: Need help
+      url: /docs/components/form/need-help
+    - name: Minimal footer
+      url: /docs/components/footer
+
+examples:
+  - title: Request personal records (VA Form 20-10206)
+    description: Example of minimal form step template in production.
+    url: https://www.va.gov/records/request-personal-records-form-20-10206/introduction
+
+content_guidelines:
+  - value: "**Unique H1 per page.** Each question page requires a unique H1 that describes the requested information."
+  - value: "**H1 can be input label.** The H1 can be a text input label, form field group legend, or standalone text coded as H1."
+  - value: "**Fieldset/legend structure.** Associate helper text with the legend for proper screen reader announcement."
+  - value: "**Keep hint text brief.** Single short sentences; avoid line breaks and links."
+
+accessibility:
+  - value: "**Unique H1 prevents disorientation.** Repetitive H1s confuse sighted and screen reader users."
+  - value: "**Proper fieldset/legend associations.** Essential for screen reader users."
+  - value: "**Focus management.** Consistent navigation for keyboard users."
+  - value: "Research found sighted users confused by repetitive H1s and step headings."
+  - value: "Screen reader users reported disorientation from redundant H1s."
+  - value: "Mobile magnification users may have content hidden below fold."
+---
+
+import TemplatePage from '@site/src/components/TemplatePage';
+
+<TemplatePage frontMatter={frontMatter} />
+

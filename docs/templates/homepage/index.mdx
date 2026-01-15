@@ -1,0 +1,74 @@
+---
+title: Homepage
+description: The primary landing page for VA.gov providing an overview of VA offerings for Veterans and families.
+cms_editable: true
+category: pages
+maturity: deployed
+sidebar_position: 11
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms
+github: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22template-homepage%22
+
+intro: The homepage serves as VA.gov's primary landing page, providing an overview of VA offerings for Veterans, service members, family members, and caregivers. It facilitates navigation to key features and enables visitors to explore benefits, access services, and sign in for personalized experiences.
+
+usage:
+  when_to_use:
+    - value: "**VA.gov homepage only.** Only for www.va.gov's single, unique homepage."
+    - value: "**All site visitors.** Serves visitors seeking to re-orient themselves or explore VA offerings."
+  when_not_to_use:
+    - value: "**Subsection landing pages.** Not intended for subsections, sub-directories, or subdomains of VA.gov."
+    - value: "**Other landing pages.** Using this template elsewhere creates confusion about site location and navigation."
+  usability:
+    - value: "**Single messages only.** No rotating content."
+    - value: "**Clear, accessible language.** For all Veterans and family members."
+    - value: "**Follow section-specific guidance.** Refer to component documentation for each area."
+
+structure:
+  intro: The template includes 11 sections in a specific order.
+  sections:
+    - title: Header
+      description: Standard header component.
+    - title: Page Title
+      description: "H1 'Welcome to VA.gov' (permanent fixture)."
+    - title: Main Promo
+      description: Single message with H2 heading (max 35 characters), text (max 125 characters), and one action link.
+    - title: Create Account
+      description: H2 introduction, one sign-in button, one support link.
+    - title: Search Tools
+      description: H2 title, global search input, 2-4 links to VA search tools.
+    - title: Top Pages
+      description: H2 title, 8-10 links displayed across 2 columns.
+    - title: Featured News
+      description: "H2 'VA NEWS' title, photo (large screens only), article title, teaser text (max 160 characters), two links."
+    - title: Benefit Hubs
+      description: "H2 'Explore VA benefits and health care,' icons, hub names, teaser text (max 500 characters)."
+    - title: Feedback Survey
+      description: Implements standard feedback pattern.
+    - title: Email Sign-up
+      description: "H2 'Sign up to get the latest VA updates,' text input with submit CTA."
+    - title: Footer
+      description: Standard footer component.
+
+examples:
+  - title: VA.gov Homepage
+    description: Live implementation of the homepage template.
+    url: https://www.va.gov/
+
+content_guidelines:
+  - value: "Single messages only - no rotating content."
+  - value: "Clear, accessible language for all Veterans and family members."
+  - value: "Character limits: Main promo heading max 35 characters, text max 125 characters."
+  - value: "News teaser text max 160 characters."
+  - value: "Benefit hub teaser text max 500 characters."
+  - value: "Ownership: OPIA manages promo and news; OCTO governs search, pages, hubs, feedback, and email sections."
+
+accessibility:
+  - value: "Design emphasizes clarity and accessibility across all audience segments."
+  - value: "No rotating or multiple simultaneous messages to prevent confusion."
+  - value: "Proper heading hierarchy throughout all sections."
+  - value: "Follow component-specific accessibility guidance."
+---
+
+import TemplatePage from '@site/src/components/TemplatePage';
+
+<TemplatePage frontMatter={frontMatter} />
+

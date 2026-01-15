@@ -1,0 +1,95 @@
+{
+  "id": "components/back-to-top/index",
+  "title": "Back to top",
+  "description": "Allows users to quickly return to the top of long pages",
+  "source": "@site/docs/components/back-to-top/index.mdx",
+  "sourceDirName": "components/back-to-top",
+  "slug": "/components/back-to-top/",
+  "permalink": "/docs/components/back-to-top/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/back-to-top/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Back to top",
+    "description": "Allows users to quickly return to the top of long pages",
+    "maturity": "deployed",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-back-to-top",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "storybook": "https://design.va.gov/storybook/?path=/docs/uswds-va-back-to-top--docs",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Back+to+top%22",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "Pages with static content exceeding two screens on large/medium displays"
+        },
+        {
+          "value": "Content longer than four screens on small screens"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "Pages with brief, short-length static content"
+        },
+        {
+          "value": "Single-screen pages where scrolling is minimal"
+        }
+      ],
+      "behavior": [
+        {
+          "value": "Reveals as a sticky element in the lower right during scrolling"
+        },
+        {
+          "value": "Displays \"Back to top\" label with upward arrow on desktop"
+        },
+        {
+          "value": "Shows arrow icon only on small screens"
+        },
+        {
+          "value": "Smoothly scrolls to page top when clicked"
+        },
+        {
+          "value": "Remains fixed at bottom right when user reaches page end"
+        }
+      ]
+    },
+    "accessibility": [
+      {
+        "value": "Animations can be distracting to users with vestibular conditions"
+      },
+      {
+        "value": "Respects user smooth-scrolling preferences via `prefers-reduced-motion`"
+      },
+      {
+        "value": "Should programmatically focus near-page-top element (like H1) after click"
+      },
+      {
+        "value": "Provides clear visible focus state for keyboard users"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Default",
+        "description": "Default",
+        "storyId": "uswds-va-back-to-top--default",
+        "height": 400
+      }
+    ],
+    "code_usage": "<va-back-to-top></va-back-to-top>\n",
+    "component_tag": "va-back-to-top"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Alert - Sign-in",
+    "permalink": "/docs/components/alert/alert-sign-in/"
+  },
+  "next": {
+    "title": "Banner",
+    "permalink": "/docs/components/banner/"
+  }
+}

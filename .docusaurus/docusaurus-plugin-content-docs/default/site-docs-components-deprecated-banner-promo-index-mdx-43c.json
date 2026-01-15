@@ -1,0 +1,29 @@
+{
+  "id": "components/deprecated/banner-promo/index",
+  "title": "Banner - Promo",
+  "description": "Deprecated promotional banner component",
+  "source": "@site/docs/components/deprecated/banner-promo/index.mdx",
+  "sourceDirName": "components/deprecated/banner-promo",
+  "slug": "/components/deprecated/banner-promo/",
+  "permalink": "/docs/components/deprecated/banner-promo/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/deprecated/banner-promo/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Banner - Promo",
+    "description": "Deprecated promotional banner component",
+    "maturity": "deprecated"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Deprecated",
+    "permalink": "/docs/components/deprecated/"
+  },
+  "next": {
+    "title": "Input message",
+    "permalink": "/docs/components/deprecated/input-message/"
+  }
+}

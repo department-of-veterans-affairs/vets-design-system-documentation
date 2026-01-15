@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/trademarks",
+  "title": "Trademarks",
+  "description": "Guidelines for using trademark symbols with VA program and benefit names.",
+  "source": "@site/docs/content-style-guide/trademarks.md",
+  "sourceDirName": "content-style-guide",
+  "slug": "/content-style-guide/trademarks",
+  "permalink": "/docs/content-style-guide/trademarks",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/trademarks.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 22,
+  "frontMatter": {
+    "title": "Trademarks",
+    "description": "Guidelines for using trademark symbols with VA program and benefit names.",
+    "sidebar_position": 22
+  }
+}

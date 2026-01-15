@@ -1,0 +1,28 @@
+---
+cms_editable: true
+title: Crisis Line Modal
+description: Displays contact information for the Veterans Crisis Line
+maturity: use-with-caution
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-crisis-line-modal
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Crisis+line+modal%22
+related:
+  - name: "Modal"
+    url: "/docs/components/modal/"
+    description: "Base modal component"
+  - name: "Header"
+    url: "/docs/components/header/"
+    description: "Contains crisis line modal"
+code_usage: |
+  <va-crisis-line-modal></va-crisis-line-modal>
+
+component_tag: va-crisis-line-modal
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

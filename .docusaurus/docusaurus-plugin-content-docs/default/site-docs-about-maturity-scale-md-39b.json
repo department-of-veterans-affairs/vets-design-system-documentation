@@ -1,0 +1,29 @@
+{
+  "id": "about/maturity-scale",
+  "title": "Maturity scale",
+  "description": "Categories and levels for understanding component and pattern usability confidence.",
+  "source": "@site/docs/about/maturity-scale.md",
+  "sourceDirName": "about",
+  "slug": "/about/maturity-scale",
+  "permalink": "/docs/about/maturity-scale",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/about/maturity-scale.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "title": "Maturity scale",
+    "description": "Categories and levels for understanding component and pattern usability confidence.",
+    "sidebar_position": 9
+  },
+  "sidebar": "aboutSidebar",
+  "previous": {
+    "title": "Using Web Components",
+    "permalink": "/docs/about/developers/web-components"
+  },
+  "next": {
+    "title": "Component Documentation Guide",
+    "permalink": "/docs/about/component-documentation-guide"
+  }
+}

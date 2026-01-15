@@ -1,0 +1,33 @@
+---
+cms_editable: true
+title: Banner - Official Gov
+description: Identifies official U.S. government websites and helps visitors understand security measures
+maturity: deployed
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-official-gov-banner
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Banner+-+Official+gov%22
+related:
+  - name: "Banner"
+    url: "/docs/components/banner/"
+    description: "For general announcements"
+  - name: "Banner - Maintenance"
+    url: "/docs/components/banner/maintenance"
+    description: "For system maintenance notifications"
+  - name: "Header"
+    url: "/docs/components/header/"
+    description: "Page header that appears below this banner"
+code_usage: |
+  <va-official-gov-banner
+    tld="gov"
+  ></va-official-gov-banner>
+
+component_tag: va-official-gov-banner
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

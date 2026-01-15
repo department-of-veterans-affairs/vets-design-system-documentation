@@ -1,0 +1,138 @@
+{
+  "id": "patterns/ask-users-for/service-history/index",
+  "title": "Service history",
+  "description": "Follow this pattern to ask users about their military service history and periods of service.",
+  "source": "@site/docs/patterns/ask-users-for/service-history/index.mdx",
+  "sourceDirName": "patterns/ask-users-for/service-history",
+  "slug": "/patterns/ask-users-for/service-history/",
+  "permalink": "/docs/patterns/ask-users-for/service-history/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/patterns/ask-users-for/service-history/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "title": "Service history",
+    "description": "Follow this pattern to ask users about their military service history and periods of service.",
+    "cms_editable": true,
+    "category": "ask-users-for",
+    "maturity": "deployed",
+    "sidebar_position": 9,
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms",
+    "github": "https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-service-history%22",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Ask+users+for...+Service+history%22",
+    "intro": "Use this pattern when gathering information about a Veteran's periods of service in the military.",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Gathering service periods.** When forms require documentation of Veteran's periods of military service."
+        },
+        {
+          "value": "**Multiple service periods.** When Veterans need to add more than one service period."
+        },
+        {
+          "value": "**Reviewing prefilled data.** When forms allow reviewing and updating prefilled service data."
+        }
+      ],
+      "design_principles": [
+        {
+          "value": "**Use multiple response pattern.** When forms allow Veterans to add more than one service period."
+        },
+        {
+          "value": "**Some forms only need recent service.** Health care applications may only require the most recent branch of service."
+        },
+        {
+          "value": "**Clarify data scope.** Clearly state that any changes made to service data within the form won't change the data that VA has on file."
+        },
+        {
+          "value": "**Minimize POW requests.** Prisoner of War information should only be requested when absolutely necessary."
+        }
+      ],
+      "when_not_to_use": [
+        {
+          "value": "**Not required by form.** When service information isn't required for the application."
+        }
+      ]
+    },
+    "examples": [
+      {
+        "title": "Service periods",
+        "description": "Form collecting branch of service, start date, and end date."
+      },
+      {
+        "title": "Service under another name",
+        "description": "Multiple response pattern for names used during service."
+      }
+    ],
+    "how_to_build": {
+      "intro": "Service history collection is organized into logical sections.",
+      "steps": [
+        {
+          "value": "**Service periods section:** Branch of service (combo box), service start date, service end date."
+        },
+        {
+          "value": "**Service locations section:** Place service started, place service ended (text inputs)."
+        },
+        {
+          "value": "**Service details section:** Service number, grade/rank/rating, character of discharge, type of service."
+        },
+        {
+          "value": "**Service under another name:** Uses multiple responses pattern with summary review."
+        },
+        {
+          "value": "**Reserves and National Guard:** Obligation start/end dates, unit name."
+        },
+        {
+          "value": "**POW status (when required):** Period start/end dates with optional estimate hint text."
+        }
+      ],
+      "components_used": [
+        {
+          "name": "Memorable date",
+          "url": "/docs/components/form/memorable-date"
+        },
+        {
+          "name": "Text input",
+          "url": "/docs/components/form/text-input"
+        },
+        {
+          "name": "Combo box",
+          "url": "/docs/components/form/combo-box"
+        }
+      ]
+    },
+    "code_usage": "Service history patterns use combinations of form components organized into logical sections.\n\n**Branch of service** uses a combo box with autocomplete functionality.\n\nSee the [vets-website repository](https://github.com/department-of-veterans-affairs/vets-website) for implementation details.\n",
+    "content_considerations": [
+      {
+        "value": "Use the standard branch of service list maintained by VA."
+      },
+      {
+        "value": "Provide hint text clarifying what information is required vs. optional."
+      },
+      {
+        "value": "For POW dates, include hint text that estimates are acceptable."
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Ensure all date fields have proper labels and are keyboard accessible."
+      },
+      {
+        "value": "Branch of service combo box must be screen reader friendly."
+      },
+      {
+        "value": "Provide clear error messages for invalid date ranges."
+      }
+    ]
+  },
+  "sidebar": "patternsSidebar",
+  "previous": {
+    "title": "Files",
+    "permalink": "/docs/patterns/ask-users-for/files/"
+  },
+  "next": {
+    "title": "Feedback",
+    "permalink": "/docs/patterns/ask-users-for/feedback/"
+  }
+}

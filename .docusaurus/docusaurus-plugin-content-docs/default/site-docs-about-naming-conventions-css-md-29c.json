@@ -1,0 +1,29 @@
+{
+  "id": "about/naming-conventions/css",
+  "title": "CSS",
+  "description": "CSS naming conventions using BEM syntax for the VA Design System.",
+  "source": "@site/docs/about/naming-conventions/css.md",
+  "sourceDirName": "about/naming-conventions",
+  "slug": "/about/naming-conventions/css",
+  "permalink": "/docs/about/naming-conventions/css",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/about/naming-conventions/css.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "CSS",
+    "description": "CSS naming conventions using BEM syntax for the VA Design System.",
+    "sidebar_position": 2
+  },
+  "sidebar": "aboutSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/about/naming-conventions/"
+  },
+  "next": {
+    "title": "What's new",
+    "permalink": "/docs/about/whats-new"
+  }
+}

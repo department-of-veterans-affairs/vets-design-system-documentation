@@ -1,0 +1,29 @@
+{
+  "id": "foundation/utilities/index",
+  "title": "Utilities",
+  "description": "Single-property CSS classes that provide flexibility within the design system.",
+  "source": "@site/docs/foundation/utilities/index.md",
+  "sourceDirName": "foundation/utilities",
+  "slug": "/foundation/utilities/",
+  "permalink": "/docs/foundation/utilities/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/utilities/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Utilities",
+    "description": "Single-property CSS classes that provide flexibility within the design system.",
+    "sidebar_position": 1
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Page Layouts",
+    "permalink": "/docs/foundation/layout/page-layouts"
+  },
+  "next": {
+    "title": "Background color",
+    "permalink": "/docs/foundation/utilities/background-color"
+  }
+}

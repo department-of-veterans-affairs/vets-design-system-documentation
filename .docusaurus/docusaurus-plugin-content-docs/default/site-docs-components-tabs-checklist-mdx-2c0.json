@@ -1,0 +1,21 @@
+{
+  "id": "components/tabs/checklist",
+  "title": "Tabs - Component checklist",
+  "description": "Maturity and asset checklist for the Tabs component",
+  "source": "@site/docs/components/tabs/checklist.mdx",
+  "sourceDirName": "components/tabs",
+  "slug": "/components/tabs/checklist",
+  "permalink": "/docs/components/tabs/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/tabs/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Tabs - Component checklist",
+    "description": "Maturity and asset checklist for the Tabs component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

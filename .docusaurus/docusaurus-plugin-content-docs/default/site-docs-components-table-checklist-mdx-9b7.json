@@ -1,0 +1,21 @@
+{
+  "id": "components/table/checklist",
+  "title": "Table - Component checklist",
+  "description": "Maturity and asset checklist for the Table component",
+  "source": "@site/docs/components/table/checklist.mdx",
+  "sourceDirName": "components/table",
+  "slug": "/components/table/checklist",
+  "permalink": "/docs/components/table/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/table/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Table - Component checklist",
+    "description": "Maturity and asset checklist for the Table component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

@@ -1,0 +1,60 @@
+---
+cms_editable: true
+title: Progress bar - Activity
+description: Visual feedback displaying system progress during user-initiated actions
+maturity: deployed
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-progress-bar
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Progress+bar+-+Activity%22
+related:
+  - name: Progress bar - Segmented
+    url: ../form/progress-bar-segmented
+    description: For form step indicators
+  - name: Loading indicator
+    url: ../loading-indicator
+    description: For indeterminate loading states
+usage:
+  when_to_use:
+    - value: "**System status feedback**: Provide real-time progress updates when users initiate actions (e.g., file uploads)"
+    - value: "**Determinate processes**: Use when progress percentage can be calculated and displayed accurately"
+    - value: "Following the first usability heuristic: \"The design should always keep users informed about what is going on\""
+  when_to_consider_else:
+    - value: "**Form step indicators**: Use [Progress bar - Segmented](../form/progress-bar-segmented) instead for multi-step processes"
+    - value: "**Indeterminate loading**: Use [Loading indicator](../loading-indicator) component when completion time is unknown"
+  behavior:
+    - value: Progress bar fills continuously until completion
+    - value: Progress should never go backwards—once advanced, the percentage cannot decrease
+    - value: Place near the UI element triggering the activity for proximity principle
+content_considerations:
+  - value: Provide a clear label describing what action is in progress
+  - value: Keep labels concise but descriptive
+  - value: Consider showing the percentage value alongside the visual bar for clarity
+accessibility:
+  - value: The `label` property provides accessible text for screen readers
+  - value: Use `noPercentScreenReader` to control whether screen readers announce percentage updates
+  - value: Progress updates are announced to assistive technology as the value changes
+  - value: Ensure the progress bar has sufficient color contrast
+examples:
+  - title: Default
+    description: Default
+    storyId: components-va-progress-bar--default
+    height: 100
+  - title: With label
+    description: With label
+    storyId: components-va-progress-bar--with-label
+    height: 100
+code_usage: |
+  <va-progress-bar
+    percent="45"
+    label="Uploading your document"
+  ></va-progress-bar>
+component_tag: va-progress-bar
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

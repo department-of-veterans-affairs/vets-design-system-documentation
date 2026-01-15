@@ -1,0 +1,29 @@
+{
+  "id": "foundation/utilities/measure",
+  "title": "Measure",
+  "description": "CSS classes for setting maximum width using character units.",
+  "source": "@site/docs/foundation/utilities/measure.md",
+  "sourceDirName": "foundation/utilities",
+  "slug": "/foundation/utilities/measure",
+  "permalink": "/docs/foundation/utilities/measure",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/utilities/measure.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 13,
+  "frontMatter": {
+    "title": "Measure",
+    "description": "CSS classes for setting maximum width using character units.",
+    "sidebar_position": 13
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Margins",
+    "permalink": "/docs/foundation/utilities/margins"
+  },
+  "next": {
+    "title": "Padding",
+    "permalink": "/docs/foundation/utilities/padding"
+  }
+}

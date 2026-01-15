@@ -1,0 +1,30 @@
+{
+  "id": "about/contributing/index",
+  "title": "Contributing",
+  "description": "How to contribute to the VA.gov Design System",
+  "source": "@site/docs/about/contributing/index.md",
+  "sourceDirName": "about/contributing",
+  "slug": "/about/contributing/",
+  "permalink": "/docs/about/contributing/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/about/contributing/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Contributing",
+    "description": "How to contribute to the VA.gov Design System",
+    "sidebar_label": "Overview",
+    "sidebar_position": 1
+  },
+  "sidebar": "aboutSidebar",
+  "previous": {
+    "title": "About",
+    "permalink": "/docs/about/"
+  },
+  "next": {
+    "title": "Experimental components and patterns",
+    "permalink": "/docs/about/contributing/experimental-components"
+  }
+}

@@ -1,0 +1,77 @@
+---
+title: Files
+description: Follow this pattern to help users upload files and provide required documentation.
+cms_editable: true
+category: ask-users-for
+maturity: deployed
+sidebar_position: 8
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms
+github: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-files%22
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Ask+users+for...+Files%22
+
+intro: Use this pattern when users must upload files to provide required documentation for their application.
+
+usage:
+  when_to_use:
+    - value: "**Required documentation.** When a user must upload a file to provide required documentation for their application."
+  design_principles:
+    - value: "**Use clear terminology.** Use 'upload' and 'delete' rather than 'add', 'remove', or 'edit'."
+    - value: "**Prefer 'file' over 'document'.** The term 'file' has broader applicability."
+    - value: "**Validate thoroughly.** Check mime-type and file extension matching, verify UTF encoding."
+    - value: "**Handle encrypted PDFs.** Detect encrypted PDFs and prompt for password when needed."
+    - value: "**Require confirmation for deletion.** Use two-step confirmation before deleting uploaded files."
+  when_not_to_use:
+    - value: "**Non-essential files.** When files don't impact service delivery."
+    - value: "**Batch uploads.** Avoid batch uploading scenarios which are mobile-unfriendly and create UX/technical issues."
+
+examples:
+  - title: Default file upload
+    description: File input with instructions about accepted file types and size limits.
+  - title: Review uploaded file
+    description: Card displaying filename with change and delete options.
+  - title: Delete confirmation
+    description: Modal confirming the user wants to delete an uploaded file.
+
+how_to_build:
+  intro: The file upload pattern guides users through uploading and managing documentation.
+  steps:
+    - value: "Header clearly describing what file to upload."
+    - value: "Instructions explaining file type requirements and why the file is needed."
+    - value: "Bullet list of permitted file types and size limits."
+    - value: "File input component for uploading."
+    - value: "Review state: Card displaying filename with change/delete options."
+    - value: "Delete state: Confirmation modal for destructive action."
+  components_used:
+    - name: File input
+      url: /docs/components/form/file-input
+    - name: Modal
+      url: /docs/components/modal
+
+code_usage: |
+  The file upload pattern uses the File input component with validation.
+
+  **Validation requirements:**
+  - Check mime-type and file extension matching
+  - Verify UTF encoding for proper handling
+  - Detect encrypted PDFs and prompt for password
+
+  See the [vets-website repository](https://github.com/department-of-veterans-affairs/vets-website) for implementation details.
+
+content_considerations:
+  - value: "Use 'upload' and 'delete' rather than 'add', 'remove', or 'edit'."
+  - value: "Prefer 'file' over 'document' for broader applicability."
+  - value: "Provide explicit action language in instructions."
+  - value: "Clearly list accepted file types and maximum file size."
+
+accessibility:
+  - value: "Avoid italicizing help text about file types and sizes."
+  - value: "Require two-step confirmation before deleting files."
+  - value: "Provide clear, actionable error messages explaining upload failures."
+  - value: "Ensure support for screen reader and magnification users."
+  - value: "The file input must have a visible, associated label."
+---
+
+import PatternPage from '@site/src/components/PatternPage';
+
+<PatternPage frontMatter={frontMatter} />
+

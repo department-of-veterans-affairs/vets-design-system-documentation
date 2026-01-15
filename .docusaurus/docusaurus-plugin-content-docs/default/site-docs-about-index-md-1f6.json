@@ -1,0 +1,25 @@
+{
+  "id": "about/index",
+  "title": "About",
+  "description": "About the VA.gov Design System",
+  "source": "@site/docs/about/index.md",
+  "sourceDirName": "about",
+  "slug": "/about/",
+  "permalink": "/docs/about/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/about/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "About",
+    "description": "About the VA.gov Design System",
+    "sidebar_position": 1
+  },
+  "sidebar": "aboutSidebar",
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/about/contributing/"
+  }
+}

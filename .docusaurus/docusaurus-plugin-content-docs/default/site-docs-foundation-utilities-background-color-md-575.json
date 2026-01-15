@@ -1,0 +1,29 @@
+{
+  "id": "foundation/utilities/background-color",
+  "title": "Background color",
+  "description": "CSS classes to modify an element's background color using the VA.gov color palette.",
+  "source": "@site/docs/foundation/utilities/background-color.md",
+  "sourceDirName": "foundation/utilities",
+  "slug": "/foundation/utilities/background-color",
+  "permalink": "/docs/foundation/utilities/background-color",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/utilities/background-color.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Background color",
+    "description": "CSS classes to modify an element's background color using the VA.gov color palette.",
+    "sidebar_position": 2
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Utilities",
+    "permalink": "/docs/foundation/utilities/"
+  },
+  "next": {
+    "title": "Border",
+    "permalink": "/docs/foundation/utilities/border"
+  }
+}

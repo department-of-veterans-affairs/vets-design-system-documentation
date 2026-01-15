@@ -1,0 +1,20 @@
+{
+  "id": "components/form/progress-bar-segmented/checklist",
+  "title": "Progress Bar - Segmented - Component checklist",
+  "description": "Maturity and asset checklist for the Progress Bar - Segmented component",
+  "source": "@site/docs/components/form/progress-bar-segmented/checklist.mdx",
+  "sourceDirName": "components/form/progress-bar-segmented",
+  "slug": "/components/form/progress-bar-segmented/checklist",
+  "permalink": "/docs/components/form/progress-bar-segmented/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/form/progress-bar-segmented/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Progress Bar - Segmented - Component checklist",
+    "description": "Maturity and asset checklist for the Progress Bar - Segmented component",
+    "sidebar_label": "Checklist"
+  }
+}

@@ -1,0 +1,67 @@
+---
+title: Navigate benefit applications
+description: Follow this pattern to help users navigate complex benefit applications through structured phases.
+cms_editable: true
+category: help-users-to
+maturity: deployed
+sidebar_position: 5
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms
+github: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-navigate-benefit-applications%22
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Help+users+to...+Navigate+benefit+applications%22
+
+intro: Use this pattern to help Veterans navigate complex benefit applications through four structured phases - Eligibility, How to apply, Apply now, and After you apply.
+
+usage:
+  when_to_use:
+    - value: "**Complex benefit applications.** When policies and regulations around benefits are complex and users need guidance."
+    - value: "**Eligibility assessment.** When users need help determining if they're eligible."
+    - value: "**Application guidance.** When users need to understand what to provide and what to expect."
+  design_principles:
+    - value: "**Four-phase structure.** Organize into Eligibility, How to apply, Apply now, and After you apply."
+    - value: "**Present common scenarios.** Present the most common scenario using featured content."
+    - value: "**Scale complexity.** Build from simple to complex information."
+    - value: "**Set expectations.** Clearly communicate processing timeframes."
+
+examples:
+  - title: Eligibility page
+    description: Page helping users understand if they qualify for a benefit.
+  - title: How to apply page
+    description: Page explaining preparation and application methods.
+  - title: Apply now page
+    description: Entry point to the application with process map.
+  - title: After you apply page
+    description: Page explaining what to expect after submission.
+
+how_to_build:
+  intro: Structure benefit applications into four distinct phases.
+  steps:
+    - value: "**Eligibility:** Use title 'Eligibility for [Benefit Name]'. Present common scenarios with featured content."
+    - value: "**How to Apply:** Use title 'How to apply for [Benefit Name]'. Include multiple application methods."
+    - value: "**Apply Now:** Show subway map with four steps - Prepare, Apply, VA review, VA decision."
+    - value: "**After You Apply:** Use title 'After you apply for [Benefit Name]'. Communicate processing timeframes."
+    - value: "Include sign-in messaging for authenticated/unauthenticated users."
+    - value: "Include OMB information and need-help footer on Apply Now page."
+  components_used:
+    - name: Summary box
+      url: /docs/components/summary-box
+    - name: Featured content
+      url: /docs/components/summary-box
+    - name: Alert
+      url: /docs/components/alert
+    - name: Process list
+      url: /docs/components/process-list
+    - name: Accordion
+      url: /docs/components/accordion
+    - name: Card
+      url: /docs/components/card
+
+accessibility:
+  - value: "Screen reader users cannot visually scan for below-the-fold content."
+  - value: "Important information should not be placed solely below key call-to-action elements."
+  - value: "Ensure all navigation elements are keyboard accessible."
+---
+
+import PatternPage from '@site/src/components/PatternPage';
+
+<PatternPage frontMatter={frontMatter} />
+

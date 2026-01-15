@@ -1,0 +1,29 @@
+{
+  "id": "foundation/utilities/height-and-width",
+  "title": "Height and width",
+  "description": "CSS classes for controlling element dimensions.",
+  "source": "@site/docs/foundation/utilities/height-and-width.md",
+  "sourceDirName": "foundation/utilities",
+  "slug": "/foundation/utilities/height-and-width",
+  "permalink": "/docs/foundation/utilities/height-and-width",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/utilities/height-and-width.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "title": "Height and width",
+    "description": "CSS classes for controlling element dimensions.",
+    "sidebar_position": 10
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Font weight",
+    "permalink": "/docs/foundation/utilities/font-weight"
+  },
+  "next": {
+    "title": "Line height",
+    "permalink": "/docs/foundation/utilities/line-height"
+  }
+}

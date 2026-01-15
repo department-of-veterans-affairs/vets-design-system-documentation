@@ -1,0 +1,10 @@
+{
+  "label": "Help users to...",
+  "position": 3,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "description": "Patterns for guiding user interactions including checking eligibility, navigating applications, and more."
+  }
+}

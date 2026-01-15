@@ -1,0 +1,78 @@
+{
+  "id": "components/form/date-input/index",
+  "title": "Date Input",
+  "description": "Helps users enter dates they know or can approximate",
+  "source": "@site/docs/components/form/date-input/index.mdx",
+  "sourceDirName": "components/form/date-input",
+  "slug": "/components/form/date-input/",
+  "permalink": "/docs/components/form/date-input/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/form/date-input/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Date Input",
+    "description": "Helps users enter dates they know or can approximate",
+    "maturity": "deployed",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-date",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Date+input%22",
+    "related": [
+      {
+        "name": "Memorable Date",
+        "url": "../memorable-date",
+        "description": "Alternative date input format"
+      },
+      {
+        "name": "Text Input",
+        "url": "../text-input",
+        "description": "For general text entry"
+      },
+      {
+        "name": "Select",
+        "url": "../select",
+        "description": "For dropdown selections"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Full date input**: For dates users know precisely, such as birth dates, marriage dates, or credit card expiration dates"
+        },
+        {
+          "value": "**Month/year variant**: For dates users can approximate, like high school graduation or GED completion dates"
+        }
+      ]
+    },
+    "examples": [
+      {
+        "title": "Default (Full date)",
+        "description": "Default (Full date)",
+        "storyId": "uswds-va-date--default",
+        "height": 150
+      },
+      {
+        "title": "With error",
+        "description": "With error",
+        "storyId": "uswds-va-date--error",
+        "height": 180
+      }
+    ],
+    "code_usage": "<!-- Full date input -->\n<va-date\n  label=\"Date of birth\"\n  name=\"dateOfBirth\"\n  required\n></va-date>\n\n<!-- Month/year only -->\n<va-date\n  label=\"When did you graduate?\"\n  name=\"graduationDate\"\n  month-year-only\n  hint=\"Month and year are fine if you don't remember the exact date\"\n></va-date>\n",
+    "component_tag": "va-date"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Combo Box",
+    "permalink": "/docs/components/form/combo-box/"
+  },
+  "next": {
+    "title": "File Input",
+    "permalink": "/docs/components/form/file-input/"
+  }
+}

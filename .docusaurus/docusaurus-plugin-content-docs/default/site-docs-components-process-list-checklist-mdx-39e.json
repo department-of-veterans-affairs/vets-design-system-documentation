@@ -1,0 +1,21 @@
+{
+  "id": "components/process-list/checklist",
+  "title": "Process list - Component checklist",
+  "description": "Maturity and asset checklist for the Process list component",
+  "source": "@site/docs/components/process-list/checklist.mdx",
+  "sourceDirName": "components/process-list",
+  "slug": "/components/process-list/checklist",
+  "permalink": "/docs/components/process-list/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/process-list/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Process list - Component checklist",
+    "description": "Maturity and asset checklist for the Process list component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

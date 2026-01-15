@@ -1,0 +1,22 @@
+---
+cms_editable: false
+title: On this page - Component checklist
+description: Maturity and asset checklist for the On this page component
+sidebar_label: Checklist
+unlisted: true
+---
+
+import ComponentChecklist from '@site/src/components/ComponentChecklist';
+import { checklistData } from '@site/src/data/component-checklist';
+import ChecklistDefinitions from '@site/docs/_partials/checklist-definitions.mdx';
+import Link from '@docusaurus/Link';
+
+# On this page checklist
+
+<Link to="/docs/components/on-this-page">← Back to On this page</Link>
+
+This checklist tracks the maturity, code assets, visual assets, and accessibility audit status for the On this page component.
+
+<ComponentChecklist data={checklistData['on-this-page']} platform="web" />
+
+<ChecklistDefinitions />

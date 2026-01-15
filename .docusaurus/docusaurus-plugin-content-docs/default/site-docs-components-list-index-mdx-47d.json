@@ -1,0 +1,113 @@
+{
+  "id": "components/list/index",
+  "title": "List",
+  "description": "Organizes information into discrete sequential sections",
+  "source": "@site/docs/components/list/index.mdx",
+  "sourceDirName": "components/list",
+  "slug": "/components/list/",
+  "permalink": "/docs/components/list/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/list/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "List",
+    "description": "Organizes information into discrete sequential sections",
+    "maturity": "deployed",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-list",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+List%22",
+    "related": [
+      {
+        "name": "Card",
+        "url": "../card",
+        "description": "For content needing visual containment"
+      },
+      {
+        "name": "Service list item",
+        "url": "../service-list-item",
+        "description": "For benefit/tool summaries"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Unordered lists**: When item sequence doesn't matter"
+        },
+        {
+          "value": "**Ordered lists**: For step-by-step instructions or sequential information requiring specific order"
+        },
+        {
+          "value": "**Definition lists**: To associate terminology with explanations"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "Avoid single-item lists entirely"
+        },
+        {
+          "value": "Don't use sub-bullets; convert to separate lists instead"
+        },
+        {
+          "value": "Keep lists under 7 items; use subheadings to break longer lists into digestible sections"
+        },
+        {
+          "value": "For benefit/tool summaries, use [Service list item](/docs/components/service-list-item)"
+        },
+        {
+          "value": "For content needing visual containment, use [Card](/docs/components/card)"
+        }
+      ]
+    },
+    "content_considerations": [
+      {
+        "value": "Introduce lists with full sentences (avoid \"the following\")"
+      },
+      {
+        "value": "Keep items succinct—target 1-2 sentences maximum per item"
+      },
+      {
+        "value": "Use parallel construction (consistent starting format across items)"
+      },
+      {
+        "value": "When connecting items with \"and/or,\" use commas and bold the connector"
+      },
+      {
+        "value": "Don't combine introduction text with list item opening words"
+      },
+      {
+        "value": "Create an account"
+      },
+      {
+        "value": "Verify your identity"
+      },
+      {
+        "value": "Submit your application"
+      },
+      {
+        "value": "Creating an account"
+      },
+      {
+        "value": "You need to verify your identity"
+      },
+      {
+        "value": "Application submission"
+      }
+    ],
+    "code_usage": "<ul>\n  <li>First item</li>\n  <li>Second item</li>\n  <li>Third item</li>\n</ul>\n"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Link - Collection",
+    "permalink": "/docs/components/link/collection/"
+  },
+  "next": {
+    "title": "Loading indicator",
+    "permalink": "/docs/components/loading-indicator/"
+  }
+}

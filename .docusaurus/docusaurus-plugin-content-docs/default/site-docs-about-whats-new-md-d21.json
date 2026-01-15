@@ -1,0 +1,29 @@
+{
+  "id": "about/whats-new",
+  "title": "What's new",
+  "description": "Latest releases, updates, and changes to the VA Design System.",
+  "source": "@site/docs/about/whats-new.md",
+  "sourceDirName": "about",
+  "slug": "/about/whats-new",
+  "permalink": "/docs/about/whats-new",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/about/whats-new.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "title": "What's new",
+    "description": "Latest releases, updates, and changes to the VA Design System.",
+    "sidebar_position": 12
+  },
+  "sidebar": "aboutSidebar",
+  "previous": {
+    "title": "CSS",
+    "permalink": "/docs/about/naming-conventions/css"
+  },
+  "next": {
+    "title": "Search Architecture",
+    "permalink": "/docs/about/search-architecture"
+  }
+}

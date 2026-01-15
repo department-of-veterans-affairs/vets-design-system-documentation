@@ -1,0 +1,20 @@
+{
+  "id": "components/form/penalty-notice/checklist",
+  "title": "Penalty Notice - Component checklist",
+  "description": "Maturity and asset checklist for the Penalty Notice component",
+  "source": "@site/docs/components/form/penalty-notice/checklist.mdx",
+  "sourceDirName": "components/form/penalty-notice",
+  "slug": "/components/form/penalty-notice/checklist",
+  "permalink": "/docs/components/form/penalty-notice/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/form/penalty-notice/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Penalty Notice - Component checklist",
+    "description": "Maturity and asset checklist for the Penalty Notice component",
+    "sidebar_label": "Checklist"
+  }
+}

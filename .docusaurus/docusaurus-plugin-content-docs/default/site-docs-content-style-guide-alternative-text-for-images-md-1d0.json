@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/alternative-text-for-images",
+  "title": "Alternative text for images",
+  "description": "Guidelines for writing effective alt text that ensures all users receive equivalent information.",
+  "source": "@site/docs/content-style-guide/alternative-text-for-images.md",
+  "sourceDirName": "content-style-guide",
+  "slug": "/content-style-guide/alternative-text-for-images",
+  "permalink": "/docs/content-style-guide/alternative-text-for-images",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/alternative-text-for-images.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Alternative text for images",
+    "description": "Guidelines for writing effective alt text that ensures all users receive equivalent information.",
+    "sidebar_position": 4
+  }
+}

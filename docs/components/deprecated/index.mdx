@@ -1,0 +1,63 @@
+---
+cms_editable: true
+title: Deprecated
+description: Components that are no longer recommended for use
+sidebar_position: 99
+---
+
+# Deprecated Components
+
+These components are deprecated and should not be used in new development. If you are currently using any of these components, please migrate to the recommended alternatives.
+
+:::warning Deprecated
+The components listed below are no longer maintained and will be removed in future releases. Please plan to migrate to the recommended alternatives.
+:::
+
+---
+
+## Deprecated component list
+
+| Component | Status | Replacement |
+|-----------|--------|-------------|
+| [Banner - Promo](./banner-promo) | Deprecated | [Banner](../banner/) |
+| [Input message](./input-message) | Deprecated | [Alert](../alert/) (slim variant) |
+| [Notification](./notification) | Deprecated | [Alert](../alert/) |
+
+---
+
+## Migration guidance
+
+### Banner - Promo → Banner
+
+The promotional banner variant has been consolidated into the standard Banner component. Use the default Banner component for all banner needs.
+
+### Input message → Alert (slim)
+
+Input messages for form validation feedback should now use the slim variant of the Alert component:
+
+```html
+<va-alert status="error" slim>
+  <p>Please enter a valid email address.</p>
+</va-alert>
+```
+
+### Notification → Alert
+
+General notifications should use the Alert component with the appropriate status:
+
+```html
+<va-alert status="info" visible>
+  <h2 slot="headline">Important update</h2>
+  <p>Your information has been saved.</p>
+</va-alert>
+```
+
+---
+
+## Need help migrating?
+
+If you need assistance migrating from deprecated components, please:
+
+1. Review the documentation for the replacement component
+2. Check the [VA.gov Design System GitHub](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues) for migration guides
+3. Reach out to the Design System team for support

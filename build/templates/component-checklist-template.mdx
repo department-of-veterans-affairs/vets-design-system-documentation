@@ -1,0 +1,33 @@
+{/*
+  COMPONENT CHECKLIST TEMPLATE
+
+  Instructions:
+  1. Copy this file to docs/components/[component-name]/checklist.mdx
+  2. Replace "ComponentName" with the actual component name (e.g., "Button")
+  3. Replace "component-name" with the kebab-case name (e.g., "button")
+  4. Replace "component-key" with the data key (e.g., "button")
+  5. Set platform to "web", "mobile", or "both"
+  6. Create the corresponding JSON file in src/data/component-checklist/
+  7. Delete this comment block when done
+*/}
+
+---
+title: ComponentName - Component checklist
+description: Maturity and asset checklist for the ComponentName component
+sidebar_label: Checklist
+---
+
+import ComponentChecklist from '@site/src/components/ComponentChecklist';
+import { checklistData } from '@site/src/data/component-checklist';
+import ChecklistDefinitions from '@site/docs/_partials/checklist-definitions.mdx';
+import Link from '@docusaurus/Link';
+
+# ComponentName checklist
+
+<Link to="/docs/components/component-name">← Back to ComponentName</Link>
+
+This checklist tracks the maturity, code assets, visual assets, and accessibility audit status for the ComponentName component across web and mobile platforms.
+
+<ComponentChecklist data={checklistData['component-key']} platform="both" />
+
+<ChecklistDefinitions />

@@ -1,0 +1,25 @@
+{
+  "id": "patterns/index",
+  "title": "Patterns",
+  "description": "Patterns incorporate one or more page layouts and components to create interactions that can span multiple pages.",
+  "source": "@site/docs/patterns/index.mdx",
+  "sourceDirName": "patterns",
+  "slug": "/patterns/",
+  "permalink": "/docs/patterns/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/patterns/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Patterns",
+    "description": "Patterns incorporate one or more page layouts and components to create interactions that can span multiple pages.",
+    "sidebar_position": 1
+  },
+  "sidebar": "patternsSidebar",
+  "next": {
+    "title": "Ask users for...",
+    "permalink": "/docs/category/ask-users-for"
+  }
+}

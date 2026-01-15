@@ -1,0 +1,128 @@
+{
+  "id": "patterns/help-users-to/recover-from-errors/index",
+  "title": "Recover from errors",
+  "description": "Follow this pattern to help users understand and recover from system-level errors.",
+  "source": "@site/docs/patterns/help-users-to/recover-from-errors/index.mdx",
+  "sourceDirName": "patterns/help-users-to/recover-from-errors",
+  "slug": "/patterns/help-users-to/recover-from-errors/",
+  "permalink": "/docs/patterns/help-users-to/recover-from-errors/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/patterns/help-users-to/recover-from-errors/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Recover from errors",
+    "description": "Follow this pattern to help users understand and recover from system-level errors.",
+    "cms_editable": true,
+    "category": "help-users-to",
+    "maturity": "deployed",
+    "sidebar_position": 4,
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms",
+    "github": "https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-recover-from-errors%22",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Help+users+to...+Recover+from+errors%22",
+    "intro": "Use this pattern to structure error messages that help users understand what went wrong and how to resolve the issue. This applies to system-level errors, not inline form field validation.",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**System-level errors.** When users encounter errors that prevent them from completing a task."
+        },
+        {
+          "value": "**Clear recovery path.** When you need to explain the problem and provide actionable recovery steps."
+        }
+      ],
+      "design_principles": [
+        {
+          "value": "**Two-step structure.** Step 1: Explain the problem. Step 2: Provide recovery steps."
+        },
+        {
+          "value": "**Keep titles short.** Keep alert titles to 50 characters maximum."
+        },
+        {
+          "value": "**Use neutral tone.** If user caused error, use neutral tone without blame."
+        },
+        {
+          "value": "**Be specific and actionable.** Make recovery steps clear, specific, and actionable."
+        },
+        {
+          "value": "**Coordinate with support.** Coordinate new error messages with Veteran Support team."
+        }
+      ]
+    },
+    "examples": [
+      {
+        "title": "VA system error",
+        "description": "Alert explaining a VA system problem with recovery steps."
+      },
+      {
+        "title": "User action error",
+        "description": "Neutral alert explaining what went wrong with steps to fix."
+      }
+    ],
+    "how_to_build": {
+      "intro": "Error messages follow a two-step structure for clarity.",
+      "steps": [
+        {
+          "value": "**Step 1 - Explain the problem:** Use alert component with explanation in header."
+        },
+        {
+          "value": "If VA caused error: 'We're sorry. There's a problem with our system...'"
+        },
+        {
+          "value": "If user caused error: Use neutral tone without blame."
+        },
+        {
+          "value": "**Step 2 - Provide recovery steps:** Make steps clear, specific, and actionable."
+        },
+        {
+          "value": "Provide contact option as secondary step if needed."
+        },
+        {
+          "value": "Include links or buttons when necessary."
+        }
+      ],
+      "components_used": [
+        {
+          "name": "Alert",
+          "url": "/docs/components/alert"
+        }
+      ]
+    },
+    "code_usage": "**Standard contact information for error messages:**\n\n| Issue Type | Contact | Phone |\n|------------|---------|-------|\n| Technical help | MyVA411 | 800-698-2411 |\n| Benefits questions | VA Benefits | 800-827-1000 |\n| Education benefits | GI Bill Hotline | 888-442-4551 |\n| Health benefits | VA Health | 877-222-8387 |\n| My HealtheVet | MHV Help | 877-327-0022 |\n",
+    "content_considerations": [
+      {
+        "value": "Explain what went wrong clearly and specifically."
+      },
+      {
+        "value": "Tell users how to fix the issue with actionable steps."
+      },
+      {
+        "value": "Use specific, actionable language throughout."
+      },
+      {
+        "value": "Coordinate new error messages with Veteran Support team."
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Alert components must be announced to screen readers immediately."
+      },
+      {
+        "value": "Links and buttons within error messages must be keyboard accessible."
+      },
+      {
+        "value": "Contact phone numbers should be formatted for click-to-call on mobile."
+      }
+    ]
+  },
+  "sidebar": "patternsSidebar",
+  "previous": {
+    "title": "Sign in",
+    "permalink": "/docs/patterns/help-users-to/sign-in/"
+  },
+  "next": {
+    "title": "Navigate benefit applications",
+    "permalink": "/docs/patterns/help-users-to/navigate-benefit-applications/"
+  }
+}

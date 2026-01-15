@@ -1,0 +1,116 @@
+{
+  "id": "templates/email/index",
+  "title": "Email",
+  "description": "Design resource for communicating with Veterans through transactional and informational emails.",
+  "source": "@site/docs/templates/email/index.mdx",
+  "sourceDirName": "templates/email",
+  "slug": "/templates/email/",
+  "permalink": "/docs/templates/email/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/templates/email/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "title": "Email",
+    "description": "Design resource for communicating with Veterans through transactional and informational emails.",
+    "cms_editable": true,
+    "category": "email",
+    "maturity": "deployed",
+    "sidebar_position": 10,
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms",
+    "github": "https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22template-email%22",
+    "intro": "The email template serves as a design resource for communicating with Veterans through email. It's primarily used for transactional messages like submission confirmations, status updates, and account modifications, though it can also serve informational purposes.",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Transactional messages.** Submission confirmations, status changes, and account updates."
+        },
+        {
+          "value": "**Informational purposes.** General communications to Veterans."
+        },
+        {
+          "value": "**Mockup preparation.** Preparatory tool for mockups in Figma before implementation through VA Notify."
+        }
+      ],
+      "usability": [
+        {
+          "value": "**System fonts.** Limited email client support for custom fonts means typography uses system fonts."
+        },
+        {
+          "value": "**VA Notify.** Emails deploy through VA Notify's Self Service Portal using markdown formatting."
+        }
+      ]
+    },
+    "structure": {
+      "intro": "The email template includes consistent header and footer sections with customizable body content.",
+      "sections": [
+        {
+          "title": "Header",
+          "description": "Contains VA logo with appropriate alt text. Responsive design with 600px breakpoint - centered seal on smaller screens, left-aligned on larger ones."
+        },
+        {
+          "title": "Heading",
+          "description": "Required H1 conveying email purpose. Should match or expand upon the subject line. Limited to one per email."
+        },
+        {
+          "title": "Salutation",
+          "description": "Personalizes message using 'Dear ((first_name)),'. Avoids including last name due to PII concerns."
+        },
+        {
+          "title": "Body Content",
+          "description": "Supports paragraph, bold, italic text, bulleted lists, headings (H2-H4), blockquotes (max one), action links (max one), links (max three), and dividers."
+        },
+        {
+          "title": "Contact Section",
+          "description": "Includes 'Have questions?' heading. Default content: 'Visit https://va.gov or call 800-827-1000 (TTY: 711)'. Removable if redundant."
+        },
+        {
+          "title": "Footer",
+          "description": "Explains email reason and requests no replies. Preceded by divider. Text customizable per message type."
+        }
+      ]
+    },
+    "content_guidelines": [
+      {
+        "value": "Refer to the Email Content and Style Guide for detailed writing standards."
+      },
+      {
+        "value": "Do not close emails with 'VA.gov' or 'VA' signatures."
+      },
+      {
+        "value": "Limit to one blockquote per email."
+      },
+      {
+        "value": "Maximum of one action link and three regular links."
+      },
+      {
+        "value": "Organizations must onboard via the VA Notify GitHub repository."
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Include appropriate alt text for VA logo in header."
+      },
+      {
+        "value": "Use semantic heading structure (H1-H4)."
+      },
+      {
+        "value": "Ensure links are descriptive and accessible."
+      },
+      {
+        "value": "Follow email accessibility best practices for all content."
+      }
+    ]
+  },
+  "sidebar": "templatesSidebar",
+  "previous": {
+    "title": "Accessibility guidelines for forms",
+    "permalink": "/docs/templates/forms/accessibility-guidelines/"
+  },
+  "next": {
+    "title": "Homepage",
+    "permalink": "/docs/templates/homepage/"
+  }
+}

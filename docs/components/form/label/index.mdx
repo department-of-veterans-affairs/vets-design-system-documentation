@@ -1,0 +1,34 @@
+---
+cms_editable: true
+title: Label
+description: Associates descriptive titles with form inputs
+maturity: deployed
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-label
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Label%22
+related:
+  - name: Text Input
+    url: ../text-input
+    description: Uses labels
+  - name: Checkbox
+    url: ../checkbox
+    description: Uses labels
+  - name: Radio Button
+    url: ../radio-button
+    description: Uses labels
+  - name: Select
+    url: ../select
+    description: Uses labels
+usage:
+  when_to_use:
+    - value: "**Required for all form inputs**: Every form field must have an accompanying label"
+    - value: Labels are integrated into standard form components (text input, checkbox, radio button, etc.)
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

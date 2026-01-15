@@ -1,0 +1,21 @@
+{
+  "id": "components/address-block/checklist",
+  "title": "Address block - Component checklist",
+  "description": "Maturity and asset checklist for the Address block component",
+  "source": "@site/docs/components/address-block/checklist.mdx",
+  "sourceDirName": "components/address-block",
+  "slug": "/components/address-block/checklist",
+  "permalink": "/docs/components/address-block/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/address-block/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Address block - Component checklist",
+    "description": "Maturity and asset checklist for the Address block component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

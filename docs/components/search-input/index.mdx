@@ -1,0 +1,74 @@
+---
+cms_editable: true
+title: Search Input
+description: Text field for entering search queries with optional type-ahead
+maturity: deployed
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-search-input
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library
+storybook: https://design.va.gov/storybook/?path=/docs/components-va-search-input--docs
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Search+input%22
+related:
+  - name: Radio button
+    url: ../form/radio-button
+    description: For 2-5 options
+  - name: Select
+    url: ../form/select
+    description: For 6-15 options
+  - name: Combo box
+    url: ../form/combo-box
+    description: For 16-100 options
+  - name: Search Filter
+    url: ../search-filter
+    description: For filtering search results
+usage:
+  when_to_use:
+    - value: The search input for site search should always be available since users benefit from across-site search capability
+    - value: The search input for site search should always be used in concert with type-ahead functionality to reduce cognitive load
+    - value: Type-ahead helps filter long result lists and aids mobile users with small keyboards
+    - value: Use Search Input when you have **101+ options** to choose from
+  when_to_consider_else:
+    - value: Avoid type-ahead in form fields where users might assume they're limited to suggestions only
+    - value: "For smaller option sets, consider:"
+content_considerations:
+  - value: Provide a clear, descriptive label for the search input
+  - value: Keep button text concise (e.g., "Search")
+  - value: Limit suggestions to 5 items maximum for usability
+accessibility:
+  - value: An open text field that allows users to enter a search query has a high risk for users to enter Personally Identifiable Information (PII)
+  - value: Implement procedures to strip/redact sensitive data from logs
+  - value: Ensure the search input has a proper label for screen readers
+  - value: Type-ahead suggestions should be keyboard navigable
+  - value: Announce suggestion list updates to screen reader users
+examples:
+  - title: Default
+    description: Default
+    storyId: components-va-search-input--default
+    height: 100
+  - title: Big variant
+    description: Big variant
+    storyId: components-va-search-input--big
+    height: 100
+  - title: Small variant
+    description: Small variant
+    storyId: components-va-search-input--small
+    height: 80
+  - title: With type-ahead suggestions
+    description: With type-ahead suggestions
+    storyId: components-va-search-input--with-suggestions
+    height: 250
+code_usage: |
+  <va-search-input
+    label="Search VA.gov"
+    value=""
+    button-text="Search"
+  ></va-search-input>
+component_tag: va-search-input
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

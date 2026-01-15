@@ -1,0 +1,24 @@
+{
+  "componentName": "Snackbar",
+  "webCompleted": null,
+  "mobileCompleted": null,
+  "maturity": [
+    { "name": "Guidance", "webScore": false, "mobileScore": true },
+    { "name": "Research", "webScore": false, "mobileScore": false },
+    { "name": "Stability", "webScore": false, "mobileScore": false },
+    { "name": "Adoption", "webScore": false, "mobileScore": true }
+  ],
+  "codeAssets": [
+    { "name": "Variations", "webScore": false, "mobileScore": true },
+    { "name": "Responsive", "webScore": false, "mobileScore": true },
+    { "name": "Interactive states", "webScore": false, "mobileScore": true },
+    { "name": "Tokens", "webScore": false, "mobileScore": "n/a" },
+    { "name": "Internationalization", "webScore": false, "mobileScore": false }
+  ],
+  "visualAssets": [
+    { "name": "Variations", "webScore": false, "mobileScore": true },
+    { "name": "Responsive", "webScore": false, "mobileScore": true },
+    { "name": "Interactive states", "webScore": false, "mobileScore": true },
+    { "name": "Tokens", "webScore": false, "mobileScore": "n/a" }
+  ]
+}

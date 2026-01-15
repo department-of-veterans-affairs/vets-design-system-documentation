@@ -1,0 +1,157 @@
+{
+  "id": "components/tag/tag-status/index",
+  "title": "Tag - Status",
+  "description": "Indicates the current state or condition using semantic colors",
+  "source": "@site/docs/components/tag/tag-status/index.mdx",
+  "sourceDirName": "components/tag/tag-status",
+  "slug": "/components/tag/tag-status/",
+  "permalink": "/docs/components/tag/tag-status/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/tag/tag-status/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Tag - Status",
+    "description": "Indicates the current state or condition using semantic colors",
+    "maturity": "use-with-caution",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-tag-status",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Tag+-+Status%22",
+    "related": [
+      {
+        "name": "Tag",
+        "url": "/docs/components/tag/",
+        "description": "For categorization without status meaning"
+      },
+      {
+        "name": "Alert",
+        "url": "/docs/components/alert/",
+        "description": "For page-level messaging"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "Communicate current state or progress at a glance"
+        },
+        {
+          "value": "Indicate urgency or required action"
+        },
+        {
+          "value": "Provide scannable feedback in lists, tables, or dashboards"
+        },
+        {
+          "value": "Combine color, icons, and short labels for consistent communication"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "When tags might be confused with buttons"
+        },
+        {
+          "value": "For labels exceeding 1-3 words"
+        },
+        {
+          "value": "When the tag functions as a title"
+        },
+        {
+          "value": "For page-level alerts (use [Alert](/docs/components/alert/) instead)"
+        },
+        {
+          "value": "For temporary feedback (use dismissible Alert or Snackbar)"
+        },
+        {
+          "value": "For interactive/clickable elements"
+        }
+      ]
+    },
+    "content_considerations": [
+      {
+        "value": "**Brevity**: Use 1-3 words maximum"
+      },
+      {
+        "value": "**Consistency**: Apply identical language for similar statuses platform-wide"
+      },
+      {
+        "value": "**Semantic Alignment**: Match tag text with color meaning"
+      },
+      {
+        "value": "**Context Clarity**: Avoid jargon unfamiliar to Veterans"
+      },
+      {
+        "value": "Upcoming (Informational)"
+      },
+      {
+        "value": "Canceled (Error)"
+      },
+      {
+        "value": "Claim received (Informational)"
+      },
+      {
+        "value": "Complete (Success)"
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "**Color + Meaning**: Pair color with descriptive text, icons, or context"
+      },
+      {
+        "value": "**Contrast**: All variations meet WCAG 2.2 AA standards"
+      },
+      {
+        "value": "**Keyboard Navigation**: Non-interactive; won't interfere with Tab navigation"
+      },
+      {
+        "value": "**Screen Reader Support**: Announces \"Status\" before content (e.g., \"Status, Approved\")"
+      },
+      {
+        "value": "**Dynamic Content**: Use `aria-live=\"polite\"` for non-urgent updates"
+      },
+      {
+        "value": "**Cognitive Accessibility**: Maintain consistent placement; use simple language"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Informational",
+        "description": "Informational",
+        "storyId": "uswds-va-tag--info",
+        "height": 80
+      },
+      {
+        "title": "Success",
+        "description": "Success",
+        "storyId": "uswds-va-tag--success",
+        "height": 80
+      },
+      {
+        "title": "Warning",
+        "description": "Warning",
+        "storyId": "uswds-va-tag--warning",
+        "height": 80
+      },
+      {
+        "title": "Error",
+        "description": "Error",
+        "storyId": "uswds-va-tag--error",
+        "height": 80
+      }
+    ],
+    "code_usage": "<!-- Informational -->\n<va-tag status=\"info\">Upcoming</va-tag>\n\n<!-- Success -->\n<va-tag status=\"success\">Complete</va-tag>\n\n<!-- Warning -->\n<va-tag status=\"warning\">Action needed</va-tag>\n\n<!-- Error -->\n<va-tag status=\"error\">Canceled</va-tag>\n",
+    "component_tag": "va-tag"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Tag",
+    "permalink": "/docs/components/tag/"
+  },
+  "next": {
+    "title": "Telephone",
+    "permalink": "/docs/components/telephone/"
+  }
+}

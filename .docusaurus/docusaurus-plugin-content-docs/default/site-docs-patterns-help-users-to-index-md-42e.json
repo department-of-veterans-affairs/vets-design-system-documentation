@@ -1,0 +1,29 @@
+{
+  "id": "patterns/help-users-to/index",
+  "title": "Help users to...",
+  "description": "Patterns for guiding user interactions including checking eligibility, navigating applications, and recovering from errors.",
+  "source": "@site/docs/patterns/help-users-to/index.md",
+  "sourceDirName": "patterns/help-users-to",
+  "slug": "/patterns/help-users-to/",
+  "permalink": "/docs/patterns/help-users-to/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/patterns/help-users-to/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Help users to...",
+    "description": "Patterns for guiding user interactions including checking eligibility, navigating applications, and recovering from errors.",
+    "sidebar_position": 2
+  },
+  "sidebar": "patternsSidebar",
+  "previous": {
+    "title": "Check eligibility",
+    "permalink": "/docs/patterns/help-users-to/check-eligibility/"
+  },
+  "next": {
+    "title": "Sign in",
+    "permalink": "/docs/patterns/help-users-to/sign-in/"
+  }
+}

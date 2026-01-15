@@ -1,0 +1,76 @@
+---
+title: How to apply
+description: A landing page template that outlines eligibility requirements and provides application instructions.
+cms_editable: true
+category: forms
+maturity: deployed
+sidebar_position: 2
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms
+github: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22template-how-to-apply%22
+
+intro: A landing page that outlines eligibility requirements, provides application instructions, and explains post-submission processes. This template is managed by the Content Management System.
+
+usage:
+  when_to_use:
+    - value: "**Benefit eligibility.** To guide users through understanding benefit eligibility requirements."
+    - value: "**Multiple application channels.** Present available application methods including online forms, phone, mail, in-person, and Veterans Service Officer support."
+    - value: "**Pre-application guidance.** Help users prepare required documents and information before starting."
+
+structure:
+  intro: The template guides users through understanding benefit eligibility and application options.
+  sections:
+    - title: Page Title and Subtitle
+      description: "H1 follows format: 'How to apply for [benefit name]'. Subtitle format: 'Find out how to apply for [benefit name] as a [audience]'."
+    - title: How to Prepare
+      description: Lists required documents and information (Social Security number, military history, DD214, etc.). Includes link to corresponding Eligibility page.
+    - title: How Do I Apply?
+      description: Presents available application methods (online, phone, mail, in person, with professional support).
+    - title: What Happens After I Apply?
+      description: Links to detailed post-submission information and application tracking options.
+    - title: How Long Does It Take?
+      description: Uses Number highlight Card variation to display typical processing timeframes and contact instructions.
+    - title: More Information
+      description: Presented via Accordion or Related/Major links variations.
+    - title: Back-to-Top Component
+      description: Enables quick navigation to page top.
+    - title: User Feedback Pattern
+      description: Implements feedback collection at page bottom.
+  components_used:
+    - name: Summary box
+      url: /docs/components/summary-box
+    - name: Action link
+      url: /docs/components/link/action
+    - name: Card
+      url: /docs/components/card
+      description: Number-highlight variation
+    - name: Accordion
+      url: /docs/components/accordion
+    - name: Link collection
+      url: /docs/components/link
+    - name: Back to top
+      url: /docs/components/back-to-top
+
+examples:
+  - title: VA health care applications
+    description: How to apply page for VA health care benefits.
+  - title: GI Bill and education benefits
+    description: How to apply page for education benefits.
+  - title: Disability claim filing
+    description: How to apply page for disability compensation.
+
+content_guidelines:
+  - value: "Use plain language and conversational tone throughout."
+  - value: "Keep process list items brief with tailored, specific information."
+  - value: "Include estimated time burden for completing the form."
+  - value: "Explain post-submission timeline and next steps clearly."
+
+accessibility:
+  - value: "Ensure proper heading hierarchy throughout the page."
+  - value: "Provide descriptive link text for all navigation options."
+  - value: "Follow VA.gov form accessibility guidelines."
+---
+
+import TemplatePage from '@site/src/components/TemplatePage';
+
+<TemplatePage frontMatter={frontMatter} />
+

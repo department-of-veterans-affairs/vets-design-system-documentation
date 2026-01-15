@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/bulleted-lists",
+  "title": "Bulleted and numbered lists",
+  "description": "Guidelines for creating effective bulleted and numbered lists on VA.gov.",
+  "source": "@site/docs/content-style-guide/bulleted-lists.md",
+  "sourceDirName": "content-style-guide",
+  "slug": "/content-style-guide/bulleted-lists",
+  "permalink": "/docs/content-style-guide/bulleted-lists",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/bulleted-lists.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Bulleted and numbered lists",
+    "description": "Guidelines for creating effective bulleted and numbered lists on VA.gov.",
+    "sidebar_position": 6
+  }
+}

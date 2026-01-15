@@ -1,0 +1,208 @@
+.checklistPage {
+  max-width: 900px;
+}
+
+.backLink {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 2rem;
+}
+
+.emptyState {
+  padding: 2rem;
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 8px;
+  text-align: center;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.emptyState p {
+  margin: 0.5rem 0;
+}
+
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.completionDates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem 1.5rem;
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 8px;
+}
+
+.completionDate {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.completionLabel {
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.completionValue {
+  color: var(--ifm-color-emphasis-900);
+}
+
+.section {
+  margin-bottom: 1rem;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--ifm-color-emphasis-200);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  background: var(--ifm-color-emphasis-100);
+  font-weight: 600;
+  border-bottom: 2px solid var(--ifm-color-emphasis-300);
+}
+
+.table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.table tbody tr:hover {
+  background: var(--ifm-color-emphasis-50);
+}
+
+.scoreColumn {
+  width: 100px;
+  text-align: center !important;
+}
+
+.scoreCell {
+  text-align: center;
+}
+
+/* Status Icons */
+.statusPass {
+  color: var(--ifm-color-success);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.statusFail {
+  color: var(--ifm-color-danger);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.statusNa {
+  color: var(--ifm-color-emphasis-500);
+  font-size: 0.85rem;
+}
+
+.statusPending {
+  color: var(--ifm-color-emphasis-400);
+  font-size: 1.1rem;
+}
+
+/* Audit Status Badges */
+.auditPass {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--ifm-color-success);
+  color: white;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.auditConditional {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--ifm-color-warning);
+  color: #1a1a1a;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.auditFail {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--ifm-color-danger);
+  color: white;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.auditPending {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-600);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Accessibility Section */
+.a11ySection {
+  margin-bottom: 1.5rem;
+}
+
+.a11yPlatform {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.auditDate {
+  font-weight: normal;
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .completionDates {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .table th,
+  .table td {
+    padding: 0.5rem;
+  }
+
+  .scoreColumn {
+    width: 70px;
+  }
+}

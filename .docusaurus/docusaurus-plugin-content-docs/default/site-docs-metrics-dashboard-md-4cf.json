@@ -1,0 +1,15 @@
+{
+  "id": "METRICS-DASHBOARD",
+  "title": "Metrics Dashboard Data Flow Documentation",
+  "description": "Overview",
+  "source": "@site/docs/METRICS-DASHBOARD.md",
+  "sourceDirName": ".",
+  "slug": "/METRICS-DASHBOARD",
+  "permalink": "/docs/METRICS-DASHBOARD",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/METRICS-DASHBOARD.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

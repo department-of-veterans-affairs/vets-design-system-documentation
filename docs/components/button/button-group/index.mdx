@@ -1,0 +1,67 @@
+---
+cms_editable: true
+title: Button Group
+description: Arranges multiple buttons as separate elements with gaps between them
+maturity: deployed
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-button-pair
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Button+group%22
+related:
+  - name: Button
+    url: /docs/components/button/
+    description: Standard button component
+  - name: Button - Segmented
+    url: ../button-segmented
+    description: Related options in a compact container
+usage:
+  when_to_use:
+    - value: Provide primary and secondary response options to questions (default variation)
+    - value: Enable form input saving with Update/Cancel buttons
+    - value: Navigate through multi-step form flows with Back/Continue buttons
+    - value: "Placement: bottom of forms"
+  when_to_consider_else:
+    - value: For navigation outside form flows, use [Link](/docs/components/link/)
+    - value: For visually prominent calls-to-action linking elsewhere, use [Action links](/docs/components/link/action)
+  behavior:
+    - value: Avoid excessive buttons on single pages
+    - value: Arrow icons reserved exclusively for Back/Continue variations
+content_considerations:
+  - value: Use sentence case for button labels
+  - value: Maximum 35 characters
+  - value: Employ action-oriented language
+  - value: "Examples: \"Create an account\", \"File a complaint\""
+  - value: Avoid vague terms like "Get started"
+accessibility:
+  - value: Include contextual information via aria-label for screen readers
+  - value: Specify form numbers or program names for greater clarity
+  - value: Reference Button component accessibility guidance
+examples:
+  - title: Default (Yes/No)
+    description: Default (Yes/No)
+    storyId: uswds-va-button-pair--default
+    height: 100
+code_usage: |
+  <!-- Default Yes/No -->
+  <va-button-pair></va-button-pair>
+
+  <!-- Back/Continue -->
+  <va-button-pair continue></va-button-pair>
+
+  <!-- Update/Cancel -->
+  <va-button-pair update></va-button-pair>
+
+  <!-- Custom labels -->
+  <va-button-pair
+    left-button-text="Save draft"
+    right-button-text="Submit"
+  ></va-button-pair>
+component_tag: va-button-pair
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

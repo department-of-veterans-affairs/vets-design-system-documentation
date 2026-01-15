@@ -1,0 +1,95 @@
+---
+cms_editable: true
+title: Search Filter
+description: Faceted search functionality for narrowing down results
+maturity: use-with-caution
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-search-filter
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library
+storybook: https://design.va.gov/storybook/?path=/docs/components-va-search-filter--docs
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Search+filter%22
+related:
+  - name: Checkbox
+    url: ../form/checkbox
+    description: Used within filters for multi-select
+  - name: Radio button
+    url: ../form/radio-button
+    description: For mutually exclusive filters
+  - name: Select
+    url: ../form/select
+    description: Alternative for single-select filters
+  - name: Button - Segmented
+    url: ../button/button-segmented
+    description: For 2-3 filter options
+  - name: Search Input
+    url: ../search-input
+    description: Primary search functionality
+usage:
+  when_to_use:
+    - value: Multiple facets are available for filtering AND more than one page of results exists
+    - value: You need to enable filtering across multiple categories simultaneously
+    - value: Results require narrowing down based on specific attributes
+  when_to_consider_else:
+    - value: If a facet only allows mutually exclusive results (meaning only one filter can be applied at a time), use [Radio buttons](/docs/components/form/radio-button) or [Select](/docs/components/form/select) instead
+    - value: Limited facet items (2-3 options); consider [Button - Segmented](/docs/components/button/button-segmented) component
+    - value: Task flows like forms or secure message reviews
+  behavior:
+    - value: Filters collapse into an Accordion on mobile viewports
+    - value: Checkboxes enable multi-facet filtering
+    - value: Requires a distinct "Apply" button for filter submission
+    - value: Must include "Clear all filters" reset option
+    - value: "Mobile: filters below search input"
+    - value: "Desktop: left-side rail placement"
+content_considerations:
+  - value: Use clear, concise labels for filter categories
+  - value: Organize facets in order of importance or frequency of use
+  - value: Provide meaningful filter option labels
+  - value: Include result counts when possible to help users understand filter impact
+accessibility:
+  - value: Move focus to results heading after filtering
+  - value: Use ARIA live regions to announce result updates
+  - value: Preserve visible filter state
+  - value: Announce loading states
+  - value: Provide clear error messages
+  - value: Ensure all filter controls are keyboard accessible
+  - value: Filter state should be announced to screen reader users
+examples:
+  - title: Default
+    description: Default
+    storyId: components-va-search-filter--default
+    height: 400
+  - title: With active filters
+    description: With active filters
+    storyId: components-va-search-filter--active-filters
+    height: 400
+code_usage: |
+  <va-search-filter
+    filter-options='[
+      {
+        "label": "Benefits",
+        "id": "benefits",
+        "options": [
+          { "label": "Health care", "id": "health-care" },
+          { "label": "Education", "id": "education" },
+          { "label": "Disability", "id": "disability" }
+        ]
+      },
+      {
+        "label": "Status",
+        "id": "status",
+        "options": [
+          { "label": "Active", "id": "active" },
+          { "label": "Pending", "id": "pending" }
+        ]
+      }
+    ]'
+  ></va-search-filter>
+component_tag: va-search-filter
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

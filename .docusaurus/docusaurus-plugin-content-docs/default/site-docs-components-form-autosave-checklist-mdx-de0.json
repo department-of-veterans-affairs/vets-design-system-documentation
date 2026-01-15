@@ -1,0 +1,20 @@
+{
+  "id": "components/form/autosave/checklist",
+  "title": "Autosave - Component checklist",
+  "description": "Maturity and asset checklist for the Autosave component",
+  "source": "@site/docs/components/form/autosave/checklist.mdx",
+  "sourceDirName": "components/form/autosave",
+  "slug": "/components/form/autosave/checklist",
+  "permalink": "/docs/components/form/autosave/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/form/autosave/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Autosave - Component checklist",
+    "description": "Maturity and asset checklist for the Autosave component",
+    "sidebar_label": "Checklist"
+  }
+}

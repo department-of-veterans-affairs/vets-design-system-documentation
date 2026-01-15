@@ -1,0 +1,20 @@
+{
+  "id": "components/form/date-input/checklist",
+  "title": "Date Input - Component checklist",
+  "description": "Maturity and asset checklist for the Date Input component",
+  "source": "@site/docs/components/form/date-input/checklist.mdx",
+  "sourceDirName": "components/form/date-input",
+  "slug": "/components/form/date-input/checklist",
+  "permalink": "/docs/components/form/date-input/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/form/date-input/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Date Input - Component checklist",
+    "description": "Maturity and asset checklist for the Date Input component",
+    "sidebar_label": "Checklist"
+  }
+}

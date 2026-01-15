@@ -1,0 +1,178 @@
+{
+  "id": "templates/hub/index",
+  "title": "Hub",
+  "description": "A landing page template for benefit categories providing overviews, navigation, and contact information.",
+  "source": "@site/docs/templates/hub/index.mdx",
+  "sourceDirName": "templates/hub",
+  "slug": "/templates/hub/",
+  "permalink": "/docs/templates/hub/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/templates/hub/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "title": "Hub",
+    "description": "A landing page template for benefit categories providing overviews, navigation, and contact information.",
+    "cms_editable": true,
+    "category": "pages",
+    "maturity": "deployed",
+    "sidebar_position": 12,
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms",
+    "github": "https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22template-hub%22",
+    "intro": "Hub pages serve as landing pages for specific benefit categories, providing overviews, navigation, and contact information for VA benefits and services.",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Benefit landing pages.** Provide a parent page for a section offering specific benefits or services."
+        },
+        {
+          "value": "**Core audience benefits.** Create landing pages listing all VA benefits available for Veterans, transitioning service members, or family members."
+        }
+      ],
+      "when_not_to_use": [
+        {
+          "value": "**Campaign landing pages.** Use a Campaign Landing Page template instead."
+        },
+        {
+          "value": "**Custom benefit groupings.** By health condition or audience segment - explore alternative templates."
+        }
+      ],
+      "usability": [
+        {
+          "value": "**Don't overwhelm visitors.** Highlight the most important content rather than every child page."
+        },
+        {
+          "value": "**Avoid unnecessary content.** Don't create content just to fill template sections."
+        },
+        {
+          "value": "**Stay within template.** Don't add sections beyond the template design."
+        },
+        {
+          "value": "**Follow section guidance.** Refer to component documentation for individual sections."
+        }
+      ]
+    },
+    "structure": {
+      "intro": "The hub consists of intro, spokes (core content), and right rail sections.",
+      "sections": [
+        {
+          "title": "Hub icon and page title",
+          "description": "Consistent, benefit-specific icon with descriptive title."
+        },
+        {
+          "title": "Intro text",
+          "description": "High-level benefit overview with SEO-rich content, plus 'On this page' navigation."
+        },
+        {
+          "title": "Critical alert (optional)",
+          "description": "Limited to 2 specific alerts; max 1 per hub."
+        },
+        {
+          "title": "'Get benefits' spoke",
+          "description": "Application and eligibility content (max 10 links)."
+        },
+        {
+          "title": "'Manage benefits' spoke",
+          "description": "Usage, tracking, and management content (max 10 links)."
+        },
+        {
+          "title": "'More resources' spoke",
+          "description": "Related tools and benefit rate information (max 10 links)."
+        },
+        {
+          "title": "Related benefits",
+          "description": "Links to other VA benefits outside this hub (max 5 links)."
+        },
+        {
+          "title": "Promo spot",
+          "description": "Highlighted service or key information (right rail)."
+        },
+        {
+          "title": "'Ask questions' accordion",
+          "description": "Contact information (right rail)."
+        },
+        {
+          "title": "'Not a Veteran?' accordion (optional)",
+          "description": "Audience-specific links, max 3 (right rail)."
+        },
+        {
+          "title": "'Connect with us' accordion",
+          "description": "Social media and administrative links (right rail)."
+        }
+      ],
+      "components_used": [
+        {
+          "name": "Alert",
+          "url": "/docs/components/alert"
+        },
+        {
+          "name": "Alert - Expandable",
+          "url": "/docs/components/alert"
+        },
+        {
+          "name": "Accordion",
+          "url": "/docs/components/accordion"
+        },
+        {
+          "name": "Divider",
+          "url": "/docs/components/divider"
+        },
+        {
+          "name": "Icon",
+          "url": "/docs/components/icon"
+        },
+        {
+          "name": "Link",
+          "url": "/docs/components/link",
+          "description": "With teaser text"
+        },
+        {
+          "name": "On this page",
+          "url": "/docs/components/on-this-page"
+        }
+      ]
+    },
+    "content_guidelines": [
+      {
+        "value": "Link labels should match destination page titles with descriptive additions when needed."
+      },
+      {
+        "value": "Order links by frequency of use within manage and resources sections."
+      },
+      {
+        "value": "Keep teaser text concise and descriptive."
+      },
+      {
+        "value": "Use consistent benefit category naming."
+      },
+      {
+        "value": "Maximum 10 links per spoke, 5 for related benefits."
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Follow VA.gov form accessibility guidelines."
+      },
+      {
+        "value": "Implement proper heading hierarchy."
+      },
+      {
+        "value": "Ensure 'On this page' navigation aids screen readers."
+      },
+      {
+        "value": "Test with accessibility annotations for applications."
+      }
+    ]
+  },
+  "sidebar": "templatesSidebar",
+  "previous": {
+    "title": "Homepage",
+    "permalink": "/docs/templates/homepage/"
+  },
+  "next": {
+    "title": "Search results",
+    "permalink": "/docs/templates/search-results/"
+  }
+}

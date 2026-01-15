@@ -1,0 +1,21 @@
+{
+  "id": "components/header/checklist",
+  "title": "Header - Component checklist",
+  "description": "Maturity and asset checklist for the Header component",
+  "source": "@site/docs/components/header/checklist.mdx",
+  "sourceDirName": "components/header",
+  "slug": "/components/header/checklist",
+  "permalink": "/docs/components/header/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/header/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Header - Component checklist",
+    "description": "Maturity and asset checklist for the Header component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

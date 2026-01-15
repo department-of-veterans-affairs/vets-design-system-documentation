@@ -1,0 +1,21 @@
+{
+  "id": "components/summary-box/checklist",
+  "title": "Summary box - Component checklist",
+  "description": "Maturity and asset checklist for the Summary box component",
+  "source": "@site/docs/components/summary-box/checklist.mdx",
+  "sourceDirName": "components/summary-box",
+  "slug": "/components/summary-box/checklist",
+  "permalink": "/docs/components/summary-box/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/summary-box/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Summary box - Component checklist",
+    "description": "Maturity and asset checklist for the Summary box component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

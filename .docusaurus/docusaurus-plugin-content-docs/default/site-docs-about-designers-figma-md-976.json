@@ -1,0 +1,29 @@
+{
+  "id": "about/designers/figma",
+  "title": "Figma at VA",
+  "description": "Using Figma as the collaborative design platform for VA.gov products.",
+  "source": "@site/docs/about/designers/figma.md",
+  "sourceDirName": "about/designers",
+  "slug": "/about/designers/figma",
+  "permalink": "/docs/about/designers/figma",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/about/designers/figma.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Figma at VA",
+    "description": "Using Figma as the collaborative design platform for VA.gov products.",
+    "sidebar_position": 2
+  },
+  "sidebar": "aboutSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/about/designers/"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/about/developers/"
+  }
+}

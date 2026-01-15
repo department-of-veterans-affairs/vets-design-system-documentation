@@ -1,0 +1,29 @@
+.mermaidDiagrams {
+  margin: 1.5rem 0;
+}
+
+.diagramContainer {
+  margin-bottom: 2rem;
+}
+
+.diagramContainer:last-child {
+  margin-bottom: 0;
+}
+
+.description {
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 1rem;
+}
+
+.diagram {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-code-border-radius);
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.diagram > div {
+  display: flex;
+  justify-content: center;
+}

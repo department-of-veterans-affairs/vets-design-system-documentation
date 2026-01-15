@@ -1,0 +1,80 @@
+---
+title: Phone numbers
+description: Follow this pattern to collect phone numbers from users, supporting both domestic and international formats.
+cms_editable: true
+category: ask-users-for
+maturity: deployed
+sidebar_position: 4
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms?node-id=2988%3A9602
+github: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-phone%22
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Ask+users+for...+Phone+numbers%22
+
+intro: Use this pattern when collecting phone numbers for contact purposes, supporting both domestic and international formats.
+
+usage:
+  when_to_use:
+    - value: "**Collecting contact phone numbers.** When you need to reach users about their application or request."
+    - value: "**Gathering outreach information.** When phone is a preferred or required contact method."
+  design_principles:
+    - value: "**Validate phone numbers.** Users must provide a valid domestic or international phone number."
+    - value: "**Make phone required when primary.** Phone fields are required when selected as the primary contact method."
+    - value: "**Require mobile for text opt-in.** Mobile numbers are mandatory if the user opts into text message communications."
+    - value: "**Pair with email.** Phone collection typically appears alongside email address on the same form step."
+    - value: "**Explain data usage.** Tell users how their phone number will be used."
+
+examples:
+  - title: With country codes
+    description: Phone number fields that include country code selection for international numbers.
+  - title: Without country codes
+    description: Domestic-only phone number fields for US numbers.
+
+how_to_build:
+  intro: The phone number pattern supports multiple formats and validation rules.
+  steps:
+    - value: "Use the telephone input component for proper formatting and validation."
+    - value: "Include country code selector for international number support when needed."
+    - value: "Validate both domestic formats (703-123-4567, 7031234567) and international formats (+52 123 456-7890)."
+    - value: "Distinguish between home and mobile phone numbers."
+  components_used:
+    - name: Telephone input
+      url: /docs/components/form/telephone-input
+
+code_usage: |
+  The `phonePattern` is available as a web-component pattern in the VA Forms library.
+
+  ```jsx
+  import { phonePattern } from '@department-of-veterans-affairs/platform-forms-system/patterns';
+  ```
+
+  **Acceptable US formats:**
+  - 703-123-4567
+  - 7031234567
+
+  **Acceptable international formats:**
+  - +52 123 456-7890
+  - 637031234567
+
+content_considerations:
+  - value: "Use 'Home phone number' and 'Mobile phone number' rather than primary/secondary terminology."
+  - value: "Display collected numbers per the VA.gov content style guidelines."
+  - value: "Avoid jargon; maintain a plain language approach."
+
+content_specs:
+  - field: Home phone number
+    hint_text: For international numbers, select or enter your country code
+    error_message: Enter a 10-digit phone number (with or without dashes)
+  - field: Mobile phone number
+    hint_text: For international numbers, select or enter your country code
+    error_message: Enter a 10-digit phone number (with or without dashes)
+
+accessibility:
+  - value: "Ensure phone fields have visible, associated labels."
+  - value: "Use autocomplete='tel' for home phone and autocomplete='tel' for mobile."
+  - value: "Provide clear error messages that explain the expected format."
+  - value: "Support keyboard-only input for country code selection."
+---
+
+import PatternPage from '@site/src/components/PatternPage';
+
+<PatternPage frontMatter={frontMatter} />
+

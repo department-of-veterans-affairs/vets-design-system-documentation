@@ -1,0 +1,25 @@
+{
+  "id": "accessibility/index",
+  "title": "Accessibility",
+  "description": "Accessibility guidelines and requirements for VA.gov",
+  "source": "@site/docs/accessibility/index.md",
+  "sourceDirName": "accessibility",
+  "slug": "/accessibility/",
+  "permalink": "/docs/accessibility/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/accessibility/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Accessibility",
+    "description": "Accessibility guidelines and requirements for VA.gov",
+    "sidebar_position": 1
+  },
+  "sidebar": "accessibilitySidebar",
+  "next": {
+    "title": "Accessibility for Teams",
+    "permalink": "/docs/accessibility/for-teams"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "id": "patterns/help-users-to/navigate-multiple-related-forms/index",
+  "title": "Navigate multiple related forms",
+  "description": "Follow this pattern to help Veterans understand which forms come next and how to move through multiple forms without confusion.",
+  "source": "@site/docs/patterns/help-users-to/navigate-multiple-related-forms/index.mdx",
+  "sourceDirName": "patterns/help-users-to/navigate-multiple-related-forms",
+  "slug": "/patterns/help-users-to/navigate-multiple-related-forms/",
+  "permalink": "/docs/patterns/help-users-to/navigate-multiple-related-forms/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/patterns/help-users-to/navigate-multiple-related-forms/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 14,
+  "frontMatter": {
+    "title": "Navigate multiple related forms",
+    "description": "Follow this pattern to help Veterans understand which forms come next and how to move through multiple forms without confusion.",
+    "cms_editable": true,
+    "category": "help-users-to",
+    "maturity": "deployed",
+    "sidebar_position": 14,
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms",
+    "github": "https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-multiple-forms%22",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Help+users+to...+Navigate+multiple+forms%22",
+    "intro": "Use this pattern to help Veterans understand which forms come next, which are optional, and how to move through multiple forms without confusion.",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Follow-up forms.** When a Veteran's primary form submission leads to follow-up forms by identifying required vs. optional forms."
+        },
+        {
+          "value": "**Supporting documents.** When additional evidence or documentation must be submitted alongside the main form."
+        },
+        {
+          "value": "**Multi-form processes.** Guide users through multi-form processes with clear priorities."
+        }
+      ],
+      "design_principles": [
+        {
+          "value": "**Distinguish requirements clearly.** Use explicit language differentiating 'must complete' from optional submissions rather than relying solely on visual treatment."
+        },
+        {
+          "value": "**Prioritize online over PDFs.** Default linking to online form experiences with PDFs as secondary options."
+        },
+        {
+          "value": "**Set realistic expectations.** Provide specific timing information and explain consequences of missing deadlines."
+        },
+        {
+          "value": "**Group logically.** Organize forms by priority, timing, or purpose with consistent labeling."
+        }
+      ],
+      "when_not_to_use": [
+        {
+          "value": "**Unrelated forms.** Don't use for unrelated forms serving different purposes or benefits."
+        },
+        {
+          "value": "**Unclear timing.** When follow-up timing is unclear or speculative."
+        }
+      ]
+    },
+    "examples": [
+      {
+        "title": "Introduction page mentioning related forms",
+        "description": "Lists evidence needed on introduction pages before starting the form."
+      },
+      {
+        "title": "Mid-form flow",
+        "description": "Requires additional form downloads/uploads during the form process."
+      },
+      {
+        "title": "Confirmation pages with required follow-ups",
+        "description": "Shows required follow-up forms after submission."
+      },
+      {
+        "title": "Confirmation pages with optional forms",
+        "description": "Lists optional forms available after submission."
+      }
+    ],
+    "how_to_build": {
+      "intro": "The pattern provides guidance on form placement and expectations.",
+      "steps": [
+        {
+          "value": "Use introduction pages when Veterans need documents before starting, multiple forms comprise one application, or scope understanding aids decision-making."
+        },
+        {
+          "value": "Use mid-form placement when user responses trigger additional form requirements."
+        },
+        {
+          "value": "Open required forms in new tabs to preserve progress."
+        },
+        {
+          "value": "Remind users on confirmation pages about any mid-form downloads."
+        },
+        {
+          "value": "Use confirmation pages when forms become available post-processing, specific deadlines apply, or forms are optional."
+        },
+        {
+          "value": "Provide in-form submission methods for supporting documents."
+        },
+        {
+          "value": "Allow form submission without all documents, with guidance for later submission."
+        }
+      ],
+      "components_used": [
+        {
+          "name": "Process list",
+          "url": "/docs/components/process-list"
+        },
+        {
+          "name": "Link",
+          "url": "/docs/components/link"
+        },
+        {
+          "name": "Additional info",
+          "url": "/docs/components/additional-info"
+        },
+        {
+          "name": "Alert",
+          "url": "/docs/components/alert"
+        }
+      ]
+    },
+    "content_considerations": [
+      {
+        "value": "Structure forms consistently. Use parallel language and formatting across form listings."
+      },
+      {
+        "value": "Be specific. Avoid vague language; clearly state what's required versus optional."
+      },
+      {
+        "value": "Link descriptively. Use meaningful link text explaining what users will find."
+      },
+      {
+        "value": "Explain context. Provide reasoning and timing for additional form submissions."
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Implement hierarchical heading structure."
+      },
+      {
+        "value": "Ensure screen readers understand form relationships from link text."
+      },
+      {
+        "value": "Use proper HTML list markup."
+      },
+      {
+        "value": "Test with assistive technology."
+      }
+    ]
+  },
+  "sidebar": "patternsSidebar",
+  "previous": {
+    "title": "Navigate a long list",
+    "permalink": "/docs/patterns/help-users-to/navigate-a-long-list/"
+  },
+  "next": {
+    "title": "Deprecated",
+    "permalink": "/docs/category/deprecated"
+  }
+}

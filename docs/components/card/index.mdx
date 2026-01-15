@@ -1,0 +1,90 @@
+---
+cms_editable: true
+title: Card
+description: Groups related personalized information into discrete containers
+maturity: deployed
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-card
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+storybook: https://design.va.gov/storybook/?path=/docs/uswds-va-card--docs
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Card%22
+related:
+  - name: Summary Box
+    url: /docs/components/summary-box
+    description: For content highlights
+  - name: Tag - Status
+    url: /docs/components/tag/tag-status
+    description: For status indicators
+usage:
+  when_to_use:
+    - value: "**Collections**: Present identical or similar information uniformly for easy scanning"
+    - value: "**Call-to-action framing**: Highlight specific decisions or actions users need to take"
+    - value: "**Status conveyance**: Display time-sensitive information (appointments, claims, form submissions) with status indicators"
+  when_to_consider_else:
+    - value: "Eligibility information: use Service List Item"
+    - value: "Content highlights: use [Summary Box](/docs/components/summary-box)"
+    - value: "Dynamic response content: use [Alert](/docs/components/alert/)"
+    - value: "Form field clustering: use fieldset"
+    - value: "Large datasets: use [Table](/docs/components/table)"
+    - value: "Primary navigation: avoid using as button/link replacement"
+  behavior:
+    - value: Make cards actionable via links/action links
+    - value: Use action links for primary CTAs
+    - value: Maximum 3 CTAs per card
+    - value: Use [Tag - Status](/docs/components/tag/tag-status) component
+    - value: Avoid color-only status indicators
+    - value: Combine color with additional indicators
+    - value: "**Mobile**: 280-304px width"
+    - value: "**Desktop**: 384-752px width"
+    - value: "**Spacing**: 1.5 units between cards; 2 units margins at medium+ breakpoints"
+examples:
+  - title: Default
+    description: Default
+    storyId: uswds-va-card--default
+    height: 200
+  - title: With Background
+    description: With Background
+    storyId: uswds-va-card--with-background
+    height: 200
+  - title: With Drop Shadow
+    description: With Drop Shadow
+    storyId: uswds-va-card--with-drop-shadow
+    height: 200
+  - title: With Icon
+    description: With Icon
+    storyId: uswds-va-card--with-icon
+    height: 200
+code_usage: |
+  <!-- Default card -->
+  <va-card>
+    <h3>Card Title</h3>
+    <p>Card content goes here.</p>
+    <va-link-action href="/action" text="Take action"></va-link-action>
+  </va-card>
+
+  <!-- With gray background -->
+  <va-card background>
+    <h3>Card Title</h3>
+    <p>Card content goes here.</p>
+  </va-card>
+
+  <!-- With drop shadow -->
+  <va-card show-shadow>
+    <h3>Card Title</h3>
+    <p>Card content goes here.</p>
+  </va-card>
+
+  <!-- With icon -->
+  <va-card icon-name="calendar">
+    <h3>Upcoming Appointment</h3>
+    <p>January 15, 2025 at 2:00 PM</p>
+  </va-card>
+component_tag: va-card
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

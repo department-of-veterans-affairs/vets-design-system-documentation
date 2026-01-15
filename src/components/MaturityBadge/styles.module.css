@@ -1,0 +1,39 @@
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.deployed {
+  background-color: #ecf3ec;
+  color: #216e1f;
+  border: 1px solid #216e1f;
+}
+
+.caution {
+  background-color: #faf3d1;
+  color: #936f38;
+  border: 1px solid #936f38;
+}
+
+.dontUse {
+  background-color: #f8dfe2;
+  color: #b50909;
+  border: 1px solid #b50909;
+}
+
+.bestPractice {
+  background-color: #e1f3f8;
+  color: #07648d;
+  border: 1px solid #07648d;
+}
+
+.deprecated {
+  background-color: #f1f1f1;
+  color: #5c5c5c;
+  border: 1px solid #5c5c5c;
+}

@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/numbers-signs-symbols",
+  "title": "Numbers, signs, and symbols",
+  "description": "Guidelines for formatting numbers, signs, and symbols on VA.gov.",
+  "source": "@site/docs/content-style-guide/numbers-signs-symbols.md",
+  "sourceDirName": "content-style-guide",
+  "slug": "/content-style-guide/numbers-signs-symbols",
+  "permalink": "/docs/content-style-guide/numbers-signs-symbols",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/numbers-signs-symbols.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 16,
+  "frontMatter": {
+    "title": "Numbers, signs, and symbols",
+    "description": "Guidelines for formatting numbers, signs, and symbols on VA.gov.",
+    "sidebar_position": 16
+  }
+}

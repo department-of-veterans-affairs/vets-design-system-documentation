@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Content Manager | VA Design System Docs</title>
+    <style>
+      /* Hide sidebar collection icons */
+      [class*="SidebarNavList"] svg,
+      [class*="CollectionLabel"] svg,
+      [class*="NavLink"] svg:first-child {
+        display: none !important;
+      }
+
+      /* Hide nested sub-navigation items - only show top-level collections */
+      [class*="SidebarNavList"] [class*="SidebarNavList"] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://unpkg.com/decap-cms@3.3.3/dist/decap-cms.js"></script>
+    <script>
+      // Register Infima CSS (Docusaurus default framework) for preview styling
+      CMS.registerPreviewStyle('https://unpkg.com/infima@0.2.0-alpha.44/dist/css/default/default.css');
+
+      // Register custom Docusaurus styles
+      CMS.registerPreviewStyle('/src/css/custom.css');
+
+      // Add base preview styles to match Docusaurus layout
+      CMS.registerPreviewStyle(`
+        body {
+          font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+          padding: 1rem 2rem;
+          line-height: 1.6;
+        }
+        h1, h2, h3, h4, h5, h6 {
+          font-weight: 700;
+          line-height: 1.25;
+          margin-top: 1.5rem;
+          margin-bottom: 0.5rem;
+        }
+        h1 { font-size: 2rem; margin-top: 0; }
+        h2 { font-size: 1.5rem; border-bottom: 1px solid #eaecef; padding-bottom: 0.3rem; }
+        h3 { font-size: 1.25rem; }
+        code {
+          background: rgba(0, 0, 0, 0.05);
+          border-radius: 3px;
+          padding: 0.2em 0.4em;
+          font-size: 0.9em;
+        }
+        pre {
+          background: #282c34;
+          color: #abb2bf;
+          padding: 1rem;
+          border-radius: 6px;
+          overflow-x: auto;
+        }
+        pre code {
+          background: none;
+          padding: 0;
+          color: inherit;
+        }
+        table {
+          border-collapse: collapse;
+          width: 100%;
+          margin: 1rem 0;
+        }
+        th, td {
+          border: 1px solid #ddd;
+          padding: 0.75rem;
+          text-align: left;
+        }
+        th {
+          background: #f6f8fa;
+          font-weight: 600;
+        }
+        blockquote {
+          border-left: 4px solid var(--ifm-color-primary, #2e8555);
+          margin: 1rem 0;
+          padding: 0.5rem 1rem;
+          background: #f8f9fa;
+        }
+        a {
+          color: var(--ifm-color-primary, #2e8555);
+          text-decoration: none;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+        ul, ol {
+          padding-left: 1.5rem;
+          margin: 1rem 0;
+        }
+        li {
+          margin: 0.25rem 0;
+        }
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+
+        /* Tag/Badge styles */
+        .tag {
+          display: inline-block;
+          padding: 0.25rem 0.6rem;
+          border-radius: 4px;
+          font-size: 0.75rem;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 0.025em;
+          margin-right: 0.5rem;
+          margin-bottom: 0.5rem;
+        }
+        .tag--maturity {
+          color: white;
+        }
+        .tag--deployed {
+          background-color: #2e8555;
+        }
+        .tag--use-with-caution {
+          background-color: #e6a700;
+          color: #1a1a1a;
+        }
+        .tag--dont-use {
+          background-color: #d73a49;
+        }
+        .tag--best-practice {
+          background-color: #0366d6;
+        }
+        .tag--deprecated {
+          background-color: #5c5c5c;
+        }
+        .tag--platform {
+          background-color: #f1f3f5;
+          color: #495057;
+          border: 1px solid #dee2e6;
+        }
+
+        /* Component header section */
+        .component-header {
+          margin-bottom: 2rem;
+          padding-bottom: 1rem;
+          border-bottom: 1px solid #eaecef;
+        }
+        .component-header h1 {
+          margin-bottom: 0.5rem;
+        }
+        .component-header p {
+          color: #57606a;
+          margin-bottom: 1rem;
+        }
+        .component-tags {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.5rem;
+          align-items: center;
+          margin-bottom: 1rem;
+        }
+
+        /* Resource links */
+        .resource-links {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1rem;
+          margin-top: 0.75rem;
+        }
+        .resource-link {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.375rem;
+          color: #57606a;
+          font-size: 0.875rem;
+          text-decoration: none;
+          padding: 0.25rem 0;
+        }
+        .resource-link:hover {
+          color: #2e8555;
+        }
+        .resource-link svg {
+          width: 16px;
+          height: 16px;
+        }
+      `, { raw: true });
+
+      // SVG icons for resource links
+      const GitHubIcon = function() {
+        return h('svg', { width: 16, height: 16, viewBox: '0 0 16 16', fill: 'currentColor' },
+          h('path', { d: 'M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z' })
+        );
+      };
+
+      const FigmaIcon = function() {
+        return h('svg', { width: 16, height: 16, viewBox: '0 0 16 16', fill: 'currentColor' },
+          h('path', { d: 'M5.333 16A2.667 2.667 0 008 13.333v-2.666H5.333a2.667 2.667 0 000 5.333zM2.667 8a2.667 2.667 0 012.666-2.667H8v5.334H5.333A2.667 2.667 0 012.667 8zM2.667 2.667A2.667 2.667 0 015.333 0H8v5.333H5.333a2.667 2.667 0 01-2.666-2.666zM8 0h2.667a2.667 2.667 0 010 5.333H8V0zM13.333 8a2.667 2.667 0 11-5.333 0 2.667 2.667 0 015.333 0z' })
+        );
+      };
+
+      const StorybookIcon = function() {
+        return h('svg', { width: 16, height: 16, viewBox: '0 0 16 16', fill: 'currentColor' },
+          h('path', { d: 'M11.117 0L11 1.094l-.058.012c-.047.01-.112.025-.19.046a3.57 3.57 0 00-.496.168c-.405.166-.888.444-1.2.89-.162.23-.27.493-.324.78H3.5A1.5 1.5 0 002 4.49v10.02a1.5 1.5 0 001.5 1.5h9a1.5 1.5 0 001.5-1.5V1.094L11.117 0zM10 2.5a.5.5 0 111 0 .5.5 0 01-1 0zM5.5 5h5a.5.5 0 010 1h-5a.5.5 0 010-1zm0 2h5a.5.5 0 010 1h-5a.5.5 0 010-1zm0 2h3a.5.5 0 010 1h-3a.5.5 0 010-1z' })
+        );
+      };
+
+      const ResearchIcon = function() {
+        return h('svg', { width: 16, height: 16, viewBox: '0 0 16 16', fill: 'currentColor' },
+          h('path', { d: 'M11.742 10.344a6.5 6.5 0 10-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 001.415-1.414l-3.85-3.85a1.007 1.007 0 00-.115-.1zM12 6.5a5.5 5.5 0 11-11 0 5.5 5.5 0 0111 0z' })
+        );
+      };
+
+      const DiscussionsIcon = function() {
+        return h('svg', { width: 16, height: 16, viewBox: '0 0 16 16', fill: 'currentColor' },
+          h('path', { d: 'M1.5 2.75a.25.25 0 01.25-.25h8.5a.25.25 0 01.25.25v5.5a.25.25 0 01-.25.25h-3.5a.75.75 0 00-.53.22L3.5 11.44V9.25a.75.75 0 00-.75-.75h-1a.25.25 0 01-.25-.25v-5.5zM1.75 1A1.75 1.75 0 000 2.75v5.5C0 9.216.784 10 1.75 10H2v1.543a1.457 1.457 0 002.487 1.03L7.061 10h3.189A1.75 1.75 0 0012 8.25v-5.5A1.75 1.75 0 0010.25 1h-8.5zM14.5 4.75a.25.25 0 00-.25-.25h-.5a.75.75 0 110-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0114.25 12H14v1.543a1.457 1.457 0 01-2.487 1.03L9.22 12.28a.75.75 0 111.06-1.06l2.22 2.22v-2.19a.75.75 0 01.75-.75h1a.25.25 0 00.25-.25v-5.5z' })
+        );
+      };
+
+      // Maturity label mapping
+      const maturityLabels = {
+        'deployed': 'Deployed',
+        'use-with-caution': 'Use with Caution',
+        'dont-use': "Don't Use",
+        'best-practice': 'Best Practice',
+        'deprecated': 'Deprecated'
+      };
+
+      // Shared component header renderer
+      function renderComponentHeader(entry, widgetFor) {
+        const title = entry.getIn(['data', 'title']) || 'Component Name';
+        const description = entry.getIn(['data', 'description']) || '';
+        const maturity = entry.getIn(['data', 'maturity']) || 'use-with-caution';
+        const platforms = entry.getIn(['data', 'platforms']);
+        const platformList = platforms ? platforms.toJS() : ['web'];
+
+        // Resource links
+        const github = entry.getIn(['data', 'github']) || entry.getIn(['data', 'github_label']);
+        const discussions = entry.getIn(['data', 'discussions']);
+        const figma = entry.getIn(['data', 'figma']) || entry.getIn(['data', 'figma_url']);
+        const storybook = entry.getIn(['data', 'storybook']) || entry.getIn(['data', 'storybook_id']);
+        const research = entry.getIn(['data', 'research']);
+
+        const hasLinks = github || discussions || figma || storybook || research;
+
+        return h('div', { className: 'component-header' },
+          h('h1', {}, title),
+          description && h('p', {}, description),
+          h('div', { className: 'component-tags' },
+            // Maturity tag
+            h('span', {
+              className: 'tag tag--maturity tag--' + maturity
+            }, maturityLabels[maturity] || maturity),
+            // Platform tags
+            platformList.map(function(platform) {
+              return h('span', {
+                key: platform,
+                className: 'tag tag--platform'
+              }, platform.charAt(0).toUpperCase() + platform.slice(1));
+            })
+          ),
+          // Resource links
+          hasLinks && h('div', { className: 'resource-links' },
+            github && h('a', { href: '#', className: 'resource-link' },
+              h(GitHubIcon),
+              'GitHub'
+            ),
+            discussions && h('a', { href: '#', className: 'resource-link' },
+              h(DiscussionsIcon),
+              'Discussions'
+            ),
+            figma && h('a', { href: '#', className: 'resource-link' },
+              h(FigmaIcon),
+              'Figma'
+            ),
+            storybook && h('a', { href: '#', className: 'resource-link' },
+              h(StorybookIcon),
+              'Storybook'
+            ),
+            research && h('a', { href: '#', className: 'resource-link' },
+              h(ResearchIcon),
+              'Research'
+            )
+          )
+        );
+      }
+
+      // Custom preview template for new-component collection
+      const NewComponentPreview = createClass({
+        render: function() {
+          const entry = this.props.entry;
+
+          return h('div', {},
+            renderComponentHeader(entry, this.props.widgetFor),
+            // Content sections
+            this.props.widgetFor('overview'),
+            this.props.widgetFor('examples'),
+            this.props.widgetFor('usage'),
+            this.props.widgetFor('code_usage'),
+            this.props.widgetFor('accessibility')
+          );
+        }
+      });
+
+      // Helper functions for checklist rendering
+      function checklistStatusIcon(status) {
+        if (status === 'complete' || status === 'pass') {
+          return h('span', { style: { color: '#2e8555', fontWeight: 'bold' } }, '✓');
+        }
+        if (status === 'incomplete' || status === 'fail') {
+          return h('span', { style: { color: '#d73a49', fontWeight: 'bold' } }, '✗');
+        }
+        if (status === 'n/a') {
+          return h('span', { style: { color: '#6a737d' } }, 'N/A');
+        }
+        if (status === 'conditional') {
+          return h('span', { style: { color: '#e6a700', fontWeight: 'bold' } }, '◐');
+        }
+        return h('span', { style: { color: '#959da5' } }, '—');
+      }
+
+      function checklistTableRow(label, webStatus, mobileStatus) {
+        return h('tr', {},
+          h('td', { style: { padding: '8px', borderBottom: '1px solid #eaecef' } }, label),
+          h('td', { style: { padding: '8px', borderBottom: '1px solid #eaecef', textAlign: 'center' } }, checklistStatusIcon(webStatus)),
+          h('td', { style: { padding: '8px', borderBottom: '1px solid #eaecef', textAlign: 'center' } }, checklistStatusIcon(mobileStatus))
+        );
+      }
+
+      function auditTableRow(label, status) {
+        var badgeStyle = {
+          padding: '2px 8px',
+          borderRadius: '4px',
+          fontSize: '0.75rem',
+          fontWeight: '600'
+        };
+        if (status === 'pass') {
+          badgeStyle.background = '#2e8555';
+          badgeStyle.color = 'white';
+        } else if (status === 'fail') {
+          badgeStyle.background = '#d73a49';
+          badgeStyle.color = 'white';
+        } else if (status === 'conditional') {
+          badgeStyle.background = '#e6a700';
+          badgeStyle.color = '#1a1a1a';
+        } else {
+          badgeStyle.background = '#f1f3f5';
+          badgeStyle.color = '#6a737d';
+        }
+        return h('tr', {},
+          h('td', { style: { padding: '8px', borderBottom: '1px solid #eaecef' } }, label),
+          h('td', { style: { padding: '8px', borderBottom: '1px solid #eaecef', textAlign: 'center' } },
+            h('span', { style: badgeStyle }, status || '—')
+          )
+        );
+      }
+
+      function renderChecklistSection(checklist) {
+        if (!checklist) return null;
+
+        var webCompleted = checklist.get('web_completed');
+        var mobileCompleted = checklist.get('mobile_completed');
+        var maturity = checklist.get('maturity');
+        var codeAssets = checklist.get('code_assets');
+        var visualAssets = checklist.get('visual_assets');
+        var a11yWeb = checklist.get('a11y_audit_web');
+        var a11yMobile = checklist.get('a11y_audit_mobile');
+
+        var tableHeaderStyle = { textAlign: 'left', borderBottom: '2px solid #eaecef', padding: '8px' };
+        var tableHeaderCenterStyle = { textAlign: 'center', borderBottom: '2px solid #eaecef', padding: '8px', width: '80px' };
+
+        return h('section', { style: { marginTop: '3rem', paddingTop: '2rem', borderTop: '3px solid #eaecef' } },
+          h('h2', {}, '📋 Component Checklist'),
+
+          // Completion dates
+          (webCompleted || mobileCompleted) && h('div', { style: { marginBottom: '1.5rem', padding: '1rem', background: '#f6f8fa', borderRadius: '6px' } },
+            webCompleted && h('div', {}, h('strong', {}, 'Web completed: '), webCompleted),
+            mobileCompleted && h('div', {}, h('strong', {}, 'Mobile completed: '), mobileCompleted)
+          ),
+
+          // Maturity
+          maturity && h('div', { style: { marginBottom: '2rem' } },
+            h('h3', {}, 'Maturity'),
+            h('table', { style: { width: '100%', borderCollapse: 'collapse' } },
+              h('thead', {},
+                h('tr', {},
+                  h('th', { style: tableHeaderStyle }, 'Criteria'),
+                  h('th', { style: tableHeaderCenterStyle }, 'Web'),
+                  h('th', { style: tableHeaderCenterStyle }, 'Mobile')
+                )
+              ),
+              h('tbody', {},
+                checklistTableRow('Guidance', maturity.get('guidance_web'), maturity.get('guidance_mobile')),
+                checklistTableRow('Research', maturity.get('research_web'), maturity.get('research_mobile')),
+                checklistTableRow('Stability', maturity.get('stability_web'), maturity.get('stability_mobile')),
+                checklistTableRow('Adoption', maturity.get('adoption_web'), maturity.get('adoption_mobile'))
+              )
+            )
+          ),
+
+          // Code Assets
+          codeAssets && h('div', { style: { marginBottom: '2rem' } },
+            h('h3', {}, 'Code Assets'),
+            h('table', { style: { width: '100%', borderCollapse: 'collapse' } },
+              h('thead', {},
+                h('tr', {},
+                  h('th', { style: tableHeaderStyle }, 'Criteria'),
+                  h('th', { style: tableHeaderCenterStyle }, 'Web'),
+                  h('th', { style: tableHeaderCenterStyle }, 'Mobile')
+                )
+              ),
+              h('tbody', {},
+                checklistTableRow('Variations', codeAssets.get('variations_web'), codeAssets.get('variations_mobile')),
+                checklistTableRow('Responsive', codeAssets.get('responsive_web'), codeAssets.get('responsive_mobile')),
+                checklistTableRow('Interactive states', codeAssets.get('interactive_states_web'), codeAssets.get('interactive_states_mobile')),
+                checklistTableRow('Tokens', codeAssets.get('tokens_web'), codeAssets.get('tokens_mobile')),
+                checklistTableRow('Internationalization', codeAssets.get('i18n_web'), codeAssets.get('i18n_mobile'))
+              )
+            )
+          ),
+
+          // Visual Assets
+          visualAssets && h('div', { style: { marginBottom: '2rem' } },
+            h('h3', {}, 'Visual Assets'),
+            h('table', { style: { width: '100%', borderCollapse: 'collapse' } },
+              h('thead', {},
+                h('tr', {},
+                  h('th', { style: tableHeaderStyle }, 'Criteria'),
+                  h('th', { style: tableHeaderCenterStyle }, 'Web'),
+                  h('th', { style: tableHeaderCenterStyle }, 'Mobile')
+                )
+              ),
+              h('tbody', {},
+                checklistTableRow('Variations', visualAssets.get('variations_web'), visualAssets.get('variations_mobile')),
+                checklistTableRow('Responsive', visualAssets.get('responsive_web'), visualAssets.get('responsive_mobile')),
+                checklistTableRow('Interactive states', visualAssets.get('interactive_states_web'), visualAssets.get('interactive_states_mobile')),
+                checklistTableRow('Tokens', visualAssets.get('tokens_web'), visualAssets.get('tokens_mobile'))
+              )
+            )
+          ),
+
+          // Accessibility Audits
+          (a11yWeb || a11yMobile) && h('div', {},
+            h('h3', {}, 'Accessibility Audit'),
+
+            // Web audit
+            a11yWeb && h('div', { style: { marginBottom: '1.5rem' } },
+              h('h4', {}, 'Web',
+                a11yWeb.get('last_audit_date') && h('span', { style: { fontWeight: 'normal', fontSize: '0.875rem', color: '#6a737d', marginLeft: '1rem' } }, 'Last audit: ' + a11yWeb.get('last_audit_date'))
+              ),
+              h('table', { style: { width: '100%', borderCollapse: 'collapse' } },
+                h('thead', {},
+                  h('tr', {},
+                    h('th', { style: tableHeaderStyle }, 'Category'),
+                    h('th', { style: { textAlign: 'center', borderBottom: '2px solid #eaecef', padding: '8px', width: '100px' } }, 'Status')
+                  )
+                ),
+                h('tbody', {},
+                  auditTableRow('Code review', a11yWeb.get('code_review')),
+                  auditTableRow('Readability', a11yWeb.get('readability')),
+                  auditTableRow('Automated scans', a11yWeb.get('automated_scans')),
+                  auditTableRow('Use of color', a11yWeb.get('use_of_color')),
+                  auditTableRow('Text resizing', a11yWeb.get('text_resizing')),
+                  auditTableRow('Screen readers', a11yWeb.get('screen_readers')),
+                  auditTableRow('Input methods', a11yWeb.get('input_methods'))
+                )
+              )
+            ),
+
+            // Mobile audit
+            a11yMobile && h('div', {},
+              h('h4', {}, 'Mobile',
+                a11yMobile.get('last_audit_date') && h('span', { style: { fontWeight: 'normal', fontSize: '0.875rem', color: '#6a737d', marginLeft: '1rem' } }, 'Last audit: ' + a11yMobile.get('last_audit_date'))
+              ),
+              h('table', { style: { width: '100%', borderCollapse: 'collapse' } },
+                h('thead', {},
+                  h('tr', {},
+                    h('th', { style: tableHeaderStyle }, 'Category'),
+                    h('th', { style: { textAlign: 'center', borderBottom: '2px solid #eaecef', padding: '8px', width: '100px' } }, 'Status')
+                  )
+                ),
+                h('tbody', {},
+                  auditTableRow('Code review', a11yMobile.get('code_review')),
+                  auditTableRow('Readability', a11yMobile.get('readability')),
+                  auditTableRow('Automated scans', a11yMobile.get('automated_scans')),
+                  auditTableRow('Use of color', a11yMobile.get('use_of_color')),
+                  auditTableRow('Text resizing', a11yMobile.get('text_resizing')),
+                  auditTableRow('Screen readers', a11yMobile.get('screen_readers')),
+                  auditTableRow('Input methods', a11yMobile.get('input_methods'))
+                )
+              )
+            )
+          )
+        );
+      }
+
+      // Custom preview template for existing components collection
+      const ComponentPreview = createClass({
+        render: function() {
+          const entry = this.props.entry;
+          const data = entry.get('data');
+
+          // Get structured content from frontmatter
+          const intro = data.get('intro');
+          const related = data.get('related');
+          const examples = data.get('examples');
+          const usage = data.get('usage');
+          const codeUsage = data.get('code_usage');
+          const contentConsiderations = data.get('content_considerations');
+          const accessibility = data.get('accessibility');
+          const checklist = data.get('checklist');
+
+          // Check if this component has structured fields or uses body content
+          const hasStructuredContent = intro || (examples && examples.size > 0) || usage || codeUsage;
+
+          return h('div', {},
+            renderComponentHeader(entry, this.props.widgetFor),
+
+            // If component uses body content (migrated components), render it
+            !hasStructuredContent && this.props.widgetFor('body'),
+
+            // Introduction (for structured components)
+            intro && h('section', {},
+              h('p', { style: { fontSize: '1.1rem', color: '#57606a' } }, intro)
+            ),
+
+            // Related Components
+            related && related.size > 0 && h('section', {},
+              h('h2', {}, 'Related components'),
+              h('ul', {},
+                related.toJS().map(function(rel, i) {
+                  return h('li', { key: i },
+                    h('a', { href: rel.url }, rel.name),
+                    ' - ',
+                    rel.description
+                  );
+                })
+              )
+            ),
+
+            // Examples
+            examples && examples.size > 0 && h('section', {},
+              h('h2', {}, 'Examples'),
+              examples.toJS().map(function(example, i) {
+                return h('div', { key: i, style: { marginBottom: '1.5rem' } },
+                  h('h3', {}, example.title),
+                  h('p', {}, example.description),
+                  h('div', {
+                    style: {
+                      background: '#f6f8fa',
+                      border: '1px solid #d0d7de',
+                      borderRadius: '6px',
+                      padding: '1rem',
+                      textAlign: 'center',
+                      color: '#57606a'
+                    }
+                  }, '[Storybook embed: ' + example.storyId + ']')
+                );
+              })
+            ),
+
+            // Usage Guidelines
+            usage && h('section', {},
+              h('h2', {}, 'Usage'),
+              usage.get('when_to_use') && usage.get('when_to_use').size > 0 && h('div', {},
+                h('h3', {}, 'When to use'),
+                h('ul', {},
+                  usage.get('when_to_use').toJS().map(function(item, i) {
+                    return h('li', { key: i }, item.value || item);
+                  })
+                )
+              ),
+              usage.get('when_to_consider_else') && usage.get('when_to_consider_else').size > 0 && h('div', {},
+                h('h3', {}, 'When to consider something else'),
+                h('ul', {},
+                  usage.get('when_to_consider_else').toJS().map(function(item, i) {
+                    return h('li', { key: i }, item.value || item);
+                  })
+                )
+              ),
+              usage.get('behavior') && usage.get('behavior').size > 0 && h('div', {},
+                h('h3', {}, 'Behavior'),
+                h('ul', {},
+                  usage.get('behavior').toJS().map(function(item, i) {
+                    return h('li', { key: i }, item.value || item);
+                  })
+                )
+              )
+            ),
+
+            // Code Usage
+            codeUsage && h('section', {},
+              h('h2', {}, 'Code usage'),
+              h('pre', {},
+                h('code', {}, codeUsage)
+              )
+            ),
+
+            // Content Considerations
+            contentConsiderations && contentConsiderations.size > 0 && h('section', {},
+              h('h2', {}, 'Content considerations'),
+              h('ul', {},
+                contentConsiderations.toJS().map(function(item, i) {
+                  return h('li', { key: i }, item.value || item);
+                })
+              )
+            ),
+
+            // Accessibility
+            accessibility && accessibility.size > 0 && h('section', {},
+              h('h2', {}, 'Accessibility considerations'),
+              h('ul', {},
+                accessibility.toJS().map(function(item, i) {
+                  return h('li', { key: i }, item.value || item);
+                })
+              )
+            ),
+
+            // Component Checklist (at the bottom)
+            renderChecklistSection(checklist)
+          );
+        }
+      });
+
+      // Shared pattern header renderer (similar to component header but for patterns)
+      function renderPatternHeader(entry) {
+        const title = entry.getIn(['data', 'title']) || 'Pattern Name';
+        const description = entry.getIn(['data', 'description']) || '';
+        const maturity = entry.getIn(['data', 'maturity']) || 'use-with-caution';
+        const category = entry.getIn(['data', 'category']) || 'ask-users-for';
+
+        // Category labels
+        const categoryLabels = {
+          'ask-users-for': 'Ask users for...',
+          'help-users-to': 'Help users to...',
+          'deprecated': 'Deprecated'
+        };
+
+        // Resource links
+        const github = entry.getIn(['data', 'github']);
+        const discussions = entry.getIn(['data', 'discussions']);
+        const figma = entry.getIn(['data', 'figma']);
+        const research = entry.getIn(['data', 'research']);
+        const code = entry.getIn(['data', 'code']);
+
+        const hasLinks = github || discussions || figma || research || code;
+
+        return h('div', { className: 'component-header' },
+          h('h1', {}, title),
+          description && h('p', {}, description),
+          h('div', { className: 'component-tags' },
+            // Maturity tag
+            h('span', {
+              className: 'tag tag--maturity tag--' + maturity
+            }, maturityLabels[maturity] || maturity),
+            // Category tag
+            h('span', {
+              className: 'tag tag--platform'
+            }, categoryLabels[category] || category)
+          ),
+          // Resource links
+          hasLinks && h('div', { className: 'resource-links' },
+            github && h('a', { href: '#', className: 'resource-link' },
+              h(GitHubIcon),
+              'GitHub'
+            ),
+            discussions && h('a', { href: '#', className: 'resource-link' },
+              h(DiscussionsIcon),
+              'Discussions'
+            ),
+            figma && h('a', { href: '#', className: 'resource-link' },
+              h(FigmaIcon),
+              'Figma'
+            ),
+            code && h('a', { href: '#', className: 'resource-link' },
+              h(StorybookIcon),
+              'Code'
+            ),
+            research && h('a', { href: '#', className: 'resource-link' },
+              h(ResearchIcon),
+              'Research'
+            )
+          )
+        );
+      }
+
+      // Custom preview template for patterns collection
+      const PatternPreview = createClass({
+        render: function() {
+          const entry = this.props.entry;
+          const data = entry.get('data');
+
+          // Get structured content from frontmatter
+          const intro = data.get('intro');
+          const usage = data.get('usage');
+          const examples = data.get('examples');
+          const howToBuild = data.get('how_to_build');
+          const codeUsage = data.get('code_usage');
+          const contentConsiderations = data.get('content_considerations');
+          const contentSpecs = data.get('content_specs');
+          const accessibility = data.get('accessibility');
+
+          return h('div', {},
+            renderPatternHeader(entry),
+
+            // Introduction
+            intro && h('section', {},
+              h('p', { style: { fontSize: '1.1rem', color: '#57606a' } }, intro)
+            ),
+
+            // Usage Guidelines
+            usage && h('section', {},
+              h('h2', {}, 'Usage'),
+              usage.get('when_to_use') && usage.get('when_to_use').size > 0 && h('div', {},
+                h('h3', {}, 'When to use this pattern'),
+                h('ul', {},
+                  usage.get('when_to_use').toJS().map(function(item, i) {
+                    return h('li', { key: i }, item.value || item);
+                  })
+                )
+              ),
+              usage.get('design_principles') && usage.get('design_principles').size > 0 && h('div', {},
+                h('h3', {}, 'Design principles'),
+                h('ul', {},
+                  usage.get('design_principles').toJS().map(function(item, i) {
+                    return h('li', { key: i }, item.value || item);
+                  })
+                )
+              ),
+              usage.get('when_not_to_use') && usage.get('when_not_to_use').size > 0 && h('div', {},
+                h('h3', {}, 'When not to use this pattern'),
+                h('ul', {},
+                  usage.get('when_not_to_use').toJS().map(function(item, i) {
+                    return h('li', { key: i }, item.value || item);
+                  })
+                )
+              )
+            ),
+
+            // Examples
+            examples && examples.size > 0 && h('section', {},
+              h('h2', {}, 'Examples'),
+              examples.toJS().map(function(example, i) {
+                return h('div', { key: i, style: { marginBottom: '1.5rem' } },
+                  example.title && h('h3', {}, example.title),
+                  example.description && h('p', {}, example.description),
+                  example.image && h('figure', { style: { margin: '1rem 0' } },
+                    h('img', {
+                      src: example.image,
+                      alt: example.alt || example.title || 'Pattern example',
+                      style: { maxWidth: '100%', border: '1px solid #d0d7de', borderRadius: '6px' }
+                    })
+                  )
+                );
+              })
+            ),
+
+            // How to Design and Build
+            howToBuild && h('section', {},
+              h('h2', {}, 'How to design and build'),
+              howToBuild.get('intro') && h('p', {}, howToBuild.get('intro')),
+              howToBuild.get('steps') && howToBuild.get('steps').size > 0 && h('div', {},
+                h('h3', {}, 'How this pattern works'),
+                h('ol', {},
+                  howToBuild.get('steps').toJS().map(function(step, i) {
+                    return h('li', { key: i }, step.value || step);
+                  })
+                )
+              ),
+              howToBuild.get('components_used') && howToBuild.get('components_used').size > 0 && h('div', {},
+                h('h3', {}, 'Components used in this pattern'),
+                h('ul', {},
+                  howToBuild.get('components_used').toJS().map(function(comp, i) {
+                    return h('li', { key: i },
+                      h('a', { href: comp.url }, comp.name)
+                    );
+                  })
+                )
+              )
+            ),
+
+            // Code Usage
+            codeUsage && h('section', {},
+              h('h2', {}, 'Code usage'),
+              this.props.widgetFor('code_usage')
+            ),
+
+            // Content Considerations
+            contentConsiderations && contentConsiderations.size > 0 && h('section', {},
+              h('h2', {}, 'Content considerations'),
+              h('ul', {},
+                contentConsiderations.toJS().map(function(item, i) {
+                  return h('li', { key: i }, item.value || item);
+                })
+              )
+            ),
+
+            // Content Specifications Table
+            contentSpecs && contentSpecs.size > 0 && h('section', {},
+              !contentConsiderations && h('h2', {}, 'Content considerations'),
+              h('table', { style: { width: '100%', borderCollapse: 'collapse', marginTop: '1rem' } },
+                h('thead', {},
+                  h('tr', {},
+                    h('th', { style: { padding: '0.75rem 1rem', textAlign: 'left', border: '1px solid #d0d7de', background: '#f6f8fa', fontWeight: '600' } }, 'Field'),
+                    h('th', { style: { padding: '0.75rem 1rem', textAlign: 'left', border: '1px solid #d0d7de', background: '#f6f8fa', fontWeight: '600' } }, 'Hint text'),
+                    h('th', { style: { padding: '0.75rem 1rem', textAlign: 'left', border: '1px solid #d0d7de', background: '#f6f8fa', fontWeight: '600' } }, 'Error message')
+                  )
+                ),
+                h('tbody', {},
+                  contentSpecs.toJS().map(function(spec, i) {
+                    return h('tr', { key: i },
+                      h('td', { style: { padding: '0.75rem 1rem', border: '1px solid #d0d7de' } }, spec.field),
+                      h('td', { style: { padding: '0.75rem 1rem', border: '1px solid #d0d7de' } }, spec.hint_text || '—'),
+                      h('td', { style: { padding: '0.75rem 1rem', border: '1px solid #d0d7de' } }, spec.error_message || '—')
+                    );
+                  })
+                )
+              )
+            ),
+
+            // Accessibility
+            accessibility && accessibility.size > 0 && h('section', {},
+              h('h2', {}, 'Accessibility considerations'),
+              h('ul', {},
+                accessibility.toJS().map(function(item, i) {
+                  return h('li', { key: i }, item.value || item);
+                })
+              )
+            )
+          );
+        }
+      });
+
+      // Register preview templates
+      CMS.registerPreviewTemplate('new-component', NewComponentPreview);
+      CMS.registerPreviewTemplate('components', ComponentPreview);
+      CMS.registerPreviewTemplate('patterns', PatternPreview);
+    </script>
+  </body>
+</html>

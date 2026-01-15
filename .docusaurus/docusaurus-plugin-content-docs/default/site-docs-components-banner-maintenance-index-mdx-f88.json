@@ -1,0 +1,102 @@
+{
+  "id": "components/banner/maintenance/index",
+  "title": "Banner - Maintenance",
+  "description": "Displays site-wide system maintenance messages fixed to the top of the viewport",
+  "source": "@site/docs/components/banner/maintenance/index.mdx",
+  "sourceDirName": "components/banner/maintenance",
+  "slug": "/components/banner/maintenance/",
+  "permalink": "/docs/components/banner/maintenance/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/banner/maintenance/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Banner - Maintenance",
+    "description": "Displays site-wide system maintenance messages fixed to the top of the viewport",
+    "maturity": "deployed",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-maintenance-banner",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Banner+-+Maintenance%22",
+    "related": [
+      {
+        "name": "Banner",
+        "url": "/docs/components/banner/",
+        "description": "For general announcements and urgent communications"
+      },
+      {
+        "name": "Banner - Official Gov",
+        "url": "../official-gov",
+        "description": "Identifies official government websites"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**System maintenance notifications** affecting all or most unauthenticated and authenticated applications, tools, or sign-in experiences across the entire site (e.g., vets-api)"
+        },
+        {
+          "value": "Publishing specific maintenance dates, times, and duration information"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "For any messaging that isn't a system status message"
+        },
+        {
+          "value": "For application-level maintenance (use downtime notifications guidance instead)"
+        },
+        {
+          "value": "For non-maintenance related communications"
+        }
+      ],
+      "behavior": [
+        {
+          "value": "**Customizable elements:** Duration, dates, and times"
+        },
+        {
+          "value": "**Time format:** Always displayed in Eastern Time (ET)"
+        },
+        {
+          "value": "**Dismissibility:** Always dismissible per session"
+        },
+        {
+          "value": "**Timing:** Upcoming messages should publish at least 12 hours in advance"
+        },
+        {
+          "value": "**Auto-removal:** Banners expire automatically when downtime concludes"
+        },
+        {
+          "value": "**Limit:** Maximum of 3 banners simultaneously"
+        }
+      ]
+    },
+    "examples": [
+      {
+        "title": "Default (during maintenance)",
+        "description": "Default (during maintenance)",
+        "storyId": "uswds-va-maintenance-banner--default",
+        "height": 150
+      },
+      {
+        "title": "Warning (upcoming maintenance)",
+        "description": "Warning (upcoming maintenance)",
+        "storyId": "uswds-va-maintenance-banner--warning",
+        "height": 150
+      }
+    ]
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Banner",
+    "permalink": "/docs/components/banner/"
+  },
+  "next": {
+    "title": "Banner - Official Gov",
+    "permalink": "/docs/components/banner/official-gov/"
+  }
+}

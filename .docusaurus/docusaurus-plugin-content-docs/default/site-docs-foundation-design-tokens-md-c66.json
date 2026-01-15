@@ -1,0 +1,29 @@
+{
+  "id": "foundation/design-tokens",
+  "title": "Design Tokens",
+  "description": "Standardized design decisions expressed as reusable tokens",
+  "source": "@site/docs/foundation/design-tokens.md",
+  "sourceDirName": "foundation",
+  "slug": "/foundation/design-tokens",
+  "permalink": "/docs/foundation/design-tokens",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/design-tokens.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Design Tokens",
+    "description": "Standardized design decisions expressed as reusable tokens",
+    "sidebar_position": 6
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Breakpoints",
+    "permalink": "/docs/foundation/breakpoints"
+  },
+  "next": {
+    "title": "Logos",
+    "permalink": "/docs/foundation/logos"
+  }
+}

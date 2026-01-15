@@ -1,0 +1,21 @@
+{
+  "id": "components/omb-info/checklist",
+  "title": "OMB info - Component checklist",
+  "description": "Maturity and asset checklist for the OMB info component",
+  "source": "@site/docs/components/omb-info/checklist.mdx",
+  "sourceDirName": "components/omb-info",
+  "slug": "/components/omb-info/checklist",
+  "permalink": "/docs/components/omb-info/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/omb-info/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "OMB info - Component checklist",
+    "description": "Maturity and asset checklist for the OMB info component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

@@ -1,0 +1,22 @@
+---
+cms_editable: false
+title: List - Component checklist
+description: Maturity and asset checklist for the List component
+sidebar_label: Checklist
+unlisted: true
+---
+
+import ComponentChecklist from '@site/src/components/ComponentChecklist';
+import { checklistData } from '@site/src/data/component-checklist';
+import ChecklistDefinitions from '@site/docs/_partials/checklist-definitions.mdx';
+import Link from '@docusaurus/Link';
+
+# List checklist
+
+<Link to="/docs/components/list">← Back to List</Link>
+
+This checklist tracks the maturity, code assets, visual assets, and accessibility audit status for the List component.
+
+<ComponentChecklist data={checklistData.list} platform="web" />
+
+<ChecklistDefinitions />

@@ -1,0 +1,186 @@
+{
+  "id": "templates/search-results/index",
+  "title": "Search results",
+  "description": "Template for displaying pages containing links to content that matched a user's search query.",
+  "source": "@site/docs/templates/search-results/index.mdx",
+  "sourceDirName": "templates/search-results",
+  "slug": "/templates/search-results/",
+  "permalink": "/docs/templates/search-results/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/templates/search-results/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 13,
+  "frontMatter": {
+    "title": "Search results",
+    "description": "Template for displaying pages containing links to content that matched a user's search query.",
+    "cms_editable": true,
+    "category": "pages",
+    "maturity": "use-with-caution",
+    "sidebar_position": 13,
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms",
+    "github": "https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22template-search-results%22",
+    "intro": "A template for displaying pages containing links to content that matched a user's search query, with optional filtering and sorting capabilities.",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Site search results.** Displaying results from site-wide search."
+        },
+        {
+          "value": "**Resource and support pages.** Listing filtered resources."
+        },
+        {
+          "value": "**Facility or provider listings.** Location-based searches."
+        },
+        {
+          "value": "**Data set displays.** Structured data presentations."
+        },
+        {
+          "value": "**Medication, appointment, or claims lists.** User-specific data."
+        },
+        {
+          "value": "**Knowledge base searches.** Documentation and help content."
+        }
+      ],
+      "usability": [
+        {
+          "value": "**Sorting.** Add only when reordering provides user value. Triggers inline without additional buttons."
+        },
+        {
+          "value": "**Filtering.** Occurs inline on current page. Preserves selected filter visibility after updates."
+        },
+        {
+          "value": "**Layout.** Use persistent left sidebar when search is the primary feature. Employ filter chips when displaying 3+ facets."
+        }
+      ]
+    },
+    "structure": {
+      "intro": "The search results page may include these components (not all required).",
+      "sections": [
+        {
+          "title": "Page title",
+          "description": "H1 describing the search subject."
+        },
+        {
+          "title": "Search input",
+          "description": "Entry field for search queries."
+        },
+        {
+          "title": "Active filters",
+          "description": "Chips showing currently applied filter values."
+        },
+        {
+          "title": "Filters",
+          "description": "Search Filter component with checkboxes/radio buttons."
+        },
+        {
+          "title": "Sort",
+          "description": "Select component for reordering results."
+        },
+        {
+          "title": "Results description",
+          "description": "Text stating quantity (e.g., 'Showing 1-10 of results')."
+        },
+        {
+          "title": "Apply filters button",
+          "description": "Primary button triggering filter application."
+        },
+        {
+          "title": "Clear all filters button",
+          "description": "Secondary button removing all filters."
+        },
+        {
+          "title": "Pagination",
+          "description": "Navigation between result pages."
+        },
+        {
+          "title": "Search results",
+          "description": "Individual result entries with title link, description, and URL."
+        }
+      ],
+      "components_used": [
+        {
+          "name": "Search input",
+          "url": "/docs/components/search-input"
+        },
+        {
+          "name": "Search filter",
+          "url": "/docs/components/search-filter"
+        },
+        {
+          "name": "Checkbox",
+          "url": "/docs/components/form/checkbox"
+        },
+        {
+          "name": "Radio button",
+          "url": "/docs/components/form/radio-button"
+        },
+        {
+          "name": "Select",
+          "url": "/docs/components/form/select"
+        },
+        {
+          "name": "Button",
+          "url": "/docs/components/button",
+          "description": "Primary and secondary variants"
+        },
+        {
+          "name": "Pagination",
+          "url": "/docs/components/pagination"
+        },
+        {
+          "name": "Tag",
+          "url": "/docs/components/tag",
+          "description": "Filter chips"
+        }
+      ]
+    },
+    "content_guidelines": [
+      {
+        "value": "Results description format: 'Showing 1-10 of results for \"[query]\"'."
+      },
+      {
+        "value": "Results must update when filters change to reflect current output."
+      },
+      {
+        "value": "Title link should match the destination page's H1."
+      },
+      {
+        "value": "Description should be meta description with bolded matching search terms."
+      },
+      {
+        "value": "Distinguish clearly between sort and filter functionality."
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "**Focus management.** Move focus to results after filtering."
+      },
+      {
+        "value": "**Live region announcements.** Announce result count updates."
+      },
+      {
+        "value": "**State preservation.** Keep filters visible and selected."
+      },
+      {
+        "value": "**Loading states.** Announce when results are updating."
+      },
+      {
+        "value": "**Error handling.** Provide clear, simple error messages."
+      },
+      {
+        "value": "**Three+ facets.** Use filter chips to display active selections."
+      }
+    ]
+  },
+  "sidebar": "templatesSidebar",
+  "previous": {
+    "title": "Hub",
+    "permalink": "/docs/templates/hub/"
+  },
+  "next": {
+    "title": "Signed out vs. signed in",
+    "permalink": "/docs/templates/signed-out-vs-signed-in/"
+  }
+}

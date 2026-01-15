@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/form-labels",
+  "title": "Form labels",
+  "description": "Guidelines for standardized form field labels, hint text, and error messages.",
+  "source": "@site/docs/content-style-guide/form-labels.md",
+  "sourceDirName": "content-style-guide",
+  "slug": "/content-style-guide/form-labels",
+  "permalink": "/docs/content-style-guide/form-labels",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/form-labels.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {
+    "title": "Form labels",
+    "description": "Guidelines for standardized form field labels, hint text, and error messages.",
+    "sidebar_position": 11
+  }
+}

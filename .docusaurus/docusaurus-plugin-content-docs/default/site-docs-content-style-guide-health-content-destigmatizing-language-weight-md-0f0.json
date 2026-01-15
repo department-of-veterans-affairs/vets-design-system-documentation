@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/health-content/destigmatizing-language-weight",
+  "title": "Destigmatizing language for weight",
+  "description": "Guidelines for using respectful, person-first language when discussing weight-related health topics.",
+  "source": "@site/docs/content-style-guide/health-content/destigmatizing-language-weight.md",
+  "sourceDirName": "content-style-guide/health-content",
+  "slug": "/content-style-guide/health-content/destigmatizing-language-weight",
+  "permalink": "/docs/content-style-guide/health-content/destigmatizing-language-weight",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/health-content/destigmatizing-language-weight.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Destigmatizing language for weight",
+    "description": "Guidelines for using respectful, person-first language when discussing weight-related health topics.",
+    "sidebar_position": 2
+  }
+}

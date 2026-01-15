@@ -1,0 +1,21 @@
+{
+  "id": "components/service-list-item/checklist",
+  "title": "Service list item - Component checklist",
+  "description": "Maturity and asset checklist for the Service list item component",
+  "source": "@site/docs/components/service-list-item/checklist.mdx",
+  "sourceDirName": "components/service-list-item",
+  "slug": "/components/service-list-item/checklist",
+  "permalink": "/docs/components/service-list-item/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/service-list-item/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Service list item - Component checklist",
+    "description": "Maturity and asset checklist for the Service list item component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

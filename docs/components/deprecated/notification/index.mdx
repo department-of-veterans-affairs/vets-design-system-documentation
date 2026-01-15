@@ -1,0 +1,78 @@
+---
+cms_editable: true
+title: Notification
+description: Deprecated notification component
+---
+
+import Link from '@docusaurus/Link';
+
+# Notification
+
+:::danger Deprecated Component
+This component is deprecated and should not be used in new development. Please use the [Alert](/docs/components/alert/) component instead.
+:::
+
+## Overview
+
+The Notification component was previously used to display informational messages, warnings, and status updates to users. This component has been deprecated in favor of using the Alert component.
+
+---
+
+## Migration
+
+### Replace with Alert
+
+Use the [Alert](/docs/components/alert/) component with the appropriate status:
+
+```html
+<!-- Informational notification -->
+<va-alert status="info" visible>
+  <h2 slot="headline">Information</h2>
+  <p>Your notification message here.</p>
+</va-alert>
+
+<!-- Success notification -->
+<va-alert status="success" visible closeable>
+  <h2 slot="headline">Success</h2>
+  <p>Your action was completed successfully.</p>
+</va-alert>
+
+<!-- Warning notification -->
+<va-alert status="warning" visible>
+  <h2 slot="headline">Warning</h2>
+  <p>Please review this information carefully.</p>
+</va-alert>
+
+<!-- Error notification -->
+<va-alert status="error" visible>
+  <h2 slot="headline">Error</h2>
+  <p>Something went wrong. Please try again.</p>
+</va-alert>
+```
+
+### For dismissible notifications
+
+Use the `closeable` attribute to allow users to dismiss the alert:
+
+```html
+<va-alert status="success" visible closeable>
+  <h2 slot="headline">Changes saved</h2>
+  <p>Your profile has been updated.</p>
+</va-alert>
+```
+
+---
+
+## Why was this deprecated?
+
+- **Redundancy**: The Alert component provides all notification functionality
+- **Accessibility**: Alert includes robust ARIA support and screen reader announcements
+- **Feature parity**: Alert supports all status types, dismissibility, and styling options
+
+---
+
+## Replacement
+
+<Link to="/docs/components/alert/" className="button button--primary">
+  View Alert Component →
+</Link>

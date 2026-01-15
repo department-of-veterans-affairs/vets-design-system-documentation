@@ -1,0 +1,26 @@
+### Do not disable buttons
+
+**Avoid disabling buttons** when possible. Disabled buttons present several usability and accessibility problems:
+
+**Problems with disabled buttons:**
+- Screen readers may not announce disabled buttons or their labels
+- Users can't understand why a button is disabled
+- Low contrast makes disabled buttons hard to see
+- Keyboard users can't focus on disabled buttons to learn their purpose
+
+**Better alternatives:**
+
+1. **Keep the button enabled** and show an error message when clicked with invalid input
+2. **Hide the button entirely** until the user completes required fields
+3. **Show a clear message** explaining what the user needs to do before proceeding
+
+**If you must disable a button:**
+- Provide visible text explaining why it's disabled
+- Use `aria-describedby` to associate the explanation with the button
+- Ensure the disabled state has sufficient contrast (3:1 minimum)
+
+```html
+<!-- If disabling is necessary -->
+<button disabled aria-describedby="button-help">Submit</button>
+<p id="button-help">Complete all required fields to submit.</p>
+```

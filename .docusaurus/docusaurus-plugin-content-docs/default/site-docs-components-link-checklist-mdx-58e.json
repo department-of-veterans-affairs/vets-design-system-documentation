@@ -1,0 +1,21 @@
+{
+  "id": "components/link/checklist",
+  "title": "Link - Component checklist",
+  "description": "Maturity and asset checklist for the Link component",
+  "source": "@site/docs/components/link/checklist.mdx",
+  "sourceDirName": "components/link",
+  "slug": "/components/link/checklist",
+  "permalink": "/docs/components/link/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/link/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Link - Component checklist",
+    "description": "Maturity and asset checklist for the Link component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

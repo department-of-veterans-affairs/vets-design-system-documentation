@@ -1,0 +1,23 @@
+---
+cms_editable: false
+title: Filter chip - Component checklist
+description: Maturity and asset checklist for the Filter chip component
+sidebar_label: Checklist
+unlisted: true
+---
+
+import ChecklistDefinitions from '@site/docs/_partials/checklist-definitions.mdx';
+import parentFrontMatter from './index.mdx';
+
+export const checklist = parentFrontMatter.frontMatter?.checklist || {};
+
+# Filter chip checklist
+
+<ChecklistPage
+  componentName="Filter chip"
+  componentPath="/docs/components/filter-chip"
+  checklist={checklist}
+  platform="web"
+/>
+
+<ChecklistDefinitions />

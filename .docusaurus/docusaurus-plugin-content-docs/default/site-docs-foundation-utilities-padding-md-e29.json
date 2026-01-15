@@ -1,0 +1,29 @@
+{
+  "id": "foundation/utilities/padding",
+  "title": "Padding",
+  "description": "CSS classes for controlling internal spacing within elements.",
+  "source": "@site/docs/foundation/utilities/padding.md",
+  "sourceDirName": "foundation/utilities",
+  "slug": "/foundation/utilities/padding",
+  "permalink": "/docs/foundation/utilities/padding",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/utilities/padding.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 14,
+  "frontMatter": {
+    "title": "Padding",
+    "description": "CSS classes for controlling internal spacing within elements.",
+    "sidebar_position": 14
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Measure",
+    "permalink": "/docs/foundation/utilities/measure"
+  },
+  "next": {
+    "title": "Position",
+    "permalink": "/docs/foundation/utilities/position"
+  }
+}

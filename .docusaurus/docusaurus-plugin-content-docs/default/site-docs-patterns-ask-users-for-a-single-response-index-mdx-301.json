@@ -1,0 +1,159 @@
+{
+  "id": "patterns/ask-users-for/a-single-response/index",
+  "title": "A single response",
+  "description": "Follow this pattern to collect one logical piece of information at a time, allowing users to focus on specific questions.",
+  "source": "@site/docs/patterns/ask-users-for/a-single-response/index.mdx",
+  "sourceDirName": "patterns/ask-users-for/a-single-response",
+  "slug": "/patterns/ask-users-for/a-single-response/",
+  "permalink": "/docs/patterns/ask-users-for/a-single-response/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/patterns/ask-users-for/a-single-response/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {
+    "title": "A single response",
+    "description": "Follow this pattern to collect one logical piece of information at a time, allowing users to focus on specific questions.",
+    "cms_editable": true,
+    "category": "ask-users-for",
+    "maturity": "deployed",
+    "sidebar_position": 11,
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms",
+    "github": "https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-single-response%22",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Ask+users+for...+Single+response%22",
+    "intro": "Asking for one logical thing at a time allows users to focus on what you are asking from them. While a page may contain multiple form fields, the \"one thing\" refers to the information being gathered conceptually.",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Collecting related responses.** When collecting one or a few related responses from users."
+        },
+        {
+          "value": "**Reducing complexity.** When dividing long forms into logical sections."
+        },
+        {
+          "value": "**Focused information gathering.** When situations require clear, focused questions."
+        }
+      ],
+      "design_principles": [
+        {
+          "value": "**One thing per page.** This encompasses: one piece of information, one decision, or one question."
+        },
+        {
+          "value": "**Limit conditional reveals.** When using conditional reveals, limit to one per page."
+        },
+        {
+          "value": "**Make revealed questions clear.** Conditionally revealed questions should be self-explanatory."
+        },
+        {
+          "value": "**Create distinct error messages.** Each field should have its own error message."
+        }
+      ],
+      "when_not_to_use": [
+        {
+          "value": "**Multiple similar items.** When collecting the same data about multiple items, use the Multiple Responses pattern."
+        },
+        {
+          "value": "**Unknown quantity.** When gathering an unknown quantity of responses, use the Multiple Responses pattern."
+        }
+      ]
+    },
+    "examples": [
+      {
+        "title": "Single question page",
+        "description": "Page with one focused question and clear call to action."
+      },
+      {
+        "title": "Related fields grouped",
+        "description": "Multiple fields that together represent one logical concept (e.g., full address)."
+      }
+    ],
+    "how_to_build": {
+      "intro": "Design forms using the \"one thing per page\" principle.",
+      "steps": [
+        {
+          "value": "Brainstorm concepts using sticky notes to identify individual 'things'."
+        },
+        {
+          "value": "Assume each concept belongs on separate pages initially."
+        },
+        {
+          "value": "Conduct card sorting exercises with teams to group related items."
+        },
+        {
+          "value": "Research how concepts link in existing solutions."
+        },
+        {
+          "value": "Reorganize into related groupings where appropriate."
+        },
+        {
+          "value": "Map user flow and test with actual users."
+        },
+        {
+          "value": "Iterate based on feedback."
+        }
+      ],
+      "components_used": [
+        {
+          "name": "Checkbox",
+          "url": "/docs/components/form/checkbox"
+        },
+        {
+          "name": "Memorable date",
+          "url": "/docs/components/form/memorable-date"
+        },
+        {
+          "name": "Radio button",
+          "url": "/docs/components/form/radio-button"
+        },
+        {
+          "name": "Select",
+          "url": "/docs/components/form/select"
+        },
+        {
+          "name": "Text input",
+          "url": "/docs/components/form/text-input"
+        },
+        {
+          "name": "Textarea",
+          "url": "/docs/components/form/textarea"
+        }
+      ]
+    },
+    "code_usage": "The single response pattern reduces cognitive load, simplifies error handling, improves mobile experiences, and enhances screen reader compatibility.\n\n**Production examples:**\n- VA Form 21-0972 (Alternate Signer)\n- VA Form 21-10210 (Lay/Witness Statement)\n- VA Form 20-0995 (Supplemental Claim)\n- VA Form 20-10206 (FOIA/Privacy Act Request)\n",
+    "content_considerations": [
+      {
+        "value": "Focus each page on one logical concept, even if it contains multiple form fields."
+      },
+      {
+        "value": "Use clear, concise questions that don't require additional context."
+      },
+      {
+        "value": "Provide helpful hint text only when necessary."
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "The W3C notes that keeping content to a small number of important points reduces clutter and aids understanding."
+      },
+      {
+        "value": "This benefits users with cognitive disabilities who may struggle with focus and information retention."
+      },
+      {
+        "value": "Ensure keyboard accessibility for conditionally revealed fields."
+      },
+      {
+        "value": "Provide clear focus management when revealing additional fields."
+      }
+    ]
+  },
+  "sidebar": "patternsSidebar",
+  "previous": {
+    "title": "Feedback",
+    "permalink": "/docs/patterns/ask-users-for/feedback/"
+  },
+  "next": {
+    "title": "Multiple responses",
+    "permalink": "/docs/patterns/ask-users-for/multiple-responses/"
+  }
+}

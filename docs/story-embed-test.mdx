@@ -1,0 +1,77 @@
+---
+title: StoryEmbed Component Test
+description: Testing the updated StoryEmbed component with working iframe fixes
+---
+
+import StoryEmbed from '@site/src/components/StoryEmbed';
+
+# 🎉 StoryEmbed Component - Now With Working Toolbars!
+
+## Test 1: Basic Button (No Toolbar)
+
+<StoryEmbed storyId="uswds-va-button--default" height={200} />
+
+## Test 2: Button With Toolbar & Controls
+
+<StoryEmbed 
+  storyId="uswds-va-button--default" 
+  height={400} 
+  showControls={true}
+  title="Button with interactive toolbar"
+/>
+
+## Test 3: Different Component With Toolbar
+
+<StoryEmbed 
+  storyId="uswds-va-alert--error" 
+  height={300} 
+  showControls={true}
+  title="Alert component with controls"
+/>
+
+## Test 4: Component With Custom Args
+
+<StoryEmbed 
+  storyId="uswds-va-button--default"
+  height={200}
+  showControls={true}
+  args={{
+    text: 'Custom Button Text',
+    variant: 'secondary'
+  }}
+  title="Button with custom args"
+/>
+
+## Features
+
+✅ **Working toolbar** - Zoom, backgrounds, measurements  
+✅ **Smart environment detection** - localhost:6007 in dev, fallback in prod  
+✅ **Perfect parameters** - `nav=0&panel=0&full=0&shortcuts=0&singleStory=true`  
+✅ **Error handling** - Graceful fallbacks when iframe is blocked  
+✅ **Loading states** - Smooth loading experience  
+
+## Development vs Production
+
+- **🚀 Development:** Uses `localhost:6007` with working iframes
+- **🔗 Production:** Shows preview + links until VA removes X-Frame-Options header
+
+## Usage
+
+```jsx
+// Basic embed
+<StoryEmbed storyId="uswds-va-button--default" />
+
+// With toolbar and controls
+<StoryEmbed 
+  storyId="uswds-va-button--default" 
+  showControls={true}
+  height={400}
+/>
+
+// With custom args
+<StoryEmbed 
+  storyId="uswds-va-button--default"
+  showControls={true}
+  args={{ text: 'Custom Text', variant: 'secondary' }}
+/>
+```

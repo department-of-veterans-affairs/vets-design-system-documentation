@@ -1,0 +1,129 @@
+{
+  "id": "components/alert/alert-sign-in/index",
+  "title": "Alert - Sign-in",
+  "description": "Helps users complete the sign-in process on VA.gov",
+  "source": "@site/docs/components/alert/alert-sign-in/index.mdx",
+  "sourceDirName": "components/alert/alert-sign-in",
+  "slug": "/components/alert/alert-sign-in/",
+  "permalink": "/docs/components/alert/alert-sign-in/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/alert/alert-sign-in/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Alert - Sign-in",
+    "description": "Helps users complete the sign-in process on VA.gov",
+    "maturity": "use-with-caution",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-alert-sign-in",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Alert+-+Sign-in%22",
+    "related": [
+      {
+        "name": "Alert",
+        "url": "/docs/components/alert/",
+        "description": "Parent component"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "Static pages with entry points to online tools managed by the CAIA team in Drupal"
+        },
+        {
+          "value": "Form intro pages created and managed by product teams (URLs ending in `/introduction`)"
+        },
+        {
+          "value": "Exception: Forms only accessible after signing in should display the alert on the unauthenticated entry point page"
+        }
+      ]
+    },
+    "content_considerations": [
+      {
+        "value": "Requires or allows sign-in but accepts unverified accounts"
+      },
+      {
+        "value": "Is an online form allowing sign-in without prefill"
+      },
+      {
+        "value": "Offers alternative sign-in benefits (e.g., Intent to File generation)"
+      },
+      {
+        "value": "Requires My HealtheVet registration (messages, medications, medical records)"
+      },
+      {
+        "value": "**LOA1:** Low-assurance with self-asserted identity and basic authentication"
+      },
+      {
+        "value": "**LOA3:** High-assurance requiring verified identity and strong authentication"
+      },
+      {
+        "value": "**IAL1:** Self-asserted identity, no verification required"
+      },
+      {
+        "value": "**IAL2:** Identity verified remotely or in-person with documentation"
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "**Do not assign ARIA roles.** This static alert loads with the page and doesn't require a role."
+      },
+      {
+        "value": "**Use only appropriate branding images** per Login.gov and ID.me brand guidelines."
+      },
+      {
+        "value": "Follow parent Alert component accessibility guidance."
+      },
+      {
+        "value": "Code review: Pass"
+      },
+      {
+        "value": "Readability: Conditional Pass (dependent on implementation context)"
+      },
+      {
+        "value": "Automated scans: Pass"
+      },
+      {
+        "value": "Use of color: Pass"
+      },
+      {
+        "value": "Text resizing & magnification: Pass"
+      },
+      {
+        "value": "Screen readers: Pass"
+      },
+      {
+        "value": "Input & interaction methods: Pass"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Required Sign-in",
+        "description": "Required Sign-in",
+        "storyId": "uswds-va-alert-sign-in--sign-in-required",
+        "height": 300
+      },
+      {
+        "title": "Optional Sign-in",
+        "description": "Optional Sign-in",
+        "storyId": "uswds-va-alert-sign-in--sign-in-optional",
+        "height": 300
+      }
+    ],
+    "code_usage": "<va-alert-sign-in\n  variant=\"signInRequired\"\n  heading-level=\"2\"\n></va-alert-sign-in>\n\n<!-- Optional sign-in -->\n<va-alert-sign-in\n  variant=\"signInOptional\"\n  heading-level=\"2\"\n  no-sign-in-link=\"/form-start\"\n></va-alert-sign-in>\n",
+    "component_tag": "va-alert-sign-in"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Alert - Expandable",
+    "permalink": "/docs/components/alert/alert-expandable/"
+  },
+  "next": {
+    "title": "Back to top",
+    "permalink": "/docs/components/back-to-top/"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/capitalization",
+  "title": "Capitalization",
+  "description": "Guidelines for capitalization on VA.gov, emphasizing sentence case as the standard.",
+  "source": "@site/docs/content-style-guide/capitalization.md",
+  "sourceDirName": "content-style-guide",
+  "slug": "/content-style-guide/capitalization",
+  "permalink": "/docs/content-style-guide/capitalization",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/capitalization.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "title": "Capitalization",
+    "description": "Guidelines for capitalization on VA.gov, emphasizing sentence case as the standard.",
+    "sidebar_position": 8
+  }
+}

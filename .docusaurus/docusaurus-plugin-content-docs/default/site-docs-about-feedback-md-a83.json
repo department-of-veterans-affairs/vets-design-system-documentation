@@ -1,0 +1,29 @@
+{
+  "id": "about/feedback",
+  "title": "Feedback",
+  "description": "Channels and processes for submitting feedback about the VA Design System.",
+  "source": "@site/docs/about/feedback.md",
+  "sourceDirName": "about",
+  "slug": "/about/feedback",
+  "permalink": "/docs/about/feedback",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/about/feedback.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Feedback",
+    "description": "Channels and processes for submitting feedback about the VA Design System.",
+    "sidebar_position": 5
+  },
+  "sidebar": "aboutSidebar",
+  "previous": {
+    "title": "Experience standards",
+    "permalink": "/docs/about/experience-standards"
+  },
+  "next": {
+    "title": "For content writers",
+    "permalink": "/docs/about/content-writers"
+  }
+}

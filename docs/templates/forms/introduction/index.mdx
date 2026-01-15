@@ -1,0 +1,78 @@
+---
+title: Introduction
+description: The form introduction page introduces the process veterans will follow to apply for benefits.
+cms_editable: true
+category: forms
+maturity: deployed
+sidebar_position: 3
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms
+github: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22template-introduction%22
+
+intro: The form introduction page introduces the process veterans and beneficiaries will follow to apply for benefits or complete supporting forms. It sets clear expectations, helps users prepare, and provides ways to get help.
+
+usage:
+  when_to_use:
+    - value: "**Process list version.** For complicated processes, particularly initial claims or applications for VA benefits or decision review requests."
+    - value: "**No process list version.** For supporting forms, reimbursement claims, and non-application forms."
+  usability:
+    - value: "**Set expectations.** Clearly communicate what the process involves."
+    - value: "**Help users prepare.** Guide users to gather required information and documents before starting."
+    - value: "**Provide help options.** Include ways to get help and find more information about the related benefit."
+
+structure:
+  intro: The intro page accomplishes three key objectives for users.
+  sections:
+    - title: Title & Subtitle
+      description: Plain language action-oriented H1 (52 characters or fewer). Official form name with form number in parentheses as subtitle. Brief introductory paragraph (1-3 sentences, max 25 words per sentence).
+    - title: Check your eligibility
+      description: First step in the process list for applications requiring eligibility verification.
+    - title: Gather your information
+      description: Lists required documents and information (5 bullets max).
+    - title: Start your application
+      description: Final step with sign-in or start options.
+    - title: What to know before you fill out this form
+      description: Alternative section for non-application forms with 2-5 key bullets.
+  components_used:
+    - name: Process list
+      url: /docs/components/process-list
+    - name: Alert
+      url: /docs/components/alert
+      description: Sign-in and prefill alerts
+    - name: OMB info
+      url: /docs/components/omb-info
+    - name: Need help
+      url: /docs/components/form/need-help
+    - name: Additional info
+      url: /docs/components/additional-info
+
+examples:
+  - title: File for disability compensation
+    description: Introduction page for disability compensation claims.
+  - title: Apply for VA Education Benefits
+    description: Introduction page for education benefits application.
+  - title: Apply for VA health care
+    description: Introduction page for health care enrollment.
+  - title: Apply for Veterans Pension benefits
+    description: Introduction page for pension benefits.
+  - title: Submit intent to file
+    description: Introduction page for intent to file form.
+
+content_guidelines:
+  - value: "Use plain language and conversational tone."
+  - value: "Reuse 'When to use' descriptions from form detail pages."
+  - value: "Keep process list items brief with tailored, specific information."
+  - value: "Include estimated time burden for completing the form."
+  - value: "Explain post-submission timeline and next steps."
+  - value: "Flag sensitive information requirements with explanatory components."
+
+accessibility:
+  - value: "Display sign-in alert and sign-in information for unauthenticated users."
+  - value: "Display prefill alert and option to continue saved forms for authenticated users."
+  - value: "Ensure proper heading hierarchy."
+  - value: "Follow VA.gov form accessibility guidelines."
+---
+
+import TemplatePage from '@site/src/components/TemplatePage';
+
+<TemplatePage frontMatter={frontMatter} />
+

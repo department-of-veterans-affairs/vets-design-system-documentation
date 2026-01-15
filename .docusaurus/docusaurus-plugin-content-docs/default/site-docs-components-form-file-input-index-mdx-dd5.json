@@ -1,0 +1,103 @@
+{
+  "id": "components/form/file-input/index",
+  "title": "File Input",
+  "description": "Allows users to attach files for upload",
+  "source": "@site/docs/components/form/file-input/index.mdx",
+  "sourceDirName": "components/form/file-input",
+  "slug": "/components/form/file-input/",
+  "permalink": "/docs/components/form/file-input/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/form/file-input/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "File Input",
+    "description": "Allows users to attach files for upload",
+    "maturity": "use-with-caution",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-file-input",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+File+input%22",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "Allow users to upload documents or files as part of a form"
+        },
+        {
+          "value": "Require file attachments for application submissions"
+        },
+        {
+          "value": "Need to collect specific file types (PDFs, images, etc.)"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "Users need simultaneous multi-file selection (the component processes one file per interaction)"
+        },
+        {
+          "value": "iOS mobile file selection is critical without accepting single-file workarounds"
+        }
+      ],
+      "behavior": [
+        {
+          "value": "**Trigger**: Button activation opens OS file dialog"
+        },
+        {
+          "value": "**Upload feedback**: Success/failure messages appear post-upload"
+        },
+        {
+          "value": "**Removal**: Users can delete uploaded files"
+        },
+        {
+          "value": "**Progress tracking**: Progress bar should indicate server-side uploads"
+        }
+      ]
+    },
+    "content_considerations": [
+      {
+        "value": "\"Upload\" instead of \"Add\""
+      },
+      {
+        "value": "\"Delete\" instead of \"Remove\""
+      },
+      {
+        "value": "\"File\" instead of \"Document\" (broader applicability)"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Default",
+        "description": "Default",
+        "storyId": "uswds-va-file-input--default",
+        "height": 200
+      },
+      {
+        "title": "With uploaded file",
+        "description": "With uploaded file",
+        "storyId": "uswds-va-file-input--with-file",
+        "height": 250
+      },
+      {
+        "title": "With error",
+        "description": "With error",
+        "storyId": "uswds-va-file-input--error",
+        "height": 220
+      }
+    ],
+    "code_usage": "<va-file-input\n  label=\"Upload your DD214\"\n  name=\"dd214\"\n  accept=\".pdf,.jpg,.png\"\n  hint=\"Accepted file types: PDF, JPG, PNG. Max file size: 20MB\"\n  required\n></va-file-input>\n",
+    "component_tag": "va-file-input"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Date Input",
+    "permalink": "/docs/components/form/date-input/"
+  },
+  "next": {
+    "title": "Label",
+    "permalink": "/docs/components/form/label/"
+  }
+}

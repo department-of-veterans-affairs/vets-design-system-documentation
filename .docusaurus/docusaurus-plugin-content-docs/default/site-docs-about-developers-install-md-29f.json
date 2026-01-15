@@ -1,0 +1,29 @@
+{
+  "id": "about/developers/install",
+  "title": "Install",
+  "description": "How to install and set up the VA Design System packages.",
+  "source": "@site/docs/about/developers/install.md",
+  "sourceDirName": "about/developers",
+  "slug": "/about/developers/install",
+  "permalink": "/docs/about/developers/install",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/about/developers/install.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Install",
+    "description": "How to install and set up the VA Design System packages.",
+    "sidebar_position": 2
+  },
+  "sidebar": "aboutSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/about/developers/"
+  },
+  "next": {
+    "title": "Using Web Components",
+    "permalink": "/docs/about/developers/web-components"
+  }
+}

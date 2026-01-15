@@ -1,0 +1,22 @@
+---
+cms_editable: false
+title: Icon - Component checklist
+description: Maturity and asset checklist for the Icon component
+sidebar_label: Checklist
+unlisted: true
+---
+
+import ComponentChecklist from '@site/src/components/ComponentChecklist';
+import { checklistData } from '@site/src/data/component-checklist';
+import ChecklistDefinitions from '@site/docs/_partials/checklist-definitions.mdx';
+import Link from '@docusaurus/Link';
+
+# Icon checklist
+
+<Link to="/docs/components/icon">← Back to Icon</Link>
+
+This checklist tracks the maturity, code assets, visual assets, and accessibility audit status for the Icon component.
+
+<ComponentChecklist data={checklistData.icon} platform="web" />
+
+<ChecklistDefinitions />

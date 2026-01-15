@@ -1,0 +1,21 @@
+{
+  "id": "components/icon/checklist",
+  "title": "Icon - Component checklist",
+  "description": "Maturity and asset checklist for the Icon component",
+  "source": "@site/docs/components/icon/checklist.mdx",
+  "sourceDirName": "components/icon",
+  "slug": "/components/icon/checklist",
+  "permalink": "/docs/components/icon/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/icon/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Icon - Component checklist",
+    "description": "Maturity and asset checklist for the Icon component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

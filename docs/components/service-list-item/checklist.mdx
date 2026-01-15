@@ -1,0 +1,22 @@
+---
+cms_editable: false
+title: Service list item - Component checklist
+description: Maturity and asset checklist for the Service list item component
+sidebar_label: Checklist
+unlisted: true
+---
+
+import ComponentChecklist from '@site/src/components/ComponentChecklist';
+import { checklistData } from '@site/src/data/component-checklist';
+import ChecklistDefinitions from '@site/docs/_partials/checklist-definitions.mdx';
+import Link from '@docusaurus/Link';
+
+# Service list item checklist
+
+<Link to="/docs/components/service-list-item">← Back to Service list item</Link>
+
+This checklist tracks the maturity, code assets, visual assets, and accessibility audit status for the Service list item component.
+
+<ComponentChecklist data={checklistData['service-list-item']} platform="web" />
+
+<ChecklistDefinitions />

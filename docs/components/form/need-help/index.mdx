@@ -1,0 +1,44 @@
+---
+cms_editable: true
+title: Need Help?
+description: A footer on application pages providing VA contact information
+maturity: deployed
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-need-help
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Need+help%22
+intro: A footer found on application pages that provides contact information for the VA.
+related:
+  - name: Telephone
+    url: /docs/components/telephone
+    description: For phone number display
+  - name: Footer
+    url: /docs/components/footer/
+    description: Standard VA footer that appears below
+usage:
+  when_to_use:
+    - value: Display as a footer for form pages within an application
+    - value: Should appear on introduction and form pages
+    - value: Position at the bottom of the page, just before the standard VA footer
+content_considerations:
+  - value: Content varies by form and requires coordination with the content team
+  - value: Should be customized before deploying your application
+code_usage: |
+  <va-need-help>
+    <div slot="content">
+      <p>
+        If you have questions or need help filling out this form, call us at
+        <va-telephone contact="8008271000"></va-telephone>.
+        We're here Monday through Friday, 8:00 a.m. to 9:00 p.m. ET.
+      </p>
+    </div>
+  </va-need-help>
+component_tag: va-need-help
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

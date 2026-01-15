@@ -1,0 +1,29 @@
+{
+  "id": "accessibility/for-teams",
+  "title": "Accessibility for Teams",
+  "description": "Role-specific accessibility responsibilities",
+  "source": "@site/docs/accessibility/for-teams.md",
+  "sourceDirName": "accessibility",
+  "slug": "/accessibility/for-teams",
+  "permalink": "/docs/accessibility/for-teams",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/accessibility/for-teams.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Accessibility for Teams",
+    "description": "Role-specific accessibility responsibilities",
+    "sidebar_position": 3
+  },
+  "sidebar": "accessibilitySidebar",
+  "previous": {
+    "title": "Accessibility",
+    "permalink": "/docs/accessibility/"
+  },
+  "next": {
+    "title": "Accessibility annotations",
+    "permalink": "/docs/accessibility/annotations"
+  }
+}

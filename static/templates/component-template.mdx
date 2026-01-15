@@ -1,0 +1,222 @@
+{/*
+  COMPONENT DOCUMENTATION TEMPLATE
+
+  Instructions:
+  1. Copy this file to docs/components/[component-name]/index.mdx
+  2. Replace all TODO placeholders with actual content
+  3. Remove sections that don't apply to your component
+  4. Delete this comment block when done
+
+  Naming conventions:
+  - Folder name: kebab-case (e.g., my-component)
+  - Component tag: va-[component-name] (e.g., va-my-component)
+  - GitHub label: va-[component-name]
+  - Research label: DSC: [Component Name]
+*/}
+
+---
+title: TODO Component Name
+description: TODO Brief description (under 160 characters)
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import ComponentHeader from '@site/src/components/ComponentHeader';
+import StoryEmbed from '@site/src/components/StoryEmbed';
+import AutoPropsTable from '@site/src/components/AutoPropsTable';
+import DosDonts, { Do, Dont } from '@site/src/components/DosDonts';
+import FeedbackSection from '@site/src/components/FeedbackSection';
+{/* Import accessibility partials as needed:
+import TargetSize from '@site/docs/_partials/accessibility/target-size.mdx';
+import ButtonsVsLinks from '@site/docs/_partials/accessibility/buttons-vs-links.mdx';
+import DisabledButtons from '@site/docs/_partials/accessibility/disabled-buttons.mdx';
+*/}
+import AnalyticsEvent from '@site/docs/_partials/code-usage/analytics-event.mdx';
+
+# TODO Component Name
+
+TODO: Write 1-2 sentences describing what this component does and its primary purpose. Focus on the user benefit.
+
+<ComponentHeader
+  maturity="TODO: deployed | use-with-caution | dont-use | best-practice"
+  platforms={['web']}
+  github="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-TODO-component-name"
+  figma="https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design"
+  storybook="https://design.va.gov/storybook/?path=/docs/uswds-va-TODO-component-name--docs"
+  research="https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+TODO+Component+Name%22"
+/>
+
+## Related components
+
+- [Related Component 1](/docs/components/related-1) - Brief description of when to use
+- [Related Component 2](/docs/components/related-2) - Brief description of when to use
+
+---
+
+## Examples
+
+{/* For web-only components, remove the Tabs wrapper */}
+<Tabs groupId="platform" queryString>
+  <TabItem value="web" label="Web" default>
+
+### Default
+
+TODO: Brief description of the default/primary example.
+
+<StoryEmbed storyId="uswds-va-TODO-component-name--default" height={100} title="Default example" />
+
+### Variation Name
+
+TODO: Description of this variation and when to use it.
+
+<StoryEmbed storyId="uswds-va-TODO-component-name--variation" height={100} title="Variation example" />
+
+  </TabItem>
+  <TabItem value="mobile" label="Mobile">
+
+### Default
+
+TODO: Description of mobile implementation.
+
+### Variation Name
+
+TODO: Description of mobile variation.
+
+  </TabItem>
+</Tabs>
+
+---
+
+## Usage
+
+### When to use
+
+- **Use case 1**: TODO Description
+- **Use case 2**: TODO Description
+- **Use case 3**: TODO Description
+
+### When to consider something else
+
+- **Alternative scenario**: Use [Alternative Component](/docs/components/alternative) instead when...
+- **Anti-pattern**: Avoid using this component when...
+
+### Behavior
+
+- TODO: Interaction behavior
+- TODO: State changes
+- TODO: Animation/transition notes
+
+### Placement
+
+- TODO: Where to position this component
+- TODO: Spacing considerations
+- TODO: Layout guidelines
+
+---
+
+## Code usage
+
+<Tabs groupId="platform" queryString>
+  <TabItem value="web" label="Web" default>
+
+```html
+<!-- Basic usage -->
+<va-TODO-component-name
+  attribute="value"
+></va-TODO-component-name>
+
+<!-- With options -->
+<va-TODO-component-name
+  attribute="value"
+  optional-attribute
+></va-TODO-component-name>
+```
+
+### Properties
+
+<AutoPropsTable componentTag="va-TODO-component-name" />
+
+<AnalyticsEvent />
+
+  </TabItem>
+  <TabItem value="mobile" label="Mobile">
+
+```jsx
+import { ComponentName } from '@department-of-veterans-affairs/mobile-component-library';
+
+<ComponentName
+  prop="value"
+  onEvent={() => {}}
+/>
+```
+
+### Props
+
+<AutoPropsTable componentTag="va-TODO-component-name" platform="mobile" />
+
+### Installation
+
+```bash
+npm install @department-of-veterans-affairs/mobile-component-library
+```
+
+  </TabItem>
+</Tabs>
+
+---
+
+## Content considerations
+
+### Labels and text
+
+- TODO: Character limits
+- TODO: Capitalization rules (sentence case)
+- TODO: Tone guidelines
+
+<DosDonts>
+  <Do>
+    - TODO: Good example 1
+    - TODO: Good example 2
+  </Do>
+  <Dont>
+    - TODO: Bad example 1
+    - TODO: Bad example 2
+  </Dont>
+</DosDonts>
+
+---
+
+## Accessibility considerations
+
+{/* Include relevant accessibility partials:
+<TargetSize />
+<ButtonsVsLinks />
+<DisabledButtons />
+*/}
+
+### Keyboard interaction
+
+- **Tab**: TODO behavior
+- **Enter/Space**: TODO behavior
+- **Arrow keys**: TODO behavior (if applicable)
+
+### Screen readers
+
+- TODO: How component is announced
+- TODO: ARIA attributes used
+- TODO: Live region behavior (if applicable)
+
+### Visual considerations
+
+- TODO: Color contrast requirements
+- TODO: Focus indicator behavior
+- TODO: High contrast mode support
+
+---
+
+## Related components
+
+- [Related 1](/docs/components/path) - When to use instead
+- [Related 2](/docs/components/path) - Complementary component
+
+<FeedbackSection componentName="TODO Component Name" />

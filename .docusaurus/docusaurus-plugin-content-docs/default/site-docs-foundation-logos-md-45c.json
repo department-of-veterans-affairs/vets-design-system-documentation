@@ -1,0 +1,29 @@
+{
+  "id": "foundation/logos",
+  "title": "Logos",
+  "description": "VA logo usage guidelines and restrictions",
+  "source": "@site/docs/foundation/logos.md",
+  "sourceDirName": "foundation",
+  "slug": "/foundation/logos",
+  "permalink": "/docs/foundation/logos",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/logos.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "title": "Logos",
+    "description": "VA logo usage guidelines and restrictions",
+    "sidebar_position": 7
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Design Tokens",
+    "permalink": "/docs/foundation/design-tokens"
+  },
+  "next": {
+    "title": "Image Aspect Ratios",
+    "permalink": "/docs/foundation/image-aspect-ratios"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "id": "components/divider/index",
+  "title": "Divider",
+  "description": "Creates visual separation between chunks of content",
+  "source": "@site/docs/components/divider/index.mdx",
+  "sourceDirName": "components/divider",
+  "slug": "/components/divider/",
+  "permalink": "/docs/components/divider/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/divider/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Divider",
+    "description": "Creates visual separation between chunks of content",
+    "maturity": "best-practice",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-divider",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "storybook": "https://design.va.gov/storybook/?path=/docs/uswds-va-divider--docs",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Divider%22",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "To signify a change in topic, content type, or expected interaction"
+        },
+        {
+          "value": "To create visual separation between chunks of content"
+        },
+        {
+          "value": "To distinguish between blocks of similar content at a glance"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "Avoid dividers between short, individual items in close proximity unless separating navigation links"
+        },
+        {
+          "value": "Don't use instead of whitespace or headers for vertical separation"
+        },
+        {
+          "value": "Consider background color boxes or [Cards](/docs/components/card) for separating interactive elements (like search controls) from results"
+        }
+      ]
+    },
+    "accessibility": [
+      {
+        "value": "Dividers are decorative elements and do not require additional ARIA attributes"
+      },
+      {
+        "value": "Ensure sufficient color contrast for the divider line"
+      },
+      {
+        "value": "Do not rely solely on dividers to convey meaning—use proper heading structure"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Default",
+        "description": "Default",
+        "storyId": "uswds-va-divider--default",
+        "height": 100
+      }
+    ],
+    "code_usage": "<va-divider></va-divider>\n",
+    "component_tag": "va-divider"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Critical Action",
+    "permalink": "/docs/components/critical-action/"
+  },
+  "next": {
+    "title": "Filter chip",
+    "permalink": "/docs/components/filter-chip/"
+  }
+}

@@ -1,0 +1,1438 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "index",
+          "docs": [
+            {
+              "id": "about/component-documentation-guide",
+              "path": "/docs/about/component-documentation-guide",
+              "sidebar": "aboutSidebar"
+            },
+            {
+              "id": "about/content-writers",
+              "path": "/docs/about/content-writers",
+              "sidebar": "aboutSidebar"
+            },
+            {
+              "id": "about/contributing/experimental-components",
+              "path": "/docs/about/contributing/experimental-components",
+              "sidebar": "aboutSidebar"
+            },
+            {
+              "id": "about/contributing/index",
+              "path": "/docs/about/contributing/",
+              "sidebar": "aboutSidebar"
+            },
+            {
+              "id": "about/designers/figma",
+              "path": "/docs/about/designers/figma",
+              "sidebar": "aboutSidebar"
+            },
+            {
+              "id": "about/designers/index",
+              "path": "/docs/about/designers/",
+              "sidebar": "aboutSidebar"
+            },
+            {
+              "id": "about/developers/index",
+              "path": "/docs/about/developers/",
+              "sidebar": "aboutSidebar"
+            },
+            {
+              "id": "about/developers/install",
+              "path": "/docs/about/developers/install",
+              "sidebar": "aboutSidebar"
+            },
+            {
+              "id": "about/developers/web-components",
+              "path": "/docs/about/developers/web-components",
+              "sidebar": "aboutSidebar"
+            },
+            {
+              "id": "about/experience-standards",
+              "path": "/docs/about/experience-standards",
+              "sidebar": "aboutSidebar"
+            },
+            {
+              "id": "about/feedback",
+              "path": "/docs/about/feedback",
+              "sidebar": "aboutSidebar"
+            },
+            {
+              "id": "about/index",
+              "path": "/docs/about/",
+              "sidebar": "aboutSidebar"
+            },
+            {
+              "id": "about/maturity-scale",
+              "path": "/docs/about/maturity-scale",
+              "sidebar": "aboutSidebar"
+            },
+            {
+              "id": "about/metrics/index",
+              "path": "/docs/about/metrics/",
+              "sidebar": "aboutSidebar"
+            },
+            {
+              "id": "about/naming-conventions/css",
+              "path": "/docs/about/naming-conventions/css",
+              "sidebar": "aboutSidebar"
+            },
+            {
+              "id": "about/naming-conventions/index",
+              "path": "/docs/about/naming-conventions/",
+              "sidebar": "aboutSidebar"
+            },
+            {
+              "id": "about/principles",
+              "path": "/docs/about/principles",
+              "sidebar": "aboutSidebar"
+            },
+            {
+              "id": "about/search-architecture",
+              "path": "/docs/about/search-architecture",
+              "sidebar": "aboutSidebar"
+            },
+            {
+              "id": "about/whats-new",
+              "path": "/docs/about/whats-new",
+              "sidebar": "aboutSidebar"
+            },
+            {
+              "id": "accessibility/annotations",
+              "path": "/docs/accessibility/annotations",
+              "sidebar": "accessibilitySidebar"
+            },
+            {
+              "id": "accessibility/checklist",
+              "path": "/docs/accessibility/checklist"
+            },
+            {
+              "id": "accessibility/focus-management",
+              "path": "/docs/accessibility/focus-management",
+              "sidebar": "accessibilitySidebar"
+            },
+            {
+              "id": "accessibility/for-teams",
+              "path": "/docs/accessibility/for-teams",
+              "sidebar": "accessibilitySidebar"
+            },
+            {
+              "id": "accessibility/index",
+              "path": "/docs/accessibility/",
+              "sidebar": "accessibilitySidebar"
+            },
+            {
+              "id": "accessibility/screen-reader-announcements",
+              "path": "/docs/accessibility/screen-reader-announcements",
+              "sidebar": "accessibilitySidebar"
+            },
+            {
+              "id": "accessibility/testing",
+              "path": "/docs/accessibility/testing",
+              "sidebar": "accessibilitySidebar"
+            },
+            {
+              "id": "components/accordion/checklist",
+              "path": "/docs/components/accordion/checklist"
+            },
+            {
+              "id": "components/accordion/index",
+              "path": "/docs/components/accordion/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/additional-info/checklist",
+              "path": "/docs/components/additional-info/checklist"
+            },
+            {
+              "id": "components/additional-info/index",
+              "path": "/docs/components/additional-info/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/address-block/checklist",
+              "path": "/docs/components/address-block/checklist"
+            },
+            {
+              "id": "components/address-block/index",
+              "path": "/docs/components/address-block/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/alert/alert-expandable/index",
+              "path": "/docs/components/alert/alert-expandable/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/alert/alert-sign-in/index",
+              "path": "/docs/components/alert/alert-sign-in/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/alert/checklist",
+              "path": "/docs/components/alert/checklist"
+            },
+            {
+              "id": "components/alert/index",
+              "path": "/docs/components/alert/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/back-to-top/checklist",
+              "path": "/docs/components/back-to-top/checklist"
+            },
+            {
+              "id": "components/back-to-top/index",
+              "path": "/docs/components/back-to-top/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/banner/checklist",
+              "path": "/docs/components/banner/checklist"
+            },
+            {
+              "id": "components/banner/index",
+              "path": "/docs/components/banner/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/banner/maintenance/index",
+              "path": "/docs/components/banner/maintenance/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/banner/official-gov/index",
+              "path": "/docs/components/banner/official-gov/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/breadcrumbs/checklist",
+              "path": "/docs/components/breadcrumbs/checklist"
+            },
+            {
+              "id": "components/breadcrumbs/index",
+              "path": "/docs/components/breadcrumbs/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/button/button-group/index",
+              "path": "/docs/components/button/button-group/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/button/button-icon/index",
+              "path": "/docs/components/button/button-icon/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/button/button-segmented/index",
+              "path": "/docs/components/button/button-segmented/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/button/checklist",
+              "path": "/docs/components/button/checklist"
+            },
+            {
+              "id": "components/button/index",
+              "path": "/docs/components/button/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/card/checklist",
+              "path": "/docs/components/card/checklist"
+            },
+            {
+              "id": "components/card/index",
+              "path": "/docs/components/card/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/critical-action/checklist",
+              "path": "/docs/components/critical-action/checklist"
+            },
+            {
+              "id": "components/critical-action/index",
+              "path": "/docs/components/critical-action/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/deprecated/banner-promo/index",
+              "path": "/docs/components/deprecated/banner-promo/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/deprecated/index",
+              "path": "/docs/components/deprecated/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/deprecated/input-message/index",
+              "path": "/docs/components/deprecated/input-message/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/deprecated/notification/index",
+              "path": "/docs/components/deprecated/notification/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/divider/checklist",
+              "path": "/docs/components/divider/checklist"
+            },
+            {
+              "id": "components/divider/index",
+              "path": "/docs/components/divider/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/filter-chip/checklist",
+              "path": "/docs/components/filter-chip/checklist"
+            },
+            {
+              "id": "components/filter-chip/index",
+              "path": "/docs/components/filter-chip/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/footer/checklist",
+              "path": "/docs/components/footer/checklist"
+            },
+            {
+              "id": "components/footer/footer-minimal/index",
+              "path": "/docs/components/footer/footer-minimal/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/footer/index",
+              "path": "/docs/components/footer/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/form/autosave/checklist",
+              "path": "/docs/components/form/autosave/checklist"
+            },
+            {
+              "id": "components/form/autosave/index",
+              "path": "/docs/components/form/autosave/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/form/checkbox/checklist",
+              "path": "/docs/components/form/checkbox/checklist"
+            },
+            {
+              "id": "components/form/checkbox/index",
+              "path": "/docs/components/form/checkbox/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/form/combo-box/checklist",
+              "path": "/docs/components/form/combo-box/checklist"
+            },
+            {
+              "id": "components/form/combo-box/index",
+              "path": "/docs/components/form/combo-box/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/form/date-input/checklist",
+              "path": "/docs/components/form/date-input/checklist"
+            },
+            {
+              "id": "components/form/date-input/index",
+              "path": "/docs/components/form/date-input/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/form/file-input/checklist",
+              "path": "/docs/components/form/file-input/checklist"
+            },
+            {
+              "id": "components/form/file-input/index",
+              "path": "/docs/components/form/file-input/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/form/index",
+              "path": "/docs/components/form/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/form/label/checklist",
+              "path": "/docs/components/form/label/checklist"
+            },
+            {
+              "id": "components/form/label/index",
+              "path": "/docs/components/form/label/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/form/memorable-date/checklist",
+              "path": "/docs/components/form/memorable-date/checklist"
+            },
+            {
+              "id": "components/form/memorable-date/index",
+              "path": "/docs/components/form/memorable-date/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/form/need-help/checklist",
+              "path": "/docs/components/form/need-help/checklist"
+            },
+            {
+              "id": "components/form/need-help/index",
+              "path": "/docs/components/form/need-help/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/form/penalty-notice/checklist",
+              "path": "/docs/components/form/penalty-notice/checklist"
+            },
+            {
+              "id": "components/form/penalty-notice/index",
+              "path": "/docs/components/form/penalty-notice/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/form/prefill/checklist",
+              "path": "/docs/components/form/prefill/checklist"
+            },
+            {
+              "id": "components/form/prefill/index",
+              "path": "/docs/components/form/prefill/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/form/privacy-agreement/checklist",
+              "path": "/docs/components/form/privacy-agreement/checklist"
+            },
+            {
+              "id": "components/form/privacy-agreement/index",
+              "path": "/docs/components/form/privacy-agreement/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/form/progress-bar-segmented/checklist",
+              "path": "/docs/components/form/progress-bar-segmented/checklist"
+            },
+            {
+              "id": "components/form/progress-bar-segmented/index",
+              "path": "/docs/components/form/progress-bar-segmented/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/form/radio-button/checklist",
+              "path": "/docs/components/form/radio-button/checklist"
+            },
+            {
+              "id": "components/form/radio-button/index",
+              "path": "/docs/components/form/radio-button/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/form/select/checklist",
+              "path": "/docs/components/form/select/checklist"
+            },
+            {
+              "id": "components/form/select/index",
+              "path": "/docs/components/form/select/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/form/statement-of-truth/checklist",
+              "path": "/docs/components/form/statement-of-truth/checklist"
+            },
+            {
+              "id": "components/form/statement-of-truth/index",
+              "path": "/docs/components/form/statement-of-truth/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/form/telephone-input/checklist",
+              "path": "/docs/components/form/telephone-input/checklist"
+            },
+            {
+              "id": "components/form/telephone-input/index",
+              "path": "/docs/components/form/telephone-input/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/form/text-input/checklist",
+              "path": "/docs/components/form/text-input/checklist"
+            },
+            {
+              "id": "components/form/text-input/index",
+              "path": "/docs/components/form/text-input/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/form/textarea/checklist",
+              "path": "/docs/components/form/textarea/checklist"
+            },
+            {
+              "id": "components/form/textarea/index",
+              "path": "/docs/components/form/textarea/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/header/checklist",
+              "path": "/docs/components/header/checklist"
+            },
+            {
+              "id": "components/header/header-minimal/index",
+              "path": "/docs/components/header/header-minimal/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/header/index",
+              "path": "/docs/components/header/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/icon/checklist",
+              "path": "/docs/components/icon/checklist"
+            },
+            {
+              "id": "components/icon/index",
+              "path": "/docs/components/icon/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/index",
+              "path": "/docs/components/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/language-toggle/checklist",
+              "path": "/docs/components/language-toggle/checklist"
+            },
+            {
+              "id": "components/language-toggle/index",
+              "path": "/docs/components/language-toggle/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/link/action/index",
+              "path": "/docs/components/link/action/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/link/checklist",
+              "path": "/docs/components/link/checklist"
+            },
+            {
+              "id": "components/link/collection/index",
+              "path": "/docs/components/link/collection/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/link/index",
+              "path": "/docs/components/link/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/list/checklist",
+              "path": "/docs/components/list/checklist"
+            },
+            {
+              "id": "components/list/index",
+              "path": "/docs/components/list/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/loading-indicator/checklist",
+              "path": "/docs/components/loading-indicator/checklist"
+            },
+            {
+              "id": "components/loading-indicator/index",
+              "path": "/docs/components/loading-indicator/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/modal/checklist",
+              "path": "/docs/components/modal/checklist"
+            },
+            {
+              "id": "components/modal/crisis-line-modal/index",
+              "path": "/docs/components/modal/crisis-line-modal/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/modal/index",
+              "path": "/docs/components/modal/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/omb-info/checklist",
+              "path": "/docs/components/omb-info/checklist"
+            },
+            {
+              "id": "components/omb-info/index",
+              "path": "/docs/components/omb-info/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/on-this-page/checklist",
+              "path": "/docs/components/on-this-page/checklist"
+            },
+            {
+              "id": "components/on-this-page/index",
+              "path": "/docs/components/on-this-page/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/pagination/checklist",
+              "path": "/docs/components/pagination/checklist"
+            },
+            {
+              "id": "components/pagination/index",
+              "path": "/docs/components/pagination/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/process-list/checklist",
+              "path": "/docs/components/process-list/checklist"
+            },
+            {
+              "id": "components/process-list/index",
+              "path": "/docs/components/process-list/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/progress-bar/checklist",
+              "path": "/docs/components/progress-bar/checklist"
+            },
+            {
+              "id": "components/progress-bar/index",
+              "path": "/docs/components/progress-bar/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/search-filter/checklist",
+              "path": "/docs/components/search-filter/checklist"
+            },
+            {
+              "id": "components/search-filter/index",
+              "path": "/docs/components/search-filter/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/search-input/checklist",
+              "path": "/docs/components/search-input/checklist"
+            },
+            {
+              "id": "components/search-input/index",
+              "path": "/docs/components/search-input/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/service-list-item/checklist",
+              "path": "/docs/components/service-list-item/checklist"
+            },
+            {
+              "id": "components/service-list-item/index",
+              "path": "/docs/components/service-list-item/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/sidenav/checklist",
+              "path": "/docs/components/sidenav/checklist"
+            },
+            {
+              "id": "components/sidenav/index",
+              "path": "/docs/components/sidenav/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/snackbar/checklist",
+              "path": "/docs/components/snackbar/checklist"
+            },
+            {
+              "id": "components/snackbar/index",
+              "path": "/docs/components/snackbar/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/summary-box/checklist",
+              "path": "/docs/components/summary-box/checklist"
+            },
+            {
+              "id": "components/summary-box/index",
+              "path": "/docs/components/summary-box/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/table/checklist",
+              "path": "/docs/components/table/checklist"
+            },
+            {
+              "id": "components/table/index",
+              "path": "/docs/components/table/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/tabs/checklist",
+              "path": "/docs/components/tabs/checklist"
+            },
+            {
+              "id": "components/tabs/index",
+              "path": "/docs/components/tabs/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/tag/checklist",
+              "path": "/docs/components/tag/checklist"
+            },
+            {
+              "id": "components/tag/index",
+              "path": "/docs/components/tag/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/tag/tag-status/index",
+              "path": "/docs/components/tag/tag-status/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/telephone/checklist",
+              "path": "/docs/components/telephone/checklist"
+            },
+            {
+              "id": "components/telephone/index",
+              "path": "/docs/components/telephone/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "components/text/checklist",
+              "path": "/docs/components/text/checklist"
+            },
+            {
+              "id": "components/text/index",
+              "path": "/docs/components/text/",
+              "sidebar": "componentsSidebar"
+            },
+            {
+              "id": "content-style-guide/abbreviations-and-acronyms",
+              "path": "/docs/content-style-guide/abbreviations-and-acronyms"
+            },
+            {
+              "id": "content-style-guide/alternative-text-for-images",
+              "path": "/docs/content-style-guide/alternative-text-for-images"
+            },
+            {
+              "id": "content-style-guide/bold-text",
+              "path": "/docs/content-style-guide/bold-text"
+            },
+            {
+              "id": "content-style-guide/bulleted-lists",
+              "path": "/docs/content-style-guide/bulleted-lists"
+            },
+            {
+              "id": "content-style-guide/button-labels",
+              "path": "/docs/content-style-guide/button-labels"
+            },
+            {
+              "id": "content-style-guide/capitalization",
+              "path": "/docs/content-style-guide/capitalization"
+            },
+            {
+              "id": "content-style-guide/content-principles",
+              "path": "/docs/content-style-guide/content-principles"
+            },
+            {
+              "id": "content-style-guide/dates-and-numbers",
+              "path": "/docs/content-style-guide/dates-and-numbers"
+            },
+            {
+              "id": "content-style-guide/email-and-text-notifications",
+              "path": "/docs/content-style-guide/email-and-text-notifications"
+            },
+            {
+              "id": "content-style-guide/error-messages/access",
+              "path": "/docs/content-style-guide/error-messages/access"
+            },
+            {
+              "id": "content-style-guide/error-messages/engagement",
+              "path": "/docs/content-style-guide/error-messages/engagement"
+            },
+            {
+              "id": "content-style-guide/error-messages/feedback",
+              "path": "/docs/content-style-guide/error-messages/feedback"
+            },
+            {
+              "id": "content-style-guide/error-messages/index",
+              "path": "/docs/content-style-guide/error-messages/"
+            },
+            {
+              "id": "content-style-guide/error-messages/system",
+              "path": "/docs/content-style-guide/error-messages/system"
+            },
+            {
+              "id": "content-style-guide/form-labels",
+              "path": "/docs/content-style-guide/form-labels"
+            },
+            {
+              "id": "content-style-guide/government-forms",
+              "path": "/docs/content-style-guide/government-forms"
+            },
+            {
+              "id": "content-style-guide/health-content/destigmatizing-language-substance-use",
+              "path": "/docs/content-style-guide/health-content/destigmatizing-language-substance-use"
+            },
+            {
+              "id": "content-style-guide/health-content/destigmatizing-language-weight",
+              "path": "/docs/content-style-guide/health-content/destigmatizing-language-weight"
+            },
+            {
+              "id": "content-style-guide/health-content/index",
+              "path": "/docs/content-style-guide/health-content/"
+            },
+            {
+              "id": "content-style-guide/index",
+              "path": "/docs/content-style-guide/"
+            },
+            {
+              "id": "content-style-guide/links",
+              "path": "/docs/content-style-guide/links"
+            },
+            {
+              "id": "content-style-guide/naming-and-labels",
+              "path": "/docs/content-style-guide/naming-and-labels"
+            },
+            {
+              "id": "content-style-guide/neutral-language",
+              "path": "/docs/content-style-guide/neutral-language"
+            },
+            {
+              "id": "content-style-guide/numbers-signs-symbols",
+              "path": "/docs/content-style-guide/numbers-signs-symbols"
+            },
+            {
+              "id": "content-style-guide/page-titles-and-section-titles",
+              "path": "/docs/content-style-guide/page-titles-and-section-titles"
+            },
+            {
+              "id": "content-style-guide/plain-language/index",
+              "path": "/docs/content-style-guide/plain-language/"
+            },
+            {
+              "id": "content-style-guide/punctuation-and-formatting",
+              "path": "/docs/content-style-guide/punctuation-and-formatting"
+            },
+            {
+              "id": "content-style-guide/specific-topics-and-programs/claims-and-applications",
+              "path": "/docs/content-style-guide/specific-topics-and-programs/claims-and-applications"
+            },
+            {
+              "id": "content-style-guide/specific-topics-and-programs/index",
+              "path": "/docs/content-style-guide/specific-topics-and-programs/"
+            },
+            {
+              "id": "content-style-guide/specific-topics-and-programs/payments-and-debts",
+              "path": "/docs/content-style-guide/specific-topics-and-programs/payments-and-debts"
+            },
+            {
+              "id": "content-style-guide/specific-topics-and-programs/sign-in-and-identity-verification",
+              "path": "/docs/content-style-guide/specific-topics-and-programs/sign-in-and-identity-verification"
+            },
+            {
+              "id": "content-style-guide/they-their",
+              "path": "/docs/content-style-guide/they-their"
+            },
+            {
+              "id": "content-style-guide/title-tags",
+              "path": "/docs/content-style-guide/title-tags"
+            },
+            {
+              "id": "content-style-guide/trademarks",
+              "path": "/docs/content-style-guide/trademarks"
+            },
+            {
+              "id": "content-style-guide/we-us-you",
+              "path": "/docs/content-style-guide/we-us-you"
+            },
+            {
+              "id": "content-style-guide/word-list",
+              "path": "/docs/content-style-guide/word-list"
+            },
+            {
+              "id": "content-style-guide/writing-for-seo",
+              "path": "/docs/content-style-guide/writing-for-seo"
+            },
+            {
+              "id": "content/button-labels",
+              "path": "/docs/content/button-labels",
+              "sidebar": "contentSidebar"
+            },
+            {
+              "id": "content/error-messages",
+              "path": "/docs/content/error-messages",
+              "sidebar": "contentSidebar"
+            },
+            {
+              "id": "content/index",
+              "path": "/docs/content/",
+              "sidebar": "contentSidebar"
+            },
+            {
+              "id": "content/links",
+              "path": "/docs/content/links",
+              "sidebar": "contentSidebar"
+            },
+            {
+              "id": "content/plain-language",
+              "path": "/docs/content/plain-language",
+              "sidebar": "contentSidebar"
+            },
+            {
+              "id": "foundation/breakpoints",
+              "path": "/docs/foundation/breakpoints",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/color-palette",
+              "path": "/docs/foundation/color-palette",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/design-tokens",
+              "path": "/docs/foundation/design-tokens",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/image-aspect-ratios",
+              "path": "/docs/foundation/image-aspect-ratios",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/index",
+              "path": "/docs/foundation/",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/layout/flexbox-grid",
+              "path": "/docs/foundation/layout/flexbox-grid",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/layout/index",
+              "path": "/docs/foundation/layout/",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/layout/page-layouts",
+              "path": "/docs/foundation/layout/page-layouts",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/logos",
+              "path": "/docs/foundation/logos",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/spacing-units",
+              "path": "/docs/foundation/spacing-units",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/typography",
+              "path": "/docs/foundation/typography",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/utilities/background-color",
+              "path": "/docs/foundation/utilities/background-color",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/utilities/border",
+              "path": "/docs/foundation/utilities/border",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/utilities/display",
+              "path": "/docs/foundation/utilities/display",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/utilities/flexbox",
+              "path": "/docs/foundation/utilities/flexbox",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/utilities/font-family",
+              "path": "/docs/foundation/utilities/font-family",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/utilities/font-size",
+              "path": "/docs/foundation/utilities/font-size",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/utilities/font-style",
+              "path": "/docs/foundation/utilities/font-style",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/utilities/font-weight",
+              "path": "/docs/foundation/utilities/font-weight",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/utilities/height-and-width",
+              "path": "/docs/foundation/utilities/height-and-width",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/utilities/index",
+              "path": "/docs/foundation/utilities/",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/utilities/line-height",
+              "path": "/docs/foundation/utilities/line-height",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/utilities/margins",
+              "path": "/docs/foundation/utilities/margins",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/utilities/measure",
+              "path": "/docs/foundation/utilities/measure",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/utilities/padding",
+              "path": "/docs/foundation/utilities/padding",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/utilities/position",
+              "path": "/docs/foundation/utilities/position",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/utilities/text-align",
+              "path": "/docs/foundation/utilities/text-align",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/utilities/text-color",
+              "path": "/docs/foundation/utilities/text-color",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/utilities/text-decoration",
+              "path": "/docs/foundation/utilities/text-decoration",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "foundation/utilities/visibility",
+              "path": "/docs/foundation/utilities/visibility",
+              "sidebar": "foundationSidebar"
+            },
+            {
+              "id": "ia/domain-structure",
+              "path": "/docs/ia/domain-structure",
+              "sidebar": "iaSidebar"
+            },
+            {
+              "id": "ia/index",
+              "path": "/docs/ia/",
+              "sidebar": "iaSidebar"
+            },
+            {
+              "id": "ia/url-standards/index",
+              "path": "/docs/ia/url-standards/",
+              "sidebar": "iaSidebar"
+            },
+            {
+              "id": "ia/url-standards/redirects",
+              "path": "/docs/ia/url-standards/redirects",
+              "sidebar": "iaSidebar"
+            },
+            {
+              "id": "ia/url-standards/vanity-urls",
+              "path": "/docs/ia/url-standards/vanity-urls",
+              "sidebar": "iaSidebar"
+            },
+            {
+              "id": "ia/va-health-and-benefits-app",
+              "path": "/docs/ia/va-health-and-benefits-app",
+              "sidebar": "iaSidebar"
+            },
+            {
+              "id": "index",
+              "path": "/docs/"
+            },
+            {
+              "id": "METRICS-DASHBOARD",
+              "path": "/docs/METRICS-DASHBOARD"
+            },
+            {
+              "id": "patterns/ask-users-for/a-mutually-exclusive-answer/index",
+              "path": "/docs/patterns/ask-users-for/a-mutually-exclusive-answer/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/ask-users-for/a-single-response/index",
+              "path": "/docs/patterns/ask-users-for/a-single-response/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/ask-users-for/addresses/index",
+              "path": "/docs/patterns/ask-users-for/addresses/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/ask-users-for/contact-preferences/index",
+              "path": "/docs/patterns/ask-users-for/contact-preferences/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/ask-users-for/dates/index",
+              "path": "/docs/patterns/ask-users-for/dates/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/ask-users-for/direct-deposit/index",
+              "path": "/docs/patterns/ask-users-for/direct-deposit/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/ask-users-for/email-address/index",
+              "path": "/docs/patterns/ask-users-for/email-address/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/ask-users-for/feedback/index",
+              "path": "/docs/patterns/ask-users-for/feedback/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/ask-users-for/files/index",
+              "path": "/docs/patterns/ask-users-for/files/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/ask-users-for/housing-status/index",
+              "path": "/docs/patterns/ask-users-for/housing-status/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/ask-users-for/index",
+              "path": "/docs/patterns/ask-users-for/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/ask-users-for/marital-information/index",
+              "path": "/docs/patterns/ask-users-for/marital-information/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/ask-users-for/multiple-responses/index",
+              "path": "/docs/patterns/ask-users-for/multiple-responses/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/ask-users-for/names/index",
+              "path": "/docs/patterns/ask-users-for/names/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/ask-users-for/phone-numbers/index",
+              "path": "/docs/patterns/ask-users-for/phone-numbers/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/ask-users-for/race-and-ethnicity/index",
+              "path": "/docs/patterns/ask-users-for/race-and-ethnicity/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/ask-users-for/relationship/index",
+              "path": "/docs/patterns/ask-users-for/relationship/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/ask-users-for/service-history/index",
+              "path": "/docs/patterns/ask-users-for/service-history/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/ask-users-for/signature/index",
+              "path": "/docs/patterns/ask-users-for/signature/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/ask-users-for/social-security-number/index",
+              "path": "/docs/patterns/ask-users-for/social-security-number/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/deprecated/gender-identity/index",
+              "path": "/docs/patterns/deprecated/gender-identity/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/deprecated/know-how-their-information-is-updated/index",
+              "path": "/docs/patterns/deprecated/know-how-their-information-is-updated/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/deprecated/pronouns/index",
+              "path": "/docs/patterns/deprecated/pronouns/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/deprecated/wizard/index",
+              "path": "/docs/patterns/deprecated/wizard/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/help-users-to/check-answers/index",
+              "path": "/docs/patterns/help-users-to/check-answers/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/help-users-to/check-eligibility/index",
+              "path": "/docs/patterns/help-users-to/check-eligibility/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/help-users-to/check-personal-information/index",
+              "path": "/docs/patterns/help-users-to/check-personal-information/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/help-users-to/complete-a-sub-task/index",
+              "path": "/docs/patterns/help-users-to/complete-a-sub-task/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/help-users-to/index",
+              "path": "/docs/patterns/help-users-to/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/help-users-to/keep-a-record-of-submitted-information/index",
+              "path": "/docs/patterns/help-users-to/keep-a-record-of-submitted-information/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/help-users-to/know-when-their-information-is-prefilled/index",
+              "path": "/docs/patterns/help-users-to/know-when-their-information-is-prefilled/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/help-users-to/manage-benefits-and-tools/index",
+              "path": "/docs/patterns/help-users-to/manage-benefits-and-tools/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/help-users-to/navigate-a-long-list/index",
+              "path": "/docs/patterns/help-users-to/navigate-a-long-list/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/help-users-to/navigate-benefit-applications/index",
+              "path": "/docs/patterns/help-users-to/navigate-benefit-applications/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/help-users-to/navigate-multiple-related-forms/index",
+              "path": "/docs/patterns/help-users-to/navigate-multiple-related-forms/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/help-users-to/recover-from-errors/index",
+              "path": "/docs/patterns/help-users-to/recover-from-errors/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/help-users-to/sign-in/index",
+              "path": "/docs/patterns/help-users-to/sign-in/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/help-users-to/stay-informed-of-their-application-status/index",
+              "path": "/docs/patterns/help-users-to/stay-informed-of-their-application-status/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/help-users-to/update-prefilled-information/index",
+              "path": "/docs/patterns/help-users-to/update-prefilled-information/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "patterns/index",
+              "path": "/docs/patterns/",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "story-embed-test",
+              "path": "/docs/story-embed-test"
+            },
+            {
+              "id": "templates/email/index",
+              "path": "/docs/templates/email/",
+              "sidebar": "templatesSidebar"
+            },
+            {
+              "id": "templates/forms/accessibility-guidelines/index",
+              "path": "/docs/templates/forms/accessibility-guidelines/",
+              "sidebar": "templatesSidebar"
+            },
+            {
+              "id": "templates/forms/confirmation/index",
+              "path": "/docs/templates/forms/confirmation/",
+              "sidebar": "templatesSidebar"
+            },
+            {
+              "id": "templates/forms/form-step-minimal/index",
+              "path": "/docs/templates/forms/form-step-minimal/",
+              "sidebar": "templatesSidebar"
+            },
+            {
+              "id": "templates/forms/form-step/index",
+              "path": "/docs/templates/forms/form-step/",
+              "sidebar": "templatesSidebar"
+            },
+            {
+              "id": "templates/forms/how-to-apply/index",
+              "path": "/docs/templates/forms/how-to-apply/",
+              "sidebar": "templatesSidebar"
+            },
+            {
+              "id": "templates/forms/index",
+              "path": "/docs/templates/forms/",
+              "sidebar": "templatesSidebar"
+            },
+            {
+              "id": "templates/forms/introduction/index",
+              "path": "/docs/templates/forms/introduction/",
+              "sidebar": "templatesSidebar"
+            },
+            {
+              "id": "templates/forms/review/index",
+              "path": "/docs/templates/forms/review/",
+              "sidebar": "templatesSidebar"
+            },
+            {
+              "id": "templates/homepage/index",
+              "path": "/docs/templates/homepage/",
+              "sidebar": "templatesSidebar"
+            },
+            {
+              "id": "templates/hub/index",
+              "path": "/docs/templates/hub/",
+              "sidebar": "templatesSidebar"
+            },
+            {
+              "id": "templates/index",
+              "path": "/docs/templates/",
+              "sidebar": "templatesSidebar"
+            },
+            {
+              "id": "templates/search-results/index",
+              "path": "/docs/templates/search-results/",
+              "sidebar": "templatesSidebar"
+            },
+            {
+              "id": "templates/signed-out-vs-signed-in/index",
+              "path": "/docs/templates/signed-out-vs-signed-in/",
+              "sidebar": "templatesSidebar"
+            },
+            {
+              "id": "/category/ask-users-for",
+              "path": "/docs/category/ask-users-for",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "/category/help-users-to",
+              "path": "/docs/category/help-users-to",
+              "sidebar": "patternsSidebar"
+            },
+            {
+              "id": "/category/deprecated",
+              "path": "/docs/category/deprecated",
+              "sidebar": "patternsSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "componentsSidebar": {
+              "link": {
+                "path": "/docs/components/",
+                "label": "components/index"
+              }
+            },
+            "patternsSidebar": {
+              "link": {
+                "path": "/docs/patterns/",
+                "label": "patterns/index"
+              }
+            },
+            "templatesSidebar": {
+              "link": {
+                "path": "/docs/templates/",
+                "label": "templates/index"
+              }
+            },
+            "foundationSidebar": {
+              "link": {
+                "path": "/docs/foundation/",
+                "label": "foundation/index"
+              }
+            },
+            "contentSidebar": {
+              "link": {
+                "path": "/docs/content/",
+                "label": "content/index"
+              }
+            },
+            "iaSidebar": {
+              "link": {
+                "path": "/docs/ia/domain-structure",
+                "label": "ia/domain-structure"
+              }
+            },
+            "accessibilitySidebar": {
+              "link": {
+                "path": "/docs/accessibility/",
+                "label": "accessibility/index"
+              }
+            },
+            "aboutSidebar": {
+              "link": {
+                "path": "/docs/about/",
+                "label": "about/index"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  },
+  "docusaurus-lunr-search": {
+    "default": {
+      "fileNames": {
+        "searchDoc": "search-doc-1768494308658.json",
+        "lunrIndex": "lunr-index-1768494308658.json"
+      }
+    }
+  }
+}

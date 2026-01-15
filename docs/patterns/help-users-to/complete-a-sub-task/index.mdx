@@ -1,0 +1,75 @@
+---
+title: Complete a sub task
+description: Follow this pattern to help users complete a shorter task within a larger process.
+cms_editable: true
+category: help-users-to
+maturity: use-with-caution
+sidebar_position: 10
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms
+github: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-sub-task%22
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Help+users+to...+Complete+a+sub+task%22
+
+intro: Use this pattern to help users complete a shorter task before or within a larger process. This pattern replaces the deprecated Wizard pattern and applies the "One thing per page" principle.
+
+usage:
+  when_to_use:
+    - value: "**Multiple eligibility pathways.** When tasks require users to navigate multiple eligibility pathways."
+    - value: "**Shorter tasks in larger processes.** When completing shorter tasks within larger processes spanning multiple touchpoints."
+    - value: "**Branching eligibility.** When branching eligibility choices guide users toward optimal pathways."
+  design_principles:
+    - value: "**One thing per page.** Limit questions to two or three maximum per screen."
+    - value: "**Reduce cognitive load.** Keep decisions simple and focused."
+    - value: "**No dead ends.** Always provide next steps at completion or transition points."
+    - value: "**Use alerts for clarity.** When exiting the sub-task, use alerts to communicate status."
+  when_not_to_use:
+    - value: "**Standard form flows.** Don't use as a replacement for standard form flows."
+    - value: "**Simple eligibility.** When eligibility information fits concisely on an introduction page."
+    - value: "**Standalone forms.** Forms without progress indicators and button pairs."
+
+examples:
+  - title: Supplemental Claim sub-task
+    description: Determines if service suits user needs through single-question branching.
+  - title: Pre-Check-in Experience
+    description: Verifies current information accuracy before facility visits.
+  - title: VAOS Vaccine screening
+    description: Screens vaccination status within broader scheduling process.
+
+how_to_build:
+  intro: Start with content design creating simple, plain-language questions on distinct pages.
+  steps:
+    - value: "Structure logic trees gathering information in minimal questions."
+    - value: "Avoid showing irrelevant content."
+    - value: "Always provide next steps—no dead ends."
+    - value: "Clearly mark completion or transition points."
+    - value: "Use alerts for clarity when exiting the sub-task."
+    - value: "Order essential required questions before optional ones."
+  components_used:
+    - name: Accordion
+      url: /docs/components/accordion
+    - name: Alert
+      url: /docs/components/alert
+    - name: Button pair
+      url: /docs/components/button
+    - name: Action link
+      url: /docs/components/link/action
+
+content_considerations:
+  - value: "Use plain language exclusively."
+  - value: "Order essential required questions before optional ones."
+  - value: "Avoid nested questions within single prompts."
+  - value: "Group related questions by topic."
+  - value: "Use research and card sorting for question sequencing."
+  - value: "Use clear button labels."
+
+accessibility:
+  - value: "Each page's H1 title must be unique."
+  - value: "Title tags should reference the form/task name consistently."
+  - value: "Radio options with submit buttons preferred over Yes/No button pairs for backward navigation."
+  - value: "Avoid deprecated Wizard patterns: unclear endpoints, accidental focus jumping, hidden validation, nested fieldsets."
+  - value: "Maintain minimal page design allowing quick navigation to first question."
+---
+
+import PatternPage from '@site/src/components/PatternPage';
+
+<PatternPage frontMatter={frontMatter} />
+

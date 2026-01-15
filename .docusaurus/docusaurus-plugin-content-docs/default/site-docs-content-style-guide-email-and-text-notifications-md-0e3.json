@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/email-and-text-notifications",
+  "title": "Email and text notifications",
+  "description": "Guidelines for creating trustworthy, actionable email and text notifications for Veterans.",
+  "source": "@site/docs/content-style-guide/email-and-text-notifications.md",
+  "sourceDirName": "content-style-guide",
+  "slug": "/content-style-guide/email-and-text-notifications",
+  "permalink": "/docs/content-style-guide/email-and-text-notifications",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/email-and-text-notifications.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "title": "Email and text notifications",
+    "description": "Guidelines for creating trustworthy, actionable email and text notifications for Veterans.",
+    "sidebar_position": 10
+  }
+}

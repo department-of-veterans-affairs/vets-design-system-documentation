@@ -1,0 +1,21 @@
+{
+  "id": "components/breadcrumbs/checklist",
+  "title": "Breadcrumbs - Component checklist",
+  "description": "Maturity and asset checklist for the Breadcrumbs component",
+  "source": "@site/docs/components/breadcrumbs/checklist.mdx",
+  "sourceDirName": "components/breadcrumbs",
+  "slug": "/components/breadcrumbs/checklist",
+  "permalink": "/docs/components/breadcrumbs/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/breadcrumbs/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Breadcrumbs - Component checklist",
+    "description": "Maturity and asset checklist for the Breadcrumbs component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

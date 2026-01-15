@@ -1,0 +1,29 @@
+{
+  "id": "foundation/utilities/position",
+  "title": "Position",
+  "description": "CSS classes for controlling element positioning behavior.",
+  "source": "@site/docs/foundation/utilities/position.md",
+  "sourceDirName": "foundation/utilities",
+  "slug": "/foundation/utilities/position",
+  "permalink": "/docs/foundation/utilities/position",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/utilities/position.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 15,
+  "frontMatter": {
+    "title": "Position",
+    "description": "CSS classes for controlling element positioning behavior.",
+    "sidebar_position": 15
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Padding",
+    "permalink": "/docs/foundation/utilities/padding"
+  },
+  "next": {
+    "title": "Text align",
+    "permalink": "/docs/foundation/utilities/text-align"
+  }
+}

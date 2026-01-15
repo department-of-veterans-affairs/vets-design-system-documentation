@@ -1,0 +1,145 @@
+{
+  "id": "patterns/ask-users-for/dates/index",
+  "title": "Dates",
+  "description": "Follow this pattern to ask users for dates including birth dates, service dates, and date ranges.",
+  "source": "@site/docs/patterns/ask-users-for/dates/index.mdx",
+  "sourceDirName": "patterns/ask-users-for/dates",
+  "slug": "/patterns/ask-users-for/dates/",
+  "permalink": "/docs/patterns/ask-users-for/dates/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/patterns/ask-users-for/dates/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Dates",
+    "description": "Follow this pattern to ask users for dates including birth dates, service dates, and date ranges.",
+    "cms_editable": true,
+    "category": "ask-users-for",
+    "maturity": "deployed",
+    "sidebar_position": 2,
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms?node-id=2987%3A30876",
+    "github": "https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-dates%22",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Ask+users+for...+Dates%22",
+    "intro": "Use this pattern when collecting date information from users, including memorized dates, approximate dates, and date ranges.",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Memorized dates.** Dates users know by heart like date of birth or anniversary dates."
+        },
+        {
+          "value": "**Approximate dates.** Dates users may not remember exactly, like when they received a diploma (month/year only)."
+        },
+        {
+          "value": "**Date ranges.** Periods of time like service history or employment dates."
+        }
+      ],
+      "design_principles": [
+        {
+          "value": "**Use clear labeling for ranges.** Avoid 'From/To' labels; use specific descriptors like 'Start date' and 'End date'."
+        },
+        {
+          "value": "**Display full month names.** Show complete month names in selected states to reduce confusion."
+        },
+        {
+          "value": "**Provide input validation.** Give immediate feedback for incorrect date entries."
+        },
+        {
+          "value": "**Use a single field for birth dates.** Reduces format confusion compared to separate fields."
+        },
+        {
+          "value": "**Pair with names.** Date of birth collection typically appears alongside the full name pattern."
+        }
+      ]
+    },
+    "examples": [
+      {
+        "title": "Date of birth",
+        "description": "Single memorable date field for collecting a user's birth date."
+      },
+      {
+        "title": "Approximate date",
+        "description": "Month and year only fields for dates users may not remember exactly."
+      },
+      {
+        "title": "Date range",
+        "description": "Start and end date fields for collecting a period of time."
+      }
+    ],
+    "how_to_build": {
+      "intro": "Choose the appropriate date component based on the precision needed.",
+      "steps": [
+        {
+          "value": "For known dates (birth dates, specific events), use the memorable date component."
+        },
+        {
+          "value": "For approximate dates, use the month/year date input variation."
+        },
+        {
+          "value": "For place of birth, use a single text input to accommodate diverse birth locations."
+        },
+        {
+          "value": "Include clear validation messages for invalid entries."
+        }
+      ],
+      "components_used": [
+        {
+          "name": "Memorable date",
+          "url": "/docs/components/form/memorable-date"
+        },
+        {
+          "name": "Date input",
+          "url": "/docs/components/form/date-input"
+        },
+        {
+          "name": "Text input",
+          "url": "/docs/components/form/text-input"
+        }
+      ]
+    },
+    "code_usage": "Date patterns are available as web-components in the VA Forms library.\n\n```jsx\nimport { datePatterns } from '@department-of-veterans-affairs/platform-forms-system/patterns';\n```\n\nSee the [vets-website repository](https://github.com/department-of-veterans-affairs/vets-website) for implementation details.\n",
+    "content_specs": [
+      {
+        "field": "Date of birth",
+        "hint_text": "Select a month. Enter 1 or 2 digits for day and 4 digits for year.",
+        "error_message": "Provide a date of birth"
+      },
+      {
+        "field": "Month",
+        "hint_text": null,
+        "error_message": "Select a month"
+      },
+      {
+        "field": "Day",
+        "hint_text": null,
+        "error_message": "Enter a day between 1 and 31"
+      },
+      {
+        "field": "Year",
+        "hint_text": null,
+        "error_message": "Enter a year between 1900 and the current year"
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Ensure date fields are properly labeled and associated with their inputs."
+      },
+      {
+        "value": "Provide clear error messages that explain the expected format."
+      },
+      {
+        "value": "Use ARIA attributes to announce validation errors to screen readers."
+      }
+    ]
+  },
+  "sidebar": "patternsSidebar",
+  "previous": {
+    "title": "Names",
+    "permalink": "/docs/patterns/ask-users-for/names/"
+  },
+  "next": {
+    "title": "Email address",
+    "permalink": "/docs/patterns/ask-users-for/email-address/"
+  }
+}

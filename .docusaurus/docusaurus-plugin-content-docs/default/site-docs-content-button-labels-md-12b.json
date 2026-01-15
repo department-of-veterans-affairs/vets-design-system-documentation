@@ -1,0 +1,25 @@
+{
+  "id": "content/button-labels",
+  "title": "Button Labels",
+  "description": "Guidelines for writing clear, action-oriented button text",
+  "source": "@site/docs/content/button-labels.md",
+  "sourceDirName": "content",
+  "slug": "/content/button-labels",
+  "permalink": "/docs/content/button-labels",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content/button-labels.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Button Labels",
+    "description": "Guidelines for writing clear, action-oriented button text",
+    "sidebar_position": 5
+  },
+  "sidebar": "contentSidebar",
+  "previous": {
+    "title": "Links",
+    "permalink": "/docs/content/links"
+  }
+}

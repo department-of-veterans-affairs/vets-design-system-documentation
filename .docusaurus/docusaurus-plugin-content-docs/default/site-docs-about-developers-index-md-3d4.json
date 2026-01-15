@@ -1,0 +1,30 @@
+{
+  "id": "about/developers/index",
+  "title": "For developers",
+  "description": "How developers can use the VA.gov Design System",
+  "source": "@site/docs/about/developers/index.md",
+  "sourceDirName": "about/developers",
+  "slug": "/about/developers/",
+  "permalink": "/docs/about/developers/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/about/developers/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "For developers",
+    "description": "How developers can use the VA.gov Design System",
+    "sidebar_label": "Overview",
+    "sidebar_position": 1
+  },
+  "sidebar": "aboutSidebar",
+  "previous": {
+    "title": "Figma at VA",
+    "permalink": "/docs/about/designers/figma"
+  },
+  "next": {
+    "title": "Install",
+    "permalink": "/docs/about/developers/install"
+  }
+}

@@ -1,4 +1,4 @@
-name: Preview
+name: Preview Deployment
 
 on:
   pull_request:
@@ -8,25 +8,106 @@ on:
       - synchronize
 
 jobs:
-  dev-deploy-preview:
-    strategy:
-      matrix:
-        environment:
-          [
-            {
-              name: development,
-              bucket: "dev-design.va.gov/${{ github.event.number }}",
-              config: dev.yml,
-            },
-          ]
-    uses: ./.github/workflows/deploy-reusable.yml
-    with:
-      github-sha: ${{ github.sha }}
-      github-run-id: ${{ github.run_id }}
-      github-event-number: ${{ github.event.number }}
-      matrix-name: ${{ matrix.environment.name }}
-      matrix-bucket: ${{ matrix.environment.bucket }}
-      matrix-config: ${{ matrix.environment.config }}
-    secrets:
-      aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  preview:
+    name: Deploy PR Preview
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
+      - name: Make BUILD.txt file
+        run: |
+          echo -e "REF=${{ github.sha }}\n\
+          BUILD_ID=${{ github.run_id }}\n\
+          BUILDTIME=$(date)\n\
+          PR_NUMBER=${{ github.event.number }}" > build/BUILD.txt
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: "us-gov-west-1"
+
+      - name: Deploy to development S3
+        run: |
+          aws s3 sync build s3://dev-design.va.gov/${{ github.event.number }} \
+          --acl public-read \
+          --delete \
+          --exclude "storybook/*"
+
+      - name: Comment PR with preview link
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo, number } = context.issue;
+            const previewUrl = `https://dev-design.va.gov/${number}/`;
+            const body = `## 📖 Documentation Preview
+
+            Your changes have been deployed to a preview environment:
+
+            **🔗 Preview URL:** ${previewUrl}
+
+            ### What's included:
+            - Complete Docusaurus site with your changes
+            - Interactive component examples
+            - Content management system (CMS) integration
+            - All documentation sections
+
+            ### Testing locally:
+            \`\`\`bash
+            npm install
+            npm run dev
+            # Site available at http://localhost:3000
+            \`\`\`
+
+            ### Testing with CMS locally:
+            \`\`\`bash
+            npm run dev:cms
+            # Site at http://localhost:3000
+            # CMS admin at http://localhost:3000/admin/
+            \`\`\`
+
+            The preview will be updated automatically when you push new commits to this PR.`;
+
+            // Try to find existing preview comment and update it
+            const comments = await github.rest.issues.listComments({
+              owner,
+              repo,
+              issue_number: number,
+            });
+
+            const existingComment = comments.data.find(comment => 
+              comment.user.login === 'github-actions[bot]' && 
+              comment.body.includes('Documentation Preview')
+            );
+
+            if (existingComment) {
+              await github.rest.issues.updateComment({
+                owner,
+                repo,
+                comment_id: existingComment.id,
+                body
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: number,
+                body
+              });
+            }

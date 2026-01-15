@@ -1,0 +1,29 @@
+{
+  "id": "about/developers/web-components",
+  "title": "Using Web Components",
+  "description": "How to use VA Design System web components in your applications.",
+  "source": "@site/docs/about/developers/web-components.md",
+  "sourceDirName": "about/developers",
+  "slug": "/about/developers/web-components",
+  "permalink": "/docs/about/developers/web-components",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/about/developers/web-components.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Using Web Components",
+    "description": "How to use VA Design System web components in your applications.",
+    "sidebar_position": 3
+  },
+  "sidebar": "aboutSidebar",
+  "previous": {
+    "title": "Install",
+    "permalink": "/docs/about/developers/install"
+  },
+  "next": {
+    "title": "Maturity scale",
+    "permalink": "/docs/about/maturity-scale"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/error-messages/index",
+  "title": "Error and alert messages",
+  "description": "Guidelines for writing clear, direct error and alert messages that help users understand issues and take action.",
+  "source": "@site/docs/content-style-guide/error-messages/index.md",
+  "sourceDirName": "content-style-guide/error-messages",
+  "slug": "/content-style-guide/error-messages/",
+  "permalink": "/docs/content-style-guide/error-messages/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/error-messages/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Error and alert messages",
+    "description": "Guidelines for writing clear, direct error and alert messages that help users understand issues and take action.",
+    "sidebar_position": 1
+  }
+}

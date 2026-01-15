@@ -1,0 +1,29 @@
+{
+  "id": "foundation/utilities/text-decoration",
+  "title": "Text decoration",
+  "description": "CSS classes for modifying text decoration (underline, strikethrough).",
+  "source": "@site/docs/foundation/utilities/text-decoration.md",
+  "sourceDirName": "foundation/utilities",
+  "slug": "/foundation/utilities/text-decoration",
+  "permalink": "/docs/foundation/utilities/text-decoration",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/utilities/text-decoration.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 18,
+  "frontMatter": {
+    "title": "Text decoration",
+    "description": "CSS classes for modifying text decoration (underline, strikethrough).",
+    "sidebar_position": 18
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Text color",
+    "permalink": "/docs/foundation/utilities/text-color"
+  },
+  "next": {
+    "title": "Visibility",
+    "permalink": "/docs/foundation/utilities/visibility"
+  }
+}

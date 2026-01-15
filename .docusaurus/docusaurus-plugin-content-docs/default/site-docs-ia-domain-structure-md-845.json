@@ -1,0 +1,23 @@
+{
+  "id": "ia/domain-structure",
+  "title": "Domain Structure",
+  "description": "Guidelines for using subdomains and subdirectories on VA.gov",
+  "source": "@site/docs/ia/domain-structure.md",
+  "sourceDirName": "ia",
+  "slug": "/ia/domain-structure",
+  "permalink": "/docs/ia/domain-structure",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/ia/domain-structure.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Domain Structure",
+    "description": "Guidelines for using subdomains and subdirectories on VA.gov"
+  },
+  "sidebar": "iaSidebar",
+  "next": {
+    "title": "Information Architecture",
+    "permalink": "/docs/ia/"
+  }
+}

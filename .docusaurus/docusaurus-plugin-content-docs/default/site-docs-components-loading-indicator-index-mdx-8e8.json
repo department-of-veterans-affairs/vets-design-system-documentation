@@ -1,0 +1,109 @@
+{
+  "id": "components/loading-indicator/index",
+  "title": "Loading indicator",
+  "description": "Displays during indeterminate loading states when wait time is unknown",
+  "source": "@site/docs/components/loading-indicator/index.mdx",
+  "sourceDirName": "components/loading-indicator",
+  "slug": "/components/loading-indicator/",
+  "permalink": "/docs/components/loading-indicator/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/loading-indicator/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Loading indicator",
+    "description": "Displays during indeterminate loading states when wait time is unknown",
+    "maturity": "deployed",
+    "platforms": [
+      "web",
+      "mobile"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-loading-indicator",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design&node-id=1064%3A2524",
+    "storybook": "https://design.va.gov/storybook/?path=/docs/uswds-va-loading-indicator--docs",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Loading+indicator%22",
+    "related": [
+      {
+        "name": "Progress bar - Segmented",
+        "url": "/docs/components/form/progress-bar-segmented",
+        "description": "For form step progress"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "When the wait time for a process, such as loading a page, is unknown"
+        },
+        {
+          "value": "Display during indeterminate loading states"
+        },
+        {
+          "value": "When fetching data or content asynchronously"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "For file uploads with known progress: use the Standard progress bar"
+        },
+        {
+          "value": "For form steps: use the [Progress bar - Segmented](/docs/components/form/progress-bar-segmented) instead"
+        },
+        {
+          "value": "When you can show skeleton loading states instead"
+        }
+      ]
+    },
+    "content_considerations": [
+      {
+        "value": "\"Saving your draft...\""
+      },
+      {
+        "value": "\"Loading your application...\""
+      },
+      {
+        "value": "\"Submitting your file...\""
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Uses WAI-ARIA attributes (`aria-live=\"polite\"`, `aria-label`, `aria-valuetext`) to notify screen reader users of loading status"
+      },
+      {
+        "value": "The `label` prop provides an accessible name for screen readers"
+      },
+      {
+        "value": "Use `set-focus` when the loading indicator appears after a user action to move focus appropriately"
+      },
+      {
+        "value": "Ensure loading states don't trap keyboard focus"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Default",
+        "description": "Default",
+        "storyId": "uswds-va-loading-indicator--default",
+        "height": 150
+      },
+      {
+        "title": "With message",
+        "description": "With message",
+        "storyId": "uswds-va-loading-indicator--with-message",
+        "height": 150
+      }
+    ],
+    "code_usage": "<!-- Default loading indicator -->\n<va-loading-indicator label=\"Loading\"></va-loading-indicator>\n\n<!-- With visible message -->\n<va-loading-indicator\n  label=\"Loading your application\"\n  message=\"Loading your application...\"\n></va-loading-indicator>\n\n<!-- With focus capture -->\n<va-loading-indicator\n  label=\"Saving your draft\"\n  message=\"Saving your draft...\"\n  set-focus\n></va-loading-indicator>\n",
+    "component_tag": "va-loading-indicator"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "List",
+    "permalink": "/docs/components/list/"
+  },
+  "next": {
+    "title": "Modal",
+    "permalink": "/docs/components/modal/"
+  }
+}

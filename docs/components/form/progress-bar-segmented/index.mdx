@@ -1,0 +1,56 @@
+---
+cms_editable: true
+title: Progress Bar - Segmented
+description: Updates users on their advancement through a multi-step process
+maturity: deployed
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+progress-bar
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Progress+bar+-+Segmented%22
+related:
+  - name: Progress bar - Activity
+    url: /docs/components/progress-bar/
+    description: For file uploads and processing
+  - name: Process List
+    url: /docs/components/process-list
+    description: For extended timeframe steps
+  - name: Autosave
+    url: ../autosave
+    description: Appears below progress bar
+usage:
+  when_to_use:
+    - value: Multi-step form flows to communicate progress through application processes
+    - value: Sequential processes where users move through distinct stages
+  when_to_consider_else:
+    - value: "**Extended timeframes**: Use the [Process List](/docs/components/process-list) component instead for steps spanning multiple interactions or long periods"
+    - value: "**Non-sequential workflows**: If steps can be completed in any order, consider alternative patterns"
+    - value: "**Checklists**: This component isn't designed for checklist functionality"
+examples:
+  - title: Default
+    description: Default
+    storyId: uswds-va-segmented-progress-bar--default
+    height: 150
+  - title: With labels
+    description: With labels
+    storyId: uswds-va-segmented-progress-bar--with-labels
+    height: 180
+  - title: With counters
+    description: With counters
+    storyId: uswds-va-segmented-progress-bar--with-counters
+    height: 180
+code_usage: |
+  <va-segmented-progress-bar
+    current="2"
+    total="5"
+    heading-text="Personal Information"
+    labels="Introduction;Personal Info;Military History;Review;Submit"
+  ></va-segmented-progress-bar>
+component_tag: va-segmented-progress-bar
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

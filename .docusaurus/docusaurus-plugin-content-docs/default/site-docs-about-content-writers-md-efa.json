@@ -1,0 +1,29 @@
+{
+  "id": "about/content-writers",
+  "title": "For content writers",
+  "description": "Resources and guidance for content writers working on VA.gov.",
+  "source": "@site/docs/about/content-writers.md",
+  "sourceDirName": "about",
+  "slug": "/about/content-writers",
+  "permalink": "/docs/about/content-writers",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/about/content-writers.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "For content writers",
+    "description": "Resources and guidance for content writers working on VA.gov.",
+    "sidebar_position": 6
+  },
+  "sidebar": "aboutSidebar",
+  "previous": {
+    "title": "Feedback",
+    "permalink": "/docs/about/feedback"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/about/designers/"
+  }
+}

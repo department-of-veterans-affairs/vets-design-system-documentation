@@ -1,0 +1,16 @@
+### Events
+
+| Event name | Description |
+|------------|-------------|
+| `component-library-analytics` | The event emitted to track usage of the component. This event is used for analytics purposes and contains interaction data. |
+
+:::tip Analytics Integration
+The `component-library-analytics` event is automatically emitted by VA.gov web components when users interact with them. You can listen for this event to integrate with your analytics platform:
+
+```javascript
+document.addEventListener('component-library-analytics', (event) => {
+  // event.detail contains analytics data
+  console.log('Component interaction:', event.detail);
+});
+```
+:::

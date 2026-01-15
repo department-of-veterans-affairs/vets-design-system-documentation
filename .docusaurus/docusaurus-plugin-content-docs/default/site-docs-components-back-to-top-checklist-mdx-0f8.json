@@ -1,0 +1,21 @@
+{
+  "id": "components/back-to-top/checklist",
+  "title": "Back to top - Component checklist",
+  "description": "Maturity and asset checklist for the Back to top component",
+  "source": "@site/docs/components/back-to-top/checklist.mdx",
+  "sourceDirName": "components/back-to-top",
+  "slug": "/components/back-to-top/checklist",
+  "permalink": "/docs/components/back-to-top/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/back-to-top/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Back to top - Component checklist",
+    "description": "Maturity and asset checklist for the Back to top component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

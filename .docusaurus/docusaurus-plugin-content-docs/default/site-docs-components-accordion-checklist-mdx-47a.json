@@ -1,0 +1,21 @@
+{
+  "id": "components/accordion/checklist",
+  "title": "Accordion - Component checklist",
+  "description": "Maturity and asset checklist for the Accordion component",
+  "source": "@site/docs/components/accordion/checklist.mdx",
+  "sourceDirName": "components/accordion",
+  "slug": "/components/accordion/checklist",
+  "permalink": "/docs/components/accordion/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/accordion/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Accordion - Component checklist",
+    "description": "Maturity and asset checklist for the Accordion component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

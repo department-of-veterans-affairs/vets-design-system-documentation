@@ -1,0 +1,111 @@
+{
+  "id": "components/text/index",
+  "title": "Text",
+  "description": "Mobile app typography for headings, body, and display text",
+  "source": "@site/docs/components/text/index.mdx",
+  "sourceDirName": "components/text",
+  "slug": "/components/text/",
+  "permalink": "/docs/components/text/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/text/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Text",
+    "description": "Mobile app typography for headings, body, and display text",
+    "maturity": "use-with-caution",
+    "platforms": [
+      "mobile"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/va-mobile-library/issues?q=is%3Aissue+is%3Aopen+text",
+    "figma": "https://www.figma.com/file/QVLPB3eOunmKrgQOuOt0SU/VA-Mobile-Design-System",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Text%22",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "Adding text content to mobile application screens"
+        },
+        {
+          "value": "Presenting headings, body copy, or display-level typography"
+        },
+        {
+          "value": "Maintaining consistent typography across the mobile app"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "Bulleted or numbered lists; use List component instead"
+        },
+        {
+          "value": "Navigation copy in areas like bottom tab bars; apply Navigation text style directly instead"
+        },
+        {
+          "value": "Web applications; use standard HTML heading and paragraph elements"
+        }
+      ]
+    },
+    "content_considerations": [
+      {
+        "value": "Use headings to create clear content hierarchy"
+      },
+      {
+        "value": "Body text should be used for general content and descriptions"
+      },
+      {
+        "value": "Display text is for large, prominent content that needs emphasis"
+      },
+      {
+        "value": "Maintain consistent use of text variants throughout the app"
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Minimum paragraph spacing meets WCAG guidelines and follows WCAG SC 1.4.12 standards"
+      },
+      {
+        "value": "Spacing can be increased but shouldn't decrease without accessibility consultation"
+      },
+      {
+        "value": "Built on composite typography tokens combining multiple properties for consistency"
+      },
+      {
+        "value": "Ensure proper heading hierarchy when using heading variants"
+      },
+      {
+        "value": "Text should have sufficient color contrast against backgrounds"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Body text",
+        "description": "Body text",
+        "storyId": "text--body",
+        "height": 200
+      },
+      {
+        "title": "Display text",
+        "description": "Display text",
+        "storyId": "text--display",
+        "height": 200
+      },
+      {
+        "title": "Heading text",
+        "description": "Heading text",
+        "storyId": "text--heading",
+        "height": 250
+      }
+    ],
+    "component_tag": "text"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Telephone",
+    "permalink": "/docs/components/telephone/"
+  },
+  "next": {
+    "title": "Deprecated",
+    "permalink": "/docs/components/deprecated/"
+  }
+}

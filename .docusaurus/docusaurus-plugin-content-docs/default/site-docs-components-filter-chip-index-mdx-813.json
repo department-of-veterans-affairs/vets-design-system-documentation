@@ -1,0 +1,101 @@
+{
+  "id": "components/filter-chip/index",
+  "title": "Filter chip",
+  "description": "A compact element that allows users to filter content by selecting or deselecting criteria",
+  "source": "@site/docs/components/filter-chip/index.mdx",
+  "sourceDirName": "components/filter-chip",
+  "slug": "/components/filter-chip/",
+  "permalink": "/docs/components/filter-chip/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/filter-chip/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Filter chip",
+    "description": "A compact element that allows users to filter content by selecting or deselecting criteria",
+    "maturity": "use-with-caution",
+    "platforms": [
+      "web",
+      "mobile"
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Filtering lists or search results**: Use filter chips when users need to narrow down content based on multiple criteria"
+        },
+        {
+          "value": "**Tag-based filtering**: When content is categorized with tags that users can select to filter"
+        },
+        {
+          "value": "**Multi-select filters**: When users should be able to apply multiple filters simultaneously"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "**Single selection**: If only one option can be selected at a time, consider radio buttons or a select dropdown"
+        },
+        {
+          "value": "**Primary actions**: Don't use filter chips for primary actions; use buttons instead"
+        },
+        {
+          "value": "**Navigation**: Use tabs or links for navigation between different views"
+        }
+      ],
+      "behavior": [
+        {
+          "value": "Filter chips toggle between selected and unselected states when clicked"
+        },
+        {
+          "value": "Selected chips should have a distinct visual treatment (e.g., filled background, checkmark icon)"
+        },
+        {
+          "value": "Chips should be dismissible when in the selected state"
+        },
+        {
+          "value": "Changes should be reflected immediately in the filtered content"
+        }
+      ]
+    },
+    "content_considerations": [
+      {
+        "value": "Keep chip labels short and descriptive (1-3 words)"
+      },
+      {
+        "value": "Use sentence case for labels"
+      },
+      {
+        "value": "Be specific about what the filter does"
+      },
+      {
+        "value": "Avoid jargon or technical terms users won't understand"
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Chips should announce their label and current state (selected/not selected)"
+      },
+      {
+        "value": "State changes should be announced when toggled"
+      },
+      {
+        "value": "Use `aria-pressed` to indicate the selected state"
+      },
+      {
+        "value": "Ensure sufficient color contrast for both states"
+      }
+    ],
+    "code_usage": "<va-filter-chip\n  label=\"Category name\"\n  selected\n></va-filter-chip>\n",
+    "component_tag": "va-filter-chip"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Divider",
+    "permalink": "/docs/components/divider/"
+  },
+  "next": {
+    "title": "Footer",
+    "permalink": "/docs/components/footer/"
+  }
+}

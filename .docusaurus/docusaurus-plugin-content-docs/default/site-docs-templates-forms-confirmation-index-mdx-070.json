@@ -1,0 +1,161 @@
+{
+  "id": "templates/forms/confirmation/index",
+  "title": "Confirmation",
+  "description": "Template providing users with essential information following successful form submission.",
+  "source": "@site/docs/templates/forms/confirmation/index.mdx",
+  "sourceDirName": "templates/forms/confirmation",
+  "slug": "/templates/forms/confirmation/",
+  "permalink": "/docs/templates/forms/confirmation/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/templates/forms/confirmation/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "title": "Confirmation",
+    "description": "Template providing users with essential information following successful form submission.",
+    "cms_editable": true,
+    "category": "forms",
+    "maturity": "deployed",
+    "sidebar_position": 7,
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms",
+    "github": "https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22template-confirmation%22",
+    "intro": "The form confirmation page provides users with essential information following their submission of an online application, including what to expect next, a benefit summary, confirmation number, and submission date.",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Successful submission.** After users successfully submit an online form or application."
+        },
+        {
+          "value": "**Confirm receipt.** To confirm receipt and provide next steps."
+        },
+        {
+          "value": "**Record keeping.** To help users retain records of their submission."
+        }
+      ]
+    },
+    "structure": {
+      "intro": "The confirmation page provides essential post-submission information and record-keeping options.",
+      "sections": [
+        {
+          "title": "Page Title (H1)",
+          "description": "Carries over from the original form."
+        },
+        {
+          "title": "Keep Records Pattern",
+          "description": "Enables users to save/print submission records."
+        },
+        {
+          "title": "Success Alert",
+          "description": "Confirms successful submission with relevant details including date and confirmation number."
+        },
+        {
+          "title": "Download Link",
+          "description": "Allows downloading form copies."
+        },
+        {
+          "title": "Data Accordion",
+          "description": "Displays submitted information in collapsible sections."
+        },
+        {
+          "title": "Print Button",
+          "description": "Primary action for printing confirmation."
+        },
+        {
+          "title": "Additional Content",
+          "description": "Benefit-specific information and next steps."
+        },
+        {
+          "title": "Back to VA.gov Link",
+          "description": "Secondary action link for navigation."
+        },
+        {
+          "title": "Need Help Footer",
+          "description": "Support contact information."
+        }
+      ],
+      "components_used": [
+        {
+          "name": "Alert",
+          "url": "/docs/components/alert",
+          "description": "Success variant"
+        },
+        {
+          "name": "Accordion",
+          "url": "/docs/components/accordion"
+        },
+        {
+          "name": "Button",
+          "url": "/docs/components/button",
+          "description": "Primary for print action"
+        },
+        {
+          "name": "Action link",
+          "url": "/docs/components/link/action",
+          "description": "Secondary action"
+        },
+        {
+          "name": "Need help",
+          "url": "/docs/components/form/need-help"
+        },
+        {
+          "name": "Process list",
+          "url": "/docs/components/process-list",
+          "description": "For extended tracking information"
+        }
+      ]
+    },
+    "examples": [
+      {
+        "title": "Request for personal records (Form 20-10206)",
+        "description": "Confirmation page for personal records request."
+      },
+      {
+        "title": "Authorize release of non-VA medical information (Form 21-4142)",
+        "description": "Confirmation page for medical information release authorization."
+      },
+      {
+        "title": "Lay or witness statement submission (Form 21-10210)",
+        "description": "Confirmation page for statement submissions."
+      }
+    ],
+    "content_guidelines": [
+      {
+        "value": "**Success alert example.** 'Form submission started on [date]. Your submission is in progress. It can take up to 30 days for us to receive your form.'"
+      },
+      {
+        "value": "**Address key questions.** What happens after submission? Processing timeline? Required actions while waiting? How to get help? Will VA request more information?"
+      },
+      {
+        "value": "Research shows 30.55% print page for records, 27.35% download form copy, 27.03% check status on My VA."
+      },
+      {
+        "value": "A 2024 study found that a majority of Veterans indicated they would download a copy of their form submission."
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Remove breadcrumbs when printed."
+      },
+      {
+        "value": "Ensure content fills 100% of print width."
+      },
+      {
+        "value": "Follow form accessibility guidelines for all content."
+      },
+      {
+        "value": "Success alerts should be announced to screen readers."
+      }
+    ]
+  },
+  "sidebar": "templatesSidebar",
+  "previous": {
+    "title": "Review",
+    "permalink": "/docs/templates/forms/review/"
+  },
+  "next": {
+    "title": "Accessibility guidelines for forms",
+    "permalink": "/docs/templates/forms/accessibility-guidelines/"
+  }
+}

@@ -1,0 +1,51 @@
+---
+title: Check answers
+description: Follow this pattern to help users verify their responses before submitting a form.
+cms_editable: true
+category: help-users-to
+maturity: deployed
+sidebar_position: 1
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms
+github: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-check-answers%22
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Help+users+to...+Check+answers%22
+
+intro: Use this pattern to help users check their answers before submitting a form, providing an opportunity to identify and correct errors.
+
+usage:
+  when_to_use:
+    - value: "**Form conclusion.** At the conclusion of a form workflow before final submission."
+    - value: "**Error prevention.** To enable users to catch mistakes and reconsider responses before submitting."
+
+examples:
+  - title: Review page
+    description: Summary of all form sections with accordions for each chapter/step.
+
+how_to_build:
+  intro: The check answers pattern uses a Review page with accordions for each section.
+  steps:
+    - value: "Employ the Review page template."
+    - value: "Structure each chapter/step with corresponding Accordion components."
+    - value: "Present chapters/steps in chronological order matching the workflow."
+    - value: "Apply consistent presentation styles for file uploads."
+    - value: "Apply consistent styling for 'Add another' sections (matching step page styling)."
+    - value: "Include Privacy agreement before final submission."
+  components_used:
+    - name: Accordion
+      url: /docs/components/accordion
+    - name: Button pair
+      url: /docs/components/button
+    - name: Privacy agreement
+      url: /docs/components/form/privacy-agreement
+    - name: Progress bar - Segmented
+      url: /docs/components/form/progress-bar-segmented
+
+accessibility:
+  - value: "Ensure all accordions are keyboard accessible."
+  - value: "Edit links within accordions must be clearly labeled for screen readers."
+  - value: "Focus management should return users to the review page after editing."
+---
+
+import PatternPage from '@site/src/components/PatternPage';
+
+<PatternPage frontMatter={frontMatter} />
+

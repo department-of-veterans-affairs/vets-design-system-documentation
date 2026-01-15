@@ -1,0 +1,135 @@
+{
+  "id": "patterns/help-users-to/keep-a-record-of-submitted-information/index",
+  "title": "Keep a record of submitted information",
+  "description": "Follow this pattern to provide users with a printable record of their form submission.",
+  "source": "@site/docs/patterns/help-users-to/keep-a-record-of-submitted-information/index.mdx",
+  "sourceDirName": "patterns/help-users-to/keep-a-record-of-submitted-information",
+  "slug": "/patterns/help-users-to/keep-a-record-of-submitted-information/",
+  "permalink": "/docs/patterns/help-users-to/keep-a-record-of-submitted-information/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/patterns/help-users-to/keep-a-record-of-submitted-information/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {
+    "title": "Keep a record of submitted information",
+    "description": "Follow this pattern to provide users with a printable record of their form submission.",
+    "cms_editable": true,
+    "category": "help-users-to",
+    "maturity": "deployed",
+    "sidebar_position": 11,
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms",
+    "github": "https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-keep-record%22",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Help+users+to...+Keep+a+record%22",
+    "intro": "Use this pattern for long form collections to provide users with a printable submission record including confirmation details and next steps.",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Lengthy forms.** When collecting information on lengthy forms."
+        },
+        {
+          "value": "**Reference documentation.** When users need reference documentation for their submission."
+        },
+        {
+          "value": "**Confirming completion.** When confirming successful form completion."
+        }
+      ],
+      "design_principles": [
+        {
+          "value": "**Required elements.** Must display form name, submission date, confirmation number, submitted data copy, and next steps."
+        },
+        {
+          "value": "**PDF download.** Provide PDF download copy option."
+        },
+        {
+          "value": "**Mask sensitive data.** SSN/VA file numbers should be masked in the submission copy."
+        }
+      ],
+      "when_not_to_use": [
+        {
+          "value": "**Unauthenticated users.** Forms submitted by unauthenticated users shouldn't display claim status or My VA links."
+        }
+      ]
+    },
+    "examples": [
+      {
+        "title": "Confirmation page",
+        "description": "Summary showing submission status and PDF download option."
+      },
+      {
+        "title": "Print preview",
+        "description": "Print-friendly layout excluding breadcrumbs, filling 100% print width."
+      },
+      {
+        "title": "My VA card",
+        "description": "Download link valid for 60 days post-submission."
+      }
+    ],
+    "how_to_build": {
+      "intro": "The pattern provides required elements in a specific order.",
+      "steps": [
+        {
+          "value": "Form submission started alert with timeframe and confirmation number."
+        },
+        {
+          "value": "PDF download copy option."
+        },
+        {
+          "value": "Information submitted accordion (with SSN/VA file numbers masked)."
+        },
+        {
+          "value": "'Print this page' primary button."
+        },
+        {
+          "value": "'What to expect next' task list for next steps."
+        }
+      ],
+      "components_used": [
+        {
+          "name": "Alert",
+          "url": "/docs/components/alert"
+        },
+        {
+          "name": "Download link",
+          "url": "/docs/components/link"
+        },
+        {
+          "name": "Accordion",
+          "url": "/docs/components/accordion"
+        },
+        {
+          "name": "Button",
+          "url": "/docs/components/button"
+        },
+        {
+          "name": "Process list",
+          "url": "/docs/components/process-list"
+        }
+      ]
+    },
+    "accessibility": [
+      {
+        "value": "Collapsible accordion with accessible submission copy."
+      },
+      {
+        "value": "Print styling displays information even when accordion is closed."
+      },
+      {
+        "value": "Supports assistive technology users."
+      },
+      {
+        "value": "Follows USWDS pattern accessibility guidance."
+      }
+    ]
+  },
+  "sidebar": "patternsSidebar",
+  "previous": {
+    "title": "Complete a sub task",
+    "permalink": "/docs/patterns/help-users-to/complete-a-sub-task/"
+  },
+  "next": {
+    "title": "Manage benefits and tools",
+    "permalink": "/docs/patterns/help-users-to/manage-benefits-and-tools/"
+  }
+}

@@ -1,0 +1,55 @@
+---
+title: Accessibility guidelines for forms
+description: Detailed accessibility requirements and implementation guidance for forms on VA.gov.
+cms_editable: true
+category: forms
+maturity: deployed
+sidebar_position: 8
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms
+github: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22template-form-accessibility%22
+
+intro: This template provides detailed accessibility requirements and implementation guidance for forms on VA.gov, ensuring Veterans with disabilities can access and complete essential services. Approximately 1 in 4 Veterans live with service-connected disabilities.
+
+usage:
+  when_to_use:
+    - value: "**All form implementations.** These guidelines apply to all forms on VA.gov."
+    - value: "**Section 508 compliance.** Forms must comply with Section 508 and Americans with Disabilities Act requirements."
+    - value: "**Universal usability.** Addresses technical accessibility, cognitive accessibility, and universal usability principles."
+
+structure:
+  intro: The guidelines cover focus management, form labeling, validation, cognitive accessibility, and testing requirements.
+  sections:
+    - title: Managing Focus in Form Flows
+      description: Single-page applications must manually set focus when users move between pages since focus doesn't reset automatically.
+    - title: Where to Move Focus
+      description: If page has unique heading (H1 or H3), set focus there. Without unique heading, set focus on step indicator header (H2).
+    - title: Form Labeling and Structure
+      description: Each form step needs unique H3 describing current step. Use consistent fieldset/legend patterns across all steps.
+    - title: Input Validation and Error Handling
+      description: Validate required fields when users attempt to continue. Move focus to first field with error. Preserve all user data when validation errors occur.
+    - title: Cognitive Accessibility
+      description: Present one question per page, show clear progress indication, use consistent terminology, include review pages for important submissions.
+    - title: Comprehensive Accessibility Testing
+      description: Keyboard navigation, screen reader testing, error message association, proper labeling, color contrast verification.
+
+content_guidelines:
+  - value: "**Focus testing checklist.** Does focus land on unique heading after clicking Continue? Is focused item visible? Does screen reader immediately announce step/page name?"
+  - value: "**Error messages.** Provide specific, actionable error messages in plain language. Example: 'Enter a valid 9-digit Social Security number' rather than 'Invalid input'."
+  - value: "**Cognitive design.** Present one question per page, show clear progress, use consistent terminology, provide format examples."
+
+accessibility:
+  - value: "**WCAG 2.4.3 Focus Order.** Focus moves in a logical sequence that preserves meaning and operability."
+  - value: "**WCAG 2.4.7 Focus Visible.** Keyboard focus indicator must be visible."
+  - value: "**WCAG 3.3.2 Labels/Instructions.** Labels or instructions are provided when content requires user input."
+  - value: "**WCAG 3.3.3 Error Suggestion.** Correction suggestions provided for detected errors."
+  - value: "**WCAG 4.1.3 Status Messages.** Form validation changes must be programmatically determinable."
+  - value: "**Required testing areas.** Keyboard navigation, screen reader testing (NVDA, JAWS, VoiceOver), error message association, proper labeling, color contrast."
+  - value: "**Multi-step specific testing.** Screen reader announcements for step changes, progress bar updates, focus movement after error correction, session persistence."
+  - value: "**Foundational testing before launch.** Color and contrast evaluation, automated testing with aXe DevTools, content zoom and reflow, keyboard navigation."
+  - value: "**Support available.** The Accessibility Digital Experience (ADE) team provides early guidance during planning phases."
+---
+
+import TemplatePage from '@site/src/components/TemplatePage';
+
+<TemplatePage frontMatter={frontMatter} />
+

@@ -1,0 +1,75 @@
+---
+title: Email address
+description: Follow this pattern to collect email addresses from users for forms and communications.
+cms_editable: true
+category: ask-users-for
+maturity: deployed
+sidebar_position: 3
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms?node-id=2987%3A39070
+github: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-email%22
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Ask+users+for...+Email%22
+
+intro: Use this pattern when collecting an email address, which is required for online forms that need user follow-up.
+
+usage:
+  when_to_use:
+    - value: "**Online form submissions.** As of October 2024, email collection is mandatory for digital submissions requiring user follow-up."
+    - value: "**Contact information.** When you need to communicate with users about their application or request."
+  design_principles:
+    - value: "**Collect for both parties when applicable.** Capture email for both the Veteran and form completer if they are different individuals."
+    - value: "**Leverage existing data.** Pre-populate email address from VA Profile API whenever possible."
+    - value: "**Skip confirmation fields.** Avoid 'confirm email' fields as they provide minimal error-catching benefit when users copy/paste."
+    - value: "**Validate in real-time.** Validate formatting upon entry to catch mistakes immediately."
+    - value: "**Be transparent about data use.** Tell people why you want their email address to build trust."
+    - value: "**Pair with phone number.** Email typically appears alongside phone number collection on the same form step."
+    - value: "**Use prefill notification.** Use the prefill component to inform users when profile data populates fields."
+
+examples:
+  - title: Email address field
+    description: Standard email input with validation and helpful error messaging.
+  - title: Email with context
+    description: Email field with explanation of how the address will be used.
+
+how_to_build:
+  intro: The email pattern uses a text input with email-specific validation.
+  steps:
+    - value: "Use a single text input field with type='email' for browser validation."
+    - value: "Include context about why the email is needed and how it will be used."
+    - value: "Validate format on entry and provide immediate feedback."
+    - value: "Pre-populate from VA Profile when available."
+  components_used:
+    - name: Text input
+      url: /docs/components/form/text-input
+
+code_usage: |
+  The `emailPattern` is available as a web-component pattern in the VA Forms library.
+
+  ```jsx
+  import { emailPattern } from '@department-of-veterans-affairs/platform-forms-system/patterns';
+  ```
+
+  See the [vets-website repository](https://github.com/department-of-veterans-affairs/vets-website) for implementation details.
+
+content_considerations:
+  - value: "Include context explaining why email is needed: 'We may use your contact information to contact you if we have questions about your application.'"
+  - value: "Don't use jargon or technical terms when describing email requirements."
+
+content_specs:
+  - field: Email address
+    hint_text: null
+    error_message: "Enter a valid email address without spaces using this format: email@domain.com"
+  - field: Email (invalid characters)
+    hint_text: null
+    error_message: "You entered a character we can't accept. Try removing the character."
+
+accessibility:
+  - value: "Ensure the email field has a visible, associated label."
+  - value: "Use autocomplete='email' to help users fill in the field."
+  - value: "Provide clear error messages that explain the expected format."
+  - value: "Validate during entry and announce errors to screen readers."
+---
+
+import PatternPage from '@site/src/components/PatternPage';
+
+<PatternPage frontMatter={frontMatter} />
+

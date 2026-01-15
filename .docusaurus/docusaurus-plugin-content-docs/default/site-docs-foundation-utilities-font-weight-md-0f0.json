@@ -1,0 +1,29 @@
+{
+  "id": "foundation/utilities/font-weight",
+  "title": "Font weight",
+  "description": "CSS classes for controlling text weight (bold or normal).",
+  "source": "@site/docs/foundation/utilities/font-weight.md",
+  "sourceDirName": "foundation/utilities",
+  "slug": "/foundation/utilities/font-weight",
+  "permalink": "/docs/foundation/utilities/font-weight",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/utilities/font-weight.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "title": "Font weight",
+    "description": "CSS classes for controlling text weight (bold or normal).",
+    "sidebar_position": 9
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Font style",
+    "permalink": "/docs/foundation/utilities/font-style"
+  },
+  "next": {
+    "title": "Height and width",
+    "permalink": "/docs/foundation/utilities/height-and-width"
+  }
+}

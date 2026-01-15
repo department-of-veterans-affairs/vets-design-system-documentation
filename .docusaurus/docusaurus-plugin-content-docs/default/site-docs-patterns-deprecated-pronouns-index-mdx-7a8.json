@@ -1,0 +1,100 @@
+{
+  "id": "patterns/deprecated/pronouns/index",
+  "title": "Pronouns",
+  "description": "This deprecated pattern was designed to ask Veterans for their pronouns in order to address them appropriately.",
+  "source": "@site/docs/patterns/deprecated/pronouns/index.mdx",
+  "sourceDirName": "patterns/deprecated/pronouns",
+  "slug": "/patterns/deprecated/pronouns/",
+  "permalink": "/docs/patterns/deprecated/pronouns/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/patterns/deprecated/pronouns/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Pronouns",
+    "description": "This deprecated pattern was designed to ask Veterans for their pronouns in order to address them appropriately.",
+    "cms_editable": true,
+    "category": "deprecated",
+    "maturity": "deprecated",
+    "sidebar_position": 2,
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms",
+    "github": "https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-pronouns%22",
+    "intro": "This pattern was designed to ask Veterans for their pronouns in order to address them appropriately. The current policy recommends against using this pattern.",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Appropriate addressing.** When you need to collect a person's pronouns in order to address them appropriately."
+        },
+        {
+          "value": "**User comfort.** Allowing users to choose their pronouns creates a more comfortable interaction."
+        }
+      ],
+      "design_principles": [
+        {
+          "value": "**Multiple selection.** Use checkboxes so that Veterans can identify with multiple descriptions."
+        },
+        {
+          "value": "**Opt-out option.** Provide checkbox labeled 'Use my preferred name'."
+        },
+        {
+          "value": "**Custom entry.** Allow for users to provide their own answer with an open-ended text field."
+        }
+      ],
+      "when_not_to_use": [
+        {
+          "value": "**Policy recommendation.** The current policy recommends against using this pattern."
+        }
+      ]
+    },
+    "examples": [
+      {
+        "title": "Pronoun selection",
+        "description": "Checkboxes allowing Veterans to select multiple pronoun options."
+      },
+      {
+        "title": "Custom pronoun entry",
+        "description": "Text field for users to provide their own pronoun."
+      }
+    ],
+    "how_to_build": {
+      "intro": "This pattern is deprecated. Contact the Design System Council for current guidance.",
+      "steps": [
+        {
+          "value": "This pattern is deprecated and should not be used in new implementations."
+        },
+        {
+          "value": "For existing implementations, contact the Design System Council for migration guidance."
+        }
+      ],
+      "components_used": [
+        {
+          "name": "Checkbox",
+          "url": "/docs/components/form/checkbox"
+        },
+        {
+          "name": "Text input",
+          "url": "/docs/components/form/text-input"
+        }
+      ]
+    },
+    "accessibility": [
+      {
+        "value": "Use a single text field to capture options not found in a list to maintain screen reader accessibility."
+      },
+      {
+        "value": "Avoid progressive disclosure interactions that may confuse assistive technology users."
+      }
+    ]
+  },
+  "sidebar": "patternsSidebar",
+  "previous": {
+    "title": "Gender identity",
+    "permalink": "/docs/patterns/deprecated/gender-identity/"
+  },
+  "next": {
+    "title": "Know how their information is updated",
+    "permalink": "/docs/patterns/deprecated/know-how-their-information-is-updated/"
+  }
+}

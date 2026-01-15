@@ -1,0 +1,27 @@
+{
+  "id": "ia/url-standards/index",
+  "title": "URL Standards",
+  "description": "Guidelines for creating and managing URLs on VA.gov",
+  "source": "@site/docs/ia/url-standards/index.md",
+  "sourceDirName": "ia/url-standards",
+  "slug": "/ia/url-standards/",
+  "permalink": "/docs/ia/url-standards/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/ia/url-standards/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "URL Standards",
+    "description": "Guidelines for creating and managing URLs on VA.gov"
+  },
+  "sidebar": "iaSidebar",
+  "previous": {
+    "title": "Information Architecture",
+    "permalink": "/docs/ia/"
+  },
+  "next": {
+    "title": "Redirects",
+    "permalink": "/docs/ia/url-standards/redirects"
+  }
+}

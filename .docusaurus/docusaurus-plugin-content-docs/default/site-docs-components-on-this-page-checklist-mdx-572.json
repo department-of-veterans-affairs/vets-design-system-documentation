@@ -1,0 +1,21 @@
+{
+  "id": "components/on-this-page/checklist",
+  "title": "On this page - Component checklist",
+  "description": "Maturity and asset checklist for the On this page component",
+  "source": "@site/docs/components/on-this-page/checklist.mdx",
+  "sourceDirName": "components/on-this-page",
+  "slug": "/components/on-this-page/checklist",
+  "permalink": "/docs/components/on-this-page/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/on-this-page/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "On this page - Component checklist",
+    "description": "Maturity and asset checklist for the On this page component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

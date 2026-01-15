@@ -1,0 +1,68 @@
+---
+title: Marital information
+description: Follow this pattern to collect marital status and marriage history using a trauma-informed approach.
+cms_editable: true
+category: ask-users-for
+maturity: use-with-caution
+sidebar_position: 16
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms
+github: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-marital-information%22
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Ask+users+for...+Marital+information%22
+
+intro: Use this pattern to collect a user's marital status and details about current and previous marriages. Questions about marital status can bring up complex feelings, so this pattern takes a trauma-informed approach.
+
+usage:
+  when_to_use:
+    - value: "**Collecting marital status.** When forms require knowing a Veteran's, spouse's, or dependent's marital status."
+    - value: "**Marriage history details.** When forms need detailed information about current and previous marriages."
+  design_principles:
+    - value: "**Use trauma-informed approach.** Explain why you're asking via Additional Info component, as these questions can evoke complex emotions."
+    - value: "**Collect only what's needed.** Only request data your form actually requires."
+    - value: "**Adjust language by respondent.** Shift from 'your marital status' to 'the Veteran's marital status' when appropriate."
+
+examples:
+  - title: Current marital status
+    description: Radio button question asking about current marital status with options like Married, Divorced, Widowed, etc.
+  - title: Simplified marital question
+    description: Simple yes/no question for forms needing less detail.
+
+how_to_build:
+  intro: The marital information pattern uses conditional logic based on status selection.
+  steps:
+    - value: "**Primary question:** 'What is your current marital status?' with options: Married, Divorced or annulled, Separated, Widowed, Never married."
+    - value: "**Simplified alternative:** 'Are you currently married?' (Yes/No) for forms needing less detail."
+    - value: "**Spouse information (optional):** Name, DOB, SSN, Veteran status, VA file number."
+    - value: "**Living arrangements (optional):** Current/past 12-month cohabitation; reasons for separation."
+    - value: "**Marriage details (optional):** Date, place, type of ceremony, termination method and date."
+    - value: "**Previous marriages:** Use Multiple Responses pattern for marriage history."
+  components_used:
+    - name: Radio button
+      url: /docs/components/form/radio-button
+    - name: Select
+      url: /docs/components/form/select
+    - name: Additional info
+      url: /docs/components/additional-info
+
+code_usage: |
+  The marital information pattern uses conditional navigation based on marital status selection.
+
+  **Implementation features:**
+  - Dynamic page titles referencing specific spouses
+  - Route logic determining page sequence and visibility
+  - Multiple Responses pattern for previous marriage history
+
+content_considerations:
+  - value: "Adjust language based on respondent role (Veteran vs. spouse vs. dependent)."
+  - value: "State file upload requirements on form introduction page when documentation is needed."
+  - value: "Use Additional Info to explain why marital information is being collected."
+
+accessibility:
+  - value: "Ensure all form controls are keyboard accessible."
+  - value: "Radio buttons must be properly grouped with fieldset and legend."
+  - value: "Additional Info component must be accessible to screen readers."
+---
+
+import PatternPage from '@site/src/components/PatternPage';
+
+<PatternPage frontMatter={frontMatter} />
+

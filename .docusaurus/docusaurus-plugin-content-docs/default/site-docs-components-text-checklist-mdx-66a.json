@@ -1,0 +1,21 @@
+{
+  "id": "components/text/checklist",
+  "title": "Text - Component checklist",
+  "description": "Maturity and asset checklist for the Text component",
+  "source": "@site/docs/components/text/checklist.mdx",
+  "sourceDirName": "components/text",
+  "slug": "/components/text/checklist",
+  "permalink": "/docs/components/text/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/text/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Text - Component checklist",
+    "description": "Maturity and asset checklist for the Text component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

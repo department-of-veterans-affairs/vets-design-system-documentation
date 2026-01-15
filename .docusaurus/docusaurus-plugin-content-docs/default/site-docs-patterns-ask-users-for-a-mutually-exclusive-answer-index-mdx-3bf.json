@@ -1,0 +1,111 @@
+{
+  "id": "patterns/ask-users-for/a-mutually-exclusive-answer/index",
+  "title": "A mutually exclusive answer",
+  "description": "Follow this pattern when users may need to select either none or all available options.",
+  "source": "@site/docs/patterns/ask-users-for/a-mutually-exclusive-answer/index.mdx",
+  "sourceDirName": "patterns/ask-users-for/a-mutually-exclusive-answer",
+  "slug": "/patterns/ask-users-for/a-mutually-exclusive-answer/",
+  "permalink": "/docs/patterns/ask-users-for/a-mutually-exclusive-answer/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/patterns/ask-users-for/a-mutually-exclusive-answer/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 13,
+  "frontMatter": {
+    "title": "A mutually exclusive answer",
+    "description": "Follow this pattern when users may need to select either none or all available options.",
+    "cms_editable": true,
+    "category": "ask-users-for",
+    "maturity": "deployed",
+    "sidebar_position": 13,
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms",
+    "github": "https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-mutually-exclusive%22",
+    "intro": "In some questions, either none of the options or all of them may apply to the user. This pattern addresses how to handle these situations.",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**All or none scenarios.** When users may need to select either none or all available options in response to a question."
+        }
+      ],
+      "design_principles": [
+        {
+          "value": "**Checkboxes: Include 'select all that apply'.** Add instructional text when using checkboxes."
+        },
+        {
+          "value": "**Avoid dedicated all/none checkboxes.** Users can already select multiple or zero checkbox options."
+        },
+        {
+          "value": "**Radio buttons: Include all/none options last.** When genuinely mutually exclusive, add 'all of these' or 'none of these' after other options."
+        },
+        {
+          "value": "**Consider alternatives.** Reframe the question, break into separate questions with conditional logic, or explicitly state that selection is optional."
+        }
+      ]
+    },
+    "examples": [
+      {
+        "title": "Checkboxes with select all that apply",
+        "description": "Checkbox group with instructional text allowing multiple or no selections."
+      },
+      {
+        "title": "Radio buttons with none option",
+        "description": "Radio button list including a \"None of these\" option at the end."
+      }
+    ],
+    "how_to_build": {
+      "intro": "Choose the appropriate form control based on the selection requirements.",
+      "steps": [
+        {
+          "value": "For checkboxes, include 'select all that apply' instructional text."
+        },
+        {
+          "value": "Don't create dedicated 'all of these' checkboxes—users can already select all."
+        },
+        {
+          "value": "Don't create dedicated 'none of these' checkboxes—users can already select none."
+        },
+        {
+          "value": "For radio buttons, include 'all of these' or 'none of these' as the last options."
+        },
+        {
+          "value": "For select boxes, follow radio button rules for all/none options."
+        }
+      ],
+      "components_used": [
+        {
+          "name": "Checkbox",
+          "url": "/docs/components/form/checkbox"
+        },
+        {
+          "name": "Radio button",
+          "url": "/docs/components/form/radio-button"
+        },
+        {
+          "name": "Select",
+          "url": "/docs/components/form/select"
+        }
+      ]
+    },
+    "accessibility": [
+      {
+        "value": "Ensure instructional text like 'select all that apply' is associated with the fieldset."
+      },
+      {
+        "value": "Screen readers should announce the selection instructions."
+      },
+      {
+        "value": "All options must be keyboard accessible."
+      }
+    ]
+  },
+  "sidebar": "patternsSidebar",
+  "previous": {
+    "title": "Multiple responses",
+    "permalink": "/docs/patterns/ask-users-for/multiple-responses/"
+  },
+  "next": {
+    "title": "Contact preferences",
+    "permalink": "/docs/patterns/ask-users-for/contact-preferences/"
+  }
+}

@@ -1,0 +1,75 @@
+---
+title: Update prefilled information
+description: Follow this pattern to help users modify information that has been automatically filled into forms.
+cms_editable: true
+category: help-users-to
+maturity: use-with-caution
+sidebar_position: 8
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms
+github: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-update-prefilled%22
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Help+users+to...+Update+prefilled%22
+
+intro: Use this pattern to help users understand how to modify information that has been automatically filled into forms, including what can be edited online versus what requires other methods.
+
+usage:
+  when_to_use:
+    - value: "**Prefilled forms.** When information is prefilled into forms or tools."
+    - value: "**Clarity on updates.** When users need clarity on updating sensitive data they cannot modify online."
+    - value: "**Save location communication.** When you need to communicate where changes will be stored."
+  design_principles:
+    - value: "**System status visibility.** Keep users informed about what data they can modify."
+    - value: "**User control.** Provide control over personal information."
+    - value: "**Clear save behavior.** Explain whether changes affect just the form or their VA profile."
+  when_not_to_use:
+    - value: "**No prefilled information.** When no information is prefilled in the form."
+    - value: "**Unauthenticated users.** When users are not signed in."
+    - value: "**Forms without sign-in.** When forms don't require sign-in."
+
+examples:
+  - title: Non-editable information cards
+    description: Display without edit links, includes phone/contact instructions.
+  - title: Editable information cards
+    description: Include edit links for updatable fields like addresses.
+  - title: User-controlled saving
+    description: Radio buttons let users decide if changes update their profile.
+  - title: Success confirmations
+    description: Alerts confirm where changes were saved.
+
+how_to_build:
+  intro: The pattern addresses both editable and non-editable prefilled data.
+  steps:
+    - value: "Omit edit links for non-editable prefilled data."
+    - value: "Include 'Note:' sections with phone numbers for updating restricted information."
+    - value: "Display informational alerts before changes confirming sync behavior."
+    - value: "Use radio buttons for optional profile updates."
+    - value: "Show success alerts after changes are saved."
+    - value: "Implement error states if required data is missing."
+  components_used:
+    - name: Alert
+      url: /docs/components/alert
+    - name: Card
+      url: /docs/components/card
+    - name: Link
+      url: /docs/components/link
+    - name: Radio button
+      url: /docs/components/form/radio-button
+    - name: Telephone
+      url: /docs/components/telephone
+    - name: Additional info
+      url: /docs/components/additional-info
+
+content_considerations:
+  - value: "Verify directions for updating uneditable information with subject matter experts and call centers."
+  - value: "Ensure accuracy for specific forms and benefits."
+  - value: "Use colored tags to indicate missing required fields."
+
+accessibility:
+  - value: "Edit links must be clearly labeled for screen readers."
+  - value: "Success and error alerts must be announced to screen readers."
+  - value: "Phone numbers should be formatted as clickable links on mobile."
+---
+
+import PatternPage from '@site/src/components/PatternPage';
+
+<PatternPage frontMatter={frontMatter} />
+

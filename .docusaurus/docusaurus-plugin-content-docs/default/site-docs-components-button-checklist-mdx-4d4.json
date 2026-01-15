@@ -1,0 +1,20 @@
+{
+  "id": "components/button/checklist",
+  "title": "Button - Component checklist",
+  "description": "Maturity and asset checklist for the Button component",
+  "source": "@site/docs/components/button/checklist.mdx",
+  "sourceDirName": "components/button",
+  "slug": "/components/button/checklist",
+  "permalink": "/docs/components/button/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/button/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Button - Component checklist",
+    "description": "Maturity and asset checklist for the Button component",
+    "sidebar_label": "Checklist"
+  }
+}

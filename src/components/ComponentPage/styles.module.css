@@ -1,0 +1,88 @@
+.componentPage {
+  /* Container for the entire component page */
+}
+
+.content {
+  margin-top: 1.5rem;
+}
+
+.section {
+  margin-bottom: 1.5rem;
+}
+
+.intro {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--ifm-color-content-secondary, #525252);
+}
+
+.example {
+  margin-bottom: 2rem;
+}
+
+/* Variations grid for sub-navigation */
+.variationsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.variationCard {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--ifm-color-emphasis-300, #d0d0d0);
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.variationCard:hover {
+  border-color: var(--ifm-color-primary, #005ea2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.variationName {
+  font-weight: 600;
+  color: var(--ifm-color-primary, #005ea2);
+  margin-bottom: 0.25rem;
+}
+
+.variationDescription {
+  font-size: 0.875rem;
+  color: var(--ifm-color-content-secondary, #525252);
+}
+
+/* Table styling for markdown content */
+.content :global(.table-wrapper) {
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.content :global(.table-wrapper) table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.content :global(.table-wrapper) th {
+  text-align: left;
+  padding: 0.75rem;
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-weight: 600;
+}
+
+.content :global(.table-wrapper) td {
+  padding: 0.75rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  vertical-align: top;
+}
+
+.content :global(.table-wrapper) tr:hover {
+  background: var(--ifm-color-emphasis-50);
+}

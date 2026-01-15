@@ -1,0 +1,40 @@
+---
+cms_editable: true
+title: Privacy Agreement
+description: Provides access to privacy policy and confirmation checkbox on review pages
+maturity: deployed
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-privacy-agreement
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Privacy+agreement%22
+related:
+  - name: Checkbox
+    url: ../checkbox
+    description: Base input component
+  - name: Statement of Truth
+    url: ../statement-of-truth
+    description: Certification component
+usage:
+  when_to_use:
+    - value: "**All forms collecting Personally Identifiable Information (PII)**"
+    - value: Required by the Privacy Act of 1974
+    - value: Appears on form review/check answers pages
+  behavior:
+    - value: "**Checkbox**: Users can select after reviewing privacy policy in new tab"
+    - value: "**Link**: Opens policy in new browser tab with \"opens in new tab\" icon and screen reader text"
+accessibility:
+  - value: Must indicate to all users (visible + auditory) that privacy policy opens in new window/tab
+  - value: Component includes screen reader text for new tab behavior
+code_usage: |
+  <va-privacy-agreement
+    checked="false"
+  ></va-privacy-agreement>
+component_tag: va-privacy-agreement
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

@@ -1,0 +1,131 @@
+---
+cms_editable: true
+title: Accordion
+description: Expandable content sections using progressive disclosure
+maturity: best-practice
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-accordion
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design&node-id=237%3A3269
+storybook: https://design.va.gov/storybook/?path=/docs/uswds-va-accordion--docs
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Accordion%22
+intro: |
+  Accordions are expandable content sections using progressive disclosure principles. They display as a list of headers that users can click to reveal or hide additional content. By default, accordions are multi-selectable and borderless, however, props can be added to make them bordered and single-select.
+related:
+  - name: Additional info
+    url: ../additional-info
+    description: For discrete content needing additional context
+examples:
+  - title: Default
+    description: Multi-select, borderless accordion.
+    storyId: uswds-va-accordion--default
+    height: 250
+  - title: Bordered
+    description: Visual borders around items.
+    storyId: uswds-va-accordion--bordered
+    height: 250
+  - title: Single Select
+    description: Only one item can be open at a time.
+    storyId: uswds-va-accordion--single-select
+    height: 250
+  - title: With Subheader
+    description: Additional text under main header.
+    storyId: uswds-va-accordion--subheader
+    height: 250
+usage:
+  when_to_use:
+    - value: Organize related content sections to save space and improve readability
+    - value: Present FAQ-style content or series of related questions
+    - value: Help users reveal and compare relevant information
+    - value: Group optional details under new section headings
+  when_to_consider_else:
+    - value: Required content essential to the primary task (keep visible)
+    - value: Content needing additional context; use Additional info instead
+    - value: Supplementary content fitting under existing headings
+    - value: Interactive form elements like radio buttons or checkboxes (outside form review pages)
+  behavior:
+    - value: Allow clicking anywhere in header to expand/collapse
+    - value: Provide generous click targets for easier manipulation
+    - value: Position interactive elements (links) away from headers to prevent accidental collapse
+code_usage: |
+  <va-accordion>
+    <va-accordion-item header="First section">
+      <p>Content for the first section.</p>
+    </va-accordion-item>
+    <va-accordion-item header="Second section">
+      <p>Content for the second section.</p>
+    </va-accordion-item>
+  </va-accordion>
+
+  <!-- Bordered -->
+  <va-accordion bordered>
+    <va-accordion-item header="First section">
+      <p>Content for the first section.</p>
+    </va-accordion-item>
+  </va-accordion>
+
+  <!-- Single select -->
+  <va-accordion open-single>
+    <va-accordion-item header="First section">
+      <p>Only one section open at a time.</p>
+    </va-accordion-item>
+  </va-accordion>
+component_tag: va-accordion
+content_considerations:
+  - value: Keep content concise; accordion height varies with content length
+  - value: Subheadings should fit on single line
+  - value: Accordions work best for static content
+  - value: Discourage form elements within accordions outside review pages
+  - value: Collapsed content becomes non-focusable
+accessibility:
+  - value: Accordions use proper ARIA attributes for expand/collapse state
+  - value: Headers are keyboard accessible with Enter and Space keys
+  - value: Screen readers announce expanded/collapsed state
+  - value: Focus management maintains logical tab order
+checklist:
+  web_completed: January 2024
+  maturity:
+    guidance_web: complete
+    guidance_mobile: n/a
+    research_web: complete
+    research_mobile: n/a
+    stability_web: complete
+    stability_mobile: n/a
+    adoption_web: complete
+    adoption_mobile: n/a
+  code_assets:
+    variations_web: complete
+    variations_mobile: n/a
+    responsive_web: complete
+    responsive_mobile: n/a
+    interactive_states_web: complete
+    interactive_states_mobile: n/a
+    tokens_web: complete
+    tokens_mobile: n/a
+    i18n_web: incomplete
+    i18n_mobile: n/a
+  visual_assets:
+    variations_web: complete
+    variations_mobile: n/a
+    responsive_web: complete
+    responsive_mobile: n/a
+    interactive_states_web: complete
+    interactive_states_mobile: n/a
+    tokens_web: complete
+    tokens_mobile: n/a
+  a11y_audit_web:
+    last_audit_date: December 2023
+    code_review: pass
+    readability: pass
+    automated_scans: pass
+    use_of_color: pass
+    text_resizing: pass
+    screen_readers: pass
+    input_methods: pass
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

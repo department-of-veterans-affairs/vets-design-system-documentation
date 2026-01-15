@@ -1,0 +1,20 @@
+{
+  "id": "components/form/statement-of-truth/checklist",
+  "title": "Statement of Truth - Component checklist",
+  "description": "Maturity and asset checklist for the Statement of Truth component",
+  "source": "@site/docs/components/form/statement-of-truth/checklist.mdx",
+  "sourceDirName": "components/form/statement-of-truth",
+  "slug": "/components/form/statement-of-truth/checklist",
+  "permalink": "/docs/components/form/statement-of-truth/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/form/statement-of-truth/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Statement of Truth - Component checklist",
+    "description": "Maturity and asset checklist for the Statement of Truth component",
+    "sidebar_label": "Checklist"
+  }
+}

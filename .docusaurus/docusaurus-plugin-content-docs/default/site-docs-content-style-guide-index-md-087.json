@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/index",
+  "title": "Content style guide",
+  "description": "Guidelines for creating consistent, clear, and helpful content on VA.gov.",
+  "source": "@site/docs/content-style-guide/index.md",
+  "sourceDirName": "content-style-guide",
+  "slug": "/content-style-guide/",
+  "permalink": "/docs/content-style-guide/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Content style guide",
+    "description": "Guidelines for creating consistent, clear, and helpful content on VA.gov.",
+    "sidebar_position": 1
+  }
+}

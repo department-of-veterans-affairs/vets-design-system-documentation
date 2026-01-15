@@ -1,0 +1,104 @@
+{
+  "id": "components/form/index",
+  "title": "Form",
+  "description": "Form controls for collecting user information",
+  "source": "@site/docs/components/form/index.mdx",
+  "sourceDirName": "components/form",
+  "slug": "/components/form/",
+  "permalink": "/docs/components/form/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/form/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Form",
+    "description": "Form controls for collecting user information",
+    "maturity": "deployed",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-form",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library",
+    "storybook": "https://design.va.gov/storybook/?path=/docs/uswds-va-text-input--docs",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Form%22",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "Collecting user information in structured formats"
+        },
+        {
+          "value": "Building multi-step application flows"
+        },
+        {
+          "value": "Requiring validation of user input"
+        },
+        {
+          "value": "Grouping related fields using fieldsets and legends"
+        },
+        {
+          "value": "Asking questions with multiple choice options"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "A single form field has a sufficiently descriptive label without needing fieldsets"
+        },
+        {
+          "value": "Information gathering requires complex interactive patterns beyond standard form controls"
+        }
+      ]
+    },
+    "accessibility": [
+      {
+        "value": "Announce validation errors and shift focus to unfilled required fields"
+      },
+      {
+        "value": "Use proper `required` attributes on form fields"
+      },
+      {
+        "value": "Remove or hide invalid options rather than disabling them"
+      },
+      {
+        "value": "Only disable buttons during post-submission loading states (with loading indicator)"
+      },
+      {
+        "value": "Mark required fields with `required` attribute"
+      },
+      {
+        "value": "Don't rely solely on asterisks—use clear language"
+      },
+      {
+        "value": "If most fields are required, indicate optional fields instead"
+      },
+      {
+        "value": "Ensure all form controls are keyboard accessible"
+      },
+      {
+        "value": "Maintain logical tab order matching visual layout"
+      },
+      {
+        "value": "Provide visible focus indicators for all interactive elements"
+      },
+      {
+        "value": "Use `aria-describedby` to associate error and hint text with fields"
+      },
+      {
+        "value": "Provide programmatic labels for all inputs"
+      },
+      {
+        "value": "Use `aria-live` regions for dynamic error announcements"
+      }
+    ]
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Footer - Minimal",
+    "permalink": "/docs/components/footer/footer-minimal/"
+  },
+  "next": {
+    "title": "Autosave",
+    "permalink": "/docs/components/form/autosave/"
+  }
+}

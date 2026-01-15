@@ -1,0 +1,29 @@
+{
+  "id": "foundation/utilities/font-style",
+  "title": "Font style",
+  "description": "CSS classes for controlling italic and normal text styles.",
+  "source": "@site/docs/foundation/utilities/font-style.md",
+  "sourceDirName": "foundation/utilities",
+  "slug": "/foundation/utilities/font-style",
+  "permalink": "/docs/foundation/utilities/font-style",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/utilities/font-style.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "title": "Font style",
+    "description": "CSS classes for controlling italic and normal text styles.",
+    "sidebar_position": 8
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Font size",
+    "permalink": "/docs/foundation/utilities/font-size"
+  },
+  "next": {
+    "title": "Font weight",
+    "permalink": "/docs/foundation/utilities/font-weight"
+  }
+}

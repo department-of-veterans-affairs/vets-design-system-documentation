@@ -1,0 +1,29 @@
+{
+  "id": "content/links",
+  "title": "Links",
+  "description": "Guidelines for writing effective, accessible link text",
+  "source": "@site/docs/content/links.md",
+  "sourceDirName": "content",
+  "slug": "/content/links",
+  "permalink": "/docs/content/links",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content/links.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Links",
+    "description": "Guidelines for writing effective, accessible link text",
+    "sidebar_position": 4
+  },
+  "sidebar": "contentSidebar",
+  "previous": {
+    "title": "Error Messages",
+    "permalink": "/docs/content/error-messages"
+  },
+  "next": {
+    "title": "Button Labels",
+    "permalink": "/docs/content/button-labels"
+  }
+}

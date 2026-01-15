@@ -1,0 +1,67 @@
+---
+cms_editable: true
+title: Process List
+description: Presents sequential steps for benefit application processes
+maturity: best-practice
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-process-list
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+storybook: https://design.va.gov/storybook/?path=/docs/uswds-va-process-list--docs
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Process+list%22
+related:
+  - name: Progress Bar - Segmented
+    url: /docs/components/form/progress-bar-segmented
+    description: For form step indication
+  - name: Additional Info
+    url: ../additional-info
+    description: To condense content within steps
+usage:
+  when_to_use:
+    - value: Multi-step processes requiring extended user tracking
+    - value: Describing high-level process steps (3-10 steps optimal)
+    - value: Providing context on "how to apply" for benefits
+    - value: Displaying status information across process stages
+  when_to_consider_else:
+    - value: When instructing users to take specific actions that don't require explanation
+    - value: Single-instance replacements for other components
+    - value: Hiding all step content by default
+content_considerations:
+  - value: Headings must be clear and concise
+  - value: Step descriptions should use plain language
+  - value: Status eyebrow (pending, active, complete) should match context
+  - value: Keep process content brief; avoid excessive component nesting
+accessibility:
+  - value: Each step must include both heading AND descriptive content
+  - value: Don't use headings alone
+  - value: Status eyebrow is required when displaying process updates
+  - value: List structure provides proper semantic ordering
+examples:
+  - title: Default
+    description: Default
+    storyId: uswds-va-process-list--default
+    height: 350
+  - title: With Status
+    description: With Status
+    storyId: uswds-va-process-list--with-status
+    height: 350
+code_usage: |
+  <va-process-list>
+    <va-process-list-item header="Prepare your documents">
+      <p>Gather your DD214 and other military records.</p>
+    </va-process-list-item>
+    <va-process-list-item header="Apply online">
+      <p>Complete the online application form.</p>
+    </va-process-list-item>
+    <va-process-list-item header="Wait for decision">
+      <p>We'll review your application and notify you.</p>
+    </va-process-list-item>
+  </va-process-list>
+component_tag: va-process-list
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

@@ -1,0 +1,22 @@
+---
+cms_editable: false
+title: Back to top - Component checklist
+description: Maturity and asset checklist for the Back to top component
+sidebar_label: Checklist
+unlisted: true
+---
+
+import ComponentChecklist from '@site/src/components/ComponentChecklist';
+import { checklistData } from '@site/src/data/component-checklist';
+import ChecklistDefinitions from '@site/docs/_partials/checklist-definitions.mdx';
+import Link from '@docusaurus/Link';
+
+# Back to top checklist
+
+<Link to="/docs/components/back-to-top">← Back to Back to top</Link>
+
+This checklist tracks the maturity, code assets, visual assets, and accessibility audit status for the Back to top component.
+
+<ComponentChecklist data={checklistData['back-to-top']} platform="web" />
+
+<ChecklistDefinitions />

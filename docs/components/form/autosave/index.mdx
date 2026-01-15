@@ -1,0 +1,33 @@
+---
+cms_editable: true
+title: Autosave
+description: Informs users that form progress is being automatically saved
+maturity: deployed
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-autosave
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Autosave%22
+related:
+  - name: Alert
+    url: /docs/components/alert/
+    description: Parent component (Slim variant)
+  - name: Button Group
+    url: ../../button/button-group
+    description: Appears after button pair
+  - name: Progress Bar - Segmented
+    url: ../progress-bar-segmented
+    description: Positioned below progress indicator
+usage:
+  when_to_use:
+    - value: Saving form progress as users complete an application
+    - value: Provides confirmation that form data is being saved automatically as users advance through form steps
+  when_to_consider_else:
+    - value: Unauthenticated users cannot see this message since their progress cannot be saved
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

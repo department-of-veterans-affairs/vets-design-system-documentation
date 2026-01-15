@@ -1,0 +1,21 @@
+{
+  "id": "components/additional-info/checklist",
+  "title": "Additional info - Component checklist",
+  "description": "Maturity and asset checklist for the Additional info component",
+  "source": "@site/docs/components/additional-info/checklist.mdx",
+  "sourceDirName": "components/additional-info",
+  "slug": "/components/additional-info/checklist",
+  "permalink": "/docs/components/additional-info/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/additional-info/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Additional info - Component checklist",
+    "description": "Maturity and asset checklist for the Additional info component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

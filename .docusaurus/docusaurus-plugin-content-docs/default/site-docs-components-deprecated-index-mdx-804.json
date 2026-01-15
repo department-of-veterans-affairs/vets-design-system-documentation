@@ -1,0 +1,30 @@
+{
+  "id": "components/deprecated/index",
+  "title": "Deprecated",
+  "description": "Components that are no longer recommended for use",
+  "source": "@site/docs/components/deprecated/index.mdx",
+  "sourceDirName": "components/deprecated",
+  "slug": "/components/deprecated/",
+  "permalink": "/docs/components/deprecated/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/deprecated/index",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 99,
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Deprecated",
+    "description": "Components that are no longer recommended for use",
+    "sidebar_position": 99
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Text",
+    "permalink": "/docs/components/text/"
+  },
+  "next": {
+    "title": "Banner - Promo",
+    "permalink": "/docs/components/deprecated/banner-promo/"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/specific-topics-and-programs/index",
+  "title": "Specific topics and programs",
+  "description": "Guidelines for consistent, plain-language content about VA-specific subjects, terminology, and programs.",
+  "source": "@site/docs/content-style-guide/specific-topics-and-programs/index.md",
+  "sourceDirName": "content-style-guide/specific-topics-and-programs",
+  "slug": "/content-style-guide/specific-topics-and-programs/",
+  "permalink": "/docs/content-style-guide/specific-topics-and-programs/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/specific-topics-and-programs/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Specific topics and programs",
+    "description": "Guidelines for consistent, plain-language content about VA-specific subjects, terminology, and programs.",
+    "sidebar_position": 1
+  }
+}

@@ -1,0 +1,66 @@
+---
+title: Know when their information is prefilled
+description: Follow this pattern to help users understand when their information is automatically populated.
+cms_editable: true
+category: help-users-to
+maturity: use-with-caution
+sidebar_position: 7
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms
+github: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-prefilled-information%22
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Help+users+to...+Prefilled+information%22
+
+intro: Use this pattern to help users understand when their information will be automatically populated, where that data originates, and how they can modify it.
+
+usage:
+  when_to_use:
+    - value: "**Prefilling user data.** When you prefill a user's data into an application or form."
+    - value: "**Editable prefilled data.** When users have the ability to update the prefilled data."
+    - value: "**Authenticated users only.** This pattern applies only to signed-in users."
+  design_principles:
+    - value: "**Visibility of system status.** Communicate current state so users feel in control."
+    - value: "**User control and freedom.** Allow users authority over their own information."
+    - value: "**Clarify save location.** Indicate whether changes update VA Profile, the form only, or let users choose."
+  when_not_to_use:
+    - value: "**Unauthenticated users.** Don't show prefilled personal information to users who aren't signed in."
+
+examples:
+  - title: Non-editable prefilled information
+    description: Cards without edit links for legal name, DOB, SSN with instructions for offline updates.
+  - title: Editable prefilled information
+    description: Cards with edit links for contact details and addresses.
+  - title: Save location alert
+    description: Alert indicating where changes will be saved.
+
+how_to_build:
+  intro: The pattern operates across three key scenarios for prefilled data.
+  steps:
+    - value: "**Non-editable information:** Remove edit links from cards for legal name, DOB, SSN."
+    - value: "Include a bolded 'Note:' explaining how to update this information offline."
+    - value: "**Editable information:** Display data in cards with edit links."
+    - value: "**Save location clarity:** Display alerts indicating where changes are saved."
+    - value: "Options: update VA Profile, update form only, or let users choose via radio buttons."
+  components_used:
+    - name: Alert
+      url: /docs/components/alert
+    - name: Card
+      url: /docs/components/card
+    - name: Radio button
+      url: /docs/components/form/radio-button
+    - name: Additional info
+      url: /docs/components/additional-info
+
+content_considerations:
+  - value: "Unauthenticated alert heading: 'Sign in with a verified account'"
+  - value: "Authenticated alert heading: 'We've prefilled some of your information'"
+  - value: "Clearly distinguish between editable and non-editable fields."
+
+accessibility:
+  - value: "Use semantic HTML (description lists, unordered lists) for uneditable information."
+  - value: "Edit links must be clearly labeled for screen readers."
+  - value: "Success alerts should confirm where changes were saved."
+---
+
+import PatternPage from '@site/src/components/PatternPage';
+
+<PatternPage frontMatter={frontMatter} />
+

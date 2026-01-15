@@ -1,0 +1,24 @@
+{
+  "componentName": "Side navigation",
+  "webCompleted": null,
+  "mobileCompleted": null,
+  "maturity": [
+    { "name": "Guidance", "webScore": true, "mobileScore": false },
+    { "name": "Research", "webScore": true, "mobileScore": false },
+    { "name": "Stability", "webScore": false, "mobileScore": false },
+    { "name": "Adoption", "webScore": false, "mobileScore": false }
+  ],
+  "codeAssets": [
+    { "name": "Variations", "webScore": true, "mobileScore": false },
+    { "name": "Responsive", "webScore": true, "mobileScore": false },
+    { "name": "Interactive states", "webScore": true, "mobileScore": false },
+    { "name": "Tokens", "webScore": true, "mobileScore": false },
+    { "name": "Internationalization", "webScore": false, "mobileScore": false }
+  ],
+  "visualAssets": [
+    { "name": "Variations", "webScore": true, "mobileScore": false },
+    { "name": "Responsive", "webScore": true, "mobileScore": false },
+    { "name": "Interactive states", "webScore": true, "mobileScore": false },
+    { "name": "Tokens", "webScore": true, "mobileScore": false }
+  ]
+}

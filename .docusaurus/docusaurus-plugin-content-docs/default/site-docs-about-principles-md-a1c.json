@@ -1,0 +1,29 @@
+{
+  "id": "about/principles",
+  "title": "Design principles",
+  "description": "Fundamental design principles guiding VA.gov applications.",
+  "source": "@site/docs/about/principles.md",
+  "sourceDirName": "about",
+  "slug": "/about/principles",
+  "permalink": "/docs/about/principles",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/about/principles.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Design principles",
+    "description": "Fundamental design principles guiding VA.gov applications.",
+    "sidebar_position": 3
+  },
+  "sidebar": "aboutSidebar",
+  "previous": {
+    "title": "Experimental components and patterns",
+    "permalink": "/docs/about/contributing/experimental-components"
+  },
+  "next": {
+    "title": "Experience standards",
+    "permalink": "/docs/about/experience-standards"
+  }
+}

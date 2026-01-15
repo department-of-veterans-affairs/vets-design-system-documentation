@@ -1,0 +1,142 @@
+{
+  "id": "patterns/ask-users-for/direct-deposit/index",
+  "title": "Direct deposit",
+  "description": "Follow this pattern to collect banking information for Veterans to receive electronic payments.",
+  "source": "@site/docs/patterns/ask-users-for/direct-deposit/index.mdx",
+  "sourceDirName": "patterns/ask-users-for/direct-deposit",
+  "slug": "/patterns/ask-users-for/direct-deposit/",
+  "permalink": "/docs/patterns/ask-users-for/direct-deposit/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/patterns/ask-users-for/direct-deposit/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Direct deposit",
+    "description": "Follow this pattern to collect banking information for Veterans to receive electronic payments.",
+    "cms_editable": true,
+    "category": "ask-users-for",
+    "maturity": "deployed",
+    "sidebar_position": 5,
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms",
+    "github": "https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-direct-deposit%22",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Ask+users+for...+Direct+deposit%22",
+    "intro": "Use this pattern when collecting banking information so Veterans can receive electronic payments through direct deposit.",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Collecting banking details.** When Veterans need to receive electronic payments for benefits."
+        },
+        {
+          "value": "**Reviewing or updating accounts.** When Veterans need to modify previously entered bank account details."
+        }
+      ],
+      "design_principles": [
+        {
+          "value": "**Include a check image.** Provide a visual reference guide showing where to find account and routing numbers."
+        },
+        {
+          "value": "**Show masked data for review.** Display only the last 4 digits of account numbers when showing existing information."
+        },
+        {
+          "value": "**Clarify scope of changes.** Some benefits are affected by updates while others maintain separate account information."
+        },
+        {
+          "value": "**Offer alternatives.** Include expandable section addressing 'What if I don't have a bank account?'"
+        }
+      ]
+    },
+    "examples": [
+      {
+        "title": "New direct deposit information",
+        "description": "Form for collecting banking information with check image reference guide."
+      },
+      {
+        "title": "Review existing information",
+        "description": "Card displaying masked account data with edit button to make changes."
+      }
+    ],
+    "how_to_build": {
+      "intro": "The direct deposit pattern collects and displays banking information securely.",
+      "steps": [
+        {
+          "value": "Fieldset legend: 'Direct Deposit' with explanatory text about requirements."
+        },
+        {
+          "value": "Include a check image showing where to locate account and routing numbers."
+        },
+        {
+          "value": "Account type: Radio button group for Checking or Savings options."
+        },
+        {
+          "value": "Bank routing number: Required 9-digit text input."
+        },
+        {
+          "value": "Bank account number: Required text input."
+        },
+        {
+          "value": "Additional info component for common questions."
+        },
+        {
+          "value": "For review: Display bank name, masked account number (last 4 digits), and edit button."
+        }
+      ],
+      "components_used": [
+        {
+          "name": "Text input",
+          "url": "/docs/components/form/text-input"
+        },
+        {
+          "name": "Radio button",
+          "url": "/docs/components/form/radio-button"
+        },
+        {
+          "name": "Additional info",
+          "url": "/docs/components/additional-info"
+        }
+      ]
+    },
+    "code_usage": "The direct deposit pattern is implemented in various VA.gov forms.\n\n**Production examples:**\n- VA Form 22-10203 (Rogers STEM Scholarship application)\n- VA.gov Profile direct deposit section\n\nSee the [vets-website repository](https://github.com/department-of-veterans-affairs/vets-website) for implementation details.\n",
+    "content_specs": [
+      {
+        "field": "Bank routing number",
+        "hint_text": null,
+        "error_message": "Enter a valid nine digit routing number"
+      },
+      {
+        "field": "Bank routing number (missing)",
+        "hint_text": null,
+        "error_message": "Enter a routing number"
+      },
+      {
+        "field": "Bank account number",
+        "hint_text": null,
+        "error_message": "Enter a bank account number"
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Ensure form fields have visible, associated labels."
+      },
+      {
+        "value": "The check image should have descriptive alt text explaining how to find routing and account numbers."
+      },
+      {
+        "value": "Error messages should be associated with fields using aria-describedby."
+      },
+      {
+        "value": "Masked account numbers should be announced properly to screen readers."
+      }
+    ]
+  },
+  "sidebar": "patternsSidebar",
+  "previous": {
+    "title": "Phone numbers",
+    "permalink": "/docs/patterns/ask-users-for/phone-numbers/"
+  },
+  "next": {
+    "title": "Signature",
+    "permalink": "/docs/patterns/ask-users-for/signature/"
+  }
+}

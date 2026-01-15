@@ -1,0 +1,29 @@
+{
+  "id": "patterns/ask-users-for/index",
+  "title": "Ask users for...",
+  "description": "Patterns for collecting user information including addresses, dates, names, contact information, and more.",
+  "source": "@site/docs/patterns/ask-users-for/index.md",
+  "sourceDirName": "patterns/ask-users-for",
+  "slug": "/patterns/ask-users-for/",
+  "permalink": "/docs/patterns/ask-users-for/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/patterns/ask-users-for/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Ask users for...",
+    "description": "Patterns for collecting user information including addresses, dates, names, contact information, and more.",
+    "sidebar_position": 1
+  },
+  "sidebar": "patternsSidebar",
+  "previous": {
+    "title": "Addresses",
+    "permalink": "/docs/patterns/ask-users-for/addresses/"
+  },
+  "next": {
+    "title": "Names",
+    "permalink": "/docs/patterns/ask-users-for/names/"
+  }
+}

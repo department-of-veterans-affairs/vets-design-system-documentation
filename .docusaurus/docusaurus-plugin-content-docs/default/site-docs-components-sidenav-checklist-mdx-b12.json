@@ -1,0 +1,21 @@
+{
+  "id": "components/sidenav/checklist",
+  "title": "Side navigation - Component checklist",
+  "description": "Maturity and asset checklist for the Side navigation component",
+  "source": "@site/docs/components/sidenav/checklist.mdx",
+  "sourceDirName": "components/sidenav",
+  "slug": "/components/sidenav/checklist",
+  "permalink": "/docs/components/sidenav/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/sidenav/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Side navigation - Component checklist",
+    "description": "Maturity and asset checklist for the Side navigation component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

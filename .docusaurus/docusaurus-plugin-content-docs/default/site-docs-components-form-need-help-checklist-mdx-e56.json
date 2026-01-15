@@ -1,0 +1,20 @@
+{
+  "id": "components/form/need-help/checklist",
+  "title": "Need Help - Component checklist",
+  "description": "Maturity and asset checklist for the Need Help component",
+  "source": "@site/docs/components/form/need-help/checklist.mdx",
+  "sourceDirName": "components/form/need-help",
+  "slug": "/components/form/need-help/checklist",
+  "permalink": "/docs/components/form/need-help/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/form/need-help/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Need Help - Component checklist",
+    "description": "Maturity and asset checklist for the Need Help component",
+    "sidebar_label": "Checklist"
+  }
+}

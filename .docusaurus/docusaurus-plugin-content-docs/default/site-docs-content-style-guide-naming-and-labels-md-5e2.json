@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/naming-and-labels",
+  "title": "Naming and labels",
+  "description": "Guidelines for creating plain language labels instead of branded names for VA products and services.",
+  "source": "@site/docs/content-style-guide/naming-and-labels.md",
+  "sourceDirName": "content-style-guide",
+  "slug": "/content-style-guide/naming-and-labels",
+  "permalink": "/docs/content-style-guide/naming-and-labels",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/naming-and-labels.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 14,
+  "frontMatter": {
+    "title": "Naming and labels",
+    "description": "Guidelines for creating plain language labels instead of branded names for VA products and services.",
+    "sidebar_position": 14
+  }
+}

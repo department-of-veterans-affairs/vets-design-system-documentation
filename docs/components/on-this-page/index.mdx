@@ -1,0 +1,48 @@
+---
+cms_editable: true
+title: On this page
+description: Summarizes page sections and enables users to jump to specific content
+maturity: best-practice
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-on-this-page
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+storybook: https://design.va.gov/storybook/?path=/docs/uswds-va-on-this-page--docs
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+On+this+page%22
+related:
+  - name: Back to top
+    url: /docs/components/back-to-top
+    description: For returning to page top on long pages
+usage:
+  when_to_use:
+    - value: Summarize sections (H2 headings) at the top of lengthy pages
+    - value: Enable users to jump to specific sections
+    - value: Particularly beneficial for pages with substantial content requiring navigation aids
+    - value: Pair with the Back to top component for optimal UX
+  when_to_consider_else:
+    - value: Pages with minimal content that don't justify jump links
+    - value: Content lacking a minimum of 2 H2 section titles (required threshold)
+    - value: When rearranging content hierarchy would better serve user needs
+accessibility:
+  - value: Heading levels should increase sequentially by one only
+  - value: Focus must transfer to destination heading when link is clicked
+  - value: Proper heading structure supports both screen reader and sighted users
+  - value: Contained within a navigation landmark for screen reader accessibility
+  - value: Adequate spacing improves readability and navigation
+examples:
+  - title: Default
+    description: Default
+    storyId: uswds-va-on-this-page--default
+    height: 200
+code_usage: |
+  <va-on-this-page></va-on-this-page>
+
+  <!-- The component automatically generates links from H2 headings on the page -->
+component_tag: va-on-this-page
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

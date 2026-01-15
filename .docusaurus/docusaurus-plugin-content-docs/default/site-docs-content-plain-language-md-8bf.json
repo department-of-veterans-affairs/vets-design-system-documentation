@@ -1,0 +1,29 @@
+{
+  "id": "content/plain-language",
+  "title": "Plain Language",
+  "description": "Guidelines for writing clear, simple content that Veterans can understand",
+  "source": "@site/docs/content/plain-language.md",
+  "sourceDirName": "content",
+  "slug": "/content/plain-language",
+  "permalink": "/docs/content/plain-language",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content/plain-language.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Plain Language",
+    "description": "Guidelines for writing clear, simple content that Veterans can understand",
+    "sidebar_position": 2
+  },
+  "sidebar": "contentSidebar",
+  "previous": {
+    "title": "Content Style Guide",
+    "permalink": "/docs/content/"
+  },
+  "next": {
+    "title": "Error Messages",
+    "permalink": "/docs/content/error-messages"
+  }
+}

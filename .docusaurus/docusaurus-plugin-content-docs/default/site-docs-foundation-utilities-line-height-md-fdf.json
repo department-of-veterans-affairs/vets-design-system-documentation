@@ -1,0 +1,29 @@
+{
+  "id": "foundation/utilities/line-height",
+  "title": "Line height",
+  "description": "CSS classes for controlling spacing between lines of text.",
+  "source": "@site/docs/foundation/utilities/line-height.md",
+  "sourceDirName": "foundation/utilities",
+  "slug": "/foundation/utilities/line-height",
+  "permalink": "/docs/foundation/utilities/line-height",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/utilities/line-height.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {
+    "title": "Line height",
+    "description": "CSS classes for controlling spacing between lines of text.",
+    "sidebar_position": 11
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Height and width",
+    "permalink": "/docs/foundation/utilities/height-and-width"
+  },
+  "next": {
+    "title": "Margins",
+    "permalink": "/docs/foundation/utilities/margins"
+  }
+}

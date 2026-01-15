@@ -1,0 +1,29 @@
+{
+  "id": "foundation/breakpoints",
+  "title": "Breakpoints",
+  "description": "Responsive design breakpoints for mobile-first development",
+  "source": "@site/docs/foundation/breakpoints.md",
+  "sourceDirName": "foundation",
+  "slug": "/foundation/breakpoints",
+  "permalink": "/docs/foundation/breakpoints",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/breakpoints.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Breakpoints",
+    "description": "Responsive design breakpoints for mobile-first development",
+    "sidebar_position": 5
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Spacing Units",
+    "permalink": "/docs/foundation/spacing-units"
+  },
+  "next": {
+    "title": "Design Tokens",
+    "permalink": "/docs/foundation/design-tokens"
+  }
+}

@@ -1,72 +1,62 @@
 {
-  "name": "vetsgov-design-system",
-  "version": "0.0.1",
-  "description": "Design System for VA.gov",
-  "main": "index.js",
+  "name": "@vads/docs",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "yarn run build:full && npx jest",
-    "test:watch": "npx jest --watch",
-    "test:coverage": "yarn run build:full && npx jest --coverage",
-    "test:accessibility": "yarn run build:full && npx jest --testPathPattern=accessibility",
-    "test:integration": "yarn run build:full && npx jest --testPathPattern=integration",
-    "test:screen-reader": "yarn run build:full && npx jest --testPathPattern=screen-reader",
-    "test:browser": "yarn run build:full && npx jest --testPathPattern=browser-compatibility",
-    "test:regression": "yarn run build:full && npx jest --testPathPattern=regression",
-    "test:all-accessibility": "yarn run build:full && npx jest --testNamePattern=\"accessibility|integration|browser.*compatibility|screen.*reader\"",
-    "build": "gulp build",
-    "build:full": "yarn run build && bundle exec jekyll build",
-    "start": "yarn run build && bundle exec jekyll serve --baseurl ''",
-    "start:storybook-static": "export STORYBOOK_ENV=8080 && yarn run build && bundle exec jekyll serve --baseurl ''",
-    "watch": "yarn run build && bundle exec jekyll serve --baseurl '' --incremental",
-    "update-releases": "rm -rf json_data_cache && yarn run build:full",
-    "build-json": "gulp move-json-data && gulp process-component-maturity && gulp process-component-maturity-figma",
-    "process-monthly-report": "node scripts/process-monthly-report.js",
-    "collect-metrics": "node scripts/collect-issue-metrics.js",
-    "update-metrics": "npm run collect-metrics",
-    "analyze-issues": "node scripts/analyze_issues.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/department-of-veterans-affairs/vets-design-system-documentation.git"
-  },
-  "keywords": [
-    "Vets.gov",
-    "design",
-    "uswds"
-  ],
-  "author": "Matthew Dingee",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues"
-  },
-  "homepage": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation#readme",
-  "devDependencies": {
-    "@babel/core": "^7.23.0",
-    "@babel/preset-env": "^7.23.0",
-    "@testing-library/dom": "^9.3.4",
-    "@testing-library/jest-dom": "^6.1.4",
-    "@testing-library/user-event": "^14.5.1",
-    "babel-jest": "^29.7.0",
-    "gulp": "^4.0.2",
-    "gulp-clean": "^0.4.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-replace": "^1.1.4",
-    "gulp-string-replace": "^1.1.2",
-    "jest": "^29.7.0",
-    "jest-axe": "^8.0.0",
-    "jest-environment-jsdom": "^29.7.0",
-    "lodash": "^4.17.21",
-    "mixin-deep": ">=1.3.2",
-    "set-value": ">=4.1.0",
-    "tar": ">=6.2.1"
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "dev": "docusaurus start --port 3000",
+    "build": "node scripts/set-cms-url.js prod && docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "typecheck": "tsc",
+    "clean": "rm -rf .turbo node_modules .docusaurus build",
+    "cms": "decap-server",
+    "cms:url:dev": "node scripts/set-cms-url.js dev",
+    "cms:url:prod": "node scripts/set-cms-url.js prod",
+    "cms:generate-partials": "node scripts/generate-partials-config.js",
+    "dev:cms": "node scripts/set-cms-url.js dev && node scripts/generate-partials-config.js && concurrently \"npm run dev\" \"npm run cms\""
   },
   "dependencies": {
-    "@department-of-veterans-affairs/component-library": "^54.4.1",
+    "@department-of-veterans-affairs/component-library": "^47.0.0",
     "@department-of-veterans-affairs/css-library": "^0.28.0",
-    "@uswds/uswds": "^3.9.0"
+    "@docusaurus/core": "3.9.2",
+    "@docusaurus/preset-classic": "3.9.2",
+    "@docusaurus/theme-mermaid": "^3.9.2",
+    "docusaurus-lunr-search": "^3.5.0",
+    "lunr": "^2.3.9",
+    "@mdx-js/react": "^3.0.0",
+    "clsx": "^2.0.0",
+    "prism-react-renderer": "^2.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^10.1.0"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "3.9.2",
+    "@docusaurus/tsconfig": "3.9.2",
+    "@docusaurus/types": "3.9.2",
+    "concurrently": "^9.2.1",
+    "decap-server": "^3.4.0",
+    "typescript": "~5.6.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 5 safari version"
+    ]
   },
   "engines": {
-    "npm": "6.14.8"
-  },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+    "node": ">=20.0"
+  }
 }

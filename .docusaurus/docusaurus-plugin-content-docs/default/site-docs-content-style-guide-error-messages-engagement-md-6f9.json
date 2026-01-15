@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/error-messages/engagement",
+  "title": "Engagement messages",
+  "description": "Guidelines for engagement messages that prompt users to complete tasks or enter data.",
+  "source": "@site/docs/content-style-guide/error-messages/engagement.md",
+  "sourceDirName": "content-style-guide/error-messages",
+  "slug": "/content-style-guide/error-messages/engagement",
+  "permalink": "/docs/content-style-guide/error-messages/engagement",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/error-messages/engagement.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Engagement messages",
+    "description": "Guidelines for engagement messages that prompt users to complete tasks or enter data.",
+    "sidebar_position": 3
+  }
+}

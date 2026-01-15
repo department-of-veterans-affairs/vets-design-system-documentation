@@ -1,0 +1,58 @@
+---
+cms_editable: true
+title: Input message
+description: Deprecated input validation message component
+---
+
+import Link from '@docusaurus/Link';
+
+# Input message
+
+:::danger Deprecated Component
+This component is deprecated and should not be used in new development. Please use the [Alert](/docs/components/alert/) component (slim variant) instead.
+:::
+
+## Overview
+
+The Input message component was previously used to display validation messages and feedback near form inputs. This component has been deprecated in favor of using the Alert component with the slim variant.
+
+---
+
+## Migration
+
+### Replace with Alert (slim variant)
+
+Use the [Alert](/docs/components/alert/) component with the `slim` attribute for form validation messages:
+
+```html
+<!-- Error message -->
+<va-alert status="error" slim>
+  <p>Please enter a valid email address.</p>
+</va-alert>
+
+<!-- Success message -->
+<va-alert status="success" slim>
+  <p>Your information has been saved.</p>
+</va-alert>
+
+<!-- Warning message -->
+<va-alert status="warning" slim>
+  <p>This field is recommended but not required.</p>
+</va-alert>
+```
+
+---
+
+## Why was this deprecated?
+
+- **Unified approach**: The Alert component now handles all feedback messaging needs
+- **Accessibility**: The Alert component provides better screen reader support
+- **Consistency**: Using a single component for all status messaging improves user experience
+
+---
+
+## Replacement
+
+<Link to="/docs/components/alert/" className="button button--primary">
+  View Alert Component →
+</Link>

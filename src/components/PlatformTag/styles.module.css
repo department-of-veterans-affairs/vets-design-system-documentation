@@ -1,0 +1,45 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  border-radius: 4px;
+}
+
+.tag.medium {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.6875rem;
+}
+
+.tag.small {
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+}
+
+.tag.web {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.tag.mobile {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.tags {
+  display: inline-flex;
+  gap: 0.375rem;
+  align-items: center;
+}
+
+/* Dark mode */
+[data-theme='dark'] .tag.web {
+  background: rgba(33, 150, 243, 0.2);
+  color: #64b5f6;
+}
+
+[data-theme='dark'] .tag.mobile {
+  background: rgba(156, 39, 176, 0.2);
+  color: #ce93d8;
+}

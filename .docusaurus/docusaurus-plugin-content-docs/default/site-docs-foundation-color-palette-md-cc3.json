@@ -1,0 +1,29 @@
+{
+  "id": "foundation/color-palette",
+  "title": "Color Palette",
+  "description": "VA.gov design system colors including primary, secondary, semantic, and component-specific tokens",
+  "source": "@site/docs/foundation/color-palette.md",
+  "sourceDirName": "foundation",
+  "slug": "/foundation/color-palette",
+  "permalink": "/docs/foundation/color-palette",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/color-palette.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Color Palette",
+    "description": "VA.gov design system colors including primary, secondary, semantic, and component-specific tokens",
+    "sidebar_position": 2
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Visibility",
+    "permalink": "/docs/foundation/utilities/visibility"
+  },
+  "next": {
+    "title": "Typography",
+    "permalink": "/docs/foundation/typography"
+  }
+}

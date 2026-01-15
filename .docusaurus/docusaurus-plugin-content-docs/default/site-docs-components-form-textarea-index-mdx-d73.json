@@ -1,0 +1,82 @@
+{
+  "id": "components/form/textarea/index",
+  "title": "Textarea",
+  "description": "Allows users to enter multi-line text",
+  "source": "@site/docs/components/form/textarea/index.mdx",
+  "sourceDirName": "components/form/textarea",
+  "slug": "/components/form/textarea/",
+  "permalink": "/docs/components/form/textarea/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/form/textarea/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Textarea",
+    "description": "Allows users to enter multi-line text",
+    "maturity": "deployed",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-textarea",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Textarea%22",
+    "related": [
+      {
+        "name": "Text Input",
+        "url": "../text-input",
+        "description": "For single-line text"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "Open-ended text input from users"
+        },
+        {
+          "value": "Multi-line responses where users need space for detailed answers"
+        },
+        {
+          "value": "Form fields requiring flexible character entry"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "**Predictable, single-line text**: Use [Text Input](../text-input) when brief responses are expected"
+        }
+      ]
+    },
+    "examples": [
+      {
+        "title": "Default",
+        "description": "Default",
+        "storyId": "uswds-va-textarea--default",
+        "height": 200
+      },
+      {
+        "title": "With character count",
+        "description": "With character count",
+        "storyId": "uswds-va-textarea--with-charcount",
+        "height": 220
+      },
+      {
+        "title": "With error",
+        "description": "With error",
+        "storyId": "uswds-va-textarea--error",
+        "height": 230
+      }
+    ],
+    "code_usage": "<!-- Basic textarea -->\n<va-textarea\n  label=\"Please describe your situation\"\n  name=\"description\"\n  required\n  hint=\"Include any relevant details\"\n></va-textarea>\n\n<!-- With character count -->\n<va-textarea\n  label=\"Additional comments\"\n  name=\"comments\"\n  maxlength=\"500\"\n  charcount\n></va-textarea>\n",
+    "component_tag": "va-textarea"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Text Input",
+    "permalink": "/docs/components/form/text-input/"
+  },
+  "next": {
+    "title": "Header",
+    "permalink": "/docs/components/header/"
+  }
+}

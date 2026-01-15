@@ -1,0 +1,25 @@
+{
+  "id": "foundation/index",
+  "title": "Foundation",
+  "description": "Core design tokens, colors, typography, spacing, and layout utilities",
+  "source": "@site/docs/foundation/index.md",
+  "sourceDirName": "foundation",
+  "slug": "/foundation/",
+  "permalink": "/docs/foundation/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Foundation",
+    "description": "Core design tokens, colors, typography, spacing, and layout utilities",
+    "sidebar_position": 1
+  },
+  "sidebar": "foundationSidebar",
+  "next": {
+    "title": "Layout",
+    "permalink": "/docs/foundation/layout/"
+  }
+}

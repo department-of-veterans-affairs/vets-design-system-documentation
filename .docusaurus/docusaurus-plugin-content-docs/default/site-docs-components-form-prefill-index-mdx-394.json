@@ -1,0 +1,62 @@
+{
+  "id": "components/form/prefill/index",
+  "title": "Prefill",
+  "description": "Informs users that profile information has been used to prefill form fields",
+  "source": "@site/docs/components/form/prefill/index.mdx",
+  "sourceDirName": "components/form/prefill",
+  "slug": "/components/form/prefill/",
+  "permalink": "/docs/components/form/prefill/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/form/prefill/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Prefill",
+    "description": "Informs users that profile information has been used to prefill form fields",
+    "maturity": "deployed",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-prefill",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Prefill%22",
+    "related": [
+      {
+        "name": "Alert",
+        "url": "/docs/components/alert/",
+        "description": "Parent component (Informational variant)"
+      },
+      {
+        "name": "Form Introduction template",
+        "url": "/docs/templates/forms/",
+        "description": "Template where this appears"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Prefilling authenticated user data**: Display this message when leveraging profile information to pre-populate form fields for signed-in users"
+        },
+        {
+          "value": "**Save progress functionality**: Inform users their work will be automatically saved as they proceed"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "**Unauthenticated users**: Do not display this message for users without an active profile session, as profile data cannot be accessed"
+        }
+      ]
+    }
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Penalty Notice",
+    "permalink": "/docs/components/form/penalty-notice/"
+  },
+  "next": {
+    "title": "Privacy Agreement",
+    "permalink": "/docs/components/form/privacy-agreement/"
+  }
+}

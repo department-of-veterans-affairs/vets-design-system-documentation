@@ -1,0 +1,110 @@
+{
+  "id": "components/breadcrumbs/index",
+  "title": "Breadcrumbs",
+  "description": "Secondary navigation showing location within site hierarchy",
+  "source": "@site/docs/components/breadcrumbs/index.mdx",
+  "sourceDirName": "components/breadcrumbs",
+  "slug": "/components/breadcrumbs/",
+  "permalink": "/docs/components/breadcrumbs/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/breadcrumbs/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Breadcrumbs",
+    "description": "Secondary navigation showing location within site hierarchy",
+    "maturity": "deployed",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-breadcrumbs",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "storybook": "https://design.va.gov/storybook/?path=/docs/uswds-va-breadcrumbs--docs",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Breadcrumbs%22",
+    "related": [
+      {
+        "name": "Header",
+        "url": "/docs/components/header/",
+        "description": "Breadcrumbs appear below header"
+      },
+      {
+        "name": "Link",
+        "url": "/docs/components/link/",
+        "description": "Individual breadcrumb segments"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Multi-level hierarchies**: Pages existing in structures with three or more levels"
+        },
+        {
+          "value": "**Consistency across similar pages**: When parallel sections use breadcrumbs, implement them uniformly"
+        },
+        {
+          "value": "**Persistent display**: Breadcrumbs should appear starting at level 2 pages and continue through all child pages"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "Top-level/home pages don't need breadcrumbs"
+        },
+        {
+          "value": "Two-level pages without child pages"
+        },
+        {
+          "value": "Pages using the minimal header component (to prevent user distraction)"
+        }
+      ]
+    },
+    "content_considerations": [
+      {
+        "value": "Home page label should be \"VA.gov home\" (not abbreviated as \"Home\")"
+      },
+      {
+        "value": "Use full page titles for each segment—avoid truncation"
+      },
+      {
+        "value": "All segments, including the current page, must be interactive links"
+      },
+      {
+        "value": "Current page segment includes `aria-current=\"page\"` attribute"
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Every breadcrumb segment must be a focusable, interactive link"
+      },
+      {
+        "value": "Current page segment marked with `aria-current=\"page\"`"
+      },
+      {
+        "value": "Follows WAI-ARIA breadcrumb pattern"
+      },
+      {
+        "value": "Navigation landmark with accessible name"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Wrapping",
+        "description": "Wrapping",
+        "storyId": "uswds-va-breadcrumbs--wrapping",
+        "height": 120
+      }
+    ],
+    "code_usage": "<va-breadcrumbs\n  :breadcrumb-list='[\n    {\"label\": \"VA.gov home\", \"href\": \"/\"},\n    {\"label\": \"Health care\", \"href\": \"/health-care\"},\n    {\"label\": \"Apply for VA health care\", \"href\": \"/health-care/apply\"}\n  ]'\n></va-breadcrumbs>\n",
+    "component_tag": "va-breadcrumbs"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Banner - Official Gov",
+    "permalink": "/docs/components/banner/official-gov/"
+  },
+  "next": {
+    "title": "Button",
+    "permalink": "/docs/components/button/"
+  }
+}

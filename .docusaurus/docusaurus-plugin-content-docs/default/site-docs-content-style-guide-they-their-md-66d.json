@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/they-their",
+  "title": "They, their",
+  "description": "Guidelines for using they/their as singular pronouns on VA.gov.",
+  "source": "@site/docs/content-style-guide/they-their.md",
+  "sourceDirName": "content-style-guide",
+  "slug": "/content-style-guide/they-their",
+  "permalink": "/docs/content-style-guide/they-their",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/they-their.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 19,
+  "frontMatter": {
+    "title": "They, their",
+    "description": "Guidelines for using they/their as singular pronouns on VA.gov.",
+    "sidebar_position": 19
+  }
+}

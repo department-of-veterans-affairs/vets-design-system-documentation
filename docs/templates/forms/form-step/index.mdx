@@ -1,0 +1,79 @@
+---
+title: Form step
+description: A standardized template for creating form pages where Veterans enter information, select options, or upload documents.
+cms_editable: true
+category: forms
+maturity: deployed
+sidebar_position: 4
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms
+github: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22template-form-step%22
+
+intro: Use the form step template to create all pages of a form except for the introduction, review, and confirmation pages. This template handles data entry, selections, and document uploads.
+
+usage:
+  when_to_use:
+    - value: "**Interior form pages.** Creating interior pages of online forms collecting user information."
+    - value: "**Data entry.** Pages requiring data entry, selections, or document uploads."
+    - value: "**Standard form flow.** Any form step besides introduction, review, or confirmation."
+  usability:
+    - value: "**Form steps limit.** Design recommends limiting forms to 13 total steps."
+    - value: "**Single component rule.** In Figma, replace the placeholder with only one component (may be custom local components)."
+    - value: "**Breadcrumb consistency.** Remains static across all form step pages."
+    - value: "**Title consistency.** Use identical H1 form title and subtitle across all form pages."
+    - value: "**Pronouns matter.** Specify 'your' only when referring to the form submitter to clarify whose information is requested."
+
+structure:
+  intro: The template has authenticated and unauthenticated variations.
+  sections:
+    - title: Breadcrumb navigation
+      description: Static navigation across all form step pages.
+    - title: Form title and subtitle
+      description: Consistent H1 title and form number subtitle.
+    - title: Progress bar - segmented
+      description: Shows current step with step header.
+    - title: Saved as message
+      description: Authenticated only - displays application ID.
+    - title: Prefill alert
+      description: Authenticated only - appears on pages with prefilled data.
+    - title: Form step content
+      description: Page title and form fields for this step.
+    - title: Finish this application later
+      description: Authenticated only - link to save and exit.
+    - title: Button pair
+      description: Back/Continue navigation buttons.
+    - title: Autosave alert
+      description: Authenticated only - success alert showing last saved timestamp.
+    - title: Need help? component
+      description: Contact information for assistance.
+  components_used:
+    - name: Breadcrumbs
+      url: /docs/components/breadcrumbs
+    - name: Progress bar - segmented
+      url: /docs/components/form/progress-bar-segmented
+    - name: Additional info
+      url: /docs/components/additional-info
+    - name: Need help
+      url: /docs/components/form/need-help
+    - name: Alert
+      url: /docs/components/alert
+      description: Prefill and autosave variations
+    - name: Button pair
+      url: /docs/components/button
+
+content_guidelines:
+  - value: "**Step headers vs page titles.** Step headers identify general information categories ('Your personal information'), while page titles specify details ('Your name and date of birth')."
+  - value: "**Body text.** Aim for fewer than fifty words in the body text. Use for clarifying needed information or data usage."
+  - value: "**Hint text.** Provide context helping users select correct responses. Example: 'We'll use your email address to confirm when we receive your form.'"
+  - value: "**Additional information.** Reserve for details important to some users but not essential for everyone."
+
+accessibility:
+  - value: "Each page's H1 must be unique and descriptive."
+  - value: "Authenticated version includes autosave messaging for screen readers."
+  - value: "Unauthenticated version has simplified structure without autosave alerts."
+  - value: "Follow VA.gov form accessibility guidelines."
+---
+
+import TemplatePage from '@site/src/components/TemplatePage';
+
+<TemplatePage frontMatter={frontMatter} />
+

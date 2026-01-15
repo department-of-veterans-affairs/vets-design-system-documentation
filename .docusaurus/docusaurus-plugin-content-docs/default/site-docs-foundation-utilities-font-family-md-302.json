@@ -1,0 +1,29 @@
+{
+  "id": "foundation/utilities/font-family",
+  "title": "Font family",
+  "description": "CSS classes for controlling typeface selection.",
+  "source": "@site/docs/foundation/utilities/font-family.md",
+  "sourceDirName": "foundation/utilities",
+  "slug": "/foundation/utilities/font-family",
+  "permalink": "/docs/foundation/utilities/font-family",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/utilities/font-family.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Font family",
+    "description": "CSS classes for controlling typeface selection.",
+    "sidebar_position": 6
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Flexbox",
+    "permalink": "/docs/foundation/utilities/flexbox"
+  },
+  "next": {
+    "title": "Font size",
+    "permalink": "/docs/foundation/utilities/font-size"
+  }
+}

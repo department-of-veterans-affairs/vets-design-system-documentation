@@ -1,0 +1,20 @@
+{
+  "id": "components/form/checkbox/checklist",
+  "title": "Checkbox - Component checklist",
+  "description": "Maturity and asset checklist for the Checkbox component",
+  "source": "@site/docs/components/form/checkbox/checklist.mdx",
+  "sourceDirName": "components/form/checkbox",
+  "slug": "/components/form/checkbox/checklist",
+  "permalink": "/docs/components/form/checkbox/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/form/checkbox/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Checkbox - Component checklist",
+    "description": "Maturity and asset checklist for the Checkbox component",
+    "sidebar_label": "Checklist"
+  }
+}

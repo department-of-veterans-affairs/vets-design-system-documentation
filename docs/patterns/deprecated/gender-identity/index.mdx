@@ -1,0 +1,49 @@
+---
+title: Gender identity
+description: This deprecated pattern guided design for collecting gender identity information from Veterans.
+cms_editable: true
+category: deprecated
+maturity: deprecated
+sidebar_position: 1
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms
+github: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-gender-identity%22
+
+intro: This pattern guided design for collecting gender identity information from Veterans through VA.gov forms and profiles. The current policy recommends against using this pattern.
+
+usage:
+  when_to_use:
+    - value: "**Avoid redundancy.** Don't ask a user to provide information that VA already has—only collect when VA lacks current data."
+    - value: "**Demonstrate user benefit.** Only request gender identity data when it clearly explains how providing this information will benefit the user in their current task."
+    - value: "**Build trust.** Clarify that data won't influence medical treatment or benefits determinations and enable users to manage preferences in their VA.gov profile."
+  design_principles:
+    - value: "**Opt-out option.** Provide an option labeled 'Prefer not to answer'."
+    - value: "**Mark as optional.** Mark questions as optional with clear communication."
+    - value: "**Brief content.** Keep explanatory content brief and integrated into the task flow."
+    - value: "**Stay focused.** Don't divert users from their primary objective."
+  when_not_to_use:
+    - value: "**Policy recommendation.** The current policy recommends against using this pattern."
+    - value: "**Paper form limitations.** Many forms are based off of paper forms with limited fields for gender identity—collaborate with stakeholders to expand options."
+
+examples:
+  - title: VA.gov Profile
+    description: Gender identity field in VA.gov Profile personal information section.
+  - title: What to know disclosure
+    description: Additional info component explaining data usage.
+
+how_to_build:
+  intro: This pattern is deprecated. Contact the Design System Council for current guidance.
+  steps:
+    - value: "This pattern is deprecated and should not be used in new implementations."
+    - value: "For existing implementations, contact the Design System Council for migration guidance."
+  components_used:
+    - name: Additional info
+      url: /docs/components/additional-info
+
+accessibility:
+  - value: "This pattern is deprecated due to policy recommendations."
+---
+
+import PatternPage from '@site/src/components/PatternPage';
+
+<PatternPage frontMatter={frontMatter} />
+

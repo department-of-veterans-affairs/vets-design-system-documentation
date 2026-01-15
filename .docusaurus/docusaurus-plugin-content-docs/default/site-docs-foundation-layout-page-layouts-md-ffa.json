@@ -1,0 +1,29 @@
+{
+  "id": "foundation/layout/page-layouts",
+  "title": "Page Layouts",
+  "description": "Common page layout templates for VA.gov",
+  "source": "@site/docs/foundation/layout/page-layouts.md",
+  "sourceDirName": "foundation/layout",
+  "slug": "/foundation/layout/page-layouts",
+  "permalink": "/docs/foundation/layout/page-layouts",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/layout/page-layouts.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Page Layouts",
+    "description": "Common page layout templates for VA.gov",
+    "sidebar_position": 3
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Flexbox Grid",
+    "permalink": "/docs/foundation/layout/flexbox-grid"
+  },
+  "next": {
+    "title": "Utilities",
+    "permalink": "/docs/foundation/utilities/"
+  }
+}

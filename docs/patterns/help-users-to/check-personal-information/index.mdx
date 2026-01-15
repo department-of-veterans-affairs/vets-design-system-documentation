@@ -1,0 +1,61 @@
+---
+title: Check personal information
+description: Follow this pattern to help users quickly see a list of items related to their personal information.
+cms_editable: true
+category: help-users-to
+maturity: use-with-caution
+sidebar_position: 9
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms
+github: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-check-personal-info%22
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Help+users+to...+Check+personal+information%22
+
+intro: Use this pattern to help users quickly see a list of items related to their own personal information and navigate to answers to their questions.
+
+usage:
+  when_to_use:
+    - value: "**Veteran-specific collections.** Displaying items like claims in progress, disability ratings, or ordered medical devices."
+    - value: "**Scannable groupings.** Creating scannable groupings of user-related items."
+    - value: "**Quick navigation.** Enabling quick content navigation with 'on this page' links."
+  design_principles:
+    - value: "**Eliminate sidebars.** Consolidate page layout by eliminating sidebars."
+    - value: "**Mobile consistency.** Maintain mobile consistency with single-column format."
+    - value: "**Card-based display.** Use cards with status indicators and action links."
+  when_not_to_use:
+    - value: "**Embedded form lists.** Don't use for lists embedded within forms."
+    - value: "**Complex filtering.** When complex filtering/sorting functionality is required."
+
+examples:
+  - title: Personal item list
+    description: User's claims, ratings, or orders displayed as cards with status and actions.
+  - title: On this page navigation
+    description: Quick-jump navigation to different sections of the page.
+
+how_to_build:
+  intro: The pattern creates scannable groupings with quick navigation.
+  steps:
+    - value: "Desktop: Sidebar-less layout with 'on this page' navigation component."
+    - value: "Include item list as cards with status indicators."
+    - value: "Add action links for detail pages."
+    - value: "Include Additional info components for contextual questions on cards."
+    - value: "Mobile: Single-column format maintaining desktop information hierarchy."
+  components_used:
+    - name: On this page
+      url: /docs/components/on-this-page
+    - name: Card
+      url: /docs/components/card
+    - name: Additional info
+      url: /docs/components/additional-info
+    - name: Action link
+      url: /docs/components/link/action
+
+accessibility:
+  - value: "Involve accessibility specialists during development."
+  - value: "Choose between action links or standard links based on use case."
+  - value: "Reference design system guidance on buttons vs. links."
+  - value: "Avoid overloading card elements with too much information."
+---
+
+import PatternPage from '@site/src/components/PatternPage';
+
+<PatternPage frontMatter={frontMatter} />
+

@@ -1,0 +1,124 @@
+{
+  "id": "components/link/action/index",
+  "title": "Link - Action",
+  "description": "Eye-catching links for primary calls to action",
+  "source": "@site/docs/components/link/action/index.mdx",
+  "sourceDirName": "components/link/action",
+  "slug": "/components/link/action/",
+  "permalink": "/docs/components/link/action/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/link/action/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Link - Action",
+    "description": "Eye-catching links for primary calls to action",
+    "maturity": "deployed",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-link-action",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Link+-+Action%22",
+    "related": [
+      {
+        "name": "Link",
+        "url": "/docs/components/link/",
+        "description": "Standard link component"
+      },
+      {
+        "name": "Button",
+        "url": "/docs/components/button/",
+        "description": "For actions, not navigation"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "Entice users to start digital services or applications"
+        },
+        {
+          "value": "Create emphasis on navigational links needing visual prominence"
+        },
+        {
+          "value": "Direct users to begin a benefit application or online tool"
+        },
+        {
+          "value": "Display multiple action links of equal importance (secondary variation)"
+        },
+        {
+          "value": "Provide contrast on dark-background areas (reverse variation)"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "**Authentication actions:** Use buttons for \"sign up,\" \"submit,\" or \"sign out\""
+        },
+        {
+          "value": "**Form progression:** Use Button - Primary for moving between form steps"
+        },
+        {
+          "value": "**Non-action navigation:** Don't replace standard links with action links"
+        }
+      ]
+    },
+    "content_considerations": [
+      {
+        "value": "Keep link text brief and action-oriented"
+      },
+      {
+        "value": "Start with a verb (e.g., \"Apply for health care benefits\")"
+      },
+      {
+        "value": "Ensure purpose and target are clear"
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Must indicate they are external"
+      },
+      {
+        "value": "Default behavior appends \"(opens in a new tab)\" text"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Primary Entry",
+        "description": "Primary Entry",
+        "storyId": "uswds-va-link-action--primary-entry",
+        "height": 80
+      },
+      {
+        "title": "Primary",
+        "description": "Primary",
+        "storyId": "uswds-va-link-action--primary",
+        "height": 80
+      },
+      {
+        "title": "Secondary",
+        "description": "Secondary",
+        "storyId": "uswds-va-link-action--secondary",
+        "height": 80
+      },
+      {
+        "title": "Reverse",
+        "description": "Reverse",
+        "storyId": "uswds-va-link-action--reverse",
+        "height": 80
+      }
+    ],
+    "code_usage": "<!-- Primary entry -->\n<va-link-action\n  href=\"/apply\"\n  text=\"Apply for health care benefits\"\n  type=\"primary\"\n></va-link-action>\n\n<!-- Secondary -->\n<va-link-action\n  href=\"/learn-more\"\n  text=\"Learn more about eligibility\"\n  type=\"secondary\"\n></va-link-action>\n\n<!-- Reverse (for dark backgrounds) -->\n<va-link-action\n  href=\"/start\"\n  text=\"Start your application\"\n  type=\"reverse\"\n></va-link-action>\n",
+    "component_tag": "va-link-action"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Link",
+    "permalink": "/docs/components/link/"
+  },
+  "next": {
+    "title": "Link - Collection",
+    "permalink": "/docs/components/link/collection/"
+  }
+}

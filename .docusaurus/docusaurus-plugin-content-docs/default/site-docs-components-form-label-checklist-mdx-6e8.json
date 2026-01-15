@@ -1,0 +1,20 @@
+{
+  "id": "components/form/label/checklist",
+  "title": "Label - Component checklist",
+  "description": "Maturity and asset checklist for the Label component",
+  "source": "@site/docs/components/form/label/checklist.mdx",
+  "sourceDirName": "components/form/label",
+  "slug": "/components/form/label/checklist",
+  "permalink": "/docs/components/form/label/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/form/label/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Label - Component checklist",
+    "description": "Maturity and asset checklist for the Label component",
+    "sidebar_label": "Checklist"
+  }
+}

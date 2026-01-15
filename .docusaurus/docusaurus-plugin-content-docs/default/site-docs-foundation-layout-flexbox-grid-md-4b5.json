@@ -1,0 +1,29 @@
+{
+  "id": "foundation/layout/flexbox-grid",
+  "title": "Flexbox Grid",
+  "description": "12-column responsive flexbox grid system",
+  "source": "@site/docs/foundation/layout/flexbox-grid.md",
+  "sourceDirName": "foundation/layout",
+  "slug": "/foundation/layout/flexbox-grid",
+  "permalink": "/docs/foundation/layout/flexbox-grid",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/layout/flexbox-grid.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Flexbox Grid",
+    "description": "12-column responsive flexbox grid system",
+    "sidebar_position": 2
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Layout",
+    "permalink": "/docs/foundation/layout/"
+  },
+  "next": {
+    "title": "Page Layouts",
+    "permalink": "/docs/foundation/layout/page-layouts"
+  }
+}

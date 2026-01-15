@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/government-forms",
+  "title": "Government forms",
+  "description": "Guidelines for referencing and presenting government forms in VA.gov content.",
+  "source": "@site/docs/content-style-guide/government-forms.md",
+  "sourceDirName": "content-style-guide",
+  "slug": "/content-style-guide/government-forms",
+  "permalink": "/docs/content-style-guide/government-forms",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/government-forms.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "title": "Government forms",
+    "description": "Guidelines for referencing and presenting government forms in VA.gov content.",
+    "sidebar_position": 12
+  }
+}

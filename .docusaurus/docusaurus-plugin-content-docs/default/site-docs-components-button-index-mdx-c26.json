@@ -1,0 +1,176 @@
+{
+  "id": "components/button/index",
+  "title": "Button",
+  "description": "Draws attention to important actions with a large selectable surface",
+  "source": "@site/docs/components/button/index.mdx",
+  "sourceDirName": "components/button",
+  "slug": "/components/button/",
+  "permalink": "/docs/components/button/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/button/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Button",
+    "description": "Draws attention to important actions with a large selectable surface",
+    "maturity": "deployed",
+    "platforms": [
+      "web",
+      "mobile"
+    ],
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?node-id=1234%3A5678",
+    "storybook": "https://design.va.gov/storybook/?path=/docs/uswds-va-button--docs",
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-button",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Button%22",
+    "component_tag": "va-button",
+    "mermaid_diagrams": [
+      {
+        "title": "Button Decision Flow",
+        "description": "Use this flowchart to determine which button type to use",
+        "code": "graph TD\n  A[Need a clickable element?] --> B{Is it navigation?}\n  B -->|Yes| C[Use Link component]\n  B -->|No| D{Is it the primary action?}\n  D -->|Yes| E[Use Primary Button]\n  D -->|No| F{Is it a secondary action?}\n  F -->|Yes| G[Use Secondary Button]\n  F -->|No| H[Use Tertiary/Text Button]\n"
+      }
+    ],
+    "variations": [
+      {
+        "name": "Button group",
+        "url": "./button-group",
+        "description": "Arranges multiple buttons with gaps"
+      },
+      {
+        "name": "Button - Segmented",
+        "url": "./button-segmented",
+        "description": "Related options in a compact container"
+      },
+      {
+        "name": "Button - Icon",
+        "url": "./button-icon",
+        "description": "Tertiary button with icon and label"
+      }
+    ],
+    "related": [
+      {
+        "name": "Link",
+        "url": "/docs/components/link/",
+        "description": "For navigation between pages"
+      },
+      {
+        "name": "Action link",
+        "url": "/docs/components/link/action",
+        "description": "For prominent call-to-action links"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Primary",
+        "description": "The primary button is for the most important action on a page. Use to advance users to the next step.",
+        "storyId": "uswds-va-button--primary",
+        "height": 80
+      },
+      {
+        "title": "Secondary",
+        "description": "For non-primary or current-page actions that should be visually downplayed.",
+        "storyId": "uswds-va-button--secondary",
+        "height": 80
+      },
+      {
+        "title": "Big",
+        "description": "For the only action on a page. Uses primary button styling at a larger size.",
+        "storyId": "uswds-va-button--big",
+        "height": 100
+      },
+      {
+        "title": "Continue",
+        "description": "Specialized variation with forward arrow icon for form navigation.",
+        "storyId": "uswds-va-button--continue",
+        "height": 80
+      },
+      {
+        "title": "Back",
+        "description": "Specialized variation with back arrow icon for form navigation.",
+        "storyId": "uswds-va-button--back",
+        "height": 80
+      }
+    ],
+    "examples_mobile": [
+      {
+        "title": "Primary",
+        "description": "The primary button draws attention to the most important action.",
+        "storyId": "mobile-button--primary",
+        "height": 80
+      },
+      {
+        "title": "Secondary",
+        "description": "Secondary buttons are used for less prominent actions.",
+        "storyId": "mobile-button--secondary",
+        "height": 80
+      },
+      {
+        "title": "Destructive",
+        "description": "Destructive buttons indicate actions that cannot be undone.",
+        "storyId": "mobile-button--destructive",
+        "height": 80
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Actions**: Use buttons for clickable actions such as \"Add\", \"Close\", \"Cancel\", or \"Save\""
+        },
+        {
+          "value": "**Triggers**: Use buttons to trigger functionality via JavaScript, like closing a modal"
+        },
+        {
+          "value": "**Form progression**: Primary buttons advance users to the next step in a process"
+        },
+        {
+          "value": "**Secondary actions**: Use secondary buttons for non-primary actions that need to be downplayed"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "**Navigation**: For links between pages, use [Link](/docs/components/link/) components instead"
+        },
+        {
+          "value": "**Call-to-action prominence**: Consider using [Action links](/docs/components/link/action) for visually prominent CTAs linking to other pages"
+        },
+        {
+          "value": "**General decoration**: Avoid using buttons purely for visual effect"
+        }
+      ],
+      "behavior": [
+        {
+          "value": "Limit primary buttons per page or section to maintain their impact"
+        },
+        {
+          "value": "Arrow icons are reserved exclusively for \"Back\" and \"Continue\" buttons in forms"
+        },
+        {
+          "value": "Use icons in buttons only when necessary for clarity—never for decoration"
+        },
+        {
+          "value": "Avoid disabling buttons as a design solution"
+        },
+        {
+          "value": "Primary buttons typically appear first or to the left of secondary buttons"
+        }
+      ]
+    },
+    "code_usage": "```html\n<!-- Primary button -->\n<va-button text=\"Continue\"></va-button>\n\n<!-- Secondary button -->\n<va-button text=\"Cancel\" secondary></va-button>\n\n<!-- Big button -->\n<va-button text=\"Submit application\" big></va-button>\n\n<!-- Continue with arrow -->\n<va-button continue></va-button>\n\n<!-- Back with arrow -->\n<va-button back></va-button>\n```",
+    "code_usage_mobile": "```swift\n// Primary button\nButton(\"Continue\", action: handleContinue)\n  .buttonStyle(PrimaryButtonStyle())\n\n// Secondary button\nButton(\"Cancel\", action: handleCancel)\n  .buttonStyle(SecondaryButtonStyle())\n\n// Destructive button\nButton(\"Delete\", role: .destructive, action: handleDelete)\n  .buttonStyle(DestructiveButtonStyle())\n```\n\n```kotlin\n// Primary button (Android)\nVAButton(\n  text = \"Continue\",\n  onClick = { handleContinue() },\n  style = VAButtonStyle.Primary\n)\n\n// Secondary button\nVAButton(\n  text = \"Cancel\",\n  onClick = { handleCancel() },\n  style = VAButtonStyle.Secondary\n)\n```",
+    "shared_content": [
+      "buttons-vs-links",
+      "disabled-buttons"
+    ]
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Breadcrumbs",
+    "permalink": "/docs/components/breadcrumbs/"
+  },
+  "next": {
+    "title": "Button Group",
+    "permalink": "/docs/components/button/button-group/"
+  }
+}

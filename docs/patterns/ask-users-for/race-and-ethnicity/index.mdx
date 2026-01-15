@@ -1,0 +1,58 @@
+---
+title: Race and ethnicity
+description: Follow this pattern when collecting race and ethnicity information from Veterans.
+cms_editable: true
+category: ask-users-for
+maturity: deployed
+sidebar_position: 17
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms
+github: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-race-ethnicity%22
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Ask+users+for...+Race+and+ethnicity%22
+
+intro: Use this pattern when collecting race and ethnicity information from Veterans. Only collect data VA doesn't already possess and ensure collection directly benefits the user experience.
+
+usage:
+  when_to_use:
+    - value: "**Data VA doesn't have.** Only collect race and ethnicity data VA doesn't already possess."
+    - value: "**User benefit.** Ensure collection directly benefits the user experience, not just VA operations."
+  design_principles:
+    - value: "**Ethnicity first.** Ethnicity precedes race as a separate, single-response question."
+    - value: "**Multiple race selections.** Race uses checkboxes to allow multiple selections."
+    - value: "**Include prefer not to answer.** Provide 'Prefer not to answer' option for both questions."
+    - value: "**Mark as optional.** Both questions should be clearly labeled as optional."
+    - value: "**Explain the benefit.** Clearly explain how providing this information helps the user."
+    - value: "**Stay in flow.** Do not remove the user from the task at hand to communicate details about this data collection."
+  when_not_to_use:
+    - value: "**Contact Design System team first.** This pattern faces potential deprecation. Consult the Design System team before implementing."
+
+examples:
+  - title: Ethnicity question
+    description: Single-response question about ethnicity with prefer not to answer option.
+  - title: Race question
+    description: Checkbox question allowing multiple race selections with prefer not to answer option.
+
+how_to_build:
+  intro: The race and ethnicity pattern uses separate questions for each demographic.
+  steps:
+    - value: "Ethnicity question first: Use radio buttons or single-select for ethnicity."
+    - value: "Race question second: Use checkboxes to allow multiple selections."
+    - value: "Include 'Prefer not to answer' option for both questions."
+    - value: "Mark both questions as optional with clear labeling."
+    - value: "If 'Prefer not to answer' is selected, it negates other selections."
+    - value: "Keep explanatory content brief and policy-compliant within the workflow."
+  components_used:
+    - name: Checkbox
+      url: /docs/components/form/checkbox
+    - name: Radio button
+      url: /docs/components/form/radio-button
+
+accessibility:
+  - value: "Ensure all options are keyboard accessible."
+  - value: "Fieldset and legend must properly group related options."
+  - value: "Optional field indicators should be announced by screen readers."
+---
+
+import PatternPage from '@site/src/components/PatternPage';
+
+<PatternPage frontMatter={frontMatter} />
+

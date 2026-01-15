@@ -1,0 +1,27 @@
+{
+  "id": "ia/index",
+  "title": "Information Architecture",
+  "description": "Guidelines for organizing, labeling, and navigating information on VA.gov",
+  "source": "@site/docs/ia/index.md",
+  "sourceDirName": "ia",
+  "slug": "/ia/",
+  "permalink": "/docs/ia/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/ia/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Information Architecture",
+    "description": "Guidelines for organizing, labeling, and navigating information on VA.gov"
+  },
+  "sidebar": "iaSidebar",
+  "previous": {
+    "title": "Domain Structure",
+    "permalink": "/docs/ia/domain-structure"
+  },
+  "next": {
+    "title": "URL Standards",
+    "permalink": "/docs/ia/url-standards/"
+  }
+}

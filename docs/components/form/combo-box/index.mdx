@@ -1,0 +1,52 @@
+---
+cms_editable: true
+title: Combo Box
+description: Helps users select an item from a large list with typeahead search
+maturity: use-with-caution
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-combo-box
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Combo+box%22
+related:
+  - name: Select
+    url: ../select
+    description: For 6-15 options
+  - name: Radio Button
+    url: ../radio-button
+    description: For 2-5 options
+accessibility:
+  - value: Disable analytics tracking for sensitive data
+  - value: Don't use selections as parameters in follow-on pages
+  - value: Don't include selections in title tags or tracked elements
+  - value: Use `messageAriaDescribedby` for additional context
+  - value: The component supports required field indicators
+  - value: Proper labeling ensures screen reader announcement
+examples:
+  - title: Default
+    description: Default
+    storyId: uswds-va-combo-box--default
+    height: 300
+  - title: With error
+    description: With error
+    storyId: uswds-va-combo-box--error
+    height: 180
+code_usage: |
+  <va-combo-box
+    label="Select your state"
+    name="state"
+    required
+  >
+    <option value="AL">Alabama</option>
+    <option value="AK">Alaska</option>
+    <option value="AZ">Arizona</option>
+    <!-- ... more options -->
+  </va-combo-box>
+component_tag: va-combo-box
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

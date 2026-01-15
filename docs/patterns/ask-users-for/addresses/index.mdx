@@ -1,0 +1,99 @@
+---
+title: Addresses
+description: Follow this pattern to collect mailing or home addresses from users.
+cms_editable: true
+category: ask-users-for
+maturity: deployed
+sidebar_position: 1
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms
+github: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-addresses%22
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Ask+users+for...+Addresses%22
+
+intro: Use this pattern when you need to collect a mailing or home address, including military base addresses.
+
+usage:
+  when_to_use:
+    - value: "**Collecting mailing addresses.** When you need a user's mailing location for correspondence."
+    - value: "**Collecting home addresses.** When you need a user's residential address."
+    - value: "**Collecting military base addresses.** When users may be located at military installations."
+  design_principles:
+    - value: "**Validate against USPS data.** Compare entries against postal service databases and warn users of discrepancies."
+    - value: "**Adapt fields by country.** State field converts from text input to select menu for US, Canada, and Mexico."
+    - value: "**Use prefill when available.** Populate from VA.gov profile and notify users with the prefill component."
+    - value: "**Clarify profile updates.** Specify whether changes affect the user's broader VA.gov profile."
+
+examples:
+  - title: Mailing address
+    description: Standard form for collecting a mailing address with street, city, state, and postal code fields.
+  - title: Military base address
+    description: Form variant including military installation checkbox and APO/FPO options.
+  - title: Address confirmation
+    description: Alert component warning of unmatched USPS data with correction options.
+
+how_to_build:
+  intro: The address pattern uses a structured workflow for both single and multiple address scenarios.
+  steps:
+    - value: "Header identifying address type (mailing or home address)."
+    - value: "Contextual information block explaining why the address is needed."
+    - value: "Military address checkbox with explanation (conditional)."
+    - value: "Country selector dropdown."
+    - value: "Three-line street address fields."
+    - value: "City input field."
+    - value: "State/Province/Region field (adapts based on country)."
+    - value: "Postal code input with country-specific validation."
+    - value: "For home address: 'Same as mailing address' radio option."
+  components_used:
+    - name: Checkbox
+      url: /docs/components/form/checkbox
+    - name: Select
+      url: /docs/components/form/select
+    - name: Text input
+      url: /docs/components/form/text-input
+    - name: Alert
+      url: /docs/components/alert
+
+code_usage: |
+  The `addressPattern` is available as a web-component pattern in the VA Forms library.
+
+  ```jsx
+  import { addressPattern } from '@department-of-veterans-affairs/platform-forms-system/patterns';
+  ```
+
+  See the [vets-website repository](https://github.com/department-of-veterans-affairs/vets-website) for implementation details.
+
+content_specs:
+  - field: Country
+    hint_text: null
+    error_message: Select a country
+  - field: Street address
+    hint_text: null
+    error_message: Enter a street address
+  - field: City
+    hint_text: null
+    error_message: Enter a city
+  - field: State (US)
+    hint_text: null
+    error_message: Select a state
+  - field: Province (Canada)
+    hint_text: null
+    error_message: Enter a valid province
+  - field: Postal code (US)
+    hint_text: null
+    error_message: Enter a valid 5-digit zip code
+  - field: Postal code (International)
+    hint_text: null
+    error_message: Enter a postal code meeting your country's requirements
+  - field: Military post office
+    hint_text: null
+    error_message: Select a military post office (APO, FPO, or DPO)
+
+accessibility:
+  - value: "Follow the addresses section in the VA.gov content style guide for displaying addresses."
+  - value: "Error messages should vary based on country selection and validation type."
+  - value: "Military address abbreviations (AA, AE, AP) require specific validation messaging."
+---
+
+import PatternPage from '@site/src/components/PatternPage';
+
+<PatternPage frontMatter={frontMatter} />
+

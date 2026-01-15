@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/punctuation-and-formatting",
+  "title": "Punctuation and formatting",
+  "description": "Guidelines for punctuation marks and text formatting on VA.gov.",
+  "source": "@site/docs/content-style-guide/punctuation-and-formatting.md",
+  "sourceDirName": "content-style-guide",
+  "slug": "/content-style-guide/punctuation-and-formatting",
+  "permalink": "/docs/content-style-guide/punctuation-and-formatting",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/punctuation-and-formatting.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 18,
+  "frontMatter": {
+    "title": "Punctuation and formatting",
+    "description": "Guidelines for punctuation marks and text formatting on VA.gov.",
+    "sidebar_position": 18
+  }
+}

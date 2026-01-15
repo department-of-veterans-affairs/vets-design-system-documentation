@@ -1,0 +1,63 @@
+---
+cms_editable: true
+title: Memorable Date
+description: Three text fields for easy date entry
+maturity: deployed
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-memorable-date
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Memorable+date%22
+related:
+  - name: Date Input
+    url: ../date-input
+    description: Alternative date component with select boxes
+usage:
+  when_to_use:
+    - value: Collecting dates in forms (birthdays, service dates, life events)
+    - value: Workflows involving multiple date inputs
+    - value: Scenarios where accessibility for assistive technology users is critical
+content_considerations:
+  - value: Default hint text can be hidden via `remove-date-hint` attribute
+  - value: Useful for workflows with many date inputs to reduce repetition
+  - value: Extra hint text can be added for additional context
+accessibility:
+  - value: Mixing field types (text + select) caused assistive technology issues
+  - value: Default uses text inputs exclusively for accessibility
+  - value: Previously tested against older accessibility criteria
+examples:
+  - title: Default
+    description: Default
+    storyId: uswds-va-memorable-date--default
+    height: 150
+  - title: With month select
+    description: With month select
+    storyId: uswds-va-memorable-date--with-month-select
+    height: 150
+  - title: With error
+    description: With error
+    storyId: uswds-va-memorable-date--error
+    height: 180
+code_usage: |
+  <!-- Default with text inputs -->
+  <va-memorable-date
+    label="Date of birth"
+    name="dateOfBirth"
+    required
+  ></va-memorable-date>
+
+  <!-- With month select dropdown -->
+  <va-memorable-date
+    label="Date of birth"
+    name="dateOfBirth"
+    month-select
+    required
+  ></va-memorable-date>
+component_tag: va-memorable-date
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

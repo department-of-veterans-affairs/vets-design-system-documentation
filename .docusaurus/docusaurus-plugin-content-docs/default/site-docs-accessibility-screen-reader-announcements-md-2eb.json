@@ -1,0 +1,25 @@
+{
+  "id": "accessibility/screen-reader-announcements",
+  "title": "Screen reader announcements",
+  "description": "Guidelines for when and how to use screen reader announcements effectively.",
+  "source": "@site/docs/accessibility/screen-reader-announcements.md",
+  "sourceDirName": "accessibility",
+  "slug": "/accessibility/screen-reader-announcements",
+  "permalink": "/docs/accessibility/screen-reader-announcements",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/accessibility/screen-reader-announcements.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "title": "Screen reader announcements",
+    "description": "Guidelines for when and how to use screen reader announcements effectively.",
+    "sidebar_position": 7
+  },
+  "sidebar": "accessibilitySidebar",
+  "previous": {
+    "title": "Focus management",
+    "permalink": "/docs/accessibility/focus-management"
+  }
+}

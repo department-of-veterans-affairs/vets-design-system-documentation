@@ -1,0 +1,21 @@
+{
+  "id": "components/search-input/checklist",
+  "title": "Search input - Component checklist",
+  "description": "Maturity and asset checklist for the Search input component",
+  "source": "@site/docs/components/search-input/checklist.mdx",
+  "sourceDirName": "components/search-input",
+  "slug": "/components/search-input/checklist",
+  "permalink": "/docs/components/search-input/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/search-input/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Search input - Component checklist",
+    "description": "Maturity and asset checklist for the Search input component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

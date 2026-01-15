@@ -1,0 +1,20 @@
+{
+  "id": "components/form/text-input/checklist",
+  "title": "Text Input - Component checklist",
+  "description": "Maturity and asset checklist for the Text Input component",
+  "source": "@site/docs/components/form/text-input/checklist.mdx",
+  "sourceDirName": "components/form/text-input",
+  "slug": "/components/form/text-input/checklist",
+  "permalink": "/docs/components/form/text-input/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/form/text-input/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Text Input - Component checklist",
+    "description": "Maturity and asset checklist for the Text Input component",
+    "sidebar_label": "Checklist"
+  }
+}

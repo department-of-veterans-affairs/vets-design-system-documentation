@@ -1,0 +1,51 @@
+---
+cms_editable: true
+title: Address block
+description: Highlights mailing addresses, contact information, and personal information
+maturity: best-practice
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-address-block
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Address+block%22
+related:
+  - name: Accordion
+    url: ../accordion
+    description: For displaying series of 3+ addresses
+  - name: Telephone
+    url: ../telephone
+    description: For phone numbers in isolation
+usage:
+  when_to_use:
+    - value: Addresses in content blocks where the blue bar aids scanning
+    - value: Form intro pages needing mailing addresses displayed
+    - value: Calling out addresses within paragraph or list contexts
+    - value: Highlighting VA facility contact information
+  when_to_consider_else:
+    - value: Addresses directly below a clear "Address" header (unnecessary on VA Health Center pages)
+    - value: Series of 3+ addresses; use [Accordion](/docs/components/accordion) instead
+    - value: Phone numbers in isolation; use [Telephone](/docs/components/telephone) component instead
+content_considerations:
+  - value: Spell out street names completely; avoid abbreviations
+  - value: Defer to local compass point conventions (e.g., "N." vs. "North")
+  - value: Format zip codes as 5-digit or with hyphen for extended format (12345-6789)
+  - value: Write "PO" without periods for PO Box
+  - value: Don't require Veterans to provide 9-digit zip codes; 5 digits is sufficient
+  - value: Format provided addresses consistently with hyphenated extended zip codes
+accessibility:
+  - value: The component uses semantic HTML to ensure addresses are properly announced by screen readers
+  - value: The visual styling (blue bar) provides additional context for sighted users
+  - value: Ensure address content is logically structured with appropriate line breaks
+code_usage: |
+  <p class="va-address-block">
+    VA Debt Management Center<br />
+    P.O. Box 11930<br />
+    St. Paul, MN 55111-0930
+  </p>
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

@@ -1,0 +1,21 @@
+{
+  "id": "components/card/checklist",
+  "title": "Card - Component checklist",
+  "description": "Maturity and asset checklist for the Card component",
+  "source": "@site/docs/components/card/checklist.mdx",
+  "sourceDirName": "components/card",
+  "slug": "/components/card/checklist",
+  "permalink": "/docs/components/card/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/card/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Card - Component checklist",
+    "description": "Maturity and asset checklist for the Card component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "id": "patterns/ask-users-for/signature/index",
+  "title": "Signature",
+  "description": "Follow this pattern to capture digital signatures when forms require users to certify information.",
+  "source": "@site/docs/patterns/ask-users-for/signature/index.mdx",
+  "sourceDirName": "patterns/ask-users-for/signature",
+  "slug": "/patterns/ask-users-for/signature/",
+  "permalink": "/docs/patterns/ask-users-for/signature/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/patterns/ask-users-for/signature/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Signature",
+    "description": "Follow this pattern to capture digital signatures when forms require users to certify information.",
+    "cms_editable": true,
+    "category": "ask-users-for",
+    "maturity": "deployed",
+    "sidebar_position": 6,
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms",
+    "github": "https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-signature%22",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Ask+users+for...+Signature%22",
+    "intro": "Use this pattern when forms require users to certify information through a statement of truth. An e-signature has the same legal weight as a handwritten signature under federal law.",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Forms requiring certification.** When users must certify the accuracy of their submission through a statement of truth."
+        },
+        {
+          "value": "**Legal compliance.** When forms must comply with electronic signature regulations (GPEA, UETA, ESIGN)."
+        }
+      ],
+      "design_principles": [
+        {
+          "value": "**Do not add a privacy policy checkbox.** The signature pattern replaces the need for a separate privacy acknowledgment."
+        },
+        {
+          "value": "**Use Statement of truth component.** Implement the dedicated component rather than alternatives."
+        },
+        {
+          "value": "**Include proper timestamps.** All signatures must include UTC date and time stamps."
+        },
+        {
+          "value": "**Indicate authentication level.** Watermarks must reflect whether the user was unauthenticated, IAL1, or IAL2."
+        }
+      ],
+      "when_not_to_use": [
+        {
+          "value": "**Not all forms need this.** Only use for forms that specifically require certification or statement of truth."
+        }
+      ]
+    },
+    "examples": [
+      {
+        "title": "Statement of truth",
+        "description": "Signature section with certification statement and text input for user's name."
+      },
+      {
+        "title": "PDF with signature",
+        "description": "Generated PDF showing signature field, date signed, and authentication watermark."
+      }
+    ],
+    "how_to_build": {
+      "intro": "The signature pattern captures electronic signatures that comply with federal regulations.",
+      "steps": [
+        {
+          "value": "Include instructions around signing the certification."
+        },
+        {
+          "value": "Use a card container for the signature section."
+        },
+        {
+          "value": "Implement the Statement of truth component."
+        },
+        {
+          "value": "For PDFs, include: signature field (user's name), date signed (UTC), and authentication watermark."
+        },
+        {
+          "value": "Watermark format varies by authentication level: unauthenticated, IAL1, or IAL2."
+        }
+      ],
+      "components_used": [
+        {
+          "name": "Statement of truth",
+          "url": "/docs/components/form/statement-of-truth"
+        }
+      ]
+    },
+    "code_usage": "The signature pattern is implemented using the Statement of truth component.\n\n**PDF Requirements:**\n- Signature Field: Veteran's name from Statement of truth input\n- Date Signed: Current submission date (UTC)\n- Watermark: Bottom-right with authentication level and timestamp\n- VA DATE STAMP Box: Fill when form includes it (upper right corner)\n\n**Watermark formats by authentication level:**\n- Unauthenticated: \"Signed electronically at [HH:MM] UTC [YYYY-MM-DD]. Signee not signed in.\"\n- IAL1: \"...hasn't verified their identity.\"\n- IAL2: \"...signed with an identity-verified account.\"\n",
+    "content_considerations": [
+      {
+        "value": "Use UTC timezone for all date/time stamps."
+      },
+      {
+        "value": "Timestamps should reflect initial submission date, not PDF generation date."
+      },
+      {
+        "value": "For signed-in users, use their authenticated name for the signature field."
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Ensure the signature input field has a clear, visible label."
+      },
+      {
+        "value": "The statement of truth must be readable by screen readers."
+      },
+      {
+        "value": "Provide clear instructions about what the user is certifying."
+      }
+    ]
+  },
+  "sidebar": "patternsSidebar",
+  "previous": {
+    "title": "Direct deposit",
+    "permalink": "/docs/patterns/ask-users-for/direct-deposit/"
+  },
+  "next": {
+    "title": "Social Security or VA file number",
+    "permalink": "/docs/patterns/ask-users-for/social-security-number/"
+  }
+}

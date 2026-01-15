@@ -1,8 +1,10 @@
-name: Deploy site
+name: Deploy Docusaurus Site
+
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
     inputs:
       reason:
@@ -10,60 +12,105 @@ on:
         required: false
         default: 'Manual deployment triggered'
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages-${{ github.ref }}"
+  cancel-in-progress: false
+
 jobs:
-  deploy:
-    strategy:
-      matrix:
-        environment: [{ bucket: staging-design.va.gov, config: staging.yml }, { bucket: design.va.gov, config: prod.yml }]
+  build:
+    name: Build Docusaurus Site
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
-    - name: Use Node.js 16.x
-      uses: actions/setup-node@v3
-      with:
-        node-version: 16.x
-        cache: 'yarn'
-    - uses: ruby/setup-ruby@v1
-      with:
-        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-    - run: yarn install
-    - run: yarn run build
-    - run: bundle exec jekyll build --config _config.yml,jekyll-configs/${{ matrix.environment.config }}
-    - name: Make BUILD.txt file
-      # The -e flag enables the interpretation of the \n newline character
-      run: |
-        echo -e "REF=${{ github.sha }}\n\
-        BUILD_ID=${{ github.run_id }}\n\
-        BUILDTIME=$(date)" > _site/BUILD.txt
-    # We are taking these extra steps due to some differences between Jekyll and AWS S3.
-    # To access a .html file served from S3, the URL needs to have the .html extension.
-    # We're removing the extension to make the URLs prettier.
-    # More context:
-    #   https://simpleit.rocks/ruby/jekyll/tutorials/having-pretty-urls-in-a-jekyll-website-hosted-in-amazon-s3/
-    - name: Remove .html extension on non-index files
-      run: |
-        find _site/ -type f ! -iname 'index.html' -iname '*.html' \
-        -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
-    - uses: aws-actions/configure-aws-credentials@v4
-      with:
-        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: "us-gov-west-1"
-    - name: Sync extensionless html files with correct type
-      run: |
-        aws s3 sync _site s3://${{ matrix.environment.bucket }} \
-        --acl public-read \
-        --delete \
-        --exclude "storybook/*" \
-        --exclude "*.*" \
-        --content-type "text/html"
-    - name: Sync remaining files
-      run: |
-        aws s3 sync _site s3://${{ matrix.environment.bucket }} \
-        --acl public-read \
-        --delete \
-        --exclude "*" \
-        --include "*.*" \
-        --exclude "storybook/*"
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
+      - name: Make BUILD.txt file
+        run: |
+          echo -e "REF=${{ github.sha }}\n\
+          BUILD_ID=${{ github.run_id }}\n\
+          BUILDTIME=$(date)" > build/BUILD.txt
+
+      - name: Upload build artifacts for staging
+        if: github.ref != 'refs/heads/main'
+        uses: actions/upload-artifact@v4
+        with:
+          name: docusaurus-build-staging
+          path: build
+
+      - name: Upload build artifacts for production
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-artifact@v4
+        with:
+          name: docusaurus-build-production
+          path: build
+
+  deploy-staging:
+    name: Deploy to Staging
+    if: github.ref != 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: docusaurus-build-staging
+          path: build
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: "us-gov-west-1"
+
+      - name: Deploy to staging S3
+        run: |
+          aws s3 sync build s3://staging-design.va.gov \
+          --acl public-read \
+          --delete \
+          --exclude "storybook/*"
+
+  deploy-production:
+    name: Deploy to Production
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: docusaurus-build-production
+          path: build
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: "us-gov-west-1"
+
+      - name: Deploy to production S3
+        run: |
+          aws s3 sync build s3://design.va.gov \
+          --acl public-read \
+          --delete \
+          --exclude "storybook/*"

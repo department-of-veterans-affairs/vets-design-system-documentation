@@ -1,0 +1,22 @@
+---
+cms_editable: false
+title: Critical Action - Component checklist
+description: Maturity and asset checklist for the Critical Action component
+sidebar_label: Checklist
+unlisted: true
+---
+
+import ComponentChecklist from '@site/src/components/ComponentChecklist';
+import { checklistData } from '@site/src/data/component-checklist';
+import ChecklistDefinitions from '@site/docs/_partials/checklist-definitions.mdx';
+import Link from '@docusaurus/Link';
+
+# Critical Action checklist
+
+<Link to="/docs/components/critical-action">← Back to Critical Action</Link>
+
+This checklist tracks the maturity, code assets, visual assets, and accessibility audit status for the Critical Action component.
+
+<ComponentChecklist data={checklistData['critical-action']} platform="web" />
+
+<ChecklistDefinitions />

@@ -1,0 +1,126 @@
+{
+  "id": "templates/signed-out-vs-signed-in/index",
+  "title": "Signed out vs. signed in",
+  "description": "Template addressing how VA.gov displays different content based on user authentication status.",
+  "source": "@site/docs/templates/signed-out-vs-signed-in/index.mdx",
+  "sourceDirName": "templates/signed-out-vs-signed-in",
+  "slug": "/templates/signed-out-vs-signed-in/",
+  "permalink": "/docs/templates/signed-out-vs-signed-in/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/templates/signed-out-vs-signed-in/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 14,
+  "frontMatter": {
+    "title": "Signed out vs. signed in",
+    "description": "Template addressing how VA.gov displays different content based on user authentication status.",
+    "cms_editable": true,
+    "category": "pages",
+    "maturity": "deployed",
+    "sidebar_position": 14,
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms",
+    "github": "https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22template-auth-states%22",
+    "intro": "This template addresses how VA.gov displays different content, features, and CTAs depending on user authentication status. When unsigned, minimal information is shown; upon sign-in and identity verification, personalized content appears.",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Pages with VA benefits or services.** Any page offering VA benefits or services."
+        },
+        {
+          "value": "**Applications requiring authentication.** Forms that need user identity."
+        },
+        {
+          "value": "**Conditional features.** Pages with features based on login status."
+        },
+        {
+          "value": "**User-dependent options.** When user information affects available options."
+        }
+      ]
+    },
+    "structure": {
+      "intro": "The template covers site header and contextual CTA variations based on authentication state.",
+      "sections": [
+        {
+          "title": "Site Header - Large screens (signed out)",
+          "description": "Standard Sign In button in header. Navigation without personalization."
+        },
+        {
+          "title": "Site Header - Large screens (signed in)",
+          "description": "User's first name replaces Sign In button. 'My VA' and 'My Health' added to top navigation."
+        },
+        {
+          "title": "Site Header - Small screens (signed out)",
+          "description": "Menu-based navigation. Standard Sign In link."
+        },
+        {
+          "title": "Site Header - Small screens (signed in)",
+          "description": "User's first name displayed. 'My VA' and 'My Health' options in expandable menu."
+        },
+        {
+          "title": "CTA Required to Continue (Green Alert)",
+          "description": "Signed out: 'Create account' messaging. Signed in: 'Verify identity' messaging."
+        },
+        {
+          "title": "CTA Beneficial, Not Required (Blue Alert)",
+          "description": "Encourages sign-in as primary action. Non-blocking, informational approach."
+        },
+        {
+          "title": "Error State (Red Alert)",
+          "description": "Blocks process continuation. Always provides resolution path."
+        }
+      ],
+      "components_used": [
+        {
+          "name": "Alert",
+          "url": "/docs/components/alert",
+          "description": "Green, blue, and red variants"
+        },
+        {
+          "name": "Header",
+          "url": "/docs/components/header"
+        },
+        {
+          "name": "Button",
+          "url": "/docs/components/button"
+        }
+      ]
+    },
+    "content_guidelines": [
+      {
+        "value": "Tailor messaging to authentication state."
+      },
+      {
+        "value": "Provide clear next steps for each state."
+      },
+      {
+        "value": "Distinguish between required and recommended actions."
+      },
+      {
+        "value": "Always offer error resolution paths."
+      },
+      {
+        "value": "Use appropriate alert colors: green for required, blue for beneficial, red for errors."
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Proper focus management in navigation state changes."
+      },
+      {
+        "value": "Alert role semantics for status messages."
+      },
+      {
+        "value": "Screen reader considerations for conditional content."
+      },
+      {
+        "value": "Keyboard navigation support for all interactive elements."
+      }
+    ]
+  },
+  "sidebar": "templatesSidebar",
+  "previous": {
+    "title": "Search results",
+    "permalink": "/docs/templates/search-results/"
+  }
+}

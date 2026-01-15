@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/neutral-language",
+  "title": "Neutral language",
+  "description": "Guidelines for using inclusive, device-neutral, and experience-neutral language on VA.gov.",
+  "source": "@site/docs/content-style-guide/neutral-language.md",
+  "sourceDirName": "content-style-guide",
+  "slug": "/content-style-guide/neutral-language",
+  "permalink": "/docs/content-style-guide/neutral-language",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/neutral-language.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 15,
+  "frontMatter": {
+    "title": "Neutral language",
+    "description": "Guidelines for using inclusive, device-neutral, and experience-neutral language on VA.gov.",
+    "sidebar_position": 15
+  }
+}

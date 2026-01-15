@@ -1,0 +1,23 @@
+---
+cms_editable: false
+title: Accordion - Component checklist
+description: Maturity and asset checklist for the Accordion component
+sidebar_label: Checklist
+unlisted: true
+---
+
+import ChecklistDefinitions from '@site/docs/_partials/checklist-definitions.mdx';
+import parentFrontMatter from './index.mdx';
+
+export const checklist = parentFrontMatter.frontMatter?.checklist || {};
+
+# Accordion checklist
+
+<ChecklistPage
+  componentName="Accordion"
+  componentPath="/docs/components/accordion"
+  checklist={checklist}
+  platform="web"
+/>
+
+<ChecklistDefinitions />

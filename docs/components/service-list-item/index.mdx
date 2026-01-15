@@ -1,0 +1,82 @@
+---
+cms_editable: true
+title: Service List Item
+description: Summarizes a benefit or tool with status and navigation
+maturity: deployed
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-service-list-item
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library
+storybook: https://design.va.gov/storybook/?path=/docs/components-va-service-list-item--docs
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Service+list+item%22
+related:
+  - name: Critical Action
+    url: ../critical-action
+    description: Nested component for actionable items
+  - name: Tag
+    url: ../tag/
+    description: Used for status display
+  - name: Link
+    url: ../link/
+    description: Used for navigation elements
+  - name: Card
+    url: ../card
+    description: Alternative for non-service content
+  - name: List
+    url: ../list
+    description: Alternative for unordered content
+usage:
+  when_to_use:
+    - value: Displaying benefits or tools users are enrolled in or have access to
+    - value: Presenting VA benefits with standardized icons and status indicators
+    - value: Organizing services in a managed list format on dashboard pages
+    - value: Showing high-level service information with navigation to details
+  when_to_consider_else:
+    - value: For non-benefit/non-tool content; use [Card](/docs/components/card) instead
+    - value: When content needs radio buttons, checkboxes, or links in containers
+    - value: For benefits shown interactively within forms
+    - value: For unordered list content; use [List](/docs/components/list) component instead
+content_considerations:
+  - value: Keep service names clear and recognizable
+  - value: Use consistent status labels across all service items
+  - value: "Limit service details to 1-5 lines of \"Label: Value\" pairs"
+  - value: Critical actions should follow the "[Verb] by [deadline]" pattern
+  - value: Ensure optional links are descriptive and indicate destinations
+accessibility:
+  - value: Adjust heading levels appropriately within page structure using `serviceNameHeadingLevel`
+  - value: Format optional links descriptively (note downloads, external links)
+  - value: Follow [Link](/docs/components/link/) component accessibility patterns
+  - value: Status information should be accessible to screen readers via the Tag component
+  - value: Critical actions inherit accessibility from the [Critical Action](/docs/components/critical-action) component
+examples:
+  - title: Minimal (required elements)
+    description: Minimal (required elements)
+    storyId: components-va-service-list-item--minimal
+    height: 150
+  - title: With Critical Action
+    description: With Critical Action
+    storyId: components-va-service-list-item--with-action
+    height: 200
+  - title: With optional link
+    description: With optional link
+    storyId: components-va-service-list-item--with-link
+    height: 180
+  - title: Maximal (all elements)
+    description: Maximal (all elements)
+    storyId: components-va-service-list-item--maximal
+    height: 250
+code_usage: |
+  <va-service-list-item
+    service-name="Health care"
+    service-link="/health-care"
+    service-status="Active"
+    icon="health"
+  ></va-service-list-item>
+component_tag: va-service-list-item
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

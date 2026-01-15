@@ -1,0 +1,22 @@
+---
+cms_editable: false
+title: Card - Component checklist
+description: Maturity and asset checklist for the Card component
+sidebar_label: Checklist
+unlisted: true
+---
+
+import ComponentChecklist from '@site/src/components/ComponentChecklist';
+import { checklistData } from '@site/src/data/component-checklist';
+import ChecklistDefinitions from '@site/docs/_partials/checklist-definitions.mdx';
+import Link from '@docusaurus/Link';
+
+# Card checklist
+
+<Link to="/docs/components/card">← Back to Card</Link>
+
+This checklist tracks the maturity, code assets, visual assets, and accessibility audit status for the Card component.
+
+<ComponentChecklist data={checklistData.card} platform="web" />
+
+<ChecklistDefinitions />

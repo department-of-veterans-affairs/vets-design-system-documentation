@@ -1,0 +1,29 @@
+{
+  "id": "foundation/spacing-units",
+  "title": "Spacing Units",
+  "description": "Consistent spacing scale based on multiples of 8 for margins, padding, and dimensions",
+  "source": "@site/docs/foundation/spacing-units.md",
+  "sourceDirName": "foundation",
+  "slug": "/foundation/spacing-units",
+  "permalink": "/docs/foundation/spacing-units",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/spacing-units.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Spacing Units",
+    "description": "Consistent spacing scale based on multiples of 8 for margins, padding, and dimensions",
+    "sidebar_position": 4
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Typography",
+    "permalink": "/docs/foundation/typography"
+  },
+  "next": {
+    "title": "Breakpoints",
+    "permalink": "/docs/foundation/breakpoints"
+  }
+}

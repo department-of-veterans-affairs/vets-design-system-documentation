@@ -1,0 +1,29 @@
+{
+  "id": "foundation/utilities/margins",
+  "title": "Margins",
+  "description": "CSS classes for controlling spacing around elements.",
+  "source": "@site/docs/foundation/utilities/margins.md",
+  "sourceDirName": "foundation/utilities",
+  "slug": "/foundation/utilities/margins",
+  "permalink": "/docs/foundation/utilities/margins",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/utilities/margins.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "title": "Margins",
+    "description": "CSS classes for controlling spacing around elements.",
+    "sidebar_position": 12
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Line height",
+    "permalink": "/docs/foundation/utilities/line-height"
+  },
+  "next": {
+    "title": "Measure",
+    "permalink": "/docs/foundation/utilities/measure"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "foundation/utilities/font-size",
+  "title": "Font size",
+  "description": "CSS classes for modifying text sizing with responsive support.",
+  "source": "@site/docs/foundation/utilities/font-size.md",
+  "sourceDirName": "foundation/utilities",
+  "slug": "/foundation/utilities/font-size",
+  "permalink": "/docs/foundation/utilities/font-size",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/foundation/utilities/font-size.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "title": "Font size",
+    "description": "CSS classes for modifying text sizing with responsive support.",
+    "sidebar_position": 7
+  },
+  "sidebar": "foundationSidebar",
+  "previous": {
+    "title": "Font family",
+    "permalink": "/docs/foundation/utilities/font-family"
+  },
+  "next": {
+    "title": "Font style",
+    "permalink": "/docs/foundation/utilities/font-style"
+  }
+}

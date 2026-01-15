@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/health-content/index",
+  "title": "Health content",
+  "description": "Guidelines for writing accessible, empathetic health content that helps Veterans make informed decisions about their healthcare.",
+  "source": "@site/docs/content-style-guide/health-content/index.md",
+  "sourceDirName": "content-style-guide/health-content",
+  "slug": "/content-style-guide/health-content/",
+  "permalink": "/docs/content-style-guide/health-content/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/health-content/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Health content",
+    "description": "Guidelines for writing accessible, empathetic health content that helps Veterans make informed decisions about their healthcare.",
+    "sidebar_position": 1
+  }
+}

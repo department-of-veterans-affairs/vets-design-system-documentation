@@ -1,0 +1,27 @@
+{
+  "id": "ia/url-standards/redirects",
+  "title": "Redirects",
+  "description": "Guidelines for implementing URL redirects on VA.gov",
+  "source": "@site/docs/ia/url-standards/redirects.md",
+  "sourceDirName": "ia/url-standards",
+  "slug": "/ia/url-standards/redirects",
+  "permalink": "/docs/ia/url-standards/redirects",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/ia/url-standards/redirects.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Redirects",
+    "description": "Guidelines for implementing URL redirects on VA.gov"
+  },
+  "sidebar": "iaSidebar",
+  "previous": {
+    "title": "URL Standards",
+    "permalink": "/docs/ia/url-standards/"
+  },
+  "next": {
+    "title": "Vanity URLs",
+    "permalink": "/docs/ia/url-standards/vanity-urls"
+  }
+}

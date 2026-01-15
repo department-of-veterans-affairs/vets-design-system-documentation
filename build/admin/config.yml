@@ -1,0 +1,1184 @@
+backend:
+  name: github
+  repo: department-of-veterans-affairs/platform  # Update with your actual repo
+  branch: main
+  base_url: https://your-oauth-provider.com  # Will need OAuth setup for production
+
+# For local development, use this instead:
+local_backend: true
+
+# Editorial workflow enables draft/review/ready states
+publish_mode: editorial_workflow
+
+# Media files configuration
+media_folder: static/img/uploads
+public_folder: /img/uploads
+
+# Site URL for preview links
+# For local development, use localhost. Change to https://design.va.gov for production.
+site_url: https://design.va.gov
+display_url: https://design.va.gov
+
+# Logo for the CMS
+logo_url: /img/logo.svg
+
+# Slug settings
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: "-"
+
+# Collections define what content can be edited
+collections:
+  # ===================
+  # COMPONENTS
+  # ===================
+  - name: components
+    label: "Components"
+    label_singular: "Component"
+    folder: docs/components
+    create: true
+    extension: mdx
+    format: frontmatter
+    preview_path: "docs/components/{{dirname}}"
+    filter:
+      field: cms_editable
+      value: true
+    nested:
+      depth: 100
+      summary: "{{title}}"
+    fields:
+      - { name: cms_editable, label: CMS Editable, widget: hidden, default: true, required: false }
+      - { name: title, label: "Title *", widget: string, hint: "Required - Component name" }
+      - { name: description, label: "Description *", widget: string, hint: "Required - Brief description for SEO (under 160 characters)" }
+      - name: maturity
+        label: Maturity Status
+        widget: select
+        required: false
+        options:
+          - { label: "-- Select --", value: "" }
+          - { label: "Deployed", value: "deployed" }
+          - { label: "Use with Caution", value: "use-with-caution" }
+          - { label: "Don't Use", value: "dont-use" }
+          - { label: "Best Practice", value: "best-practice" }
+          - { label: "Deprecated", value: "deprecated" }
+      - name: platforms
+        label: Platforms
+        widget: select
+        multiple: true
+        required: false
+        options:
+          - { label: "Web", value: "web" }
+          - { label: "Mobile", value: "mobile" }
+        default: ["web"]
+      - name: figma
+        label: Figma URL
+        widget: string
+        required: false
+        hint: "Link to Figma design file"
+      - name: storybook
+        label: Storybook URL
+        widget: string
+        required: false
+        hint: "Link to Storybook examples"
+      - name: github
+        label: GitHub Issues URL
+        widget: string
+        required: false
+        hint: "Link to GitHub issues for this component"
+      - name: discussions
+        label: GitHub Discussions URL
+        widget: string
+        required: false
+        hint: "Link to GitHub discussions for this component (optional)"
+      - name: research
+        label: Research URL
+        widget: string
+        required: false
+        hint: "Link to research documentation"
+      - { name: sidebar_position, label: Sidebar Position, widget: number, required: false }
+      - { name: sidebar_label, label: Sidebar Label, widget: string, required: false, hint: "Override the sidebar display name" }
+      - { name: component_tag, label: Component Tag (Web), widget: string, required: false, hint: "Web component tag name (e.g., va-button)" }
+      - { name: component_tag_mobile, label: Component Tag (Mobile), widget: string, required: false, hint: "Mobile component tag name - if same as web, leave blank" }
+
+      # --- BODY CONTENT (for freeform MDX content) ---
+      - name: body
+        label: Body Content
+        widget: markdown
+        required: false
+        hint: "Main page content (for components using freeform content instead of structured fields)"
+
+      # --- MERMAID DIAGRAMS ---
+      - name: mermaid_diagrams
+        label: Mermaid Diagrams
+        widget: list
+        required: false
+        collapsed: true
+        hint: "Add flowcharts, sequence diagrams, or other Mermaid diagrams"
+        fields:
+          - { name: title, label: Title, widget: string, required: false, hint: "Optional heading for the diagram" }
+          - { name: description, label: Description, widget: text, required: false, hint: "Optional description explaining the diagram" }
+          - name: code
+            label: Mermaid Code
+            widget: text
+            hint: "Mermaid diagram code (e.g., graph TD; A-->B)"
+
+      # --- CONTENT SECTIONS (for structured editing) ---
+      - name: intro
+        label: Introduction
+        widget: markdown
+        required: false
+        hint: "Brief introduction paragraph(s) about this component"
+
+      - name: variations
+        label: Variations (Sub-navigation)
+        widget: list
+        required: false
+        collapsed: true
+        hint: "Sub-components or variations of this component (e.g., Alert Expandable for Alert)"
+        fields:
+          - { name: name, label: Name, widget: string, required: false }
+          - { name: url, label: URL, widget: string, required: false, hint: "Relative path like ./alert-expandable" }
+          - { name: description, label: Description, widget: string, required: false }
+
+      - name: related
+        label: Related Components
+        widget: list
+        required: false
+        collapsed: true
+        hint: "Different but related components (not variations of this component)"
+        fields:
+          - { name: name, label: Name, widget: string, required: false }
+          - { name: url, label: URL, widget: string, required: false, hint: "Relative path like ./additional-info" }
+          - { name: description, label: Description, widget: string, required: false }
+
+      - name: examples
+        label: Examples (Web)
+        widget: list
+        required: false
+        hint: "Web component examples - each will render a Storybook embed"
+        fields:
+          - { name: title, label: Title, widget: string, required: false }
+          - { name: description, label: Description, widget: string, required: false }
+          - { name: storyId, label: Storybook Story ID, widget: string, required: false, hint: "e.g., uswds-va-accordion--default" }
+          - { name: height, label: Height (px), widget: number, default: 250, required: false }
+
+      - name: examples_mobile
+        label: Examples (Mobile)
+        widget: list
+        required: false
+        hint: "Mobile app examples - only shown when both web and mobile platforms are selected"
+        fields:
+          - { name: title, label: Title, widget: string, required: false }
+          - { name: description, label: Description, widget: string, required: false }
+          - { name: storyId, label: Storybook Story ID, widget: string, required: false, hint: "e.g., mobile-va-button--primary" }
+          - { name: height, label: Height (px), widget: number, default: 250, required: false }
+
+      - name: usage
+        label: Usage Guidelines
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - name: when_to_use
+            label: When to use
+            widget: list
+            required: false
+            allow_add: true
+            field: { name: value, label: Item, widget: text, required: false }
+          - name: when_to_consider_else
+            label: When to consider something else
+            widget: list
+            required: false
+            allow_add: true
+            field: { name: value, label: Item, widget: text, required: false }
+          - name: behavior
+            label: Behavior
+            widget: list
+            required: false
+            allow_add: true
+            field: { name: value, label: Item, widget: text, required: false }
+
+      - name: code_usage
+        label: Code Usage (Web)
+        widget: markdown
+        required: false
+        hint: "Web code examples and implementation details"
+
+      - name: code_usage_mobile
+        label: Code Usage (Mobile)
+        widget: markdown
+        required: false
+        hint: "Mobile app code examples - only shown when both web and mobile platforms are selected"
+
+      - name: content_considerations
+        label: Content Considerations
+        widget: list
+        required: false
+        allow_add: true
+        field: { name: value, label: Item, widget: text, required: false }
+
+      - name: accessibility
+        label: Accessibility Considerations
+        widget: list
+        required: false
+        allow_add: true
+        field: { name: value, label: Item, widget: text, required: false }
+
+      # --- SHARED CONTENT BLOCKS ---
+      - name: shared_content
+        label: Shared Content Blocks
+        widget: select
+        multiple: true
+        required: false
+        hint: "Select reusable content blocks to include on this page"
+        options:
+          - { label: "About this checklist", value: "checklist-definitions" }
+          - { label: "Buttons vs. links", value: "buttons-vs-links" }
+          - { label: "Do not disable buttons", value: "disabled-buttons" }
+          - { label: "Events", value: "analytics-event" }
+          - { label: "Touch target size", value: "target-size" }
+
+      # --- COMPONENT CHECKLIST ---
+      - name: checklist
+        label: Component Checklist
+        widget: object
+        required: false
+        collapsed: true
+        hint: "Track maturity, code assets, visual assets, and accessibility audit status"
+        fields:
+          # Completion dates
+          - name: web_completed
+            label: Web Completed Date
+            widget: string
+            required: false
+            hint: "e.g., January 2024"
+          - name: mobile_completed
+            label: Mobile Completed Date
+            widget: string
+            required: false
+            hint: "e.g., March 2024"
+
+          # Maturity
+          - name: maturity
+            label: Maturity
+            widget: object
+            required: false
+            collapsed: true
+            fields:
+              - { name: guidance_web, label: "Guidance (Web)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+              - { name: guidance_mobile, label: "Guidance (Mobile)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+              - { name: research_web, label: "Research (Web)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+              - { name: research_mobile, label: "Research (Mobile)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+              - { name: stability_web, label: "Stability (Web)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+              - { name: stability_mobile, label: "Stability (Mobile)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+              - { name: adoption_web, label: "Adoption (Web)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+              - { name: adoption_mobile, label: "Adoption (Mobile)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+
+          # Code Assets
+          - name: code_assets
+            label: Code Assets
+            widget: object
+            required: false
+            collapsed: true
+            fields:
+              - { name: variations_web, label: "Variations (Web)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+              - { name: variations_mobile, label: "Variations (Mobile)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+              - { name: responsive_web, label: "Responsive (Web)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+              - { name: responsive_mobile, label: "Responsive (Mobile)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+              - { name: interactive_states_web, label: "Interactive States (Web)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+              - { name: interactive_states_mobile, label: "Interactive States (Mobile)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+              - { name: tokens_web, label: "Tokens (Web)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+              - { name: tokens_mobile, label: "Tokens (Mobile)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+              - { name: i18n_web, label: "Internationalization (Web)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+              - { name: i18n_mobile, label: "Internationalization (Mobile)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+
+          # Visual Assets
+          - name: visual_assets
+            label: Visual Assets
+            widget: object
+            required: false
+            collapsed: true
+            fields:
+              - { name: variations_web, label: "Variations (Web)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+              - { name: variations_mobile, label: "Variations (Mobile)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+              - { name: responsive_web, label: "Responsive (Web)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+              - { name: responsive_mobile, label: "Responsive (Mobile)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+              - { name: interactive_states_web, label: "Interactive States (Web)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+              - { name: interactive_states_mobile, label: "Interactive States (Mobile)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+              - { name: tokens_web, label: "Tokens (Web)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+              - { name: tokens_mobile, label: "Tokens (Mobile)", widget: select, options: ["complete", "incomplete", "n/a", "pending"], default: "pending", required: false }
+
+          # Accessibility Audit - Web
+          - name: a11y_audit_web
+            label: Accessibility Audit (Web)
+            widget: object
+            required: false
+            collapsed: true
+            fields:
+              - { name: last_audit_date, label: Last Audit Date, widget: string, required: false }
+              - { name: code_review, label: Code Review, widget: select, options: ["pass", "conditional", "fail", "pending"], default: "pending", required: false }
+              - { name: readability, label: Readability, widget: select, options: ["pass", "conditional", "fail", "pending"], default: "pending", required: false }
+              - { name: automated_scans, label: Automated Scans, widget: select, options: ["pass", "conditional", "fail", "pending"], default: "pending", required: false }
+              - { name: use_of_color, label: Use of Color, widget: select, options: ["pass", "conditional", "fail", "pending"], default: "pending", required: false }
+              - { name: text_resizing, label: Text Resizing, widget: select, options: ["pass", "conditional", "fail", "pending"], default: "pending", required: false }
+              - { name: screen_readers, label: Screen Readers, widget: select, options: ["pass", "conditional", "fail", "pending"], default: "pending", required: false }
+              - { name: input_methods, label: Input Methods, widget: select, options: ["pass", "conditional", "fail", "pending"], default: "pending", required: false }
+
+          # Accessibility Audit - Mobile
+          - name: a11y_audit_mobile
+            label: Accessibility Audit (Mobile)
+            widget: object
+            required: false
+            collapsed: true
+            fields:
+              - { name: last_audit_date, label: Last Audit Date, widget: string, required: false }
+              - { name: code_review, label: Code Review, widget: select, options: ["pass", "conditional", "fail", "pending"], default: "pending", required: false }
+              - { name: readability, label: Readability, widget: select, options: ["pass", "conditional", "fail", "pending"], default: "pending", required: false }
+              - { name: automated_scans, label: Automated Scans, widget: select, options: ["pass", "conditional", "fail", "pending"], default: "pending", required: false }
+              - { name: use_of_color, label: Use of Color, widget: select, options: ["pass", "conditional", "fail", "pending"], default: "pending", required: false }
+              - { name: text_resizing, label: Text Resizing, widget: select, options: ["pass", "conditional", "fail", "pending"], default: "pending", required: false }
+              - { name: screen_readers, label: Screen Readers, widget: select, options: ["pass", "conditional", "fail", "pending"], default: "pending", required: false }
+              - { name: input_methods, label: Input Methods, widget: select, options: ["pass", "conditional", "fail", "pending"], default: "pending", required: false }
+
+    meta:
+      path:
+        widget: string
+        label: "Path"
+        index_file: index
+
+  # ===================
+  # PATTERNS (Structured Template)
+  # ===================
+  - name: patterns
+    label: "Patterns"
+    label_singular: "Pattern"
+    folder: docs/patterns
+    create: true
+    extension: mdx
+    format: frontmatter
+    preview_path: "docs/patterns/{{dirname}}"
+    nested:
+      depth: 3
+      summary: "{{title}}"
+    fields:
+      # --- BASIC INFO ---
+      - { name: title, label: "Title *", widget: string, hint: "Pattern name" }
+      - { name: description, label: "Description *", widget: string, hint: "Brief description for SEO (under 160 characters)" }
+      - { name: cms_editable, label: CMS Editable, widget: hidden, default: true }
+
+      - name: category
+        label: Category
+        widget: select
+        options:
+          - { label: "Ask users for...", value: "ask-users-for" }
+          - { label: "Help users to...", value: "help-users-to" }
+          - { label: "Deprecated", value: "deprecated" }
+        default: "ask-users-for"
+
+      - name: maturity
+        label: Maturity Status
+        widget: select
+        required: false
+        options:
+          - { label: "Deployed", value: "deployed" }
+          - { label: "Use with Caution", value: "use-with-caution" }
+          - { label: "Don't Use", value: "dont-use" }
+          - { label: "Best Practice", value: "best-practice" }
+          - { label: "Deprecated", value: "deprecated" }
+        default: "use-with-caution"
+
+      # --- EXTERNAL LINKS ---
+      - name: figma
+        label: Figma URL
+        widget: string
+        required: false
+        hint: "Link to Figma design file"
+      - name: github
+        label: GitHub Issues URL
+        widget: string
+        required: false
+        hint: "Link to GitHub issues for this pattern"
+      - name: discussions
+        label: GitHub Discussions URL
+        widget: string
+        required: false
+        hint: "Link to GitHub discussions for this pattern (optional)"
+      - name: research
+        label: Research URL
+        widget: string
+        required: false
+        hint: "Link to research documentation"
+      - name: code
+        label: Code/Storybook URL
+        widget: string
+        required: false
+        hint: "Link to code examples or Storybook"
+
+      - { name: sidebar_position, label: Sidebar Position, widget: number, required: false }
+
+      # --- CONTENT SECTIONS ---
+      - name: intro
+        label: Introduction
+        widget: text
+        required: false
+        hint: "Brief introduction paragraph about this pattern"
+
+      - name: usage
+        label: Usage Guidelines
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - name: when_to_use
+            label: When to use this pattern
+            widget: list
+            required: false
+            allow_add: true
+            field: { name: value, label: Item, widget: text }
+          - name: design_principles
+            label: Design principles
+            widget: list
+            required: false
+            allow_add: true
+            field: { name: value, label: Item, widget: text }
+          - name: when_not_to_use
+            label: When not to use this pattern
+            widget: list
+            required: false
+            allow_add: true
+            field: { name: value, label: Item, widget: text }
+
+      - name: examples
+        label: Examples
+        widget: list
+        required: false
+        hint: "Visual examples of the pattern"
+        fields:
+          - { name: title, label: Title, widget: string, required: false }
+          - { name: description, label: Description, widget: text, required: false }
+          - { name: image, label: Image, widget: image, required: false }
+          - { name: alt, label: Alt Text, widget: string, required: false }
+
+      - name: how_to_build
+        label: How to Design and Build
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - name: intro
+            label: Introduction
+            widget: text
+            required: false
+            hint: "Brief intro to design/build guidance"
+          - name: steps
+            label: How this pattern works
+            widget: list
+            required: false
+            allow_add: true
+            hint: "Step-by-step implementation (will be numbered)"
+            field: { name: value, label: Step, widget: text }
+          - name: components_used
+            label: Components used in this pattern
+            widget: list
+            required: false
+            fields:
+              - { name: name, label: Component Name, widget: string }
+              - { name: url, label: URL, widget: string, hint: "e.g., /docs/components/alert" }
+
+      - name: code_usage
+        label: Code Usage
+        widget: markdown
+        required: false
+        hint: "Code examples and implementation details (markdown supported)"
+
+      - name: content_considerations
+        label: Content Considerations (List)
+        widget: list
+        required: false
+        allow_add: true
+        hint: "General content guidelines as bullet points"
+        field: { name: value, label: Item, widget: text }
+
+      - name: content_specs
+        label: Content Specifications (Table)
+        widget: list
+        required: false
+        hint: "Field-by-field specifications with hint text and error messages"
+        fields:
+          - { name: field, label: Field Name, widget: string }
+          - { name: hint_text, label: Hint Text, widget: string, required: false }
+          - { name: error_message, label: Error Message, widget: string, required: false }
+
+      - name: accessibility
+        label: Accessibility Considerations
+        widget: list
+        required: false
+        allow_add: true
+        field: { name: value, label: Item, widget: text }
+
+      # --- MERMAID DIAGRAMS ---
+      - name: mermaid_diagrams
+        label: Mermaid Diagrams
+        widget: list
+        required: false
+        collapsed: true
+        hint: "Add flowcharts, sequence diagrams, or other Mermaid diagrams"
+        fields:
+          - { name: title, label: Title, widget: string, required: false, hint: "Optional heading for the diagram" }
+          - { name: description, label: Description, widget: text, required: false, hint: "Optional description explaining the diagram" }
+          - name: code
+            label: Mermaid Code
+            widget: text
+            hint: "Mermaid diagram code (e.g., graph TD; A-->B)"
+
+    meta:
+      path:
+        widget: string
+        label: "Path"
+        index_file: index
+
+  # ===================
+  # FOUNDATION
+  # ===================
+  - name: foundation
+    label: "Foundation"
+    label_singular: "Foundation Page"
+    folder: docs/foundation
+    create: true
+    extension: md
+    format: frontmatter
+    preview_path: "docs/foundation/{{dirname}}"
+    nested:
+      depth: 2
+      summary: "{{title}}"
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: description, label: Description, widget: string }
+      - { name: sidebar_position, label: Sidebar Position, widget: number, required: false }
+      - { name: body, label: Body, widget: markdown }
+      - name: mermaid_diagrams
+        label: Mermaid Diagrams
+        widget: list
+        required: false
+        collapsed: true
+        hint: "Add flowcharts, sequence diagrams, or other Mermaid diagrams"
+        fields:
+          - { name: title, label: Title, widget: string, required: false, hint: "Optional heading for the diagram" }
+          - { name: description, label: Description, widget: text, required: false, hint: "Optional description explaining the diagram" }
+          - name: code
+            label: Mermaid Code
+            widget: text
+            hint: "Mermaid diagram code (e.g., graph TD; A-->B)"
+    meta:
+      path:
+        widget: string
+        label: "Path"
+        index_file: index
+
+  # ===================
+  # CONTENT GUIDELINES
+  # ===================
+  - name: content
+    label: "Content Guidelines"
+    label_singular: "Content Page"
+    folder: docs/content
+    create: true
+    extension: md
+    format: frontmatter
+    preview_path: "docs/content/{{dirname}}"
+    nested:
+      depth: 2
+      summary: "{{title}}"
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: description, label: Description, widget: string }
+      - { name: sidebar_position, label: Sidebar Position, widget: number, required: false }
+      - { name: body, label: Body, widget: markdown }
+      - name: mermaid_diagrams
+        label: Mermaid Diagrams
+        widget: list
+        required: false
+        collapsed: true
+        hint: "Add flowcharts, sequence diagrams, or other Mermaid diagrams"
+        fields:
+          - { name: title, label: Title, widget: string, required: false, hint: "Optional heading for the diagram" }
+          - { name: description, label: Description, widget: text, required: false, hint: "Optional description explaining the diagram" }
+          - name: code
+            label: Mermaid Code
+            widget: text
+            hint: "Mermaid diagram code (e.g., graph TD; A-->B)"
+    meta:
+      path:
+        widget: string
+        label: "Path"
+        index_file: index
+
+  # ===================
+  # ACCESSIBILITY
+  # ===================
+  - name: accessibility
+    label: "Accessibility"
+    label_singular: "Accessibility Page"
+    folder: docs/accessibility
+    create: true
+    extension: md
+    format: frontmatter
+    preview_path: "docs/accessibility/{{dirname}}"
+    nested:
+      depth: 2
+      summary: "{{title}}"
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: description, label: Description, widget: string }
+      - { name: sidebar_position, label: Sidebar Position, widget: number, required: false }
+      - { name: body, label: Body, widget: markdown }
+      - name: mermaid_diagrams
+        label: Mermaid Diagrams
+        widget: list
+        required: false
+        collapsed: true
+        hint: "Add flowcharts, sequence diagrams, or other Mermaid diagrams"
+        fields:
+          - { name: title, label: Title, widget: string, required: false, hint: "Optional heading for the diagram" }
+          - { name: description, label: Description, widget: text, required: false, hint: "Optional description explaining the diagram" }
+          - name: code
+            label: Mermaid Code
+            widget: text
+            hint: "Mermaid diagram code (e.g., graph TD; A-->B)"
+    meta:
+      path:
+        widget: string
+        label: "Path"
+        index_file: index
+
+  # ===================
+  # ABOUT
+  # ===================
+  - name: about
+    label: "About"
+    label_singular: "About Page"
+    folder: docs/about
+    create: true
+    extension: md
+    format: frontmatter
+    preview_path: "docs/about/{{dirname}}"
+    nested:
+      depth: 2
+      summary: "{{title}}"
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: description, label: Description, widget: string, required: false }
+      - { name: sidebar_position, label: Sidebar Position, widget: number, required: false }
+      - { name: sidebar_label, label: Sidebar Label, widget: string, required: false, hint: "Override the sidebar display name" }
+      - { name: body, label: Body, widget: markdown }
+      - name: mermaid_diagrams
+        label: Mermaid Diagrams
+        widget: list
+        required: false
+        collapsed: true
+        hint: "Add flowcharts, sequence diagrams, or other Mermaid diagrams"
+        fields:
+          - { name: title, label: Title, widget: string, required: false, hint: "Optional heading for the diagram" }
+          - { name: description, label: Description, widget: text, required: false, hint: "Optional description explaining the diagram" }
+          - name: code
+            label: Mermaid Code
+            widget: text
+            hint: "Mermaid diagram code (e.g., graph TD; A-->B)"
+    meta:
+      path:
+        widget: string
+        label: "Path"
+        index_file: index
+
+  # ===================
+  # TEMPLATES (Structured Template)
+  # ===================
+  - name: templates
+    label: "Templates"
+    label_singular: "Template"
+    folder: docs/templates
+    create: true
+    extension: mdx
+    format: frontmatter
+    preview_path: "docs/templates/{{dirname}}"
+    nested:
+      depth: 3
+      summary: "{{title}}"
+    fields:
+      # --- BASIC INFO ---
+      - { name: title, label: "Title *", widget: string, hint: "Template name" }
+      - { name: description, label: "Description *", widget: string, hint: "Brief description for SEO (under 160 characters)" }
+      - { name: cms_editable, label: CMS Editable, widget: hidden, default: true }
+
+      - name: category
+        label: Category
+        widget: select
+        options:
+          - { label: "Forms", value: "forms" }
+          - { label: "Pages", value: "pages" }
+          - { label: "Email", value: "email" }
+        default: "pages"
+
+      - name: maturity
+        label: Maturity Status
+        widget: select
+        required: false
+        options:
+          - { label: "Deployed", value: "deployed" }
+          - { label: "Use with Caution", value: "use-with-caution" }
+          - { label: "Don't Use", value: "dont-use" }
+          - { label: "Best Practice", value: "best-practice" }
+        default: "use-with-caution"
+
+      # --- EXTERNAL LINKS ---
+      - name: figma
+        label: Figma URL
+        widget: string
+        required: false
+        hint: "Link to Figma design file"
+      - name: github
+        label: GitHub Issues URL
+        widget: string
+        required: false
+        hint: "Link to GitHub issues for this template"
+      - name: discussions
+        label: GitHub Discussions URL
+        widget: string
+        required: false
+        hint: "Link to GitHub discussions for this template"
+      - name: research
+        label: Research URL
+        widget: string
+        required: false
+        hint: "Link to research documentation"
+      - name: storybook
+        label: Storybook URL
+        widget: string
+        required: false
+        hint: "Link to Storybook examples"
+
+      - { name: sidebar_position, label: Sidebar Position, widget: number, required: false }
+
+      # --- CONTENT SECTIONS ---
+      - name: intro
+        label: Introduction
+        widget: text
+        required: false
+        hint: "Brief introduction paragraph about this template"
+
+      - name: usage
+        label: Usage Guidelines
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - name: when_to_use
+            label: When to use this template
+            widget: list
+            required: false
+            allow_add: true
+            field: { name: value, label: Item, widget: text }
+          - name: usability
+            label: Usability guidance
+            widget: list
+            required: false
+            allow_add: true
+            field: { name: value, label: Item, widget: text }
+          - name: when_not_to_use
+            label: When to consider something else
+            widget: list
+            required: false
+            allow_add: true
+            field: { name: value, label: Item, widget: text }
+
+      - name: structure
+        label: Structure & Anatomy
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - name: intro
+            label: Introduction
+            widget: text
+            required: false
+            hint: "Brief intro to the template structure"
+          - name: sections
+            label: Template sections
+            widget: list
+            required: false
+            hint: "Ordered list of template sections/anatomy"
+            fields:
+              - { name: title, label: Section Title, widget: string }
+              - { name: description, label: Description, widget: text, required: false }
+          - name: components_used
+            label: Components used in this template
+            widget: list
+            required: false
+            fields:
+              - { name: name, label: Component Name, widget: string }
+              - { name: url, label: URL, widget: string, hint: "e.g., /docs/components/alert" }
+              - { name: description, label: Description, widget: string, required: false }
+
+      - name: examples
+        label: Examples
+        widget: list
+        required: false
+        hint: "Production examples of this template"
+        fields:
+          - { name: title, label: Title, widget: string, required: false }
+          - { name: description, label: Description, widget: text, required: false }
+          - { name: url, label: Live URL, widget: string, required: false, hint: "Link to live example" }
+          - { name: image, label: Screenshot, widget: image, required: false }
+          - { name: alt, label: Alt Text, widget: string, required: false }
+
+      - name: content_guidelines
+        label: Content Guidelines
+        widget: list
+        required: false
+        allow_add: true
+        hint: "Content guidelines for this template"
+        field: { name: value, label: Item, widget: text }
+
+      - name: accessibility
+        label: Accessibility Considerations
+        widget: list
+        required: false
+        allow_add: true
+        field: { name: value, label: Item, widget: text }
+
+      # --- MERMAID DIAGRAMS ---
+      - name: mermaid_diagrams
+        label: Mermaid Diagrams
+        widget: list
+        required: false
+        collapsed: true
+        hint: "Add flowcharts, sequence diagrams, or other Mermaid diagrams"
+        fields:
+          - { name: title, label: Title, widget: string, required: false, hint: "Optional heading for the diagram" }
+          - { name: description, label: Description, widget: text, required: false, hint: "Optional description explaining the diagram" }
+          - name: code
+            label: Mermaid Code
+            widget: text
+            hint: "Mermaid diagram code (e.g., graph TD; A-->B)"
+
+    meta:
+      path:
+        widget: string
+        label: "Path"
+        index_file: index
+
+  # ===================
+  # IA (Information Architecture)
+  # ===================
+  - name: ia
+    label: "Information Architecture"
+    label_singular: "IA Page"
+    folder: docs/ia
+    create: true
+    extension: md
+    format: frontmatter
+    preview_path: "docs/ia/{{dirname}}"
+    nested:
+      depth: 2
+      summary: "{{title}}"
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: description, label: Description, widget: string }
+      - { name: sidebar_position, label: Sidebar Position, widget: number, required: false }
+      - { name: body, label: Body, widget: markdown }
+      - name: mermaid_diagrams
+        label: Mermaid Diagrams
+        widget: list
+        required: false
+        collapsed: true
+        hint: "Add flowcharts, sequence diagrams, or other Mermaid diagrams"
+        fields:
+          - { name: title, label: Title, widget: string, required: false, hint: "Optional heading for the diagram" }
+          - { name: description, label: Description, widget: text, required: false, hint: "Optional description explaining the diagram" }
+          - name: code
+            label: Mermaid Code
+            widget: text
+            hint: "Mermaid diagram code (e.g., graph TD; A-->B)"
+    meta:
+      path:
+        widget: string
+        label: "Path"
+        index_file: index
+
+  # ===================
+  # BLOG / RELEASE NOTES
+  # ===================
+  - name: blog
+    label: "Release Notes"
+    label_singular: "Release Note"
+    folder: blog
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "blog/{{slug}}"
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: slug, label: Slug, widget: string }
+      - { name: date, label: Date, widget: datetime }
+      - name: authors
+        label: Authors
+        widget: list
+        required: false
+        field: { name: author, label: Author, widget: string }
+      - name: tags
+        label: Tags
+        widget: list
+        required: false
+        field: { name: tag, label: Tag, widget: string }
+      - { name: body, label: Body, widget: markdown }
+
+  # ===================
+  # SHARED CONTENT (Partials)
+  # ===================
+  # Reusable content blocks that can be imported into multiple pages
+  # Usage: import ButtonsVsLinks from '@site/docs/_partials/accessibility/buttons-vs-links.mdx';
+  - name: partials
+    label: "Shared Content"
+    label_singular: "Shared Content Block"
+    folder: docs/_partials
+    create: true
+    extension: mdx
+    format: frontmatter
+    nested:
+      depth: 2
+      summary: "{{title}}"
+    fields:
+      - name: title
+        label: Title
+        widget: string
+        hint: "Name of this shared content block (e.g., 'Buttons vs Links Guidance')"
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        hint: "Brief description of where this content is used"
+      - name: used_in
+        label: Used In
+        widget: list
+        required: false
+        hint: "List of pages that include this content (for reference)"
+        field: { name: page, label: Page, widget: string }
+      - name: body
+        label: Content
+        widget: markdown
+        hint: "The reusable content. Use standard Markdown formatting."
+      - name: mermaid_diagrams
+        label: Mermaid Diagrams
+        widget: list
+        required: false
+        collapsed: true
+        hint: "Add flowcharts, sequence diagrams, or other Mermaid diagrams"
+        fields:
+          - { name: title, label: Title, widget: string, required: false, hint: "Optional heading for the diagram" }
+          - { name: description, label: Description, widget: text, required: false, hint: "Optional description explaining the diagram" }
+          - name: code
+            label: Mermaid Code
+            widget: text
+            hint: "Mermaid diagram code (e.g., graph TD; A-->B)"
+    meta:
+      path:
+        widget: string
+        label: "Path"
+        index_file: index
+
+  # ===================
+  # SIDEBAR CATEGORIES
+  # ===================
+  # Edit folder labels, positions, and display options in the sidebar
+  - name: sidebar-categories
+    label: "Sidebar Categories"
+    label_singular: "Sidebar Category"
+    files:
+      # Component categories
+      - name: components-alert
+        label: "Components → Alert"
+        file: docs/components/alert/_category_.json
+        fields:
+          - { name: label, label: "Sidebar Label", widget: string, hint: "Display name in the sidebar menu" }
+          - { name: position, label: "Position", widget: number, required: false, hint: "Order in the sidebar (lower = higher)" }
+          - { name: collapsible, label: "Collapsible", widget: boolean, default: true }
+          - { name: collapsed, label: "Collapsed by Default", widget: boolean, default: false }
+
+      - name: components-banner
+        label: "Components → Banner"
+        file: docs/components/banner/_category_.json
+        fields:
+          - { name: label, label: "Sidebar Label", widget: string }
+          - { name: position, label: "Position", widget: number, required: false }
+          - { name: collapsible, label: "Collapsible", widget: boolean, default: true }
+          - { name: collapsed, label: "Collapsed by Default", widget: boolean, default: false }
+
+      - name: components-button
+        label: "Components → Button"
+        file: docs/components/button/_category_.json
+        fields:
+          - { name: label, label: "Sidebar Label", widget: string }
+          - { name: position, label: "Position", widget: number, required: false }
+          - { name: collapsible, label: "Collapsible", widget: boolean, default: true }
+          - { name: collapsed, label: "Collapsed by Default", widget: boolean, default: false }
+
+      - name: components-footer
+        label: "Components → Footer"
+        file: docs/components/footer/_category_.json
+        fields:
+          - { name: label, label: "Sidebar Label", widget: string }
+          - { name: position, label: "Position", widget: number, required: false }
+          - { name: collapsible, label: "Collapsible", widget: boolean, default: true }
+          - { name: collapsed, label: "Collapsed by Default", widget: boolean, default: false }
+
+      - name: components-form
+        label: "Components → Form"
+        file: docs/components/form/_category_.json
+        fields:
+          - { name: label, label: "Sidebar Label", widget: string }
+          - { name: position, label: "Position", widget: number, required: false }
+          - { name: collapsible, label: "Collapsible", widget: boolean, default: true }
+          - { name: collapsed, label: "Collapsed by Default", widget: boolean, default: false }
+
+      - name: components-header
+        label: "Components → Header"
+        file: docs/components/header/_category_.json
+        fields:
+          - { name: label, label: "Sidebar Label", widget: string }
+          - { name: position, label: "Position", widget: number, required: false }
+          - { name: collapsible, label: "Collapsible", widget: boolean, default: true }
+          - { name: collapsed, label: "Collapsed by Default", widget: boolean, default: false }
+
+      - name: components-link
+        label: "Components → Link"
+        file: docs/components/link/_category_.json
+        fields:
+          - { name: label, label: "Sidebar Label", widget: string }
+          - { name: position, label: "Position", widget: number, required: false }
+          - { name: collapsible, label: "Collapsible", widget: boolean, default: true }
+          - { name: collapsed, label: "Collapsed by Default", widget: boolean, default: false }
+
+      - name: components-modal
+        label: "Components → Modal"
+        file: docs/components/modal/_category_.json
+        fields:
+          - { name: label, label: "Sidebar Label", widget: string }
+          - { name: position, label: "Position", widget: number, required: false }
+          - { name: collapsible, label: "Collapsible", widget: boolean, default: true }
+          - { name: collapsed, label: "Collapsed by Default", widget: boolean, default: false }
+
+      - name: components-tag
+        label: "Components → Tag"
+        file: docs/components/tag/_category_.json
+        fields:
+          - { name: label, label: "Sidebar Label", widget: string }
+          - { name: position, label: "Position", widget: number, required: false }
+          - { name: collapsible, label: "Collapsible", widget: boolean, default: true }
+          - { name: collapsed, label: "Collapsed by Default", widget: boolean, default: false }
+
+      - name: components-deprecated
+        label: "Components → Deprecated"
+        file: docs/components/deprecated/_category_.json
+        fields:
+          - { name: label, label: "Sidebar Label", widget: string, hint: "Display name in the sidebar menu" }
+          - { name: position, label: "Position", widget: number, required: false, hint: "Order in the sidebar (lower = higher)" }
+          - { name: collapsible, label: "Collapsible", widget: boolean, default: true }
+          - { name: collapsed, label: "Collapsed by Default", widget: boolean, default: true }
+
+      - name: patterns-ask-users-for
+        label: "Patterns → Ask users for..."
+        file: docs/patterns/ask-users-for/_category_.json
+        fields:
+          - { name: label, label: "Sidebar Label", widget: string }
+          - { name: position, label: "Position", widget: number, required: false }
+          - { name: collapsible, label: "Collapsible", widget: boolean, default: true }
+          - { name: collapsed, label: "Collapsed by Default", widget: boolean, default: false }
+          - name: link
+            label: "Category Link"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: type, label: "Type", widget: hidden, default: "generated-index" }
+              - { name: description, label: "Description", widget: text, required: false, hint: "Description shown on the category index page" }
+
+      - name: patterns-help-users-to
+        label: "Patterns → Help users to..."
+        file: docs/patterns/help-users-to/_category_.json
+        fields:
+          - { name: label, label: "Sidebar Label", widget: string }
+          - { name: position, label: "Position", widget: number, required: false }
+          - { name: collapsible, label: "Collapsible", widget: boolean, default: true }
+          - { name: collapsed, label: "Collapsed by Default", widget: boolean, default: false }
+          - name: link
+            label: "Category Link"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: type, label: "Type", widget: hidden, default: "generated-index" }
+              - { name: description, label: "Description", widget: text, required: false, hint: "Description shown on the category index page" }
+
+      - name: patterns-deprecated
+        label: "Patterns → Deprecated"
+        file: docs/patterns/deprecated/_category_.json
+        fields:
+          - { name: label, label: "Sidebar Label", widget: string }
+          - { name: position, label: "Position", widget: number, required: false }
+          - { name: collapsible, label: "Collapsible", widget: boolean, default: true }
+          - { name: collapsed, label: "Collapsed by Default", widget: boolean, default: true }
+
+      - name: templates-forms
+        label: "Templates → Forms"
+        file: docs/templates/forms/_category_.json
+        fields:
+          - { name: label, label: "Sidebar Label", widget: string }
+          - { name: position, label: "Position", widget: number, required: false }
+          - { name: collapsible, label: "Collapsible", widget: boolean, default: true }
+          - { name: collapsed, label: "Collapsed by Default", widget: boolean, default: false }
+
+      # About categories
+      - name: about-contributing
+        label: "About → Contributing"
+        file: docs/about/contributing/_category_.json
+        fields:
+          - { name: label, label: "Sidebar Label", widget: string }
+          - { name: position, label: "Position", widget: number, required: false }
+          - { name: collapsible, label: "Collapsible", widget: boolean, default: true }
+          - { name: collapsed, label: "Collapsed by Default", widget: boolean, default: true }
+
+      - name: about-designers
+        label: "About → For designers"
+        file: docs/about/designers/_category_.json
+        fields:
+          - { name: label, label: "Sidebar Label", widget: string }
+          - { name: position, label: "Position", widget: number, required: false }
+          - { name: collapsible, label: "Collapsible", widget: boolean, default: true }
+          - { name: collapsed, label: "Collapsed by Default", widget: boolean, default: true }
+
+      - name: about-developers
+        label: "About → For developers"
+        file: docs/about/developers/_category_.json
+        fields:
+          - { name: label, label: "Sidebar Label", widget: string }
+          - { name: position, label: "Position", widget: number, required: false }
+          - { name: collapsible, label: "Collapsible", widget: boolean, default: true }
+          - { name: collapsed, label: "Collapsed by Default", widget: boolean, default: true }
+
+      - name: about-metrics
+        label: "About → Metrics"
+        file: docs/about/metrics/_category_.json
+        fields:
+          - { name: label, label: "Sidebar Label", widget: string }
+          - { name: position, label: "Position", widget: number, required: false }
+          - { name: collapsible, label: "Collapsible", widget: boolean, default: true }
+          - { name: collapsed, label: "Collapsed by Default", widget: boolean, default: true }
+
+      - name: about-naming-conventions
+        label: "About → Naming conventions"
+        file: docs/about/naming-conventions/_category_.json
+        fields:
+          - { name: label, label: "Sidebar Label", widget: string }
+          - { name: position, label: "Position", widget: number, required: false }
+          - { name: collapsible, label: "Collapsible", widget: boolean, default: true }
+          - { name: collapsed, label: "Collapsed by Default", widget: boolean, default: true }

@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/error-messages/feedback",
+  "title": "Feedback messages",
+  "description": "Guidelines for feedback messages that respond to user actions, especially for create, read, update, and delete operations.",
+  "source": "@site/docs/content-style-guide/error-messages/feedback.md",
+  "sourceDirName": "content-style-guide/error-messages",
+  "slug": "/content-style-guide/error-messages/feedback",
+  "permalink": "/docs/content-style-guide/error-messages/feedback",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/error-messages/feedback.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Feedback messages",
+    "description": "Guidelines for feedback messages that respond to user actions, especially for create, read, update, and delete operations.",
+    "sidebar_position": 5
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/abbreviations-and-acronyms",
+  "title": "Abbreviations and acronyms",
+  "description": "Guidelines for using abbreviations and acronyms on VA.gov following AP Stylebook standards.",
+  "source": "@site/docs/content-style-guide/abbreviations-and-acronyms.md",
+  "sourceDirName": "content-style-guide",
+  "slug": "/content-style-guide/abbreviations-and-acronyms",
+  "permalink": "/docs/content-style-guide/abbreviations-and-acronyms",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/abbreviations-and-acronyms.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Abbreviations and acronyms",
+    "description": "Guidelines for using abbreviations and acronyms on VA.gov following AP Stylebook standards.",
+    "sidebar_position": 3
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "content/error-messages",
+  "title": "Error Messages",
+  "description": "Guidelines for writing clear, helpful error and alert messages",
+  "source": "@site/docs/content/error-messages.md",
+  "sourceDirName": "content",
+  "slug": "/content/error-messages",
+  "permalink": "/docs/content/error-messages",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content/error-messages.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Error Messages",
+    "description": "Guidelines for writing clear, helpful error and alert messages",
+    "sidebar_position": 3
+  },
+  "sidebar": "contentSidebar",
+  "previous": {
+    "title": "Plain Language",
+    "permalink": "/docs/content/plain-language"
+  },
+  "next": {
+    "title": "Links",
+    "permalink": "/docs/content/links"
+  }
+}

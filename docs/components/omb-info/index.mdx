@@ -1,0 +1,66 @@
+---
+cms_editable: true
+title: OMB info
+description: Displays legally required information on Veteran-facing form introduction pages
+maturity: best-practice
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-omb-info
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+storybook: https://design.va.gov/storybook/?path=/docs/uswds-va-omb-info--docs
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+OMB+info%22
+usage:
+  when_to_use:
+    - value: Respondent burden estimate (when available)
+    - value: OMB control number
+    - value: Expiration date
+    - value: Privacy Act statement link
+content_considerations:
+  - value: Content should not be altered except in documented exception cases
+  - value: Use the standard wording provided by the component
+  - value: Burden estimates should be accurate and up-to-date
+  - value: Privacy Act statement content is standardized
+accessibility:
+  - value: No special considerations beyond standard form practices
+  - value: Screen readers correctly interpret "#" as "number"
+  - value: The Privacy Act modal follows standard modal accessibility patterns
+examples:
+  - title: Default
+    description: Default
+    storyId: uswds-va-omb-info--default
+    height: 200
+  - title: Without OMB Number
+    description: For exceptional circumstances when OMB number is pending.
+    storyId: uswds-va-omb-info--without-omb-number
+    height: 200
+  - title: Without Respondent Burden
+    description: When burden estimate is unavailable.
+    storyId: uswds-va-omb-info--without-response-burden
+    height: 200
+code_usage: |
+  <!-- Default with all information -->
+  <va-omb-info
+    res-burden="30"
+    omb-number="2900-0001"
+    exp-date="12/31/2025"
+  ></va-omb-info>
+
+  <!-- Without OMB number (pending approval) -->
+  <va-omb-info
+    res-burden="30"
+    exp-date="12/31/2025"
+  ></va-omb-info>
+
+  <!-- Without respondent burden -->
+  <va-omb-info
+    omb-number="2900-0001"
+    exp-date="12/31/2025"
+  ></va-omb-info>
+component_tag: va-omb-info
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

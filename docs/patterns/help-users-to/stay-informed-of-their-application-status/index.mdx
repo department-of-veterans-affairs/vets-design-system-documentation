@@ -1,0 +1,60 @@
+---
+title: Stay informed of their form submission status
+description: Follow this pattern to notify users about form submission progress and status.
+cms_editable: true
+category: help-users-to
+maturity: use-with-caution
+sidebar_position: 6
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms
+github: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-submission-status%22
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Help+users+to...+Stay+informed%22
+
+intro: Use this pattern to notify users about form submission progress, receipt confirmation, and error states at critical touchpoints in the submission lifecycle.
+
+usage:
+  when_to_use:
+    - value: "**Any form with backend transmission.** When online forms transmit data to a backend system and require submission status updates."
+  design_principles:
+    - value: "**Synchronous forms:** Send one 'Received' email notification for instant processing."
+    - value: "**Asynchronous forms:** Send three notifications—submission in progress, received, and action needed."
+    - value: "**Protect PII/PHI:** Exclude personal information and obscure filenames in notifications."
+    - value: "**Implement fallback notifications:** Try secondary email, then SMS, then veteran support handoff."
+
+examples:
+  - title: Email notifications
+    description: Five email templates via VA Notify for different submission states.
+  - title: My VA status cards
+    description: Cards showing submission states (in progress, received, action needed).
+  - title: Form confirmation page
+    description: Success message with what to expect next.
+
+how_to_build:
+  intro: The pattern addresses three key notification moments in the submission lifecycle.
+  steps:
+    - value: "**Email notifications:** Use VA Notify templates reviewed by Privacy Officers."
+    - value: "**Protect PII/PHI:** Exclude personal information and obscure filenames."
+    - value: "**Implement fallbacks:** Try secondary email, then SMS, then veteran support handoff."
+    - value: "**Form confirmation pages:** Differentiate between 'submitted' (sync) and 'in progress' (async)."
+    - value: "**What to expect section:** Explain next expected communications."
+    - value: "**My VA status cards:** Show Submission in progress, Received, or Action needed."
+  components_used:
+    - name: Alert
+      url: /docs/components/alert
+    - name: Card
+      url: /docs/components/card
+
+content_considerations:
+  - value: "Email templates require Privacy Officer review before deployment."
+  - value: "Templates are available in VA Notify (requires account access)."
+  - value: "Differentiate messaging between authenticated and unauthenticated users."
+
+accessibility:
+  - value: "Ensure status cards are accessible to screen readers."
+  - value: "Email content should be plain text friendly for accessibility."
+  - value: "Status updates should be clearly communicated without relying solely on color."
+---
+
+import PatternPage from '@site/src/components/PatternPage';
+
+<PatternPage frontMatter={frontMatter} />
+

@@ -1,0 +1,21 @@
+{
+  "id": "components/snackbar/checklist",
+  "title": "Snackbar - Component checklist",
+  "description": "Maturity and asset checklist for the Snackbar component",
+  "source": "@site/docs/components/snackbar/checklist.mdx",
+  "sourceDirName": "components/snackbar",
+  "slug": "/components/snackbar/checklist",
+  "permalink": "/docs/components/snackbar/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/snackbar/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Snackbar - Component checklist",
+    "description": "Maturity and asset checklist for the Snackbar component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

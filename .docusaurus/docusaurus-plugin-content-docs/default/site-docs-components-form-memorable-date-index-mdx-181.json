@@ -1,0 +1,99 @@
+{
+  "id": "components/form/memorable-date/index",
+  "title": "Memorable Date",
+  "description": "Three text fields for easy date entry",
+  "source": "@site/docs/components/form/memorable-date/index.mdx",
+  "sourceDirName": "components/form/memorable-date",
+  "slug": "/components/form/memorable-date/",
+  "permalink": "/docs/components/form/memorable-date/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/form/memorable-date/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Memorable Date",
+    "description": "Three text fields for easy date entry",
+    "maturity": "deployed",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-memorable-date",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Memorable+date%22",
+    "related": [
+      {
+        "name": "Date Input",
+        "url": "../date-input",
+        "description": "Alternative date component with select boxes"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "Collecting dates in forms (birthdays, service dates, life events)"
+        },
+        {
+          "value": "Workflows involving multiple date inputs"
+        },
+        {
+          "value": "Scenarios where accessibility for assistive technology users is critical"
+        }
+      ]
+    },
+    "content_considerations": [
+      {
+        "value": "Default hint text can be hidden via `remove-date-hint` attribute"
+      },
+      {
+        "value": "Useful for workflows with many date inputs to reduce repetition"
+      },
+      {
+        "value": "Extra hint text can be added for additional context"
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Mixing field types (text + select) caused assistive technology issues"
+      },
+      {
+        "value": "Default uses text inputs exclusively for accessibility"
+      },
+      {
+        "value": "Previously tested against older accessibility criteria"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Default",
+        "description": "Default",
+        "storyId": "uswds-va-memorable-date--default",
+        "height": 150
+      },
+      {
+        "title": "With month select",
+        "description": "With month select",
+        "storyId": "uswds-va-memorable-date--with-month-select",
+        "height": 150
+      },
+      {
+        "title": "With error",
+        "description": "With error",
+        "storyId": "uswds-va-memorable-date--error",
+        "height": 180
+      }
+    ],
+    "code_usage": "<!-- Default with text inputs -->\n<va-memorable-date\n  label=\"Date of birth\"\n  name=\"dateOfBirth\"\n  required\n></va-memorable-date>\n\n<!-- With month select dropdown -->\n<va-memorable-date\n  label=\"Date of birth\"\n  name=\"dateOfBirth\"\n  month-select\n  required\n></va-memorable-date>\n",
+    "component_tag": "va-memorable-date"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Label",
+    "permalink": "/docs/components/form/label/"
+  },
+  "next": {
+    "title": "Need Help?",
+    "permalink": "/docs/components/form/need-help/"
+  }
+}

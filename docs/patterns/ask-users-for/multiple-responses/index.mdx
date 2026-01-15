@@ -1,0 +1,85 @@
+---
+title: Multiple responses
+description: Follow this pattern to collect multiple responses from users when the same information needs to be gathered repeatedly.
+cms_editable: true
+category: ask-users-for
+maturity: deployed
+sidebar_position: 12
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms
+github: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-multiple-responses%22
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Ask+users+for...+Multiple+responses%22
+
+intro: Use this pattern when collecting the same data in a series of questions, such as details about dependents, multiple addresses, or service periods.
+
+usage:
+  when_to_use:
+    - value: "**Collecting the same data repeatedly.** When gathering the same information across multiple items."
+    - value: "**Unknown quantity of responses.** When the number of items to collect is not predetermined."
+    - value: "**1 to n items.** When forms need repeated similar information across one or more items."
+  design_principles:
+    - value: "**Use multi-page approach.** The default approach allows flexible data collection following 'one thing per page'."
+    - value: "**Provide required and optional variants.** Required variant needs at least one item; optional allows skipping entirely."
+    - value: "**Include summary page.** Show all collected items with edit and delete capabilities."
+    - value: "**Use zero-based indexing.** URL structure: /dependents/0/name for first item, /dependents/1/name for second."
+  when_not_to_use:
+    - value: "**Single or limited responses.** When collecting single or limited responses, use the Single Response pattern."
+    - value: "**Different questions per item.** When questions differ for each item."
+
+examples:
+  - title: Multi-page flow
+    description: Introduction page, questions flow, and summary page with edit/delete options.
+  - title: Add item variation
+    description: List of existing items with "Add a new item" action link.
+  - title: Summary cards
+    description: Cards showing collected information with edit and delete actions.
+
+how_to_build:
+  intro: The multiple responses pattern has several variations to choose from.
+  steps:
+    - value: "**Multi-page (recommended):** Introduction page → Questions flow → Summary page."
+    - value: "**Required variant:** At least one item must be added before proceeding."
+    - value: "**Optional variant:** Users may skip the section entirely."
+    - value: "**Add item variant:** Displays existing items as list with 'Add a new item' link. Best when data already exists."
+    - value: "Use URL structure: /<form-root>/<section>/<array-name>/<index>/<question-path>"
+    - value: "Provide edit and delete capabilities on summary page."
+    - value: "Use modal for delete confirmation."
+  components_used:
+    - name: Alert
+      url: /docs/components/alert
+    - name: Action link
+      url: /docs/components/link/action
+    - name: Card
+      url: /docs/components/card
+    - name: Modal
+      url: /docs/components/modal
+
+code_usage: |
+  The multiple responses pattern (also known as List & Loop) handles repeated data collection.
+
+  **URL Structure:**
+  ```
+  /<form-root>/<section>/<array-name>/<index>/<question-path>
+  ```
+
+  **Examples:**
+  - First dependent: `/form/dependents/0/name`
+  - Second dependent: `/form/dependents/1/name`
+
+  Use built-in error/validation messages and maintain consistent terminology throughout.
+
+content_considerations:
+  - value: "Use consistent terminology across pages (e.g., 'dependent' throughout, not 'family member' on some pages)."
+  - value: "Include hint text indicating required items or maximum limits."
+  - value: "Pre-populate fields during edits."
+
+accessibility:
+  - value: "Edit links and delete buttons require accessible text so screen reader users understand what is being edited or deleted."
+  - value: "Example: 'Edit John Smith' rather than just 'Edit'."
+  - value: "Ensure summary cards are navigable by keyboard."
+  - value: "Delete confirmation modal must trap focus appropriately."
+---
+
+import PatternPage from '@site/src/components/PatternPage';
+
+<PatternPage frontMatter={frontMatter} />
+

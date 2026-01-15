@@ -1,0 +1,21 @@
+{
+  "id": "components/divider/checklist",
+  "title": "Divider - Component checklist",
+  "description": "Maturity and asset checklist for the Divider component",
+  "source": "@site/docs/components/divider/checklist.mdx",
+  "sourceDirName": "components/divider",
+  "slug": "/components/divider/checklist",
+  "permalink": "/docs/components/divider/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/divider/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Divider - Component checklist",
+    "description": "Maturity and asset checklist for the Divider component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

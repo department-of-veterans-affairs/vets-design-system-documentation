@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/error-messages/access",
+  "title": "Access messages",
+  "description": "Guidelines for access messages that appear when users cannot access content or features.",
+  "source": "@site/docs/content-style-guide/error-messages/access.md",
+  "sourceDirName": "content-style-guide/error-messages",
+  "slug": "/content-style-guide/error-messages/access",
+  "permalink": "/docs/content-style-guide/error-messages/access",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/error-messages/access.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Access messages",
+    "description": "Guidelines for access messages that appear when users cannot access content or features.",
+    "sidebar_position": 4
+  }
+}

@@ -1,0 +1,189 @@
+.storyEmbed {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  margin: 1rem 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+.iframeContainer {
+  background: #fff;
+  position: relative;
+}
+
+.loadingOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: rgba(248, 249, 250, 0.95);
+  z-index: 1;
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.loadingSpinner {
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 50%;
+  border-top-color: #ff4785;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.errorState {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+  padding: 2rem;
+}
+
+.errorContent {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.errorIcon {
+  font-size: 2rem;
+}
+
+.errorText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.errorLabel {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #dc2626;
+}
+
+.errorMessage {
+  font-size: 0.75rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.iframe {
+  width: 100%;
+  border: none;
+  display: block;
+}
+
+.preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 2rem;
+}
+
+.previewContent {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.previewIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: #ff4785;
+  border-radius: 8px;
+  color: white;
+}
+
+.previewText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.previewLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.previewName {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.codeBlock {
+  background: var(--ifm-color-emphasis-100);
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+  padding: 0.75rem 1rem;
+  overflow-x: auto;
+}
+
+.codeBlock pre {
+  margin: 0;
+  font-size: 0.8125rem;
+}
+
+.codeBlock code {
+  background: none;
+  padding: 0;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.625rem 1rem;
+  background: var(--ifm-color-emphasis-100);
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.storybookLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #ff4785;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.storybookLink:hover {
+  color: #d63672;
+  text-decoration: underline;
+}
+
+.loadButton {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--ifm-color-primary);
+  background: none;
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 4px;
+  padding: 0.375rem 0.75rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.loadButton:hover {
+  background: var(--ifm-color-primary);
+  color: white;
+}

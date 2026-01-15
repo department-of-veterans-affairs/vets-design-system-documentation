@@ -1,0 +1,115 @@
+{
+  "id": "components/button/button-icon/index",
+  "title": "Button - Icon",
+  "description": "A tertiary button with equal visual prominence to Link - Action",
+  "source": "@site/docs/components/button/button-icon/index.mdx",
+  "sourceDirName": "components/button/button-icon",
+  "slug": "/components/button/button-icon/",
+  "permalink": "/docs/components/button/button-icon/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/button/button-icon/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Button - Icon",
+    "description": "A tertiary button with equal visual prominence to Link - Action",
+    "maturity": "use-with-caution",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-button-icon",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Button+-+Icon%22",
+    "related": [
+      {
+        "name": "Button",
+        "url": "/docs/components/button/",
+        "description": "Standard button component"
+      },
+      {
+        "name": "Link - Action",
+        "url": "/docs/components/link/action",
+        "description": "Visually prominent link for CTAs"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "Alongside a primary link within a Card or similar container"
+        },
+        {
+          "value": "When Button - Icon won't visually dwarf a link primary action"
+        },
+        {
+          "value": "As a secondary action paired with Link - Action"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "When a secondary button would be appropriate instead"
+        },
+        {
+          "value": "When using standard sentence-case buttons is preferred"
+        }
+      ]
+    },
+    "content_considerations": [
+      {
+        "value": "**Delete is preferred to Remove** - Use terminology that precisely describes what occurs upon interaction"
+      },
+      {
+        "value": "Labels are currently hard-coded; new icons and labels require formal requests"
+      },
+      {
+        "value": "Maximum two-word uppercase labels only"
+      },
+      {
+        "value": "Use action-oriented verbs"
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Follow standard button accessibility requirements"
+      },
+      {
+        "value": "Maintain consistent focus and interactive states"
+      },
+      {
+        "value": "Ensure proper ARIA labeling for icon-only context"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Change File",
+        "description": "Change File",
+        "storyId": "uswds-va-button-icon--change-file",
+        "height": 80
+      },
+      {
+        "title": "Delete",
+        "description": "Delete",
+        "storyId": "uswds-va-button-icon--delete",
+        "height": 80
+      },
+      {
+        "title": "Cancel",
+        "description": "Cancel",
+        "storyId": "uswds-va-button-icon--cancel",
+        "height": 80
+      }
+    ],
+    "code_usage": "<!-- Delete variation -->\n<va-button-icon label=\"Delete\"></va-button-icon>\n\n<!-- Cancel variation -->\n<va-button-icon label=\"Cancel\"></va-button-icon>\n\n<!-- Change file variation -->\n<va-button-icon label=\"Change file\"></va-button-icon>\n",
+    "component_tag": "va-button-icon"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Button Group",
+    "permalink": "/docs/components/button/button-group/"
+  },
+  "next": {
+    "title": "Button - Segmented",
+    "permalink": "/docs/components/button/button-segmented/"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "about/experience-standards",
+  "title": "Experience standards",
+  "description": "Evaluation criteria for assessing VA.gov products for design, information architecture, content, and accessibility.",
+  "source": "@site/docs/about/experience-standards.md",
+  "sourceDirName": "about",
+  "slug": "/about/experience-standards",
+  "permalink": "/docs/about/experience-standards",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/about/experience-standards.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Experience standards",
+    "description": "Evaluation criteria for assessing VA.gov products for design, information architecture, content, and accessibility.",
+    "sidebar_position": 4
+  },
+  "sidebar": "aboutSidebar",
+  "previous": {
+    "title": "Design principles",
+    "permalink": "/docs/about/principles"
+  },
+  "next": {
+    "title": "Feedback",
+    "permalink": "/docs/about/feedback"
+  }
+}

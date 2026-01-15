@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/error-messages/system",
+  "title": "System messages",
+  "description": "Guidelines for system messages that alert users to important system-related issues or status changes.",
+  "source": "@site/docs/content-style-guide/error-messages/system.md",
+  "sourceDirName": "content-style-guide/error-messages",
+  "slug": "/content-style-guide/error-messages/system",
+  "permalink": "/docs/content-style-guide/error-messages/system",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/error-messages/system.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "System messages",
+    "description": "Guidelines for system messages that alert users to important system-related issues or status changes.",
+    "sidebar_position": 2
+  }
+}

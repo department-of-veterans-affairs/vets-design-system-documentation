@@ -1,0 +1,21 @@
+{
+  "id": "components/tag/checklist",
+  "title": "Tag - Component checklist",
+  "description": "Maturity and asset checklist for the Tag component",
+  "source": "@site/docs/components/tag/checklist.mdx",
+  "sourceDirName": "components/tag",
+  "slug": "/components/tag/checklist",
+  "permalink": "/docs/components/tag/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/tag/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Tag - Component checklist",
+    "description": "Maturity and asset checklist for the Tag component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

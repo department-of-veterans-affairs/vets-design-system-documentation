@@ -1,0 +1,21 @@
+{
+  "id": "components/footer/checklist",
+  "title": "Footer - Component checklist",
+  "description": "Maturity and asset checklist for the Footer component",
+  "source": "@site/docs/components/footer/checklist.mdx",
+  "sourceDirName": "components/footer",
+  "slug": "/components/footer/checklist",
+  "permalink": "/docs/components/footer/checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/footer/checklist.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": false,
+    "title": "Footer - Component checklist",
+    "description": "Maturity and asset checklist for the Footer component",
+    "sidebar_label": "Checklist",
+    "unlisted": true
+  }
+}

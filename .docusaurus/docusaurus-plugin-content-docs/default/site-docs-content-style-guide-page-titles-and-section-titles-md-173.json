@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/page-titles-and-section-titles",
+  "title": "Page titles and section titles",
+  "description": "Guidelines for writing effective page titles and section titles that clearly communicate purpose and optimize for search.",
+  "source": "@site/docs/content-style-guide/page-titles-and-section-titles.md",
+  "sourceDirName": "content-style-guide",
+  "slug": "/content-style-guide/page-titles-and-section-titles",
+  "permalink": "/docs/content-style-guide/page-titles-and-section-titles",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/page-titles-and-section-titles.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 17,
+  "frontMatter": {
+    "title": "Page titles and section titles",
+    "description": "Guidelines for writing effective page titles and section titles that clearly communicate purpose and optimize for search.",
+    "sidebar_position": 17
+  }
+}

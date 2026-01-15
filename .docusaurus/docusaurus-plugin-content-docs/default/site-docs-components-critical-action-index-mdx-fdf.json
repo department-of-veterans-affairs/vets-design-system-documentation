@@ -1,0 +1,138 @@
+{
+  "id": "components/critical-action/index",
+  "title": "Critical Action",
+  "description": "Highlights important and time-sensitive actions users must take",
+  "source": "@site/docs/components/critical-action/index.mdx",
+  "sourceDirName": "components/critical-action",
+  "slug": "/components/critical-action/",
+  "permalink": "/docs/components/critical-action/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/critical-action/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Critical Action",
+    "description": "Highlights important and time-sensitive actions users must take",
+    "maturity": "use-with-caution",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-critical-action",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library",
+    "storybook": "https://design.va.gov/storybook/?path=/docs/components-va-critical-action--docs",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Critical+action%22",
+    "related": [
+      {
+        "name": "Alert",
+        "url": "../alert/",
+        "description": "For non-urgent notifications and system messages"
+      },
+      {
+        "name": "Link - Action",
+        "url": "../link/action",
+        "description": "For standard action links"
+      },
+      {
+        "name": "Card",
+        "url": "../card",
+        "description": "Container component for critical actions"
+      },
+      {
+        "name": "Service List Item",
+        "url": "../service-list-item",
+        "description": "Dashboard component that can contain critical actions"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "When you want to highlight a single task that will otherwise block the user from proceeding"
+        },
+        {
+          "value": "Time-sensitive actions preventing access to VA benefits or services"
+        },
+        {
+          "value": "Prescription refills that need attention"
+        },
+        {
+          "value": "Appointment check-ins"
+        },
+        {
+          "value": "Overdue debt payments requiring action"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "Non-urgent or non-required actions; use [Alert](/docs/components/alert/) instead"
+        },
+        {
+          "value": "System errors; use [Alert](/docs/components/alert/) component"
+        },
+        {
+          "value": "Form-related messages; use [Alert](/docs/components/alert/) component"
+        },
+        {
+          "value": "General informational messages"
+        }
+      ]
+    },
+    "content_considerations": [
+      {
+        "value": "Use structure: \"[Verb] by [deadline]\""
+      },
+      {
+        "value": "Example: \"Verify your life insurance dependents by June 4, 2025\""
+      },
+      {
+        "value": "Keep concise; single sentence without period"
+      },
+      {
+        "value": "Include specific details (amounts, appointment types)"
+      },
+      {
+        "value": "Be clear about what action is required and when"
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "The component always contains a clickable link spanning from text to right-aligned chevron"
+      },
+      {
+        "value": "Follow best practices for [Link](/docs/components/link/) and [Link - Action](/docs/components/link/action) components"
+      },
+      {
+        "value": "Critical Action is non-dismissible; it's removed only when the action is completed"
+      },
+      {
+        "value": "Ensure link text clearly describes the required action"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Default",
+        "description": "Default",
+        "storyId": "components-va-critical-action--default",
+        "height": 100
+      },
+      {
+        "title": "Within a Card",
+        "description": "Within a Card",
+        "storyId": "components-va-critical-action--in-card",
+        "height": 200
+      }
+    ],
+    "code_usage": "<va-critical-action\n  text=\"Verify your life insurance dependents by June 4, 2025\"\n  link=\"/verify-dependents\"\n></va-critical-action>\n",
+    "component_tag": "va-critical-action"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Card",
+    "permalink": "/docs/components/card/"
+  },
+  "next": {
+    "title": "Divider",
+    "permalink": "/docs/components/divider/"
+  }
+}

@@ -1,0 +1,32 @@
+### Buttons vs. links
+
+It's important to use the correct element for the intended action:
+
+**Use a button when:**
+- Submitting a form
+- Triggering an action (save, delete, cancel)
+- Opening a modal or dialog
+- Toggling a state
+- Performing a JavaScript action
+
+**Use a link when:**
+- Navigating to another page
+- Navigating to an anchor on the same page
+- Opening a resource in a new tab
+
+#### Decision flowchart
+
+```
+Is the action navigating to a new page or anchor?
+├── Yes → Use a link (<a>)
+└── No → Does the action submit a form?
+    ├── Yes → Use a submit button (<button type="submit">)
+    └── No → Use a button (<button type="button">)
+```
+
+#### Why this matters
+
+- **Screen readers** announce buttons and links differently, setting user expectations
+- **Keyboard users** expect different behaviors (Enter for links, Enter/Space for buttons)
+- **Search engines** follow links but ignore buttons
+- **Browser behavior** differs (links can be opened in new tabs, bookmarked, etc.)

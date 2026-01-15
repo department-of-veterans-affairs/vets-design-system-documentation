@@ -1,0 +1,53 @@
+---
+title: Check eligibility
+description: Follow this pattern to help users understand their eligibility for benefits or services.
+cms_editable: true
+category: help-users-to
+maturity: deployed
+sidebar_position: 2
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms
+github: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-check-eligibility%22
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Help+users+to...+Check+eligibility%22
+
+intro: Use this pattern to help users check their eligibility for a benefit or service, providing early feedback that can reduce application rejection rates.
+
+usage:
+  when_to_use:
+    - value: "**Potential ineligibility.** When users may not qualify for a requested benefit or service."
+    - value: "**Early feedback.** When early feedback on eligibility can reduce application rejection rates."
+    - value: "**User control.** When presenting eligibility status gives users control to exit lengthy processes or correct mistakes."
+  design_principles:
+    - value: "**Useful friction.** Introduce useful friction by anticipating possible errors that lead to rejected applications."
+    - value: "**Give users control.** Give users freedom to exit or correct information early in the process."
+  when_not_to_use:
+    - value: "**Not a substitute for clear criteria.** Don't use as a substitute for clear, plain-language eligibility criteria."
+    - value: "**Brief requirements.** When eligibility requirements are brief enough for the introduction page."
+    - value: "**Searchable content.** When eligibility info is concise enough to be easily searchable."
+
+examples:
+  - title: Eligibility check flow
+    description: Two-step process showing eligibility feedback with options to exit, save, or continue.
+
+how_to_build:
+  intro: The check eligibility pattern provides feedback on met and unmet requirements.
+  steps:
+    - value: "Alert users if they don't meet requirements using an Alert component."
+    - value: "Offer options: exit, save-for-later, or continue anyway."
+    - value: "Provide clear summary showing met and unmet eligibility requirements."
+    - value: "Enable users to adjust their answers if they believe they made a mistake."
+  components_used:
+    - name: Alert
+      url: /docs/components/alert
+    - name: Card
+      url: /docs/components/card
+
+accessibility:
+  - value: "Alert components must be properly announced to screen readers."
+  - value: "Ensure eligibility status is clearly communicated."
+  - value: "All interactive elements (exit, save, continue) must be keyboard accessible."
+---
+
+import PatternPage from '@site/src/components/PatternPage';
+
+<PatternPage frontMatter={frontMatter} />
+

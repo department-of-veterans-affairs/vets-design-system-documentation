@@ -1,0 +1,29 @@
+{
+  "id": "accessibility/testing",
+  "title": "Accessibility testing",
+  "description": "Standards and methodology for accessibility testing of Design System components.",
+  "source": "@site/docs/accessibility/testing.md",
+  "sourceDirName": "accessibility",
+  "slug": "/accessibility/testing",
+  "permalink": "/docs/accessibility/testing",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/accessibility/testing.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Accessibility testing",
+    "description": "Standards and methodology for accessibility testing of Design System components.",
+    "sidebar_position": 5
+  },
+  "sidebar": "accessibilitySidebar",
+  "previous": {
+    "title": "Accessibility annotations",
+    "permalink": "/docs/accessibility/annotations"
+  },
+  "next": {
+    "title": "Focus management",
+    "permalink": "/docs/accessibility/focus-management"
+  }
+}

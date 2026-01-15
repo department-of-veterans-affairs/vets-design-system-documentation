@@ -1,0 +1,107 @@
+{
+  "id": "components/table/index",
+  "title": "Table",
+  "description": "Organizes data into columns and rows",
+  "source": "@site/docs/components/table/index.mdx",
+  "sourceDirName": "components/table",
+  "slug": "/components/table/",
+  "permalink": "/docs/components/table/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/table/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Table",
+    "description": "Organizes data into columns and rows",
+    "maturity": "use-with-caution",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-table",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Table%22",
+    "related": [
+      {
+        "name": "Pagination",
+        "url": "/docs/components/pagination",
+        "description": "For multi-page tables"
+      },
+      {
+        "name": "Card",
+        "url": "/docs/components/card",
+        "description": "For grouped information"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "Displaying tabular data with rows and columns"
+        },
+        {
+          "value": "Presenting information where users need to compare rows and columns"
+        },
+        {
+          "value": "Organizing structured information with inherent relationships"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "**Do not use tables for layout purposes** — use tables only for data presentation"
+        },
+        {
+          "value": "For grouped information without tabular relationships, use [Card](/docs/components/card)"
+        }
+      ]
+    },
+    "accessibility": [
+      {
+        "value": "Tables should display tabular data with inherent row/column relationships"
+      },
+      {
+        "value": "Empty cells must include explanatory text"
+      },
+      {
+        "value": "Do not use for layout—restricts to data presentation only"
+      },
+      {
+        "value": "Ensure column headers clearly describe the data in each column"
+      },
+      {
+        "value": "Use `table-title` prop to provide a caption for screen readers"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Default",
+        "description": "Default",
+        "storyId": "uswds-va-table--default",
+        "height": 300
+      },
+      {
+        "title": "Striped",
+        "description": "Striped",
+        "storyId": "uswds-va-table--striped",
+        "height": 300
+      },
+      {
+        "title": "Sortable",
+        "description": "Sortable",
+        "storyId": "uswds-va-table--sortable",
+        "height": 300
+      }
+    ],
+    "code_usage": "<!-- Basic table -->\n<va-table table-title=\"Application status\">\n  <va-table-row slot=\"headers\">\n    <span>Name</span>\n    <span>Status</span>\n    <span>Date</span>\n  </va-table-row>\n  <va-table-row>\n    <span>John Doe</span>\n    <span>Approved</span>\n    <span>Dec 15, 2024</span>\n  </va-table-row>\n</va-table>\n\n<!-- Striped table -->\n<va-table table-title=\"Claims\" striped>\n  <!-- rows -->\n</va-table>\n\n<!-- Sortable table -->\n<va-table table-title=\"Documents\" sortable>\n  <!-- rows -->\n</va-table>\n",
+    "component_tag": "va-table"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Summary box",
+    "permalink": "/docs/components/summary-box/"
+  },
+  "next": {
+    "title": "Tabs",
+    "permalink": "/docs/components/tabs/"
+  }
+}

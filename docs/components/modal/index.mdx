@@ -1,0 +1,49 @@
+---
+cms_editable: true
+title: Modal
+description: Disables page content and focuses user attention on a single task or message
+maturity: deployed
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-modal
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+storybook: https://design.va.gov/storybook/?path=/docs/uswds-va-modal--docs
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Modal%22
+variations:
+  - name: Crisis Line Modal
+    url: ./crisis-line-modal
+    description: Veterans Crisis Line information
+usage:
+  when_to_consider_else:
+    - value: "**Content requiring linkable or searchable URLs**: Modals cannot be linked to or indexed by search engines"
+    - value: "**Long, complex forms**: Modal content must be brief and avoid complicated interactions"
+examples:
+  - title: Default
+    description: Default
+    storyId: uswds-va-modal--default
+    height: 400
+  - title: Info status
+    description: Info status
+    storyId: uswds-va-modal--info
+    height: 400
+  - title: Warning status
+    description: Warning status
+    storyId: uswds-va-modal--warning
+    height: 400
+code_usage: |
+  <va-modal
+    modal-title="Are you sure?"
+    primary-button-text="Yes, continue"
+    secondary-button-text="Cancel"
+    visible
+  >
+    <p>This action cannot be undone.</p>
+  </va-modal>
+component_tag: va-modal
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

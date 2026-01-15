@@ -1,0 +1,61 @@
+{
+  "id": "components/footer/index",
+  "title": "Footer",
+  "description": "Provides consistent navigation to secondary information on VA.gov",
+  "source": "@site/docs/components/footer/index.mdx",
+  "sourceDirName": "components/footer",
+  "slug": "/components/footer/",
+  "permalink": "/docs/components/footer/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/footer/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Footer",
+    "description": "Provides consistent navigation to secondary information on VA.gov",
+    "maturity": "deployed",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-footer",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Footer%22",
+    "variations": [
+      {
+        "name": "Footer - Minimal",
+        "url": "./footer-minimal",
+        "description": "Simplified footer for form flows"
+      }
+    ],
+    "related": [
+      {
+        "name": "Header",
+        "url": "/docs/components/header/",
+        "description": "Page header component"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "Required for providing additional navigation facilitating information discovery across VA.gov"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "**Footer - Minimal**: Use when navigation away disrupts task completion. Particularly appropriate for form flows where interruption risks user input loss."
+        }
+      ]
+    }
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Filter chip",
+    "permalink": "/docs/components/filter-chip/"
+  },
+  "next": {
+    "title": "Footer - Minimal",
+    "permalink": "/docs/components/footer/footer-minimal/"
+  }
+}

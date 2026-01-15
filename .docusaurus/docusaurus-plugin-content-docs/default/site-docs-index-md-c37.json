@@ -1,0 +1,17 @@
+{
+  "id": "index",
+  "title": "VA.gov Design System",
+  "description": "The VA.gov Design System provides building blocks for teams to create consistent, accessible, and user-centered products for Veterans and their families.",
+  "source": "@site/docs/index.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/docs/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "VA.gov Design System"
+  }
+}

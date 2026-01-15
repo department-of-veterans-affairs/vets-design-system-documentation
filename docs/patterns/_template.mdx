@@ -1,0 +1,96 @@
+---
+# ===========================================
+# PATTERN PAGE TEMPLATE
+# ===========================================
+# Copy this file to create a new pattern page.
+# Place in the appropriate category folder:
+#   - ask-users-for/ - Patterns for collecting user information
+#   - help-users-to/ - Patterns for guiding user interactions
+#   - deprecated/    - Patterns no longer recommended
+# ===========================================
+
+title: Pattern Name
+description: Brief description of the pattern for SEO (under 160 characters).
+cms_editable: true
+category: ask-users-for  # Options: ask-users-for, help-users-to, deprecated
+maturity: use-with-caution  # Options: deployed, use-with-caution, dont-use, best-practice
+sidebar_position: 1
+
+# --- EXTERNAL LINKS (all optional) ---
+figma:
+github:
+discussions:
+research:
+code:
+
+# --- INTRODUCTION ---
+intro: A brief introduction paragraph explaining what this pattern does and when to use it.
+
+# --- USAGE GUIDELINES ---
+usage:
+  when_to_use:
+    - value: "**Use case title.** Description of when this pattern is appropriate."
+  design_principles:
+    - value: "**Principle name.** Explanation of the design principle."
+  when_not_to_use:
+    - value: "**Alternative scenario.** When to use something else instead."
+
+# --- EXAMPLES ---
+# Add visual examples with images
+examples:
+  - title: Example title
+    description: Description of what this example shows.
+    image: /img/patterns/example-image.png
+    alt: Alt text describing the image
+
+# --- HOW TO DESIGN AND BUILD ---
+how_to_build:
+  intro: Brief introduction to the design and build guidance.
+  steps:
+    - value: "Step 1: Description of the first step."
+    - value: "Step 2: Description of the second step."
+  components_used:
+    - name: Component Name
+      url: /docs/components/component-name
+
+# --- CODE USAGE ---
+# Markdown content for code examples
+code_usage: |
+  Brief description of how to implement this pattern in code.
+
+  ```jsx
+  // Example code here
+  ```
+
+# --- CONTENT CONSIDERATIONS ---
+# General content guidelines as bullet points
+content_considerations:
+  - value: "Guideline for content within this pattern."
+
+# --- CONTENT SPECIFICATIONS TABLE ---
+# Field-by-field specifications for error messages, hints, etc.
+content_specs:
+  - field: Field name
+    hint_text: Hint text for this field (or null if none)
+    error_message: Error message when validation fails
+
+# --- ACCESSIBILITY ---
+accessibility:
+  - value: "Accessibility consideration for this pattern."
+
+# --- MERMAID DIAGRAMS ---
+# Optional flowcharts, sequence diagrams, or other Mermaid diagrams
+# mermaid_diagrams:
+#   - title: Diagram Title
+#     description: Optional description of what this diagram shows.
+#     code: |
+#       graph TD
+#         A[Start] --> B[Step 1]
+#         B --> C[Step 2]
+#         C --> D[End]
+---
+
+import PatternPage from '@site/src/components/PatternPage';
+
+<PatternPage frontMatter={frontMatter} />
+

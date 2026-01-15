@@ -1,0 +1,37 @@
+---
+cms_editable: true
+title: Statement of Truth
+description: Allows users to certify that form information is correct and true
+maturity: deployed
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-statement-of-truth
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Statement+of+truth%22
+related:
+  - name: Privacy Agreement
+    url: ../privacy-agreement
+    description: For privacy policy acceptance
+  - name: Checkbox
+    url: ../checkbox
+    description: Base checkbox component
+  - name: Text Input
+    url: ../text-input
+    description: Name entry field
+usage:
+  when_to_use:
+    - value: "**To collect a signature**: This component gathers digital certification from users, confirming their submission. It's utilized in the signature pattern workflow."
+code_usage: |
+  <va-statement-of-truth
+    heading="Statement of truth"
+    input-label="Your full name"
+    checkbox-label="I certify the information above is correct and true to the best of my knowledge and belief."
+  ></va-statement-of-truth>
+component_tag: va-statement-of-truth
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

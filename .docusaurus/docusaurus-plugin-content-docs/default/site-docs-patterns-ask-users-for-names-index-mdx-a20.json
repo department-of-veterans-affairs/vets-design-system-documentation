@@ -1,0 +1,136 @@
+{
+  "id": "patterns/ask-users-for/names/index",
+  "title": "Names",
+  "description": "Follow this pattern to ask users for their name.",
+  "source": "@site/docs/patterns/ask-users-for/names/index.mdx",
+  "sourceDirName": "patterns/ask-users-for/names",
+  "slug": "/patterns/ask-users-for/names/",
+  "permalink": "/docs/patterns/ask-users-for/names/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/patterns/ask-users-for/names/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Names",
+    "description": "Follow this pattern to ask users for their name.",
+    "cms_editable": true,
+    "category": "ask-users-for",
+    "maturity": "deployed",
+    "sidebar_position": 1,
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1360%3A85273",
+    "github": "https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22names%22",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aopen+is%3Aissue+label%3A%22DSC%3A+Ask+users+for...+Names%22",
+    "intro": "Use this pattern when you need to collect a person's name for contact information or an application.",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Collecting personal information.** When you need a person's name for contact purposes, identification, or as part of an application process."
+        }
+      ],
+      "design_principles": [
+        {
+          "value": "**Work with stakeholders to determine which fields are necessary.** Not all applications require middle name, suffix, or maiden name."
+        },
+        {
+          "value": "**Don't restrict character input.** Names can contain special characters, apostrophes, hyphens, and non-ASCII characters."
+        }
+      ],
+      "when_not_to_use": [
+        {
+          "value": "**Searching for records.** Use a search pattern instead if you're looking up existing records by name."
+        }
+      ]
+    },
+    "examples": [
+      {
+        "title": "Default name fields",
+        "description": "Standard name collection with first, middle, and last name fields.",
+        "image": "/img/patterns/names-default.png",
+        "alt": "Form showing first name, middle name, and last name text input fields"
+      }
+    ],
+    "how_to_build": {
+      "intro": "The name pattern uses standard text input components with specific validation and labeling requirements.",
+      "steps": [
+        {
+          "value": "First name and last name are required fields. Middle name is optional."
+        },
+        {
+          "value": "Suffix (Jr., Sr., III, etc.) uses a select dropdown and is optional."
+        },
+        {
+          "value": "Mother's maiden name is optional and only included when specifically required for identity verification."
+        },
+        {
+          "value": "Name fields should typically appear on the same page as date of birth for identification purposes."
+        }
+      ],
+      "components_used": [
+        {
+          "name": "Text input",
+          "url": "/docs/components/form/text-input"
+        },
+        {
+          "name": "Select",
+          "url": "/docs/components/form/select"
+        }
+      ]
+    },
+    "code_usage": "The `fullNamePattern` is available as a web-component pattern in the VA Forms library.\n\n```jsx\nimport { fullNamePattern } from '@department-of-veterans-affairs/platform-forms-system/patterns';\n```\n\nSee the [Forms library documentation](https://depo-platform-documentation.scrollhelp.site/developer-docs/va-forms-library-overview) for implementation details.\n",
+    "content_considerations": [
+      {
+        "value": "Use 'First or given name' and 'Last or family name' as labels to be inclusive of different naming conventions."
+      },
+      {
+        "value": "Do not restrict the length of name fields unnecessarily. Some names can be quite long."
+      },
+      {
+        "value": "Allow special characters including apostrophes, hyphens, and periods."
+      }
+    ],
+    "content_specs": [
+      {
+        "field": "First name",
+        "hint_text": null,
+        "error_message": "Enter a first or given name"
+      },
+      {
+        "field": "First name (invalid)",
+        "hint_text": null,
+        "error_message": "You entered a character we can't accept. Try removing the character or entering your name differently."
+      },
+      {
+        "field": "Last name",
+        "hint_text": null,
+        "error_message": "Enter a last or family name"
+      },
+      {
+        "field": "Last name (invalid)",
+        "hint_text": null,
+        "error_message": "You entered a character we can't accept. Try removing the character or entering your name differently."
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Ensure each name field has a visible, associated label."
+      },
+      {
+        "value": "Use autocomplete attributes: `autocomplete='given-name'` for first name, `autocomplete='family-name'` for last name."
+      },
+      {
+        "value": "Error messages should be associated with the field using `aria-describedby`."
+      }
+    ]
+  },
+  "sidebar": "patternsSidebar",
+  "previous": {
+    "title": "Ask users for...",
+    "permalink": "/docs/patterns/ask-users-for/"
+  },
+  "next": {
+    "title": "Dates",
+    "permalink": "/docs/patterns/ask-users-for/dates/"
+  }
+}

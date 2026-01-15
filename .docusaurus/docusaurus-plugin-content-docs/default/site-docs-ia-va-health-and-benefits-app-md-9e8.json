@@ -1,0 +1,23 @@
+{
+  "id": "ia/va-health-and-benefits-app",
+  "title": "VA Health and Benefits App",
+  "description": "Information architecture guidance for the VA Health and Benefits mobile app",
+  "source": "@site/docs/ia/va-health-and-benefits-app.md",
+  "sourceDirName": "ia",
+  "slug": "/ia/va-health-and-benefits-app",
+  "permalink": "/docs/ia/va-health-and-benefits-app",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/ia/va-health-and-benefits-app.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "VA Health and Benefits App",
+    "description": "Information architecture guidance for the VA Health and Benefits mobile app"
+  },
+  "sidebar": "iaSidebar",
+  "previous": {
+    "title": "Vanity URLs",
+    "permalink": "/docs/ia/url-standards/vanity-urls"
+  }
+}

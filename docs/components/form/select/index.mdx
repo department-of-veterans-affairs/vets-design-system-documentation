@@ -1,0 +1,71 @@
+---
+cms_editable: true
+title: Select
+description: Allows users to choose one option from a dropdown menu
+maturity: deployed
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-select
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Select%22
+related:
+  - name: Radio Button
+    url: ../radio-button
+    description: For fewer options (2-5)
+  - name: Combo Box
+    url: ../combo-box
+    description: For searchable options (16-100)
+  - name: Checkbox
+    url: ../checkbox
+    description: For multiple selections
+accessibility:
+  - value: Component includes `aria-invalid` support for error states
+  - value: Screen reader support for labels, hints, and error messages
+  - value: Keyboard navigation fully supported
+examples:
+  - title: Default
+    description: Default
+    storyId: uswds-va-select--default
+    height: 150
+  - title: With error
+    description: With error
+    storyId: uswds-va-select--error
+    height: 170
+  - title: With hint text
+    description: With hint text
+    storyId: uswds-va-select--with-hint-text
+    height: 170
+code_usage: |
+  <!-- Basic select -->
+  <va-select
+    label="Branch of service"
+    name="branch"
+    required
+  >
+    <option value="">- Select -</option>
+    <option value="army">Army</option>
+    <option value="navy">Navy</option>
+    <option value="airforce">Air Force</option>
+    <option value="marines">Marine Corps</option>
+    <option value="coastguard">Coast Guard</option>
+  </va-select>
+
+  <!-- With hint text -->
+  <va-select
+    label="Preferred contact time"
+    name="contactTime"
+    hint="We'll try to call during this time"
+  >
+    <option value="">- Select -</option>
+    <option value="morning">Morning (8am - 12pm)</option>
+    <option value="afternoon">Afternoon (12pm - 5pm)</option>
+    <option value="evening">Evening (5pm - 8pm)</option>
+  </va-select>
+component_tag: va-select
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

@@ -1,0 +1,25 @@
+{
+  "id": "about/search-architecture",
+  "title": "Multi-Site Search Architecture",
+  "description": "Research and recommendations for implementing site-wide search across VA Design System documentation sites.",
+  "source": "@site/docs/about/search-architecture.md",
+  "sourceDirName": "about",
+  "slug": "/about/search-architecture",
+  "permalink": "/docs/about/search-architecture",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/about/search-architecture.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Multi-Site Search Architecture",
+    "description": "Research and recommendations for implementing site-wide search across VA Design System documentation sites.",
+    "sidebar_label": "Search Architecture",
+    "draft": true
+  },
+  "sidebar": "aboutSidebar",
+  "previous": {
+    "title": "What's new",
+    "permalink": "/docs/about/whats-new"
+  }
+}

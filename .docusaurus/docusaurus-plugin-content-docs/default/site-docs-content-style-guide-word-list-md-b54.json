@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/word-list",
+  "title": "Word list",
+  "description": "Comprehensive list of VA terminology with preferred styling, definitions, and usage guidelines.",
+  "source": "@site/docs/content-style-guide/word-list.md",
+  "sourceDirName": "content-style-guide",
+  "slug": "/content-style-guide/word-list",
+  "permalink": "/docs/content-style-guide/word-list",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/word-list.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 24,
+  "frontMatter": {
+    "title": "Word list",
+    "description": "Comprehensive list of VA terminology with preferred styling, definitions, and usage guidelines.",
+    "sidebar_position": 24
+  }
+}

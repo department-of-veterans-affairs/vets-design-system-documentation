@@ -1,0 +1,129 @@
+{
+  "id": "components/tabs/index",
+  "title": "Tabs",
+  "description": "Organize related content into separate, focused panels that users switch between",
+  "source": "@site/docs/components/tabs/index.mdx",
+  "sourceDirName": "components/tabs",
+  "slug": "/components/tabs/",
+  "permalink": "/docs/components/tabs/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/tabs/index",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "cms_editable": true,
+    "title": "Tabs",
+    "description": "Organize related content into separate, focused panels that users switch between",
+    "maturity": "use-with-caution",
+    "platforms": [
+      "web"
+    ],
+    "github": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-tabs",
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design",
+    "research": "https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Tabs%22",
+    "related": [
+      {
+        "name": "Button - Segmented",
+        "url": "/docs/components/button/button-segmented",
+        "description": "For binary toggles (e.g., list vs. map view)"
+      },
+      {
+        "name": "Accordion",
+        "url": "/docs/components/accordion",
+        "description": "For sequential/hierarchical content"
+      }
+    ],
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "Organize related content into separate, focused panels that users switch between"
+        },
+        {
+          "value": "Reduce cognitive load by presenting information in manageable sections"
+        },
+        {
+          "value": "Best with 3 or fewer tabs"
+        }
+      ],
+      "when_to_consider_else": [
+        {
+          "value": "**Binary toggles**: Use [Button - Segmented](/docs/components/button/button-segmented) instead (e.g., list vs. map view)"
+        },
+        {
+          "value": "**Sequential/hierarchical content**: Use [Accordion](/docs/components/accordion) or well-formatted single page with [On this page](/docs/components/on-this-page) component"
+        },
+        {
+          "value": "**Navigation**: Use Side Navigation for moving between hierarchy levels"
+        },
+        {
+          "value": "**Search filtering**: Use Search Results pattern"
+        }
+      ],
+      "behavior": [
+        {
+          "value": "First tab selected by default"
+        },
+        {
+          "value": "Tab panels need 32px spacing above/below"
+        },
+        {
+          "value": "Horizontal scrollbar appears on overflow (not ideal UX)"
+        },
+        {
+          "value": "Keep focus on selected tab after activation—don't auto-focus into panel content"
+        }
+      ]
+    },
+    "content_considerations": [
+      {
+        "value": "Tab labels: 1-2 words, sentence case, plain language"
+      },
+      {
+        "value": "Start each panel with a descriptive heading"
+      },
+      {
+        "value": "Maintain proper heading hierarchy (h2, h3, h4)"
+      },
+      {
+        "value": "Use clear, descriptive labels (avoid generic labels like \"Tab 1\")"
+      }
+    ],
+    "accessibility": [
+      {
+        "value": "Use clear, descriptive labels that indicate panel content"
+      },
+      {
+        "value": "Place tabs after h1 in main content region"
+      },
+      {
+        "value": "Follow W3C standard keyboard navigation patterns:"
+      },
+      {
+        "value": "Don't use tabs for page-level navigation"
+      },
+      {
+        "value": "Ensure proper ARIA roles and attributes are applied"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Default",
+        "description": "Default",
+        "storyId": "uswds-va-tabs--default",
+        "height": 250
+      }
+    ],
+    "code_usage": "<va-tabs>\n  <va-tab-item tabindex=\"0\" role=\"tab\" aria-selected=\"true\">\n    Tab 1 Label\n  </va-tab-item>\n  <va-tab-item tabindex=\"-1\" role=\"tab\">\n    Tab 2 Label\n  </va-tab-item>\n  <va-tab-item tabindex=\"-1\" role=\"tab\">\n    Tab 3 Label\n  </va-tab-item>\n</va-tabs>\n\n<div role=\"tabpanel\">\n  <h2>Tab 1 Content</h2>\n  <p>Content for the first tab panel.</p>\n</div>\n",
+    "component_tag": "va-tabs"
+  },
+  "sidebar": "componentsSidebar",
+  "previous": {
+    "title": "Table",
+    "permalink": "/docs/components/table/"
+  },
+  "next": {
+    "title": "Tag",
+    "permalink": "/docs/components/tag/"
+  }
+}

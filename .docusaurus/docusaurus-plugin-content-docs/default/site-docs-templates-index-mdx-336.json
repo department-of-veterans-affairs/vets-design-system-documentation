@@ -1,0 +1,25 @@
+{
+  "id": "templates/index",
+  "title": "Templates",
+  "description": "Page-level design examples and layouts for VA.gov",
+  "source": "@site/docs/templates/index.mdx",
+  "sourceDirName": "templates",
+  "slug": "/templates/",
+  "permalink": "/docs/templates/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/templates/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Templates",
+    "description": "Page-level design examples and layouts for VA.gov",
+    "sidebar_position": 1
+  },
+  "sidebar": "templatesSidebar",
+  "next": {
+    "title": "Forms overview",
+    "permalink": "/docs/templates/forms/"
+  }
+}

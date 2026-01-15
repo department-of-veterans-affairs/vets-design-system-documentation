@@ -1,0 +1,126 @@
+{
+  "id": "patterns/deprecated/know-how-their-information-is-updated/index",
+  "title": "Know how their information is updated",
+  "description": "This deprecated pattern guided design teams in helping users understand when and how their personal information will be updated.",
+  "source": "@site/docs/patterns/deprecated/know-how-their-information-is-updated/index.mdx",
+  "sourceDirName": "patterns/deprecated/know-how-their-information-is-updated",
+  "slug": "/patterns/deprecated/know-how-their-information-is-updated/",
+  "permalink": "/docs/patterns/deprecated/know-how-their-information-is-updated/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/patterns/deprecated/know-how-their-information-is-updated/index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Know how their information is updated",
+    "description": "This deprecated pattern guided design teams in helping users understand when and how their personal information will be updated.",
+    "cms_editable": true,
+    "category": "deprecated",
+    "maturity": "deprecated",
+    "sidebar_position": 3,
+    "figma": "https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Templates---Patterns-%26-Forms",
+    "github": "https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aissue+is%3Aopen+label%3A%22pattern-info-updated%22",
+    "intro": "This pattern guided design teams in helping users understand when and how their personal information will be updated in their profile when modifying information within an application.",
+    "usage": {
+      "when_to_use": [
+        {
+          "value": "**Prefilled profile data.** When prefilled profile data is displayed and editable."
+        },
+        {
+          "value": "**Stored user data.** When forms show stored user data that may change based on form input."
+        },
+        {
+          "value": "**Profile update clarity.** When users need clarity about whether edits will update their VA.gov profile."
+        }
+      ],
+      "design_principles": [
+        {
+          "value": "**System status visibility.** Communicate current state so users feel in control."
+        },
+        {
+          "value": "**User autonomy.** Give users control over their own information management."
+        }
+      ],
+      "when_not_to_use": [
+        {
+          "value": "**Application-only updates.** If changes only apply to the current application, use instead: 'Any updates you make here to your [type of contact information] will only apply to this application.'"
+        },
+        {
+          "value": "**Unreliable data modification.** Use caution with data that cannot be reliably modified."
+        }
+      ]
+    },
+    "examples": [
+      {
+        "title": "Display information on file",
+        "description": "Shows users what data is stored, noting if it cannot be changed in the current application."
+      },
+      {
+        "title": "Editable information",
+        "description": "Profile data with edit links, introduction explaining usage, and note confirming profile updates."
+      },
+      {
+        "title": "Edit workflow",
+        "description": "Users edit information, save changes to profile, and see updated information reflected immediately."
+      }
+    ],
+    "how_to_build": {
+      "intro": "The pattern demonstrates system status visibility and user autonomy principles.",
+      "steps": [
+        {
+          "value": "Display information on file—show users what data is stored."
+        },
+        {
+          "value": "Note if information cannot be changed in the current application."
+        },
+        {
+          "value": "For editable information, include introduction explaining how information will be used."
+        },
+        {
+          "value": "Add note confirming updates will modify VA.gov profile."
+        },
+        {
+          "value": "Use left blue border styling with header labels."
+        },
+        {
+          "value": "Include edit links for each data section."
+        },
+        {
+          "value": "Allow users to edit, save changes, and see updated information immediately."
+        }
+      ],
+      "components_used": [
+        {
+          "name": "Alert",
+          "url": "/docs/components/alert"
+        },
+        {
+          "name": "Card",
+          "url": "/docs/components/card"
+        },
+        {
+          "name": "Link",
+          "url": "/docs/components/link"
+        }
+      ]
+    },
+    "accessibility": [
+      {
+        "value": "Edit links must be clearly labeled for screen readers."
+      },
+      {
+        "value": "Status changes should be announced to assistive technology."
+      }
+    ]
+  },
+  "sidebar": "patternsSidebar",
+  "previous": {
+    "title": "Pronouns",
+    "permalink": "/docs/patterns/deprecated/pronouns/"
+  },
+  "next": {
+    "title": "Wizard",
+    "permalink": "/docs/patterns/deprecated/wizard/"
+  }
+}

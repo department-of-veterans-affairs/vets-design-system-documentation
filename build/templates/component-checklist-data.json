@@ -1,0 +1,41 @@
+{
+  "_instructions": [
+    "Copy this file to src/data/component-checklist/[component-name].json",
+    "Replace all TODO values with actual status",
+    "Valid status values: 'complete', 'in-progress', 'not-started', 'n/a'",
+    "Remove this _instructions array when done",
+    "Add the component to src/data/component-checklist/index.ts exports"
+  ],
+  "maturity": {
+    "web": "TODO: complete | in-progress | not-started | n/a",
+    "mobile": "TODO: complete | in-progress | not-started | n/a"
+  },
+  "code": {
+    "webComponent": "TODO: status",
+    "reactComponent": "TODO: status",
+    "mobileComponent": "TODO: status",
+    "storybookWeb": "TODO: status",
+    "storybookMobile": "TODO: status",
+    "unitTests": "TODO: status",
+    "e2eTests": "TODO: status"
+  },
+  "visual": {
+    "figmaWeb": "TODO: status",
+    "figmaMobile": "TODO: status",
+    "designTokens": "TODO: status",
+    "responsiveDesign": "TODO: status"
+  },
+  "documentation": {
+    "usage": "TODO: status",
+    "codeExamples": "TODO: status",
+    "accessibility": "TODO: status",
+    "contentGuidelines": "TODO: status"
+  },
+  "accessibility": {
+    "colorContrast": "TODO: status",
+    "keyboardNav": "TODO: status",
+    "screenReader": "TODO: status",
+    "focusManagement": "TODO: status",
+    "auditStatus": "TODO: status"
+  }
+}

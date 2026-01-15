@@ -1,0 +1,58 @@
+---
+cms_editable: true
+title: Language toggle
+description: Switch between translated versions of a page
+maturity: use-with-caution
+platforms:
+  - web
+github: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-language-toggle
+figma: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library
+research: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+Language+toggle%22
+related:
+  - name: Breadcrumbs
+    url: ../breadcrumbs
+    description: Navigation that may need translation
+  - name: Side Navigation
+    url: ../sidenav/
+    description: Secondary navigation
+usage:
+  when_to_use:
+    - value: Offering access to translated versions of a page
+    - value: Users need to switch between corresponding pages in different languages
+    - value: Content is available in multiple VA.gov-supported languages (English, Spanish, Tagalog)
+  when_to_consider_else:
+    - value: Linking to unrelated pages in different languages
+    - value: Adding or removing languages beyond the three supported by VA.gov
+    - value: Providing language options beyond English, Spanish, and Tagalog
+content_considerations:
+  - value: Ensure all linked pages have corresponding translated content
+  - value: Maintain consistent URL patterns across languages
+  - value: Link text should appear in the native language (e.g., "Español" not "Spanish")
+accessibility:
+  - value: Set the `lang` attribute on the article/main element to match page language
+  - value: Label links with appropriate language codes
+  - value: Link text should appear in the native language for proper pronunciation by screen readers
+  - value: Ensure the toggle is keyboard accessible
+examples:
+  - title: Default (three languages)
+    description: Standard toggle with English, Spanish, and Tagalog options.
+    storyId: components-va-language-toggle--default
+    height: 80
+  - title: Two languages
+    description: Variant supporting only two language options.
+    storyId: components-va-language-toggle--two-languages
+    height: 80
+code_usage: |
+  <va-language-toggle
+    en-href="/health-care/covid-19-vaccine/"
+    es-href="/health-care/covid-19-vaccine-esp/"
+    tl-href="/health-care/covid-19-vaccine-tag/"
+  ></va-language-toggle>
+component_tag: va-language-toggle
+---
+
+import { generateComponentToc } from '@site/src/utils/generateComponentToc';
+
+export const toc = generateComponentToc(frontMatter);
+
+<ComponentPage frontMatter={frontMatter} />

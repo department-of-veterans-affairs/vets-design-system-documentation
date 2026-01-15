@@ -1,0 +1,20 @@
+{
+  "id": "content-style-guide/title-tags",
+  "title": "Title tags",
+  "description": "Guidelines for writing HTML title tags that appear in browsers and search results.",
+  "source": "@site/docs/content-style-guide/title-tags.md",
+  "sourceDirName": "content-style-guide",
+  "slug": "/content-style-guide/title-tags",
+  "permalink": "/docs/content-style-guide/title-tags",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/content-style-guide/title-tags.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 21,
+  "frontMatter": {
+    "title": "Title tags",
+    "description": "Guidelines for writing HTML title tags that appear in browsers and search results.",
+    "sidebar_position": 21
+  }
+}

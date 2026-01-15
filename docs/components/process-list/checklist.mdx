@@ -1,0 +1,22 @@
+---
+cms_editable: false
+title: Process list - Component checklist
+description: Maturity and asset checklist for the Process list component
+sidebar_label: Checklist
+unlisted: true
+---
+
+import ComponentChecklist from '@site/src/components/ComponentChecklist';
+import { checklistData } from '@site/src/data/component-checklist';
+import ChecklistDefinitions from '@site/docs/_partials/checklist-definitions.mdx';
+import Link from '@docusaurus/Link';
+
+# Process list checklist
+
+<Link to="/docs/components/process-list">← Back to Process list</Link>
+
+This checklist tracks the maturity, code assets, visual assets, and accessibility audit status for the Process list component.
+
+<ComponentChecklist data={checklistData['process-list']} platform="web" />
+
+<ChecklistDefinitions />
