@@ -103,10 +103,6 @@ anchors:
 
 * **The naming of sort options must still remain consistent across mobile and desktop experiences.**
 
-* **Reflect the active sort in the [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how) when sorting is used alongside filtering or other result refinements.**
-    * For example: “Showing 1–10 of 999 results for ‘2020’ with 5 filters applied, sorted by *[Sort attribute] (sort method)*.”
-    * This is not necessary for the web component because the component already serves as a visual indicator of the order whereas it hidden within the modal on the mobile app. 
-
 
 
 ## Code usage
@@ -158,6 +154,10 @@ anchors:
     * Offering both directions isn't necessary when the reverse order wouldn't be meaningful or useful for users' goals. For example, it may not make sense to sort VA locations from furthest to closest.
   
 * **Only include sort options that provide clear value.** The ability to sort data doesn't automatically mean it will help users.
+
+* **Sort does not need to be reflected in the [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how) for web and mobile.** The component already acts a visual indicator of the order. However, it is required for the mobile app since the sorting state is hidden within the modal.
+
+
 
 ## Accessibility considerations
 These considerations describe how sorting changes are communicated and experienced by users of assistive technologies.
