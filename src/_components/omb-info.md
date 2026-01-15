@@ -86,7 +86,7 @@ OMB Info should appear at the bottom of a form introduction page and show:
 
 ### Behavior
 
-The "View Privacy Act Statement" is a button that triggers a modal window which displays the statement.
+The "Privacy Act Statement" is a button that triggers a modal window which displays the statement.
 
 ### Choosing between variations
 
