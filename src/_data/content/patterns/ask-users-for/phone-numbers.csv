@@ -1,3 +1,0 @@
-section,subsection,pattern-or-component,label,label-text,hint-text,sub-questions,error-scenario-1,error-message-1,error-scenario-2,error-message-2,error-scenario-3,error-message-3,label-variations,notes-on-updates
-/patterns,/ask-users-for,/phone-numbers,phone-number,Home phone number,For international numbers select or enter your country code.,,No entry,Enter a 10-digit phone number (with or without dashes),,,,,,"Removing ""please"" from error message. We need to re-add home or Primary as an option as we now collect a country code in addition to a phone number, and need a header for the whole."
-/patterns,/ask-users-for,/phone-numbers,mobile-phone-number,Mobile phone number,For international numbers select or enter your country code.,,,,,,,,,

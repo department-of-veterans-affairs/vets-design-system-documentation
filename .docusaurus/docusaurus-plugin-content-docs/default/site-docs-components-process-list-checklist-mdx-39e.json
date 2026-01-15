@@ -7,7 +7,7 @@
   "slug": "/components/process-list/checklist",
   "permalink": "/docs/components/process-list/checklist",
   "draft": false,
-  "unlisted": false,
+  "unlisted": true,
   "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/process-list/checklist.mdx",
   "tags": [],
   "version": "current",

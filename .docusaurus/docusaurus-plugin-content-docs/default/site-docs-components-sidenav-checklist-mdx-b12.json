@@ -7,7 +7,7 @@
   "slug": "/components/sidenav/checklist",
   "permalink": "/docs/components/sidenav/checklist",
   "draft": false,
-  "unlisted": false,
+  "unlisted": true,
   "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/sidenav/checklist.mdx",
   "tags": [],
   "version": "current",

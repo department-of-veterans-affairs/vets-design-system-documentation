@@ -96,11 +96,6 @@
               "sidebar": "aboutSidebar"
             },
             {
-              "id": "about/search-architecture",
-              "path": "/docs/about/search-architecture",
-              "sidebar": "aboutSidebar"
-            },
-            {
               "id": "about/whats-new",
               "path": "/docs/about/whats-new",
               "sidebar": "aboutSidebar"
@@ -141,7 +136,8 @@
             },
             {
               "id": "components/accordion/checklist",
-              "path": "/docs/components/accordion/checklist"
+              "path": "/docs/components/accordion/checklist",
+              "unlisted": true
             },
             {
               "id": "components/accordion/index",
@@ -150,7 +146,8 @@
             },
             {
               "id": "components/additional-info/checklist",
-              "path": "/docs/components/additional-info/checklist"
+              "path": "/docs/components/additional-info/checklist",
+              "unlisted": true
             },
             {
               "id": "components/additional-info/index",
@@ -159,7 +156,8 @@
             },
             {
               "id": "components/address-block/checklist",
-              "path": "/docs/components/address-block/checklist"
+              "path": "/docs/components/address-block/checklist",
+              "unlisted": true
             },
             {
               "id": "components/address-block/index",
@@ -178,7 +176,8 @@
             },
             {
               "id": "components/alert/checklist",
-              "path": "/docs/components/alert/checklist"
+              "path": "/docs/components/alert/checklist",
+              "unlisted": true
             },
             {
               "id": "components/alert/index",
@@ -187,7 +186,8 @@
             },
             {
               "id": "components/back-to-top/checklist",
-              "path": "/docs/components/back-to-top/checklist"
+              "path": "/docs/components/back-to-top/checklist",
+              "unlisted": true
             },
             {
               "id": "components/back-to-top/index",
@@ -196,7 +196,8 @@
             },
             {
               "id": "components/banner/checklist",
-              "path": "/docs/components/banner/checklist"
+              "path": "/docs/components/banner/checklist",
+              "unlisted": true
             },
             {
               "id": "components/banner/index",
@@ -215,7 +216,8 @@
             },
             {
               "id": "components/breadcrumbs/checklist",
-              "path": "/docs/components/breadcrumbs/checklist"
+              "path": "/docs/components/breadcrumbs/checklist",
+              "unlisted": true
             },
             {
               "id": "components/breadcrumbs/index",
@@ -248,7 +250,8 @@
             },
             {
               "id": "components/card/checklist",
-              "path": "/docs/components/card/checklist"
+              "path": "/docs/components/card/checklist",
+              "unlisted": true
             },
             {
               "id": "components/card/index",
@@ -257,7 +260,8 @@
             },
             {
               "id": "components/critical-action/checklist",
-              "path": "/docs/components/critical-action/checklist"
+              "path": "/docs/components/critical-action/checklist",
+              "unlisted": true
             },
             {
               "id": "components/critical-action/index",
@@ -286,7 +290,8 @@
             },
             {
               "id": "components/divider/checklist",
-              "path": "/docs/components/divider/checklist"
+              "path": "/docs/components/divider/checklist",
+              "unlisted": true
             },
             {
               "id": "components/divider/index",
@@ -295,7 +300,8 @@
             },
             {
               "id": "components/filter-chip/checklist",
-              "path": "/docs/components/filter-chip/checklist"
+              "path": "/docs/components/filter-chip/checklist",
+              "unlisted": true
             },
             {
               "id": "components/filter-chip/index",
@@ -304,7 +310,8 @@
             },
             {
               "id": "components/footer/checklist",
-              "path": "/docs/components/footer/checklist"
+              "path": "/docs/components/footer/checklist",
+              "unlisted": true
             },
             {
               "id": "components/footer/footer-minimal/index",
@@ -485,7 +492,8 @@
             },
             {
               "id": "components/header/checklist",
-              "path": "/docs/components/header/checklist"
+              "path": "/docs/components/header/checklist",
+              "unlisted": true
             },
             {
               "id": "components/header/header-minimal/index",
@@ -499,7 +507,8 @@
             },
             {
               "id": "components/icon/checklist",
-              "path": "/docs/components/icon/checklist"
+              "path": "/docs/components/icon/checklist",
+              "unlisted": true
             },
             {
               "id": "components/icon/index",
@@ -513,7 +522,8 @@
             },
             {
               "id": "components/language-toggle/checklist",
-              "path": "/docs/components/language-toggle/checklist"
+              "path": "/docs/components/language-toggle/checklist",
+              "unlisted": true
             },
             {
               "id": "components/language-toggle/index",
@@ -527,7 +537,8 @@
             },
             {
               "id": "components/link/checklist",
-              "path": "/docs/components/link/checklist"
+              "path": "/docs/components/link/checklist",
+              "unlisted": true
             },
             {
               "id": "components/link/collection/index",
@@ -541,7 +552,8 @@
             },
             {
               "id": "components/list/checklist",
-              "path": "/docs/components/list/checklist"
+              "path": "/docs/components/list/checklist",
+              "unlisted": true
             },
             {
               "id": "components/list/index",
@@ -550,7 +562,8 @@
             },
             {
               "id": "components/loading-indicator/checklist",
-              "path": "/docs/components/loading-indicator/checklist"
+              "path": "/docs/components/loading-indicator/checklist",
+              "unlisted": true
             },
             {
               "id": "components/loading-indicator/index",
@@ -559,7 +572,8 @@
             },
             {
               "id": "components/modal/checklist",
-              "path": "/docs/components/modal/checklist"
+              "path": "/docs/components/modal/checklist",
+              "unlisted": true
             },
             {
               "id": "components/modal/crisis-line-modal/index",
@@ -573,7 +587,8 @@
             },
             {
               "id": "components/omb-info/checklist",
-              "path": "/docs/components/omb-info/checklist"
+              "path": "/docs/components/omb-info/checklist",
+              "unlisted": true
             },
             {
               "id": "components/omb-info/index",
@@ -582,7 +597,8 @@
             },
             {
               "id": "components/on-this-page/checklist",
-              "path": "/docs/components/on-this-page/checklist"
+              "path": "/docs/components/on-this-page/checklist",
+              "unlisted": true
             },
             {
               "id": "components/on-this-page/index",
@@ -591,7 +607,8 @@
             },
             {
               "id": "components/pagination/checklist",
-              "path": "/docs/components/pagination/checklist"
+              "path": "/docs/components/pagination/checklist",
+              "unlisted": true
             },
             {
               "id": "components/pagination/index",
@@ -600,7 +617,8 @@
             },
             {
               "id": "components/process-list/checklist",
-              "path": "/docs/components/process-list/checklist"
+              "path": "/docs/components/process-list/checklist",
+              "unlisted": true
             },
             {
               "id": "components/process-list/index",
@@ -609,7 +627,8 @@
             },
             {
               "id": "components/progress-bar/checklist",
-              "path": "/docs/components/progress-bar/checklist"
+              "path": "/docs/components/progress-bar/checklist",
+              "unlisted": true
             },
             {
               "id": "components/progress-bar/index",
@@ -618,7 +637,8 @@
             },
             {
               "id": "components/search-filter/checklist",
-              "path": "/docs/components/search-filter/checklist"
+              "path": "/docs/components/search-filter/checklist",
+              "unlisted": true
             },
             {
               "id": "components/search-filter/index",
@@ -627,7 +647,8 @@
             },
             {
               "id": "components/search-input/checklist",
-              "path": "/docs/components/search-input/checklist"
+              "path": "/docs/components/search-input/checklist",
+              "unlisted": true
             },
             {
               "id": "components/search-input/index",
@@ -636,7 +657,8 @@
             },
             {
               "id": "components/service-list-item/checklist",
-              "path": "/docs/components/service-list-item/checklist"
+              "path": "/docs/components/service-list-item/checklist",
+              "unlisted": true
             },
             {
               "id": "components/service-list-item/index",
@@ -645,7 +667,8 @@
             },
             {
               "id": "components/sidenav/checklist",
-              "path": "/docs/components/sidenav/checklist"
+              "path": "/docs/components/sidenav/checklist",
+              "unlisted": true
             },
             {
               "id": "components/sidenav/index",
@@ -654,7 +677,8 @@
             },
             {
               "id": "components/snackbar/checklist",
-              "path": "/docs/components/snackbar/checklist"
+              "path": "/docs/components/snackbar/checklist",
+              "unlisted": true
             },
             {
               "id": "components/snackbar/index",
@@ -663,7 +687,8 @@
             },
             {
               "id": "components/summary-box/checklist",
-              "path": "/docs/components/summary-box/checklist"
+              "path": "/docs/components/summary-box/checklist",
+              "unlisted": true
             },
             {
               "id": "components/summary-box/index",
@@ -672,7 +697,8 @@
             },
             {
               "id": "components/table/checklist",
-              "path": "/docs/components/table/checklist"
+              "path": "/docs/components/table/checklist",
+              "unlisted": true
             },
             {
               "id": "components/table/index",
@@ -681,7 +707,8 @@
             },
             {
               "id": "components/tabs/checklist",
-              "path": "/docs/components/tabs/checklist"
+              "path": "/docs/components/tabs/checklist",
+              "unlisted": true
             },
             {
               "id": "components/tabs/index",
@@ -690,7 +717,8 @@
             },
             {
               "id": "components/tag/checklist",
-              "path": "/docs/components/tag/checklist"
+              "path": "/docs/components/tag/checklist",
+              "unlisted": true
             },
             {
               "id": "components/tag/index",
@@ -704,7 +732,8 @@
             },
             {
               "id": "components/telephone/checklist",
-              "path": "/docs/components/telephone/checklist"
+              "path": "/docs/components/telephone/checklist",
+              "unlisted": true
             },
             {
               "id": "components/telephone/index",
@@ -713,7 +742,8 @@
             },
             {
               "id": "components/text/checklist",
-              "path": "/docs/components/text/checklist"
+              "path": "/docs/components/text/checklist",
+              "unlisted": true
             },
             {
               "id": "components/text/index",
@@ -1371,7 +1401,9 @@
               "sidebar": "patternsSidebar"
             }
           ],
-          "draftIds": [],
+          "draftIds": [
+            "about/search-architecture"
+          ],
           "sidebars": {
             "componentsSidebar": {
               "link": {
@@ -1430,8 +1462,8 @@
   "docusaurus-lunr-search": {
     "default": {
       "fileNames": {
-        "searchDoc": "search-doc-1768494308658.json",
-        "lunrIndex": "lunr-index-1768494308658.json"
+        "searchDoc": "search-doc-1768494771457.json",
+        "lunrIndex": "lunr-index-1768494771457.json"
       }
     }
   }

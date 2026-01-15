@@ -7,7 +7,7 @@
   "slug": "/components/snackbar/checklist",
   "permalink": "/docs/components/snackbar/checklist",
   "draft": false,
-  "unlisted": false,
+  "unlisted": true,
   "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/snackbar/checklist.mdx",
   "tags": [],
   "version": "current",

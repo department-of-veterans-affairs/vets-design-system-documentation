@@ -7,7 +7,7 @@
   "slug": "/components/summary-box/checklist",
   "permalink": "/docs/components/summary-box/checklist",
   "draft": false,
-  "unlisted": false,
+  "unlisted": true,
   "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/summary-box/checklist.mdx",
   "tags": [],
   "version": "current",

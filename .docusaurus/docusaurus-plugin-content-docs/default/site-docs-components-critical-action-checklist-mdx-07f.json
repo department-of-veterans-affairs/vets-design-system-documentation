@@ -7,7 +7,7 @@
   "slug": "/components/critical-action/checklist",
   "permalink": "/docs/components/critical-action/checklist",
   "draft": false,
-  "unlisted": false,
+  "unlisted": true,
   "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/critical-action/checklist.mdx",
   "tags": [],
   "version": "current",

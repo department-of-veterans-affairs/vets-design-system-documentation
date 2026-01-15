@@ -1,7 +1,0 @@
-{
-  "current_quarter": "2026Q1",
-  "latest_complete_quarter": "2025Q4",
-  "latest_complete_quarter_file": "governance-metrics-2025Q4.json",
-  "last_updated": "2026-01-02T18:09:47.064Z",
-  "description": "Index pointing to the most recent complete governance metrics data"
-}
