@@ -1,0 +1,224 @@
+.releaseNotes {
+  margin: 2rem 0;
+}
+
+.releaseNotes h2 {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1b1b1b;
+  border-bottom: 2px solid #0071bb;
+  padding-bottom: 0.5rem;
+}
+
+.releases {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.release {
+  border: 1px solid #d6d7d9;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  background: #ffffff;
+}
+
+.releaseHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 1rem;
+}
+
+.releaseHeader h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.releaseHeader h3 a {
+  color: #0071bb;
+  text-decoration: none;
+}
+
+.releaseHeader h3 a:hover {
+  text-decoration: underline;
+}
+
+.prereleaseBadge {
+  background: #ffeaa7;
+  color: #8b6914;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.releaseDate {
+  font-size: 0.875rem;
+  color: #565c65;
+  font-style: italic;
+}
+
+.releaseBody {
+  line-height: 1.6;
+  color: #1b1b1b;
+}
+
+.releaseBody h3 {
+  font-size: 1.125rem;
+  margin: 1.5rem 0 0.75rem 0;
+  color: #1b1b1b;
+  font-weight: 600;
+}
+
+.releaseBody h4 {
+  font-size: 1rem;
+  margin: 1.25rem 0 0.5rem 0;
+  color: #1b1b1b;
+  font-weight: 600;
+}
+
+.releaseBody p {
+  margin: 0.75rem 0;
+}
+
+.releaseBody ul {
+  margin: 0.75rem 0;
+  padding-left: 1.5rem;
+}
+
+.releaseBody li {
+  margin: 0.25rem 0;
+}
+
+.releaseBody code {
+  background: #f1f3f4;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  font-family: 'Source Code Pro', 'Monaco', 'Consolas', monospace;
+  font-size: 0.875em;
+}
+
+.releaseBody strong {
+  font-weight: 600;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 2rem;
+  color: #565c65;
+}
+
+.error {
+  background: #fef7f7;
+  border: 1px solid #f4d5d5;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+.error p {
+  margin: 0.5rem 0;
+}
+
+.viewAllLink {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.linkAction {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background: #0071bb;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.linkAction:hover {
+  background: #205493;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Dark mode support */
+[data-theme='dark'] .releaseNotes h2 {
+  color: #ffffff;
+  border-color: #4c9aff;
+}
+
+[data-theme='dark'] .release {
+  background: #1b1b1d;
+  border-color: #444951;
+}
+
+[data-theme='dark'] .releaseHeader {
+  border-color: #444951;
+}
+
+[data-theme='dark'] .releaseHeader h3 a {
+  color: #4c9aff;
+}
+
+[data-theme='dark'] .releaseDate {
+  color: #b1b5bc;
+}
+
+[data-theme='dark'] .releaseBody {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .releaseBody h3,
+[data-theme='dark'] .releaseBody h4 {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .releaseBody code {
+  background: #2d3748;
+  color: #e2e8f0;
+}
+
+[data-theme='dark'] .error {
+  background: #2d1b1b;
+  border-color: #5d3333;
+  color: #ffcccc;
+}
+
+[data-theme='dark'] .linkAction {
+  background: #4c9aff;
+}
+
+[data-theme='dark'] .linkAction:hover {
+  background: #2e7aff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .release {
+    padding: 1.25rem;
+  }
+  
+  .releaseHeader h3 {
+    font-size: 1.125rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .linkAction {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+  }
+}

@@ -76,6 +76,11 @@
               "sidebar": "aboutSidebar"
             },
             {
+              "id": "about/metrics/governance",
+              "path": "/docs/about/metrics/governance",
+              "sidebar": "aboutSidebar"
+            },
+            {
               "id": "about/metrics/index",
               "path": "/docs/about/metrics/",
               "sidebar": "aboutSidebar"
@@ -1462,8 +1467,8 @@
   "docusaurus-lunr-search": {
     "default": {
       "fileNames": {
-        "searchDoc": "search-doc-1768494771457.json",
-        "lunrIndex": "lunr-index-1768494771457.json"
+        "searchDoc": "search-doc-1768495755909.json",
+        "lunrIndex": "lunr-index-1768495755909.json"
       }
     }
   }

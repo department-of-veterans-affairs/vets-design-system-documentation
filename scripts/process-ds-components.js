@@ -18,10 +18,11 @@
 const fs = require('fs').promises;
 const path = require('path');
 
-const DATA_DIR = path.join(__dirname, '../src/_data/metrics');
-const OUTPUT_DIR = path.join(__dirname, '../src/assets/data/metrics');
+const DATA_DIR = path.join(__dirname, '../static/data/metrics');
+const OUTPUT_DIR = path.join(__dirname, '../static/data/metrics');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, 'component-usage.json');
-const JEKYLL_OUTPUT_FILE = path.join(DATA_DIR, 'component-usage.json');
+const JEKYLL_DATA_DIR = path.join(__dirname, '../_archive/jekyll/_data/metrics');
+const JEKYLL_OUTPUT_FILE = path.join(JEKYLL_DATA_DIR, 'component-usage.json');
 
 // CSV parsing constants
 const MIN_EXPECTED_COLUMNS = 10;

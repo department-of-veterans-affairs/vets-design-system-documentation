@@ -4,46 +4,54 @@ description: Latest releases, updates, and changes to the VA Design System.
 sidebar_position: 12
 ---
 
+import ReleaseNotes from '@site/src/components/ReleaseNotes';
+
 # What's new
 
 Stay up to date with the latest releases, guidance updates, and changes to the VA Design System.
 
-## Component library releases
+<ReleaseNotes 
+  repoUrl="https://github.com/department-of-veterans-affairs/component-library"
+  title="Component Library Releases"
+  maxReleases={5}
+/>
 
-### v54.4.1 (December 19, 2025)
+<ReleaseNotes 
+  repoUrl="https://github.com/department-of-veterans-affairs/vets-design-system-documentation"
+  title="Guidance Updates"
+  maxReleases={5}
+/>
 
-Fixed build failure by downgrading web-components React version to 17.
+## Figma Component Library
 
-### v54.4.0 (December 18, 2025)
+<div style={{border: '1px solid #d6d7d9', borderRadius: '0.5rem', overflow: 'hidden', marginBottom: '2rem'}}>
+  <iframe 
+    src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/changelog" 
+    style={{width: '100%', height: '640px', maxHeight: '80vh', border: 'none'}} 
+    title="Figma Component Library Changelog"
+    allowFullScreen
+  />
+</div>
 
-- Enhanced OMB info component to convert respondent burden to hours/minutes format
-- Improved progress bar styling
-- Updated pagination aria-labels for better accessibility
-
-### v54.3.0 (December 8, 2025)
-
-- Added header level property to maintenance banner
-- Improved crisis line modal with custom events
-- Enhanced alert screen reader announcements
-
-## Guidance updates
-
-### Sprint 18 (December 22, 2025)
-
-- Fixed mermaid chart accessibility with semantic figure/figcaption elements
-- Replaced flow chart images with interactive mermaid diagrams throughout documentation
-- Enhanced screen reader skip link anchor for full decision tree content
-- Added indeterminate checkbox state accessibility notes
-- Introduced new pattern for "Navigate multiple related forms"
-- Updated style guide entries on list items and conversational language
-
-### Sprint 17 (December 8, 2025)
-
-- Added expand_circle_right icon
-- Updated Email Address pattern to reference VA Profile API instead of VA.gov Profile
-- Revised race/ethnicity data collection guidelines
-- Enhanced "Keep a record" pattern with My VA cards download references
-- Updated mobile menu screenshots and direct deposit review designs
+<div style={{textAlign: 'center', marginBottom: '3rem'}}>
+  <a 
+    href="https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Library?type=design&mode=design&t=UOUhWy38r5Sy2i5v-1" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    style={{
+      display: 'inline-flex',
+      alignItems: 'center',
+      padding: '0.75rem 1.5rem',
+      background: '#0071bb',
+      color: '#ffffff',
+      textDecoration: 'none',
+      borderRadius: '0.5rem',
+      fontWeight: '500'
+    }}
+  >
+    Open Component Library in Figma →
+  </a>
+</div>
 
 ## Content style guide enhancements
 

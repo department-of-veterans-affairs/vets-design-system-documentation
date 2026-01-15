@@ -206,17 +206,17 @@
     },
     "content": "393be207"
   },
-  "/docs-788": {
+  "/docs-439": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/docs-ff5": {
+  "/docs-627": {
     "__comp": "a7bd4aaa",
     "__props": "0058b4c6"
   },
-  "/docs-990": {
+  "/docs-848": {
     "__comp": "a94703ab"
   },
   "/docs/-0ee": {
@@ -278,6 +278,10 @@
   "/docs/about/metrics/-772": {
     "__comp": "17896441",
     "content": "97d7fbd9"
+  },
+  "/docs/about/metrics/governance-10f": {
+    "__comp": "17896441",
+    "content": "98e5c40b"
   },
   "/docs/about/naming-conventions/-21a": {
     "__comp": "17896441",

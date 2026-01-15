@@ -20,8 +20,8 @@
   },
   "sidebar": "aboutSidebar",
   "previous": {
-    "title": "Overview",
-    "permalink": "/docs/about/metrics/"
+    "title": "Governance Metrics",
+    "permalink": "/docs/about/metrics/governance"
   },
   "next": {
     "title": "CSS",

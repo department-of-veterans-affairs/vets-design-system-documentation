@@ -1,0 +1,160 @@
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.dashboard h1 {
+  margin: 0 0 1rem 0;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1b1b1b;
+  line-height: 1.2;
+}
+
+.dashboard h2 {
+  margin: 3rem 0 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1b1b1b;
+  line-height: 1.3;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: #565c65;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #565c65;
+}
+
+.error {
+  background: #fef7f7;
+  border: 1px solid #f4d5d5;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+}
+
+.error p {
+  margin: 0.5rem 0;
+}
+
+.metricsInfo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.infoCard {
+  background: #f8f9fa;
+  border: 1px solid #e6e6e6;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.infoCard h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1b1b1b;
+}
+
+.infoCard p {
+  margin: 0;
+  color: #565c65;
+  line-height: 1.5;
+  font-size: 0.9375rem;
+}
+
+.dataSources {
+  list-style-type: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.dataSources li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.dataSources li:last-child {
+  border-bottom: none;
+}
+
+/* Dark mode support */
+[data-theme='dark'] .dashboard h1,
+[data-theme='dark'] .dashboard h2 {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .description {
+  color: #b1b5bc;
+}
+
+[data-theme='dark'] .error {
+  background: #2d1b1b;
+  border-color: #5d3333;
+  color: #ffcccc;
+}
+
+[data-theme='dark'] .infoCard {
+  background: #2d3748;
+  border-color: #444951;
+}
+
+[data-theme='dark'] .infoCard h3 {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .infoCard p {
+  color: #b1b5bc;
+}
+
+[data-theme='dark'] .dataSources li {
+  border-color: #444951;
+  color: #ffffff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 1.5rem 1rem;
+  }
+  
+  .dashboard h1 {
+    font-size: 1.875rem;
+  }
+  
+  .dashboard h2 {
+    font-size: 1.25rem;
+    margin: 2rem 0 1rem 0;
+  }
+  
+  .metricsGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .metricsInfo {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .infoCard {
+    padding: 1.25rem;
+  }
+}

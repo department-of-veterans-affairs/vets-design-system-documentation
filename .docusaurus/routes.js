@@ -79,15 +79,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '788'),
+    component: ComponentCreator('/docs', '439'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'ff5'),
+        component: ComponentCreator('/docs', '627'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '990'),
+            component: ComponentCreator('/docs', '848'),
             routes: [
               {
                 path: '/docs/',
@@ -175,6 +175,12 @@ export default [
               {
                 path: '/docs/about/metrics/',
                 component: ComponentCreator('/docs/about/metrics/', '772'),
+                exact: true,
+                sidebar: "aboutSidebar"
+              },
+              {
+                path: '/docs/about/metrics/governance',
+                component: ComponentCreator('/docs/about/metrics/governance', '10f'),
                 exact: true,
                 sidebar: "aboutSidebar"
               },

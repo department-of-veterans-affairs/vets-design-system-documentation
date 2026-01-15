@@ -13,8 +13,8 @@ const path = require('path');
 
 // Configuration
 const REPO = 'department-of-veterans-affairs/vets-design-system-documentation';
-const OUTPUT_FILE = path.join(__dirname, '..', 'src', 'assets', 'data', 'metrics', 'experimental-metrics.json');
-const JEKYLL_OUTPUT_FILE = path.join(__dirname, '..', 'src', '_data', 'metrics', 'experimental-metrics.json');
+const OUTPUT_FILE = path.join(__dirname, '..', 'static', 'data', 'metrics', 'experimental-metrics.json');
+const JEKYLL_OUTPUT_FILE = path.join(__dirname, '..', '_archive', 'jekyll', '_data', 'metrics', 'experimental-metrics.json');
 
 /**
  * Execute a command and return the output

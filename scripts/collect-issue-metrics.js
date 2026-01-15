@@ -15,9 +15,9 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 const REPO = 'department-of-veterans-affairs/vets-design-system-documentation';
-const OUTPUT_DIR = path.join(__dirname, '../src/assets/data/metrics');
+const OUTPUT_DIR = path.join(__dirname, '../static/data/metrics');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, 'issue-metrics.json');
-const JEKYLL_DATA_DIR = path.join(__dirname, '../src/_data/metrics');
+const JEKYLL_DATA_DIR = path.join(__dirname, '../_archive/jekyll/_data/metrics');
 const JEKYLL_OUTPUT_FILE = path.join(JEKYLL_DATA_DIR, 'issue-metrics.json');
 
 /**

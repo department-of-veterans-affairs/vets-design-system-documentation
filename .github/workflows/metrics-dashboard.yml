@@ -367,13 +367,13 @@ jobs:
           echo "## 📊 Metrics Update Summary" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           
-          if [ -f "src/assets/data/metrics/issue-metrics.json" ]; then
-            TOTAL_ISSUES=$(jq -r '.summary.total_issues_processed // "unknown"' src/assets/data/metrics/issue-metrics.json)
-            OPEN_ISSUES=$(jq -r '.summary.open_issues // "unknown"' src/assets/data/metrics/issue-metrics.json)
-            CLOSED_MONTH=$(jq -r '.summary.closed_this_month // "unknown"' src/assets/data/metrics/issue-metrics.json)
-            AVG_RESOLUTION=$(jq -r '.summary.avg_resolution_days // "unknown"' src/assets/data/metrics/issue-metrics.json)
-            QUARTERS=$(jq -r '.quarterly | length' src/assets/data/metrics/issue-metrics.json)
-            EXPERIMENTAL_QUARTERS=$(jq -r '.experimental_quarterly | length' src/assets/data/metrics/issue-metrics.json)
+          if [ -f "static/data/metrics/issue-metrics.json" ]; then
+            TOTAL_ISSUES=$(jq -r '.summary.total_issues_processed // "unknown"' static/data/metrics/issue-metrics.json)
+            OPEN_ISSUES=$(jq -r '.summary.open_issues // "unknown"' static/data/metrics/issue-metrics.json)
+            CLOSED_MONTH=$(jq -r '.summary.closed_this_month // "unknown"' static/data/metrics/issue-metrics.json)
+            AVG_RESOLUTION=$(jq -r '.summary.avg_resolution_days // "unknown"' static/data/metrics/issue-metrics.json)
+            QUARTERS=$(jq -r '.quarterly | length' static/data/metrics/issue-metrics.json)
+            EXPERIMENTAL_QUARTERS=$(jq -r '.experimental_quarterly | length' static/data/metrics/issue-metrics.json)
             
             echo "### ✅ Issue Metrics Updated Successfully" >> $GITHUB_STEP_SUMMARY
             echo "" >> $GITHUB_STEP_SUMMARY
