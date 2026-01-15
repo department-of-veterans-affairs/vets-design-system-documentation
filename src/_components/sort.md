@@ -99,10 +99,11 @@ anchors:
 ### Mobile app
 
 * **The VA mobile app does not currently use this component.** It uses its own combined Filter & Sort button that opens a modal to select and explicitly submit sort and filter options.
-    * The naming of sort options must still remain consistent across mobile and desktop experiences.
-    * <img src="{{ site.baseurl }}/images/components/sort/va_mobile_filter_sort.png" alt="A Filter and Sort button that opens a modal that allows a user to explicitly submit sort and filter options." style="width:25%;"/>
+    * <img src="{{ site.baseurl }}/images/components/sort/va_mobile_filter_sort.png" alt="A Filter and Sort button that opens a modal that allows a user to explicitly submit sort and filter options." style="width:100%;"/>
 
-* **Reflect the active sort in the [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how) when sorting is used alongside filtering or other result refinements,**
+* **The naming of sort options must still remain consistent across mobile and desktop experiences.**
+
+* **Reflect the active sort in the [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how) when sorting is used alongside filtering or other result refinements.**
     * For example: “Showing 1–10 of 999 results for ‘2020’ with 5 filters applied, sorted by *[Sort attribute] (sort method)*.”
     * This is not necessary for the web component because the component already serves as a visual indicator of the order whereas it hidden within the modal on the mobile app. 
 
