@@ -1,0 +1,19 @@
+{
+  "name": "@repo/tokens",
+  "version": "0.0.0", 
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./colors": "./dist/colors.js",
+    "./spacing": "./dist/spacing.js",
+    "./typography": "./dist/typography.js",
+    "./css": "./dist/tokens.css"
+  },
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js --watch"
+  },
+  "devDependencies": {
+    "style-dictionary": "^4.0.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "@repo/search-config",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module", 
+  "exports": {
+    "./algolia": "./src/algolia-config.js",
+    "./shared": "./src/shared-search.js"
+  },
+  "scripts": {
+    "build": "echo 'No build step needed for search config'",
+    "dev": "echo 'No dev step needed for search config'"
+  }
+}

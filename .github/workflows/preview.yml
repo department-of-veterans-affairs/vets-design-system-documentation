@@ -21,20 +21,54 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+          run_install: false
+
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - name: Setup pnpm cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install
 
-      - name: Build site
-        run: npm run build
+      - name: Build all apps
+        run: pnpm build
+
+      - name: Prepare deployment structure
+        run: |
+          # Create deployment directory structure
+          mkdir -p deploy
+          
+          # Copy design system build (main site)
+          cp -r apps/design-system/build/* deploy/
+          
+          # Copy confluence migration build
+          mkdir -p deploy/confluence
+          cp -r apps/confluence-migration/build/* deploy/confluence/
+          
+          # Copy search app build
+          mkdir -p deploy/search
+          cp -r apps/search/build/* deploy/search/
 
       - name: Make BUILD.txt file
         run: |
           echo -e "REF=${{ github.sha }}\n\
           BUILD_ID=${{ github.run_id }}\n\
           BUILDTIME=$(date)\n\
-          PR_NUMBER=${{ github.event.number }}" > build/BUILD.txt
+          PR_NUMBER=${{ github.event.number }}" > deploy/BUILD.txt
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
@@ -45,7 +79,7 @@ jobs:
 
       - name: Deploy to development S3
         run: |
-          aws s3 sync build s3://dev-design.va.gov/${{ github.event.number }} \
+          aws s3 sync deploy s3://dev-design.va.gov/${{ github.event.number }} \
           --acl public-read \
           --delete \
           --exclude "storybook/*"
@@ -55,31 +89,36 @@ jobs:
         with:
           script: |
             const { owner, repo, number } = context.issue;
-            const previewUrl = `https://dev-design.va.gov/${number}/`;
+            const baseUrl = `https://dev-design.va.gov/${number}`;
             const body = `## 📖 Documentation Preview
 
             Your changes have been deployed to a preview environment:
 
-            **🔗 Preview URL:** ${previewUrl}
+            ### 🔗 Preview URLs:
+            - **🎨 Design System:** ${baseUrl}/
+            - **📚 Engineering Docs:** ${baseUrl}/confluence/
+            - **🔍 Unified Search:** ${baseUrl}/search/
 
             ### What's included:
-            - Complete Docusaurus site with your changes
-            - Interactive component examples
-            - Content management system (CMS) integration
-            - All documentation sections
+            - **Design System**: Complete Docusaurus site with components, patterns, and guidelines
+            - **Engineering Documentation**: Confluence-migrated content (processes, guides)
+            - **Unified Search Portal**: Google-like search across all documentation sites
+            - All apps built with shared components and design tokens
 
             ### Testing locally:
             \`\`\`bash
-            npm install
-            npm run dev
-            # Site available at http://localhost:3000
+            pnpm install
+            pnpm dev
+            # Design System: http://localhost:3000
+            # Engineering Docs: http://localhost:3001/confluence/
+            # Search Portal: http://localhost:3002/search/
             \`\`\`
 
-            ### Testing with CMS locally:
+            ### Individual app development:
             \`\`\`bash
-            npm run dev:cms
-            # Site at http://localhost:3000
-            # CMS admin at http://localhost:3000/admin/
+            pnpm design-system:dev  # Port 3000
+            pnpm confluence:dev      # Port 3001
+            pnpm search:dev          # Port 3002
             \`\`\`
 
             The preview will be updated automatically when you push new commits to this PR.`;

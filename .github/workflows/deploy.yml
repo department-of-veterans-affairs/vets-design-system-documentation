@@ -35,33 +35,67 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+          run_install: false
+
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - name: Setup pnpm cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install
 
-      - name: Build site
-        run: npm run build
+      - name: Build all apps
+        run: pnpm build
+
+      - name: Prepare deployment structure
+        run: |
+          # Create deployment directory structure
+          mkdir -p deploy
+          
+          # Copy design system build (main site)
+          cp -r apps/design-system/build/* deploy/
+          
+          # Copy confluence migration build
+          mkdir -p deploy/confluence
+          cp -r apps/confluence-migration/build/* deploy/confluence/
+          
+          # Copy search app build
+          mkdir -p deploy/search
+          cp -r apps/search/build/* deploy/search/
 
       - name: Make BUILD.txt file
         run: |
           echo -e "REF=${{ github.sha }}\n\
           BUILD_ID=${{ github.run_id }}\n\
-          BUILDTIME=$(date)" > build/BUILD.txt
+          BUILDTIME=$(date)" > deploy/BUILD.txt
 
       - name: Upload build artifacts for staging
         if: github.ref != 'refs/heads/main'
         uses: actions/upload-artifact@v4
         with:
           name: docusaurus-build-staging
-          path: build
+          path: deploy
 
       - name: Upload build artifacts for production
         if: github.ref == 'refs/heads/main'
         uses: actions/upload-artifact@v4
         with:
           name: docusaurus-build-production
-          path: build
+          path: deploy
 
   deploy-staging:
     name: Deploy to Staging
@@ -73,7 +107,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: docusaurus-build-staging
-          path: build
+          path: deploy
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
@@ -84,7 +118,7 @@ jobs:
 
       - name: Deploy to staging S3
         run: |
-          aws s3 sync build s3://staging-design.va.gov \
+          aws s3 sync deploy s3://staging-design.va.gov \
           --acl public-read \
           --delete \
           --exclude "storybook/*"
@@ -99,7 +133,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: docusaurus-build-production
-          path: build
+          path: deploy
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
@@ -110,7 +144,7 @@ jobs:
 
       - name: Deploy to production S3
         run: |
-          aws s3 sync build s3://design.va.gov \
+          aws s3 sync deploy s3://design.va.gov \
           --acl public-read \
           --delete \
           --exclude "storybook/*"

@@ -1,0 +1,17 @@
+
+
+> @repo/tokens@0.0.0 build /Users/barbaradenney/Documents/GitHub/vets-design-system-documentation/packages/tokens
+> node build.js
+
+Building design tokens...
+
+css
+[1m[32m✔︎ dist/tokens.css[39m[22m
+
+js
+[1m[32m✔︎ dist/colors.js[39m[22m
+[1m[32m✔︎ dist/spacing.js[39m[22m
+[1m[32m✔︎ dist/typography.js[39m[22m
+✓ Design tokens built successfully
+  - CSS variables: dist/tokens.css
+  - JS modules: dist/colors.js, dist/spacing.js, dist/typography.js
