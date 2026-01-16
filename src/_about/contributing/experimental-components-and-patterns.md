@@ -12,7 +12,7 @@ An experimental component or pattern is something that is being explored by a te
 
 ## Why showcase experimental components and patterns?
 
-Since our community has many people across different contracts and companies building on VA.gov, we often have teams trying out new component or pattern designs, which can be found on the [Experimental Design Request Board](https://github.com/orgs/department-of-veterans-affairs/projects/946/views/3).
+Since our community has many people across different contracts and companies building on VA.gov, we often have teams trying out new component or pattern designs, which can be found on the [Experimental Design Request Dashboard](https://github.com/orgs/department-of-veterans-affairs/projects/946/views/3).
 
 Before this, there was no place for folks to get visibility into what was happening, resulting in team members working on the same problem spaces without being aware that that was the case.
 
