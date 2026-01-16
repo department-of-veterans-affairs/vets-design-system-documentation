@@ -9,10 +9,11 @@ mobile-app: false
 intro-text: "The Sort component allows users to reorder search results and lists of information to make information easier to analyze."
 # github-title: va-component-name - Only use this if the component is not actually a web component and thus just needs a label that matches that format.
 # research-title: Use this to match the label in the research repo. Only use if web-component does not match the label.
-# figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/branch/ZCvzpF0EbyeCbO4fL9u8r0/VADS-Component-Library?m=auto&node-id=40936-5762&t=JVGxloXD7xd6RgeE-1
-# figma-link-mobile-app: https://www.figma.com/design/Zzt8z60hCtdEzXx2GFWghH/VA-Mobile---Component-Library?node-id=224-314
+figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=40936-5762&t=RJz70e6yAZDcvGY3-1
+
 status: use-with-caution-candidate
 # web-component: va-sort
+
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -20,20 +21,27 @@ anchors:
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
-  - anchor: Privacy guidance
   - anchor: Related
 ---
 
 ## Examples
 
 ### Medications
-{% include component-example.html alt="Example of medications on the Medications page sorted by last fill date (newest to oldest)." file="/images/components/sort/medications_sort.png" caption="Sorting medications by last fill date (newest to oldest)." width="50%" %}
+
+#### Mobile
+{% include component-example.html alt="Mobile example of medications on the My HealtheVet Medications page placed below the Filter and above the search results." file="/images/components/sort/medications_sort_mobile.png" caption="Mobile example of My HealtheVet medications sorted by last fill date (newest to oldest) alongside the Search Filter component." width="25%" %}
+
+#### Desktop
+{% include component-example.html alt="Desktop example of medications on the My HealtheVet Medications page placed below the Filter and above the search results" file="/images/components/sort/medications_sort.png" caption="Desktop example of My HealtheVet medications sorted by last fill date (newest to oldest) alongside the Search Filter component." width="50%" %}
+
+### Questions
+{% include component-example.html alt="Desktop example of Sort placed below the Search Input component, separated by a divider with the Search Filter in a column to the left." file="/images/components/sort/askva_sort_search_input_filter.png" caption="Desktop example of AskVA questions sorted by last updated (newest to oldest) alongside the Search Input and Search Filter components." width="50%" %}
 
 ### Find a Form
-{% include component-example.html alt="Screenshot of the VA Find a Form search results page showing a Sort by dropdown set to the default option above a list of form results." file="/images/components/sort/find_a_form_sort.png" caption="VA Find a Form's default sort" width="50%" %}
+{% include component-example.html alt="Screenshot of the VA Find a Form search results page showing a Sort by dropdown set to the default option above a list of form results." file="/images/components/sort/find_a_form_sort.png" caption="Desktop example of VA forms sorted by relevance on VA Find a Form." width="50%" %}
 
 ### Secure Messaging
-{% include component-example.html alt="Example of messages sorted by send date (newest to oldest) in the My HealtheVet Inbox" file="/images/components/sort/inbox_sort.png" caption="Sorting messages by last updated (newest to oldest) in the My HealtheVet Inbox." width="50%" %}
+{% include component-example.html alt="Example of messages sorted by send date (newest to oldest) in the My HealtheVet Inbox" file="/images/components/sort/inbox_sort.png" caption="Desktop example of messages sorted by last updated (newest to oldest) in the My HealtheVet Inbox." width="50%" %}
 
 
 ## Usage
@@ -85,12 +93,14 @@ anchors:
 ### Placement
 
 * **Place Sort above and aligned with the content that it affects.** It serves as a visual indicator of the current order.
-
+* **If used with the Search Filter, place Sort after the Search Filter's [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how).** This prevents the focus from skipping the Sort component given that the focus for filtering moves to results description or results heading and the focus for sorting is maintained on the component.
 
 ### Mobile app
 
 * **The VA mobile app does not currently use this component.** It uses its own combined Filter & Sort button that opens a modal to select and explicitly submit sort and filter options.
-    * The naming of sort options must still remain consistent across mobile and desktop experiences.
+    * <img src="{{ site.baseurl }}/images/components/sort/va_mobile_filter_sort.png" alt="A Filter and Sort button that opens a modal that allows a user to explicitly submit sort and filter options." style="width:100%;"/>
+
+* **The naming of sort options must still remain consistent across mobile and desktop experiences.**
 
 
 
@@ -144,8 +154,9 @@ anchors:
   
 * **Only include sort options that provide clear value.** The ability to sort data doesn't automatically mean it will help users.
 
-* **When sorting is used alongside filtering or other result refinements**, reflect the active sort in the [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how).
-    * For example: “Showing 1–10 of 999 results for ‘2020’ with 5 filters applied, sorted by *[Sort attribute] (sort method)*.”
+* **Sort does not need to be reflected in the [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how) for web and mobile.** The component already acts as a visual indicator of the order. However, it is required for the mobile app since the sort state is hidden within the modal.
+
+
 
 ## Accessibility considerations
 These considerations describe how sorting changes are communicated and experienced by users of assistive technologies.
@@ -166,6 +177,10 @@ These considerations describe how sorting changes are communicated and experienc
 
 ## Related
 
+* [Select]({{ site.baseurl }}/components/form/select)
+* [Search Input]({{ site.baseurl }}/components/search-input)
+* [Search Filter]({{ site.baseurl }}/components/search-filter)
+* [Search Results]({{ site.baseurl }}/templates/search-results)
 * [USWDS Table Component](https://designsystem.digital.gov/components/table/#guidance)
 
 <!--{% include _component-checklist.html component_name=page.web-component %}-->
