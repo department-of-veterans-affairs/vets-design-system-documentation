@@ -93,8 +93,7 @@ anchors:
 ### Placement
 
 * **Place Sort above and aligned with the content that it affects.** It serves as a visual indicator of the current order.
-* **If used with the Search Filter, place Sort after the [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how).** This prevents the situation where the keyboard focus skips the Sort component. For the Search Filter, focus moves to results heading or description upon filtering whereas the focus for Sort is maintained on the component upon sorting. 
-
+* **If used with the Search Filter, place Sort after the Search Filter's [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how).** This prevents the situation where the keyboard focus skips the Sort component given that the focus for filtering moves to results description or results heading and the focus for sorting is maintained on the component.
 
 ### Mobile app
 
