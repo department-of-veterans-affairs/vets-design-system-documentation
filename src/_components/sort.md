@@ -155,7 +155,7 @@ anchors:
   
 * **Only include sort options that provide clear value.** The ability to sort data doesn't automatically mean it will help users.
 
-* **Sort does not need to be reflected in the [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how) for web and mobile.** The component already acts a visual indicator of the order. However, it is required for the mobile app since the sort state is hidden within the modal.
+* **Sort does not need to be reflected in the [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how) for web and mobile.** The component already acts as a visual indicator of the order. However, it is required for the mobile app since the sort state is hidden within the modal.
 
 
 
