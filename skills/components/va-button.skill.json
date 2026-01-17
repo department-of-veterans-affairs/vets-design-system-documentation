@@ -1,0 +1,382 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/skill.json",
+  "name": "VA Button Component",
+  "version": "0.1.0",
+  "meta": {
+    "id": "component.va-button",
+    "version": "0.1.0",
+    "lastSynced": "2025-11-13",
+    "maturity": "use-deployed",
+    "intentClassifiers": [
+      "button",
+      "action",
+      "submit",
+      "click",
+      "form button",
+      "primary button",
+      "secondary button",
+      "call to action"
+    ],
+    "sourceOfTruth": {
+      "guidance": "https://design.va.gov/components/button",
+      "storybook": "https://design.va.gov/storybook/?path=/docs/components-va-button--default",
+      "code": "https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/web-components/src/components/va-button"
+    }
+  },
+  "intent": {
+    "summary": "Use va-button for triggering actions, not navigation. Buttons perform actions like submitting forms, closing modals, saving data, or advancing through workflows.",
+    "triggerPhrases": [
+      "button",
+      "submit",
+      "action",
+      "click",
+      "save",
+      "continue",
+      "back",
+      "form action"
+    ]
+  },
+  "usage": {
+    "whenToUse": [
+      "Performing actions: Add, close, cancel, save, delete, edit operations",
+      "Triggering JavaScript functionality: Opening/closing modals, expanding sections",
+      "Form progression: Continue, back, submit buttons in form workflows",
+      "Single-execution actions: Operations requiring loading states (prevent double-clicks)",
+      "Page-level primary actions: Most important action on a page or section"
+    ],
+    "whenNotToUse": [
+      "Navigation between pages → Use <a> links or va-link instead",
+      "General website navigation → Use links in headers, footers, sidebars",
+      "Prominent CTAs that navigate → Use va-action-link component instead",
+      "Inline content links → Use standard links",
+      "Destructive actions without confirmation → Pair with confirmation dialog first"
+    ]
+  },
+  "decisionTree": {
+    "title": "Buttons vs. Links",
+    "questions": [
+      {
+        "question": "Is purpose navigation?",
+        "answer": "Yes, no data submitted",
+        "action": "Use <a> or va-link"
+      },
+      {
+        "question": "Is purpose navigation with data submission?",
+        "answer": "Yes (e.g., search)",
+        "action": "Use va-button with submit"
+      },
+      {
+        "question": "Does navigation need visual emphasis?",
+        "answer": "Yes",
+        "action": "Use va-action-link"
+      },
+      {
+        "question": "Is purpose an action (not navigation)?",
+        "answer": "Yes",
+        "action": "Use va-button"
+      }
+    ]
+  },
+  "api": {
+    "componentTag": "va-button",
+    "reactImport": "@department-of-veterans-affairs/web-components/react-bindings",
+    "reactComponentName": "VaButton",
+    "props": [
+      {
+        "name": "text",
+        "type": "string",
+        "required": false,
+        "default": null,
+        "description": "The text displayed on the button. If not provided, defaults from continue/back props or 'Loading...' when loading."
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "required": false,
+        "default": null,
+        "description": "The aria-label for the button. Use when button text alone isn't descriptive enough."
+      },
+      {
+        "name": "disabled",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "WARNING: Avoid using. If true, button appears disabled and click events won't fire. Poor for accessibility."
+      },
+      {
+        "name": "secondary",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Use for non-primary actions (cancel, reset, actions on current page)."
+      },
+      {
+        "name": "big",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Large button variant. Use when it's the only action on a page."
+      },
+      {
+        "name": "primaryAlternate",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Alternate primary button styling."
+      },
+      {
+        "name": "back",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Back button with left arrow icon. Text defaults to 'Back'. Use in form flows."
+      },
+      {
+        "name": "continue",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Continue button with right arrow icon. Text defaults to 'Continue'. Use in form flows."
+      },
+      {
+        "name": "loading",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Shows loading spinner, disables button, announces 'Loading' to screen readers. Use for async actions."
+      },
+      {
+        "name": "submit",
+        "type": "string",
+        "required": false,
+        "default": null,
+        "description": "Sets type='submit' for form submission. Values: 'prevent' (trigger onsubmit but don't submit), 'skip' (submit without onsubmit), or any other value (both)."
+      },
+      {
+        "name": "fullWidth",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Button expands to full width of container."
+      },
+      {
+        "name": "messageAriaDescribedby",
+        "type": "string",
+        "required": false,
+        "default": null,
+        "description": "Additional description for screen readers. Use this instead of native aria-describedby (web component limitation)."
+      },
+      {
+        "name": "disableAnalytics",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "If true, disables component-library-analytics event. Use when button contains or references PII/PHI."
+      }
+    ],
+    "events": [
+      {
+        "name": "component-library-analytics",
+        "payload": {
+          "type": "{ componentName: string, action: string, details: { type: string, label: string } }",
+          "description": "Analytics event data including button type and label"
+        },
+        "description": "Fired on click unless disableAnalytics is true."
+      }
+    ]
+  },
+  "accessibility": {
+    "keyboardNavigation": [
+      "Tab: Moves focus to/from the button",
+      "Space or Enter: Activates the button",
+      "Disabled buttons remain focusable (uses aria-disabled instead of HTML disabled)"
+    ],
+    "requirements": [
+      "Button text must be descriptive - Avoid vague labels like 'Click here' or 'Submit'",
+      "Use label prop for additional context when button text alone isn't clear",
+      "Use messageAriaDescribedby for extra information",
+      "Loading state is announced - 'Loading' when loading=true, 'Loading complete' when finished",
+      "Never rely on color alone - Use text and icons to indicate button purpose",
+      "CRITICAL: Avoid disabled buttons - They don't explain what's wrong and can't be explored with screen readers"
+    ],
+    "ariaAttributes": [
+      "aria-disabled: Set to 'true' when disabled or loading (button remains focusable)",
+      "aria-busy: Set to 'true' when loading",
+      "aria-label: Set from label prop",
+      "aria-describedby: Auto-linked to messageAriaDescribedby content",
+      "role='status': Applied to loading message container"
+    ],
+    "targetSize": "Minimum 44x44 CSS pixels for touch targets (WCAG 2.2 Level AAA). Default button sizing meets this requirement.",
+    "wcagCompliance": "Meets WCAG 2.2 Level AA standards. Uses aria-disabled instead of disabled attribute for better accessibility.",
+    "disabledButtonGuidance": "NEVER USE DISABLED BUTTONS without strong justification. Instead: (1) Allow button to be clicked, (2) Validate on submission, (3) Display specific error messages, (4) Highlight unfilled fields, (5) Shift focus to first error. Only use disabled when operation is genuinely unavailable AND clear explanation is provided."
+  },
+  "examples": [
+    {
+      "title": "Basic Primary Button (Web Component)",
+      "language": "html",
+      "code": "<va-button text=\"Save changes\"></va-button>"
+    },
+    {
+      "title": "Basic Primary Button (React)",
+      "language": "jsx",
+      "code": "import { VaButton } from '@department-of-veterans-affairs/web-components/react-bindings';\n\nfunction MyComponent() {\n  const handleClick = () => {\n    console.log('Button clicked');\n  };\n\n  return (\n    <VaButton\n      text=\"Save changes\"\n      onClick={handleClick}\n    />\n  );\n}"
+    },
+    {
+      "title": "Secondary Button",
+      "language": "html",
+      "code": "<va-button\n  text=\"Cancel\"\n  secondary\n></va-button>"
+    },
+    {
+      "title": "Form Submit Button (React)",
+      "language": "jsx",
+      "code": "function MyForm() {\n  const handleSubmit = (e) => {\n    e.preventDefault();\n    // Handle form submission\n  };\n\n  return (\n    <form onSubmit={handleSubmit}>\n      <VaTextInput\n        label=\"Email\"\n        name=\"email\"\n        required\n      />\n\n      <VaButton\n        text=\"Submit form\"\n        submit\n      />\n    </form>\n  );\n}"
+    },
+    {
+      "title": "Continue/Back Buttons in Form Flow",
+      "language": "html",
+      "code": "<!-- Step 1 -->\n<va-button continue></va-button>\n\n<!-- Step 2 -->\n<va-button back></va-button>\n<va-button continue></va-button>"
+    },
+    {
+      "title": "Loading State for Async Actions",
+      "language": "jsx",
+      "code": "import { VaButton } from '@department-of-veterans-affairs/web-components/react-bindings';\nimport { useState } from 'react';\n\nfunction SaveButton() {\n  const [loading, setLoading] = useState(false);\n\n  const handleSave = async () => {\n    setLoading(true);\n    try {\n      await saveData();\n    } finally {\n      setLoading(false);\n    }\n  };\n\n  return (\n    <VaButton\n      text=\"Save and continue\"\n      loading={loading}\n      onClick={handleSave}\n    />\n  );\n}"
+    },
+    {
+      "title": "Big Button (Single Page Action)",
+      "language": "html",
+      "code": "<va-button\n  text=\"Create an account\"\n  big\n></va-button>"
+    },
+    {
+      "title": "Button with Accessible Description",
+      "language": "html",
+      "code": "<va-button\n  text=\"Delete account\"\n  messageAriaDescribedby=\"This action cannot be undone. All your data will be permanently deleted.\"\n></va-button>"
+    }
+  ],
+  "styling": {
+    "cssClasses": [
+      "usa-button: Base button styling from USWDS",
+      "usa-button--big: Large button variant",
+      "usa-button--outline: Outlined button style (back or secondary)",
+      "va-button-primary--alternate: Alternate primary styling",
+      "va-button--full-width: Expands to full width"
+    ],
+    "shadowParts": [
+      "button: Customize button element"
+    ]
+  },
+  "contentGuidance": {
+    "bestPractices": {
+      "dos": [
+        "Use sentence case: 'Create an account' (not 'Create An Account')",
+        "Keep labels concise: Under 35 characters",
+        "Use clear action verbs: Create, Save, Delete, Send, Continue",
+        "Make labels descriptive of outcomes: 'File a complaint' (not 'Complaint filing')",
+        "Be specific: 'Create an account' (not 'Get started')"
+      ],
+      "donts": [
+        "Avoid vague labels: 'Click here', 'Submit', 'OK'",
+        "Don't use jargon or internal terminology",
+        "Avoid overly long text that wraps multiple lines"
+      ]
+    },
+    "goodVsBad": [
+      {
+        "good": "Create an account",
+        "bad": "Get started",
+        "reason": "Specific action vs. vague"
+      },
+      {
+        "good": "File a complaint",
+        "bad": "Complaint filing",
+        "reason": "Active verb vs. gerund"
+      },
+      {
+        "good": "Save changes",
+        "bad": "Submit",
+        "reason": "Clear outcome vs. vague"
+      },
+      {
+        "good": "Delete account",
+        "bad": "Delete",
+        "reason": "Specific object vs. ambiguous"
+      }
+    ],
+    "privacyWarnings": [
+      "CRITICAL: Never include PII or PHI in button text",
+      "Never reference PII/PHI in button labels or aria-describedby",
+      "Use disableAnalytics if button text must contain sensitive info"
+    ]
+  },
+  "antiPatterns": [
+    {
+      "title": "Using Buttons for Navigation",
+      "wrong": "<va-button text=\"Go to homepage\" onClick={() => window.location = '/'}></va-button>",
+      "reason": "Buttons are for actions, not navigation. Screen readers announce 'button' (confusing), can't right-click to open in new tab, breaks browser history",
+      "correct": "<a href=\"/\">Go to homepage</a> or <va-link href=\"/\">Go to homepage</va-link>"
+    },
+    {
+      "title": "Disabled Submit Button",
+      "wrong": "<VaButton text=\"Submit\" disabled={!isValid} />",
+      "reason": "User can't discover what's wrong, screen reader users can't find button, harmful for cognitive disabilities",
+      "correct": "Validate on submit, show specific errors, highlight unfilled fields"
+    },
+    {
+      "title": "Vague Button Text",
+      "wrong": "<va-button text=\"Submit\"></va-button> or <va-button text=\"OK\"></va-button>",
+      "reason": "Not specific enough about what action will be performed",
+      "correct": "<va-button text=\"Submit application\"></va-button> or <va-button text=\"Save changes\"></va-button>"
+    },
+    {
+      "title": "Missing Loading State for Async",
+      "wrong": "<VaButton text=\"Save\" onClick={async () => await saveData()} />",
+      "reason": "No feedback, allows double-clicks, potential duplicate submissions",
+      "correct": "Use loading state: <VaButton text=\"Save\" loading={loading} onClick={handleSave} />"
+    },
+    {
+      "title": "Icon-Only Button Without Label",
+      "wrong": "<va-button><va-icon icon=\"close\"></va-icon></va-button>",
+      "reason": "No accessible name for screen readers",
+      "correct": "<va-button label=\"Close dialog\"><va-icon icon=\"close\"></va-icon></va-button>"
+    }
+  ],
+  "relatedSkills": {
+    "components": [
+      "component.va-button-pair",
+      "component.va-link",
+      "component.va-action-link",
+      "component.va-modal"
+    ],
+    "patterns": [
+      "pattern.help-users-to.confirm-actions",
+      "pattern.buttons",
+      "pattern.form-progression"
+    ],
+    "crossCutting": [
+      "cross-cutting.accessibility",
+      "cross-cutting.content-style",
+      "cross-cutting.form-building"
+    ]
+  },
+  "resources": [
+    {
+      "title": "Design System Guidance",
+      "url": "https://design.va.gov/components/button"
+    },
+    {
+      "title": "Storybook (Interactive Examples)",
+      "url": "https://design.va.gov/storybook/?path=/docs/components-va-button--default"
+    },
+    {
+      "title": "Source Code",
+      "url": "https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/web-components/src/components/va-button"
+    },
+    {
+      "title": "USWDS Button",
+      "url": "https://designsystem.digital.gov/components/button/"
+    },
+    {
+      "title": "WCAG 2.2 Target Size",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
+    }
+  ]
+}
