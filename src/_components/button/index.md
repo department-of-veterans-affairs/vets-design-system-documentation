@@ -165,6 +165,8 @@ This variation substitutes the large tap target of a button where a radio button
 ### Additional guidance for VA
 
 * **Button labels should never change dynamically or be used to communicate a status.**
+* **Mind target size.** We follow the [WCAG 2.2 Target Size (Minimum) - Level AA](https://www.w3.org/WAI/WCAG22/quickref/#target-size-minimum) criteria which states:
+>  "The size of the target for pointer inputs is at least 24 by 24 CSS pixels..."
 * **Use at least [1 spacing unit]({{ site.baseurl }}/foundation/spacing-units) separating tappable elements.**
 * **Prioritize a clear and concise button label and only use `message-aria-describedby` when it enhances understanding and accessibility.** The `message-aria-describedby` property emulates HTML's `aria-describedby` due to web component limitations. It allows adding an additional description that is visually hidden, but screen reader accessible.
   * When to use:
