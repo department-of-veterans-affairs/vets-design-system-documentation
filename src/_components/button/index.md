@@ -7,6 +7,7 @@ research-link: Buttons
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A152&mode=design&t=jMcVWkPlFhZu3RTh-1
 figma-link-mobile-app: https://www.figma.com/design/Zzt8z60hCtdEzXx2GFWghH/VA-Mobile---Component-Library?node-id=224-314
 status: use-deployed
+uses_mermaid: true
 sub-pages:
   - sub-page: Button group
   - sub-page: Button - Segmented
@@ -108,7 +109,7 @@ anchors:
 
 * **Avoid using many primary buttons on a single page or section.** Pages with many primary buttons reduces their impact and make it harder for users to know what to do next.
 * **Arrows are reserved.** Arrow icons should only appear for "Back" and "Continue" buttons that appear in forms.
-* **Use icons only when necessary.** [Icons]({{ site.baseurl }}/foundation/icons) can be used in buttons when additional clarity is required and the icon is highly relevant to the action. Icons should not be used for decoration. Note that va-button does not support iconography, but has some variations that use an icon. Use of icons in buttons will be made on a case-by-case basis. If you feel you need an icon for a button, [follow the process for requesting a new icon]({{ site.baseurl }}/components/icon#requesting-a-new-icon) .
+* **Use icons only when necessary.** [Icons]({{ site.baseurl }}/components/icon) can be used in buttons when additional clarity is required and the icon is highly relevant to the action. Icons should not be used for decoration. Note that va-button does not support iconography, but has some variations that use an icon. Use of icons in buttons will be made on a case-by-case basis. If you feel you need an icon for a button, [follow the process for requesting a new icon]({{ site.baseurl }}/components/icon#requesting-a-new-icon) .
 * **Avoid disabling buttons.** [Disabling buttons is strongly discouraged.](#do-not-disable-buttons)
 
 ### Choosing between variations

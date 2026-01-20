@@ -2,50 +2,85 @@
 layout: documentation
 title: Focus management
 permalink: /accessibility/focus-management
-intro-text: Focus is the element on a page that is ready for you to interact with. It's important for making websites accessible, especially for people who use keyboards or other assistive technology to use the site.
+intro-text: Focus shows which element is active and ready for input. Good focus management helps everyone, and is especially important for people who navigate without a mouse and people who use screen readers.
 anchors:
-  - anchor: Focus indicator
+  - anchor: Related WCAG criteria
+  - anchor: Focus appearance
   - anchor: Focus order
   - anchor: Focus management
 ---
+## Related WCAG criteria
 
-Testing is crucial to ensure that focus on your page functions as expected across different scenarios. Below are some things to look out for.
+* [1.4.13 Content on Hover or Focus (Level AA)](https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus.html)
+* [2.4.3 Focus Order (Level A)](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html)
+* [2.4.7 Focus Visible (Level AA)](https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html)
+* [2.4.11 Focus Not Obscured (Level AA)](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html)
+* [2.4.13 Focus Appearance (Level AAA)](https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html)
+* [3.2.1 On Focus (Level A)](https://www.w3.org/WAI/WCAG22/Understanding/on-focus.html)
 
-## Focus indicator
+## Focus appearance
 
-Sighted keyboard users must always be able to see where the keyboard focus is. If they tab through a website without knowing which element is focused, navigating can be unpredictable.
+When an element receives focus, it should show a clear visual indicator that it’s active and ready for input. This helps people who don’t use a mouse know where they are on the page, and makes interacting with the page more predictable.
 
-Browsers handle displaying the keyboard focus automatically, but each displays it in a different way and may be just enough to pass accessibility guidelines. VA.gov has enhanced this outline to make it more visible.
+On VA.gov, we use a thick gold outline to indicate focus, as shown in this screenshot:
 
-![visual focus indicator screenshot]({{ site.baseurl }}/images/about/accessibility/focus-management/focus-indicator.png)
+![Screenshot showing a bold gold outline around a focused button, indicating the visual focus indicator on VA.gov]({{ site.baseurl }}/images/about/accessibility/focus-management/focus-indicator.png)
 
-We advise against disabling the focus outline using `outline: 0` or `outline: none` in CSS. This practice can impair navigation for users who rely on keyboard navigation, especially those with visual impairments. Without a visible focus outline, sighted users may struggle to identify the currently focused element, making navigation difficult.
+### Guidelines for focus appearance
+
+* **Don't disable the focus indicator.** Without a visible focus outline, sighted users may struggle to identify the currently focused element, making navigation difficult.
+* **Don't create custom focus styles.** The design system provides global focus styles to keep them consistent across the website.
+* **Make sure that the focus outline is fully visible.** When elements are grouped closely together, the focus outline can get cut off or overlap with other components. Test that there is enough room around each interactive element to show the entire focus indicator.
 
 ## Focus order
 
-The programmatic focus order should match the visual focus order. Focus typically follows the order in which objects appear in the page source, but may not match the order which users expect to interact with elements on the page. 
+As users navigate a page without a mouse, focus should move through the page elements in a way that’s logical, predictable, and meaningful. A sequential focus order (also called "tab order") helps users follow the content structure and understand what comes next.
 
-This can occur when the order of elements in the source is wrong. If an element's position is moved via CSS, it can move that element from where it would normally be positioned. Elements could also be hidden on a page, typically through moving it off-screen or changing it's opacity, but not taken out of the tab order. This makes them focusable even if the focus indicator cannot be seen. Because of that, be sure to test that focus is not placed on an element that is not visible.
+### Guidelines for focus order
+
+* **Focus order should match the visual reading order of the page.** For English pages, focus should move left to right, then top to bottom.
+* **Only include interactive elements in the tab order.** Users expect focus to move only to interactive elements like buttons, links, and form fields.
 
 ## Focus management
 
-Manually managing focus is necessary in some scenarios to provide a seamless and accessible user experience, especially for keyboard and screen reader users. Below are key things to know when setting focus manually.
+On most static pages, you won’t need to move focus because browsers handle that automatically. However, on pages with dynamic content, you may need to move focus manually to improve usability and help users stay oriented when page content changes.
 
-For detailed guidance on focus management in multi-step forms, see [Focus management implementation]({{ site.baseurl }}/templates/forms/accessibility-guidelines#focus-management-implementation).
+{% include a11y/focus-management-benefits-risks.md %}
 
-### The focus should be intentionally set to the appropriate element when a user action requires a change of context or location
+### Guidelines for focus management
 
-- When content is added to the screen in response to a user-triggered event, the focus should be moved to the new content.
-- When content is removed from the screen in response to a user-triggered event, focus should be set to the next logical place in the interaction.
-- Example: When opening a dialog, focus should be sent to that dialog. When the dialog is closed, focus is sent back to the original element that triggered it.
+#### General guidelines
 
-### Focus should not be lost or reset to the top of the page, except when the page is reloaded
+* **When available, move focus to interactive elements like buttons, links, and inputs.** Some combinations of browsers and assistive technologies behave unpredictably when focus lands on elements that are not natively interactive.
+* **Give focusable elements descriptive text or an accessible label.** This context helps users immediately understand where they are and what they need to do.
+* **Scroll the focused element into view.** Don’t let sticky headers or overlays hide it.
 
-- If focus is reset, keyboard users will have to start again from the beginning of the page. Screen reader users could also become disoriented and unsure if they are on a different page or if the current page reloaded.
-- Example: If focus gets lost after closing a dialog. The focus should be set to the original element that triggered it.
+#### When a new page loads
 
-### When setting focus, the target element must contain text that can be programmatically determined
+* **Don't move focus when a static page loads.** Browsers automatically set focus at the top, which works well for most users.
+* **For single-page applications, set focus to the first unique heading when a new page loads.** If the new content does not have a unique heading, choose the element that gives users the most context. For multi-page forms, follow the specific guidance for [managing focus in form flows]({{ site.baseurl }}/templates/forms/accessibility-guidelines#managing-focus-in-form-flows).
 
-- If you must set focus to a non-interactive element, it should have text to allow screen readers to read the text inside the container.
-  - When setting focus to a non-interactive element, the element should _not_ be added to the tab order of the page through `tabindex="0"`, the focus only needs to be set via JavaScript.
-- If focus is set to an empty container, screen readers will have nothing to read, so this should be avoided.
+#### When page content is added or removed
+
+* **Move focus to new content.** When content is added to the page as a result of user action, focus should be moved to the new content.
+* **Restore focus to a logical location when content is removed.** If content is removed, set focus to the next logical spot for the user. For an example, see the [guidance for focus management when opening or closing a modal](#when-opening-and-closing-a-modal).
+* **Don't move focus when content is loading.** Instead of moving focus to the loading indicator, use ARIA attributes to announce the loading state. Once loading is complete, move focus to the new content.
+
+#### When there is an error on the page
+
+* **When an error blocks the next action, move focus to the first input with an error.** If the error isn’t tied to a specific input, move focus to the first interactive element that lets the user fix it. After the error is resolved and the user successfully advances to the next view, follow the [guidance for moving focus when a new page loads](#when-a-new-page-loads).
+
+#### When opening and closing a modal
+
+* **When the modal opens, move focus to the first interactive element in the modal, unless it’s a destructive action.** The element can be a button, a form input, or the "close" button. However, if the first interactive element is a destructive action, choose a safer place to focus.
+* **Ensure keyboard focus is trapped inside the modal.** While the modal is open, focus should stay inside the modal and should not move to the page elements behind it.
+* **When the modal closes, restore focus to the button that opened it.** This helps users continue their workflow without losing their place.
+
+#### When inside a multi-page form
+
+* **Follow the guidance for [managing focus in form flows]({{ site.baseurl }}/templates/forms/accessibility-guidelines#managing-focus-in-form-flows).**
+
+#### Developer considerations
+
+* **Moving focus to an element inside the Shadow DOM can result in unexpected behavior.** For example, some browsers and screen readers may not announce focus changes inside custom elements, or may skip them entirely. To manage focus reliably across browsers and assistive technologies, only move focus to natively interactive elements, and test thoroughly.
+* **Consider removing aria-live when you’re also managing focus.** These two announcement methods can conflict if they fire at the same time. Focus changes are usually announced more reliably, so prefer focus announcements whenever possible.

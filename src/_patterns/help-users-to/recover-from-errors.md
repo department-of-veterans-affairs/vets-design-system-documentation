@@ -18,9 +18,12 @@ anchors:
 ## How to structure an error message
 
 ### Step 1. Explain what went wrong
-- In a standard alert style, explain the problem in the header. (In a slim alert style without a header, this will be in the main text). [Go to alert styles](https://design.va.gov/components/alert)
+- In a standard alert style, explain the problem in the header. (In a slim alert style without a header, this will be in the main text).<br>
+[Go to alert styles](https://design.va.gov/components/alert)
+- When possible, keep alert and error message titles (headings) to 50 characters, including spaces. Titles should follow the general guidelines for page and section titles.<br>
+[Learn more in the Page titles and section titles section of the content style guide](https://design.va.gov/content-style-guide/page-titles-and-section-titles)
 - If we caused the error, say “We’re sorry.” For example, “We’re sorry. There’s a problem with our system. We can’t access your records right now.”
-- If the person doing the action caused the error, don’t say “we’re sorry.” But don’t blame the person. Use a neutral tone to describe the problem. For example, “We can’t upload this file type. Try uploading a .pdf or .doc file instead.”
+- If the person taking the action caused the error, don’t say “we’re sorry.” But don’t blame the person. Use a neutral tone to describe the problem. For example, “We can’t upload this file type. Try uploading a .pdf or .doc file instead.”
 
 ### Step 2. Explain how to fix it (recovery step)
 - After you explain the error, tell the person how to fix it. Include as many recovery steps as you need to make sure the person won’t get stuck in a dead end.
