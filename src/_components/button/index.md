@@ -165,14 +165,7 @@ This variation substitutes the large tap target of a button where a radio button
 ### Additional guidance for VA
 
 * **Button labels should never change dynamically or be used to communicate a status.**
-* **Mind target size.** We follow the [WCAG 2.2 Target Size - Level AAA](https://www.w3.org/WAI/WCAG22/quickref/#target-size) criteria which states:
-> "The size of the target for pointer inputs is at least 44 by 44 CSS pixels..."
-
-That guidance agrees with [Apple's Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/components/menus-and-actions/buttons) which recommend that:
-> "On a touchscreen, buttons need a hit target of at least 44x44 points to accommodate a fingertip. On all screens, it’s essential to include enough space around a button so that people can visually distinguish it from surrounding components and content, whether people use touch, a pointer, or a system that expands a button when it’s in focus."
-
 * **Use at least [1 spacing unit]({{ site.baseurl }}/foundation/spacing-units) separating tappable elements.**
-
 * **Prioritize a clear and concise button label and only use `message-aria-describedby` when it enhances understanding and accessibility.** The `message-aria-describedby` property emulates HTML's `aria-describedby` due to web component limitations. It allows adding an additional description that is visually hidden, but screen reader accessible.
   * When to use:
     * **Providing additional context or instructions.** If the button label is concise but requires further explanation.
