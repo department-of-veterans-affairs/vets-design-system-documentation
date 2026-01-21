@@ -96,7 +96,7 @@ Follow this guidance when asking for both mailing and home addresses. In some fo
 
 ### Prefill information details
 
-**Inform users when prefilling information from their profile** When information is pre-populated into a form we notify users using the [Prefill component]({{ site.baseurl }}/components/form/prefill).
+**Inform users when prefilling information from their profile.** When information is pre-populated into a form we notify users using the [Prefill component]({{ site.baseurl }}/components/form/prefill).
 
 ### Components used in this pattern
 
