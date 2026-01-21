@@ -53,7 +53,7 @@ Target audiences: Designers, Developers, Content Writers, Product Managers worki
 - /templates/homepage - Homepage template
 
 ### Content Style Guide
-- /content-style-guide/ - Writing guidelines for VA.gov (51 pages)
+- /content-style-guide/ - Writing guidelines for VA.gov
 - /content-style-guide/content-principles/ - Voice, tone, and content principles
 - /content-style-guide/word-list - VA.gov word list and terminology
 - /content-style-guide/abbreviations-and-acronyms - Abbreviation usage
