@@ -31,7 +31,7 @@ Target audiences: Designers, Developers, Content Writers, Product Managers worki
 - /components/alert - System and user alerts
 - /components/button - Action buttons with variants
 - /components/card - Content cards
-- /components/checkbox - Form checkboxes
+- /components/form/checkbox - Form checkboxes
 - /components/form - Form containers and elements
 - /components/header - Site header
 - /components/icon - Icon system
