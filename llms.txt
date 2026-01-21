@@ -40,7 +40,7 @@ Target audiences: Designers, Developers, Content Writers, Product Managers worki
 - /components/pagination - Page navigation
 - /components/table - Data tables
 - /components/form/text-input - Form text inputs
-- /components/textarea - Multi-line text input
+- /components/form/textarea - Multi-line text input
 
 ### Patterns
 - /patterns/ - Solutions for recurring UX problems
