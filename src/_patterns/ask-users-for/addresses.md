@@ -87,7 +87,7 @@ Follow this guidance when asking for both mailing and home addresses. In some fo
 
 * **The mailing address always comes before home address.** We ask for a mailing address before home address because the majority of VA's correspondence is over mail.
 * **On the mailing address form, ask users if the home address is the same as the mailing address.** If the user chooses "Yes", they can skip the home address form.
-* **Indicate to users whether an update in this form will update their profile home or mailing address.**  If an address addition or change will **not** update the user’s profile, then use the text “_We’ve made these changes to only this form._”  Refer to the [Help users to update prefilled information pattern]({{ site.baseurl }}/patterns/help-users-to/update-prefilled-information) for information on how to communicate that an update will be reflected in their profile.
+* **Indicate to users whether an update in this form will update their profile home or mailing address.** If an address addition or change will **not** update the user’s profile, then use the text “_We’ve made these changes to only this form._”  Refer to the [Help users to update prefilled information pattern]({{ site.baseurl }}/patterns/help-users-to/update-prefilled-information) for information on how to communicate that an update will be reflected in their profile.
 
 ### Address confirmation details
 
@@ -96,7 +96,7 @@ Follow this guidance when asking for both mailing and home addresses. In some fo
 
 ### Prefill information details
 
-**Inform users when prefilling information from their profile** When information is pre-populated into a form we notify users using the [Prefill component]({{ site.baseurl }}/components/form/prefill)
+**Inform users when prefilling information from their profile** When information is pre-populated into a form we notify users using the [Prefill component]({{ site.baseurl }}/components/form/prefill).
 
 ### Components used in this pattern
 
