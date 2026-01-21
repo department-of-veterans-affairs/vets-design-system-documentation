@@ -39,7 +39,7 @@ Target audiences: Designers, Developers, Content Writers, Product Managers worki
 - /components/modal - Dialog overlays
 - /components/pagination - Page navigation
 - /components/table - Data tables
-- /components/text-input - Form text inputs
+- /components/form/text-input - Form text inputs
 - /components/textarea - Multi-line text input
 
 ### Patterns
