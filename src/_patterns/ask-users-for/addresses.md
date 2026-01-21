@@ -111,7 +111,7 @@ Use the [VADS templates (Patterns & Forms) for Addresses in Figma]({{ page.figma
 
 ## Code usage
 
-[addressPattern is a web-component pattern available in the Forms library]({{ page.code-link }}).
+[addressPattern]({{ page.code-link }}) is a web-component pattern available in the Forms library.
 
 ## Content considerations
 
