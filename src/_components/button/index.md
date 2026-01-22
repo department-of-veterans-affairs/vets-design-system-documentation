@@ -108,9 +108,11 @@ anchors:
 #### Behavior
 
 * **Avoid using many primary buttons on a single page or section.** Pages with many primary buttons reduces their impact and make it harder for users to know what to do next.
-* **Avoid using arrows or chevrons in buttons as they are generally reserved for links.** The only exceptions are for "Back" and "Continue" buttons that appear in forms and for buttons that open another level to expose additional content where the direction of the chevron indicates the direction the additional content opens in.
-* **Use icons only when necessary.** [Icons]({{ site.baseurl }}/components/icon) can be used in buttons when additional clarity is required and the icon is highly relevant to the action. Icons should not be used for decoration. Note that va-button does not support iconography, but has some variations that use an icon. Use of icons in buttons will be made on a case-by-case basis. If you feel you need an icon for a button, [follow the process for requesting a new icon]({{ site.baseurl }}/components/icon#requesting-a-new-icon) .
 * **Avoid disabling buttons.** [Disabling buttons is strongly discouraged.](#do-not-disable-buttons)
+* **Use icons only when necessary.** [Icons]({{ site.baseurl }}/components/icon) can be used in buttons when additional clarity is required and the icon is highly relevant to the action. Icons should not be used for decoration. Note that va-button does not support iconography, but has some variations that use an icon. Use of icons in buttons will be made on a case-by-case basis. If you feel you need an icon for a button, [follow the process for requesting a new icon]({{ site.baseurl }}/components/icon#requesting-a-new-icon).
+* **Avoid using arrows or chevrons in buttons as they are generally reserved for links.** The only exceptions are for:
+  * "Back" and "Continue" buttons that appear in forms.
+  * Buttons that use a chevron to indicate the direction additional content opens in, like in a dropdown or flyout menu.
 
 ### Choosing between variations
 
