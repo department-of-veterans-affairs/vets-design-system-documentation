@@ -108,3 +108,39 @@ If no issues are found through any of the above methods, ask the user:
 2. **Fallback 1:** Oldest issues with `documentation-design.va.gov` label
 3. **Fallback 2:** Oldest issues with `guidance-update` or `guidance-new` labels
 4. **Fallback 3:** Ask user for epic/issue URL
+
+## Step 2: Select Issue from Queue
+
+### Fetch Documentation Issues
+
+Get all open documentation issues, sorted by creation date (oldest first):
+
+```bash
+gh issue list --repo department-of-veterans-affairs/vets-design-system-documentation \
+  --label "documentation-design.va.gov" \
+  --state open \
+  --json number,title,createdAt,labels,assignees \
+  --limit 50 | jq 'sort_by(.createdAt)'
+```
+
+### Selection Priority
+
+1. **Oldest unassigned issue** - Issues with no assignees get priority
+2. **Issues with component labels** (e.g., `va-alert`, `va-button`) - More scoped work
+3. **Issues without complex dependencies** - Can be completed independently
+
+### Present Options to User
+
+Show the 5 oldest issues and ask which one to work on:
+
+**Question header:** "Select issue"
+**Question:** "Here are the 5 oldest documentation issues. Which would you like to work on?"
+
+**Options:**
+1. [Oldest issue title] (#number - created date)
+2. [Second oldest] (#number - created date)
+3. [Third oldest] (#number - created date)
+4. [Fourth oldest] (#number - created date)
+5. [Fifth oldest] (#number - created date)
+
+**Allow "Other"** for user to specify a different issue number.
