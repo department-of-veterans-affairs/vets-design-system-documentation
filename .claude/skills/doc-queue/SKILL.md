@@ -209,3 +209,56 @@ Format the analysis as:
 2. [Design decisions that need input]
 
 ---
+
+## Step 4: Reference Contributing Guide
+
+Before making documentation changes, fetch and review the contributing guide:
+
+```
+WebFetch: https://design.va.gov/about/contributing-to-the-design-system/contributing-to-docs
+Prompt: Extract documentation guidelines including file organization, front matter requirements, formatting standards, and style guidance.
+```
+
+### Key Documentation Standards
+
+**File Organization:**
+- Components: `src/_components/[component-name]/index.md` or `src/_components/[component-name].md`
+- Patterns: `src/_patterns/[pattern-name]/index.md`
+- Templates: `src/_templates/[template-name]/index.md`
+
+**Front Matter Required Fields:**
+```yaml
+---
+layout: component  # or pattern, template
+title: Component Name
+permalink: /components/component-name/
+intro-text: "Brief description of the component"
+web-component: va-component-name
+# Additional fields as needed
+---
+```
+
+**Content Sections (typical order):**
+1. Examples (with Storybook embeds)
+2. Usage guidance
+3. Code usage
+4. Content considerations
+5. Accessibility considerations
+6. Related components/patterns
+7. Component checklist
+
+**Storybook Embed Format:**
+```liquid
+{% include storybook-preview.html story="uswds-va-component--variant" link_text="description" %}
+```
+
+**Image Include Format:**
+```liquid
+{% include component-example.html alt="Description" file="/images/path/file.png" %}
+```
+
+**Style Guidelines:**
+- Use title case for component/pattern names
+- Define acronyms on first use
+- Include AKA sections for alternative names
+- Hyperlink component references: [Alert](/components/alert/)
