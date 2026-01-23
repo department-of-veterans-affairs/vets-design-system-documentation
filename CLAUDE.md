@@ -67,6 +67,24 @@ To test local component library changes:
 - This site consumes and documents components, doesn't implement them
 - Uses Storybook integration for live component examples
 
+## Available Skills
+
+This repo includes Claude Code skills to help with common workflows:
+
+### `/doc-queue` - Documentation Queue Processing
+Helps designers efficiently process documentation and guidance issues from quarterly epics.
+
+**Trigger by saying:** "work on documentation issues", "process doc queue", or "help with documentation backlog"
+
+**What it does:**
+1. Finds the current quarterly documentation epic
+2. Presents oldest unassigned issues for selection
+3. Assigns the issue to you and analyzes requirements
+4. Guides you through making documentation changes
+5. Creates a PR and updates the project board to "PR Review"
+
+See `.claude/skills/doc-queue/SKILL.md` for full details.
+
 ## Additional Resources
 
 - `commands/issues.md` - Complete guide for managing GitHub issues and using issue templates
