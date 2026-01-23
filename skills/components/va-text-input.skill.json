@@ -1,0 +1,525 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/skill.json",
+  "name": "VA Text Input Component",
+  "version": "0.1.0",
+  "meta": {
+    "id": "component.va-text-input",
+    "version": "0.1.0",
+    "lastSynced": "2025-11-13",
+    "maturity": "use-deployed",
+    "intentClassifiers": [
+      "text field",
+      "input",
+      "form field",
+      "text box",
+      "input field",
+      "form input",
+      "user input"
+    ],
+    "sourceOfTruth": {
+      "guidance": "https://design.va.gov/components/form/text-input",
+      "storybook": "https://design.va.gov/storybook/?path=/docs/uswds-va-text-input--default",
+      "code": "https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/web-components/src/components/va-text-input"
+    }
+  },
+  "intent": {
+    "summary": "Use va-text-input when you need to collect text-based user input in forms. Handles single-line text entry, validated input (email, phone, numeric), error states, currency input, and character-limited input.",
+    "triggerPhrases": [
+      "text field",
+      "input box",
+      "form field",
+      "text input",
+      "user input",
+      "collect text"
+    ]
+  },
+  "usage": {
+    "whenToUse": [
+      "Collecting any single-line text input from users",
+      "Building forms that need validation and error handling",
+      "Requiring specific input patterns (email, phone, numeric)",
+      "Implementing fields with character limits and count display",
+      "Creating accessible, WCAG-compliant form inputs",
+      "Supporting required fields with clear labeling",
+      "Enabling browser autocomplete for common field types",
+      "Collecting currency/monetary values",
+      "Adding contextual icons or text prefixes/suffixes to inputs"
+    ],
+    "whenNotToUse": [
+      "Multi-line text is needed → Use va-textarea instead",
+      "Phone numbers require masking → Never mask phone fields",
+      "File upload is needed → Use va-file-input instead",
+      "Selecting from predefined options → Use va-select, va-radio, or va-checkbox",
+      "Date input is needed → Use va-date or va-memorable-date",
+      "Only placeholder text available → Always provide proper labels"
+    ]
+  },
+  "api": {
+    "componentTag": "va-text-input",
+    "reactImport": "@department-of-veterans-affairs/web-components/react-bindings",
+    "reactComponentName": "VaTextInput",
+    "props": [
+      {
+        "name": "label",
+        "type": "string",
+        "required": true,
+        "default": null,
+        "description": "The label for the text input. Must always be provided for accessibility."
+      },
+      {
+        "name": "value",
+        "type": "string",
+        "required": false,
+        "default": null,
+        "description": "The current value of the input field."
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "required": false,
+        "default": null,
+        "description": "The name attribute for the input element (for form submission)."
+      },
+      {
+        "name": "required",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Marks the field as required and displays (*Required) text."
+      },
+      {
+        "name": "error",
+        "type": "string",
+        "required": false,
+        "default": null,
+        "description": "Error message to display when validation fails. Sets aria-invalid='true'."
+      },
+      {
+        "name": "type",
+        "type": "'email' | 'number' | 'password' | 'search' | 'tel' | 'text' | 'url'",
+        "required": false,
+        "default": "text",
+        "description": "The HTML input type. If min or max are set, type becomes 'number' automatically."
+      },
+      {
+        "name": "inputmode",
+        "type": "'decimal' | 'email' | 'numeric' | 'search' | 'tel' | 'text' | 'url'",
+        "required": false,
+        "default": null,
+        "description": "Mobile keyboard optimization hint."
+      },
+      {
+        "name": "pattern",
+        "type": "string",
+        "required": false,
+        "default": null,
+        "description": "Regular expression for input validation. Auto-set for numeric/decimal inputmodes."
+      },
+      {
+        "name": "autocomplete",
+        "type": "string",
+        "required": false,
+        "default": null,
+        "description": "Browser autocomplete attribute (e.g., 'email', 'given-name')."
+      },
+      {
+        "name": "maxlength",
+        "type": "number",
+        "required": false,
+        "default": null,
+        "description": "Maximum number of characters. Ignored if ≤ 0."
+      },
+      {
+        "name": "min",
+        "type": "number | string",
+        "required": false,
+        "default": null,
+        "description": "Minimum value for numeric inputs. Forces type='number'."
+      },
+      {
+        "name": "max",
+        "type": "number | string",
+        "required": false,
+        "default": null,
+        "description": "Maximum value for numeric inputs. Forces type='number'."
+      },
+      {
+        "name": "step",
+        "type": "string",
+        "required": false,
+        "default": null,
+        "description": "Increment step for numeric inputs. Defaults to '.01' when inputmode='decimal'."
+      },
+      {
+        "name": "width",
+        "type": "string",
+        "required": false,
+        "default": null,
+        "description": "Input width: '2xs' (4ex), 'xs' (7ex), 'sm'/'small' (10ex), 'md'/'medium' (20ex), 'lg' (30ex), 'xl' (40ex), '2xl' (50ex)."
+      },
+      {
+        "name": "hint",
+        "type": "string",
+        "required": false,
+        "default": null,
+        "description": "Optional hint text displayed below the label."
+      },
+      {
+        "name": "success",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Displays green border for successful validation state."
+      },
+      {
+        "name": "charcount",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Shows character count message. Only works when maxlength is set."
+      },
+      {
+        "name": "show-input-error",
+        "type": "boolean",
+        "required": false,
+        "default": true,
+        "description": "When false, hides error visually but keeps it available to screen readers. Must use kebab-case."
+      },
+      {
+        "name": "reflect-input-error",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Adds usa-input--error class even if error message is external to component."
+      },
+      {
+        "name": "invalid",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Sets aria-invalid without showing error message. Useful when composing into larger components."
+      },
+      {
+        "name": "error-has-pii",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Adds Datadog privacy class to error messages containing sensitive information."
+      },
+      {
+        "name": "use-forms-pattern",
+        "type": "'single' | 'multiple'",
+        "required": false,
+        "default": null,
+        "description": "Integrates with VA forms pattern. 'single' = one question per page; 'multiple' = multiple inputs per page."
+      },
+      {
+        "name": "form-heading",
+        "type": "string",
+        "required": false,
+        "default": null,
+        "description": "Heading text when using forms pattern."
+      },
+      {
+        "name": "form-heading-level",
+        "type": "number",
+        "required": false,
+        "default": 3,
+        "description": "Heading level (1-6) for the form heading."
+      },
+      {
+        "name": "currency",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Displays '$' symbol and sets numeric validation for currency. Forces inputmode='numeric' and pattern for 2 decimal places."
+      },
+      {
+        "name": "input-prefix",
+        "type": "string",
+        "required": false,
+        "default": null,
+        "description": "Text displayed at the start of the input (max 25 chars)."
+      },
+      {
+        "name": "input-icon-prefix",
+        "type": "string",
+        "required": false,
+        "default": null,
+        "description": "Icon name for prefix (uses va-icon component)."
+      },
+      {
+        "name": "input-suffix",
+        "type": "string",
+        "required": false,
+        "default": null,
+        "description": "Text displayed at the end of the input (max 25 chars)."
+      },
+      {
+        "name": "input-icon-suffix",
+        "type": "string",
+        "required": false,
+        "default": null,
+        "description": "Icon name for suffix (uses va-icon component)."
+      },
+      {
+        "name": "message-aria-describedby",
+        "type": "string",
+        "required": false,
+        "default": null,
+        "description": "Additional description for screen readers. Use this instead of native aria-describedby (web component limitation)."
+      },
+      {
+        "name": "hide-required-text",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Hides the '(*Required)' text visually. Use cautiously; may reduce clarity."
+      },
+      {
+        "name": "enable-analytics",
+        "type": "boolean",
+        "required": false,
+        "default": false,
+        "description": "Emits component-library-analytics event on blur."
+      }
+    ],
+    "events": [
+      {
+        "name": "vaInput",
+        "payload": {
+          "type": "{ value: string }",
+          "description": "The current input value"
+        },
+        "description": "Fires on every input change. Use this instead of native input event for consistency."
+      },
+      {
+        "name": "component-library-analytics",
+        "payload": {
+          "type": "{ componentName: string, action: string, details: { label: string, value: string } }",
+          "description": "Analytics event data"
+        },
+        "description": "Analytics event fired on blur when enable-analytics is true."
+      }
+    ],
+    "slots": [
+      {
+        "name": "default",
+        "description": "Content placed between the label and input field. Rarely used."
+      },
+      {
+        "name": "form-description",
+        "description": "Description content when using use-forms-pattern."
+      }
+    ]
+  },
+  "accessibility": {
+    "keyboardNavigation": [
+      "Tab: Moves focus to/from the input field",
+      "All standard text input keys: Function as expected (typing, backspace, arrow keys, etc.)",
+      "Enter: Submits the form (native browser behavior)"
+    ],
+    "requirements": [
+      "Always provide a label - Never rely on placeholder text alone",
+      "Use message-aria-describedby for additional context - Standard aria-describedby won't work due to shadow DOM",
+      "Error messages are announced - Errors automatically set aria-invalid='true' and link to aria-describedby",
+      "Required fields are announced - '(*Required)' text is read by screen readers",
+      "Character count updates announced - When charcount is enabled, updates are debounced (1s) and use aria-live='polite'"
+    ],
+    "ariaAttributes": [
+      "aria-invalid: Set to 'true' when error, invalid, or character count exceeded",
+      "aria-describedby: Auto-linked to error messages, hints, and character count",
+      "aria-labelledby: Used for forms pattern heading and label association",
+      "role='alert': Applied to error message container"
+    ],
+    "wcagCompliance": "Meets WCAG 2.2 Level A and AA standards. All text meets color contrast requirements. Error states use red border + text (not color alone).",
+    "i18nSupport": "Supports English, Spanish, and Tagalog translations for '(*Required)' label text, 'Error' screen reader prefix, and character count messages."
+  },
+  "examples": [
+    {
+      "title": "Basic Text Input (Web Component)",
+      "language": "html",
+      "code": "<va-text-input\n  label=\"Full name\"\n  name=\"full-name\"\n  required\n  value=\"\"\n></va-text-input>"
+    },
+    {
+      "title": "Basic Text Input (React)",
+      "language": "jsx",
+      "code": "import { VaTextInput } from '@department-of-veterans-affairs/web-components/react-bindings';\n\nfunction MyForm() {\n  const [value, setValue] = useState('');\n\n  return (\n    <VaTextInput\n      label=\"Full name\"\n      name=\"full-name\"\n      required\n      value={value}\n      onVaInput={(e) => setValue(e.detail.value)}\n    />\n  );\n}"
+    },
+    {
+      "title": "Email Input with Validation",
+      "language": "html",
+      "code": "<va-text-input\n  label=\"Email address\"\n  name=\"email\"\n  type=\"email\"\n  autocomplete=\"email\"\n  required\n  hint=\"We'll send a confirmation to this address\"\n  message-aria-describedby=\"We use your email to send updates about your application\"\n></va-text-input>"
+    },
+    {
+      "title": "Error State",
+      "language": "html",
+      "code": "<va-text-input\n  label=\"Social Security number\"\n  name=\"ssn\"\n  error=\"Please enter a valid 9-digit Social Security number\"\n  value=\"123\"\n  pattern=\"^[0-9]{9}$\"\n  inputmode=\"numeric\"\n  message-aria-describedby=\"Enter 9 digits with no dashes or spaces\"\n></va-text-input>"
+    },
+    {
+      "title": "Error State (React)",
+      "language": "jsx",
+      "code": "import { VaTextInput } from '@department-of-veterans-affairs/web-components/react-bindings';\n\nfunction ValidatedInput() {\n  const [value, setValue] = useState('');\n  const [error, setError] = useState('');\n\n  const handleBlur = () => {\n    if (value.length !== 9 || !/^[0-9]+$/.test(value)) {\n      setError('Please enter a valid 9-digit Social Security number');\n    } else {\n      setError('');\n    }\n  };\n\n  return (\n    <VaTextInput\n      label=\"Social Security number\"\n      name=\"ssn\"\n      error={error}\n      value={value}\n      pattern=\"^[0-9]{9}$\"\n      inputmode=\"numeric\"\n      messageAriaDescribedby=\"Enter 9 digits with no dashes or spaces\"\n      onVaInput={(e) => setValue(e.detail.value)}\n      onBlur={handleBlur}\n    />\n  );\n}"
+    },
+    {
+      "title": "Currency Input",
+      "language": "html",
+      "code": "<va-text-input\n  label=\"Amount you want to pay\"\n  name=\"payment-amount\"\n  currency\n  required\n  hint=\"Enter amount in dollars and cents\"\n></va-text-input>"
+    },
+    {
+      "title": "Character Count",
+      "language": "html",
+      "code": "<va-text-input\n  label=\"Brief description\"\n  name=\"description\"\n  maxlength=\"100\"\n  charcount\n  hint=\"Provide a short summary\"\n></va-text-input>"
+    },
+    {
+      "title": "Numeric Input with Range",
+      "language": "html",
+      "code": "<va-text-input\n  label=\"Number of dependents\"\n  name=\"dependents\"\n  type=\"number\"\n  inputmode=\"numeric\"\n  min=\"0\"\n  max=\"20\"\n  step=\"1\"\n></va-text-input>"
+    }
+  ],
+  "styling": {
+    "designTokens": [
+      "--vads-color-base: Default text color",
+      "--font-source-sans: Font family for labels and input text"
+    ],
+    "cssClasses": [
+      "usa-label: USWDS label styling",
+      "usa-label--error: Red label text for error state",
+      "usa-label--required: Styling for '(*Required)' text",
+      "usa-hint: Styling for hint text",
+      "usa-input: Base input styling",
+      "usa-input--error: Red border and error styling",
+      "usa-input--success: Green border for success state",
+      "usa-input--{width}: Width constraint (e.g., usa-input--md)",
+      "usa-error-message: Error message text styling",
+      "usa-character-count__status: Character count message",
+      "usa-sr-only: Hides error visually, keeps for screen readers",
+      "dd-privacy-hidden: Datadog privacy masking"
+    ],
+    "shadowParts": [
+      "label: Customize label",
+      "input: Customize input field",
+      "form-header: Customize form pattern heading",
+      "input-prefix: Customize prefix container",
+      "input-suffix: Customize suffix container",
+      "icon: Customize prefix/suffix icons"
+    ]
+  },
+  "contentGuidance": {
+    "labels": {
+      "dos": [
+        "Always provide a clear, concise label that describes the expected input",
+        "Use sentence case for labels (e.g., 'First name' not 'First Name')",
+        "Make labels visible and adjacent to the input",
+        "Use specific, concrete language: 'Street address' not 'Address line 1'"
+      ],
+      "donts": [
+        "Never use placeholder text as the only label",
+        "Don't use labels like 'Input' or 'Field' – be specific",
+        "Avoid overly long labels (if needed, use hint for additional context)"
+      ]
+    },
+    "errorMessages": {
+      "guidelines": [
+        "Be specific – Explain exactly what went wrong",
+        "Be actionable – Tell users how to fix it",
+        "Be concise – One or two sentences maximum",
+        "Avoid jargon – Use plain language"
+      ],
+      "goodExamples": [
+        "Enter a 9-digit Social Security number with no dashes or spaces",
+        "Enter an email address in this format: name@example.com",
+        "Select a date that's in the past"
+      ],
+      "badExamples": [
+        "Invalid input (not specific)",
+        "Error (not actionable)",
+        "The value you entered does not match the required pattern for this field (jargon, too complex)"
+      ]
+    },
+    "privacyWarnings": [
+      "CRITICAL: Text inputs have high PII/PHI risk",
+      "Never track open text field responses in analytics (even with enable-analytics)",
+      "Never pass user input in URLs (can appear in logs)",
+      "Use error-has-pii when error messages contain sensitive data",
+      "Inform users how their data will be used (via hint or surrounding content)"
+    ]
+  },
+  "antiPatterns": [
+    {
+      "title": "Placeholder-Only Labels",
+      "wrong": "<va-text-input placeholder=\"Enter your email\" name=\"email\"></va-text-input>",
+      "reason": "Placeholder text disappears when user starts typing, insufficient color contrast, screen readers may not announce consistently",
+      "correct": "<va-text-input label=\"Email address\" name=\"email\"></va-text-input>"
+    },
+    {
+      "title": "Using aria-describedby Directly",
+      "wrong": "<va-text-input label=\"Name\" aria-describedby=\"helper-text\"></va-text-input>",
+      "reason": "Web component shadow DOM breaks this",
+      "correct": "<va-text-input label=\"Name\" message-aria-describedby=\"Enter your full legal name\"></va-text-input>"
+    },
+    {
+      "title": "Password Masking on Phone Numbers",
+      "wrong": "<va-text-input label=\"Phone number\" type=\"password\" name=\"phone\"></va-text-input>",
+      "reason": "Users need to visually verify phone numbers before submission",
+      "correct": "<va-text-input label=\"Phone number\" type=\"tel\" inputmode=\"tel\" autocomplete=\"tel\" name=\"phone\"></va-text-input>"
+    },
+    {
+      "title": "Vague Error Messages",
+      "wrong": "<va-text-input label=\"Email\" error=\"Invalid\"></va-text-input>",
+      "reason": "Not actionable or specific",
+      "correct": "<va-text-input label=\"Email address\" error=\"Enter an email address in this format: name@example.com\"></va-text-input>"
+    },
+    {
+      "title": "Tracking PII in Analytics",
+      "wrong": "<VaTextInput label=\"Full name\" enableAnalytics />",
+      "reason": "Tracks user's actual input (PII risk!)",
+      "correct": "<VaTextInput label=\"Full name\" enableAnalytics={false} />"
+    }
+  ],
+  "relatedSkills": {
+    "components": [
+      "component.va-textarea",
+      "component.va-select",
+      "component.va-radio",
+      "component.va-checkbox",
+      "component.va-date",
+      "component.va-memorable-date",
+      "component.va-file-input"
+    ],
+    "patterns": [
+      "pattern.ask-users-for.names",
+      "pattern.ask-users-for.addresses",
+      "pattern.ask-users-for.phone-numbers",
+      "pattern.ask-users-for.email-addresses",
+      "pattern.help-users-to.check-answers"
+    ],
+    "crossCutting": [
+      "cross-cutting.accessibility",
+      "cross-cutting.content-style",
+      "cross-cutting.form-building"
+    ]
+  },
+  "resources": [
+    {
+      "title": "Design System Guidance",
+      "url": "https://design.va.gov/components/form/text-input"
+    },
+    {
+      "title": "Storybook (Interactive Examples)",
+      "url": "https://design.va.gov/storybook/?path=/docs/uswds-va-text-input--default"
+    },
+    {
+      "title": "Source Code",
+      "url": "https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/web-components/src/components/va-text-input"
+    },
+    {
+      "title": "USWDS Text Input",
+      "url": "https://designsystem.digital.gov/components/text-input/"
+    },
+    {
+      "title": "WCAG 2.2 (Level AA)",
+      "url": "https://www.w3.org/WAI/WCAG22/quickref/"
+    }
+  ]
+}
