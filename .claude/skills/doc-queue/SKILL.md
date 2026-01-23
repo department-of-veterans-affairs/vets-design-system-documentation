@@ -418,3 +418,49 @@ If the skill cannot resolve an issue:
 2. Identify the blocker
 3. Suggest next steps (e.g., "This needs input from [team/person]")
 4. Offer to move to the next issue in queue
+
+## Quick Reference
+
+### Fiscal Year Quarters (Federal)
+
+| Quarter | Months | Example |
+|---------|--------|---------|
+| Q1 | October - December | Q1 FY2026 = Oct-Dec 2025 |
+| Q2 | January - March | Q2 FY2026 = Jan-Mar 2026 |
+| Q3 | April - June | Q3 FY2026 = Apr-Jun 2026 |
+| Q4 | July - September | Q4 FY2026 = Jul-Sep 2026 |
+
+### Common Documentation Labels
+
+- `documentation-design.va.gov` - General documentation issues
+- `va-[component]` - Component-specific (e.g., `va-alert`, `va-button`)
+- `pattern` - Pattern documentation
+- `accessibility` - Accessibility-related documentation
+
+### File Path Patterns
+
+| Content Type | Path Pattern |
+|--------------|--------------|
+| Components | `src/_components/[name]/index.md` or `src/_components/[name].md` |
+| Patterns | `src/_patterns/[category]/[name].md` |
+| Foundation | `src/_foundation/[topic]/index.md` |
+| Content Guide | `src/_content-style-guide/[topic].md` |
+
+### Useful Commands
+
+```bash
+# List all documentation issues
+gh issue list --label "documentation-design.va.gov" --state open
+
+# Search for issues mentioning a component
+gh issue list --search "va-alert in:title,body"
+
+# View issue with comments
+gh issue view <NUMBER> --comments
+
+# Check if file exists
+ls src/_components/<component-name>/
+
+# Search documentation content
+grep -r "search term" src/_components/
+```
