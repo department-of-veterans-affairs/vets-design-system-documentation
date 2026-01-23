@@ -262,3 +262,63 @@ web-component: va-component-name
 - Define acronyms on first use
 - Include AKA sections for alternative names
 - Hyperlink component references: [Alert](/components/alert/)
+
+## Step 5: Execute Documentation Updates
+
+### Pre-Flight Checks
+
+Before making changes:
+
+1. **Create working branch:**
+   ```bash
+   git checkout -b docs/issue-<NUMBER>-<short-description>
+   ```
+
+2. **Read existing file(s) to understand current state:**
+   ```bash
+   # Use Read tool on identified files
+   ```
+
+3. **Confirm approach with user** if there are multiple ways to address the issue.
+
+### Making Changes
+
+**For text updates:**
+- Use the Edit tool for targeted changes
+- Preserve existing formatting and structure
+- Follow VA.gov Content Style Guide
+
+**For new sections:**
+- Follow the established section order
+- Include appropriate Storybook embeds for examples
+- Add accessibility considerations
+
+**For new pages:**
+- Use existing similar pages as templates
+- Include all required front matter
+- Add to navigation if needed
+
+### User Decision Points
+
+Ask the user for input when:
+
+1. **Multiple valid approaches exist:**
+   - "Should we add this as a new section or expand the existing guidance?"
+
+2. **Design decisions are unclear:**
+   - "The issue mentions [X]. How should this be presented to users?"
+
+3. **Scope questions:**
+   - "This change could also apply to [related component]. Should we update both?"
+
+4. **Content tone:**
+   - "Should this be framed as a requirement ('must') or recommendation ('should')?"
+
+### Quality Checklist
+
+Before completing:
+- [ ] All links work (internal and external)
+- [ ] Storybook previews render correctly
+- [ ] Code examples are accurate
+- [ ] Accessibility guidance is included where relevant
+- [ ] Content follows style guide
