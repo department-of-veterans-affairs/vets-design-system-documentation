@@ -49,7 +49,7 @@ First, try to fetch the current quarterly documentation epic:
 # Fiscal year starts October 1, so calendar year Oct-Dec is FY+1
 
 # Fetch the known epic for Q1 2026
-gh issue view 5410 --repo department-of-veterans-affairs/vets-design-system-documentation --json state,title,number
+gh issue view 5410 --repo department-of-veterans-affairs/vets-design-system-documentation --json state,title,number | cat
 ```
 
 **If epic #5410 is CLOSED**, search for the next quarterly epic:
@@ -62,7 +62,7 @@ gh issue list --repo department-of-veterans-affairs/vets-design-system-documenta
   --search "is:issue is:open \"Documentation updates to VADS\" in:title" \
   --label "Epic" \
   --json number,title,state \
-  --limit 5
+  --limit 5 | cat
 ```
 
 ### Fallback 1: Documentation Label Issues
@@ -74,7 +74,7 @@ gh issue list --repo department-of-veterans-affairs/vets-design-system-documenta
   --label "documentation-design.va.gov" \
   --state open \
   --json number,title,createdAt,assignees \
-  --limit 20 | jq 'sort_by(.createdAt) | .[0:10]'
+  --limit 20 | cat | jq 'sort_by(.createdAt) | .[0:10]'
 ```
 
 If issues are found, proceed to Step 2 (Issue Selection) with these results.
@@ -89,14 +89,14 @@ gh issue list --repo department-of-veterans-affairs/vets-design-system-documenta
   --label "guidance-update" \
   --state open \
   --json number,title,createdAt,assignees \
-  --limit 20 | jq 'sort_by(.createdAt) | .[0:10]'
+  --limit 20 | cat | jq 'sort_by(.createdAt) | .[0:10]'
 
 # If none, try guidance-new label
 gh issue list --repo department-of-veterans-affairs/vets-design-system-documentation \
   --label "guidance-new" \
   --state open \
   --json number,title,createdAt,assignees \
-  --limit 20 | jq 'sort_by(.createdAt) | .[0:10]'
+  --limit 20 | cat | jq 'sort_by(.createdAt) | .[0:10]'
 ```
 
 If issues are found with either label, proceed to Step 2 (Issue Selection) with these results.
@@ -131,7 +131,7 @@ gh issue list --repo department-of-veterans-affairs/vets-design-system-documenta
   --label "documentation-design.va.gov" \
   --state open \
   --json number,title,createdAt,labels,assignees \
-  --limit 50 | jq 'sort_by(.createdAt)'
+  --limit 50 | cat | jq 'sort_by(.createdAt)'
 ```
 
 ### Selection Priority
@@ -172,7 +172,7 @@ This signals to the team that someone is actively working on the issue.
 
 ```bash
 gh issue view <ISSUE_NUMBER> --repo department-of-veterans-affairs/vets-design-system-documentation \
-  --json title,body,labels,comments,assignees
+  --json title,body,labels,comments,assignees | cat
 ```
 
 ### Issue Analysis Checklist
@@ -286,7 +286,7 @@ web-component: va-component-name
 
 ## Step 5: Execute Documentation Updates
 
-### Pre-Flight Checks
+### Preflight Checks
 
 Before making changes:
 
@@ -303,6 +303,11 @@ Before making changes:
 3. **Confirm approach with user** if there are multiple ways to address the issue.
 
 ### Making Changes
+
+**CRITICAL: YAML Front Matter Protection**
+- NEVER modify YAML front matter (content between `---` lines) without explicit user approval
+- Always show the user any proposed front matter changes before making them
+- Front matter controls page layout, navigation, and metadata - incorrect changes can break the site
 
 **For text updates:**
 - Use the Edit tool for targeted changes
@@ -398,7 +403,7 @@ Closes #<ISSUE_NUMBER>
 After creating the PR, update the issue's status in the project board to "PR Review":
 
 ```bash
-# Get the issue's project item ID
+# Step 1: Get the issue's project item ID
 gh api graphql -f query='
 query($owner: String!, $repo: String!, $number: Int!) {
   repository(owner: $owner, name: $repo) {
@@ -406,14 +411,31 @@ query($owner: String!, $repo: String!, $number: Int!) {
       projectItems(first: 10) {
         nodes {
           id
-          project { title }
+          project { title id }
         }
       }
     }
   }
-}' -f owner="department-of-veterans-affairs" -f repo="vets-design-system-documentation" -F number=<ISSUE_NUMBER>
+}' -f owner="department-of-veterans-affairs" -f repo="vets-design-system-documentation" -F number=<ISSUE_NUMBER> | cat
 
-# Update the status field (requires project field ID and option ID)
+# Step 2: Update the status field to "PR Review"
+# Replace the placeholder IDs with values from Step 1 and your project's field configuration
+gh api graphql -f query='
+mutation($projectId: ID!, $itemId: ID!, $fieldId: ID!, $optionId: String!) {
+  updateProjectV2ItemFieldValue(input: {
+    projectId: $projectId
+    itemId: $itemId
+    fieldId: $fieldId
+    value: { singleSelectOptionId: $optionId }
+  }) {
+    projectV2Item { id }
+  }
+}' \
+  -f projectId="<PROJECT_ID>" \
+  -f itemId="<ITEM_ID_FROM_STEP_1>" \
+  -f fieldId="<STATUS_FIELD_ID>" \
+  -f optionId="<PR_REVIEW_OPTION_ID>" | cat
+
 # The "Design System & Forms" project uses these status options:
 # - "Backlog", "Ready", "In Progress", "PR Review", "Done"
 ```
@@ -499,29 +521,29 @@ If the skill cannot resolve an issue:
 
 ```bash
 # Assign an issue to yourself
-gh issue edit <NUMBER> --add-assignee "<USERNAME>"
+gh issue edit <NUMBER> --repo department-of-veterans-affairs/vets-design-system-documentation --add-assignee "<USERNAME>"
 
 # View issue's project board status
-gh issue view <NUMBER> --json projectItems
+gh issue view <NUMBER> --repo department-of-veterans-affairs/vets-design-system-documentation --json projectItems | cat
 
 # Add a comment to an issue
-gh issue comment <NUMBER> --body "Working on this - PR coming soon"
+gh issue comment <NUMBER> --repo department-of-veterans-affairs/vets-design-system-documentation --body "Working on this - PR coming soon"
 ```
 
 ### Useful Commands
 
 ```bash
 # List all documentation issues
-gh issue list --label "documentation-design.va.gov" --state open
+gh issue list --repo department-of-veterans-affairs/vets-design-system-documentation --label "documentation-design.va.gov" --state open
 
 # List unassigned documentation issues only
-gh issue list --label "documentation-design.va.gov" --state open --json number,title,assignees | jq '[.[] | select(.assignees | length == 0)]'
+gh issue list --repo department-of-veterans-affairs/vets-design-system-documentation --label "documentation-design.va.gov" --state open --json number,title,assignees | cat | jq '[.[] | select(.assignees | length == 0)]'
 
 # Search for issues mentioning a component
-gh issue list --search "va-alert in:title,body"
+gh issue list --repo department-of-veterans-affairs/vets-design-system-documentation --search "va-alert in:title,body"
 
 # View issue with comments
-gh issue view <NUMBER> --comments
+gh issue view <NUMBER> --repo department-of-veterans-affairs/vets-design-system-documentation --comments
 
 # Check if file exists
 ls src/_components/<component-name>/
