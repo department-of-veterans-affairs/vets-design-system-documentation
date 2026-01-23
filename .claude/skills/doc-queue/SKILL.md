@@ -322,3 +322,61 @@ Before completing:
 - [ ] Code examples are accurate
 - [ ] Accessibility guidance is included where relevant
 - [ ] Content follows style guide
+
+## Step 6: Complete and Submit
+
+### Local Verification
+
+1. **Build the site locally:**
+   ```bash
+   yarn build
+   ```
+
+2. **Check for build errors** - resolve any Jekyll or Gulp errors
+
+3. **Preview changes** (optional):
+   ```bash
+   yarn start
+   # Visit localhost:4000 to verify changes
+   ```
+
+### Commit Changes
+
+```bash
+git add -A
+git commit -m "docs: [brief description of changes]
+
+Closes #<ISSUE_NUMBER>"
+```
+
+### Create Pull Request
+
+```bash
+gh pr create \
+  --title "docs: [Description matching issue title]" \
+  --body "## Summary
+- [Bullet points of changes made]
+
+## Issue
+Closes #<ISSUE_NUMBER>
+
+## Testing
+- [ ] Site builds without errors
+- [ ] Changes render correctly on localhost
+- [ ] Links are functional
+- [ ] Storybook embeds work
+
+## Screenshots
+[If visual changes, include before/after]
+" \
+  --base main
+```
+
+### Post-Completion
+
+1. **Notify user of PR URL**
+2. **Ask if they want to work on another issue:**
+   - "PR created! Would you like to pick up another documentation issue from the queue?"
+
+3. **Track progress:**
+   - Note that one issue has been addressed toward the 10% quarterly goal
