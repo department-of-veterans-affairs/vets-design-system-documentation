@@ -25,3 +25,86 @@ Use this skill when:
 - "close out guidance tickets"
 - "work on VADS documentation"
 - "help with documentation backlog"
+
+## Step 1: Locate the Documentation Epic
+
+### Primary Epic (Current Quarter)
+
+First, try to fetch the current quarterly documentation epic:
+
+```bash
+# Get current fiscal quarter and year
+# Federal fiscal year: Q1=Oct-Dec, Q2=Jan-Mar, Q3=Apr-Jun, Q4=Jul-Sep
+# Fiscal year starts October 1, so calendar year Oct-Dec is FY+1
+
+# Fetch the known epic for Q1 2026
+gh issue view 5410 --repo department-of-veterans-affairs/vets-design-system-documentation --json state,title,number
+```
+
+**If epic #5410 is CLOSED**, search for the next quarterly epic:
+
+```bash
+# Calculate current fiscal quarter (FY starts October)
+# Q1: Oct-Dec, Q2: Jan-Mar, Q3: Apr-Jun, Q4: Jul-Sep
+
+gh issue list --repo department-of-veterans-affairs/vets-design-system-documentation \
+  --search "is:issue is:open \"Documentation updates to VADS\" in:title" \
+  --label "Epic" \
+  --json number,title,state \
+  --limit 5
+```
+
+### Fallback 1: Documentation Label Issues
+
+If no open epic is found, fall back to the oldest issues with the `documentation-design.va.gov` label:
+
+```bash
+gh issue list --repo department-of-veterans-affairs/vets-design-system-documentation \
+  --label "documentation-design.va.gov" \
+  --state open \
+  --json number,title,createdAt,assignees \
+  --limit 20 | jq 'sort_by(.createdAt) | .[0:10]'
+```
+
+If issues are found, proceed to Step 2 (Issue Selection) with these results.
+
+### Fallback 2: Guidance Label Issues
+
+If no `documentation-design.va.gov` issues are found, search for guidance-related issues:
+
+```bash
+# Try guidance-update label first
+gh issue list --repo department-of-veterans-affairs/vets-design-system-documentation \
+  --label "guidance-update" \
+  --state open \
+  --json number,title,createdAt,assignees \
+  --limit 20 | jq 'sort_by(.createdAt) | .[0:10]'
+
+# If none, try guidance-new label
+gh issue list --repo department-of-veterans-affairs/vets-design-system-documentation \
+  --label "guidance-new" \
+  --state open \
+  --json number,title,createdAt,assignees \
+  --limit 20 | jq 'sort_by(.createdAt) | .[0:10]'
+```
+
+If issues are found with either label, proceed to Step 2 (Issue Selection) with these results.
+
+### Fallback 3: Ask User for Epic/Issue URL
+
+If no issues are found through any of the above methods, ask the user:
+
+**Question:** "I couldn't find any open documentation or guidance issues. Please provide either:
+1. A URL to a documentation epic to pull issues from
+2. A URL to a specific documentation issue to work on"
+
+**Accept formats:**
+- `https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/XXXX`
+- Issue number only: `#XXXX` or `XXXX`
+
+### Issue Discovery Priority Summary
+
+1. **Primary:** Current quarterly epic (#5410 or search for "Documentation updates to VADS Q[N] [YEAR]")
+2. **Fallback 1:** Oldest issues with `documentation-design.va.gov` label
+3. **Fallback 2:** Oldest issues with `guidance-update` or `guidance-new` labels
+4. **Fallback 3:** Ask user for epic/issue URL
