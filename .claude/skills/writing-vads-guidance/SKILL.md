@@ -104,8 +104,8 @@ web-component: va-component-name
 layout: pattern
 title: Pattern Name
 draft: true
-permalink: /patterns/[ask|help]-users-to/[pattern-name]
-sub-section: [ask-users-to|help-users-to]
+permalink: /patterns/ask-users-for/[pattern-name]
+sub-section: ask-users-for
 intro-text: "Purpose and function of the pattern"
 figma-link: [URL]
 status: use-with-caution-candidate
@@ -280,7 +280,7 @@ Before completing documentation:
 |------|------|----------|
 | Component | `src/_components/[name]/index.md` or `src/_components/[name].md` | `src/_components/template.md` |
 | Pattern | `src/_patterns/[category]/[name].md` (categories: `ask-users-for`, `help-users-to`) | `src/_patterns/template.md` |
-| Template | `src/_templates/[name].md` or `src/_templates/[category]/index.md` | `src/_templates/template.md` |
+| Template | `src/_templates/[name]/index.md` or `src/_templates/[name].md` | `src/_templates/template.md` |
 
 ### Status Values
 
