@@ -144,3 +144,68 @@ Show the 5 oldest issues and ask which one to work on:
 5. [Fifth oldest] (#number - created date)
 
 **Allow "Other"** for user to specify a different issue number.
+
+## Step 3: Analyze Selected Issue
+
+### Fetch Full Issue Details
+
+```bash
+gh issue view <ISSUE_NUMBER> --repo department-of-veterans-affairs/vets-design-system-documentation \
+  --json title,body,labels,comments,assignees
+```
+
+### Issue Analysis Checklist
+
+For each issue, determine:
+
+1. **Issue Type:**
+   - [ ] New documentation needed
+   - [ ] Update existing documentation
+   - [ ] Fix incorrect information
+   - [ ] Add examples/code samples
+   - [ ] Accessibility guidance update
+   - [ ] Design decision documentation
+
+2. **Affected Files:**
+   - Identify which documentation files need changes
+   - Search codebase for related content:
+   ```bash
+   # For component issues (e.g., va-alert)
+   find src/_components -name "*alert*" -type f
+
+   # For pattern issues
+   find src/_patterns -name "*.md" -type f | xargs grep -l "KEYWORD"
+   ```
+
+3. **Dependencies:**
+   - Does this require component-library changes?
+   - Does this need design review?
+   - Are there related issues to reference?
+
+4. **Scope Assessment:**
+   - Small: Single file update, minor text changes
+   - Medium: Multiple sections or files, new examples needed
+   - Large: New page creation, significant restructuring
+
+### Present Summary to User
+
+Format the analysis as:
+
+---
+**Issue #[NUMBER]: [TITLE]**
+
+**Summary:** [2-3 sentence summary of what needs to be done]
+
+**Type:** [Issue type from checklist]
+
+**Files to modify:**
+- `path/to/file1.md` - [what changes needed]
+- `path/to/file2.md` - [what changes needed]
+
+**Scope:** [Small/Medium/Large]
+
+**Questions for you:**
+1. [Any clarifying questions based on issue analysis]
+2. [Design decisions that need input]
+
+---
