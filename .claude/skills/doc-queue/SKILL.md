@@ -26,6 +26,17 @@ Use this skill when:
 - "work on VADS documentation"
 - "help with documentation backlog"
 
+## Step 0: Get User's GitHub Username
+
+Before starting, ask for the user's GitHub username if not already known:
+
+**Question:** "What is your GitHub username? (This is needed to assign issues to you)"
+
+Store this for:
+- Assigning issues when work begins
+- Filtering out issues already assigned to the user
+- Crediting work in commits
+
 ## Step 1: Locate the Documentation Epic
 
 ### Primary Epic (Current Quarter)
@@ -144,6 +155,16 @@ Show the 5 oldest issues and ask which one to work on:
 5. [Fifth oldest] (#number - created date)
 
 **Allow "Other"** for user to specify a different issue number.
+
+### Claim the Issue
+
+Once the user selects an issue, immediately assign it to them:
+
+```bash
+gh issue edit <ISSUE_NUMBER> --repo department-of-veterans-affairs/vets-design-system-documentation --add-assignee "<GITHUB_USERNAME>"
+```
+
+This signals to the team that someone is actively working on the issue.
 
 ## Step 3: Analyze Selected Issue
 
@@ -372,13 +393,41 @@ Closes #<ISSUE_NUMBER>
   --base main
 ```
 
+### Update Project Board Status
+
+After creating the PR, update the issue's status in the project board to "PR Review":
+
+```bash
+# Get the issue's project item ID
+gh api graphql -f query='
+query($owner: String!, $repo: String!, $number: Int!) {
+  repository(owner: $owner, name: $repo) {
+    issue(number: $number) {
+      projectItems(first: 10) {
+        nodes {
+          id
+          project { title }
+        }
+      }
+    }
+  }
+}' -f owner="department-of-veterans-affairs" -f repo="vets-design-system-documentation" -F number=<ISSUE_NUMBER>
+
+# Update the status field (requires project field ID and option ID)
+# The "Design System & Forms" project uses these status options:
+# - "Backlog", "Ready", "In Progress", "PR Review", "Done"
+```
+
+**Note:** If automated project board updates fail, manually update the issue status in the GitHub project board to "PR Review".
+
 ### Post-Completion
 
 1. **Notify user of PR URL**
-2. **Ask if they want to work on another issue:**
+2. **Confirm project board was updated** to "PR Review" status
+3. **Ask if they want to work on another issue:**
    - "PR created! Would you like to pick up another documentation issue from the queue?"
 
-3. **Track progress:**
+4. **Track progress:**
    - Note that one issue has been addressed toward the 10% quarterly goal
 
 ## Error Handling
@@ -446,11 +495,27 @@ If the skill cannot resolve an issue:
 | Foundation | `src/_foundation/[topic]/index.md` |
 | Content Guide | `src/_content-style-guide/[topic].md` |
 
+### Issue Management Commands
+
+```bash
+# Assign an issue to yourself
+gh issue edit <NUMBER> --add-assignee "<USERNAME>"
+
+# View issue's project board status
+gh issue view <NUMBER> --json projectItems
+
+# Add a comment to an issue
+gh issue comment <NUMBER> --body "Working on this - PR coming soon"
+```
+
 ### Useful Commands
 
 ```bash
 # List all documentation issues
 gh issue list --label "documentation-design.va.gov" --state open
+
+# List unassigned documentation issues only
+gh issue list --label "documentation-design.va.gov" --state open --json number,title,assignees | jq '[.[] | select(.assignees | length == 0)]'
 
 # Search for issues mentioning a component
 gh issue list --search "va-alert in:title,body"
