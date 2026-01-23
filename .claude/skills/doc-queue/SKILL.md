@@ -380,3 +380,41 @@ Closes #<ISSUE_NUMBER>
 
 3. **Track progress:**
    - Note that one issue has been addressed toward the 10% quarterly goal
+
+## Error Handling
+
+### Common Issues and Resolutions
+
+**Epic not found:**
+- Search with broader terms
+- Ask user for direct URL
+- Check if epic label was changed
+
+**No open documentation issues:**
+- Congratulate team on clearing the queue!
+- Ask if user wants to work on a different type of issue
+
+**Issue requires component-library changes:**
+- Inform user this issue needs development work first
+- Suggest documenting what exists and creating a follow-up issue
+- Skip to next documentation-only issue
+
+**Issue is blocked by design decisions:**
+- Present the decision needed to the user
+- If user can't decide, mark issue as needing design review
+- Move to next issue
+
+**Build failures after changes:**
+- Review error messages
+- Check for syntax errors in Liquid templates
+- Verify front matter YAML is valid
+- Ensure file paths in includes are correct
+
+### Escalation Path
+
+If the skill cannot resolve an issue:
+
+1. Summarize what was attempted
+2. Identify the blocker
+3. Suggest next steps (e.g., "This needs input from [team/person]")
+4. Offer to move to the next issue in queue
