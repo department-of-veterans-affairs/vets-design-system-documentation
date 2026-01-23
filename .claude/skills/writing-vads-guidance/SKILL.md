@@ -11,7 +11,7 @@ Write VA Design System documentation that follows established templates and styl
 
 **Announce at start:** "I'm using the writing-vads-guidance skill to help write documentation that follows VADS standards."
 
-**Called by:** superpowers:doc-queue (Step 5: Execute Documentation Updates)
+**Called by:** doc-queue (Step 5: Execute Documentation Updates)
 
 ## When to Use
 
@@ -81,7 +81,7 @@ web: true
 mobile-app: true  # If applicable
 intro-text: "Purpose and function of the component"
 figma-link-web: [URL]
-status: use-with-caution-candidate  # Or: use, use-with-caution-available, dont-use
+status: use-with-caution-candidate  # See Status Values section for all options
 web-component: va-component-name
 ---
 ```
@@ -267,17 +267,19 @@ Before completing documentation:
 | Type | Path | Template |
 |------|------|----------|
 | Component | `src/_components/[name]/index.md` or `src/_components/[name].md` | `src/_components/template.md` |
-| Pattern | `src/_patterns/[category]/[name].md` | `src/_patterns/template.md` |
-| Template | `src/_templates/[name].md` | `src/_templates/template.md` |
+| Pattern | `src/_patterns/[category]/[name].md` (categories: `ask-users-for`, `help-users-to`) | `src/_patterns/template.md` |
+| Template | `src/_templates/[name].md` or `src/_templates/[category]/index.md` | `src/_templates/template.md` |
 
 ### Status Values
 
 | Status | Meaning |
 |--------|---------|
-| `use` | Production ready |
-| `use-with-caution-available` | Available but use carefully |
-| `use-with-caution-candidate` | Under development |
-| `dont-use` | Deprecated |
+| `use-best-practice` | Recommended best practice across VA, widely adopted and stable |
+| `use-deployed` | Production ready and deployed in at least one VA product |
+| `use-with-caution-available` | Available but use carefully; has known limitations or pending updates |
+| `use-with-caution-candidate` | Candidate pattern/component under development or evaluation |
+| `dont-use-proposed` | Proposed pattern/component that should not be used yet |
+| `dont-use-deprecated` | Deprecated; avoid new use and plan to migrate existing implementations |
 
 ### Common Includes
 

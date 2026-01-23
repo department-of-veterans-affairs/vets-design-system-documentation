@@ -388,7 +388,7 @@ Closes #<ISSUE_NUMBER>"
 
 ```bash
 gh pr create \
-  --title "docs: [Description matching issue title]" \
+  --title "docs: Short summary of changes" \
   --body "## Summary
 - [Bullet points of changes made]
 
@@ -522,8 +522,9 @@ If the skill cannot resolve an issue:
 | Content Type | Path Pattern |
 |--------------|--------------|
 | Components | `src/_components/[name]/index.md` or `src/_components/[name].md` |
-| Patterns | `src/_patterns/[category]/[name].md` |
-| Foundation | `src/_foundation/[topic]/index.md` |
+| Patterns | `src/_patterns/[category]/[name].md` (categories: `ask-users-for`, `help-users-to`) |
+| Templates | `src/_templates/[name].md` or `src/_templates/[category]/index.md` |
+| Foundation | `src/_foundation/[topic].md` (some use `src/_foundation/[topic]/index.md`) |
 | Content Guide | `src/_content-style-guide/[topic].md` |
 
 ### Issue Management Commands
