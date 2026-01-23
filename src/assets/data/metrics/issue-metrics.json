@@ -147,8 +147,8 @@
     },
     {
       "period": "2026-Q1",
-      "issues_opened": 91,
-      "issues_closed": 85
+      "issues_opened": 124,
+      "issues_closed": 126
     }
   ],
   "velocity": [
@@ -589,8 +589,8 @@
     },
     {
       "period": "2026-01",
-      "issues_opened": 91,
-      "issues_closed": 85
+      "issues_opened": 124,
+      "issues_closed": 126
     }
   ],
   "experimental_quarterly": [
@@ -707,29 +707,35 @@
       "issues_opened": 11,
       "issues_closed": 0,
       "issues_implemented": 0
+    },
+    {
+      "period": "2026-Q1",
+      "issues_opened": 0,
+      "issues_closed": 1,
+      "issues_implemented": 0
     }
   ],
   "summary": {
-    "open_issues": 630,
-    "closed_this_month": 85,
+    "open_issues": 622,
+    "closed_this_month": 126,
     "avg_resolution_days": 119,
-    "total_issues": 5397,
-    "last_updated": "2026-01-16T18:11:19.612Z",
+    "total_issues": 5430,
+    "last_updated": "2026-01-23T18:11:12.202Z",
     "open_issues_trend": {
       "direction": "down",
       "percentage": 2,
       "value": -14
     },
     "closed_month_trend": {
-      "direction": "down",
-      "percentage": 28,
-      "value": -33
+      "direction": "up",
+      "percentage": 7,
+      "value": 8
     },
     "resolution_time_trend": {
-      "direction": "down",
-      "percentage": 11,
-      "value": -11
+      "direction": "up",
+      "percentage": 24,
+      "value": 23
     }
   },
-  "generated_at": "2026-01-16T18:11:19.640Z"
+  "generated_at": "2026-01-23T18:11:12.227Z"
 }
