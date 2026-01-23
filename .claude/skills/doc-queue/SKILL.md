@@ -244,7 +244,7 @@ Prompt: Extract documentation guidelines including file organization, front matt
 
 **File Organization:**
 - Components: `src/_components/[component-name]/index.md` or `src/_components/[component-name].md`
-- Patterns: `src/_patterns/[pattern-name]/index.md`
+- Patterns: `src/_patterns/[category]/[pattern-name].md` (for example, `ask-users-for` or `help-users-to`)
 - Templates: `src/_templates/[template-name]/index.md`
 
 **Front Matter Required Fields:**
