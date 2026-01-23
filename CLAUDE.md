@@ -85,6 +85,20 @@ Helps designers efficiently process documentation and guidance issues from quart
 
 See `.claude/skills/doc-queue/SKILL.md` for full details.
 
+### `/writing-vads-guidance` - Documentation Writing Standards
+Ensures documentation follows VADS templates and style standards when writing component, pattern, or template guidance.
+
+**Automatically invoked by:** `/doc-queue` at the "Making Changes" step
+
+**What it does:**
+1. Loads the appropriate template (component/pattern/template)
+2. Ensures documentation structure matches template
+3. Handles deviations when justified (with designer approval)
+4. Enforces YAML front matter protection
+5. Provides required Jekyll include syntax
+
+See `.claude/skills/writing-vads-guidance/SKILL.md` for full details.
+
 ## Additional Resources
 
 - `commands/issues.md` - Complete guide for managing GitHub issues and using issue templates

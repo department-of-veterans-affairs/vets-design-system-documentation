@@ -286,6 +286,15 @@ web-component: va-component-name
 
 ## Step 5: Execute Documentation Updates
 
+**REQUIRED SUB-SKILL:** Use writing-vads-guidance for all documentation changes.
+
+The writing-vads-guidance skill provides detailed guidance on:
+- Template compliance for components, patterns, and templates
+- Required Jekyll includes (Storybook, images, code props)
+- VADS style standards and permitted deviations
+- Handling template deviations with designer approval
+- Quality checklist for documentation
+
 ### Preflight Checks
 
 Before making changes:
