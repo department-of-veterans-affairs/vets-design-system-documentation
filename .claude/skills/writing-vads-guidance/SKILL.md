@@ -208,9 +208,9 @@ figma-link: [URL]
 2. **Designer explicitly approves** - Document the reason
 3. **Content doesn't fit template** - Some components need fewer/different sections
 
-### When to Ask
+### When to Ask the Designer
 
-Present to designer:
+**Template deviations:**
 ```
 The template suggests [X section], but:
 - This component doesn't have [relevant feature]
@@ -222,6 +222,18 @@ Should we:
 2. Omit it (matching [similar example])
 3. Something else
 ```
+
+**Multiple valid approaches:**
+- "Should we add this as a new section or expand the existing guidance?"
+
+**Design decisions unclear:**
+- "The issue mentions [X]. How should this be presented to users?"
+
+**Scope questions:**
+- "This change could also apply to [related component]. Should we update both?"
+
+**Content tone:**
+- "Should this be framed as a requirement ('must') or recommendation ('should')?"
 
 ### Documenting Deviations
 

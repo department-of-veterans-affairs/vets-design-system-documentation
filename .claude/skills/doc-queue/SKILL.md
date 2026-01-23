@@ -311,52 +311,7 @@ Before making changes:
 
 3. **Confirm approach with user** if there are multiple ways to address the issue.
 
-### Making Changes
-
-**CRITICAL: YAML Front Matter Protection**
-- NEVER modify YAML front matter (content between `---` lines) without explicit user approval
-- Always show the user any proposed front matter changes before making them
-- Front matter controls page layout, navigation, and metadata - incorrect changes can break the site
-
-**For text updates:**
-- Use the Edit tool for targeted changes
-- Preserve existing formatting and structure
-- Follow VA.gov Content Style Guide
-
-**For new sections:**
-- Follow the established section order
-- Include appropriate Storybook embeds for examples
-- Add accessibility considerations
-
-**For new pages:**
-- Use existing similar pages as templates
-- Include all required front matter
-- Add to navigation if needed
-
-### User Decision Points
-
-Ask the user for input when:
-
-1. **Multiple valid approaches exist:**
-   - "Should we add this as a new section or expand the existing guidance?"
-
-2. **Design decisions are unclear:**
-   - "The issue mentions [X]. How should this be presented to users?"
-
-3. **Scope questions:**
-   - "This change could also apply to [related component]. Should we update both?"
-
-4. **Content tone:**
-   - "Should this be framed as a requirement ('must') or recommendation ('should')?"
-
-### Quality Checklist
-
-Before completing:
-- [ ] All links work (internal and external)
-- [ ] Storybook previews render correctly
-- [ ] Code examples are accurate
-- [ ] Accessibility guidance is included where relevant
-- [ ] Content follows style guide
+4. **Hand off to writing-vads-guidance skill** for all documentation changes.
 
 ## Step 6: Complete and Submit
 
