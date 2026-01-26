@@ -17,7 +17,6 @@ anchors:
   - anchor: Examples - Standard properties
   - anchor: Examples - Slim alert
   - anchor: Usage
-  - anchor: Choosing between alert statuses
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
@@ -218,11 +217,11 @@ Use **warning** when something *might* go wrong or requires attention before pro
 
 #### Handling multiple alerts
 
-When you need to display multiple alerts on a page:
+This should be avoided as much as possible. When it cannot be avoided and you need to display multiple alerts on a page:
 
 * **Order by severity.** Place error alerts first, followed by warning, then success, and finally informational alerts.
-* **Create visual hierarchy.** When multiple alerts are necessary, consider using a Standard alert for the primary message and Slim alerts for secondary messages, such as using a Standard success alert for form submission confirmation with a Slim success alert for auto-save status.
-* **Don't stack alerts.** If you have multiple messages of the same type, consider combining them into a single alert with a list of items.
+* **Create visual hierarchy.** When multiple alerts are necessary, use a Standard alert for the primary message and Slim alerts for secondary messages.
+* **Don't stack alerts.** If you have multiple messages of the same type, combine them into a single alert with a list of items.
 
 ### Links within alerts
 
