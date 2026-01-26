@@ -42,7 +42,7 @@ anchors:
 
 ### How this component works
 
-* **Use Alert - Slim.** This component is an instance of the [Alert - Slim]({{ site.baseurl }}/components/alert#slim-alert) component in the success state.
+* **Use Alert - Slim.** This component is an instance of the [Alert - Slim]({{ site.baseurl }}/components/alert#examples---slim-alert) component in the success state.
 
 ### Placement
 
