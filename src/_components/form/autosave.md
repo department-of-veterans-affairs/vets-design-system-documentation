@@ -42,11 +42,11 @@ anchors:
 
 ### How this component works
 
-* **Use Alert - Slim.** This component is an instance of the [Alert - Slim]({{ site.baseurl }}/components/alert#background-color-only-alert-with-icon) component in the success state.
+* **Use Alert - Slim.** This component is an instance of the [Alert - Slim]({{ site.baseurl }}/components/alert#slim-alert) component in the success state.
 
 ### Placement
 
-* This component appears after the [Button pair]({{ site.baseurl }}/components/button/button-group) on the authenticated variation of the [Form - Step page]({{ site.baseurl }}/templates/forms/#step-form-pages).
+* This component appears after the [Button pair]({{ site.baseurl }}/components/button/button-group) on the authenticated variation of the [Form - Step page]({{ site.baseurl }}/templates/forms/form-step).
 
 ## Code usage
 
@@ -55,7 +55,7 @@ Code for this component is shown in the [examples](#examples).
 ## Content considerations
 
 * Message content can be found in the example above or in [engagement messages]({{ site.baseurl }}/content-style-guide/error-messages/engagement).
-* This message is to be accompanied by text that reads: "We'll save your application on every change." and appears just below the [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented) component on [Form - Step pages]({{ site.baseurl }}/templates/forms/#step-form-pages).
+* This message is to be accompanied by text that reads: "We'll save your application on every change." and appears just below the [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented) component on [Form - Step pages]({{ site.baseurl }}/templates/forms/form-step).
 
 ## Accessibility considerations
 
