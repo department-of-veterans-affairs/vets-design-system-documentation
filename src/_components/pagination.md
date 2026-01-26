@@ -68,7 +68,7 @@ When using pagination, include a results description above the paginated content
 
 {% include components/results-description.md %}
 
-For more details on implementing search results with pagination, see the [Search results template]({{ site.baseurl }}/templates/search-results).
+For more details on implementing search results with pagination, including placement of the results description, see the [Search results template]({{ site.baseurl }}/templates/search-results).
 
 {% include component-docs.html component_name=page.web-component %}
 
