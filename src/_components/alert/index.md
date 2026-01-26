@@ -200,7 +200,7 @@ Use success alerts to confirm that a user-initiated action completed successfull
 * **Updates confirmed.** When the user updates their information and the change is saved.
 * **Explicit saves.** When the user actively saves their progress.
 
-**When autosave completes successfully:** Autosave is an example of a system-initiated action that still uses a success alert because the system successfully preserved the user's work. Auto-save is currently being researched and the handling of auto-save messages may change in future. At the moment, it is okay to have two success alerts on the page if one of them is the auto-save alert in a form flow.
+**When autosave completes successfully:** Autosave is an example of a system-initiated action that still uses a success alert because the system successfully preserved the user's work. Autosave is currently being researched and the handling of autosave messages may change in future. At the moment, it is okay to have two success alerts on the page if one of them is the autosave alert in a form flow.
 
 #### Error
 
