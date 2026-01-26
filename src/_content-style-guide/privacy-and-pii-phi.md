@@ -105,7 +105,7 @@ If PII/PHI information is used in other UI elements, such as the examples below,
 - **Form field selection values.** For example, a drop list, radio button set, or checklist that contains options that include PII/PHI such as addresses.
 - **Open text fields.** Regardless of what the open text field requests, users can easily enter personal information.
 
-{% include _site-in-this-section.html section="note" title="Extreme caution with open text fields" %} Extreme caution should be used anytime an open text field is offered to a site visitor. Open text fields are often a place where site visitors will enter PII/PHI. For more information, see [Search input privacy guidance]({{ site.baseurl }}/components/search-input#privacy-guidance).
+**Note:** Extreme caution should be used anytime an open text field is offered to a site visitor. Open text fields are often a place where site visitors will enter PII/PHI. For more information, see [Search input privacy guidance]({{ site.baseurl }}/components/search-input#privacy-guidance).
 
 ## Analytics tracking and reporting guidance
 
