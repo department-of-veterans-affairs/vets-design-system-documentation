@@ -1,7 +1,7 @@
 ---
 layout: component
 title: Card
-permalink: /components/card
+permalink: /components/card/
 intro-text: "A card is a flexible container component that groups short, related pieces of personalized information. Teams build and pass in their own content (headers, body text, links, etc.), and the Card provides the visual container with options for background color, borders, drop shadows, and icons. For structured status cards with defined props, use [Card - Status]({{ site.baseurl }}/components/card/card-status) instead."
 github-title: va-card
 research-title: card
@@ -48,21 +48,21 @@ anchors:
 ### When to use Card
 
 - **Collections.** Cards usually appear in a collection, rather than in isolation, contain identical or similar information, and are uniform in their look and feel so that users can easily scan the collection of related items and actions.
-- **Framing a call to action.** Cards are often used to highlight and frame a specific call to action or decision a user needs to take.
+- **Framing a call to action.** Cards help highlight and frame a specific call to action or decision a user needs to take.
 
 
 ### When to consider something else
 - **When you need a structured status card.** Use [Card - Status]({{ site.baseurl }}/components/card/card-status) when you need a consistent, structured component with defined props for status, heading, body, and action link. Card Status enforces patterns for action-required scenarios and handles accessibility automatically.
 - **Eligibility information.** When you want to show benefits or tools the user is currently enrolled in or has access to, use the [Service list item]({{ site.baseurl }}/components/service-list-item) component.
-- **Other content highlight.** The [Summary box]({{ site.baseurl }}/components/summary-box) component, which is the only card-like element represented in Drupal, is meant to act as a content highlight for the most important information on the page. It was originally intended to highlight eligibility information. Featured content is not a Card and they should not be used interchangeably. The Summary box should be used once on the page, and not stacked in a list as the Card component or Service list item component should be.
+- **Other content highlight.** The [Summary box]({{ site.baseurl }}/components/summary-box) component, which is the only card-like element represented in Drupal, is meant to act as a content highlight for the most important information on the page. It was originally intended to highlight eligibility information. Featured content is not a Card and you should not use them interchangeably. Use the Summary box once on the page, and do not stack it in a list as you would the Card component or Service list item component.
 - **Dynamic content.** Do not use a Card when inserting content into the page in response to a user action. In those cases use a variation of an [Alert]({{ site.baseurl }}/components/alert) component.
-- **Forms - A Card is not a Fieldset.** A fieldset can be used to cluster related form fields into a sub-section of a form. The visual design of a fieldset should not mimic a Card.
+- **Forms - A Card is not a Fieldset.** Use a fieldset to cluster related form fields into a sub-section of a form. The visual design of a fieldset should not mimic a Card.
 - **Large data - A Card is not a Table row.** A collection of cards does not scale up to large data sets. If users needs to compare large amounts of data consider a [table]({{ self.baseurl }}/components/table).
 - **Navigation - A Card is not a Button or a Link.** While a Card may contain a call-to-action link, it is not a navigation element. Do not use a Card to act as a large tap target.
 
 ### When to use caution
 
-- **Search results.** Cards can be returned as a treatment for search results depending on the density of the data. However, the card may in fact add unnecessary visual noise when displaying a list of results. In those cases, if the data density is low consider removing the card container and having rows of results. If the data density is high consider adding pagination and the ability to search and/or filter the results.
+- **Search results.** You can use cards as a treatment for search results depending on the density of the data. However, the card may in fact add unnecessary visual noise when displaying a list of results. In those cases, if the data density is low consider removing the card container and having rows of results. If the data density is high consider adding pagination and the ability to search and/or filter the results.
 
 ### How this component works
 
@@ -129,8 +129,8 @@ There are many instances of the Card component in production. This is not an exh
 
 ### Calls to action
 
-- **Make cards actionable.** A Card should be actionable. That can be accomplished through the use of the [action link]({{ site.baseurl }}/components/link/action) component.
-- **Action links for primary CTA.** An [action link]({{ site.baseurl }}/components/link/action) should be used for the primary call-to-action.
+- **Make cards actionable.** A Card should be actionable. Accomplish this by using the [action link]({{ site.baseurl }}/components/link/action) component.
+- **Action links for primary CTA.** Use an [action link]({{ site.baseurl }}/components/link/action) for the primary call-to-action.
 - **Max 3 CTAs.** A card should not contain more than three calls-to-action (CTAs).
 - **Secondary and tertiary actions.** Secondary and tertiary actions can use the [secondary variation of action link]({{ site.baseurl }}/components/link/action), an [active or other link variation]({{ site.baseurl }}/components/link/#variations), or a [default link]({{ site.baseurl }}/components/link).
 
@@ -161,19 +161,19 @@ There are a few design elements that look like a Card but do not behave like a C
 
 {% include component-example.html alt="A mobile link that looks like a Card." file="/images/components/card/not-a-card-mobile-link.png" caption="Mobile link. Not a Card." width="50%" %}
 
-The [Mobile App](https://apps.apple.com/us/app/va-health-and-benefits/id1559609596?platform=iphone) uses a Card-like container around an [active link]({{ site.baseurl }}/components/link/#active-link) to make the link a large tap target on mobile. This treatment should be thought of as a mobile-specific link variation rather than an instance of a Card.
+The [Mobile App](https://apps.apple.com/us/app/va-health-and-benefits/id1559609596?platform=iphone) uses a Card-like container around an [active link]({{ site.baseurl }}/components/link/#active-link) to make the link a large tap target on mobile. Think of this treatment as a mobile-specific link variation rather than an instance of a Card.
 
 ### Containers for asking users for multiple responses (aka List and Loop) in forms
 
 {% include component-example.html alt="A container for an action in a form used in the Ask users for multiple responses (aka List and Loop) pattern." file="/images/components/card/not-a-card-list-and-loop.png" caption="Container for a button and title. Not a Card." width="50%" reverse=true %}
 
-The [pattern for asking users for multiple responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses) (aka List and Loop) uses a Card-like container to enter the loop to edit or remove an item in the list. This treatment is specific to that pattern and should not be thought of as an instance of a Card.
+The [pattern for asking users for multiple responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses) (aka List and Loop) uses a Card-like container to enter the loop to edit or remove an item in the list. This treatment is specific to that pattern—do not think of it as an instance of a Card.
 
 ### Containers for radio button tiles and checkboxes
 
 {% include component-example.html alt="A container for a checkbox and description in a form." file="/images/components/card/not-a-card-radio-button-tile.png" caption="Container for a checkbox. Not a Card." width="50%" %}
 
-A radio button tile has a title and description within the label and a Card-like container around the radio button and label. This treatment can be seen in the [Radio button - Tile variation]({{ site.baseurl }}/components/form/radio-button#tile). It is also in use around checkboxes in parts of VA.gov. This treatment is specific to radio buttons and checkboxes and should not be thought of an an instance of a Card.
+A radio button tile has a title and description within the label and a Card-like container around the radio button and label. You can see this treatment in the [Radio button - Tile variation]({{ site.baseurl }}/components/form/radio-button#tile). It is also in use around checkboxes in parts of VA.gov. This treatment is specific to radio buttons and checkboxes—do not think of it as an instance of a Card.
 
 ### A list of services or tools
 
