@@ -191,6 +191,15 @@ By default, the web component icon will display as `--vads-color-base` which is 
   </va-table-row>
 </va-table>
 
+### Placement
+
+Some icons may have additional placement guidance defined here.
+
+- If an icon is used to expand/collapse content vertically and the text exceeds 2 lines, it should be aligned to the top-left when leading text. When trailing text, it should be aligned to the center.
+  - Examples: [Additional Info](https://design.va.gov/components/additional-info) and [Accordion](https://design.va.gov/components/accordion)
+- In links, filled chevrons like <span><code class="code vads-u-border--1px vads-u-border-color--gray-light">3</code></span>
+    <span><va-icon icon="expand_circle_right" size="3" /></span> *expand_right_circle* should always lead text.
+    
 ## Accessibility considerations
 Icon usage typically falls into two categories, decorative and semantic.
 
