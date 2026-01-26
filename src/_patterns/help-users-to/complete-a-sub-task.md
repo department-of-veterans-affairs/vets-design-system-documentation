@@ -40,7 +40,7 @@ This pattern is an example of the [One thing per page]({{ site.baseurl }}/patter
 ### When not to use this pattern
 
 * **In place of a standard form flow.** This pattern does not replace a standard form flow and layout. This pattern exists within a larger flow or process, not by itself. Thus it would be inappropriate to create a stand-alone form flow that does not have a [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented), [Button pair]({{ site.baseurl }}/components/button/button-pair), and other components found in a typical [form flow]({{ site.baseurl }}/templates/forms/#the-structure-of-a-form).
-* **When eligibility is short and concise.** Do not use this pattern if you can reasonably include information users need to know about their eligibility for a benefit or service and the eligibility requirements on our [Introduction page]({{ site.baseurl }}/templates/forms/introduction). Placing this information in content, rather than in a form, allows the content to be searchable.
+* **When eligibility is short and concise.** Do not use this pattern for checking benefit or form eligibility if you can reasonably include that information within content outside of the form. This ensures the information is available via search and outside of any authentication requirements. Benefit eligibility should always be defined within static benefit content and can be linked to from the introduction page. Simple form eligibility requirements can be included on the [Introduction page]({{ site.baseurl }}/templates/forms/introduction).
 
 ### When to use caution
 
