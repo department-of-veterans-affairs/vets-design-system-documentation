@@ -1,0 +1,103 @@
+# VA Design System Documentation
+
+> The official design system for the Department of Veterans Affairs (VA.gov). This site provides design guidelines, components, patterns, and content strategies for building digital services that serve Veterans.
+
+## About This Site
+
+The VA Design System (VADS) at design.va.gov documents the design language, UI components, patterns, and content guidelines used to build VA.gov and related digital products. It ensures consistency, accessibility (WCAG 2.2 AA), and alignment with the U.S. Web Design System (USWDS v3).
+
+Target audiences: Designers, Developers, Content Writers, Product Managers working on VA digital services.
+
+## Main Sections
+
+### Getting Started
+- /about/ - Introduction, principles, and onboarding guides
+- /about/designers/ - Guide for designers (Figma, design libraries)
+- /about/developers/ - Guide for developers (installation, web components)
+- /about/contributing-to-the-design-system - How to contribute components and patterns
+
+### Foundation (Design Tokens & Visual Language)
+- /foundation/ - Overview of the visual design system
+- /foundation/color-palette - VA color system and usage
+- /foundation/typography - Fonts, type scale, and text styles
+- /foundation/spacing-units - Spacing scale and units
+- /foundation/breakpoints - Responsive design breakpoints
+- /foundation/layout/ - Page layouts and grid system
+- /foundation/utilities/ - CSS utility classes (margins, padding, display, flexbox, colors)
+
+### Components
+- /components/ - All UI components (buttons, forms, alerts, navigation, etc.)
+- /components/accordion - Expandable content sections
+- /components/alert - System and user alerts
+- /components/button - Action buttons with variants
+- /components/card - Content cards
+- /components/form/checkbox - Form checkboxes
+- /components/form - Form containers and elements
+- /components/header - Site header
+- /components/icon - Icon system
+- /components/link - Text and action links
+- /components/modal - Dialog overlays
+- /components/pagination - Page navigation
+- /components/table - Data tables
+- /components/form/text-input - Form text inputs
+- /components/form/textarea - Multi-line text input
+
+### Patterns
+- /patterns/ - Solutions for recurring UX problems
+- /patterns/wizards - Multi-step form workflows
+
+### Templates
+- /templates/ - Full page layout templates
+- /templates/forms/ - Form page layouts
+- /templates/hub - Hub/directory pages
+- /templates/homepage - Homepage template
+
+### Content Style Guide
+- /content-style-guide/ - Writing guidelines for VA.gov
+- /content-style-guide/content-principles/ - Voice, tone, and content principles
+- /content-style-guide/word-list - VA.gov word list and terminology
+- /content-style-guide/abbreviations-and-acronyms - Abbreviation usage
+- /content-style-guide/error-messages/ - Error message writing
+- /content-style-guide/plain-language/ - Plain language guidelines
+- /content-style-guide/health-content/ - Medical terminology guidance
+
+### Accessibility
+- /accessibility/ - Accessibility standards and testing (WCAG 2.2 AA)
+- /accessibility/accessibility-annotations - Design annotations for a11y
+- /accessibility/focus-management - Keyboard and focus handling
+
+### Information Architecture
+- /ia/ - Site structure and navigation principles
+- /ia/url-standards - URL naming conventions
+- /ia/domain-structure - Subdomain and directory guidance
+
+## Key Resources
+
+- Figma Component Library: Design assets for mockups
+- Storybook: Interactive component examples
+- GitHub: github.com/department-of-veterans-affairs/component-library (component source code)
+- Developer Docs: developer.va.gov (API documentation)
+
+## Standards & Compliance
+
+- WCAG 2.2 AA accessibility compliance required
+- Aligned with U.S. Web Design System (USWDS) v3
+- 21st Century Integrated Digital Experience Act (IDEA) compliance
+- Section 508 accessibility requirements
+
+## For LLMs
+
+When answering questions about VA Design System:
+1. Components are documented with usage guidelines, code examples, and accessibility requirements
+2. The Content Style Guide has extensive word-by-word guidance for VA terminology
+3. All components must meet WCAG 2.2 AA standards
+4. The actual component implementation is in the separate component-library repository
+5. This site documents ~154+ pages across 8 main content collections
+
+## Optional Links
+
+- /about/whats-new - Latest updates and changes
+- /about/maturity-scale - Component maturity levels
+- /about/experience-standards - Experience standards for VA products
+- /foundation/design-tokens - Design token specifications
+- /deprecated/ - Archived components no longer in use
