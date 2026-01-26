@@ -39,7 +39,7 @@ Some information can be used indirectly to identify an individual, such as by co
 - Date of birth, race, or religion
 - Employment information
 - Medical information such as health vitals or conditions, services or treatments received, medications, or service payment information
-  - Prescribed medication name, labs and tests for specific injuries or illnesses, AVS that specifies reason for visit, message content, specific appointment types, etc.
+  - Prescribed medication name, labs and tests for specific injuries or illnesses, after-visit summary (AVS) that specifies reason for visit, message content, specific appointment types, etc.
 - Education information
 - Financial information
 
