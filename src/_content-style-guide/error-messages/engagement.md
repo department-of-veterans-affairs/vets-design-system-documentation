@@ -71,7 +71,7 @@ intro-text: Nudges the user to enter or update data in the system. It can be ini
         <span>We've saved your request. We saved it on [MONTH] [DAY], [YEAR] at [TIME] [TIMEZONE]. Your request ID number is [ID NUMBER].</span>
         <span>None</span>
         <span><a href="{{ site.baseurl }}/components/alert">Alert - Background-only with icon</a></span>
-        <span><a href="{{ site.baseurl }}/components/alert#slim-alert">Success</a></span>
+        <span><a href="{{ site.baseurl }}/components/alert#examples---slim-alert">Success</a></span>
         <span>After Button pair on a form step page.</span>
     </va-table-row>
 </va-table>
