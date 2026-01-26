@@ -95,7 +95,7 @@ For detailed guidance on specific elements, refer to:
 - [Title tags]({{ site.baseurl }}/content-style-guide/title-tags#privacy-guidance)
 - [Page titles and section titles]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles#privacy-guidance)
 - [Breadcrumbs]({{ site.baseurl }}/components/breadcrumbs#privacy-guidance)
-- [URL standards]({{ site.baseurl }}/ia/url-standards#url-parameters-and-defined-defined-query-strings)
+- [URL standards]({{ site.baseurl }}/ia/url-standards#guidelines-for-parameters-in-urls)
 
 ### Where PII/PHI may appear with caution
 
