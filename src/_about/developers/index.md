@@ -9,6 +9,7 @@ intro-text: Documentation and resources for developers.
 sub-pages:
   - sub-page: Install
   - sub-page: Using Web Components
+  - sub-page: Using CSS custom properties
   - sub-page: Contributing
   - sub-page: Implementing design work
 ---
