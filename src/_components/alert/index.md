@@ -17,6 +17,7 @@ anchors:
   - anchor: Examples - Standard properties
   - anchor: Examples - Slim alert
   - anchor: Usage
+  - anchor: Choosing between alert statuses
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
@@ -171,6 +172,57 @@ When the user is required to do something in response to an alert, let them know
 * Alerts should not contain other expandable components such as the [Additional info]({{ site.baseurl }}/components/) component.
 * Messaging should be direct, concise, and in [plain language]({{ site.baseurl }}/content-style-guide/plain-language/).
 * Standard alerts must contain headings as opposed to Slim alerts which do not contain headings.
+
+### Choosing between alert statuses
+
+Choose the appropriate status based on the nature of the message and its urgency. Consistency in status usage across VA.gov helps Veterans quickly understand the nature of messages.
+
+#### Informational (info)
+
+Use informational alerts to provide helpful context or supplementary information that doesn't require immediate action.
+
+* **General announcements.** Information the user should be aware of but that doesn't indicate something went wrong or was completed.
+* **Guidance and tips.** Helpful context for completing a task.
+* **Status updates.** Neutral updates about the state of something, such as "Your application is being processed."
+
+#### Warning
+
+Use warning alerts when there are potential negative consequences or when something may go wrong if the user doesn't take action.
+
+* **Potential issues.** When something might prevent the user from completing their goal if not addressed.
+* **Time-sensitive information.** Deadlines or expiration dates that require attention.
+* **Proceed with caution.** When an action has consequences the user should understand before proceeding.
+
+#### Success
+
+Use success alerts to confirm that a user-initiated action completed successfully. The key distinction is that the user took an intentional action and the system is confirming it worked.
+
+* **Task completion.** Confirming that a form submission, save, or other intentional action was successful.
+* **Updates confirmed.** When the user updates their information and the change is saved.
+* **Explicit saves.** When the user actively saves their progress.
+
+**When auto-save completes successfully:** Use a success alert when auto-save completes because the system successfully preserved the user's work. However, consider using the [Slim alert variation](#when-to-use-a-slim-alert) for auto-save messaging to create visual hierarchy when a standard Success alert is also present on the page (such as a form submission confirmation).
+
+#### Error
+
+Use error alerts to indicate that something has gone wrong and typically requires the user to take corrective action.
+
+* **Validation errors.** When form input doesn't meet requirements.
+* **Failed actions.** When a submission, save, or other action didn't complete.
+* **System failures.** When the system encountered an error that affects the user's ability to complete their task.
+* **Access issues.** When the user can't access something they're trying to reach.
+
+#### Choosing between warning and error
+
+Use **warning** when something *might* go wrong or requires attention before proceeding. Use **error** when something *has* gone wrong and needs to be fixed. Warnings are preventative; errors are reactive.
+
+#### Handling multiple alerts
+
+When you need to display multiple alerts on a page:
+
+* **Order by severity.** Place error alerts first, followed by warning, then success, and finally informational alerts.
+* **Create visual hierarchy.** When multiple alerts are necessary, consider using a Standard alert for the primary message and Slim alerts for secondary messages, such as using a Standard success alert for form submission confirmation with a Slim success alert for auto-save status.
+* **Don't stack alerts.** If you have multiple messages of the same type, consider combining them into a single alert with a list of items.
 
 ### Links within alerts
 
