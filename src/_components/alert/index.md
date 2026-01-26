@@ -201,7 +201,7 @@ Use success alerts to confirm that a user-initiated action completed successfull
 * **Updates confirmed.** When the user updates their information and the change is saved.
 * **Explicit saves.** When the user actively saves their progress.
 
-**When auto-save completes successfully:** Use a success alert when auto-save completes because the system successfully preserved the user's work. However, consider using the [Slim alert variation](#when-to-use-a-slim-alert) for auto-save messaging to create visual hierarchy when a standard Success alert is also present on the page (such as a form submission confirmation).
+**When auto-save completes successfully:** Use a success alert when auto-save completes because the system successfully preserved the user's work. Auto-save is currently being researched and the handling of auto-save messages may change in future. At the moment, it is okay to have two success alerts on the page if one of them is the auto-save alert in a form flow.
 
 #### Error
 
