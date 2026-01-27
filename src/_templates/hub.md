@@ -95,7 +95,7 @@ Each benefit or service hub is assigned a specific icon.  This icon is utilized 
 
 For new benefit or service hubs, do not use an icon already in use.  
 
-Refer to approved [icons for benefit hubs]({{site.baseurl}}/foundation/icons#hub). 
+Refer to approved [icons for benefit hubs]({{site.baseurl}}/components/icon) and filter by the Hub category. 
 
 ##### Page title
 

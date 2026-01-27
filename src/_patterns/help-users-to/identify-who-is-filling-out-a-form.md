@@ -6,9 +6,13 @@ permalink: /patterns/help-users-to/identify-who-is-filling-out-a-form
 sub-section: help-users-to
 intro-text: "This pattern helps determine two things: Who is filling out the form (the person typing or writing) and who the form is about (the person who will get the benefits). Sometimes these are the same person and sometimes they are different."
 research-title: Form respondent
-figma-link: 
+figma-link: https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates--Patterns--and-Forms?node-id=27233-18
 status: use-with-caution-candidate
 uses_mermaid: true
+anchors:
+  - anchor: Usage
+  - anchor: How to design and build
+  - anchor: Content considerations
 ---
 
 ## Usage
@@ -39,7 +43,7 @@ Use this pattern when your form can be filled out by the following:
 
 ### When not to use this pattern
 
-* The form can only ever be completed by the Veteran for themselves
+The form can only ever be completed by the Veteran for themselves
 
 ### Decision tree questions
 
@@ -104,7 +108,7 @@ These terms are also defined in the [Word list](https://design.va.gov/content-st
 
 ### Question 1a: For signed-in Veterans
 
-* If a Veteran is already signed into VA.gov, we ask "Our records show that you're a Veteran. Who are you filling out this form for?"
+If a Veteran is already signed into VA.gov, we ask "Our records show that you're a Veteran. Who are you filling out this form for?"
 
 They can choose from these options:
 * I’m filling out this form for myself
@@ -187,10 +191,10 @@ Always require email addresses for both the person filling out the form and the 
 
 {% include component-example.html alt="An example progress bar." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/progress-bar.png" caption="This progress bar represents a form flow where a third party is filling out the form for a non-Veteran claimant. Make sure you use the options that are relevant to your form." class="x2" %}
 
-### Content considerations
+## Content considerations
 Follow the [plain language standards](https://design.va.gov/content-style-guide/) in the VA.gov content style guide when creating radio options, hint text, additional information, etc. Contact the Content and IA team for help with any new content.
 
-#### Error messages and hint text
+### Error messages and hint text
 
 **Question 1a**
 * Hint text: We refer to this person as a “claimant” because they’re the person claiming the VA benefit or service.

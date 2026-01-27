@@ -41,7 +41,7 @@ anchors:
 
 ### When to use OMB info
 
-All Veteran-facing forms are required to display an OMB info control number at the bottom of the [form introduction page]({{ site.baseurl }}/templates/forms/#introduction-page). The specifics of what is required can be found in the [Paperwork Reduction Act (5 CFR 1320.5(b))](https://www.ecfr.gov/current/title-5/chapter-III/subchapter-B/part-1320#p-1320.5(b)(1)):
+All Veteran-facing forms are required to display an OMB info control number at the bottom of the [form introduction page]({{ site.baseurl }}/templates/forms/introduction). The specifics of what is required can be found in the [Paperwork Reduction Act (5 CFR 1320.5(b))](https://www.ecfr.gov/current/title-5/chapter-III/subchapter-B/part-1320#p-1320.5(b)(1)):
 
 > ...an agency shall not conduct or sponsor a collection of information unless:
 > (1) The collection of information displays a currently valid OMB control number; and
@@ -86,7 +86,7 @@ OMB Info should appear at the bottom of a form introduction page and show:
 
 ### Behavior
 
-The "View Privacy Act Statement" is a button that triggers a modal window which displays the statement.
+The "Privacy Act Statement" is a button that triggers a modal window which displays the statement.
 
 ### Choosing between variations
 
@@ -98,7 +98,7 @@ The respondent burden estimate should be included when available, however it is 
 
 ### Placement
 
-As mentioned above, the Paperwork Reduction Act is very specific about the placement of this information thus it must appear on the [form introduction page]({{ site.baseurl }}/templates/forms/#introduction-page).
+As mentioned above, the Paperwork Reduction Act is very specific about the placement of this information thus it must appear on the [form introduction page]({{ site.baseurl }}/templates/forms/introduction).
 
 ## Content considerations
 

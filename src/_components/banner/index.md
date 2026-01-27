@@ -66,7 +66,7 @@ anchors:
 * **Don't stack banners.** Only one Banner may appear on any page at one time. If multiple emergency issues occur at once, combine the message and link out to a landing page or to individual affected medical centers, for example.
 * **Info and warning only.** Banner is only available in `info` or `warning` styles.
 * **Dismissible by default.** Banners should generally be dismissible by the user.
-* **Links, not buttons.** Don't use buttons in Banner. [Buttons are reserved for actions whereas links are for navigation]({{ site.baseurl }}/components/link/#links-vs-buttons).
+* **Links, not buttons.** Don't use buttons in Banner. [Buttons are reserved for actions whereas links are for navigation]({{ site.baseurl }}/components/link#choose-the-right-element-buttons-vs-links).
 
 ### Placement
 
