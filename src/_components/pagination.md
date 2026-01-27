@@ -68,7 +68,7 @@ When using pagination, include a results description above the paginated content
 
 {% include components/results-description.md %}
 
-Make sure the results description updates whenever the set of results changes—for example, when the user moves to a different page of results, changes filters, or adjusts the sort order—so that the information stays accurate for all users.
+Make sure the results description updates whenever the set of results changes—for example, when the user moves to a different page of results or changes filters—so that the information stays accurate for all users.
 For more details on implementing search results with pagination, including placement of the results description, see the [Search results template]({{ site.baseurl }}/templates/search-results).
 
 {% include component-docs.html component_name=page.web-component %}
