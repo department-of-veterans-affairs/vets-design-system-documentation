@@ -2,7 +2,7 @@
 layout: component
 title: Card
 permalink: /components/card/
-intro-text: "A card is a flexible container component that groups short, related pieces of personalized information. Teams build and pass in their own content (headers, body text, links, etc.), and the Card provides the visual container with options for background color, borders, drop shadows, and icons. For structured status cards with defined props, use [Card - Status]({{ site.baseurl }}/components/card/card-status) instead."
+intro-text: "A card groups short, related pieces of personalized information into a series of discrete containers, similar to physical index or playing cards. The goal of a card is to present a snapshot of information in one digestible chunk with the option to navigate to more detailed content. The user should be able to easily scan a sequence of cards and take action on the most relevant items."
 github-title: va-card
 research-title: card
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1319%3A20931&mode=design&t=nYOotVcwdpiMCL5C-1
@@ -195,12 +195,10 @@ When you want to show benefits or tools the user is currently enrolled in or has
 **Note:** For accessibility considerations specific to cards with status, see the [Card - Status component]({{ site.baseurl }}/components/card/card-status#accessibility-considerations).
 
 ## Related
-
-**Related components:**
 - [Card - Status]({{ site.baseurl }}/components/card/card-status) - Use when cards need to display status information
 - [Service list item]({{ site.baseurl }}/components/service-list-item) - Use for benefits or tools the user is enrolled in
-
-**Sub-components used in this component:**
 - [Section titles]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles#section-titles)
 - [Link - Action]({{ site.baseurl }}/components/link/action)
 - [Link]({{ site.baseurl }}/components/link)
+
+{% include _component-checklist.html component_name=page.web-component %}

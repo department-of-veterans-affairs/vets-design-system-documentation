@@ -6,7 +6,7 @@ permalink: /components/card/card-status/
 github-title: va-card-status
 research-title: card-status
 figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=44355-6605&t=CELULnAK5Ke87Rc1-1
-intro-text: "The **Card Status** component is a structured component with defined props for status, heading, body text, and action link. Unlike the flexible [Card component]({{ site.baseurl }}/components/card) where teams build and pass in content, Card Status provides a consistent structure specifically for action-required scenarios with status information."
+intro-text: "The Card Status is a structured card with required props that enforce a consistent pattern for status-driven scenarios."
 status: use-with-caution-candidate
 web-component: va-card-status
 web: true
@@ -39,14 +39,13 @@ anchors:
 
 ### When to use Card Status
 - **Framing a call to action.** Card Status highlights and frames a specific call to action or decision a user needs to take.
-- **Conveying status.** Cards are flexible enough to contain many types of information. However, Cards at the VA often contain time-sensitive information with a status such as appointments, a claim, or submission of a form. 
+- **Conveying status.**  Card Status contians time-sensitive information with a status such as appointments, claims, or missing required information.
 
 
 ### When to consider something else
 - **When you need flexible content structure.** Use the [Card component]({{ site.baseurl }}/components/card) when you need full control over the card's content and structure, rather than working with predefined props.
 - **When status isn't the focus.** Use the [Card component]({{ site.baseurl }}/components/card) for informational cards where status communication isn't the primary purpose.
 - **When you need multiple call to actions.** Use the [Card component]({{ site.baseurl }}/components/card) if you need more than one call-to-action (Card allows up to 3 CTAs).
-
 
 
 ### How this component works
@@ -63,21 +62,15 @@ The component automatically handles the layout, accessibility, and visual treatm
 
 #### Status display
 
-<img src="{{ site.baseurl }}/images/components/card/status-with-status-tag.png" alt="Status card via Tag" style="width:100%;"/>
+<img src="{{ site.baseurl }}/images/components/card-status/status-with-status-tag.png" alt="Status card via Tag" style="width:100%;"/>
 
 Use the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component to display status. The component programmatically announces the status to screen readers along with the card header. See [accessibility considerations](#accessibility-considerations) for implementation details. 
 
 #### Error state
 
-<img src="{{ site.baseurl }}/images/components/card/status-with-error.png" alt="Card Status with error" style="width:100%;"/>
+<img src="{{ site.baseurl }}/images/components/card-status/card-status-with-error.png" alt="Card Status with error" style="width:100%;"/>
 
 When validation errors occur (e.g., a user tries to continue without required data), Card Status visually displays inline error messages that automatically announce to screen readers. The error message clearly states what's wrong and how to fix it.
-
-**Key features:**
-- Error wrapped in `role="alert"` for immediate screen reader announcement
-- Error text linked to the actionable element via `aria-describedby`
-- Focus remains on the action link, preventing disorientation
-- Follows VA.gov error messaging convention: "what's wrong + how to fix it" 
 
 ## Behavior
 
