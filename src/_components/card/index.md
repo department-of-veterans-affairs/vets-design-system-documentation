@@ -190,9 +190,8 @@ When you want to show benefits or tools the user is currently enrolled in or has
 
 - **Use the appropriate heading level for your page.** Set the heading level based on the content of your page to make sure card headings are in the correct, logical outline order. Use CSS to style the header visually if you need a different visual representation.
 - **Use unordered lists and list items.** Use a `ul` for a card group and an `li` for each card. This formatting allows screen readers to enumerate the items in the card group and allows shortcuts between list items.
-- **Keyboard navigation.** The tab key should bring focus to the call(s) to action within the card. The enter key or spacebar should open a [Link]({{ site.baseurl }}/components/link) or [Link - Action]({{ site.baseurl }}/components/link/action).
+- **Keyboard navigation.** The tab key should bring focus to the call to action within the card. The enter key or spacebar should open a [Link]({{ site.baseurl }}/components/link) or [Link - Action]({{ site.baseurl }}/components/link/action).
 
-**Note:** For accessibility considerations specific to cards with status, see the [Card - Status component]({{ site.baseurl }}/components/card/card-status#accessibility-considerations).
 
 ## Related
 - [Card - Status]({{ site.baseurl }}/components/card/card-status) - Use when cards need to display status information
