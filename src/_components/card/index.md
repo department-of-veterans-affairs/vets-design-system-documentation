@@ -57,7 +57,7 @@ anchors:
 - **Other content highlight.** The [Summary box]({{ site.baseurl }}/components/summary-box) component, which is the only card-like element represented in Drupal, is meant to act as a content highlight for the most important information on the page. It was originally intended to highlight eligibility information. Featured content is not a Card and you shouldn't use them interchangeably. Use the Summary box once on the page, and don't stack it in a list as you would the Card component or Service list item component.
 - **Dynamic content.** Do not use a Card when inserting content into the page in response to a user action. In those cases use a variation of an [Alert]({{ site.baseurl }}/components/alert) component.
 - **Forms - A Card is not a Fieldset.** Use a fieldset to cluster related form fields into a sub-section of a form. The visual design of a fieldset should not mimic a Card.
-- **Large data - A Card is not a Table row.** A collection of cards does not scale up to large data sets. If users needs to compare large amounts of data consider a [table]({{ self.baseurl }}/components/table).
+- **Large data - A Card is not a Table row.** A collection of cards does not scale up to large data sets. If users need to compare large amounts of data consider a [table]({{ site.baseurl }}/components/table).
 - **Navigation - A Card is not a Button or a Link.** While a Card may contain a call-to-action link, it is not a navigation element. Do not use a Card to act as a large tap target.
 
 ### When to use caution
@@ -66,7 +66,7 @@ anchors:
 
 ### How this component works
 
-Card is a flexible container component. Teams build and pass in their own content, giving them full control over the structure and elements within the card.
+Card is a flexible container component. Teams build and pass in their own content, giving them full control over the structure and elements within the card. Below are some examples on how teams can do this.
 
 #### Default
 
@@ -77,7 +77,9 @@ Card is a flexible container component. Teams build and pass in their own conten
 3. **Secondary content.** Teams provide body text, which can include any combination of text, dates, or other content.
 4. **Call to action.** Teams add their own links - typically an [action link]({{ site.baseurl }}/components/link/action) or [link]({{ site.baseurl }}/components/link).
 
-**Note:** If your card needs to display status information, use the [Card - Status]({{ site.baseurl }}/components/card/card-status) component instead, which is specifically designed for status communication and includes built-in support for status tags, error states, and screen reader announcements.
+**Note:** If your card needs to display an a status tag, or have an error state, use the [Card - Status]({{ site.baseurl }}/components/card/card-status) component instead, which is specifically designed for status communication and includes built-in support for status tags, error states, and screen reader announcements.
+
+You can see these options in use in the [variations](#variations) below.
 
 ## Variations
 
@@ -124,6 +126,10 @@ There are many instances of the Card component in production. This is not an exh
 #### Number highlight
 
 {% include component-example.html alt="A Number highlight card showing a disability rating." file="/images/components/card/disability-rating.png" caption="A Number Highlight card brings attention to a specific number or statistic." reverse=true width="75%" %}
+
+#### With status indicator
+
+{% include component-example.html alt="A card using a status with indicator. Accommodates longer status labels." file="/images/components/card/card-with-status-indicator.png" caption="When statuses are longer than a single word, you can use an icon with a status message to explain the status" reverse=true width="75%" %}
 
 ## Behavior
 

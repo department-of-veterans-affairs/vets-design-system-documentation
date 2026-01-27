@@ -52,6 +52,9 @@ anchors:
 
 **Key difference from Card:** While [Card]({{ site.baseurl }}/components/card) is a flexible container where teams build and pass in their own content, Card Status is a structured component with required props that enforce a consistent pattern for status-driven scenarios.
 
+#### Default
+<img src="{{ site.baseurl }}/images/components/card-status/card-status.png" alt="Default card status" style="width:100%;"/>
+
 **Required props:**
 - `heading` - The card title
 - `body` - The descriptive text
@@ -64,7 +67,7 @@ The component automatically handles the layout, accessibility, and visual treatm
 
 <img src="{{ site.baseurl }}/images/components/card-status/card-status-with-tag.png" alt="Card status with status Tag" style="width:100%;"/>
 
-Use the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component to display status. The component programmatically announces the status to screen readers along with the card header. See [accessibility considerations](#accessibility-considerations) for implementation details. 
+The `status` prop uses [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component to display status. The component programmatically announces the status to screen readers along with the card header. See [accessibility considerations](#accessibility-considerations) for implementation details.
 
 #### Error state
 
