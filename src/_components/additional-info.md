@@ -88,6 +88,7 @@ The following are places where Additional info can be used:
 * The Additional Info component uses aria-controls and aria-expanded attributes to convey the expand and collapse functionality to assistive technologies.
 * Pressing the close button (a element with role of button) must close the Additional Info.
 * The link element that acts as the trigger for the drawer to open and close has a role of heading so it can be found in the page. Setting an aria-level is recommended.
+* **Wrap content in HTML elements.** All text content inside `va-additional-info` must be wrapped in an appropriate HTML element such as `<p>`, `<span>`, or `<div>`. Unwrapped plain text may be ignored by some screen readers, particularly NVDA. For example, use `<p>This is the content.</p>` instead of placing text directly inside the component without a wrapper element.
 
 ## Related
 
