@@ -6,7 +6,7 @@ permalink: /components/card/card-status/
 github-title: va-card-status
 research-title: card-status
 figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=44355-6605&t=CELULnAK5Ke87Rc1-1
-intro-text: "The Card Status is a structured card with required props that enforce a consistent pattern for status-driven scenarios."
+intro-text: "Card Status is a structured card that requires specific information to enforce a consistent pattern for status-driven scenarios."
 status: use-with-caution-candidate
 web-component: va-card-status
 web: true
@@ -39,7 +39,7 @@ anchors:
 
 ### When to use Card Status
 - **Framing a call to action.** Card Status highlights and frames a specific call to action or decision a user needs to take.
-- **Conveying status.**  Card Status contains time-sensitive information with a status such as appointments, claims, or missing required information.
+- **Conveying status.** Card Status contains time-sensitive information with a status such as appointments, claims, or missing required information.
 
 
 ### When to consider something else
