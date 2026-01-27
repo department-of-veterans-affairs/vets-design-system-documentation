@@ -1,9 +1,9 @@
 ---
 layout: component
 title: Card
+github-title: va-card
 permalink: /components/card/
 intro-text: "A card groups short, related pieces of personalized information into a series of discrete containers, similar to physical index or playing cards. The goal of a card is to present a snapshot of information in one digestible chunk with the option to navigate to more detailed content. The user should be able to easily scan a sequence of cards and take action on the most relevant items."
-github-title: va-card
 research-title: card
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1319%3A20931&mode=design&t=nYOotVcwdpiMCL5C-1
 contributor: Allison Lu, Angela Agosto
@@ -77,7 +77,7 @@ Card is a flexible container component. Teams build and pass in their own conten
 3. **Secondary content.** Teams provide body text, which can include any combination of text, dates, or other content.
 4. **Call to action.** Teams add their own links - typically an [action link]({{ site.baseurl }}/components/link/action) or [link]({{ site.baseurl }}/components/link).
 
-**Note:** If your card needs to display an a status tag, or have an error state, use the [Card - Status]({{ site.baseurl }}/components/card/card-status) component instead, which is specifically designed for status communication and includes built-in support for status tags, error states, and screen reader announcements.
+**Note:** If your card needs to display a status tag, or have an error state, use the [Card - Status]({{ site.baseurl }}/components/card/card-status) component instead, which is specifically designed for status communication and includes built-in support for status tags, error states, and screen reader announcements.
 
 You can see these options in use in the [variations](#variations) below.
 
