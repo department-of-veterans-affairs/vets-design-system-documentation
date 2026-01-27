@@ -25,7 +25,7 @@ All teams must now be using the v3 versions of our web-components. The Design Sy
 
 #### Migration strategy
 
-[Instructions are available for developers]({{ site.baseurl }}/about/developers/using-web-components#uswds-v1-to-v3-migration) to be able to migrate components onto their v3-based version.
+[Instructions are available for developers]({{ site.baseurl }}/about/developers/using-web-components) to be able to migrate components onto their v3-based version.
 
 ### Governance rules for using components, patterns, and templates
 

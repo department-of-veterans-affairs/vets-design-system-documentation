@@ -24,7 +24,7 @@ Status Tags use semantic colors to convey meaning and priority, aligning with th
 
 ### Informational status
 
-{% include storybook-preview.html story="components-va-tag-status--informational" link_text="va-tag-status informational" %}
+{% include storybook-preview.html story="components-va-tag-status--info" link_text="va-tag-status info" %}
 
 Used to provide helpful information or something that warrants a user’s attention. Not used for negative consequences.
 
@@ -59,7 +59,7 @@ Used to indicate critical issues, failure states, or items that require immediat
 ### When to consider something else
 
 * **When you might confuse tags with buttons.** For example, if tags appear near buttons on the page, users may mistake them for interactive elements.
-* **For labels longer than 1-3 words.** Tags work best with brief, scannable text. For longer descriptive text, you can use a [card with status indicator]({{ site.baseurl }}/components/card#With-status-indicator).
+* **For labels longer than 1-3 words.** Tags work best with brief, scannable text. For longer descriptive text, you can use a [card with status indicator]({{ site.baseurl }}/components/card#with-status-indicator).
 * **When the Status Tag functions as a title.** Don't use a Status Tag when the tag content is more accurately described as the title or primary identifier of the content. Instead, use that text as the card's heading.
 * **Consider the Eyebrow Header style as an alternative.** The [Eyebrow](https://design.va.gov/foundation/typography#eyebrow) Header is a short, descriptive title placed above the main heading to provide additional context and maintain consistency.
 * **When lack of change in content makes tags ineffective.** If content updates are infrequent users may not notice or expect "new" tags. Use tags to call attention to a change in status.
