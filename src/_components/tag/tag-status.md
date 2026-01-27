@@ -24,7 +24,7 @@ Status Tags use semantic colors to convey meaning and priority, aligning with th
 
 ### Informational status
 
-{% include storybook-preview.html story="components-va-tag-status--informational" link_text="va-tag-status informational" %}
+{% include storybook-preview.html story="components-va-tag-status--info" link_text="va-tag-status info" %}
 
 Used to provide helpful information or something that warrants a user’s attention. Not used for negative consequences.
 
