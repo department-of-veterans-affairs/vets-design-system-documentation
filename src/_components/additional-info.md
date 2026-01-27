@@ -48,7 +48,7 @@ anchors:
 * **Required content**: If the majority of people need the content to accomplish the main task then it should not be hidden from view.
 * **Content organized under a new heading.** If you have enough content that it makes sense to organize under a new heading that does not make sense under the same heading as the content nearby then use an [Accordion]({{ site.baseurl }}/components/accordion).
 * **Error messages or other immediate actions**: Do not use this component for error messages or other critical or timely information.
-* **Inside Alerts**: Use this component inside an [Alert]({{ site.baseurl }}/components/alert) only as a last resort and if approved in the Collaboration Cycle. Instead use the [Alert - Expandable]({{ site.baseurl }}/components/alert-expandable) component, especially when the Alert is within the page content and not at the top of the page.
+* **Inside Alerts**: Use this component inside an [Alert]({{ site.baseurl }}/components/alert) only as a last resort and if approved in the Collaboration Cycle. Instead use the [Alert - Expandable]({{ site.baseurl }}/components/alert/alert-expandable) component, especially when the Alert is within the page content and not at the top of the page.
 * **Floating in space**: Try to avoid using Additional info outside of the flow of the page, unattached to a section of content or another component. For example, there are instances of Additional info between a h1 and a Card. See [placement](#placement) for more.
 
 ## Behavior

@@ -31,6 +31,6 @@ anchors:
 ### Components used in this pattern
 
 * [Accordion]({{ site.baseurl }}/components/accordion)
-* [Button pair]({{ site.baseurl }}/components/button/button-pair)
+* [Button group]({{ site.baseurl }}/components/button/button-group)
 * [Privacy agreement]({{ site.baseurl }}/components/privacy-agreement)
 * [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented)

@@ -43,7 +43,7 @@ This pattern involves these types of pages found in VA.gov forms:
 #### Introduction page and sign in alerts
 
 - The existing [form introduction page templates](/templates/forms/introduction) are already updated to support this pattern for both the unauthenticated and authenticated experiences.
-- Use the [existing sign-in alert pattern](patterns/help-users-to/sign-in) that notifies users that their information will be prefilled when signing in.
+- Use the [existing sign-in alert pattern]({{ site.baseurl }}/patterns/help-users-to/sign-in) that notifies users that their information will be prefilled when signing in.
 
 
 #### Prefilled information the user can’t update
