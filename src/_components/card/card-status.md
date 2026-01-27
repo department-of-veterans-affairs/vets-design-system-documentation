@@ -62,7 +62,7 @@ The component automatically handles the layout, accessibility, and visual treatm
 
 #### Status display
 
-<img src="{{ site.baseurl }}/images/components/card-status/status-with-status-tag.png" alt="Status card via Tag" style="width:100%;"/>
+<img src="{{ site.baseurl }}/images/components/card-status/card-status-with-status-tag.png" alt="Status card via Tag" style="width:100%;"/>
 
 Use the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component to display status. The component programmatically announces the status to screen readers along with the card header. See [accessibility considerations](#accessibility-considerations) for implementation details. 
 
