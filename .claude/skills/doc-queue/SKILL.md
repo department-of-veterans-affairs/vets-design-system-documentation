@@ -299,10 +299,23 @@ The writing-vads-guidance skill provides detailed guidance on:
 
 Before making changes:
 
-1. **Create working branch:**
+1. **⚠️ CRITICAL: Verify branch status and create new branch from main:**
+   
+   Always check the current branch before starting work on a new issue. Each issue should have its own dedicated branch created from an up-to-date `main` branch.
+   
    ```bash
+   # First, check current branch and status
+   git status && git branch
+   
+   # Switch to main and pull latest changes
+   git checkout main
+   git pull origin main
+   
+   # Create a new branch for this specific issue
    git checkout -b docs/issue-<NUMBER>-<short-description>
    ```
+   
+   **Why this matters:** Committing work for one issue onto another issue's branch causes confusion, requires cherry-picking to fix, and can delay PR reviews.
 
 2. **Read existing file(s) to understand current state:**
    ```bash
