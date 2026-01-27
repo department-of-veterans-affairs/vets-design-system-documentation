@@ -33,7 +33,7 @@ anchors:
 
 ### With Error
 
-{% include storybook-preview.html story="components-va-card-status---with-error" link_text="va-card with error" %}
+{% include storybook-preview.html story="components-va-card-status---with-error" link_text="va-card-status with error" %}
 
 ## Usage
 
@@ -62,7 +62,7 @@ The component automatically handles the layout, accessibility, and visual treatm
 
 #### Status display
 
-<img src="{{ site.baseurl }}/images/components/card-status/card-status-with-status-tag.png" alt="Status card via Tag" style="width:100%;"/>
+<img src="{{ site.baseurl }}/images/components/card-status/card-status-with-tag.png" alt="Card status with status Tag" style="width:100%;"/>
 
 Use the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component to display status. The component programmatically announces the status to screen readers along with the card header. See [accessibility considerations](#accessibility-considerations) for implementation details. 
 
