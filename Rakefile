@@ -2,6 +2,7 @@ require 'json'
 require 'net/http'
 require 'uri'
 require 'time'
+require 'html-proofer'
 
 desc "Merge an approved pull request"
 task :merge_pr do
@@ -233,25 +234,170 @@ end
 
 desc "Show available rake tasks"
 task :help do
-  puts "\nVets Design System Documentation - Git Tasks"
+  puts "\nVets Design System Documentation - Rake Tasks"
   puts "=" * 50
-  puts "\nAvailable tasks:"
+  puts "\nGit & PR Tasks:"
   puts "  rake merge_pr PR_NUMBER     - Merge an approved pull request"
   puts "  rake check_pr PR_NUMBER     - Check PR status and information"
   puts "  rake ready_to_merge         - Show PRs approved by you and ready to merge"
+  puts "\nLink Checking Tasks:"
+  puts "  rake check_links            - Check internal links only (fast)"
+  puts "  rake check_links:internal   - Check internal links only (fast)"
+  puts "  rake check_links:external   - Check external links only (slow)"
+  puts "  rake check_links:all        - Check all links (internal + external)"
+  puts "\nOther:"
   puts "  rake help                   - Show this help message"
   puts "\nExamples:"
   puts "  rake check_pr 4474          - Check status of PR #4474"
   puts "  rake merge_pr 4474          - Merge PR #4474"
   puts "  rake ready_to_merge         - List PRs you've approved that are ready"
-  puts "\nSafety Notes:"
+  puts "  rake check_links            - Quick internal link check"
+  puts "\nNotes:"
+  puts "  • Link checking requires building the site first: bundle exec jekyll build"
+  puts "  • External link checks can take several minutes"
   puts "  • Always check PR status before merging"
-  puts "  • Ensure you're on the correct repository"
-  puts "  • Make sure the PR is approved and ready"
 end
 
 # Default task
 task default: :help
+
+# =============================================================================
+# Link Checking Tasks (html-proofer)
+# =============================================================================
+
+namespace :check_links do
+  # Common options for html-proofer
+  def proofer_options(external: false)
+    {
+      # Check the built Jekyll site
+      assume_extension: '.html',
+      
+      # Disable external link checking by default (faster)
+      disable_external: !external,
+      
+      # Don't enforce HTTPS for internal development
+      enforce_https: external,
+      
+      # Ignore alt tag issues (handled separately by accessibility testing)
+      ignore_empty_alt: true,
+      ignore_missing_alt: true,
+      
+      # Log level
+      log_level: :info,
+      
+      # Ignore common patterns that aren't actual broken links
+      ignore_urls: [
+        /localhost/,                           # Local development URLs
+        /127\.0\.0\.1/,                        # Local IP addresses
+        %r{^#},                                # Anchor-only links (page fragments)
+        /github\.com.*\/edit\//,               # GitHub edit links (require auth)
+        /github\.com.*\/new\//,                # GitHub new file links (require auth)
+        /figma\.com/,                          # Figma links (require auth)
+        /staging\.va\.gov/,                    # Staging environment
+        /dev\.va\.gov/,                        # Dev environment
+        %r{/storybook/},                       # Storybook is external to this site
+      ],
+      
+      # Ignore files that are dynamically generated or external
+      ignore_files: [
+        /_site\/storybook\/.*/,                # Storybook is external
+        /_site\/vendor\/.*/,                   # Vendor files
+      ],
+      
+      # Swap URLs to handle defined patterns
+      swap_urls: {},
+      
+      # Typhoeus options for external link checking
+      typhoeus: {
+        # Reasonable timeouts
+        connecttimeout: 10,
+        timeout: 30,
+        # Follow redirects
+        followlocation: true,
+        # Some sites block default user agents
+        headers: {
+          'User-Agent' => 'Mozilla/5.0 (compatible; VA-Design-System-Link-Checker)'
+        },
+      },
+      
+      # Hydra concurrency settings
+      hydra: { max_concurrency: 25 },
+    }
+  end
+
+  desc "Check internal links only (fast)"
+  task :internal do
+    puts "🔗 Checking internal links in _site/..."
+    puts "   This checks for broken internal links, missing images, and anchor references."
+    puts ""
+    
+    unless Dir.exist?('_site')
+      puts "❌ Error: _site directory not found. Run 'bundle exec jekyll build' first."
+      exit 1
+    end
+    
+    options = proofer_options(external: false)
+    
+    begin
+      HTMLProofer.check_directory('./_site', options).run
+      puts "\n✅ Internal link check complete! No broken links found."
+    rescue StandardError => e
+      puts "\n❌ Link check failed with errors."
+      exit 1
+    end
+  end
+
+  desc "Check external links only (slow, use sparingly)"
+  task :external do
+    puts "🌐 Checking external links in _site/..."
+    puts "   This checks that external URLs are reachable."
+    puts "   ⚠️  This can take several minutes and may be rate-limited."
+    puts ""
+    
+    unless Dir.exist?('_site')
+      puts "❌ Error: _site directory not found. Run 'bundle exec jekyll build' first."
+      exit 1
+    end
+    
+    options = proofer_options(external: true)
+    # Only check links, not images/scripts for external check
+    options[:checks] = ['Links']
+    
+    begin
+      HTMLProofer.check_directory('./_site', options).run
+      puts "\n✅ External link check complete! No broken links found."
+    rescue StandardError => e
+      puts "\n❌ Link check failed with errors."
+      exit 1
+    end
+  end
+
+  desc "Check all links (internal and external)"
+  task :all do
+    puts "🔗 Checking all links in _site/..."
+    puts "   This checks internal links, external URLs, images, and scripts."
+    puts "   ⚠️  This can take several minutes."
+    puts ""
+    
+    unless Dir.exist?('_site')
+      puts "❌ Error: _site directory not found. Run 'bundle exec jekyll build' first."
+      exit 1
+    end
+    
+    options = proofer_options(external: true)
+    
+    begin
+      HTMLProofer.check_directory('./_site', options).run
+      puts "\n✅ Full link check complete! No broken links found."
+    rescue StandardError => e
+      puts "\n❌ Link check failed with errors."
+      exit 1
+    end
+  end
+end
+
+desc "Check links in the built site (alias for check_links:internal)"
+task check_links: 'check_links:internal'
 
 private
 
