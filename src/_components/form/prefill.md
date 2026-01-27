@@ -38,7 +38,7 @@ anchors:
 
 ### How this component works
 
-* **Uses Alert - Informational.** This component is an instance of the [Alert - Informational]({{ site.baseurl }}/components/alert#informational-alert) component, with specific pre-determined content.
+* **Uses Alert - Informational.** This component is an instance of the [Alert - Informational]({{ site.baseurl }}/components/alert#informational-alert-aka-default) component, with specific pre-determined content.
 
 ### Placement
 
