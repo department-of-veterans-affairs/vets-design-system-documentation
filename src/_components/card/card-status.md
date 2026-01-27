@@ -70,7 +70,7 @@ Use the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component 
 
 <img src="{{ site.baseurl }}/images/components/card-status/card-status-with-error.png" alt="Card Status with error" style="width:100%;"/>
 
-When validation errors occur (e.g., a user tries to continue without required data), Card Status visually displays inline error messages that automatically announce to screen readers. The error message clearly states what's wrong and how to fix it.
+When validation errors occur (e.g., a user tries to continue without required data), Card Status follows VADS error styling and visually displays inline error messages that automatically announce to screen readers. The error message clearly states what's wrong and how to fix it.
 
 ## Behavior
 
