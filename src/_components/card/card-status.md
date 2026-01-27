@@ -39,7 +39,7 @@ anchors:
 
 ### When to use Card Status
 - **Framing a call to action.** Card Status highlights and frames a specific call to action or decision a user needs to take.
-- **Conveying status.**  Card Status contians time-sensitive information with a status such as appointments, claims, or missing required information.
+- **Conveying status.**  Card Status contains time-sensitive information with a status such as appointments, claims, or missing required information.
 
 
 ### When to consider something else
