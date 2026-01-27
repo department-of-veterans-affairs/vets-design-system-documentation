@@ -172,6 +172,55 @@ When the user is required to do something in response to an alert, let them know
 * Messaging should be direct, concise, and in [plain language]({{ site.baseurl }}/content-style-guide/plain-language/).
 * Standard alerts must contain headings as opposed to Slim alerts which do not contain headings.
 
+### Choosing between alert statuses
+
+Choose the appropriate status based on the nature of the message and its urgency. Consistency in status usage across VA.gov helps Veterans quickly understand the nature of messages.
+
+#### Informational (info)
+
+Use informational alerts to provide helpful context or supplementary information that doesn't require immediate action.
+
+* **General announcements.** Information the user should be aware of but that doesn't indicate something went wrong or was completed.
+* **Guidance and tips.** Helpful context for completing a task.
+* **Status updates.** Neutral updates about the state of something, such as "Your application is being processed."
+
+#### Warning
+
+Use warning alerts when there are potential negative consequences or when something may go wrong if the user doesn't take action.
+
+* **Potential issues.** When something might prevent the user from completing their goal if not addressed.
+* **Time-sensitive information.** Deadlines or expiration dates that require attention.
+* **Proceed with caution.** When an action has consequences the user should understand before proceeding.
+
+#### Success
+
+Use success alerts to confirm that a user-initiated action completed successfully. The key distinction is that the user took an intentional action and the system is confirming it worked.
+
+* **Task completion.** Confirming that a form submission, save, or other intentional action was successful.
+* **Updates confirmed.** When the user updates their information and the change is saved.
+* **Explicit saves.** When the user actively saves their progress.
+
+**When autosave completes successfully:** Autosave is an example of a system-initiated action that still uses a success alert because the system successfully preserved the user's work. Autosave is currently being researched and the handling of autosave messages may change in future. At the moment, it is okay to have two success alerts on the page if one of them is the autosave alert in a form flow.
+
+#### Error
+
+Use error alerts to indicate that something has gone wrong and typically requires the user to take corrective action.
+
+* **Validation errors.** When form input doesn't meet requirements.
+* **Failed actions.** When a submission, save, or other action didn't complete.
+* **System failures.** When the system encountered an error that affects the user's ability to complete their task.
+* **Access issues.** When the user can't access something they're trying to reach.
+
+#### Choosing between warning and error
+
+Use **warning** when something *might* go wrong or requires attention before proceeding. Use **error** when something *has* gone wrong and needs to be fixed. Warnings are preventative; errors are reactive.
+
+#### Handling multiple alerts
+
+Displaying multiple alerts should be avoided. However, when you need to display multiple alerts on a page, follow the general alert usage guidance above (including ordering alerts by severity and avoiding stacking alerts of the same type). In addition:
+
+* **Create visual hierarchy.** When multiple alerts are necessary, use a Standard alert for the primary message and Slim alerts for secondary messages.
+
 ### Links within alerts
 
 * **Use an action link when a link is needed.** The preferred usage of links in an alert is the [action link](#alert-with-action-link), which is a single link directing the user to a clear next step or call-to-action.

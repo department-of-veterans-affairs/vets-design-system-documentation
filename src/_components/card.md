@@ -67,7 +67,7 @@ anchors:
 
 <img src="{{ site.baseurl }}/images/components/card/annotated.png" alt="Basic card" style="width:100%;"/>
 
-1. **Background color.** White or [$color-gray-lightest]({{ site.baseurl }}/foundation/color-palette#grayscale).
+1. **Background color.** White or [$color-gray-lightest]({{ site.baseurl }}/foundation/color-palette#v1-grayscale).
 2. **Header.** Header that summarizes the card's content.
 3. **Secondary content.** Body text. Includes next steps and bold dates/times to draw attention to the most important details on the card.
 4. **Call to action.** An [action link]({{ site.baseurl }}/components/link/action) should be used for the primary call-to-action. A [link]({{ site.baseurl }}/components/link) may also be used.
@@ -78,7 +78,7 @@ anchors:
 
 Use this variation when you have a short status which can use the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component.
 
-1. **Background color.** Currently [$color-gray-lightest]({{ site.baseurl }}/foundation/color-palette#grayscale).
+1. **Background color.** Currently [$color-gray-lightest]({{ site.baseurl }}/foundation/color-palette#v1-grayscale).
 2. **Status.** Status using the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component. Status should: announce "status" by screen readers, the visible status text, and the header text. See [accessibility considerations](#accessibility-considerations) for more details.
 3. **Header.** Header that summarizes the card's content.
 4. **Secondary content.** Body text. Includes next steps and bold dates/times to draw attention to the most important details on the card.
@@ -90,7 +90,7 @@ Use this variation when you have a short status which can use the [Tag - Status]
 
 Use this variation when you have a longer status label.
 
-1. **Background color.** Currently [$color-gray-lightest]({{ site.baseurl }}/foundation/color-palette#grayscale).
+1. **Background color.** Currently [$color-gray-lightest]({{ site.baseurl }}/foundation/color-palette#v1-grayscale).
 2. **Header.** Header that summarizes the card's content.
 3. **Status.** Status with indicator. Accommodates longer status labels.
 4. **Secondary content.** Body text. Includes next steps and bold dates/times to draw attention to the most important details on the card.
@@ -151,7 +151,7 @@ There are many instances of the Card component in production. This is not an exh
 - **Make cards actionable.** A Card should be actionable. That can be accomplished through the use of the [action link]({{ site.baseurl }}/components/link/action) component.
 - **Action links for primary CTA.** An [action link]({{ site.baseurl }}/components/link/action) should be used for the primary call-to-action.
 - **Max 3 CTAs.** A card should not contain more than three calls-to-action (CTAs).
-- **Secondary and tertiary actions.** Secondary and tertiary actions can use the [secondary variation of action link]({{ site.baseurl }}/components/link/action), an [active or other link variation]({{ site.baseurl }}/components/link/#variations), or a [default link]({{ site.baseurl }}/components/link).
+- **Secondary and tertiary actions.** Secondary and tertiary actions can use the [secondary variation of action link]({{ site.baseurl }}/components/link/action), an [active or other link variation]({{ site.baseurl }}/components/link#choosing-between-variations), or a [default link]({{ site.baseurl }}/components/link).
 
 ### Using status tags in cards
 
@@ -189,7 +189,7 @@ There are a few design elements that look like a Card but do not behave like a C
 
 {% include component-example.html alt="A mobile link that looks like a Card." file="/images/components/card/not-a-card-mobile-link.png" caption="Mobile link. Not a Card." width="50%" %}
 
-The [Mobile App](https://apps.apple.com/us/app/va-health-and-benefits/id1559609596?platform=iphone) uses a Card-like container around an [active link]({{ site.baseurl }}/components/link/#active-link) to make the link a large tap target on mobile. This treatment should be thought of as a mobile-specific link variation rather than an instance of a Card.
+The [Mobile App](https://apps.apple.com/us/app/va-health-and-benefits/id1559609596?platform=iphone) uses a Card-like container around an [active link]({{ site.baseurl }}/components/link#active) to make the link a large tap target on mobile. This treatment should be thought of as a mobile-specific link variation rather than an instance of a Card.
 
 ### Containers for asking users for multiple responses (aka List and Loop) in forms
 
