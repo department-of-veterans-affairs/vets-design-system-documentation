@@ -3,7 +3,7 @@ Text describing how many results are being shown.
 * **Showing 1–10 of 999 results for "[query]".** The implementation should follow this format:
 
 > Showing 1–10 of 999 results for "[query]"
-  * When used in non-search contexts, for "[query]" can be dropped.
+  * When used in non-search contexts, omit the `for "[query]"` portion. For example: `Showing 1–10 of 999 results.`
 
 * **Update when filters change.** The results description must update when filters are changed so that all users can understand that the results have been updated. Implementation should follow this format:
 
