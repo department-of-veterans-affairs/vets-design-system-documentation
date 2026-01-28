@@ -7,7 +7,7 @@
 - Choose when color and text indicate urgency, priority, or required action.
 
 #### Tags
-[Tags]({{ site.baseurl }}/components/tag/) organize or group items by type or category (like "Benefit Type" or "Document Category"). They help sort information but don’t indicate status.
+{% if page.permalink == '/components/tag/' %}Tags{% else %}[Tags]({{ site.baseurl }}/components/tag/){% endif %} organize or group items by type or category (like "Benefit Type" or "Document Category"). They help sort information but don't indicate status.
 
 - Use for labeling or categorizing items.
 - Choose when color isn’t tied to urgency or meaning.
