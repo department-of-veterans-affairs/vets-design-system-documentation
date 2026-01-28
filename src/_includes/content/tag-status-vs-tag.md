@@ -1,7 +1,7 @@
 ### When to use a Status Tag vs. a Tag
 
 #### Status Tags
-[Status Tags]({{ site.baseurl }}/components/tag/tag-status/) show the current status or progress of something, such as "Claim Approved" or "Appointment Pending." They use semantic colors and concise text to quickly communicate urgency or outcome.
+{% if page.permalink == '/components/tag/tag-status/' %}Status Tags{% else %}[Status Tags]({{ site.baseurl }}/components/tag/tag-status/){% endif %} show the current status or progress of something, such as "Claim Approved" or "Appointment Pending." They use semantic colors and concise text to quickly communicate urgency or outcome.
 
 - Use for status updates: informational, success, warning, or error.
 - Choose when color and text indicate urgency, priority, or required action.
