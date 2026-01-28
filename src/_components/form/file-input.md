@@ -73,58 +73,64 @@ The file input component gives users a way to select and upload files. You have 
 
 {% include storybook-preview.html height="270px" story="uswds-va-file-input--read-only-with-additional-inputs" link_text="va-file-input in read only state with additional inputs" reverse="true" %}
 
-#### Header label variations
-
-Change the label to any `h1` through `h6` header size.
+#### Header-style label variation
 
 {% include storybook-preview.html height="100px" story="uswds-va-file-input--header-label" link_text="va-file-input header label" %}
 
-### Upload states
-
-**Note:** Storybook examples do not show uploaded file states. You will need to manually upload files in Storybook to see those variations, or refer to the screenshots below.
-
-#### File uploading with progress
-
+#### File uploading with progress indicator
 <va-alert slim status="warning">An API must populate <code>percentUploaded</code> with a value to display the progress bar.</va-alert>
 
-{% include component-example.html alt="File input component showing a progress bar at 50% while uploading a document" file="/images/components/file-input/file-input-uploading.png" caption="File input showing upload progress." class="x2" reverse="true" %}
+{% include component-example.html alt="File input component showing a progress bar at 50% while uploading a document" file="/images/components/file-input/file-input-uploading.png" caption="File input showing upload progress. (Screenshot)" class="x2" reverse="true" %}
+
+<img aria-hidden="true" role="img" src="/images/storybook.svg" class="site-component-resources-links__icon" width="16px" alt="Storybook logo"><va-link href="/storybook/?path=/docs/uswds-va-file-input--docs" text="View va-file-input in Storybook"></va-link>
 
 ### Error states
 
 #### Missing required file
 
-{% include component-example.html alt="Missing required file error" file="/images/components/file-input/file-input-initial-error.png" caption="Error message shown when a required file is not uploaded" class="x2" reverse="true" %}
+{% include component-example.html alt="Missing required file error" file="/images/components/file-input/file-input-initial-error.png" caption="Error message shown when a required file is not uploaded. (Screenshot)" class="x2" reverse="true" %}
+
+<img aria-hidden="true" role="img" src="/images/storybook.svg" class="site-component-resources-links__icon" width="16px" alt="Storybook logo"><va-link href="/storybook/?path=/docs/uswds-va-file-input--docs" text="View va-file-input in Storybook"></va-link>
 
 #### File-related error
 
-{% include component-example.html alt="Wrong file format" file="/images/components/file-input/file-input-file-error.png" caption="Error message shown when the file doesn't meet requirements (wrong format, too large, etc.)" class="x2" reverse="true" %}
+{% include component-example.html alt="Wrong file format" file="/images/components/file-input/file-input-file-error.png" caption="Error message shown when the file doesn't meet requirements. (Screenshot)" class="x2" reverse="true" %}
 
+<img aria-hidden="true" role="img" src="/images/storybook.svg" class="site-component-resources-links__icon" width="16px" alt="Storybook logo"><va-link href="/storybook/?path=/docs/uswds-va-file-input--docs" text="View va-file-input in Storybook"></va-link>
 
-### Advanced scenarios
+### Additional scenarios
 
 #### File with an additional form input
 
-{% include component-example.html alt="Additional form inputs" file="/images/components/file-input/additionalForm.png" caption="File input used with additional form field to complete the upload process" class="x2" reverse="true" %}
+{% include component-example.html alt="Additional form inputs" file="/images/components/file-input/additionalForm.png" caption="File input used with additional form field to complete the upload process. (Screenshot)" class="x2" reverse="true" %}
+
+<img aria-hidden="true" role="img" src="/images/storybook.svg" class="site-component-resources-links__icon" width="16px" alt="Storybook logo"><va-link href="/storybook/?path=/docs/uswds-va-file-input--docs" text="View va-file-input in Storybook"></va-link>
 
 #### File with an additional form input error
 
-{% include component-example.html alt="File form field error" file="/images/components/file-input/file-input-field-error.png" caption="Error message shown for general form field validation issues" class="x2" reverse="true" %}
+{% include component-example.html alt="File form field error" file="/images/components/file-input/file-input-field-error.png" caption="Error message shown for general form field validation issues. (Screenshot)" class="x2" reverse="true" %}
 
+<img aria-hidden="true" role="img" src="/images/storybook.svg" class="site-component-resources-links__icon" width="16px" alt="Storybook logo"><va-link href="/storybook/?path=/docs/uswds-va-file-input--docs" text="View va-file-input in Storybook"></va-link>
 
 #### Password-protected PDF prompt
 
-<va-alert slim="true" status="info">Logic for detecting and decrypting PDF files is handled in a shared Platform utility. See: <a href="https://depo-platform-documentation.scrollhelp.site/developer-docs/checking-if-an-uploaded-pdf-is-encrypted">Checking if an uploaded PDF is encrypted</a>.</va-alert>
+<va-alert slim="true" status="info">Logic for detecting and decrypting PDF files is handled in a shared Platform utility. View <a href="https://depo-platform-documentation.scrollhelp.site/developer-docs/checking-if-an-uploaded-pdf-is-encrypted">Checking if an uploaded PDF is encrypted</a>.</va-alert>
 
-{% include component-example.html alt="File input password prompt" file="/images/components/file-input/file-input-password-prompt.png" caption="User prompted to enter password for encrypted PDF file" class="x2" reverse="true" %}
+{% include component-example.html alt="File input password prompt" file="/images/components/file-input/file-input-password-prompt.png" caption="User prompted to enter password for encrypted PDF file. (Screenshot)" class="x2" reverse="true" %}
+
+<img aria-hidden="true" role="img" src="/images/storybook.svg" class="site-component-resources-links__icon" width="16px" alt="Storybook logo"><va-link href="/storybook/?path=/docs/uswds-va-file-input--docs" text="View va-file-input in Storybook"></va-link>
 
 #### Password error
 
-{% include component-example.html alt="File input field error" file="/images/components/file-input/file-input-password-error.png" caption="Error message shown when password is incorrect" class="x2" reverse="true" %}
+{% include component-example.html alt="File input field error" file="/images/components/file-input/file-input-password-error.png" caption="Error message shown when password is incorrect. (Screenshot)" class="x2" reverse="true" %}
+
+<img aria-hidden="true" role="img" src="/images/storybook.svg" class="site-component-resources-links__icon" width="16px" alt="Storybook logo"><va-link href="/storybook/?path=/docs/uswds-va-file-input--docs" text="View va-file-input in Storybook"></va-link>
 
 #### Password success
 
-{% include component-example.html alt="File input password success" file="/images/components/file-input/file-input-password-success.png" caption="Confirmation shown when password-protected PDF is successfully decrypted" class="x2" reverse="true" %}
+{% include component-example.html alt="File input password success" file="/images/components/file-input/file-input-password-success.png" caption="Confirmation shown when password-protected PDF is successfully decrypted. (Screenshot)" class="x2" reverse="true" %}
 
+<img aria-hidden="true" role="img" src="/images/storybook.svg" class="site-component-resources-links__icon" width="16px" alt="Storybook logo"><va-link href="/storybook/?path=/docs/uswds-va-file-input--docs" text="View va-file-input in Storybook"></va-link>
 
 ## Usage
 
