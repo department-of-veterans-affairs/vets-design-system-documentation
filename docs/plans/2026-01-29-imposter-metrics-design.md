@@ -226,31 +226,214 @@ src/_data/metrics/imposter-metrics.json \
 | `src/assets/stylesheets/_layout/metrics.scss` | Modify | Add progress bar styles |
 | `.github/workflows/metrics-dashboard.yml` | Modify | Add collection step |
 
-## Future Phase 2: Instance Counting
+## Phase 2: Instance Counting from Codebase Scanning
 
-The data structure is designed to accommodate Phase 2 additions:
+Phase 2 adds actual instance counts by scanning vets-website for known imposter components. This complements Phase 1 (issue tracking) by measuring what exists in the codebase directly.
+
+**Related Work:** This uses similar techniques to the [Pattern Adherence Tracking PR #5447](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/5447), which scans vets-website to find pattern usage. Both:
+- Scan vets-website codebase (local or via GitHub API)
+- Search for specific imports/file references
+- Generate metrics for the dashboard
+
+### Imposter Definitions
+
+Source: [Confluence - Imposter Components Overview](https://vfs.atlassian.net/wiki/spaces/DST/pages/3818717229/Imposter+components+overview)
+
+Imposters are primarily **legacy platform widgets/components** in `src/platform/forms-system/` and custom application components that should be replaced with VA web components.
+
+| VA Component | Imposter Name | Imposter File Path | Detection Method |
+|--------------|---------------|-------------------|------------------|
+| va-button-pair | FormNavButtons | `src/platform/forms-system/src/js/components/FormNavButtons.jsx` | Import |
+| va-file-input | FileField (platform) | `src/platform/forms-system/src/js/fields/FileField.jsx` | Import |
+| va-file-input | FileField (appeals) | `src/applications/appeals/shared/components/FileField.jsx` | Import |
+| va-checkbox | CheckboxWidget | `src/platform/forms-system/src/js/widgets/CheckboxWidget.jsx` | Import |
+| va-checkbox | IssueCard | `src/applications/appeals/shared/components/IssueCard.jsx` | Import |
+| va-card | FryDeaEligibilityCards | `src/applications/fry-dea/components/FryDeaEligibilityCards.jsx` | Import |
+| va-radio | RadioWidget | `src/platform/forms-system/src/js/widgets/RadioWidget.jsx` | Import or `'ui:widget': 'radio'` |
+| va-text-input | TextWidget | `src/platform/forms-system/src/js/widgets/TextWidget.jsx` | Import |
+| va-select | SelectWidget | `src/platform/forms-system/src/js/widgets/SelectWidget.jsx` | Import |
+| va-breadcrumbs | MrBreadcrumbs | `src/applications/mhv-medical-records/components/MrBreadcrumbs.jsx` | Import |
+| va-statement-of-truth | Attestation | `src/platform/forms-system/src/js/components/Attestation.jsx` | Import |
+| va-memorable-date | DateWidget | `src/platform/forms-system/src/js/widgets/DateWidget.jsx` | Import |
+| va-action-link | UpcomingAppointmentsListItemAction | `src/applications/check-in/components/UpcomingAppointmentsListItemAction.jsx` | Import |
+| va-table | UpcomingAppointmentLayout | `src/applications/vaos/appointment-list/pages/AppointmentsPage/UpcomingAppointmentLayout.jsx` | Import |
+
+### New Script: `scripts/collect-imposter-instances.js`
+
+Follows the pattern from `collect-pattern-adherence.js`:
+
+```javascript
+const IMPOSTER_DEFINITIONS = [
+  {
+    vaComponent: 'va-button-pair',
+    imposterName: 'FormNavButtons',
+    imposterPath: 'src/platform/forms-system/src/js/components/FormNavButtons.jsx',
+    detectionPattern: /from\s+['"].*FormNavButtons['"]/
+  },
+  {
+    vaComponent: 'va-file-input',
+    imposterName: 'FileField',
+    imposterPath: 'src/platform/forms-system/src/js/fields/FileField.jsx',
+    detectionPattern: /from\s+['"].*FileField['"]/
+  },
+  {
+    vaComponent: 'va-radio',
+    imposterName: 'RadioWidget',
+    imposterPath: 'src/platform/forms-system/src/js/widgets/RadioWidget.jsx',
+    detectionPattern: /['"]ui:widget['"]\s*:\s*['"]radio['"]/
+  },
+  // ... additional definitions
+];
+
+async function scanForImposters(vetsWebsitePath) {
+  // For each imposter definition:
+  // 1. Search for files that import or reference the imposter
+  // 2. Count instances per application
+  // 3. Exclude test files (*.spec.js, *.unit.spec.jsx)
+}
+```
+
+### Detection Approach
+
+**Option A: Import-based detection (recommended for most)**
+Search for files that import the imposter component:
+```javascript
+// Detect: import FormNavButtons from '...FormNavButtons'
+// Detect: import { FormNavButtons } from '...'
+const importPattern = /import\s+(?:{[^}]*}|[A-Za-z]+)\s+from\s+['"][^'"]*FormNavButtons['"]/g;
+```
+
+**Option B: Configuration-based detection (for widgets)**
+Some imposters are used via forms-system configuration:
+```javascript
+// Detect: 'ui:widget': 'radio' (uses RadioWidget imposter)
+const configPattern = /['"]ui:widget['"]\s*:\s*['"]radio['"]/g;
+```
+
+**Option C: File existence check (baseline)**
+The Confluence doc lists specific implementation files. We can verify which still exist:
+```javascript
+const knownImplementations = [
+  './src/applications/ask-va/components/YourPersonalInformationAuthenticated.jsx',
+  './src/applications/hca/components/FormPages/InsuranceInformation.jsx',
+  // ... from Confluence list
+];
+```
+
+### Scanning Modes
+
+Like pattern-adherence, support both local and API-based scanning:
+
+```bash
+# Local vets-website clone (faster, more accurate)
+node scripts/collect-imposter-instances.js --vets-website-path ../vets-website
+
+# GitHub API (no local clone needed, rate-limited)
+node scripts/collect-imposter-instances.js
+```
+
+### Updated Data Structure
+
+The data structure extends Phase 1 with `instances`:
 
 ```json
 {
   "quarterly": [...],
   "by_component": [...],
-  "summary": {...},
+  "summary": {
+    "total_open": 45,
+    "total_closed": 85,
+    "goal": 150,
+    "progress_percentage": 57,
+    "last_updated": "2026-01-29T18:00:00.000Z"
+  },
   "instances": {
-    "total_identified": 500,
-    "total_replaced": 85,
+    "total_identified": 156,
     "by_component": [
-      { "component": "va-alert", "identified": 120, "replaced": 45 }
+      {
+        "component": "va-button-pair",
+        "imposter_name": "FormNavButtons",
+        "instance_count": 67,
+        "applications": ["ask-va", "hca", "ezr", "appeals", "caregivers"]
+      },
+      {
+        "component": "va-radio",
+        "imposter_name": "RadioWidget",
+        "instance_count": 45,
+        "applications": ["edu-benefits", "disability-benefits", "hca"]
+      }
+    ],
+    "by_application": [
+      { "application": "financial-status-report", "instance_count": 28 },
+      { "application": "hca", "instance_count": 15 },
+      { "application": "appeals", "instance_count": 12 }
     ],
     "last_scan_date": "2026-01-29",
     "scan_source": "vets-website"
-  }
+  },
+  "generated_at": "2026-01-29T18:00:00.000Z"
 }
 ```
 
-Phase 2 would involve:
-1. Scanning vets-website for known imposter patterns
-2. Cross-referencing with the Confluence list
-3. Tracking actual instance reduction over time
+### Dashboard UI Additions (Phase 2)
+
+Add to the "Imposter Component Tracking" section:
+
+**New Summary Card:**
+| Card | Value | Description |
+|------|-------|-------------|
+| **Instances in Code** | `{total_identified}` | Total imposter instances found in vets-website |
+
+**Chart 3: Instances by Application**
+- **Type:** Horizontal bar chart
+- **Y-axis:** Application names (sorted by instance count)
+- **X-axis:** Instance count
+- **Purpose:** Shows which applications need the most work
+
+**Chart 4: Instances by Component Type**
+- **Type:** Horizontal bar chart (or treemap)
+- **Y-axis:** Component types (va-button-pair, va-radio, etc.)
+- **X-axis:** Instance count
+- **Purpose:** Shows which component types are most prevalent
+
+### Relationship to Pattern Adherence
+
+| Metric | Pattern Adherence (PR #5447) | Imposter Instances (Phase 2) |
+|--------|------------------------------|------------------------------|
+| **Question** | "Which forms use codified patterns?" | "Which files use imposter components?" |
+| **Signal** | Positive (adoption of correct patterns) | Negative (usage of incorrect implementations) |
+| **Scanning** | Search for pattern imports | Search for imposter imports |
+| **Scope** | Forms only (product directory) | All applications |
+
+Both metrics are complementary:
+- High pattern adherence + low imposter count = good state
+- Low pattern adherence + high imposter count = work needed
+
+### Phase 2 Files to Create/Modify
+
+| File | Action | Description |
+|------|--------|-------------|
+| `scripts/collect-imposter-instances.js` | Create | New codebase scanning script |
+| `src/_data/metrics/imposter-metrics.json` | Modify | Add `instances` field |
+| `src/_about/metrics/index.html` | Modify | Add instance charts/cards |
+| `.github/workflows/metrics-dashboard.yml` | Modify | Add instance collection step |
+
+### Phase 2 Testing
+
+1. Run with local vets-website: `node scripts/collect-imposter-instances.js --vets-website-path ../vets-website`
+2. Verify counts match Confluence baseline (approximately)
+3. Verify JSON structure includes `instances` field
+4. Verify dashboard displays instance data
+5. Test GitHub API mode (without local clone)
+
+### Phase 2 Success Criteria
+
+- [ ] Script scans vets-website for all defined imposter patterns
+- [ ] Instance counts generated per component type
+- [ ] Instance counts generated per application
+- [ ] Dashboard shows "Instances in Code" summary card
+- [ ] Dashboard shows instances by application chart
+- [ ] Counts are reasonably close to Confluence baseline
 
 ## Testing
 
