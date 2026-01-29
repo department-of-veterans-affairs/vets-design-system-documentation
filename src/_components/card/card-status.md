@@ -41,12 +41,10 @@ anchors:
 - **Framing a call to action.** Card Status highlights and frames a specific call to action or decision a user needs to take.
 - **Conveying status.** Card Status contains time-sensitive information with a status such as appointments, claims, or missing required information.
 
-
 ### When to consider something else
 - **When you need flexible content structure.** Use the [Card component]({{ site.baseurl }}/components/card) when you need full control over the card's content and structure, rather than working with predefined props.
 - **When status isn't the focus.** Use the [Card component]({{ site.baseurl }}/components/card) for informational cards where status communication isn't the primary purpose.
 - **When you need multiple calls to action.** Use the [Card component]({{ site.baseurl }}/components/card) if you need more than one call-to-action (Card allows up to 3 CTAs).
-
 
 ### How this component works
 
@@ -54,9 +52,9 @@ anchors:
 
 #### Default
 
+{% include component-example.html alt="The default Card Status shows a heading, body text, and a link" file="/images/components/card-status/card-status.png" caption="The default Card Status displays a heading, body text, and action link." width="480" %}
 
-{% include component-example.html alt="The default Card Status shows a heading, body text, and a link" file="images/components/card-status/card-status.png" caption="The default Card Status shows a heading, body text, and a link. This is a good example of when all required information has been provided." width="480" %}
-
+Card Status requires specific props to enforce a consistent pattern:
 
 **Required props:**
 - `heading` - The card title
@@ -68,18 +66,15 @@ The component automatically handles the layout, accessibility, and visual treatm
 
 #### Status display
 
-{% include component-example.html alt="Card Status shows a status label, a heading, body text, and a link" file="/images/components/card-status/card-status-with-tag.png" caption="The Card Status with a label can be used to indicate when missing information must be provided by the user. The Card Status in this case shows a status label, heading, body text, and a link." width="480" %}
+{% include component-example.html alt="Card Status shows a status label, a heading, body text, and a link" file="/images/components/card-status/card-status-with-tag.png" caption="Card Status with a status label displays the label, heading, body text, and action link." width="480" %}
 
-
-The `status` prop uses the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component to display status. The component programmatically announces the status to screen readers along with the card header. See [accessibility considerations](#accessibility-considerations) for implementation details.
+The `status` prop uses the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component to indicate when information is missing or requires user attention. The component programmatically announces the status to screen readers along with the card header. See [accessibility considerations](#accessibility-considerations) for implementation details.
 
 #### Error state
 
-<img src="{{ site.baseurl }}/images/components/card-status/card-status-with-error.png" alt="Card Status with error" style="width:100%;"/>
+{% include component-example.html alt="Card Status with an error state, showing a status label, a heading, error text, body text, and a link. The card is wrapped in a red border to indicate an error." file="/images/components/card-status/card-status-with-error.png" caption="Card Status in an error state displays a red border, status label, heading, error message, body text, and action link." width="480" %}
 
-{% include component-example.html alt="Card Status with an error state, showing a status label, a heading, error text, body text, and a link. The card is wrapped in a red border to indicate an error." file="/images/components/card-status/card-status-with-error.png" caption="Card Status can go into an error state. This is triggered when a user tries to proceed in a form flow without providing the needed information. The card contents contain a status label, heading, body text, an error message, and a link. After the user provides the missing information, the card returns to the default state." width="480" %}
-
-When validation errors occur (e.g., a user tries to continue without required data), Card Status follows VADS error styling and displays inline error messages that automatically announce to screen readers. The error message clearly states what's wrong and how to fix it.
+This state is triggered when validation errors occur, such as when a user tries to proceed in a form flow without providing required information. Card Status, in the error state, follows VADS error styling and displays inline error messages that automatically announce to screen readers. The error message clearly states what's wrong and how to fix it. After the user provides the missing information, the card returns to its default state.
 
 ## Behavior
 
@@ -87,7 +82,6 @@ When validation errors occur (e.g., a user tries to continue without required da
 
 - **Single CTA only.** Card Status supports only one call-to-action, typically to add or edit data. This is more restrictive than the standard [Card component]({{ site.baseurl }}/components/card), which allows up to 3 CTAs.
 - **Use action links.** The CTA should use a [secondary action link]({{ site.baseurl }}/components/link/action).
-
 
 ### Placement
 
@@ -140,6 +134,5 @@ The Card Status component handles most status and error accessibility automatica
 - [Service list item]({{ site.baseurl }}/components/service-list-item) 
 - [Link - Action]({{ site.baseurl }}/components/link/action)
 - [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/)
-
 
 {% include _component-checklist.html component_name=page.web-component %}
