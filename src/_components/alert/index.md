@@ -157,7 +157,7 @@ Any style of alert box can be modified to be a Slim alert. The iconography for S
 
 * **Immediate feedback to the user.** When your application is using Javascript to provide an immediate response to the user without a full page load.
 * **Sub-alerts on the page.** When your page has more than 1 alert and you are using the Standard and Slim alerts to create a hierarchy of alerts within the page. This does not mean stacking alerts on top of one another, this means placing them appropriately throughout the page. It can also be appropriate to convey multiple statuses using a combination of headers, text, and the Slim alert variation. An example of a sub-alert is the [Autosave alert]({{ site.baseurl }}/components/form/autosave).
-* **Within cards to provide information specific to that card.** This would be used in cases where an alert outside of the card would cause issues for hierarchy and clarity. Alerts outside of the card would apply to the entire collection of cards.
+* **Within cards for information that is specific to that card.** Alerts within cards would be used in cases where an alert outside of the card would cause issues for hierarchy and clarity, especially if there are multiple cards within a collection.
 
 ### How to use alerts
 
