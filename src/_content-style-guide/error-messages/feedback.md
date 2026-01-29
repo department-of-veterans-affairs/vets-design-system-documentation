@@ -79,8 +79,8 @@ intro-text: Feedback messages appear as a response to a person’s actions. Most
     </va-table-row>
     <va-table-row>
         <span>General error (500), version 2</span>
-        <span><b>Sorry, we couldn’t complete your request</b></span>
-        <span>[Name] isn’t working as expected. [Add instructions to remedy the problem or when to come back and try again.]</span>
+        <span><b>We couldn’t complete your request</b></span>
+        <span>We're sorry. [Name] isn’t working as expected. [Add instructions to remedy the problem or when to come back and try again.]</span>
         <span>N/A</span>
         <span><a href="{{ site.baseurl }}/components/alert#error-alert">Alert</a></span>
         <span>Error</span>
@@ -135,7 +135,7 @@ intro-text: Feedback messages appear as a response to a person’s actions. Most
     </va-table-row>
     <va-table-row>
         <span>Application, claim, or form submission in progress, alternate version</span>
-        <span><b>Your [application, claim, form] is in progress and was last saved on [Month Day, Year], at [timestamp]</b></span>
+        <span><b>Your [application, claim, form] is in progress. We last saved this [application, claim, form] on [Month Day, Year], at [timestamp]</b></span>
         <span>You can continue applying now or come back later to finish your application.<br>Your application will expire on <b>[Month Day, Year], at [timestamp]</b>.
 </span>
         <span>Continue your [application, claim, form] (primary button); Start a new application (secondary button)</span>
