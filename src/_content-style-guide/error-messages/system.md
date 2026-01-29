@@ -32,28 +32,14 @@ anchors:
   <va-table-row>
     <span>Advance notification</span>
     <span><b>Upcoming site maintenance</b></span>
-    <span>We’ll be doing some work on VA.gov. The maintenance will last x hour. During that time, you won’t be able to sign in or use tools.<br> <b>Date:</b> Day, Date, Year <br><b>Start/End time:</b> 0:00 a.m. to 0:00 a.m. ET</span>
-    <span><a href="{{ site.baseurl }}/components/banner/maintenance#warning-upcoming-maintenance">Maintenance banner</a></span>
-    <span>Before maintenance</span>
-  </va-table-row>
-  <va-table-row>
-    <span>Advance notification/24 hour</span>
-    <span><b>Upcoming site maintenance</b></span>
-    <span>We’ll be doing some work on VA.gov. The maintenance will last 24 hours. During that time, you won’t be able to sign in or use tools. <br><b>Start:</b> Day, Date, Year, at 0:00 a.m. ET <br><b>End:</b> Day, Date, Year, at 0:00 a.m. ET</span>
+    <span>We’ll be doing some work on VA.gov. During that time, you won’t be able to sign in or use tools.<br> <b>Start time:</b>Day, Date, Year, 0:00 a.m. ET<br><b>End time:</b>Day, Date, Year, 0:00 a.m. ET</span>
     <span><a href="{{ site.baseurl }}/components/banner/maintenance#warning-upcoming-maintenance">Maintenance banner</a></span>
     <span>Before maintenance</span>
   </va-table-row>
   <va-table-row>
     <span>During downtime</span>
     <span><b>Site maintenance</b></span>
-    <span>We’re working on VA.gov right now. If you have trouble signing in or using tools, check back after we're finished. Thank you for your patience. <br><b>Date:</b> Day, Date, Year <br><b>Start/End time:</b> 0:00 a.m. to 00:00 a.m. ET</span>
-    <span><a href="{{ site.baseurl }}/components/banner/maintenance">Maintenance banner</a></span>
-    <span>During maintenance</span>
-  </va-table-row>
-  <va-table-row>
-    <span>During downtime/24 hour</span>
-    <span><b>Site maintenance</b></span>
-    <span>We’re working on VA.gov right now. If you have trouble signing in or using tools, check back after we're finished. Thank you for your patience. <br><b>Start:</b> Day, Date, Year at 0:00 a.m. ET <br><b>End:</b> Day, Date, Year at 0:00 a.m. ET</span>
+    <span>We’re working on VA.gov right now. If you have trouble signing in or using tools, check back after we're finished. Thank you for your patience. <br><b>Start time:</b> Day, Date, Year, at 0:00 a.m. ET <br><b>End time:</b> Day, Date, Year, at 0:00 a.m. ET</span>
     <span><a href="{{ site.baseurl }}/components/banner/maintenance">Maintenance banner</a></span>
     <span>During maintenance</span>
   </va-table-row>
@@ -121,7 +107,7 @@ anchors:
   <va-table-row>
     <span>During downtime</span>
     <span><b>Site maintenance</b></span>
-    <span>We’re working on VA.gov right now. If you have trouble signing in or using tools, check back after we're finished. Thank you for your patience. <br><b>Date:</b> Day, Date, Year <br><b>Start/End time:</b> 0:00 a.m. to 00:00 a.m. ET</span>
+    <span>We’re working on VA.gov right now. If you have trouble signing in or using tools, check back after we're finished. Thank you for your patience. <br><b>Start time:</b> Day, Date, Year, at 0:00 a.m. ET <br><b>End time:</b> Day, Date, Year, at 0:00 a.m. ET</span>
     <span><a href="{{ site.baseurl }}/components/banner/maintenance">Maintenance banner</a></span>
     <span>During maintenance</span>
   </va-table-row>
