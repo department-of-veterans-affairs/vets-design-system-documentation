@@ -62,11 +62,37 @@ function loadComponentLabels() {
 // Load component labels at startup
 const COMPONENT_LABELS = loadComponentLabels();
 
+// Validate component labels were loaded successfully
+if (COMPONENT_LABELS.length === 0) {
+  console.warn('Warning: No component labels loaded. All issues will be categorized as "unknown".');
+} else if (COMPONENT_LABELS.length < 10) {
+  console.warn(`Warning: Only ${COMPONENT_LABELS.length} component labels loaded. This seems low - verify component-maturity.json is complete.`);
+}
+
 // FY26 goal for imposter replacement
 const REPLACEMENT_GOAL = 150;
 
 /**
- * Validate search query components to prevent injection
+ * Parse and validate a date string in YYYY-MM-DD format.
+ * Ensures the date is a real calendar date (no rollover like 2025-02-31).
+ */
+function parseAndValidateDate(label, dateStr) {
+  const parsed = new Date(`${dateStr}T00:00:00Z`);
+  if (Number.isNaN(parsed.getTime())) {
+    throw new Error(`Invalid ${label} date value: ${dateStr}`);
+  }
+
+  // Ensure the parsed date matches the original string (detects invalid dates like 2025-02-31)
+  const isoDate = parsed.toISOString().slice(0, 10);
+  if (isoDate !== dateStr) {
+    throw new Error(`Invalid ${label} calendar date: ${dateStr} (parsed as ${isoDate})`);
+  }
+
+  return parsed;
+}
+
+/**
+ * Validate search query components to prevent injection and ensure valid dates
  */
 function validateSearchQuery(repo, startDate, endDate) {
   // Validate repository format (owner/repo)
@@ -78,6 +104,15 @@ function validateSearchQuery(repo, startDate, endDate) {
   const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
   if (!dateRegex.test(startDate) || !dateRegex.test(endDate)) {
     throw new Error(`Invalid date format. Expected YYYY-MM-DD, got: ${startDate}, ${endDate}`);
+  }
+
+  // Validate dates are real calendar dates
+  const start = parseAndValidateDate('start', startDate);
+  const end = parseAndValidateDate('end', endDate);
+
+  // Validate date range is logical
+  if (start.getTime() > end.getTime()) {
+    throw new Error(`Invalid date range: startDate (${startDate}) must be on or before endDate (${endDate})`);
   }
 
   return { repo, startDate, endDate };
@@ -177,6 +212,14 @@ async function fetchImposterIssuesInDateRange(startDate, endDate, filterBy = 'cr
 
     return [];
   } catch (error) {
+    // Propagate critical errors (auth failures, gh CLI not installed)
+    if (error.message.includes('gh: command not found') ||
+        error.message.includes('authentication') ||
+        error.message.includes('401') ||
+        error.message.includes('403')) {
+      throw error;
+    }
+    // Log non-critical errors and return empty array
     console.error(`Failed to fetch issues for ${startDate} to ${endDate}:`, error.message);
     return [];
   }

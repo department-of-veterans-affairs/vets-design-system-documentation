@@ -8,10 +8,12 @@
  * instances from vets-website."
  *
  * Usage:
- *   node scripts/collect-imposter-instances.js [--vets-website-path <path>]
+ *   node scripts/collect-imposter-instances.js --vets-website-path <path> [--detailed]
  *
  * Options:
  *   --vets-website-path   Path to local vets-website repo (required)
+ *   --detailed            Include sub-application breakdown for container apps
+ *                         like simple-forms (e.g., simple-forms/21-10210)
  *
  * Related:
  *   - Design: docs/plans/2026-01-29-imposter-metrics-design.md
@@ -24,9 +26,13 @@ const path = require('path');
 // Parse command-line arguments
 const args = process.argv.slice(2);
 let VETS_WEBSITE_PATH = null;
+let DETAILED_OUTPUT = false;
 for (let i = 0; i < args.length; i++) {
   if (args[i] === '--vets-website-path' && i + 1 < args.length) {
     VETS_WEBSITE_PATH = path.resolve(args[i + 1]);
+  }
+  if (args[i] === '--detailed') {
+    DETAILED_OUTPUT = true;
   }
 }
 
@@ -69,7 +75,8 @@ const IMPOSTER_DEFINITIONS = [
     imposterName: 'CheckboxWidget',
     imposterPath: 'src/platform/forms-system/src/js/widgets/CheckboxWidget.jsx',
     detectionPatterns: [
-      /from\s+['"][^'"]*CheckboxWidget['"]/g
+      /from\s+['"][^'"]*CheckboxWidget['"]/g,
+      /['"]ui:widget['"]\s*:\s*['"]checkbox['"]/g
     ]
   },
   {
@@ -102,7 +109,8 @@ const IMPOSTER_DEFINITIONS = [
     imposterName: 'TextWidget',
     imposterPath: 'src/platform/forms-system/src/js/widgets/TextWidget.jsx',
     detectionPatterns: [
-      /from\s+['"][^'"]*TextWidget['"]/g
+      /from\s+['"][^'"]*TextWidget['"]/g,
+      /['"]ui:widget['"]\s*:\s*['"]text['"]/g
     ]
   },
   {
@@ -110,7 +118,11 @@ const IMPOSTER_DEFINITIONS = [
     imposterName: 'SelectWidget',
     imposterPath: 'src/platform/forms-system/src/js/widgets/SelectWidget.jsx',
     detectionPatterns: [
-      /from\s+['"][^'"]*SelectWidget['"]/g
+      /from\s+['"][^'"]*SelectWidget['"]/g,
+      /['"]ui:widget['"]\s*:\s*['"]select['"]/g,
+      // Detect enum fields in schemas (implicitly use SelectWidget)
+      // Only in applications to avoid counting platform infrastructure enums
+      { pattern: /['"]?enum['"]?\s*:\s*\[/g, pathFilter: /src\/applications\// }
     ]
   },
   {
@@ -134,7 +146,8 @@ const IMPOSTER_DEFINITIONS = [
     imposterName: 'DateWidget',
     imposterPath: 'src/platform/forms-system/src/js/widgets/DateWidget.jsx',
     detectionPatterns: [
-      /from\s+['"][^'"]*DateWidget['"]/g
+      /from\s+['"][^'"]*DateWidget['"]/g,
+      /['"]ui:widget['"]\s*:\s*['"]date['"]/g
     ]
   }
 ];
@@ -155,6 +168,24 @@ function isTestFile(filePath) {
 }
 
 /**
+ * Check if a file is from a mock application that should be excluded
+ * Checks both top-level app names (e.g., _mock-form) and subdirectories (e.g., simple-forms/mock-*)
+ */
+function isMockApplication(filePath) {
+  // Check top-level application name
+  const appMatch = filePath.match(/src\/applications\/([^/]+)/);
+  if (appMatch && appMatch[1].startsWith('_mock')) {
+    return true;
+  }
+  // Check subdirectory name (e.g., simple-forms/mock-simple-forms-patterns)
+  const subDirMatch = filePath.match(/src\/applications\/[^/]+\/([^/]+)/);
+  if (subDirMatch && subDirMatch[1].startsWith('mock')) {
+    return true;
+  }
+  return false;
+}
+
+/**
  * Extract application name from file path
  */
 function extractApplicationName(filePath) {
@@ -169,14 +200,56 @@ function extractApplicationName(filePath) {
 }
 
 /**
- * Search for imposter usage in file content
+ * Extract sub-application path for container apps (e.g., simple-forms/21-10210)
+ * Returns the app/subdir path for apps with form subdirectories, or just the app name
  */
-function searchFileForImposters(content, imposterDef) {
+function extractSubApplicationName(filePath) {
+  // Match pattern: src/applications/app-name/sub-app-name/...
+  const match = filePath.match(/src\/applications\/([^/]+)\/([^/]+)/);
+  if (match) {
+    const appName = match[1];
+    const subDir = match[2];
+    // Skip common non-form subdirectories
+    const skipDirs = ['components', 'containers', 'utils', 'helpers', 'actions', 'reducers', 'selectors', 'constants', 'config', 'styles', 'assets', 'tests', '__tests__'];
+    if (!skipDirs.includes(subDir) && !subDir.startsWith('.')) {
+      return `${appName}/${subDir}`;
+    }
+    return appName;
+  }
+  if (filePath.includes('src/platform/')) {
+    return 'platform';
+  }
+  return 'other';
+}
+
+/**
+ * Search for imposter usage in file content
+ * @param {string} content - File content to search
+ * @param {object} imposterDef - Imposter definition with detection patterns
+ * @param {string} filePath - Path to the file being searched (for path-filtered patterns)
+ */
+function searchFileForImposters(content, imposterDef, filePath = '') {
   let matchCount = 0;
 
-  for (const pattern of imposterDef.detectionPatterns) {
-    // Reset regex lastIndex for global patterns
-    pattern.lastIndex = 0;
+  for (const patternDef of imposterDef.detectionPatterns) {
+    // Support both plain regex and objects with pattern + pathFilter
+    let sourcePattern, pathFilter;
+    if (patternDef instanceof RegExp) {
+      sourcePattern = patternDef;
+      pathFilter = null;
+    } else {
+      sourcePattern = patternDef.pattern;
+      pathFilter = patternDef.pathFilter;
+    }
+
+    // Skip pattern if path filter doesn't match
+    if (pathFilter && !pathFilter.test(filePath)) {
+      continue;
+    }
+
+    // Create a fresh regex instance to avoid lastIndex state issues with global patterns
+    // This prevents race conditions when the same pattern is used across multiple files
+    const pattern = new RegExp(sourcePattern.source, sourcePattern.flags);
     const matches = content.match(pattern);
     if (matches) {
       matchCount += matches.length;
@@ -188,18 +261,40 @@ function searchFileForImposters(content, imposterDef) {
 
 /**
  * Aggregate scan results into final metrics structure
+ * @param {Array} scanResults - Results from scanning
+ * @param {string} scanSource - Source identifier (e.g., 'local')
+ * @param {boolean} detailed - Whether to include sub-application breakdown
  */
-function aggregateResults(scanResults, scanSource = 'local') {
+function aggregateResults(scanResults, scanSource = 'local', detailed = false) {
   const byApplication = new Map();
+  const bySubApplication = new Map(); // For detailed breakdown
+  const subAppByComponent = new Map(); // Track which imposters each sub-app has
   let totalIdentified = 0;
 
   const byComponent = scanResults.map(result => {
     const applications = [...new Set(result.instances.map(i => i.application))];
 
-    // Aggregate by application
+    // Aggregate by application and sub-application
     for (const instance of result.instances) {
+      // By application
       const currentCount = byApplication.get(instance.application) || 0;
       byApplication.set(instance.application, currentCount + instance.matchCount);
+
+      // By sub-application (for detailed mode)
+      if (detailed && instance.subApplication) {
+        const subAppKey = instance.subApplication;
+        const currentSubCount = bySubApplication.get(subAppKey) || 0;
+        bySubApplication.set(subAppKey, currentSubCount + instance.matchCount);
+
+        // Track component breakdown per sub-application
+        if (!subAppByComponent.has(subAppKey)) {
+          subAppByComponent.set(subAppKey, new Map());
+        }
+        const componentMap = subAppByComponent.get(subAppKey);
+        const componentKey = result.imposterDef.imposterName;
+        const currentCompCount = componentMap.get(componentKey) || 0;
+        componentMap.set(componentKey, currentCompCount + instance.matchCount);
+      }
     }
 
     totalIdentified += result.totalCount;
@@ -214,21 +309,41 @@ function aggregateResults(scanResults, scanSource = 'local') {
     };
   });
 
-  // Sort by instance count descending
-  byComponent.sort((a, b) => b.instance_count - a.instance_count);
+  // Filter out components with zero instances and sort by instance count descending
+  const filteredByComponent = byComponent.filter(c => c.instance_count > 0);
+  filteredByComponent.sort((a, b) => b.instance_count - a.instance_count);
 
   // Convert application map to sorted array
   const byApplicationArray = Array.from(byApplication.entries())
     .map(([application, instance_count]) => ({ application, instance_count }))
     .sort((a, b) => b.instance_count - a.instance_count);
 
-  return {
+  const result = {
     total_identified: totalIdentified,
-    by_component: byComponent,
+    by_component: filteredByComponent,
     by_application: byApplicationArray,
     last_scan_date: new Date().toISOString().split('T')[0],
     scan_source: scanSource
   };
+
+  // Add detailed sub-application breakdown if requested
+  if (detailed) {
+    result.by_sub_application = Array.from(bySubApplication.entries())
+      .map(([subApplication, instance_count]) => {
+        const componentBreakdown = subAppByComponent.get(subApplication);
+        const by_imposter = componentBreakdown
+          ? Object.fromEntries(componentBreakdown.entries())
+          : {};
+        return {
+          sub_application: subApplication,
+          instance_count,
+          by_imposter
+        };
+      })
+      .sort((a, b) => b.instance_count - a.instance_count);
+  }
+
+  return result;
 }
 
 /**
@@ -275,6 +390,11 @@ async function scanLocalDirectory(vetsWebsitePath, imposterDef) {
       continue;
     }
 
+    // Skip mock applications
+    if (isMockApplication(filePath)) {
+      continue;
+    }
+
     // Skip the imposter definition file itself
     if (filePath === imposterDef.imposterPath) {
       continue;
@@ -284,13 +404,15 @@ async function scanLocalDirectory(vetsWebsitePath, imposterDef) {
       const fullPath = path.join(vetsWebsitePath, filePath);
       const content = await fs.readFile(fullPath, 'utf8');
 
-      const matchCount = searchFileForImposters(content, imposterDef);
+      const matchCount = searchFileForImposters(content, imposterDef, filePath);
 
       if (matchCount > 0) {
         const appName = extractApplicationName(filePath);
+        const subAppName = extractSubApplicationName(filePath);
         instances.push({
           file: filePath,
           application: appName,
+          subApplication: subAppName,
           matchCount
         });
         totalCount += matchCount;
@@ -308,10 +430,16 @@ async function scanLocalDirectory(vetsWebsitePath, imposterDef) {
 
 /**
  * Scan for all imposters
+ * @param {string} vetsWebsitePath - Path to vets-website repo
+ * @param {boolean} detailed - Whether to include sub-application breakdown
  */
-async function scanAllImposters(vetsWebsitePath) {
+async function scanAllImposters(vetsWebsitePath, detailed = false) {
   console.log('=== Imposter Component Instance Scanner ===\n');
-  console.log(`Scanning: ${vetsWebsitePath}\n`);
+  console.log(`Scanning: ${vetsWebsitePath}`);
+  if (detailed) {
+    console.log('Detailed mode: ON (will include sub-application breakdown)');
+  }
+  console.log('');
 
   const scanResults = [];
 
@@ -329,7 +457,7 @@ async function scanAllImposters(vetsWebsitePath) {
     console.log(`  ✓ Found ${result.totalCount} instances in ${result.instances.length} files`);
   }
 
-  return aggregateResults(scanResults, 'local');
+  return aggregateResults(scanResults, 'local', detailed);
 }
 
 /**
@@ -395,12 +523,28 @@ async function saveMetrics(instanceData) {
 async function main() {
   if (!VETS_WEBSITE_PATH) {
     console.error('Error: --vets-website-path is required');
-    console.error('Usage: node scripts/collect-imposter-instances.js --vets-website-path <path>');
+    console.error('Usage: node scripts/collect-imposter-instances.js --vets-website-path <path> [--detailed]');
+    console.error('\nOptions:');
+    console.error('  --vets-website-path   Path to local vets-website repo (required)');
+    console.error('  --detailed            Include sub-application breakdown (e.g., simple-forms/21-10210)');
+    process.exit(1);
+  }
+
+  // Validate that the provided vets-website path exists and is a directory
+  try {
+    await fs.access(VETS_WEBSITE_PATH);
+    const stats = await fs.stat(VETS_WEBSITE_PATH);
+    if (!stats.isDirectory()) {
+      console.error(`Error: Provided --vets-website-path "${VETS_WEBSITE_PATH}" is not a directory.`);
+      process.exit(1);
+    }
+  } catch {
+    console.error(`Error: Provided --vets-website-path "${VETS_WEBSITE_PATH}" does not exist or is not accessible.`);
     process.exit(1);
   }
 
   try {
-    const instanceData = await scanAllImposters(VETS_WEBSITE_PATH);
+    const instanceData = await scanAllImposters(VETS_WEBSITE_PATH, DETAILED_OUTPUT);
 
     await saveMetrics(instanceData);
 
@@ -423,6 +567,17 @@ async function main() {
       });
     }
 
+    // Print detailed sub-application breakdown if requested
+    if (DETAILED_OUTPUT && instanceData.by_sub_application) {
+      console.log('\n=== SUB-APPLICATION BREAKDOWN ===');
+      instanceData.by_sub_application.forEach((subApp) => {
+        const imposterDetails = Object.entries(subApp.by_imposter)
+          .map(([name, count]) => `${name}:${count}`)
+          .join(', ');
+        console.log(`  ${subApp.sub_application}: ${subApp.instance_count} (${imposterDetails})`);
+      });
+    }
+
     console.log('\n✅ Imposter instance scan complete!');
 
   } catch (error) {
@@ -439,7 +594,9 @@ if (require.main === module) {
 module.exports = {
   IMPOSTER_DEFINITIONS,
   isTestFile,
+  isMockApplication,
   extractApplicationName,
+  extractSubApplicationName,
   searchFileForImposters,
   aggregateResults,
   findJSFiles,

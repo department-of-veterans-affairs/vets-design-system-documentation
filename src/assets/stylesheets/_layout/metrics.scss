@@ -301,7 +301,7 @@
   background-color: var(--vads-color-success);
   border-radius: var(--vads-radius-sm);
   transition: width 0.3s ease;
-  min-width: 2px; // Ensure visibility even at 0%
+  // No min-width: 0% progress should appear as empty bar
 }
 
 // Metric subtext for additional context

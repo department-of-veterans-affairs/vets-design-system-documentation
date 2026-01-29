@@ -21,7 +21,9 @@ This is **Phase 1** of a two-phase approach:
 
 ## Data Sources
 
-**Primary:** GitHub issues in `department-of-veterans-affairs/va.gov-team` with label `va-imposter`
+**Primary:** GitHub issues in `department-of-veterans-affairs/va.gov-team` with labels `va-imposter` AND `collab-cycle-feedback`
+
+This dual-label requirement filters to Governance team staging review findings only, excluding general imposter-related issues or discussions.
 
 **Component type detection:** Issues often have component-specific labels like:
 - `va-alert`
@@ -46,6 +48,7 @@ async function fetchImposterIssues(startDate, endDate, filterBy = 'created') {
     'search', 'issues',
     '--repo', REPO,
     '--label', 'va-imposter',
+    '--label', 'collab-cycle-feedback',  // Filter to Governance staging review findings
     '--limit', '1000',
     '--json', 'number,title,state,createdAt,closedAt,labels,url'
   ];

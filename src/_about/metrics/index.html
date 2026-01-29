@@ -485,7 +485,7 @@ mime_type: text/html
 
     <!-- Summary Cards -->
     <div class="vads-l-row vads-u-justify-content--center vads-u-margin-bottom--4">
-      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--4">
+      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--3">
         <va-card class="metric-card">
           <h3 id="imposter-closed-label">Total Replaced</h3>
           <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="imposter-closed" aria-labelledby="imposter-closed-label">
@@ -527,7 +527,7 @@ mime_type: text/html
         </va-card>
       </div>
 
-      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--4">
+      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--3">
         <va-card class="metric-card">
           <h3 id="imposter-goal-label">Goal Progress</h3>
           <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="imposter-goal" aria-labelledby="imposter-goal-label">
@@ -542,7 +542,9 @@ mime_type: text/html
                aria-valuemin="0"
                aria-valuemax="100"
                aria-label="Progress toward 150 imposter replacement goal">
-            <div class="progress-bar-fill" style="width: {% if site.data.metrics.imposter-metrics.summary.progress_percentage %}{{ site.data.metrics.imposter-metrics.summary.progress_percentage }}{% else %}0{% endif %}%;"></div>
+            <div class="progress-bar-fill"
+                 aria-hidden="true"
+                 style="width: {% if site.data.metrics.imposter-metrics.summary.progress_percentage %}{{ site.data.metrics.imposter-metrics.summary.progress_percentage }}{% else %}0{% endif %}%;"></div>
           </div>
           <div class="metric-subtext">
             <small>
@@ -556,7 +558,7 @@ mime_type: text/html
         </va-card>
       </div>
 
-      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--4">
+      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--3">
         <va-card class="metric-card">
           <h3 id="imposter-open-label">Open Issues</h3>
           <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="imposter-open" aria-labelledby="imposter-open-label">
@@ -575,6 +577,29 @@ mime_type: text/html
               <small>Updated {{ last_updated }}</small>
             {% else %}
               <small>Data collection in progress</small>
+            {% endif %}
+          </div>
+        </va-card>
+      </div>
+
+      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--3">
+        <va-card class="metric-card">
+          <h3 id="imposter-instances-label">Instances in Code</h3>
+          <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="imposter-instances" aria-labelledby="imposter-instances-label">
+            {% if site.data.metrics.imposter-metrics.instances.total_identified %}
+              {{ site.data.metrics.imposter-metrics.instances.total_identified }}
+            {% else %}
+              --
+            {% endif %}
+          </div>
+          <div class="metric-subtext">
+            <small>Total imposter usages found in vets-website</small>
+          </div>
+          <div class="data-freshness">
+            {% if site.data.metrics.imposter-metrics.instances.last_scan_date %}
+              <small>Scanned {{ site.data.metrics.imposter-metrics.instances.last_scan_date }}</small>
+            {% else %}
+              <small>Scan pending</small>
             {% endif %}
           </div>
         </va-card>
@@ -677,7 +702,7 @@ mime_type: text/html
                 <va-table-row>
                   <span>
                     {% if component.component == 'unknown' %}
-                      <a href="https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=label%3Ava-imposter+label%3Acollab-cycle-feedback" target="_blank" rel="noopener" title="View all imposter issues - filter manually for those missing component labels">{{ component.component }}*</a>
+                      {{ component.component }}* <small>(issues without component-specific labels)</small>
                     {% else %}
                       <a href="https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=label%3Ava-imposter+label%3Acollab-cycle-feedback+label%3A{{ component.component }}" target="_blank" rel="noopener">{{ component.component }}</a>
                     {% endif %}
@@ -690,6 +715,122 @@ mime_type: text/html
             {% else %}
               <va-table-row>
                 <span colspan="4">No component data currently available</span>
+              </va-table-row>
+            {% endif %}
+          </va-table>
+        </va-tab-panel>
+      </va-tabs>
+    </div>
+
+    <!-- Instances by Component Type Chart (from vets-website scanning) -->
+    <div class="metrics-section">
+      <h3>Instances by Component Type</h3>
+      <p>Shows the number of imposter component usages found in vets-website codebase, grouped by the VA web component they should replace</p>
+      <div class="data-freshness" id="imposter-instances-component-data-freshness">
+        {% if site.data.metrics.imposter-metrics.instances.last_scan_date %}
+          <small>Data from vets-website scan on {{ site.data.metrics.imposter-metrics.instances.last_scan_date }}</small>
+        {% else %}
+          <small>Scan pending</small>
+        {% endif %}
+      </div>
+
+      <va-tabs>
+        <va-tab-item button-text="Graph" target-id="imposter-instances-component-graph-panel"></va-tab-item>
+        <va-tab-item button-text="Table" target-id="imposter-instances-component-table-panel"></va-tab-item>
+
+        <va-tab-panel panel-id="imposter-instances-component-graph-panel" role="tabpanel">
+          <div id="imposter-instances-component-chart"
+               class="chart-container"
+               role="img"
+               aria-label="Horizontal bar chart showing imposter instance counts by component type from vets-website codebase scan"
+               tabindex="0">
+            <!-- Chart will be rendered here -->
+          </div>
+        </va-tab-panel>
+
+        <va-tab-panel panel-id="imposter-instances-component-table-panel" role="tabpanel">
+          <va-table id="imposter-instances-component-va-table"
+                    table-title="Imposter Instances by Component: Number of usages found in vets-website for each imposter component"
+                    stacked="true"
+                    sortable="true"
+                    table-type="borderless"
+                    right-align-cols="1,2">
+            <va-table-row slot="headers">
+              <span>VA Component</span>
+              <span>Imposter Name</span>
+              <span>Instances</span>
+              <span>Files</span>
+            </va-table-row>
+            {% if site.data.metrics.imposter-metrics.instances.by_component %}
+              {% for component in site.data.metrics.imposter-metrics.instances.by_component %}
+                {% if component.instance_count > 0 %}
+                  <va-table-row>
+                    <span>{{ component.component }}</span>
+                    <span>{{ component.imposter_name }}</span>
+                    <span>{{ component.instance_count }}</span>
+                    <span>{{ component.file_count }}</span>
+                  </va-table-row>
+                {% endif %}
+              {% endfor %}
+            {% else %}
+              <va-table-row>
+                <span colspan="4">No instance data currently available</span>
+              </va-table-row>
+            {% endif %}
+          </va-table>
+        </va-tab-panel>
+      </va-tabs>
+    </div>
+
+    <!-- Instances by Application Chart (from vets-website scanning) -->
+    <div class="metrics-section">
+      <h3>Instances by Application</h3>
+      <p>Shows which vets-website applications have the most imposter component usages, helping prioritize remediation efforts</p>
+      <div class="data-freshness" id="imposter-instances-app-data-freshness">
+        {% if site.data.metrics.imposter-metrics.instances.last_scan_date %}
+          <small>Data from vets-website scan on {{ site.data.metrics.imposter-metrics.instances.last_scan_date }}</small>
+        {% else %}
+          <small>Scan pending</small>
+        {% endif %}
+      </div>
+
+      <va-tabs>
+        <va-tab-item button-text="Graph" target-id="imposter-instances-app-graph-panel"></va-tab-item>
+        <va-tab-item button-text="Table" target-id="imposter-instances-app-table-panel"></va-tab-item>
+
+        <va-tab-panel panel-id="imposter-instances-app-graph-panel" role="tabpanel">
+          <div id="imposter-instances-app-chart"
+               class="chart-container"
+               role="img"
+               aria-label="Horizontal bar chart showing imposter instance counts by application from vets-website codebase scan"
+               tabindex="0">
+            <!-- Chart will be rendered here -->
+          </div>
+        </va-tab-panel>
+
+        <va-tab-panel panel-id="imposter-instances-app-table-panel" role="tabpanel">
+          <va-table id="imposter-instances-app-va-table"
+                    table-title="Imposter Instances by Application: Number of imposter usages found in each vets-website application"
+                    stacked="true"
+                    sortable="true"
+                    table-type="borderless"
+                    right-align-cols="1">
+            <va-table-row slot="headers">
+              <span>Application</span>
+              <span>Instance Count</span>
+            </va-table-row>
+            {% if site.data.metrics.imposter-metrics.instances.by_application %}
+              {% for app in site.data.metrics.imposter-metrics.instances.by_application %}
+                {% unless app.application contains '_mock' %}
+                  <va-table-row>
+                    <span>{{ app.application }}</span>
+                    <span>{{ app.instance_count }}</span>
+                  </va-table-row>
+                {% endunless %}
+              {% endfor %}
+            {% else %}
+              <va-table-row>
+                <span colspan="2">No application data currently available</span>
               </va-table-row>
             {% endif %}
           </va-table>
@@ -807,11 +948,17 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementById('top-components-chart').innerHTML = '';
       document.getElementById('experimental-chart').innerHTML = '';
 
-      // Clear imposter charts
-      const imposterQuarterlyChart = document.getElementById('imposter-quarterly-chart');
-      const imposterComponentChart = document.getElementById('imposter-component-chart');
-      if (imposterQuarterlyChart) imposterQuarterlyChart.innerHTML = '';
-      if (imposterComponentChart) imposterComponentChart.innerHTML = '';
+      // Clear imposter charts only if data has loaded (prevents clearing during initial load)
+      if (imposterDataLoaded) {
+        const imposterQuarterlyChart = document.getElementById('imposter-quarterly-chart');
+        const imposterComponentChart = document.getElementById('imposter-component-chart');
+        const imposterInstancesComponentChart = document.getElementById('imposter-instances-component-chart');
+        const imposterInstancesAppChart = document.getElementById('imposter-instances-app-chart');
+        if (imposterQuarterlyChart) imposterQuarterlyChart.innerHTML = '';
+        if (imposterComponentChart) imposterComponentChart.innerHTML = '';
+        if (imposterInstancesComponentChart) imposterInstancesComponentChart.innerHTML = '';
+        if (imposterInstancesAppChart) imposterInstancesAppChart.innerHTML = '';
+      }
 
       // Re-render with stored data
       if (MetricsDataManager.hasData()) {
@@ -866,7 +1013,10 @@ function renderVisibleChartsIfNeeded() {
     { id: 'experimental-chart', renderFunc: () => MetricsDataManager.getIssueData().experimental_quarterly && renderExperimentalChart(MetricsDataManager.getIssueData().experimental_quarterly) },
     // Imposter charts
     { id: 'imposter-quarterly-chart', renderFunc: () => imposterData && renderImposterQuarterlyChart(imposterData.quarterly) },
-    { id: 'imposter-component-chart', renderFunc: () => imposterData && renderImposterComponentChart(imposterData.by_component) }
+    { id: 'imposter-component-chart', renderFunc: () => imposterData && renderImposterComponentChart(imposterData.by_component) },
+    // Imposter instance charts (from vets-website scanning)
+    { id: 'imposter-instances-component-chart', renderFunc: () => imposterData && imposterData.instances && renderImposterInstancesComponentChart(imposterData.instances.by_component) },
+    { id: 'imposter-instances-app-chart', renderFunc: () => imposterData && imposterData.instances && renderImposterInstancesAppChart(imposterData.instances.by_application) }
   ];
 
   chartContainers.forEach(({ id, renderFunc }) => {
@@ -1594,21 +1744,55 @@ function updateDataFreshness(componentSummary) {
 
 // Imposter metrics data and chart functions
 let imposterData = null;
+let imposterDataLoaded = false; // Track if initial load has completed (success or failure)
 
 function loadImposterData() {
   fetch('{{ site.baseurl }}/assets/data/metrics/imposter-metrics.json')
     .then(response => {
-      if (!response.ok) throw new Error('Imposter metrics not available');
+      if (!response.ok) {
+        // Differentiate between file not found and other errors
+        if (response.status === 404) {
+          throw new Error('NOT_FOUND');
+        }
+        throw new Error(`HTTP_ERROR:${response.status}`);
+      }
       return response.json();
     })
     .then(data => {
       imposterData = data;
+      imposterDataLoaded = true;
       renderImposterCharts(data);
     })
     .catch(error => {
-      console.log('Imposter metrics not yet available:', error.message);
-      showImposterPlaceholders();
+      imposterDataLoaded = true; // Mark as loaded even on failure to prevent reload attempts
+      if (error.message === 'NOT_FOUND') {
+        // File not found - data collection not yet set up (expected case)
+        console.log('Imposter metrics not yet available: data collection pending');
+        showImposterPlaceholders();
+      } else if (error.message.startsWith('HTTP_ERROR:')) {
+        // HTTP error - show error message
+        console.error('Failed to load imposter metrics:', error.message);
+        showImposterError('Unable to load imposter metrics data. Please try refreshing the page.');
+      } else {
+        // JSON parsing or other errors
+        console.error('Error processing imposter metrics:', error.message);
+        showImposterError('Error processing imposter metrics data.');
+      }
     });
+}
+
+function showImposterError(message) {
+  const quarterlyChart = document.getElementById('imposter-quarterly-chart');
+  const componentChart = document.getElementById('imposter-component-chart');
+
+  const errorHtml = `<div class="chart-placeholder chart-error">${message}</div>`;
+
+  if (quarterlyChart) {
+    quarterlyChart.innerHTML = errorHtml;
+  }
+  if (componentChart) {
+    componentChart.innerHTML = errorHtml;
+  }
 }
 
 function showImposterPlaceholders() {
@@ -1629,6 +1813,15 @@ function renderImposterCharts(data) {
   }
   if (data.by_component && data.by_component.length > 0) {
     renderImposterComponentChart(data.by_component);
+  }
+  // Render instance charts (Phase 2 - vets-website scanning)
+  if (data.instances) {
+    if (data.instances.by_component && data.instances.by_component.length > 0) {
+      renderImposterInstancesComponentChart(data.instances.by_component);
+    }
+    if (data.instances.by_application && data.instances.by_application.length > 0) {
+      renderImposterInstancesAppChart(data.instances.by_application);
+    }
   }
 }
 
@@ -1728,7 +1921,8 @@ function renderImposterQuarterlyChart(data) {
     .text('Number of Issues');
 
   g.append('text')
-    .attr('transform', `translate(${width / 2}, ${height + margin.bottom - 10})`)
+    .attr('x', width / 2)
+    .attr('y', height + margin.bottom - 10)
     .style('text-anchor', 'middle')
     .text('Quarter');
 
@@ -1828,7 +2022,7 @@ function renderImposterComponentChart(data) {
   // Color scale
   const color = d3.scaleOrdinal()
     .domain(['open', 'closed'])
-    .range(['#fac922', '#2e8540']); // Yellow for open, green for closed
+    .range(['#f9c642', '#2e8540']); // Yellow for open (consistent with experimental chart), green for closed
 
   // Add axes
   g.append('g')
@@ -1896,12 +2090,219 @@ function renderImposterComponentChart(data) {
       .text(d.label);
   });
 
+  // Add axis labels
+  // Y-axis label (rotated)
+  g.append('text')
+    .attr('transform', 'rotate(-90)')
+    .attr('y', 0 - margin.left + 15)
+    .attr('x', 0 - (height / 2))
+    .attr('dy', '1em')
+    .style('text-anchor', 'middle')
+    .style('font-size', '12px')
+    .text('Component Type');
+
+  // X-axis label
+  g.append('text')
+    .attr('x', width / 2)
+    .attr('y', height + 35)
+    .style('text-anchor', 'middle')
+    .style('font-size', '12px')
+    .text('Number of Issues');
+}
+
+function renderImposterInstancesComponentChart(data) {
+  if (!data || data.length === 0) {
+    return;
+  }
+
+  const container = document.getElementById('imposter-instances-component-chart');
+  if (!container) return;
+
+  // Clear any existing content before rendering
+  container.innerHTML = '';
+
+  // Don't render if container is hidden (in inactive tab)
+  if (!isElementVisible(container)) return;
+
+  const containerWidth = container.clientWidth;
+  if (containerWidth === 0) return; // Container not visible yet
+
+  // Filter out components with 0 instances and take top entries
+  const filteredData = data.filter(d => d.instance_count > 0).slice(0, 12);
+  if (filteredData.length === 0) {
+    container.innerHTML = '<div class="chart-placeholder">No imposter instances found in vets-website</div>';
+    return;
+  }
+
+  // Responsive margins based on screen size
+  const margin = {
+    top: 20,
+    right: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 50 : 60,
+    bottom: 40,
+    left: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 140 : 180
+  };
+
+  const width = containerWidth - margin.left - margin.right;
+  const barHeight = 28;
+  const height = filteredData.length * barHeight * 1.3;
+
+  const svg = d3.select('#imposter-instances-component-chart')
+    .append('svg')
+    .attr('width', width + margin.left + margin.right)
+    .attr('height', height + margin.top + margin.bottom);
+
+  const g = svg.append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // Create label combining component and imposter name
+  const getLabel = (d) => `${d.component} (${d.imposter_name})`;
+
+  // Setup scales
+  const y = d3.scaleBand()
+    .domain(filteredData.map(d => getLabel(d)))
+    .range([0, height])
+    .padding(0.2);
+
+  const x = d3.scaleLinear()
+    .domain([0, d3.max(filteredData, d => d.instance_count)])
+    .range([0, width]);
+
+  // Add axes
+  g.append('g')
+    .call(d3.axisLeft(y))
+    .selectAll('text')
+    .style('font-size', containerWidth < CHART_RESPONSIVE_BREAKPOINT ? '10px' : '11px');
+
+  g.append('g')
+    .attr('transform', `translate(0,${height})`)
+    .call(d3.axisBottom(x).ticks(5));
+
+  // Add bars
+  g.selectAll('.bar')
+    .data(filteredData)
+    .enter().append('rect')
+    .attr('class', 'bar')
+    .attr('x', 0)
+    .attr('y', d => y(getLabel(d)))
+    .attr('width', d => x(d.instance_count))
+    .attr('height', y.bandwidth())
+    .attr('fill', '#0071bb');
+
+  // Add value labels
+  g.selectAll('.bar-label')
+    .data(filteredData)
+    .enter().append('text')
+    .attr('class', 'bar-label')
+    .attr('x', d => x(d.instance_count) + 5)
+    .attr('y', d => y(getLabel(d)) + y.bandwidth() / 2)
+    .attr('dy', '0.35em')
+    .style('font-size', '11px')
+    .style('font-weight', 'bold')
+    .text(d => d.instance_count);
+
   // Add axis label
   g.append('text')
     .attr('transform', `translate(${width / 2}, ${height + 35})`)
     .style('text-anchor', 'middle')
     .style('font-size', '12px')
-    .text('Number of Issues');
+    .text('Instance Count');
+}
+
+function renderImposterInstancesAppChart(data) {
+  if (!data || data.length === 0) {
+    return;
+  }
+
+  const container = document.getElementById('imposter-instances-app-chart');
+  if (!container) return;
+
+  // Clear any existing content before rendering
+  container.innerHTML = '';
+
+  // Don't render if container is hidden (in inactive tab)
+  if (!isElementVisible(container)) return;
+
+  const containerWidth = container.clientWidth;
+  if (containerWidth === 0) return; // Container not visible yet
+
+  // Filter out mock applications and take top 15 for readability
+  const topApps = data
+    .filter(d => !d.application.startsWith('_mock'))
+    .slice(0, 15);
+
+  // Responsive margins based on screen size
+  const margin = {
+    top: 20,
+    right: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 50 : 60,
+    bottom: 40,
+    left: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 160 : 200
+  };
+
+  const width = containerWidth - margin.left - margin.right;
+  const barHeight = 25;
+  const height = topApps.length * barHeight * 1.3;
+
+  const svg = d3.select('#imposter-instances-app-chart')
+    .append('svg')
+    .attr('width', width + margin.left + margin.right)
+    .attr('height', height + margin.top + margin.bottom);
+
+  const g = svg.append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // Setup scales
+  const y = d3.scaleBand()
+    .domain(topApps.map(d => d.application))
+    .range([0, height])
+    .padding(0.2);
+
+  const x = d3.scaleLinear()
+    .domain([0, d3.max(topApps, d => d.instance_count)])
+    .range([0, width]);
+
+  // Add axes
+  g.append('g')
+    .call(d3.axisLeft(y))
+    .selectAll('text')
+    .style('font-size', containerWidth < CHART_RESPONSIVE_BREAKPOINT ? '10px' : '11px');
+
+  g.append('g')
+    .attr('transform', `translate(0,${height})`)
+    .call(d3.axisBottom(x).ticks(5));
+
+  // Add bars with gradient color based on count
+  const colorScale = d3.scaleLinear()
+    .domain([0, d3.max(topApps, d => d.instance_count)])
+    .range(['#73b3e7', '#0071bb']); // Light to dark blue
+
+  g.selectAll('.bar')
+    .data(topApps)
+    .enter().append('rect')
+    .attr('class', 'bar')
+    .attr('x', 0)
+    .attr('y', d => y(d.application))
+    .attr('width', d => x(d.instance_count))
+    .attr('height', y.bandwidth())
+    .attr('fill', d => colorScale(d.instance_count));
+
+  // Add value labels
+  g.selectAll('.bar-label')
+    .data(topApps)
+    .enter().append('text')
+    .attr('class', 'bar-label')
+    .attr('x', d => x(d.instance_count) + 5)
+    .attr('y', d => y(d.application) + y.bandwidth() / 2)
+    .attr('dy', '0.35em')
+    .style('font-size', '11px')
+    .style('font-weight', 'bold')
+    .text(d => d.instance_count);
+
+  // Add axis label
+  g.append('text')
+    .attr('transform', `translate(${width / 2}, ${height + 35})`)
+    .style('text-anchor', 'middle')
+    .style('font-size', '12px')
+    .text('Instance Count');
 }
 
 </script>

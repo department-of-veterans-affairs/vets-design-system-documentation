@@ -210,6 +210,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.VADS_WORKFLOWS }}
 
       - name: Collect imposter metrics
+        # Allow workflow to continue if imposter metrics collection fails
+        # This is a newer feature and shouldn't block other metrics
+        continue-on-error: true
         run: |
           echo "Starting imposter component metrics collection..."
           node scripts/collect-imposter-metrics.js
