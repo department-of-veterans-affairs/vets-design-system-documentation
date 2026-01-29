@@ -70,7 +70,7 @@ anchors:
 ### How this component works
 
 * **Default or Active link variations.** The collections may use either the [default]({{ site.baseurl }}/components/link#default) or [active]({{ site.baseurl }}/components/link#active) link variations.
-* **Use appropriate icons.** [Icons]({{ site.baseurl }}/foundation/icons/) defined in the system for a particular usage should be used for that distinct purpose. Icons that are reused for another purpose must receive explicit permission to do so from the Design System Council.
+* **Use appropriate icons.** [Icons]({{ site.baseurl }}/components/icon) defined in the system for a particular usage should be used for that distinct purpose. Icons that are reused for another purpose must receive explicit permission to do so from the Design System Council.
 
 ### Choosing between variations
 

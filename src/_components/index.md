@@ -25,9 +25,9 @@ All teams must now be using the v3 versions of our web-components. The Design Sy
 
 #### Migration strategy
 
-[Instructions are available for developers]({{ site.baseurl }}/about/developers/using-web-components#uswds-v1-to-v3-migration) to be able to migrate components onto their v3-based version.
+[Instructions are available for developers]({{ site.baseurl }}/about/developers/using-web-components) to be able to migrate components onto their v3-based version.
 
-### Governance rules for using components
+### Governance rules for using components, patterns, and templates
 
 To ensure consistency and quality across our applications, all teams must follow these rules when using design system components:
 
@@ -35,6 +35,7 @@ To ensure consistency and quality across our applications, all teams must follow
   * The only exception is if there is no v3 equivalent available.
 * If your team is using a user interface element outside of the [design system web components](https://design.va.gov/storybook/), that is coded to look and function like a design system web component, that is considered an imposter component and will be listed as a violation at your Staging Review. Any user interface element that can use a design system web component should use it. **Any use of an imposter component will be considered a launch-blocking issue and must be fixed before your team can launch to production.**
   * Exceptions to this are default links and buttons. HTML elements `<button>` and `<a>`, with the appropriate classes added for styling consistency, may be used. This only applies to elements styled as **[Button - Default]({{ site.baseurl }}/components/button/)** and **[Link - Default]({{ site.baseurl }}/components/link)** variations. HTML elements styled as any other variation will be considered imposter components.
+* Follow the established patterns and templates in the VA Design System without modification. All sections and components must be included as defined. Do not replace or substitute components unless the guidance explicitly permits it.
 
 Examples of design system components can be found in [Storybook](https://design.va.gov/storybook) or in this section (components are listed in the side navigation).
 
