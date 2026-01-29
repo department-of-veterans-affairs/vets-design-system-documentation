@@ -111,7 +111,7 @@ anchors:
 * **Avoid disabling buttons.** [Disabling buttons is strongly discouraged.](#do-not-disable-buttons)
 * **Use icons only when necessary.** [Icons]({{ site.baseurl }}/components/icon) can be used in buttons when additional clarity is required and the icon is highly relevant to the action. Icons should not be used for decoration. Note that va-button does not support iconography, but has some variations that use an icon. Use of icons in buttons will be made on a case-by-case basis. If you feel you need an icon for a button, [follow the process for requesting a new icon]({{ site.baseurl }}/components/icon#requesting-a-new-icon).
 * **Avoid using chevrons in buttons.** Chevrons are generally reserved for links. The only exception is for components that use the chevron to indicate the direction in which additional content opens, like in flyout menus and dropdowns.
-  * **Examples:** Nested menu items within "VA Benefits and Health Care" in the [Header](https://design.va.gov/components/header/), [Additional Info](https://design.va.gov/components/additional-info)
+  * **Examples:** Nested menu items within "VA Benefits and Health Care" in the [Header](https://design.va.gov/components/header/) and [Additional Info](https://design.va.gov/components/additional-info).
 
 ### Choosing between variations
 
