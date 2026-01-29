@@ -30,7 +30,7 @@ code-assets:
     web-score: false
     mobile-app-score: false
   - name: internationalization
-    web-score: false
+    web-score: "n/a"
     mobile-app-score: false
 visual-assets:
   - name: variations
