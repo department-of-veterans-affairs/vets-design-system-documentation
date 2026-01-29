@@ -106,7 +106,7 @@ anchors:
 ### When to use an Active link
 
 * **Collections, such as Hub pages.** Active links can be seen on [Hub pages]({{ site.baseurl }}/templates/hub#example)
-* **Less prominent links.** For links that need less prominence than an [Action link]({{ site.baseurl }}/components/link/action) and may appear in a [collection]({{ site.baseurl }}/components/link/collection), we recommend using an Active Link. Active Links have a hover behavior that includes a background color change and an animated right-facing chevron icon for more emphasis.
+* **Less prominent links.** For links that need less prominence than an [Action link]({{ site.baseurl }}/components/link/action), we recommend using an Active Link. Active Links have a hover behavior that includes a background color change and an animated right-facing chevron icon for more emphasis. Active links may appear in [collections]({{ site.baseurl }}/components/link/collection).
 
 ### When to use a Back link
 
