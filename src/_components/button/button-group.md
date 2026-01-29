@@ -58,7 +58,10 @@ type="secondary"
 ### Behavior
 
 - **Avoid using too many buttons on a page.** Pages with many buttons may signal that the page content needs to be split up.
-- **Arrows are reserved.** Arrow icons should only appear for the [Back/Continue](#backcontinue) button group.
+- **Avoid using chevrons in buttons.** Chevrons are generally reserved for links. The only exception is for components that use the chevron to indicate the direction in which additional content opens, like in flyout menus and dropdowns.
+  - **Examples:** Nested menu items within "VA Benefits and Health Care" in the [Header](https://design.va.gov/components/header/) and [Additional Info](https://design.va.gov/components/additional-info).
+
+
 
 ### Mobile behavior
 
