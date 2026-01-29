@@ -209,6 +209,14 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.VADS_WORKFLOWS }}
 
+      - name: Collect imposter metrics
+        run: |
+          echo "Starting imposter component metrics collection..."
+          node scripts/collect-imposter-metrics.js
+          echo "Imposter metrics collection completed"
+        env:
+          GITHUB_TOKEN: ${{ secrets.VADS_WORKFLOWS }}
+
       - name: Verify generated data files
         run: |
           echo "Checking for generated files..."
@@ -297,6 +305,23 @@ jobs:
             echo "ℹ️ governance-metrics.csv not found (may not be generated in current run)"
           fi
 
+          # Check imposter metrics in both locations
+          if [ -f "src/assets/data/metrics/imposter-metrics.json" ]; then
+            echo "✅ imposter-metrics.json generated successfully in assets"
+            echo "File size: $(du -h src/assets/data/metrics/imposter-metrics.json)"
+          else
+            echo "❌ imposter-metrics.json not found in assets"
+            exit 1
+          fi
+
+          if [ -f "src/_data/metrics/imposter-metrics.json" ]; then
+            echo "✅ imposter-metrics.json also generated for Jekyll"
+            echo "File size: $(du -h src/_data/metrics/imposter-metrics.json)"
+          else
+            echo "❌ imposter-metrics.json not found for Jekyll"
+            exit 1
+          fi
+
       - name: Check for changes
         id: git-check
         run: |
@@ -309,10 +334,12 @@ jobs:
             src/assets/data/metrics/experimental-metrics.json \
             src/assets/data/metrics/component-usage.json \
             src/assets/data/metrics/governance-index.json \
+            src/assets/data/metrics/imposter-metrics.json \
             src/_data/metrics/issue-metrics.json \
             src/_data/metrics/experimental-metrics.json \
             src/_data/metrics/component-usage.json \
-            src/_data/metrics/governance-index.json; do
+            src/_data/metrics/governance-index.json \
+            src/_data/metrics/imposter-metrics.json; do
             if [ -f "$file" ]; then
               git add "$file"
             fi
@@ -368,6 +395,7 @@ jobs:
           - Updated quarterly and monthly aggregations
           - Updated experimental design issue tracking
           - Updated governance metrics and collaboration cycle data
+          - Updated imposter component tracking metrics
           - Fetched latest ds-components usage data from component-library
 
           🤖 Automated update via GitHub Actions"
@@ -393,6 +421,7 @@ jobs:
           - Component usage data from component-library
           - Experimental design metrics
           - Governance metrics and collaboration cycle data
+          - Imposter component tracking metrics
           - Design system component usage CSV data
 
           ### Test Plan

@@ -477,6 +477,226 @@ mime_type: text/html
       </va-tabs>
     </div>
   </section>
+
+  <!-- Imposter Component Tracking Section -->
+  <section aria-labelledby="imposter-tracking-heading">
+    <h2 id="imposter-tracking-heading">Imposter Component Tracking</h2>
+    <p>Tracks progress toward the FY26 goal of replacing 150 imposter component instances in vets-website. Imposter components are custom implementations that should use VA Design System web components.</p>
+
+    <!-- Summary Cards -->
+    <div class="vads-l-row vads-u-justify-content--center vads-u-margin-bottom--4">
+      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--4">
+        <va-card class="metric-card">
+          <h3 id="imposter-closed-label">Total Replaced</h3>
+          <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="imposter-closed" aria-labelledby="imposter-closed-label">
+            {% if site.data.metrics.imposter-metrics.summary.total_closed %}
+              {{ site.data.metrics.imposter-metrics.summary.total_closed }}
+            {% else %}
+              --
+            {% endif %}
+          </div>
+          <div class="metric-trend" id="imposter-closed-trend" aria-label="Total replaced trend indicator">
+            {% if site.data.metrics.imposter-metrics.summary.closed_trend %}
+              {% assign trend = site.data.metrics.imposter-metrics.summary.closed_trend %}
+              {% if trend.direction == 'up' %}
+                <span class="metric-trend trend-up">
+                  <span class="trend-icon">↗</span>
+                  <span>{{ trend.percentage }}% from last quarter</span>
+                </span>
+              {% elsif trend.direction == 'down' %}
+                <span class="metric-trend trend-down">
+                  <span class="trend-icon">↘</span>
+                  <span>{{ trend.percentage }}% from last quarter</span>
+                </span>
+              {% else %}
+                <span class="metric-trend trend-neutral">
+                  <span class="trend-icon">→</span>
+                  <span>No change from last quarter</span>
+                </span>
+              {% endif %}
+            {% endif %}
+          </div>
+          <div class="data-freshness" id="imposter-closed-data-freshness">
+            {% if site.data.metrics.imposter-metrics.summary.last_updated %}
+              {% assign last_updated = site.data.metrics.imposter-metrics.summary.last_updated | date: "%B %d, %Y" %}
+              <small>Updated {{ last_updated }}</small>
+            {% else %}
+              <small>Data collection in progress</small>
+            {% endif %}
+          </div>
+        </va-card>
+      </div>
+
+      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--4">
+        <va-card class="metric-card">
+          <h3 id="imposter-goal-label">Goal Progress</h3>
+          <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="imposter-goal" aria-labelledby="imposter-goal-label">
+            {% if site.data.metrics.imposter-metrics.summary.progress_percentage %}
+              {{ site.data.metrics.imposter-metrics.summary.progress_percentage }}%
+            {% else %}
+              --%
+            {% endif %}
+          </div>
+          <div class="progress-bar-container" role="progressbar"
+               aria-valuenow="{% if site.data.metrics.imposter-metrics.summary.progress_percentage %}{{ site.data.metrics.imposter-metrics.summary.progress_percentage }}{% else %}0{% endif %}"
+               aria-valuemin="0"
+               aria-valuemax="100"
+               aria-label="Progress toward 150 imposter replacement goal">
+            <div class="progress-bar-fill" style="width: {% if site.data.metrics.imposter-metrics.summary.progress_percentage %}{{ site.data.metrics.imposter-metrics.summary.progress_percentage }}{% else %}0{% endif %}%;"></div>
+          </div>
+          <div class="metric-subtext">
+            <small>
+              {% if site.data.metrics.imposter-metrics.summary.total_closed and site.data.metrics.imposter-metrics.summary.goal %}
+                {{ site.data.metrics.imposter-metrics.summary.total_closed }} of {{ site.data.metrics.imposter-metrics.summary.goal }} issues closed
+              {% else %}
+                Target: 150 imposter issues resolved by end of FY26
+              {% endif %}
+            </small>
+          </div>
+        </va-card>
+      </div>
+
+      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--4">
+        <va-card class="metric-card">
+          <h3 id="imposter-open-label">Open Issues</h3>
+          <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="imposter-open" aria-labelledby="imposter-open-label">
+            {% if site.data.metrics.imposter-metrics.summary.total_open %}
+              {{ site.data.metrics.imposter-metrics.summary.total_open }}
+            {% else %}
+              --
+            {% endif %}
+          </div>
+          <div class="metric-subtext">
+            <small>Imposter issues awaiting resolution</small>
+          </div>
+          <div class="data-freshness">
+            {% if site.data.metrics.imposter-metrics.summary.last_updated %}
+              {% assign last_updated = site.data.metrics.imposter-metrics.summary.last_updated | date: "%B %d, %Y" %}
+              <small>Updated {{ last_updated }}</small>
+            {% else %}
+              <small>Data collection in progress</small>
+            {% endif %}
+          </div>
+        </va-card>
+      </div>
+    </div>
+
+    <!-- Quarterly Progress Chart -->
+    <div class="metrics-section">
+      <h3>Quarterly Progress</h3>
+      <p>Shows imposter issues opened vs. closed each quarter to track replacement velocity</p>
+      <div class="data-freshness" id="imposter-quarterly-data-freshness">
+        {% if site.data.metrics.imposter-metrics.summary.last_updated %}
+          {% assign last_updated = site.data.metrics.imposter-metrics.summary.last_updated | date: "%B %d, %Y" %}
+          <small>Data updated {{ last_updated }}</small>
+        {% else %}
+          <small>Data collection in progress</small>
+        {% endif %}
+      </div>
+
+      <va-tabs>
+        <va-tab-item button-text="Graph" target-id="imposter-quarterly-graph-panel"></va-tab-item>
+        <va-tab-item button-text="Table" target-id="imposter-quarterly-table-panel"></va-tab-item>
+
+        <va-tab-panel panel-id="imposter-quarterly-graph-panel" role="tabpanel">
+          <div id="imposter-quarterly-chart"
+               class="chart-container"
+               role="img"
+               aria-label="Bar chart showing quarterly imposter issue activity with issues opened versus issues closed by quarter"
+               tabindex="0">
+            <!-- Chart will be rendered here -->
+          </div>
+        </va-tab-panel>
+
+        <va-tab-panel panel-id="imposter-quarterly-table-panel" role="tabpanel">
+          <va-table id="imposter-quarterly-va-table"
+                    table-title="Imposter Issues by Quarter: Number of issues opened and closed each quarter"
+                    stacked="true"
+                    sortable="true"
+                    table-type="borderless">
+            <va-table-row slot="headers">
+              <span>Quarter</span>
+              <span>Issues Opened</span>
+              <span>Issues Closed</span>
+            </va-table-row>
+            {% if site.data.metrics.imposter-metrics.quarterly %}
+              {% assign sorted_quarterly = site.data.metrics.imposter-metrics.quarterly | sort: 'period' | reverse %}
+              {% for quarter in sorted_quarterly %}
+                {% assign quarter_parts = quarter.period | split: '-' %}
+                {% assign formatted_quarter = quarter_parts[0] | append: ' ' | append: quarter_parts[1] %}
+                <va-table-row>
+                  <span>{{ formatted_quarter }}</span>
+                  <span>{{ quarter.issues_opened }}</span>
+                  <span>{{ quarter.issues_closed }}</span>
+                </va-table-row>
+              {% endfor %}
+            {% else %}
+              <va-table-row>
+                <span colspan="3">No quarterly data currently available</span>
+              </va-table-row>
+            {% endif %}
+          </va-table>
+        </va-tab-panel>
+      </va-tabs>
+    </div>
+
+    <!-- Progress by Component Chart -->
+    <div class="metrics-section">
+      <h3>Progress by Component</h3>
+      <p>Breakdown of imposter issues by component type, showing which components have the most replacement work</p>
+
+      <va-tabs>
+        <va-tab-item button-text="Graph" target-id="imposter-component-graph-panel"></va-tab-item>
+        <va-tab-item button-text="Table" target-id="imposter-component-table-panel"></va-tab-item>
+
+        <va-tab-panel panel-id="imposter-component-graph-panel" role="tabpanel">
+          <div id="imposter-component-chart"
+               class="chart-container"
+               role="img"
+               aria-label="Horizontal bar chart showing imposter issues by component type with open and closed counts"
+               tabindex="0">
+            <!-- Chart will be rendered here -->
+          </div>
+        </va-tab-panel>
+
+        <va-tab-panel panel-id="imposter-component-table-panel" role="tabpanel">
+          <va-table id="imposter-component-va-table"
+                    table-title="Imposter Issues by Component: Open and closed issues for each component type"
+                    stacked="true"
+                    sortable="true"
+                    table-type="borderless"
+                    right-align-cols="1,2,3">
+            <va-table-row slot="headers">
+              <span>Component</span>
+              <span>Open</span>
+              <span>Closed</span>
+              <span>Total</span>
+            </va-table-row>
+            {% if site.data.metrics.imposter-metrics.by_component %}
+              {% for component in site.data.metrics.imposter-metrics.by_component %}
+                <va-table-row>
+                  <span>
+                    {% if component.component == 'unknown' %}
+                      <a href="https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=label%3Ava-imposter+label%3Acollab-cycle-feedback" target="_blank" rel="noopener" title="View all imposter issues - filter manually for those missing component labels">{{ component.component }}*</a>
+                    {% else %}
+                      <a href="https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=label%3Ava-imposter+label%3Acollab-cycle-feedback+label%3A{{ component.component }}" target="_blank" rel="noopener">{{ component.component }}</a>
+                    {% endif %}
+                  </span>
+                  <span>{{ component.open }}</span>
+                  <span>{{ component.closed }}</span>
+                  <span>{{ component.total }}</span>
+                </va-table-row>
+              {% endfor %}
+            {% else %}
+              <va-table-row>
+                <span colspan="4">No component data currently available</span>
+              </va-table-row>
+            {% endif %}
+          </va-table>
+        </va-tab-panel>
+      </va-tabs>
+    </div>
+  </section>
 </div>
 
 <script src="https://d3js.org/d3.v7.min.js"></script>
@@ -576,23 +796,39 @@ document.addEventListener('DOMContentLoaded', function() {
   // Set up tab change listeners to re-render charts when tabs become visible
   setupTabChangeListeners();
   
-  // Add responsive behavior
+  // Add responsive behavior - debounced to prevent excessive re-renders
+  let resizeTimeout;
   window.addEventListener('resize', function() {
-    // Clear existing charts and re-render
-    document.getElementById('quarterly-chart').innerHTML = '';
-    document.getElementById('velocity-chart').innerHTML = '';
-    document.getElementById('top-components-chart').innerHTML = '';
-    document.getElementById('experimental-chart').innerHTML = '';
-    
-    // Clear existing charts only - tables are pre-populated by Jekyll
-    
-    // Re-render with stored data
-    if (MetricsDataManager.hasData()) {
-      renderAllCharts(MetricsDataManager.getIssueData(), MetricsDataManager.getComponentData());
-    } else {
-      loadMetricsData();
-    }
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(function() {
+      // Clear existing charts and re-render
+      document.getElementById('quarterly-chart').innerHTML = '';
+      document.getElementById('velocity-chart').innerHTML = '';
+      document.getElementById('top-components-chart').innerHTML = '';
+      document.getElementById('experimental-chart').innerHTML = '';
+
+      // Clear imposter charts
+      const imposterQuarterlyChart = document.getElementById('imposter-quarterly-chart');
+      const imposterComponentChart = document.getElementById('imposter-component-chart');
+      if (imposterQuarterlyChart) imposterQuarterlyChart.innerHTML = '';
+      if (imposterComponentChart) imposterComponentChart.innerHTML = '';
+
+      // Re-render with stored data
+      if (MetricsDataManager.hasData()) {
+        renderAllCharts(MetricsDataManager.getIssueData(), MetricsDataManager.getComponentData());
+      } else {
+        loadMetricsData();
+      }
+
+      // Re-render imposter charts with stored data (don't re-fetch)
+      if (imposterData) {
+        renderImposterCharts(imposterData);
+      }
+    }, 150);
   });
+
+  // Load imposter metrics data
+  loadImposterData();
 });
 
 // Setup listeners for tab changes to render charts when they become visible
@@ -627,9 +863,12 @@ function renderVisibleChartsIfNeeded() {
     { id: 'quarterly-chart', renderFunc: () => renderQuarterlyChart(MetricsDataManager.getIssueData().quarterly) },
     { id: 'velocity-chart', renderFunc: () => renderVelocityChart(MetricsDataManager.getIssueData().velocity) },
     { id: 'top-components-chart', renderFunc: () => renderTopComponentsChart(MetricsDataManager.getComponentData()) },
-    { id: 'experimental-chart', renderFunc: () => MetricsDataManager.getIssueData().experimental_quarterly && renderExperimentalChart(MetricsDataManager.getIssueData().experimental_quarterly) }
+    { id: 'experimental-chart', renderFunc: () => MetricsDataManager.getIssueData().experimental_quarterly && renderExperimentalChart(MetricsDataManager.getIssueData().experimental_quarterly) },
+    // Imposter charts
+    { id: 'imposter-quarterly-chart', renderFunc: () => imposterData && renderImposterQuarterlyChart(imposterData.quarterly) },
+    { id: 'imposter-component-chart', renderFunc: () => imposterData && renderImposterComponentChart(imposterData.by_component) }
   ];
-  
+
   chartContainers.forEach(({ id, renderFunc }) => {
     const container = document.getElementById(id);
     if (container && isElementVisible(container) && !container.querySelector('svg') && !container.querySelector('.chart-placeholder')) {
@@ -1351,6 +1590,318 @@ function updateDataFreshness(componentSummary) {
   // Apply our custom CSS classes instead of VA utility classes
   freshnessElement.className = `data-freshness ${cssClass}`.trim();
   freshnessElement.innerHTML = `<small>${freshnessText}</small>`;
+}
+
+// Imposter metrics data and chart functions
+let imposterData = null;
+
+function loadImposterData() {
+  fetch('{{ site.baseurl }}/assets/data/metrics/imposter-metrics.json')
+    .then(response => {
+      if (!response.ok) throw new Error('Imposter metrics not available');
+      return response.json();
+    })
+    .then(data => {
+      imposterData = data;
+      renderImposterCharts(data);
+    })
+    .catch(error => {
+      console.log('Imposter metrics not yet available:', error.message);
+      showImposterPlaceholders();
+    });
+}
+
+function showImposterPlaceholders() {
+  const quarterlyChart = document.getElementById('imposter-quarterly-chart');
+  const componentChart = document.getElementById('imposter-component-chart');
+
+  if (quarterlyChart) {
+    quarterlyChart.innerHTML = '<div class="chart-placeholder">Imposter quarterly chart will be available once data collection is set up</div>';
+  }
+  if (componentChart) {
+    componentChart.innerHTML = '<div class="chart-placeholder">Imposter component chart will be available once data collection is set up</div>';
+  }
+}
+
+function renderImposterCharts(data) {
+  if (data.quarterly && data.quarterly.length > 0) {
+    renderImposterQuarterlyChart(data.quarterly);
+  }
+  if (data.by_component && data.by_component.length > 0) {
+    renderImposterComponentChart(data.by_component);
+  }
+}
+
+function renderImposterQuarterlyChart(data) {
+  if (!data || data.length === 0) {
+    showImposterPlaceholders();
+    return;
+  }
+
+  const container = document.getElementById('imposter-quarterly-chart');
+  if (!container) return;
+
+  // Clear any existing content before rendering
+  container.innerHTML = '';
+
+  // Don't render if container is hidden (in inactive tab)
+  if (!isElementVisible(container)) return;
+
+  const containerWidth = container.clientWidth;
+  if (containerWidth === 0) return; // Container not visible yet
+
+  // Responsive margins based on screen size
+  const margin = {
+    top: 20,
+    right: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 60 : 80,
+    bottom: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 50 : 60,
+    left: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 50 : 60
+  };
+
+  const width = containerWidth - margin.left - margin.right;
+  const height = (containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 300 : 400) - margin.top - margin.bottom;
+
+  const svg = d3.select('#imposter-quarterly-chart')
+    .append('svg')
+    .attr('width', width + margin.left + margin.right)
+    .attr('height', height + margin.top + margin.bottom);
+
+  const g = svg.append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // Format quarter labels
+  const formatQuarter = (period) => {
+    const [year, quarter] = period.split('-');
+    return `${year} ${quarter}`;
+  };
+
+  // Setup scales
+  const x0 = d3.scaleBand()
+    .domain(data.map(d => d.period))
+    .range([0, width])
+    .padding(0.1);
+
+  const x1 = d3.scaleBand()
+    .domain(['opened', 'closed'])
+    .range([0, x0.bandwidth()])
+    .padding(0.05);
+
+  const y = d3.scaleLinear()
+    .domain([0, d3.max(data, d => Math.max(d.issues_opened, d.issues_closed))])
+    .range([height, 0]);
+
+  // Color scale - using VA accessible colors
+  const color = d3.scaleOrdinal()
+    .domain(['opened', 'closed'])
+    .range(['#0071bb', '#112e51']); // VA primary blue and dark blue
+
+  // Add axes with mobile-optimized spacing
+  const tickInterval = containerWidth < CHART_MOBILE_BREAKPOINT ? 4 : containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 2 : 1;
+  const tickValues = data.filter((d, i) => i % tickInterval === 0 || i === data.length - 1)
+    .map(d => d.period);
+
+  const xAxis = g.append('g')
+    .attr('transform', `translate(0,${height})`)
+    .call(d3.axisBottom(x0)
+      .tickValues(tickValues)
+      .tickFormat(formatQuarter)
+    );
+
+  // Rotate x-axis labels for better readability
+  xAxis.selectAll('text')
+    .style('text-anchor', 'end')
+    .attr('dx', '-.8em')
+    .attr('dy', '.15em')
+    .attr('transform', 'rotate(-45)')
+    .style('font-size', containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 'var(--vads-font-size-body-small)' : 'var(--vads-font-size-body)');
+
+  g.append('g')
+    .call(d3.axisLeft(y));
+
+  // Add axis labels
+  g.append('text')
+    .attr('transform', 'rotate(-90)')
+    .attr('y', 0 - margin.left)
+    .attr('x', 0 - (height / 2))
+    .attr('dy', '1em')
+    .style('text-anchor', 'middle')
+    .text('Number of Issues');
+
+  g.append('text')
+    .attr('transform', `translate(${width / 2}, ${height + margin.bottom - 10})`)
+    .style('text-anchor', 'middle')
+    .text('Quarter');
+
+  // Add grouped bars
+  const quarters = g.selectAll('.quarter')
+    .data(data)
+    .enter().append('g')
+    .attr('class', 'quarter')
+    .attr('transform', d => `translate(${x0(d.period)},0)`);
+
+  quarters.selectAll('rect')
+    .data(d => [
+      { type: 'opened', value: d.issues_opened },
+      { type: 'closed', value: d.issues_closed }
+    ])
+    .enter().append('rect')
+    .attr('x', d => x1(d.type))
+    .attr('y', d => y(d.value))
+    .attr('width', x1.bandwidth())
+    .attr('height', d => height - y(d.value))
+    .attr('fill', d => color(d.type));
+
+  // Add legend
+  const legend = g.append('g')
+    .attr('transform', `translate(${width - 120}, 10)`);
+
+  const legendData = ['opened', 'closed'];
+  const legendItems = legend.selectAll('.legend-item')
+    .data(legendData)
+    .enter().append('g')
+    .attr('class', 'legend-item')
+    .attr('transform', (d, i) => `translate(0, ${i * 20})`);
+
+  legendItems.append('rect')
+    .attr('width', 18)
+    .attr('height', 18)
+    .attr('fill', d => color(d));
+
+  legendItems.append('text')
+    .attr('x', 25)
+    .attr('y', 9)
+    .attr('dy', '0.35em')
+    .style('text-transform', 'capitalize')
+    .text(d => d);
+}
+
+function renderImposterComponentChart(data) {
+  if (!data || data.length === 0) {
+    return;
+  }
+
+  const container = document.getElementById('imposter-component-chart');
+  if (!container) return;
+
+  // Clear any existing content before rendering
+  container.innerHTML = '';
+
+  // Don't render if container is hidden (in inactive tab)
+  if (!isElementVisible(container)) return;
+
+  const containerWidth = container.clientWidth;
+  if (containerWidth === 0) return; // Container not visible yet
+
+  // Take top 10 components for readability
+  const topComponents = data.slice(0, 10);
+
+  // Responsive margins based on screen size
+  const margin = {
+    top: 20,
+    right: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 30 : 40,
+    bottom: 40,
+    left: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 120 : 150
+  };
+
+  const width = containerWidth - margin.left - margin.right;
+  const barHeight = 25;
+  const height = topComponents.length * barHeight * 1.5;
+
+  const svg = d3.select('#imposter-component-chart')
+    .append('svg')
+    .attr('width', width + margin.left + margin.right)
+    .attr('height', height + margin.top + margin.bottom);
+
+  const g = svg.append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // Setup scales
+  const y = d3.scaleBand()
+    .domain(topComponents.map(d => d.component))
+    .range([0, height])
+    .padding(0.2);
+
+  const x = d3.scaleLinear()
+    .domain([0, d3.max(topComponents, d => d.total)])
+    .range([0, width]);
+
+  // Color scale
+  const color = d3.scaleOrdinal()
+    .domain(['open', 'closed'])
+    .range(['#fac922', '#2e8540']); // Yellow for open, green for closed
+
+  // Add axes
+  g.append('g')
+    .call(d3.axisLeft(y))
+    .selectAll('text')
+    .style('font-size', containerWidth < CHART_RESPONSIVE_BREAKPOINT ? '11px' : '12px');
+
+  g.append('g')
+    .attr('transform', `translate(0,${height})`)
+    .call(d3.axisBottom(x).ticks(5));
+
+  // Add stacked bars for each component
+  topComponents.forEach(d => {
+    const yPos = y(d.component);
+
+    // Closed bar (green) - starts at 0
+    g.append('rect')
+      .attr('x', 0)
+      .attr('y', yPos)
+      .attr('width', x(d.closed))
+      .attr('height', y.bandwidth())
+      .attr('fill', color('closed'));
+
+    // Open bar (yellow) - starts after closed
+    g.append('rect')
+      .attr('x', x(d.closed))
+      .attr('y', yPos)
+      .attr('width', x(d.open))
+      .attr('height', y.bandwidth())
+      .attr('fill', color('open'));
+
+    // Add total count label
+    g.append('text')
+      .attr('x', x(d.total) + 5)
+      .attr('y', yPos + y.bandwidth() / 2)
+      .attr('dy', '0.35em')
+      .style('font-size', '11px')
+      .text(d.total);
+  });
+
+  // Add legend
+  const legend = g.append('g')
+    .attr('transform', `translate(${width - 100}, -10)`);
+
+  const legendData = [
+    { label: 'closed', color: color('closed') },
+    { label: 'open', color: color('open') }
+  ];
+
+  legendData.forEach((d, i) => {
+    const legendItem = legend.append('g')
+      .attr('transform', `translate(${i * 60}, 0)`);
+
+    legendItem.append('rect')
+      .attr('width', 12)
+      .attr('height', 12)
+      .attr('fill', d.color);
+
+    legendItem.append('text')
+      .attr('x', 16)
+      .attr('y', 6)
+      .attr('dy', '0.35em')
+      .style('font-size', '11px')
+      .style('text-transform', 'capitalize')
+      .text(d.label);
+  });
+
+  // Add axis label
+  g.append('text')
+    .attr('transform', `translate(${width / 2}, ${height + 35})`)
+    .style('text-anchor', 'middle')
+    .style('font-size', '12px')
+    .text('Number of Issues');
 }
 
 </script>

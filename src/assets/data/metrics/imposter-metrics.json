@@ -1,0 +1,218 @@
+{
+  "quarterly": [
+    {
+      "period": "2024-Q2",
+      "issues_opened": 19,
+      "issues_closed": 6
+    },
+    {
+      "period": "2024-Q3",
+      "issues_opened": 13,
+      "issues_closed": 8
+    },
+    {
+      "period": "2024-Q4",
+      "issues_opened": 20,
+      "issues_closed": 7
+    },
+    {
+      "period": "2025-Q1",
+      "issues_opened": 30,
+      "issues_closed": 3
+    },
+    {
+      "period": "2025-Q2",
+      "issues_opened": 12,
+      "issues_closed": 10
+    },
+    {
+      "period": "2025-Q3",
+      "issues_opened": 16,
+      "issues_closed": 15
+    },
+    {
+      "period": "2025-Q4",
+      "issues_opened": 20,
+      "issues_closed": 10
+    },
+    {
+      "period": "2026-Q1",
+      "issues_opened": 0,
+      "issues_closed": 5
+    }
+  ],
+  "by_component": [
+    {
+      "component": "va-radio",
+      "open": 11,
+      "closed": 5,
+      "total": 16
+    },
+    {
+      "component": "va-button-pair",
+      "open": 6,
+      "closed": 7,
+      "total": 13
+    },
+    {
+      "component": "va-button",
+      "open": 3,
+      "closed": 7,
+      "total": 10
+    },
+    {
+      "component": "va-select",
+      "open": 7,
+      "closed": 3,
+      "total": 10
+    },
+    {
+      "component": "va-file-input",
+      "open": 9,
+      "closed": 1,
+      "total": 10
+    },
+    {
+      "component": "va-link-action",
+      "open": 0,
+      "closed": 10,
+      "total": 10
+    },
+    {
+      "component": "va-checkbox",
+      "open": 4,
+      "closed": 5,
+      "total": 9
+    },
+    {
+      "component": "va-statement-of-truth",
+      "open": 1,
+      "closed": 7,
+      "total": 8
+    },
+    {
+      "component": "va-text-input",
+      "open": 5,
+      "closed": 2,
+      "total": 7
+    },
+    {
+      "component": "va-breadcrumb",
+      "open": 0,
+      "closed": 7,
+      "total": 7
+    },
+    {
+      "component": "va-card",
+      "open": 3,
+      "closed": 2,
+      "total": 5
+    },
+    {
+      "component": "va-alert",
+      "open": 3,
+      "closed": 1,
+      "total": 4
+    },
+    {
+      "component": "va-memorable-date",
+      "open": 3,
+      "closed": 0,
+      "total": 3
+    },
+    {
+      "component": "va-icon",
+      "open": 1,
+      "closed": 2,
+      "total": 3
+    },
+    {
+      "component": "va-accordion",
+      "open": 2,
+      "closed": 0,
+      "total": 2
+    },
+    {
+      "component": "va-link",
+      "open": 1,
+      "closed": 1,
+      "total": 2
+    },
+    {
+      "component": "va-date",
+      "open": 1,
+      "closed": 1,
+      "total": 2
+    },
+    {
+      "component": "va-textarea",
+      "open": 1,
+      "closed": 1,
+      "total": 2
+    },
+    {
+      "component": "va-tabs",
+      "open": 1,
+      "closed": 0,
+      "total": 1
+    },
+    {
+      "component": "va-alert-expandable",
+      "open": 1,
+      "closed": 0,
+      "total": 1
+    },
+    {
+      "component": "va-additional-info",
+      "open": 0,
+      "closed": 1,
+      "total": 1
+    },
+    {
+      "component": "va-search-input",
+      "open": 1,
+      "closed": 0,
+      "total": 1
+    },
+    {
+      "component": "va-progress-bar",
+      "open": 1,
+      "closed": 0,
+      "total": 1
+    },
+    {
+      "component": "va-tag",
+      "open": 1,
+      "closed": 0,
+      "total": 1
+    },
+    {
+      "component": "va-table",
+      "open": 1,
+      "closed": 0,
+      "total": 1
+    },
+    {
+      "component": "va-process-list",
+      "open": 0,
+      "closed": 1,
+      "total": 1
+    }
+  ],
+  "summary": {
+    "total_open": 67,
+    "total_closed": 64,
+    "total_issues": 131,
+    "goal": 150,
+    "progress_percentage": 43,
+    "closed_trend": {
+      "direction": "down",
+      "percentage": 50,
+      "value": -5
+    },
+    "last_updated": "2026-01-29T19:13:21.305Z"
+  },
+  "generated_at": "2026-01-29T19:13:21.305Z",
+  "data_source": "va.gov-team repository",
+  "description": "Imposter component replacement tracking for FY26 KR"
+}
