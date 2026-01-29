@@ -40,7 +40,8 @@ anchors:
 
 ### When to use Card Status
 - **Framing a call to action.** Card Status highlights and frames a specific call to action or decision a user needs to take.
-- **Conveying status.** Card Status contains time-sensitive information with a status such as appointments, claims, or missing required information.
+- **Conveying status.** Card Status contains information with a status such as appointments, claims, or missing required information.
+- **Giving feedback for data within the card** Card Status allows for an error state that conveys immediate feedback for users to correct their data.
 
 ### When to consider something else
 - **When you need flexible content structure.** Use the [Card component]({{ site.baseurl }}/components/card) when you need full control over the card's content and structure, rather than working with predefined props.
@@ -136,4 +137,4 @@ The Card Status component handles most status and error accessibility automatica
 - [Link - Action]({{ site.baseurl }}/components/link/action)
 - [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/)
 
-{% include _component-checklist.html component_name=page.web-component %}
+{% include _component-checklist.html component_name="va-card-status" %}
