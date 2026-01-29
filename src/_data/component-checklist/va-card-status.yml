@@ -1,0 +1,47 @@
+# Global completion tracking
+web-platform-completed: 01-29-2026
+mobile-app-platform-completed: null
+
+maturity:
+  - name: guidance
+    web-score: true
+    mobile-app-score: false
+  - name: research
+    web-score: false
+    mobile-app-score: false
+  - name: stability
+    web-score: false
+    mobile-app-score: false
+  - name: adoption
+    web-score: false
+    mobile-app-score: false
+accessibility:
+code-assets:
+  - name: variations
+    web-score: true
+    mobile-app-score: false
+  - name: responsive
+    web-score: true
+    mobile-app-score: false
+  - name: interactive-states
+    web-score: true
+    mobile-app-score: false
+  - name: tokens
+    web-score: false
+    mobile-app-score: false
+  - name: internationalization
+    web-score: false
+    mobile-app-score: false
+visual-assets:
+  - name: variations
+    web-score: true
+    mobile-app-score: false
+  - name: responsive
+    web-score: true
+    mobile-app-score: false
+  - name: interactive-states
+    web-score: true
+    mobile-app-score: false
+  - name: tokens
+    web-score: false
+    mobile-app-score: false
