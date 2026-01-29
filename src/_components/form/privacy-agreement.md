@@ -52,7 +52,7 @@ This component is used on the [Review page]({{ site.baseurl }}/patterns/help-use
 
 ### Placement
 
-This component appears at the bottom of a form, above the link to "Finish this application later" which is directly above the [button pair]({{ site.baseurl }}/components/button/button-pair) for submitting the form.
+This component appears at the bottom of a form, above the link to "Finish this application later" which is directly above the [Button group]({{ site.baseurl }}/components/button/button-group) for submitting the form.
 
 ### Instances of this component in production
 

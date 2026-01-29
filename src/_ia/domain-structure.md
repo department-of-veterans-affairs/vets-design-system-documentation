@@ -16,11 +16,11 @@ intro-text: A domain name is the unique name for a website and serves as the sit
 
 VA’s domain name is va.gov. All public-facing VA websites and services must reside on the va.gov domain. We utilize subdomains and subdirectories to further structure information within the va.gov domain. How we structure information within the va.gov domain can impact technical costs, user experience, content management, and search engine optimization (SEO).
 
-**Note:** In rare exceptions, we may create a separate top-level domain (such as [www.veteranscrisisline.net/](www.veteranscrisisline.net/)).
+**Note:** In rare exceptions, we may create a separate top-level domain (such as [www.veteranscrisisline.net/](https://www.veteranscrisisline.net/)).
 
 ### Subdirectory
 
-A subdirectory organizes the content and tools of a site into different sections or categories. A subdirectory appears to the right of the domain in a URL, such as “[www.va.gov/health-care/](www.va.gov/health-care/),” and keeps the content and tools within the main website. Most VA content and tools belong within a subdirectory of the main va.gov domain.
+A subdirectory organizes the content and tools of a site into different sections or categories. A subdirectory appears to the right of the domain in a URL, such as "[www.va.gov/health-care/](https://www.va.gov/health-care/)," and keeps the content and tools within the main website. Most VA content and tools belong within a subdirectory of the main va.gov domain.
 
 We further structure subdirectories into deeper levels of subdirectories and pages to create an appropriate hierarchy for and classification of all information. All subdirectories must follow our [URL standards]({{ site.baseurl }}/ia/url-standards).
 

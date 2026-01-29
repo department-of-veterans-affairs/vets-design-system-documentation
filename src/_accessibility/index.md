@@ -47,7 +47,7 @@ Manually test your product:
     - iOS with Safari using VoiceOver (Mobile)
     - Windows 11 with Chrome using JAWS (Desktop)
 - Conduct automated testing with [axe DevTools by Deque](https://www.deque.com/axe/)
-- [Evaluate how Design System components](accessibility-testing-for-design-system-components.md) are used to ensure they aren’t appearing in an unanticipated combination or context within a page.
+- [Evaluate how Design System components]({{ site.baseurl }}/accessibility/accessibility-testing-for-design-system-components) are used to ensure they aren't appearing in an unanticipated combination or context within a page.
 
 ### Research
 

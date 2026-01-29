@@ -119,7 +119,7 @@ anchors:
 
 ### How this component works
 
-This web component provides access to the full suite of U.S. Web Design System iconography as well as additions specific to the VA. The [list of available icons is a foundational element]({{ site.baseurl }}/foundation/icons) of the Design System.
+This web component provides access to the full suite of U.S. Web Design System iconography as well as additions specific to the VA. The list of available icons is shown [in the preview above](#preview) and is a foundational element of the Design System.
 
 ### Choosing between icons
 
