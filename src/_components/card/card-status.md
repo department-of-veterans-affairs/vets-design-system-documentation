@@ -29,11 +29,11 @@ anchors:
 
 ### With Label
 
-{% include storybook-preview.html story="components-va-card-status---with-label" link_text="va-card-status with label" %}
+{% include storybook-preview.html story="components-va-card-status---missing-content-state" link_text="va-card-status with label" %}
 
 ### With Error
 
-{% include storybook-preview.html story="components-va-card-status---with-error" link_text="va-card-status with error" %}
+{% include storybook-preview.html story="components-va-card-status---error-state" link_text="va-card-status with error" %}
 
 ## Usage
 
@@ -45,7 +45,7 @@ anchors:
 ### When to consider something else
 - **When you need flexible content structure.** Use the [Card component]({{ site.baseurl }}/components/card) when you need full control over the card's content and structure, rather than working with predefined props.
 - **When status isn't the focus.** Use the [Card component]({{ site.baseurl }}/components/card) for informational cards where status communication isn't the primary purpose.
-- **When you need multiple calls to actions.** Use the [Card component]({{ site.baseurl }}/components/card) if you need more than one call-to-action (Card allows up to 3 CTAs).
+- **When you need multiple calls to action.** Use the [Card component]({{ site.baseurl }}/components/card) if you need more than one call-to-action (Card allows up to 3 CTAs).
 
 
 ### How this component works
@@ -53,7 +53,10 @@ anchors:
 **Key difference from Card:** While [Card]({{ site.baseurl }}/components/card) is a flexible container where teams build and pass in their own content, Card Status is a structured component with required props that enforce a consistent pattern for status-driven scenarios.
 
 #### Default
-<img src="{{ site.baseurl }}/images/components/card-status/card-status.png" alt="Default card status" style="width:100%;"/>
+
+
+{% include component-example.html alt="The default Card Status shows a heading, body text, and a link" file="images/components/card-status/card-status.png" caption="The default Card Status shows a heading, body text, and a link. This is a good example of when all required information has been provided." width="480" %}
+
 
 **Required props:**
 - `heading` - The card title
@@ -65,15 +68,18 @@ The component automatically handles the layout, accessibility, and visual treatm
 
 #### Status display
 
-<img src="{{ site.baseurl }}/images/components/card-status/card-status-with-tag.png" alt="Card status with status Tag" style="width:100%;"/>
+{% include component-example.html alt="Card Status shows a status label, a heading, body text, and a link" file="/images/components/card-status/card-status-with-tag.png" caption="The Card Status with a label can be used to indicate when missing information must be provided by the user. The Card Status in this case shows a status label, heading, body text, and a link." width="480" %}
 
-The `status` prop uses [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component to display status. The component programmatically announces the status to screen readers along with the card header. See [accessibility considerations](#accessibility-considerations) for implementation details.
+
+The `status` prop uses the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component to display status. The component programmatically announces the status to screen readers along with the card header. See [accessibility considerations](#accessibility-considerations) for implementation details.
 
 #### Error state
 
 <img src="{{ site.baseurl }}/images/components/card-status/card-status-with-error.png" alt="Card Status with error" style="width:100%;"/>
 
-When validation errors occur (e.g., a user tries to continue without required data), Card Status follows VADS error styling and visually displays inline error messages that automatically announce to screen readers. The error message clearly states what's wrong and how to fix it.
+{% include component-example.html alt="Card Status with an error state, showing a status label, a heading, error text, body text, and a link. The card is wrapped in a red border to indicate an error." file="/images/components/card-status/card-status-with-error.png" caption="Card Status can go into an error state. This is triggered when a user tries to proceed in a form flow without providing the needed information. The card contents contain a status label, heading, body text, an error message, and a link. After the user provides the missing information, the card returns to the default state." width="480" %}
+
+When validation errors occur (e.g., a user tries to continue without required data), Card Status follows VADS error styling and displays inline error messages that automatically announce to screen readers. The error message clearly states what's wrong and how to fix it.
 
 ## Behavior
 
@@ -113,7 +119,7 @@ The Card Status component handles most status and error accessibility automatica
 **Status announcements:**
 - Status uses the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component with `role="status"`
 - Includes visually hidden "Status:" prefix for screen reader context
-- Component programmatically associates status with the card heading
+- The component programmatically associates status with the card heading
 
 **Error handling:**
 - Error messages wrapped in `role="alert"` for automatic announcement
