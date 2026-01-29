@@ -18,7 +18,7 @@
 
 const fs = require('fs').promises;
 const path = require('path');
-const { execSync, execFileSync } = require('child_process');
+const { execFileSync } = require('child_process');
 
 // Parse command-line arguments
 const args = process.argv.slice(2);
