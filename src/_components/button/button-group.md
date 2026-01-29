@@ -58,7 +58,7 @@ type="secondary"
 ### Behavior
 
 - **Avoid using too many buttons on a page.** Pages with many buttons may signal that the page content needs to be split up.
-- **Arrows are reserved.** Arrow icons should only appear for the [Back/Continue](#backcontinue) button group.
+
 
 ### Mobile behavior
 

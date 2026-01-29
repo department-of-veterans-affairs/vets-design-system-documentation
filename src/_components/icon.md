@@ -195,8 +195,8 @@ By default, the web component icon will display as `--vads-color-base` which is 
 
 Some icons may have specifc placement guidance defined here.
 
-- **In components that expand/collapse content vertically**, icons should be aligned to the top-left when leading text and aligned to the center-right when trailing text.
-  - Examples: [Additional Info](https://design.va.gov/components/additional-info) and [Accordion](https://design.va.gov/components/accordion)
+- **In components that expand and collapse content vertically**, icons should be aligned to the top-left when leading text and aligned to the center-right when trailing text.
+  - Examples: [Additional Info](https://design.va.gov/components/additional-info) and [Accordion - Icon in Header](https://design.va.gov/components/accordion)
 - **Filled chevrons like *expand_right_circle* should always lead text.**
 
 ## Accessibility considerations
