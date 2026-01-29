@@ -32,7 +32,7 @@ anchors:
   <va-table-row>
     <span>Advance notification</span>
     <span><b>Upcoming site maintenance</b></span>
-    <span>We’ll be doing some work on VA.gov. During that time, you won’t be able to sign in or use tools.<br> <b>Start time:</b>Day, Date, Year, 0:00 a.m. ET<br><b>End time:</b>Day, Date, Year, 0:00 a.m. ET</span>
+    <span>We’ll be doing some work on VA.gov. During that time, you won’t be able to sign in or use tools.<br> <b>Start time:</b> Day, Date, Year, 0:00 a.m. ET<br><b>End time:</b>Day, Date, Year, 0:00 a.m. ET</span>
     <span><a href="{{ site.baseurl }}/components/banner/maintenance#warning-upcoming-maintenance">Maintenance banner</a></span>
     <span>Before maintenance</span>
   </va-table-row>
