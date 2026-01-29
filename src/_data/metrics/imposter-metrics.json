@@ -38,7 +38,7 @@
     {
       "period": "2026-Q1",
       "issues_opened": 0,
-      "issues_closed": 5
+      "issues_closed": 0
     }
   ],
   "by_component": [
@@ -207,12 +207,12 @@
     "progress_percentage": 43,
     "closed_trend": {
       "direction": "down",
-      "percentage": 50,
-      "value": -5
+      "percentage": 100,
+      "value": -10
     },
-    "last_updated": "2026-01-29T19:13:21.305Z"
+    "last_updated": "2026-01-29T19:22:37.729Z"
   },
-  "generated_at": "2026-01-29T19:13:21.305Z",
+  "generated_at": "2026-01-29T19:22:37.729Z",
   "data_source": "va.gov-team repository",
   "description": "Imposter component replacement tracking for FY26 KR"
 }
