@@ -7,7 +7,6 @@ github-title: va-card-status
 research-title: card-status
 figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=44355-6605&t=CELULnAK5Ke87Rc1-1
 intro-text: "Card Status is a structured card that requires specific information to enforce a consistent pattern for status-driven scenarios."
-status: use-with-caution-candidate
 web-component: va-card-status
 web: true
 mobile-app: false
