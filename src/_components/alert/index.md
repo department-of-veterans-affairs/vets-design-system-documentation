@@ -243,7 +243,7 @@ Displaying multiple alerts should be avoided. However, when you need to display 
 * Slim alerts related to a form field or section should be placed below the label, legend, or section header.
 * The Info variation of the Slim alert can be placed between sections.
 * Save-in-progress success and error Slim alerts should be placed directly below the Back/Continue button pair. This placement allows for the page content to remain fixed in the same position when the alert updates dynamically.
-* Slim informational or warning alerts should be placed below the related information and above the CTA.
+* Slim informational or warning alerts should be placed below the related information and above the call-to-action (CTA).
 
 #### Mobile app
 
