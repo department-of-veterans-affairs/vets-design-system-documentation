@@ -11,7 +11,7 @@ anchors:
   - anchor: Empty state
 ---
 
-**Note:** The Help users to recover from errors pattern has guidance on when to consider instructing the person to call the VA.gov help desk and when to add other "next-step" calls to action.
+**Note:** The Help users to recover from errors pattern has guidance on when to consider instructing the person to call us for VA.gov technical support and when to add other "next-step" calls to action.
 
 [Learn more in the Help users to recover from errors pattern]({{ site.baseurl }}/patterns/help-users-to/recover-from-errors#next-step-calls-to-action)
 
@@ -19,9 +19,9 @@ anchors:
 
 Variations in messaging depend on these factors:
 
-- Whether the downtime is scheduled/expected
-- If scheduled, when the application/claim/form will be available again (precise timestamp if known, or a general estimate if not)
-- If unexpected, a general estimate of when the application/claim/form will be available again
+- Whether the downtime is scheduled or expected
+- If scheduled, when the application, claim, or form will be available again (precise timestamp if known, or a general estimate if not)
+- If unexpected, a general estimate of when the application, claim, or form will be available again
 
 <va-table>
   <va-table-row>
@@ -37,7 +37,7 @@ Variations in messaging depend on these factors:
     <span>Entire site isn’t accessible (site-wide scheduled downtime)</span>
     <span><b>Site maintenance</b></span>
     <span>We’re working on VA.gov right now. If you have trouble signing in or using tools, check back after we’re finished. Thank you for your patience.<br><br>
-      <b>Date:</b> Month Day, Year<br><b>Start/End time:</b> 0:00 a.m. to 0:00 a.m. ET</span>
+      <b>Date:</b> Month Day, Year<br><b>Start and end time:</b> 0:00 a.m. to 0:00 a.m. ET</span>
     <span>N/A</span>
     <span><a href="{{ site.baseurl }}/foundation/typography">Plain text</a></span>
     <span>N/A</span>
@@ -46,7 +46,7 @@ Variations in messaging depend on these factors:
   <va-table-row>
     <span>Entire site isn’t accessible (expected)</span>
     <span><b>VA.gov isn’t working right now</b></span>
-    <span>We’re sorry. Something went wrong on our end. Refresh this page or try again later.</span>
+    <span>We’re sorry. Something went wrong in our system. Refresh this page or try again later.</span>
     <span>N/A</span>
     <span><a href="{{ site.baseurl }}/foundation/typography">Plain text</a></span>
     <span>N/A</span>
@@ -99,8 +99,8 @@ Variations in messaging depend on these factors:
   </va-table-row>
   <va-table-row>
     <span>Unable to complete a task the person initiated, can’t proceed</span>
-    <span><b>There was a problem</b></span>
-    <span>We’re sorry. Something went wrong. Try again later.</span>
+    <span><b>Something went wrong</b></span>
+    <span>We’re sorry. [Explain what went wrong, if known]. Try again later.</span>
     <span>N/A</span>
     <span><a href="{{ site.baseurl }}/components/alert#error-alert">Alert</a></span>
     <span>Error</span>
@@ -108,8 +108,8 @@ Variations in messaging depend on these factors:
   </va-table-row>
   <va-table-row>
     <span>Unable to complete a task the person initiated, can still proceed</span>
-    <span><b>There was a problem</b></span>
-    <span>We’re sorry. Something went wrong. You can try again now or move on to the next step. You can come back later to complete this step.</span>
+    <span><b>Something went wrong</b></span>
+    <span>We’re sorry. [Explain what went wrong, if known]. You can try again now or move on to the next step. You can come back later to complete this step.</span>
     <span>N/A</span>
     <span><a href="{{ site.baseurl }}/components/alert#warning-alert">Alert</a></span>
     <span>Warning</span>
@@ -199,8 +199,8 @@ Variations in messaging depend on these factors:
   </va-table-row>
   <va-table-row>
     <span>(Application) Person isn’t currently enrolled in a benefit (ex. not enrolled in Post-9/11 GI Bill benefits)</span>
-    <span><b>You’re not enrolled in this benefit</b></span>
-    <span>Our records show that you're not signed up for this benefit. If you think you’re eligible for this benefit, you can apply now.</span>
+    <span><b>You don't currently receive this benefit</b></span>
+    <span>If you think you’re eligible for this benefit, you can apply now.</span>
     <span>Check your eligibility (button 1); Apply now (button 2)</span>
     <span><a href="{{ site.baseurl }}/foundation/typography">Plain text</a></span>
     <span>N/A</span>
