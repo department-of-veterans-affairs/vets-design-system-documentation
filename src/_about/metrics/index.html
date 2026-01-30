@@ -704,7 +704,7 @@ mime_type: text/html
                     {% if component.component == 'unknown' %}
                       {{ component.component }}* <small>(issues without component-specific labels)</small>
                     {% else %}
-                      <a href="https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=label%3Ava-imposter+label%3Acollab-cycle-feedback+label%3A{{ component.component }}" target="_blank" rel="noopener">{{ component.component }}</a>
+                      <a href="https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=label%3Ava-imposter+label%3Acollab-cycle-feedback+label%3A{{ component.component }}" target="_blank" rel="noopener" aria-label="{{ component.component }} issues on GitHub (opens in new tab)">{{ component.component }}</a>
                     {% endif %}
                   </span>
                   <span>{{ component.open }}</span>
@@ -1782,29 +1782,41 @@ function loadImposterData() {
 }
 
 function showImposterError(message) {
-  const quarterlyChart = document.getElementById('imposter-quarterly-chart');
-  const componentChart = document.getElementById('imposter-component-chart');
-
   const errorHtml = `<div class="chart-placeholder chart-error">${message}</div>`;
 
-  if (quarterlyChart) {
-    quarterlyChart.innerHTML = errorHtml;
-  }
-  if (componentChart) {
-    componentChart.innerHTML = errorHtml;
-  }
+  // Update all 4 imposter chart containers (Phase 1 + Phase 2)
+  const chartIds = [
+    'imposter-quarterly-chart',
+    'imposter-component-chart',
+    'imposter-instances-component-chart',
+    'imposter-instances-app-chart'
+  ];
+
+  chartIds.forEach(id => {
+    const chart = document.getElementById(id);
+    if (chart) {
+      chart.innerHTML = errorHtml;
+    }
+  });
 }
 
 function showImposterPlaceholders() {
-  const quarterlyChart = document.getElementById('imposter-quarterly-chart');
-  const componentChart = document.getElementById('imposter-component-chart');
+  const placeholderHtml = '<div class="chart-placeholder">Chart will be available once data collection is set up</div>';
 
-  if (quarterlyChart) {
-    quarterlyChart.innerHTML = '<div class="chart-placeholder">Imposter quarterly chart will be available once data collection is set up</div>';
-  }
-  if (componentChart) {
-    componentChart.innerHTML = '<div class="chart-placeholder">Imposter component chart will be available once data collection is set up</div>';
-  }
+  // Update all 4 imposter chart containers (Phase 1 + Phase 2)
+  const chartIds = [
+    'imposter-quarterly-chart',
+    'imposter-component-chart',
+    'imposter-instances-component-chart',
+    'imposter-instances-app-chart'
+  ];
+
+  chartIds.forEach(id => {
+    const chart = document.getElementById(id);
+    if (chart) {
+      chart.innerHTML = placeholderHtml;
+    }
+  });
 }
 
 function renderImposterCharts(data) {

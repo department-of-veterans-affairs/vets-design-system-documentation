@@ -308,21 +308,19 @@ jobs:
             echo "ℹ️ governance-metrics.csv not found (may not be generated in current run)"
           fi
 
-          # Check imposter metrics in both locations
+          # Check imposter metrics in both locations (non-blocking since collection has continue-on-error)
           if [ -f "src/assets/data/metrics/imposter-metrics.json" ]; then
             echo "✅ imposter-metrics.json generated successfully in assets"
             echo "File size: $(du -h src/assets/data/metrics/imposter-metrics.json)"
           else
-            echo "❌ imposter-metrics.json not found in assets"
-            exit 1
+            echo "ℹ️ imposter-metrics.json not found in assets (imposter metrics collection may have been skipped)"
           fi
 
           if [ -f "src/_data/metrics/imposter-metrics.json" ]; then
             echo "✅ imposter-metrics.json also generated for Jekyll"
             echo "File size: $(du -h src/_data/metrics/imposter-metrics.json)"
           else
-            echo "❌ imposter-metrics.json not found for Jekyll"
-            exit 1
+            echo "ℹ️ imposter-metrics.json not found for Jekyll (imposter metrics collection may have been skipped)"
           fi
 
       - name: Check for changes
