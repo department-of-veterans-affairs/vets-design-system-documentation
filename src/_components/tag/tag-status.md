@@ -24,7 +24,7 @@ Status Tags use semantic colors to convey meaning and priority, aligning with th
 
 ### Informational status
 
-{% include storybook-preview.html story="components-va-tag-status--info" link_text="va-tag-status info" %}
+{% include storybook-preview.html story="components-va-tag-status--default" link_text="va-tag-status info" %}
 
 Used to provide helpful information or something that warrants a user’s attention. Not used for negative consequences.
 
@@ -64,13 +64,13 @@ Used to indicate critical issues, failure states, or items that require immediat
 * **Consider the Eyebrow Header style as an alternative.** The [Eyebrow](https://design.va.gov/foundation/typography#eyebrow) Header is a short, descriptive title placed above the main heading to provide additional context and maintain consistency.
 * **When lack of change in content makes tags ineffective.** If content updates are infrequent users may not notice or expect "new" tags. Use tags to call attention to a change in status.
 * **For system-wide alerts.** Use the [Alert]({{ site.baseurl }}/components/alert/) for page-level or application-level messaging that requires more context or action from you.
-* **For temporary feedback.** Consider using the [Dismissable Alert]({{ site.baseurl }}/components/alert/#dismissible) for web components and the [Snackbar]({{ site.baseurl }}/components/snackbar/) for Mobile app component for brief, dismissible feedback messages.
+* **For temporary feedback.** Consider using the [Dismissable Alert]({{ site.baseurl }}/components/alert/#dismissible) for web components and the [Snackbar]({{ site.baseurl }}/components/snackbar) for Mobile app component for brief, dismissible feedback messages.
 * **When you need to mix status tags and tags in a way that confuses their meaning.** Always use semantic colors for Status Tags and neutral or brand colors for Tags.
-* **When the tag functions as a link.** Tags are not intended to be interactive. Use the [critical action component]({{ site.baseurl }}/components/critical-action/) if you're needing to turn the tag into a clickable element.
+* **When the tag functions as a link.** Tags are not intended to be interactive. Use the [critical action component]({{ site.baseurl }}/components/critical-action) if you're needing to turn the tag into a clickable element.
 
 ### How to use tags
 
-* **Status updates within containers.** Use Status Tags to indicate status within containers such as cards, tables, or other UI elements. See the [Card guidance]({{ site.baseurl }}/components/card/) when using a Tag within cards.
+* **Status updates within containers.** Use Status Tags to indicate status within containers such as cards, tables, or other UI elements. See the [Card guidance]({{ site.baseurl }}/components/card) when using a Tag within cards.
 * **For data-heavy interfaces.** Use Status Tags to help users quickly scan and prioritize information based on semantic meaning.
 * **Tags should not be interactive.** Tags are designed to be static labels that convey information, not clickable elements. They should not have hover, focus, or active states that suggest interactivity.
 * **Test for user confusion.** Users might confuse tags with buttons. Always conduct usability testing to make sure your particular implementation is not causing frustration.
@@ -115,7 +115,7 @@ The following status names are known to be in-use across VA.gov (as of October 2
 
 * [Tag]({{ site.baseurl }}/components/tag/)
 * [Alert]({{ site.baseurl }}/components/alert/)
-* [Card]({{ site.baseurl }}/components/card/)
-* [Snackbar]({{ site.baseurl }}/components/snackbar/)
+* [Card]({{ site.baseurl }}/components/card)
+* [Snackbar]({{ site.baseurl }}/components/snackbar)
 
 {% include _component-checklist.html component_name="va-tag-status" %}
