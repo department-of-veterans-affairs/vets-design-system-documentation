@@ -43,6 +43,16 @@ const EXISTING_METRICS_FILE = path.join(JEKYLL_DATA_DIR, 'imposter-metrics.json'
 /**
  * Imposter definitions from Confluence
  * Source: https://vfs.atlassian.net/wiki/spaces/DST/pages/3818717229
+ *
+ * Detection patterns support three types:
+ * 1. Plain regex - matches anywhere in the file
+ * 2. Object with pattern + pathFilter - only matches in files matching pathFilter
+ * 3. Object with pattern + excludeIfWebComponent: true - skips if file uses web component patterns
+ *
+ * The excludeIfWebComponent flag is important for 'ui:widget' patterns because
+ * proper web-component-patterns like radioUI() include BOTH 'ui:webComponentField'
+ * AND 'ui:widget' (for review page compatibility). We only want to flag files
+ * that use 'ui:widget' WITHOUT the corresponding web component field.
  */
 const IMPOSTER_DEFINITIONS = [
   {
@@ -76,7 +86,8 @@ const IMPOSTER_DEFINITIONS = [
     imposterPath: 'src/platform/forms-system/src/js/widgets/CheckboxWidget.jsx',
     detectionPatterns: [
       /from\s+['"][^'"]*CheckboxWidget['"]/g,
-      /['"]ui:widget['"]\s*:\s*['"]checkbox['"]/g
+      // Only flag 'ui:widget': 'checkbox' if file doesn't use web component patterns
+      { pattern: /['"]ui:widget['"]\s*:\s*['"]checkbox['"]/g, excludeIfWebComponent: true }
     ]
   },
   {
@@ -101,7 +112,8 @@ const IMPOSTER_DEFINITIONS = [
     imposterPath: 'src/platform/forms-system/src/js/widgets/RadioWidget.jsx',
     detectionPatterns: [
       /from\s+['"][^'"]*RadioWidget['"]/g,
-      /['"]ui:widget['"]\s*:\s*['"]radio['"]/g
+      // Only flag 'ui:widget': 'radio' if file doesn't use web component patterns
+      { pattern: /['"]ui:widget['"]\s*:\s*['"]radio['"]/g, excludeIfWebComponent: true }
     ]
   },
   {
@@ -110,7 +122,8 @@ const IMPOSTER_DEFINITIONS = [
     imposterPath: 'src/platform/forms-system/src/js/widgets/TextWidget.jsx',
     detectionPatterns: [
       /from\s+['"][^'"]*TextWidget['"]/g,
-      /['"]ui:widget['"]\s*:\s*['"]text['"]/g
+      // Only flag 'ui:widget': 'text' if file doesn't use web component patterns
+      { pattern: /['"]ui:widget['"]\s*:\s*['"]text['"]/g, excludeIfWebComponent: true }
     ]
   },
   {
@@ -119,10 +132,12 @@ const IMPOSTER_DEFINITIONS = [
     imposterPath: 'src/platform/forms-system/src/js/widgets/SelectWidget.jsx',
     detectionPatterns: [
       /from\s+['"][^'"]*SelectWidget['"]/g,
-      /['"]ui:widget['"]\s*:\s*['"]select['"]/g,
-      // Detect enum fields in schemas (implicitly use SelectWidget)
-      // Only in applications to avoid counting platform infrastructure enums
-      { pattern: /['"]?enum['"]?\s*:\s*\[/g, pathFilter: /src\/applications\// }
+      // Only flag 'ui:widget': 'select' if file doesn't use web component patterns
+      { pattern: /['"]ui:widget['"]\s*:\s*['"]select['"]/g, excludeIfWebComponent: true }
+      // NOTE: Removed enum detection - it caused too many false positives:
+      // - enum: [true] patterns are checkbox confirmations, not selects
+      // - enum arrays with radio patterns are handled by radioUI web components
+      // - Proper detection would require parsing the schema structure
     ]
   },
   {
@@ -147,10 +162,41 @@ const IMPOSTER_DEFINITIONS = [
     imposterPath: 'src/platform/forms-system/src/js/widgets/DateWidget.jsx',
     detectionPatterns: [
       /from\s+['"][^'"]*DateWidget['"]/g,
-      /['"]ui:widget['"]\s*:\s*['"]date['"]/g
+      // Only flag 'ui:widget': 'date' if file doesn't use web component patterns
+      { pattern: /['"]ui:widget['"]\s*:\s*['"]date['"]/g, excludeIfWebComponent: true }
     ]
   }
 ];
+
+/**
+ * Check if file content uses web component patterns (proper usage, not imposter)
+ *
+ * Files that import from web-component-patterns or web-component-fields,
+ * or that use 'ui:webComponentField', are using the proper patterns and
+ * should not be flagged for 'ui:widget' usage (which is included in
+ * proper patterns for review page compatibility).
+ *
+ * @param {string} content - File content to check
+ * @returns {boolean} True if file uses web component patterns
+ */
+function usesWebComponentPatterns(content) {
+  // Check for imports from web-component-patterns or web-component-fields
+  // The pattern matches paths like:
+  // - 'platform/forms-system/src/js/web-component-patterns'
+  // - 'platform/forms-system/src/js/web-component-fields/VaRadioField'
+  const webComponentImportPattern = /from\s+['"][^'"]*web-component-(patterns|fields)/;
+  if (webComponentImportPattern.test(content)) {
+    return true;
+  }
+
+  // Check for direct use of 'ui:webComponentField'
+  const webComponentFieldPattern = /['"]ui:webComponentField['"]/;
+  if (webComponentFieldPattern.test(content)) {
+    return true;
+  }
+
+  return false;
+}
 
 /**
  * Check if a file is a test file that should be excluded
@@ -227,23 +273,33 @@ function extractSubApplicationName(filePath) {
  * @param {string} content - File content to search
  * @param {object} imposterDef - Imposter definition with detection patterns
  * @param {string} filePath - Path to the file being searched (for path-filtered patterns)
+ * @param {boolean} fileUsesWebComponents - Whether the file uses web component patterns (pre-computed for efficiency)
  */
-function searchFileForImposters(content, imposterDef, filePath = '') {
+function searchFileForImposters(content, imposterDef, filePath = '', fileUsesWebComponents = false) {
   let matchCount = 0;
 
   for (const patternDef of imposterDef.detectionPatterns) {
-    // Support both plain regex and objects with pattern + pathFilter
-    let sourcePattern, pathFilter;
+    // Support both plain regex and objects with pattern + pathFilter + excludeIfWebComponent
+    let sourcePattern, pathFilter, excludeIfWebComponent;
     if (patternDef instanceof RegExp) {
       sourcePattern = patternDef;
       pathFilter = null;
+      excludeIfWebComponent = false;
     } else {
       sourcePattern = patternDef.pattern;
       pathFilter = patternDef.pathFilter;
+      excludeIfWebComponent = patternDef.excludeIfWebComponent || false;
     }
 
     // Skip pattern if path filter doesn't match
     if (pathFilter && !pathFilter.test(filePath)) {
+      continue;
+    }
+
+    // Skip 'ui:widget' patterns if the file uses proper web component patterns
+    // This prevents false positives from files using radioUI(), dateOfBirthUI(), etc.
+    // which include 'ui:widget' for review page compatibility but also have 'ui:webComponentField'
+    if (excludeIfWebComponent && fileUsesWebComponents) {
       continue;
     }
 
@@ -404,7 +460,10 @@ async function scanLocalDirectory(vetsWebsitePath, imposterDef) {
       const fullPath = path.join(vetsWebsitePath, filePath);
       const content = await fs.readFile(fullPath, 'utf8');
 
-      const matchCount = searchFileForImposters(content, imposterDef, filePath);
+      // Pre-compute whether file uses web component patterns (for excludeIfWebComponent logic)
+      const fileUsesWebComponents = usesWebComponentPatterns(content);
+
+      const matchCount = searchFileForImposters(content, imposterDef, filePath, fileUsesWebComponents);
 
       if (matchCount > 0) {
         const appName = extractApplicationName(filePath);
@@ -593,6 +652,7 @@ if (require.main === module) {
 
 module.exports = {
   IMPOSTER_DEFINITIONS,
+  usesWebComponentPatterns,
   isTestFile,
   isMockApplication,
   extractApplicationName,

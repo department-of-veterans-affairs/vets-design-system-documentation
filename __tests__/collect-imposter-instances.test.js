@@ -73,6 +73,59 @@ describe('Imposter Instance Scanner', () => {
     });
   });
 
+  describe('usesWebComponentPatterns', () => {
+    test('detects import from web-component-patterns', () => {
+      const content = `
+        import { radioUI } from 'platform/forms-system/src/js/web-component-patterns';
+        export default { uiSchema: radioUI({ title: 'Test' }) };
+      `;
+      expect(scanner.usesWebComponentPatterns(content)).toBe(true);
+    });
+
+    test('detects import from web-component-fields', () => {
+      const content = `
+        import VaRadioField from 'platform/forms-system/src/js/web-component-fields/VaRadioField';
+        export default VaRadioField;
+      `;
+      expect(scanner.usesWebComponentPatterns(content)).toBe(true);
+    });
+
+    test('detects ui:webComponentField usage', () => {
+      const content = `
+        export default {
+          uiSchema: {
+            field: {
+              'ui:webComponentField': VaRadioField,
+              'ui:widget': 'radio'
+            }
+          }
+        };
+      `;
+      expect(scanner.usesWebComponentPatterns(content)).toBe(true);
+    });
+
+    test('returns false for files without web component patterns', () => {
+      const content = `
+        export default {
+          uiSchema: {
+            field: {
+              'ui:widget': 'radio'
+            }
+          }
+        };
+      `;
+      expect(scanner.usesWebComponentPatterns(content)).toBe(false);
+    });
+
+    test('returns false for files with only imposter imports', () => {
+      const content = `
+        import RadioWidget from '../widgets/RadioWidget';
+        export default RadioWidget;
+      `;
+      expect(scanner.usesWebComponentPatterns(content)).toBe(false);
+    });
+  });
+
   describe('IMPOSTER_DEFINITIONS', () => {
     test('contains FormNavButtons definition for va-button-pair', () => {
       const def = scanner.IMPOSTER_DEFINITIONS.find(d => d.imposterName === 'FormNavButtons');
@@ -223,6 +276,88 @@ describe('Imposter Instance Scanner', () => {
       `;
       const def = scanner.IMPOSTER_DEFINITIONS.find(d => d.imposterName === 'IssueCard');
       expect(scanner.searchFileForImposters(content, def)).toBeGreaterThan(0);
+    });
+
+    describe('excludeIfWebComponent behavior', () => {
+      test('does NOT flag ui:widget radio in files using web component patterns', () => {
+        const content = `
+          import { radioUI } from 'platform/forms-system/src/js/web-component-patterns';
+          export default {
+            uiSchema: {
+              someField: {
+                'ui:widget': 'radio',
+                'ui:webComponentField': VaRadioField
+              }
+            }
+          };
+        `;
+        const def = scanner.IMPOSTER_DEFINITIONS.find(d => d.imposterName === 'RadioWidget');
+        const fileUsesWebComponents = scanner.usesWebComponentPatterns(content);
+        expect(fileUsesWebComponents).toBe(true);
+        expect(scanner.searchFileForImposters(content, def, '', fileUsesWebComponents)).toBe(0);
+      });
+
+      test('DOES flag ui:widget radio in files NOT using web component patterns', () => {
+        const content = `
+          export default {
+            uiSchema: {
+              someField: {
+                'ui:widget': 'radio'
+              }
+            }
+          };
+        `;
+        const def = scanner.IMPOSTER_DEFINITIONS.find(d => d.imposterName === 'RadioWidget');
+        const fileUsesWebComponents = scanner.usesWebComponentPatterns(content);
+        expect(fileUsesWebComponents).toBe(false);
+        expect(scanner.searchFileForImposters(content, def, '', fileUsesWebComponents)).toBeGreaterThan(0);
+      });
+
+      test('does NOT flag ui:widget date in files using web component patterns', () => {
+        const content = `
+          import { dateOfBirthUI } from 'platform/forms-system/src/js/web-component-patterns';
+          export default {
+            uiSchema: {
+              dateOfBirth: {
+                'ui:widget': 'date'
+              }
+            }
+          };
+        `;
+        const def = scanner.IMPOSTER_DEFINITIONS.find(d => d.imposterName === 'DateWidget');
+        const fileUsesWebComponents = scanner.usesWebComponentPatterns(content);
+        expect(scanner.searchFileForImposters(content, def, '', fileUsesWebComponents)).toBe(0);
+      });
+
+      test('DOES flag ui:widget date in files NOT using web component patterns', () => {
+        const content = `
+          export default {
+            uiSchema: {
+              dateOfBirth: {
+                'ui:title': 'Date of birth',
+                'ui:widget': 'date'
+              }
+            }
+          };
+        `;
+        const def = scanner.IMPOSTER_DEFINITIONS.find(d => d.imposterName === 'DateWidget');
+        const fileUsesWebComponents = scanner.usesWebComponentPatterns(content);
+        expect(scanner.searchFileForImposters(content, def, '', fileUsesWebComponents)).toBeGreaterThan(0);
+      });
+
+      test('still flags direct widget imports even in files using web component patterns', () => {
+        // Direct imports are always imposters, regardless of other patterns in the file
+        const content = `
+          import { radioUI } from 'platform/forms-system/src/js/web-component-patterns';
+          import RadioWidget from '../widgets/RadioWidget';
+          export default RadioWidget;
+        `;
+        const def = scanner.IMPOSTER_DEFINITIONS.find(d => d.imposterName === 'RadioWidget');
+        const fileUsesWebComponents = scanner.usesWebComponentPatterns(content);
+        expect(fileUsesWebComponents).toBe(true);
+        // The import pattern should still match (it's not excluded)
+        expect(scanner.searchFileForImposters(content, def, '', fileUsesWebComponents)).toBeGreaterThan(0);
+      });
     });
   });
 

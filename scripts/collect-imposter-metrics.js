@@ -21,6 +21,7 @@ const REPO = 'department-of-veterans-affairs/va.gov-team';
 const DATA_DIR = path.join(__dirname, '../src/_data/metrics');
 const ASSETS_DIR = path.join(__dirname, '../src/assets/data/metrics');
 const COMPONENT_MATURITY_FILE = path.join(__dirname, '../src/_data/component-maturity.json');
+const EXISTING_METRICS_FILE = path.join(DATA_DIR, 'imposter-metrics.json');
 
 /**
  * Load component names from component-maturity.json
@@ -345,6 +346,30 @@ function processComponentData(issues) {
 }
 
 /**
+ * Load existing metrics file to preserve instance data
+ * Instance data is collected separately by collect-imposter-instances.js
+ * and we don't want to overwrite it when updating issue metrics
+ */
+async function loadExistingMetrics() {
+  try {
+    const content = await fs.readFile(EXISTING_METRICS_FILE, 'utf8');
+    const data = JSON.parse(content);
+    console.log('Loaded existing metrics file to preserve instance data');
+    if (data.instances) {
+      console.log(`  - Preserving ${data.instances.total_identified || 0} instance records`);
+    }
+    return data;
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      console.log('No existing metrics file found, will create new one');
+    } else {
+      console.warn('Could not load existing metrics:', error.message);
+    }
+    return null;
+  }
+}
+
+/**
  * Calculate summary statistics
  */
 function calculateSummary(issues, quarterlyData) {
@@ -419,7 +444,12 @@ async function main() {
     // Calculate summary
     const summary = calculateSummary(allIssues, quarterlyData);
 
-    // Prepare output
+    // Load existing metrics to preserve instance data
+    // Instance data is collected by collect-imposter-instances.js which requires
+    // a local vets-website checkout and is run separately
+    const existingMetrics = await loadExistingMetrics();
+
+    // Prepare output, preserving existing instance data if present
     const metricsData = {
       quarterly: quarterlyData,
       by_component: componentData,
@@ -428,6 +458,12 @@ async function main() {
       data_source: 'va.gov-team repository',
       description: 'Imposter component replacement tracking for FY26 KR'
     };
+
+    // Preserve instance data from previous runs of collect-imposter-instances.js
+    if (existingMetrics?.instances) {
+      metricsData.instances = existingMetrics.instances;
+      console.log('✅ Preserved existing instance data in output');
+    }
 
     // Write to both locations
     const jsonOutput = JSON.stringify(metricsData, null, 2);
@@ -475,6 +511,7 @@ module.exports = {
   processComponentData,
   calculateSummary,
   extractComponentType,
+  loadExistingMetrics,
   COMPONENT_LABELS,
   REPLACEMENT_GOAL
 };

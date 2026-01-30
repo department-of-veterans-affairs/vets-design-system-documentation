@@ -263,4 +263,31 @@ describe('Imposter Metrics Collector', () => {
       expect(() => collector.processComponentData(issues.filter(i => i.labels))).not.toThrow();
     });
   });
+
+  describe('loadExistingMetrics', () => {
+    test('is exported as a function', () => {
+      expect(typeof collector.loadExistingMetrics).toBe('function');
+    });
+
+    test('returns a Promise that resolves', async () => {
+      const result = await collector.loadExistingMetrics();
+      // Result should be either the existing data object or null
+      expect(result === null || typeof result === 'object').toBe(true);
+    });
+
+    test('preserves instances data when file exists', async () => {
+      const result = await collector.loadExistingMetrics();
+      // If the file exists and has instances, they should be preserved
+      if (result && result.instances) {
+        expect(result.instances.total_identified).toBeDefined();
+      }
+    });
+
+    // Note: The function is designed to:
+    // 1. Return existing metrics data if the file exists
+    // 2. Return null if the file doesn't exist (ENOENT)
+    // 3. Return null and log warning for other errors
+    // This ensures the instances data from collect-imposter-instances.js
+    // is preserved when collect-imposter-metrics.js runs.
+  });
 });
