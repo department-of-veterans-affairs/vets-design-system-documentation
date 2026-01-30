@@ -46,13 +46,13 @@ Used to draw attention to new or important content, categorize information, or i
 ### How to use tags
 
 * **Users frequently confuse tags as buttons.** Always conduct usability testing to make sure your particular implementation is not causing frustration.
-* **Tags should not be interactive.** Tags are designed to be static labels that convey information, not clickable elements. They should not have hover, focus, or active states that suggest interactivity.
+* **Tags shouldn't be interactive.** Tags are designed to be static labels that convey information, not clickable elements. They shouldn't have hover, focus, or active states that suggest interactivity.
 * **Don't overdo it.** If everything on a page is called out as important, nothing is important.
 
 ## Accessibility considerations
 
 * **Contrast requirements.** All tag variations meet WCAG 2.2 AA color contrast requirements for both text and background colors, and between the tag background and the page background.
-* **Keyboard navigation.** Tags are static, non-interactive elements that should not receive keyboard focus. Ensure tags don't interfere with the natural keyboard navigation flow of the page. Users navigating with the Tab key should move past tags to the next focusable element without interruption.
+* **Keyboard navigation.** Tags are static, non-interactive elements that shouldn't receive keyboard focus. Ensure tags don't interfere with the natural keyboard navigation flow of the page. Users navigating with the Tab key should move past tags to the next focusable element without interruption.
 * **Screen reader support.** Regular Tags are announced as their text content without additional context (unlike Status Tags which include "Status" prefix). Ensure tag text is clear and meaningful when heard out of visual context. For count badges or numerical tags, screen readers will announce the number naturally.
 * **Dynamic content.** When tags are used to indicate new or updated content that is dynamically loaded onto a page, use ARIA live regions to alert screen readers of the change. Use `aria-live="polite"` for non-urgent updates and `aria-live="assertive"` only for critical changes that require immediate attention. Avoid announcing rapid or frequent changes that could overwhelm screen reader users.
 * **Cognitive accessibility.** Use consistent placement and behavior of Tags across the application to help users with cognitive disabilities predict where to find information. Keep tag text simple and avoid technical jargon that Veterans may not understand.
