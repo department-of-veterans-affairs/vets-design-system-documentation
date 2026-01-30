@@ -29,3 +29,6 @@ vendor/bundle
 
 # Generated reports (use src/_data/metrics/ location instead)
 component-issues-report.md
+
+# Test coverage reports
+coverage/
