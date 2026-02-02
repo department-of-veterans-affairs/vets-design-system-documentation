@@ -139,7 +139,7 @@ Variations in messaging depend on these factors:
     <span>After page title</span>
   </va-table-row>
   <va-table-row>
-    <span>Unable to complete an automated task (ex., save application in progress) due to the person’s connection loss</span>
+    <span>Unable to complete an automated task (ex. save application in progress) due to the person’s connection loss</span>
     <span><b>We can’t save your [application, claim, form] right now</b></span>
     <span>Make sure you’re connected to the internet and then try saving your [application, claim, form] again.</span>
     <span>Try again</span>
