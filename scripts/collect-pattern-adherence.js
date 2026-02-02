@@ -18,7 +18,46 @@
 
 const fs = require('fs').promises;
 const path = require('path');
-const { execFileSync } = require('child_process');
+const childProcess = require('child_process');
+
+/**
+ * Safely execute a file with validated arguments.
+ * This wrapper ensures that only string arguments without obvious shell
+ * metacharacters are passed to execFileSync, helping prevent command
+ * injection if any inputs are derived from external data.
+ */
+function safeExecFileSync(file, args = [], options) {
+  if (typeof file !== 'string' || file.length === 0) {
+    throw new TypeError('execFileSync "file" argument must be a non-empty string');
+  }
+
+  if (!Array.isArray(args)) {
+    throw new TypeError('execFileSync "args" argument must be an array of strings');
+  }
+
+  const unsafePattern = /[;&|`$<>]/;
+  for (const arg of args) {
+    if (typeof arg !== 'string') {
+      throw new TypeError('execFileSync arguments must be strings');
+    }
+    if (unsafePattern.test(arg)) {
+      throw new Error(`execFileSync argument contains potentially unsafe characters: "${arg}"`);
+    }
+  }
+
+  return childProcess.execFileSync(file, args, options);
+}
+
+const execFileSync = safeExecFileSync;
+
+/**
+ * Escape special regex characters in a string
+ * @param {string} str - String to escape
+ * @returns {string} Escaped string safe for use in RegExp constructor
+ */
+function escapeRegExp(str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
 
 // Parse command-line arguments
 const args = process.argv.slice(2);
@@ -215,6 +254,16 @@ async function fetchProductDirectory() {
 }
 
 /**
+ * Check if a product is categorized as a form
+ * @param {Object} product - Product object from product directory
+ * @returns {boolean} True if the product is categorized as a form
+ */
+function isFormProduct(product) {
+  return product.analytics_category === 'Forms' ||
+         product.platform_console_category === 'Forms';
+}
+
+/**
  * Filter products to only include forms
  */
 async function getFormProducts() {
@@ -224,10 +273,7 @@ async function getFormProducts() {
     throw new Error('Product directory did not return an array');
   }
 
-  const forms = products.filter(product =>
-    product.analytics_category === 'Forms' ||
-    product.platform_console_category === 'Forms'
-  );
+  const forms = products.filter(isFormProduct);
 
   console.log(`Found ${forms.length} form products in product directory`);
 
@@ -236,6 +282,7 @@ async function getFormProducts() {
     product_name: form.product_name,
     path_to_code: form.path_to_code,
     analytics_category: form.analytics_category,
+    platform_console_category: form.platform_console_category,
     github_product_label: form.github_product_label
   }));
 }
@@ -485,7 +532,9 @@ async function findImporters(patternCodeFile) {
         const usesPattern = exportNames.some(exportName => {
           // Match export name with any combination of suffixes
           // e.g., ssnOrVaFileNumber, ssnOrVaFileNumberUI, ssnOrVaFileNumberNoHintUI, etc.
-          const regex = new RegExp(`\\b${exportName}(NoHint)?(UI|Schema|Pattern)?\\b`, 'i');
+          // Escape exportName to prevent regex injection from special characters
+          const escapedExportName = escapeRegExp(exportName);
+          const regex = new RegExp(`\\b${escapedExportName}(NoHint)?(UI|Schema|Pattern)?\\b`, 'i');
           return regex.test(content);
         });
 
@@ -665,12 +714,15 @@ function generateMarkdownReport(data) {
   lines.push('## Forms × Patterns Matrix');
   lines.push('');
 
-  // Build lookup map for O(1) form-pattern checks
+  // Build nested lookup map for O(1) form-pattern checks
+  // Using nested Map to avoid key collision issues with string concatenation
   const formPatternMap = new Map();
   data.patterns.forEach(pattern => {
     pattern.forms_using_pattern.forEach(form => {
-      const key = `${form.product_name}|${pattern.pattern_name}`;
-      formPatternMap.set(key, true);
+      if (!formPatternMap.has(form.product_name)) {
+        formPatternMap.set(form.product_name, new Set());
+      }
+      formPatternMap.get(form.product_name).add(pattern.pattern_name);
     });
   });
 
@@ -682,9 +734,10 @@ function generateMarkdownReport(data) {
   // Create matrix rows
   data.forms.forEach(form => {
     const row = [form.product_name];
+    const formPatterns = formPatternMap.get(form.product_name);
 
     patternNames.forEach(patternName => {
-      const usesPattern = formPatternMap.has(`${form.product_name}|${patternName}`);
+      const usesPattern = formPatterns && formPatterns.has(patternName);
       row.push(usesPattern ? '✅' : '');
     });
 
@@ -757,6 +810,7 @@ module.exports = {
   findPatternFiles,
   fetchProductDirectory,
   getFormProducts,
+  isFormProduct,
   findImporters,
   buildPatternAdherence,
   generateMarkdownReport,

@@ -30,14 +30,15 @@ async function testPatternDiscovery() {
 }
 
 async function testProductDirectory() {
-  const { getFormProducts } = require('./collect-pattern-adherence.js');
+  const { getFormProducts, isFormProduct } = require('./collect-pattern-adherence.js');
   const forms = await getFormProducts();
 
   assert.ok(forms.length > 0, 'Should find form products');
   const cgForm = forms.find(f => f.product_name.includes('10-10CG'));
   assert.ok(cgForm, 'Should find 10-10CG form');
+  // Use the shared helper function to verify form categorization
   assert.ok(
-    cgForm.analytics_category === 'Forms' || cgForm.platform_console_category === 'Forms',
+    isFormProduct(cgForm),
     '10-10CG should be categorized as Forms'
   );
 
