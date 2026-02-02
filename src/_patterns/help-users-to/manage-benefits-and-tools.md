@@ -52,7 +52,7 @@ anchors:
 
 ### How this pattern works
 
-This pattern vertically stacks Service List Items to form a list, called a “Service list.” Users can access a page with more details about each list item by clicking or tapping the header. Other elements in the list item all convey more information to the user. Other elements can include the Critical Action component and status tag. Learn more about these elements and their interactivity in the [Service List Item]({{ site.baseurl }}/components/service-list-item) component.
+This pattern vertically stacks Service List Items to form a list, called a "Service list." Users can access a page with more details about each list item by clicking or tapping the header. Other elements in the list item all convey more information to the user. Other elements can include the Critical Action component and Status Tag. Learn more about these elements and their interactivity in the [Service List Item]({{ site.baseurl }}/components/service-list-item) component.
 
 ### Display order
 
