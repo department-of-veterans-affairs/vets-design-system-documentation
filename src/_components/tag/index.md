@@ -45,7 +45,7 @@ Used to draw attention to new or important content, categorize information, or i
 
 ### How to use tags
 
-* **Users frequently confuse tags as buttons.** Always conduct usability testing to make sure your particular implementation is not causing frustration.
+* **Users frequently confuse tags as buttons.** Always conduct usability testing to make sure your particular implementation isn't causing frustration.
 * **Tags shouldn't be interactive.** Tags are designed to be static labels that convey information, not clickable elements. They shouldn't have hover, focus, or active states that suggest interactivity.
 * **Don't overdo it.** If everything on a page is called out as important, nothing is important.
 
