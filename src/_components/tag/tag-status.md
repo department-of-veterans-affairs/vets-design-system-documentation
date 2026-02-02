@@ -60,7 +60,7 @@ Used to indicate critical issues, failure states, or items that require immediat
 
 * **When you might confuse tags with buttons.** For example, if tags appear near buttons on the page, users may mistake them for interactive elements.
 * **For labels longer than 1-3 words.** Tags work best with brief, scannable text. For longer descriptive text, consider using other options like the [Status via label with indicator]({{ site.baseurl }}/components/card#status-via-label-with-indicator) within the Card component.
-* **When the Status Tag functions as a title.** Don't use a Status Tag when the Tag content is more accurately described as the title or primary identifier of the content. Instead, use that text as the card's heading.
+* **When the Status Tag functions as a title.** Don't use a Status Tag when the Tag content is more accurately described as the title or primary identifier of the content. Instead, use that text as the Card's heading.
 * **Consider the Eyebrow Header style as an alternative.** The [Eyebrow](https://design.va.gov/foundation/typography#eyebrow) Header is a short, descriptive title placed above the main heading to provide additional context and maintain consistency.
 * **When lack of change in content makes Tags ineffective.** If content updates are infrequent users may not notice or expect "new" Tags. Use Tags to call attention to a change in status.
 * **For system-wide alerts.** Use the [Alert]({{ site.baseurl }}/components/alert/) for page-level or application-level messaging that requires more context or action from you.
@@ -70,13 +70,13 @@ Used to indicate critical issues, failure states, or items that require immediat
 
 ### How to use tags
 
-* **Status updates within containers.** Use Status Tags to indicate status within containers such as cards, tables, or other UI elements. See the [Card guidance]({{ site.baseurl }}/components/card) when using a Tag within cards.
+* **Status updates within containers.** Use Status Tags to indicate status within containers such as cards, tables, or other UI elements. See the [Card guidance]({{ site.baseurl }}/components/card) when using a Tag within Cards.
 * **For data-heavy interfaces.** Use Status Tags to help users quickly scan and prioritize information based on semantic meaning.
 * **Tags shouldn't be interactive.** Tags are designed to be static labels that convey information, not clickable elements. They shouldn't have hover, focus, or active states that suggest interactivity.
 * **Test for user confusion.** Users might confuse tags with buttons. Always conduct usability testing to make sure your particular implementation isn't causing frustration.
 * **Use tags sparingly.** Don't overdo it — if everything on a page is called out as important, nothing is important.
 * **Use semantic colors consistently.** Apply the same color meanings across all components (tags, alerts, etc.) to create a cohesive experience for users.
-* **For status within cards.** When using Tags to communicate status within card components, see the [Card component status guidance]({{ site.baseurl }}/components/card#status-via-tag) for specific implementation details and best practices.
+* **For status within Cards.** When using Tags to communicate status within Card components, see the [Card component status guidance]({{ site.baseurl }}/components/card#status-via-tag) for specific implementation details and best practices.
 
 ## Accessibility considerations
 
@@ -93,7 +93,7 @@ Used to indicate critical issues, failure states, or items that require immediat
 * **Be concise.** Keep Tag text brief and scannable. Use 1-3 words when possible.
 * **Use consistent terminology.** Apply the same language for similar statuses across the platform (e.g., always use "Approved" rather than mixing "Approved," "Complete," and "Done").
 * **Match semantic meaning.** Ensure the Tag text aligns with its color meaning. Don't use error-colored Tags for positive messages.
-* **Consider context.** The tag's meaning should be clear within the context where it appears. Avoid jargon or technical terms that Veterans may not understand.
+* **Consider context.** The Tag's meaning should be clear within the context where it appears. Avoid jargon or technical terms that Veterans may not understand.
 
 ### Status examples by semantic color
 
