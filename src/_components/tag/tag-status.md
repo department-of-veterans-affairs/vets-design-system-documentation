@@ -26,7 +26,7 @@ Status Tags use semantic colors to convey meaning and priority, aligning with th
 
 {% include storybook-preview.html story="components-va-tag-status--default" link_text="va-tag-status info" %}
 
-Used to provide helpful information or something that warrants a user’s attention. Not used for negative consequences.
+Use the informational status to provide helpful information or something that warrants a user’s attention. Do not use for negative consequences.
 
 ### Warning status
 
@@ -74,7 +74,7 @@ Used to indicate critical issues, failure states, or items that require immediat
 * **For data-heavy interfaces.** Use Status Tags to help users quickly scan and prioritize information based on semantic meaning.
 * **Tags shouldn't be interactive.** Tags are designed to be static labels that convey information, not clickable elements. They shouldn't have hover, focus, or active states that suggest interactivity.
 * **Test for user confusion.** Users might confuse tags with buttons. Always conduct usability testing to make sure your particular implementation isn't causing frustration.
-* **Use tags sparingly.** Don't overdo it — if everything on a page is called out as important, nothing is important.
+* **Use tags sparingly.** Don't overdo it. If everything on a page is called out as important, nothing is important.
 * **Use semantic colors consistently.** Apply the same color meanings across all components (tags, alerts, etc.) to create a cohesive experience for users.
 * **For status within cards.** When using tags to communicate status within card components, see the [Card component status guidance]({{ site.baseurl }}/components/card#status-via-tag) for specific implementation details and best practices.
 
