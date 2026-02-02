@@ -29,11 +29,11 @@ anchors:
 
 ### With Label
 
-{% include storybook-preview.html story="components-va-card-status---missing-content-state" link_text="va-card-status with label" %}
+{% include storybook-preview.html story="components-va-card-status--missing-content-state" link_text="va-card-status with label" %}
 
 ### With Error
 
-{% include storybook-preview.html story="components-va-card-status---error-state" link_text="va-card-status with error" %}
+{% include storybook-preview.html story="components-va-card-status--error-state" link_text="va-card-status with error" %}
 
 ## Usage
 
