@@ -135,7 +135,7 @@ anchors:
     <span>During downtime</span>
     <span><b>Site maintenance</b></span>
     <span>We’re working on VA.gov right now. If you have trouble signing in or using tools, check back after we’re finished. Thank you for your patience.<br><br>      
-      <b>Date:</b> Month Day, Year<br><b>Start/End time:</b> 0:00 a.m. to 0:00 a.m. ET</span>
+      <b>Start time:</b> Month Day, Year, at 0:00 a.m. ET <br><b>End time:</b> Month Day, Year, at 0:00 a.m. ET</span>
     <span><a href="{{ site.baseurl }}/components/banner#during-maintenance">Maintenance banner</a></span>
     <span>During maintenance</span>
   </va-table-row>
