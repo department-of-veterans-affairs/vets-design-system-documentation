@@ -41,7 +41,7 @@ Used to draw attention to new or important content, categorize information, or i
 * **For status communication.** Use the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component when you need to communicate current state, condition, or progress with semantic color meanings.
 * **When users are likely to confuse a static Tag with a button.** For example, when the label appears in the same area of the page as buttons.
 * **When the Tag functions as a title.** When the Tag content is more accurately described as the title or primary identifier of the content. Use the [Eyebrow](https://design.va.gov/foundation/typography#eyebrow) header style, which is a short, descriptive title placed above the main heading to provide additional context.
-* **When the Tag functions as a link.** Tags are not intended to be interactive. Use the [critical action component]({{ site.baseurl }}/components/critical-action/) if you're needing to turn the Tag into a clickable element.
+* **When the Tag functions as a link.** Tags are not intended to be interactive. Use the [Critical Action component]({{ site.baseurl }}/components/critical-action/) if you're needing to turn the Tag into a clickable element.
 
 ### How to use tags
 

@@ -66,7 +66,7 @@ Used to indicate critical issues, failure states, or items that require immediat
 * **For system-wide alerts.** Use the [Alert]({{ site.baseurl }}/components/alert/) for page-level or application-level messaging that requires more context or action from you.
 * **For temporary feedback.** Consider using the [Dismissable Alert]({{ site.baseurl }}/components/alert/#dismissible) for web components and the [Snackbar]({{ site.baseurl }}/components/snackbar) for Mobile app component for brief, dismissible feedback messages.
 * **When you need to mix Status Tags and Tags in a way that confuses their meaning.** Always use semantic colors for Status Tags and neutral or brand colors for Tags.
-* **When the tag functions as a link.** Tags are not intended to be interactive. Use the [critical action component]({{ site.baseurl }}/components/critical-action) if you're needing to turn the tag into a clickable element.
+* **When the tag functions as a link.** Tags are not intended to be interactive. Use the [Critical Action component]({{ site.baseurl }}/components/critical-action) if you're needing to turn the tag into a clickable element.
 
 ### How to use tags
 
@@ -76,7 +76,7 @@ Used to indicate critical issues, failure states, or items that require immediat
 * **Test for user confusion.** Users might confuse tags with buttons. Always conduct usability testing to make sure your particular implementation isn't causing frustration.
 * **Use Tags sparingly.** Don't overdo it — if everything on a page is called out as important, nothing is important.
 * **Use semantic colors consistently.** Apply the same color meanings across all components (tags, alerts, etc.) to create a cohesive experience for users.
-* **For status within Cards.** When using Tags to communicate status within Card components, see the [Card component status guidance]({{ site.baseurl }}/components/card#status-via-tag) for specific implementation details and best practices.
+* **For status within Cards.** When using Tags to communicate status within card components, see the [Card Status guidance]({{ site.baseurl }}/components/card/card-status) for specific implementation details and best practices.
 
 ## Accessibility considerations
 

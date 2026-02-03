@@ -65,6 +65,7 @@ This pattern vertically stacks Service List Items to form a list, called a "Serv
 * [Service List Item]({{ site.baseurl }}/components/service-list-item)
 * [Critical Action]({{ site.baseurl }}/components/critical-action)
 * [Tag]({{ site.baseurl }}/components/tag)
+* [Tag - Status]({{ site.baseurl }}/components/tag/tag-status)
 
 ## Examples
 

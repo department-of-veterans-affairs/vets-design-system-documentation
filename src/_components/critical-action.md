@@ -52,7 +52,7 @@ anchors:
 
 #### Placement details
 
-In most cases, display the Critical Action component in a [Card]({{ site.baseurl }}/components/card) or [Service List Item]({{ site.baseurl }}/components/service-list-item) component. Place the component directly below the Status Tag and take up the width of the component it is nested within. Include only one Critical Action component in a Card or Service List Item. Do not include multiple Critical Action components in a single Card or Service List Item.
+In most cases, display the Critical Action component in a [Card]({{ site.baseurl }}/components/card) or [Service List Item]({{ site.baseurl }}/components/service-list-item) component. Place the component directly below the [Status Tag]({{ site.baseurl }}/components/tag/tag-status) component and take up the width of the component it is nested within. Include only one Critical Action component in a Card or Service List Item. Do not include multiple Critical Action components in a single Card or Service List Item.
 
 {% include component-example.html
   class="x2"
@@ -89,5 +89,6 @@ On the My VA page, Critical Action components can be placed within a card to cal
 
 * [Alert]({{ site.baseurl }}/components/alert/)
 * [Link - Action]({{ site.baseurl }}/components/link/action)
+* [Tag - Status]({{ site.baseurl }}/components/tag/tag-status)
 
 {% include _component-checklist.html component_name="va-critical-action" %}
