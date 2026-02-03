@@ -2,7 +2,7 @@
 layout: component
 permalink: /components/tag/
 title: Tag
-intro-text: A tag draws attention to new or important content.
+intro-text: A Tag draws attention to new or important content.
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1295%3A9688&mode=design&t=gIDFGH785CqLb8c6-1
 github-title: va-tag
 status: use-deployed
@@ -39,9 +39,9 @@ Used to draw attention to new or important content, categorize information, or i
 ### When to consider something else
 
 * **For status communication.** Use the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component when you need to communicate current state, condition, or progress with semantic color meanings.
-* **When users are likely to confuse a static tag with a button.** For example, when the label appears in the same area of the page as buttons.
-* **When the tag functions as a title.** When the tag content is more accurately described as the title or primary identifier of the content. Use the [Eyebrow](https://design.va.gov/foundation/typography#eyebrow) header style, which is a short, descriptive title placed above the main heading to provide additional context.
-* **When the tag functions as a link.** Tags are not intended to be interactive. Use the [critical action component]({{ site.baseurl }}/components/critical-action/) if you're needing to turn the tag into a clickable element.
+* **When users are likely to confuse a static Tag with a button.** For example, when the label appears in the same area of the page as buttons.
+* **When the Tag functions as a title.** When the Tag content is more accurately described as the title or primary identifier of the content. Use the [Eyebrow](https://design.va.gov/foundation/typography#eyebrow) header style, which is a short, descriptive title placed above the main heading to provide additional context.
+* **When the Tag functions as a link.** Tags are not intended to be interactive. Use the [Critical Action component]({{ site.baseurl }}/components/critical-action/) if you're needing to turn the Tag into a clickable element.
 
 ### How to use tags
 
@@ -51,11 +51,11 @@ Used to draw attention to new or important content, categorize information, or i
 
 ## Accessibility considerations
 
-* **Contrast requirements.** All tag variations meet WCAG 2.2 AA color contrast requirements for both text and background colors, and between the tag background and the page background.
-* **Keyboard navigation.** Tags are static, non-interactive elements that shouldn't receive keyboard focus. Ensure tags don't interfere with the natural keyboard navigation flow of the page. Users navigating with the Tab key should move past tags to the next focusable element without interruption.
-* **Screen reader support.** Regular Tags are announced as their text content without additional context (unlike Status Tags which include "Status" prefix). Ensure tag text is clear and meaningful when heard out of visual context. For count badges or numerical tags, screen readers will announce the number naturally.
-* **Dynamic content.** When tags are used to indicate new or updated content that is dynamically loaded onto a page, use ARIA live regions to alert screen readers of the change. Use `aria-live="polite"` for non-urgent updates and `aria-live="assertive"` only for critical changes that require immediate attention. Avoid announcing rapid or frequent changes that could overwhelm screen reader users.
-* **Cognitive accessibility.** Use consistent placement and behavior of Tags across the application to help users with cognitive disabilities predict where to find information. Keep tag text simple and avoid technical jargon that Veterans may not understand.
+* **Contrast requirements.** All Tag variations meet WCAG 2.2 AA color contrast requirements for both text and background colors, and between the Tag background and the page background.
+* **Keyboard navigation.** Tags are static, non-interactive elements that shouldn't receive keyboard focus. Ensure Tags don't interfere with the natural keyboard navigation flow of the page. Users navigating with the Tab key should move past Tags to the next focusable element without interruption.
+* **Screen reader support.** Regular Tags are announced as their text content without additional context (unlike Status Tags which include "Status" prefix). Ensure Tag text is clear and meaningful when heard out of visual context. For count badges or numerical Tags, screen readers will announce the number naturally.
+* **Dynamic content.** When Tags are used to indicate new or updated content that is dynamically loaded onto a page, use ARIA live regions to alert screen readers of the change. Use `aria-live="polite"` for non-urgent updates and `aria-live="assertive"` only for critical changes that require immediate attention. Avoid announcing rapid or frequent changes that could overwhelm screen reader users.
+* **Cognitive accessibility.** Use consistent placement and behavior of Tags across the application to help users with cognitive disabilities predict where to find information. Keep Tag text simple and avoid technical jargon that Veterans may not understand.
 
 
 ## Related
