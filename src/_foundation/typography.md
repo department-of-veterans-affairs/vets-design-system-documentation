@@ -234,9 +234,8 @@ The eyebrow sits above a heading and provides a label for a sequence of pages in
 
 ### When to use
 - Implementing the [Help users to complete a sub task]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task) pattern.
-- Indicate content type or category.
+- Indicate content type or category between cards or pages.
 - High-level context that helps users compare or scan multiple cards.
-- Provides groupings between pages.
 
 ### When to use something else
 - Use the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) to communicate status. Place above the header instead of the eyebrow.
