@@ -39,8 +39,8 @@ This pattern is an example of the [One thing per page]({{ site.baseurl }}/patter
 
 ### When not to use this pattern
 
-* **In place of a standard form flow.** This pattern does not replace a standard form flow and layout. This pattern exists within a larger flow or process, not by itself. Thus it would be inappropriate to create a stand-alone form flow that does not have a [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented), [Button pair]({{ site.baseurl }}/components/button/button-pair), and other components found in a typical [form flow]({{ site.baseurl }}/templates/forms/#the-structure-of-a-form).
-* **When eligibility is short and concise.** Do not use this pattern if you can reasonably include information users need to know about their eligibility for a benefit or service and the eligibility requirements on our [Introduction page]({{ site.baseurl }}/templates/forms/introduction). Placing this information in content, rather than in a form, allows the content to be searchable.
+* **In place of a standard form flow.** This pattern does not replace a standard form flow and layout. This pattern exists within a larger flow or process, not by itself. Thus it would be inappropriate to create a stand-alone form flow that does not have a [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented), [Button group]({{ site.baseurl }}/components/button/button-group), and other components found in a typical [form flow]({{ site.baseurl }}/templates/forms/#the-structure-of-a-form).
+* **When eligibility is short and concise.** Do not use this pattern for checking benefit or form eligibility. Use content outside of the form when possible. This ensures the information is available via search and outside of any authentication requirements. Benefit eligibility should always be defined within static benefit content and can be linked to from the [Introduction page]({{ site.baseurl }}/templates/forms/introduction). Simple form eligibility requirements can also be included on the Introduction page.
 
 ### When to use caution
 
@@ -60,7 +60,7 @@ This pattern is an example of the [One thing per page]({{ site.baseurl }}/patter
 {% include component-example.html alt="Check-in experience sub-task example." file="/images/patterns/help-users-to/complete-a-sub-task/Check-in-sub-task.png" caption="Pre-check-in sub-task." %}
 
 * An example of a task that helps determine if current information on file for a Veteran is correct before checking in at a facility. This example shows the success path.
-* Note that this example features a [Button pair]({{ site.baseurl }}/components/button/button-pair) for Yes/no which has some [accessibility considerations](#accessibility-considerations).
+* Note that this example features a [Button group]({{ site.baseurl }}/components/button/button-group) for Yes/no which has some [accessibility considerations](#accessibility-considerations).
 
 ### VA Online Scheduling (VAOS) Vaccine sub-task
 
@@ -103,14 +103,14 @@ This pattern can be implemented with standard form elements and other optional c
 * Standard [form elements]({{ site.baseurl }}/components/form/) 
 * [Accordion]({{ site.baseurl }}/components/accordion)
 * [Alert]({{ site.baseurl }}/components/alert)
-* [Button pair]({{ site.baseurl }}/components/button/button-pair)
+* [Button group]({{ site.baseurl }}/components/button/button-group)
 * [Link - Action]({{ site.baseurl }}/components/link/action)
 
 ## Content considerations
 
-* Questions, decisions, and other pieces of information in the sub-task must be in [plain language]({{ site.baseurl }}//content-style-guide/plain-language).
+* Questions, decisions, and other pieces of information in the sub-task must be in [plain language]({{ site.baseurl }}/content-style-guide/plain-language).
 * Start with essential, required questions then move to optional questions if necessary.
-* Don't nest multiple questions within one question. Most questions should be answerable via the [Yes/No button pair]({{ site.baseurl }}/components/button/button-pair#default-yesno)
+* Don't nest multiple questions within one question. Most questions should be answerable via the [Yes/No button group]({{ site.baseurl }}/components/button/button-group#default-yesno)
   * Example: We would NOT ask, "Do you have a cat, and do you like that cat?" in one question. Those should be two separate questions.
 * Group similar questions into a series of questions around a topic. For example, contact information questions could be grouped so those questions appear in series rather than sporadically.
 * Use research and card sorting to determine the best order of questions.

@@ -1,15 +1,67 @@
 # Git Automation Tasks
 
-This Rakefile provides automated tasks for managing pull requests in the vets-design-system-documentation repository.
+This Rakefile provides automated tasks for managing pull requests and validating links in the vets-design-system-documentation repository.
 
 ## Prerequisites
 
 - Ruby installed
-- Rake gem installed
+- Bundler installed (`gem install bundler`)
+- Dependencies installed (`bundle install`)
 - Git configured and authenticated
 - Repository cloned locally
 
 ## Available Tasks
+
+### Link Checking Tasks
+
+#### Check Internal Links (Fast)
+
+```bash
+rake check_links
+# or
+rake check_links:internal
+```
+
+This is the recommended task for local development. It checks for:
+
+- Broken internal links (links to pages that don't exist)
+- Missing images
+- Broken anchor references (hash links that don't exist)
+- Invalid script references
+
+**Note:** You must build the site first with `bundle exec jekyll build`.
+
+#### Check External Links (Slow)
+
+```bash
+rake check_links:external
+```
+
+This task checks that external URLs are reachable. Use sparingly as it:
+
+- Takes several minutes to complete
+- May be rate-limited by external sites
+- Only checks links (not images/scripts)
+
+#### Check All Links
+
+```bash
+rake check_links:all
+```
+
+Combines internal and external link checking. This is the most comprehensive check but also the slowest.
+
+#### Ignored Patterns
+
+The link checker automatically ignores:
+
+- `localhost` and `127.0.0.1` URLs
+- Anchor-only links (`#section`)
+- GitHub edit/new file links (require authentication)
+- Figma links (require authentication)
+- Staging and dev environment URLs
+- Storybook links (external to this site)
+- Vendor files
 
 ### Check PR Status
 
@@ -124,4 +176,17 @@ rake check_pr 4474
 
 # If everything looks good, merge it
 rake merge_pr 4474
+```
+
+## Link Checking Workflow
+
+```bash
+# Build the site first
+bundle exec jekyll build
+
+# Quick internal link check (recommended before each PR)
+rake check_links
+
+# Full check including external links (run periodically)
+rake check_links:all
 ```

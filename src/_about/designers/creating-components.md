@@ -129,7 +129,7 @@ All text styles should be pulled from the VADS Figma file.
 
 ### Iconography
 
-* **Only use icons from the VA Design System.** [Our icons](https://design.va.gov/foundation/icons) are a subset of [USWDS icons](https://designsystem.digital.gov/components/icon/). We aim to maintain consistency in semantic use by avoiding duplicating similar icons. If you have a need for an icon that doesn't exist in our set, you may [request a new icon](https://design.va.gov/foundation/icons#requesting-a-new-icon) to be added.
+* **Only use icons from the VA Design System.** [Our icons](https://design.va.gov/components/icon) are a subset of [USWDS icons](https://designsystem.digital.gov/components/icon/). We aim to maintain consistency in semantic use by avoiding duplicating similar icons. If you have a need for an icon that doesn't exist in our set, you may [request a new icon](https://design.va.gov/components/icon#requesting-a-new-icon) to be added.
 
 ## Quality assurance
 
@@ -195,4 +195,4 @@ Not all components need every property. It will differ component to component. T
   * **Colors:** Connected to the correct color token (not primitive!) - can be found in local variables library.
   * **Typography:** Connected to the correct text style - under local styles.
   * **Spacing:** Connected to the correct spacing token.
-  * **Icons:** Connected to correct [icon]({{ site.baseurl }}/foundation/icons).
+  * **Icons:** Connected to correct [icon]({{ site.baseurl }}/components/icon).

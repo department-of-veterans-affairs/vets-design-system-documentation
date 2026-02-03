@@ -188,7 +188,7 @@ anchors:
     <span><b>Your [claim type] claim update</b></span>
     <span>Our records show that we closed your claim on [Month Day, Year].</span>
     <span>N/A</span>
-    <span><a href="{{ site.baseurl }}/components/alert#informational-alert">Alert</a></span>
+    <span><a href="{{ site.baseurl }}/components/alert#informational-alert-aka-default">Alert</a></span>
     <span>Informational</span>
     <span>Replace affected component</span>
   </va-table-row>
