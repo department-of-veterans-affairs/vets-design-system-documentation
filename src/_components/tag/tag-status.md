@@ -26,25 +26,25 @@ Status Tags use semantic colors to convey meaning and priority, aligning with th
 
 {% include storybook-preview.html story="components-va-tag-status--default" link_text="va-tag-status info" %}
 
-Used to provide helpful information or something that warrants a user’s attention. Not used for negative consequences.
+Use the informational status to provide helpful information or something that warrants a user’s attention. Do not use for negative consequences.
 
 ### Warning status
 
 {% include storybook-preview.html story="components-va-tag-status--warning" link_text="va-tag-status warning" %}
 
-Used to warn a user, such as when there are negative consequences, or when an action cannot continue.
+Use the warning status to warn a user, such as when there are negative consequences, or when an action cannot continue.
 
 ### Success status
 
 {% include storybook-preview.html story="components-va-tag-status--success" link_text="va-tag-status success" %}
 
-Used to indicate success.
+Use the success status to indicate success.
 
 ### Error status
 
 {% include storybook-preview.html story="components-va-tag-status--error" link_text="va-tag-status error" %}
 
-Used to indicate critical issues, failure states, or items that require immediate attention.
+Use the error status to indicate critical issues, failure states, or items that require immediate attention.
 
 ## Usage
 
@@ -74,7 +74,7 @@ Used to indicate critical issues, failure states, or items that require immediat
 * **For data-heavy interfaces.** Use Status Tags to help users quickly scan and prioritize information based on semantic meaning.
 * **Tags shouldn't be interactive.** Tags are designed to be static labels that convey information, not clickable elements. They shouldn't have hover, focus, or active states that suggest interactivity.
 * **Test for user confusion.** Users might confuse tags with buttons. Always conduct usability testing to make sure your particular implementation isn't causing frustration.
-* **Use tags sparingly.** Don't overdo it — if everything on a page is called out as important, nothing is important.
+* **Use tags sparingly.** Don't overdo it. If everything on a page is called out as important, nothing is important.
 * **Use semantic colors consistently.** Apply the same color meanings across all components (tags, alerts, etc.) to create a cohesive experience for users.
 * **For status within cards.** When using tags to communicate status within card components, see the [Card status guidance]({{ site.baseurl }}/components/card/card-status) for specific implementation details and best practices.
 
