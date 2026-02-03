@@ -34,16 +34,8 @@ anchors:
   <va-table-row>
     <span>Advance notification</span>
     <span><b>Upcoming site maintenance</b></span>
-    <span>We’ll be working on VA.gov soon. The maintenance will last [x hour]. During that time, you won’t be able to sign in or use tools.<br><br> 
-      <b>Date:</b> Month Day, Year <br><b>Start/End time:</b> 0:00 a.m. to 0:00 a.m. ET</span>
-    <span><a href="{{ site.baseurl }}/components/banner#before-maintenance">Maintenance banner</a></span>
-    <span>Before maintenance</span>
-  </va-table-row>
-  <va-table-row>
-    <span>Advance notification/24 hour</span>
-    <span><b>Upcoming site maintenance</b></span>
-    <span>We’ll be working on VA.gov soon. The maintenance will last 24 hours. During that time, you won’t be able to sign in or use tools.<br><br>
-      <b>Start:</b> Month Day, Year, at 0:00 a.m. ET<br><b>End:</b> Month Day, Year, at 0:00 a.m. ET</span>
+    <span>We’ll be working on VA.gov soon. During that time, you won’t be able to sign in or use tools.<br><br> 
+      <b>Start time:</b> Month Day, Year, at 0:00 a.m. ET <br><b>End time:</b> Month Day, Year, at 0:00 a.m. ET</span>
     <span><a href="{{ site.baseurl }}/components/banner#before-maintenance">Maintenance banner</a></span>
     <span>Before maintenance</span>
   </va-table-row>
@@ -51,15 +43,7 @@ anchors:
     <span>During downtime</span>
     <span><b>Site maintenance</b></span>
     <span>We're working on VA.gov right now. If you have trouble signing in or using tools, check back after we're finished. Thank you for your patience.<br><br>      
-      <b>Date:</b> Month Day, Year<br><b>Start/End time:</b> 0:00 a.m. to 00:00 a.m. ET</span>
-    <span><a href="{{ site.baseurl }}/components/banner#during-maintenance">Maintenance banner</a></span>
-    <span>During maintenance</span>
-  </va-table-row>
-  <va-table-row>
-    <span>During downtime/24 hour</span>
-    <span><b>Site maintenance</b></span>
-    <span>We’re working on VA.gov right now. If you have trouble signing in or using tools, check back after we're finished. Thank you for your patience.<br><br>      
-      <b>Start:</b> Month Day, Year, at 0:00 a.m. ET<br><b>End:</b> Month Day, Year, at 0:00 a.m. ET</span>
+      <b>Start time:</b> Month Day, Year, at 0:00 a.m. ET <br><b>End time:</b> Month Day, Year, at 0:00 a.m. ET</span>
     <span><a href="{{ site.baseurl }}/components/banner#during-maintenance">Maintenance banner</a></span>
     <span>During maintenance</span>
   </va-table-row>
