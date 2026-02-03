@@ -230,12 +230,12 @@ Do not use monospace fonts for phone numbers, zip codes, dates, or other data th
 
 {% include snippet.html content='html/eyebrow.html' %}
 
-The eyebrow sits above a heading and provides a label for a sequence of pages in a process or groupings across multiple cards. 
+The eyebrow sits above a heading and provides a label for a sequence of pages in a process or for groups of related content, such as multiple cards. 
 
 ### When to use
-- Implementing the [Help users to complete a sub task]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task) pattern.
-- Indicate content type or category between cards or pages.
-- High-level context that helps users compare or scan multiple cards.
+- Use the eyebrow when you implement the [Help users to complete a sub task]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task) pattern.
+- Use the eyebrow to indicate content type or category across related cards or pages.
+- Use the eyebrow to provide high-level context that helps users compare or scan multiple cards.
 
 ### When to use something else
 - Use the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) to communicate status. Place above the header instead of the eyebrow.
