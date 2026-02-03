@@ -35,7 +35,7 @@ New York, NY 67890 <br/>
 
 ### Zip codes and postal codes
 
-- When we know an address is a U.S. address, use “zip code.” If the address is outside the U.S. or if you’re unsure of the country, use “postal code.”
+- When we know an address is a U.S. address, use “zip code.” If the address is outside the U.S. or if you’re unsure of the country, use “postal code.”<br>
 **Note:** The [Ask users for…Addresses pattern](https://design.va.gov/patterns/ask-users-for/addresses) uses “postal code” for the field label. But the error message will say “Enter a valid 5-digit zip code” if we know the address is in the U.S.
 -	When Veterans fill out their address, we don’t require them to include the extra 4 digits of their zip code. They only need to provide the 5-digit zip code.
 -	When we provide an address to Veterans, we sometimes include the extra 4 digits of the zip code. If we include the extra 4 digits, use a hyphen (ex. 12345-6789).
