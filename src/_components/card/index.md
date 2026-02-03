@@ -183,7 +183,7 @@ A radio button tile has a title and description within the label and a Card-like
 
 ### A list of services or tools
 
-{% include component-example.html alt="A set of information—designed to be shown within a list—that contains a header, a bright call to action, a status tag, four sets of data formatted as 'Label: Value' pairs, and a link."  file="/images/components/service-list-item/annotated-service-list-item-component.png" %}
+{% include component-example.html alt="A set of information—designed to be shown within a list—that contains a header, a bright call to action, a Status Tag, four sets of data formatted as 'Label: Value' pairs, and a link."  file="/images/components/service-list-item/annotated-service-list-item-component.png" %}
 
 When you want to show benefits or tools the user is currently enrolled in or has access to, use the [Service list item]({{ site.baseurl }}/components/service-list-item) component instead of the Card component.
 
