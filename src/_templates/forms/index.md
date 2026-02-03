@@ -113,7 +113,7 @@ Forms combine multiple components to create complete experiences:
 #### Supporting components  
 * [Additional info]({{ site.baseurl }}/components/additional-info) - Expandable help content
 * [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented) - Show progress through multi-step forms
-* [Button pairs]({{ site.baseurl }}/components/button/button-pair) - Navigation between form steps
+* [Button group]({{ site.baseurl }}/components/button/button-group) - Navigation between form steps
 
 ### Page templates for forms
 

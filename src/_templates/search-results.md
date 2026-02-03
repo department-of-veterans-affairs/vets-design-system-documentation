@@ -111,17 +111,11 @@ Active filter chips that show the currently applied filter values.
 
 ### Sort
 
-Changes the order of the results. Sort uses the [Select]({{ site.baseurl }}/components/form/select) component to show the sorting options.
+[Sort]({{ site.baseurl }}/components/sort) component which utilizes [Select]({{ site.baseurl }}/components/form/select) as its foundation. It allows the user to change the order of the results. 
 
 ### Results description
 
-Text describing how many results are being shown.
-
-* **Showing 1-10 of results.** The implementation should follow this format:
-
-> Showing 1-10 of results for "[query]"
-
-* **Update when filters change.** The results description must update when filters are changed so that all users can understand that the results have been updated.
+{% include components/results-description.md %}
 
 ### Apply filters
 
@@ -162,17 +156,6 @@ The text of the link of the matching page. This should not be a link (the header
 
 ## How to design and build
 
-### Sorting
-
-* **Add sorting when it has utility to the user.** Sorting is not required but recommended when changing the order of the search results provides utility to the user. For example, if results contain one or more facets that can be sorted.
-* **Sorting does not change contents of the page.** The action of sorting must not change any information on the page. Sorting simply reorders the page contents.
-* **Sort and filtering are not the same!** Do not conflate the Sort action with the Filter action.
-  * Users encounter Sort in many different contexts and expect it to work the same across the board.
-  * Sometimes users want to simply sort a list (and not filter anything) and should have a clear path to do so.
-  * Combining them adds unnecessary complexity and cognitive load, and can force users to make more clicks or taps to simply reorder a list (Sort) while still having to navigate through the Filter options.
-* **Sorting happens inline on the page.** Do not take users to a new page or screen in order to sort search results.
-* **Sorting does not require an additional action.** Sorting does not require an accompanying button to trigger the sort. Changing the select menu triggers the sorting action.
-
 ### Filtering
 
 <va-link-action
@@ -180,6 +163,24 @@ The text of the link of the matching page. This should not be a link (the header
   text="Follow the guidance for the search filter component"
   type="secondary"
 ></va-link-action>
+
+
+### Sorting
+<va-link-action
+  href="{{ site.baseurl }}/components/sort"
+  text="Follow the guidance for the sort component"
+  type="secondary"
+></va-link-action>
+
+<!--
+* **Add sorting when it has utility to the user.** Sorting is not required but recommended when changing the order of the search results provides utility to the user. For example, if results contain one or more facets that can be sorted.
+* **Sorting does not change contents of the page.** The action of sorting must not change any information on the page. Sorting simply reorders the page contents.
+* **Sort and filtering are not the same!** Do not conflate the Sort action with the Filter action.
+  * Users encounter Sort in many different contexts and expect it to work the same across the board.
+  * Sometimes users want to simply sort a list (and not filter anything) and should have a clear path to do so.
+  * Combining them adds unnecessary complexity and cognitive load, and can force users to make more clicks or taps to simply reorder a list (Sort) while still having to navigate through the Filter options.
+* **Sorting happens inline on the page.** Do not take users to a new page or screen in order to sort search results.
+* **Sorting does not require an additional action.** Sorting does not require an accompanying button to trigger the sort. Changing the select menu triggers the sorting action.-->
 
 ## Accessibility considerations
 
@@ -189,5 +190,5 @@ The text of the link of the matching page. This should not be a link (the header
 
 * **Use filter chips to show the filters being applied when there are more than 3 facets.** 3 or more facets requires the use of filter chips to show what is currently selected in filters.
 * **Use a left-hand sidebar when the main purpose of the product is to search.** If your product's main purpose is to allow users to search, then use a persistent, visible, left side navigation from the tablet breakpoint and wider viewports. For example, global Search, GI Bill Comparison tool, and Resource & Support (or other knowledge bases) feature search, filtering, and sorting as the main focus of their products thus they would use a persistent side navigation to hold filtering.
-* **Sort and filtering are not the same!** Do not conflate the Sort action with the Filter action. See [guidance on sort](#sort).
+* **Sort and filtering are not the same!** Do not conflate the Sort action with the Filter action. Sorting is for reordering results whereas Filtering is for narrowing them down.
 * **Filtering happens inline on the page.** Do not take users to a new page or screen in order to filter search results.
