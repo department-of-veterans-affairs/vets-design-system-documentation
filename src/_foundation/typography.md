@@ -238,7 +238,7 @@ The eyebrow sits above a heading and provides a label for a sequence of pages in
 - Use the eyebrow to provide high-level context that helps users compare or scan multiple cards.
 
 ### When to use something else
-- Use the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) to communicate status. Place above the header instead of the eyebrow.
+- [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) should be used to indicate status when used above the header.
 
 Note: This component has been [tested indirectly with success](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/checkin/research/2023-04%20Unified%20Check-In%20Experience%20Usability%20Study/research-findings.md#key-findings).
 
