@@ -81,8 +81,8 @@ This state is triggered when validation errors occur, such as when a user tries 
 
 ### Calls to action (CTA)
 
-- **Single CTA only.** Card Status supports only one call-to-action, typically to add or edit data. This is more restrictive than the standard [Card component]({{ site.baseurl }}/components/card), which allows up to 3 CTAs.
-- **Use action links.** The CTA should use a [secondary action link]({{ site.baseurl }}/components/link/action).
+* **Single CTA only.** Card Status supports only one call-to-action, typically to add or edit data. This is more restrictive than the standard [Card component]({{ site.baseurl }}/components/card), which allows up to 3 CTAs.
+* **Use action links.** The CTA should use a [secondary action link]({{ site.baseurl }}/components/link/action).
 
 ### Placement
 
@@ -97,8 +97,8 @@ Card Status uses the same placement, dimensions, and layout as described in the 
 Card Status follows the same [content considerations as the Card component]({{ site.baseurl }}/components/card#content-considerations).
 
 Additionally:
-- **Clear status labels.** Use concise, plain language status labels (e.g., "Missing", "In progress", "Completed").
-- **Actionable error messages.** Error messages must follow the VA.gov pattern: state what's wrong and how to fix it.
+* **Clear status labels.** Use concise, plain language status labels (e.g., "Missing", "In progress", "Completed").
+* **Actionable error messages.** Error messages must follow the VA.gov pattern: state what's wrong and how to fix it.
 
 ## Accessibility considerations
 
@@ -106,34 +106,34 @@ Card Status follows the same [basic accessibility considerations as the Card com
 
 The Card Status component handles most status and error accessibility automatically and meets WCAG 2.2 AA criteria. Teams need to:
 
-- **Set appropriate heading levels.** Choose the heading level that fits your page's outline structure. For example, if Card Status appears in a section under an `<h2>`, use `<h3>` for card headings.
-- **Write clear error messages.** Follow the VA.gov pattern: state what's wrong and how to fix it.
+* **Set appropriate heading levels.** Choose the heading level that fits your page's outline structure. For example, if Card Status appears in a section under an `<h2>`, use `<h3>` for card headings.
+* **Write clear error messages.** Follow the VA.gov pattern: state what's wrong and how to fix it.
 
 ### How Card Status handles accessibility programmatically
 
 **Status announcements:**
-- Status uses the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component with `role="status"`
-- Includes visually hidden "Status:" prefix for screen reader context
-- The component programmatically associates status with the card heading
+* Status uses the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component with `role="status"`
+* Includes visually hidden "Status:" prefix for screen reader context
+* The component programmatically associates status with the card heading
 
 **Error handling:**
-- Error messages wrapped in `role="alert"` for automatic announcement
-- Errors linked to action links via `aria-describedby`
-- Focus remains on the action link (not moved to error) to prevent disorientation
-- Error state visually indicated by icon and text, not color alone
+* Error messages wrapped in `role="alert"` for automatic announcement
+* Errors linked to action links via `aria-describedby`
+* Focus remains on the action link (not moved to error) to prevent disorientation
+* Error state visually indicated by icon and text, not color alone
 
 **Heading structure:**
-- Card headings use semantic heading tags (teams set these based on page structure)
-- Screen readers read status and heading together
+* Card headings use semantic heading tags (teams set these based on page structure)
+* Screen readers read status and heading together
 
 **Keyboard navigation:**
-- Tab key navigates to the action link within the card
-- Enter key or spacebar activates the link
+* Tab key navigates to the action link within the card
+* Enter key or spacebar activates the link
 
 ## Related
-- [Card]({{ site.baseurl }}/components/card) - Base component for non-status cards
-- [Service list item]({{ site.baseurl }}/components/service-list-item) 
-- [Link - Action]({{ site.baseurl }}/components/link/action)
-- [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/)
+* [Card]({{ site.baseurl }}/components/card) - Base component for non-status cards
+* [Service list item]({{ site.baseurl }}/components/service-list-item)
+* [Link - Action]({{ site.baseurl }}/components/link/action)
+* [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/)
 
 {% include _component-checklist.html component_name="va-card-status" %}
