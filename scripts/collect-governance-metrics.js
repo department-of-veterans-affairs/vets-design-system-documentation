@@ -16,12 +16,16 @@
 
 const fs = require('fs').promises;
 const path = require('path');
+const https = require('https');
 // We use execFileSync to invoke GitHub CLI commands directly, rather than the Octokit library.
 // This approach leverages existing CLI tooling and simplifies authentication and output parsing.
 // We use execFileSync (not execSync/exec) and pass arguments as array elements rather than string concatenation to prevent command injection attacks.
 const { execFileSync } = require('child_process');
 
 const REPO = 'department-of-veterans-affairs/va.gov-team';
+const REPO_OWNER = 'department-of-veterans-affairs';
+const REPO_NAME = 'va.gov-team';
+const SENSITIVE_REPO = 'department-of-veterans-affairs/va.gov-team-sensitive';
 const DATA_DIR = path.join(__dirname, '../src/_data/metrics');
 
 /**
@@ -182,7 +186,218 @@ function parseQuarter(quarterString) {
   };
 }
 
+/**
+ * Make a GraphQL request to GitHub API
+ */
+function makeGraphQLRequest(query, variables = {}) {
+  return new Promise((resolve, reject) => {
+    const token = process.env.GITHUB_TOKEN;
+    if (!token) {
+      reject(new Error('GITHUB_TOKEN environment variable is required for GraphQL requests'));
+      return;
+    }
 
+    const data = JSON.stringify({ query, variables });
+
+    const options = {
+      hostname: 'api.github.com',
+      path: '/graphql',
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json',
+        'Content-Length': data.length,
+        'User-Agent': 'VA-Design-System-Metrics'
+      }
+    };
+
+    const req = https.request(options, (res) => {
+      let body = '';
+
+      res.on('data', (chunk) => {
+        body += chunk;
+      });
+
+      res.on('end', () => {
+        try {
+          const response = JSON.parse(body);
+
+          if (response.errors) {
+            reject(new Error(`GraphQL errors: ${JSON.stringify(response.errors)}`));
+            return;
+          }
+
+          resolve(response.data);
+        } catch (error) {
+          reject(new Error(`Failed to parse response: ${error.message}`));
+        }
+      });
+    });
+
+    req.on('error', (error) => {
+      reject(error);
+    });
+
+    req.write(data);
+    req.end();
+  });
+}
+
+/**
+ * Fetch total team count from va.gov-team-sensitive/teams/team-lookup.json
+ * Returns the count of teams, or null if access is denied
+ */
+async function fetchTotalPlatformTeams() {
+  console.log('Fetching total platform teams from va.gov-team-sensitive...');
+
+  try {
+    const output = execFileSync('gh', [
+      'api',
+      `repos/${SENSITIVE_REPO}/contents/teams/team-lookup.json`,
+      '--jq', '.content'
+    ], {
+      encoding: 'utf8',
+      timeout: 30000
+    });
+
+    if (output.trim()) {
+      // Decode base64 content
+      const jsonContent = Buffer.from(output.trim(), 'base64').toString('utf8');
+      const teamData = JSON.parse(jsonContent);
+
+      // Count teams - team-lookup.json is an object with team keys
+      const teamCount = Object.keys(teamData).length;
+      console.log(`  Found ${teamCount} teams in team-lookup.json`);
+      return teamCount;
+    }
+
+    return null;
+  } catch (error) {
+    console.warn(`  Warning: Could not fetch team-lookup.json from va.gov-team-sensitive: ${error.message}`);
+    console.warn('  This may be due to missing repository access. Continuing without total platform teams count.');
+    return null;
+  }
+}
+
+/**
+ * Fetch kick-off issues with body text using GraphQL API
+ * This is needed to extract team names from issue bodies
+ */
+async function fetchKickoffIssuesWithBody(startDate, endDate) {
+  console.log(`Fetching kick-off issues with body text (${startDate} to ${endDate})...`);
+
+  const query = `
+    query($searchQuery: String!, $cursor: String) {
+      search(query: $searchQuery, type: ISSUE, first: 50, after: $cursor) {
+        issueCount
+        pageInfo {
+          hasNextPage
+          endCursor
+        }
+        nodes {
+          ... on Issue {
+            number
+            title
+            createdAt
+            body
+            labels(first: 50) {
+              nodes {
+                name
+              }
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  // Build search query for kick-off issues
+  const searchQuery = `repo:${REPO_OWNER}/${REPO_NAME} is:issue label:CC-Request label:collaboration-cycle created:${startDate}..${endDate}`;
+
+  let allIssues = [];
+  let hasNextPage = true;
+  let cursor = null;
+
+  while (hasNextPage) {
+    const variables = {
+      searchQuery,
+      cursor
+    };
+
+    try {
+      const data = await makeGraphQLRequest(query, variables);
+      const { search } = data;
+
+      if (search && search.nodes) {
+        allIssues = allIssues.concat(search.nodes);
+        hasNextPage = search.pageInfo.hasNextPage;
+        cursor = search.pageInfo.endCursor;
+
+        console.log(`  Fetched ${allIssues.length} kick-off issues so far...`);
+      } else {
+        hasNextPage = false;
+      }
+
+      // Rate limiting: wait 1 second between requests
+      if (hasNextPage) {
+        await new Promise(resolve => setTimeout(resolve, 1000));
+      }
+    } catch (error) {
+      console.error(`  Error fetching kick-off issues via GraphQL: ${error.message}`);
+      hasNextPage = false;
+    }
+  }
+
+  console.log(`  Total kick-off issues found: ${allIssues.length}`);
+  return allIssues;
+}
+
+/**
+ * Extract team name from kick-off issue body
+ * Handles both markdown link format [Team Name](URL) and plain text
+ */
+function extractTeamName(issueBody) {
+  if (!issueBody) return null;
+
+  // First, try to match markdown link format: [Team Name](URL)
+  // Pattern: ### VFS team name followed by [text](url)
+  const linkMatch = issueBody.match(/###\s+VFS team name\s*\n+\s*\[([^\]]+)\]/i);
+  if (linkMatch && linkMatch[1]) {
+    const teamName = linkMatch[1].trim();
+    if (teamName && teamName !== '_No response_' && teamName.length > 0) {
+      return teamName;
+    }
+  }
+
+  // Fall back to plain text format
+  // Pattern: ### VFS team name followed by text (not starting with [ or #)
+  const textMatch = issueBody.match(/###\s+VFS team name\s*\n+\s*([^\n#\[]+)/i);
+  if (textMatch && textMatch[1]) {
+    const teamName = textMatch[1].trim();
+    if (teamName && teamName !== '_No response_' && teamName.length > 0) {
+      return teamName;
+    }
+  }
+
+  return null;
+}
+
+/**
+ * Count unique teams from kick-off issues (case-insensitive)
+ */
+function countUniqueTeams(kickoffIssues) {
+  const teamNames = new Set();
+
+  kickoffIssues.forEach(issue => {
+    const teamName = extractTeamName(issue.body);
+    if (teamName) {
+      // Use lowercase for case-insensitive comparison
+      teamNames.add(teamName.toLowerCase());
+    }
+  });
+
+  return teamNames.size;
+}
 
 /**
  * Fetch issues created within a specific date range using targeted search
@@ -297,7 +512,7 @@ function getQuarterDateRanges() {
  */
 async function processCollaborationCycleMetrics(specificQuarter = null) {
   let quarters;
-  
+
   if (specificQuarter) {
     // Process only the specified quarter
     quarters = [parseQuarter(specificQuarter)];
@@ -306,20 +521,29 @@ async function processCollaborationCycleMetrics(specificQuarter = null) {
     // Process all quarters (default behavior)
     quarters = getQuarterDateRanges();
   }
-  
+
+  // Fetch total platform teams once (this is a point-in-time count, not quarterly)
+  const totalPlatformTeams = await fetchTotalPlatformTeams();
+
   const quarterlyData = [];
-  
+
   for (const quarter of quarters) {
     console.log(`Processing data for ${quarter.label}...`);
-    
+
     // 1. Total kick-offs - Issues with "CC-Request" and "collaboration-cycle" labels created in this quarter
     const kickoffIssues = await fetchIssuesInDateRange(
-      ['CC-Request', 'collaboration-cycle'], 
-      quarter.startDate, 
+      ['CC-Request', 'collaboration-cycle'],
+      quarter.startDate,
       quarter.endDate,
       'created'
     );
     const totalKickoffs = kickoffIssues.length;
+
+    // 1b. Fetch kickoff issues with body text via GraphQL to extract team names
+    const kickoffIssuesWithBody = await fetchKickoffIssuesWithBody(quarter.startDate, quarter.endDate);
+
+    // 1c. Count unique teams in Collab Cycle this quarter
+    const uniqueTeamsInCollabCycle = countUniqueTeams(kickoffIssuesWithBody);
     
     // 2. Individual touchpoint types held - Issues with governance-team + specific touchpoint labels created in this quarter
     const designIntentIssues = await fetchIssuesInDateRange(
@@ -387,9 +611,14 @@ async function processCollaborationCycleMetrics(specificQuarter = null) {
     const totalLaunchBlockingIssues = launchBlockingIssues.length;
     
     // 6. Percentage of launch-blocking issues
-    const launchBlockingPercentage = totalStagingIssues > 0 ? 
+    const launchBlockingPercentage = totalStagingIssues > 0 ?
       Math.round((totalLaunchBlockingIssues / totalStagingIssues) * 100) : 0;
-    
+
+    // 7. Calculate average staging findings per team
+    // Formula: total_staging_issues / unique_teams_in_collab_cycle
+    const avgStagingFindingsPerTeam = uniqueTeamsInCollabCycle > 0 ?
+      Math.round((totalStagingIssues / uniqueTeamsInCollabCycle) * 10) / 10 : 0;
+
     quarterlyData.push({
       period: quarter.label,
       total_kickoffs: totalKickoffs,
@@ -401,10 +630,14 @@ async function processCollaborationCycleMetrics(specificQuarter = null) {
       staging_review_held: stagingReviewHeld,
       total_staging_issues: totalStagingIssues,
       launch_blocking_issues: totalLaunchBlockingIssues,
-      launch_blocking_percentage: launchBlockingPercentage
+      launch_blocking_percentage: launchBlockingPercentage,
+      // New team metrics
+      total_platform_teams: totalPlatformTeams,
+      unique_teams_in_collab_cycle: uniqueTeamsInCollabCycle,
+      avg_staging_findings_per_team: avgStagingFindingsPerTeam
     });
   }
-  
+
   return quarterlyData;
 }
 
@@ -658,6 +891,10 @@ async function main() {
     console.log(`   - Total staging issues: ${quarter.total_staging_issues}`);
     console.log(`   - Launch blocking issues: ${quarter.launch_blocking_issues}`);
     console.log(`   - Launch blocking percentage: ${quarter.launch_blocking_percentage}%`);
+    console.log(`\n👥 Team Metrics:`);
+    console.log(`   - Total platform teams: ${quarter.total_platform_teams !== null ? quarter.total_platform_teams : 'N/A (access denied)'}`);
+    console.log(`   - Unique teams in Collab Cycle: ${quarter.unique_teams_in_collab_cycle}`);
+    console.log(`   - Avg staging findings per team: ${quarter.avg_staging_findings_per_team}`);
     console.log(`\n🔄 Current quarter: ${indexData.current_quarter}`);
     console.log(`📈 Latest complete quarter for reporting: ${indexData.latest_complete_quarter}`);
     
@@ -675,5 +912,9 @@ if (require.main === module) {
 module.exports = {
   fetchIssuesInDateRange,
   processCollaborationCycleMetrics,
-  calculateSummary
+  calculateSummary,
+  fetchTotalPlatformTeams,
+  fetchKickoffIssuesWithBody,
+  extractTeamName,
+  countUniqueTeams
 };
