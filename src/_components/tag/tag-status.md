@@ -59,7 +59,7 @@ Use the error status to indicate critical issues, failure states, or items that 
 ### When to consider something else
 
 * **When you might confuse tags with buttons.** For example, if tags appear near buttons on the page, users may mistake them for interactive elements.
-* **For labels longer than 1-3 words.** Tags work best with brief, scannable text. For longer descriptive text, consider using other options like the [Status via label with indicator]({{ site.baseurl }}/components/card#status-via-label-with-indicator) within the Card component.
+* **For labels longer than 1-3 words.** Tags work best with brief, scannable text. For longer descriptive text, you can use a [card with status indicator]({{ site.baseurl }}/components/card#with-status-indicator).
 * **When the Status Tag functions as a title.** Don't use a Status Tag when the tag content is more accurately described as the title or primary identifier of the content. Instead, use that text as the card's heading.
 * **Consider the Eyebrow Header style as an alternative.** The [Eyebrow](https://design.va.gov/foundation/typography#eyebrow) Header is a short, descriptive title placed above the main heading to provide additional context and maintain consistency.
 * **When lack of change in content makes tags ineffective.** If content updates are infrequent users may not notice or expect "new" tags. Use tags to call attention to a change in status.
@@ -76,7 +76,7 @@ Use the error status to indicate critical issues, failure states, or items that 
 * **Test for user confusion.** Users might confuse tags with buttons. Always conduct usability testing to make sure your particular implementation isn't causing frustration.
 * **Use tags sparingly.** Don't overdo it. If everything on a page is called out as important, nothing is important.
 * **Use semantic colors consistently.** Apply the same color meanings across all components (tags, alerts, etc.) to create a cohesive experience for users.
-* **For status within cards.** When using tags to communicate status within card components, see the [Card component status guidance]({{ site.baseurl }}/components/card#status-via-tag) for specific implementation details and best practices.
+* **For status within cards.** When using tags to communicate status within card components, see the [Card status guidance]({{ site.baseurl }}/components/card/card-status) for specific implementation details and best practices.
 
 ## Accessibility considerations
 
