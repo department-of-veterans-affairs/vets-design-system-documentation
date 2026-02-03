@@ -202,6 +202,7 @@ When you want to show benefits or tools the user is currently enrolled in or has
 ## Related
 - [Card - Status]({{ site.baseurl }}/components/card/card-status) - Use when cards need to display status information
 - [Service list item]({{ site.baseurl }}/components/service-list-item) - Use for benefits or tools the user is enrolled in
+- [Eyebrow heading]({{ site.baseurl }}/foundation/typography#eyebrow) - A small scannable heading that goes above the main card header
 - [Section titles]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles#section-titles)
 - [Link - Action]({{ site.baseurl }}/components/link/action)
 - [Link]({{ site.baseurl }}/components/link)
