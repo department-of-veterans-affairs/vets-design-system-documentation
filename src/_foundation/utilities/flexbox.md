@@ -151,6 +151,32 @@ This utility handles a flex container's lines within when there is extra space i
 
 {% include snippet.html content='html/align-content.html' %}
 
+## Align self
+
+This utility allows a single flex item to override the `align-items` value set on the flex container. It positions that specific item along the cross axis.
+
+**Available values**
+
+- `auto` (default): inherits the `align-items` value from the parent flex container
+- `flex-start`: aligns the item to the start of the cross axis
+- `flex-end`: aligns the item to the end of the cross axis
+- `center`: centers the item along the cross axis
+- `baseline`: aligns the item to the baseline
+- `stretch`: stretches the item to fill the container (respecting min/max constraints)
+
+<div class="site-showcase">
+{%
+  include _showcase-header.html
+  heading_level=3
+  header="Align self"
+  responsive=true
+  css_property="align-self"
+%}
+{% include_relative html/align-self.html %}
+</div>
+
+{% include snippet.html content='html/align-self.html' %}
+
 ## Order
 
 By default, flex items are laid out in the source order. The order property controls the order in which flex items appear regardless of the source order.
