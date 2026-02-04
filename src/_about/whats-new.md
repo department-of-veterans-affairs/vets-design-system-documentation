@@ -34,9 +34,9 @@ sidebar: true
 
 ## Content Style Guide Updates
 
-### August 2025
+### January 2026
 
-{% include content/whats-new/august-2025.md %}
+{% include content/whats-new/january-2026.md %}
 
 <va-link-action
   href="{{ site.baseurl }}/content-style-guide/whats-new"
