@@ -2,9 +2,9 @@ Don't use periods in PO for PO Box.
 
 Write out street names (street, road, avenue, boulevard, highway, etc.) in both body copy and in address blocks. Don't abbreviate.
 
-When a street address contains a compass point (north, south, etc.), defer to the way it's referenced locally. For example, some cities may abbreviate compass points like north and south for some but not all streets.
+When a street address contains a compass point (like north or south), defer to the way it's referenced locally. For example, some cities may abbreviate compass points like north and south for some but not all streets.
 <p>
-  In the examples below, we spell out the street names, and style the compass points the way they're locally referenced in Washington, D.C., and New York City, which both abbreviate compass points.
+  In the examples, we spell out the street names and style the compass points the way they're locally referenced in Washington, DC, and New York City, which both abbreviate compass points.
 </p>
 
 {% capture example_like_this %}
@@ -33,8 +33,9 @@ New York, NY 67890 <br/>
 
 {% include _like-this-not-this.html like_this=example_like_this not_this=example_not_this %}
 
-### Zip codes
+### Zip codes and postal codes
 
+- When we know an address is a U.S. address, use “zip code.” If the address is outside the U.S. or if you’re unsure of the country, use “postal code.”<br>
+**Note:** The [Ask users for…Addresses pattern](https://design.va.gov/patterns/ask-users-for/addresses) uses “postal code” for the field label. But the error message will say “Enter a valid 5-digit zip code” if we know the address is in the U.S.
 -	When Veterans fill out their address, we don’t require them to include the extra 4 digits of their zip code. They only need to provide the 5-digit zip code.
 -	When we provide an address to Veterans, we sometimes include the extra 4 digits of the zip code. If we include the extra 4 digits, use a hyphen (ex. 12345-6789).
-
