@@ -6,7 +6,7 @@ title: Engagement messages
 intro-text: Engagement messages recommend that the person enter or update data in the system. Engagement messages can be initiated by either the system or another person.
 ---
 
-**Note:** The Help users to recover from errors pattern has guidance on when to consider instructing the person to call the VA.gov help desk and when to add other "next-step" calls to action.
+**Note:** The Help users to recover from errors pattern has guidance on when to consider instructing the person to call for VA.gov technical support and when to add other "next-step" calls to action.
 
 [Learn more in the Help users to recover from errors pattern]({{ site.baseurl }}/patterns/help-users-to/recover-from-errors#next-step-calls-to-action)
 
