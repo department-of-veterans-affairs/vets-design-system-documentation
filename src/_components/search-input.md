@@ -89,7 +89,7 @@ Terms that are added to this list include:
 
 * Hard to spell terms, particularly long ones (benefits, government)
 * Alphanumeric form titles (10-10ez)
-* Common veteran tasks
+* Common Veteran tasks
 * Top VA.gov searches (benefits)
 * Best bets (e.g., Covid-19 vaccine)
 * Promoting VA content to aid in wayfinding (e.g., Find a form or how do I?)
