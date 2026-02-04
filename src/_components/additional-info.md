@@ -48,7 +48,7 @@ anchors:
 * **Required content**: If the majority of people need the content to accomplish the main task then it should not be hidden from view.
 * **Content organized under a new heading.** If you have enough content that it makes sense to organize under a new heading that does not make sense under the same heading as the content nearby then use an [Accordion]({{ site.baseurl }}/components/accordion).
 * **Error messages or other immediate actions**: Do not use this component for error messages or other critical or timely information.
-* **Inside Alerts**: Use this component inside an [Alert]({{ site.baseurl }}/components/alert) only as a last resort and if approved in the Collaboration Cycle. Instead use the [Alert - Expandable]({{ site.baseurl }}/components/alert-expandable) component, especially when the Alert is within the page content and not at the top of the page.
+* **Inside Alerts**: Use this component inside an [Alert]({{ site.baseurl }}/components/alert) only as a last resort and if approved in the Collaboration Cycle. Instead use the [Alert - Expandable]({{ site.baseurl }}/components/alert/alert-expandable) component, especially when the Alert is within the page content and not at the top of the page.
 * **Floating in space**: Try to avoid using Additional info outside of the flow of the page, unattached to a section of content or another component. For example, there are instances of Additional info between a h1 and a Card. See [placement](#placement) for more.
 
 ## Behavior
@@ -88,6 +88,7 @@ The following are places where Additional info can be used:
 * The Additional Info component uses aria-controls and aria-expanded attributes to convey the expand and collapse functionality to assistive technologies.
 * Pressing the close button (a element with role of button) must close the Additional Info.
 * The link element that acts as the trigger for the drawer to open and close has a role of heading so it can be found in the page. Setting an aria-level is recommended.
+* **Wrap content in HTML elements.** All text content inside `va-additional-info` must be wrapped in an appropriate HTML element such as `<p>`, `<span>`, or `<div>`. Some screen readers, particularly NVDA, may ignore unwrapped plain text. For example, use `<p>This is the content.</p>` instead of placing text directly inside the component without a wrapper element.
 
 ## Related
 

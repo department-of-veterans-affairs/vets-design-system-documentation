@@ -4,7 +4,7 @@ title: Bulleted and numbered lists
 intro-text: Bulleted and numbered lists help make information easier to scan and understand. If a sentence contains more than 3 items or ideas, we recommend breaking the sentence up into a list. These guidelines also apply to content for checkboxes and radio buttons in forms.
 anchors:
   - anchor: Considerations
-  - anchor: Punctuation for lists
+  - anchor: Punctuation
   - anchor: Links in lists
 ---
 
@@ -70,7 +70,7 @@ __Both of these descriptions must be true:__
 - You have a current illness or injury (known as a condition) that affects your mind or body, **and**
 - You served on active duty, active duty for training, or inactive duty training
 
-__And at least one of these descriptions must be true:__
+__And at least 1 of these descriptions must be true:__
 
 - You got sick or injured while serving in the military—and can link this condition to your illness or injury (called an in-service disability claim), **or**
 - You had an illness or injury before you joined the military—and serving made it worse (called a pre-service disability claim), **or**
@@ -129,7 +129,7 @@ If you want to provide more information about potential errors in our decision, 
 </div>
 </div>
 
-### Example of bulleted list with more than one sentence
+### Example of bulleted list with more than 1 sentence
 
 If any item in a bulleted list contains 2 or more full sentences, use ending periods for all items in the list (including any fragments). 
 
@@ -163,7 +163,4 @@ Here's what you'll need to apply:
 
 ## Links in lists
 
--	List items can be links in certain situations. But we don’t want to overwhelm people with a long list of links, if possible.
--	Not all items in a list need to be a link. It’s okay to have only 1 or 2 items in a list linked.
--	If every item in a list is a link, keep the list short (less than 7 items). Every link should go to a different location—don’t link to the same page multiple times in the list.
--	When a list item is a link, the entire list item must be part of the link. Don’t link just 1 or 2 words.
+{% include content/links-in-lists.md %}

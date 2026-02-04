@@ -62,6 +62,15 @@ anchors:
   type="secondary"
 ></va-link-action>
 
+### Results description
+
+When using pagination, include a results description above the paginated content to help users understand their position within the full set of results. This is especially important for screen reader users and provides essential context for all users.
+
+{% include components/results-description.md %}
+
+Make sure the results description updates whenever the set of results changes—for example, when the user moves to a different page of results or changes filters—so that the information stays accurate for all users.
+For more details on implementing search results with pagination, including placement of the results description, see the [Search results template]({{ site.baseurl }}/templates/search-results).
+
 {% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations
