@@ -117,7 +117,7 @@ Search.gov's implementation of type-ahead does support fuzzy string matching to 
 
 ### Additional coding guidelines for type-ahead
 
-The Search component behaves as an input field with a submit button by default. In order to add type-ahead functionality, pass an array of suggestions that will be displayed below the input field. However, this component does not include logic to generate those suggestions.
+The Search Input component behaves as an input field with a submit button by default. In order to add type-ahead functionality, pass an array of suggestions that will be displayed below the input field. However, this component does not include logic to generate those suggestions.
 
 ## Accessibility considerations
 
