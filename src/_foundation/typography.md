@@ -230,6 +230,14 @@ Do not use monospace fonts for phone numbers, zip codes, dates, or other data th
 
 {% include snippet.html content='html/eyebrow.html' %}
 
+### Card with Eyebrow
+
+<div class="site-showcase">
+  {% include_relative html/eyebrow-card.html %}
+</div>
+
+{% include snippet.html content='html/eyebrow-card.html' %}
+
 The eyebrow sits above a heading and provides a label for a sequence of pages in a process or for groups of related content, such as multiple cards. 
 
 ### When to use
