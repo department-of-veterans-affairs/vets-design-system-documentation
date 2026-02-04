@@ -25,7 +25,7 @@ intro-text: Engagement messages recommend that the person enter or update data i
      <va-table-row>
         <span>Continue a saved application, claim, form, etc.</span>
         <span><b>Continue your [application, claim, form] for [benefit name]</b></span>
-        <span>Your [application, claim, form] will expire on <b>[Month Day, Year]</b>. If you'd still like to submit it, you'll need to do so by this date. Or you can start a new [application, claim, form] any time.</span>
+        <span>Your [application, claim, form] will expire on <b>[Month Day, Year]</b>. If you'd still like to submit this [application, claim, form], you'll need to do so before this date. Or you can start a new [application, claim, form] any time.</span>
         <span>Continue your [application, claim, form] (primary button); Start over (secondary button)</span>
         <span><a href="{{ site.baseurl }}/components/alert#informational-alert">Alert</a></span>
         <span>Informational</span>
