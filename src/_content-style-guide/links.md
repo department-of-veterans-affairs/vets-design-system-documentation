@@ -160,8 +160,8 @@ You may also need a direct download link if the person filling out the form is d
   
 Download the Continuity of Care document in 1 of these formats:
 
-Download the PDF
-Download the HTML
+Download the PDF<br>
+Download the HTML<br>
 Download the XML
 
 </div>
@@ -170,8 +170,8 @@ Download the XML
 <h3 class="do-dont__heading">Not this</h3>
 <div class="do-dont__content" markdown="1">
   
-Download the Continuity of Care document (PDF)
-Download the Continuity of Care document (HTML)
+Download the Continuity of Care document (PDF)<br>
+Download the Continuity of Care document (HTML)<br>
 Download the Continuity of Care document (XML)
   
 </div>
