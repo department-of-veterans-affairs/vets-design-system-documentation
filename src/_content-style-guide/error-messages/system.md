@@ -10,7 +10,7 @@ anchors:
   - anchor: Updates to user data (system initiated)
 ---
 
-**Note:** The Help users to recover from errors pattern has guidance on when to consider instructing the person to call the VA.gov help desk and when to add other "next-step" calls to action.
+**Note:** The Help users to recover from errors pattern has guidance on when to consider instructing the person to call for VA.gov technical support and when to add other "next-step" calls to action.
 
 [Learn more in the Help users to recover from errors pattern]({{ site.baseurl }}/patterns/help-users-to/recover-from-errors#next-step-calls-to-action)
 
@@ -107,8 +107,8 @@ anchors:
   </va-table-row>
   <va-table-row>
     <span>During downtime</span>
-    <span><b>You may have trouble signing in with [ID.me, Login.gov]</b></span>
-    <span>We’re sorry. We’re working to fix some problems with our [<b>ID.me</b>, <b>Login.gov</b>] sign-in process. If you’d like to sign in to VA.gov with this account, check back later.</span>
+    <span><b>You may have trouble signing in with your [ID.me, Login.gov]account</b></span>
+    <span>We’re sorry. We’re working to fix a problem with our [<b>ID.me</b>, <b>Login.gov</b>] account sign-in process. If you’d like to sign in to VA.gov with this account, check back later.</span>
     <span><a href="{{ site.baseurl }}/components/alert#warning-alert">Alert</a></span>
     <span>Warning</span>
   </va-table-row>
@@ -162,8 +162,8 @@ anchors:
   </va-table-row>
   <va-table-row>
     <span>During downtime</span>
-    <span><b>You may have trouble signing in with [ID.me, Login.gov]</b></span>
-    <span>We’re sorry. We’re working to fix some problems with our [<b>ID.me</b>, <b>Login.gov</b>] sign-in process. If you’d like to sign in to VA.gov with this account, check back later.</span>
+    <span><b>You may have trouble signing in with your [ID.me, Login.gov] account</b></span>
+    <span>We’re sorry. We’re working to fix some problems with our [<b>ID.me</b>, <b>Login.gov</b>] account sign-in process. If you’d like to sign in to VA.gov with this account, check back later.</span>
     <span><a href="{{ site.baseurl }}/components/alert#warning-alert">Alert</a></span>
     <span>Warning</span>
   </va-table-row>
