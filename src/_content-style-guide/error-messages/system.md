@@ -249,7 +249,7 @@ anchors:
     <span>After h1 on <a href="/templates/forms/introduction">form introduction page</a></span>
   </va-table-row>
   <va-table-row>
-    <span>Verify your identity with <b>ID.me</b> or <b>Login.gov</b></span>
+    <span>Identity verification with <b>ID.me</b> or <b>Login.gov</b></span>
     <span><b>Verify your identity</b></span>
     <span>We need you to verify your identity for your [<b>ID.me</b>, <b>Login.gov</b>] account. This step helps us protect all Veterans’ information and prevent scammers from stealing your benefits.<br><br>      
       This one-time process often takes about 10 minutes. You’ll need to provide certain personal information and identification.</span>
