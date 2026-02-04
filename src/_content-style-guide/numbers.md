@@ -62,6 +62,71 @@ You have a disability that started within one year after your discharge.
 </div>
 </div>
 
+## Length of time
+
+When writing out a length of time, use XX hours and XX minutes. We should only use decimals, like 3.5 hours, if it’s in a table where space is limited.
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+
+5 hours and 15 minutes
+
+7 hours and 30 minutes
+
+</div>
+</div>
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
+
+5.25 hours
+
+7 and a half hours
+
+</div>
+</div>
+</div>
+
+## Money
+
+-	When you have a dollar amount that doesn’t include cents in running text, don’t add the “.00” at the end
+-	When you have a dollar amount that doesn’t include cents in a list or a table, add the “.00” at the end
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+
+We'll charge your entitlement at the rate of 1 month for each $2,150 paid.
+
+---
+
+-	Full-time enrollment: $407.00
+-	3/4-time enrollment: $305.00
+-	1/2-time enrollment: $203.25
+-	Less than 1/2-time enrollment: $101.75
+
+</div>
+</div>
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
+
+We'll charge your entitlement at the rate of 1 month for each $2,150.00 paid.
+
+---
+
+-	Full-time enrollment: $407
+-	3/4-time enrollment: $305
+-	1/2-time enrollment: $203.25
+-	Less than 1/2-time enrollment: $101.75
+
+</div>
+</div>
+</div>
+
 ## Signs and symbols
 
 We use certain symbols in content throughout VA.gov. Well-known signs and symbols can be easier to scan.
@@ -95,7 +160,7 @@ VR and E program
 
 ### Dollar sign
 
-In general, use the dollar sign instead of spelling out "dollars."  
+In general, use the dollar sign instead of spelling out "dollars." Don’t add a space between the dollar sign and the number.
 
 Add "$" to table cells so screenreaders read the number as dollars and cents and not as a standard decimal.
 
