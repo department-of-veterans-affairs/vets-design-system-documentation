@@ -2,7 +2,7 @@ Don't use periods in PO for PO Box.
 
 Write out street names (street, road, avenue, boulevard, highway, etc.) in both body copy and in address blocks. Don't abbreviate.
 
-When a street address contains a compass point (north, south, etc.), defer to the way it's referenced locally. For example, some cities may abbreviate compass points like north and south for some but not all streets.
+When a street address contains a compass point (like north or south), defer to the way it's referenced locally. For example, some cities may abbreviate compass points like north and south for some but not all streets.
 <p>
   In the examples, we spell out the street names and style the compass points the way they're locally referenced in Washington, DC, and New York City, which both abbreviate compass points.
 </p>
