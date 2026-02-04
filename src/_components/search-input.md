@@ -32,7 +32,7 @@ mobile-app: false
 
 {% include storybook-preview.html story="uswds-va-search-input--small" link_text="va-search-input small" %}
 
-### With Typeahead
+### With Type-ahead
 
 {% include storybook-preview.html story="uswds-va-search-input--with-typeahead" link_text="va-search-input with typeahead" %}
 
@@ -62,7 +62,7 @@ mobile-app: false
 ### Placement
 
 * The search input component should only appear in the global header, on search results pages, and in search-related tools such as Resources and Support and Find a VA Form.
-* The search input component is revealed when a user interacts with the Search va-dropdown in the global header.
+* The search input component is revealed when a user interacts with the Search via the dropdown in the global header.
 * On search results pages, the search input appears below the header of the page and above the count of results in the main content well.
 * On search-related tools pages, the search input appears below the header of the page and above the linked resources or form links in the main content well.
 
@@ -89,10 +89,10 @@ Terms that are added to this list include:
 
 * Hard to spell terms, particularly long ones (benefits, government)
 * Alphanumeric form titles (10-10ez)
-* Common veteran tasks
-* Top va.gov searches (benefits)
+* Common Veteran tasks
+* Top VA.gov searches (benefits)
 * Best bets (e.g., Covid-19 vaccine)
-* Promoting va content to aid in wayfinding (e.g., Find a form or how do I?)
+* Promoting VA content to aid in wayfinding (e.g., Find a form or how do I?)
 
 ### Ranking of suggestions
 
@@ -117,7 +117,7 @@ Search.gov's implementation of type-ahead does support fuzzy string matching to 
 
 ### Additional coding guidelines for type-ahead
 
-The va-search component behaves as an input field with a submit button by default. In order to add type-ahead functionality, pass an array of suggestions that will be displayed below the input field. However, this component does not include logic to generate those suggestions.
+The Search Input component behaves as an input field with a submit button by default. In order to add type-ahead functionality, pass an array of suggestions that will be displayed below the input field. However, this component does not include logic to generate those suggestions.
 
 ## Accessibility considerations
 
