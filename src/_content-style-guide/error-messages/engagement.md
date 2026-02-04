@@ -71,7 +71,7 @@ intro-text: Engagement messages recommend that the person enter or update data i
     <va-table-row>
         <span>Prefill: Intro variation (authenticated)</span>
         <span><b>We prefilled some of your information</b></span>
-        <span>Since you’re signed in, we prefilled part of your [application, claim, form] based on your VA profile. You can also save your [application, claim, form] in progress and come back later to finish filling it out.<br><br>
+        <span>Since you’re signed in, we prefilled part of your [application, claim, form] based on your VA.gov profile. You can also save your [application, claim, form] in progress and come back later to finish filling it out.<br><br>
             <b>Note:</b> You’ll have 60 days from when you start or make updates to your [application, claim, form] to come back and finish it.</span>
         <span>N/A</span>
         <span><a href="{{ site.baseurl }}/components/alert#informational-alert">Alert</a></span>
@@ -81,7 +81,7 @@ intro-text: Engagement messages recommend that the person enter or update data i
     <va-table-row>
         <span>Prefill: Step variation (authenticated), if saving to form and profile</span>
         <span>N/A</span>
-        <span>If you make any changes here, your VA profile will reflect those changes.</span>
+        <span>If you make any changes here, your VA.gov profile will reflect those changes.</span>
         <span>N/A</span>
         <span><a href="{{ site.baseurl }}/components/alert#informational-alert">Alert</a></span>
         <span>Informational</span>
