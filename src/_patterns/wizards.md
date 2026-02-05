@@ -40,7 +40,7 @@ This tool was developed prior to the Design System, so some of the patterns are 
 
 ## Where to place wizards
 
-The wizard should live *on the page* on both the **Eligibility** and **How to Apply** pages for an application. The wizards begin under blue [summary box]({{ site.baseurl }}/components/summary-box) eligibility boxes but before [accordions]({{ site.baseurl }}/components/accordion) or [additional information]({{ site.baseurl }}/components/additional-info).
+The wizard should live *on the page* on both the **Eligibility** and **How to Apply** pages for an application. The wizards begin under blue [summary box]({{ site.baseurl }}/components/summary-box) eligibility boxes but before [accordions]({{ site.baseurl }}/components/accordion) or [Details]({{ site.baseurl }}/components/details).
 
 ## Specifics of the pattern
 
@@ -93,6 +93,6 @@ If you can't avoid it:
 * **Keep the new content added simple.** One additional question is okay. Or one additional input or clarifying sentence or two. However, the more that's added may make it difficult for some screen reader users to understand how the new content is associated with what triggered it.
 * **Avoid inserting static content between interactive content.** Screen reader users who navigate through forms may skip static content that is sandwiched between interactive content. Consider providing the new static content:
   * On the following page
-  * Within an expandable [additional info]({{ site.baseurl }}/components/additional-info) component (reachable by keyboard via the TAB key)
+  * Within an expandable [Details]({{ site.baseurl }}/components/details) component (reachable by keyboard via the TAB key)
   * As a polite aria live region
 * **Reach out for help.** If an experience can't avoid multiple instances of branching togic, or large amounts of newly added content, contact an accessibility specialist for help implementing [ARIA live regions](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions).

@@ -2,7 +2,7 @@ When a detailed form input label is not enough to convey the meaning or purpose 
 
 1. [Beneath the label (default)](#default-hint-text)
 2. [Inline within the label](#inline-within-the-label)
-3. [Additional info](#additional-info)
+3. [Details](#with-details)
 
 ### Default hint text
 
@@ -16,10 +16,10 @@ This should be used in the case where the needed clarification is a little longe
 
 This should be used in the case where the needed clarification is very short.
 
-### With Additional info
+### With Details {#with-details}
 
-{% include storybook-preview.html story="uswds-va-text-input--with-additional-info" link_text="Label with additional info hint text" %}
+{% include storybook-preview.html story="uswds-va-text-input--with-additional-info" link_text="Label with Details hint text" %}
 
-Using the [additional info]({{ site.baseurl }}/components/additional-info) component should only be done in cases where the needed clarification is long, complex, requiring more than two sentences or multiple paragraphs, or special formatting (bullet points, links, etc.).
+Using the [Details]({{ site.baseurl }}/components/details) component should only be done in cases where the needed clarification is long, complex, requiring more than two sentences or multiple paragraphs, or special formatting (bullet points, links, etc.).
 
 We want to avoid this variation when possible. Use of this component for this purpose is a last resort when attempts at reducing the content have failed. If a field needs a lot of explanation, it should ideally be moved to a distinct page with explanation on the page itself.

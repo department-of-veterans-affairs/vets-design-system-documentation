@@ -4,7 +4,7 @@ title: Alert - Expandable
 permalink: /components/alert/alert-expandable/
 has-parent: /components/alert/
 github-title: va-alert-expandable
-intro-text: A minimized alert style that can be used to alert a user to relevant information on the page that is not prompted by their own action. This component combines the Additional Info component with the Background-Color only Alert variation color schemes.
+intro-text: A minimized alert style that can be used to alert a user to relevant information on the page that is not prompted by their own action. This component combines the Details component with the Background-Color only Alert variation color schemes.
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=35%3A146&mode=design&t=J32RmU6Fjbjuh9bD-1
 contributors: Leyda Hughes (VSA Facilities Team)
 web-component: va-alert-expandable
@@ -45,7 +45,7 @@ anchors:
 ### When to consider something else
 
 * **User feedback.** Use the [Alert]({{ site.baseurl }}/components/alert) component when responding to an action taken by a user such as submitting a form.
-* **Clarifying background information.** Use the [Additional info]({{ site.baseurl }}/components/additional-info) component when clarifying outcomes for an input or a form question as well as providing background information. Keep in mind that Alert - Expandable should warrant an alert and be used sparingly. The value of any type of alert is diminished if the page is littered with alerts of equal weight.
+* **Clarifying background information.** Use the [Details]({{ site.baseurl }}/components/details) component when clarifying outcomes for an input or a form question as well as providing background information. Keep in mind that Alert - Expandable should warrant an alert and be used sparingly. The value of any type of alert is diminished if the page is littered with alerts of equal weight.
 * **Showing an error.** Errors should never be hidden. They should only appear as a result of a user action, and always be visible to the user. The error text should be brief and clear, eliminating the need for it to be collapsed. Consider using a standard or slim variation of [Alert]({{ site.baseurl }}/components/alert) if there is an error.
 
 ### Behavior
@@ -88,7 +88,7 @@ The alert was tested as part of a usability study with 9 participants. The alert
 
 ## Related
 
-* [Additional info]({{ site.baseurl }}/components/additional-info)
+* [Details]({{ site.baseurl }}/components/details)
 * [Alert]({{ site.baseurl}}/components/alert)
 
 {% include _component-checklist.html component_name=page.web-component %}
