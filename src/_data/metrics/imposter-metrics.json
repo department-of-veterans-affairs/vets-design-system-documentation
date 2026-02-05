@@ -1,0 +1,779 @@
+{
+  "quarterly": [
+    {
+      "period": "2024-Q2",
+      "issues_opened": 19,
+      "issues_closed": 6
+    },
+    {
+      "period": "2024-Q3",
+      "issues_opened": 13,
+      "issues_closed": 8
+    },
+    {
+      "period": "2024-Q4",
+      "issues_opened": 20,
+      "issues_closed": 7
+    },
+    {
+      "period": "2025-Q1",
+      "issues_opened": 30,
+      "issues_closed": 3
+    },
+    {
+      "period": "2025-Q2",
+      "issues_opened": 12,
+      "issues_closed": 10
+    },
+    {
+      "period": "2025-Q3",
+      "issues_opened": 16,
+      "issues_closed": 15
+    },
+    {
+      "period": "2025-Q4",
+      "issues_opened": 20,
+      "issues_closed": 10
+    },
+    {
+      "period": "2026-Q1",
+      "issues_opened": 0,
+      "issues_closed": 5
+    }
+  ],
+  "by_component": [
+    {
+      "component": "va-radio",
+      "open": 11,
+      "closed": 5,
+      "total": 16
+    },
+    {
+      "component": "va-button-pair",
+      "open": 6,
+      "closed": 7,
+      "total": 13
+    },
+    {
+      "component": "va-button",
+      "open": 3,
+      "closed": 7,
+      "total": 10
+    },
+    {
+      "component": "va-select",
+      "open": 7,
+      "closed": 3,
+      "total": 10
+    },
+    {
+      "component": "va-file-input",
+      "open": 9,
+      "closed": 1,
+      "total": 10
+    },
+    {
+      "component": "va-link-action",
+      "open": 0,
+      "closed": 10,
+      "total": 10
+    },
+    {
+      "component": "va-checkbox",
+      "open": 4,
+      "closed": 5,
+      "total": 9
+    },
+    {
+      "component": "va-statement-of-truth",
+      "open": 1,
+      "closed": 7,
+      "total": 8
+    },
+    {
+      "component": "va-text-input",
+      "open": 5,
+      "closed": 2,
+      "total": 7
+    },
+    {
+      "component": "va-breadcrumb",
+      "open": 0,
+      "closed": 7,
+      "total": 7
+    },
+    {
+      "component": "va-card",
+      "open": 3,
+      "closed": 2,
+      "total": 5
+    },
+    {
+      "component": "va-alert",
+      "open": 3,
+      "closed": 1,
+      "total": 4
+    },
+    {
+      "component": "va-memorable-date",
+      "open": 3,
+      "closed": 0,
+      "total": 3
+    },
+    {
+      "component": "va-icon",
+      "open": 1,
+      "closed": 2,
+      "total": 3
+    },
+    {
+      "component": "va-accordion",
+      "open": 2,
+      "closed": 0,
+      "total": 2
+    },
+    {
+      "component": "va-link",
+      "open": 1,
+      "closed": 1,
+      "total": 2
+    },
+    {
+      "component": "va-date",
+      "open": 1,
+      "closed": 1,
+      "total": 2
+    },
+    {
+      "component": "va-textarea",
+      "open": 1,
+      "closed": 1,
+      "total": 2
+    },
+    {
+      "component": "va-tabs",
+      "open": 1,
+      "closed": 0,
+      "total": 1
+    },
+    {
+      "component": "va-alert-expandable",
+      "open": 1,
+      "closed": 0,
+      "total": 1
+    },
+    {
+      "component": "va-additional-info",
+      "open": 0,
+      "closed": 1,
+      "total": 1
+    },
+    {
+      "component": "va-search-input",
+      "open": 1,
+      "closed": 0,
+      "total": 1
+    },
+    {
+      "component": "va-progress-bar",
+      "open": 1,
+      "closed": 0,
+      "total": 1
+    },
+    {
+      "component": "va-tag",
+      "open": 1,
+      "closed": 0,
+      "total": 1
+    },
+    {
+      "component": "va-table",
+      "open": 1,
+      "closed": 0,
+      "total": 1
+    },
+    {
+      "component": "va-process-list",
+      "open": 0,
+      "closed": 1,
+      "total": 1
+    }
+  ],
+  "summary": {
+    "total_open": 67,
+    "total_closed": 64,
+    "total_issues": 131,
+    "goal": 150,
+    "progress_percentage": 43,
+    "closed_trend": {
+      "direction": "down",
+      "percentage": 50,
+      "value": -5
+    },
+    "last_updated": "2026-01-29T19:13:21.305Z"
+  },
+  "generated_at": "2026-01-30T21:12:54.906Z",
+  "data_source": "va.gov-team repository",
+  "description": "Imposter component replacement tracking for FY26 KR",
+  "instances": {
+    "total_identified": 229,
+    "by_component": [
+      {
+        "component": "va-button-pair",
+        "imposter_name": "FormNavButtons",
+        "imposter_path": "src/platform/forms-system/src/js/components/FormNavButtons.jsx",
+        "instance_count": 106,
+        "file_count": 104,
+        "applications": [
+          "accreditation",
+          "appeals",
+          "ask-va",
+          "benefits-optimization-pingwind",
+          "caregivers",
+          "dependents",
+          "disability-benefits",
+          "ezr",
+          "financial-status-report",
+          "hca",
+          "ivc-champva",
+          "medallions",
+          "pensions",
+          "pre-need-integration",
+          "representative-appoint",
+          "representative-form-upload",
+          "platform"
+        ]
+      },
+      {
+        "component": "va-radio",
+        "imposter_name": "RadioWidget",
+        "imposter_path": "src/platform/forms-system/src/js/widgets/RadioWidget.jsx",
+        "instance_count": 86,
+        "file_count": 62,
+        "applications": [
+          "appeals",
+          "ask-a-question",
+          "disability-benefits",
+          "edu-benefits",
+          "fry-dea",
+          "lgy",
+          "my-education-benefits",
+          "pre-need",
+          "pre-need-integration",
+          "survivor-dependent-education-benefit",
+          "time-of-need",
+          "toe",
+          "vaos",
+          "vre",
+          "platform"
+        ]
+      },
+      {
+        "component": "va-file-input",
+        "imposter_name": "FileField (platform)",
+        "imposter_path": "src/platform/forms-system/src/js/fields/FileField.jsx",
+        "instance_count": 12,
+        "file_count": 6,
+        "applications": [
+          "simple-forms"
+        ]
+      },
+      {
+        "component": "va-text-input",
+        "imposter_name": "TextWidget",
+        "imposter_path": "src/platform/forms-system/src/js/widgets/TextWidget.jsx",
+        "instance_count": 10,
+        "file_count": 10,
+        "applications": [
+          "pre-need",
+          "pre-need-integration",
+          "platform"
+        ]
+      },
+      {
+        "component": "va-memorable-date",
+        "imposter_name": "DateWidget",
+        "imposter_path": "src/platform/forms-system/src/js/widgets/DateWidget.jsx",
+        "instance_count": 7,
+        "file_count": 7,
+        "applications": [
+          "edu-benefits",
+          "my-education-benefits",
+          "platform"
+        ]
+      },
+      {
+        "component": "va-checkbox",
+        "imposter_name": "CheckboxWidget",
+        "imposter_path": "src/platform/forms-system/src/js/widgets/CheckboxWidget.jsx",
+        "instance_count": 3,
+        "file_count": 2,
+        "applications": [
+          "platform"
+        ]
+      },
+      {
+        "component": "va-checkbox",
+        "imposter_name": "IssueCard",
+        "imposter_path": "src/applications/appeals/shared/components/IssueCard.jsx",
+        "instance_count": 2,
+        "file_count": 2,
+        "applications": [
+          "appeals"
+        ]
+      },
+      {
+        "component": "va-card",
+        "imposter_name": "FryDeaEligibilityCards",
+        "imposter_path": "src/applications/fry-dea/components/FryDeaEligibilityCards.jsx",
+        "instance_count": 1,
+        "file_count": 1,
+        "applications": [
+          "fry-dea"
+        ]
+      },
+      {
+        "component": "va-select",
+        "imposter_name": "SelectWidget",
+        "imposter_path": "src/platform/forms-system/src/js/widgets/SelectWidget.jsx",
+        "instance_count": 1,
+        "file_count": 1,
+        "applications": [
+          "platform"
+        ]
+      },
+      {
+        "component": "va-breadcrumbs",
+        "imposter_name": "MrBreadcrumbs",
+        "imposter_path": "src/applications/mhv-medical-records/components/MrBreadcrumbs.jsx",
+        "instance_count": 1,
+        "file_count": 1,
+        "applications": [
+          "mhv-medical-records"
+        ]
+      }
+    ],
+    "by_application": [
+      {
+        "application": "platform",
+        "instance_count": 30
+      },
+      {
+        "application": "appeals",
+        "instance_count": 26
+      },
+      {
+        "application": "financial-status-report",
+        "instance_count": 25
+      },
+      {
+        "application": "edu-benefits",
+        "instance_count": 24
+      },
+      {
+        "application": "simple-forms",
+        "instance_count": 12
+      },
+      {
+        "application": "vaos",
+        "instance_count": 12
+      },
+      {
+        "application": "disability-benefits",
+        "instance_count": 11
+      },
+      {
+        "application": "pre-need",
+        "instance_count": 8
+      },
+      {
+        "application": "survivor-dependent-education-benefit",
+        "instance_count": 8
+      },
+      {
+        "application": "ask-va",
+        "instance_count": 7
+      },
+      {
+        "application": "fry-dea",
+        "instance_count": 7
+      },
+      {
+        "application": "my-education-benefits",
+        "instance_count": 7
+      },
+      {
+        "application": "ezr",
+        "instance_count": 6
+      },
+      {
+        "application": "hca",
+        "instance_count": 6
+      },
+      {
+        "application": "pre-need-integration",
+        "instance_count": 6
+      },
+      {
+        "application": "dependents",
+        "instance_count": 5
+      },
+      {
+        "application": "representative-appoint",
+        "instance_count": 5
+      },
+      {
+        "application": "ivc-champva",
+        "instance_count": 4
+      },
+      {
+        "application": "toe",
+        "instance_count": 4
+      },
+      {
+        "application": "representative-form-upload",
+        "instance_count": 3
+      },
+      {
+        "application": "benefits-optimization-pingwind",
+        "instance_count": 2
+      },
+      {
+        "application": "caregivers",
+        "instance_count": 2
+      },
+      {
+        "application": "lgy",
+        "instance_count": 2
+      },
+      {
+        "application": "accreditation",
+        "instance_count": 1
+      },
+      {
+        "application": "medallions",
+        "instance_count": 1
+      },
+      {
+        "application": "pensions",
+        "instance_count": 1
+      },
+      {
+        "application": "ask-a-question",
+        "instance_count": 1
+      },
+      {
+        "application": "time-of-need",
+        "instance_count": 1
+      },
+      {
+        "application": "vre",
+        "instance_count": 1
+      },
+      {
+        "application": "mhv-medical-records",
+        "instance_count": 1
+      }
+    ],
+    "last_scan_date": "2026-01-30",
+    "scan_source": "local",
+    "by_sub_application": [
+      {
+        "sub_application": "platform",
+        "instance_count": 30,
+        "by_imposter": {
+          "FormNavButtons": 9,
+          "CheckboxWidget": 3,
+          "RadioWidget": 6,
+          "TextWidget": 7,
+          "SelectWidget": 1,
+          "DateWidget": 4
+        }
+      },
+      {
+        "sub_application": "financial-status-report",
+        "instance_count": 25,
+        "by_imposter": {
+          "FormNavButtons": 25
+        }
+      },
+      {
+        "sub_application": "appeals/testing",
+        "instance_count": 15,
+        "by_imposter": {
+          "FormNavButtons": 12,
+          "IssueCard": 1,
+          "RadioWidget": 2
+        }
+      },
+      {
+        "sub_application": "simple-forms/20-10207",
+        "instance_count": 12,
+        "by_imposter": {
+          "FileField (platform)": 12
+        }
+      },
+      {
+        "sub_application": "disability-benefits/all-claims",
+        "instance_count": 11,
+        "by_imposter": {
+          "FormNavButtons": 6,
+          "RadioWidget": 5
+        }
+      },
+      {
+        "sub_application": "edu-benefits/1995",
+        "instance_count": 11,
+        "by_imposter": {
+          "RadioWidget": 10,
+          "DateWidget": 1
+        }
+      },
+      {
+        "sub_application": "vaos/new-appointment",
+        "instance_count": 10,
+        "by_imposter": {
+          "RadioWidget": 10
+        }
+      },
+      {
+        "sub_application": "pre-need",
+        "instance_count": 8,
+        "by_imposter": {
+          "RadioWidget": 6,
+          "TextWidget": 2
+        }
+      },
+      {
+        "sub_application": "survivor-dependent-education-benefit/22-5490",
+        "instance_count": 8,
+        "by_imposter": {
+          "RadioWidget": 8
+        }
+      },
+      {
+        "sub_application": "appeals/995",
+        "instance_count": 7,
+        "by_imposter": {
+          "FormNavButtons": 7
+        }
+      },
+      {
+        "sub_application": "ask-va",
+        "instance_count": 7,
+        "by_imposter": {
+          "FormNavButtons": 7
+        }
+      },
+      {
+        "sub_application": "fry-dea",
+        "instance_count": 7,
+        "by_imposter": {
+          "FryDeaEligibilityCards": 1,
+          "RadioWidget": 6
+        }
+      },
+      {
+        "sub_application": "my-education-benefits",
+        "instance_count": 7,
+        "by_imposter": {
+          "RadioWidget": 6,
+          "DateWidget": 1
+        }
+      },
+      {
+        "sub_application": "ezr",
+        "instance_count": 6,
+        "by_imposter": {
+          "FormNavButtons": 6
+        }
+      },
+      {
+        "sub_application": "hca",
+        "instance_count": 6,
+        "by_imposter": {
+          "FormNavButtons": 6
+        }
+      },
+      {
+        "sub_application": "pre-need-integration",
+        "instance_count": 6,
+        "by_imposter": {
+          "FormNavButtons": 1,
+          "RadioWidget": 4,
+          "TextWidget": 1
+        }
+      },
+      {
+        "sub_application": "representative-appoint",
+        "instance_count": 5,
+        "by_imposter": {
+          "FormNavButtons": 5
+        }
+      },
+      {
+        "sub_application": "edu-benefits/0994",
+        "instance_count": 5,
+        "by_imposter": {
+          "RadioWidget": 4,
+          "DateWidget": 1
+        }
+      },
+      {
+        "sub_application": "edu-benefits/pages",
+        "instance_count": 4,
+        "by_imposter": {
+          "RadioWidget": 4
+        }
+      },
+      {
+        "sub_application": "toe",
+        "instance_count": 4,
+        "by_imposter": {
+          "RadioWidget": 4
+        }
+      },
+      {
+        "sub_application": "dependents/686c-674",
+        "instance_count": 3,
+        "by_imposter": {
+          "FormNavButtons": 3
+        }
+      },
+      {
+        "sub_application": "ivc-champva/shared",
+        "instance_count": 3,
+        "by_imposter": {
+          "FormNavButtons": 3
+        }
+      },
+      {
+        "sub_application": "representative-form-upload",
+        "instance_count": 3,
+        "by_imposter": {
+          "FormNavButtons": 3
+        }
+      },
+      {
+        "sub_application": "edu-benefits/10203",
+        "instance_count": 3,
+        "by_imposter": {
+          "RadioWidget": 3
+        }
+      },
+      {
+        "sub_application": "appeals/996",
+        "instance_count": 2,
+        "by_imposter": {
+          "FormNavButtons": 2
+        }
+      },
+      {
+        "sub_application": "appeals/shared",
+        "instance_count": 2,
+        "by_imposter": {
+          "FormNavButtons": 1,
+          "IssueCard": 1
+        }
+      },
+      {
+        "sub_application": "benefits-optimization-pingwind/21-8940",
+        "instance_count": 2,
+        "by_imposter": {
+          "FormNavButtons": 2
+        }
+      },
+      {
+        "sub_application": "caregivers",
+        "instance_count": 2,
+        "by_imposter": {
+          "FormNavButtons": 2
+        }
+      },
+      {
+        "sub_application": "dependents/dependents-verification",
+        "instance_count": 2,
+        "by_imposter": {
+          "FormNavButtons": 2
+        }
+      },
+      {
+        "sub_application": "lgy/coe",
+        "instance_count": 2,
+        "by_imposter": {
+          "RadioWidget": 2
+        }
+      },
+      {
+        "sub_application": "vaos/covid-19-vaccine",
+        "instance_count": 2,
+        "by_imposter": {
+          "RadioWidget": 2
+        }
+      },
+      {
+        "sub_application": "accreditation/21a",
+        "instance_count": 1,
+        "by_imposter": {
+          "FormNavButtons": 1
+        }
+      },
+      {
+        "sub_application": "ivc-champva/10-10D",
+        "instance_count": 1,
+        "by_imposter": {
+          "FormNavButtons": 1
+        }
+      },
+      {
+        "sub_application": "medallions/pages",
+        "instance_count": 1,
+        "by_imposter": {
+          "FormNavButtons": 1
+        }
+      },
+      {
+        "sub_application": "pensions",
+        "instance_count": 1,
+        "by_imposter": {
+          "FormNavButtons": 1
+        }
+      },
+      {
+        "sub_application": "ask-a-question/form",
+        "instance_count": 1,
+        "by_imposter": {
+          "RadioWidget": 1
+        }
+      },
+      {
+        "sub_application": "edu-benefits/definitions",
+        "instance_count": 1,
+        "by_imposter": {
+          "RadioWidget": 1
+        }
+      },
+      {
+        "sub_application": "time-of-need",
+        "instance_count": 1,
+        "by_imposter": {
+          "RadioWidget": 1
+        }
+      },
+      {
+        "sub_application": "vre/25-8832",
+        "instance_count": 1,
+        "by_imposter": {
+          "RadioWidget": 1
+        }
+      },
+      {
+        "sub_application": "mhv-medical-records",
+        "instance_count": 1,
+        "by_imposter": {
+          "MrBreadcrumbs": 1
+        }
+      }
+    ]
+  }
+}
