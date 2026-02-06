@@ -21,7 +21,7 @@ body:
       required: true
 
   - type: dropdown
-    id: product_name
+    id: product-name
     attributes:
       label: Select your product area
       description: See [team directory](https://github.com/department-of-veterans-affairs/va.gov-team-sensitive/tree/master/teams#readme)
