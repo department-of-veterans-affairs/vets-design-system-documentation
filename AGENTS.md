@@ -73,8 +73,8 @@ Other key directories:
 
 ### Data Sources
 
-- `/_data/tokens/` — Design tokens (CSV/JSON)
-- `/_data/component-docs.json` — Auto-generated component specs from Stencil
+- `src/_data/tokens/` — Design tokens (CSV/JSON)
+- `src/_data/component-docs.json` — Auto-generated component specs from Stencil
 - External packages: `@department-of-veterans-affairs/component-library` (components and base styles)
 
 ### Related Systems
