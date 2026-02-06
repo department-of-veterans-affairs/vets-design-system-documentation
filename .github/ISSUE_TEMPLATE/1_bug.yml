@@ -16,7 +16,7 @@ body:
       label: "Verify the below"
       options:
         - label: "I’ve searched for any related issues and avoided creating a duplicate issue."
-        - label: "To my knowledge this is not an accessibility issue. If accessibility, use this template: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?template=5_Accessibility-issue.yml"
+        - label: "To my knowledge this is not an accessibility issue. If accessibility, use this [accessibility issue template](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?template=5_Accessibility-issue.yml)."
     validations:
       required: true
 
