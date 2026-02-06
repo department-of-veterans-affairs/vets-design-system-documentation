@@ -1,5 +1,91 @@
 [
   {
+    "url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/283162318",
+    "assets_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/283162318/assets",
+    "upload_url": "https://uploads.github.com/repos/department-of-veterans-affairs/component-library/releases/283162318/assets{?name,label}",
+    "html_url": "https://github.com/department-of-veterans-affairs/component-library/releases/tag/v54.6.1",
+    "id": 283162318,
+    "author": {
+      "login": "amyleadem",
+      "id": 93996430,
+      "node_id": "U_kgDOBZpFjg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/93996430?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/amyleadem",
+      "html_url": "https://github.com/amyleadem",
+      "followers_url": "https://api.github.com/users/amyleadem/followers",
+      "following_url": "https://api.github.com/users/amyleadem/following{/other_user}",
+      "gists_url": "https://api.github.com/users/amyleadem/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/amyleadem/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/amyleadem/subscriptions",
+      "organizations_url": "https://api.github.com/users/amyleadem/orgs",
+      "repos_url": "https://api.github.com/users/amyleadem/repos",
+      "events_url": "https://api.github.com/users/amyleadem/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/amyleadem/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "node_id": "RE_kwDOEjVS084Q4LbO",
+    "tag_name": "v54.6.1",
+    "target_commitish": "main",
+    "name": "v54.6.1",
+    "draft": false,
+    "immutable": false,
+    "prerelease": false,
+    "created_at": "2026-02-04T22:53:28Z",
+    "updated_at": "2026-02-04T22:57:59Z",
+    "published_at": "2026-02-04T22:57:24Z",
+    "assets": [],
+    "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v54.6.1",
+    "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v54.6.1",
+    "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n###  Bug fixes\r\n\r\n| Component | Summary | API change | Rendered markup change |\r\n| :---- | :---- | :---- | :---- |\r\n| va-button | **Reverted the submit action timing change introduced in v54.6.0.** Testing revealed that this change introduced possible complications with downstream implementations. By @amyleadem #1972 | No | No  |\r\n\r\n###  Dependency updates\r\n\r\n| Affected package | Dependency name | Before | After |\r\n| :---- | :---- | :---- | :---- |\r\n| design-system-dashboard-cli | glob | 13.0.0 | 13.0.1 |\r\n| react-components | glob | 13.0.0 | 13.0.1 |\r\n\r\nBy @powellkerry #1969, #1971\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v54.6.0...v54.6.1",
+    "mentions_count": 2
+  },
+  {
+    "url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/282338762",
+    "assets_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/282338762/assets",
+    "upload_url": "https://uploads.github.com/repos/department-of-veterans-affairs/component-library/releases/282338762/assets{?name,label}",
+    "html_url": "https://github.com/department-of-veterans-affairs/component-library/releases/tag/v54.6.0",
+    "id": 282338762,
+    "author": {
+      "login": "amyleadem",
+      "id": 93996430,
+      "node_id": "U_kgDOBZpFjg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/93996430?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/amyleadem",
+      "html_url": "https://github.com/amyleadem",
+      "followers_url": "https://api.github.com/users/amyleadem/followers",
+      "following_url": "https://api.github.com/users/amyleadem/following{/other_user}",
+      "gists_url": "https://api.github.com/users/amyleadem/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/amyleadem/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/amyleadem/subscriptions",
+      "organizations_url": "https://api.github.com/users/amyleadem/orgs",
+      "repos_url": "https://api.github.com/users/amyleadem/repos",
+      "events_url": "https://api.github.com/users/amyleadem/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/amyleadem/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "node_id": "RE_kwDOEjVS084Q1CXK",
+    "tag_name": "v54.6.0",
+    "target_commitish": "main",
+    "name": "v54.6.0",
+    "draft": false,
+    "immutable": false,
+    "prerelease": false,
+    "created_at": "2026-02-03T14:33:39Z",
+    "updated_at": "2026-02-03T14:51:19Z",
+    "published_at": "2026-02-03T14:51:19Z",
+    "assets": [],
+    "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v54.6.0",
+    "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v54.6.0",
+    "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### New Features & Components 🎉\r\n| Component | Summary |\r\n| :---- | :---- |\r\n| va-card-status | **Added the Card Status component.** The new va-card-status component is a structured card that uses required fields to keep status messages consistent. By @ediiotero https://github.com/department-of-veterans-affairs/component-library/pull/1862 |\r\n\r\n###  Bug fixes\r\n\r\n| Component | Summary | API change | Rendered markup change |\r\n| :---- | :---- | :---- | :---- |\r\n| va-button | **Fixed a timing bug in va-button that prevented some forms from submitting as expected.** The button now runs its `onClick` action before `onSubmit.` By @ediiotero https://github.com/department-of-veterans-affairs/component-library/pull/1946  | No | No  |\r\n| va-pagination | **Fixed an issue in ‎va-pagination that prevented icons from rendering when the icon sprite was stored in a custom location.** The component now uses ‎`va-icon` instead of hard-coded SVGs to prevent broken icon paths. By @jamigibbs https://github.com/department-of-veterans-affairs/component-library/pull/1956 | No | Yes |\r\n\r\n###  Dependency updates\r\n\r\n| Affected package | Dependency name | Before | After |\r\n| :---- | :---- | :---- | :---- |\r\n| design-system-dashboard-cli | eslint | 7.32.0 | 9.26.0 |\r\n|  | glob | 9.3.5 | 13.0.0 |\r\n|  | lodash | 4.17.21 | 4.17.23 |\r\n| react-components | eslint | 7.19.0 | 9.26.0 |\r\n|  | glob | 9.3.5 | 13.0.0 |\r\n| web-components | eslint | 8.19.0 | 9.26.0 |\r\n\r\nBy @powellkerry https://github.com/department-of-veterans-affairs/component-library/pull/1954, https://github.com/department-of-veterans-affairs/component-library/pull/1959, https://github.com/department-of-veterans-affairs/component-library/pull/1961\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v54.5.2...v54.6.0",
+    "mentions_count": 3
+  },
+  {
     "url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/278449626",
     "assets_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/278449626/assets",
     "upload_url": "https://uploads.github.com/repos/department-of-veterans-affairs/component-library/releases/278449626/assets{?name,label}",
@@ -36,9 +122,7 @@
     "created_at": "2026-01-20T22:29:00Z",
     "updated_at": "2026-01-20T22:30:29Z",
     "published_at": "2026-01-20T22:30:29Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v54.5.2",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v54.5.2",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### Fixes\r\n* Remove i18n from react-components package by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1950\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v54.5.1...v54.5.2",
@@ -81,9 +165,7 @@
     "created_at": "2026-01-20T19:18:42Z",
     "updated_at": "2026-01-20T19:22:05Z",
     "published_at": "2026-01-20T19:22:05Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v54.5.1",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v54.5.1",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### Fixes\r\n* Dependencies: Downgrade react-output-target to 0.5.3 by @amyleadem in https://github.com/department-of-veterans-affairs/component-library/pull/1947\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v54.5.0...v54.5.1",
@@ -126,9 +208,7 @@
     "created_at": "2026-01-20T18:07:23Z",
     "updated_at": "2026-01-21T20:45:53Z",
     "published_at": "2026-01-20T18:13:54Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v54.5.0",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v54.5.0",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### New Features & Components 🎉\r\n* va-table: add title summary prop by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1937\r\n* va-tag-status: rename \"informational\" to \"info\" by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1939\r\n### Fixes\r\n* va-file-input: Update focus management for errors and interactive child elements by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1886\r\n* va-modal: exclude va-icon from focus trap query selectors by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1943\r\n\r\n### ⚠️ Potential impact to downstream applications and tests\r\nThis release includes updates to rendered component markup that may affect existing applications or test suites. Review the notes below for guidance on resolving test failures for affected components.\r\n- **va-file-input:** We removed the `role=\"alert\"` attribute from error message `<span>` elements and updated the text content of the input’s `aria-label`. If your code or tests rely on these attributes, update your selectors or assertions to match the updated component structure. \r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v54.4.2...v54.5.0",
@@ -171,9 +251,7 @@
     "created_at": "2026-01-09T21:39:26Z",
     "updated_at": "2026-01-21T20:54:52Z",
     "published_at": "2026-01-09T21:48:50Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v54.4.2",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v54.4.2",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### Fixes\r\n* va-combo-box: use data attributes to determine composition by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1923\r\n* va-privacy-agreement: update skipped tests to resolve flakiness by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1936\r\n* va-accordion-item: update markup structure for headline slots to allow keyboard actviation on NVDA by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1935\r\n\r\n### ⚠️ Potential impact to downstream applications and tests\r\nThis release includes updates to rendered component markup that may affect existing applications or test suites. Review the notes below for guidance on resolving test failures for affected components.\r\n- **va-accordion (headline slot variant only):** We updated the headline markup structure to fix an accessibility issue. If your code or tests target the headline slot element directly, update them to target the header element within the shadow root instead.\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v54.4.1...v54.4.2",
@@ -216,9 +294,7 @@
     "created_at": "2025-12-19T15:44:13Z",
     "updated_at": "2025-12-19T15:46:14Z",
     "published_at": "2025-12-19T15:46:14Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v54.4.1",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v54.4.1",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### Fixes\r\n* Build failure fix: Downgrade web-components react version to 17 by @amyleadem in https://github.com/department-of-veterans-affairs/component-library/pull/1931\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v54.4.0...v54.4.1",
@@ -261,9 +337,7 @@
     "created_at": "2025-12-18T21:17:59Z",
     "updated_at": "2025-12-18T21:26:38Z",
     "published_at": "2025-12-18T21:26:38Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v54.4.0",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v54.4.0",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### New Features & Components 🎉\r\n* NPM package updates for security vulnerabilities by @dependabot[bot] in https://github.com/department-of-veterans-affairs/component-library/pull/1697\r\n* va-omb-info: Add logic to convert respondent burdern to hours & minutes by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1909\r\n### Fixes\r\n* va-progress-bar: use sass file by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1912\r\n* Pin all dependencies by @ediiotero in https://github.com/department-of-veterans-affairs/component-library/pull/1911\r\n* va-memorable-date: update Storybook examples & remove padding on legend by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1920\r\n* va-segmented-progress-bar: Use single span for accessible text. by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1917\r\n* va-pagination: update aria-labels to include total pages in each label by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1916\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v54.3.0...v54.4.0",
@@ -306,9 +380,7 @@
     "created_at": "2025-12-08T17:18:34Z",
     "updated_at": "2026-01-21T20:48:52Z",
     "published_at": "2025-12-08T17:48:39Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v54.3.0",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v54.3.0",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### New Features & Components 🎉\r\n* va-maintenance-banner: add header level prop by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1898\r\n### Fixes\r\n* va-omb-info: add clickToClose to modal by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1905\r\n* va-crisis-line-modal: add option to only render modal, open modal via custom document event by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1895\r\n* va-alert: add screen reader text to announce alert status  by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1847\r\n* va-tag-status: Update sr-only text and `screenReaderText` prop by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1896\r\n\r\n### ⚠️ Potential impact to downstream applications and tests\r\nThis release includes updates to rendered component markup that may affect existing applications or test suites. Review the notes below for guidance on resolving test failures for affected components.\r\n- **va-alert:** Alerts now include screen-reader-only text that identifies the alert type. If your tests assert against the alert header text, consider using partial or `contains` queries rather than exact matches, or update expected values to include the screen-reader-only content.\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v54.2.0...v54.3.0",
@@ -351,9 +423,7 @@
     "created_at": "2025-11-25T16:30:21Z",
     "updated_at": "2025-11-25T17:06:09Z",
     "published_at": "2025-11-25T17:06:09Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v54.2.0",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v54.2.0",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### New Features & Components 🎉\r\n* va-progress-bar: add noPercentScreenReader prop to suppress sr updates by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1876\r\n### Fixes\r\n* va-icon: added expand_circle_right icon by @babsdenney in https://github.com/department-of-veterans-affairs/component-library/pull/1866\r\n* va-file-input: display generic thumbnail icon for PDF files by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1874\r\n* va-modal: fix aria-hidden handlers for modals nested inside shadow roots by @amyleadem in https://github.com/department-of-veterans-affairs/component-library/pull/1867\r\n* va-file-input, va-file-input-multiple: clean up sr-only elements by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1883\r\n* va-file-input: Revert \"adjust abbreviations of file size to full word with correct spacing for screen readers (#1872)\" by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1885\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v54.1.2...v54.2.0",
@@ -396,9 +466,7 @@
     "created_at": "2025-11-19T16:05:05Z",
     "updated_at": "2025-11-19T16:11:26Z",
     "published_at": "2025-11-19T16:11:26Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v54.1.2",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v54.1.2",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### Fixes\r\n* va-file-input-multiple: update label markup by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1868\r\n* va-alert: fix heading disapearing when hiding and showing by @rhasselle-oddball in https://github.com/department-of-veterans-affairs/component-library/pull/1869\r\n* va-link-action: remove double focus outline by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1861\r\n* va-file-input: adjust abbreviations of file size to full word with correct spacing for screen readers by @dominicpadula1 in https://github.com/department-of-veterans-affairs/component-library/pull/1872\r\n\r\n## New Contributors\r\n* @dominicpadula1 made their first contribution in https://github.com/department-of-veterans-affairs/component-library/pull/1872\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v54.1.1...v54.1.2",
@@ -441,9 +509,7 @@
     "created_at": "2025-11-14T16:44:31Z",
     "updated_at": "2025-11-14T16:45:43Z",
     "published_at": "2025-11-14T16:45:43Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v54.1.1",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v54.1.1",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### Fixes\r\n* va-modal: Revert to changes pre PR#1733 to resolve bug causing e2e tests to fail on forms-library by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1860\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v54.1.0...v54.1.1",
@@ -486,9 +552,7 @@
     "created_at": "2025-11-10T18:12:58Z",
     "updated_at": "2025-11-10T18:24:21Z",
     "published_at": "2025-11-10T18:24:21Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v54.1.0",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v54.1.0",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### New Features & Components 🎉\r\n* va-table: Empty cell text by @ediiotero in https://github.com/department-of-veterans-affairs/component-library/pull/1825\r\n* va-crisis-line-modal: add params for phone numbers and links, add an option for a custom trigger element by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1841\r\n### Fixes\r\n* va-modal: fix modal setup/teardown logic leading to modal content not being accessible by screen readers by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1834\r\n* va-text-input: add password input story to TextInput USWDS by @babsdenney in https://github.com/department-of-veterans-affairs/component-library/pull/1839\r\n* va-file-input-multiple: ensure add file placeholder shows after deleting file with validation error by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1846\r\n* va-alert-expandable: update screen reader text with alert status by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1840\r\n* va-file-input: add .heic support by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1849\r\n* va-textarea & va-text-input: fix char count iOS VoiceOver bug by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1848\r\n* va-combo-box: update logic to prevent duplicate optgroup headers, ensure optgroup headers show when children visible by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1852\r\n* va-file-input: fix non-interactive input in error state by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1854\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v54.0.0...v54.1.0",
@@ -531,9 +595,7 @@
     "created_at": "2025-10-27T20:20:46Z",
     "updated_at": "2025-10-27T20:49:31Z",
     "published_at": "2025-10-27T20:49:31Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v54.0.0",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v54.0.0",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### Breaking Changes\r\n* va-file-input: always show Delete & Change file options on error messages by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1832\r\n### New Features & Components 🎉\r\n* va-tag-status: Add new component by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1806\r\n* va-select: add label-header-level prop by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1824\r\n* web-components: standardize media queries across components by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1826\r\n### Fixes\r\n* va-file-input: bugfix for aria-labels not rendering on buttons by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1819\r\n* va-telephone: fix bug where extensions were not rendering for international phone numbers by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1815\r\n* va-file-input: prevent links from being focussed inside pdf preview by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1817\r\n* va-link-action: underline link on primary version by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1820\r\n* va-memorable-date: prevent race conditions with external validation by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1831\r\n* va-accordion-item: prevent selection of non-direct children as slot header by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1835\r\n* va-alert: add word-wrap on headline and body by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1837\r\n### Other Changes\r\n* css-library: add elevation tokens by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1833\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v53.2.0...v54.0.0",
@@ -576,9 +638,7 @@
     "created_at": "2025-10-13T16:47:48Z",
     "updated_at": "2025-10-13T19:02:35Z",
     "published_at": "2025-10-13T19:02:35Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v53.2.0",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v53.2.0",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### New Features & Components 🎉\r\n* va-table: mono font by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1805\r\n### Fixes\r\n* va-memorable-date: Add translations for date hint and pass hint portions to child input components by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1793\r\n* font resize component fixes: phase 1  by @amyleadem in https://github.com/department-of-veterans-affairs/component-library/pull/1795\r\n* va-file-input: update message when wrong file-type uploaded by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1803\r\n* va-combo-box: optgroup duplication and value bugs by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1807\r\n### Other Changes\r\n* css-library: add font-size and line-height tokens and utility classes for bitter and monospace fonts by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1786\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v53.1.0...v53.2.0",
@@ -621,9 +681,7 @@
     "created_at": "2025-09-29T15:34:33Z",
     "updated_at": "2025-09-29T15:35:42Z",
     "published_at": "2025-09-29T15:35:42Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v53.1.0",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v53.1.0",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### New Features & Components 🎉\r\n* va-accordion: create separate buttons for \"expand all\" and \"collapse all\" by @amyleadem in https://github.com/department-of-veterans-affairs/component-library/pull/1772\r\n* va-memorable-date: add labelHeaderLevel prop by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1775\r\n* va-text-input: add the vaInput custom event by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1798\r\n* va-text-input: add password type variation by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1787\r\n* va-file-input: use new password variation to mask file password by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1787\r\n### Fixes\r\n* va-table: add interactive elements to a cell by @ediiotero in https://github.com/department-of-veterans-affairs/component-library/pull/1752\r\n* va-button-segmented: update details payload for analytics event by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1779\r\n* va-file-input: replace `<hr/>` element with a border on parent by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1792\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v53.0.0...v53.1.0",
@@ -678,9 +736,7 @@
     "created_at": "2025-09-15T17:07:05Z",
     "updated_at": "2025-09-15T17:32:21Z",
     "published_at": "2025-09-15T17:32:21Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v53.0.0",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v53.0.0",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### Breaking Changes\r\n* va-date, va-memorable-date, va-telephone-input, va-text-input: Update onblur validation by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1760\r\n### New Features & Components 🎉\r\n* va-on-this-page: Convert title list item to a header element by @amyleadem in https://github.com/department-of-veterans-affairs/component-library/pull/1759\r\n* va-memorable-date: Add prop to remove the default date hint by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1763\r\n### Fixes\r\n* va-button-segmented: Update styles for two/three buttons by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1762\r\n* va-textarea: Fix horizontal overflow at high zoom by @amyleadem in https://github.com/department-of-veterans-affairs/component-library/pull/1768\r\n* va-memorable-date: Add watch decorator to the value prop by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1770\r\n* va-modal: Fix focus trap bug (and clean up component file) by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1773\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v52.1.1...v53.0.0",
@@ -723,9 +779,7 @@
     "created_at": "2025-09-02T19:42:28Z",
     "updated_at": "2025-09-02T20:16:41Z",
     "published_at": "2025-09-02T20:16:41Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v52.1.1",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v52.1.1",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### Fixes\r\n* va-omb-info: remove \"View\" from privacy act statement button by @amyleadem in https://github.com/department-of-veterans-affairs/component-library/pull/1740\r\n* va-telephone-input: improve error message accuracy by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1726\r\n* va-accordion-item: update headline slot approach to resolve unescaped HTML entities by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1741\r\n* va-telephone-input: correct width/media query breakpoint by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1744\r\n* va-additional-info, va-alert-expandable, va-memorable-date: adjust slot styles by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1746\r\n* va-radio and va-telephone-input: improve consistency of the error message screen reader announcement by @amyleadem in https://github.com/department-of-veterans-affairs/component-library/pull/1724\r\n* va-date: add spacing when fields wrap by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1747\r\n* va-file-input: only show password field and additional info slot if progress bar not visible by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1749\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v52.1.0...v52.1.1",
@@ -768,9 +822,7 @@
     "created_at": "2025-08-25T12:30:34Z",
     "updated_at": "2025-09-02T20:09:34Z",
     "published_at": "2025-08-25T13:03:25Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v52.1.0",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v52.1.0",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### New Features & Components 🎉\r\n* va-file-input-multiple: add properties that map to va-file-input by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1737\r\n* va-file-input-multiple: changes for forms system integration by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1717\r\n### Fixes\r\n* va-segmented-progress-bar: improve clarity of screen reader announcement by @amyleadem in https://github.com/department-of-veterans-affairs/component-library/pull/1735\r\n### Other Changes\r\n* CSS-Library: add widescreen breakpoint token and utility classes by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1739\r\n* CSS-Library: add monospace font by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1738\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v52.0.0...v52.1.0",
@@ -813,9 +865,7 @@
     "created_at": "2025-08-18T17:47:25Z",
     "updated_at": "2025-08-18T18:01:05Z",
     "published_at": "2025-08-18T18:01:05Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v52.0.0",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v52.0.0",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### Breaking Changes\r\n* va-alert-expandable: remove error variation by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1709\r\n### New Features & Components 🎉\r\n* core, web-components: upgrade React to v19 by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1706\r\n* va-tabs: Add new component by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1693\r\n### Fixes\r\n* va-text-input & va-textarea: fix char count screen reader timing behavior by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1685\r\n* va-omb-info: add accessible description to OMB button  by @amyleadem in https://github.com/department-of-veterans-affairs/component-library/pull/1707\r\n* va-sidenav: enhance current-page handling for truthy and false values  by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1719\r\n* va-sidenav: use medium-screen breakpoint for mobile view by @andresriveratoro in https://github.com/department-of-veterans-affairs/component-library/pull/1722\r\n* va-alert: add the slim prop if no headline is provided by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1718\r\n* va-modal and va-omb-info: restore focus to trigger element after modal close by @amyleadem in https://github.com/department-of-veterans-affairs/component-library/pull/1691\r\n* va-accordion-item: update styles for header and subheader to prevent icon alignment issues on Chrome by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1723\r\n* va-link: Fix icon line breaking issue for \"active\" variant by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1733\r\n* va-file-input: update “remove” to “delete” by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1727\r\n### Other Changes\r\n* CSS-Library: import the usa-media-block styles from USWDS v3 package by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1716\r\n* CSS-Library: update heading to correct values and use rem by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1725\r\n* CSS-Library: convert mobile-typography headers from `px` to `rem` by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1731\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v51.4.0...v52.0.0",
@@ -858,9 +908,7 @@
     "created_at": "2025-07-25T17:13:06Z",
     "updated_at": "2025-07-25T18:00:34Z",
     "published_at": "2025-07-25T18:00:34Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v51.4.0",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v51.4.0",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### New Features & Components 🎉\r\n* web-Components, core: remove formation peer dependencies, update docs by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1703\r\n* va-file-input: add file size limit to file contents preview generation by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1704\r\n### Fixes\r\n* va-on-this-page: fix VoiceOver focus behavior by @amyleadem in https://github.com/department-of-veterans-affairs/component-library/pull/1681\r\n* va-sidenav: update desktop header from `h2` to `span` by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1701\r\n* update .nvmrc to use node 22.17.0 by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1702\r\n### Other Changes\r\n* CSS-Library: remove external link module by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1698\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v51.3.0...v51.4.0",
@@ -903,9 +951,7 @@
     "created_at": "2025-07-21T17:28:22Z",
     "updated_at": "2025-07-21T18:03:42Z",
     "published_at": "2025-07-21T18:03:42Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v51.3.0",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v51.3.0",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### New Features & Components 🎉\r\n* va-icon: add threads icon by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1679\r\n* va-file-input: add checks for empty files and min file size by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1689\r\n* va-sidenav: add component by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1658\r\n* va-telephone: format phone number if country code defined by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1695\r\n### Fixes\r\n* va-modal: add `label` prop for expanded `aria-label` logic. by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1646\r\n* va-button-segmented: update focus state style to use default yellow outline by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1678\r\n* va-checkbox: update analytics logic for handling description by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1674\r\n* va-combo-box: prevent long option text from overlapping clear button by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1680\r\n* va-file-input: add more docs to encrypted prop by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1688\r\n* va-segmented-progress-bar: ensure focus outline shows by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1692\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v51.2.0...v51.3.0",
@@ -948,9 +994,7 @@
     "created_at": "2025-07-10T15:12:41Z",
     "updated_at": "2025-07-10T15:52:12Z",
     "published_at": "2025-07-10T15:52:12Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v51.2.0",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v51.2.0",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### New Features & Components 🎉\r\n* va-file-input: add password-error prop to set error on password input for encrypted files by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1673\r\n* va-file-input: add prop to reset visual state when entering error state by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1682\r\n### Fixes\r\n* va-file-input: Updates modal text by @humancompanion-usds in https://github.com/department-of-veterans-affairs/component-library/pull/1669\r\n* va-icon: Added mark_email_read icon by @babsdenney in https://github.com/department-of-veterans-affairs/component-library/pull/1670\r\n* va-table: prevent table slot attributes from being added to nested spans by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1675\r\n* va-button-icon: Update spacing between icon and label text by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1667\r\n* va-button, va-button-icon: fix for focus outline getting covered up by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1676\r\n* va-alert-expandable: Fix TypeError on render by @longmd in https://github.com/department-of-veterans-affairs/component-library/pull/1683\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v51.1.0...v51.2.0",
@@ -993,9 +1037,7 @@
     "created_at": "2025-06-25T16:55:35Z",
     "updated_at": "2025-06-25T17:46:26Z",
     "published_at": "2025-06-25T17:46:26Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v51.1.0",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v51.1.0",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### New Features & Components 🎉\r\n* va-statement-of-truth: add prop to hide legal note by @longmd in https://github.com/department-of-veterans-affairs/component-library/pull/1654\r\n* va-promo-banner: update maturity level to deprecated by @humancompanion-usds in https://github.com/department-of-veterans-affairs/component-library/pull/1653\r\n* va-icon: allow for custom sprite path by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1660\r\n### Fixes\r\n* va-breadcrumbs: storybook home-veterans-affairs prop not working by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1659\r\n* va-search-input: remove aria-autocomplete from search icon button by @ediiotero in https://github.com/department-of-veterans-affairs/component-library/pull/1655\r\n* va-telephone-input: reset errors if error prop changes to empty string by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1663\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v51.0.0...v51.1.0",
@@ -1038,9 +1080,7 @@
     "created_at": "2025-06-23T17:47:55Z",
     "updated_at": "2025-07-17T15:56:59Z",
     "published_at": "2025-06-23T18:37:33Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v51.0.0",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v51.0.0",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### Breaking Changes\r\n* va-telephone-input: rename component from va-input-telephone and add prop to toggle internal errors by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1661\r\n### New Features & Components 🎉\r\n* va-button-segmented: add component by @RyanMunsch and @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1647\r\n* va-search-filter: add additional sr-only text to facet titles by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1632\r\n### Fixes\r\n* va-checkbox-group & va-radio: fix font-weight of hint when both hint and error are set by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1648\r\n* va-input-telephone: add margin to top of component by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1652\r\n* va-search-input: add accessible name to search icon on small screens by @ediiotero in https://github.com/department-of-veterans-affairs/component-library/pull/1649\r\n\r\n## New Contributors\r\n* @ediiotero made their first contribution in https://github.com/department-of-veterans-affairs/component-library/pull/1649\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v50.5.0...v51.0.0",
@@ -1083,9 +1123,7 @@
     "created_at": "2025-06-12T13:07:37Z",
     "updated_at": "2025-06-12T13:30:05Z",
     "published_at": "2025-06-12T13:30:05Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v50.5.0",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v50.5.0",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### New Features & Components 🎉\r\n* va-telephone: Add disable-analytics prop by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1641\r\n* va-card: Add variation which adds an icon at the top, center by @humancompanion-usds in https://github.com/department-of-veterans-affairs/component-library/pull/1640\r\n* va-input-telephone: Refactor validation / event emit payload by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1635\r\n### Fixes\r\n* va-input-telephone: Update maturity value by @danbrady in https://github.com/department-of-veterans-affairs/component-library/pull/1624\r\n* va-link: Fix external link text wrapping by @Mottie in https://github.com/department-of-veterans-affairs/component-library/pull/1625\r\n* va-input-telephone: improve grammar of error message by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1627\r\n* va-input-telephone: Delay phone number validation until blur by @amyleadem in https://github.com/department-of-veterans-affairs/component-library/pull/1631\r\n* va-combo-box: Restore filtering functionality by @amyleadem in https://github.com/department-of-veterans-affairs/component-library/pull/1630\r\n* va-input-telephone: Improve screen reader experience and fix re-selection display error by @amyleadem in https://github.com/department-of-veterans-affairs/component-library/pull/1626\r\n* va-textarea: Fix hint to ensure font-weight is normal by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1629\r\n* va-link-action: Show icons in print preview by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1634\r\n* va-segmented-progress-bar: Fix text wrap bug by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1639\r\n* va-additional-info: Updated the vertical bar width from 7px to 4px by @babsdenney in https://github.com/department-of-veterans-affairs/component-library/pull/1638\r\n\r\n## New Contributors\r\n* @babsdenney made their first contribution in https://github.com/department-of-veterans-affairs/component-library/pull/1638\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v50.4.0...v50.5.0",
@@ -1128,9 +1166,7 @@
     "created_at": "2025-06-02T17:29:24Z",
     "updated_at": "2025-06-02T18:02:14Z",
     "published_at": "2025-06-02T18:02:14Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v50.4.0",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v50.4.0",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### New Features & Components 🎉\r\n* va-input-telephone: update event payload by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1622\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v50.3.0...v50.4.0",
@@ -1173,9 +1209,7 @@
     "created_at": "2025-05-28T18:21:15Z",
     "updated_at": "2025-05-28T18:26:27Z",
     "published_at": "2025-05-28T18:26:27Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v50.3.0",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v50.3.0",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### New Features & Components 🎉\r\n* va-text-input & va-statement-of-truth: add prop for adding Datadog privacy class on error message by @Mottie in https://github.com/department-of-veterans-affairs/component-library/pull/1600\r\n* va-table: add data-sort-value attribute for raw number value sorting by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1604\r\n* va-input-telephone: add component by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1595\r\n### Fixes\r\n* va-combo-box: make all options persist in dropdown after selection by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1602\r\n* va-accordion: logic update to fix 2 clicks to collapse bug by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1603\r\n* va-combo-box: populate options when loading by @KyleCardwell in https://github.com/department-of-veterans-affairs/component-library/pull/1605\r\n* va-search-filter: make headings consistent across breakpoints by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1611\r\n* va-search-filter: update accordion-items to be heading level 3 by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1609\r\n* va-alert-sign-in: replace straight apostrophes with curly ones by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1613\r\n\r\n## New Contributors\r\n* @RyanMunsch made their first contribution in https://github.com/department-of-veterans-affairs/component-library/pull/1613\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v50.2.2...v50.3.0",
@@ -1218,9 +1252,7 @@
     "created_at": "2025-05-14T18:46:25Z",
     "updated_at": "2025-05-14T18:50:45Z",
     "published_at": "2025-05-14T18:50:45Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v50.2.2",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v50.2.2",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### New Features & Components 🎉\r\n* va-search-filter: add component by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1568\r\n### Fixes\r\n* va-service-list-item: update focus & active state style by @bellepx0 in https://github.com/department-of-veterans-affairs/component-library/pull/1584\r\n* va-icon: Add mobile icons by @danbrady in https://github.com/department-of-veterans-affairs/component-library/pull/1585\r\n* va-modal: Fix TypeError on render by @longmd in https://github.com/department-of-veterans-affairs/component-library/pull/1587\r\n* va-additional-info: Fix TypeError on render by @longmd in https://github.com/department-of-veterans-affairs/component-library/pull/1586\r\n* va-checkbox: add normalized font size to description text by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1588\r\n* va-file-input: add aria-label to input for dictation by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1591\r\n\r\n## New Contributors\r\n* @ndsprinkle made their first contribution in https://github.com/department-of-veterans-affairs/component-library/pull/1597\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v50.2.1...v50.2.2",
@@ -1263,102 +1295,10 @@
     "created_at": "2025-04-23T18:43:22Z",
     "updated_at": "2025-04-23T18:48:46Z",
     "published_at": "2025-04-23T18:48:46Z",
-    "assets": [
-
-    ],
+    "assets": [],
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v50.2.1",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v50.2.1",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### Fixes\r\n* va-critical-action: update padding by @bellepx0 in https://github.com/department-of-veterans-affairs/component-library/pull/1576\r\n* va-alert-expandable: align content with title by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1574\r\n* va-combo-box: prevent clear input button from being hidden by @KyleCardwell in https://github.com/department-of-veterans-affairs/component-library/pull/1579\r\n* va-file-input and va-file-input-multiple: add password events to file input by @ataker in https://github.com/department-of-veterans-affairs/component-library/pull/1578\r\n* va-loading-indicator: fix TypeError by @longmd in https://github.com/department-of-veterans-affairs/component-library/pull/1577\r\n* va-alert: fix TypeError for close button aria label by @longmd in https://github.com/department-of-veterans-affairs/component-library/pull/1582\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v50.2.0...v50.2.1",
     "mentions_count": 5
-  },
-  {
-    "url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/212854748",
-    "assets_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/212854748/assets",
-    "upload_url": "https://uploads.github.com/repos/department-of-veterans-affairs/component-library/releases/212854748/assets{?name,label}",
-    "html_url": "https://github.com/department-of-veterans-affairs/component-library/releases/tag/v50.2.0",
-    "id": 212854748,
-    "author": {
-      "login": "it-harrison",
-      "id": 8867779,
-      "node_id": "MDQ6VXNlcjg4Njc3Nzk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8867779?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/it-harrison",
-      "html_url": "https://github.com/it-harrison",
-      "followers_url": "https://api.github.com/users/it-harrison/followers",
-      "following_url": "https://api.github.com/users/it-harrison/following{/other_user}",
-      "gists_url": "https://api.github.com/users/it-harrison/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/it-harrison/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/it-harrison/subscriptions",
-      "organizations_url": "https://api.github.com/users/it-harrison/orgs",
-      "repos_url": "https://api.github.com/users/it-harrison/repos",
-      "events_url": "https://api.github.com/users/it-harrison/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/it-harrison/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false
-    },
-    "node_id": "RE_kwDOEjVS084Mr-fc",
-    "tag_name": "v50.2.0",
-    "target_commitish": "main",
-    "name": "v50.2.0",
-    "draft": false,
-    "immutable": false,
-    "prerelease": false,
-    "created_at": "2025-04-16T14:45:41Z",
-    "updated_at": "2025-04-16T15:57:31Z",
-    "published_at": "2025-04-16T15:57:31Z",
-    "assets": [
-
-    ],
-    "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v50.2.0",
-    "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v50.2.0",
-    "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### New Features & Components 🎉\r\n* va-link-action: add primary-entry variation by @humancompanion-usds in https://github.com/department-of-veterans-affairs/component-library/pull/1570\r\n### Fixes\r\n* va-service-list-item: support all va-link props via shared interface by @adamwhitlock1 in https://github.com/department-of-veterans-affairs/component-library/pull/1569\r\n* va-combo-box: add error class to input element by @KyleCardwell in https://github.com/department-of-veterans-affairs/component-library/pull/1572\r\n### Other Changes\r\n* css-library: remove legacy accordion styles by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1571\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v50.1.0...v50.2.0",
-    "mentions_count": 4
-  },
-  {
-    "url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/211382182",
-    "assets_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/211382182/assets",
-    "upload_url": "https://uploads.github.com/repos/department-of-veterans-affairs/component-library/releases/211382182/assets{?name,label}",
-    "html_url": "https://github.com/department-of-veterans-affairs/component-library/releases/tag/v50.1.0",
-    "id": 211382182,
-    "author": {
-      "login": "powellkerry",
-      "id": 1776069,
-      "node_id": "MDQ6VXNlcjE3NzYwNjk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1776069?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/powellkerry",
-      "html_url": "https://github.com/powellkerry",
-      "followers_url": "https://api.github.com/users/powellkerry/followers",
-      "following_url": "https://api.github.com/users/powellkerry/following{/other_user}",
-      "gists_url": "https://api.github.com/users/powellkerry/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/powellkerry/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/powellkerry/subscriptions",
-      "organizations_url": "https://api.github.com/users/powellkerry/orgs",
-      "repos_url": "https://api.github.com/users/powellkerry/repos",
-      "events_url": "https://api.github.com/users/powellkerry/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/powellkerry/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false
-    },
-    "node_id": "RE_kwDOEjVS084MmW-m",
-    "tag_name": "v50.1.0",
-    "target_commitish": "main",
-    "name": "v50.1.0",
-    "draft": false,
-    "immutable": false,
-    "prerelease": false,
-    "created_at": "2025-04-09T20:14:46Z",
-    "updated_at": "2025-04-09T20:27:23Z",
-    "published_at": "2025-04-09T20:27:23Z",
-    "assets": [
-
-    ],
-    "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v50.1.0",
-    "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v50.1.0",
-    "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### New Features & Components 🎉\r\n* va-file-input and va-file-input-multiple: add password input field by @ataker in https://github.com/department-of-veterans-affairs/component-library/pull/1548\r\n* va-critical-action: focus state styling updates and rename component by @bellepx0 in https://github.com/department-of-veterans-affairs/component-library/pull/1553\r\n* va-breadcrumb: add prop to conditionally use #content or a custom href for the current page by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1565\r\n### Fixes\r\n* va-date: remove empty options by @Mottie in https://github.com/department-of-veterans-affairs/component-library/pull/1540\r\n* va-memorable-date: Replace date processing by @Mottie in https://github.com/department-of-veterans-affairs/component-library/pull/1536\r\n* va-combo-box: handle deleting the selected value with keyboard by @KyleCardwell in https://github.com/department-of-veterans-affairs/component-library/pull/1544\r\n* va-link: remove duplicate screen reader content by @Mottie in https://github.com/department-of-veterans-affairs/component-library/pull/1552\r\n* va-date: show default days with no month selected by @Mottie in https://github.com/department-of-veterans-affairs/component-library/pull/1551\r\n* va-telephone: vanity to allow full replacement by @Mottie in https://github.com/department-of-veterans-affairs/component-library/pull/1549\r\n* va-button: increase line-height by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1545\r\n* va-alert: add action link Storybook example & adjust header alignment by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1560\r\n* va-combo-box: fix combo box options not populating on component re-render by @oleksii-morgun in https://github.com/department-of-veterans-affairs/component-library/pull/1564\r\n* va-alert, va-maintenance-banner, va-modal, va-promo-banner: close icon by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1557\r\n* va-critical-action: staging review updates by @bellepx0 in https://github.com/department-of-veterans-affairs/component-library/pull/1563\r\n* va-combo-box: aria status to include opt group count by @oleksii-morgun in https://github.com/department-of-veterans-affairs/component-library/pull/1550\r\n* va-memorable-date: change lifecycle method for handling dash by @Mottie in https://github.com/department-of-veterans-affairs/component-library/pull/1555\r\n### Other Changes\r\n* CSS-Library: remove custom list styles by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1556\r\n* CSS-Library: add semantic gutter tokens by @micahchiang in https://github.com/department-of-veterans-affairs/component-library/pull/1559\r\n* CSS-Library: add block display to eyebrow styling class by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1566\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v50.0.0...v50.1.0",
-    "mentions_count": 8
   }
 ]
