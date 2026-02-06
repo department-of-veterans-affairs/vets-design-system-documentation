@@ -67,8 +67,6 @@ The following are places where Details can be used:
 
 **Note:** Placement does not alter [content considerations](#content-considerations) in any way.
 
-### Design principles
-
 {% include component-docs.html component_name=page.web-component %}
 
 ## Content considerations

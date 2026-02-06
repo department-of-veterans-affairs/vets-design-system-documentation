@@ -1,8 +1,4 @@
-## Choosing between Details, hint text, and Accordion
-
-Choose the right component to help users access additional information without overwhelming the main experience.
-
-### Choosing the right component for the task
+## Choosing the right component for the task
 
 When deciding which component to use, consider how essential the information is and how it relates to nearby content:
 
@@ -51,22 +47,22 @@ flowchart TD
 <ol>
 <li><strong>Is this information essential for completing a form field?</strong>
     <ul>
-    <li><strong>Yes</strong> → <em>Use hint text</em></li>
-    <li><strong>No</strong> → Continue to question 2</li>
+    <li><strong>Yes</strong> (Field requirements, input patterns) → <em>Use hint text</em></li>
+    <li><strong>No</strong> (Background context, helpful clarifications) → Continue to question 2</li>
     </ul>
 </li>
 
 <li><strong>Is content related to a nearby form field or section?</strong>
     <ul>
-    <li><strong>Yes</strong> → Continue to question 3</li>
-    <li><strong>No</strong> → <em>Use Accordion</em></li>
+    <li><strong>Yes</strong> (Why we ask questions, field-specific help) → Continue to question 3</li>
+    <li><strong>No</strong> (General information, standalone topics) → <em>Use Accordion</em></li>
     </ul>
 </li>
 
 <li><strong>Is content brief and doesn't need a heading?</strong>
     <ul>
-    <li><strong>Yes</strong> → <em>Use Details</em></li>
-    <li><strong>No</strong> → <em>Use Accordion</em></li>
+    <li><strong>Yes</strong> (Short explanations, simple clarifications) → <em>Use Details</em></li>
+    <li><strong>No</strong> (Long content, complex explanations) → <em>Use Accordion</em></li>
     </ul>
 </li>
 </ol>
