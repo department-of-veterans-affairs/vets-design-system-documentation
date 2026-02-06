@@ -48,7 +48,7 @@ mobile-app: false
 * **Dynamic highlight.** If you're highlighting something that was dynamically added to the page in response to a user action, use a variation of an [Alert]({{ site.baseurl }}/components/alert) component.
 * **Time sensitive.** If you have a message that will appear only for a defined period of time, use an [Alert]({{ site.baseurl }}/components/alert) component instead.
 * **Sibling content.** Use [accordions]({{ site.baseurl }}/components/accordion) to hold chunks of sibling content. For example, accordions are used in forms on the review screen.
-* **Additional context.** To reveal helpful background information in a form use the  [Additional information]({{ site.baseurl }}/components/additional-info) component. Additional info is especially useful when the content is closely tied to a particular message or input on the screen. The lighter design prevents breaking up the visual progression as the user navigates the form. These can also serve as alternative to where accordions feel too heavy.
+* **Additional context.** To reveal helpful background information in a form use the  [Details]({{ site.baseurl }}/components/details) component. Details is especially useful when the content is closely tied to a particular message or input on the screen. The lighter design prevents breaking up the visual progression as the user navigates the form. These can also serve as alternative to where accordions feel too heavy.
 
 ### Placement
 
