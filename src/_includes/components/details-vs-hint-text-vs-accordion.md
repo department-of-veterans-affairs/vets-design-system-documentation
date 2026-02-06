@@ -90,15 +90,3 @@ flowchart TD
 </ol>
 
 </va-details>
-
-### Content length guidelines
-
-| Component | Recommended length |
-|-----------|-------------------|
-| **Hint text** | 1-2 sentences |
-| **Details** | Under 500 characters |
-| **Accordion** | No limit |
-
-### Accessibility note
-
-Don't hide critical information behind Details or Accordion components. If most users need the information, make it visible by default or use hint text.

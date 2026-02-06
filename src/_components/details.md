@@ -25,15 +25,7 @@ anchors:
 
 {% include storybook-preview.html  story="uswds-va-details--default" link_text="va-details v3 default" %}
 
-### No Border
-
-* Adding in the `disable-border` prop removes the left blue border from the expanded state of the component.
-
-{% include storybook-preview.html story="uswds-va-details--no-border" link_text="va-details v3 no border" %}
-
 ## Usage
-
-{% include components/details-vs-hint-text-vs-accordion.md %}
 
 ### When to use Details
 
@@ -54,13 +46,15 @@ anchors:
 * **Inside Alerts**: Use this component inside an [Alert]({{ site.baseurl }}/components/alert) only as a last resort and if approved in the Collaboration Cycle. Instead use the [Alert - Expandable]({{ site.baseurl }}/components/alert/alert-expandable) component, especially when the Alert is within the page content and not at the top of the page.
 * **Floating in space**: Try to avoid using Details outside of the flow of the page, unattached to a section of content or another component. For example, there are instances of Details between a h1 and a Card. See [placement](#placement) for more.
 
+{% include components/details-vs-hint-text-vs-accordion.md %}
+
 ## Behavior
 
-The help is triggered by clicking on a uniquely styled text link with a plain language hook. The helper text is revealed with a sliding drawer type animation (like the accordion) and is typically 1-3 short paragraphs. Shorter is better, and references to static content pages is encouraged when the situation is complicated.
+The Details component uses native HTML `<details>` and `<summary>` elements, which provides several advantages over JavaScript-based implementations:
 
-### Choosing between variations
-
-Choose the [No border](#no-border) variation when using Details inside of a bordered container as the border would be duplicative and unnecessary. Note however that the most common occurrence of this is using this component inside an Alert which is strongly discouraged. Consider instead linking to another page, especially if your content is long or complex, or reducing content.
+* **Searchable and discoverable content**: Browser search (Ctrl+F or Cmd+F) can find text inside collapsed Details, and search engines can index the content for better SEO.
+* **Better performance and reliability**: No JavaScript required for basic functionality, improving load times and ensuring content works even when JavaScript fails.
+* **Enhanced accessibility**: Native semantic meaning provides better assistive technology support without additional ARIA attributes, following web standards universally supported across browsers.
 
 ### Placement
 
@@ -75,8 +69,6 @@ The following are places where Details can be used:
 
 ### Design principles
 
-* **Disclosure widget**: The Details component is an example of a [Disclosure widget](https://en.wikipedia.org/wiki/Disclosure_widget), as is the [&lt;details&gt; HTML element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details). Disclosure widgets are sometimes considered examples of [staged or progressive disclosure](https://www.nngroup.com/articles/progressive-disclosure/).
-
 {% include component-docs.html component_name=page.web-component %}
 
 ## Content considerations
@@ -87,6 +79,7 @@ The following are places where Details can be used:
 
 ## Accessibility considerations
 
+<!-- TO DO: Review accessibility guidance -->
 * The Details component should be validated to meet the WCAG 2.2 AA accessibility guidelines.
 * The Details component uses aria-controls and aria-expanded attributes to convey the expand and collapse functionality to assistive technologies.
 * Pressing the close button (a element with role of button) must close the Details.
