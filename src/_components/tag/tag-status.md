@@ -14,8 +14,8 @@ anchors:
   - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
-  - anchor: Accessibility considerations
   - anchor: Content considerations
+  - anchor: Accessibility considerations
   - anchor: Related
   - anchor: Component checklist
 ---

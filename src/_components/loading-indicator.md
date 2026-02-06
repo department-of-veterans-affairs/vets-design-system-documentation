@@ -11,9 +11,9 @@ mobile-app: true
 anchors:
   - anchor: Example
   - anchor: Usage
+  - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
-  - anchor: Code usage
 ---
 
 ## Example
@@ -36,6 +36,8 @@ anchors:
 
 * Use the [Standard progress bar]({{ site.baseurl }}/components/progress-bar) for file uploads where the wait time is determinate.
 * Use the [Segmented progress bar]({{ site.baseurl }}/components/progress-bar) in forms to communicate the number of steps required to complete the form.
+
+{% include component-docs.html component_name=page.web-component %}
 
 ## Content considerations
 
@@ -61,5 +63,3 @@ Examples of loading indicator messages:
 
 * On the web, the loading indicator component is used to notify user’s that the page content is loading. W3C WAI-ARIA `aria-live="polite"`, `aria-label` and `aria-valuetext` are used to ensure screen reader users are also provided the same information.
 * In the mobile app, use the equivalent accessibility hints and labels in React Native.
-
-{% include component-docs.html component_name=page.web-component %}
