@@ -8,6 +8,12 @@ status: use-deployed
 web-component: va-loading-indicator
 web: true
 mobile-app: true
+anchors:
+  - anchor: Example
+  - anchor: Usage
+  - anchor: Content considerations
+  - anchor: Accessibility considerations
+  - anchor: Code usage
 ---
 
 ## Example
@@ -24,7 +30,7 @@ mobile-app: true
 
 ### When to use the Loading indicator
 
-* When the wait time for a process, such as loading a page, is unknown. 
+* When the wait time for a process, such as loading a page, is unknown.
 
 ### When to consider something else
 
@@ -33,17 +39,17 @@ mobile-app: true
 
 ## Content considerations
 
-- **Keep messages clear and concise:** We follow a simple content pattern for loading indicators, which consists of the following elements in this order:
+* **Keep messages clear and concise:** We follow a simple content pattern for loading indicators, which consists of the following elements in this order:
 
   1. A present participle verb of the action that is happening
   2. An object that is being acted upon
   3. An ellipsis
 
-- **Use present participle verbs (ending with "-ing"):** Start each loading indicator with the verb of the action that is happening. Consider what the system is actually doing. Remember that the loading indicator is supposed to inform the user what is happening while they’re waiting. The system isn’t always loading something. Sometimes it's sending something. Other times it's saving something.
+* **Use present participle verbs (ending with "-ing"):** Start each loading indicator with the verb of the action that is happening. Consider what the system is actually doing. Remember that the loading indicator is supposed to inform the user what is happening while they’re waiting. The system isn’t always loading something. Sometimes it's sending something. Other times it's saving something.
 
-- **Describe the object being acted upon:** Follow the verb with the object that is being acted upon. For example, if the system is saving something, describe (in 1 or 2 words) what is being saved. If applicable, make the object personal to the user by using a possessive pronoun (your) instead of an article (a, the).
+* **Describe the object being acted upon:** Follow the verb with the object that is being acted upon. For example, if the system is saving something, describe (in 1 or 2 words) what is being saved. If applicable, make the object personal to the user by using a possessive pronoun (your) instead of an article (a, the).
 
-- **End with an ellipsis:** End each loading indicator with an ellipsis (3 periods). Do not use unnecessary words, such as "please" or "wait".
+* **End with an ellipsis:** End each loading indicator with an ellipsis (3 periods). Do not use unnecessary words, such as "please" or "wait".
 
 Examples of loading indicator messages:
 

@@ -7,11 +7,13 @@ intro-text: A Status Tag indicates the current state or condition of content, pr
 figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=39019-83
 github-title: va-tag-status
 status: use-with-caution-candidate
+web-component: va-tag-status
 web: true
 mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage
+  - anchor: Code usage
   - anchor: Accessibility considerations
   - anchor: Content considerations
   - anchor: Related
@@ -77,6 +79,8 @@ Use the error status to indicate critical issues, failure states, or items that 
 * **Use Tags sparingly.** Don't overdo it. If everything on a page is called out as important, nothing is important.
 * **Use semantic colors consistently.** Apply the same color meanings across all components (tags, alerts, etc.) to create a cohesive experience for users.
 * **For status within Cards.** When using Tags to communicate status within card components, see the [Card Status guidance]({{ site.baseurl }}/components/card/card-status) for specific implementation details and best practices.
+
+{% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations
 
