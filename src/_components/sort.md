@@ -170,7 +170,7 @@ These considerations describe how sorting changes are communicated and experienc
 
 ### Implementation notes
 * Announce sorting changes in a non-disruptive way using `aria-live="polite"` so assistive technology users understand that results have changed without interrupting their workflow.
-* Account for assistive technology interaction patterns where users may move through select options without opening the menu. Avoid triggering unnecessary updates while a user is exploring options. Engineers should debounce network requests or delay the `onchange` event to check for another option selection.
+* Account for assistive technology interaction patterns where users may move through select options without opening the menu. Avoid triggering unnecessary updates while a user is exploring options. Engineers should debounce network requests or delay the `vaSortSelect` or `vaSortKeyDown` events to check for another option selection.
 * Optgroups aren't supported in the `va-sort` component.
 
 
