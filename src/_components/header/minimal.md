@@ -13,6 +13,7 @@ mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage
+  - anchor: Code usage
   - anchor: Content considerations
   - anchor: Component checklist
 ---
@@ -52,6 +53,8 @@ anchors:
 ### Placement
 
 * **At the top of the page.** The minimal header appears at the top of the page.
+
+{% include component-docs.html component_name=page.web-component %}
 
 ## Content considerations
 

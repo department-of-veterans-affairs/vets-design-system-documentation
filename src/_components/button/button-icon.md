@@ -17,7 +17,8 @@ mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage
-  - anchor: Requesting a new instance
+  - anchor: Requesting new instances
+  - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Privacy guidance
@@ -55,6 +56,8 @@ anchors:
 ## Requesting new instances
 
 The 3 examples above are the only currently approved instances of this component. Use of icons in buttons of any type will be made on a case-by-case basis. If you feel you need an icon for a button, [follow the process for requesting a new icon]({{ site.baseurl }}/components/icon#requesting-a-new-icon) and indicate that you would like to use it in Button - Icon or another button type.
+
+{% include component-docs.html component_name=page.web-component %}
 
 ## Content considerations
 
