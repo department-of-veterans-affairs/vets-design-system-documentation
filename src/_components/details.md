@@ -23,7 +23,7 @@ anchors:
 
 ### Default
 
-{% include storybook-preview.html  story="uswds-va-details--default" link_text="va-details v3 default" %}
+{% include storybook-preview.html  story="uswds-va-details--default" link_text="va-details default" %}
 
 ## Usage
 
