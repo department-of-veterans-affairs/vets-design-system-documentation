@@ -160,7 +160,7 @@ The text of the link of the matching page. This should not be a link (the header
 
 <va-link-action
   href="{{ site.baseurl }}/components/search-filter"
-  text="Follow the guidance for the search filter component"
+  text="Follow the guidance for the Search Filter component"
   type="secondary"
 ></va-link-action>
 
