@@ -43,7 +43,7 @@ flowchart TD
     Start[\"<b>What type of additional information<br/>do you need to provide?</b>\"]:::node-start --> Q1{\"<b>Is this information essential<br/>for completing a form field?</b>\"}:::node-question
     
     Q1 --> Essential([\"<b>YES</b><br/>Field requirements,<br/>input patterns\"]):::node-answer-primary
-    Essential --> ResultHint([\"Use <b>HINT TEXT</b>\"]):::node-result-hint
+    Essential --> ResultHint([\"Use <b>HINT TEXT</b>\"]):::node-result-button
     
     Q1 --> NonEssential([\"<b>NO</b><br/>Background context,<br/>helpful clarifications\"]):::node-answer-secondary
     NonEssential --> Q2{\"<b>Is content related to a<br/>nearby form field or section?</b>\"}:::node-question
@@ -52,22 +52,13 @@ flowchart TD
     DirectlyRelated --> Q3{\"<b>Is content brief and<br/>doesn't need a heading?</b>\"}:::node-question
     
     Q3 --> Brief([\"<b>YES</b><br/>Short explanations,<br/>simple clarifications\"]):::node-answer-primary
-    Brief --> ResultDetails([\"Use <b>DETAILS</b>\"]):::node-result-details
+    Brief --> ResultDetails([\"Use <b>DETAILS</b>\"]):::node-result-link
     
     Q3 --> NotBrief([\"<b>NO</b><br/>Long content,<br/>complex explanations\"]):::node-answer-secondary
-    NotBrief --> ResultAccordion1([\"Use <b>ACCORDION</b>\"]):::node-result-accordion
+    NotBrief --> ResultAccordion1([\"Use <b>ACCORDION</b>\"]):::node-result-action
     
     Q2 --> NotDirectlyRelated([\"<b>NO</b><br/>General information,<br/>standalone topics\"]):::node-answer-secondary
-    NotDirectlyRelated --> ResultAccordion2([\"Use <b>ACCORDION</b>\"]):::node-result-accordion
-
-    %% Styling classes
-    classDef node-start fill:#0f2027,stroke:#ffffff,stroke-width:2px,color:#ffffff
-    classDef node-question fill:#003e73,stroke:#ffffff,stroke-width:2px,color:#ffffff
-    classDef node-answer-primary fill:#e1f3f8,stroke:#0071bb,stroke-width:2px,color:#0071bb
-    classDef node-answer-secondary fill:#f9f9f9,stroke:#71767a,stroke-width:2px,color:#71767a
-    classDef node-result-hint fill:#ecf1f7,stroke:#0071bb,stroke-width:3px,color:#0071bb
-    classDef node-result-details fill:#ecf5ec,stroke:#00a91c,stroke-width:3px,color:#00a91c
-    classDef node-result-accordion fill:#fef6e8,stroke:#ffbe2e,stroke-width:3px,color:#936f38
+    NotDirectlyRelated --> ResultAccordion2([\"Use <b>ACCORDION</b>\"]):::node-result-action
 " %}
 </div>
 
