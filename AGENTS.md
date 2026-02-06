@@ -157,7 +157,7 @@ When generating or modifying code for this repository:
 4. **Accessibility First**: Include accessibility considerations in all guidance
 5. **Research-Based**: Reference user research and testing when available
 6. **Consistency**: Maintain consistency with existing documentation patterns
-7. **Plain Language**: Write for Veterans and their families, not technical audiences
+7. **Plain Language**: Use clear, plain language appropriate for a technical audience, following VA.gov Content Style Guide and VADS plain language guidance
 8. **Cross-Reference**: Link related components, patterns, and guidance appropriately
 
 ## Deployment
