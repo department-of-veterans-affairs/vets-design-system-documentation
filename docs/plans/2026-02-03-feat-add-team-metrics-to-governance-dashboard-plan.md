@@ -260,8 +260,8 @@ GITHUB_TOKEN=xxx node scripts/collect-governance-metrics.js --quarter 2025Q4
    - *Fallback: Set `total_platform_teams` to null if access denied*
 
 2. **Team-lookup.json Structure** - What fields in `team-lookup.json` should be counted?
-   - *Assumption: Count all top-level entries in the JSON array*
-   - *Alternative: Filter by an "active" field if one exists*
+   - *Clarify: `team-lookup.json` is a JSON object (not an array). The implementation in `fetchTotalPlatformTeams()` counts `Object.keys()` length*
+   - *Counting rule: Count all top-level entries (`Object.keys` length), optionally filtering by an `"active"` field if one exists*
 
 ### Important
 

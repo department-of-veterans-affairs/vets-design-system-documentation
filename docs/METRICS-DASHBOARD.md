@@ -139,11 +139,11 @@ date,component_name,uswds,static_content_templates,yellow_ribbon_schools,...[123
     "total_staging_issues": 477,
     "launch_blocking_issues": 128,
     "launch_blocking_percentage": 27,
-    "total_platform_teams": 85,
-    "unique_teams_in_collab_cycle": 35,
-    "avg_staging_findings_per_team": 13.6
+    "total_platform_teams": 60,
+    "unique_teams_in_collab_cycle": 23,
+    "avg_staging_findings_per_team": 20.7
   },
-  "generated_at": "2026-01-23T18:11:31.453Z",
+  "generated_at": "2026-02-03T17:34:20.501Z",
   "data_source": "va.gov-team repository"
 }
 ```

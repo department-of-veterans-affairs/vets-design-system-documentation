@@ -167,7 +167,7 @@ To get the previous quarter, we extract the year and quarter number, then calcul
       {% comment %} Calculate unique teams trend {% endcomment %}
       {% assign current_unique_teams = latest_quarter_data.data.unique_teams_in_collab_cycle %}
       {% assign previous_unique_teams = previous_quarter_data.data.unique_teams_in_collab_cycle %}
-      {% if previous_unique_teams and previous_unique_teams > 0 %}
+      {% if current_unique_teams and previous_unique_teams and previous_unique_teams > 0 %}
         {% assign unique_teams_change = current_unique_teams | minus: previous_unique_teams %}
         {% assign unique_teams_percent = unique_teams_change | times: 100.0 | divided_by: previous_unique_teams | round %}
       {% endif %}
@@ -175,7 +175,7 @@ To get the previous quarter, we extract the year and quarter number, then calcul
       {% comment %} Calculate avg findings per team trend {% endcomment %}
       {% assign current_avg_findings = latest_quarter_data.data.avg_staging_findings_per_team %}
       {% assign previous_avg_findings = previous_quarter_data.data.avg_staging_findings_per_team %}
-      {% if previous_avg_findings and previous_avg_findings > 0 %}
+      {% if current_avg_findings and previous_avg_findings and previous_avg_findings > 0 %}
         {% assign avg_findings_change = current_avg_findings | minus: previous_avg_findings %}
         {% assign avg_findings_percent = avg_findings_change | times: 100.0 | divided_by: previous_avg_findings | round %}
       {% endif %}
@@ -219,7 +219,7 @@ To get the previous quarter, we extract the year and quarter number, then calcul
 
       <div class="vads-l-col--12 medium-screen:vads-l-col--4">
         <va-card class="metric-card">
-          <h3 id="avg-findings-per-team-label">Avg Findings Per Team</h3>
+          <h3 id="avg-findings-per-team-label">Average Findings Per Team</h3>
           <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="avg-findings-per-team" aria-labelledby="avg-findings-per-team-label">
             {% if latest_quarter_data.data.avg_staging_findings_per_team != nil %}
               {{ latest_quarter_data.data.avg_staging_findings_per_team }}
@@ -419,8 +419,8 @@ To get the previous quarter, we extract the year and quarter number, then calcul
       <h4>Team Metrics Definitions</h4>
       <ul>
         <li><strong>Total Platform Teams:</strong> The total number of teams registered in the <a href="https://github.com/department-of-veterans-affairs/va.gov-team-sensitive/tree/master/teams" target="_blank" rel="noopener noreferrer">Teams Manifest</a>. This is a point-in-time count from the team-lookup.json file and represents all teams active on the VA.gov Platform</li>
-        <li><strong>Teams in Collab Cycle:</strong> The number of unique VFS teams that initiated a Collaboration Cycle (kick-off) during the quarter. Team names are extracted from the "VFS team name" field in kick-off issue templates. Teams are counted case-insensitively to avoid duplicates from formatting differences</li>
-        <li><strong>Avg Findings Per Team:</strong> The average number of staging review findings per team that went through the Collaboration Cycle. Calculated as: total staging review findings ÷ unique teams in Collab Cycle. This metric helps measure the typical feedback burden for teams going through the process</li>
+        <li><strong>Teams in Collaboration Cycle:</strong> The number of unique Veteran-facing services (VFS) teams that initiated a Collaboration Cycle (kick-off) during the quarter. Team names are extracted from the "VFS team name" field in kick-off issue templates. Teams are counted case-insensitively to avoid duplicates from formatting differences</li>
+        <li><strong>Average Findings Per Team:</strong> The average number of staging review findings per team that went through the Collaboration Cycle. Calculated as: total staging review findings ÷ unique teams in Collaboration Cycle. This metric helps measure the typical feedback burden for teams going through the process</li>
       </ul>
 
       <h4>Cycle Time Statistics Definitions</h4>
