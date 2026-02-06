@@ -110,7 +110,7 @@ anchors:
 * **Avoid using many primary buttons on a single page or section.** Pages with many primary buttons reduces their impact and make it harder for users to know what to do next.
 * **Avoid disabling buttons.** [Disabling buttons is strongly discouraged.](#do-not-disable-buttons)
 * **Use icons only when necessary.** [Icons]({{ site.baseurl }}/components/icon) can be used in buttons when additional clarity is required and the icon is highly relevant to the action. Icons should not be used for decoration. Note that va-button does not support iconography, but has some variations that use an icon. Use of icons in buttons will be made on a case-by-case basis. If you feel you need an icon for a button, [follow the process for requesting a new icon]({{ site.baseurl }}/components/icon#requesting-a-new-icon).
-  * **Note:** Chevrons should not be used in buttons unless to expand content in a page, like in dropdowns, flyout menus, and drawers.
+  * **Note:** Chevrons should not be used in this component.
 
 ### Choosing between variations
 
