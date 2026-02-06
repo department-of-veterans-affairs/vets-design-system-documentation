@@ -17,7 +17,7 @@ mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage
-  - anchor: Requesting a new instance
+  - anchor: Requesting new instances
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
