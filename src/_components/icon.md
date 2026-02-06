@@ -191,6 +191,7 @@ By default, the web component icon will display as `--vads-color-base` which is 
   </va-table-row>
 </va-table>
 
+
 ### Placement
 
 Some icons may have specific placement guidance defined here.
@@ -200,6 +201,13 @@ Some icons may have specific placement guidance defined here.
 - **Leading icons should be center-aligned to the first line of text and positioned to the top when text wraps to the next line.** Trailing icons should also be center-aligned to the first line of text but positioned to the center when text wraps to the next line.
   - **Examples:** [Additional Info](https://design.va.gov/components/additional-info) and [Accordion - Subheader](https://design.va.gov/components/accordion#subheader).
 - **Icons with high visual weight, like filled icons, should generally lead text.** For example, filled chevrons like *expand_circle_right* should always lead links.
+
+### Special usage considerations
+
+#### Chevrons
+
+- **Right-facing chevrons are reserved for links but can be used for buttons that open additional content.** In the latter case, chevrons of all directions can be used to indiciate the direction in which additional content open in, like in drawers, flyout menus, and dropdowns.
+  * **Examples:** Nested menu items within "VA Benefits and Health Care" in the [Header](https://design.va.gov/components/header/), [Additional Info](https://design.va.gov/components/additional-info), and [Alert - Expandable](https://design.va.gov/components/alert/alert-expandable/).
 
 ## Accessibility considerations
 Icon usage typically falls into two categories, decorative and semantic.
