@@ -13,18 +13,38 @@ body:
   - type: checkboxes
     id: preflight
     attributes:
-      label: ""
+      label: "Verify the below"
       options:
         - label: "I’ve searched for any related issues and avoided creating a duplicate issue."
         - label: "To my knowledge this is not an accessibility issue, if accessibility use this [template](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?template=5_Accessibility-issue.yml)"
           required: true
         
-
+- type: dropdown
+  id: proudct_name
+  attributes:
+    label: Select your product area
+    description: See [team directory](https://github.com/department-of-veterans-affairs/va.gov-team-sensitive/tree/master/teams#readme)
+    multiple: false
+    options:
+      - "Digital Experience"
+      - "Content and Information Architecture"
+      - "Benefits Portfolio"
+      - "Health Portfolio"
+      - "BAM Portfolio"
+  
 - type: input
-    id: contact
+    id: team_name
     attributes:
-      label: Team Name
-      description: The person or team we should follow up with when this ticket is addressed/remediated.
+      label: Team Name 
+      description: Enter your team name
+    validations:
+      required: true
+
+ - type: input
+    id: team_label
+    attributes:
+      label: Team label 
+      description: Enter your team name label from github
     validations:
       required: true
       
