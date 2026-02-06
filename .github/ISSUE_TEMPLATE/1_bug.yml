@@ -1,7 +1,7 @@
 name: "1. 🔴 Bug report"
 description: "Use this template to report any defects for VA Design System Components and Patterns"
 title: "[Bug]: Description of Bug"
-labels:["bug”, "platform-design-system-team"]
+labels: ["bug", "platform-design-system-team"]
 assignees: [tbaker1026]
 
 body:
