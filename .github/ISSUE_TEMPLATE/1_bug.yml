@@ -1,4 +1,4 @@
-name: "1. 🔴 Bug report"
+name: "1. 🔴 Bug issue template"
 description: "Use this template to report any defects for VA Design System Components and Patterns"
 title: "[Bug]: Description of Bug"
 labels: ["bug", "platform-design-system-team"]
