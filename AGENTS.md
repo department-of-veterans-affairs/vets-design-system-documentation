@@ -162,10 +162,10 @@ When generating or modifying code for this repository:
 
 ## Deployment
 
-- **Dev**: `dev-design.va.gov` (auto-deploy on main branch)
-- **Production**: `design.va.gov` (scheduled weekday deploys at 2pm)
-- Deployed to AWS S3 in US Gov Cloud
-- Each PR generates a preview at `https://dev-design.va.gov/[PR#]/`
+- **Production**: `design.va.gov` (deploys automatically after CI completes on merges to `main`)
+- **Pull request previews**: each PR generates an isolated preview environment at `https://dev-design.va.gov/[PR#]/`
+- `dev-design.va.gov` is used only for PR preview environments, not as a long-lived Dev environment
+- Hosted and deployed via GitHub Pages
 
 ## Testing Component Library Changes
 
