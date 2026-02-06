@@ -9,7 +9,6 @@ When deciding which component to use, consider how essential the information is 
 ### Decision tree
 
 <div class="mermaid-width mermaid-comparison">
-  <h4 class="mermaid-comparison__title">Choosing the right component</h4>
   <div class="sr-only">
     If you use a screen reader: Skip the visual flowchart below and jump to the <a href="#text-based-decision-guide">text-based decision guide</a> for the same information in a more accessible format.
   </div>
