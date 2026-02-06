@@ -41,7 +41,7 @@ yarn build                      # Run Gulp build pipeline only
 
 ### Tech Stack
 
-- **Jekyll 4.3.0**: Static site generator
+- **Jekyll 4.3.x**: Static site generator
 - **Ruby/Bundler**: Dependency management
 - **Sass**: CSS preprocessing with Dart Sass
 - **Gulp**: Build tooling and asset processing
