@@ -319,7 +319,7 @@ When reviewing pull requests that modify guidance content in the following paths
 
 ## Important Notes
 
-- No local test suite — testing happens in component library repo
+- Local Jest test suite is available (see `__tests__/` and `jest.config.js`) — run tests locally before opening a PR
 - Component development happens in separate repos
 - This site consumes and documents components, doesn't implement them
 - Uses Storybook integration for live component examples
