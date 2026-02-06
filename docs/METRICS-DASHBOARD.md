@@ -112,7 +112,7 @@ date,component_name,uswds,static_content_templates,yellow_ribbon_schools,...[123
 
 **Source**: GitHub Issues from `va.gov-team` repository + Teams Manifest from `va.gov-team-sensitive`
 **Script**: `scripts/collect-governance-metrics.js`
-**Frequency**: Quarterly (manual or scheduled)
+**Frequency**: Runs weekly via GitHub Actions and produces quarter-based JSON aggregates
 
 #### Data Collection:
 1. **Touchpoint Issues**: Fetches issues with governance-team labels using `gh` CLI

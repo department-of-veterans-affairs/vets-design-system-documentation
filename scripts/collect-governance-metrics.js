@@ -344,6 +344,11 @@ async function fetchKickoffIssuesWithBody(startDate, endDate) {
       }
     } catch (error) {
       console.error(`  Error fetching kick-off issues via GraphQL: ${error.message}`);
+      if (allIssues.length === 0) {
+        console.error('  No issues were fetched before error. Returning null to indicate data unavailable.');
+        return null;
+      }
+      console.warn(`  Returning ${allIssues.length} issues fetched before error.`);
       hasNextPage = false;
     }
   }
@@ -543,7 +548,8 @@ async function processCollaborationCycleMetrics(specificQuarter = null) {
     const kickoffIssuesWithBody = await fetchKickoffIssuesWithBody(quarter.startDate, quarter.endDate);
 
     // 1c. Count unique teams in Collab Cycle this quarter
-    const uniqueTeamsInCollabCycle = countUniqueTeams(kickoffIssuesWithBody);
+    // If kickoffIssuesWithBody is null, the GraphQL fetch failed entirely — use null to signal data unavailable
+    const uniqueTeamsInCollabCycle = kickoffIssuesWithBody !== null ? countUniqueTeams(kickoffIssuesWithBody) : null;
     
     // 2. Individual touchpoint types held - Issues with governance-team + specific touchpoint labels created in this quarter
     const designIntentIssues = await fetchIssuesInDateRange(
@@ -616,8 +622,9 @@ async function processCollaborationCycleMetrics(specificQuarter = null) {
 
     // 7. Calculate average staging findings per team
     // Formula: total_staging_issues / unique_teams_in_collab_cycle
-    const avgStagingFindingsPerTeam = uniqueTeamsInCollabCycle > 0 ?
-      Math.round((totalStagingIssues / uniqueTeamsInCollabCycle) * 10) / 10 : 0;
+    // If uniqueTeamsInCollabCycle is null (data fetch failed), preserve null to render N/A on dashboard
+    const avgStagingFindingsPerTeam = uniqueTeamsInCollabCycle !== null && uniqueTeamsInCollabCycle > 0 ?
+      Math.round((totalStagingIssues / uniqueTeamsInCollabCycle) * 10) / 10 : uniqueTeamsInCollabCycle === null ? null : 0;
 
     quarterlyData.push({
       period: quarter.label,

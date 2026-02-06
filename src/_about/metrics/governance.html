@@ -205,7 +205,7 @@ To get the previous quarter, we extract the year and quarter number, then calcul
             {% if latest_quarter_data.data.unique_teams_in_collab_cycle != nil %}
               {{ latest_quarter_data.data.unique_teams_in_collab_cycle }}
             {% else %}
-              0
+              N/A
             {% endif %}
           </div>
           {% include metric-trend.html
@@ -224,7 +224,7 @@ To get the previous quarter, we extract the year and quarter number, then calcul
             {% if latest_quarter_data.data.avg_staging_findings_per_team != nil %}
               {{ latest_quarter_data.data.avg_staging_findings_per_team }}
             {% else %}
-              0
+              N/A
             {% endif %}
           </div>
           {% include metric-trend.html
