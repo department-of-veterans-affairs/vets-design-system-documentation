@@ -29,7 +29,7 @@ anchors:
 ### When to use Footer - Minimal
 
 * **To reduce the chances of a user leaving a form, process, or task before completing the required steps.** The minimal footer retains VA branding so that users still know they're on VA.gov. However, it removes elements of the standard footer, such as additional navigation, making it less likely that users leave a form or process before completing all the required steps and accomplishing their goal. While most forms support finishing the form later, we still prefer to keep users focused on the task at hand.
-* **When a task is time-sensitive.** The minimal footer is also appropriate when a user must complete a task in a timely fashion, so navigating away would put task completion at risk.
+* **When a task is time-sensitive.** The minimal footer is also appropriate when users must complete a task in a timely fashion, so navigating away would put task completion at risk.
 * **When an experience is outside the VA.gov site-wide information architecture.** Some experiences don't exist within the information architecture of VA.gov or have already implemented a distinct navigation pattern, so they can also use the minimal footer.
 
 ### How this component works
