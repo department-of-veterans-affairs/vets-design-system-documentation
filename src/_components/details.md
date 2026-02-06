@@ -46,7 +46,7 @@ anchors:
 * **Inside Alerts**: Use this component inside an [Alert]({{ site.baseurl }}/components/alert) only as a last resort and if approved in the Collaboration Cycle. Instead use the [Alert - Expandable]({{ site.baseurl }}/components/alert/alert-expandable) component, especially when the Alert is within the page content and not at the top of the page.
 * **Floating in space**: Try to avoid using Details outside of the flow of the page, unattached to a section of content or another component. For example, there are instances of Details between a h1 and a Card. See [placement](#placement) for more.
 
-{% include components/details-vs-hint-text-vs-accordion.md %}
+{% include content/details-vs-hint-text-vs-accordion.md %}
 
 ## Behavior
 

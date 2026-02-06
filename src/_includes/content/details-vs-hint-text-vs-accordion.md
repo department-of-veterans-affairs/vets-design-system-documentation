@@ -2,31 +2,13 @@
 
 Choose the right component to help users access additional information without overwhelming the main experience.
 
-### Use hint text when:
+### Choosing the right component for the task
 
-* **The information is essential for completing a form field.** Most users need this information to fill out the field correctly.
-* **The clarification is brief.** Keep hint text to 1-2 sentences.
-* **The information doesn't need formatting.** Hint text is plain text only.
+When deciding which component to use, consider how essential the information is and how it relates to nearby content:
 
-**Examples:** "Enter your 9-digit Social Security number" or "Use MM/DD/YYYY format"
-
-### Use Details when:
-
-* **The information is helpful but not essential.** Users can access context when they need it.
-* **The content relates to a nearby form field or section.** Use for contextual help tied to specific content.
-* **The content is brief** (under 500 characters) **and doesn't need its own heading.**
-* **You need to explain why VA asks for information.** Provide transparency without disrupting the flow.
-
-**Examples:** "Why we ask for this information" or "What if I don't have this document?"
-
-### Use Accordion when:
-
-* **The content deserves its own heading.** Use for substantial information that stands alone.
-* **You're organizing multiple related topics.** Accordions work well for FAQ sections or benefit explanations.
-* **The content is lengthy or complex.** Use for multiple paragraphs, detailed processes, or formatted content.
-* **The information is more general** rather than tied to a specific form field.
-
-**Examples:** FAQ sections, detailed eligibility requirements, or step-by-step guides
+* **Essential information for form fields:** Use {% if page.url == '/components/form/label/' %}hint text{% else %}[hint text]({{ site.baseurl }}/components/form/label#hint-text){% endif %} for brief, critical information that most users need to complete a field successfully.
+* **Helpful context tied to specific content:** Use {% if page.url == '/components/details/' %}Details{% else %}[Details]({{ site.baseurl }}/components/details){% endif %} for brief explanations related to nearby form fields or sections that users can access when needed.
+* **Substantial standalone information:** Use {% if page.url == '/components/accordion/' %}Accordion{% else %}[Accordion]({{ site.baseurl }}/components/accordion){% endif %} for lengthy content that deserves its own heading or multiple related topics like FAQ sections.
 
 ### Decision tree
 

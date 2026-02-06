@@ -49,7 +49,7 @@ anchors:
 
 ## Usage
 
-{% include components/details-vs-hint-text-vs-accordion.md %}
+{% include content/details-vs-hint-text-vs-accordion.md %}
 
 <va-link-action
   href="https://designsystem.digital.gov/components/accordion/"
