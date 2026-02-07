@@ -4,7 +4,7 @@ title: Header - Minimal
 permalink: /components/header/header-minimal
 has-parent: /components/header/
 contributors: Ben Brasso (Agile 6), Ya-ching Tsao (CivicActions), Zach Park (Agile 6), Kristen McConnell (Ad Hoc)
-intro-text: The minimal header can be used when navigating away would prevent the user from easily accomplishing their main task.
+intro-text: Use the minimal header when navigating away from a form or process could prevent the user from easily accomplishing their main task.
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=988%3A1384&mode=design&t=jMcVWkPlFhZu3RTh-1
 example-link: https://staging.va.gov/mock-form-minimal-header/
 web-component: va-header-minimal
@@ -37,13 +37,13 @@ anchors:
 
 ### When to use Header - Minimal
 
-* **Reduce the chance of a user leaving a form, process, or task before completing the required steps.** The minimal header retains VA.gov branding and the [Banner - Official Gov]({{ site.baseurl }}/components/banner/official-gov) so that users still know they are on VA.gov. However, it removes elements of the standard header, such as the Sign In button and main menu navigation, in order to reduce the chances of users leaving a form or process before completing all the required steps and accomplishing their goal. While most forms support finishing the form later, we still prefer to keep users focused on the task at hand.
-* **A tasks that is time-sensitive.** The minimal header is also appropriate when a user must complete a task in a timely fashion and thus navigating away would put task completion at risk.
-* **An experience outside of the VA.gov site-wide information architecture.** Some experiences do not exist within the information architecture of VA.gov or have already implemented a distinct navigation pattern and thus can also use the minimal header.
+* **To reduce the chance of a user leaving a form, process, or task before completing the required steps.** The minimal header retains VA.gov branding and the [Banner - Official Gov]({{ site.baseurl }}/components/banner/official-gov) so that users still know they're on VA.gov. However, it removes elements of the standard header, such as the Sign In button and main menu navigation, to reduce the chances of users leaving a form or process before completing all the required steps and accomplishing their goal. While most forms support finishing the form later, we still prefer to keep users focused on the task at hand.
+* **When a task is time-sensitive.** The minimal header is also appropriate when a user must complete a task in a timely fashion, so navigating away would put task completion at risk.
+* **When an experience is outside the VA.gov site-wide information architecture.** Some experiences don't exist within the information architecture of VA.gov or have already implemented a distinct navigation pattern, so they can also use the minimal header.
 
 ### How this component works
 
-* **Use with the [Footer - Minimal]({{ site.baseurl }}/components/footer/footer-minimal).** The minimal header should be used in conjunction with the minimal footer.
+* **Use with the [Footer - Minimal]({{ site.baseurl }}/components/footer/footer-minimal).** Use the minimal header together with the minimal footer.
 
 ### Behavior
 
