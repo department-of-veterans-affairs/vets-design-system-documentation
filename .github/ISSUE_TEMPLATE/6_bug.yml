@@ -1,4 +1,4 @@
-name: "1. 🔴 Bug report"
+name: "6. 🔴 Bug report"
 description: "Use this template to report any defects for VA Design System Components and Patterns"
 title: "[Bug]: Description of Bug"
 labels: ["bug", "platform-design-system-team"]
@@ -16,46 +16,48 @@ body:
       label: "Verify the following"
       options:
         - label: "I’ve searched for any related issues and avoided creating a duplicate issue."
-        - label: "To my knowledge this is not an accessibility issue, if accessibility use this [template](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?template=5_Accessibility-issue.yml)"
-          required: true
-        
-- type: dropdown
-  id: proudct_name
-  attributes:
-    label: Select your product area
-    description: See [team directory](https://github.com/department-of-veterans-affairs/va.gov-team-sensitive/tree/master/teams#readme)
-    multiple: false
-    options:
-      - "Digital Experience"
-      - "Content and Information Architecture"
-      - "Benefits Portfolio"
-      - "Health Portfolio"
-      - "BAM Portfolio"
-  
-- type: input
+        - label: 'To my knowledge this is not an accessibility issue. If this is an accessibility issue, use this template: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new/choose'
+    validations:
+      required: true
+
+  - type: dropdown
+    id: product_name
+    attributes:
+      label: Select your product area
+      description: See [team directory](https://github.com/department-of-veterans-affairs/va.gov-team-sensitive/tree/master/teams#readme)
+      multiple: false
+      options:
+        - "Digital Experience"
+        - "Content and Information Architecture"
+        - "Benefits Portfolio"
+        - "Health Portfolio"
+        - "BAM Portfolio"
+    validations:
+      required: true
+
+  - type: input
     id: team_name
     attributes:
-      label: Team Name 
+      label: Team Name
       description: Enter your team name
     validations:
       required: true
 
- - type: input
+  - type: input
     id: team_label
     attributes:
-      label: Team label 
-      description: Enter your team name label from github
+      label: Team label
+      description: Enter your team name label from GitHub
     validations:
       required: true
-      
-- type: input
+
+  - type: input
     id: contact
     attributes:
       label: Point of contact
       description: The person we should follow up with when this ticket is addressed/remediated.
     validations:
       required: true
-
 
   - type: textarea
     id: what-happened
@@ -110,7 +112,6 @@ body:
       placeholder: "https://staging.va.gov/..."
     validations:
       required: true
-
 
   - type: textarea
     id: steps
