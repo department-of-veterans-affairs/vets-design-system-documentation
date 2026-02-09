@@ -361,6 +361,7 @@ See `.claude/skills/writing-vads-guidance/SKILL.md` for full details.
 
 ### Additional Resources
 
-- `commands/issues.md` — Complete guide for managing GitHub issues and using issue templates
+- `.claude/commands/issues.md` — Complete guide for managing GitHub issues and using issue templates
+- `.github/github-issue-commands.md` — GitHub CLI and workflow commands for managing issues in this repo
 
 This documentation serves Veterans and the teams that serve them. Every contribution should make it easier for VFS teams to create accessible, consistent, and Veteran-centered digital experiences.
