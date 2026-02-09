@@ -206,7 +206,7 @@ Some icons may have specific placement guidance defined here.
 
 #### Chevrons
 
-- **Right-facing chevrons are reserved for links but can be used for buttons that open additional content.** In the latter case, chevrons of all directions can be used to indiciate the direction in which additional content open in, like in drawers, flyout menus, and dropdowns.
+- **Right-facing chevrons are reserved for links and for buttons that open additional content.** In the latter case, chevrons of all directions can be used to indicate the direction in which additional content open in, like in drawers, flyout menus, and dropdowns.
   * **Examples:** Nested menu items within "VA Benefits and Health Care" in the [Header](https://design.va.gov/components/header/), [Additional Info](https://design.va.gov/components/additional-info), and [Alert - Expandable](https://design.va.gov/components/alert/alert-expandable/).
 
 ## Accessibility considerations
