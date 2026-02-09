@@ -18,7 +18,7 @@ This should be used in the case where the needed clarification is very short.
 
 ### With Details {#with-details}
 
-{% include storybook-preview.html story="uswds-va-text-input--with-additional-info" link_text="Label with Details hint text" %}
+{% include storybook-preview.html story="uswds-va-text-input--with-details" link_text="Label with Details hint text" %}
 
 Using the [Details]({{ site.baseurl }}/components/details) component should only be done in cases where the needed clarification is long, complex, requiring more than two sentences or multiple paragraphs, or special formatting (bullet points, links, etc.).
 
