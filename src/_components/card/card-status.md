@@ -88,8 +88,6 @@ This state is triggered when validation errors occur, such as when a user tries 
 
 Card Status uses the same placement, dimensions, and layout as described in the [Card component]({{ site.baseurl }}/components/card#placement).
 
-## Code usage
-
 {% include component-docs.html component_name=page.web-component %}
 
 ## Content considerations
