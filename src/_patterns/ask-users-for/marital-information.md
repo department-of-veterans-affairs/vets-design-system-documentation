@@ -45,7 +45,7 @@ anchors:
     * Widowed
     * Never married 
 
-{% include component-example.html alt="A display of the standard Marital Status question with reponses available with radio buttons and an Details component that provides more information on why we ask this information." file="/images/patterns/ask-users-for/marital-information/standard-marital-status.png" caption="The standard Marital Status question to be used in most forms. Always provide a detailed explanation in the Details component that tells the user why you need this information." width="50%" %}
+{% include component-example.html alt="A display of the standard Marital Status question with reponses available with radio buttons and a Details component that provides more information on why we ask this information." file="/images/patterns/ask-users-for/marital-information/standard-marital-status.png" caption="The standard Marital Status question to be used in most forms. Always provide a detailed explanation in the Details component that tells the user why you need this information." width="50%" %}
 
 
 * **If your form doesn't need this level of detail, simply ask "Are you currently married?".** Include "Yes/No" radio button options for a response. Map those to the "Married/Never Married" workflows.
