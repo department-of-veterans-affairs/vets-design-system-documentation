@@ -198,16 +198,17 @@ Some icons may have specific placement guidance defined here.
 
 #### When icons are paired with text
 
-- **Leading icons should be center-aligned to the first line of text and positioned to the top when text wraps to the next line.** Trailing icons should also be center-aligned to the first line of text but positioned to the center when text wraps to the next line.
-  - **Examples:** [Additional Info](https://design.va.gov/components/additional-info) and [Accordion - Subheader](https://design.va.gov/components/accordion#subheader).
-- **Icons with high visual weight, like filled icons, should generally lead text.** For example, filled chevrons like *expand_circle_right* should always lead links.
+- **For single-line text, both leading and trailing icons should be vertically centered with the text.** When text wraps, leading icons should remain static by staying aligned to the top of the full text block, while trailing icons should align to the vertical center of the full text block.**
+  - **Examples:** [Additional Info]({{ site.baseurl }}/components/additional-info) and [Accordion - Subheader]({{ site.baseurl }}/components/accordion#subheader).
+- **Icons with high visual weight, like filled icons, should generally appear before the text.** For example, filled chevrons, such as *expand_circle_right* should appear before links.
+
 
 ### Special usage considerations
 
 #### Chevrons
 
-- **Right-facing chevrons are reserved for links and for buttons that open additional content.** In the latter case, chevrons of all directions can be used to indicate the direction in which additional content open in, like in drawers, flyout menus, and dropdowns.
-  - **Examples:** Nested menu items within "VA Benefits and Health Care" in the [Header](https://design.va.gov/components/header/), [Additional Info](https://design.va.gov/components/additional-info), and [Alert - Expandable](https://design.va.gov/components/alert/alert-expandable/).
+- **Right-facing chevrons are reserved for links and for buttons that open additional content.** In the latter case, chevrons of all directions can be used to indicate the direction in which additional content opens, like in drawers, flyout menus, and dropdowns.
+  * **Examples:** Nested menu items within "VA Benefits and Health Care" in the [Header]({{ site.baseurl }}/components/header/), [Additional Info]({{ site.baseurl }}/components/additional-info), and [Alert - Expandable]({{ site.baseurl }}/components/alert/alert-expandable/).
 
 ## Accessibility considerations
 Icon usage typically falls into two categories, decorative and semantic.
