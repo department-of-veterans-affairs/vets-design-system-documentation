@@ -1,7 +1,7 @@
 ---
 layout: component
 title: Search Input
-intro-text: "The Search Input component lives in the global header of VA.gov and on search results pages, and can be paired with type-ahead functionality. Type-ahead displays up to five suggested search terms in a dropdown below the Search Input field while the user is typing a query. The goal of type-ahead is to help Veterans navigate to relevant content more quickly by providing them with suggestions that match the characters they type."
+intro-text: "The Search Input component lives in the global header of VA.gov and on search results pages, and can be paired with type-ahead functionality. Type-ahead displays up to five suggested search terms in a dropdown below the search input field while the user is typing a query. The goal of type-ahead is to help Veterans navigate to relevant content more quickly by providing them with suggestions that match the characters they type."
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1276%3A4463&mode=design&t=q1Wbhw4ZIogPDFEb-1
 uswds-v3: primary
 anchors:
@@ -46,11 +46,11 @@ mobile-app: false
 
 ### Additional guidance for VA
 
-### When to use search input with type-ahead
+### When to use Search Input with type-ahead
 
-* The search input for site search should always be available as there will always be users who benefit from being able to search across VA.gov.
-* The search input for site search should always be used in concert with type-ahead functionality as type-ahead reduces cognitive load and can assist the user in building useful search queries quickly.
-* Type-ahead when used in a search input on a results page allows a user to filter a long list of search results.
+* The Search Input for site search should always be available as there will always be users who benefit from being able to search across VA.gov.
+* The Search Input for site search should always be used in concert with type-ahead functionality as type-ahead reduces cognitive load and can assist the user in building useful search queries quickly.
+* Type-ahead when used in a Search Input on a results page allows a user to filter a long list of search results.
 * Type-ahead should be used in mobile search where typing a query on a small, hand-held keyboard can be difficult.
 
 ### When to consider something else
