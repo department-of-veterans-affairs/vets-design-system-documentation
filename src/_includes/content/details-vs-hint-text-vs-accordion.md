@@ -2,9 +2,9 @@
 
 When deciding which component to use, consider how essential the information is and how it relates to nearby content:
 
-* **Essential information for form fields:** Use {% if page.url == '/components/form/label/' %}hint text{% else %}[hint text]({{ site.baseurl }}/components/form/label#hint-text){% endif %} for brief, critical information that most users need to complete a field successfully.
-* **Helpful context tied to specific content:** Use {% if page.url == '/components/details/' %}Details{% else %}[Details]({{ site.baseurl }}/components/details){% endif %} for brief explanations related to nearby form fields or sections that users can access when needed.
-* **Substantial standalone information:** Use {% if page.url == '/components/accordion/' %}Accordion{% else %}[Accordion]({{ site.baseurl }}/components/accordion){% endif %} for lengthy content that deserves its own heading or multiple related topics like FAQ sections.
+* **Essential information for form fields:** Use {% if page.url == '/components/form/label' %}hint text{% else %}[hint text]({{ site.baseurl }}/components/form/label#hint-text){% endif %} for brief, critical information that most users need to complete a field successfully.
+* **Helpful context tied to specific content:** Use {% if page.url == '/components/details' %}Details{% else %}[Details]({{ site.baseurl }}/components/details){% endif %} for brief explanations related to nearby form fields or sections that users can access when needed.
+* **Substantial standalone information:** Use {% if page.url == '/components/accordion' %}Accordion{% else %}[Accordion]({{ site.baseurl }}/components/accordion){% endif %} for lengthy content that deserves its own heading or multiple related topics like FAQ sections.
 
 ### Decision tree
 
