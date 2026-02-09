@@ -7,13 +7,15 @@ intro-text: A Status Tag indicates the current state or condition of content, pr
 figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=39019-83
 github-title: va-tag-status
 status: use-with-caution-candidate
+web-component: va-tag-status
 web: true
 mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage
-  - anchor: Accessibility considerations
+  - anchor: Code usage
   - anchor: Content considerations
+  - anchor: Accessibility considerations
   - anchor: Related
   - anchor: Component checklist
 ---
@@ -78,15 +80,7 @@ Use the error status to indicate critical issues, failure states, or items that 
 * **Use semantic colors consistently.** Apply the same color meanings across all components (tags, alerts, etc.) to create a cohesive experience for users.
 * **For status within Cards.** When using Tags to communicate status within card components, see the [Card Status guidance]({{ site.baseurl }}/components/card/card-status) for specific implementation details and best practices.
 
-## Accessibility considerations
-
-* **Color and meaning.** When Status Tags are used to convey semantic meaning, ensure that the information is also available through other means such as descriptive text, icons, or contextual clues within the interface. Don't rely solely on color to communicate important information. Use consistent text patterns and clear language that reinforces the visual meaning.
-* **Contrast requirements.** All Status Tag variations meet WCAG 2.2 AA color contrast requirements for both text and background colors, and between the tag background and the page background.
-* **Context.**  Users must be able to easily identify the content that is associated with the Status Tag. The visual design and the HTML structure around the Status Tag should both make this clear. For example, if the Status Tag applies to a heading, wrap the tag inside that heading element.
-* **Keyboard navigation.** Status Tags are static, non-interactive elements that shouldn't receive keyboard focus. Ensure tags don't interfere with the natural keyboard navigation flow of the page. Users navigating with the Tab key should move past tags to the next focusable element without interruption.
-* **Screen reader support.** The Tag Status component announces hidden screen reader text, "Status" before the content of the tag is announced (for example: "Status, Approved" or "Status, Error"). This helps users understand that this is a status indicator and not a generic label. This additional context improves comprehension since much of the semantic meaning is communicated visually through color. Teams cannot change this announcement pattern at this time.
-* **Dynamic content.** When Tags are used to indicate new or updated content that is dynamically loaded onto a page, use ARIA live regions to alert screen readers of the change. Use `aria-live="polite"` for non-urgent status updates and `aria-live="assertive"` only for critical status changes that require immediate attention. Avoid announcing rapid or frequent status changes that could overwhelm screen reader users.
-* **Cognitive accessibility.** Use consistent placement and behavior of Status Tags across the application to help users with cognitive disabilities predict where to find status information. Keep tag text simple and avoid technical jargon that Veterans may not understand. Don't overwhelm users with too many status indicators on a single page or interface.
+{% include component-docs.html component_name=page.web-component %}
 
 ## Content considerations
 
@@ -98,18 +92,29 @@ Use the error status to indicate critical issues, failure states, or items that 
 ### Status examples by semantic color
 
 The following status names are known to be in-use across VA.gov (as of October 2024):
-- [Appeals](https://www.va.gov/resources/what-your-decision-review-or-appeal-status-means/) has over 40 status labels.
-- Appointments:
-  - Upcoming (Informational)
-  - Requested (Informational)
-  - Past (Informational)
-  - Canceled (Error)
-- [Claims](https://www.va.gov/resources/what-your-claim-status-means/):
-  - Claim received (Informational)
-  - Initial review (Informational)
-  - Evidence gathering, review, and decision (Informational)
-  - Preparation for notification (Informational)
-  - Complete (Success)
+
+* [Appeals](https://www.va.gov/resources/what-your-decision-review-or-appeal-status-means/) has over 40 status labels.
+* Appointments:
+  * Upcoming (Informational)
+  * Requested (Informational)
+  * Past (Informational)
+  * Canceled (Error)
+* [Claims](https://www.va.gov/resources/what-your-claim-status-means/):
+  * Claim received (Informational)
+  * Initial review (Informational)
+  * Evidence gathering, review, and decision (Informational)
+  * Preparation for notification (Informational)
+  * Complete (Success)
+
+## Accessibility considerations
+
+* **Color and meaning.** When Status Tags are used to convey semantic meaning, ensure that the information is also available through other means such as descriptive text, icons, or contextual clues within the interface. Don't rely solely on color to communicate important information. Use consistent text patterns and clear language that reinforces the visual meaning.
+* **Contrast requirements.** All Status Tag variations meet WCAG 2.2 AA color contrast requirements for both text and background colors, and between the tag background and the page background.
+* **Context.**  Users must be able to easily identify the content that is associated with the Status Tag. The visual design and the HTML structure around the Status Tag should both make this clear. For example, if the Status Tag applies to a heading, wrap the tag inside that heading element.
+* **Keyboard navigation.** Status Tags are static, non-interactive elements that shouldn't receive keyboard focus. Ensure tags don't interfere with the natural keyboard navigation flow of the page. Users navigating with the Tab key should move past tags to the next focusable element without interruption.
+* **Screen reader support.** The Tag Status component announces hidden screen reader text, "Status" before the content of the tag is announced (for example: "Status, Approved" or "Status, Error"). This helps users understand that this is a status indicator and not a generic label. This additional context improves comprehension since much of the semantic meaning is communicated visually through color. Teams cannot change this announcement pattern at this time.
+* **Dynamic content.** When Tags are used to indicate new or updated content that is dynamically loaded onto a page, use ARIA live regions to alert screen readers of the change. Use `aria-live="polite"` for non-urgent status updates and `aria-live="assertive"` only for critical status changes that require immediate attention. Avoid announcing rapid or frequent status changes that could overwhelm screen reader users.
+* **Cognitive accessibility.** Use consistent placement and behavior of Status Tags across the application to help users with cognitive disabilities predict where to find status information. Keep tag text simple and avoid technical jargon that Veterans may not understand. Don't overwhelm users with too many status indicators on a single page or interface.
 
 ## Related
 
