@@ -198,7 +198,7 @@ Some icons may have specific placement guidance defined here.
 
 #### When icons are paired with text
 
-- **For single-line text, both leading and trailing icons should be vertically centered with the text.** When text wraps, leading icons should remain static by staying aligned to the top of the full text block, while trailing icons should align to the vertical center of the full text block.**
+- **For single-line text, both leading and trailing icons should be vertically centered with the text.** When text wraps, leading icons should remain static by staying aligned to the top of the full text block, while trailing icons should align to the vertical center of the full text block.
   - **Examples:** [Additional Info]({{ site.baseurl }}/components/additional-info) and [Accordion - Subheader]({{ site.baseurl }}/components/accordion#subheader).
 - **Icons with high visual weight, like filled icons, should generally appear before the text.** For example, filled chevrons, such as *expand_circle_right*, should appear before links.
 
