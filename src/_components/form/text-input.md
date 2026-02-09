@@ -52,7 +52,7 @@ Also refer to the overall [form guidance]({{ site.baseurl }}/components/form#hin
 
 ### Details
 
-{% include storybook-preview.html story="uswds-va-text-input--with-additional-info" link_text="va-text-input with Details" %}
+{% include storybook-preview.html story="uswds-va-text-input--with-details" link_text="va-text-input with Details" %}
 
 ### Character count
 
