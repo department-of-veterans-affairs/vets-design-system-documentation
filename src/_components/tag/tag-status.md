@@ -82,16 +82,6 @@ Use the error status to indicate critical issues, failure states, or items that 
 
 {% include component-docs.html component_name=page.web-component %}
 
-## Accessibility considerations
-
-* **Color and meaning.** When Status Tags are used to convey semantic meaning, ensure that the information is also available through other means such as descriptive text, icons, or contextual clues within the interface. Don't rely solely on color to communicate important information. Use consistent text patterns and clear language that reinforces the visual meaning.
-* **Contrast requirements.** All Status Tag variations meet WCAG 2.2 AA color contrast requirements for both text and background colors, and between the tag background and the page background.
-* **Context.**  Users must be able to easily identify the content that is associated with the Status Tag. The visual design and the HTML structure around the Status Tag should both make this clear. For example, if the Status Tag applies to a heading, wrap the tag inside that heading element.
-* **Keyboard navigation.** Status Tags are static, non-interactive elements that shouldn't receive keyboard focus. Ensure tags don't interfere with the natural keyboard navigation flow of the page. Users navigating with the Tab key should move past tags to the next focusable element without interruption.
-* **Screen reader support.** The Tag Status component announces hidden screen reader text, "Status" before the content of the tag is announced (for example: "Status, Approved" or "Status, Error"). This helps users understand that this is a status indicator and not a generic label. This additional context improves comprehension since much of the semantic meaning is communicated visually through color. Teams cannot change this announcement pattern at this time.
-* **Dynamic content.** When Tags are used to indicate new or updated content that is dynamically loaded onto a page, use ARIA live regions to alert screen readers of the change. Use `aria-live="polite"` for non-urgent status updates and `aria-live="assertive"` only for critical status changes that require immediate attention. Avoid announcing rapid or frequent status changes that could overwhelm screen reader users.
-* **Cognitive accessibility.** Use consistent placement and behavior of Status Tags across the application to help users with cognitive disabilities predict where to find status information. Keep tag text simple and avoid technical jargon that Veterans may not understand. Don't overwhelm users with too many status indicators on a single page or interface.
-
 ## Content considerations
 
 * **Be concise.** Keep Tag text brief and scannable. Use 1-3 words when possible.
@@ -102,18 +92,29 @@ Use the error status to indicate critical issues, failure states, or items that 
 ### Status examples by semantic color
 
 The following status names are known to be in-use across VA.gov (as of October 2024):
-- [Appeals](https://www.va.gov/resources/what-your-decision-review-or-appeal-status-means/) has over 40 status labels.
-- Appointments:
-  - Upcoming (Informational)
-  - Requested (Informational)
-  - Past (Informational)
-  - Canceled (Error)
-- [Claims](https://www.va.gov/resources/what-your-claim-status-means/):
-  - Claim received (Informational)
-  - Initial review (Informational)
-  - Evidence gathering, review, and decision (Informational)
-  - Preparation for notification (Informational)
-  - Complete (Success)
+
+* [Appeals](https://www.va.gov/resources/what-your-decision-review-or-appeal-status-means/) has over 40 status labels.
+* Appointments:
+  * Upcoming (Informational)
+  * Requested (Informational)
+  * Past (Informational)
+  * Canceled (Error)
+* [Claims](https://www.va.gov/resources/what-your-claim-status-means/):
+  * Claim received (Informational)
+  * Initial review (Informational)
+  * Evidence gathering, review, and decision (Informational)
+  * Preparation for notification (Informational)
+  * Complete (Success)
+
+## Accessibility considerations
+
+* **Color and meaning.** When Status Tags are used to convey semantic meaning, ensure that the information is also available through other means such as descriptive text, icons, or contextual clues within the interface. Don't rely solely on color to communicate important information. Use consistent text patterns and clear language that reinforces the visual meaning.
+* **Contrast requirements.** All Status Tag variations meet WCAG 2.2 AA color contrast requirements for both text and background colors, and between the tag background and the page background.
+* **Context.**  Users must be able to easily identify the content that is associated with the Status Tag. The visual design and the HTML structure around the Status Tag should both make this clear. For example, if the Status Tag applies to a heading, wrap the tag inside that heading element.
+* **Keyboard navigation.** Status Tags are static, non-interactive elements that shouldn't receive keyboard focus. Ensure tags don't interfere with the natural keyboard navigation flow of the page. Users navigating with the Tab key should move past tags to the next focusable element without interruption.
+* **Screen reader support.** The Tag Status component announces hidden screen reader text, "Status" before the content of the tag is announced (for example: "Status, Approved" or "Status, Error"). This helps users understand that this is a status indicator and not a generic label. This additional context improves comprehension since much of the semantic meaning is communicated visually through color. Teams cannot change this announcement pattern at this time.
+* **Dynamic content.** When Tags are used to indicate new or updated content that is dynamically loaded onto a page, use ARIA live regions to alert screen readers of the change. Use `aria-live="polite"` for non-urgent status updates and `aria-live="assertive"` only for critical status changes that require immediate attention. Avoid announcing rapid or frequent status changes that could overwhelm screen reader users.
+* **Cognitive accessibility.** Use consistent placement and behavior of Status Tags across the application to help users with cognitive disabilities predict where to find status information. Keep tag text simple and avoid technical jargon that Veterans may not understand. Don't overwhelm users with too many status indicators on a single page or interface.
 
 ## Related
 

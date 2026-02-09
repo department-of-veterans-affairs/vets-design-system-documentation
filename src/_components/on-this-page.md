@@ -28,7 +28,7 @@ anchors:
 
 ### When to consider something else
 
-- Don't use the On this page jump links if the content on the page isn't very long. To display this component, the page must have a minimum of 2 H2 section titles.
+- Don't use the On this page jump links if the content on the page isn't very long. To display this component, the page must have a minimum of two H2 section titles.
 - If the content you want users to see is too far down the page, consider rearranging the content to achieve the desired hierarchy.
 
 ### How to use the On this page jump links component
