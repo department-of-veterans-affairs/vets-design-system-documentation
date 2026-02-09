@@ -129,6 +129,16 @@
       "$value": "Deployed"
     }
   },
+  "va-card-status": {
+    "category": {
+      "$type": "string",
+      "$value": "Use with caution"
+    },
+    "level": {
+      "$type": "string",
+      "$value": "Available"
+    }
+  },
   "va-checkbox": {
     "category": {
       "$type": "string",
@@ -469,6 +479,16 @@
       "$value": "Candidate"
     }
   },
+  "va-sidenav": {
+    "category": {
+      "$type": "string",
+      "$value": "Use with caution"
+    },
+    "level": {
+      "$type": "string",
+      "$value": "Candidate"
+    }
+  },
   "va-statement-of-truth": {
     "category": {
       "$type": "string",
@@ -507,6 +527,26 @@
     "level": {
       "$type": "string",
       "$value": "Best practice"
+    }
+  },
+  "va-tabs": {
+    "category": {
+      "$type": "string",
+      "$value": "Use with caution"
+    },
+    "level": {
+      "$type": "string",
+      "$value": "Candidate"
+    }
+  },
+  "va-tag-status": {
+    "category": {
+      "$type": "string",
+      "$value": "Use with caution"
+    },
+    "level": {
+      "$type": "string",
+      "$value": "Candidate"
     }
   },
   "va-telephone": {

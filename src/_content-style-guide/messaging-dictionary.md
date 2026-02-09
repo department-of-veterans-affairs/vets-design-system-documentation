@@ -26,7 +26,7 @@ Alerts the user of important system-related issues or status. It’s initiated b
     <span>VA.gov will be down for maintenance soon</span>
     <span>We’ll be doing some work on VA.gov on [DATE] between [TIME] and [TIME]. If you have trouble using the site during that time, please check back soon.</span>
     <span><va-link href="/components/modal" text="Modal"></va-link></span>
-    <span><va-link href="/components/alert#informational-alert" text="Informational"></va-link></span>
+    <span><va-link href="/components/alert#informational-alert-aka-default" text="Informational"></va-link></span>
     <span>N/A</span>
   </va-table-row>
   <va-table-row>
@@ -34,7 +34,7 @@ Alerts the user of important system-related issues or status. It’s initiated b
     <span>[APPLICATION NAME] will be down for maintenance soon</span>
     <span>We'll be doing some work on [APPLICATION NAME] on [DATE] between [TIME] and [TIME]. If you have trouble using this tool during that time, please check back soon.</span>
     <span><va-link href="/components/modal" text="Modal"></va-link></span>
-    <span><va-link href="/components/alert#informational-alert" text="Informational"></va-link></span>
+    <span><va-link href="/components/alert#informational-alert-aka-default" text="Informational"></va-link></span>
     <span>N/A</span>
   </va-table-row>
   <va-table-row>
@@ -42,7 +42,7 @@ Alerts the user of important system-related issues or status. It’s initiated b
     <span>[ID.ME/DS LOGON/MYHEALTHEVET] will be down for maintenance soon</span>
     <span>[ID.ME/DS LOGON/MYHEALTHEVET] will be down for maintenance on [DATE] between [TIME] and [TIME]. If you have trouble signing in to your Vets.gov account during that time, please check back soon.</span>
     <span><va-link href="/components/alert" text="Alert box"></va-link></span>
-    <span><va-link href="/components/alert#informational-alert" text="Informational"></va-link></span>
+    <span><va-link href="/components/alert#informational-alert-aka-default" text="Informational"></va-link></span>
     <span>Below sign in overlay title</span>
   </va-table-row>
 </va-table>
@@ -67,7 +67,7 @@ Alerts the user of important system-related issues or status. It’s initiated b
     <span>Our records show that your claim was closed on [DATE].</span>
     <span>N/A</span>
     <span><va-link href="/components/alert" text="Alert box"></va-link></span>
-    <span><va-link href="/components/alert#informational-alert" text="Informational"></va-link></span>
+    <span><va-link href="/components/alert#informational-alert-aka-default" text="Informational"></va-link></span>
     <span>Replace affected component</span>
   </va-table-row>
   <va-table-row>
@@ -85,7 +85,7 @@ Alerts the user of important system-related issues or status. It’s initiated b
     <span>We've filled in some of this form based on information you've given us in the past. Please double-check the information and update it as needed.</span>
     <span>N/A</span>
     <span><va-link href="/components/alert" text="Alert box"></va-link></span>
-    <span><va-link href="/components/alert#informational-alert" text="Informational"></va-link></span>
+    <span><va-link href="/components/alert#informational-alert-aka-default" text="Informational"></va-link></span>
     <span>Above affected component</span>
   </va-table-row>
   <va-table-row>
@@ -94,7 +94,7 @@ Alerts the user of important system-related issues or status. It’s initiated b
     <span>Sign in to VA.gov to save your application so you can come back later to complete it. All you'll need to sign in is an email and password.</span>
     <span>Sign in to VA.gov</span>
     <span><va-link href="/components/alert" text="Alert box"></va-link></span>
-    <span><va-link href="/components/alert#informational-alert" text="Informational"></va-link></span>
+    <span><va-link href="/components/alert#informational-alert-aka-default" text="Informational"></va-link></span>
     <span>Above affected component</span>
   </va-table-row>
 </va-table>
@@ -123,7 +123,7 @@ Nudges the user to enter or update data in the system. It can be initiated by ei
     <span>The application you started for [BENEFIT NAME] will expire on [EXPIRATION DATE]. If you'd still like to apply, you'll need to submit the application by this date. Or you can start a new application any time.</span>
     <span>[BUTTON 1] Continue your application [BUTTON 2] Start over</span>
     <span><va-link href="/components/alert" text="Alert box"></va-link></span>
-    <span><va-link href="/components/alert#informational-alert" text="Informational"></va-link></span>
+    <span><va-link href="/components/alert#informational-alert-aka-default" text="Informational"></va-link></span>
     <span>Replace affected component</span>
   </va-table-row> 
   <va-table-row>
@@ -132,7 +132,7 @@ Nudges the user to enter or update data in the system. It can be initiated by ei
     <span>You can add an optional extra layer of security (called 2-factor authentication) to your account. This helps to make sure that no one but you can access your account—even if someone gets your password.</span>
     <span>[BUTTON 1] Set up 2FA [BUTTON 2] Learn more</span>
     <span><va-link href="/components/alert" text="Alert box"></va-link></span>
-    <span><va-link href="/components/alert#informational-alert" text="Informational"></va-link></span>
+    <span><va-link href="/components/alert#informational-alert-aka-default" text="Informational"></va-link></span>
     <span>Replace affected component</span>
   </va-table-row> 
 </va-table>

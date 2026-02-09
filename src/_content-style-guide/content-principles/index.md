@@ -14,7 +14,7 @@ We define better content as:
 - **Consistent.** We use words consistently to inspire trust and confidence in our customers.
 - **Conversational.** We use everyday human words and plain language whenever possible. We talk like a human, not like Government.  
 - **Clear and helpful.** We break down complex information into simple, snackable chunks, and provide it progressively, when and where they need it, so it's easy to find, easy to understand, and not overwhelming.
-- **Empathetic.** We talk person-to-person with our customers, and [use language that puts the person first]({{ site.baseurl }}/content-style-guide/health-content#1-put-the-person-before-their-condition).
+- **Empathetic.** We talk person-to-person with our customers, and [use language that puts the person first]({{ site.baseurl }}/content-style-guide/health-content#put-the-person-before-their-conditionbut-respect-identity-first-language-when-a-community-prefers-it).
 
 
 {% capture example_like_this %}
