@@ -9,6 +9,7 @@ mobile-app: true
 anchors:
   - anchor: Preview
   - anchor: Usage
+  - anchor: Code usage
   - anchor: Accessibility considerations
   - anchor: Requesting a new icon
   - anchor: Component checklist
@@ -271,8 +272,6 @@ Avoid requesting a new icon when:
     If your request is part of an experimental initiative, please link any related tickets to provide context and ensure visibility for the Design System team.
   </li>
 </ol>
-
-{% include component-docs.html component_name=page.web-component %}
 
 <script>
   const icons = {{ site.data.icons | jsonify }};

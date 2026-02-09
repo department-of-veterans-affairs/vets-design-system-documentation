@@ -13,6 +13,7 @@ mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage
+  - anchor: Code usage
   - anchor: Accessibility considerations
   - anchor: Related
   - anchor: Component checklist
@@ -48,6 +49,10 @@ Used to draw attention to new or important content, categorize information, or i
 * **Users frequently confuse tags as buttons.** Always conduct usability testing to make sure your particular implementation isn't causing frustration.
 * **Tags shouldn't be interactive.** Tags are designed to be static labels that convey information, not clickable elements. They shouldn't have hover, focus, or active states that suggest interactivity.
 * **Don't overdo it.** If everything on a page is called out as important, nothing is important.
+
+## Code usage
+
+Refer to the [Tag component in Storybook]({{ site.baseurl }}/storybook/?path=/docs/components-tag--docs) for detailed code usage documentation.
 
 ## Accessibility considerations
 
