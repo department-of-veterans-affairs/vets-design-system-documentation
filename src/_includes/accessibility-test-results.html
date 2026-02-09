@@ -1,0 +1,253 @@
+{% assign component_name = include.component_name %}
+{% assign component_tests = site.data.accessibility_tests[component_name] %}
+{% assign test_library = site.data.accessibility_tests.test-library.tests %}
+
+{% if component_tests %}
+
+<script type="application/json" id="component-test-data">
+{
+  "component_name": "{{ component_name }}",
+  "tests": [
+    {% for test in component_tests.tests %}
+      {% assign test_def = test_library | where: "id", test.id | first %}
+      {% if test_def %}
+      {
+        "id": "{{ test.id }}",
+        "name": "{{ test_def.name | escape }}",
+        "category": "{{ test_def.category }}",
+        "description_short": "{{ test_def.description_short | strip | escape }}",
+        "description_full": "{{ test_def.description_full | strip | escape }}",
+        "wcag_criterion": "{{ test_def.wcag_criterion }}",
+        "wcag_name": "{{ test_def.wcag_name | escape }}",
+        "wcag_level": "{{ test_def.wcag_level }}",
+        "wcag_url": "{{ test_def.wcag_url }}",
+        "applies_to": "{{ test.applies_to }}",
+        "test_results": [
+          {% assign test_runs = component_tests.test_results | where: "test_id", test.id %}
+          {% for run in test_runs %}
+          {
+            "date": "{{ run.date }}",
+            "tester": "{{ run.tester | escape }}",
+            "environments": [
+              {% for env in run.environments %}
+              {
+                "name": "{{ env.name | default: env | escape }}",
+                "result": "{{ env.result | default: run.result }}"
+              }{% unless forloop.last %},{% endunless %}
+              {% endfor %}
+            ],
+            "notes": "{{ run.notes | escape }}"
+          }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      }{% unless forloop.last %},{% endunless %}
+      {% endif %}
+    {% endfor %}
+  ]
+}
+</script>
+
+{% assign summary = component_tests.summary %}
+{% assign tests_by_category = "" | split: "" %}
+{% assign keyboard_tests = "" | split: "" %}
+{% assign screen_reader_tests = "" | split: "" %}
+{% assign text_content_tests = "" | split: "" %}
+{% assign visual_design_tests = "" | split: "" %}
+
+{% for test in component_tests.tests %}
+  {% assign test_def = test_library | where: "id", test.id | first %}
+  {% if test_def %}
+    {% if test_def.category == "keyboard" %}
+      {% assign keyboard_tests = keyboard_tests | push: test %}
+    {% elsif test_def.category == "screen_reader" %}
+      {% assign screen_reader_tests = screen_reader_tests | push: test %}
+    {% elsif test_def.category == "text_content" %}
+      {% assign text_content_tests = text_content_tests | push: test %}
+    {% elsif test_def.category == "visual_design" %}
+      {% assign visual_design_tests = visual_design_tests | push: test %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+<style>
+.test-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width:100%!important;
+}
+
+.test-list li {
+  padding: 0;
+  max-width:100%;
+}
+
+.test-list li>p {
+  margin-bottom:0;
+  max-width:77ch;
+}
+
+.test-details-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: .5rem 0;
+  padding: 0;
+}
+
+.test-details-list li {
+  margin-right: 1rem;
+}
+
+va-table-row {
+  display: none;
+}
+</style>
+
+<h2>Test Summary</h2>
+
+
+{% if component_tests.size > 0 %}
+
+{% comment %} Define test categories {% endcomment %}
+{% assign test_categories = "text_content_tests,Text Content Tests|keyboard_tests,Keyboard Tests|screen_reader_tests,Screen Reader Tests|visual_design_tests,Visual Design Tests" | split: "|" %}
+
+{% for category_config in test_categories %}
+  {% assign config_parts = category_config | split: "," %}
+  {% assign category_var = config_parts[0] %}
+  {% assign category_title = config_parts[1] %}
+
+  {% comment %} Get the test array for this category {% endcomment %}
+  {% if category_var == "text_content_tests" %}
+    {% assign category_tests = text_content_tests %}
+  {% elsif category_var == "keyboard_tests" %}
+    {% assign category_tests = keyboard_tests %}
+  {% elsif category_var == "screen_reader_tests" %}
+    {% assign category_tests = screen_reader_tests %}
+  {% elsif category_var == "visual_design_tests" %}
+    {% assign category_tests = visual_design_tests %}
+  {% endif %}
+
+  {% if category_tests.size > 0 %}
+  <h3>{{ category_title }}</h3>
+  <ul class="test-list">
+    {% for test in category_tests %}
+    {% assign test_def = test_library | where: "id", test.id | first %}
+    {% if test_def %}
+    <li>
+      <p>
+        <strong>{{ test_def.description_short | strip }}</strong>
+        {{ test_def.description_full | strip }}
+      </p>
+      <!-- <p>
+                {{ test_def.id }} - <a href="{{ test_def.wcag_url }}">{{ test_def.wcag_criterion }} - {{ test_def.wcag_name }}</a>
+
+      </p> -->
+      <ul class="test-details-list">
+        <li>
+          <a href="{{ test_def.wcag_url }}">{{ test_def.id }}</a>
+        </li>
+        <li>
+          <a href="{{ test_def.wcag_url }}">WCAG {{ test_def.wcag_criterion }} - {{ test_def.wcag_name }} (Level {{ test_def.wcag_level }})</a>
+        </li>
+      </ul>
+
+      {% comment %} Test Results Table {% endcomment %}
+      {% assign test_runs = component_tests.test_results | where: "test_id", test.id %}
+
+      {% comment %} Get expected test environments from category mapping {% endcomment %}
+      {% assign test_category = test_def.category %}
+      {% assign all_environments = site.data.accessibility_tests.test-library.environments[test_category] %}
+
+      <va-table full-width>
+        <va-table-row slot="headers">
+          <span>Version Tested</span>
+          {% for env in all_environments %}
+          <span>{{ env }}</span>
+          {% endfor %}
+        </va-table-row>
+        {% if test_runs.size > 0 %}
+          {% for run in test_runs %}
+          <va-table-row>
+            <span>{{ run.version }}</span>
+            {% for env_name in all_environments %}
+            <span>
+              {% assign env_result = nil %}
+              {% for env in run.environments %}
+                {% assign current_env_name = env.name | default: env %}
+                {% if current_env_name == env_name %}
+                  {% assign env_result = env.result | default: run.result %}
+                {% endif %}
+              {% endfor %}
+
+              {% if env_result %}
+                {% if env_result == "pass" %}
+                  <va-tag-status
+                    status="success"
+                    text="Pass"
+                  />
+                {% elsif env_result == "fail" %}
+                  <va-tag-status
+                    status="error"
+                    text="Fail"
+                  />
+                {% elsif env_result == "conditional" %}
+                  <va-tag-status
+                    status="info"
+                    text="Conditional"
+                  />
+                {% endif %}
+              {% else %}
+                <span>Untested</span>
+              {% endif %}
+            </span>
+            {% endfor %}
+          </va-table-row>
+          {% endfor %}
+        {% else %}
+          {% comment %} No test results yet - show all environments as Untested {% endcomment %}
+          <va-table-row>
+            <span>Not yet tested</span>
+            {% for env_name in all_environments %}
+            <span>Untested</span>
+            {% endfor %}
+          </va-table-row>
+        {% endif %}
+      </va-table>
+      {% if run.notes %}
+        <strong>Notes:</strong> {{ run.notes }}
+      {% endif %}
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+  {% endif %}
+{% endfor %}
+{% comment %} Summary Dashboard {% endcomment %}
+  <h2 id="test-summary">Test Summary</h2>
+
+  <ul>
+    <li class="vads-u-margin-bottom--1">
+      <strong>Component:</strong> {{ component_name | replace: "-", " " | capitalize }}
+    </li>
+    <li class="vads-u-margin-bottom--1">
+      <strong>Total Tests:</strong> {{ component_tests.summary.total_tests }}
+    </li>
+    <li class="vads-u-margin-bottom--1">
+      <strong>Passed:</strong> {{ component_tests.summary.passed }}
+    </li>
+    <li class="vads-u-margin-bottom--1">
+      <strong>Conditional:</strong> {{ component_tests.summary.conditional }}
+    </li>
+    <li class="vads-u-margin-bottom--1">
+      <strong>Failed:</strong> {{ component_tests.summary.failed }}
+    </li>
+  </ul>
+
+  <p class="vads-u-color--gray-dark vads-u-font-size--sm vads-u-margin-top--2">
+    <strong>Last Updated:</strong> {{ summary.last_updated | date: "%B %d, %Y" }}
+  </p>
+{% endif %}
+{% else %}
+  <p>No accessibility test results available for the {{ component_name }} component.</p>
+{% endif %}

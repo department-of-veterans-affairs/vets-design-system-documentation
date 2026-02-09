@@ -1,0 +1,487 @@
+# VA.gov Accessibility Test Library
+# Comprehensive list of all reusable accessibility tests
+# Version: 1.0
+# Last updated: 2024-02-05
+
+# Supported test environments
+environments:
+  keyboard:
+    - Any desktop browser or platform
+  screen_reader:
+    - Android Chrome/Talkback
+    - MacOS Chrome/VoiceOver
+    - MacOS Safari/VoiceOver
+    - iOS Safari/VoiceOver
+    - Windows Chrome/JAWS
+    - Windows Edge/NVDA
+  screen_reader:
+    - Android Chrome/Talkback
+    - MacOS Chrome/VoiceOver
+    - MacOS Safari/VoiceOver
+    - iOS Safari/VoiceOver
+    - Windows Chrome/JAWS
+    - Windows Edge/NVDA
+  general:
+    - Any browser or platform
+  text_content:
+    - Any browser or platform
+  visual_design:
+    - Any browser or platform
+  zoom:
+    - Any browser or platform
+
+# Test categories
+categories:
+  - text_content
+  - visual_design
+  - keyboard
+  - screen_reader
+  - zoom
+
+# All available tests
+tests:
+  # ============================================================================
+  # TEXT CONTENT TESTS
+  # ============================================================================
+  - id: WEB-244
+    name: Link purpose in context
+    category: text_content
+    wcag_criterion: 2.4.4
+    wcag_name: Link Purpose (In Context)
+    wcag_level: A
+    wcag_url: https://www.w3.org/TR/WCAG21/#link-purpose-in-context
+    test_environment: screen_reader
+    description_short: |
+      Link text is clear and descriptive.
+    description_full: |
+      When you read the link text,
+      it is easy to understand both the link's purpose and destination.
+    how_to_test:
+      - Navigate to a page that uses the component
+      - Open your screen reader (VoiceOver, JAWS, or NVDA)
+      - Navigate to each link on the page
+      - Listen to what the screen reader announces
+      - Verify you can understand the link's purpose from the announcement
+    expected_result:
+      - Screen reader announces the link text
+      - Screen reader identifies the element as a link
+      - For links with icons (download, external), screen reader announces both the icon meaning and link text
+      - Link purpose is clear from the announcement
+    examples_pass:
+      - "Link, Download VA Form 10-10EZ PDF"
+      - "Link, Schedule your appointment"
+      - "External link, Learn more about benefits, opens in new tab"
+    examples_fail:
+      - "Link (no text announced)"
+      - "Link, click here (purpose unclear)"
+      - "Icon announced without explaining its meaning"
+    notes:
+      - Test on at least one screen reader environment, preferably multiple
+      - External links should announce they open in new tab
+      - Download links should indicate file type
+
+  # ============================================================================
+  # KEYBOARD TESTS
+  # ============================================================================
+
+  - id: WEB-211
+    name: Keyboard accessible
+    category: keyboard
+    wcag_criterion: 2.1.1
+    wcag_name: Keyboard
+    wcag_level: A
+    wcag_url: https://www.w3.org/TR/WCAG21/#keyboard
+    test_environment: keyboard
+    description_short: |
+      Link is fully operable using only a keyboard.
+    description_full: |
+      When accessing a link via keyboard, you can navigate to the link, activate it, and navigate away from it.
+    gherkin:
+      when: I use only keyboard navigation
+      then: I can navigate to the link, activate it with Enter, and navigate away from it
+    how_to_test:
+      - Navigate to a page that uses the component
+      - Using only your keyboard, press Tab to navigate forward or Shift+Tab to navigate backwards
+      - Navigate to the link
+      - Press Enter to activate the link
+      - Verify the link functions as expected
+    expected_result:
+      - You can reach the link using Tab or Shift+Tab
+      - The link can be activated using the Enter key
+      - The link behaves the same way as when clicked with a mouse
+    examples_pass:
+      - Link receives focus when tabbing through the page
+      - Pressing Enter activates the link and navigates to the destination
+      - All link variants are keyboard accessible
+    examples_fail:
+      - Link cannot receive keyboard focus
+      - Enter key does not activate the link
+      - Link requires mouse interaction to function
+    notes:
+      - This test should be performed on any of the supported test environments
+      - All interactive elements must be keyboard accessible
+
+  - id: WEB-212
+    name: No keyboard trap
+    category: keyboard
+    wcag_criterion: 2.1.2
+    wcag_name: No Keyboard Trap
+    wcag_level: A
+    wcag_url: https://www.w3.org/TR/WCAG21/#no-keyboard-trap
+    test_environment: keyboard
+    description_short: |
+      Users can navigate away from any element using standard keyboard commands.
+    description_full: |
+      When using keyboard navigation, you can move focus to any interactive element
+      and then move focus away from that element using only standard keyboard keys (Tab, Shift+Tab, arrow keys, or Escape).
+      You are never trapped in a component or section where keyboard focus cannot be moved.
+    gherkin:
+      when: I navigate to an interactive element using keyboard
+      then: I can move keyboard focus away from that element using standard keys
+    how_to_test:
+      - Navigate to a page that uses the component
+      - Using only your keyboard, press Tab to navigate to each interactive element
+      - For each element, attempt to navigate away using Tab, Shift+Tab, arrow keys, or Escape
+      - Verify you can always move focus away from any element
+      - Test all interactive components including modals, dropdowns, date pickers, and custom widgets
+    expected_result:
+      - Keyboard focus can be moved away from any element using standard keyboard navigation
+      - Users are never trapped in a component or section
+      - If a modal or dialog requires specific keys to close (like Escape), this is documented and intuitive
+      - No element prevents the user from continuing their keyboard navigation
+    examples_pass:
+      - Tab key moves focus forward through all elements without getting stuck
+      - Shift+Tab moves focus backward without trapping the user
+      - Modal dialogs can be closed with Escape key to return focus to the page
+      - Dropdown menus allow navigation away using Tab or Escape
+    examples_fail:
+      - Focus gets stuck in a date picker and cannot be moved out
+      - Modal prevents Tab from exiting even when Escape doesn't work
+      - Custom widget traps focus with no documented way to exit
+      - User must use mouse to escape a focused element
+    notes:
+      - This is a critical accessibility requirement for keyboard-only users
+      - E2E testing frameworks like Cypress can help automate keyboard trap detection
+      - Test thoroughly with complex interactive components
+
+  - id: WEB-412
+    name: Links vs buttons semantic usage
+    category: keyboard
+    wcag_criterion: 4.1.2
+    wcag_name: Name, Role, Value
+    wcag_level: A
+    wcag_url: https://www.w3.org/TR/WCAG21/#name-role-value
+    test_environment: general
+    description_short: |
+      Links navigate to different pages or sections and buttons perform actions on the current page.
+    description_full: |
+      When you interact with links and buttons on the page,
+      Links navigate to new pages/sections and buttons perform in-page actions
+    how_to_test:
+      - Navigate to a page that uses the component
+      - Identify all interactive elements that look like links or buttons
+      - For each element, determine its intended function
+      - "Verify that navigation elements use link semantics (<a> or role=\"link\")"
+      - "Verify that action elements use button semantics (<button>, <input type=\"button\">, or role=\"button\")"
+      - Use browser developer tools to inspect the HTML and check the element type
+    expected_result:
+      - "Elements that navigate to different pages use <a> tags or role=\"link\""
+      - "Elements that perform actions use <button> tags or role=\"button\""
+      - "Users can distinguish between navigation and actions based on semantic HTML"
+      - "Screen readers announce the correct role (link or button) for each element"
+    examples_pass:
+      - "\"Download form\" link uses <a href=\"/form.pdf\"> to navigate to the PDF"
+      - "\"Submit application\" button uses <button type=\"submit\"> to submit a form"
+      - "\"Open menu\" uses <button> to toggle a navigation menu"
+      - "\"Learn more\" link uses <a href=\"/benefits\"> to navigate to benefits page"
+    examples_fail:
+      - "<button> used with onClick that changes window.location (should be <a>)"
+      - "<a href=\"#\"> used to open a modal (should be <button>)"
+      - "<div> with click handler and no role (missing semantic meaning)"
+      - "\"Delete item\" styled as link but should be button (performs action, doesn't navigate)"
+    notes:
+      - This is about semantic correctness, not visual styling
+      - Buttons can be styled to look like links and vice versa, but HTML must be semantic
+      - Links can have click handlers for analytics but should primarily navigate
+      - Single-page applications should use buttons for client-side navigation that doesn't change URL
+  - id: WEB-2411
+    name: Focus not obscured
+    category: keyboard
+    wcag_criterion: 2.4.11
+    wcag_name: Focus Not Obscured (Minimum)
+    wcag_level: AA
+    wcag_url: https://www.w3.org/TR/WCAG22/#focus-not-obscured-minimum
+    test_environment: keyboard
+    description_short: |
+      Focused elements remain visible and are not hidden by other content.
+    description_full: |
+      When you navigate the page with a keyboard,
+      the element that has focus remains visible on screen and is not obscured
+      by sticky headers, footers, modals, tooltips, or other overlaying content.
+    how_to_test:
+      - Navigate to a page that uses the component
+      - Using only keyboard, press Tab to navigate through all interactive elements
+      - Pay special attention to pages with sticky headers, fixed navigation, tooltips, or modal overlays
+      - For each focused element, verify it remains visible on screen
+      - Check that focus is not hidden behind fixed/sticky elements
+      - Test with browser zoom at 100%, 200%, and 400%
+      - Scroll through the page while tabbing to ensure focus scrolls into view
+    expected_result:
+      - Focused elements are never completely obscured by other content
+      - When focus moves to an element off-screen, the page scrolls to show it
+      - Sticky headers or footers do not cover focused elements
+      - Modal dialogs don't hide the focused element behind them
+      - The focused element remains at least partially visible at all zoom levels
+    examples_pass:
+      - Focus indicator remains visible when tabbing through content under a sticky header
+      - Page automatically scrolls to bring off-screen focused elements into view
+      - Tooltips appear adjacent to focused elements without covering the focus indicator
+      - Modal content is scrollable so all focusable elements can be seen when focused
+    examples_fail:
+      - Sticky header completely covers the focused element at the top of the page
+      - Focused element is behind a modal overlay and cannot be seen
+      - Focus moves to an element below a fixed footer that hides the entire element
+      - Tooltip covers the focused element's focus indicator
+      - At 200% zoom, fixed navigation obscures focused form fields
+    notes:
+      - This is a WCAG 2.2 Level AA requirement
+      - Test at various zoom levels (200% and 400% are common)
+      - Partial obscuring is allowed at Level AA; complete visibility required at Level AAA (2.4.12)
+      - Particularly important for forms, long pages, and pages with sticky elements
+  - id: WEB-247
+    name: Focus visible
+    category: keyboard
+    wcag_criterion: 2.4.7
+    wcag_name: Focus Visible
+    wcag_level: AA
+    wcag_url: https://www.w3.org/TR/WCAG21/#focus-visible
+    test_environment: keyboard
+    description_short: |
+      Focus indicators are clearly visible around interactive elements
+    description_full: |
+      When you use a keyboard to tab to an interactive element,
+      you see a clear visual indicator around the element showing that it has focus.
+    gherkin:
+      when: I use keyboard to tab to a link
+      then: I see a clear visual indicator showing the link has focus
+    how_to_test:
+      - Navigate to a page that uses the component
+      - Using only your keyboard, press Tab to navigate to the link
+      - Observe the visual appearance of the link when it receives focus
+      - Verify the focus indicator is clearly visible against the backgroun
+    expected_result:
+      - A visible focus indicator appears when the link receives focus
+      - The focus indicator is clearly distinguishable from the surrounding content
+      - The focus indicator meets contrast requirements (3:1 minimum)
+      - The focus indicator is not removed or hidden by CSS
+    examples_pass:
+      - Blue outline appears around the link when focused
+      - Focus indicator is visible on both light and dark backgrounds
+      - Focus indicator remains visible until focus moves to another element
+    examples_fail:
+      - No visible change when link receives focus
+      - Focus indicator is too subtle to see
+      - Focus indicator removed with outline none in CSS
+      - Focus indicator does not meet contrast requirements
+    notes:
+      - This test should be performed on any of the supported test environments
+      - Focus indicators should be consistent across all component variants
+
+  # ============================================================================
+  # SCREEN READER TESTS
+  # ============================================================================
+
+
+
+  # ============================================================================
+  # VISUAL DESIGN TESTS
+  # ============================================================================
+
+  - id: WEB-141
+    name: Use of color
+    category: visual_design
+    wcag_criterion: 1.4.1
+    wcag_name: Use of Color
+    wcag_level: A
+    wcag_url: https://www.w3.org/TR/WCAG21/#use-of-color
+    test_environment: general
+    description_short: |
+      Color is not the only way to convey information, indicate an action, or distinguish elements.
+    description_full: |
+      When you view the page, information that is conveyed by color is also available through other visual means like text labels, patterns, icons, or underlines.
+    how_to_test:
+      - Navigate to a page that uses the component
+      - Identify all places where color conveys information (errors, status, required fields, links, etc.)
+      - For each use of color, verify there is another visual indicator
+      - Check form validation errors have icons or text, not just red borders
+      - Check required fields have asterisks or labels, not just red text
+      - Check links are underlined or have another visual distinction beyond color
+      - Check charts/graphs use patterns or labels in addition to color
+      - Test with grayscale/color blindness simulators to verify information remains clear
+    test_tools:
+      - "Browser DevTools (remove CSS color properties)"
+      - "Chromatic Vision Simulator"
+      - "Colorblindly browser extension"
+      - "Stark plugin for Figma"
+    expected_result:
+      - Information conveyed by color has an additional visual indicator
+      - Form errors show icons (like warning triangles) along with red color
+      - Required form fields are marked with asterisks (*) and/or "required" text
+      - Links are underlined or bolded, not distinguished by color alone
+      - Success/error/warning messages use icons in addition to color coding
+      - Chart data is distinguishable through patterns, labels, or shapes
+      - The page remains usable when viewed in grayscale
+    examples_pass:
+      - Error message has red text plus an error icon
+      - Required field label has red asterisk (*) and "required" text
+      - Links are underlined in blue, distinguishable even without color
+      - Chart uses different patterns (stripes, dots) for each data series
+      - Success alert has green background plus a checkmark icon
+      - Current navigation item is bold and has an underline, not just different color
+    examples_fail:
+      - Form error shown only with red border, no icon or text
+      - Required fields marked only by red color on label
+      - Links distinguished from surrounding text only by color, no underline
+      - Chart legend uses only colored squares with no patterns or additional markers
+      - Status indicator uses only green/yellow/red colors with no icons or text
+      - Interactive element changes only color on hover with no other visual change
+    notes:
+      - This does not mean you cannot use color - color can enhance but not be the sole indicator
+      - Test with color blindness simulators (protanopia, deuteranopia, tritanopia)
+      - Consider that approximately 8% of men and 0.5% of women have color vision deficiency
+      - Particularly important for forms, status indicators, and data visualizations
+      - Links in body text should be underlined or otherwise distinguished beyond color
+  - id: WEB-141-001
+    name: VA link styles
+    category: visual_design
+    wcag_criterion: 1.4.1
+    wcag_name: Use of Color
+    wcag_level: A
+    wcag_url: https://www.w3.org/TR/WCAG21/#use-of-color
+    test_environment: general
+    description_short: |
+      Links are styled with an underline and use the VA link color palette.
+    description_full: |
+      When you view a link, the link shows a text underline and uses the correct colors for default, hover, focus, and visited states.
+
+  - id: WEB-1411
+    name: Non-text contrast
+    category: visual_design
+    wcag_criterion: 1.4.11
+    wcag_name: Non-text Contrast
+    wcag_level: AA
+    wcag_url: https://www.w3.org/TR/WCAG21/#non-text-contrast
+    test_environment: general
+    description_short: |
+      Interactive elements and meaningful graphic elements have sufficient contrast against adjacent colors.
+    description_full: |
+      When you view interactive elements and graphic elements on the page,
+      meaningful visual information has a contrast ratio of at least 3:1 against adjacent colors.
+    how_to_test:
+      - Navigate to a page that uses the component
+      - Identify all interactive elements (buttons, form fields, links with underlines, etc.)
+      - Identify all meaningful graphic elements (icons, charts, diagrams)
+      - Use a color contrast tool to measure contrast between the element and adjacent colors
+      - For form fields, check border contrast against the background
+      - For buttons, check border/background contrast
+      - For icons and graphics, check contrast of essential parts
+      - Test all component states (default, hover, focus, disabled)
+    test_tools:
+      - "Color Contrast Analyzer (CCA) by TPGi"
+      - "WebAIM Contrast Checker"
+      - "Chrome DevTools Color Picker"
+      - "Accessible Colors (web tool)"
+    expected_result:
+      - UI component borders have 3:1 contrast against adjacent backgrounds
+      - Button outlines/edges are distinguishable with 3:1 contrast
+      - Form field boundaries meet 3:1 contrast ratio
+      - Icons and graphical elements have 3:1 contrast in their essential parts
+      - Focus indicators meet 3:1 contrast (also covered by 2.4.7)
+      - All states of interactive elements maintain sufficient contrast
+    examples_pass:
+      - Text input has a dark gray border (3:1 contrast) on white background
+      - Primary button has high contrast blue background against white page
+      - Icon has solid color that contrasts 3:1 with its background
+      - Chart bars use colors with sufficient contrast against chart background
+      - Focus outline is a dark color (3:1 contrast) on light background
+    examples_fail:
+      - Light gray input border (2:1 contrast) on white background
+      - Disabled button has insufficient contrast and is only way to show state
+      - Icon uses light color (2:1 contrast) on white background
+      - Button with no border relies only on color change for identification
+      - Focus indicator is too light (1.5:1 contrast) against background
+    notes:
+      - This does not apply to inactive/disabled components unless they contain information
+      - Text contrast is covered separately by WCAG 1.4.3 (text contrast)
+      - Logos and decorative graphics are exempt from this requirement
+      - Some automated tools can detect border contrast but results vary
+      - Pay special attention to form field borders as they are commonly problematic
+
+  - id: WEB-258
+    name: Target size minimum
+    category: visual_design
+    wcag_criterion: 2.5.8
+    wcag_name: Target Size (Minimum)
+    wcag_level: AA
+    wcag_url: https://www.w3.org/TR/WCAG22/#target-size-minimum
+    test_environment: general
+    description_short: |
+      Interactive elements are at least 24x24 pixels in size.
+    description_full: |
+      When you interact with clickable elements on the page, each interactive element has a target size of at least 24x24 CSS pixels, unless the target is inline (within a sentence), the size is determined by the user agent (browser default), or there is sufficient spacing (at least 24px) to any other interactive target.
+    gherkin:
+      when: I interact with clickable elements on the page
+      then: Each target has a minimum size of 24x24 pixels or adequate spacing
+    how_to_test:
+      - Navigate to a page that uses the component
+      - Identify all interactive elements (buttons, links, form controls, icons)
+      - Use browser developer tools to measure the clickable/tappable area
+      - Measure the width and height of each target's click area (including padding)
+      - For targets smaller than 24x24px, verify one of these exceptions applies
+        - The target is inline text within a sentence or paragraph
+        - The target size is determined by the browser (like native select dropdown)
+        - Adjacent interactive targets are at least 24px away (target offset)
+      - Test on both desktop and mobile/touch interfaces
+    test_tools:
+      - "Browser DevTools Inspector (shows computed dimensions)"
+      - "Accessibility Insights for Web (target size check)"
+      - "Axe DevTools (has target size rule, disabled by default)"
+    expected_result:
+      - Interactive elements have a clickable area of at least 24x24 CSS pixels
+      - OR inline links within text paragraphs can be smaller
+      - OR elements smaller than 24x24px have at least 24px spacing to other targets
+      - OR size is controlled by browser defaults (standard form controls)
+      - Touch targets work comfortably on mobile devices
+    examples_pass:
+      - Button is 32x32 pixels with adequate click area
+      - Small icon (16x16) has 8px padding making total target 32x32 pixels
+      - Link within a paragraph is smaller but is inline text (exception applies)
+      - Small checkmark icon has 30px of empty space before next clickable element
+      - Standard browser select dropdown (size controlled by user agent)
+    examples_fail:
+      - Icon button is only 20x20 pixels with no padding
+      - Close X button in modal corner is 16x16 pixels total
+      - Adjacent navigation links are 18px tall with only 2px spacing between them
+      - Small edit icon (18x18) next to delete icon (18x18) with 10px spacing
+      - Custom checkbox appears as 12x12 box with no additional clickable area
+    notes:
+      - This is a WCAG 2.2 Level AA requirement
+      - Inline text links (within sentences) are exempt from size requirements
+      - Measure the full clickable/tappable area including padding
+      - The stricter 44x44px guideline exists at WCAG 2.5.5 Level AAA
+      - Axe has this rule but it's disabled by default - must be manually enabled
+      - Particularly important for mobile touch interfaces
+      - Consider both horizontal and vertical dimensions
+
+# Metadata
+metadata:
+  version: "1.0"
+  created: "2024-02-05"
+  last_updated: "2026-02-09"
+  total_tests: 10
+  test_breakdown:
+    text_content: 1
+    visual_design: 3
+    keyboard: 5
+    screen_reader: 1
+    zoom: 0
