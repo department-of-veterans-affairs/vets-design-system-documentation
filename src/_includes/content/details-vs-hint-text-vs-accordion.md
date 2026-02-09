@@ -1,4 +1,4 @@
-## Choosing the right component for the task
+### Choosing the right component for the task
 
 When deciding which component to use, consider how essential the information is and how it relates to nearby content:
 
