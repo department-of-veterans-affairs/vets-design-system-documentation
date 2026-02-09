@@ -95,4 +95,4 @@ If you can't avoid it:
   * On the following page
   * Within an expandable [Details]({{ site.baseurl }}/components/details) component (reachable by keyboard via the TAB key)
   * As a polite aria live region
-* **Reach out for help.** If an experience can't avoid multiple instances of branching togic, or large amounts of newly added content, contact an accessibility specialist for help implementing [ARIA live regions](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions).
+* **Reach out for help.** If an experience can't avoid multiple instances of branching logic, or large amounts of newly added content, contact an accessibility specialist for help implementing [ARIA live regions](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions).
