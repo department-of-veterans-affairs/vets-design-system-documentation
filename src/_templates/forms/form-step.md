@@ -107,7 +107,7 @@ Insert customized form step content in this section of the form step template. C
 
 Some components may include the option to add body text, hint text, or additional information. Use these guidelines to decide which one to use. 
 #### Body text
-Use body text to add clarifying information that is relevant to all the information under a page title. The body text should either clarify what type of information we need, or explain what we’re going to do with the data. Aim for fewer than fifty words in the body text. If you need more space, consider moving nonessential information to an additional info component. 
+Use body text to add clarifying information that is relevant to all the information under a page title. The body text should either clarify what type of information we need, or explain what we’re going to do with the data. Aim for fewer than fifty words in the body text. If you need more space, consider moving nonessential information to a Details component. 
 #### Hint text
 Add hint text under a field label if it would help someone choose the right response to give–like “We’ll use your email address to confirm when we receive your form” since knowing how we’ll use their email may help them choose which email to enter. Or use hint text to help someone answer a question more easily–like “For example: January 1, 2001”. Don’t use punctuation in hint text unless the copy is two sentences or more.  
 #### Field label text (also called legend)
