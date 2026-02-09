@@ -45,12 +45,12 @@ anchors:
     * Widowed
     * Never married 
 
-{% include component-example.html alt="A display of the standard Marital Status question with reponses available with radio buttons and an Additional Info component that provides more information on why we ask this information." file="/images/patterns/ask-users-for/marital-information/standard-marital-status.png" caption="The standard Marital Status question to be used in most forms. Always provide a detailed explanation in the Additional Info component that tells the user why you need this information." width="50%" %}
+{% include component-example.html alt="A display of the standard Marital Status question with reponses available with radio buttons and an Details component that provides more information on why we ask this information." file="/images/patterns/ask-users-for/marital-information/standard-marital-status.png" caption="The standard Marital Status question to be used in most forms. Always provide a detailed explanation in the Details component that tells the user why you need this information." width="50%" %}
 
 
 * **If your form doesn't need this level of detail, simply ask "Are you currently married?".** Include "Yes/No" radio button options for a response. Map those to the "Married/Never Married" workflows.
 
-{% include component-example.html alt="An annotated display of the simplified version of the Marital Status question with reponses available with radio buttons and an Additional Info component that provides more information on why we ask this information." file="/images/patterns/ask-users-for/marital-information/simple-marital-status.png" caption="Use the simplified Marital Status question in forms that don't need to collect detailed information on the user's marital status. Use when your form only needs a yes/no answer to the question." width="60%" %}
+{% include component-example.html alt="An annotated display of the simplified version of the Marital Status question with reponses available with radio buttons and an Details component that provides more information on why we ask this information." file="/images/patterns/ask-users-for/marital-information/simple-marital-status.png" caption="Use the simplified Marital Status question in forms that don't need to collect detailed information on the user's marital status. Use when your form only needs a yes/no answer to the question." width="60%" %}
 
 * **Include an explanation for why we ask this question.** Place this explanation in a [Details](https://design.va.gov/components/details) component for questions that may feel particularly invasive or difficult for users to answer. 
 
@@ -158,6 +158,6 @@ A [secondary research report](https://github.com/department-of-veterans-affairs/
 
 This pattern would benefit from additional research. Some areas that were identified as potentially high-impact include learning:
 * How users respond to trauma-informed language throughout the pattern
-* How users respond to the information inside the Additional Info components
+* How users respond to the information inside the Details components
 * If users have any confusion about whose information is needed in the portion of the pattern asking for information on their current spouse's previous partner(s)
 * The best location for both optional and required file uploads (either in the context of the marital information pattern/step, or at the end of the form flow)
