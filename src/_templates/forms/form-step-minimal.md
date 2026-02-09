@@ -168,7 +168,7 @@ For complex questions, you may need to use one of these options to provide addit
 
 * A standalone `H1` page header that gives general context before one or more specific labels or legends on the form inputs
 * Body text after the H1 page header (which can also serve as hint text for all fields on the page, and may include examples or bulleted lists) 
-* [An additional info component](https://design.va.gov/components/additional-info)
+* [A Details component](https://design.va.gov/components/details)
 
 You can set the contents of a `<legend>` on the page as the page header (`<H1>`).  But, you may not always need the h1 to be inside the legend.  
 
@@ -203,9 +203,9 @@ Don’t use links in hint text.
 
 #### Additional information
 
-Use the additional information component if there’s relevant information that may be important for some people, but it’s not critical information for everyone filling out the form. 
+Use the Details component if there’s relevant information that may be important for some people, but it’s not critical information for everyone filling out the form. 
 
-[Review guidelines for using the additional information component](https://design.va.gov/components/additional-info).
+[Review guidelines for using the Details component](https://design.va.gov/components/details).
 
 
 ### 7. Finish later link

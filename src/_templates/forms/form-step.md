@@ -116,7 +116,7 @@ On a form step page with only one question, you must create a separate page titl
 {% include component-example.html alt="Figma annotations distinguishing a page title and field label from the fieldset for a radio button set." file="/images/templates/forms/form-step/7-label-title.png" caption="Figma annotations distinguishing a page title and field label from the fieldset for a radio button set." class="x2" %}
 
 #### Additional information
-Use the additional information component if there’s relevant information that may be important for some people, but it’s not critical information for everyone filling out the form. [Review guidelines for using the additional information component.](https://design.va.gov/components/additional-info) 
+Use the Details component if there’s relevant information that may be important for some people, but it’s not critical information for everyone filling out the form. [Review guidelines for using the Details component.](https://design.va.gov/components/details) 
 ### Finish this application later link
 A link that allows authenticated users to exit the process with their progress saved.
 ### Button pair
