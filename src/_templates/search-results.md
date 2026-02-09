@@ -168,7 +168,7 @@ The text of the link of the matching page. This should not be a link (the header
 ### Sorting
 <va-link-action
   href="{{ site.baseurl }}/components/sort"
-  text="Follow the guidance for the sort component"
+  text="Follow the guidance for the Sort component"
   type="secondary"
 ></va-link-action>
 
