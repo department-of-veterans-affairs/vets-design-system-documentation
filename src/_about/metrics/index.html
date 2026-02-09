@@ -15,7 +15,7 @@ mime_type: text/html
 
   <!-- Summary Metrics Cards -->
   <section aria-labelledby="summary-heading">
-    <h2 id="summary-heading">Summary Metrics</h2>
+    <h2 id="summary-heading">Summary</h2>
   
     <div class="vads-l-row vads-u-justify-content--center">
       <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--3">
@@ -200,7 +200,7 @@ mime_type: text/html
   
   <!-- Issue Tracking Section -->
   <section aria-labelledby="issue-tracking-heading">
-    <h2 id="issue-tracking-heading">Issue Tracking Metrics</h2>
+    <h2 id="issue-tracking-heading">Issue Tracking</h2>
     
     <div class="metrics-section">
       <h3>Issue Activity by Quarter</h3>
@@ -261,9 +261,9 @@ mime_type: text/html
     </div>
   </section>
   
-  <!-- Component Usage Section -->
+  <!-- Components Section -->
   <section aria-labelledby="component-usage-heading">
-    <h2 id="component-usage-heading">Component Usage Metrics</h2>
+    <h2 id="component-usage-heading">Components</h2>
     
     <div class="metrics-section">
       <h3>Top Components by Usage</h3>
@@ -322,6 +322,365 @@ mime_type: text/html
               <va-table-row>
                 <span>No data available</span>
                 <span></span>
+              </va-table-row>
+            {% endif %}
+          </va-table>
+        </va-tab-panel>
+      </va-tabs>
+    </div>
+
+    <!-- Imposter Component Tracking Subsection -->
+    <h3 id="imposter-tracking-heading">Imposter Component Tracking</h3>
+    <p>Tracks progress toward the FY26 goal of replacing 150 imposter component instances in vets-website. Imposter components are custom implementations that should use VA Design System web components.</p>
+
+    <!-- Summary Cards -->
+    <div class="vads-l-row vads-u-justify-content--center vads-u-margin-bottom--4">
+      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--3">
+        <va-card class="metric-card">
+          <h4 id="imposter-closed-label">Total Replaced</h4>
+          <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="imposter-closed" aria-labelledby="imposter-closed-label">
+            {% if site.data.metrics.imposter-metrics.summary.total_closed %}
+              {{ site.data.metrics.imposter-metrics.summary.total_closed }}
+            {% else %}
+              --
+            {% endif %}
+          </div>
+          <div class="metric-trend" id="imposter-closed-trend" aria-label="Total replaced trend indicator">
+            {% if site.data.metrics.imposter-metrics.summary.closed_trend %}
+              {% assign trend = site.data.metrics.imposter-metrics.summary.closed_trend %}
+              {% if trend.direction == 'up' %}
+                <span class="metric-trend trend-up">
+                  <span class="trend-icon">↗</span>
+                  <span>{{ trend.percentage }}% from last quarter</span>
+                </span>
+              {% elsif trend.direction == 'down' %}
+                <span class="metric-trend trend-down">
+                  <span class="trend-icon">↘</span>
+                  <span>{{ trend.percentage }}% from last quarter</span>
+                </span>
+              {% else %}
+                <span class="metric-trend trend-neutral">
+                  <span class="trend-icon">→</span>
+                  <span>No change from last quarter</span>
+                </span>
+              {% endif %}
+            {% endif %}
+          </div>
+          <div class="data-freshness" id="imposter-closed-data-freshness">
+            {% if site.data.metrics.imposter-metrics.summary.last_updated %}
+              {% assign last_updated = site.data.metrics.imposter-metrics.summary.last_updated | date: "%B %d, %Y" %}
+              <small>Updated {{ last_updated }}</small>
+            {% else %}
+              <small>Data collection in progress</small>
+            {% endif %}
+          </div>
+        </va-card>
+      </div>
+
+      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--3">
+        <va-card class="metric-card">
+          <h4 id="imposter-goal-label">Goal Progress</h4>
+          <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="imposter-goal" aria-labelledby="imposter-goal-label">
+            {% if site.data.metrics.imposter-metrics.summary.progress_percentage %}
+              {{ site.data.metrics.imposter-metrics.summary.progress_percentage }}%
+            {% else %}
+              --%
+            {% endif %}
+          </div>
+          <div class="progress-bar-container" role="progressbar"
+               aria-valuenow="{% if site.data.metrics.imposter-metrics.summary.progress_percentage %}{{ site.data.metrics.imposter-metrics.summary.progress_percentage }}{% else %}0{% endif %}"
+               aria-valuemin="0"
+               aria-valuemax="100"
+               aria-label="Progress toward 150 imposter replacement goal">
+            <div class="progress-bar-fill"
+                 aria-hidden="true"
+                 style="width: {% if site.data.metrics.imposter-metrics.summary.progress_percentage %}{{ site.data.metrics.imposter-metrics.summary.progress_percentage }}{% else %}0{% endif %}%;"></div>
+          </div>
+          <div class="metric-subtext">
+            <small>
+              {% if site.data.metrics.imposter-metrics.summary.total_closed and site.data.metrics.imposter-metrics.summary.goal %}
+                {{ site.data.metrics.imposter-metrics.summary.total_closed }} of {{ site.data.metrics.imposter-metrics.summary.goal }} issues closed
+              {% else %}
+                Target: 150 imposter issues resolved by end of FY26
+              {% endif %}
+            </small>
+          </div>
+        </va-card>
+      </div>
+
+      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--3">
+        <va-card class="metric-card">
+          <h4 id="imposter-open-label">Open Issues</h4>
+          <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="imposter-open" aria-labelledby="imposter-open-label">
+            {% if site.data.metrics.imposter-metrics.summary.total_open %}
+              {{ site.data.metrics.imposter-metrics.summary.total_open }}
+            {% else %}
+              --
+            {% endif %}
+          </div>
+          <div class="metric-subtext">
+            <small>Imposter issues awaiting resolution</small>
+          </div>
+          <div class="data-freshness">
+            {% if site.data.metrics.imposter-metrics.summary.last_updated %}
+              {% assign last_updated = site.data.metrics.imposter-metrics.summary.last_updated | date: "%B %d, %Y" %}
+              <small>Updated {{ last_updated }}</small>
+            {% else %}
+              <small>Data collection in progress</small>
+            {% endif %}
+          </div>
+        </va-card>
+      </div>
+
+      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--3">
+        <va-card class="metric-card">
+          <h4 id="imposter-instances-label">Instances in Code</h4>
+          <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="imposter-instances" aria-labelledby="imposter-instances-label">
+            {% if site.data.metrics.imposter-metrics.instances.total_identified %}
+              {{ site.data.metrics.imposter-metrics.instances.total_identified }}
+            {% else %}
+              --
+            {% endif %}
+          </div>
+          <div class="metric-subtext">
+            <small>Total imposter usages found in vets-website</small>
+          </div>
+          <div class="data-freshness">
+            {% if site.data.metrics.imposter-metrics.instances.last_scan_date %}
+              <small>Scanned {{ site.data.metrics.imposter-metrics.instances.last_scan_date }}</small>
+            {% else %}
+              <small>Scan pending</small>
+            {% endif %}
+          </div>
+        </va-card>
+      </div>
+    </div>
+
+    <!-- Quarterly Progress Chart -->
+    <div class="metrics-section">
+      <h4>Quarterly Progress</h4>
+      <p>Shows imposter issues opened vs. closed each quarter to track replacement velocity</p>
+      <div class="data-freshness" id="imposter-quarterly-data-freshness">
+        {% if site.data.metrics.imposter-metrics.summary.last_updated %}
+          {% assign last_updated = site.data.metrics.imposter-metrics.summary.last_updated | date: "%B %d, %Y" %}
+          <small>Data updated {{ last_updated }}</small>
+        {% else %}
+          <small>Data collection in progress</small>
+        {% endif %}
+      </div>
+
+      <va-tabs>
+        <va-tab-item button-text="Graph" target-id="imposter-quarterly-graph-panel"></va-tab-item>
+        <va-tab-item button-text="Table" target-id="imposter-quarterly-table-panel"></va-tab-item>
+
+        <va-tab-panel panel-id="imposter-quarterly-graph-panel" role="tabpanel">
+          <div id="imposter-quarterly-chart"
+               class="chart-container"
+               role="img"
+               aria-label="Bar chart showing quarterly imposter issue activity with issues opened versus issues closed by quarter"
+               tabindex="0">
+            <!-- Chart will be rendered here -->
+          </div>
+        </va-tab-panel>
+
+        <va-tab-panel panel-id="imposter-quarterly-table-panel" role="tabpanel">
+          <va-table id="imposter-quarterly-va-table"
+                    table-title="Imposter Issues by Quarter: Number of issues opened and closed each quarter"
+                    stacked="true"
+                    sortable="true"
+                    table-type="borderless">
+            <va-table-row slot="headers">
+              <span>Quarter</span>
+              <span>Issues Opened</span>
+              <span>Issues Closed</span>
+            </va-table-row>
+            {% if site.data.metrics.imposter-metrics.quarterly %}
+              {% assign sorted_quarterly = site.data.metrics.imposter-metrics.quarterly | sort: 'period' | reverse %}
+              {% for quarter in sorted_quarterly %}
+                {% assign quarter_parts = quarter.period | split: '-' %}
+                {% assign formatted_quarter = quarter_parts[0] | append: ' ' | append: quarter_parts[1] %}
+                <va-table-row>
+                  <span>{{ formatted_quarter }}</span>
+                  <span>{{ quarter.issues_opened }}</span>
+                  <span>{{ quarter.issues_closed }}</span>
+                </va-table-row>
+              {% endfor %}
+            {% else %}
+              <va-table-row>
+                <span colspan="3">No quarterly data currently available</span>
+              </va-table-row>
+            {% endif %}
+          </va-table>
+        </va-tab-panel>
+      </va-tabs>
+    </div>
+
+    <!-- Progress by Component Chart -->
+    <div class="metrics-section">
+      <h4>Progress by Component</h4>
+      <p>Breakdown of imposter issues by component type, showing which components have the most replacement work</p>
+
+      <va-tabs>
+        <va-tab-item button-text="Graph" target-id="imposter-component-graph-panel"></va-tab-item>
+        <va-tab-item button-text="Table" target-id="imposter-component-table-panel"></va-tab-item>
+
+        <va-tab-panel panel-id="imposter-component-graph-panel" role="tabpanel">
+          <div id="imposter-component-chart"
+               class="chart-container"
+               role="img"
+               aria-label="Horizontal bar chart showing imposter issues by component type with open and closed counts"
+               tabindex="0">
+            <!-- Chart will be rendered here -->
+          </div>
+        </va-tab-panel>
+
+        <va-tab-panel panel-id="imposter-component-table-panel" role="tabpanel">
+          <va-table id="imposter-component-va-table"
+                    table-title="Imposter Issues by Component: Open and closed issues for each component type"
+                    stacked="true"
+                    sortable="true"
+                    table-type="borderless"
+                    right-align-cols="1,2,3">
+            <va-table-row slot="headers">
+              <span>Component</span>
+              <span>Open</span>
+              <span>Closed</span>
+              <span>Total</span>
+            </va-table-row>
+            {% if site.data.metrics.imposter-metrics.by_component %}
+              {% for component in site.data.metrics.imposter-metrics.by_component %}
+                <va-table-row>
+                  <span>
+                    {% if component.component == 'unknown' %}
+                      {{ component.component }}* <small>(issues without component-specific labels)</small>
+                    {% else %}
+                      <a href="https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=label%3Ava-imposter+label%3Acollab-cycle-feedback+label%3A{{ component.component }}" target="_blank" rel="noopener" aria-label="{{ component.component }} issues on GitHub (opens in new tab)">{{ component.component }}</a>
+                    {% endif %}
+                  </span>
+                  <span>{{ component.open }}</span>
+                  <span>{{ component.closed }}</span>
+                  <span>{{ component.total }}</span>
+                </va-table-row>
+              {% endfor %}
+            {% else %}
+              <va-table-row>
+                <span colspan="4">No component data currently available</span>
+              </va-table-row>
+            {% endif %}
+          </va-table>
+        </va-tab-panel>
+      </va-tabs>
+    </div>
+
+    <!-- Instances by Component Type Chart (from vets-website scanning) -->
+    <div class="metrics-section">
+      <h4>Instances by Component Type</h4>
+      <p>Shows the number of imposter component usages found in vets-website codebase, grouped by the VA web component they should replace</p>
+      <div class="data-freshness" id="imposter-instances-component-data-freshness">
+        {% if site.data.metrics.imposter-metrics.instances.last_scan_date %}
+          <small>Data from vets-website scan on {{ site.data.metrics.imposter-metrics.instances.last_scan_date }}</small>
+        {% else %}
+          <small>Scan pending</small>
+        {% endif %}
+      </div>
+
+      <va-tabs>
+        <va-tab-item button-text="Graph" target-id="imposter-instances-component-graph-panel"></va-tab-item>
+        <va-tab-item button-text="Table" target-id="imposter-instances-component-table-panel"></va-tab-item>
+
+        <va-tab-panel panel-id="imposter-instances-component-graph-panel" role="tabpanel">
+          <div id="imposter-instances-component-chart"
+               class="chart-container"
+               role="img"
+               aria-label="Horizontal bar chart showing imposter instance counts by component type from vets-website codebase scan"
+               tabindex="0">
+            <!-- Chart will be rendered here -->
+          </div>
+        </va-tab-panel>
+
+        <va-tab-panel panel-id="imposter-instances-component-table-panel" role="tabpanel">
+          <va-table id="imposter-instances-component-va-table"
+                    table-title="Imposter Instances by Component: Number of usages found in vets-website for each imposter component"
+                    stacked="true"
+                    sortable="true"
+                    table-type="borderless"
+                    right-align-cols="1,2">
+            <va-table-row slot="headers">
+              <span>VA Component</span>
+              <span>Imposter Name</span>
+              <span>Instances</span>
+              <span>Files</span>
+            </va-table-row>
+            {% if site.data.metrics.imposter-metrics.instances.by_component %}
+              {% for component in site.data.metrics.imposter-metrics.instances.by_component %}
+                {% if component.instance_count > 0 %}
+                  <va-table-row>
+                    <span>{{ component.component }}</span>
+                    <span>{{ component.imposter_name }}</span>
+                    <span>{{ component.instance_count }}</span>
+                    <span>{{ component.file_count }}</span>
+                  </va-table-row>
+                {% endif %}
+              {% endfor %}
+            {% else %}
+              <va-table-row>
+                <span colspan="4">No instance data currently available</span>
+              </va-table-row>
+            {% endif %}
+          </va-table>
+        </va-tab-panel>
+      </va-tabs>
+    </div>
+
+    <!-- Instances by Application Chart (from vets-website scanning) -->
+    <div class="metrics-section">
+      <h4>Instances by Application</h4>
+      <p>Shows which vets-website applications have the most imposter component usages, helping prioritize remediation efforts</p>
+      <div class="data-freshness" id="imposter-instances-app-data-freshness">
+        {% if site.data.metrics.imposter-metrics.instances.last_scan_date %}
+          <small>Data from vets-website scan on {{ site.data.metrics.imposter-metrics.instances.last_scan_date }}</small>
+        {% else %}
+          <small>Scan pending</small>
+        {% endif %}
+      </div>
+
+      <va-tabs>
+        <va-tab-item button-text="Graph" target-id="imposter-instances-app-graph-panel"></va-tab-item>
+        <va-tab-item button-text="Table" target-id="imposter-instances-app-table-panel"></va-tab-item>
+
+        <va-tab-panel panel-id="imposter-instances-app-graph-panel" role="tabpanel">
+          <div id="imposter-instances-app-chart"
+               class="chart-container"
+               role="img"
+               aria-label="Horizontal bar chart showing imposter instance counts by application from vets-website codebase scan"
+               tabindex="0">
+            <!-- Chart will be rendered here -->
+          </div>
+        </va-tab-panel>
+
+        <va-tab-panel panel-id="imposter-instances-app-table-panel" role="tabpanel">
+          <va-table id="imposter-instances-app-va-table"
+                    table-title="Imposter Instances by Application: Number of imposter usages found in each vets-website application"
+                    stacked="true"
+                    sortable="true"
+                    table-type="borderless"
+                    right-align-cols="1">
+            <va-table-row slot="headers">
+              <span>Application</span>
+              <span>Instance Count</span>
+            </va-table-row>
+            {% if site.data.metrics.imposter-metrics.instances.by_application %}
+              {% for app in site.data.metrics.imposter-metrics.instances.by_application %}
+                {% unless app.application contains '_mock' %}
+                  <va-table-row>
+                    <span>{{ app.application }}</span>
+                    <span>{{ app.instance_count }}</span>
+                  </va-table-row>
+                {% endunless %}
+              {% endfor %}
+            {% else %}
+              <va-table-row>
+                <span colspan="2">No application data currently available</span>
               </va-table-row>
             {% endif %}
           </va-table>
@@ -478,141 +837,16 @@ mime_type: text/html
     </div>
   </section>
 
-  <!-- Imposter Component Tracking Section -->
-  <section aria-labelledby="imposter-tracking-heading">
-    <h2 id="imposter-tracking-heading">Imposter Component Tracking</h2>
-    <p>Tracks progress toward the FY26 goal of replacing 150 imposter component instances in vets-website. Imposter components are custom implementations that should use VA Design System web components.</p>
+  <!-- Accessibility Section -->
+  <section aria-labelledby="accessibility-heading">
+    <h2 id="accessibility-heading">Accessibility</h2>
 
-    <!-- Summary Cards -->
-    <div class="vads-l-row vads-u-justify-content--center vads-u-margin-bottom--4">
-      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--3">
-        <va-card class="metric-card">
-          <h3 id="imposter-closed-label">Total Replaced</h3>
-          <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="imposter-closed" aria-labelledby="imposter-closed-label">
-            {% if site.data.metrics.imposter-metrics.summary.total_closed %}
-              {{ site.data.metrics.imposter-metrics.summary.total_closed }}
-            {% else %}
-              --
-            {% endif %}
-          </div>
-          <div class="metric-trend" id="imposter-closed-trend" aria-label="Total replaced trend indicator">
-            {% if site.data.metrics.imposter-metrics.summary.closed_trend %}
-              {% assign trend = site.data.metrics.imposter-metrics.summary.closed_trend %}
-              {% if trend.direction == 'up' %}
-                <span class="metric-trend trend-up">
-                  <span class="trend-icon">↗</span>
-                  <span>{{ trend.percentage }}% from last quarter</span>
-                </span>
-              {% elsif trend.direction == 'down' %}
-                <span class="metric-trend trend-down">
-                  <span class="trend-icon">↘</span>
-                  <span>{{ trend.percentage }}% from last quarter</span>
-                </span>
-              {% else %}
-                <span class="metric-trend trend-neutral">
-                  <span class="trend-icon">→</span>
-                  <span>No change from last quarter</span>
-                </span>
-              {% endif %}
-            {% endif %}
-          </div>
-          <div class="data-freshness" id="imposter-closed-data-freshness">
-            {% if site.data.metrics.imposter-metrics.summary.last_updated %}
-              {% assign last_updated = site.data.metrics.imposter-metrics.summary.last_updated | date: "%B %d, %Y" %}
-              <small>Updated {{ last_updated }}</small>
-            {% else %}
-              <small>Data collection in progress</small>
-            {% endif %}
-          </div>
-        </va-card>
-      </div>
-
-      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--3">
-        <va-card class="metric-card">
-          <h3 id="imposter-goal-label">Goal Progress</h3>
-          <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="imposter-goal" aria-labelledby="imposter-goal-label">
-            {% if site.data.metrics.imposter-metrics.summary.progress_percentage %}
-              {{ site.data.metrics.imposter-metrics.summary.progress_percentage }}%
-            {% else %}
-              --%
-            {% endif %}
-          </div>
-          <div class="progress-bar-container" role="progressbar"
-               aria-valuenow="{% if site.data.metrics.imposter-metrics.summary.progress_percentage %}{{ site.data.metrics.imposter-metrics.summary.progress_percentage }}{% else %}0{% endif %}"
-               aria-valuemin="0"
-               aria-valuemax="100"
-               aria-label="Progress toward 150 imposter replacement goal">
-            <div class="progress-bar-fill"
-                 aria-hidden="true"
-                 style="width: {% if site.data.metrics.imposter-metrics.summary.progress_percentage %}{{ site.data.metrics.imposter-metrics.summary.progress_percentage }}{% else %}0{% endif %}%;"></div>
-          </div>
-          <div class="metric-subtext">
-            <small>
-              {% if site.data.metrics.imposter-metrics.summary.total_closed and site.data.metrics.imposter-metrics.summary.goal %}
-                {{ site.data.metrics.imposter-metrics.summary.total_closed }} of {{ site.data.metrics.imposter-metrics.summary.goal }} issues closed
-              {% else %}
-                Target: 150 imposter issues resolved by end of FY26
-              {% endif %}
-            </small>
-          </div>
-        </va-card>
-      </div>
-
-      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--3">
-        <va-card class="metric-card">
-          <h3 id="imposter-open-label">Open Issues</h3>
-          <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="imposter-open" aria-labelledby="imposter-open-label">
-            {% if site.data.metrics.imposter-metrics.summary.total_open %}
-              {{ site.data.metrics.imposter-metrics.summary.total_open }}
-            {% else %}
-              --
-            {% endif %}
-          </div>
-          <div class="metric-subtext">
-            <small>Imposter issues awaiting resolution</small>
-          </div>
-          <div class="data-freshness">
-            {% if site.data.metrics.imposter-metrics.summary.last_updated %}
-              {% assign last_updated = site.data.metrics.imposter-metrics.summary.last_updated | date: "%B %d, %Y" %}
-              <small>Updated {{ last_updated }}</small>
-            {% else %}
-              <small>Data collection in progress</small>
-            {% endif %}
-          </div>
-        </va-card>
-      </div>
-
-      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--3">
-        <va-card class="metric-card">
-          <h3 id="imposter-instances-label">Instances in Code</h3>
-          <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="imposter-instances" aria-labelledby="imposter-instances-label">
-            {% if site.data.metrics.imposter-metrics.instances.total_identified %}
-              {{ site.data.metrics.imposter-metrics.instances.total_identified }}
-            {% else %}
-              --
-            {% endif %}
-          </div>
-          <div class="metric-subtext">
-            <small>Total imposter usages found in vets-website</small>
-          </div>
-          <div class="data-freshness">
-            {% if site.data.metrics.imposter-metrics.instances.last_scan_date %}
-              <small>Scanned {{ site.data.metrics.imposter-metrics.instances.last_scan_date }}</small>
-            {% else %}
-              <small>Scan pending</small>
-            {% endif %}
-          </div>
-        </va-card>
-      </div>
-    </div>
-
-    <!-- Quarterly Progress Chart -->
     <div class="metrics-section">
-      <h3>Quarterly Progress</h3>
-      <p>Shows imposter issues opened vs. closed each quarter to track replacement velocity</p>
-      <div class="data-freshness" id="imposter-quarterly-data-freshness">
-        {% if site.data.metrics.imposter-metrics.summary.last_updated %}
-          {% assign last_updated = site.data.metrics.imposter-metrics.summary.last_updated | date: "%B %d, %Y" %}
+      <h3>Accessibility Issues by Defect Level</h3>
+      <p>Tracks the number of new accessibility issues created each month, grouped by defect severity level (0 = most severe, 3 = least severe). Dashed vertical lines mark calendar year quarter boundaries. This helps the team monitor whether accessibility issues are trending in the right direction.</p>
+      <div class="data-freshness" id="a11y-data-freshness">
+        {% if site.data.metrics.issue-metrics.summary.last_updated %}
+          {% assign last_updated = site.data.metrics.issue-metrics.summary.last_updated | date: "%B %d, %Y" %}
           <small>Data updated {{ last_updated }}</small>
         {% else %}
           <small>Data collection in progress</small>
@@ -620,217 +854,55 @@ mime_type: text/html
       </div>
 
       <va-tabs>
-        <va-tab-item button-text="Graph" target-id="imposter-quarterly-graph-panel"></va-tab-item>
-        <va-tab-item button-text="Table" target-id="imposter-quarterly-table-panel"></va-tab-item>
+        <va-tab-item button-text="Graph" target-id="a11y-defect-graph-panel"></va-tab-item>
+        <va-tab-item button-text="Table" target-id="a11y-defect-table-panel"></va-tab-item>
 
-        <va-tab-panel panel-id="imposter-quarterly-graph-panel" role="tabpanel">
-          <div id="imposter-quarterly-chart"
+        <va-tab-panel panel-id="a11y-defect-graph-panel" role="tabpanel">
+          <div id="a11y-defect-chart"
                class="chart-container"
                role="img"
-               aria-label="Bar chart showing quarterly imposter issue activity with issues opened versus issues closed by quarter"
+               aria-label="Line chart showing accessibility issues by defect severity level over time"
                tabindex="0">
             <!-- Chart will be rendered here -->
           </div>
         </va-tab-panel>
 
-        <va-tab-panel panel-id="imposter-quarterly-table-panel" role="tabpanel">
-          <va-table id="imposter-quarterly-va-table"
-                    table-title="Imposter Issues by Quarter: Number of issues opened and closed each quarter"
+        <va-tab-panel panel-id="a11y-defect-table-panel" role="tabpanel">
+          <va-table id="a11y-defect-va-table"
+                    table-title="Accessibility Issues by Defect Level: New issues created each month by severity"
                     stacked="true"
                     sortable="true"
-                    table-type="borderless">
+                    table-type="borderless"
+                    right-align-cols="1,2,3,4">
             <va-table-row slot="headers">
-              <span>Quarter</span>
-              <span>Issues Opened</span>
-              <span>Issues Closed</span>
+              <span>Period</span>
+              <span>Defect 0</span>
+              <span>Defect 1</span>
+              <span>Defect 2</span>
+              <span>Defect 3</span>
             </va-table-row>
-            {% if site.data.metrics.imposter-metrics.quarterly %}
-              {% assign sorted_quarterly = site.data.metrics.imposter-metrics.quarterly | sort: 'period' | reverse %}
-              {% for quarter in sorted_quarterly %}
-                {% assign quarter_parts = quarter.period | split: '-' %}
-                {% assign formatted_quarter = quarter_parts[0] | append: ' ' | append: quarter_parts[1] %}
+            {% if site.data.metrics.issue-metrics.a11y_monthly.data %}
+              {% assign sorted_a11y = site.data.metrics.issue-metrics.a11y_monthly.data | sort: 'period' | reverse %}
+              {% for month in sorted_a11y %}
+                {% assign month_parts = month.period | split: '-' %}
+                {% assign month_names = 'January,February,March,April,May,June,July,August,September,October,November,December' | split: ',' %}
+                {% assign month_index = month_parts[1] | minus: 1 %}
+                {% assign formatted_month = month_names[month_index] | append: ' ' | append: month_parts[0] %}
                 <va-table-row>
-                  <span>{{ formatted_quarter }}</span>
-                  <span>{{ quarter.issues_opened }}</span>
-                  <span>{{ quarter.issues_closed }}</span>
+                  <span>{{ formatted_month }}</span>
+                  <span>{{ month.a11y_defect_0 }}</span>
+                  <span>{{ month.a11y_defect_1 }}</span>
+                  <span>{{ month.a11y_defect_2 }}</span>
+                  <span>{{ month.a11y_defect_3 }}</span>
                 </va-table-row>
               {% endfor %}
             {% else %}
               <va-table-row>
-                <span colspan="3">No quarterly data currently available</span>
-              </va-table-row>
-            {% endif %}
-          </va-table>
-        </va-tab-panel>
-      </va-tabs>
-    </div>
-
-    <!-- Progress by Component Chart -->
-    <div class="metrics-section">
-      <h3>Progress by Component</h3>
-      <p>Breakdown of imposter issues by component type, showing which components have the most replacement work</p>
-
-      <va-tabs>
-        <va-tab-item button-text="Graph" target-id="imposter-component-graph-panel"></va-tab-item>
-        <va-tab-item button-text="Table" target-id="imposter-component-table-panel"></va-tab-item>
-
-        <va-tab-panel panel-id="imposter-component-graph-panel" role="tabpanel">
-          <div id="imposter-component-chart"
-               class="chart-container"
-               role="img"
-               aria-label="Horizontal bar chart showing imposter issues by component type with open and closed counts"
-               tabindex="0">
-            <!-- Chart will be rendered here -->
-          </div>
-        </va-tab-panel>
-
-        <va-tab-panel panel-id="imposter-component-table-panel" role="tabpanel">
-          <va-table id="imposter-component-va-table"
-                    table-title="Imposter Issues by Component: Open and closed issues for each component type"
-                    stacked="true"
-                    sortable="true"
-                    table-type="borderless"
-                    right-align-cols="1,2,3">
-            <va-table-row slot="headers">
-              <span>Component</span>
-              <span>Open</span>
-              <span>Closed</span>
-              <span>Total</span>
-            </va-table-row>
-            {% if site.data.metrics.imposter-metrics.by_component %}
-              {% for component in site.data.metrics.imposter-metrics.by_component %}
-                <va-table-row>
-                  <span>
-                    {% if component.component == 'unknown' %}
-                      {{ component.component }}* <small>(issues without component-specific labels)</small>
-                    {% else %}
-                      <a href="https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=label%3Ava-imposter+label%3Acollab-cycle-feedback+label%3A{{ component.component }}" target="_blank" rel="noopener" aria-label="{{ component.component }} issues on GitHub (opens in new tab)">{{ component.component }}</a>
-                    {% endif %}
-                  </span>
-                  <span>{{ component.open }}</span>
-                  <span>{{ component.closed }}</span>
-                  <span>{{ component.total }}</span>
-                </va-table-row>
-              {% endfor %}
-            {% else %}
-              <va-table-row>
-                <span colspan="4">No component data currently available</span>
-              </va-table-row>
-            {% endif %}
-          </va-table>
-        </va-tab-panel>
-      </va-tabs>
-    </div>
-
-    <!-- Instances by Component Type Chart (from vets-website scanning) -->
-    <div class="metrics-section">
-      <h3>Instances by Component Type</h3>
-      <p>Shows the number of imposter component usages found in vets-website codebase, grouped by the VA web component they should replace</p>
-      <div class="data-freshness" id="imposter-instances-component-data-freshness">
-        {% if site.data.metrics.imposter-metrics.instances.last_scan_date %}
-          <small>Data from vets-website scan on {{ site.data.metrics.imposter-metrics.instances.last_scan_date }}</small>
-        {% else %}
-          <small>Scan pending</small>
-        {% endif %}
-      </div>
-
-      <va-tabs>
-        <va-tab-item button-text="Graph" target-id="imposter-instances-component-graph-panel"></va-tab-item>
-        <va-tab-item button-text="Table" target-id="imposter-instances-component-table-panel"></va-tab-item>
-
-        <va-tab-panel panel-id="imposter-instances-component-graph-panel" role="tabpanel">
-          <div id="imposter-instances-component-chart"
-               class="chart-container"
-               role="img"
-               aria-label="Horizontal bar chart showing imposter instance counts by component type from vets-website codebase scan"
-               tabindex="0">
-            <!-- Chart will be rendered here -->
-          </div>
-        </va-tab-panel>
-
-        <va-tab-panel panel-id="imposter-instances-component-table-panel" role="tabpanel">
-          <va-table id="imposter-instances-component-va-table"
-                    table-title="Imposter Instances by Component: Number of usages found in vets-website for each imposter component"
-                    stacked="true"
-                    sortable="true"
-                    table-type="borderless"
-                    right-align-cols="1,2">
-            <va-table-row slot="headers">
-              <span>VA Component</span>
-              <span>Imposter Name</span>
-              <span>Instances</span>
-              <span>Files</span>
-            </va-table-row>
-            {% if site.data.metrics.imposter-metrics.instances.by_component %}
-              {% for component in site.data.metrics.imposter-metrics.instances.by_component %}
-                {% if component.instance_count > 0 %}
-                  <va-table-row>
-                    <span>{{ component.component }}</span>
-                    <span>{{ component.imposter_name }}</span>
-                    <span>{{ component.instance_count }}</span>
-                    <span>{{ component.file_count }}</span>
-                  </va-table-row>
-                {% endif %}
-              {% endfor %}
-            {% else %}
-              <va-table-row>
-                <span colspan="4">No instance data currently available</span>
-              </va-table-row>
-            {% endif %}
-          </va-table>
-        </va-tab-panel>
-      </va-tabs>
-    </div>
-
-    <!-- Instances by Application Chart (from vets-website scanning) -->
-    <div class="metrics-section">
-      <h3>Instances by Application</h3>
-      <p>Shows which vets-website applications have the most imposter component usages, helping prioritize remediation efforts</p>
-      <div class="data-freshness" id="imposter-instances-app-data-freshness">
-        {% if site.data.metrics.imposter-metrics.instances.last_scan_date %}
-          <small>Data from vets-website scan on {{ site.data.metrics.imposter-metrics.instances.last_scan_date }}</small>
-        {% else %}
-          <small>Scan pending</small>
-        {% endif %}
-      </div>
-
-      <va-tabs>
-        <va-tab-item button-text="Graph" target-id="imposter-instances-app-graph-panel"></va-tab-item>
-        <va-tab-item button-text="Table" target-id="imposter-instances-app-table-panel"></va-tab-item>
-
-        <va-tab-panel panel-id="imposter-instances-app-graph-panel" role="tabpanel">
-          <div id="imposter-instances-app-chart"
-               class="chart-container"
-               role="img"
-               aria-label="Horizontal bar chart showing imposter instance counts by application from vets-website codebase scan"
-               tabindex="0">
-            <!-- Chart will be rendered here -->
-          </div>
-        </va-tab-panel>
-
-        <va-tab-panel panel-id="imposter-instances-app-table-panel" role="tabpanel">
-          <va-table id="imposter-instances-app-va-table"
-                    table-title="Imposter Instances by Application: Number of imposter usages found in each vets-website application"
-                    stacked="true"
-                    sortable="true"
-                    table-type="borderless"
-                    right-align-cols="1">
-            <va-table-row slot="headers">
-              <span>Application</span>
-              <span>Instance Count</span>
-            </va-table-row>
-            {% if site.data.metrics.imposter-metrics.instances.by_application %}
-              {% for app in site.data.metrics.imposter-metrics.instances.by_application %}
-                {% unless app.application contains '_mock' %}
-                  <va-table-row>
-                    <span>{{ app.application }}</span>
-                    <span>{{ app.instance_count }}</span>
-                  </va-table-row>
-                {% endunless %}
-              {% endfor %}
-            {% else %}
-              <va-table-row>
-                <span colspan="2">No application data currently available</span>
+                <span>No accessibility defect data available yet</span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
               </va-table-row>
             {% endif %}
           </va-table>
@@ -947,6 +1019,7 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementById('velocity-chart').innerHTML = '';
       document.getElementById('top-components-chart').innerHTML = '';
       document.getElementById('experimental-chart').innerHTML = '';
+      document.getElementById('a11y-defect-chart').innerHTML = '';
 
       // Clear imposter charts only if data has loaded (prevents clearing during initial load)
       if (imposterDataLoaded) {
@@ -1011,6 +1084,7 @@ function renderVisibleChartsIfNeeded() {
     { id: 'velocity-chart', renderFunc: () => renderVelocityChart(MetricsDataManager.getIssueData().velocity) },
     { id: 'top-components-chart', renderFunc: () => renderTopComponentsChart(MetricsDataManager.getComponentData()) },
     { id: 'experimental-chart', renderFunc: () => MetricsDataManager.getIssueData().experimental_quarterly && renderExperimentalChart(MetricsDataManager.getIssueData().experimental_quarterly) },
+    { id: 'a11y-defect-chart', renderFunc: () => MetricsDataManager.getIssueData().a11y_monthly && renderA11yDefectChart(MetricsDataManager.getIssueData().a11y_monthly) },
     // Imposter charts
     { id: 'imposter-quarterly-chart', renderFunc: () => imposterData && renderImposterQuarterlyChart(imposterData.quarterly) },
     { id: 'imposter-component-chart', renderFunc: () => imposterData && renderImposterComponentChart(imposterData.by_component) },
@@ -1050,7 +1124,12 @@ function renderAllCharts(issueData, componentData) {
   if (issueData.experimental_quarterly) {
     renderExperimentalChart(issueData.experimental_quarterly);
   }
-  
+
+  // Render a11y defect chart if data exists
+  if (issueData.a11y_monthly) {
+    renderA11yDefectChart(issueData.a11y_monthly);
+  }
+
   // Render component usage charts
   renderTopComponentsChart(componentData);
   
@@ -1090,9 +1169,11 @@ function showPlaceholders() {
     '<div class="chart-placeholder">Velocity chart will be available once data collection is set up</div>';
   document.getElementById('experimental-chart').innerHTML = 
     '<div class="chart-placeholder">Experimental design chart will be available once data collection is set up</div>';
-  document.getElementById('top-components-chart').innerHTML = 
+  document.getElementById('top-components-chart').innerHTML =
     '<div class="chart-placeholder">Top components chart will be available once data collection is set up</div>';
-  
+  document.getElementById('a11y-defect-chart').innerHTML =
+    '<div class="chart-placeholder">Accessibility defect chart will be available once data collection is set up</div>';
+
 }
 
 // Enhanced data freshness checking for all metric cards and section data freshness elements
@@ -1115,7 +1196,7 @@ function enhanceDataFreshness(issueSummary, componentSummary) {
     });
     
     // Update issue-related section data freshness elements if data is stale
-    ['issue-tracking-data-freshness', 'monthly-contributions-data-freshness', 'experimental-design-data-freshness'].forEach(elementId => {
+    ['issue-tracking-data-freshness', 'monthly-contributions-data-freshness', 'experimental-design-data-freshness', 'a11y-data-freshness'].forEach(elementId => {
       const element = document.getElementById(elementId);
       if (element && daysSince > 7) {
         element.classList.add('warning');
@@ -1740,6 +1821,284 @@ function updateDataFreshness(componentSummary) {
   // Apply our custom CSS classes instead of VA utility classes
   freshnessElement.className = `data-freshness ${cssClass}`.trim();
   freshnessElement.innerHTML = `<small>${freshnessText}</small>`;
+}
+
+function renderA11yDefectChart(a11yData) {
+  if (!a11yData || !a11yData.data || a11yData.data.length === 0) {
+    document.getElementById('a11y-defect-chart').innerHTML =
+      '<div class="chart-placeholder">No accessibility defect data available yet</div>';
+    return;
+  }
+
+  // Filter to last 5 years (starting Feb 2021) to reduce noise from early outliers
+  const filteredData = a11yData.data.filter(d => d.period >= '2021-02');
+  if (filteredData.length === 0) {
+    document.getElementById('a11y-defect-chart').innerHTML =
+      '<div class="chart-placeholder">No accessibility defect data available in the selected range</div>';
+    return;
+  }
+
+  // Fill in missing months with zeros so the timeline is continuous and evenly spaced
+  const dataMap = new Map(filteredData.map(d => [d.period, d]));
+  const [startY, startM] = filteredData[0].period.split('-').map(Number);
+  const [endY, endM] = filteredData[filteredData.length - 1].period.split('-').map(Number);
+  const data = [];
+  for (let y = startY, m = startM; y < endY || (y === endY && m <= endM); m++) {
+    if (m > 12) { m = 1; y++; }
+    const key = `${y}-${String(m).padStart(2, '0')}`;
+    data.push(dataMap.get(key) || { period: key, a11y_defect_0: 0, a11y_defect_1: 0, a11y_defect_2: 0, a11y_defect_3: 0 });
+  }
+
+  const labels = a11yData.labels || [];
+  const container = document.getElementById('a11y-defect-chart');
+  const containerWidth = container.clientWidth;
+
+  // Extra bottom margin for stacked single-column legend
+  const legendRowHeight = 18;
+  const legendRows = 4; // one per defect level, stacked
+  const legendSpace = legendRows * legendRowHeight + 20;
+
+  const margin = {
+    top: 20,
+    right: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 20 : 30,
+    bottom: (containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 80 : 70) + legendSpace,
+    left: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 50 : 60
+  };
+
+  const width = containerWidth - margin.left - margin.right;
+  const height = (containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 300 : 400) - margin.top - margin.bottom;
+
+  const svg = d3.select('#a11y-defect-chart')
+    .append('svg')
+    .attr('width', width + margin.left + margin.right)
+    .attr('height', height + margin.top + margin.bottom);
+
+  const g = svg.append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // Format period labels
+  const formatPeriod = (period) => {
+    const [year, month] = period.split('-');
+    const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                         'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    return `${monthNames[parseInt(month) - 1]} ${year}`;
+  };
+
+  // Defect level config with GitHub label colors
+  const defectLevels = [
+    { key: 'a11y_defect_0', label: 'a11y-defect-0', color: '#c1171f' },
+    { key: 'a11y_defect_1', label: 'a11y-defect-1', color: '#ef7039' },
+    { key: 'a11y_defect_2', label: 'a11y-defect-2', color: '#e5a000' },
+    { key: 'a11y_defect_3', label: 'a11y-defect-3', color: '#2e8540' }
+  ];
+
+  // Setup scales
+  const x = d3.scaleBand()
+    .domain(data.map(d => d.period))
+    .range([0, width])
+    .padding(0.1);
+
+  const maxCount = d3.max(data, d =>
+    Math.max(d.a11y_defect_0, d.a11y_defect_1, d.a11y_defect_2, d.a11y_defect_3)
+  );
+
+  const y = d3.scaleLinear()
+    .domain([0, Math.max(maxCount, 1)])
+    .nice()
+    .range([height, 0]);
+
+  // X-axis with adaptive tick frequency
+  const tickInterval = containerWidth < CHART_MOBILE_BREAKPOINT ? 6 : containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 4 : 2;
+  const tickIndices = [];
+  for (let i = 0; i < data.length; i += tickInterval) {
+    tickIndices.push(i);
+  }
+  if (!tickIndices.includes(data.length - 1)) {
+    tickIndices.push(data.length - 1);
+  }
+
+  const xAxis = g.append('g')
+    .attr('transform', `translate(0,${height})`)
+    .call(d3.axisBottom(x)
+      .tickValues(tickIndices.map(i => data[i].period))
+      .tickFormat(formatPeriod)
+    );
+
+  xAxis.selectAll('text')
+    .style('text-anchor', 'end')
+    .attr('dx', '-.8em')
+    .attr('dy', '.15em')
+    .attr('transform', 'rotate(-45)')
+    .style('font-size', containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 'var(--vads-font-size-body-small)' : 'var(--vads-font-size-body)');
+
+  g.append('g')
+    .call(d3.axisLeft(y).ticks(Math.min(maxCount, 10)));
+
+  // Y-axis label
+  g.append('text')
+    .attr('transform', 'rotate(-90)')
+    .attr('y', 0 - margin.left)
+    .attr('x', 0 - (height / 2))
+    .attr('dy', '1em')
+    .style('text-anchor', 'middle')
+    .text('New Issues');
+
+  // Quarter boundary markers — computed from date range, not dependent on data gaps
+  // Build a lookup from period string to index for interpolation
+  const periodIndex = new Map();
+  data.forEach((d, i) => periodIndex.set(d.period, i));
+
+  const firstPeriod = data[0].period;
+  const lastPeriod = data[data.length - 1].period;
+  const startYear = parseInt(firstPeriod.split('-')[0]);
+  const endYear = parseInt(lastPeriod.split('-')[0]);
+
+  for (let yr = startYear; yr <= endYear; yr++) {
+    [1, 4, 7, 10].forEach(qMonth => {
+      const qPeriod = `${yr}-${String(qMonth).padStart(2, '0')}`;
+      // Skip if before data range or at the very first data point
+      if (qPeriod <= firstPeriod || qPeriod > lastPeriod) return;
+
+      // Find the closest data periods on either side to position the line
+      let beforeIdx = -1;
+      let afterIdx = -1;
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].period < qPeriod) beforeIdx = i;
+        if (data[i].period >= qPeriod && afterIdx === -1) afterIdx = i;
+      }
+      if (beforeIdx === -1 || afterIdx === -1) return;
+
+      const prevBandEnd = x(data[beforeIdx].period) + x.bandwidth();
+      const curBandStart = x(data[afterIdx].period);
+      const xPos = (prevBandEnd + curBandStart) / 2;
+
+      g.append('line')
+        .attr('x1', xPos)
+        .attr('x2', xPos)
+        .attr('y1', 0)
+        .attr('y2', height)
+        .attr('stroke', '#adb5bd')
+        .attr('stroke-dasharray', '4,4')
+        .attr('stroke-width', 1);
+
+      const quarterNum = Math.ceil(qMonth / 3);
+      const shortYear = String(yr).slice(2);
+      g.append('text')
+        .attr('x', xPos + 4)
+        .attr('y', 10)
+        .style('font-size', '10px')
+        .style('fill', '#6c757d')
+        .text(`${shortYear}-Q${quarterNum}`);
+    });
+  }
+
+  // Line generator using band midpoints
+  const line = d3.line()
+    .x(d => x(d.period) + x.bandwidth() / 2)
+    .y(d => y(d.value))
+    .defined(d => d.value !== undefined);
+
+  // Draw lines and data points for each defect level
+  // Group each series so we can target them for hover highlighting
+  defectLevels.forEach(level => {
+    const lineData = data.map(d => ({
+      period: d.period,
+      value: d[level.key]
+    }));
+
+    const seriesGroup = g.append('g')
+      .attr('class', `a11y-series a11y-series-${level.key}`);
+
+    // Line path
+    seriesGroup.append('path')
+      .datum(lineData)
+      .attr('fill', 'none')
+      .attr('stroke', level.color)
+      .attr('stroke-width', 2.5)
+      .attr('d', line);
+
+    // Data point circles with tooltips
+    seriesGroup.selectAll(`circle`)
+      .data(lineData)
+      .enter().append('circle')
+      .attr('cx', d => x(d.period) + x.bandwidth() / 2)
+      .attr('cy', d => y(d.value))
+      .attr('r', 4)
+      .attr('fill', level.color)
+      .attr('stroke', '#fff')
+      .attr('stroke-width', 1.5)
+      .style('cursor', 'pointer')
+      .on('mouseover', function(event, d) {
+        // Highlight this series, dim others
+        g.selectAll('.a11y-series').style('opacity', 0.15);
+        g.select(`.a11y-series-${level.key}`).style('opacity', 1);
+
+        const tooltip = d3.select('body').append('div')
+          .attr('class', 'chart-tooltip')
+          .style('opacity', 0)
+          .style('position', 'absolute')
+          .style('background', 'rgba(0, 0, 0, 0.8)')
+          .style('color', 'white')
+          .style('padding', '8px 12px')
+          .style('border-radius', '4px')
+          .style('font-size', '12px')
+          .style('pointer-events', 'none')
+          .style('z-index', '1000');
+
+        tooltip.transition()
+          .duration(200)
+          .style('opacity', 1);
+
+        tooltip.html(`${formatPeriod(d.period)}<br>${level.label}: ${d.value}`)
+          .style('left', (event.pageX + 10) + 'px')
+          .style('top', (event.pageY - 28) + 'px');
+
+        d3.select(this).attr('r', 6);
+      })
+      .on('mouseout', function() {
+        // Restore all series
+        g.selectAll('.a11y-series').style('opacity', 1);
+        d3.selectAll('.chart-tooltip').remove();
+        d3.select(this).attr('r', 4);
+      });
+  });
+
+  // Legend — stacked in single column below chart, full label text
+  const legendY = height + (containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 55 : 50);
+  const legend = g.append('g')
+    .attr('transform', `translate(0, ${legendY})`);
+
+  defectLevels.forEach((level, i) => {
+    const labelInfo = labels.find(l => l.name === level.label);
+    const description = labelInfo ? labelInfo.description : '';
+    const yOffset = i * legendRowHeight;
+
+    const item = legend.append('g')
+      .attr('transform', `translate(0, ${yOffset})`)
+      .style('cursor', 'pointer')
+      .on('mouseover', function() {
+        g.selectAll('.a11y-series').style('opacity', 0.15);
+        g.select(`.a11y-series-${level.key}`).style('opacity', 1);
+      })
+      .on('mouseout', function() {
+        g.selectAll('.a11y-series').style('opacity', 1);
+      });
+
+    item.append('rect')
+      .attr('width', 12)
+      .attr('height', 12)
+      .attr('fill', level.color)
+      .attr('rx', 2);
+
+    const legendText = description ? `${level.label}: ${description}` : level.label;
+
+    item.append('text')
+      .attr('x', 16)
+      .attr('y', 10)
+      .style('font-size', '11px')
+      .style('fill', '#333')
+      .text(legendText);
+  });
 }
 
 // Imposter metrics data and chart functions
