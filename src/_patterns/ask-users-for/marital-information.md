@@ -99,7 +99,7 @@ This optional section includes questions about the marriage, such as:
 
 #### Previous marriage information
 
-This optional section features the [Multiple Responses](https://design.va.gov/patterns/ask-users-for/multiple-responses) (also known as: List & Loop) pattern to ask questions about previous marriages, including:
+This optional section features the [Multiple Responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses) (also known as: List & Loop) pattern to ask questions about previous marriages, including:
 
 * Name(s) of former spouse(s)
 * Veteran status of former spouse(s)
@@ -109,16 +109,16 @@ This optional section features the [Multiple Responses](https://design.va.gov/pa
 
 ### Patterns and components used in this pattern
 
-* [Radio Button](https://design.va.gov/components/form/radio-button)
-* [Select](https://design.va.gov/components/form/select)
-* [Multiple Responses](https://design.va.gov/patterns/ask-users-for/multiple-responses)
+* [Radio Button]({{ site.baseurl }}/components/form/radio-button)
+* [Select]({{ site.baseurl }}/components/form/select)
+* [Multiple Responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses)
 * [Details]({{ site.baseurl }}/components/details)
 
 ### Additional considerations
 
 * If a form requires file uploads (for example, a marriage certificate or divorce decree), state that these files are needed on the form introduction page.
 * As the user moves through the form, if they provide a response that triggers conditionally-required file uploads, explain why the file upload is needed. For example, if a user indicates that they were married in a way that is not among the standard responses, include text like this: "Based on your answer, you'll need to provide supporting documents to help us understand your marital status. We'll ask you to upload these documents on the next screen [or on the final screen of the form, depending on your form's situation]."
-* If you are asking only one question on a page, the question label should be an h3, as shown in the [Ask Users For... A Single Response](https://design.va.gov/patterns/ask-users-for/a-single-response#annotated) pattern. However, if you are asking multiple questions per page, give the page a descriptive page title as an h3 and use standard (non-header) labels for questions.
+* If you are asking only one question on a page, the question label should be an h3, as shown in the [Ask Users For... A Single Response]({{ site.baseurl }}/patterns/ask-users-for/a-single-response#annotated) pattern. However, if you are asking multiple questions per page, give the page a descriptive page title as an h3 and use standard (non-header) labels for questions.
 
 
 ## Code usage
