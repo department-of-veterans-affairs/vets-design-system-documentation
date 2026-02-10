@@ -9,6 +9,7 @@ mobile-app: true
 anchors:
   - anchor: Preview
   - anchor: Usage
+  - anchor: Code usage
   - anchor: Accessibility considerations
   - anchor: Requesting a new icon
   - anchor: Component checklist
@@ -119,7 +120,7 @@ anchors:
 
 ### How this component works
 
-This web component provides access to the full suite of U.S. Web Design System iconography as well as additions specific to the VA. The [list of available icons is a foundational element]({{ site.baseurl }}/foundation/icons) of the Design System.
+This web component provides access to the full suite of U.S. Web Design System iconography as well as additions specific to the VA. The list of available icons is shown [in the preview above](#preview) and is a foundational element of the Design System.
 
 ### Choosing between icons
 
@@ -191,6 +192,8 @@ By default, the web component icon will display as `--vads-color-base` which is 
   </va-table-row>
 </va-table>
 
+{% include component-docs.html component_name=page.web-component %}
+
 ## Accessibility considerations
 Icon usage typically falls into two categories, decorative and semantic.
 
@@ -252,8 +255,6 @@ Avoid requesting a new icon when:
     If your request is part of an experimental initiative, please link any related tickets to provide context and ensure visibility for the Design System team.
   </li>
 </ol>
-
-{% include component-docs.html component_name=page.web-component %}
 
 <script>
   const icons = {{ site.data.icons | jsonify }};

@@ -65,7 +65,6 @@ For questions about information architecture and content organization, contact t
 ### IA standards and guidance
 
 - [Guidance on the va.gov domain structure and use of subdomains and subdirectories]({{ site.baseurl }}/ia/domain-structure)
-- [Placement criteria for information and functionality on www.va.gov]({{ site.baseurl }}/ia-web-placement-criteria)
 - [URL standards]({{ site.baseurl }}/ia/url-standards)
 - [Guidance for creating user flows](https://depo-platform-documentation.scrollhelp.site/research-design/guidance-for-creating-user-flows)
 

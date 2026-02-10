@@ -140,6 +140,7 @@ Any style of alert box can be modified to be a Slim alert. The iconography for S
 * **Clarifying background information.** Use the [Additional info]({{ site.baseurl }}/components/additional-info) component when clarifying outcomes for an input or a form question as well as providing background information. Keep in mind that Alert - Expandable should warrant an alert and be used sparingly. The value of any type of alert is diminished if the page is littered with alerts of equal weight.
 * **System maintenance on web.** Most [system messages]({{ site.baseurl }}/content-style-guide/error-messages/system) related to maintenance are handled by the [Banner - Maintenance]({{ site.baseurl }}/components/banner/maintenance) component.
 * **As the only content on a page.** An Alert should not be the only, or the majority of, content on a page. Reduce the length of the alert and include context in the content well of the page.
+* **For highlighting a single task that is urgent, time-sensitive, or required.** Consider the [Critical Action]({{ site.baseurl }}/components/critical-action) component when you want to highlight a single task that will otherwise block the user from proceeding. This can be used within [cards]({{ site.baseurl }}/components/card) or [service list items]({{ site.baseurl }}/components/service-list-item).
 
 ##### Mobile app only
 
@@ -157,6 +158,7 @@ Any style of alert box can be modified to be a Slim alert. The iconography for S
 
 * **Immediate feedback to the user.** When your application is using Javascript to provide an immediate response to the user without a full page load.
 * **Sub-alerts on the page.** When your page has more than 1 alert and you are using the Standard and Slim alerts to create a hierarchy of alerts within the page. This does not mean stacking alerts on top of one another, this means placing them appropriately throughout the page. It can also be appropriate to convey multiple statuses using a combination of headers, text, and the Slim alert variation. An example of a sub-alert is the [Autosave alert]({{ site.baseurl }}/components/form/autosave).
+* **Within cards for information that is specific to that card.** Alerts within [cards]({{ site.baseurl }}/components/card) would be used in cases where an alert outside of the card would cause issues for hierarchy and clarity, especially if there are multiple cards within a collection.
 
 ### How to use alerts
 
@@ -171,6 +173,55 @@ When the user is required to do something in response to an alert, let them know
 * Alerts should not contain other expandable components such as the [Additional info]({{ site.baseurl }}/components/) component.
 * Messaging should be direct, concise, and in [plain language]({{ site.baseurl }}/content-style-guide/plain-language/).
 * Standard alerts must contain headings as opposed to Slim alerts which do not contain headings.
+
+### Choosing between alert statuses
+
+Choose the appropriate status based on the nature of the message and its urgency. Consistency in status usage across VA.gov helps Veterans quickly understand the nature of messages.
+
+#### Informational (info)
+
+Use informational alerts to provide helpful context or supplementary information that doesn't require immediate action.
+
+* **General announcements.** Information the user should be aware of but that doesn't indicate something went wrong or was completed.
+* **Guidance and tips.** Helpful context for completing a task.
+* **Status updates.** Neutral updates about the state of something, such as "Your application is being processed."
+
+#### Warning
+
+Use warning alerts when there are potential negative consequences or when something may go wrong if the user doesn't take action.
+
+* **Potential issues.** When something might prevent the user from completing their goal if not addressed.
+* **Time-sensitive information.** Deadlines or expiration dates that require attention.
+* **Proceed with caution.** When an action has consequences the user should understand before proceeding.
+
+#### Success
+
+Use success alerts to confirm that a user-initiated action completed successfully. The key distinction is that the user took an intentional action and the system is confirming it worked.
+
+* **Task completion.** Confirming that a form submission, save, or other intentional action was successful.
+* **Updates confirmed.** When the user updates their information and the change is saved.
+* **Explicit saves.** When the user actively saves their progress.
+
+**When autosave completes successfully:** Autosave is an example of a system-initiated action that still uses a success alert because the system successfully preserved the user's work. Autosave is currently being researched and the handling of autosave messages may change in future. At the moment, it is okay to have two success alerts on the page if one of them is the autosave alert in a form flow.
+
+#### Error
+
+Use error alerts to indicate that something has gone wrong and typically requires the user to take corrective action.
+
+* **Validation errors.** When form input doesn't meet requirements.
+* **Failed actions.** When a submission, save, or other action didn't complete.
+* **System failures.** When the system encountered an error that affects the user's ability to complete their task.
+* **Access issues.** When the user can't access something they're trying to reach.
+
+#### Choosing between warning and error
+
+Use **warning** when something *might* go wrong or requires attention before proceeding. Use **error** when something *has* gone wrong and needs to be fixed. Warnings are preventative; errors are reactive.
+
+#### Handling multiple alerts
+
+Displaying multiple alerts should be avoided. However, when you need to display multiple alerts on a page, follow the general alert usage guidance above (including ordering alerts by severity and avoiding stacking alerts). In addition:
+
+* **Create visual hierarchy.** When multiple alerts are necessary, use a Standard alert for the primary message and Slim alerts for secondary messages.
 
 ### Links within alerts
 
@@ -193,6 +244,7 @@ When the user is required to do something in response to an alert, let them know
 * Slim alerts related to a form field or section should be placed below the label, legend, or section header.
 * The Info variation of the Slim alert can be placed between sections.
 * Save-in-progress success and error Slim alerts should be placed directly below the Back/Continue button pair. This placement allows for the page content to remain fixed in the same position when the alert updates dynamically.
+* Slim alerts within cards should be placed above the call-to-action (CTA).
 
 #### Mobile app
 

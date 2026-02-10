@@ -92,7 +92,7 @@
     },
     {
       "period": "2023-Q2",
-      "issues_opened": 220,
+      "issues_opened": 221,
       "issues_closed": 182
     },
     {
@@ -102,27 +102,27 @@
     },
     {
       "period": "2023-Q4",
-      "issues_opened": 210,
+      "issues_opened": 215,
       "issues_closed": 203
     },
     {
       "period": "2024-Q1",
-      "issues_opened": 293,
+      "issues_opened": 301,
       "issues_closed": 240
     },
     {
       "period": "2024-Q2",
-      "issues_opened": 334,
+      "issues_opened": 339,
       "issues_closed": 282
     },
     {
       "period": "2024-Q3",
-      "issues_opened": 331,
+      "issues_opened": 335,
       "issues_closed": 346
     },
     {
       "period": "2024-Q4",
-      "issues_opened": 297,
+      "issues_opened": 308,
       "issues_closed": 259
     },
     {
@@ -143,12 +143,12 @@
     {
       "period": "2025-Q4",
       "issues_opened": 455,
-      "issues_closed": 362
+      "issues_closed": 361
     },
     {
       "period": "2026-Q1",
-      "issues_opened": 1,
-      "issues_closed": 0
+      "issues_opened": 293,
+      "issues_closed": 287
     }
   ],
   "velocity": [
@@ -434,7 +434,7 @@
     },
     {
       "period": "2023-06",
-      "issues_opened": 77,
+      "issues_opened": 78,
       "issues_closed": 70
     },
     {
@@ -459,47 +459,47 @@
     },
     {
       "period": "2023-11",
-      "issues_opened": 48,
+      "issues_opened": 50,
       "issues_closed": 63
     },
     {
       "period": "2023-12",
-      "issues_opened": 65,
+      "issues_opened": 68,
       "issues_closed": 54
     },
     {
       "period": "2024-01",
-      "issues_opened": 94,
+      "issues_opened": 98,
       "issues_closed": 82
     },
     {
       "period": "2024-02",
-      "issues_opened": 107,
+      "issues_opened": 108,
       "issues_closed": 80
     },
     {
       "period": "2024-03",
-      "issues_opened": 92,
+      "issues_opened": 95,
       "issues_closed": 78
     },
     {
       "period": "2024-04",
-      "issues_opened": 140,
+      "issues_opened": 141,
       "issues_closed": 110
     },
     {
       "period": "2024-05",
-      "issues_opened": 111,
+      "issues_opened": 112,
       "issues_closed": 104
     },
     {
       "period": "2024-06",
-      "issues_opened": 83,
+      "issues_opened": 86,
       "issues_closed": 68
     },
     {
       "period": "2024-07",
-      "issues_opened": 133,
+      "issues_opened": 134,
       "issues_closed": 82
     },
     {
@@ -509,22 +509,22 @@
     },
     {
       "period": "2024-09",
-      "issues_opened": 68,
+      "issues_opened": 71,
       "issues_closed": 129
     },
     {
       "period": "2024-10",
-      "issues_opened": 135,
+      "issues_opened": 141,
       "issues_closed": 127
     },
     {
       "period": "2024-11",
-      "issues_opened": 72,
+      "issues_opened": 73,
       "issues_closed": 58
     },
     {
       "period": "2024-12",
-      "issues_opened": 90,
+      "issues_opened": 94,
       "issues_closed": 74
     },
     {
@@ -560,12 +560,12 @@
     {
       "period": "2025-07",
       "issues_opened": 173,
-      "issues_closed": 193
+      "issues_closed": 194
     },
     {
       "period": "2025-08",
       "issues_opened": 151,
-      "issues_closed": 115
+      "issues_closed": 114
     },
     {
       "period": "2025-09",
@@ -585,12 +585,17 @@
     {
       "period": "2025-12",
       "issues_opened": 104,
-      "issues_closed": 119
+      "issues_closed": 118
     },
     {
       "period": "2026-01",
-      "issues_opened": 1,
-      "issues_closed": 0
+      "issues_opened": 205,
+      "issues_closed": 192
+    },
+    {
+      "period": "2026-02",
+      "issues_opened": 88,
+      "issues_closed": 95
     }
   ],
   "experimental_quarterly": [
@@ -704,32 +709,536 @@
     },
     {
       "period": "2025-Q4",
-      "issues_opened": 12,
+      "issues_opened": 11,
       "issues_closed": 0,
       "issues_implemented": 0
+    },
+    {
+      "period": "2026-Q1",
+      "issues_opened": 1,
+      "issues_closed": 3,
+      "issues_implemented": 2
     }
   ],
+  "a11y_monthly": {
+    "labels": [
+      {
+        "description": "Potentially harmful accessibility issue that must be fixed immediately",
+        "name": "a11y-defect-0"
+      },
+      {
+        "description": "Critical accessibility issue that should be fixed before launch or in the next sprint",
+        "name": "a11y-defect-1"
+      },
+      {
+        "description": "High-severity accessibility issue that should be fixed in the next 1 - 2 sprints",
+        "name": "a11y-defect-2"
+      },
+      {
+        "description": "Medium-severity accessibility issue that should be fixed within 1 - 3 sprints",
+        "name": "a11y-defect-3"
+      }
+    ],
+    "data": [
+      {
+        "period": "2020-07",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 2,
+        "a11y_defect_2": 11,
+        "a11y_defect_3": 17
+      },
+      {
+        "period": "2020-08",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2020-09",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 2
+      },
+      {
+        "period": "2020-10",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2020-11",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 1,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2020-12",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 2,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2021-01",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 2,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2021-02",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2021-03",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 1,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2021-04",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2021-05",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2021-06",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2021-07",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 1
+      },
+      {
+        "period": "2021-08",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2021-09",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2021-10",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2021-11",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2021-12",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2022-01",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2022-02",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 1,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2022-03",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2022-04",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2022-05",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 2,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2022-06",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2022-07",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2022-08",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2022-09",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2022-10",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2022-11",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2022-12",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2023-01",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2023-02",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 1,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2023-03",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 1,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2023-04",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2023-05",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2023-06",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 1,
+        "a11y_defect_2": 1,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2023-07",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 1
+      },
+      {
+        "period": "2023-08",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 1
+      },
+      {
+        "period": "2023-09",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 3,
+        "a11y_defect_2": 1,
+        "a11y_defect_3": 2
+      },
+      {
+        "period": "2023-10",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2023-11",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2023-12",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 1
+      },
+      {
+        "period": "2024-01",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2024-02",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2024-03",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 2,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2024-04",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 2
+      },
+      {
+        "period": "2024-05",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 1,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2024-06",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2024-07",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 2,
+        "a11y_defect_2": 1,
+        "a11y_defect_3": 1
+      },
+      {
+        "period": "2024-08",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2024-09",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2024-10",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2024-11",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 1
+      },
+      {
+        "period": "2024-12",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2025-01",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 1,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2025-02",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 1,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2025-03",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2025-04",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2025-05",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 1,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 1
+      },
+      {
+        "period": "2025-06",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 2,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2025-07",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 2,
+        "a11y_defect_3": 2
+      },
+      {
+        "period": "2025-08",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 2,
+        "a11y_defect_2": 2,
+        "a11y_defect_3": 2
+      },
+      {
+        "period": "2025-09",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 3,
+        "a11y_defect_3": 2
+      },
+      {
+        "period": "2025-10",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 3,
+        "a11y_defect_2": 8,
+        "a11y_defect_3": 9
+      },
+      {
+        "period": "2025-11",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 4,
+        "a11y_defect_2": 6,
+        "a11y_defect_3": 5
+      },
+      {
+        "period": "2025-12",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 2
+      },
+      {
+        "period": "2026-01",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 1,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 2
+      },
+      {
+        "period": "2026-02",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 1,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      }
+    ]
+  },
   "summary": {
-    "open_issues": 598,
-    "closed_this_month": 0,
+    "open_issues": 638,
+    "closed_this_month": 95,
     "avg_resolution_days": 119,
-    "total_issues": 5281,
-    "last_updated": "2026-01-02T18:09:26.053Z",
+    "total_issues": 5607,
+    "last_updated": "2026-02-10T21:20:18.783Z",
     "open_issues_trend": {
-      "direction": "down",
+      "direction": "up",
       "percentage": 2,
-      "value": -15
+      "value": 13
     },
     "closed_month_trend": {
       "direction": "down",
-      "percentage": 100,
-      "value": -119
+      "percentage": 51,
+      "value": -97
     },
     "resolution_time_trend": {
-      "direction": "down",
-      "percentage": 100,
-      "value": -96
+      "direction": "up",
+      "percentage": 23,
+      "value": 22
     }
   },
-  "generated_at": "2026-01-02T18:09:26.079Z"
+  "generated_at": "2026-02-10T21:20:19.377Z"
 }
