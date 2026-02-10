@@ -56,7 +56,7 @@ anchors:
 
 * **Be thoughtful about the number of steps.** A process list should include between three and ten steps to prevent it from getting too unwieldy or confusing.
 * **Do not stack.** Only one instance of this component should appear on a page.
-* **Do not mash up this component with other components.** The functionality of this component should not be combined with the functionality for other components. For example, using an Accordion to act as the header for a step in the process would be inappropriate usage.. Content should be edited to fit the step, provide key information, and be visible by default. Use of the [additional info]({{ site.baseurl }}/components/additional-info#within-a-process-list) component to condense content within a step is permissible. 
+* **Do not mash up this component with other components.** The functionality of this component should not be combined with the functionality for other components. For example, using an Accordion to act as the header for a step in the process would be inappropriate usage.. Content should be edited to fit the step, provide key information, and be visible by default. Use of the [additional info]({{ site.baseurl }}/components/additional-info) component to condense content within a step is permissible. 
 * **Each step must have visible content.** Each step should have both a heading and content that helps describe the step in more detail. Do not collapse or hide all content within a step. An explanation of the step is minimally required.
 
 ### Placement

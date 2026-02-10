@@ -6,6 +6,7 @@ intro-text: "A link is a navigation element that can appear alone, inline (embed
 research-title: Links
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1312%3A10138&mode=design&t=nYOotVcwdpiMCL5C-1
 web-component: va-link
+uses_mermaid: true
 web: true
 mobile-app: true
 sub-pages:
@@ -137,14 +138,14 @@ anchors:
 
 ### When to consider something else
 
-* **Use buttons for actions.** Use a [Button]({{ site.baseurl }}/components/button) when you want to make a state change or submit a form. Example actions include, but are not limited to, "Add", "Close", "Cancel", or "Save". Buttons **do things**, links **go places**. Refer to guidance on [Links vs. buttons]({{ site.baseurl }}/components/link/action#links-vs-buttons)
+* **Use buttons for actions.** Use a [Button]({{ site.baseurl }}/components/button) when you want to make a state change or submit a form. Example actions include, but are not limited to, "Add", "Close", "Cancel", or "Save". Buttons **do things**, links **go places**. Refer to guidance on [Links vs. buttons]({{ site.baseurl }}/components/link/action#choose-the-right-element-buttons-vs-links)
 * **Use action links for calls-to-action.** When you want to draw attention to an important call-to-action (CTA) on the page, such as a link that launches a benefit application, use an [Action link]({{ site.baseurl }}/components/link/action). Calls-to-action are not actions themselves (see the previous point). 
 * **Table of contents.** When you want to make a long page of content with two or more H2s easier to navigate, use an [On this page link]({{ site.baseurl }} /components/on-this-page).
 * **Triggering the generation of a PDF.** When using for a PDF, use only for linking directly to a PDF, not as a trigger for a process that generates a PDF. For [generating a PDF, use a button](#links-vs-buttons).
 
 ### How this component works
 
-* **Use icons as defined.** [Icons]({{ site.baseurl }}/components/icons/) defined in the link variations above are reserved for that distinct usage. These icons should not be used for another purpose without explicit permission to do so from the Design System Council.
+* **Use icons as defined.** [Icons]({{ site.baseurl }}/components/icon) defined in the link variations above are reserved for that distinct usage. These icons should not be used for another purpose without explicit permission to do so from the Design System Council.
 
 #### Implementation details
 
