@@ -44,7 +44,7 @@ Scans `src/_patterns/**/*.md` for patterns with `code-link` defined in frontmatt
 ---
 layout: pattern
 permalink: /patterns/ask-users-for/names
-code-link: src/platform/forms-system/src/js/web-component-patterns/fullNamePattern.js
+code-link: https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/fullNamePattern.js
 ---
 ```
 
