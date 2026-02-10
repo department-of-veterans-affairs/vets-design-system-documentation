@@ -20,9 +20,9 @@ anchors:
   - anchor: Component checklist
 ---
 
-{% include banner-whats-new.html type="warning" %}
-**Component update**: The [Additional info]({{ site.baseurl }}/components/additional-info) component has been replaced by the [Details]({{ site.baseurl }}/components/details) component. This component will need to be updated to align with the new Details component.
-{% include banner-whats-new.html end="true" %}
+<div class="vads-u-background-color--warning-faded vads-u-margin-y--4 vads-u-padding--4 vads-u-border-left--7px vads-u-border-color--warning">
+  <p><strong>Component update:</strong> The <a href="{{ site.baseurl }}/components/additional-info">Additional info</a> component has been replaced by the <a href="{{ site.baseurl }}/components/details">Details</a> component. This component will need to be updated to align with the new Details component.</p>
+</div>
 
 ## Examples
 
