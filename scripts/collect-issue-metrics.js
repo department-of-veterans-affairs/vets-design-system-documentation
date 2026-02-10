@@ -515,9 +515,44 @@ function processA11yDefectMonthlyData(issues) {
     monthlyData.get(monthKey)[key]++;
   });
 
-  return Array.from(monthlyData.values()).sort((a, b) =>
-    a.period.localeCompare(b.period)
-  );
+  // Pad the series so we emit every month between the min and max months,
+  // including months with zero a11y defects.
+  const monthKeys = Array.from(monthlyData.keys()).sort();
+  if (monthKeys.length === 0) {
+    return [];
+  }
+
+  const first = monthKeys[0].split('-');
+  const last = monthKeys[monthKeys.length - 1].split('-');
+  let currentYear = parseInt(first[0], 10);
+  let currentMonth = parseInt(first[1], 10);
+  const endYear = parseInt(last[0], 10);
+  const endMonth = parseInt(last[1], 10);
+
+  const padded = [];
+  while (currentYear < endYear || (currentYear === endYear && currentMonth <= endMonth)) {
+    const monthKey = `${currentYear}-${String(currentMonth).padStart(2, '0')}`;
+
+    if (monthlyData.has(monthKey)) {
+      padded.push(monthlyData.get(monthKey));
+    } else {
+      padded.push({
+        period: monthKey,
+        a11y_defect_0: 0,
+        a11y_defect_1: 0,
+        a11y_defect_2: 0,
+        a11y_defect_3: 0
+      });
+    }
+
+    currentMonth += 1;
+    if (currentMonth > 12) {
+      currentMonth = 1;
+      currentYear += 1;
+    }
+  }
+
+  return padded;
 }
 
 /**
