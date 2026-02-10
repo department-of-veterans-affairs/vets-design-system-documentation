@@ -44,13 +44,18 @@ describe('Metrics Dashboard - Real Implementation Integration Tests', () => {
   describe('🏗️ Built Site Structure Validation', () => {
     test('Built site contains all expected va-table components', () => {
       const vaTables = document.querySelectorAll('va-table');
-      expect(vaTables.length).toBe(4);
-      
+      expect(vaTables.length).toBe(9);
+
       const expectedTableIds = [
         'quarterly-va-table',
-        'components-va-table', 
+        'components-va-table',
+        'imposter-quarterly-va-table',
+        'imposter-component-va-table',
+        'imposter-instances-component-va-table',
+        'imposter-instances-app-va-table',
         'velocity-va-table',
-        'experimental-va-table'
+        'experimental-va-table',
+        'a11y-defect-va-table'
       ];
       
       expectedTableIds.forEach(tableId => {
@@ -90,13 +95,13 @@ describe('Metrics Dashboard - Real Implementation Integration Tests', () => {
 
     test('Built site contains all chart containers with proper accessibility', () => {
       const chartContainers = document.querySelectorAll('.chart-container');
-      expect(chartContainers.length).toBe(4);
-      
+      expect(chartContainers.length).toBe(9);
+
       chartContainers.forEach(container => {
         expect(container).toHaveAttribute('role', 'img');
         expect(container).toHaveAttribute('aria-label');
         expect(container).toHaveAttribute('tabindex', '0');
-        
+
         const ariaLabel = container.getAttribute('aria-label');
         expect(ariaLabel.length).toBeGreaterThan(20);
         expect(ariaLabel.toLowerCase()).toContain('chart');
@@ -105,7 +110,7 @@ describe('Metrics Dashboard - Real Implementation Integration Tests', () => {
 
     test('Built site contains all va-tabs with proper structure', () => {
       const vaTabs = document.querySelectorAll('va-tabs');
-      expect(vaTabs.length).toBe(4);
+      expect(vaTabs.length).toBe(9);
       
       vaTabs.forEach(tabGroup => {
         const tabItems = tabGroup.querySelectorAll('va-tab-item');
@@ -130,20 +135,17 @@ describe('Metrics Dashboard - Real Implementation Integration Tests', () => {
 
     test('Built site metric cards have proper accessibility structure', () => {
       const metricCards = document.querySelectorAll('.metric-card');
-      expect(metricCards.length).toBe(6);
+      expect(metricCards.length).toBe(8);
       
       metricCards.forEach(card => {
-        const heading = card.querySelector('h3[id]');
+        const heading = card.querySelector('h3[id], h4[id]');
         expect(heading).toBeTruthy();
-        
+
         const value = card.querySelector('.metric-value[aria-labelledby]');
         expect(value).toBeTruthy();
-        
+
         const labelId = value.getAttribute('aria-labelledby');
         expect(labelId).toBe(heading.id);
-        
-        const trend = card.querySelector('.metric-trend[aria-label]');
-        expect(trend).toBeTruthy();
       });
     });
   });

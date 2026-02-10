@@ -421,7 +421,7 @@ mime_type: text/html
           <div class="metric-subtext">
             <small>Imposter issues awaiting resolution</small>
           </div>
-          <div class="data-freshness">
+          <div class="data-freshness" id="imposter-open-data-freshness">
             {% if site.data.metrics.imposter-metrics.summary.last_updated %}
               {% assign last_updated = site.data.metrics.imposter-metrics.summary.last_updated | date: "%B %d, %Y" %}
               <small>Updated {{ last_updated }}</small>
@@ -445,7 +445,7 @@ mime_type: text/html
           <div class="metric-subtext">
             <small>Total imposter usages found in vets-website</small>
           </div>
-          <div class="data-freshness">
+          <div class="data-freshness" id="imposter-instances-data-freshness">
             {% if site.data.metrics.imposter-metrics.instances.last_scan_date %}
               <small>Scanned {{ site.data.metrics.imposter-metrics.instances.last_scan_date }}</small>
             {% else %}
@@ -1830,8 +1830,12 @@ function renderA11yDefectChart(a11yData) {
     return;
   }
 
-  // Filter to last 5 years (starting Feb 2021) to reduce noise from early outliers
-  const filteredData = a11yData.data.filter(d => d.period >= '2021-02');
+  // Filter to the last 5 years (based on the latest period in the dataset) to reduce noise from early outliers
+  const latestPeriod = a11yData.data.reduce((max, d) => (d.period > max ? d.period : max), a11yData.data[0].period);
+  const [latestYear, latestMonth] = latestPeriod.split('-').map(Number);
+  const cutoffYear = latestYear - 5;
+  const cutoffPeriod = `${cutoffYear}-${String(latestMonth).padStart(2, '0')}`;
+  const filteredData = a11yData.data.filter(d => d.period >= cutoffPeriod);
   if (filteredData.length === 0) {
     document.getElementById('a11y-defect-chart').innerHTML =
       '<div class="chart-placeholder">No accessibility defect data available in the selected range</div>';
@@ -1932,7 +1936,7 @@ function renderA11yDefectChart(a11yData) {
     .style('font-size', containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 'var(--vads-font-size-body-small)' : 'var(--vads-font-size-body)');
 
   g.append('g')
-    .call(d3.axisLeft(y).ticks(Math.min(maxCount, 10)));
+    .call(d3.axisLeft(y).ticks(Math.max(1, Math.min(maxCount, 10))));
 
   // Y-axis label
   g.append('text')
@@ -1944,10 +1948,6 @@ function renderA11yDefectChart(a11yData) {
     .text('New Issues');
 
   // Quarter boundary markers — computed from date range, not dependent on data gaps
-  // Build a lookup from period string to index for interpolation
-  const periodIndex = new Map();
-  data.forEach((d, i) => periodIndex.set(d.period, i));
-
   const firstPeriod = data[0].period;
   const lastPeriod = data[data.length - 1].period;
   const startYear = parseInt(firstPeriod.split('-')[0]);

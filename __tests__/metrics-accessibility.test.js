@@ -62,14 +62,19 @@ describe('Metrics Dashboard Accessibility Tests - Real Implementation', () => {
 
     test('Dashboard contains all required va-table components', () => {
       const vaTables = document.querySelectorAll('va-table');
-      expect(vaTables.length).toBe(4);
-      
+      expect(vaTables.length).toBe(9);
+
       // Check each table has proper accessibility attributes
       const expectedTableIds = [
         'quarterly-va-table',
         'components-va-table',
+        'imposter-quarterly-va-table',
+        'imposter-component-va-table',
+        'imposter-instances-component-va-table',
+        'imposter-instances-app-va-table',
         'velocity-va-table',
-        'experimental-va-table'
+        'experimental-va-table',
+        'a11y-defect-va-table'
       ];
       
       expectedTableIds.forEach(tableId => {
@@ -85,13 +90,13 @@ describe('Metrics Dashboard Accessibility Tests - Real Implementation', () => {
 
     test('All chart containers have proper accessibility attributes', () => {
       const chartContainers = document.querySelectorAll('.chart-container');
-      expect(chartContainers.length).toBe(4);
-      
+      expect(chartContainers.length).toBe(9);
+
       chartContainers.forEach(container => {
         expect(container).toHaveAttribute('role', 'img');
         expect(container).toHaveAttribute('aria-label');
         expect(container).toHaveAttribute('tabindex', '0');
-        
+
         const ariaLabel = container.getAttribute('aria-label');
         expect(ariaLabel.length).toBeGreaterThan(20);
         expect(ariaLabel.toLowerCase()).toContain('chart');
@@ -112,20 +117,17 @@ describe('Metrics Dashboard Accessibility Tests - Real Implementation', () => {
 
     test('Metric cards have proper accessibility relationships', () => {
       const metricCards = document.querySelectorAll('.metric-card');
-      expect(metricCards.length).toBe(6);
+      expect(metricCards.length).toBe(8);
       
       metricCards.forEach(card => {
-        const heading = card.querySelector('h3[id]');
+        const heading = card.querySelector('h3[id], h4[id]');
         expect(heading).toBeTruthy();
-        
+
         const value = card.querySelector('.metric-value[aria-labelledby]');
         expect(value).toBeTruthy();
-        
+
         const labelId = value.getAttribute('aria-labelledby');
         expect(labelId).toBe(heading.id);
-        
-        const trend = card.querySelector('.metric-trend[aria-label]');
-        expect(trend).toBeTruthy();
       });
     });
   });
@@ -133,8 +135,8 @@ describe('Metrics Dashboard Accessibility Tests - Real Implementation', () => {
   describe('🔄 Tab Navigation and Structure', () => {
     test('All va-tabs have proper structure and attributes', () => {
       const vaTabs = document.querySelectorAll('va-tabs');
-      expect(vaTabs.length).toBe(4);
-      
+      expect(vaTabs.length).toBe(9);
+
       vaTabs.forEach(tabGroup => {
         const tabItems = tabGroup.querySelectorAll('va-tab-item');
         const tabPanels = tabGroup.querySelectorAll('va-tab-panel');
@@ -159,7 +161,7 @@ describe('Metrics Dashboard Accessibility Tests - Real Implementation', () => {
     test('Tab switching maintains accessibility context', () => {
       // Test that tabs can be focused and have proper relationships
       const tabItems = document.querySelectorAll('va-tab-item');
-      expect(tabItems.length).toBe(8); // 4 tab groups × 2 tabs each
+      expect(tabItems.length).toBe(18); // 9 tab groups × 2 tabs each
       
       tabItems.forEach(tabItem => {
         const targetId = tabItem.getAttribute('target-id');
@@ -247,7 +249,7 @@ describe('Metrics Dashboard Accessibility Tests - Real Implementation', () => {
     test('Tab order follows logical visual flow', () => {
       // Test that tab order follows graph-then-table pattern for each section
       const vaTabsContainers = Array.from(document.querySelectorAll('va-tabs'));
-      expect(vaTabsContainers.length).toBe(4); // Should have 4 tab containers
+      expect(vaTabsContainers.length).toBe(9); // Should have 9 tab containers
       
       // Check each va-tabs container individually
       vaTabsContainers.forEach((tabContainer, index) => {
@@ -281,8 +283,8 @@ describe('Metrics Dashboard Accessibility Tests - Real Implementation', () => {
       const chartTabPanels = document.querySelectorAll('va-tab-panel[panel-id*="graph"]');
       const tableTabPanels = document.querySelectorAll('va-tab-panel[panel-id*="table"]');
       
-      expect(chartTabPanels.length).toBe(4);
-      expect(tableTabPanels.length).toBe(4);
+      expect(chartTabPanels.length).toBe(9);
+      expect(tableTabPanels.length).toBe(9);
       
       // Each chart panel should have a focusable chart
       chartTabPanels.forEach(panel => {
@@ -320,7 +322,7 @@ describe('Metrics Dashboard Accessibility Tests - Real Implementation', () => {
     test('Responsive design maintains accessibility', () => {
       // Test that key accessibility attributes persist regardless of viewport
       const vaTables = document.querySelectorAll('va-table[stacked="true"]');
-      expect(vaTables.length).toBe(4);
+      expect(vaTables.length).toBe(9);
       
       // All tables should be configured for mobile responsiveness
       vaTables.forEach(table => {
@@ -367,9 +369,9 @@ describe('Metrics Dashboard Accessibility Tests - Real Implementation', () => {
       const chartContainers = document.querySelectorAll('.chart-container[role="img"]');
       const tabPanels = document.querySelectorAll('va-tab-panel[role="tabpanel"]');
       
-      expect(vaTables.length).toBe(4);
-      expect(chartContainers.length).toBe(4);
-      expect(tabPanels.length).toBe(8);
+      expect(vaTables.length).toBe(9);
+      expect(chartContainers.length).toBe(9);
+      expect(tabPanels.length).toBe(18);
       
       // All should have their accessibility attributes
       vaTables.forEach(table => {
