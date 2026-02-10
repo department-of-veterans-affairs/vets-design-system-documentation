@@ -4,7 +4,8 @@
  * Verifies that llms.txt is correctly generated during the Jekyll build
  * and served at the site root (/llms.txt).
  *
- * Run `bundle exec jekyll build` before executing these tests.
+ * Run `yarn build:full` (or `yarn build && bundle exec jekyll build`)
+ * before executing these tests.
  */
 
 const fs = require('fs');
@@ -22,7 +23,7 @@ describe('llms.txt build output', () => {
     } catch (error) {
       throw new Error(
         `Could not read ${LLMS_FILE}. ` +
-        `Run 'bundle exec jekyll build' before running tests. ` +
+        `Run 'yarn build:full' before running tests. ` +
         `Error: ${error.message}`
       );
     }
