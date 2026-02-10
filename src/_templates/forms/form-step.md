@@ -72,7 +72,7 @@ Use the same `H1` form title and subtitle on all pages of the form including the
 
 ### Progress bar & overall form step structure
 
-Use the [progress bar - segmented component]({{ site.baseurl }}/templates/forms/introduction#structure) to organize form steps. The progress bar will be the `H2` for the form pages.
+Use the [progress bar - segmented component]({{ site.baseurl }}/components/form/progress-bar-segmented) to organize form steps. The progress bar will be the `H2` for the form pages.
 
 The name for each step within the progress bar is the “step header.” The way you organize the form steps will also impact the “page title” (the `H3` that begins the form content section), pattern, and content. A step could, but doesn't have to, include multiple pages. Because of limitations on the progress bar UI, we recommend limiting all forms to 13 steps total.
 
