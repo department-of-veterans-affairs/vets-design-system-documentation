@@ -151,6 +151,6 @@ body:
     id: urgency-details
     attributes:
       label: "Urgency Details"
-      description: "Planning an upcoming staging review or have a specific date of release, please enter due date or other details"
+      description: "If you're planning an upcoming staging review or have a specific release date, please enter the due date or other relevant details."
     validations:
       required: false
