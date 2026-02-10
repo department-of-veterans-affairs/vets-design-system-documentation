@@ -844,7 +844,7 @@ mime_type: text/html
     <div class="metrics-section">
       <h3>Accessibility Issues by Defect Level</h3>
       <p>Tracks the number of new accessibility issues created each month, grouped by defect severity level (0 = most severe, 3 = least severe). Dashed vertical lines mark calendar year quarter boundaries.</p>
-      <p>This provides visibility into the number and severity of open accessibility issue tickets over time. It is a reporting signal, not a measure of overall system health, and should be interpreted alongside context such as testing activity and policy changes.</p>
+      <p>This provides visibility into trends in the volume and severity of newly created accessibility issue tickets over time, rather than the total number of open issues. It is a reporting signal, not a measure of overall system health, and should be interpreted alongside context such as testing activity and policy changes.</p>
       <div class="data-freshness" id="a11y-data-freshness">
         {% if site.data.metrics.issue-metrics.summary.last_updated %}
           {% assign last_updated = site.data.metrics.issue-metrics.summary.last_updated | date: "%B %d, %Y" %}
