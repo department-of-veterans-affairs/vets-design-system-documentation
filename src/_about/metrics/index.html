@@ -232,7 +232,6 @@ mime_type: text/html
           <va-table id="quarterly-va-table"
                     table-title="Issue Activity by Quarter: Number of issues opened and closed each quarter"
                     stacked="true"
-                    sortable="true"
                     table-type="borderless">
             <va-table-row slot="headers">
               <span>Quarter</span>
@@ -303,7 +302,6 @@ mime_type: text/html
           <va-table id="components-va-table"
                     table-title="Top Components by Usage: Top 25 most frequently used design system components"
                     stacked="true"
-                    sortable="true"
                     table-type="borderless"
                     right-align-cols="1">
             <va-table-row slot="headers">
@@ -487,7 +485,6 @@ mime_type: text/html
           <va-table id="imposter-quarterly-va-table"
                     table-title="Imposter Issues by Quarter: Number of issues opened and closed each quarter"
                     stacked="true"
-                    sortable="true"
                     table-type="borderless">
             <va-table-row slot="headers">
               <span>Quarter</span>
@@ -538,7 +535,6 @@ mime_type: text/html
           <va-table id="imposter-component-va-table"
                     table-title="Imposter Issues by Component: Open and closed issues for each component type"
                     stacked="true"
-                    sortable="true"
                     table-type="borderless"
                     right-align-cols="1,2,3">
             <va-table-row slot="headers">
@@ -602,7 +598,6 @@ mime_type: text/html
           <va-table id="imposter-instances-component-va-table"
                     table-title="Imposter Instances by Component: Number of usages found in vets-website for each imposter component"
                     stacked="true"
-                    sortable="true"
                     table-type="borderless"
                     right-align-cols="1,2">
             <va-table-row slot="headers">
@@ -662,7 +657,6 @@ mime_type: text/html
           <va-table id="imposter-instances-app-va-table"
                     table-title="Imposter Instances by Application: Number of imposter usages found in each vets-website application"
                     stacked="true"
-                    sortable="true"
                     table-type="borderless"
                     right-align-cols="1">
             <va-table-row slot="headers">
@@ -742,7 +736,6 @@ mime_type: text/html
           <va-table id="velocity-va-table"
                     table-title="Monthly New Issues Created: Number of new issues opened each month"
                     stacked="true"
-                    sortable="true"
                     table-type="borderless"
                     right-align-cols="1">
             <va-table-row slot="headers">
@@ -802,7 +795,6 @@ mime_type: text/html
           <va-table id="experimental-va-table"
                     table-title="Experimental Design Issues by Quarter: Issues opened, closed, and implemented each quarter"
                     stacked="true"
-                    sortable="true"
                     table-type="borderless"
                     right-align-cols="1,2,3">
             <va-table-row slot="headers">
@@ -872,7 +864,6 @@ mime_type: text/html
           <va-table id="a11y-defect-va-table"
                     table-title="Accessibility Issues by Defect Level: New issues created each month by severity"
                     stacked="true"
-                    sortable="true"
                     table-type="borderless"
                     right-align-cols="1,2,3,4">
             <va-table-row slot="headers">
@@ -1000,13 +991,34 @@ const MetricsDataManager = (function() {
   };
 })();
 
+// va-table disables stacked mode when sortable is set. Toggle sortable based on
+// viewport width so tables stack on mobile and gain sort headers on wider screens.
+// Matches the 29.99em breakpoint used by va-table's stacked CSS.
+const STACKED_BREAKPOINT = window.matchMedia('(max-width: 29.99em)');
+
+function updateTableSortable() {
+  const isMobile = STACKED_BREAKPOINT.matches;
+  document.querySelectorAll('va-table[stacked="true"]').forEach(table => {
+    if (isMobile) {
+      table.removeAttribute('sortable');
+    } else {
+      table.setAttribute('sortable', 'true');
+    }
+  });
+}
+
+STACKED_BREAKPOINT.addEventListener('change', updateTableSortable);
+
 document.addEventListener('DOMContentLoaded', function() {
-  
+
+  // Enable sortable on wider viewports (must run before charts since va-table re-renders)
+  updateTableSortable();
+
   // Wait for va-tabs to be ready before rendering charts
   setTimeout(() => {
     loadMetricsData();
   }, 100);
-  
+
   // Set up tab change listeners to re-render charts when tabs become visible
   setupTabChangeListeners();
   

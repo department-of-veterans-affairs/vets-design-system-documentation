@@ -274,7 +274,7 @@ describe('Metrics Dashboard Browser Compatibility Tests - Real Implementation', 
         // va-table should have accessibility attributes from real implementation
         expect(table).toHaveAttribute('table-title');
         expect(table).toHaveAttribute('stacked', 'true');
-        expect(table).toHaveAttribute('sortable', 'true');
+        // sortable is added dynamically via JS based on viewport width
         expect(table).toHaveAttribute('table-type', 'borderless');
       });
     });
@@ -327,7 +327,7 @@ describe('Metrics Dashboard Browser Compatibility Tests - Real Implementation', 
       vaTables.forEach(table => {
         expect(table.getAttribute('table-title')).toBeTruthy();
         expect(table.getAttribute('stacked')).toBe('true');
-        expect(table.getAttribute('sortable')).toBe('true');
+        // sortable is added dynamically via JS based on viewport width
       });
     });
 

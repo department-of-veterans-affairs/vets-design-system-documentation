@@ -64,7 +64,7 @@ describe('Metrics Dashboard - Real Implementation Integration Tests', () => {
         expect(table.tagName.toLowerCase()).toBe('va-table');
         expect(table).toHaveAttribute('table-title');
         expect(table).toHaveAttribute('stacked', 'true');
-        expect(table).toHaveAttribute('sortable', 'true');
+        // sortable is added dynamically via JS based on viewport width
       });
     });
 
@@ -156,7 +156,7 @@ describe('Metrics Dashboard - Real Implementation Integration Tests', () => {
       expect(vaTable).toBeTruthy();
       expect(vaTable).toHaveAttribute('table-title');
       expect(vaTable).toHaveAttribute('stacked', 'true');
-      expect(vaTable).toHaveAttribute('sortable', 'true');
+      // sortable is added dynamically via JS based on viewport width
       
       const tableTitle = vaTable.getAttribute('table-title');
       expect(tableTitle).toContain('Issue Activity');
@@ -198,7 +198,7 @@ describe('Metrics Dashboard - Real Implementation Integration Tests', () => {
       expect(vaTable).toBeTruthy();
       expect(vaTable).toHaveAttribute('table-title');
       expect(vaTable).toHaveAttribute('stacked', 'true');
-      expect(vaTable).toHaveAttribute('sortable', 'true');
+      // sortable is added dynamically via JS based on viewport width
       
       const tableTitle = vaTable.getAttribute('table-title');
       expect(tableTitle).toContain('Components');
@@ -237,7 +237,7 @@ describe('Metrics Dashboard - Real Implementation Integration Tests', () => {
       expect(vaTable).toBeTruthy();
       expect(vaTable).toHaveAttribute('table-title');
       expect(vaTable).toHaveAttribute('stacked', 'true');
-      expect(vaTable).toHaveAttribute('sortable', 'true');
+      // sortable is added dynamically via JS based on viewport width
       
       const tableTitle = vaTable.getAttribute('table-title');
       expect(tableTitle).toContain('Monthly');
@@ -276,7 +276,7 @@ describe('Metrics Dashboard - Real Implementation Integration Tests', () => {
       expect(vaTable).toBeTruthy();
       expect(vaTable).toHaveAttribute('table-title');
       expect(vaTable).toHaveAttribute('stacked', 'true');
-      expect(vaTable).toHaveAttribute('sortable', 'true');
+      // sortable is added dynamically via JS based on viewport width
       
       const tableTitle = vaTable.getAttribute('table-title');
       expect(tableTitle).toContain('Experimental');
@@ -364,7 +364,7 @@ describe('Metrics Dashboard - Real Implementation Integration Tests', () => {
     test('Built site keyboard navigation works correctly', () => {
       // Test that all interactive elements are keyboard accessible
       const focusableElements = document.querySelectorAll(
-        'va-tab-item, .chart-container[tabindex="0"], va-table[sortable="true"]'
+        'va-tab-item, .chart-container[tabindex="0"], va-table[stacked="true"]'
       );
       
       expect(focusableElements.length).toBeGreaterThan(0);
