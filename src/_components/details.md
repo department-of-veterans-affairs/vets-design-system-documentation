@@ -51,7 +51,7 @@ anchors:
 
 ## Behavior
 
-The Details component uses native HTML `<details>` and `<summary>` elements, which provides several advantages over JavaScript-based implementations:
+The Details component uses native HTML `<details>` and `<summary>` elements, which provide several advantages over JavaScript-based implementations:
 
 * **Searchable and discoverable content**: Browser search (Ctrl+F or Cmd+F) can find text inside collapsed Details, and search engines can index the content for better SEO.
 * **Better performance and reliability**: No JavaScript required for basic functionality, improving load times and ensuring content works even when JavaScript fails.
