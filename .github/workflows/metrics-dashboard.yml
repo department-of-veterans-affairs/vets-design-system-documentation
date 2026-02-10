@@ -4,12 +4,9 @@ on:
   schedule:
     # Run weekly on Fridays at 6 PM UTC (2 PM ET / 1 PM EDT) - after component-library PR is merged
     - cron: '0 18 * * 5'
-  pull_request:
-    paths:
-      - '.github/workflows/metrics-dashboard.yml'
-      - 'scripts/collect-issue-metrics.js'
-      - 'scripts/process-ds-components.js'
-      - 'scripts/collect-experimental-metrics.js'
+  # NOTE: pull_request trigger intentionally removed — it caused infinite loops
+  # when the workflow committed updated metrics data back to the PR branch.
+  # Use workflow_dispatch to test changes manually.
   workflow_dispatch:
     # Allow manual triggering for testing and on-demand updates
 
