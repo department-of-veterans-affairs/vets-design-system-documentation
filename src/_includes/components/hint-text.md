@@ -16,7 +16,7 @@ This should be used in the case where the needed clarification is a little longe
 
 This should be used in the case where the needed clarification is very short.
 
-### With Details component
+### With Details
 
 {% include storybook-preview.html story="uswds-va-text-input--with-details" link_text="Label with Details hint text" %}
 
