@@ -219,7 +219,7 @@ Use **warning** when something *might* go wrong or requires attention before pro
 
 #### Handling multiple alerts
 
-Displaying multiple alerts should be avoided. However, when you need to display multiple alerts on a page, follow the general alert usage guidance above (including ordering alerts by severity and avoiding stacking alerts of the same type). In addition:
+Displaying multiple alerts should be avoided. However, when you need to display multiple alerts on a page, follow the general alert usage guidance above (including ordering alerts by severity and avoiding stacking alerts). In addition:
 
 * **Create visual hierarchy.** When multiple alerts are necessary, use a Standard alert for the primary message and Slim alerts for secondary messages.
 
