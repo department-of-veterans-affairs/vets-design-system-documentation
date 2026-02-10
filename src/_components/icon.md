@@ -212,7 +212,7 @@ Some icons may have specific placement guidance defined here.
   - **Examples:** Nested menu items within "VA Benefits and Health Care" in the [Header]({{ site.baseurl }}/components/header/), [Additional Info]({{ site.baseurl }}/components/additional-info), and [Alert - Expandable]({{ site.baseurl }}/components/alert/alert-expandable/).
 
 
-{% include component-docs.html component_name=page.web-component %}
+{% include component-docs.html %}
 
 ## Accessibility considerations
 Icon usage typically falls into two categories, decorative and semantic.
