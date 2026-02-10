@@ -114,13 +114,15 @@ Cross-references applications using patterns with forms from product directory:
 
 ```javascript
 // Normalize app identifier from path.
-// Keeps up to two segments after "src/applications" to disambiguate apps.
-"src/applications/simple-forms" → "simple-forms"
+// Keeps up to two segments after "src/applications/" to disambiguate apps.
+"src/applications/simple-forms"           → "simple-forms"
 "src/applications/simple-forms/20-10206" → "simple-forms/20-10206"
-"/src/applications/caregivers" → "caregivers"
+"/src/applications/caregivers"           → "caregivers"
 
-// Match normalized app identifiers against the form's path_to_code
-if (importingApps.includes(form.path_to_code)) {
+// Both importingApps and form.path_to_code are normalized the same way,
+// stripping the "src/applications/" prefix and keeping up to 2 segments.
+const normalizedFormPath = normalize(form.path_to_code);
+if (importingApps.includes(normalizedFormPath)) {
   // Form uses this pattern
 }
 ```

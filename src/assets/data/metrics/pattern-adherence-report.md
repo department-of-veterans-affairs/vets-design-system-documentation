@@ -1,7 +1,5 @@
 # Pattern Adherence Report
 
-Generated: 2/10/2026, 5:22:15 PM
-
 ## Summary
 
 - **Total Patterns Analyzed:** 9
@@ -25,7 +23,8 @@ Generated: 2/10/2026, 5:22:15 PM
 
 ### Phone numbers
 
-**Code:** [`src/platform/forms-system/src/js/web-component-patterns/phonePatterns.jsx`](/patterns/ask-users-for/phone-numbers)
+**Code:** [`src/platform/forms-system/src/js/web-component-patterns/phonePatterns.jsx`](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/phonePatterns.jsx)
+**Docs:** [Phone numbers](/patterns/ask-users-for/phone-numbers)
 
 **Usage:** 17 forms (31%)
 
@@ -51,7 +50,8 @@ Generated: 2/10/2026, 5:22:15 PM
 
 ### Addresses
 
-**Code:** [`src/platform/forms-system/src/js/web-component-patterns/addressPattern.jsx`](/patterns/ask-users-for/addresses)
+**Code:** [`src/platform/forms-system/src/js/web-component-patterns/addressPattern.jsx`](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/addressPattern.jsx)
+**Docs:** [Addresses](/patterns/ask-users-for/addresses)
 
 **Usage:** 15 forms (27%)
 
@@ -75,7 +75,8 @@ Generated: 2/10/2026, 5:22:15 PM
 
 ### Dates
 
-**Code:** [`src/platform/forms-system/src/js/web-component-patterns/datePatterns.jsx`](/patterns/ask-users-for/dates)
+**Code:** [`src/platform/forms-system/src/js/web-component-patterns/datePatterns.jsx`](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/datePatterns.jsx)
+**Docs:** [Dates](/patterns/ask-users-for/dates)
 
 **Usage:** 14 forms (25%)
 
@@ -98,7 +99,8 @@ Generated: 2/10/2026, 5:22:15 PM
 
 ### Social security or VA file number
 
-**Code:** [`src/platform/forms-system/src/js/web-component-patterns/ssnPattern.jsx`](/patterns/ask-users-for/social-security-number)
+**Code:** [`src/platform/forms-system/src/js/web-component-patterns/ssnPattern.jsx`](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/ssnPattern.jsx)
+**Docs:** [Social security or VA file number](/patterns/ask-users-for/social-security-number)
 
 **Usage:** 14 forms (25%)
 
@@ -121,7 +123,8 @@ Generated: 2/10/2026, 5:22:15 PM
 
 ### Email address
 
-**Code:** [`src/platform/forms-system/src/js/web-component-patterns/emailPattern.jsx`](/patterns/ask-users-for/email-address)
+**Code:** [`src/platform/forms-system/src/js/web-component-patterns/emailPattern.jsx`](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/emailPattern.jsx)
+**Docs:** [Email address](/patterns/ask-users-for/email-address)
 
 **Usage:** 13 forms (24%)
 
@@ -143,7 +146,8 @@ Generated: 2/10/2026, 5:22:15 PM
 
 ### Signature
 
-**Code:** [`src/platform/forms-system/src/js/components/FormSignature.jsx`](/patterns/ask-users-for/signature)
+**Code:** [`src/platform/forms-system/src/js/components/FormSignature.jsx`](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/components/FormSignature.jsx)
+**Docs:** [Signature](/patterns/ask-users-for/signature)
 
 **Usage:** 12 forms (22%)
 
@@ -164,7 +168,8 @@ Generated: 2/10/2026, 5:22:15 PM
 
 ### Names
 
-**Code:** [`src/platform/forms-system/src/js/web-component-patterns/fullNamePattern.js`](/patterns/ask-users-for/names)
+**Code:** [`src/platform/forms-system/src/js/web-component-patterns/fullNamePattern.js`](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/fullNamePattern.js)
+**Docs:** [Names](/patterns/ask-users-for/names)
 
 **Usage:** 9 forms (16%)
 
@@ -182,7 +187,8 @@ Generated: 2/10/2026, 5:22:15 PM
 
 ### Relationship to Veteran
 
-**Code:** [`src/platform/forms-system/src/js/web-component-patterns/relationshipToVeteranPattern.jsx`](/patterns/ask-users-for/relationship)
+**Code:** [`src/platform/forms-system/src/js/web-component-patterns/relationshipToVeteranPattern.jsx`](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/relationshipToVeteranPattern.jsx)
+**Docs:** [Relationship to Veteran](/patterns/ask-users-for/relationship)
 
 **Usage:** 3 forms (5%)
 
@@ -194,7 +200,8 @@ Generated: 2/10/2026, 5:22:15 PM
 
 ### Keep a record of submitted information
 
-**Code:** [`src/platform/forms-system/src/js/components/ConfirmationView/README.md`](/patterns/help-users-to/keep-a-record-of-submitted-information)
+**Code:** [`src/platform/forms-system/src/js/components/ConfirmationView/README.md`](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/components/ConfirmationView/README.md)
+**Docs:** [Keep a record of submitted information](/patterns/help-users-to/keep-a-record-of-submitted-information)
 
 **Usage:** 0 forms (0%)
 
