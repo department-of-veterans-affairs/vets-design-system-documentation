@@ -136,6 +136,5 @@ Follow this pattern whenever you need to ask for a Veteran’s prisoner of war (
 
 ### Components used in this pattern
 
-- [Branch of service](https://staging.va.gov/mock-simple-forms-patterns/service-branch)
 - [Memorable date]({{site.baseurl}}/components/form/memorable-date)
 - [Text input]({{site.baseurl}}/components/form/text-input) 
