@@ -147,8 +147,8 @@
     },
     {
       "period": "2026-Q1",
-      "issues_opened": 272,
-      "issues_closed": 275
+      "issues_opened": 293,
+      "issues_closed": 287
     }
   ],
   "velocity": [
@@ -594,8 +594,8 @@
     },
     {
       "period": "2026-02",
-      "issues_opened": 67,
-      "issues_closed": 83
+      "issues_opened": 88,
+      "issues_closed": 95
     }
   ],
   "experimental_quarterly": [
@@ -716,8 +716,8 @@
     {
       "period": "2026-Q1",
       "issues_opened": 1,
-      "issues_closed": 2,
-      "issues_implemented": 0
+      "issues_closed": 3,
+      "issues_implemented": 2
     }
   ],
   "a11y_monthly": {
@@ -748,11 +748,25 @@
         "a11y_defect_3": 17
       },
       {
+        "period": "2020-08",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
         "period": "2020-09",
         "a11y_defect_0": 0,
         "a11y_defect_1": 0,
         "a11y_defect_2": 0,
         "a11y_defect_3": 2
+      },
+      {
+        "period": "2020-10",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
       },
       {
         "period": "2020-11",
@@ -776,10 +790,38 @@
         "a11y_defect_3": 0
       },
       {
+        "period": "2021-02",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
         "period": "2021-03",
         "a11y_defect_0": 0,
         "a11y_defect_1": 0,
         "a11y_defect_2": 1,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2021-04",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2021-05",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2021-06",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
         "a11y_defect_3": 0
       },
       {
@@ -790,6 +832,48 @@
         "a11y_defect_3": 1
       },
       {
+        "period": "2021-08",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2021-09",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2021-10",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2021-11",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2021-12",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2022-01",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
         "period": "2022-02",
         "a11y_defect_0": 0,
         "a11y_defect_1": 0,
@@ -797,9 +881,79 @@
         "a11y_defect_3": 0
       },
       {
+        "period": "2022-03",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2022-04",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
         "period": "2022-05",
         "a11y_defect_0": 0,
         "a11y_defect_1": 2,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2022-06",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2022-07",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2022-08",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2022-09",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2022-10",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2022-11",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2022-12",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2023-01",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
         "a11y_defect_2": 0,
         "a11y_defect_3": 0
       },
@@ -815,6 +969,20 @@
         "a11y_defect_0": 0,
         "a11y_defect_1": 0,
         "a11y_defect_2": 1,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2023-04",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2023-05",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
         "a11y_defect_3": 0
       },
       {
@@ -846,11 +1014,39 @@
         "a11y_defect_3": 2
       },
       {
+        "period": "2023-10",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2023-11",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
         "period": "2023-12",
         "a11y_defect_0": 0,
         "a11y_defect_1": 0,
         "a11y_defect_2": 0,
         "a11y_defect_3": 1
+      },
+      {
+        "period": "2024-01",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2024-02",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
       },
       {
         "period": "2024-03",
@@ -874,6 +1070,13 @@
         "a11y_defect_3": 0
       },
       {
+        "period": "2024-06",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
         "period": "2024-07",
         "a11y_defect_0": 0,
         "a11y_defect_1": 2,
@@ -881,11 +1084,39 @@
         "a11y_defect_3": 1
       },
       {
+        "period": "2024-08",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2024-09",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2024-10",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
         "period": "2024-11",
         "a11y_defect_0": 0,
         "a11y_defect_1": 0,
         "a11y_defect_2": 0,
         "a11y_defect_3": 1
+      },
+      {
+        "period": "2024-12",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
       },
       {
         "period": "2025-01",
@@ -899,6 +1130,20 @@
         "a11y_defect_0": 0,
         "a11y_defect_1": 0,
         "a11y_defect_2": 1,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2025-03",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
+        "a11y_defect_3": 0
+      },
+      {
+        "period": "2025-04",
+        "a11y_defect_0": 0,
+        "a11y_defect_1": 0,
+        "a11y_defect_2": 0,
         "a11y_defect_3": 0
       },
       {
@@ -974,11 +1219,11 @@
     ]
   },
   "summary": {
-    "open_issues": 629,
-    "closed_this_month": 83,
+    "open_issues": 638,
+    "closed_this_month": 95,
     "avg_resolution_days": 119,
-    "total_issues": 5586,
-    "last_updated": "2026-02-09T20:29:38.166Z",
+    "total_issues": 5607,
+    "last_updated": "2026-02-10T21:20:18.783Z",
     "open_issues_trend": {
       "direction": "up",
       "percentage": 2,
@@ -986,14 +1231,14 @@
     },
     "closed_month_trend": {
       "direction": "down",
-      "percentage": 57,
-      "value": -109
+      "percentage": 51,
+      "value": -97
     },
     "resolution_time_trend": {
       "direction": "up",
-      "percentage": 16,
-      "value": 15
+      "percentage": 23,
+      "value": 22
     }
   },
-  "generated_at": "2026-02-09T20:29:38.689Z"
+  "generated_at": "2026-02-10T21:20:19.377Z"
 }

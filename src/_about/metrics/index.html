@@ -1869,6 +1869,7 @@ function renderA11yDefectChart(a11yData) {
   const labels = a11yData.labels || [];
   const container = document.getElementById('a11y-defect-chart');
   const containerWidth = container.clientWidth;
+  if (containerWidth === 0) return; // Container not visible yet
 
   // Extra bottom margin for stacked single-column legend
   const legendRowHeight = 18;
@@ -2030,47 +2031,7 @@ function renderA11yDefectChart(a11yData) {
       .attr('stroke-width', 2.5)
       .attr('d', line);
 
-    // Data point circles with tooltips
-    const showPointTooltip = function(event, d) {
-      // Highlight this series, dim others
-      g.selectAll('.a11y-series').style('opacity', 0.15);
-      g.select(`.a11y-series-${level.key}`).style('opacity', 1);
-
-      const tooltip = d3.select('body').append('div')
-        .attr('class', 'chart-tooltip')
-        .attr('role', 'tooltip')
-        .style('opacity', 0)
-        .style('position', 'absolute')
-        .style('background', 'rgba(0, 0, 0, 0.8)')
-        .style('color', 'white')
-        .style('padding', '8px 12px')
-        .style('border-radius', '4px')
-        .style('font-size', '12px')
-        .style('pointer-events', 'none')
-        .style('z-index', '1000');
-
-      tooltip.transition()
-        .duration(200)
-        .style('opacity', 1);
-
-      const rect = this.getBoundingClientRect();
-      const xPos = event ? event.pageX + 10 : rect.left + window.scrollX + 10;
-      const yPos = event ? event.pageY - 28 : rect.top + window.scrollY - 28;
-
-      tooltip.html(`${formatPeriod(d.period)}<br>${level.label}: ${d.value}`)
-        .style('left', xPos + 'px')
-        .style('top', yPos + 'px');
-
-      d3.select(this).attr('r', 6);
-    };
-
-    const hidePointTooltip = function() {
-      // Restore all series
-      g.selectAll('.a11y-series').style('opacity', 1);
-      d3.selectAll('.chart-tooltip').remove();
-      d3.select(this).attr('r', 4);
-    };
-
+    // Data point circles with hover tooltips (keyboard users access data via the table tab)
     seriesGroup.selectAll(`circle`)
       .data(lineData)
       .enter().append('circle')
@@ -2080,14 +2041,40 @@ function renderA11yDefectChart(a11yData) {
       .attr('fill', level.color)
       .attr('stroke', '#fff')
       .attr('stroke-width', 1.5)
-      .attr('tabindex', '0')
       .attr('role', 'graphics-symbol')
       .attr('aria-label', d => `${formatPeriod(d.period)}, ${level.label}: ${d.value}`)
       .style('cursor', 'pointer')
-      .on('mouseover', showPointTooltip)
-      .on('mouseout', hidePointTooltip)
-      .on('focus', showPointTooltip)
-      .on('blur', hidePointTooltip);
+      .on('mouseover', function(event, d) {
+        g.selectAll('.a11y-series').style('opacity', 0.15);
+        g.select(`.a11y-series-${level.key}`).style('opacity', 1);
+
+        const tooltip = d3.select('body').append('div')
+          .attr('class', 'chart-tooltip')
+          .style('opacity', 0)
+          .style('position', 'absolute')
+          .style('background', 'rgba(0, 0, 0, 0.8)')
+          .style('color', 'white')
+          .style('padding', '8px 12px')
+          .style('border-radius', '4px')
+          .style('font-size', '12px')
+          .style('pointer-events', 'none')
+          .style('z-index', '1000');
+
+        tooltip.transition()
+          .duration(200)
+          .style('opacity', 1);
+
+        tooltip.html(`${formatPeriod(d.period)}<br>${level.label}: ${d.value}`)
+          .style('left', (event.pageX + 10) + 'px')
+          .style('top', (event.pageY - 28) + 'px');
+
+        d3.select(this).attr('r', 6);
+      })
+      .on('mouseout', function() {
+        g.selectAll('.a11y-series').style('opacity', 1);
+        d3.selectAll('.chart-tooltip').remove();
+        d3.select(this).attr('r', 4);
+      });
   });
 
   // Legend — stacked in single column below chart, full label text
@@ -2111,8 +2098,8 @@ function renderA11yDefectChart(a11yData) {
     const item = legend.append('g')
       .attr('transform', `translate(0, ${yOffset})`)
       .attr('tabindex', '0')
-      .attr('role', 'button')
-      .attr('aria-label', `Highlight ${level.label} series`)
+      .attr('role', 'img')
+      .attr('aria-label', `${level.label}${description ? ': ' + description : ''}`)
       .style('cursor', 'pointer')
       .on('mouseover', highlightSeries)
       .on('mouseout', restoreSeries)
