@@ -1309,7 +1309,7 @@ git commit -m "docs: add pattern adherence script documentation
 
 Run:
 ```bash
-cd /Users/OITCODingeM/repos/vets-design-system-documentation
+cd <repo-root>
 node scripts/collect-pattern-adherence.js
 ```
 
