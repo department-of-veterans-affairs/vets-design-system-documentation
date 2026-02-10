@@ -26,7 +26,7 @@ anchors:
 
 ### Design principles
 
-* **Take a trauma-informed approach.** Although commonly asked, questions about marital status and previous marriages can bring up complex feelings and memories in respondents. Explain why we ask the question with a [Details](https://design.va.gov/components/details) component. 
+* **Take a trauma-informed approach.** Although commonly asked, questions about marital status and previous marriages can bring up complex feelings and memories in respondents. Explain why we ask the question with a [Details]({{ site.baseurl }}/components/details) component. 
 
 * **Only ask for what you really need.** While this pattern includes multiple follow-up questions, only collect the specific data that your form requires. 
 
@@ -52,7 +52,7 @@ anchors:
 
 {% include component-example.html alt="An annotated display of the simplified version of the Marital Status question with reponses available with radio buttons and an Details component that provides more information on why we ask this information." file="/images/patterns/ask-users-for/marital-information/simple-marital-status.png" caption="Use the simplified Marital Status question in forms that don't need to collect detailed information on the user's marital status. Use when your form only needs a yes/no answer to the question." width="60%" %}
 
-* **Include an explanation for why we ask this question.** Place this explanation in a [Details](https://design.va.gov/components/details) component for questions that may feel particularly invasive or difficult for users to answer. 
+* **Include an explanation for why we ask this question.** Place this explanation in a [Details]({{ site.baseurl }}/components/details) component for questions that may feel particularly invasive or difficult for users to answer. 
 
 Only use the following questions in this pattern if your form needs more information. 
 
@@ -112,7 +112,7 @@ This optional section features the [Multiple Responses](https://design.va.gov/pa
 * [Radio Button](https://design.va.gov/components/form/radio-button)
 * [Select](https://design.va.gov/components/form/select)
 * [Multiple Responses](https://design.va.gov/patterns/ask-users-for/multiple-responses)
-* [Details](https://design.va.gov/components/details)
+* [Details]({{ site.baseurl }}/components/details)
 
 ### Additional considerations
 

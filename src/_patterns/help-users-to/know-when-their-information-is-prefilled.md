@@ -76,7 +76,7 @@ This pattern communicates information that can be edited by:
 - [Alert](/components/alert/) - To inform users about prefilled information and where changes will be saved
 - [Card](/components/card/) - To display prefilled information in organized sections
 - [Radio button](/components/form/radio-button) - To give users choice about where to save their updated information
-- [Details](/components/details) - To provide expandable details about updating information
+- [Details]({{ site.baseurl }}/components/details) - To provide expandable details about updating information
 
 
 ## Examples
