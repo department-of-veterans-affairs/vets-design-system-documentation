@@ -4,7 +4,7 @@ title: Alert - Expandable
 permalink: /components/alert/alert-expandable/
 has-parent: /components/alert/
 github-title: va-alert-expandable
-intro-text: A minimized alert style that can be used to alert a user to relevant information on the page that is not prompted by their own action. This component combines the Details component with the Background-Color only Alert variation color schemes.
+intro-text: A minimized alert style that can be used to alert a user to relevant information on the page that is not prompted by their own action. This component combines the Additional Info component with the Background-Color only Alert variation color schemes.
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=35%3A146&mode=design&t=J32RmU6Fjbjuh9bD-1
 contributors: Leyda Hughes (VSA Facilities Team)
 web-component: va-alert-expandable
