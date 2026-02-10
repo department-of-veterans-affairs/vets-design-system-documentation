@@ -208,8 +208,8 @@ Some icons may have specific placement guidance defined here.
 
 #### Chevrons
 
-- **Right-facing chevrons are reserved for links, but may be used on buttons that open additional content.** In the latter case, chevrons of all directions can be used to indicate the direction in which additional content opens, like in drawers, flyout menus, and dropdowns.
-  * **Examples:** Nested menu items within "VA Benefits and Health Care" in the [Header]({{ site.baseurl }}/components/header/), [Additional Info]({{ site.baseurl }}/components/additional-info), and [Alert - Expandable]({{ site.baseurl }}/components/alert/alert-expandable/).
+- **Right-facing chevrons are reserved for links, but may be used on buttons that expand and collapse additional content.** In the latter case, the direction of the chevron should indicate the direction in which additional content expands and collapses, like in drawers, flyout menus, and dropdowns.
+  - **Examples:** Nested menu items within "VA Benefits and Health Care" in the [Header]({{ site.baseurl }}/components/header/), [Additional Info]({{ site.baseurl }}/components/additional-info), and [Alert - Expandable]({{ site.baseurl }}/components/alert/alert-expandable/).
 
 ## Accessibility considerations
 Icon usage typically falls into two categories, decorative and semantic.
