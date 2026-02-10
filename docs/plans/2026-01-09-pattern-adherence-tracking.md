@@ -1,6 +1,6 @@
 # Pattern Adherence Tracking Implementation Plan
 
-> **For Claude:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task.
+> This plan is intended to be executed task-by-task in the order described.
 
 **Goal:** Create automated tracking system to monitor which VA.gov forms use which codified patterns.
 

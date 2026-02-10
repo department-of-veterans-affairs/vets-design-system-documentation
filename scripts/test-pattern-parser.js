@@ -52,4 +52,7 @@ async function runAllTests() {
   await testProductDirectory();
 }
 
-runAllTests().catch(console.error);
+runAllTests().catch(err => {
+  console.error(err);
+  process.exitCode = 1;
+});

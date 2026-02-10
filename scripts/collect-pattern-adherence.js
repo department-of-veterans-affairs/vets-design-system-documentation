@@ -35,7 +35,7 @@ function safeExecFileSync(file, args = [], options) {
     throw new TypeError('execFileSync "args" argument must be an array of strings');
   }
 
-  const unsafePattern = /[;&|`$<>]/;
+  const unsafePattern = /[;&`$<>]/;
   for (const arg of args) {
     if (typeof arg !== 'string') {
       throw new TypeError('execFileSync arguments must be strings');
@@ -469,7 +469,7 @@ async function findImporters(patternCodeFile) {
         'api',
         `repos/${VETS_WEBSITE_REPO}/git/trees/${repoInfo}?recursive=1`,
         '--jq',
-        '.tree[] | select(.path | startswith("src/applications/")) | select(.path | endswith(".js") or endswith(".jsx")) | select(.path | contains("/pages/") or contains("/config/")) | .path'
+        '.tree[] | select(.path | startswith("src/applications/")) | select(.path | endswith(".js") or endswith(".jsx")) | select(.path | contains("/pages/") or contains("/config/")) | .path | ltrimstr("src/applications/")'
       ], {
         encoding: 'utf8',
         maxBuffer: 20 * 1024 * 1024,
