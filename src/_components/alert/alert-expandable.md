@@ -20,9 +20,9 @@ anchors:
   - anchor: Component checklist
 ---
 
-<div class="vads-u-background-color--warning-faded vads-u-margin-y--4 vads-u-padding--4 vads-u-border-left--7px vads-u-border-color--warning">
+<va-alert status="warning">
   <p><strong>Component update:</strong> The <a href="{{ site.baseurl }}/components/additional-info">Additional info</a> component has been replaced by the <a href="{{ site.baseurl }}/components/details">Details</a> component. This component will need to be updated to align with the new Details component.</p>
-</div>
+</va-alert>
 
 ## Examples
 
