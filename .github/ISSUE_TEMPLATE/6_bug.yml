@@ -16,7 +16,7 @@ body:
       label: "Verify the following"
       options:
         - label: "I’ve searched for any related issues and avoided creating a duplicate issue."
-        - label: 'To my knowledge this is not an accessibility issue. If this is an accessibility issue, use this template: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new/choose'
+        - label: 'To my knowledge this is not an accessibility issue. If this is an accessibility issue, use the [5. Accessibility template](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new/choose)
     validations:
       required: true
 
@@ -89,6 +89,14 @@ body:
       required: false
 
   - type: input
+    id: component-pattern
+    attributes:
+      label: "Component or Pattern name"
+      placeholder: "va-text-input or prefill-pattern"
+    validations:
+      required: false
+
+  - type: input
     id: device
     attributes:
       label: "Device"
@@ -142,6 +150,7 @@ body:
   - type: textarea
     id: urgency-details
     attributes:
-      label: "Details"
+      label: "Urgency Details"
+      description: "Planning an upcoming staging review or have a specific date of release, please enter due date or other details"
     validations:
       required: false
