@@ -21,7 +21,7 @@ anchors:
 ---
 
 <va-alert status="warning">
-  <p><strong>Component update:</strong> The <a href="{{ site.baseurl }}/components/additional-info">Additional info</a> component has been replaced by the <a href="{{ site.baseurl }}/components/details">Details</a> component. This component will need to be updated to align with the new Details component.</p>
+  <p><strong>Component update:</strong> The <a href="{{ site.baseurl }}/deprecated/additional-info">Additional info</a> component has been replaced by the <a href="{{ site.baseurl }}/components/details">Details</a> component. This component will need to be updated to align with the new Details component.</p>
 </va-alert>
 
 ## Examples
