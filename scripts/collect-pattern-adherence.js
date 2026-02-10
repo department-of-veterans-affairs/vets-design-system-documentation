@@ -574,7 +574,6 @@ async function findImporters(patternCodeFile) {
 /**
  * Build mapping of patterns to forms that use them
  * @returns {Promise<Object>} Object containing:
- *   - generated_at: ISO timestamp
  *   - total_patterns: Number of codified patterns analyzed
  *   - total_forms: Total number of forms in product directory
  *   - patterns: Array of pattern adherence data
@@ -639,7 +638,6 @@ async function buildPatternAdherence() {
   const adherenceData = await Promise.all(adherenceDataPromises);
 
   return {
-    generated_at: new Date().toISOString(),
     total_patterns: codifiedPatterns.length,
     total_forms: forms.length,
     patterns: adherenceData,
@@ -676,8 +674,6 @@ function generateMarkdownReport(data) {
 
   lines.push('# Pattern Adherence Report');
   lines.push('');
-  lines.push(`Generated: ${new Date(data.generated_at).toLocaleString()}`);
-  lines.push('');
 
   // Summary section
   lines.push('## Summary');
@@ -707,7 +703,13 @@ function generateMarkdownReport(data) {
   sortedPatterns.forEach(pattern => {
     lines.push(`### ${pattern.pattern_name}`);
     lines.push('');
-    lines.push(`**Code:** [\`${pattern.code_file}\`](${pattern.pattern_permalink || '#'})`);
+    const codeUrl = pattern.code_file
+      ? `https://github.com/department-of-veterans-affairs/vets-website/blob/main/${pattern.code_file}`
+      : '#';
+    lines.push(`**Code:** [\`${pattern.code_file}\`](${codeUrl})`);
+    if (pattern.pattern_permalink) {
+      lines.push(`**Docs:** [${pattern.pattern_name}](${pattern.pattern_permalink})`);
+    }
     lines.push('');
     lines.push(`**Usage:** ${pattern.usage_count} forms (${pattern.compliance_percentage}%)`);
     lines.push('');

@@ -1,5 +1,12 @@
 #!/usr/bin/env node
 
+/**
+ * Integration tests for collect-pattern-adherence.js
+ *
+ * Requires: gh CLI installed and authenticated (for product directory tests).
+ * Run: node scripts/integration-test-pattern-parser.js
+ */
+
 const assert = require('assert');
 
 // Test data
@@ -45,7 +52,7 @@ async function testProductDirectory() {
   console.log(`✅ Product directory test passed - found ${forms.length} forms`);
 }
 
-// Update main test runner
+// Integration test runner
 async function runAllTests() {
   await testPatternParser();
   await testPatternDiscovery();

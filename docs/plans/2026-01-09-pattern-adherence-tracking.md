@@ -4,7 +4,7 @@
 
 **Goal:** Create automated tracking system to monitor which VA.gov forms use which codified patterns.
 
-**Architecture:** Weekly GitHub Actions workflow that fetches product directory, parses pattern code-links from frontmatter, analyzes vets-website imports, and generates compliance reports (HTML + markdown).
+**Architecture:** Weekly GitHub Actions workflow that fetches product directory, parses pattern code-links from frontmatter, analyzes vets-website imports, and generates compliance reports (JSON + markdown).
 
 **Tech Stack:** Node.js (built-in modules only), GitHub CLI, GitHub Actions, Jekyll frontmatter parsing
 
@@ -21,7 +21,7 @@
 Create test file to verify pattern parsing:
 
 ```javascript
-// scripts/test-pattern-parser.js
+// scripts/integration-test-pattern-parser.js
 #!/usr/bin/env node
 
 const assert = require('assert');
@@ -46,7 +46,7 @@ testPatternParser().catch(console.error);
 
 **Step 2: Run test to verify it fails**
 
-Run: `node scripts/test-pattern-parser.js`
+Run: `node scripts/integration-test-pattern-parser.js`
 Expected: Error - "Cannot find module './collect-pattern-adherence.js'"
 
 **Step 3: Create pattern parser implementation**
@@ -135,13 +135,13 @@ module.exports = { parsePatternMetadata, parseFrontmatter };
 
 **Step 4: Run test to verify it passes**
 
-Run: `node scripts/test-pattern-parser.js`
+Run: `node scripts/integration-test-pattern-parser.js`
 Expected: "✅ Pattern parser test passed"
 
 **Step 5: Commit**
 
 ```bash
-git add scripts/collect-pattern-adherence.js scripts/test-pattern-parser.js
+git add scripts/collect-pattern-adherence.js scripts/integration-test-pattern-parser.js
 git commit -m "feat: add pattern metadata parser
 
 - Parse frontmatter from pattern markdown files
@@ -155,7 +155,7 @@ git commit -m "feat: add pattern metadata parser
 
 **Files:**
 - Modify: `scripts/collect-pattern-adherence.js`
-- Test: `scripts/test-pattern-parser.js`
+- Test: `scripts/integration-test-pattern-parser.js`
 
 **Step 1: Write test for pattern discovery**
 
@@ -185,7 +185,7 @@ runAllTests().catch(console.error);
 
 **Step 2: Run test to verify it fails**
 
-Run: `node scripts/test-pattern-parser.js`
+Run: `node scripts/integration-test-pattern-parser.js`
 Expected: Error - "getAllPatterns is not a function"
 
 **Step 3: Implement pattern discovery**
@@ -249,13 +249,13 @@ module.exports = { parsePatternMetadata, parseFrontmatter, getAllPatterns, findP
 
 **Step 4: Run test to verify it passes**
 
-Run: `node scripts/test-pattern-parser.js`
+Run: `node scripts/integration-test-pattern-parser.js`
 Expected: "✅ Pattern discovery test passed - found N patterns"
 
 **Step 5: Commit**
 
 ```bash
-git add scripts/collect-pattern-adherence.js scripts/test-pattern-parser.js
+git add scripts/collect-pattern-adherence.js scripts/integration-test-pattern-parser.js
 git commit -m "feat: add pattern file discovery
 
 - Recursively scan pattern directories
@@ -269,7 +269,7 @@ git commit -m "feat: add pattern file discovery
 
 **Files:**
 - Modify: `scripts/collect-pattern-adherence.js`
-- Modify: `scripts/test-pattern-parser.js`
+- Modify: `scripts/integration-test-pattern-parser.js`
 
 **Step 1: Write test for product directory fetching**
 
@@ -298,7 +298,7 @@ async function runAllTests() {
 
 **Step 2: Run test to verify it fails**
 
-Run: `node scripts/test-pattern-parser.js`
+Run: `node scripts/integration-test-pattern-parser.js`
 Expected: Error - "getFormProducts is not a function"
 
 **Step 3: Implement product directory fetching**
@@ -362,13 +362,13 @@ module.exports = {
 
 **Step 4: Run test to verify it passes**
 
-Run: `node scripts/test-pattern-parser.js`
+Run: `node scripts/integration-test-pattern-parser.js`
 Expected: "✅ Product directory test passed - found N forms"
 
 **Step 5: Commit**
 
 ```bash
-git add scripts/collect-pattern-adherence.js scripts/test-pattern-parser.js
+git add scripts/collect-pattern-adherence.js scripts/integration-test-pattern-parser.js
 git commit -m "feat: add product directory integration
 
 - Fetch product-directory.json via gh CLI
@@ -1268,7 +1268,7 @@ The workflow `.github/workflows/pattern-adherence.yml` runs this script weekly (
 
 ```bash
 # Test pattern parser
-node scripts/test-pattern-parser.js
+node scripts/integration-test-pattern-parser.js
 
 # Run full analysis
 node scripts/collect-pattern-adherence.js

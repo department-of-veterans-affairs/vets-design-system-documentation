@@ -4,9 +4,16 @@ on:
   schedule:
     # Run weekly on Fridays at 6 PM UTC (2 PM ET / 1 PM EDT) - after component-library PR is merged
     - cron: '0 18 * * 5'
-  # NOTE: pull_request trigger intentionally removed — it caused infinite loops
-  # when the workflow committed updated metrics data back to the PR branch.
-  # Use workflow_dispatch to test changes manually.
+  # NOTE: pull_request trigger intentionally removed for most branches — it
+  # caused infinite loops when the workflow committed updated metrics data back
+  # to the PR branch, re-triggering itself. The branches-ignore guard below
+  # prevents runs on automated metrics-update branches. Use workflow_dispatch
+  # for manual testing on other branches.
+  pull_request:
+    branches-ignore:
+      - 'metrics-update-**'
+      - '*metrics-update*'
+      - 'pattern-adherence-update-**'
   workflow_dispatch:
     # Allow manual triggering for testing and on-demand updates
 
