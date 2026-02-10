@@ -34,18 +34,18 @@ There are two versions of the form page template:
 
 
 The authenticated form page template consists of:
-1. [Minimal header](https://design.va.gov/components/header/header-minimal) with form title & subtitle
-2. [Back link](https://design.va.gov/components/link/#when-to-use-a-back-link)
-3. [Progress bar - segmented with step label](https://design.va.gov/components/form/progress-bar-segmented)
+1. [Minimal header]({{ site.baseurl }}/components/header/header-minimal) with form title & subtitle
+2. [Back link]({{ site.baseurl }}/components/link/#when-to-use-a-back-link)
+3. [Progress bar - segmented with step label]({{ site.baseurl }}/components/form/progress-bar-segmented)
 4. Autosave message
 5. Page header
 6. Form question content (may include page header)
 7. Finish later link
 8. Button (Continue)
-9.  [Autosave alert](https://design.va.gov/components/form/autosave)
-10. [Need help? component](https://design.va.gov/components/form/need-help)
-11. [Feedback pattern](https://design.va.gov/patterns/ask-users-for/feedback)
-12. [Minimal footer](https://design.va.gov/components/footer/footer-minimal)
+9.  [Autosave alert]({{ site.baseurl }}/components/form/autosave)
+10. [Need help? component]({{ site.baseurl }}/components/form/need-help)
+11. [Feedback pattern]({{ site.baseurl }}/patterns/ask-users-for/feedback)
+12. [Minimal footer]({{ site.baseurl }}/components/footer/footer-minimal)
 
 #### Example - Unauthenticated
 
@@ -53,15 +53,15 @@ The authenticated form page template consists of:
 
 
 The unauthenticated question page has these items:
-1. [Minimal header](https://design.va.gov/components/header/header-minimal) with form title & subtitle
-2. [Back link](https://design.va.gov/components/link/#when-to-use-a-back-link)
-3. [Progress bar - segmented with step label](https://design.va.gov/components/form/progress-bar-segmented)
+1. [Minimal header]({{ site.baseurl }}/components/header/header-minimal) with form title & subtitle
+2. [Back link]({{ site.baseurl }}/components/link/#when-to-use-a-back-link)
+3. [Progress bar - segmented with step label]({{ site.baseurl }}/components/form/progress-bar-segmented)
 4. Page header
 5. Form question content (may include page header)
 6. Button (Continue)
-7. [Need help? component](https://design.va.gov/components/form/need-help)
-8. [Feedback pattern](https://design.va.gov/patterns/ask-users-for/feedback)
-9. [Minimal footer](https://design.va.gov/components/footer/footer-minimal)
+7. [Need help? component]({{ site.baseurl }}/components/form/need-help)
+8. [Feedback pattern]({{ site.baseurl }}/patterns/ask-users-for/feedback)
+9. [Minimal footer]({{ site.baseurl }}/components/footer/footer-minimal)
 
 ## Usage
 
@@ -79,11 +79,11 @@ Teams who want to migrate existing forms to this new template will gain advantag
 ## Structure
 
 ### 1. Minimal header with form title and subtitle
-The form step template and the review page template uses the [minimal header component](https://design.va.gov/components/header/header-minimal). 
+The form step template and the review page template uses the [minimal header component]({{ site.baseurl }}/components/header/header-minimal). 
 
 Use the same plain language form title and subtitle as the form introduction and confirmation pages. 
 
-[Review the form introduction template for guidance and examples of a form title and subtitle.](https://design.va.gov/templates/forms/introduction#structure)
+[Review the form introduction template for guidance and examples of a form title and subtitle.]({{ site.baseurl }}/templates/forms/introduction#structure)
 
 The form title and subtitle are in the minimal header without any semantic heading structure.
 
@@ -92,7 +92,7 @@ The form title and subtitle are in the minimal header without any semantic headi
 
 Instead of a breadcrumb, we include a back link below the minimal header in this template. The back link remains consistent across all question pages within a single form. Its text should read “Back to previous page”.
 
-[Learn more about the expected behavior for the back link](https://design.va.gov/components/link/#when-to-use-a-back-link). 
+[Learn more about the expected behavior for the back link]({{ site.baseurl }}/components/link/#when-to-use-a-back-link). 
 
 We use the back link to reassure users that they can go back and change previous answers.
 
@@ -103,9 +103,9 @@ Exception: If the form submitter completes an action that they can do only once,
 
 ### 3. Progress bar - segmented with step label
 
-The [segmented progress bar component](https://design.va.gov/templates/forms/introduction#structure) updates users on their progress through a multistep process.
+The [segmented progress bar component]({{ site.baseurl }}/templates/forms/introduction#structure) updates users on their progress through a multistep process.
 
-To help determine the number and labels of steps it is important to group fields and form questions logically. This may require you to figure out the form questions before determining the number and labels of form steps. Use the [one thing per page design principle](https://design.va.gov/patterns/ask-users-for/a-single-response#design-principles) to determine how much form content to fit onto a single form page.
+To help determine the number and labels of steps it is important to group fields and form questions logically. This may require you to figure out the form questions before determining the number and labels of form steps. Use the [one thing per page design principle]({{ site.baseurl }}/patterns/ask-users-for/a-single-response#design-principles) to determine how much form content to fit onto a single form page.
 
 Each step within the progress bar is named with the “step label.” A step within a form could include multiple pages. However, because of the progress bar UI limitations, forms should be no more than 13 steps.
 
@@ -131,22 +131,22 @@ Keep in mind these 3 key guidelines for ordering and organizing form questions:
 2. Front-load the form with questions that are easy for the form submitter to answer to help them get comfortable with the form experience and reduce the likelihood of abandonment.
 3. Users generally understand forms when the information is logically grouped.  For example, if your form asks for information about dependents, group these questions together in the same step.
 
-[Learn more about the “One thing per page” design principle](https://design.va.gov/patterns/ask-users-for/a-single-response#design-principles) to determine how to organize your form questions. Following this principle helps users focus on a specific task without being overwhelmed.
+[Learn more about the “One thing per page” design principle]({{ site.baseurl }}/patterns/ask-users-for/a-single-response#design-principles) to determine how to organize your form questions. Following this principle helps users focus on a specific task without being overwhelmed.
 
 Asking a question on a page does not mean using only one form field. We may add multiple fields on a question page to gather similar data we need. Don’t mistake the “one thing per page” principle as “one form field per page.”  There may be times where it makes sense to group a number of related questions on the same page.
 
-The VA Design system has a number of [components](https://design.va.gov/components/) and [patterns](https://design.va.gov/patterns/) available to teams that help you formulate good questions. These patterns are standardized to help give Veterans a unified experience throughout all of our forms. 
+The VA Design system has a number of [components]({{ site.baseurl }}/components/) and [patterns]({{ site.baseurl }}/patterns/) available to teams that help you formulate good questions. These patterns are standardized to help give Veterans a unified experience throughout all of our forms. 
 
-* [Ask users for… addresses](https://design.va.gov/patterns/ask-users-for/addresses)
-* [Ask users for… dates](https://design.va.gov/patterns/ask-users-for/dates)
-* [Ask users for… email address](https://design.va.gov/patterns/ask-users-for/email-address)
-* [Ask users for… names](https://design.va.gov/patterns/ask-users-for/names)
-* [Ask users for… phone numbers](https://design.va.gov/patterns/ask-users-for/phone-numbers)
-* [Ask users for… relationship to Veteran](https://design.va.gov/patterns/ask-users-for/relationship)
-* [Ask users for… signature](https://design.va.gov/patterns/ask-users-for/signature)
-* [Ask users for ssn](https://design.va.gov/patterns/ask-users-for/social-security-number)
+* [Ask users for… addresses]({{ site.baseurl }}/patterns/ask-users-for/addresses)
+* [Ask users for… dates]({{ site.baseurl }}/patterns/ask-users-for/dates)
+* [Ask users for… email address]({{ site.baseurl }}/patterns/ask-users-for/email-address)
+* [Ask users for… names]({{ site.baseurl }}/patterns/ask-users-for/names)
+* [Ask users for… phone numbers]({{ site.baseurl }}/patterns/ask-users-for/phone-numbers)
+* [Ask users for… relationship to Veteran]({{ site.baseurl }}/patterns/ask-users-for/relationship)
+* [Ask users for… signature]({{ site.baseurl }}/patterns/ask-users-for/signature)
+* [Ask users for ssn]({{ site.baseurl }}/patterns/ask-users-for/social-security-number)
 
-If you need a new component or pattern, you will need to follow the [experimental design process.](https://design.va.gov/about/contributing-to-the-design-system/experimental-components-and-patterns)
+If you need a new component or pattern, you will need to follow the [experimental design process.]({{ site.baseurl }}/about/contributing-to-the-design-system/experimental-components-and-patterns)
 
 
 #### Page headers
@@ -194,7 +194,7 @@ A good approach for programmatically associating helper text is to put it into t
 
 Use hint text to show information that helps a majority of users answer the question. Information could include how their answer will be used or how they could find the answer.
 
-[VADS hint text guidance](https://design.va.gov/components/form/#hint-text).
+[VADS hint text guidance]({{ site.baseurl }}/components/form/#hint-text).
 
 Try to keep each hint text to a single short sentence without any line breaks. If you need to give a long detailed explanation, don’t use hint text. Screen readers will read the entire hint text aloud when users interact with the form field. This could frustrate users if the text is long.
 
@@ -222,28 +222,28 @@ On form pages, the button users select to proceed is labeled “Continue.”
 
 In an authenticated experience, forms can be enabled to autosave on every `on blur` event. An `on blur` event is when a user interacts or moves away from a field. The Autosave component appears on the page after the first `on blur` event and displays the last saved date and time.
 
-[Learn more about the autosave component](https://design.va.gov/components/form/autosave).
+[Learn more about the autosave component]({{ site.baseurl }}/components/form/autosave).
 
 
 ### 10. Need help?
 
 The Need help? component appears on the bottom of every page of the form. This content tells users how to get additional help with the form or contact VA about their related benefits. You can customize the content for the specific form. 
 
-[Learn more about the need help component](https://design.va.gov/components/form/need-help).
+[Learn more about the need help component]({{ site.baseurl }}/components/form/need-help).
 
 
 ### 11. Feedback pattern
 
 The feedback pattern allows VA.gov to collect feedback from users via Medallia.
 
-[Learn more about the feedback pattern](https://design.va.gov/patterns/ask-users-for/feedback).
+[Learn more about the feedback pattern]({{ site.baseurl }}/patterns/ask-users-for/feedback).
 
 
 ### 12. Minimal footer
 
 The minimal footer component strips out all of the navigation found in  the full footer that is found on other VA.gov pages. This helps users stay focused on the task at hand. The VA Seal is a link to VA.gov.
 
-[Learn more about the minimal footer component](https://design.va.gov/components/footer/footer-minimal).
+[Learn more about the minimal footer component]({{ site.baseurl }}/components/footer/footer-minimal).
 
 
 ## Research findings
