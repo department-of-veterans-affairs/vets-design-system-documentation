@@ -359,10 +359,13 @@ async function findSignaturePattern() {
         // Look for statementOfTruth configuration
         if (content.includes('statementOfTruth')) {
           found++;
-          // Extract app name from path (handle optional leading slash)
-          const match = filePath.match(/^\/?([^\/]+)/);
-          if (match && match[1]) {
-            appPaths.add(match[1]);
+          // Extract app identifier from path using up to 2 segments
+          const segments = filePath.replace(/^\//, '').split('/').filter(Boolean);
+          const appId = segments.length >= 2
+            ? `${segments[0]}/${segments[1]}`
+            : (segments[0] || null);
+          if (appId) {
+            appPaths.add(appId);
           }
         }
       } catch (error) {
@@ -540,10 +543,14 @@ async function findImporters(patternCodeFile) {
 
         if (usesPattern) {
           found++;
-          // Extract app name from path (handle optional leading slash)
-          const match = filePath.match(/^\/?([^\/]+)/);
-          if (match && match[1]) {
-            appPaths.add(match[1]);
+          // Extract app identifier from path using up to 2 segments
+          // e.g., "simple-forms/20-10206/pages/..." -> "simple-forms/20-10206"
+          const segments = filePath.replace(/^\//, '').split('/').filter(Boolean);
+          const appId = segments.length >= 2
+            ? `${segments[0]}/${segments[1]}`
+            : (segments[0] || null);
+          if (appId) {
+            appPaths.add(appId);
           }
         }
       } catch (error) {
@@ -595,10 +602,18 @@ async function buildPatternAdherence() {
     const matchingForms = forms.filter(form => {
       if (!form.path_to_code) return false;
 
-      // Extract app name from path_to_code
+      // Extract a stable identifier from path_to_code
       // Handle both "src/applications/app" and "/src/applications/app" formats
-      const appName = form.path_to_code.replace(/^\/?src\/applications\//, '').split('/')[0];
-      return importingApps.includes(appName);
+      // Use up to 2 path segments to distinguish forms sharing a parent directory
+      const relativePath = form.path_to_code.replace(/^\/?src\/applications\//, '');
+      const segments = relativePath.split('/').filter(Boolean);
+      const formIdentifier = segments.length >= 2
+        ? `${segments[0]}/${segments[1]}`
+        : (segments[0] || null);
+
+      if (!formIdentifier) return false;
+
+      return importingApps.includes(formIdentifier);
     });
 
     console.log(`  ✓ ${matchingForms.length} forms use this pattern`);
