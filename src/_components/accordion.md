@@ -70,12 +70,12 @@ anchors:
 * **Content that can be organized under the current heading.** Use the [Details]({{ site.baseurl }}/components/details) component if you have additional content that provides context and makes sense under the same heading as the content nearby.
 * **Required content**: If the majority of people need the content to accomplish the main task then it should not be hidden from view.
 
+{% include content/details-vs-hint-text-vs-accordion.md %}
+
 ### Behavior
 
 * Allow users to click anywhere in the header area to expand or collapse the content; a larger target is easier to manipulate.
 * Make sure interactive elements (such as links) within the collapsible region are far enough from the header that users don’t accidentally trigger a collapse. (The exact distance will depend on the device.)
-
-{% include content/details-vs-hint-text-vs-accordion.md %}
 
 {% include component-docs.html component_name=page.web-component %}
 
