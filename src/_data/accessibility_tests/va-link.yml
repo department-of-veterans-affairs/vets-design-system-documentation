@@ -15,76 +15,63 @@ variants:
 # Tests applied to this component
 tests:
   - id: WEB-141
-  - id: WEB-141-001
+    test_results:
+      - version: 54.6.1
+        tester: John Doe
+        environments:
+          - name: MacOS/Chrome
+            result: pass
+  - id: DST-141-001
+    test_results:
+      - version: 54.6.1
+        tester: John Doe
+        environments:
+          - name: MacOS/Chrome
+            result: pass
+        notes: Sample notes about the test results.
   - id: WEB-211
+    test_results:
+      - version: 54.6.1
+        tester: John Doe
+        environments:
+          - name: MacOS/Chrome
+            result: pass
+        notes: All links keyboard accessible via Tab and activated with Enter key.
   - id: WEB-212
-  - id: WEB-247
   - id: WEB-244
+    test_results:
+      - version: 54.6.1
+        tester: John Doe
+        date: 2026-02-03
+        environments:
+          - name: MacOS/Chrome
+            result: pass
+        notes: Screen readers announce link purpose correctly. External links announce "opens in new tab".
+  - id: WEB-247
+    test_results:
+      - version: 54.6.0
+        tester: Jane Smith
+        environments:
+          - name: MacOS/Chrome
+            result: pass
+        notes: Focus indicator clearly visible on all variants.
   - id: WEB-258
+  - id: DST-258-001
   - id: WEB-412
-  - id: WEB-1411
-
-# Detailed test results with environment tracking
-test_results:
-  - test_id: WEB-131
-    tester: Jane Smith
-    version: 54.6.1
-    environments:
-      - name: MacOS Chrome/VoiceOver
-        result: pass
-      - name: Windows Chrome/JAWS
-        result: pass
-    notes: All variants tested successfully. Link text clearly indicates destination.
-
-  - test_id: WEB-211
-    tester: John Doe
-    version: 54.6.1
-    environments:
-      - name: MacOS Safari/VoiceOver
-        result: pass
-      - name: Windows Edge/NVDA
-        result: pass
-    notes: All links keyboard accessible via Tab and activated with Enter key.
-
-  - test_id: WEB-247
-    tester: Jane Smith
-    version: 54.6.0
-    environments:
-      - name: MacOS Chrome/VoiceOver
-        result: pass
-      - name: Windows Chrome/JAWS
-        result: pass
-    notes: Focus indicator clearly visible on all variants.
-
-  - test_id: WEB-244
-    tester: John Doe
-    date: 2026-02-03
-    environments:
-      - name: MacOS Safari/VoiceOver
-        result: fail
-      - name: Windows Chrome/JAWS
-        result: pass
-      - name: Windows Edge/NVDA
-        result: pass
-    notes: Screen readers announce link purpose correctly. External links announce "opens in new tab".
-
-  - test_id: WEB-412
-    tester: John Doe
-    version: 54.6.1
-    environments:
-      - name: MacOS Safari/VoiceOver
-        result: fail
-      - name: Windows Chrome/JAWS
-        result: pass
-      - name: Windows Edge/NVDA
-        result: pass
-    notes: Screen readers announce link purpose correctly. External links announce "opens in new tab".
+    test_results:
+      - version: 54.6.1
+        tester: John Doe
+        environments:
+          - name: MacOS/Chrome
+            result: pass
+        notes: Links use semantic <a> tags and navigate to new destinations.
+  - id: DST-1411-001
 
 # Summary statistics (auto-generated from tests)
 summary:
-  total_tests: 4
+  total_tests: 9
   passed: 4
   passed_with_exceptions: 0
   conditional: 0
   failed: 0
-  last_updated: 2024-02-04
+  last_updated: 2026-02-09
