@@ -20,6 +20,10 @@ anchors:
   - anchor: Component checklist
 ---
 
+{% include banner-whats-new.html type="warning" %}
+**Component update**: The [Additional info]({{ site.baseurl }}/components/additional-info) component has been replaced by the [Details]({{ site.baseurl }}/components/details) component. This component will need to be updated to align with the new Details component.
+{% include banner-whats-new.html end="true" %}
+
 ## Examples
 
 ### Default (Informational)
@@ -88,6 +92,7 @@ The alert was tested as part of a usability study with 9 participants. The alert
 
 ## Related
 
+* [Additional info]({{ site.baseurl }}/components/additional-info)
 * [Details]({{ site.baseurl }}/components/details)
 * [Alert]({{ site.baseurl}}/components/alert)
 
