@@ -92,7 +92,7 @@ The alert was tested as part of a usability study with 9 participants. The alert
 
 ## Related
 
-* [Additional info]({{ site.baseurl }}/components/additional-info)
+* [Additional info]({{ site.baseurl }}/deprecated/additional-info)
 * [Details]({{ site.baseurl }}/components/details)
 * [Alert]({{ site.baseurl}}/components/alert)
 
