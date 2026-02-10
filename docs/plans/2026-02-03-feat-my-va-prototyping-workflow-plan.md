@@ -84,6 +84,30 @@ The scenario switcher will use client-side JavaScript because:
 - Data can be loaded from JSON files via fetch
 - Aligns with how real applications work
 
+### Architecture Decision: Multi-Page Architecture with localStorage State
+
+Prototypes use **real page-to-page navigation** (MPA) rather than a single-page application approach. This is a deliberate accessibility decision:
+- Real page loads trigger screen reader page announcements
+- Browser back/forward navigation works natively
+- Focus management follows standard browser behavior
+- No custom routing or focus trapping required
+
+**Cross-page state persistence uses localStorage**, namespaced per prototype:
+- Each prototype gets its own localStorage key (e.g., `va-prototype:my-va-dashboard`)
+- Scenario data loads into localStorage as the initial state
+- Form submissions merge captured data into the stored state before navigating
+- Subsequent pages read from localStorage to populate content (review pages, confirmation pages, pre-filled fields)
+- Scenario switcher resets localStorage to the clean scenario JSON
+
+**Form auto-wiring:** Form-step templates automatically capture form data on submit and navigate to the next page. Designers set a `data-next-page` attribute on the form and the framework handles the rest — no custom JavaScript needed per page.
+
+**State lifecycle:**
+1. Designer selects a scenario → JSON loaded into `localStorage['va-prototype:<name>']`
+2. User interacts with form page → form submit captures fields into `state.formData.<pageName>`
+3. User navigates to review page → page reads `state.formData` to display submitted values
+4. User reaches confirmation → page reads full state to show summary
+5. Scenario switch or manual reset → localStorage cleared and re-seeded from JSON
+
 ## Technical Approach
 
 ### Repository Structure
@@ -107,6 +131,7 @@ va-prototype-kit/
 ├── src/
 │   ├── lib/
 │   │   ├── prototype-loader.js     # Scenario switching logic
+│   │   ├── prototype-state.js      # Cross-page state (localStorage)
 │   │   ├── component-binder.js     # Data binding helpers
 │   │   └── controls.js             # Scenario switcher UI
 │   ├── styles/
@@ -149,9 +174,9 @@ The kit includes starter templates for common VA.gov page types. These provide t
 |----------|----------|----------------|
 | `dashboard/base.html` | My VA, personalized hubs | `va-service-list-item`, `va-card`, `va-alert` |
 | `form-step/intro.html` | Form introduction pages | `va-process-list`, `va-alert`, `va-button` |
-| `form-step/step.html` | Individual form steps | Form elements, `va-button-pair`, progress bar |
-| `form-step/review.html` | Form review before submit | `va-accordion`, edit links, `va-button-pair` |
-| `confirmation/base.html` | Success/confirmation pages | `va-alert` (success), next steps, print button |
+| `form-step/step.html` | Individual form steps | Form elements, `va-button-pair`, progress bar. Auto-wired: `data-next-page` on `<form>` captures fields to localStorage and navigates. |
+| `form-step/review.html` | Form review before submit | `va-accordion`, edit links, `va-button-pair`. Reads `state.formData` from localStorage to display submitted values. |
+| `confirmation/base.html` | Success/confirmation pages | `va-alert` (success), next steps, print button. Reads full state from localStorage for summary. |
 | `hub/base.html` | Benefit hub landing pages | `va-link-action`, `va-card`, spoke links |
 | `static-content/base.html` | Informational content | Typography, `va-accordion`, `va-alert` |
 
@@ -206,10 +231,23 @@ Build the reusable prototype framework.
   - Functions:
     - `loadScenario(scenarioPath)` - Fetch JSON and parse
     - `applyScenarioToComponents(data, container)` - Update component attributes
-    - `initPrototype(config)` - Initialize with default scenario
+    - `initPrototype(config)` - Initialize with default scenario, seed localStorage state via `prototype-state.js`
   - Event handling for scenario switcher
   - URL parameter support (`?scenario=active-claims`)
   - LocalStorage persistence of last selected scenario
+  - On scenario load/switch: call `resetState()` from `prototype-state.js` to clear form data and re-seed from JSON
+
+- [ ] **Create `prototype-state.js`**
+  - File: `src/lib/prototype-state.js`
+  - Per-prototype namespaced localStorage (key: `va-prototype:<prototype-name>`)
+  - Functions:
+    - `getState(prototypeName)` - Read full state from localStorage
+    - `setState(prototypeName, updates)` - Deep-merge updates into stored state
+    - `resetState(prototypeName, scenarioData)` - Clear and re-seed from scenario JSON
+    - `captureForm(prototypeName, formElement, pageName)` - Serialize form fields into `state.formData.<pageName>`
+  - Auto-wiring for forms: on page load, find any `<form data-next-page="...">` and attach a submit handler that calls `captureForm()` then navigates via `window.location.href`
+  - On page load, pre-fill form fields from stored state if returning to a previously completed step (enables back-button editing)
+  - Integration with prototype-loader: when a scenario is loaded, call `resetState()` to seed localStorage
 
 - [ ] **Create `component-binder.js`**
   - File: `src/lib/component-binder.js`
@@ -217,6 +255,7 @@ Build the reusable prototype framework.
   - Handle array rendering (clone templates, populate)
   - Support conditional rendering (show/hide based on data presence)
   - Use `data-bind="path.to.field"` attribute convention
+  - Support reading from localStorage state (via `prototype-state.js`) in addition to scenario JSON — enables review/confirmation pages to display form-submitted data
 
 - [ ] **Build scenario controls UI**
   - File: `src/lib/controls.js`
@@ -239,6 +278,11 @@ Build the reusable prototype framework.
   - Create templates for: dashboard, form-step (intro/step/review), confirmation, hub, static-content
   - Each template includes common VADS components for that page type
   - Templates use `data-bind` attributes for dynamic content areas
+  - Form-step templates include auto-wired state management:
+    - `step.html`: `<form data-next-page="./step-2.html">` — designer only sets the next URL
+    - `review.html`: reads `state.formData` to render submitted values; includes edit links that navigate back with state preserved
+    - `confirmation/base.html`: reads full state for summary display
+  - All templates import `prototype-state.js` and call initialization on load
 
 #### Phase 2: My VA Dashboard Prototype
 
@@ -443,6 +487,11 @@ Refine the experience and ensure it's documented.
 - [ ] URL parameter `?scenario=active-claims` loads specific scenario
 - [ ] All VA Design System components render correctly
 - [ ] Prototype is responsive across breakpoints
+- [ ] Form data entered on step pages persists to review and confirmation pages via localStorage
+- [ ] Each prototype's state is namespaced — running multiple prototypes doesn't cause conflicts
+- [ ] Navigating back to a completed form step pre-fills fields from stored state
+- [ ] Switching scenarios resets all stored state to the clean scenario JSON
+- [ ] Page-to-page navigation uses real page loads (not client-side routing) for accessibility
 - [ ] `npm run build && npm run preview` produces working static site
 - [ ] GitHub Pages deployment works and is accessible via public URL
 
@@ -512,6 +561,7 @@ Refine the experience and ensure it's documented.
 | Prototype diverges from production patterns | Medium | Medium | Use same components and patterns; link to production My VA as reference |
 | GitHub Pages URL not accessible to test participants | Low | Low | Document how to use custom domains; provide Netlify/Vercel alternatives |
 | Repository maintenance burden | Medium | Low | Keep dependencies minimal; use dependabot for updates; document contribution guidelines |
+| Stale localStorage state confuses designers | Medium | Medium | Scenario switcher always resets state; add a visible "Reset state" button in controls; show current state key in dev tools hint |
 
 ## Future Considerations
 
