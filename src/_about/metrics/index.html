@@ -1855,16 +1855,8 @@ function renderA11yDefectChart(a11yData) {
     return;
   }
 
-  // Fill in missing months with zeros so the timeline is continuous and evenly spaced
-  const dataMap = new Map(filteredData.map(d => [d.period, d]));
-  const [startY, startM] = filteredData[0].period.split('-').map(Number);
-  const [endY, endM] = filteredData[filteredData.length - 1].period.split('-').map(Number);
-  const data = [];
-  for (let y = startY, m = startM; y < endY || (y === endY && m <= endM); m++) {
-    if (m > 12) { m = 1; y++; }
-    const key = `${y}-${String(m).padStart(2, '0')}`;
-    data.push(dataMap.get(key) || { period: key, a11y_defect_0: 0, a11y_defect_1: 0, a11y_defect_2: 0, a11y_defect_3: 0 });
-  }
+  // Data from processA11yDefectMonthlyData is already padded to continuous monthly periods
+  const data = filteredData;
 
   const labels = a11yData.labels || [];
   const container = document.getElementById('a11y-defect-chart');
