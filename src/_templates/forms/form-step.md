@@ -105,7 +105,7 @@ Text area notifying a user that their application is saved automatically and pro
 ### Form step content
 Insert customized form step content in this section of the form step template. Consult the form step structure guidance above and the [One thing per page design principle]({{ site.baseurl }}/patterns/ask-users-for/a-single-response#design-principles) to determine how much form content to fit onto a single page.
 
-Some components may include the option to add body text, hint text, or additional information. Use these guidelines to decide which one to use. 
+Some components may include the option to add body text, hint text, or Details (expandable help content). Use these guidelines to decide which one to use. 
 #### Body text
 Use body text to add clarifying information that is relevant to all the information under a page title. The body text should either clarify what type of information we need, or explain what we’re going to do with the data. Aim for fewer than fifty words in the body text. If you need more space, consider moving nonessential information to a Details component. 
 #### Hint text
