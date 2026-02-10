@@ -55,16 +55,23 @@ tests:
           - name: MacOS/Chrome
             result: pass
         notes: Focus indicator clearly visible on all variants.
-  - id: WEB-258
+  - id: WEB-253
+    test_results:
+      - version: 54.6.0
+        tester: Jane Smith
+        environments:
+          - name: Windows Edge/NVDA
+            result: pass
+          - name: Android Chrome/Talkback
+            result: pass
   - id: DST-258-001
-  - id: WEB-412
+  - id: DST-412-001
     test_results:
       - version: 54.6.1
         tester: John Doe
         environments:
           - name: MacOS/Chrome
             result: pass
-        notes: Links use semantic <a> tags and navigate to new destinations.
   - id: DST-1411-001
 
 # Summary statistics (auto-generated from tests)

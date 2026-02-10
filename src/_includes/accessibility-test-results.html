@@ -138,13 +138,18 @@
   max-width:100%!important;
 }
 
-.test-list li {
-  padding: 0;
+.test-list>li {
+  border-bottom: 1px solid var(--vads-color-base-light);
+  padding: 1.5rem 0;
   max-width:100%;
 }
 
+.test-list>li:first-of-type {
+  padding-top:0;
+}
+
 .test-list li>p {
-  margin-bottom:0;
+  margin-block:0;
   max-width:77ch;
 }
 
@@ -225,6 +230,8 @@ va-table va-table-row span:first-child {
     <li>
       <p>
         <strong>{{ test_def.description_short | strip }}</strong>
+      </p>
+      <p>
         {{ test_def.description_full | strip }}
       </p>
       <!-- <p>
@@ -233,11 +240,13 @@ va-table va-table-row span:first-child {
       </p> -->
       <ul class="test-details-list">
         <li>
-          {% if parent_def %}
-            <a href="{{ parent_def.wcag_url }}">{{ test.id }}</a>
-          {% else %}
-            <a href="{{ test_def.wcag_url }}">{{ test_def.id }}</a>
-          {% endif %}
+          <span class="usa-label">
+            {% if parent_def %}
+              {{ test.id }}
+            {% else %}
+              {{ test_def.id }}
+            {% endif %}
+          </span>
         </li>
         <li>
           {% if parent_def %}
@@ -264,7 +273,7 @@ va-table va-table-row span:first-child {
         {% assign all_environments = site.data.accessibility_tests.test-library.environments.general %}
       {% endunless %}
 
-      <va-table full-width>
+      <va-table full-width table-type="bordered" scrollable>
         <va-table-row slot="headers">
           <span>Version Tested</span>
           {% for env in all_environments %}
@@ -308,13 +317,6 @@ va-table va-table-row span:first-child {
             </span>
             {% endfor %}
           </va-table-row>
-          {% if run.notes %}
-          <va-table-row>
-            <span colspan="{{ all_environments.size | plus: 1 }}" style="font-style: italic; background-color: var(--vads-color-gray-lightest);">
-              <strong>Notes:</strong> {{ run.notes }}
-            </span>
-          </va-table-row>
-          {% endif %}
           {% endfor %}
         {% else %}
           {% comment %} No test results yet - show all environments as Untested {% endcomment %}
@@ -326,6 +328,17 @@ va-table va-table-row span:first-child {
           </va-table-row>
         {% endif %}
       </va-table>
+
+      {% comment %} Display notes outside the table {% endcomment %}
+      {% if test_runs and test_runs.size > 0 %}
+        {% for run in test_runs %}
+          {% if run.notes %}
+          <i class="vads-u-margin-top--0">
+            <strong>Notes ({{ run.version }}):</strong> {{ run.notes }}
+          </i>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
     </li>
     {% endif %}
     {% endfor %}

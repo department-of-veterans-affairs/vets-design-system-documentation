@@ -15,12 +15,12 @@ environments:
     - Android Chrome
     - iOS Safari
   screen_reader:
-    - Android Chrome/Talkback
     - MacOS Chrome/VoiceOver
     - MacOS Safari/VoiceOver
-    - iOS Safari/VoiceOver
     - Windows Chrome/JAWS
     - Windows Edge/NVDA
+    - Android Chrome/Talkback
+    - iOS Safari/VoiceOver
   zoom:
     - MacOS/Chrome
     - Windows/Chrome
@@ -29,18 +29,19 @@ environments:
 categories:
   - general
   - keyboard
+  - mobile
   - screen_reader
   - zoom
 
 # All available tests
 tests:
   - id: WEB-111
-    category: general
+    category: screen_reader
     wcag_criterion: 1.1.1
     wcag_name: Non-text content
     wcag_level: A
+    508_severity: Critical
     wcag_url: https://www.w3.org/TR/WCAG21/#non-text-content
-    test_environment: screen_reader
     description_short: |
       All non-text content, such as images, audio, and video, has a text alternative that serves an equivalent purpose.
     description_full: |
@@ -78,27 +79,40 @@ tests:
     wcag_criterion: 1.4.1
     wcag_name: Use of Color
     wcag_level: A
+    508_severity: Critical
     wcag_url: https://www.w3.org/TR/WCAG21/#use-of-color
-    test_environment: general
     description_short: |
       Color is not the only method used to convey information.
     description_full: |
       When you view the component,
-      you find that anything shown by color is also communicated through another visual cue
+      you see that anything shown by color is also communicated through another visual cue
       like shape or text.
     subtests:
       - id: DST-141-001
         description_short: |
-          Links are styled with an underline and use the VA link color palette.
+          Links are indicated by more than just color.
         description_full: |
-          When you view a link, the link shows a text underline and uses the correct colors for default, hover, focus, and visited states.
+          When you view a link,
+          you see that the link has a text underline and uses the expected VA colors for default, hover, focus, and visited states.
+  - id: WEB-143
+    category: general
+    wcag_criterion: 1.4.3
+    wcag_name: Contrast (Minimum)
+    wcag_level: A
+    508_severity: Medium
+    wcag_url: https://www.w3.org/TR/WCAG21/#contrast-minimum
+    description_short: |
+      Text has sufficient contrast against its background.
+    description_full: |
+      When you check the contrast ratio of text and images of text,
+      you find that regular text has a ratio of at least 4.5:1 and large-scale text has a ratio of at least 3:1.
   - id: WEB-1411
     category: general
     wcag_criterion: 1.4.11
     wcag_name: Non-text Contrast
     wcag_level: AA
+    508_severity:
     wcag_url: https://www.w3.org/TR/WCAG21/#non-text-contrast
-    test_environment: general
     description_short: |
       Interactive elements and meaningful graphic elements have sufficient contrast against adjacent colors.
     description_full: |
@@ -109,12 +123,14 @@ tests:
         description_short: |
           Interactive elements are visually distinct from surroundings.
         description_full: |
-          Active UI components achieve a 3:1 contrast ratio against adjacent colors.
+          When you check the contrast of interactive elements,
+          you find that active UI components achieve a 3:1 contrast ratio against adjacent colors.
       - id: WEB-1411-002
         description_short: |
           Important graphics and icons have sufficient contrast.
         description_full: |
-          Essential graphical objects have a 3:1 contrast ratio against adjacent colors.
+          When you check the contrast of graphics and icons,
+          you find that essential graphical objects have a 3:1 contrast ratio against adjacent colors.
       - id: DST-1411-001
         description_short: |
           Icons have sufficient contrast against their background.
@@ -126,31 +142,39 @@ tests:
     wcag_criterion: 2.1.1
     wcag_name: Keyboard
     wcag_level: A
+    508_severity: Critical
     wcag_url: https://www.w3.org/TR/WCAG21/#keyboard
-    test_environment: keyboard
     description_short: |
       Link is fully operable using only a keyboard.
     description_full: |
-      When accessing a link via keyboard, you can navigate to the link, activate it, and navigate away from it.
+      When you access a link using only a keyboard,
+      you can navigate to the link, activate it, and navigate away from it.
   - id: WEB-212
     category: keyboard
     wcag_criterion: 2.1.2
     wcag_name: No Keyboard Trap
     wcag_level: A
+    508_severity: Critical
     wcag_url: https://www.w3.org/TR/WCAG21/#no-keyboard-trap
-    test_environment: keyboard
     description_short: |
-      Keyboard focus is not trapped when interacting with the component.
+      Keyboard focus does not get trapped when interacting with the component.
     description_full: |
       When you move focus to any interactive element with a keyboard,
       you can move focus away from that element using only standard keyboard keys (Tab, Shift+Tab, arrow keys, or Escape).
+    subtests:
+      - id: DST-212-001
+        description_short: |
+          Keyboard focus does not get trapped when interacting with the link.
+        description_full: |
+          When you navigate to the link using a keyboard,
+          you can move focus away from the link using only standard keyboard keys (Tab, Shift+Tab, arrow keys, or Escape).
   - id: WEB-244
     category: general
     wcag_criterion: 2.4.4
     wcag_name: Link Purpose (In Context)
     wcag_level: A
+    508_severity: High
     wcag_url: https://www.w3.org/TR/WCAG21/#link-purpose-in-context
-    test_environment: screen_reader
     description_short: |
       Link text is clear and descriptive.
     description_full: |
@@ -161,8 +185,8 @@ tests:
     wcag_criterion: 2.4.7
     wcag_name: Focus Visible
     wcag_level: AA
+    508_severity: Critical
     wcag_url: https://www.w3.org/TR/WCAG21/#focus-visible
-    test_environment: keyboard
     description_short: |
       Focus indicators are clearly visible around interactive elements.
     description_full: |
@@ -173,55 +197,74 @@ tests:
     wcag_criterion: 2.4.11
     wcag_name: Focus Not Obscured (Minimum)
     wcag_level: AA
+    508_severity: N/A
     wcag_url: https://www.w3.org/TR/WCAG22/#focus-not-obscured-minimum
-    test_environment: keyboard
     description_short: |
       Focused elements remain visible and are not hidden by other content.
     description_full: |
       When you navigate the page with a keyboard,
-      the element that has focus remains visible on screen and is not obscured
+      you find that the element that has focus remains visible on screen and is not obscured
       by sticky headers, footers, modals, tooltips, or other overlaying content.
+  - id: WEB-253
+    category: screen_reader
+    wcag_criterion: 2.5.3
+    wcag_name: Label in Name
+    wcag_level: A
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG21/#label-in-name
+    description_short: |
+      Screen reader announcements match visible text labels.
+    description_full: |
+      When you focus on an interactive element with a screen reader,
+      you hear an announcement that matches the visible text for that element.
   - id: WEB-258
     category: general
     wcag_criterion: 2.5.8
     wcag_name: Target Size (Minimum)
     wcag_level: AA
+    508_severity: N/A
     wcag_url: https://www.w3.org/TR/WCAG22/#target-size-minimum
-    test_environment: general
     description_short: |
       Interactive elements are at least 24 pixels in size.
     description_full: |
       When you inspect the size of clickable elements on the page,
-      each link has a target size of at least 24x24 pixels.
+      you find that each link has a target size of at least 24x24 pixels.
     subtests:
       - id: DST-258-001
         description_short: |
           Links are at least 24 pixels in size.
         description_full: |
           When you inspect the size of links on the page,
-          each link has a target size of at least 24x24 pixels.
+          you find that each link has a target size of at least 24x24 pixels.
   - id: WEB-412
-    category: keyboard
+    category: general
     wcag_criterion: 4.1.2
     wcag_name: Name, Role, Value
     wcag_level: A
+    508_severity: Critical
     wcag_url: https://www.w3.org/TR/WCAG21/#name-role-value
-    test_environment: general
     description_short: |
       Links navigate to different pages or sections and buttons perform actions on the current page.
     description_full: |
       When you interact with links and buttons on the page,
-      Links navigate to new pages/sections and buttons perform in-page actions
-
+      you find that links navigate to new pages or sections and buttons perform in-page actions.
+    subtests:
+      - id: DST-412-001
+        description_short: |
+          Links navigate to a new page or section.
+        description_full: |
+          When you activate a link,
+          you find that it navigates either to a new page
+          or a section on the current page.
 # Metadata
 metadata:
   version: "1.0"
   created: "2024-02-05"
-  last_updated: "2026-02-09"
-  total_tests: 9
+  last_updated: "2026-02-10"
+  total_tests: 12
   total_subtests: 7
   test_breakdown:
-    general: 4
-    keyboard: 5
-    screen_reader: 0
+    general: 6
+    keyboard: 4
+    screen_reader: 2
     zoom: 0
