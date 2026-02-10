@@ -138,7 +138,6 @@ if (importingApps.includes(form.path_to_code)) {
 **JSON Output**:
 ```json
 {
-  "generated_at": "2026-01-09T20:00:00.000Z",
   "total_patterns": 9,
   "total_forms": 55,
   "patterns": [
