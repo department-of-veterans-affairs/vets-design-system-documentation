@@ -201,7 +201,7 @@ Try to keep each hint text to a single short sentence without any line breaks. I
 Don’t use links in hint text.
 
 
-#### Additional information
+#### Details
 
 Use the Details component if there’s relevant information that may be important for some people, but it’s not critical information for everyone filling out the form. 
 
