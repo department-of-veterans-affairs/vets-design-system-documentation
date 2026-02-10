@@ -113,12 +113,14 @@ Regex: `/\b${exportName}(NoHint)?(UI|Schema|Pattern)?\b/i`
 Cross-references applications using patterns with forms from product directory:
 
 ```javascript
-// Extract app name from path (handles both formats)
+// Normalize app identifier from path.
+// Keeps up to two segments after "src/applications" to disambiguate apps.
 "src/applications/simple-forms" → "simple-forms"
+"src/applications/simple-forms/20-10206" → "simple-forms/20-10206"
 "/src/applications/caregivers" → "caregivers"
 
-// Match against form's path_to_code
-if (importingApps.includes(appName)) {
+// Match normalized app identifiers against the form's path_to_code
+if (importingApps.includes(form.path_to_code)) {
   // Form uses this pattern
 }
 ```
