@@ -100,7 +100,7 @@ VA form and application submissions on My VA display statuses to help people sta
 
 #### Supported statuses
 
-**Forms and applications** card statuses is retrieved by vets-api, but forms are managed by various APIs, and can show the following statuses:
+**Forms and applications** card statuses are retrieved from vets-api. Although different forms are backed by various APIs, they can all show the following statuses:
 
 | Status | Description |
 | :---- | :---- |
