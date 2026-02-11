@@ -2,6 +2,7 @@
 title: "feat: My VA Interactive Prototyping Workflow"
 type: feat
 date: 2026-02-03
+updated: 2026-02-11
 github_issue: https://github.com/department-of-veterans-affairs/digital-experience-products/issues/1385
 ---
 
@@ -9,9 +10,9 @@ github_issue: https://github.com/department-of-veterans-affairs/digital-experien
 
 ## Overview
 
-Enable designers to rapidly build and iterate on interactive prototypes of the My VA authenticated dashboard experience using real VA Design System components, without requiring developer assistance.
+Enable designers to rapidly build and iterate on interactive prototypes of VA.gov experiences using real VA Design System components, powered by AI that accurately understands our component library.
 
-**Goal:** When a designer asks "How can I quickly get a functional prototype to test with users?" - we have a documented, repeatable workflow.
+**Goal:** A designer drops a PDF or Figma screenshot into Claude Code and gets a working, deployable prototype in minutes — not hours. When they ask "How can I quickly get a functional prototype to test with users?" the answer is clear and repeatable.
 
 **Key constraints:**
 - Must use VA Design System web components from `@department-of-veterans-affairs/component-library`
@@ -42,17 +43,63 @@ Key findings from interviewing a UX designer about their prototyping needs:
 
 These insights inform the skills and templates included in this plan.
 
+### Inspiration: NY State Design System (Feb 2026)
+
+The NYSDS team demonstrated turning a PDF form into a fully functional, accessible web application in ~10 minutes using Claude Code and a Design System MCP server. Their approach:
+
+- **MCP server** (`@nysds/mcp-server`) provides AI coding agents with structured knowledge of components, tokens, and patterns — eliminating hallucinated APIs
+- **PRD-driven generation:** A PRD file describes what to build; an AI coding agent generates the entire application
+- **Vanilla TypeScript + Vite:** No framework — web components are the UI layer
+- **Minimal dependencies:** Component library, style library, and Lit runtime — that's it
+- **GitHub Pages deployment** for shareable URLs
+
+Repository: https://github.com/ITS-HCD/project-adoptive-application
+MCP Server: https://github.com/ITS-HCD/nysds/tree/feature/mcp-server-updates/packages/mcp-server
+
+This plan adopts their approach: **build the MCP server first** (the enabling infrastructure), then the prototype kit becomes simple.
+
 ## Proposed Solution
 
-Create a **standalone prototype kit repository** (`va-prototype-kit`) that:
+Two deliverables, in dependency order:
 
-1. **Lives in its own repo** - Keeps prototyping separate from design system documentation
-2. **Uses Vite** for fast development with hot module replacement
-3. **Deploys to GitHub Pages** for shareable usability testing URLs
-4. **Uses JavaScript-based scenario switching** for instant state changes
-5. **Stores mock data in editable JSON files** designers can modify
-6. **Includes a Claude Code skill** (`/prototype-workflow`) for guided onboarding
-7. **Documents the workflow** so it's repeatable by any designer
+### 1. VADS MCP Server (`@department-of-veterans-affairs/vads-mcp-server`)
+
+An MCP server that gives AI coding agents (Claude Code, GitHub Copilot, Cursor, etc.) structured, accurate knowledge of the VA Design System — components, tokens, patterns, and usage guidance. This is the **critical enabler** that makes AI-assisted prototyping work correctly. MCP is an open protocol supported by all major AI coding tools.
+
+### 2. VA Prototype Kit (`va-prototype-kit`)
+
+A lightweight Vite + vanilla JS/TS repository where designers use any AI coding agent (backed by the MCP server) to generate prototypes from PRDs, Figma screenshots, or PDF forms. The kit provides the scaffolding; AI does the heavy lifting.
+
+### Architecture Decision: AI-Agent-Agnostic Configuration
+
+The prototype kit must work with **any AI coding agent**, not just Claude Code. Most VA designers use GitHub Copilot, not Claude Code. Our configuration strategy:
+
+- **`AGENTS.md`** (root) — Primary AI instruction file. An [open standard](https://agents.md/) supported by 20+ tools including Claude Code, Copilot, Cursor, Zed, Devin, and Google Jules. Contains project context, build commands, coding conventions, and references to PRDs and skills.
+- **`.github/copilot-instructions.md`** — Copilot-specific repo instructions, auto-applied to all Copilot requests. Can be lightweight and reference `AGENTS.md` for details.
+- **`.github/instructions/*.instructions.md`** — Path-specific Copilot instructions with `applyTo` glob patterns (e.g., instructions for working in `src/prototypes/`).
+- **`CLAUDE.md`** (root) — Claude Code-specific additions (if any). Can reference `AGENTS.md` for shared content.
+- **`docs/skills/`** — Workflow documentation as plain markdown files. Any AI agent can read these when directed by `AGENTS.md`. Claude Code users get them as `/skills`; Copilot users reference them via `AGENTS.md`.
+- **MCP server** — Cross-tool. Configured per-tool (Claude Code in `.claude/settings.json`, Copilot in VS Code settings, Cursor in `.cursor/mcp.json`), but the server itself is universal.
+- **PRDs** — Plain markdown files. Any AI agent can read them. No tool-specific format.
+
+### Architecture Decision: MCP Server First
+
+**Why the MCP server is prerequisite to everything else:**
+- Without accurate component knowledge, AI generates incorrect HTML attributes, uses wrong event names, and invents non-existent components
+- The NYSDS demo succeeded because their MCP server made Claude Code's output correct on the first try
+- The MCP server benefits ALL AI-assisted VA development, not just prototyping — it's infrastructure with broad value
+- Stencil's `component-docs.json` (67 components, full prop/event/slot/parts data) is directly analogous to NYSDS's Custom Elements Manifest
+
+### Architecture Decision: PRD-Driven Generation (replaces custom framework)
+
+The previous version of this plan proposed a custom scenario-switching framework (prototype-loader, component-binder, controls UI). The NYSDS approach eliminates the need for this:
+
+- **Before:** Build a framework that binds JSON data to components → designers edit JSON → framework renders
+- **After:** Write a PRD → AI generates the entire application with state management built in → designers tweak the output
+
+This is simpler, more flexible, and directly addresses the designer's expectation: *"AI gets you close, then you go through each page and tweak."*
+
+State management (sessionStorage, scenario switching, form persistence) becomes generated application code rather than a reusable framework — just as NYSDS did.
 
 ### Architecture Decision: Standalone Vite-based Repository
 
@@ -65,136 +112,469 @@ Create a **standalone prototype kit repository** (`va-prototype-kit`) that:
 
 **Why Vite:**
 - Sub-second hot module replacement
-- Zero-config setup for vanilla JS + web components
+- Zero-config setup for vanilla JS/TS + web components
 - Built-in dev server with instant feedback
 - Simple GitHub Pages deployment
-- No framework lock-in - just HTML, CSS, JS
+- No framework lock-in — just HTML, CSS, JS/TS
 
 **Self-contained environment philosophy:**
-- This kit is THE prototyping tool - designers shouldn't need CodeSandbox, vets-website, or other environments
+- This kit is THE prototyping tool — designers shouldn't need CodeSandbox, vets-website, or other environments
 - Local development enables AI assistance (Copilot, Claude Code) that cloud sandboxes block
 - Everything needed to prototype is in this repo
-- No integration with external systems like Yeoman generators or Forms System (those live in vets-website)
 
-### Architecture Decision: JavaScript Runtime Switching
+---
 
-The scenario switcher will use client-side JavaScript because:
-- Instant feedback when switching scenarios (no page reload)
-- Single HTML file per prototype (easier to maintain)
-- Data can be loaded from JSON files via fetch
-- Aligns with how real applications work
+## Part 1: VADS MCP Server
 
-### Architecture Decision: Multi-Page Architecture with localStorage State
+### What It Does
 
-Prototypes use **real page-to-page navigation** (MPA) rather than a single-page application approach. This is a deliberate accessibility decision:
-- Real page loads trigger screen reader page announcements
-- Browser back/forward navigation works natively
-- Focus management follows standard browser behavior
-- No custom routing or focus trapping required
+The MCP server exposes VA Design System knowledge through the [Model Context Protocol](https://modelcontextprotocol.io/), an open standard supported by all major AI coding tools (Claude Code, GitHub Copilot, Cursor, Windsurf, Zed, etc.). When an AI needs to generate a `<va-text-input>`, it queries the MCP server for the exact attributes, events, slots, and usage patterns rather than guessing.
 
-**Cross-page state persistence uses localStorage**, namespaced per prototype:
-- Each prototype gets its own localStorage key (e.g., `va-prototype:my-va-dashboard`)
-- Scenario data loads into localStorage as the initial state
-- Form submissions merge captured data into the stored state before navigating
-- Subsequent pages read from localStorage to populate content (review pages, confirmation pages, pre-filled fields)
-- Scenario switcher resets localStorage to the clean scenario JSON
+### Data Sources
 
-**Form auto-wiring:** Form-step templates automatically capture form data on submit and navigate to the next page. Designers set a `data-next-page` attribute on the form and the framework handles the rest — no custom JavaScript needed per page.
+| Data Source | Package | What It Provides |
+|-------------|---------|------------------|
+| Stencil `component-docs.json` | `@department-of-veterans-affairs/component-library` | 67 components with props, events, slots, parts, dependency graphs |
+| CSS Library | `@department-of-veterans-affairs/css-library` | VADS utility classes, grid system, spacing, typography |
+| Design Tokens | `@department-of-veterans-affairs/va-design-system-tokens` | Color, spacing, font, elevation tokens in JSON + CSS |
+| Documentation site | `design.va.gov` | Component guidance, patterns, accessibility notes, usage examples |
 
-**State lifecycle:**
-1. Designer selects a scenario → JSON loaded into `localStorage['va-prototype:<name>']`
-2. User interacts with form page → form submit captures fields into `state.formData.<pageName>`
-3. User navigates to review page → page reads `state.formData` to display submitted values
-4. User reaches confirmation → page reads full state to show summary
-5. Scenario switch or manual reset → localStorage cleared and re-seeded from JSON
+#### Component Data Schema (from Stencil)
 
-## Technical Approach
+Each component in `component-docs.json` includes:
+
+```json
+{
+  "tag": "va-text-input",
+  "encapsulation": "shadow",
+  "docs": "...",
+  "docsTags": [
+    {"name": "componentName", "text": "Text input"},
+    {"name": "maturityCategory", "text": "use"},
+    {"name": "maturityLevel", "text": "best_practice"}
+  ],
+  "props": [
+    {
+      "name": "label",
+      "type": "string",
+      "attr": "label",
+      "docs": "The label for the text input.",
+      "required": true,
+      "default": "undefined"
+    }
+  ],
+  "events": [
+    {
+      "event": "vaInput",
+      "docs": "The event emitted when the input value changes"
+    }
+  ],
+  "slots": [],
+  "parts": [
+    {"name": "input", "docs": ""},
+    {"name": "label", "docs": ""}
+  ],
+  "dependencies": [],
+  "dependents": []
+}
+```
+
+#### Token Data Schema (from va-design-system-resources)
+
+Tokens are available in JSON source format with alias references:
+
+```json
+{
+  "vads-color-background-default-on-light": {
+    "name": "vads-color-background-default-on-light",
+    "value": "{vads-color-base-lightest.*}",
+    "attributes": { "category": "color" }
+  }
+}
+```
+
+Categories: `color` (semantic, component, primitive), `font` (family, size, lineHeight, letterSpacing, typography), `spacing`, `elevation`, `shape`, `size`.
+
+### MCP Server Architecture
+
+```
+vads-mcp-server/
+├── package.json
+├── tsconfig.json
+├── README.md
+├── data/
+│   └── guides/                        # Static markdown guides
+│       ├── installation.md            # How to install component-library
+│       ├── page-structure.md          # VA.gov page layout (header, footer, breadcrumbs)
+│       ├── form-patterns.md           # Multi-step form patterns
+│       ├── accessibility.md           # VADS accessibility requirements
+│       └── frameworks/
+│           └── vanilla.md             # Vanilla JS/TS usage (primary for prototyping)
+└── src/
+    ├── index.ts                       # CLI entry point (#!/usr/bin/env node)
+    ├── server.ts                      # McpServer setup, registers tools/resources/prompts
+    ├── lib/
+    │   ├── component-parser.ts        # Parse Stencil component-docs.json
+    │   ├── token-parser.ts            # Parse token JSON + CSS
+    │   ├── search.ts                  # Fuzzy search for components/tokens
+    │   └── format.ts                  # Response formatting utilities
+    ├── tools/
+    │   ├── index.ts                   # Tool registration orchestrator
+    │   ├── component-tools.ts         # find_components, get_component
+    │   ├── token-tools.ts             # get_tokens, find_tokens
+    │   ├── validation-tools.ts        # validate_component_api
+    │   ├── utility-tools.ts           # get_utility_classes
+    │   └── guide-tools.ts            # get_guide
+    ├── resources/
+    │   ├── index.ts                   # Resource registration
+    │   ├── components.ts              # vads://components, vads://component/{tag}
+    │   ├── tokens.ts                  # vads://tokens, vads://tokens/color, etc.
+    │   └── guides.ts                  # vads://guides/{topic}
+    └── prompts/
+        └── vads-mode.ts               # System prompt for VADS-aware mode
+```
+
+### MCP Tools (MVP)
+
+| Tool | Parameters | Returns |
+|------|-----------|---------|
+| `find_components` | `query?: string` | List of matching components with tag names and summaries. No query = list all. |
+| `get_component` | `tag: string`, `includeExamples?: boolean` | Full component docs: props (with `attr` name, type, default, required), events, slots, CSS parts, dependency graph. Optionally includes HTML usage examples. |
+| `validate_component_api` | `tag: string`, `attributes: string[]` | Validates attributes against component spec. Returns valid/invalid status with corrections. |
+| `get_tokens` | `category?: string` | Tokens filtered by category (color, font, spacing, etc.). Returns CSS variable names and resolved values. |
+| `find_tokens` | `query: string` | Search tokens by CSS variable name, value, or description. |
+| `get_utility_classes` | `category?: string` | VADS CSS utility classes for grid, spacing, display, typography. |
+| `get_guide` | `topic: string` | Guides for installation, page-structure, form-patterns, accessibility, vanilla JS usage. |
+
+### MCP Resources (MVP)
+
+| URI | Content |
+|-----|---------|
+| `vads://components` | JSON list of all 67 components with tag names and summaries |
+| `vads://component/{tag}` | Full component documentation as JSON |
+| `vads://tokens` | All tokens with CSS variable names |
+| `vads://tokens/{category}` | Tokens filtered by category (color, font, spacing, etc.) |
+| `vads://guides/{topic}` | Static guides (installation, page-structure, etc.) |
+
+### MCP Prompts (MVP)
+
+**`vads_mode`** — A system prompt that activates VADS-aware coding assistance:
+
+- Declares available tools and their purposes
+- Instructs: "Always use semantic VADS components (e.g., `<va-text-input>` instead of `<input>`)"
+- Instructs: "Use VADS design tokens via CSS custom properties for consistent styling"
+- Instructs: "Follow accessibility guidelines built into VADS components"
+- References design.va.gov for component documentation
+- Lists the 67 available components by category
+
+### Key Implementation Details
+
+#### Component Parser (`component-parser.ts`)
+
+Reads `component-docs.json` from the installed `@department-of-veterans-affairs/component-library` package (or `web-components` sub-package). The file is auto-generated by Stencil and includes the full API surface.
+
+File resolution order (to support dev and installed contexts):
+1. `node_modules/@department-of-veterans-affairs/web-components/component-docs.json`
+2. `node_modules/@department-of-veterans-affairs/component-library/component-docs.json`
+3. `{cwd}/component-docs.json` (for local development)
+
+Key transformations:
+- Extract `props` into a clean attributes list with `attr` (HTML attribute name), `type`, `default`, `required`, `docs`
+- Filter `docsTags` to surface `@componentName`, `@maturityCategory`, `@maturityLevel`
+- Parse `events` into event name + description
+- Build a component-name-to-tag-name lookup (e.g., "Text input" → `va-text-input`)
+- Cache parsed data in memory after first load
+
+#### Token Parser (`token-parser.ts`)
+
+Reads token JSON from `@department-of-veterans-affairs/va-design-system-tokens`. Transforms source format into CSS-centric representation:
+- Convert token names to CSS custom properties (e.g., `vads-color-base` → `--vads-color-base`)
+- Resolve alias references (e.g., `{vads-color-base-lightest.*}` → resolved hex value)
+- Classify tokens by category and layer (primitive, semantic, component)
+- Support token search by name, value, or description
+
+#### Validation Tool (`validation-tools.ts`)
+
+Cross-references provided HTML attributes against the component's `props` array. Particularly valuable because:
+- VA components use `attr` names that differ from `prop` names (e.g., prop `openSingle` → attr `open-single`)
+- Events use VA-specific names (e.g., `vaInput`, `component-library-analytics`)
+- Prevents common mistakes like using `onChange` instead of `vaInput`
+
+#### Static Guides (`data/guides/`)
+
+Hand-authored markdown for procedural knowledge that can't be derived from component specs:
+
+- **`installation.md`** — How to install and import `@department-of-veterans-affairs/component-library` and `@department-of-veterans-affairs/css-library`
+- **`page-structure.md`** — Required VA.gov page layout: `va-official-gov-banner`, `va-header-minimal` or full header, `va-breadcrumbs`, main content area, `va-back-to-top`, `va-minimal-footer` or full footer, `va-crisis-line-modal`
+- **`form-patterns.md`** — Multi-step form patterns with `va-segmented-progress-bar`, `va-button-pair`, `va-process-list`, review pages, confirmation pages
+- **`accessibility.md`** — VADS-specific accessibility requirements, focus management, screen reader considerations
+- **`frameworks/vanilla.md`** — Vanilla JS/TS usage patterns (the primary mode for prototyping)
+
+### MCP Server Implementation Phases
+
+#### Phase M0: Foundation
+
+- [ ] **Create `vads-mcp-server` repository (or package directory)**
+  - Initialize with TypeScript, `@modelcontextprotocol/sdk` dependency
+  - Configure as CLI binary (`vads-mcp` entry point)
+  - Add `@department-of-veterans-affairs/component-library` as a dependency (for `component-docs.json`)
+  - Set up build script (`tsc` — no bundler needed)
+
+- [ ] **Implement component parser**
+  - File: `src/lib/component-parser.ts`
+  - Read and cache `component-docs.json` from installed package
+  - Parse 67 components into structured format
+  - Build name → tag lookup, fuzzy search index
+
+- [ ] **Implement `find_components` and `get_component` tools**
+  - File: `src/tools/component-tools.ts`
+  - `find_components`: list all or search by name/description
+  - `get_component`: full component docs with props, events, slots, parts
+  - Register tools with `server.tool()` using Zod schemas for parameters
+
+- [ ] **Implement component resources**
+  - File: `src/resources/components.ts`
+  - `vads://components`: JSON list of all components
+  - `vads://component/{tag}`: full docs for a specific component
+
+- [ ] **Implement `vads_mode` prompt**
+  - File: `src/prompts/vads-mode.ts`
+  - System prompt listing capabilities, best practices, available tools
+  - Component categories and available tag names
+
+- [ ] **Test with Claude Code**
+  - Configure MCP server in Claude Code settings
+  - Verify `find_components` returns correct results
+  - Verify `get_component` returns full API for `va-text-input`, `va-alert`, etc.
+  - Generate a simple page using VADS components — confirm correct attribute names
+
+#### Phase M1: Tokens & Validation
+
+- [ ] **Implement token parser**
+  - File: `src/lib/token-parser.ts`
+  - Read tokens from `@department-of-veterans-affairs/va-design-system-tokens` or fallback to local CSV/JSON
+  - Parse into CSS variable names with resolved values
+  - Classify by category (color, font, spacing, elevation, shape, size)
+  - Build search index
+
+- [ ] **Implement token tools**
+  - File: `src/tools/token-tools.ts`
+  - `get_tokens`: filter by category
+  - `find_tokens`: search by name/value/description
+
+- [ ] **Implement `validate_component_api` tool**
+  - File: `src/tools/validation-tools.ts`
+  - Accept tag name + list of attributes
+  - Cross-reference against `props` array (using `attr` field for HTML attribute names)
+  - Return valid/invalid with suggestions for corrections
+
+- [ ] **Implement token resources**
+  - File: `src/resources/tokens.ts`
+  - `vads://tokens`: all tokens
+  - `vads://tokens/{category}`: filtered by category
+
+#### Phase M2: Guides & Utilities
+
+- [ ] **Write static guide markdown files**
+  - `data/guides/installation.md`
+  - `data/guides/page-structure.md`
+  - `data/guides/form-patterns.md`
+  - `data/guides/accessibility.md`
+  - `data/guides/frameworks/vanilla.md`
+
+- [ ] **Implement guide and utility tools**
+  - File: `src/tools/guide-tools.ts` — `get_guide` tool
+  - File: `src/tools/utility-tools.ts` — `get_utility_classes` tool with VADS CSS class reference
+
+- [ ] **Implement guide resources**
+  - File: `src/resources/guides.ts`
+  - `vads://guides/{topic}`: serve guide markdown
+
+- [ ] **Package for distribution**
+  - Configure `package.json` bin field for `vads-mcp` CLI
+  - Document setup for each AI tool:
+    - Claude Code: `.claude/settings.json`
+    - GitHub Copilot: `.vscode/mcp.json`
+    - Cursor: `.cursor/mcp.json`
+  - All use the same command: `npx @department-of-veterans-affairs/vads-mcp-server`
+  - Publish to npm (or internal registry)
+
+---
+
+## Part 2: VA Prototype Kit
+
+### What It Does
+
+A Vite-based repository where each prototype lives as a self-contained directory. Designers use Claude Code (with the VADS MCP server) to generate prototypes from PRDs, screenshots, or PDFs. The kit provides the project scaffolding, deployment pipeline, and Claude Code configuration.
 
 ### Repository Structure
 
 ```
 va-prototype-kit/
 ├── .github/
+│   ├── copilot-instructions.md        # Copilot-specific instructions (references AGENTS.md)
+│   ├── instructions/
+│   │   └── prototypes.instructions.md # Path-specific Copilot instructions for src/prototypes/
 │   └── workflows/
-│       └── deploy.yml              # GitHub Pages deployment
+│       └── deploy.yml                 # GitHub Pages deployment
 ├── .claude/
-│   └── skills/
-│       ├── prototype-workflow/
-│       │   └── SKILL.md            # Claude Code skill for designers
-│       ├── populate-from-figma/
-│       │   └── SKILL.md            # Generate HTML from Figma exports
-│       └── reproduce-page/
-│           └── SKILL.md            # Reproduce external pages as mocks
-├── public/
-│   └── scenarios/                  # Shared scenario data
-│       └── _schema.json            # Schema documentation
+│   ├── settings.json                  # Claude Code MCP server configuration
+│   └── agents/                        # Claude Code agent definitions (optional)
+│       ├── a11y-reviewer.md
+│       └── prototype-dev.md
+├── .cursor/
+│   └── mcp.json                       # Cursor MCP server configuration
+├── .vscode/
+│   ├── mcp.json                       # Copilot MCP server configuration
+│   └── settings.json                  # Recommended VS Code settings
+├── AGENTS.md                          # Primary AI instructions (cross-tool, open standard)
+├── CLAUDE.md                          # Claude Code additions (references AGENTS.md)
+├── docs/
+│   ├── prd-template.md                # PRD template for designers
+│   └── skills/                        # Workflow docs as plain markdown (any AI can read)
+│       ├── prototype-workflow.md       # How to create a new prototype
+│       ├── populate-from-figma.md      # Generate HTML from Figma exports
+│       └── reproduce-page.md          # Mock external sites
 ├── src/
-│   ├── lib/
-│   │   ├── prototype-loader.js     # Scenario switching logic
-│   │   ├── prototype-state.js      # Cross-page state (localStorage)
-│   │   ├── component-binder.js     # Data binding helpers
-│   │   └── controls.js             # Scenario switcher UI
-│   ├── styles/
-│   │   └── prototype.css           # Prototype-specific styles
-│   ├── templates/                  # Reusable page templates
-│   │   ├── dashboard/              # Dashboard page layouts
-│   │   │   └── base.html
-│   │   ├── form-step/              # Form wizard step pages
-│   │   │   ├── intro.html
-│   │   │   ├── step.html
-│   │   │   └── review.html
-│   │   ├── confirmation/           # Confirmation/success pages
-│   │   │   └── base.html
-│   │   ├── hub/                    # Hub/landing pages
-│   │   │   └── base.html
-│   │   └── static-content/         # Content pages
-│   │       └── base.html
-│   ├── mocks/                      # External site reproductions
-│   │   └── .gitkeep
+│   ├── main.ts                        # Global imports: component-library + css-library
+│   ├── style.css                      # App-level styles using VADS tokens
 │   └── prototypes/
-│       └── my-va-dashboard/
-│           ├── index.html          # Main prototype page
-│           └── scenarios/          # Prototype-specific scenarios
-│               ├── brand-new-user.json
-│               ├── active-claims.json
-│               ├── incomplete-profile.json
-│               ├── critical-actions.json
-│               └── power-user.json
-├── index.html                      # Landing page / prototype index
+│       └── my-va-dashboard/           # Example prototype
+│           ├── index.html             # Entry point
+│           ├── prd.md                 # Prototype-specific PRD
+│           └── src/
+│               ├── app.ts             # Application logic
+│               ├── components/        # Page components (generated by AI)
+│               ├── steps/             # Form steps (if applicable)
+│               ├── types/             # TypeScript interfaces
+│               └── utils/             # State management, validation
+├── index.html                         # Landing page listing all prototypes
 ├── package.json
-├── vite.config.js
+├── tsconfig.json
+├── vite.config.ts
 └── README.md
 ```
 
-### Page Templates
+### How It Works: The Designer Workflow
 
-The kit includes starter templates for common VA.gov page types. These provide the structural HTML with VADS components that designers can populate with their specific content.
+1. **Designer clones the repo** and runs `npm install` (one-time setup)
+2. **Designer configures their AI tool's MCP server** (one-time, per tool):
+   - Claude Code: already configured in `.claude/settings.json`
+   - Copilot: already configured in `.vscode/mcp.json`
+   - Cursor: already configured in `.cursor/mcp.json`
+3. **Designer writes a PRD** in `src/prototypes/<name>/prd.md`
+   - Describes the experience they want to prototype
+   - Lists pages, user flows, states, and data
+   - Can include Figma screenshots or PDF form images
+4. **Designer runs their AI coding agent** which reads the PRD (via `AGENTS.md` instructions) and uses the VADS MCP server
+   - AI generates all HTML/TS/CSS using correct VADS components
+   - AI creates state management for multi-page flows
+   - AI creates scenario data for different user states
+5. **Designer runs `npm run dev`** to see the prototype with hot reload
+6. **Designer iterates** — tweaks generated code, asks AI for changes
+7. **Designer deploys** — pushes to GitHub, Pages deployment is automatic
 
-| Template | Use Case | Key Components |
-|----------|----------|----------------|
-| `dashboard/base.html` | My VA, personalized hubs | `va-service-list-item`, `va-card`, `va-alert` |
-| `form-step/intro.html` | Form introduction pages | `va-process-list`, `va-alert`, `va-button` |
-| `form-step/step.html` | Individual form steps | Form elements, `va-button-pair`, progress bar. Auto-wired: `data-next-page` on `<form>` captures fields to localStorage and navigates. |
-| `form-step/review.html` | Form review before submit | `va-accordion`, edit links, `va-button-pair`. Reads `state.formData` from localStorage to display submitted values. |
-| `confirmation/base.html` | Success/confirmation pages | `va-alert` (success), next steps, print button. Reads full state from localStorage for summary. |
-| `hub/base.html` | Benefit hub landing pages | `va-link-action`, `va-card`, spoke links |
-| `static-content/base.html` | Informational content | Typography, `va-accordion`, `va-alert` |
+### PRD Template
 
-Templates are based on existing patterns from `vets-design-system-documentation/src/_templates/` and Jami's CodeSandbox scaffolding.
+The `docs/prd-template.md` provides a template designers fill in:
 
-### Implementation Phases
+```markdown
+# [Prototype Name] PRD
 
-#### Phase 0: Repository Setup
+## What are we prototyping?
+[Brief description of the experience]
 
-Create the new repository and configure basic tooling.
+## Pages
+1. [Page name] - [Description of what this page shows]
+2. [Page name] - [Description]
+...
 
-**Tasks:**
+## User States / Scenarios
+- [State name]: [Description of what's different]
+- [State name]: [Description]
 
-- [ ] **Obtain Jami's CodeSandbox templates**
-  - Get access to existing CodeSandbox base template with component-library
-  - Document the current structure and what's included
-  - Identify reusable patterns to bring into the prototype kit
-  - Note: This is the proven foundation designers are already using
+## Key Interactions
+- [What happens when user does X]
+- [Form fields and validation rules]
+
+## Components Needed
+[List any specific VA components or patterns]
+
+## Reference
+[Links to Figma, existing pages, PDFs, etc.]
+```
+
+### AI Agent Configuration
+
+#### `AGENTS.md` (Primary — all tools)
+
+The root `AGENTS.md` file is read by all AI coding agents. It contains:
+
+- **Project overview:** What the prototype kit is and how it works
+- **Build commands:** `npm install`, `npm run dev`, `npm run build`
+- **Coding conventions:** Use VADS web components (`<va-*>`), VADS design tokens, no hardcoded styles
+- **MCP server usage:** Directs agents to use `find_components`, `get_component`, `validate_component_api` tools before generating component HTML
+- **PRD workflow:** Points agents to `docs/prd-template.md` and explains the generation workflow
+- **Skills reference:** Points agents to `docs/skills/*.md` for guided workflows
+- **Page structure:** Required VA.gov page layout (official gov banner, header, breadcrumbs, main, footer, crisis line modal)
+- **Accessibility:** WCAG 2.1 AA requirements, focus management, screen reader considerations
+
+#### `.github/copilot-instructions.md` (Copilot-specific)
+
+Lightweight file that:
+- References `AGENTS.md` for full project context
+- Adds any Copilot-specific instructions (if needed)
+- Auto-applied to all Copilot requests in this repo
+
+#### `.github/instructions/prototypes.instructions.md` (Copilot path-specific)
+
+```yaml
+---
+applyTo: "src/prototypes/**/*"
+---
+```
+
+Activates when editing prototype files. Instructs Copilot to:
+- Use VADS MCP server tools for component lookups
+- Follow the prototype's `prd.md` for requirements
+- Use VADS design tokens exclusively
+
+#### `.claude/agents/` (Claude Code-specific, optional)
+
+Claude Code agent definitions with model selection (sonnet/haiku) for specialized tasks:
+
+- **`prototype-dev.md`** — VADS-aware prototype developer (reads PRDs, generates code, uses MCP server)
+- **`a11y-reviewer.md`** — WCAG 2.1 AA accessibility reviewer (reviews generated HTML, validates focus management)
+
+These provide Claude Code users with specialized agent behavior but are not required for the workflow to function. Copilot and Cursor users get equivalent behavior through `AGENTS.md` + MCP server.
+
+#### `docs/skills/` (Plain markdown — all tools)
+
+Workflow documentation written as plain markdown. Any AI agent can read these files when directed by `AGENTS.md`:
+
+- **`prototype-workflow.md`** — Step-by-step guide for creating a new prototype
+- **`populate-from-figma.md`** — How to generate HTML from Figma exports
+- **`reproduce-page.md`** — How to create static mocks of external sites
+
+Claude Code users can also invoke these as `/skills` if we add symlinks or references in `.claude/skills/`. Copilot users reference them by asking their AI to "follow the instructions in docs/skills/prototype-workflow.md".
+
+### Key Differences from Previous Plan
+
+| Aspect | Previous Plan | Updated Plan |
+|--------|---------------|--------------|
+| **Core approach** | Custom framework (loader, binder, controls) | PRD-driven AI generation via MCP server |
+| **Scenario switching** | Client-side JS framework with JSON fetch | AI-generated state management (sessionStorage/URL params) |
+| **Data binding** | `data-bind="path.to.field"` attribute convention | Direct DOM manipulation in generated TypeScript |
+| **Page templates** | Pre-built HTML templates designers fill in | AI generates pages from PRD descriptions |
+| **Designer edits** | JSON scenario files | Generated TypeScript/HTML code |
+| **State management** | Reusable prototype-state.js library | Per-prototype generated code |
+| **AI dependency** | Optional (Claude Code skills for onboarding) | Central (MCP server enables correct generation) |
+| **AI tool support** | Claude Code only (`.claude/skills/`) | Cross-tool (`AGENTS.md` + MCP for Copilot, Claude Code, Cursor) |
+| **Reusable infra** | Prototype kit framework | MCP server (benefits all VA AI development) |
+
+### Prototype Kit Implementation Phases
+
+#### Phase P0: Repository Setup
 
 - [ ] **Create `va-prototype-kit` repository**
   - Create repo in `department-of-veterans-affairs` org (or personal for initial development)
@@ -202,366 +582,202 @@ Create the new repository and configure basic tooling.
   - Enable GitHub Pages (deploy from `gh-pages` branch)
 
 - [ ] **Initialize Vite project**
-  - Run `npm create vite@latest . -- --template vanilla`
-  - Configure `vite.config.js` for multi-page app support
-  - Add `@department-of-veterans-affairs/component-library` dependency
-  - Add `@department-of-veterans-affairs/css-library` for VADS styles
+  - `npm create vite@latest . -- --template vanilla-ts`
+  - Configure `vite.config.ts` for multi-page app support (one entry per prototype)
+  - Add dependencies:
+    - `@department-of-veterans-affairs/component-library` (^54.6.0)
+    - `@department-of-veterans-affairs/css-library` (^0.29.0)
   - Configure base path for GitHub Pages deployment
+
+- [ ] **Set up global imports**
+  - File: `src/main.ts`
+  - Import component-library (registers all custom elements)
+  - Import css-library for VADS utility classes
+  - Import app-level styles
 
 - [ ] **Set up GitHub Actions deployment**
   - File: `.github/workflows/deploy.yml`
   - Trigger on push to `main` branch
-  - Build with Vite, deploy to `gh-pages` branch
-  - Enable preview deployments for PRs (optional)
+  - Build with Vite (`npm ci && npm run build`)
+  - Deploy `dist/` to GitHub Pages
+
+- [ ] **Configure AI agent instructions**
+  - Write `AGENTS.md` at repo root (primary instructions for all AI tools)
+  - Write `.github/copilot-instructions.md` (Copilot-specific, references AGENTS.md)
+  - Write `.github/instructions/prototypes.instructions.md` (path-specific for prototype files)
+  - Write `CLAUDE.md` at repo root (Claude Code additions, references AGENTS.md)
+  - Configure MCP server for all tools:
+    - `.claude/settings.json` (Claude Code)
+    - `.vscode/mcp.json` (Copilot)
+    - `.cursor/mcp.json` (Cursor)
+  - Write PRD template in `docs/prd-template.md`
+  - Create Claude Code agent definitions in `.claude/agents/` (optional enhancement)
 
 - [ ] **Create landing page**
   - File: `index.html`
   - List available prototypes with links
   - Brief explanation of what this repo is for
-  - Link to documentation
 
-#### Phase 1: Core Prototype Infrastructure
+#### Phase P1: My VA Dashboard Prototype (Reference Implementation)
 
-Build the reusable prototype framework.
+Build the first prototype using the PRD-driven workflow to validate the approach.
 
-**Tasks:**
+- [ ] **Write My VA Dashboard PRD**
+  - File: `src/prototypes/my-va-dashboard/prd.md`
+  - Describe all dashboard sections: alerts, critical actions, benefits/services, appointments, claims, profile status
+  - Define 5 user state scenarios (brand new user, active claims, incomplete profile, critical actions, power user)
+  - Specify VADS components to use for each section
+  - Include page structure requirements (header, breadcrumbs, footer)
 
-- [ ] **Create `prototype-loader.js`**
-  - File: `src/lib/prototype-loader.js`
-  - Functions:
-    - `loadScenario(scenarioPath)` - Fetch JSON and parse
-    - `applyScenarioToComponents(data, container)` - Update component attributes
-    - `initPrototype(config)` - Initialize with default scenario, seed localStorage state via `prototype-state.js`
-  - Event handling for scenario switcher
-  - URL parameter support (`?scenario=active-claims`)
-  - LocalStorage persistence of last selected scenario
-  - On scenario load/switch: call `resetState()` from `prototype-state.js` to clear form data and re-seed from JSON
+- [ ] **Generate prototype using Claude Code + MCP server**
+  - Use Claude Code with VADS MCP server configured
+  - Generate from PRD — this is the real test of the workflow
+  - Document the experience: what worked, what needed manual tweaking
 
-- [ ] **Create `prototype-state.js`**
-  - File: `src/lib/prototype-state.js`
-  - Per-prototype namespaced localStorage (key: `va-prototype:<prototype-name>`)
-  - Functions:
-    - `getState(prototypeName)` - Read full state from localStorage
-    - `setState(prototypeName, updates)` - Deep-merge updates into stored state
-    - `resetState(prototypeName, scenarioData)` - Clear and re-seed from scenario JSON
-    - `captureForm(prototypeName, formElement, pageName)` - Serialize form fields into `state.formData.<pageName>`
-  - Auto-wiring for forms: on page load, find any `<form data-next-page="...">` and attach a submit handler that calls `captureForm()` then navigates via `window.location.href`
-  - On page load, pre-fill form fields from stored state if returning to a previously completed step (enables back-button editing)
-  - Integration with prototype-loader: when a scenario is loaded, call `resetState()` to seed localStorage
+- [ ] **Validate generated output**
+  - All VADS components render correctly
+  - Correct attributes used (validated by MCP server)
+  - Scenario switching works between user states
+  - Responsive across breakpoints
+  - No accessibility errors (axe-core)
 
-- [ ] **Create `component-binder.js`**
-  - File: `src/lib/component-binder.js`
-  - Map JSON data to VA web component attributes
-  - Handle array rendering (clone templates, populate)
-  - Support conditional rendering (show/hide based on data presence)
-  - Use `data-bind="path.to.field"` attribute convention
-  - Support reading from localStorage state (via `prototype-state.js`) in addition to scenario JSON — enables review/confirmation pages to display form-submitted data
+- [ ] **Configure Vite for prototype**
+  - Add entry point in `vite.config.ts`
+  - Test hot reload
+  - Test production build and preview
 
-- [ ] **Build scenario controls UI**
-  - File: `src/lib/controls.js`
-  - Dropdown for scenario selection
-  - Current scenario indicator
-  - Responsive breakpoint buttons (mobile/tablet/desktop)
-  - Auto-discover scenarios from directory listing or config
+#### Phase P2: Workflow Documentation & Skills
 
-- [ ] **Create prototype base styles**
-  - File: `src/styles/prototype.css`
-  - Import VADS CSS utilities
-  - Scenario controls styling
-  - Prototype container layout
-  - Responsive preview iframe styles
+- [ ] **Create prototype workflow guide**
+  - File: `docs/skills/prototype-workflow.md`
+  - Guided onboarding: check prerequisites, ask what to prototype, generate scaffold
+  - References PRD template, VADS MCP server tools
+  - Deployment instructions for GitHub Pages
+  - Written as plain markdown any AI agent can follow
+  - Optionally symlink/reference from `.claude/skills/` for Claude Code `/skill` access
 
-- [ ] **Create page templates**
-  - Directory: `src/templates/`
-  - Audit existing templates in `vets-design-system-documentation/src/_templates/`
-  - Adapt Jami's CodeSandbox scaffolding patterns
-  - Create templates for: dashboard, form-step (intro/step/review), confirmation, hub, static-content
-  - Each template includes common VADS components for that page type
-  - Templates use `data-bind` attributes for dynamic content areas
-  - Form-step templates include auto-wired state management:
-    - `step.html`: `<form data-next-page="./step-2.html">` — designer only sets the next URL
-    - `review.html`: reads `state.formData` to render submitted values; includes edit links that navigate back with state preserved
-    - `confirmation/base.html`: reads full state for summary display
-  - All templates import `prototype-state.js` and call initialization on load
+- [ ] **Create Figma-to-code guide**
+  - File: `docs/skills/populate-from-figma.md`
+  - Accept Figma screenshot, identify VADS components, generate HTML
+  - Instruct AI to use MCP server `validate_component_api` tool
+  - Works with any AI agent that supports image input
 
-#### Phase 2: My VA Dashboard Prototype
+- [ ] **Create page reproduction guide**
+  - File: `docs/skills/reproduce-page.md`
+  - Accept URL, generate static HTML/CSS mock
+  - Save to `src/mocks/` directory for usability testing context
 
-Build the first prototype as a reference implementation.
+- [ ] **Wire up Claude Code skills (optional)**
+  - Create `.claude/skills/` entries that reference `docs/skills/` markdown files
+  - Enables Claude Code users to invoke workflows via `/skill` commands
+  - Not required — same workflows work by referencing docs directly
 
-**Tasks:**
-
-- [ ] **Define mock data JSON schema**
-  - File: `public/scenarios/_schema.json` (documentation)
-  - Structure:
-    ```json
-    {
-      "user": {
-        "firstName": "string",
-        "lastName": "string",
-        "profileComplete": "boolean"
-      },
-      "alerts": [{
-        "type": "info|warning|error|success",
-        "headline": "string",
-        "content": "string",
-        "dismissible": "boolean"
-      }],
-      "criticalActions": [{
-        "text": "string",
-        "link": "string",
-        "deadline": "string (ISO date)"
-      }],
-      "benefits": [{
-        "serviceName": "string",
-        "serviceLink": "string",
-        "serviceStatus": "string",
-        "serviceDetails": [{"label": "string", "value": "string"}],
-        "action": {"text": "string", "link": "string"} | null,
-        "icon": "string"
-      }],
-      "appointments": [{
-        "type": "string",
-        "provider": "string",
-        "date": "string",
-        "time": "string",
-        "location": "string",
-        "status": "string"
-      }],
-      "claims": [{
-        "type": "string",
-        "status": "string",
-        "lastUpdated": "string",
-        "link": "string"
-      }],
-      "profileStatus": {
-        "complete": "boolean",
-        "missingFields": ["string"]
-      }
-    }
-    ```
-
-- [ ] **Create scenario data files**
-  - Directory: `src/prototypes/my-va-dashboard/scenarios/`
-  - `brand-new-user.json` - Empty/minimal data, onboarding alerts
-  - `active-claims.json` - Multiple claims in progress, benefits active
-  - `incomplete-profile.json` - Missing contact info, prompts to complete
-  - `critical-actions.json` - Urgent deadlines, debt notices, appointment check-ins
-  - `power-user.json` - Maximum data across all categories
-
-- [ ] **Build My VA prototype page**
-  - File: `src/prototypes/my-va-dashboard/index.html`
-  - Layout sections:
-    - Alerts/notifications area
-    - Critical actions (if any)
-    - Benefits and services list (`va-service-list-item`)
-    - Appointments summary (`va-card`)
-    - Claims status (`va-card` or `va-service-list-item`)
-    - Profile completeness (`va-card-status`)
-  - Use VA Design System grid and spacing utilities
-  - Bind to data via `data-bind` attributes
-
-- [ ] **Configure Vite for My VA prototype**
-  - Add entry point in `vite.config.js`
-  - Ensure scenarios are copied to build output
-  - Test hot reload with scenario changes
-
-#### Phase 3: Claude Code Skills
-
-Create skills for guided designer workflows.
-
-**Tasks:**
-
-##### `/prototype-workflow` - Guided Onboarding
-
-- [ ] **Create skill directory and SKILL.md**
-  - File: `.claude/skills/prototype-workflow/SKILL.md`
-  - Trigger phrases: "create a prototype", "prototype workflow", "build a prototype"
-  - Workflow steps:
-    1. Check prerequisites (repo cloned, `npm install` run)
-    2. Ask what they want to prototype
-    3. Select appropriate template from `src/templates/`
-    4. Create scaffold files (prototype page + scenario JSONs)
-    5. Explain how to run `npm run dev`
-    6. Guide through editing scenarios
-    7. Explain scenario switcher usage
-    8. Show how to deploy to GitHub Pages
-    9. Suggest iteration workflow
-
-- [ ] **Include code templates in skill**
-  - Prototype page HTML template
-  - Scenario JSON template with all common fields
-  - Common VA component usage examples
-  - vite.config.js entry point addition
-
-- [ ] **Add troubleshooting guidance**
-  - Common errors (JSON syntax, missing components)
-  - How to check dev server output
-  - How to verify component loading
-  - GitHub Pages deployment issues
-
-##### `/populate-from-figma` - Generate HTML from Figma
-
-- [ ] **Create skill directory and SKILL.md**
-  - File: `.claude/skills/populate-from-figma/SKILL.md`
-  - Trigger phrases: "populate from Figma", "convert Figma to code", "generate from design"
-  - Workflow:
-    1. Accept Figma export (image screenshot or structured export)
-    2. Analyze the design to identify VA Design System components
-    3. Map design elements to appropriate VADS web components
-    4. Generate HTML using `@department-of-veterans-affairs/component-library`
-    5. Place output in selected template or new prototype file
-    6. List any components that couldn't be matched for manual review
-
-- [ ] **Component recognition patterns**
-  - Document visual patterns for each VADS component
-  - Include component-library import syntax
-  - Handle common component configurations (variants, states)
-
-- [ ] **Output formatting**
-  - Generate clean, properly indented HTML
-  - Include data-bind attributes where appropriate
-  - Add comments for sections needing manual adjustment
-
-##### `/reproduce-page` - Mock External Sites
-
-- [ ] **Create skill directory and SKILL.md**
-  - File: `.claude/skills/reproduce-page/SKILL.md`
-  - Trigger phrases: "reproduce page", "mock external site", "create page mock"
-  - Workflow:
-    1. Accept URL of publicly accessible page to reproduce
-    2. Fetch and analyze the page structure and visual appearance
-    3. Generate static HTML/CSS approximation
-    4. Strip all functionality (forms don't submit, links go nowhere)
-    5. Preserve visual appearance for usability testing context
-    6. Save to `src/mocks/` directory
-    7. Provide instructions for linking from prototype flow
-
-- [ ] **Mock page features**
-  - Static HTML with inline or scoped CSS
-  - Placeholder for navigation back to VA prototype
-  - Clear comment marking it as a non-functional mock
-  - Screenshot fallback option for complex pages
-
-#### Phase 4: Polish and Documentation
-
-Refine the experience and ensure it's documented.
-
-**Tasks:**
-
-- [ ] **Add error handling to prototype-loader.js**
-  - Catch JSON parse errors with friendly messages
-  - Log missing required fields
-  - Graceful degradation if scenario file not found
-  - Show toast/alert for errors during development
-
-- [ ] **Create responsive preview integration**
-  - Add breakpoint buttons to prototype controls
-  - Support mobile scenario variants if needed
-  - Consider iframe-based preview for accurate sizing
+#### Phase P3: Polish and Documentation
 
 - [ ] **Write comprehensive README**
-  - Quick start guide (clone, install, run)
-  - How to create a new prototype
-  - How to modify scenarios
-  - How to deploy to GitHub Pages
-  - Link to VA Design System component docs
-
-- [ ] **Add example prototypes**
-  - My VA dashboard (primary example)
-  - Consider: Simple form prototype as secondary example
-  - Each with multiple well-documented scenarios
+  - Quick start (clone, install, configure MCP server for your AI tool, run)
+  - How to create a new prototype (write PRD, run your AI coding agent)
+  - How to iterate and deploy
+  - MCP server setup instructions for Copilot, Claude Code, and Cursor
 
 - [ ] **Test with a real designer**
   - Have someone unfamiliar with the system try it
+  - Measure: time from "I want to prototype X" to "I have something testable"
   - Gather feedback on pain points
-  - Iterate on skill instructions and README
+  - Iterate on PRD template, agent instructions, README
+
+---
 
 ## Acceptance Criteria
 
-### Functional Requirements
+### VADS MCP Server
 
-- [ ] Designer can run `npm run dev` and access `http://localhost:5173/prototypes/my-va-dashboard/`
-- [ ] Scenario switcher dropdown shows all available scenarios
-- [ ] Selecting a scenario updates all components instantly (no page reload)
-- [ ] Editing a scenario JSON triggers hot reload with updated data
-- [ ] URL parameter `?scenario=active-claims` loads specific scenario
+- [ ] `find_components` returns all 67 components with correct tag names
+- [ ] `get_component` returns complete API (props, events, slots, parts) for any component
+- [ ] `validate_component_api` correctly identifies invalid attributes and suggests corrections
+- [ ] `get_tokens` returns tokens by category with CSS variable names
+- [ ] `find_tokens` finds tokens by name, value, or description
+- [ ] `get_utility_classes` returns VADS CSS utility class reference
+- [ ] `get_guide` returns installation, page-structure, form-patterns guides
+- [ ] MCP server works with Claude Code, GitHub Copilot, and Cursor
+- [ ] `npx @department-of-veterans-affairs/vads-mcp-server` starts successfully
+- [ ] MCP server configuration files ship in repo for all three tools (`.claude/`, `.vscode/`, `.cursor/`)
+
+### VA Prototype Kit
+
+- [ ] Designer can run `npm run dev` and see prototype at `localhost:5173`
 - [ ] All VA Design System components render correctly
 - [ ] Prototype is responsive across breakpoints
-- [ ] Form data entered on step pages persists to review and confirmation pages via localStorage
-- [ ] Each prototype's state is namespaced — running multiple prototypes doesn't cause conflicts
-- [ ] Navigating back to a completed form step pre-fills fields from stored state
-- [ ] Switching scenarios resets all stored state to the clean scenario JSON
-- [ ] Page-to-page navigation uses real page loads (not client-side routing) for accessibility
 - [ ] `npm run build && npm run preview` produces working static site
 - [ ] GitHub Pages deployment works and is accessible via public URL
+- [ ] AI coding agent with MCP server generates valid VADS component usage
+- [ ] PRD-driven generation produces a functional prototype
 
-### Non-Functional Requirements
+### End-to-End Workflow
 
-- [ ] Scenario switch takes < 500ms
-- [ ] Dev server starts in < 5 seconds
-- [ ] Prototype page loads in < 3 seconds on first visit (deployed)
-- [ ] JSON parse errors show clear, actionable message
-- [ ] Works in Chrome, Firefox, Safari (latest versions)
-
-### Quality Gates
-
-- [ ] At least 5 distinct scenarios demonstrating different states
-- [ ] `/prototype-workflow` skill successfully guides a designer through first prototype
-- [ ] `/populate-from-figma` skill generates valid HTML from Figma screenshot
-- [ ] `/reproduce-page` skill creates usable mock of external page
-- [ ] Page templates cover common VA.gov page types (dashboard, form step, confirmation, hub)
-- [ ] No accessibility errors in prototype page (axe-core clean)
-- [ ] README covers full workflow from clone to deploy
-- [ ] Code review by team member
+- [ ] Designer writes a PRD, runs an AI coding agent, and gets a working prototype
+- [ ] Generated prototype uses correct VADS components (no hallucinated APIs)
+- [ ] Prototype deploys to GitHub Pages with a shareable URL
+- [ ] Multiple user states/scenarios are testable in the prototype
+- [ ] Designer can iterate on generated code without developer assistance
+- [ ] Workflow works with both GitHub Copilot and Claude Code
 
 ## Success Metrics
 
-1. **Time to first prototype:** Designer can go from "I want to prototype [feature]" to "I have something I can test" in under 1 hour
-2. **Iteration speed:** Changes to mock data visible in preview within 5 seconds
-3. **Self-sufficiency:** Designer can complete full workflow without front-end developer help
-4. **AI assistance value:** Time spent tweaking AI-generated output is less than time to build from scratch (key metric from designer interview)
-5. **Adoption:** At least 2 other designers successfully use the workflow within first month
+1. **Time to first prototype:** Designer can go from "I want to prototype [feature]" to "I have something I can test" in under 30 minutes (improved from 1 hour target — MCP server makes AI generation faster)
+2. **AI accuracy:** Generated code uses correct VADS component APIs on first generation (MCP server eliminates hallucinated attributes)
+3. **Iteration speed:** Changes visible in preview within 5 seconds (Vite HMR)
+4. **Self-sufficiency:** Designer can complete full workflow without front-end developer help
+5. **AI assistance value:** Time spent tweaking AI-generated output is less than time to build from scratch
+6. **Adoption:** At least 2 other designers successfully use the workflow within first month
+7. **MCP server reuse:** MCP server is used beyond prototyping (e.g., in vets-website development, component-library development)
+8. **Cross-tool compatibility:** Workflow succeeds with both Copilot and Claude Code users
 
 ## Dependencies & Prerequisites
 
 **Required for designers:**
 - Node.js 18+ (LTS recommended)
 - npm (comes with Node.js)
+- An AI coding agent with MCP support (GitHub Copilot, Claude Code, Cursor, etc.)
 - Git access to the repository
-- Basic familiarity with JSON syntax
 - GitHub account (for forking and Pages deployment)
 
 **Component library:**
-- `@department-of-veterans-affairs/component-library` v54.5.2+ (current)
-- `@department-of-veterans-affairs/css-library` for VADS utility classes
-- Components used (from designer interview and common patterns):
-  - Layout: `va-card`, `va-accordion`, `va-breadcrumbs`
-  - Content: `va-alert`, `va-critical-action`, `va-service-list-item`, `va-card-status`, `va-address-block`, `va-need-help`
-  - Navigation: `va-link-action`, `va-action-link`, `va-button-pair`, `va-segmented-progress-bar`
-  - Form elements: `va-text-input`, `va-select`, `va-radio`, `va-checkbox`, `va-memorable-date`, `va-textarea`
-  - Status: `va-tag-status`, `va-loading-indicator`
-  - Global: Header, Footer, typography, iconography, colors
+- `@department-of-veterans-affairs/component-library` v54.6.0+ (Stencil web components)
+- `@department-of-veterans-affairs/css-library` v0.29.0+ (VADS utility classes)
+- `@department-of-veterans-affairs/va-design-system-tokens` v0.0.10+ (design tokens)
+- Components available (67 total):
+  - Layout: `va-card`, `va-accordion`, `va-breadcrumbs`, `va-tabs`
+  - Content: `va-alert`, `va-critical-action`, `va-service-list-item`, `va-card-status`, `va-need-help`, `va-summary-box`
+  - Navigation: `va-link`, `va-link-action`, `va-button`, `va-button-pair`, `va-segmented-progress-bar`, `va-pagination`
+  - Form: `va-text-input`, `va-select`, `va-radio`, `va-checkbox`, `va-checkbox-group`, `va-combo-box`, `va-memorable-date`, `va-textarea`, `va-file-input`, `va-date`
+  - Status: `va-tag-status`, `va-loading-indicator`, `va-progress-bar`
+  - Global: `va-official-gov-banner`, `va-header-minimal`, `va-minimal-footer`, `va-back-to-top`, `va-crisis-line-modal`
+
+**MCP server:**
+- `@modelcontextprotocol/sdk` (^1.0.0) — only runtime dependency
+- TypeScript for build
+- Published as npm package with CLI binary
 
 **Development tooling (auto-installed via npm):**
-- Vite 5.x for dev server and builds
-- No framework dependencies - vanilla JS
+- Vite 6.x for dev server and builds
+- TypeScript for type safety (optional for designers — can use plain JS)
 
 **Deployment:**
 - GitHub Pages (free, built into GitHub)
-- OR any static file hosting (Netlify, Vercel, S3, etc.)
+- OR any static file hosting
 
 ## Risk Analysis & Mitigation
 
 | Risk | Impact | Likelihood | Mitigation |
 |------|--------|------------|------------|
-| JSON editing errors frustrate designers | High | High | Add JSON validation with clear error messages; provide schema documentation; consider JSON editor integration |
-| Node.js installation barrier | Medium | Medium | Provide clear installation guide; link to Node.js installer; consider Codespaces as alternative |
-| Component APIs change | Medium | Low | Pin to specific component-library version; document version requirements; add renovate/dependabot |
+| AI generates incorrect component APIs despite MCP server | High | Low | MCP server provides real-time validation; `validate_component_api` tool catches errors |
+| Stencil `component-docs.json` missing information | Medium | Medium | Supplement with design.va.gov scraping or static guides; improve JSDoc in component-library source |
+| Node.js installation barrier for designers | Medium | Medium | Provide clear installation guide; consider Codespaces as alternative |
+| MCP server maintenance burden when component-library updates | Medium | Low | Auto-read from installed package — updates come via `npm update` |
 | Designers prefer Figma anyway | Medium | Medium | Make the workflow genuinely faster; provide clear value proposition; gather feedback early |
-| Prototype diverges from production patterns | Medium | Medium | Use same components and patterns; link to production My VA as reference |
-| GitHub Pages URL not accessible to test participants | Low | Low | Document how to use custom domains; provide Netlify/Vercel alternatives |
-| Repository maintenance burden | Medium | Low | Keep dependencies minimal; use dependabot for updates; document contribution guidelines |
-| Stale localStorage state confuses designers | Medium | Medium | Scenario switcher always resets state; add a visible "Reset state" button in controls; show current state key in dev tools hint |
+| PRD-driven approach produces inconsistent results | Medium | Medium | Provide a detailed PRD template; create good agent instructions; iterate based on feedback |
+| Component library auth/access issues in npm | Low | Low | Package is public on npm; document fallback for internal registry |
 
 ## Future Considerations
 
@@ -570,68 +786,82 @@ Refine the experience and ensure it's documented.
 1. **GitHub Codespaces integration:** One-click cloud development environment for designers without local Node.js
 2. **PR preview deployments:** GitHub Actions to deploy prototype branches to preview URLs automatically
 3. **Figma plugin integration:** Direct export from Figma to prototype kit (beyond screenshot-based `/populate-from-figma`)
-4. **User testing integration:** Direct link to schedule usability sessions with deployed prototype URL
-5. **Component library local linking:** For testing unreleased components in prototypes
-6. **Visual regression testing:** Playwright or similar for screenshot comparison between scenarios
-7. **`npm create va-prototype` command:** Scaffolding CLI for quick project initialization
-8. **Forms System extraction:** Long-term goal to make vets-website Forms System portable for use in prototypes (complex, requires significant architecture work)
-9. **Network preview mode:** `npm run preview:network` to serve on local network IP for quick stakeholder reviews before deploying
+4. **MCP server for vets-website:** Extend MCP server with vets-website-specific patterns (Forms System, platform utilities)
+5. **Component library contribution:** Improve JSDoc annotations in component-library source to enrich MCP server data (following NYSDS's approach of improving source docs for better AI output)
+6. **Visual regression testing:** Playwright for screenshot comparison of generated prototypes
+7. **Token dependency graph:** `get_token_graph` tool showing which tokens reference which (like NYSDS's `get_token_graph`)
+8. **Context-aware token validation:** Warn when surface tokens are used for text, etc. (like NYSDS's `get_token_info` with context parameter)
+9. **MCP server for mobile:** Extend to cover VA mobile design system components
+10. **Network preview mode:** `npm run preview:network` for local network sharing before deploying
 
 ## References & Research
+
+### VA Design System Ecosystem
+
+- Component Library: https://github.com/department-of-veterans-affairs/component-library (Stencil, 67 components)
+- CSS Library: `@department-of-veterans-affairs/css-library` (VADS utility classes)
+- Design System Resources: https://github.com/department-of-veterans-affairs/va-design-system-resources (tokens, assets)
+- Design Tokens: `@department-of-veterans-affairs/va-design-system-tokens` (color, font, spacing in JSON)
+- Documentation Site: https://design.va.gov/components/
+- Storybook: https://design.va.gov/storybook/
 
 ### VA Design System Documentation (this repo)
 
 - Service List Item component: `src/_components/service-list-item.md`
 - Manage Benefits pattern: `src/_patterns/help-users-to/manage-benefits-and-tools.md`
-- Existing iframe preview pattern: `src/_includes/iframe-preview.html`
+- Component docs data: `src/_data/component-docs.json` (Stencil-generated, 67 components)
+- Token CSVs: `src/_data/tokens/vads-color-semantic.csv`, `vads-spacing-semantic.csv`, etc.
+
+### NYSDS Prior Art (Primary Inspiration)
+
+- **Adoptive Application Demo:** https://github.com/ITS-HCD/project-adoptive-application
+  - Vanilla TypeScript + Vite, deployed to GitHub Pages
+  - Generated from PRD using Claude Code + NYSDS MCP server
+  - `.claude/prd.md` + `.claude/tasks.md` + `.claude/agents/` structure
+  - 3 production deps: `@nysds/components`, `@nysds/styles`, `lit`
+
+- **NYSDS MCP Server:** https://github.com/ITS-HCD/nysds/tree/feature/mcp-server-updates/packages/mcp-server
+  - 8 tools: find_components, get_component, validate_component_api, get_tokens, find_tokens, get_token_info, get_token_graph, get_utility_classes, get_guide
+  - Primary data source: Custom Elements Manifest (auto-generated from Lit component JSDoc)
+  - Secondary: DTCG tokens JSON/CSS, static markdown guides, hardcoded utility docs
+  - Only runtime dependency: `@modelcontextprotocol/sdk`
+  - Serves as our architectural reference for `vads-mcp-server`
+
+### Other Prior Art
+
+- **GOV.UK Prototype Kit:** https://prototype-kit.service.gov.uk/docs/
+- **USDS Gatsby Starter:** https://github.com/usds/gatsby-uswds-ts-starter
+- **MCP Protocol:** https://modelcontextprotocol.io/
+- **AGENTS.md Specification:** https://agents.md/ — Open standard for AI agent instructions, supported by 20+ tools
+- **Copilot Custom Instructions:** https://docs.github.com/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot
 
 ### External References
 
 - GitHub Issue: https://github.com/department-of-veterans-affairs/digital-experience-products/issues/1385
-- VA Codespaces documentation: https://depo-platform-documentation.scrollhelp.site/developer-docs/automatic-public-codespace-creation
 - Vite documentation: https://vitejs.dev/guide/
 - GitHub Pages documentation: https://docs.github.com/en/pages
-
-### Prior Art: Prototype Kits
-
-**GOV.UK Prototype Kit** - https://prototype-kit.service.gov.uk/docs/
-- The most directly relevant example of what we're building
-- Enables rapid development of "interactive, accessible and realistic prototypes"
-- Pre-built templates for common page types
-- Integrated with GOV.UK Design System components
-- Designed for diverse roles: designers, developers, researchers, product owners
-- Key philosophy: "avoid repeating work that's already been done"
-
-**USDS Gatsby Starter** - https://github.com/usds/gatsby-uswds-ts-starter
-- Opinionated TypeScript starter for Gatsby + USWDS
-- Uses Trussworks React USWDS components
-- Includes testing, linting, deployment automation
-- More developer-focused than our target (requires React/TypeScript knowledge)
-- Good reference for tooling choices (Vitest, GitHub Actions, pnpm)
-
-### Component Documentation
-
-- Card: https://design.va.gov/components/card/
-- Alert: https://design.va.gov/components/alert/
-- Service List Item: https://design.va.gov/components/service-list-item
-- Critical Action: https://design.va.gov/components/critical-action
-- Tag Status: https://design.va.gov/components/tag/tag-status/
-
-### Storybook Stories (for reference)
-
-| Component | Story ID |
-|-----------|----------|
-| va-service-list-item | `components-va-service-list-item--maximal-base` |
-| va-card | `components-va-card--default` |
-| va-card-status | `components-va-card-status--default` |
-| va-alert | `uswds-va-alert--default` |
-| va-critical-action | `components-va-critical-action--default` |
+- MCP SDK: https://github.com/modelcontextprotocol/typescript-sdk
 
 ---
 
-## Appendix: Scenario Data Examples
+## Appendix A: VADS MCP Server vs. NYSDS MCP Server Mapping
 
-### brand-new-user.json
+| NYSDS | VADS | Notes |
+|-------|------|-------|
+| Custom Elements Manifest (CEM) from `@custom-elements-manifest/analyzer` | `component-docs.json` from Stencil `@stencil/core` | Different generators, same concept. Stencil's format has `props` with `attr` field; CEM has `attributes`. Both provide events, slots, parts. |
+| DTCG tokens JSON (`tokens.json`) | Token JSON from `@department-of-veterans-affairs/va-design-system-tokens` | NYSDS uses DTCG format natively. VA tokens use a simpler `{name, value, attributes}` format with alias references. |
+| `tokens.css` (generated) | CSS from `@department-of-veterans-affairs/css-library` | Both provide CSS custom properties. VA's also includes utility classes. |
+| Lit web components | Stencil web components | Both compile to standard web components. Stencil generates shadow DOM components. Usage in HTML is identical. |
+| `@nysds/styles` (full bundle) | `@department-of-veterans-affairs/css-library` | Both provide reset, typography, and utility classes. |
+| 8 agency themes | N/A (single VA theme) | VA has one brand; no multi-theme support needed. |
+| `get_token_graph` (dependency graph) | Future consideration | Token alias resolution is simpler in VA's token structure. |
+| `get_token_info` with context validation | Future consideration | Could warn "surface tokens shouldn't be used for text" etc. |
+
+## Appendix B: Scenario Data Examples
+
+These remain valid as PRD reference material for the My VA Dashboard prototype. The AI will generate state management code to support these scenarios.
+
+### brand-new-user scenario
 
 ```json
 {
@@ -659,7 +889,7 @@ Refine the experience and ensure it's documented.
 }
 ```
 
-### active-claims.json
+### active-claims scenario
 
 ```json
 {
@@ -734,7 +964,7 @@ Refine the experience and ensure it's documented.
 }
 ```
 
-### power-user.json
+### power-user scenario
 
 ```json
 {
