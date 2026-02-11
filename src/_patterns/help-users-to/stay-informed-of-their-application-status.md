@@ -88,9 +88,11 @@ If there's a lag time between when someone submits the form and when VA receives
 
 ### Showing form submission status in My VA
 
-Form submissions on VA.gov or in the mobile app must show the submission status in My VA for people who are authenticated. These statuses appear in the **Forms and application** section of My VA. This section currently gets statuses from an API on page load for submissions processed asynchronously.
+Form submissions on VA.gov or in the mobile app must show the submission status in My VA for people who are authenticated. These statuses appear in the **Forms and application** section of My VA. This section currently gets statuses from an API on page load for submissions processed asynchronously. Once complete, cards stay on My VA for 60 days, then are removed for security purposes.
 
 If your form or application is linked to claims status tool, the current status will also appear in the **Claims and appeals** section of My VA.
+
+Refer to the [My VA documentation on displaying form status](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/identity-personalization/my-va/forms-status-on-My-VA/adding-a-form.md) for more information.
 
 #### How to display status for VA form and application submissions
 
