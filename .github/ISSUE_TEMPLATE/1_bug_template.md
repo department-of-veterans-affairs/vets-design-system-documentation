@@ -1,5 +1,5 @@
 ---
-name: "1. \U0001F534 Bug report"
+name: " \U0001F534 Bug - DO NOT USE"
 about: Something in the Design System is not working as expected
 title: ''
 labels: bug, platform-design-system-team
