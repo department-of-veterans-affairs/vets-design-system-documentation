@@ -1,0 +1,156 @@
+name: "6. 🔴 Bug report"
+description: "Use this template to report any defects for VA Design System Components and Patterns"
+title: "[Bug]: Description of Bug"
+labels: ["bug", "platform-design-system-team"]
+assignees: ["tbaker1026"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+         Thanks for taking the time to file a bug. Please fill out the details below.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: "Verify the following"
+      options:
+        - label: "I’ve searched for any related issues and avoided creating a duplicate issue."
+        - label: "To my knowledge this is not an accessibility issue. If this is an accessibility issue, use the accessibility issue template: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new/choose"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: product_name
+    attributes:
+      label: Select your product area
+      description: See [team directory](https://github.com/department-of-veterans-affairs/va.gov-team-sensitive/tree/master/teams#readme)
+      multiple: false
+      options:
+        - "Digital Experience"
+        - "Content and Information Architecture"
+        - "Benefits Portfolio"
+        - "Health Portfolio"
+        - "BAM Portfolio"
+    validations:
+      required: true
+
+  - type: input
+    id: team_name
+    attributes:
+      label: Team Name
+      description: Enter your team name
+    validations:
+      required: true
+
+  - type: input
+    id: team_label
+    attributes:
+      label: Team label
+      description: Enter your team name label from GitHub
+    validations:
+      required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: Point of contact
+      description: The person we should follow up with when this ticket is addressed/remediated.
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: "What happened"
+      description: "Describe in detail what went wrong; screenshots, videos, or gifs are strongly encouraged"
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "What I expected to happen"
+      description: "What did you expect to happen?"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Reproducing
+
+  - type: input
+    id: css-library-version
+    attributes:
+      label: "CSS Library version"
+      placeholder: "e.g. 1.2.3"
+    validations:
+      required: false
+
+  - type: input
+    id: component-pattern
+    attributes:
+      label: "Component or Pattern name"
+      placeholder: "va-text-input or prefill-pattern"
+    validations:
+      required: false
+
+  - type: input
+    id: device
+    attributes:
+      label: "Device"
+      description: "e.g. iPhone 8, Macbook"
+    validations:
+      required: false
+
+  - type: input
+    id: browser
+    attributes:
+      label: "Browser"
+      description: "e.g. Firefox, IE 11"
+    validations:
+      required: false
+
+  - type: input
+    id: url
+    attributes:
+      label: "URL where issue occurs"
+      description: "Include full environment URL. https://staging.va.gov/..."
+      placeholder: "https://staging.va.gov/..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to reproduce"
+      placeholder: |
+        1.
+        2.
+        3.
+        4.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: urgency
+    attributes:
+      label: "Urgency"
+      description: "How urgent is this request? Please select the appropriate option below and/or provide details"
+      options:
+        - label: "This bug is blocking work currently in progress"
+        - label: "This bug is affecting work currently in progress but we have a workaround"
+        - label: "This bug is blocking work planned within the next few sprints"
+        - label: "This bug is not blocking any work"
+        - label: "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: urgency-details
+    attributes:
+      label: "Urgency Details"
+      description: "If you're planning an upcoming staging review or have a specific release date, please enter the due date or other relevant details."
+    validations:
+      required: false

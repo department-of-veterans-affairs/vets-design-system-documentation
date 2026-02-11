@@ -11,6 +11,7 @@ mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage
+  - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Related
@@ -62,6 +63,10 @@ anchors:
 {% include component-example.html alt="List of claim letters in VA.gov." file="/images/components/list/claim-letters.png" caption="An example of a list of Claim letters from VA.gov." class="x2" %}
 
 {% include component-example.html alt="List of documents filed in VA.gov." file="/images/components/list/documents-filed.png" caption="An example of a list of documents filed with the VA." class="x2" %}
+
+## Code usage
+
+Lists use standard HTML elements (`<ul>`, `<ol>`, and `<dl>`) and do not require a web component. Refer to the [U.S. Web Design System list component](https://designsystem.digital.gov/components/list/) for detailed code usage guidance.
 
 ## Content considerations
 

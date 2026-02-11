@@ -4,6 +4,7 @@ title: Tabs
 intro-text: "Tabs organize related content into separate, focused panels that users can easily switch between."
 github-title: va-tabs
 status: use-with-caution-available
+web-component: va-tabs
 web: true
 mobile-app: false
 figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=24991-2000
@@ -12,6 +13,7 @@ anchors:
   - anchor: Examples
   - anchor: Usage
   - anchor: Behavior
+  - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Related
@@ -93,6 +95,8 @@ Tab panels are used as a container for the content associated with the selected 
 ### Instances of tabs in production
 
 See the [tabs component discussion](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/discussions/4443) for more information on tabs used in production.
+
+{% include component-docs.html component_name=page.web-component %}
 
 ## Content considerations
 
