@@ -117,7 +117,7 @@ There are many instances of the Card component in production. This is not an exh
 
 #### Media
 
-{% include component-example.html alt="A media card for the GI Bill Comparison Tool ." file="/images/components/card/media.png" caption="A media card features an image or icon and contains a call to action with a description." reverse=true width="50%" %}
+{% include component-example.html alt="A media card for the GI Bill Comparison Tool." file="/images/components/card/media.png" caption="A media card features an image or icon and contains a call to action with a description." reverse=true width="50%" %}
 
 #### Navigation
 
