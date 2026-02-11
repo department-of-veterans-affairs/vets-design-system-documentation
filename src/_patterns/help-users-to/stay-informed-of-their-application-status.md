@@ -104,7 +104,7 @@ VA form and application submissions on My VA display statuses to help people sta
 
 | Status | Description |
 | :---- | :---- |
-| Draft | User has a form or application |
+| Draft | You started this form online but haven’t submitted it yet |
 | Submission in progress | VA is processing your submission | 
 | Received | VA received your submission and it is being reviewed |
 | Action needed | VA needs additional info from you |
