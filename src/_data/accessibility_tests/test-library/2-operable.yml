@@ -11,10 +11,23 @@ tests:
     508_severity: Critical
     wcag_url: https://www.w3.org/TR/WCAG21/#keyboard
     description_short: |
-      Link is fully operable using only a keyboard.
+      Interactive elements are fully operable using only a keyboard.
     description_full: |
-      When you access a link using only a keyboard,
-      you can navigate to the link, activate it, and navigate away from it.
+      When you access an interactive element using only a keyboard,
+      you can navigate to the element, activate it, and navigate away from it.
+    subtests:
+      - id: DST-211-001
+        description_short: |
+          Link is fully operable using only a keyboard.
+        description_full: |
+          When you access a link using only a keyboard,
+          you can navigate to the link, activate it, and navigate away from it.
+      - id: DST-211-002
+        description_short: |
+          Form inputs are fully operable using only a keyboard.
+        description_full: |
+          When you access a form input using only a keyboard,
+          you can navigate to the input, activate it, and navigate away from it.
   - id: WEB-212
     category: keyboard
     wcag_criterion: 2.1.2
@@ -163,10 +176,10 @@ tests:
           you find the heading text accurately describes the topic or purpose of the content that follows.
       - id: WEB-246-002
         description_short: |
-          Form labels clearly describe what to enter.
+          Labels are descriptive.
         description_full: |
-          When you view form fields,
-          you find labels describe the purpose or function of the form fields and controls.
+          When you view or interact with a form input,
+          its label clearly describes the expected input.
   - id: WEB-247
     category: keyboard
     wcag_criterion: 2.4.7
@@ -199,10 +212,10 @@ tests:
     508_severity: N/A
     wcag_url: https://www.w3.org/TR/WCAG22/#focus-not-obscured-minimum
     description_short: |
-      Focused elements remain visible and avoid being hidden by other content.
+      Focused elements are fully visible.
     description_full: |
-      When you navigate the page with a keyboard,
-      you find that the element that has focus remains visible on screen and is not obscured
+      When you focus on an element with a keyboard,
+      you see that the element that has focus remains visible on screen and is not obscured
       by sticky headers, footers, modals, tooltips, or other overlaying content.
   - id: WEB-251
     category: general
@@ -236,7 +249,7 @@ tests:
     508_severity: N/A
     wcag_url: https://www.w3.org/TR/WCAG21/#label-in-name
     description_short: |
-      Screen reader announcements match visible text labels.
+      Screen reader announcements match visible text.
     description_full: |
       When you focus on an interactive element with a screen reader,
       you hear an announcement that matches the visible text for that element.

@@ -22,7 +22,7 @@ tests:
             result: pass
           - name: Android Chrome/Talkback
             result: pass
-  - id: WEB-211
+  - id: DST-211-001
     test_results:
       - version: 54.6.1
         tester: John Doe

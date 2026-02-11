@@ -154,10 +154,10 @@ tests:
       - id: WEB-131-006
         category: screen_reader
         description_short: |
-          Screen readers announce the labels, descriptions, and errors on form inputs.
+          Screen readers announce the form input labels and instructions.
         description_full: |
           When you interact with the form input with a screen reader,
-          you hear an announcement that includes the label, description, and error message when applicable.
+          you hear an announcement that includes the label, hint text, required state, and error message when applicable.
       - id: WEB-131-007
         category: screen_reader
         description_short: |
@@ -284,10 +284,10 @@ tests:
     508_severity: Medium
     wcag_url: https://www.w3.org/TR/WCAG21/#resize-text
     description_short: |
-      Users can enlarge text to 200% without breaking the page.
+      Text resizes to 200% without loss of content or functionality.
     description_full: |
       When you increase text size up to 200%,
-      you find no loss of content or functionality.
+      all content remains visible and functional without needing to scroll in two dimensions.
   - id: WEB-145
     category: general
     wcag_criterion: 1.4.5
@@ -296,7 +296,7 @@ tests:
     508_severity: Critical
     wcag_url: https://www.w3.org/TR/WCAG21/#images-of-text
     description_short: |
-      The design uses HTML/CSS instead of images of text.
+      Text is not presented as images.
     description_full: |
       When you view the page,
       you find the design does not use images of text when native HTML/CSS can achieve the same presentation, excluding logos and branding.
@@ -308,7 +308,7 @@ tests:
     508_severity: N/A
     wcag_url: https://www.w3.org/TR/WCAG21/#reflow
     description_short: |
-      Content fits on small screens without requiring scrolling in two dimensions.
+      The component adapts to small screens without requiring scrolling in two dimensions.
     description_full: |
       When you open the component in a 320 pixel viewport,
       you can see and interact with all content without needing to scroll both
@@ -344,6 +344,12 @@ tests:
         description_full: |
           When you compare the color of the icon against its background using a contrast checker tool,
           you find that the icon has at least a 3:1 contrast ratio against its background.
+      - id: DST-1411-002
+        description_short: |
+         Form inputs have sufficient contrast against their background.
+        description_full: |
+          When you compare the color of the form input against its background using a contrast checker tool,
+          you find that the form input has at least a 3:1 contrast ratio against its background.
   - id: WEB-1412
     category: general
     wcag_criterion: 1.4.12

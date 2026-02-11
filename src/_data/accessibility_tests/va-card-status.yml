@@ -14,13 +14,11 @@ tests:
   - id: DST-141-001
   - id: WEB-1410
   - id: WEB-1411
-  - id: WEB-243
-  - id: WEB-211
+  - id: DST-211-001
   - id: WEB-212
   - id: WEB-247
   - id: WEB-331
-  - id: DST-331-003
-  - id: DST-331-004
+  - id: DST-331-005
   - id: WEB-333
   - id: DST-412-001
   - id: WEB-412-001

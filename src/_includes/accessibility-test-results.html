@@ -285,16 +285,26 @@ va-table va-table-row span:first-child {
         <va-table-row slot="headers">
           <span>Version Tested</span>
           {% for env in all_environments %}
+          {% if env.name %}
+          <span>{{ env.name }}{% if env.required %}*{% endif %}</span>
+          {% else %}
           <span>{{ env }}</span>
+          {% endif %}
           {% endfor %}
         </va-table-row>
         {% if test_runs and test_runs.size > 0 %}
           {% for run in test_runs %}
           <va-table-row>
             <span>{{ run.version }}</span>
-            {% for env_name in all_environments %}
+            {% for env_item in all_environments %}
             <span>
               {% assign env_result = nil %}
+              {% comment %} Get environment name - handles both string and object format {% endcomment %}
+              {% if env_item.name %}
+                {% assign env_name = env_item.name %}
+              {% else %}
+                {% assign env_name = env_item %}
+              {% endif %}
               {% for env in run.environments %}
                 {% assign current_env_name = env.name %}
                 {% if current_env_name == env_name %}
@@ -330,7 +340,7 @@ va-table va-table-row span:first-child {
           {% comment %} No test results yet - show all environments as Untested {% endcomment %}
           <va-table-row>
             <span>Not yet tested</span>
-            {% for env_name in all_environments %}
+            {% for env_item in all_environments %}
             <span>Untested</span>
             {% endfor %}
           </va-table-row>
