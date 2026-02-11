@@ -103,7 +103,7 @@ Exception: If the form submitter completes an action that they can do only once,
 
 ### 3. Progress bar - segmented with step label
 
-The [segmented progress bar component]({{ site.baseurl }}/templates/forms/introduction#structure) updates users on their progress through a multistep process.
+The [segmented progress bar component]({{ site.baseurl }}/components/form/progress-bar-segmented) updates users on their progress through a multistep process.
 
 To help determine the number and labels of steps it is important to group fields and form questions logically. This may require you to figure out the form questions before determining the number and labels of form steps. Use the [one thing per page design principle]({{ site.baseurl }}/patterns/ask-users-for/a-single-response#design-principles) to determine how much form content to fit onto a single form page.
 
