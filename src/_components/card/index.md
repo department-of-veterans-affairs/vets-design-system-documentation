@@ -117,7 +117,7 @@ There are many instances of the Card component in production. This is not an exh
 
 #### Media
 
-{% include component-example.html alt="A media card for the GI Bill Comparison Tool ." file="/images/components/card/media.png" caption="A media card features an image or icon and contains a call-to-action with a description." reverse=true width="50%" %}
+{% include component-example.html alt="A media card for the GI Bill Comparison Tool ." file="/images/components/card/media.png" caption="A media card features an image or icon and contains a call to action with a description." reverse=true width="50%" %}
 
 #### Navigation
 
@@ -136,8 +136,8 @@ There are many instances of the Card component in production. This is not an exh
 ### Calls to action
 
 - **Make cards actionable.** A Card should be actionable. Accomplish this by using the [action link]({{ site.baseurl }}/components/link/action) component.
-- **Action links for primary CTA.** Use an [action link]({{ site.baseurl }}/components/link/action) for the primary call-to-action.
-- **Max 3 CTAs.** A card should not contain more than three calls-to-action (CTAs).
+- **Action links for primary CTA.** Use an [action link]({{ site.baseurl }}/components/link/action) for the primary call to action.
+- **Max 3 CTAs.** A card should not contain more than three calls to action (CTAs).
 - **Secondary and tertiary actions.** Secondary and tertiary actions can use the [secondary variation of action link]({{ site.baseurl }}/components/link/action), an [active or other link variation]({{ site.baseurl }}/components/link/#variations), or a [default link]({{ site.baseurl }}/components/link).
 
 ### Placement

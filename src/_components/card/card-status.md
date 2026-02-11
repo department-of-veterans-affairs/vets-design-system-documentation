@@ -45,11 +45,11 @@ anchors:
 ### When to consider something else
 - **When you need flexible content structure.** Use the [Card component]({{ site.baseurl }}/components/card) when you need full control over the card's content and structure, rather than working with predefined props.
 - **When status isn't the focus.** Use the [Card component]({{ site.baseurl }}/components/card) for informational cards where status communication isn't the primary purpose.
-- **When you need multiple calls to action.** Use the [Card component]({{ site.baseurl }}/components/card) if you need more than one call-to-action (Card allows up to 3 CTAs).
+- **When you need multiple calls to action.** Use the [Card component]({{ site.baseurl }}/components/card) if you need more than one call to action (Card allows up to 3 CTAs).
 
 ### How this component works
 
-The key difference between the Card Status component and the Card component is while [Card]({{ site.baseurl }}/components/card) is a flexible container where teams build and pass in their own content, Card Status is a structured component with required props that enforce a consistent pattern for status-driven scenarios.
+The key difference between the Card Status component and the Card component is that while [Card]({{ site.baseurl }}/components/card) is a flexible container where teams build and pass in their own content, Card Status is a structured component with required props that enforce a consistent pattern for status-driven scenarios.
 
 #### Default
 
@@ -110,9 +110,8 @@ The Card Status component handles most status and error accessibility automatica
 ### How Card Status handles accessibility programmatically
 
 **Status announcements:**
-* Status uses the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component with `role="status"`
-* Includes visually hidden text that says the tag is reporting status and its type. (e.g., "Status error").
-* The component programmatically associates status with the card heading
+* Status uses the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component with `role="status"`. The Tag Status component includes visually hidden text that announces "Status" before the tag text (for example, "Status, Error"), and teams can't change this announcement pattern.
+* The component programmatically associates status with the card heading.
 
 **Error handling:**
 * Error messages wrapped in `role="alert"` for automatic announcement
