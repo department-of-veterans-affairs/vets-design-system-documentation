@@ -93,7 +93,7 @@ This variation is the [default](#default). New variations of Card start with thi
 
 #### 2. With Background
 
-[This variation](#with-background) was the previous default and is the Card variation most widely found across VA.gov. However, it is no longer preferred. Visually, it features a gray background (`$color-gray-lightest`) with no border or drop shadow. [Benefit payments](#benefit-payments) and [Application status](#application-status-benefit-application-drafts) are examples of this variation.
+[This variation](#with-background) was the previous default and is the Card variation most widely found across VA.gov. However, it is no longer preferred. Visually, it features a gray background (`$color-gray-lightest`) with no border or drop shadow.
 
 #### 3. With Drop Shadow
 
