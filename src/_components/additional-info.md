@@ -1,7 +1,7 @@
 ---
 layout: component
 title: Additional info
-status: use-with-caution
+status: use-with-caution-candidate
 intro-text: "Additional info makes content easier to scan as it hides information that may not be applicable to all users or situations. Use this component to situate plain language help at the point of the process where it is most relevant."
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1350%3A22760&mode=design&t=TiJHClaf3VQ6wU6B-1
 uswds-v3: default
