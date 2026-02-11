@@ -1,0 +1,26 @@
+component: va-card-status
+component_url: /components/card/card-status/
+storybook_url: /storybook/?path=/docs/components-va-card-status--docs
+
+# Tests applied to this component
+tests:
+  - id: WEB-131-002
+    test_results:
+      - version: 54.6.0
+        tester: Amy Leadem
+        environments:
+          - name: MacOS/Chrome
+            result: pass
+  - id: DST-141-001
+  - id: WEB-1410
+  - id: WEB-1411
+  - id: WEB-243
+  - id: WEB-211
+  - id: WEB-212
+  - id: WEB-247
+  - id: WEB-331
+  - id: DST-331-003
+  - id: DST-331-004
+  - id: WEB-333
+  - id: DST-412-001
+  - id: WEB-412-001

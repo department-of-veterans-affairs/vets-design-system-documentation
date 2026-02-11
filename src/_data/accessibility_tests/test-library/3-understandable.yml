@@ -95,10 +95,38 @@ tests:
     508_severity: Critical
     wcag_url: https://www.w3.org/TR/WCAG21/#error-identification
     description_short: |
-      Error messages clearly inform users of issues.
+      Error messages inform users of invalid inputs.
     description_full: |
-      When an input error is detected,
-      you are informed of the error and how to correct it.
+      When you enter an invalid value in a form input and attempt to advance the form,
+      you receive a descriptive error message that identifies the problem.
+    subtests:
+      - id: DST-331-001
+        category: screen_reader
+        description_short: |
+          Errors are identified on blur.
+        description_full: |
+          When you enter an invalid value in a form input and move focus away from the input,
+          you receive an error message that identifies the problem.
+      - id: DST-331-002
+        description_short: |
+          Invalid inputs have visible error styles.
+        description_full: |
+          When receiving an error message for an invalid input,
+          you see a distinct visual style indicating which input has the error.
+      - id: DST-331-003
+        category: screen_reader
+        description_short: |
+          Screen readers announce errors when they occur.
+        description_full: |
+          When you receive an error message while using a screen reader,
+          you hear the error message announced without needing to move focus to the message.
+      - id: DST-331-004
+        description_short: |
+          Error messages appear near the relevant input or specify the related input.
+        description_full: |
+          When you receive an error message,
+          you find it appears in a location that associates it with the relevant input,
+          or the message clearly indicates which input has the error.
   - id: WEB-332
     category: general
     wcag_criterion: 3.3.2

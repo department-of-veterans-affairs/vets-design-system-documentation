@@ -45,11 +45,11 @@
         "id": "{{ test.id }}",
         "name": "{{ test_def.name | escape }}",
         {% if parent_def %}
-        "category": "{{ parent_def.category }}",
-        "wcag_criterion": "{{ parent_def.wcag_criterion }}",
-        "wcag_name": "{{ parent_def.wcag_name | escape }}",
-        "wcag_level": "{{ parent_def.wcag_level }}",
-        "wcag_url": "{{ parent_def.wcag_url }}",
+        "category": "{{ test_def.category | default: parent_def.category }}",
+        "wcag_criterion": "{{ test_def.wcag_criterion | default: parent_def.wcag_criterion }}",
+        "wcag_name": "{{ test_def.wcag_name | default: parent_def.wcag_name | escape }}",
+        "wcag_level": "{{ test_def.wcag_level | default: parent_def.wcag_level }}",
+        "wcag_url": "{{ test_def.wcag_url | default: parent_def.wcag_url }}",
         {% else %}
         "category": "{{ test_def.category }}",
         "wcag_criterion": "{{ test_def.wcag_criterion }}",
@@ -119,9 +119,9 @@
   {% endunless %}
 
   {% if test_def %}
-    {% comment %} Use parent category if this is a subtest {% endcomment %}
+    {% comment %} Use subtest's category if defined, otherwise fall back to parent category {% endcomment %}
     {% if parent_def %}
-      {% assign test_category = parent_def.category %}
+      {% assign test_category = test_def.category | default: parent_def.category %}
     {% else %}
       {% assign test_category = test_def.category %}
     {% endif %}
@@ -268,8 +268,9 @@ va-table va-table-row span:first-child {
       {% assign test_runs = test.test_results %}
 
       {% comment %} Get expected test environments from category mapping {% endcomment %}
+      {% comment %} Use subtest's category if defined, otherwise fall back to parent category {% endcomment %}
       {% if parent_def %}
-        {% assign test_category = parent_def.category %}
+        {% assign test_category = test_def.category | default: parent_def.category %}
       {% else %}
         {% assign test_category = test_def.category %}
       {% endif %}

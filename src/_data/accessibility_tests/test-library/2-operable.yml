@@ -175,7 +175,7 @@ tests:
     508_severity: Critical
     wcag_url: https://www.w3.org/TR/WCAG21/#focus-visible
     description_short: |
-      Interactive elements display clear focus indicators.
+      Interactive elements display a clear focus indicator.
     description_full: |
       When you navigate to an interactive element with a keyboard,
       you see a clear visual indicator around the element showing that it has focus.

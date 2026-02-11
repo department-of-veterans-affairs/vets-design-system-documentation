@@ -40,8 +40,7 @@ tests:
           Links navigate to a new page or section.
         description_full: |
           When you activate a link,
-          you find that it navigates either to a new page
-          or a section on the current page.
+          you are taken to a different page or a section on the current page.
       - id: DST-412-002
         description_short: |
           Buttons perform actions on the current page.

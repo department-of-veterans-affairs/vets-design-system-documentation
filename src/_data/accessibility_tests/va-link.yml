@@ -2,18 +2,9 @@ component: va-link
 component_url: /components/link/
 storybook_url: /storybook/?path=/docs/components-va-link--docs
 
-variants:
-  - default
-  - active
-  - back
-  - calendar
-  - channel
-  - download
-  - external
-  - video
-
 # Tests applied to this component
 tests:
+  - id: WEB-1410
   - id: DST-141-001
     test_results:
       - version: 54.6.1
@@ -22,6 +13,15 @@ tests:
           - name: MacOS/Chrome
             result: pass
         notes: Sample notes about the test results.
+  - id: WEB-143
+    test_results:
+      - version: 54.6.0
+        tester: Jane Smith
+        environments:
+          - name: Windows Edge/NVDA
+            result: pass
+          - name: Android Chrome/Talkback
+            result: pass
   - id: WEB-211
     test_results:
       - version: 54.6.1

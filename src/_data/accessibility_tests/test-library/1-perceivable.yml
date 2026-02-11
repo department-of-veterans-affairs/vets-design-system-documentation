@@ -131,8 +131,8 @@ tests:
         description_short: |
           Headings follow a logical order without skipping levels.
         description_full: |
-          When you review the heading structure,
-          you find that heading levels follow a logical, sequential hierarchy with no skipped heading levels.
+          When you review the heading structure in the component,
+          you find that heading levels follow a logical, sequential hierarchy and do not skip heading levels.
       - id: WEB-131-003
         description_short: |
           Page includes one H1.
@@ -152,17 +152,19 @@ tests:
           When you inspect related form controls,
           you find they are semantically grouped to convey their relationships.
       - id: WEB-131-006
+        category: screen_reader
         description_short: |
-          Code connects form labels, descriptions, and errors to their fields.
+          Screen readers announce the labels, descriptions, and errors on form inputs.
         description_full: |
-          When you inspect form fields,
-          you find that labels, descriptions, and error messages are programmatically associated to their corresponding field.
+          When you interact with the form input with a screen reader,
+          you hear an announcement that includes the label, description, and error message when applicable.
       - id: WEB-131-007
+        category: screen_reader
         description_short: |
-          Code identifies required fields programmatically.
+          Screen readers announce required fields.
         description_full: |
-          When you inspect required fields,
-          you find the code identifies them programmatically for assistive technology.
+          When you interact with required fields using a screen reader,
+          you hear an announcement indicating that the field is required.
       - id: WEB-131-008
         description_short: |
           Page uses landmarks correctly.
@@ -245,7 +247,7 @@ tests:
     subtests:
       - id: DST-141-001
         description_short: |
-          The design indicates links using more than just color.
+          Link styles use more than just color to indicate that it is a link.
         description_full: |
           When you view a link,
           you see that the link has a text underline and uses the expected VA colors for default, hover, focus, and visited states.
@@ -259,8 +261,9 @@ tests:
     description_short: |
       Text has sufficient contrast against its background.
     description_full: |
-      When you check the contrast ratio of text and images of text,
-      you find that regular text has a ratio of at least 4.5:1 and large-scale text has a ratio of at least 3:1.
+      When you compare the color of the text against its background using a contrast checker tool,
+      you find that the body text has a contrast ratio of at least 4.5:1
+      and large-scale text has a contrast ratio of at least 3:1.
   - id: WEB-142
     category: general
     wcag_criterion: 1.4.2
@@ -305,10 +308,11 @@ tests:
     508_severity: N/A
     wcag_url: https://www.w3.org/TR/WCAG21/#reflow
     description_short: |
-      Content fits on small screens without horizontal scrolling.
+      Content fits on small screens without requiring scrolling in two dimensions.
     description_full: |
-      When you view content at 320x256 CSS pixels or larger,
-      you find it reflows to a single-dimension scroll.
+      When you open the component in a 320 pixel viewport,
+      you can see and interact with all content without needing to scroll both
+      horizontally and vertically.
   - id: WEB-1411
     category: general
     wcag_criterion: 1.4.11
@@ -317,10 +321,10 @@ tests:
     508_severity:
     wcag_url: https://www.w3.org/TR/WCAG21/#non-text-contrast
     description_short: |
-      Interactive elements and meaningful graphic elements have sufficient contrast against adjacent colors.
+      Interactive elements and meaningful graphic elements have sufficient contrast against their background.
     description_full: |
       When you view interactive elements and graphic elements on the page,
-      meaningful visual information has a contrast ratio of at least 3:1 against adjacent colors.
+      meaningful visual information has a contrast ratio of at least 3:1 against their background.
     subtests:
       - id: WEB-1411-001
         description_short: |
@@ -330,10 +334,10 @@ tests:
           you find that active UI components achieve a 3:1 contrast ratio against adjacent colors.
       - id: WEB-1411-002
         description_short: |
-          Important graphics and icons have sufficient contrast.
+          Meaningful icons and graphic elements have sufficient contrast.
         description_full: |
-          When you check the contrast of graphics and icons,
-          you find that essential graphical objects have a 3:1 contrast ratio against adjacent colors.
+          When you check the contrast of meaningful icons and graphic elements,
+          you find that they have a 3:1 contrast ratio against their background.
       - id: DST-1411-001
         description_short: |
           Icons have sufficient contrast against their background.
