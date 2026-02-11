@@ -20,15 +20,15 @@ body:
     validations:
       required: true
       
-  - type: checkboxes
+  - type: dropdown
     id: bug_enhancement
     attributes:
       label: "Type of issue"
       description: "Is this a bug or an enhancement to an existing component or pattern? If a new component or pattern, fill out an experimental design request."
       options:
-        - label: "Bug"
-        - label: "Enhancement"
-        - label: "Unknown"
+        - Bug
+        - Enhancement
+        - Unknown
     validations:
       required: true
       
