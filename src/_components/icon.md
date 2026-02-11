@@ -211,6 +211,7 @@ Some icons may have specific placement guidance defined here.
 - **Right-facing chevrons are reserved for links, but may be used on buttons that expand and collapse additional content.** In the latter case, the direction of the chevron should indicate the direction in which additional content expands and collapses, like in drawers, flyout menus, and dropdowns.
   - **Examples:** Nested menu items within "VA Benefits and Health Care" in the [Header]({{ site.baseurl }}/components/header/), [Additional Info]({{ site.baseurl }}/components/additional-info), and [Alert - Expandable]({{ site.baseurl }}/components/alert/alert-expandable/).
 
+{% include component-docs.html %}
 
 {% include component-docs.html component_name=page.web-component %}
 
