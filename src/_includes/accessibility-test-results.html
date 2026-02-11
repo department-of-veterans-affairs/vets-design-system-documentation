@@ -307,17 +307,17 @@ va-table va-table-row span:first-child {
                   <va-tag-status
                     status="success"
                     text="Pass"
-                  />
+                  ></va-tag-status>
                 {% elsif env_result == "fail" %}
                   <va-tag-status
                     status="error"
                     text="Fail"
-                  />
+                  ></va-tag-status>
                 {% elsif env_result == "conditional" %}
                   <va-tag-status
                     status="info"
                     text="Conditional"
-                  />
+                  ></va-tag-status>
                 {% endif %}
               {% else %}
                 <span>Untested</span>

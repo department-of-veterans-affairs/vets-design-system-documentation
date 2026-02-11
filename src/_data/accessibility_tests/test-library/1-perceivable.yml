@@ -129,7 +129,7 @@ tests:
           you find that they accurately reflect content hierarchy and are semantically marked.
       - id: WEB-131-002
         description_short: |
-          Headings follow a logical order without skipping levels.
+          Headings follow a logical order.
         description_full: |
           When you review the heading structure in the component,
           you find that heading levels follow a logical, sequential hierarchy and do not skip heading levels.
@@ -318,7 +318,7 @@ tests:
     wcag_criterion: 1.4.11
     wcag_name: Non-text Contrast
     wcag_level: AA
-    508_severity:
+    508_severity: N/A
     wcag_url: https://www.w3.org/TR/WCAG21/#non-text-contrast
     description_short: |
       Interactive elements and meaningful graphic elements have sufficient contrast against their background.
@@ -368,4 +368,3 @@ tests:
     description_full: |
       When hover or focus triggers content,
       you find you can dismiss it without moving the pointer or focus.
-  - id: WEB-211
