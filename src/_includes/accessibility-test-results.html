@@ -1,6 +1,13 @@
 {% assign component_name = include.component_name %}
 {% assign component_tests = site.data.accessibility_tests[component_name] %}
-{% assign test_library = site.data.accessibility_tests.test-library.tests %}
+
+{% comment %} Load all WCAG principle-based test files and merge into single array {% endcomment %}
+{% assign test_library = "" | split: "" %}
+{% assign perceivable_tests = site.data.accessibility_tests.test-library["1-perceivable"].tests %}
+{% assign operable_tests = site.data.accessibility_tests.test-library["2-operable"].tests %}
+{% assign understandable_tests = site.data.accessibility_tests.test-library["3-understandable"].tests %}
+{% assign robust_tests = site.data.accessibility_tests.test-library["4-robust"].tests %}
+{% assign test_library = test_library | concat: perceivable_tests | concat: operable_tests | concat: understandable_tests | concat: robust_tests %}
 
 {% if component_tests %}
 
@@ -266,11 +273,11 @@ va-table va-table-row span:first-child {
       {% else %}
         {% assign test_category = test_def.category %}
       {% endif %}
-      {% assign all_environments = site.data.accessibility_tests.test-library.environments[test_category] %}
+      {% assign all_environments = site.data.accessibility_tests.test-library._config.environments[test_category] %}
 
       {% comment %} Fall back to general environments if category doesn't have specific environments {% endcomment %}
       {% unless all_environments %}
-        {% assign all_environments = site.data.accessibility_tests.test-library.environments.general %}
+        {% assign all_environments = site.data.accessibility_tests.test-library._config.environments.general %}
       {% endunless %}
 
       <va-table full-width table-type="bordered" scrollable>

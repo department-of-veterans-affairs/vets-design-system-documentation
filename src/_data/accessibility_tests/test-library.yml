@@ -74,6 +74,193 @@ tests:
         description_full: |
           When you view a CSS background image on a page,
           the image is purely decorative and does not contain any important information or functionality.
+      - id: WEB-111-005
+        description_short: |
+          Brief descriptions are provided for videos and audio files.
+        description_full: |
+          When you view video or audio content,
+          you find short descriptive text alternatives that identify the purpose of the content.
+  - id: WEB-121
+    category: screen_reader
+    wcag_criterion: 1.2.1
+    wcag_name: Audio-only and Video-only (Prerecorded)
+    wcag_level: A
+    508_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG21/#audio-only-and-video-only-prerecorded
+    description_short: |
+      Text transcripts are provided for audio and video-only content.
+    description_full: |
+      When you view audio-only or video-only media,
+      you find a transcript that provides the same information as presented in the original media content.
+  - id: WEB-122
+    category: screen_reader
+    wcag_criterion: 1.2.2
+    wcag_name: Captions (Prerecorded)
+    wcag_level: A
+    508_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG21/#captions-prerecorded
+    description_short: |
+      Captions are provided for all prerecorded videos.
+    description_full: |
+      When you view prerecorded videos,
+      you find synchronized captions for dialogue, sound effects, and relevant audio.
+  - id: WEB-123
+    category: screen_reader
+    wcag_criterion: 1.2.3
+    wcag_name: Audio Description or Media Alternative (Prerecorded)
+    wcag_level: A
+    508_severity: High
+    wcag_url: https://www.w3.org/TR/WCAG21/#audio-description-or-media-alternative-prerecorded
+    description_short: |
+      Transcripts or audio descriptions are included for videos with audio.
+    description_full: |
+      When you view non-live video,
+      you find a full descriptive transcript or an audio description.
+  - id: WEB-124
+    category: screen_reader
+    wcag_criterion: 1.2.4
+    wcag_name: Captions (Live)
+    wcag_level: AA
+    508_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG21/#captions-live
+    description_short: |
+      Real-time captions are provided for live videos.
+    description_full: |
+      When you view live video content,
+      you find synchronized captions generated in real-time.
+  - id: WEB-125
+    category: screen_reader
+    wcag_criterion: 1.2.5
+    wcag_name: Audio Description (Prerecorded)
+    wcag_level: AA
+    508_severity: High
+    wcag_url: https://www.w3.org/TR/WCAG21/#audio-description-prerecorded
+    description_short: |
+      Audio descriptions are provided for videos with important visual information.
+    description_full: |
+      When you view multimedia content,
+      you find an audio description that accurately informs you of any important visual information not already conveyed through audio.
+  - id: WEB-131
+    category: general
+    wcag_criterion: 1.3.1
+    wcag_name: Info and Relationships
+    wcag_level: A
+    508_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG21/#info-and-relationships
+    description_short: |
+      Information, structure, and relationships conveyed visually or auditorily are also programmatically determinable.
+    description_full: |
+      When you inspect the page,
+      you find that information, structure, and relationships conveyed through presentation are also programmatically determinable or available in text.
+    subtests:
+      - id: WEB-131-001
+        description_short: |
+          Headings match the content hierarchy and use proper HTML tags.
+        description_full: |
+          When you inspect headings on the page,
+          you find that they accurately reflect content hierarchy and are semantically marked.
+      - id: WEB-131-002
+        description_short: |
+          Headings follow a logical order without skipping levels.
+        description_full: |
+          When you review the heading structure,
+          you find that heading levels follow a logical, sequential hierarchy with no skipped heading levels.
+      - id: WEB-131-003
+        description_short: |
+          There is one H1 per page/screen.
+        description_full: |
+          When you inspect the page,
+          you find a single H1 exists for the page or screen.
+      - id: WEB-131-004
+        description_short: |
+          Lists use proper list formatting.
+        description_full: |
+          When you view visually apparent lists,
+          you find they are marked up using semantic list types.
+      - id: WEB-131-005
+        description_short: |
+          Related form elements are grouped together.
+        description_full: |
+          When you inspect related form controls,
+          you find they are semantically grouped to convey their relationships.
+      - id: WEB-131-006
+        description_short: |
+          Form labels, descriptions, help text, and errors are connected to the field in the code.
+        description_full: |
+          When you inspect form fields,
+          you find that labels, descriptions, and error messages are programmatically associated to their corresponding field.
+      - id: WEB-131-007
+        description_short: |
+          Required fields are identified programmatically.
+        description_full: |
+          When you inspect required fields,
+          you find they are identified programmatically for assistive technology.
+      - id: WEB-131-008
+        description_short: |
+          Landmarks are correctly used.
+        description_full: |
+          When you inspect the page,
+          you find ARIA or HTML5 landmarks are correctly used to identify and organize page content, and have unique and accurate names when provided.
+      - id: WEB-131-009
+        description_short: |
+          Tables are used for tabular data.
+        description_full: |
+          When you view data tables,
+          you find they are used for tabular data and clearly structured for assistive technology.
+      - id: WEB-131-010
+        description_short: |
+          Child and parent relationships are clear to assistive technology.
+        description_full: |
+          When you inspect elements,
+          you find they use proper semantic roles and contain all required parent and child elements.
+  - id: WEB-132
+    category: general
+    wcag_criterion: 1.3.2
+    wcag_name: Meaningful Sequence
+    wcag_level: A
+    508_severity: High
+    wcag_url: https://www.w3.org/TR/WCAG21/#meaningful-sequence
+    description_short: |
+      Content appears in a logical order in the code.
+    description_full: |
+      When you inspect the DOM,
+      you find the order in which content is presented is logical.
+  - id: WEB-133
+    category: general
+    wcag_criterion: 1.3.3
+    wcag_name: Sensory Characteristics
+    wcag_level: A
+    508_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG21/#sensory-characteristics
+    description_short: |
+      Instructions don't rely only on color, shape, size, or sound.
+    description_full: |
+      When you view instructions and cues,
+      you find they do not rely exclusively on sensory characteristics.
+  - id: WEB-134
+    category: mobile
+    wcag_criterion: 1.3.4
+    wcag_name: Orientation
+    wcag_level: AA
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG21/#orientation
+    description_short: |
+      Content works in both portrait and landscape mode.
+    description_full: |
+      When you rotate your device,
+      you find content is viewable in portrait and landscape orientations unless essential otherwise.
+  - id: WEB-135
+    category: general
+    wcag_criterion: 1.3.5
+    wcag_name: Identify Input Purpose
+    wcag_level: AA
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG21/#identify-input-purpose
+    description_short: |
+      Form fields use autocomplete attributes appropriately.
+    description_full: |
+      When you inspect form fields,
+      you find autocomplete attributes are correctly and validly applied to support user personalization.
   - id: WEB-141
     category: general
     wcag_criterion: 1.4.1
@@ -106,6 +293,54 @@ tests:
     description_full: |
       When you check the contrast ratio of text and images of text,
       you find that regular text has a ratio of at least 4.5:1 and large-scale text has a ratio of at least 3:1.
+  - id: WEB-142
+    category: general
+    wcag_criterion: 1.4.2
+    wcag_name: Audio Control
+    wcag_level: A
+    508_severity: High
+    wcag_url: https://www.w3.org/TR/WCAG21/#audio-control
+    description_short: |
+      Auto-playing audio can be paused or has volume controls.
+    description_full: |
+      When you encounter audio that plays automatically for more than 3 seconds,
+      you find you can pause it or it has an independent volume control.
+  - id: WEB-144
+    category: general
+    wcag_criterion: 1.4.4
+    wcag_name: Resize Text
+    wcag_level: AA
+    508_severity: Medium
+    wcag_url: https://www.w3.org/TR/WCAG21/#resize-text
+    description_short: |
+      Text can be enlarged to 200% without breaking the page.
+    description_full: |
+      When you increase text size up to 200%,
+      you find no loss of content or functionality.
+  - id: WEB-145
+    category: general
+    wcag_criterion: 1.4.5
+    wcag_name: Images of Text
+    wcag_level: AA
+    508_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG21/#images-of-text
+    description_short: |
+      No images of text are used when HTML/CSS can achieve the same presentation.
+    description_full: |
+      When you view the page,
+      you find images of text are not used when the same presentation can be made with native HTML/CSS, excluding logos and branding.
+  - id: WEB-1410
+    category: general
+    wcag_criterion: 1.4.10
+    wcag_name: Reflow
+    wcag_level: AA
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG21/#reflow
+    description_short: |
+      Content fits on small screens without horizontal scrolling.
+    description_full: |
+      When you view content at 320x256 CSS pixels or larger,
+      you find it reflows to a single-dimension scroll.
   - id: WEB-1411
     category: general
     wcag_criterion: 1.4.11
@@ -137,6 +372,30 @@ tests:
         description_full: |
           When you compare the color of the icon against its background using a contrast checker tool,
           you find that the icon has at least a 3:1 contrast ratio against its background.
+  - id: WEB-1412
+    category: general
+    wcag_criterion: 1.4.12
+    wcag_name: Text Spacing
+    wcag_level: AA
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG21/#text-spacing
+    description_short: |
+      Text remains readable when spacing is adjusted.
+    description_full: |
+      When you adjust text spacing (line spacing to 1.5x font size, letter spacing to 0.12x, word spacing to 0.16x),
+      you find no content or functionality is lost.
+  - id: WEB-1413
+    category: keyboard
+    wcag_criterion: 1.4.13
+    wcag_name: Content on Hover or Focus
+    wcag_level: AA
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus
+    description_short: |
+      Content triggered by hover or focus is dismissible by other means.
+    description_full: |
+      When content is triggered by hover or focus,
+      you find it can be dismissed without requiring you to move the pointer or focus.
   - id: WEB-211
     category: keyboard
     wcag_criterion: 2.1.1
@@ -168,6 +427,90 @@ tests:
         description_full: |
           When you navigate to the link using a keyboard,
           you can move focus away from the link using only standard keyboard keys (Tab, Shift+Tab, arrow keys, or Escape).
+  - id: WEB-214
+    category: keyboard
+    wcag_criterion: 2.1.4
+    wcag_name: Character Key Shortcuts
+    wcag_level: A
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG21/#character-key-shortcuts
+    description_short: |
+      Single-key shortcuts can be turned off or customized.
+    description_full: |
+      When you encounter single-character keyboard shortcuts,
+      you find they can be turned off, remapped to include modifiers, or are active only when the component has focus.
+  - id: WEB-221
+    category: general
+    wcag_criterion: 2.2.1
+    wcag_name: Timing Adjustable
+    wcag_level: A
+    508_severity: Medium
+    wcag_url: https://www.w3.org/TR/WCAG21/#timing-adjustable
+    description_short: |
+      Time limits can be turned off or extended.
+    description_full: |
+      When you encounter time limits,
+      you find they can be disabled, extended (with a 20-second warning and the ability to extend at least ten times), or significantly adjusted unless timing is essential.
+  - id: WEB-222
+    category: general
+    wcag_criterion: 2.2.2
+    wcag_name: Pause, Stop, Hide
+    wcag_level: A
+    508_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG21/#pause-stop-hide
+    description_short: |
+      Automatically moving content can be paused or stopped.
+    description_full: |
+      When you view moving, blinking, scrolling, or auto-updating content that starts automatically and lasts over 5 seconds,
+      you find mechanisms to pause, stop, hide, or control its frequency.
+  - id: WEB-231
+    category: general
+    wcag_criterion: 2.3.1
+    wcag_name: Three Flashes or Below Threshold
+    wcag_level: A
+    508_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG21/#three-flashes-or-below-threshold
+    description_short: |
+      Nothing flashes more than three times per second.
+    description_full: |
+      When you view the page,
+      you find no content flashes more than 3 times per any 1-second period.
+  - id: WEB-241
+    category: general
+    wcag_criterion: 2.4.1
+    wcag_name: Bypass Blocks
+    wcag_level: A
+    508_severity: High
+    wcag_url: https://www.w3.org/TR/WCAG21/#bypass-blocks
+    description_short: |
+      Users can skip repeated content like headers and navigation.
+    description_full: |
+      When you navigate the page,
+      you find a mechanism to bypass repeated blocks of content such as a skip link or HTML5 landmarks.
+  - id: WEB-242
+    category: general
+    wcag_criterion: 2.4.2
+    wcag_name: Page Titled
+    wcag_level: A
+    508_severity: Low
+    wcag_url: https://www.w3.org/TR/WCAG21/#page-titled
+    description_short: |
+      Each page has a unique, descriptive title.
+    description_full: |
+      When you view each web page or screen,
+      you find it has a unique and descriptive title reflecting its purpose.
+  - id: WEB-243
+    category: keyboard
+    wcag_criterion: 2.4.3
+    wcag_name: Focus Order
+    wcag_level: A
+    508_severity: High
+    wcag_url: https://www.w3.org/TR/WCAG21/#focus-order
+    description_short: |
+      Tab order follows a logical sequence.
+    description_full: |
+      When you navigate with the keyboard,
+      you find focus moves through interactive elements in a meaningful order.
   - id: WEB-244
     category: general
     wcag_criterion: 2.4.4
@@ -180,6 +523,43 @@ tests:
     description_full: |
       When you read the link text,
       it is easy to understand both the link's purpose and destination.
+  - id: WEB-245
+    category: general
+    wcag_criterion: 2.4.5
+    wcag_name: Multiple Ways
+    wcag_level: AA
+    508_severity: Low
+    wcag_url: https://www.w3.org/TR/WCAG21/#multiple-ways
+    description_short: |
+      Pages can be found in multiple ways.
+    description_full: |
+      When you look for content,
+      you find two or more mechanisms of finding a webpage, unless the page is accessed as part of a step in a process.
+  - id: WEB-246
+    category: general
+    wcag_criterion: 2.4.6
+    wcag_name: Headings and Labels
+    wcag_level: AA
+    508_severity: Medium
+    wcag_url: https://www.w3.org/TR/WCAG21/#headings-and-labels
+    description_short: |
+      Headings and labels are descriptive.
+    description_full: |
+      When you view headings and labels,
+      you find they are descriptive of their content and purpose.
+    subtests:
+      - id: WEB-246-001
+        description_short: |
+          Headings are descriptive.
+        description_full: |
+          When you view headings,
+          you find the heading text accurately describes the topic or purpose of the content that follows.
+      - id: WEB-246-002
+        description_short: |
+          Form labels clearly describe what to enter.
+        description_full: |
+          When you view form fields,
+          you find labels describe the purpose or function of the form fields and controls.
   - id: WEB-247
     category: keyboard
     wcag_criterion: 2.4.7
@@ -192,6 +572,18 @@ tests:
     description_full: |
       When you navigate to an interactive element with a keyboard,
       you see a clear visual indicator around the element showing that it has focus.
+  - id: WEB-2410
+    category: general
+    wcag_criterion: 2.4.10
+    wcag_name: Section Headings
+    wcag_level: AAA
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG21/#section-headings
+    description_short: |
+      Content is organized into sections with headings.
+    description_full: |
+      When you view content organized in sections,
+      you find section headings are included.
   - id: WEB-2411
     category: keyboard
     wcag_criterion: 2.4.11
@@ -205,6 +597,30 @@ tests:
       When you navigate the page with a keyboard,
       you find that the element that has focus remains visible on screen and is not obscured
       by sticky headers, footers, modals, tooltips, or other overlaying content.
+  - id: WEB-251
+    category: general
+    wcag_criterion: 2.5.1
+    wcag_name: Pointer Gestures
+    wcag_level: A
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG21/#pointer-gestures
+    description_short: |
+      All actions work with simple taps or clicks.
+    description_full: |
+      When you use multipoint or path-based gestures,
+      you find they also work with single pointer actions.
+  - id: WEB-252
+    category: general
+    wcag_criterion: 2.5.2
+    wcag_name: Pointer Cancellation
+    wcag_level: A
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG21/#pointer-cancellation
+    description_short: |
+      Actions happen on release and can be cancelled.
+    description_full: |
+      When you interact with pointer actions,
+      you find they execute on the up-event and can be cancelled before release.
   - id: WEB-253
     category: screen_reader
     wcag_criterion: 2.5.3
@@ -217,6 +633,30 @@ tests:
     description_full: |
       When you focus on an interactive element with a screen reader,
       you hear an announcement that matches the visible text for that element.
+  - id: WEB-254
+    category: mobile
+    wcag_criterion: 2.5.4
+    wcag_name: Motion Actuation
+    wcag_level: A
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG21/#motion-actuation
+    description_short: |
+      Features don't require shaking or tilting the device.
+    description_full: |
+      When you use motion-activated features,
+      you find alternative input methods and the ability to disable them.
+  - id: WEB-257
+    category: general
+    wcag_criterion: 2.5.7
+    wcag_name: Dragging Movements
+    wcag_level: AA
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG22/#dragging-movements
+    description_short: |
+      Drag-and-drop actions have click-based alternatives.
+    description_full: |
+      When you use drag functionality,
+      you find it's also available through click, keyboard, or other non-dragging methods.
   - id: WEB-258
     category: general
     wcag_criterion: 2.5.8
@@ -236,6 +676,193 @@ tests:
         description_full: |
           When you inspect the size of links on the page,
           you find that each link has a target size of at least 24x24 pixels.
+  - id: WEB-311
+    category: general
+    wcag_criterion: 3.1.1
+    wcag_name: Language of Page
+    wcag_level: A
+    508_severity: Medium
+    wcag_url: https://www.w3.org/TR/WCAG21/#language-of-page
+    description_short: |
+      The page language is identified.
+    description_full: |
+      When you inspect the page,
+      you find the `<html>` element includes a valid `lang` attribute specifying the page's primary language.
+  - id: WEB-312
+    category: general
+    wcag_criterion: 3.1.2
+    wcag_name: Language of Parts
+    wcag_level: AA
+    508_severity: Low
+    wcag_url: https://www.w3.org/TR/WCAG21/#language-of-parts
+    description_short: |
+      Content in another language is identified.
+    description_full: |
+      When you view text in different languages from the page's primary language,
+      you find it is marked with `lang` attributes.
+  - id: WEB-321
+    category: keyboard
+    wcag_criterion: 3.2.1
+    wcag_name: On Focus
+    wcag_level: A
+    508_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG21/#on-focus
+    description_short: |
+      Focusing on an element doesn't trigger unexpected changes.
+    description_full: |
+      When you focus on an element,
+      you find it does not trigger a change of context.
+  - id: WEB-322
+    category: keyboard
+    wcag_criterion: 3.2.2
+    wcag_name: On Input
+    wcag_level: AA
+    508_severity: High
+    wcag_url: https://www.w3.org/TR/WCAG21/#on-input
+    description_short: |
+      Interacting with form fields doesn't trigger unexpected changes.
+    description_full: |
+      When you change form values,
+      you find it does not automatically cause navigation or context changes without warning.
+  - id: WEB-323
+    category: general
+    wcag_criterion: 3.2.3
+    wcag_name: Consistent Navigation
+    wcag_level: AA
+    508_severity: High
+    wcag_url: https://www.w3.org/TR/WCAG21/#consistent-navigation
+    description_short: |
+      Navigation structure is the same across pages.
+    description_full: |
+      When you navigate between pages,
+      you find navigation menus maintain consistent order and structure.
+  - id: WEB-324
+    category: general
+    wcag_criterion: 3.2.4
+    wcag_name: Consistent Identification
+    wcag_level: AA
+    508_severity: Medium
+    wcag_url: https://www.w3.org/TR/WCAG21/#consistent-identification
+    description_short: |
+      Similar features have the same labels across pages.
+    description_full: |
+      When you use components with similar functionality on multiple pages,
+      you find they are labeled identically and function identically.
+  - id: WEB-326
+    category: general
+    wcag_criterion: 3.2.6
+    wcag_name: Consistent Help
+    wcag_level: A
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG22/#consistent-help
+    description_short: |
+      Help options appear in the same location on all pages.
+    description_full: |
+      When you look for help mechanisms such as contact details, messaging, chat, or self-help options,
+      you find they are in the same relative order on all pages where the information is present.
+  - id: WEB-331
+    category: general
+    wcag_criterion: 3.3.1
+    wcag_name: Error Identification
+    wcag_level: A
+    508_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG21/#error-identification
+    description_short: |
+      Error messages are provided and are clear.
+    description_full: |
+      When an input error is detected,
+      you are informed of the error and how to correct it.
+  - id: WEB-332
+    category: general
+    wcag_criterion: 3.3.2
+    wcag_name: Labels or Instructions
+    wcag_level: A
+    508_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG21/#labels-or-instructions
+    description_short: |
+      Clear, persistent labels or instructions are provided for all user input fields.
+    description_full: |
+      When you view form fields,
+      you find clear, persistent labels or instructions are provided for all user input fields.
+    subtests:
+      - id: WEB-332-001
+        description_short: |
+          Form fields have visible labels.
+        description_full: |
+          When you view form fields,
+          you find visible labels or instructions are available for all inputs and input groupings.
+      - id: WEB-332-002
+        description_short: |
+          Fields with specific formats include instructions.
+        description_full: |
+          When you view form fields that require specific formats,
+          you find they provide instructions or examples.
+      - id: WEB-332-003
+        description_short: |
+          Required or optional fields are clearly marked.
+        description_full: |
+          When you view form fields,
+          you find all required fields are identified with visible labels or instructions, or all optional fields are identified.
+  - id: WEB-333
+    category: general
+    wcag_criterion: 3.3.3
+    wcag_name: Error Suggestion
+    wcag_level: AA
+    508_severity: Low
+    wcag_url: https://www.w3.org/TR/WCAG21/#error-suggestion
+    description_short: |
+      Error messages explain how to fix the problem.
+    description_full: |
+      When you receive error messages,
+      you find clear suggestions for correcting input errors, unless doing so would compromise security or the content's purpose.
+  - id: WEB-334
+    category: general
+    wcag_criterion: 3.3.4
+    wcag_name: Error Prevention (Legal, Financial, Data)
+    wcag_level: AA
+    508_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG21/#error-prevention-legal-financial-data
+    description_short: |
+      Important submissions can be reviewed or undone.
+    description_full: |
+      When you make legal or financial transactions,
+      you find you can review before submission or the action can be reversed.
+  - id: WEB-336
+    category: general
+    wcag_criterion: 3.3.6
+    wcag_name: Error Prevention (All)
+    wcag_level: AAA
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG21/#error-prevention-all
+    description_short: |
+      Users can review and correct incorrect information.
+    description_full: |
+      When you submit data,
+      you find you can review before submission or the action can be reversed or corrected.
+  - id: WEB-337
+    category: general
+    wcag_criterion: 3.3.7
+    wcag_name: Redundant Entry
+    wcag_level: A
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG22/#redundant-entry
+    description_short: |
+      Users don't have to re-enter the same information.
+    description_full: |
+      When you complete a process,
+      you find you are not required to refill the same information unless doing so is essential, ensuring security, or the original information is no longer valid.
+  - id: WEB-338
+    category: general
+    wcag_criterion: 3.3.8
+    wcag_name: Accessible Authentication (Minimum)
+    wcag_level: AA
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG22/#accessible-authentication-minimum
+    description_short: |
+      Login doesn't rely solely on remembering information.
+    description_full: |
+      When you log in,
+      you find the process does not solely rely on cognitive tests and all steps support methods that do not rely on memory or knowledge.
   - id: WEB-412
     category: general
     wcag_criterion: 4.1.2
@@ -256,15 +883,46 @@ tests:
           When you activate a link,
           you find that it navigates either to a new page
           or a section on the current page.
+      - id: WEB-412-001
+        description_short: |
+          Every interactive element has a clear name and purpose.
+        description_full: |
+          When you inspect interactive elements,
+          you find they have accessible names that identify what they are and what they do.
+      - id: WEB-412-002
+        description_short: |
+          Element states are announced to screen readers.
+        description_full: |
+          When you use a screen reader,
+          you find dynamic states like expanded, checked, or disabled are communicated to assistive technologies.
+      - id: WEB-412-003
+        description_short: |
+          Links navigate to pages; buttons perform actions.
+        description_full: |
+          When you interact with UI elements,
+          you find elements defined as links are used for navigation and elements defined as buttons perform in-page actions or submit forms.
+  - id: WEB-413
+    category: screen_reader
+    wcag_criterion: 4.1.3
+    wcag_name: Status Messages
+    wcag_level: AA
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG21/#status-messages
+    description_short: |
+      Important updates are announced to screen readers automatically.
+    description_full: |
+      When status messages are added or updated without a page reload,
+      you find they notify users of assistive technologies without requiring you to manually move focus to the message.
 # Metadata
 metadata:
   version: "1.0"
   created: "2024-02-05"
   last_updated: "2026-02-10"
-  total_tests: 12
-  total_subtests: 7
+  total_tests: 55
+  total_subtests: 30
   test_breakdown:
-    general: 6
-    keyboard: 4
-    screen_reader: 2
+    general: 36
+    keyboard: 9
+    screen_reader: 8
+    mobile: 2
     zoom: 0

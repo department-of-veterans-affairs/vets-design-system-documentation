@@ -1,0 +1,193 @@
+# WCAG Principle 3: Understandable
+# Information and the operation of the user interface must be understandable.
+# Tests: WEB-3xx series
+
+tests:
+  - id: WEB-311
+    category: general
+    wcag_criterion: 3.1.1
+    wcag_name: Language of Page
+    wcag_level: A
+    508_severity: Medium
+    wcag_url: https://www.w3.org/TR/WCAG21/#language-of-page
+    description_short: |
+      Page declares its language.
+    description_full: |
+      When you inspect the page,
+      you find the `<html>` element includes a valid `lang` attribute specifying the page's primary language.
+  - id: WEB-312
+    category: general
+    wcag_criterion: 3.1.2
+    wcag_name: Language of Parts
+    wcag_level: AA
+    508_severity: Low
+    wcag_url: https://www.w3.org/TR/WCAG21/#language-of-parts
+    description_short: |
+      Content declares language changes.
+    description_full: |
+      When you view text in different languages from the page's primary language,
+      you find it is marked with `lang` attributes.
+  - id: WEB-321
+    category: keyboard
+    wcag_criterion: 3.2.1
+    wcag_name: On Focus
+    wcag_level: A
+    508_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG21/#on-focus
+    description_short: |
+      Focusing on an element doesn't trigger unexpected changes.
+    description_full: |
+      When you focus on an element,
+      you find it does not trigger a change of context.
+  - id: WEB-322
+    category: keyboard
+    wcag_criterion: 3.2.2
+    wcag_name: On Input
+    wcag_level: AA
+    508_severity: High
+    wcag_url: https://www.w3.org/TR/WCAG21/#on-input
+    description_short: |
+      Interacting with form inputs doesn't trigger unexpected changes.
+    description_full: |
+      When you change a form input value,
+      you find it does not automatically cause navigation or context changes without warning.
+  - id: WEB-323
+    category: general
+    wcag_criterion: 3.2.3
+    wcag_name: Consistent Navigation
+    wcag_level: AA
+    508_severity: High
+    wcag_url: https://www.w3.org/TR/WCAG21/#consistent-navigation
+    description_short: |
+      Navigation structure is the same across pages.
+    description_full: |
+      When you navigate between pages,
+      you find navigation menus maintain consistent order and structure.
+  - id: WEB-324
+    category: general
+    wcag_criterion: 3.2.4
+    wcag_name: Consistent Identification
+    wcag_level: AA
+    508_severity: Medium
+    wcag_url: https://www.w3.org/TR/WCAG21/#consistent-identification
+    description_short: |
+      Similar features have the same labels across pages.
+    description_full: |
+      When you use components with similar functionality on multiple pages,
+      you find they are labeled identically and function identically.
+  - id: WEB-326
+    category: general
+    wcag_criterion: 3.2.6
+    wcag_name: Consistent Help
+    wcag_level: A
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG22/#consistent-help
+    description_short: |
+      Help options appear in the same location across pages.
+    description_full: |
+      When you look for help mechanisms such as contact details, messaging, chat, or self-help options,
+      you find they are in the same relative order across pages.
+  - id: WEB-331
+    category: general
+    wcag_criterion: 3.3.1
+    wcag_name: Error Identification
+    wcag_level: A
+    508_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG21/#error-identification
+    description_short: |
+      Error messages clearly inform users of issues.
+    description_full: |
+      When an input error is detected,
+      you are informed of the error and how to correct it.
+  - id: WEB-332
+    category: general
+    wcag_criterion: 3.3.2
+    wcag_name: Labels or Instructions
+    wcag_level: A
+    508_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG21/#labels-or-instructions
+    description_short: |
+      Form fields include labels.
+    description_full: |
+      When you interact with a form input,
+      you receive clear, persistent labels or instructions for that input.
+    subtests:
+      - id: WEB-332-001
+        description_short: |
+          Form fields display visible labels.
+        description_full: |
+          When you view form inputs,
+          you find visible labels or instructions are available for all inputs and input groupings.
+      - id: WEB-332-002
+        description_short: |
+          Inputs with specific formats include instructions.
+        description_full: |
+          When you view form inputs that require specific formats,
+          you find they provide instructions or examples.
+      - id: WEB-332-003
+        description_short: |
+          Forms clearly mark required or optional fields.
+        description_full: |
+          When you view form inputs,
+          you find all required inputs are identified with visible labels or instructions, or all optional inputs are identified.
+  - id: WEB-333
+    category: general
+    wcag_criterion: 3.3.3
+    wcag_name: Error Suggestion
+    wcag_level: AA
+    508_severity: Low
+    wcag_url: https://www.w3.org/TR/WCAG21/#error-suggestion
+    description_short: |
+      Error messages explain how to fix the problem.
+    description_full: |
+      When you receive an error message,
+      the message provides clear suggestions for correcting input errors,
+      unless doing so would compromise security or the content's purpose.
+  - id: WEB-334
+    category: general
+    wcag_criterion: 3.3.4
+    wcag_name: Error Prevention (Legal, Financial, Data)
+    wcag_level: AA
+    508_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG21/#error-prevention-legal-financial-data
+    description_short: |
+      Important submissions can be reviewed or undone.
+    description_full: |
+      When you make legal or financial transactions,
+      you find you can review before submission or the action can be reversed.
+  - id: WEB-336
+    category: general
+    wcag_criterion: 3.3.6
+    wcag_name: Error Prevention (All)
+    wcag_level: AAA
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG21/#error-prevention-all
+    description_short: |
+      Users can review and correct incorrect information.
+    description_full: |
+      When you submit data,
+      you find you can review before submission or the action can be reversed or corrected.
+  - id: WEB-337
+    category: general
+    wcag_criterion: 3.3.7
+    wcag_name: Redundant Entry
+    wcag_level: A
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG22/#redundant-entry
+    description_short: |
+      Users don't have to re-enter the same information.
+    description_full: |
+      When you complete a process,
+      you find you are not required to refill the same information unless doing so is essential, ensuring security, or the original information is no longer valid.
+  - id: WEB-338
+    category: general
+    wcag_criterion: 3.3.8
+    wcag_name: Accessible Authentication (Minimum)
+    wcag_level: AA
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG22/#accessible-authentication-minimum
+    description_short: |
+      Login doesn't rely solely on remembering information.
+    description_full: |
+      When you log in,
+      you find the process does not solely rely on cognitive tests and all steps support methods that do not rely on memory or knowledge.

@@ -14,13 +14,6 @@ variants:
 
 # Tests applied to this component
 tests:
-  - id: WEB-141
-    test_results:
-      - version: 54.6.1
-        tester: John Doe
-        environments:
-          - name: MacOS/Chrome
-            result: pass
   - id: DST-141-001
     test_results:
       - version: 54.6.1

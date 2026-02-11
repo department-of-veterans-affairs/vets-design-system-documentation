@@ -1,0 +1,367 @@
+# WCAG Principle 1: Perceivable
+# Information and user interface components must be presentable to users in ways they can perceive
+# Tests: WEB-1xx series
+
+tests:
+  - id: WEB-111
+    category: screen_reader
+    wcag_criterion: 1.1.1
+    wcag_name: Non-text content
+    wcag_level: A
+    508_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG21/#non-text-content
+    description_short: |
+      Non-text content includes equivalent text alternatives.
+    description_full: |
+      When you view or interact with non-text content on the page,
+      you can understand its purpose through a text alternative that is provided in the markup.
+    subtests:
+      - id: WEB-111-001
+        description_short: |
+          Meaningful images include descriptive alt text.
+        description_full: |
+          When you navigate to an informative image with a screen reader,
+          you hear a description of the image that conveys the content and function of the image.
+      - id: WEB-111-002
+        description_short: |
+          Complex images include both alt text and detailed descriptions.
+        description_full: |
+          When you view a complex image, such as a chart, graph, or diagram,
+          you have access to both a concise alt text description and a longer description that together provide all relevant information conveyed by the image.
+          The alt text provides a brief summary of the image's content and function,
+          while the longer description offers a more detailed explanation of the information presented in the image.
+      - id: WEB-111-003
+        description_short: |
+          Screen readers ignore decorative images.
+        description_full: |
+          When you navigate to a decorative image with a screen reader,
+          you do not hear any information about the image.
+      - id: WEB-111-004
+        description_short: |
+          Background images serve purely decorative purposes.
+        description_full: |
+          When you view a CSS background image on a page,
+          the image is purely decorative and does not contain any important information or functionality.
+      - id: WEB-111-005
+        description_short: |
+          Videos and audio files include brief descriptions.
+        description_full: |
+          When you view video or audio content,
+          you find short descriptive text alternatives that identify the purpose of the content.
+  - id: WEB-121
+    category: screen_reader
+    wcag_criterion: 1.2.1
+    wcag_name: Audio-only and Video-only (Prerecorded)
+    wcag_level: A
+    508_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG21/#audio-only-and-video-only-prerecorded
+    description_short: |
+      Audio and video-only content includes text transcripts.
+    description_full: |
+      When you view audio-only or video-only media,
+      you find a transcript that provides the same information as presented in the original media content.
+  - id: WEB-122
+    category: screen_reader
+    wcag_criterion: 1.2.2
+    wcag_name: Captions (Prerecorded)
+    wcag_level: A
+    508_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG21/#captions-prerecorded
+    description_short: |
+      Prerecorded videos include captions.
+    description_full: |
+      When you view prerecorded videos,
+      you find synchronized captions for dialogue, sound effects, and relevant audio.
+  - id: WEB-123
+    category: screen_reader
+    wcag_criterion: 1.2.3
+    wcag_name: Audio Description or Media Alternative (Prerecorded)
+    wcag_level: A
+    508_severity: High
+    wcag_url: https://www.w3.org/TR/WCAG21/#audio-description-or-media-alternative-prerecorded
+    description_short: |
+      Videos with audio include transcripts or audio descriptions.
+    description_full: |
+      When you view non-live video,
+      you find a full descriptive transcript or an audio description.
+  - id: WEB-124
+    category: screen_reader
+    wcag_criterion: 1.2.4
+    wcag_name: Captions (Live)
+    wcag_level: AA
+    508_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG21/#captions-live
+    description_short: |
+      Live videos include real-time captions.
+    description_full: |
+      When you view live video content,
+      you find synchronized captions generated in real-time.
+  - id: WEB-125
+    category: screen_reader
+    wcag_criterion: 1.2.5
+    wcag_name: Audio Description (Prerecorded)
+    wcag_level: AA
+    508_severity: High
+    wcag_url: https://www.w3.org/TR/WCAG21/#audio-description-prerecorded
+    description_short: |
+      Videos with important visual information include audio descriptions.
+    description_full: |
+      When you view multimedia content,
+      you find an audio description that accurately informs you of any important visual information not already conveyed through audio.
+  - id: WEB-131
+    category: general
+    wcag_criterion: 1.3.1
+    wcag_name: Info and Relationships
+    wcag_level: A
+    508_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG21/#info-and-relationships
+    description_short: |
+      Visual and auditory content conveys information programmatically.
+    description_full: |
+      When you inspect the page,
+      you find that information, structure, and relationships conveyed through presentation are also programmatically determinable or available in text.
+    subtests:
+      - id: WEB-131-001
+        description_short: |
+          Headings match the content hierarchy and use proper HTML tags.
+        description_full: |
+          When you inspect headings on the page,
+          you find that they accurately reflect content hierarchy and are semantically marked.
+      - id: WEB-131-002
+        description_short: |
+          Headings follow a logical order without skipping levels.
+        description_full: |
+          When you review the heading structure,
+          you find that heading levels follow a logical, sequential hierarchy with no skipped heading levels.
+      - id: WEB-131-003
+        description_short: |
+          Page includes one H1.
+        description_full: |
+          When you inspect the page,
+          you find a single H1 exists for the page or screen.
+      - id: WEB-131-004
+        description_short: |
+          Lists use semantic list markup.
+        description_full: |
+          When you view visually apparent lists,
+          you find they are marked up using semantic list types.
+      - id: WEB-131-005
+        description_short: |
+          Forms group related elements together.
+        description_full: |
+          When you inspect related form controls,
+          you find they are semantically grouped to convey their relationships.
+      - id: WEB-131-006
+        description_short: |
+          Code connects form labels, descriptions, and errors to their fields.
+        description_full: |
+          When you inspect form fields,
+          you find that labels, descriptions, and error messages are programmatically associated to their corresponding field.
+      - id: WEB-131-007
+        description_short: |
+          Code identifies required fields programmatically.
+        description_full: |
+          When you inspect required fields,
+          you find they are identified programmatically for assistive technology.
+      - id: WEB-131-008
+        description_short: |
+          Page uses landmarks correctly.
+        description_full: |
+          When you inspect the page,
+          you find ARIA or HTML5 landmarks are correctly used to identify and organize page content, and have unique and accurate names when provided.
+      - id: WEB-131-009
+        description_short: |
+          Tables present tabular data with clear structure.
+        description_full: |
+          When you view data tables,
+          you find they are used for tabular data and clearly structured for assistive technology.
+      - id: WEB-131-010
+        description_short: |
+          Elements clearly communicate parent-child relationships.
+        description_full: |
+          When you inspect elements,
+          you find they use proper semantic roles and contain all required parent and child elements.
+  - id: WEB-132
+    category: general
+    wcag_criterion: 1.3.2
+    wcag_name: Meaningful Sequence
+    wcag_level: A
+    508_severity: High
+    wcag_url: https://www.w3.org/TR/WCAG21/#meaningful-sequence
+    description_short: |
+      Content appears in a logical order in the code.
+    description_full: |
+      When you inspect the DOM,
+      you find the order in which content is presented is logical.
+  - id: WEB-133
+    category: general
+    wcag_criterion: 1.3.3
+    wcag_name: Sensory Characteristics
+    wcag_level: A
+    508_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG21/#sensory-characteristics
+    description_short: |
+      Instructions don't rely only on color, shape, size, or sound.
+    description_full: |
+      When you view instructions and cues,
+      you find they do not rely exclusively on sensory characteristics.
+  - id: WEB-134
+    category: mobile
+    wcag_criterion: 1.3.4
+    wcag_name: Orientation
+    wcag_level: AA
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG21/#orientation
+    description_short: |
+      Content works in both portrait and landscape mode.
+    description_full: |
+      When you rotate your device,
+      you find content is viewable in portrait and landscape orientations unless essential otherwise.
+  - id: WEB-135
+    category: general
+    wcag_criterion: 1.3.5
+    wcag_name: Identify Input Purpose
+    wcag_level: AA
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG21/#identify-input-purpose
+    description_short: |
+      Form fields use autocomplete attributes appropriately.
+    description_full: |
+      When you inspect form fields,
+      you find autocomplete attributes are correctly and validly applied to support user personalization.
+  - id: WEB-141
+    category: general
+    wcag_criterion: 1.4.1
+    wcag_name: Use of Color
+    wcag_level: A
+    508_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG21/#use-of-color
+    description_short: |
+      Color is not the only method used to convey information.
+    description_full: |
+      When you view the component,
+      you see that anything shown by color is also communicated through another visual cue
+      like shape or text.
+    subtests:
+      - id: DST-141-001
+        description_short: |
+          Links are indicated by more than just color.
+        description_full: |
+          When you view a link,
+          you see that the link has a text underline and uses the expected VA colors for default, hover, focus, and visited states.
+  - id: WEB-143
+    category: general
+    wcag_criterion: 1.4.3
+    wcag_name: Contrast (Minimum)
+    wcag_level: A
+    508_severity: Medium
+    wcag_url: https://www.w3.org/TR/WCAG21/#contrast-minimum
+    description_short: |
+      Text has sufficient contrast against its background.
+    description_full: |
+      When you check the contrast ratio of text and images of text,
+      you find that regular text has a ratio of at least 4.5:1 and large-scale text has a ratio of at least 3:1.
+  - id: WEB-142
+    category: general
+    wcag_criterion: 1.4.2
+    wcag_name: Audio Control
+    wcag_level: A
+    508_severity: High
+    wcag_url: https://www.w3.org/TR/WCAG21/#audio-control
+    description_short: |
+      Auto-playing audio can be paused or has volume controls.
+    description_full: |
+      When you encounter audio that plays automatically for more than 3 seconds,
+      you find you can pause it or it has an independent volume control.
+  - id: WEB-144
+    category: general
+    wcag_criterion: 1.4.4
+    wcag_name: Resize Text
+    wcag_level: AA
+    508_severity: Medium
+    wcag_url: https://www.w3.org/TR/WCAG21/#resize-text
+    description_short: |
+      Text can be enlarged to 200% without breaking the page.
+    description_full: |
+      When you increase text size up to 200%,
+      you find no loss of content or functionality.
+  - id: WEB-145
+    category: general
+    wcag_criterion: 1.4.5
+    wcag_name: Images of Text
+    wcag_level: AA
+    508_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG21/#images-of-text
+    description_short: |
+      No images of text are used when HTML/CSS can achieve the same presentation.
+    description_full: |
+      When you view the page,
+      you find images of text are not used when the same presentation can be made with native HTML/CSS, excluding logos and branding.
+  - id: WEB-1410
+    category: general
+    wcag_criterion: 1.4.10
+    wcag_name: Reflow
+    wcag_level: AA
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG21/#reflow
+    description_short: |
+      Content fits on small screens without horizontal scrolling.
+    description_full: |
+      When you view content at 320x256 CSS pixels or larger,
+      you find it reflows to a single-dimension scroll.
+  - id: WEB-1411
+    category: general
+    wcag_criterion: 1.4.11
+    wcag_name: Non-text Contrast
+    wcag_level: AA
+    508_severity:
+    wcag_url: https://www.w3.org/TR/WCAG21/#non-text-contrast
+    description_short: |
+      Interactive elements and meaningful graphic elements have sufficient contrast against adjacent colors.
+    description_full: |
+      When you view interactive elements and graphic elements on the page,
+      meaningful visual information has a contrast ratio of at least 3:1 against adjacent colors.
+    subtests:
+      - id: WEB-1411-001
+        description_short: |
+          Interactive elements are visually distinct from surroundings.
+        description_full: |
+          When you check the contrast of interactive elements,
+          you find that active UI components achieve a 3:1 contrast ratio against adjacent colors.
+      - id: WEB-1411-002
+        description_short: |
+          Important graphics and icons have sufficient contrast.
+        description_full: |
+          When you check the contrast of graphics and icons,
+          you find that essential graphical objects have a 3:1 contrast ratio against adjacent colors.
+      - id: DST-1411-001
+        description_short: |
+          Icons have sufficient contrast against their background.
+        description_full: |
+          When you compare the color of the icon against its background using a contrast checker tool,
+          you find that the icon has at least a 3:1 contrast ratio against its background.
+  - id: WEB-1412
+    category: general
+    wcag_criterion: 1.4.12
+    wcag_name: Text Spacing
+    wcag_level: AA
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG21/#text-spacing
+    description_short: |
+      Text remains readable when spacing is adjusted.
+    description_full: |
+      When you adjust text spacing (line spacing to 1.5x font size, letter spacing to 0.12x, word spacing to 0.16x),
+      you find no content or functionality is lost.
+  - id: WEB-1413
+    category: keyboard
+    wcag_criterion: 1.4.13
+    wcag_name: Content on Hover or Focus
+    wcag_level: AA
+    508_severity: N/A
+    wcag_url: https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus
+    description_short: |
+      Content triggered by hover or focus is dismissible by other means.
+    description_full: |
+      When content is triggered by hover or focus,
+      you find it can be dismissed without requiring you to move the pointer or focus.
+  - id: WEB-211
