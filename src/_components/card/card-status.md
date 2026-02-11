@@ -38,18 +38,18 @@ anchors:
 ## Usage
 
 ### When to use Card Status
-- **Framing a call to action.** Card Status highlights and frames a specific call to action or decision a user needs to take.
+- **Framing a call to action.** Card Status highlights and frames a specific call to action or decision a user needs to make.
 - **Conveying status.** Card Status contains information with a status such as appointments, claims, or missing required information.
 - **Giving feedback for data within the card.** Card Status allows for an error state that conveys immediate feedback for users to correct their data.
 
 ### When to consider something else
 - **When you need flexible content structure.** Use the [Card component]({{ site.baseurl }}/components/card) when you need full control over the card's content and structure, rather than working with predefined props.
 - **When status isn't the focus.** Use the [Card component]({{ site.baseurl }}/components/card) for informational cards where status communication isn't the primary purpose.
-- **When you need multiple calls to action.** Use the [Card component]({{ site.baseurl }}/components/card) if you need more than one call-to-action (Card allows up to 3 CTAs).
+- **When you need multiple calls to action.** Use the [Card component]({{ site.baseurl }}/components/card) if you need more than one call to action (Card allows up to 3 CTAs).
 
 ### How this component works
 
-**Key difference from Card:** While [Card]({{ site.baseurl }}/components/card) is a flexible container where teams build and pass in their own content, Card Status is a structured component with required props that enforce a consistent pattern for status-driven scenarios.
+The key difference between the Card Status component and the Card component is that while [Card]({{ site.baseurl }}/components/card) is a flexible container where teams build and pass in their own content, Card Status is a structured component with required props that enforce a consistent pattern for status-driven scenarios.
 
 #### Default
 
@@ -81,7 +81,7 @@ This state is triggered when validation errors occur, such as when a user tries 
 
 ### Calls to action (CTA)
 
-* **Single CTA only.** Card Status supports only one call-to-action, typically to add or edit data. This is more restrictive than the standard [Card component]({{ site.baseurl }}/components/card), which allows up to 3 CTAs.
+* **Single CTA only.** Card Status supports only one call to action, typically to add or edit data. This is more restrictive than the standard [Card component]({{ site.baseurl }}/components/card), which allows up to 3 CTAs.
 * **Use action links.** The CTA should use a [secondary action link]({{ site.baseurl }}/components/link/action).
 
 ### Placement
@@ -110,9 +110,8 @@ The Card Status component handles most status and error accessibility automatica
 ### How Card Status handles accessibility programmatically
 
 **Status announcements:**
-* Status uses the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component with `role="status"`
-* Includes visually hidden "Status:" prefix for screen reader context
-* The component programmatically associates status with the card heading
+* Status uses the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component with `role="status"`. The Tag Status component includes visually hidden text that announces "Status" before the tag text (for example, "Status, Error"), and teams can't change this announcement pattern.
+* The component programmatically associates status with the card heading.
 
 **Error handling:**
 * Error messages wrapped in `role="alert"` for automatic announcement
