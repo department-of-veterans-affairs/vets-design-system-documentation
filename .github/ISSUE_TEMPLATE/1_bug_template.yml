@@ -17,6 +17,7 @@ body:
       options:
         - label: "I’ve searched for any related issues and avoided creating a duplicate issue."
         - label: "To my knowledge this is not an accessibility issue. If this is an accessibility issue, use the accessibility issue template"
+    validations:
       required: true
       
   - type: checkboxes
@@ -27,7 +28,7 @@ body:
       options:
         - label: "Bug"
         - label: "Enhancement"
-         - label: "Unknown"
+        - label: "Unknown"
     validations:
       required: true
       
