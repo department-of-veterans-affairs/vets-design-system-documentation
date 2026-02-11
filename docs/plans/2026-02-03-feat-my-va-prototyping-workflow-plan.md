@@ -122,6 +122,101 @@ State management (sessionStorage, scenario switching, form persistence) becomes 
 - Local development enables AI assistance (Copilot, Claude Code) that cloud sandboxes block
 - Everything needed to prototype is in this repo
 
+### Architecture Decision: Figma-to-Code via Dual MCP Servers
+
+Designers will often start from a Figma design rather than a blank PRD. The workflow uses **two MCP servers together** — the Figma MCP server to read the design, and the VADS MCP server to map it to correct web components.
+
+**The problem:** VA Design System Figma components and web components are not yet connected via [Figma Code Connect](https://www.figma.com/developers/code-connect). This means the Figma MCP server's `get_code_connect_map` tool returns nothing useful — the AI agent has no automatic mapping from Figma component instances to `<va-*>` web component tags.
+
+**The solution: A Figma-to-VADS component mapping maintained in the VADS MCP server.** The mapping bridges the gap between Figma component names (e.g., "Alert - Warning") and web component tags (e.g., `<va-alert status="warning">`). This is a manual mapping table that we maintain until CodeConnect is established.
+
+#### How the Figma-to-Code Workflow Works
+
+**Step 1: Read the Figma design** (Figma MCP server)
+
+The AI agent calls Figma MCP tools in sequence:
+
+1. **`get_metadata`** — Gets the sparse node tree: layer IDs, names, types, positions, sizes, and screenshots. This reveals the page structure (what sections exist, nesting, ordering) and identifies component instances by their Figma component names.
+2. **`get_design_context`** — Gets the full structured representation for specific nodes. Returns layout properties (auto layout direction, gap, padding → translates to flex/grid), component properties (variants, states, overrides), and text content.
+3. **`get_variable_defs`** — Gets Figma variables used in the design (colors, spacing, typography). These map to VADS design tokens.
+4. **`get_screenshot`** — Gets visual screenshots for reference, ensuring the AI can see what the final result should look like.
+
+**Step 2: Identify the page layout** (AI reasoning + local templates)
+
+From the Figma metadata, the AI identifies the page type by recognizing structural patterns:
+
+| Figma Structure Pattern | VA.gov Page Type | Template |
+|------------------------|------------------|----------|
+| Header + progress bar + form fields + button pair | Form step | `form-step/step.html` |
+| Header + process list + start button | Form intro | `form-step/intro.html` |
+| Header + accordion sections with edit links + submit | Form review | `form-step/review.html` |
+| Success alert + summary + next steps | Confirmation | `confirmation/base.html` |
+| Greeting + cards/service-list-items in sections | Dashboard | `dashboard/base.html` |
+| Hero + card grid + spoke links | Hub page | `hub/base.html` |
+| Typography-heavy + accordions | Static content | `static-content/base.html` |
+
+The prototype kit ships these layout templates locally in `src/templates/`. The AI selects the appropriate template as a starting point, then populates it with the specific content and components from the Figma design.
+
+**Step 3: Map Figma components to VADS web components** (VADS MCP server)
+
+For each Figma component instance found in step 1, the AI:
+
+1. Calls VADS MCP `map_figma_component` with the Figma component name
+2. Gets back the matching `<va-*>` web component tag, required attributes, and an HTML example
+3. If no exact match exists, calls `find_components` with a search query derived from the Figma component name
+4. Uses `get_component` to get the full API of the matched component
+5. Applies the properties/variants from the Figma design to the correct HTML attributes
+
+**Step 4: Map Figma variables to VADS tokens** (VADS MCP server)
+
+Figma variables (colors, spacing, typography) need to map to VADS CSS custom properties:
+1. AI calls `get_variable_defs` from Figma MCP to get the variable names and values
+2. AI calls VADS MCP `find_tokens` to find the matching VADS token by value or name pattern
+3. Uses the VADS CSS custom property name (e.g., `--vads-color-base`) instead of raw hex values
+
+**Step 5: Generate the code** (AI agent)
+
+The AI combines:
+- The page layout template (from local `src/templates/`)
+- The mapped VADS web components (from VADS MCP server)
+- The mapped design tokens (from VADS MCP server)
+- The text content and structure (from Figma MCP server)
+
+Into a complete, working prototype page.
+
+#### Figma-to-VADS Component Mapping
+
+The VADS MCP server includes a `map_figma_component` tool that maintains the mapping between Figma component names and web component tags. This is the critical bridge until CodeConnect is established.
+
+Example mapping entries:
+
+| Figma Component Name | VADS Web Component | Key Attribute Mapping |
+|---------------------|-------------------|----------------------|
+| `Alert` / `Alert - Warning` | `<va-alert>` | Figma variant "Type" → `status` attr |
+| `Text Input` / `Text input` | `<va-text-input>` | Figma "Label" → `label` attr |
+| `Button - Primary` | `<va-button>` | Figma variant → no attr (primary is default) |
+| `Button - Secondary` | `<va-button>` | → `secondary` attr |
+| `Button Pair` | `<va-button-pair>` | — |
+| `Accordion` | `<va-accordion>` | — |
+| `Card` | `<va-card>` | — |
+| `Service List Item` | `<va-service-list-item>` | Complex: multiple sub-properties |
+| `Critical Action` | `<va-critical-action>` | — |
+| `Tag - Status` | `<va-tag-status>` | Figma variant → `type` attr |
+| `Select` | `<va-select>` | Figma "Label" → `label` attr |
+| `Radio Group` | `<va-radio>` | — |
+| `Checkbox Group` | `<va-checkbox-group>` | — |
+| `Memorable Date` | `<va-memorable-date>` | — |
+| `Segmented Progress Bar` | `<va-segmented-progress-bar>` | — |
+| `Process List` | `<va-process-list>` | — |
+| `Breadcrumbs` | `<va-breadcrumbs>` | — |
+| `Link - Action` | `<va-link-action>` | — |
+| `Additional Info` | `<va-additional-info>` | — |
+| `Loading Indicator` | `<va-loading-indicator>` | — |
+
+This mapping table is maintained as a JSON file shipped with the MCP server (`data/figma-component-map.json`). It should be updated whenever new components are added to the Figma library or web component library.
+
+**Future: CodeConnect replaces this mapping.** Once Figma CodeConnect is configured for the VADS Figma library, the Figma MCP server's `get_code_connect_map` will return the correct web component for each Figma instance automatically. At that point, the `map_figma_component` tool becomes a fallback for unmapped components.
+
 ---
 
 ## Part 1: VADS MCP Server
@@ -203,6 +298,7 @@ vads-mcp-server/
 ├── tsconfig.json
 ├── README.md
 ├── data/
+│   ├── figma-component-map.json       # Figma component name → VADS web component mapping
 │   └── guides/                        # Static markdown guides
 │       ├── installation.md            # How to install component-library
 │       ├── page-structure.md          # VA.gov page layout (header, footer, breadcrumbs)
@@ -224,6 +320,7 @@ vads-mcp-server/
     │   ├── token-tools.ts             # get_tokens, find_tokens
     │   ├── validation-tools.ts        # validate_component_api
     │   ├── utility-tools.ts           # get_utility_classes
+    │   ├── figma-tools.ts             # map_figma_component
     │   └── guide-tools.ts            # get_guide
     ├── resources/
     │   ├── index.ts                   # Resource registration
@@ -245,6 +342,7 @@ vads-mcp-server/
 | `find_tokens` | `query: string` | Search tokens by CSS variable name, value, or description. |
 | `get_utility_classes` | `category?: string` | VADS CSS utility classes for grid, spacing, display, typography. |
 | `get_guide` | `topic: string` | Guides for installation, page-structure, form-patterns, accessibility, vanilla JS usage. |
+| `map_figma_component` | `figmaComponentName: string` | Maps a Figma component name to the corresponding VADS web component tag, with attribute mapping and HTML example. Returns best match or candidates if ambiguous. |
 
 ### MCP Resources (MVP)
 
@@ -399,13 +497,46 @@ Hand-authored markdown for procedural knowledge that can't be derived from compo
   - All use the same command: `npx @department-of-veterans-affairs/vads-mcp-server`
   - Publish to npm (or internal registry)
 
+#### Phase M3: Figma Component Mapping
+
+- [ ] **Create Figma-to-VADS component mapping data**
+  - File: `data/figma-component-map.json`
+  - Audit the VADS Figma library to catalog all component names and variants
+  - Map each Figma component name to its `<va-*>` web component tag
+  - Include variant-to-attribute mappings (e.g., Figma "Type: Warning" → `status="warning"`)
+  - Include HTML example snippets for each mapping
+  - Document unmapped or partially mapped components
+
+- [ ] **Implement `map_figma_component` tool**
+  - File: `src/tools/figma-tools.ts`
+  - Accept a Figma component name (may include variant info, e.g., "Alert - Warning")
+  - Fuzzy match against `figma-component-map.json`
+  - Return: matched `<va-*>` tag, attribute mappings, HTML example
+  - If no exact match: return candidates ranked by similarity, plus a suggestion to use `find_components` for manual lookup
+  - Handle common naming variations (capitalization, dashes vs spaces, with/without variant suffixes)
+
+- [ ] **Write Figma-to-code guide**
+  - File: `data/guides/figma-to-code.md`
+  - Step-by-step workflow for the dual MCP server approach
+  - How to set up the Figma MCP server (desktop and remote options)
+  - How to select frames in Figma and pass links to the AI agent
+  - How the AI uses `get_metadata` → `get_design_context` → `map_figma_component` → `get_component`
+  - Troubleshooting unmapped components
+  - Tips for Figma file structure that produces better results (named layers, auto layout, variables)
+
+- [ ] **Test the Figma-to-code workflow end-to-end**
+  - Select a real VADS Figma design (e.g., My VA dashboard mockup)
+  - Run the dual MCP workflow with an AI agent
+  - Measure: how many components mapped correctly on first pass?
+  - Identify gaps in the mapping table, iterate
+
 ---
 
 ## Part 2: VA Prototype Kit
 
 ### What It Does
 
-A Vite-based repository where each prototype lives as a self-contained directory. Designers use Claude Code (with the VADS MCP server) to generate prototypes from PRDs, screenshots, or PDFs. The kit provides the project scaffolding, deployment pipeline, and Claude Code configuration.
+A Vite-based repository where each prototype lives as a self-contained directory. Designers use any AI coding agent (backed by the VADS MCP server and optionally the Figma MCP server) to generate prototypes from PRDs, Figma designs, or PDF forms. The kit provides the project scaffolding, deployment pipeline, layout templates, and AI agent configuration.
 
 ### Repository Structure
 
@@ -433,11 +564,26 @@ va-prototype-kit/
 │   ├── prd-template.md                # PRD template for designers
 │   └── skills/                        # Workflow docs as plain markdown (any AI can read)
 │       ├── prototype-workflow.md       # How to create a new prototype
-│       ├── populate-from-figma.md      # Generate HTML from Figma exports
+│       ├── figma-to-prototype.md       # Build a prototype from a Figma design link
+│       ├── setup-figma-mcp.md          # How to configure the Figma MCP server
+│       ├── populate-from-figma.md      # Generate HTML from Figma screenshots (no MCP)
 │       └── reproduce-page.md          # Mock external sites
 ├── src/
 │   ├── main.ts                        # Global imports: component-library + css-library
 │   ├── style.css                      # App-level styles using VADS tokens
+│   ├── templates/                     # Layout templates for common VA.gov page types
+│   │   ├── dashboard/
+│   │   │   └── base.html              # My VA, personalized hubs
+│   │   ├── form-step/
+│   │   │   ├── intro.html             # Form introduction (process list + start)
+│   │   │   ├── step.html              # Individual form step
+│   │   │   └── review.html            # Form review before submit
+│   │   ├── confirmation/
+│   │   │   └── base.html              # Success/confirmation page
+│   │   ├── hub/
+│   │   │   └── base.html              # Benefit hub landing page
+│   │   └── static-content/
+│   │       └── base.html              # Informational content page
 │   └── prototypes/
 │       └── my-va-dashboard/           # Example prototype
 │           ├── index.html             # Entry point
@@ -457,11 +603,17 @@ va-prototype-kit/
 
 ### How It Works: The Designer Workflow
 
-1. **Designer clones the repo** and runs `npm install` (one-time setup)
-2. **Designer configures their AI tool's MCP server** (one-time, per tool):
-   - Claude Code: already configured in `.claude/settings.json`
-   - Copilot: already configured in `.vscode/mcp.json`
-   - Cursor: already configured in `.cursor/mcp.json`
+**One-time setup:**
+
+1. **Designer clones the repo** and runs `npm install`
+2. **Designer configures MCP servers** for their AI tool:
+   - **VADS MCP server:** Pre-configured in `.claude/settings.json`, `.vscode/mcp.json`, `.cursor/mcp.json`
+   - **Figma MCP server (optional):** Designer follows `docs/skills/setup-figma-mcp.md` to connect their Figma account. Requires Figma Dev seat for full access.
+
+**Per-prototype workflow — two paths:**
+
+#### Path A: Starting from a PRD
+
 3. **Designer writes a PRD** in `src/prototypes/<name>/prd.md`
    - Describes the experience they want to prototype
    - Lists pages, user flows, states, and data
@@ -470,9 +622,27 @@ va-prototype-kit/
    - AI generates all HTML/TS/CSS using correct VADS components
    - AI creates state management for multi-page flows
    - AI creates scenario data for different user states
-5. **Designer runs `npm run dev`** to see the prototype with hot reload
-6. **Designer iterates** — tweaks generated code, asks AI for changes
-7. **Designer deploys** — pushes to GitHub, Pages deployment is automatic
+
+#### Path B: Starting from a Figma design
+
+3. **Designer shares a Figma link** with their AI agent (frame or page URL)
+4. **AI agent reads the Figma design** via the Figma MCP server:
+   - Calls `get_metadata` to understand the page structure and identify components
+   - Calls `get_design_context` for detailed layout and component properties
+   - Calls `get_variable_defs` for design tokens used
+   - Calls `get_screenshot` for visual reference
+5. **AI agent maps to VADS web components** via the VADS MCP server:
+   - Calls `map_figma_component` for each Figma component instance found
+   - Calls `get_component` to get the full API for matched web components
+   - Calls `find_tokens` to map Figma variables to VADS CSS custom properties
+   - Selects appropriate layout template from `src/templates/` based on page structure
+6. **AI generates the prototype** combining layouts, components, tokens, and content
+
+#### Both paths continue:
+
+7. **Designer runs `npm run dev`** to see the prototype with hot reload
+8. **Designer iterates** — tweaks generated code, asks AI for changes, shares more Figma frames
+9. **Designer deploys** — pushes to GitHub, Pages deployment is automatic
 
 ### PRD Template
 
@@ -606,12 +776,28 @@ Claude Code users can also invoke these as `/skills` if we add symlinks or refer
   - Write `.github/copilot-instructions.md` (Copilot-specific, references AGENTS.md)
   - Write `.github/instructions/prototypes.instructions.md` (path-specific for prototype files)
   - Write `CLAUDE.md` at repo root (Claude Code additions, references AGENTS.md)
-  - Configure MCP server for all tools:
+  - Configure VADS MCP server for all tools:
     - `.claude/settings.json` (Claude Code)
     - `.vscode/mcp.json` (Copilot)
     - `.cursor/mcp.json` (Cursor)
+  - Include Figma MCP server config stubs (designer adds their own auth):
+    - Document both desktop (`http://127.0.0.1:3845/mcp`) and remote (`https://mcp.figma.com/mcp`) options
   - Write PRD template in `docs/prd-template.md`
   - Create Claude Code agent definitions in `.claude/agents/` (optional enhancement)
+
+- [ ] **Create layout templates**
+  - Directory: `src/templates/`
+  - Create templates for common VA.gov page types:
+    - `dashboard/base.html` — personalized dashboard (va-service-list-item, va-card, va-alert)
+    - `form-step/intro.html` — form introduction (va-process-list, va-alert, va-button)
+    - `form-step/step.html` — form step (form elements, va-button-pair, progress bar)
+    - `form-step/review.html` — form review (va-accordion, edit links, va-button-pair)
+    - `confirmation/base.html` — confirmation page (va-alert success, next steps)
+    - `hub/base.html` — benefit hub landing (va-link-action, va-card, spoke links)
+    - `static-content/base.html` — informational content (typography, va-accordion)
+  - Each template uses correct VA.gov page structure (gov banner, header, breadcrumbs, main, footer)
+  - Templates use VADS components and design tokens exclusively
+  - AI agents select from these templates when recognizing page patterns from Figma designs
 
 - [ ] **Create landing page**
   - File: `index.html`
@@ -656,10 +842,36 @@ Build the first prototype using the PRD-driven workflow to validate the approach
   - Written as plain markdown any AI agent can follow
   - Optionally symlink/reference from `.claude/skills/` for Claude Code `/skill` access
 
-- [ ] **Create Figma-to-code guide**
+- [ ] **Create Figma MCP setup guide**
+  - File: `docs/skills/setup-figma-mcp.md`
+  - How to configure the Figma MCP server for each AI tool
+  - Desktop server setup (requires Figma Desktop app, connects at `http://127.0.0.1:3845/mcp`)
+  - Remote server setup (connects to `https://mcp.figma.com/mcp`, requires OAuth)
+  - Figma seat requirements (Dev or Full seat on paid plans for reasonable rate limits; Starter/View/Collab limited to 6 tool calls/month)
+  - How to verify the connection works
+  - Troubleshooting common issues
+
+- [ ] **Create Figma-to-prototype guide (with MCP)**
+  - File: `docs/skills/figma-to-prototype.md`
+  - The full dual-MCP workflow: Figma link → design analysis → component mapping → code generation
+  - Step-by-step instructions the AI agent follows:
+    1. Call Figma `get_metadata` to understand page structure
+    2. Call Figma `get_design_context` for each major section
+    3. Call Figma `get_variable_defs` for tokens
+    4. Call Figma `get_screenshot` for visual reference
+    5. Call VADS `map_figma_component` for each Figma component found
+    6. Call VADS `get_component` for full API of matched components
+    7. Select layout template from `src/templates/` based on identified page type
+    8. Generate code combining template + components + content
+  - How to handle unmapped components (fallback to `find_components` search)
+  - How to handle custom/one-off Figma elements that aren't VADS components
+  - Tips for designers: name your Figma layers well, use auto layout, use VADS variables
+
+- [ ] **Create Figma screenshot guide (without MCP)**
   - File: `docs/skills/populate-from-figma.md`
-  - Accept Figma screenshot, identify VADS components, generate HTML
-  - Instruct AI to use MCP server `validate_component_api` tool
+  - Fallback for designers without Figma MCP setup or Dev seats
+  - Accept Figma screenshot image, visually identify VADS components, generate HTML
+  - Instruct AI to use VADS MCP server `find_components` and `validate_component_api`
   - Works with any AI agent that supports image input
 
 - [ ] **Create page reproduction guide**
@@ -699,6 +911,7 @@ Build the first prototype using the PRD-driven workflow to validate the approach
 - [ ] `find_tokens` finds tokens by name, value, or description
 - [ ] `get_utility_classes` returns VADS CSS utility class reference
 - [ ] `get_guide` returns installation, page-structure, form-patterns guides
+- [ ] `map_figma_component` returns correct VADS web component for common Figma component names
 - [ ] MCP server works with Claude Code, GitHub Copilot, and Cursor
 - [ ] `npx @department-of-veterans-affairs/vads-mcp-server` starts successfully
 - [ ] MCP server configuration files ship in repo for all three tools (`.claude/`, `.vscode/`, `.cursor/`)
@@ -715,8 +928,11 @@ Build the first prototype using the PRD-driven workflow to validate the approach
 
 ### End-to-End Workflow
 
-- [ ] Designer writes a PRD, runs an AI coding agent, and gets a working prototype
+- [ ] **Path A (PRD):** Designer writes a PRD, runs an AI coding agent, and gets a working prototype
+- [ ] **Path B (Figma):** Designer shares a Figma link, AI reads design via Figma MCP, maps to VADS components via VADS MCP, and generates a working prototype
 - [ ] Generated prototype uses correct VADS components (no hallucinated APIs)
+- [ ] Figma components are correctly mapped to `<va-*>` web components with proper attributes
+- [ ] Layout templates are selected appropriately based on page structure
 - [ ] Prototype deploys to GitHub Pages with a shareable URL
 - [ ] Multiple user states/scenarios are testable in the prototype
 - [ ] Designer can iterate on generated code without developer assistance
@@ -777,6 +993,9 @@ Build the first prototype using the PRD-driven workflow to validate the approach
 | MCP server maintenance burden when component-library updates | Medium | Low | Auto-read from installed package — updates come via `npm update` |
 | Designers prefer Figma anyway | Medium | Medium | Make the workflow genuinely faster; provide clear value proposition; gather feedback early |
 | PRD-driven approach produces inconsistent results | Medium | Medium | Provide a detailed PRD template; create good agent instructions; iterate based on feedback |
+| Figma-to-VADS component mapping is incomplete or stale | High | High | Audit VADS Figma library thoroughly at launch; automate mapping updates when possible; fallback to `find_components` fuzzy search for unmapped components |
+| Figma MCP server access limited by seat type | Medium | Medium | Document seat requirements clearly; provide screenshot-based fallback (`populate-from-figma.md`) for designers without Dev seats |
+| Figma designs use non-VADS components or custom elements | Medium | High | Guide instructs AI to flag unmapped elements; designer manually resolves or AI uses closest VADS equivalent |
 | Component library auth/access issues in npm | Low | Low | Package is public on npm; document fallback for internal registry |
 
 ## Future Considerations
@@ -785,7 +1004,7 @@ Build the first prototype using the PRD-driven workflow to validate the approach
 
 1. **GitHub Codespaces integration:** One-click cloud development environment for designers without local Node.js
 2. **PR preview deployments:** GitHub Actions to deploy prototype branches to preview URLs automatically
-3. **Figma plugin integration:** Direct export from Figma to prototype kit (beyond screenshot-based `/populate-from-figma`)
+3. **Figma CodeConnect:** Establish CodeConnect mappings between VADS Figma library components and `<va-*>` web components. Once configured, the Figma MCP server's `get_code_connect_map` tool will automatically return the correct web component for each Figma instance, replacing the manual `figma-component-map.json` maintained in the VADS MCP server.
 4. **MCP server for vets-website:** Extend MCP server with vets-website-specific patterns (Forms System, platform utilities)
 5. **Component library contribution:** Improve JSDoc annotations in component-library source to enrich MCP server data (following NYSDS's approach of improving source docs for better AI output)
 6. **Visual regression testing:** Playwright for screenshot comparison of generated prototypes
@@ -834,6 +1053,9 @@ Build the first prototype using the PRD-driven workflow to validate the approach
 - **MCP Protocol:** https://modelcontextprotocol.io/
 - **AGENTS.md Specification:** https://agents.md/ — Open standard for AI agent instructions, supported by 20+ tools
 - **Copilot Custom Instructions:** https://docs.github.com/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot
+- **Figma MCP Server:** https://developers.figma.com/docs/figma-mcp-server/ — Official Figma MCP server documentation
+- **Figma MCP Tools & Prompts:** https://developers.figma.com/docs/figma-mcp-server/tools-and-prompts/ — Tool reference
+- **Figma Code Connect:** https://www.figma.com/developers/code-connect — Design-to-code component mapping (future)
 
 ### External References
 
