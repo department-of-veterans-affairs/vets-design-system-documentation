@@ -49,7 +49,7 @@ anchors:
 
 ### How this component works
 
-**Key difference from Card:** While [Card]({{ site.baseurl }}/components/card) is a flexible container where teams build and pass in their own content, Card Status is a structured component with required props that enforce a consistent pattern for status-driven scenarios.
+The key difference between the Card Status component and the Card component is while [Card]({{ site.baseurl }}/components/card) is a flexible container where teams build and pass in their own content, Card Status is a structured component with required props that enforce a consistent pattern for status-driven scenarios.
 
 #### Default
 
