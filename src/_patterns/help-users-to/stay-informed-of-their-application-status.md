@@ -27,7 +27,7 @@ anchors:
 
 ### Form submission status in My VA
 
-{% include component-example.html alt="Screen shots of 3 My VA status cards." file="/images/patterns/help-users-to/stay-informed-of-their-application-status/myva-status-cards.png" caption="Four Card component variations used to show the status of someone's form or application submission in My VA." reverse="true" %}
+{% include component-example.html alt="Screenshots of 4 My VA status cards." file="/images/patterns/help-users-to/stay-informed-of-their-application-status/myva-status-cards.png" caption="Four Card component variations used to show the status of someone's form or application submission in My VA." reverse="true" %}
 
 ## How to design and build
 
