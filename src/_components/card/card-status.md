@@ -81,7 +81,7 @@ This state is triggered when validation errors occur, such as when a user tries 
 
 ### Calls to action (CTA)
 
-* **Single CTA only.** Card Status supports only one call-to-action, typically to add or edit data. This is more restrictive than the standard [Card component]({{ site.baseurl }}/components/card), which allows up to 3 CTAs.
+* **Single CTA only.** Card Status supports only one call to action, typically to add or edit data. This is more restrictive than the standard [Card component]({{ site.baseurl }}/components/card), which allows up to 3 CTAs.
 * **Use action links.** The CTA should use a [secondary action link]({{ site.baseurl }}/components/link/action).
 
 ### Placement
