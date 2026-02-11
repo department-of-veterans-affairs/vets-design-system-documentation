@@ -111,7 +111,7 @@ The Card Status component handles most status and error accessibility automatica
 
 **Status announcements:**
 * Status uses the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component with `role="status"`
-* Includes visually hidden "Status:" prefix for screen reader context
+* Includes visually hidden text that says the tag is reporting status and its type. (e.g., "Status error").
 * The component programmatically associates status with the card heading
 
 **Error handling:**
