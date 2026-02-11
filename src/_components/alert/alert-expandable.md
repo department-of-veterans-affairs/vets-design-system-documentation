@@ -20,10 +20,6 @@ anchors:
   - anchor: Component checklist
 ---
 
-<va-alert status="warning">
-  <p><strong>Component update:</strong> The <a href="{{ site.baseurl }}/deprecated/additional-info">Additional info</a> component has been replaced by the <a href="{{ site.baseurl }}/components/details">Details</a> component. This component will need to be updated to align with the new Details component.</p>
-</va-alert>
-
 ## Examples
 
 ### Default (Informational)
@@ -92,7 +88,7 @@ The alert was tested as part of a usability study with 9 participants. The alert
 
 ## Related
 
-* [Additional info]({{ site.baseurl }}/deprecated/additional-info)
+* [Additional info]({{ site.baseurl }}/components/additional-info)
 * [Details]({{ site.baseurl }}/components/details)
 * [Alert]({{ site.baseurl}}/components/alert)
 

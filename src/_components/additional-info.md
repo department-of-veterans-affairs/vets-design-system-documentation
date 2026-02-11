@@ -1,15 +1,14 @@
 ---
 layout: component
 title: Additional info
-status: dont-use-deprecated
-intro-text: "This component has been deprecated and replaced by the [Details component]({{ site.baseurl }}/components/details). Please migrate to the Details component for new implementations."
+status: use-with-caution
+intro-text: "Additional info makes content easier to scan as it hides information that may not be applicable to all users or situations. Use this component to situate plain language help at the point of the process where it is most relevant."
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1350%3A22760&mode=design&t=TiJHClaf3VQ6wU6B-1
 uswds-v3: default
 web-component: va-additional-info
 web: true
 mobile-app: false
 anchors:
-  - anchor: Migration to Details component
   - anchor: Examples
   - anchor: Usage
   - anchor: Behavior
@@ -19,11 +18,6 @@ anchors:
   - anchor: Related
   - anchor: Component checklist
 ---
-
-<div class="vads-u-background-color--warning-faded vads-u-margin-y--4 vads-u-padding--4 vads-u-border-left--7px vads-u-border-color--warning">
-  <h2 id="migration-to-details-component">Migration to Details component</h2>
-  <p><strong>This component has been deprecated.</strong> Please use the <a href="{{ site.baseurl }}/components/details">Details component</a> instead for all new implementations.</p>
-</div>
 
 ## Examples
 
