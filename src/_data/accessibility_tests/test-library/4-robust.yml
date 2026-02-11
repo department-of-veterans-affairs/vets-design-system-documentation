@@ -34,7 +34,7 @@ tests:
           Links navigate to pages; buttons perform actions.
         description_full: |
           When you interact with UI elements,
-          you find elements defined as links are used for navigation and elements defined as buttons perform in-page actions or submit forms.
+          you find the code uses link elements for navigation and button elements to perform in-page actions or submit forms.
       - id: DST-412-001
         description_short: |
           Links navigate to a new page or section.

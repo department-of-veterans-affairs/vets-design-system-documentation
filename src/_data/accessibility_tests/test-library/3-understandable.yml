@@ -74,7 +74,7 @@ tests:
       Similar features have the same labels across pages.
     description_full: |
       When you use components with similar functionality on multiple pages,
-      you find they are labeled identically and function identically.
+      you find they have identical labels and function identically.
   - id: WEB-326
     category: general
     wcag_criterion: 3.2.6
@@ -129,7 +129,7 @@ tests:
           Forms clearly mark required or optional fields.
         description_full: |
           When you view form inputs,
-          you find all required inputs are identified with visible labels or instructions, or all optional inputs are identified.
+          you find visible labels or instructions identify which fields are required or optional.
   - id: WEB-333
     category: general
     wcag_criterion: 3.3.3
@@ -151,7 +151,7 @@ tests:
     508_severity: Critical
     wcag_url: https://www.w3.org/TR/WCAG21/#error-prevention-legal-financial-data
     description_short: |
-      Important submissions can be reviewed or undone.
+      Users can review or undo important submissions.
     description_full: |
       When you make legal or financial transactions,
       you find you can review before submission or the action can be reversed.

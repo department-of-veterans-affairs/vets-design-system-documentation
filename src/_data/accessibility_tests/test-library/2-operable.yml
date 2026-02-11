@@ -42,7 +42,7 @@ tests:
     508_severity: N/A
     wcag_url: https://www.w3.org/TR/WCAG21/#character-key-shortcuts
     description_short: |
-      Single-key shortcuts can be turned off or customized.
+      Users can turn off or customize single-key shortcuts.
     description_full: |
       When you encounter single-character keyboard shortcuts,
       you find they can be turned off, remapped to include modifiers, or are active only when the component has focus.
@@ -190,7 +190,7 @@ tests:
       Content uses headings to organize sections.
     description_full: |
       When you view content organized in sections,
-      you find section headings are included.
+      you find the content includes section headings.
   - id: WEB-2411
     category: keyboard
     wcag_criterion: 2.4.11
@@ -224,7 +224,7 @@ tests:
     508_severity: N/A
     wcag_url: https://www.w3.org/TR/WCAG21/#pointer-cancellation
     description_short: |
-      Actions happen on release and can be cancelled.
+      Actions happen on release and users can cancel them.
     description_full: |
       When you interact with pointer actions,
       you find they execute on the up-event and can be cancelled before release.
