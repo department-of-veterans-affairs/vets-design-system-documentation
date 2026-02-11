@@ -1,4 +1,5 @@
 # Veteran Affairs Design System
+[![DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/department-of-veterans-affairs/vets-design-system-documentation)
 
 The Veteran Affairs Design System (VADS) exists to provide design guidelines and code, enabling teams to rapidly create trustworthy, accessible, and consistent digital services on the VA.gov platform.
 
