@@ -21,7 +21,7 @@ body:
       required: true
       
   - type: dropdown
-    id: bug_enhancement
+    id: bug-enhancement
     attributes:
       label: "Type of issue"
       description: "Is this a bug or an enhancement to an existing component or pattern? If a new component or pattern, fill out an experimental design request."
@@ -33,7 +33,7 @@ body:
       required: true
       
   - type: dropdown
-    id: product_name
+    id: product-name
     attributes:
       label: Select your product area
       description: See [team directory](https://github.com/department-of-veterans-affairs/va.gov-team-sensitive/tree/master/teams#readme)
@@ -48,7 +48,7 @@ body:
       required: true
 
   - type: input
-    id: team_name
+    id: team-name
     attributes:
       label: Team Name
       description: Enter your team name
@@ -56,7 +56,7 @@ body:
       required: true
 
   - type: input
-    id: team_label
+    id: team-label
     attributes:
       label: Team label
       description: Enter your team name label from GitHub
