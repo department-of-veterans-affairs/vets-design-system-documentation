@@ -1,3 +1,8 @@
+---
+name: accessibility
+description: Use when a designer or engineer asks questions about accessiblity of their product, components, or processes.
+---
+
 # VA Design System - Accessibility Guidance for Copilot Space
 
 ## Purpose
@@ -150,7 +155,7 @@ When relevant, include an **Impact level** (launch-blocking barrier vs high risk
 #### Key Requirements
 
 1. **Focus Appearance**
-   - Gold outline (`--vads-color-gold`) indicates focus on VA.gov
+   - Gold outline (`--vads-color-action-focus-on-light`) indicates focus on VA.gov
    - Never disable focus indicators
    - Don't create custom focus styles
    - Ensure focus outline is fully visible
@@ -239,9 +244,9 @@ SOURCE: src/_accessibility/when-a-screen-reader-needs-to-announce-content.md#imp
 When designers ask about documenting accessibility:
 
 ```markdown
-**REQUIRED**: Accessibility annotations in mockups before design/developer handoff
+**RECOMMENDED**: Accessibility annotations in mockups by midpoint review
 
-**Annotation Library**: CVS Accessibility Annotation Kit in Figma
+**Annotation Library**: VADS Accessibility Annotation Kit in Figma
 SOURCE: src/_accessibility/accessibility-annotations.md#library
 
 **What to Annotate**:
@@ -316,7 +321,7 @@ When asked "How do I make a button accessible?":
 
 ### General Requirements (All Buttons)
 ✅ Descriptive button labels starting with verbs
-✅ Target size minimum 44×44 CSS pixels (WCAG 2.2 Level AAA)
+✅ Target size minimum 24×24 CSS pixels (WCAG 2.2 Level AA)
 ✅ Keyboard accessible (Enter and Space activate)
 ✅ Visible focus indicator
 ✅ Don't rely on color alone for meaning
@@ -525,7 +530,7 @@ Example response:
 **DOCUMENTED**: Yes
 **SOURCE**: `src/_accessibility/index.md`, `src/_accessibility/accessibility-testing-for-design-system-components.md`
 
-**Minimum Required** (per BVA recommendations):
+**Minimum Required**:
 - iOS + Safari + VoiceOver (Mobile)
 - Windows 11 + Chrome + JAWS (Desktop)
 
