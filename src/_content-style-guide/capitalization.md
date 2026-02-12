@@ -25,6 +25,7 @@ On VA.gov web pages and components, all-caps text is only permitted for the foll
 - [Eyebrow]({{ site.baseurl }}/foundation/typography#eyebrow) text labels
 - [Button - Icon]({{ site.baseurl }}/components/button/button-icon) labels
 
+Authors should enter these labels in sentence case; the components will render them in all caps through styling.
 ### Exceptions where we use initial capitalization
 - SEO title tags (example: VA Prescription Refill And Tracking \| Veterans Affairs). See [Writing for SEO]({{ site.baseurl }}/content-style-guide/seo) for more information.
 
