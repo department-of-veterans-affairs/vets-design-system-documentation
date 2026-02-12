@@ -455,6 +455,107 @@ function calculateSummary(issues) {
 }
 
 /**
+ * Fetch a11y defect label descriptions from GitHub
+ */
+function fetchA11yLabelDescriptions() {
+  try {
+    const output = execSync(
+      `gh label list --repo ${REPO} --search "a11y-defect" --json name,description`,
+      { encoding: 'utf8' }
+    );
+    const labels = JSON.parse(output);
+    // Filter to only defect levels 0-3 and sort by severity (most severe first)
+    return labels
+      .filter(l => /^a11y-defect-[0-3]$/.test(l.name))
+      .sort((a, b) => a.name.localeCompare(b.name));
+  } catch (error) {
+    console.error('Failed to fetch a11y label descriptions:', error.message);
+    return [
+      { name: 'a11y-defect-0', description: '' },
+      { name: 'a11y-defect-1', description: '' },
+      { name: 'a11y-defect-2', description: '' },
+      { name: 'a11y-defect-3', description: '' }
+    ];
+  }
+}
+
+/**
+ * Process issues into monthly a11y defect data
+ * For issues with multiple defect labels, uses the most severe (lowest number)
+ */
+function processA11yDefectMonthlyData(issues) {
+  const defectLevels = ['a11y-defect-0', 'a11y-defect-1', 'a11y-defect-2', 'a11y-defect-3'];
+  const monthlyData = new Map();
+
+  issues.forEach(issue => {
+    if (!issue.labels) return;
+
+    // Find the most severe defect label (lowest number)
+    const defectLabels = issue.labels.filter(l => defectLevels.includes(l));
+    if (defectLabels.length === 0) return;
+
+    defectLabels.sort();
+    const mostSevere = defectLabels[0]; // e.g. 'a11y-defect-0'
+
+    const created = new Date(issue.created_at);
+    const monthKey = `${created.getFullYear()}-${String(created.getMonth() + 1).padStart(2, '0')}`;
+
+    if (!monthlyData.has(monthKey)) {
+      monthlyData.set(monthKey, {
+        period: monthKey,
+        a11y_defect_0: 0,
+        a11y_defect_1: 0,
+        a11y_defect_2: 0,
+        a11y_defect_3: 0
+      });
+    }
+
+    // Convert label name to key: 'a11y-defect-2' -> 'a11y_defect_2'
+    const key = mostSevere.replace(/-/g, '_');
+    monthlyData.get(monthKey)[key]++;
+  });
+
+  // Pad the series so we emit every month between the min and max months,
+  // including months with zero a11y defects.
+  const monthKeys = Array.from(monthlyData.keys()).sort();
+  if (monthKeys.length === 0) {
+    return [];
+  }
+
+  const first = monthKeys[0].split('-');
+  const last = monthKeys[monthKeys.length - 1].split('-');
+  let currentYear = parseInt(first[0], 10);
+  let currentMonth = parseInt(first[1], 10);
+  const endYear = parseInt(last[0], 10);
+  const endMonth = parseInt(last[1], 10);
+
+  const padded = [];
+  while (currentYear < endYear || (currentYear === endYear && currentMonth <= endMonth)) {
+    const monthKey = `${currentYear}-${String(currentMonth).padStart(2, '0')}`;
+
+    if (monthlyData.has(monthKey)) {
+      padded.push(monthlyData.get(monthKey));
+    } else {
+      padded.push({
+        period: monthKey,
+        a11y_defect_0: 0,
+        a11y_defect_1: 0,
+        a11y_defect_2: 0,
+        a11y_defect_3: 0
+      });
+    }
+
+    currentMonth += 1;
+    if (currentMonth > 12) {
+      currentMonth = 1;
+      currentYear += 1;
+    }
+  }
+
+  return padded;
+}
+
+/**
  * Utility functions
  */
 function getQuarterKey(date) {
@@ -491,12 +592,20 @@ async function main() {
     const velocityData = processVelocityData(issues);
     const experimentalQuarterlyData = processExperimentalQuarterlyData(issues);
     const summary = calculateSummary(issues);
-    
+
+    // Fetch a11y defect data
+    const a11yLabels = fetchA11yLabelDescriptions();
+    const a11yMonthlyData = processA11yDefectMonthlyData(issues);
+
     // Prepare output
     const metricsData = {
       quarterly: quarterlyData,
       velocity: velocityData,
       experimental_quarterly: experimentalQuarterlyData,
+      a11y_monthly: {
+        labels: a11yLabels,
+        data: a11yMonthlyData
+      },
       summary: summary,
       generated_at: new Date().toISOString()
     };
@@ -515,6 +624,8 @@ async function main() {
     console.log(`   - Quarterly data points: ${quarterlyData.length}`);
     console.log(`   - Velocity data points: ${velocityData.length}`);
     console.log(`   - Experimental design quarters: ${experimentalQuarterlyData.length}`);
+    console.log(`   - A11y defect monthly data points: ${a11yMonthlyData.length}`);
+    console.log(`   - A11y defect labels found: ${a11yLabels.length}`);
     
   } catch (error) {
     console.error('❌ Error collecting metrics:', error.message);
@@ -532,5 +643,7 @@ module.exports = {
   processQuarterlyData,
   processVelocityData,
   processExperimentalQuarterlyData,
-  calculateSummary
+  calculateSummary,
+  fetchA11yLabelDescriptions,
+  processA11yDefectMonthlyData
 };
