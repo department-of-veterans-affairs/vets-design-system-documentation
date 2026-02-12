@@ -165,7 +165,7 @@ These considerations describe how sorting changes are communicated and experienc
 * Ensure sorted results update in a meaningful and predictable order so all users perceive the same sequence of information ([WCAG 1.3.2 Meaningful Sequence](https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html)).
 * Update results in place during sorting and do not trigger page navigation or a full context change.
 * Keep focus stable on the sort control during sorting so users can continue interacting without losing their place.
-* Inform users that an update is in progress if sorting takes time by following the [Loading Indicator guidance]({{ site.baseurl }}/components/loading-indicator).
+* Inform users that an update is in progress if sorting takes time by following the [Loading indicator guidance]({{ site.baseurl }}/components/loading-indicator).
 
 ### Implementation notes
 * Announce sorting changes in a non-disruptive way using `aria-live="polite"` so assistive technology users understand that results have changed without interrupting their workflow.
