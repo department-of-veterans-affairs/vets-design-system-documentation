@@ -20,12 +20,12 @@ anchors:
 
 ### When to use this pattern
 
-**When you prefill the user’s information into a form or other online tool.** This pattern helps users understand how they can update their prefilled information, including sensitive information that they can’t update online. This pattern also informs users where we’ll save their changes—either only to the specific form or tool, or to the form or tool and their profile. [Learn more about the related “Help users to… Know when their information is prefilled” pattern]({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled) for guidance on how to display the prefilled information.
+**When you prefill the user’s information into an application, form, or other online tool.** This pattern helps users filling out a form or tool understand how they can update their prefilled information, including sensitive information that they can’t update online. This pattern also informs users where we’ll save their changes—either only to the specific form or tool, or to the form or tool and their profile. The related [Help users to… Know when their information is prefilled]({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled) pattern has guidance on how to display the prefilled information.
 
 ### When not to use this pattern
 
 * **When you don't prefill the user's information.**  
-* **For unauthenticated users.** Users who aren't signed in shouldn't see their information prefilled when they interact with an application, or be able to update prefilled information. But, when forms don't require users to be signed in, they should see an information alert describing benefits to signing in. \[Check the unauthenticated intro page alert\]({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled\#unauthenticated-intro-page-alert) within the [Help users to... Know when their information is prefilled]({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled) pattern.
+* **For unauthenticated users.** Users who aren't signed in shouldn't have their information prefilled when they interact with an application, or be able to update prefilled information. But, when forms don't require users to be signed in, they should see an informational alert describing benefits to signing in. [Check the unauthenticated intro page alert\]({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled\#unauthenticated-intro-page-alert) within the [Help users to... Know when their information is prefilled]({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled) pattern.
 
 ### When to use caution
 
@@ -39,7 +39,7 @@ anchors:
 This pattern involves these types of pages found in VA.gov forms:
 
 * **Prefilled information the user cannot update:** This is usually personal information like name, date of birth, and Social Security number.  
-* **Prefilled information the user can update:** This can be many different types of information that the user can update directly on the screen where we display it.
+* **Prefilled information the user can update:** This can be many different types of information, like email addresses and mailing addresses, that the user can update directly on the screen where we display it.
 
 Refer to the related \["Help users to... Know when their information is prefilled"\]({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled) pattern for guidance on helping users know when their information is prefilled.
 
@@ -49,22 +49,23 @@ Refer to the related \["Help users to... Know when their information is prefille
 
 Here's how to communicate that users can't update certain information online:
 
-* **Omit the edit link in cards with non-editable information.**  
-* **Include instructions for how to update uneditable information.** Under the card with the uneditable information, display a note starting with the bolded word “Note:” followed by directions to help users find out how to update this information by phone or another way. See the "content considerations" section for sample text.
+* **Omit the edit link in cards with uneditable information.**  
+* **Include instructions for how to update uneditable information.** Under the card with the uneditable information, display a note starting with the bolded word “Note:” followed by directions to help users find out how to update this information by phone or another way. These directions will vary by form or type of information. You’ll need to confirm that the directions are accurate for updating that specific type of information. See the Content considerations section for more guidance.
+
 
 #### Prefilled information the user can update
 
 Here's how to communicate that users can update certain information online:
 
-**Display editable prefilled information in a card with an edit link.** Display prefilled information in a card component with a link to edit the information. This information may include contact information, such as phone, email, or mailing address.
+**Display editable prefilled information in a card with an edit link.** Display prefilled information in a card component with a link to edit the information. This information may include contact information, such as phone number, email address, or mailing address.
 
 {% include component-example.html class="x2" alt="A card that shows the address information along with a link to edit if needed." file="/images/patterns/help-users-to/update-prefilled-information/address-page.png" %}
 
 When the user updates this information, there are two potential pathways.
 
-##### If we automatically save changes to the users profile
+##### If we automatically save changes to the user's profile
 
-**In most cases, when users update information that can be edited in their profile**, the changes should be saved to both the form or tool and the profile. An informational alert will indicate where the changes will be saved.
+**In most cases, when users update information that can be edited in their profile**, we should save the changes should be saved to both the form or tool and the profile. An informational alert will indicate where we'll save the changes.
 
 For developer documentation on saving information changes to the profile, consult [How to create the contact info Array Data](https://depo-platform-documentation.scrollhelp.site/developer-docs/va-forms-library-how-to-create-the-contact-info-ar).
 
@@ -72,9 +73,9 @@ For developer documentation on saving information changes to the profile, consul
 
 ##### If we let the user choose whether to save changes to their profile
 
-**In certain cases, users may need more control over where the changes will save.** Instead of displaying an informational alert at the top of the page, display a question with radio button response options asking the user where they want to save their changes. Learn more about these cases in the “communicate where changes will save” section below.
+**In certain cases, users may need more control over where we save the changes.** Instead of displaying an informational alert at the top of the page, display a question with radio button response options asking the user where they want to save their changes. Learn more about these cases in the “communicate where changes will save” section below.
 
-Consider using this variation for information that may change frequently. For example, when reordering medical supplies, users may want to provide a temporary mailing address. But they may not want this temporary mailing address to save to their profile. 
+Consider using this variation for information that may change frequently. For example, when reordering medical supplies, users may want to provide a temporary mailing address. But they may not want to save this temporary mailing address to save to their profile. 
 
 {% include component-example.html class="x2" alt="A page for users to update their mailing address. Below the address fields is a required radio button field asking, 'Do you also want to update this information in your profile?'" file="/images/patterns/help-users-to/update-prefilled-information/edit-choose-where-to-save.png" %}
 
