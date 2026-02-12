@@ -220,7 +220,7 @@ GHEOF
 
 # Edit the existing comment in-place
 gh api --method PATCH /repos/department-of-veterans-affairs/vets-design-system-documentation/issues/comments/$COMMENT_ID \
-  --field body="$(cat /tmp/grooming-comment.md)"
+  -F body=@/tmp/grooming-comment.md
 ```
 
 **When to edit vs. when to post a new comment:**
