@@ -51,7 +51,7 @@ anchors:
 
 ### How this component works
 
-* **Icon plus uppercase label.** These buttons are composed of an icon and an uppercase label. The label is a verb that represents an action that the user is taking. Because the visual style of this button uses uppercase text, labels must be very concise actions and thus are limited to one or two words only. For example, "Change file", "Delete", and "Cancel". See [Capitalization]({{ site.baseurl }}/content-style-guide/capitalization) for guidance on when all caps is permitted.
+* **Icon plus action label.** These buttons are composed of an icon and a concise label. The label should be a verb that represents an action the user is taking, and should generally be limited to one or two words. For example, "Change file", "Delete", and "Cancel". The component’s visual style may render labels in uppercase, but authors should provide labels in sentence case. See [Capitalization]({{ site.baseurl }}/content-style-guide/capitalization) for guidance on when all caps is permitted in visual treatments.
 
 ## Requesting new instances
 
