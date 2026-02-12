@@ -2,18 +2,12 @@
 layout: component
 title: Sort
 permalink: /components/sort/
-# contributors: Comma separated list of contributor names with (org name) following, if applicable
-draft: false
+github-title: va-sort
+figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=40936-5762&t=RJz70e6yAZDcvGY3-1
+intro-text: "The Sort component allows users to reorder search results and lists of information to make information easier to analyze."
+web-component: va-sort
 web: true
 mobile-app: false
-intro-text: "The Sort component allows users to reorder search results and lists of information to make information easier to analyze."
-# github-title: va-component-name - Only use this if the component is not actually a web component and thus just needs a label that matches that format.
-# research-title: Use this to match the label in the research repo. Only use if web-component does not match the label.
-figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=40936-5762&t=RJz70e6yAZDcvGY3-1
-
-status: use-with-caution-candidate
-# web-component: va-sort
-
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -25,6 +19,10 @@ anchors:
 ---
 
 ## Examples
+
+### Default
+
+{% include storybook-preview.html story="components-va-sort--default" link_text="va-sort default" %}
 
 ### Medications
 
@@ -89,23 +87,24 @@ anchors:
     * On mobile resolutions, the component is full-width and responsive. The *Sort by* label is stacked on top of the dropdown.
 
 
-
 ### Placement
 
 * **Place Sort above and aligned with the content that it affects.** It serves as a visual indicator of the current order.
-* **If used with the Search Filter, place Sort after the Search Filter's [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how).** This prevents the focus from skipping the Sort component given that the focus for filtering moves to results description or results heading and the focus for sorting is maintained on the component.
+* **Place Sort after the Search Filter's [results description]({{ site.baseurl }}/templates/search-results#results-description) when used with filtering.** This prevents the focus from skipping the Sort component given that the focus for filtering moves to results description or results heading and the focus for sorting is maintained on the component.
 
 ### Mobile app
 
-* **The VA mobile app does not currently use this component.** It uses its own combined Filter & Sort button that opens a modal to select and explicitly submit sort and filter options.
+* **Note that the VA mobile app does not currently use this component.** It uses its own combined Filter & Sort button that opens a modal to select and explicitly submit sort and filter options.
     * <img src="{{ site.baseurl }}/images/components/sort/va_mobile_filter_sort.png" alt="A Filter and Sort button that opens a modal that allows a user to explicitly submit sort and filter options." style="width:100%;"/>
 
-* **The naming of sort options must still remain consistent across mobile and desktop experiences.**
+* **Keep sort option naming consistent across mobile and desktop experiences.**
 
 
 
-## Code usage
-* **Relying on an API to sort and paginate data is permissible.** If sorting data on the frontend is more efficient, remember to format times and dates in a way that will ensure a correct chronological sort.
+{% include component-docs.html component_name=page.web-component %}
+
+
+* **Using an API to sort and paginate data is acceptable.** If sorting data on the frontend is more efficient, remember to format times and dates in a way that will ensure a correct chronological sort.
     * Store date and time as an [ISO-formatted string](https://en.wikipedia.org/wiki/ISO_8601#:~:text=Date%20and%20time%0Ain,00%20UTC%E2%88%9212%3A00) (date and time in UTC or date and time with offset).
         * Attempting to sort dates as strings like *2/20/2025*, *10/1/2024*, *9/5/2023* from newest to oldest, for example, could result in a non-chronological A-Z sort:
             * ***1****0/1/2024*
@@ -154,7 +153,7 @@ anchors:
   
 * **Only include sort options that provide clear value.** The ability to sort data doesn't automatically mean it will help users.
 
-* **Sort does not need to be reflected in the [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how) for web and mobile.** The component already acts as a visual indicator of the order. However, it is required for the mobile app since the sort state is hidden within the modal.
+* **Sort does not need to be reflected in the [results description]({{ site.baseurl }}/templates/search-results#results-description) for web and mobile.** The component already acts as a visual indicator of the order. However, it is required for the mobile app since the sort state is hidden within the modal.
 
 
 
@@ -162,11 +161,11 @@ anchors:
 These considerations describe how sorting changes are communicated and experienced by users of assistive technologies.
 
 ### User experience expectations
-* When a sort option is selected, users need to be informed that the results have updated. This is especially important for screen reader users who may not see the visual change.
-* Sorted results should update in a meaningful and predictable order so all users perceive the same sequence of information ([WCAG 1.3.2 Meaningful Sequence](https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html)).
-* Sorting updates the results in place and does not trigger page navigation or a full context change.
-* Focus remains stable on the sort control during sorting so users can continue interacting without losing their place.
-* If sorting takes time, inform users that an update is in progress by following the [loading indicator guidance]({{ site.baseurl }}/components/loading-indicator).
+* Inform users when results have updated after a sort option is selected. This is especially important for screen reader users who may not see the visual change.
+* Ensure sorted results update in a meaningful and predictable order so all users perceive the same sequence of information ([WCAG 1.3.2 Meaningful Sequence](https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html)).
+* Update results in place during sorting and do not trigger page navigation or a full context change.
+* Keep focus stable on the sort control during sorting so users can continue interacting without losing their place.
+* Inform users that an update is in progress if sorting takes time by following the [Loading Indicator guidance]({{ site.baseurl }}/components/loading-indicator).
 
 ### Implementation notes
 * Announce sorting changes in a non-disruptive way using `aria-live="polite"` so assistive technology users understand that results have changed without interrupting their workflow.
