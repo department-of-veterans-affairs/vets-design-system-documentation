@@ -20,7 +20,7 @@ Use sentence case capitalization for most content, including page titles, headin
 
 ### Exceptions where we use all caps
 
-All-caps text is only permitted for the following specific components. Don't use all caps for any other purpose. Longer uppercase text reduces legibility and can be harder to read for people with cognitive disabilities or low vision.
+On VA.gov web pages and components, all-caps text is only permitted for the following specific components (aside from the Android native actions exception noted above). Don't use all caps for any other purpose. Longer uppercase text reduces legibility and can be harder to read for people with cognitive disabilities or low vision.
 
 - [Eyebrow]({{ site.baseurl }}/foundation/typography#eyebrow) text labels
 - [Button - Icon]({{ site.baseurl }}/components/button/button-icon) labels
