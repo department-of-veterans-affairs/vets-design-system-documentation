@@ -147,8 +147,8 @@
     },
     {
       "period": "2026-Q1",
-      "issues_opened": 293,
-      "issues_closed": 287
+      "issues_opened": 311,
+      "issues_closed": 349
     }
   ],
   "velocity": [
@@ -560,12 +560,12 @@
     {
       "period": "2025-07",
       "issues_opened": 173,
-      "issues_closed": 194
+      "issues_closed": 193
     },
     {
       "period": "2025-08",
       "issues_opened": 151,
-      "issues_closed": 114
+      "issues_closed": 115
     },
     {
       "period": "2025-09",
@@ -594,8 +594,8 @@
     },
     {
       "period": "2026-02",
-      "issues_opened": 88,
-      "issues_closed": 95
+      "issues_opened": 106,
+      "issues_closed": 157
     }
   ],
   "experimental_quarterly": [
@@ -661,7 +661,7 @@
     },
     {
       "period": "2023-Q4",
-      "issues_opened": 5,
+      "issues_opened": 4,
       "issues_closed": 3,
       "issues_implemented": 2
     },
@@ -1185,7 +1185,7 @@
         "period": "2025-10",
         "a11y_defect_0": 0,
         "a11y_defect_1": 3,
-        "a11y_defect_2": 8,
+        "a11y_defect_2": 7,
         "a11y_defect_3": 9
       },
       {
@@ -1206,7 +1206,7 @@
         "period": "2026-01",
         "a11y_defect_0": 0,
         "a11y_defect_1": 1,
-        "a11y_defect_2": 0,
+        "a11y_defect_2": 1,
         "a11y_defect_3": 2
       },
       {
@@ -1219,11 +1219,11 @@
     ]
   },
   "summary": {
-    "open_issues": 638,
-    "closed_this_month": 95,
-    "avg_resolution_days": 119,
-    "total_issues": 5607,
-    "last_updated": "2026-02-10T21:20:18.783Z",
+    "open_issues": 594,
+    "closed_this_month": 157,
+    "avg_resolution_days": 120,
+    "total_issues": 5625,
+    "last_updated": "2026-02-12T16:38:18.438Z",
     "open_issues_trend": {
       "direction": "up",
       "percentage": 2,
@@ -1231,14 +1231,14 @@
     },
     "closed_month_trend": {
       "direction": "down",
-      "percentage": 51,
-      "value": -97
+      "percentage": 18,
+      "value": -35
     },
     "resolution_time_trend": {
       "direction": "up",
-      "percentage": 23,
-      "value": 22
+      "percentage": 41,
+      "value": 39
     }
   },
-  "generated_at": "2026-02-10T21:20:19.377Z"
+  "generated_at": "2026-02-12T16:38:18.888Z"
 }
