@@ -49,7 +49,7 @@
 
 {% if has_web and has_mobile %}
   {% comment %} Use tabs when both platforms are supported {% endcomment %}
-  
+
   <va-tabs initially-selected="0" label="Web and Mobile app code usage">
     <va-tab-item button-text="Web" target-id="panel-1"></va-tab-item>
     <va-tab-panel panel-id="panel-1">
@@ -95,13 +95,6 @@
             <va-table-row>
               <span><code class="code">{{ event.event }}</code></span>
               <span>{{ event.docs }}</span>
-            </va-table-row>
-            {% endfor %}
-            {% for listener in component.listeners %}
-              {% assign docs = component.docsTags | where: "name", listener.event %}
-            <va-table-row>
-              <span><code class="code">{{ listener.event }}</code></span>
-              <span>{% for doc in docs %} {{ doc.text }} {% endfor %}</span>
             </va-table-row>
             {% endfor %}
           </va-table>
@@ -212,13 +205,6 @@
 <va-table-row>
 <span><code class="code">{{ event.event }}</code></span>
 <span>{{ event.docs }}</span>
-</va-table-row>
-{% endfor %}
-{% for listener in component.listeners %}
-{% assign docs = component.docsTags | where: "name", listener.event %}
-<va-table-row>
-<span><code class="code">{{ listener.event }}</code></span>
-<span>{% for doc in docs %} {{ doc.text }} {% endfor %}</span>
 </va-table-row>
 {% endfor %}
 </va-table>

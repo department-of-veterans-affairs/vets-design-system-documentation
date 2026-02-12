@@ -9,6 +9,7 @@ mobile-app: true
 anchors:
   - anchor: Preview
   - anchor: Usage
+  - anchor: Code usage
   - anchor: Accessibility considerations
   - anchor: Requesting a new icon
   - anchor: Component checklist
@@ -191,6 +192,29 @@ By default, the web component icon will display as `--vads-color-base` which is 
   </va-table-row>
 </va-table>
 
+
+### Placement
+
+Some icons may have specific placement guidance defined here.
+
+#### When icons are paired with text
+
+- **For single-line text, both leading and trailing icons should be vertically centered with the text.** When text wraps, leading icons should remain static by staying aligned to the top of the full text block, while trailing icons should align to the vertical center of the full text block.
+  - **Examples:** [Additional Info]({{ site.baseurl }}/components/additional-info) and [Accordion - Subheader]({{ site.baseurl }}/components/accordion#subheader).
+- **Icons with high visual weight, like filled icons, should generally appear before the text.** For example, filled chevrons, such as *expand_circle_right*, should appear before links.
+
+
+### Special usage considerations
+
+#### Chevrons
+
+- **Right-facing chevrons are reserved for links, but may be used on buttons that expand and collapse additional content.** In the latter case, the direction of the chevron should indicate the direction in which additional content expands and collapses, like in drawers, flyout menus, and dropdowns.
+  - **Examples:** Nested menu items within "VA Benefits and Health Care" in the [Header]({{ site.baseurl }}/components/header/), [Additional Info]({{ site.baseurl }}/components/additional-info), and [Alert - Expandable]({{ site.baseurl }}/components/alert/alert-expandable/).
+
+{% include component-docs.html %}
+
+{% include component-docs.html component_name=page.web-component %}
+
 ## Accessibility considerations
 Icon usage typically falls into two categories, decorative and semantic.
 
@@ -252,8 +276,6 @@ Avoid requesting a new icon when:
     If your request is part of an experimental initiative, please link any related tickets to provide context and ensure visibility for the Design System team.
   </li>
 </ol>
-
-{% include component-docs.html component_name=page.web-component %}
 
 <script>
   const icons = {{ site.data.icons | jsonify }};
