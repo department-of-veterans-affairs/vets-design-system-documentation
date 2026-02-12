@@ -108,7 +108,6 @@ tests:
       you receive a descriptive error message that identifies the problem.
     subtests:
       - id: DST-331-001
-        category: screen_reader
         description_short: |
           Errors are identified on blur.
         description_full: |
@@ -134,8 +133,9 @@ tests:
           When you receive an error message while using a screen reader,
           you hear the error message announced without needing to move focus to the message.
       - id: DST-331-005
+        category: visual
         description_short: |
-          Error messages appear near the relevant input.
+          Error messages are visually associated with the invalid element.
         description_full: |
           When you receive an error message,
           you find it appears in a location that associates it with the relevant input,
@@ -154,6 +154,7 @@ tests:
       you receive clear, persistent labels or instructions for that input.
     subtests:
       - id: WEB-332-001
+        category: visual
         description_short: |
           Form inputs display visible labels.
         description_full: |

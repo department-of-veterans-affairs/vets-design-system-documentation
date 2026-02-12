@@ -1,13 +1,7 @@
 {% assign component_name = include.component_name %}
 {% assign component_tests = site.data.accessibility_tests[component_name] %}
 
-{% comment %} Load all WCAG principle-based test files and merge into single array {% endcomment %}
-{% assign test_library = "" | split: "" %}
-{% assign perceivable_tests = site.data.accessibility_tests.test-library["1-perceivable"].tests %}
-{% assign operable_tests = site.data.accessibility_tests.test-library["2-operable"].tests %}
-{% assign understandable_tests = site.data.accessibility_tests.test-library["3-understandable"].tests %}
-{% assign robust_tests = site.data.accessibility_tests.test-library["4-robust"].tests %}
-{% assign test_library = test_library | concat: perceivable_tests | concat: operable_tests | concat: understandable_tests | concat: robust_tests %}
+{% include accessibility-test-library-loader.html %}
 
 {% if component_tests %}
 
@@ -92,6 +86,10 @@
 {% assign keyboard_tests = "" | split: "" %}
 {% assign screen_reader_tests = "" | split: "" %}
 {% assign general_tests = "" | split: "" %}
+{% assign voice_control_tests = "" | split: "" %}
+{% assign structural_tests = "" | split: "" %}
+{% assign mobile_tests = "" | split: "" %}
+{% assign zoom_tests = "" | split: "" %}
 
 {% for test in component_tests.tests %}
   {% assign test_def = nil %}
@@ -132,46 +130,19 @@
       {% assign screen_reader_tests = screen_reader_tests | push: test %}
     {% elsif test_category == "general" %}
       {% assign general_tests = general_tests | push: test %}
+    {% elsif test_category == "voice_control" %}
+      {% assign voice_control_tests = voice_control_tests | push: test %}
+    {% elsif test_category == "mobile" %}
+      {% assign mobile_tests = mobile_tests | push: test %}
+    {% elsif test_category == "zoom" %}
+      {% assign zoom_tests = zoom_tests | push: test %}
+    {% elsif test_category == "structural" %}
+      {% assign structural_tests = structural_tests | push: test %}
     {% endif %}
   {% endif %}
 {% endfor %}
 
 <style>
-.test-list {
-  background: white;
-  list-style: none;
-  margin: 0;
-  padding: 2rem;
-  max-width:100%!important;
-}
-
-.test-list>li {
-  border-bottom: 1px solid var(--vads-color-base-light);
-  padding: 1.5rem 0;
-  max-width:100%;
-}
-
-.test-list>li:first-of-type {
-  padding-top:0;
-}
-
-.test-list li>p {
-  margin-block:0;
-  max-width:77ch;
-}
-
-.test-details-list {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  margin: .5rem 0;
-  padding: 0;
-}
-
-.test-details-list li {
-  margin-right: 1rem;
-}
-
 va-table-row {
   display: none;
 }
@@ -189,7 +160,7 @@ va-table va-table-row span:first-child {
 {% if component_tests.size > 0 %}
 
 {% comment %} Define test categories {% endcomment %}
-{% assign test_categories = "general_tests,General Tests|keyboard_tests,Keyboard Tests|screen_reader_tests,Screen Reader Tests" | split: "|" %}
+{% assign test_categories = "general_tests,General Tests|keyboard_tests,Keyboard Tests|screen_reader_tests,Screen Reader Tests|voice_control_tests,Voice Control Tests|mobile_tests,Mobile Tests|zoom_tests,Zoom Tests|structural_tests,Structural Tests|visual_tests,Visual Tests" | split: "|" %}
 
 {% for category_config in test_categories %}
   {% assign config_parts = category_config | split: "," %}
@@ -203,11 +174,21 @@ va-table va-table-row span:first-child {
     {% assign category_tests = keyboard_tests %}
   {% elsif category_var == "screen_reader_tests" %}
     {% assign category_tests = screen_reader_tests %}
+  {% elsif category_var == "voice_control_tests" %}
+    {% assign category_tests = voice_control_tests %}
+  {% elsif category_var == "mobile_tests" %}
+    {% assign category_tests = mobile_tests %}
+  {% elsif category_var == "zoom_tests" %}
+    {% assign category_tests = zoom_tests %}
+  {% elsif category_var == "structural_tests" %}
+    {% assign category_tests = structural_tests %}
+  {% elsif category_var == "visual_tests" %}
+    {% assign category_tests = visual_tests %}
   {% endif %}
 
   {% if category_tests.size > 0 %}
   <h3>{{ category_title }}</h3>
-  <ul class="test-list">
+  <ul class="a11y-test-list">
     {% for test in category_tests %}
     {% assign test_def = nil %}
     {% assign parent_def = nil %}
@@ -245,7 +226,7 @@ va-table va-table-row span:first-child {
                 {{ test_def.id }} - <a href="{{ test_def.wcag_url }}">{{ test_def.wcag_criterion }} - {{ test_def.wcag_name }}</a>
 
       </p> -->
-      <ul class="test-details-list">
+      <ul class="a11y-test-details-list">
         <li>
           <span class="usa-label">
             {% if parent_def %}
@@ -257,9 +238,9 @@ va-table va-table-row span:first-child {
         </li>
         <li>
           {% if parent_def %}
-            <a href="{{ parent_def.wcag_url }}">WCAG {{ parent_def.wcag_criterion }} - {{ parent_def.wcag_name }} (Level {{ parent_def.wcag_level }})</a>
+            <a href="{{ parent_def.wcag_url }}">WCAG {{ parent_def.wcag_criterion }} - {{ parent_def.wcag_name }}</a> (Level {{ parent_def.wcag_level }})
           {% else %}
-            <a href="{{ test_def.wcag_url }}">WCAG {{ test_def.wcag_criterion }} - {{ test_def.wcag_name }} (Level {{ test_def.wcag_level }})</a>
+            <a href="{{ test_def.wcag_url }}">WCAG {{ test_def.wcag_criterion }} - {{ test_def.wcag_name }}</a> (Level {{ test_def.wcag_level }})
           {% endif %}
         </li>
       </ul>
@@ -285,29 +266,31 @@ va-table va-table-row span:first-child {
         <va-table-row slot="headers">
           <span>Version Tested</span>
           {% for env in all_environments %}
-          {% if env.name %}
-          <span>{{ env.name }}{% if env.required %}*{% endif %}</span>
-          {% else %}
-          <span>{{ env }}</span>
-          {% endif %}
+          <span>
+            {% if env.name %}
+              {{ env.name }}{% if env.required %}*{% endif %}
+            {% else %}
+              {{ env }}
+            {% endif %}
+          </span>
           {% endfor %}
         </va-table-row>
         {% if test_runs and test_runs.size > 0 %}
           {% for run in test_runs %}
           <va-table-row>
             <span>{{ run.version }}</span>
-            {% for env_item in all_environments %}
+            {% for env_name in all_environments %}
             <span>
               {% assign env_result = nil %}
-              {% comment %} Get environment name - handles both string and object format {% endcomment %}
-              {% if env_item.name %}
-                {% assign env_name = env_item.name %}
+              {% comment %} Get the actual environment name (could be string or object) {% endcomment %}
+              {% if env_name.name %}
+                {% assign env_name_str = env_name.name %}
               {% else %}
-                {% assign env_name = env_item %}
+                {% assign env_name_str = env_name %}
               {% endif %}
               {% for env in run.environments %}
                 {% assign current_env_name = env.name %}
-                {% if current_env_name == env_name %}
+                {% if current_env_name == env_name_str %}
                   {% assign env_result = env.result %}
                 {% endif %}
               {% endfor %}
@@ -327,7 +310,7 @@ va-table va-table-row span:first-child {
                   <va-tag-status
                     status="info"
                     text="Conditional"
-                  ></va-tag-status>
+                  />
                 {% endif %}
               {% else %}
                 <span>Untested</span>
@@ -340,7 +323,7 @@ va-table va-table-row span:first-child {
           {% comment %} No test results yet - show all environments as Untested {% endcomment %}
           <va-table-row>
             <span>Not yet tested</span>
-            {% for env_item in all_environments %}
+            {% for env_name in all_environments %}
             <span>Untested</span>
             {% endfor %}
           </va-table-row>

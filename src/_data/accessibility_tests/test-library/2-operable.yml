@@ -36,7 +36,7 @@ tests:
     508_severity: Critical
     wcag_url: https://www.w3.org/TR/WCAG21/#no-keyboard-trap
     description_short: |
-      Keyboard focus does not get trapped when interacting with the component.
+      Keyboard focus does not get trapped on interactive elements.
     description_full: |
       When you move focus to any interactive element with a keyboard,
       you can move focus away from that element using only standard keyboard keys (Tab, Shift+Tab, arrow keys, or Escape).
@@ -227,8 +227,8 @@ tests:
     description_short: |
       All actions work with simple taps or clicks.
     description_full: |
-      When you use multipoint or path-based gestures,
-      you find they also work with single pointer actions.
+      When you interact with the page using a pointer device, such as a mouse, touchscreen, or stylus,
+      you find that all functionality is operable with simple pointer actions like taps or clicks.
   - id: WEB-252
     category: general
     wcag_criterion: 2.5.2
@@ -242,7 +242,7 @@ tests:
       When you interact with pointer actions,
       you find they execute on the up-event and can be cancelled before release.
   - id: WEB-253
-    category: screen_reader
+    category: voice_control
     wcag_criterion: 2.5.3
     wcag_name: Label in Name
     wcag_level: A
@@ -292,7 +292,7 @@ tests:
     subtests:
       - id: DST-258-001
         description_short: |
-          Links meet the minimum size of 24 pixels.
+         Link target size is at least 24 pixels.
         description_full: |
           When you inspect the size of links on the page,
           you find that each link has a target size of at least 24x24 pixels.

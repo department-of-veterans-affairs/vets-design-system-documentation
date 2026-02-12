@@ -18,7 +18,7 @@ tests:
     subtests:
       - id: WEB-111-001
         description_short: |
-          Meaningful images include descriptive alt text.
+          Screen readers announce meaningful images.
         description_full: |
           When you navigate to an informative image with a screen reader,
           you hear a description of the image that conveys the content and function of the image.
@@ -28,8 +28,6 @@ tests:
         description_full: |
           When you view a complex image, such as a chart, graph, or diagram,
           you hear both a concise alt text description and a longer description that together provide all relevant information conveyed by the image.
-          The alt text provides a brief summary of the image's content and function,
-          while the longer description offers a more detailed explanation of the information presented in the image.
       - id: WEB-111-003
         description_short: |
           Screen readers ignore decorative images.
@@ -38,7 +36,7 @@ tests:
           you do not hear any information about the image.
       - id: WEB-111-004
         description_short: |
-          Background images serve purely decorative purposes.
+          Background images do not convey important information.
         description_full: |
           When you view a CSS background image on a page,
           the image is purely decorative and does not contain any important information or functionality.
@@ -166,6 +164,7 @@ tests:
           When you interact with required fields using a screen reader,
           you hear an announcement indicating that the field is required.
       - id: WEB-131-008
+        category: general
         description_short: |
           Page uses landmarks correctly.
         description_full: |
@@ -215,10 +214,10 @@ tests:
     508_severity: N/A
     wcag_url: https://www.w3.org/TR/WCAG21/#orientation
     description_short: |
-      Content works in both portrait and landscape mode.
+      Content is available in both portrait and landscape orientations.
     description_full: |
       When you rotate your device,
-      you find content is viewable in portrait and landscape orientations unless essential otherwise.
+      you see that content remains visible and functional in both portrait and landscape orientations.
   - id: WEB-135
     category: general
     wcag_criterion: 1.3.5
@@ -232,7 +231,7 @@ tests:
       When you inspect form fields,
       you find autocomplete attributes are correctly and validly applied to support user personalization.
   - id: WEB-141
-    category: general
+    category: visual
     wcag_criterion: 1.4.1
     wcag_name: Use of Color
     wcag_level: A
@@ -247,23 +246,23 @@ tests:
     subtests:
       - id: DST-141-001
         description_short: |
-          Link styles use more than just color to indicate that it is a link.
+          Links are indicated with more than just color.
         description_full: |
           When you view a link,
           you see that the link has a text underline and uses the expected VA colors for default, hover, focus, and visited states.
   - id: WEB-143
-    category: general
+    category: visual
     wcag_criterion: 1.4.3
     wcag_name: Contrast (Minimum)
-    wcag_level: A
+    wcag_level: AA
     508_severity: Medium
     wcag_url: https://www.w3.org/TR/WCAG21/#contrast-minimum
     description_short: |
       Text has sufficient contrast against its background.
     description_full: |
-      When you compare the color of the text against its background using a contrast checker tool,
-      you find that the body text has a contrast ratio of at least 4.5:1
-      and large-scale text has a contrast ratio of at least 3:1.
+      When you compare the color of body text against its background using a contrast checker tool,
+      you find that it has a contrast ratio of at least 4.5:1.
+      For large text, the contrast ratio is at least 3:1.
   - id: WEB-142
     category: general
     wcag_criterion: 1.4.2
@@ -277,7 +276,7 @@ tests:
       When you encounter audio that plays automatically for more than 3 seconds,
       you find you can pause it or it has an independent volume control.
   - id: WEB-144
-    category: general
+    category: visual
     wcag_criterion: 1.4.4
     wcag_name: Resize Text
     wcag_level: AA
@@ -301,30 +300,30 @@ tests:
       When you view the page,
       you find the design does not use images of text when native HTML/CSS can achieve the same presentation, excluding logos and branding.
   - id: WEB-1410
-    category: general
+    category: visual
     wcag_criterion: 1.4.10
     wcag_name: Reflow
     wcag_level: AA
     508_severity: N/A
     wcag_url: https://www.w3.org/TR/WCAG21/#reflow
     description_short: |
-      The component adapts to small screens without requiring scrolling in two dimensions.
+      Content adapts to small screens.
     description_full: |
-      When you open the component in a 320 pixel viewport,
+      When you open the component in a viewport that is 320 pixels wide,
       you can see and interact with all content without needing to scroll both
       horizontally and vertically.
   - id: WEB-1411
-    category: general
+    category: visual
     wcag_criterion: 1.4.11
     wcag_name: Non-text Contrast
     wcag_level: AA
     508_severity: N/A
     wcag_url: https://www.w3.org/TR/WCAG21/#non-text-contrast
     description_short: |
-      Interactive elements and meaningful graphic elements have sufficient contrast against their background.
+      Meaningful graphic elements have sufficient contrast against their background.
     description_full: |
-      When you view interactive elements and graphic elements on the page,
-      meaningful visual information has a contrast ratio of at least 3:1 against their background.
+      When you view an interactive or graphic element on the page,
+      you find that meaningful visual information has a contrast ratio of at least 3:1 against its background.
     subtests:
       - id: WEB-1411-001
         description_short: |

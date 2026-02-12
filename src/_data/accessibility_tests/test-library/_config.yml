@@ -15,18 +15,27 @@ environments:
     - Android Chrome
     - iOS Safari
   screen_reader:
-    - name: MacOS Chrome/VoiceOver
-      required: false
     - name: MacOS Safari/VoiceOver
       required: true
     - name: Windows Chrome/JAWS
       required: true
-    - name: Windows Edge/NVDA
+    - name: MacOS Chrome/VoiceOver
       required: false
+    - name: Windows Edge/NVDA
+      required: true
     - name: Android Chrome/Talkback
       required: false
     - name: iOS Safari/VoiceOver
       required: false
+  structural:
+    - MacOS/Chrome
+    - Windows/Chrome
+  visual:
+    - MacOS/Chrome
+    - Windows/Chrome
+  voice_control:
+    - MacOS/Voice Control
+    - Windows/Voice Recognition
   zoom:
     - MacOS/Chrome
     - Windows/Chrome
@@ -37,6 +46,9 @@ categories:
   - keyboard
   - mobile
   - screen_reader
+  - structural
+  - visual
+  - voice_control
   - zoom
 
 # Metadata
@@ -50,5 +62,8 @@ metadata:
     general: 36
     keyboard: 9
     screen_reader: 8
+    structural: 2
     mobile: 2
+    visual: 0
+    voice_control: 0
     zoom: 0
