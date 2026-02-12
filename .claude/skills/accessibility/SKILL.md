@@ -1,6 +1,6 @@
 ---
 name: accessibility
-description: Use when a designer or engineer asks questions about accessiblity of their product, components, or processes.
+description: Use when a designer or engineer asks questions about accessibility of their product, components, or processes.
 ---
 
 # VA Design System - Accessibility Guidance for Copilot Space
@@ -34,11 +34,11 @@ Copilot guidance supports teams in understanding documented requirements and ide
 
 ### Mandatory Standards
 
-1. **WCAG 2.2 Level AA Compliance**: All VA.gov products MUST meet WCAG 2.2 Level AA standards
+1. **WCAG 2.2 Level AA as Baseline Standard**: VA Design System accessibility guidance is aligned to WCAG 2.2 Level AA and treats it as the minimal target standard for VA.gov experiences.
    - SOURCE: `src/_accessibility/index.md`
-   - This is non-negotiable for all implementations
+   - Treat this as the baseline accessibility target for all implementations.
 
-2. **Section 508 Compliance**: Federal requirement for all VA digital products
+2. **Section 508 Compliance (Federal Law)**:  VA digital products are subject to Section 508 of the Rehabilitation Act; teams must follow applicable VA and federal policy and governance processes to ensure compliance.
    - SOURCE: `src/_accessibility/index.md`
 
 3. **Component Testing**: All Design System components undergo comprehensive accessibility testing
@@ -543,7 +543,7 @@ Example response:
 **DOCUMENTED**: Yes
 **SOURCE**: `src/_accessibility/accessibility-annotations.md`
 
-✅ YES - Annotations required before design/developer handoff
+✅ YES - Annotations recommended by midpoint review and before handoff to engineering
 ✅ Use CVS Accessibility Annotation Kit in Figma
 ✅ Strongly recommended at midpoint review
 ✅ Annotate: headings, ARIA labels, fieldsets, errors, focus order
@@ -581,7 +581,7 @@ Always direct users to these official resources:
 1. **Accessibility is MANDATORY** - Not optional, not "nice to have"
 2. **Components alone ≠ Accessible product** - Teams must test in context
 3. **WCAG 2.2 Level AA** - Minimum required standard
-4. **Annotations required** - Before handoff to engineering
+4. **Annotations recommended** - For midpoint review and before handoff to engineering
 5. **Test with real users** - Including assistive technology users
 
 ---
