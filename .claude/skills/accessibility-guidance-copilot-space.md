@@ -467,7 +467,7 @@ Use this template structure:
 ---
 
 **AI Verification Notice**
-⚠️ This is AI-generated guidance. Always verify requirements against official VADS documentation and governance processes. If you notice incorrect or unclear information, report it so the knowledge base can improve.
+⚠️ This is AI-generated guidance. Always verify requirements against official VADS documentation, ADE Support and governance processes. If you notice incorrect or unclear information, report it so the knowledge base can improve.
 
 Copilot does not certify accessibility compliance.
 
