@@ -16,15 +16,19 @@ github_issue: https://github.com/department-of-veterans-affairs/digital-experien
 | **M0: Foundation** | ✅ Complete | MCP server with 3 tools, resources, prompt. 27 tests. Local at `~/repos/vads-mcp-server`. |
 | **M1: Tokens & Validation** | ✅ Complete | Token parser, token tools (`get_tokens`, `find_tokens`), token resources. 33 new tests. |
 | **M2: Guides & Utilities** | ✅ Complete | 5 guides, utility classes data, `get_guide` + `get_utility_classes` tools, guide resources. 13 new tests. |
-| **M3: Figma Mapping** | ⬜ Next | Figma component mapping, `map_figma_component` tool. Uses southleft/figma-console-mcp. |
-| **P0: Prototype Kit Setup** | ⬜ Not started | Can run in parallel with M3. Vite + vanilla-ts repo at `~/repos/va-prototype-kit`. |
-| **P1: Reference Prototype** | ⬜ Not started | Requires M0 complete (✅). My VA Dashboard PRD-driven generation. |
-| **P2: Workflow Docs** | ⬜ Not started | Skills/guides for prototype workflow, Figma-to-prototype, setup. |
+| **M3: Figma Mapping** | ✅ Complete | `figma-component-map.json` (68 entries from live Figma audit), `map_figma_component` tool with fuzzy matching + variant mapping, `figma-to-code.md` guide. 29 new tests. |
+| **P0: Prototype Kit Setup** | ✅ Complete | Repo at `~/repos/va-prototype-kit`. 2 commits on `main`. 27 files. Vite build, deploy workflow, AI configs, 7 templates, MCP server configs for 3 tools. |
+| **P1: Reference Prototype** | ✅ Complete | PRD (343 lines), 5 scenario data files, TypeScript types, app.ts with 7 section renderers. 5 commits on `main`. |
+| **P2: Workflow Docs** | ✅ Complete | 5 guides (prototype-workflow, setup-figma-mcp, figma-to-prototype, populate-from-figma, reproduce-page). 3 Claude Code skill wrappers. |
 | **P3: Polish** | ⬜ Not started | README, designer testing, iteration. |
 
-**MCP server totals:** 7 tools, 5 resources, 1 prompt, 73 tests across 6 files.
+**MCP server totals:** 8 tools, 5 resources, 1 prompt, 102 tests across 7 test files.
 
-**To resume:** Start with M3 (Figma mapping) or P0 (prototype kit scaffolding) — these can run in parallel.
+**Prototype Kit totals:** 8 commits on `main`, ~40 tracked files. My VA Dashboard prototype with 5 scenario states, 7 section renderers, dynamic JSON import. 5 workflow guides, 3 Claude Code skills.
+
+**To resume:** P3 — Write comprehensive README, test with a real designer, iterate.
+
+**Key P1 discovery:** PRD-driven approach worked well. TypeScript types caught data structure issues at compile time. Dynamic JSON import makes scenario switching trivial. All 11 VADS components mapped correctly on first try.
 
 ---
 
@@ -533,32 +537,37 @@ Hand-authored markdown for procedural knowledge that can't be derived from compo
   - **Future:** Publish to public npm registry once per-package approval is obtained
   - Install command (GitHub Packages): `npx @department-of-veterans-affairs/vads-mcp-server` (requires `.npmrc` with GitHub Packages registry config)
 
-#### Phase M3: Figma Component Mapping
+#### Phase M3: Figma Component Mapping ✅ COMPLETE
 
-- [ ] **Create Figma-to-VADS component mapping data**
+- [x] **Create Figma-to-VADS component mapping data**
   - File: `data/figma-component-map.json`
-  - Audit the VADS Figma library to catalog all component names and variants
-  - Map each Figma component name to its `<va-*>` web component tag
-  - Include variant-to-attribute mappings (e.g., Figma "Type: Warning" → `status="warning"`)
-  - Include HTML example snippets for each mapping
-  - Document unmapped or partially mapped components
+  - Audited the VADS Figma library via Figma Console MCP (`figma_execute`) against live file `afurtw4iqQe6y4gXfNfkkk`
+  - 68 component entries covering all public component sets and standalone components
+  - Maps each Figma component name to its `<va-*>` web component tag (or `null` for Figma-only patterns)
+  - Includes variant-to-attribute mappings (e.g., Alert `Status=Warning` → `status="warning"`, Button `Type=Secondary` → `secondary` attr)
+  - Includes HTML example snippets for each mapping
+  - Documents components without web component equivalents (Divider, Eyebrow, Address Block, Tag, Autosave, etc.)
+  - Includes `figmaAliases` for common naming variations
 
-- [ ] **Implement `map_figma_component` tool**
+- [x] **Implement `map_figma_component` tool**
   - File: `src/tools/figma-tools.ts`
-  - Accept a Figma component name (may include variant info, e.g., "Alert - Warning")
-  - Fuzzy match against `figma-component-map.json`
-  - Return: matched `<va-*>` tag, attribute mappings, HTML example
-  - If no exact match: return candidates ranked by similarity, plus a suggestion to use `find_components` for manual lookup
-  - Handle common naming variations (capitalization, dashes vs spaces, with/without variant suffixes)
+  - Accepts Figma component name with optional variant info (e.g., "Alert", "Alert - Warning", "Button, Type=Secondary")
+  - Exact match against name and aliases (case-insensitive, dash-normalized)
+  - Dash-separated variant hints: "Alert - Warning" → matches Alert, extracts "Warning" as variant hint
+  - Key=Value variant hints: "Button, Type=Secondary" → matches Button, maps Type=Secondary to `secondary` attr
+  - On no match: returns up to 5 candidates ranked by token-based similarity, plus suggestion to use `find_components`
+  - 29 unit tests in `test/tools/figma-tools.test.ts`
 
-- [ ] **Write Figma-to-code guide**
+- [x] **Write Figma-to-code guide**
   - File: `data/guides/figma-to-code.md`
-  - Step-by-step workflow for the dual MCP server approach
-  - How to set up the Figma MCP server (desktop and remote options)
-  - How to select frames in Figma and pass links to the AI agent
-  - How the AI uses `figma_get_file_data` → `figma_get_component` → VADS `map_figma_component` → VADS `get_component`
-  - Troubleshooting unmapped components
-  - Tips for Figma file structure that produces better results (named layers, auto layout, variables)
+  - Step-by-step workflow for the dual MCP server approach (Figma Console MCP + VADS MCP)
+  - Setup instructions for both MCP servers (VS Code / Copilot and Claude Code configs)
+  - 5-step workflow: read design → identify layout → map components → map tokens → generate code
+  - Page type identification table (form step, dashboard, hub page, etc.)
+  - Common component mapping reference table
+  - Components without web component equivalents
+  - Troubleshooting section for no-match, variant mapping, and tips for better results
+  - Future Code Connect migration notes
 
 - [ ] **Test the Figma-to-code workflow end-to-end**
   - Select a real VADS Figma design (e.g., My VA dashboard mockup)
@@ -783,51 +792,28 @@ Claude Code users can also invoke these as `/skills` if we add symlinks or refer
 
 #### Phase P0: Repository Setup
 
-- [ ] **Create `va-prototype-kit` repository**
-  - Create repo in `department-of-veterans-affairs` org (or personal for initial development)
-  - Initialize with README, .gitignore (Node), MIT license
-  - Enable GitHub Pages (GitHub Actions deployment — see deploy workflow below)
+- [x] **Create `va-prototype-kit` repository**
+  - Created at `~/repos/va-prototype-kit` (not yet pushed to GitHub org)
+  - Initialized with README.md, .gitignore (Node), MIT LICENSE
+  - Git init with `main` branch
 
-- [ ] **Initialize Vite project**
-  - `npm create vite@latest . -- --template vanilla-ts`
-  - Configure `vite.config.ts` for multi-page app support using **auto-glob discovery**:
-    ```ts
-    // vite.config.ts — auto-discovers prototypes, no manual registration needed
-    import { resolve } from 'path';
-    import { globSync } from 'glob';
+- [x] **Initialize Vite project**
+  - Manually scaffolded (skipped `npm create vite` to avoid GFE `.bin` execution issues)
+  - `package.json`: `type: "module"`, npm scripts use `node node_modules/...` paths, `esbuild-wasm` override
+  - `vite.config.ts`: auto-glob discovery for `src/prototypes/*/index.html`
+  - `tsconfig.json`: ES2020 target, bundler moduleResolution, strict
+  - Dependencies: `@department-of-veterans-affairs/web-components` (^22.6.0), `@department-of-veterans-affairs/css-library` (^0.30.0-rc2)
+  - **Removed `component-library`** — React wrapper not needed for vanilla TS prototyping
+  - Installed with `--ignore-scripts --legacy-peer-deps` (web-components has stale React peer dep)
+  - Build verified: `vite build` completes in 1.32s, all 67+ web component chunks output
 
-    const prototypeEntries = Object.fromEntries(
-      globSync('src/prototypes/*/index.html').map(file => [
-        file.replace('src/prototypes/', '').replace('/index.html', ''),
-        resolve(__dirname, file),
-      ])
-    );
-
-    export default defineConfig({
-      build: {
-        rollupOptions: {
-          input: {
-            main: resolve(__dirname, 'index.html'),
-            ...prototypeEntries,
-          },
-        },
-      },
-    });
-    ```
-  - Add dependencies:
-    - `@department-of-veterans-affairs/component-library` (^54.6.0)
-    - `@department-of-veterans-affairs/css-library` (^0.29.0)
-  - Configure base path for GitHub Pages deployment
-
-- [ ] **Set up global imports**
-  - File: `src/main.ts`
-  - Import and register all web components:
-    ```ts
-    import { defineCustomElements } from '@department-of-veterans-affairs/web-components/loader';
-    defineCustomElements();
-    ```
-  - Import css-library for VADS utility classes
-  - Import app-level styles
+- [x] **Set up global imports and landing page**
+  - `src/main.ts`: `defineCustomElements()` + CSS library imports (`core.css`, `utilities.css`) + app styles
+  - `src/style.css`: App-level styles using VADS design tokens
+  - `src/va-web-components.d.ts`: TypeScript declaration for web-components loader module
+  - `src/vite-env.d.ts`: Vite client types
+  - `index.html`: Landing page with `va-official-gov-banner`, `va-header-minimal`, prototype list, `va-accordion` for getting started, `va-minimal-footer`
+  - TypeScript check passes (`tsc --noEmit`)
 
 - [ ] **Set up GitHub Actions deployment**
   - File: `.github/workflows/deploy.yml`
@@ -863,92 +849,531 @@ Claude Code users can also invoke these as `/skills` if we add symlinks or refer
   - Templates use VADS components and design tokens exclusively
   - AI agents select from these templates when recognizing page patterns from Figma designs
 
-- [ ] **Create landing page**
-  - File: `index.html`
-  - List available prototypes with links
-  - Brief explanation of what this repo is for
+- [x] **Create landing page** (completed as part of P0 global imports task)
+  - File: `index.html` — VA gov banner, minimal header, prototype list with getting-started accordion, minimal footer
+  - Uses VADS web components (`va-official-gov-banner`, `va-header-minimal`, `va-accordion`, `va-minimal-footer`)
 
 #### Phase P1: My VA Dashboard Prototype (Reference Implementation)
 
-Build the first prototype using the PRD-driven workflow to validate the approach.
+> **For Claude:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement these tasks.
 
-- [ ] **Write My VA Dashboard PRD**
-  - File: `src/prototypes/my-va-dashboard/prd.md`
-  - Describe all dashboard sections: alerts, critical actions, benefits/services, appointments, claims, profile status
-  - Define 5 user state scenarios (brand new user, active claims, incomplete profile, critical actions, power user)
-  - Specify VADS components to use for each section
-  - Include page structure requirements (header, breadcrumbs, footer)
+Build the first prototype using the PRD-driven workflow to validate the approach. This is the real test — does a PRD + AI + MCP server produce a working prototype?
 
-- [ ] **Generate prototype using Claude Code + MCP server**
-  - Use Claude Code with VADS MCP server configured
-  - Generate from PRD — this is the real test of the workflow
-  - Document the experience: what worked, what needed manual tweaking
+**Goal:** A working My VA Dashboard prototype with 5 user scenarios, rendered entirely with VADS web components, deployable to GitHub Pages.
 
-- [ ] **Validate generated output**
-  - All VADS components render correctly
-  - Correct attributes used (validated by MCP server)
-  - Scenario switching works between user states
-  - Responsive across breakpoints
-  - No accessibility errors (axe-core)
+**Prerequisites:** P0 complete (repo scaffolded, Vite building, MCP server configured).
 
-- [ ] **Configure Vite for prototype**
-  - Add entry point in `vite.config.ts`
-  - Test hot reload
-  - Test production build and preview
+##### Task P1.1: Write My VA Dashboard PRD
+
+**Files:**
+- Create: `src/prototypes/my-va-dashboard/prd.md`
+
+**Step 1: Create prototype directory**
+
+```bash
+mkdir -p ~/repos/va-prototype-kit/src/prototypes/my-va-dashboard/src/{data,types,components}
+```
+
+**Step 2: Write the PRD**
+
+Create `src/prototypes/my-va-dashboard/prd.md` with the following sections:
+
+1. **Overview:** My VA personalized dashboard — the authenticated homepage for VA.gov
+2. **Page structure:** VA.gov standard layout (gov banner, minimal header w/ subheader "My VA", breadcrumbs [Home > My VA], main content, back-to-top, minimal footer, crisis line modal)
+3. **Dashboard sections** (top to bottom):
+   - **Alerts** — `va-alert` components for system messages, dismissible
+   - **Critical actions** — `va-critical-action` cards for time-sensitive tasks with deadlines
+   - **Benefits and services** — `va-service-list-item` components showing enrolled benefits with status, details, and action links. Each item uses the `icon` attribute for the benefit category icon.
+   - **Appointments** — `va-card` components showing upcoming appointments with type, provider, date, time, location, status
+   - **Claims** — `va-card` components showing active claims with type, status, last updated, link
+   - **Profile status** — `va-alert` (info or warning) showing profile completeness, with link to complete profile if missing fields
+4. **User state scenarios** (5 total):
+   - `brand-new-user` — Welcome alert, no benefits/appointments/claims, incomplete profile
+   - `active-claims` — 1 critical action, 2 benefits, 1 appointment, 2 claims, complete profile
+   - `incomplete-profile` — Warning alert, 1 benefit, profile status with missing fields
+   - `critical-actions` — 2 critical actions, 3 benefits, copay + enrollment deadlines
+   - `power-user` — Warning alert, 2 critical actions, 5 benefits, 3 appointments, 1 claim
+5. **Scenario switching:** URL param `?scenario=brand-new-user` selects the scenario. A floating scenario picker `<select>` at top-right lets users switch during testing. Default: `active-claims`.
+6. **Key interactions:** Scenario switching reloads dashboard sections. Dismissing alerts uses `va-alert` `closeEvent`. Clicking action links navigates (or shows stub pages). Critical action cards link to relevant pages.
+7. **Components needed:** `va-official-gov-banner`, `va-header-minimal`, `va-breadcrumbs`, `va-alert`, `va-critical-action`, `va-service-list-item`, `va-card`, `va-tag-status`, `va-back-to-top`, `va-minimal-footer`, `va-crisis-line-modal`
+8. **Reference:** Scenario data in plan appendix (Appendix B)
+
+**Step 3: Commit**
+
+```bash
+git add src/prototypes/my-va-dashboard/prd.md
+git commit -m "feat(my-va): add My VA Dashboard prototype PRD"
+```
+
+##### Task P1.2: Create scenario data files
+
+**Files:**
+- Create: `src/prototypes/my-va-dashboard/src/types/scenarios.ts`
+- Create: `src/prototypes/my-va-dashboard/src/data/brand-new-user.json`
+- Create: `src/prototypes/my-va-dashboard/src/data/active-claims.json`
+- Create: `src/prototypes/my-va-dashboard/src/data/incomplete-profile.json`
+- Create: `src/prototypes/my-va-dashboard/src/data/critical-actions.json`
+- Create: `src/prototypes/my-va-dashboard/src/data/power-user.json`
+
+**Step 1: Define TypeScript types**
+
+Create `src/prototypes/my-va-dashboard/src/types/scenarios.ts`:
+
+```ts
+export interface Alert {
+  type: 'info' | 'warning' | 'error' | 'success';
+  headline: string;
+  content: string;
+  dismissible: boolean;
+}
+
+export interface CriticalAction {
+  text: string;
+  link: string;
+  deadline: string;
+}
+
+export interface BenefitDetail {
+  label: string;
+  value: string;
+}
+
+export interface Benefit {
+  serviceName: string;
+  serviceLink: string;
+  serviceStatus: string;
+  serviceDetails: BenefitDetail[];
+  action: { text: string; link: string } | null;
+  icon: string;
+}
+
+export interface Appointment {
+  type: string;
+  provider: string;
+  date: string;
+  time: string;
+  location: string;
+  status: string;
+}
+
+export interface Claim {
+  type: string;
+  status: string;
+  lastUpdated: string;
+  link: string;
+}
+
+export interface ProfileStatus {
+  complete: boolean;
+  missingFields: string[];
+}
+
+export interface ScenarioData {
+  user: { firstName: string; lastName: string; profileComplete: boolean };
+  alerts: Alert[];
+  criticalActions: CriticalAction[];
+  benefits: Benefit[];
+  appointments: Appointment[];
+  claims: Claim[];
+  profileStatus: ProfileStatus;
+}
+```
+
+**Step 2: Create JSON data files**
+
+Create 5 JSON files in `src/prototypes/my-va-dashboard/src/data/`. Use the scenario data from plan Appendix B for `brand-new-user.json`, `active-claims.json`, and `power-user.json`. Create two additional scenarios:
+
+`incomplete-profile.json`:
+```json
+{
+  "user": { "firstName": "Riley", "lastName": "Davis", "profileComplete": false },
+  "alerts": [
+    { "type": "warning", "headline": "Complete your profile", "content": "We need more information to personalize your VA.gov experience.", "dismissible": false }
+  ],
+  "criticalActions": [],
+  "benefits": [
+    {
+      "serviceName": "VA health care",
+      "serviceLink": "/health-care",
+      "serviceStatus": "Enrolled",
+      "serviceDetails": [
+        { "label": "Enrolled since", "value": "November 2025" },
+        { "label": "Priority group", "value": "Group 3" }
+      ],
+      "action": null,
+      "icon": "health_care"
+    }
+  ],
+  "appointments": [],
+  "claims": [],
+  "profileStatus": { "complete": false, "missingFields": ["contact-email", "mailing-address"] }
+}
+```
+
+`critical-actions.json`: Combine elements from `active-claims` and `power-user` scenarios — 2 critical actions (copay + document upload), 3 benefits, 1 appointment, 1 claim.
+
+**Step 3: Commit**
+
+```bash
+git add src/prototypes/my-va-dashboard/src/
+git commit -m "feat(my-va): add scenario types and data files"
+```
+
+##### Task P1.3: Create prototype entry point and app shell
+
+**Files:**
+- Create: `src/prototypes/my-va-dashboard/index.html`
+- Create: `src/prototypes/my-va-dashboard/src/app.ts`
+
+**Step 1: Create `index.html`**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My VA | Veterans Affairs</title>
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="./src/app.ts"></script>
+  </head>
+  <body>
+    <va-official-gov-banner></va-official-gov-banner>
+    <va-header-minimal header="VA.gov" subheader="My VA"></va-header-minimal>
+
+    <div class="vads-grid-container">
+      <va-breadcrumbs
+        breadcrumb-list='[{"href":"/","label":"Home"},{"href":"/my-va","label":"My VA"}]'
+        label="Breadcrumb"
+      ></va-breadcrumbs>
+    </div>
+
+    <!-- Scenario picker (testing UI) -->
+    <div class="vads-grid-container vads-u-padding-y--1">
+      <div class="vads-u-display--flex vads-u-justify-content--flex-end">
+        <label for="scenario-picker" class="vads-u-margin-right--1">Scenario:</label>
+        <select id="scenario-picker">
+          <option value="active-claims">Active claims</option>
+          <option value="brand-new-user">Brand new user</option>
+          <option value="incomplete-profile">Incomplete profile</option>
+          <option value="critical-actions">Critical actions</option>
+          <option value="power-user">Power user</option>
+        </select>
+      </div>
+    </div>
+
+    <main id="main-content">
+      <div class="vads-grid-container">
+        <div class="vads-grid-row">
+          <div class="vads-grid-col-12 medium-screen:vads-grid-col-8">
+            <h1 id="greeting"></h1>
+            <div id="alerts-section"></div>
+            <div id="critical-actions-section"></div>
+            <div id="benefits-section"></div>
+            <div id="appointments-section"></div>
+            <div id="claims-section"></div>
+            <div id="profile-section"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <va-back-to-top></va-back-to-top>
+    <va-minimal-footer></va-minimal-footer>
+    <va-crisis-line-modal></va-crisis-line-modal>
+  </body>
+</html>
+```
+
+**Step 2: Create `app.ts` — scenario loading and rendering**
+
+Create `src/prototypes/my-va-dashboard/src/app.ts` with:
+
+1. **Scenario loader:** Read `?scenario=` URL param (default: `active-claims`). Import the matching JSON file. Wire up the `<select>` to change `window.location.search`.
+2. **Section renderers:** One function per dashboard section that takes scenario data and populates the corresponding `<div>`:
+   - `renderGreeting(data)` → sets `#greeting` to `"Welcome, {firstName}"`
+   - `renderAlerts(data)` → creates `<va-alert>` elements with `status`, `visible`, slot headline + body, `closeEvent` listener for dismissible
+   - `renderCriticalActions(data)` → creates `<va-critical-action>` elements with `text`, `link`, `deadline`
+   - `renderBenefits(data)` → creates `<va-service-list-item>` elements with `service-name`, `service-link`, `service-status`, `icon`, and `<li>` children for details + action
+   - `renderAppointments(data)` → creates `<va-card>` elements with appointment info
+   - `renderClaims(data)` → creates `<va-card>` elements with claim info
+   - `renderProfileStatus(data)` → creates `<va-alert>` (info if complete, warning if incomplete) with link to profile
+3. **Init:** `DOMContentLoaded` listener that loads scenario, calls all renderers, syncs `<select>` value
+
+**Important:** Use `setAttribute()` for all VADS component attributes (kebab-case HTML attributes, not camelCase JS properties). Use `document.createElement()` for dynamic component creation. Set slot content via `element.slot = 'headline'` pattern. Reference `data/guides/frameworks/vanilla.md` in MCP server for exact patterns.
+
+**Step 3: Verify Vite auto-discovers the prototype**
+
+```bash
+cd ~/repos/va-prototype-kit && node node_modules/vite/bin/vite.js build 2>&1 | head -5
+# Should show the my-va-dashboard entry in the build
+```
+
+**Step 4: Commit**
+
+```bash
+git add src/prototypes/my-va-dashboard/
+git commit -m "feat(my-va): add prototype entry point and app shell"
+```
+
+##### Task P1.4: Generate dashboard rendering code with AI + MCP server
+
+This is the core test of the PRD-driven workflow.
+
+**Step 1: Configure VADS MCP server in Claude Code**
+
+Ensure `~/repos/va-prototype-kit/.claude/settings.json` has the VADS MCP server configured (should be done in P0 task 5). If not yet done, add it now.
+
+**Step 2: Generate from PRD**
+
+In Claude Code, working from `~/repos/va-prototype-kit`:
+
+> "Read the PRD at src/prototypes/my-va-dashboard/prd.md. Use the VADS MCP server to look up each component's API (get_component), then generate the app.ts rendering code. Use the scenario data files in src/data/. Follow the vanilla JS patterns from the MCP server's vanilla guide (get_guide topic='vanilla')."
+
+**Step 3: Document the experience**
+
+Note in the PRD or a separate `src/prototypes/my-va-dashboard/NOTES.md`:
+- Which components mapped correctly on first try
+- Which attributes needed correction
+- How many manual tweaks were needed
+- Time from PRD → working prototype
+
+**Step 4: Verify all scenarios render**
+
+```bash
+cd ~/repos/va-prototype-kit && node node_modules/vite/bin/vite.js --open
+# Test each scenario via the picker
+```
+
+Check:
+- [ ] `active-claims`: 1 critical action, 2 benefits, 1 appointment, 2 claims
+- [ ] `brand-new-user`: Welcome alert, empty sections, incomplete profile
+- [ ] `incomplete-profile`: Warning alert, 1 benefit, profile warning
+- [ ] `critical-actions`: 2 critical actions, 3 benefits, 1 appointment, 1 claim
+- [ ] `power-user`: Warning alert, 2 critical actions, 5 benefits, 3 appointments, 1 claim
+
+**Step 5: Commit**
+
+```bash
+git add -A && git commit -m "feat(my-va): generate dashboard rendering from PRD"
+```
+
+##### Task P1.5: Validate and polish
+
+**Step 1: Validate component attributes**
+
+Use the MCP server's `validate_component_api` tool on each component used:
+
+```
+validate_component_api({ tag: "va-alert", attributes: ["status", "visible"] })
+validate_component_api({ tag: "va-service-list-item", attributes: ["service-name", "service-link", "service-status", "icon"] })
+validate_component_api({ tag: "va-critical-action", attributes: ["text", "link", "deadline"] })
+```
+
+Fix any invalid attributes.
+
+**Step 2: Test responsive behavior**
+
+Open dev tools, test at these breakpoints:
+- Mobile: 320px
+- Mobile large: 480px
+- Tablet: 640px
+- Desktop: 1024px
+
+Verify: grid columns stack on mobile, content readable at all sizes.
+
+**Step 3: Test production build**
+
+```bash
+cd ~/repos/va-prototype-kit && node node_modules/vite/bin/vite.js build && node node_modules/vite/bin/vite.js preview
+# Verify at http://localhost:4173
+```
+
+**Step 4: Commit final version**
+
+```bash
+git add -A && git commit -m "fix(my-va): polish component attributes and responsive layout"
+```
+
+---
 
 #### Phase P2: Workflow Documentation & Skills
 
-- [ ] **Create prototype workflow guide**
-  - File: `docs/skills/prototype-workflow.md`
-  - Guided onboarding: check prerequisites, ask what to prototype, generate scaffold
-  - References PRD template, VADS MCP server tools
-  - Deployment instructions for GitHub Pages
-  - Written as plain markdown any AI agent can follow
-  - Optionally symlink/reference from `.claude/skills/` for Claude Code `/skill` access
+> **For Claude:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement these tasks.
 
-- [ ] **Create Figma MCP setup guide**
-  - File: `docs/skills/setup-figma-mcp.md`
-  - How to configure [southleft/figma-console-mcp](https://github.com/southleft/figma-console-mcp) for each AI tool
-  - **NPX setup (recommended):** ~10 min, 56+ tools including design creation. Requires Figma PAT (`FIGMA_ACCESS_TOKEN`) and Desktop Bridge plugin import.
-  - **Remote SSE setup:** ~2 min, 21 read-only tools. Connects to `https://figma-console-mcp.southleft.com/sse` with automatic OAuth.
-  - **Local Git setup:** Clone repo, build, configure with local dist path.
-  - Figma access requirements (PAT for NPX/local; OAuth for remote SSE)
-  - How to verify the connection works (call `figma_get_status`)
-  - Troubleshooting common issues
+**Goal:** Documentation that enables any designer to create prototypes without reading source code. Written as plain markdown usable by any AI coding agent.
 
-- [ ] **Create Figma-to-prototype guide (with MCP)**
-  - File: `docs/skills/figma-to-prototype.md`
-  - The full dual-MCP workflow: Figma link → design analysis → component mapping → code generation
-  - Step-by-step instructions the AI agent follows:
-    1. Call `figma_get_file_data` to understand page structure
-    2. Call `figma_get_component` for each major component instance
-    3. Call `figma_get_variables` for design tokens
-    4. Call `figma_get_styles` for color/text/effect styles
-    5. Call `figma_take_screenshot` for visual reference
-    6. Call VADS `map_figma_component` for each Figma component found
-    7. Call VADS `get_component` for full API of matched components
-    8. Select layout template from `src/templates/` based on identified page type
-    9. Generate code combining template + components + content
-  - How to handle unmapped components (fallback to `find_components` search)
-  - How to handle custom/one-off Figma elements that aren't VADS components
-  - Tips for designers: name your Figma layers well, use auto layout, use VADS variables
+**Architecture:** Guides live in `docs/skills/` in the prototype kit repo. Each guide is a standalone workflow document. Claude Code users get them as `/skills`; Copilot/Cursor users reference them via `AGENTS.md`.
 
-- [ ] **Create Figma screenshot guide (without MCP)**
-  - File: `docs/skills/populate-from-figma.md`
-  - Fallback for designers without Figma MCP setup or Dev seats
-  - Accept Figma screenshot image, visually identify VADS components, generate HTML
-  - Instruct AI to use VADS MCP server `find_components` and `validate_component_api`
-  - Works with any AI agent that supports image input
+##### Task P2.1: Write prototype workflow guide
 
-- [ ] **Create page reproduction guide**
-  - File: `docs/skills/reproduce-page.md`
-  - Accept URL, generate static HTML/CSS mock
-  - Save to `src/mocks/` directory for usability testing context
+**Files:**
+- Create: `~/repos/va-prototype-kit/docs/skills/prototype-workflow.md`
 
-- [ ] **Wire up Claude Code skills (optional)**
-  - Create `.claude/skills/` entries that reference `docs/skills/` markdown files
-  - Enables Claude Code users to invoke workflows via `/skill` commands
-  - Not required — same workflows work by referencing docs directly
+Write a step-by-step guide covering:
+
+1. **Prerequisites check** — Node.js 18+, npm, AI coding tool with MCP support, git
+2. **Setup** — Clone repo, `npm install`, verify `npm run dev` works
+3. **Create prototype directory** — `mkdir -p src/prototypes/<name>/`, create `index.html` from template
+4. **Write PRD** — Copy `docs/prd-template.md`, fill in sections, include Figma links or screenshots
+5. **Generate with AI** — Open AI coding tool, point it at the PRD, let it generate code using VADS MCP server
+6. **Preview** — `npm run dev`, open browser, iterate
+7. **Deploy** — Push to GitHub, Pages deploys automatically
+8. **Share** — Share the GitHub Pages URL for usability testing
+
+Include:
+- Link to `docs/prd-template.md`
+- Link to `docs/skills/setup-figma-mcp.md` for Figma integration
+- Reminder to use VADS MCP server for component lookups
+- Common troubleshooting (components not rendering → check `defineCustomElements`, wrong attributes → use MCP `validate_component_api`)
+
+**Commit:**
+
+```bash
+git add docs/skills/prototype-workflow.md
+git commit -m "docs: add prototype workflow guide"
+```
+
+##### Task P2.2: Write Figma MCP setup guide
+
+**Files:**
+- Create: `~/repos/va-prototype-kit/docs/skills/setup-figma-mcp.md`
+
+Write setup instructions for three options:
+
+1. **NPX setup (recommended)**
+   - Install Figma Desktop app
+   - Get Figma Personal Access Token (Settings → Account → Personal access tokens)
+   - Import Desktop Bridge plugin in Figma (Plugins → Import plugin from manifest → point to `node_modules/@anthropic-ai/figma-console-mcp/figma-plugin/manifest.json`)
+   - Run the plugin in Figma file (Plugins → Figma Console Desktop Bridge → click "Connect")
+   - AI tool config: `"command": "npx", "args": ["-y", "@anthropic-ai/figma-console-mcp"]` with `FIGMA_ACCESS_TOKEN` env
+   - 56+ tools, full capabilities including design creation
+   - ~10 min setup
+
+2. **Remote SSE setup (quick start)**
+   - No local install needed
+   - AI tool config: `"url": "https://figma-console-mcp.southleft.com/sse"`
+   - Automatic OAuth when first connecting
+   - 21 read-only tools
+   - ~2 min setup
+
+3. **Local Git setup**
+   - Clone `southleft/figma-console-mcp`, build, configure with local dist path
+   - For advanced users or when NPX is blocked (e.g., GFE)
+
+**Verification:** After setup, ask AI agent to call `figma_list_open_files` — should return your open Figma files.
+
+**Troubleshooting:** Common issues with Desktop Bridge not connecting, PAT expired, permission errors.
+
+**Commit:**
+
+```bash
+git add docs/skills/setup-figma-mcp.md
+git commit -m "docs: add Figma MCP setup guide"
+```
+
+##### Task P2.3: Write Figma-to-prototype guide (with MCP)
+
+**Files:**
+- Create: `~/repos/va-prototype-kit/docs/skills/figma-to-prototype.md`
+
+Write the full dual-MCP workflow as AI agent instructions:
+
+1. **Read the Figma design** (Figma Console MCP)
+   - `figma_list_open_files` → identify target file
+   - `figma_execute` → traverse layer tree, find component instances
+   - `figma_get_component_for_development` → get component specs
+   - `figma_capture_screenshot` → visual reference
+
+2. **Identify page type** — Match against page type table (form step, dashboard, hub, etc.) and select layout template from `src/templates/`
+
+3. **Map components** (VADS MCP)
+   - For each Figma component: `map_figma_component({ figmaComponentName: "..." })`
+   - For full API details: `get_component({ tag: "va-..." })`
+   - For unmapped components: `find_components({ query: "..." })`
+
+4. **Map tokens** (VADS MCP)
+   - `find_tokens({ query: "..." })` for color, spacing, typography values
+
+5. **Generate code** — Combine template + mapped components + content into working prototype page
+
+6. **Verify** — Run `npm run dev`, check visual match, validate with `validate_component_api`
+
+Include:
+- Page type identification table (from plan section "Step 2: Identify the page layout")
+- Common component mapping quick reference
+- Fallback handling for unmapped components
+- Tips for designers: clear layer names, auto layout, VADS variables
+
+Reference: `data/guides/figma-to-code.md` in the MCP server (already written).
+
+**Commit:**
+
+```bash
+git add docs/skills/figma-to-prototype.md
+git commit -m "docs: add Figma-to-prototype workflow guide"
+```
+
+##### Task P2.4: Write Figma screenshot guide (without MCP)
+
+**Files:**
+- Create: `~/repos/va-prototype-kit/docs/skills/populate-from-figma.md`
+
+Write a fallback workflow for designers who can't set up Figma Console MCP:
+
+1. **Export screenshots** from Figma (frame → Export → PNG @2x)
+2. **Share with AI** — Drop screenshot into AI conversation (Claude Code, Copilot Chat with image support)
+3. **AI identifies components** — AI visually recognizes VADS components and asks the MCP server:
+   - `find_components({ query: "alert" })` to find matching web components
+   - `get_component({ tag: "va-alert" })` for the full API
+4. **AI generates HTML** — Using identified components + visual layout from screenshot
+5. **Validate** — `validate_component_api` on generated attributes
+
+This is the lower-fidelity path but works with any AI tool that supports images. No Figma API access required.
+
+**Commit:**
+
+```bash
+git add docs/skills/populate-from-figma.md
+git commit -m "docs: add Figma screenshot workflow guide"
+```
+
+##### Task P2.5: Write page reproduction guide
+
+**Files:**
+- Create: `~/repos/va-prototype-kit/docs/skills/reproduce-page.md`
+
+Write a guide for creating static mocks of external sites (for usability testing context):
+
+1. **Purpose:** During testing, users sometimes navigate to external sites (e.g., pay.gov for payments). Mock these pages to keep the test flow coherent.
+2. **Process:** Give AI agent the URL. It creates a static HTML/CSS mock at `src/mocks/<site-name>/index.html`. Uses VADS-neutral styling (plain HTML/CSS, not VADS components — these are non-VA pages).
+3. **Wiring:** Link from prototype pages to mock pages. Back navigation returns to prototype.
+4. **Limitations:** Static only — no real functionality. Visual approximation, not pixel-perfect.
+
+**Commit:**
+
+```bash
+git add docs/skills/reproduce-page.md
+git commit -m "docs: add page reproduction guide for external site mocks"
+```
+
+##### Task P2.6: Wire up Claude Code skills (optional)
+
+**Files:**
+- Create: `~/repos/va-prototype-kit/.claude/skills/prototype-workflow/SKILL.md`
+- Create: `~/repos/va-prototype-kit/.claude/skills/figma-to-prototype/SKILL.md`
+- Create: `~/repos/va-prototype-kit/.claude/skills/populate-from-figma/SKILL.md`
+
+Each SKILL.md is a thin wrapper that loads the corresponding `docs/skills/*.md` content. This lets Claude Code users invoke workflows via `/prototype-workflow`, `/figma-to-prototype`, etc.
+
+This is optional — the same workflows work by asking the AI to "follow the instructions in docs/skills/prototype-workflow.md".
+
+**Commit:**
+
+```bash
+git add .claude/skills/
+git commit -m "feat: add Claude Code skill wrappers for workflow guides"
+```
 
 #### Phase P3: Polish and Documentation
 
