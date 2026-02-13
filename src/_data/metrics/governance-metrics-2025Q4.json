@@ -12,11 +12,11 @@
     "total_staging_issues": 477,
     "launch_blocking_issues": 128,
     "launch_blocking_percentage": 27,
-    "total_platform_teams": 60,
+    "total_platform_teams": null,
     "unique_teams_in_collab_cycle": 23,
     "avg_staging_findings_per_team": 20.7
   },
-  "generated_at": "2026-02-06T18:21:01.306Z",
+  "generated_at": "2026-02-13T18:19:01.692Z",
   "data_source": "va.gov-team repository",
   "description": "Governance metrics for 2025Q4"
 }
