@@ -357,6 +357,11 @@ Ensures documentation follows VADS templates and style standards when writing co
 
 See `.claude/skills/writing-vads-guidance/SKILL.md` for full details.
 
+### Accessibility Knowledge Base
+Provides explicit instructions for answering questions about designing and building accessible web applications using the VA Design System (VADS). All guidance is based on documented VADS accessibility standards and requirements.
+
+See `.claude/skills/accessibility/SKILL.md` for full details.
+
 ## Support & Resources
 
 ### Internal Contacts
