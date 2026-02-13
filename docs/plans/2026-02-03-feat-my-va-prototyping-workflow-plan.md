@@ -14,15 +14,17 @@ github_issue: https://github.com/department-of-veterans-affairs/digital-experien
 | Phase | Status | Notes |
 |-------|--------|-------|
 | **M0: Foundation** | ✅ Complete | MCP server with 3 tools, resources, prompt. 27 tests. Local at `~/repos/vads-mcp-server`. |
-| **M1: Tokens & Validation** | ⬜ Next | `validate_component_api` done early (in M0). Remaining: token parser, token tools, token resources. |
-| **M2: Guides & Utilities** | ⬜ Not started | Static guides, utility classes tool, packaging for distribution. |
-| **M3: Figma Mapping** | ⬜ Not started | Figma component mapping, `map_figma_component` tool. Uses southleft/figma-console-mcp. |
-| **P0: Prototype Kit Setup** | ⬜ Not started | Can run in parallel with M1. Vite + vanilla-ts repo at `~/repos/va-prototype-kit`. |
+| **M1: Tokens & Validation** | ✅ Complete | Token parser, token tools (`get_tokens`, `find_tokens`), token resources. 33 new tests. |
+| **M2: Guides & Utilities** | ✅ Complete | 5 guides, utility classes data, `get_guide` + `get_utility_classes` tools, guide resources. 13 new tests. |
+| **M3: Figma Mapping** | ⬜ Next | Figma component mapping, `map_figma_component` tool. Uses southleft/figma-console-mcp. |
+| **P0: Prototype Kit Setup** | ⬜ Not started | Can run in parallel with M3. Vite + vanilla-ts repo at `~/repos/va-prototype-kit`. |
 | **P1: Reference Prototype** | ⬜ Not started | Requires M0 complete (✅). My VA Dashboard PRD-driven generation. |
 | **P2: Workflow Docs** | ⬜ Not started | Skills/guides for prototype workflow, Figma-to-prototype, setup. |
 | **P3: Polish** | ⬜ Not started | README, designer testing, iteration. |
 
-**To resume:** Start with M1 (token parser) or P0 (prototype kit scaffolding) — these can run in parallel. The MCP server repo is ready to build on.
+**MCP server totals:** 7 tools, 5 resources, 1 prompt, 73 tests across 6 files.
+
+**To resume:** Start with M3 (Figma mapping) or P0 (prototype kit scaffolding) — these can run in parallel.
 
 ---
 
@@ -479,15 +481,15 @@ Hand-authored markdown for procedural knowledge that can't be derived from compo
   - 27 unit tests passing (262ms)
   - **Remaining:** Configure MCP server in Claude Code settings and test live generation
 
-#### Phase M1: Tokens & Validation
+#### Phase M1: Tokens & Validation ✅ COMPLETE
 
-- [ ] **Implement token parser**
+- [x] **Implement token parser**
   - File: `src/lib/token-parser.ts`
   - Parse CSS custom properties (`--vads-*`) from `@department-of-veterans-affairs/css-library` stylesheet
   - Extract variable names, values, and classify by naming convention (color, font, spacing, elevation, shape, size)
   - Build search index by name and value
 
-- [ ] **Implement token tools**
+- [x] **Implement token tools**
   - File: `src/tools/token-tools.ts`
   - `get_tokens`: filter by category
   - `find_tokens`: search by name/value/description
@@ -498,26 +500,26 @@ Hand-authored markdown for procedural knowledge that can't be derived from compo
   - Cross-references against `props` array (using `attr` field for HTML attribute names)
   - Returns valid/invalid with suggestions for corrections (e.g., prop name → attr name)
 
-- [ ] **Implement token resources**
+- [x] **Implement token resources**
   - File: `src/resources/tokens.ts`
   - `vads://tokens`: all tokens
   - `vads://tokens/{category}`: filtered by category
 
-#### Phase M2: Guides & Utilities
+#### Phase M2: Guides & Utilities ✅ COMPLETE
 
-- [ ] **Write static guide markdown files**
+- [x] **Write static guide markdown files**
   - `data/guides/installation.md`
   - `data/guides/page-structure.md`
   - `data/guides/form-patterns.md`
   - `data/guides/accessibility.md`
   - `data/guides/frameworks/vanilla.md`
 
-- [ ] **Implement guide and utility tools**
+- [x] **Implement guide and utility tools**
   - File: `src/tools/guide-tools.ts` — `get_guide` tool
   - File: `src/tools/utility-tools.ts` — `get_utility_classes` tool
-  - Data source: Parse utility class names from `@department-of-veterans-affairs/css-library` CSS, supplemented by a static reference in `data/guides/utility-classes.md` for categorized documentation (grid, spacing, display, typography, visibility)
+  - Data source: Static `data/utility-classes.json` catalogue with 11 categories of VADS utility classes
 
-- [ ] **Implement guide resources**
+- [x] **Implement guide resources**
   - File: `src/resources/guides.ts`
   - `vads://guides/{topic}`: serve guide markdown
 
