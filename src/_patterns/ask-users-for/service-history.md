@@ -15,6 +15,7 @@ anchors:
   - anchor: Service under another name
   - anchor: Reserves and National Guard and Federal Orders
   - anchor: Prisoner of War (POW)
+  - anchor: Code usage
 ---
 
 ## Usage
@@ -137,4 +138,7 @@ Follow this pattern whenever you need to ask for a Veteran’s prisoner of war (
 ### Components used in this pattern
 
 - [Memorable date]({{site.baseurl}}/components/form/memorable-date)
-- [Text input]({{site.baseurl}}/components/form/text-input) 
+- [Text input]({{site.baseurl}}/components/form/text-input)
+
+## Code Usage
+[serviceBranch is a web-component pattern available in the forms library.](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/applications/simple-forms/mock-simple-forms-patterns-v3/pages/serviceBranch.js)
