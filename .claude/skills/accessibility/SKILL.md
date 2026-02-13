@@ -54,7 +54,7 @@ Meeting WCAG 2.2 Level AA is the baseline. Inclusive user experience is the goal
    - Treat this as the baseline accessibility target for all implementations.
 
 2. **Section 508 Compliance (Federal Law)**:  VA digital products are subject to Section 508 of the Rehabilitation Act; teams must follow applicable VA and federal policy and governance processes to ensure compliance.
-   - SOURCE: `src/_accessibility/index.md`
+   - SOURCE: `src/_accessibility/accessibility-testing-for-design-system-components`
 
 3. **Component Testing**: All Design System components undergo comprehensive accessibility testing
    - SOURCE: `src/_accessibility/accessibility-testing-for-design-system-components.md`
@@ -307,7 +307,7 @@ When designers ask about documenting accessibility:
 ```markdown
 **RECOMMENDED**: Accessibility annotations in mockups by midpoint review
 
-**Annotation Library**: VADS Accessibility Annotation Kit in Figma
+**Annotation Library**: VADS Web Annotation Kit in Figma
 SOURCE: src/_accessibility/accessibility-annotations.md#library
 
 **What to Annotate**:
@@ -605,7 +605,7 @@ Example response:
 **SOURCE**: `src/_accessibility/accessibility-annotations.md`
 
 ✅ YES - Annotations recommended by midpoint review and before handoff to engineering
-✅ Use CVS Accessibility Annotation Kit in Figma
+✅ Use VADS Accessibility Annotation Kit in Figma
 ✅ Strongly recommended at midpoint review
 ✅ Annotate: headings, ARIA labels, fieldsets, errors, focus order
 
