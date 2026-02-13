@@ -166,70 +166,18 @@ gh issue edit <ISSUE_NUMBER> --repo department-of-veterans-affairs/vets-design-s
 
 This signals to the team that someone is actively working on the issue.
 
-## Step 3: Analyze Selected Issue
+## Step 3: Groom the Issue
 
-### Fetch Full Issue Details
+**REQUIRED SUB-SKILL:** Use guidance-grooming to analyze and prepare the issue for writing.
 
-```bash
-gh issue view <ISSUE_NUMBER> --repo department-of-veterans-affairs/vets-design-system-documentation \
-  --json title,body,labels,comments,assignees | cat
-```
+The guidance-grooming skill will:
+- Fetch full issue details and identify affected files
+- Analyze completeness against the required information checklist
+- Prompt you for any missing context or design decisions
+- Post a structured `## Grooming Summary` comment on the issue
+- Apply the `groomed` label
 
-### Issue Analysis Checklist
-
-For each issue, determine:
-
-1. **Issue Type:**
-   - [ ] New documentation needed
-   - [ ] Update existing documentation
-   - [ ] Fix incorrect information
-   - [ ] Add examples/code samples
-   - [ ] Accessibility guidance update
-   - [ ] Design decision documentation
-
-2. **Affected Files:**
-   - Identify which documentation files need changes
-   - Search codebase for related content:
-   ```bash
-   # For component issues (e.g., va-alert)
-   find src/_components -name "*alert*" -type f
-
-   # For pattern issues
-   find src/_patterns -name "*.md" -type f | xargs grep -l "KEYWORD"
-   ```
-
-3. **Dependencies:**
-   - Does this require component-library changes?
-   - Does this need design review?
-   - Are there related issues to reference?
-
-4. **Scope Assessment:**
-   - Small: Single file update, minor text changes
-   - Medium: Multiple sections or files, new examples needed
-   - Large: New page creation, significant restructuring
-
-### Present Summary to User
-
-Format the analysis as:
-
----
-**Issue #[NUMBER]: [TITLE]**
-
-**Summary:** [2-3 sentence summary of what needs to be done]
-
-**Type:** [Issue type from checklist]
-
-**Files to modify:**
-- `path/to/file1.md` - [what changes needed]
-- `path/to/file2.md` - [what changes needed]
-
-**Scope:** [Small/Medium/Large]
-
-**Questions for you:**
-1. [Any clarifying questions based on issue analysis]
-2. [Design decisions that need input]
-
----
+**Skip this step** if the issue already has a `## Grooming Summary` comment in its comments — it's already been groomed.
 
 ## Step 4: Reference Contributing Guide
 
@@ -285,6 +233,8 @@ web-component: va-component-name
 - Hyperlink component references: [Alert](/components/alert/)
 
 ## Step 5: Execute Documentation Updates
+
+**Prerequisite:** The issue must have a `## Grooming Summary` comment (from Step 3) before proceeding. The grooming comment is the authoritative work order for this step.
 
 **REQUIRED SUB-SKILL:** Use writing-vads-guidance for all documentation changes.
 
