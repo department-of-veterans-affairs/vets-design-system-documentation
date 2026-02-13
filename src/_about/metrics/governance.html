@@ -38,20 +38,20 @@ To get the previous quarter, we extract the year and quarter number, then calcul
     {% assign touchpoints_percent = touchpoints_change | times: 100.0 | divided_by: previous_touchpoints | round %}
   {% endif %}
   
-  {% comment %} Calculate products shipped trend {% endcomment %}
-  {% assign current_products = latest_quarter_data.data.products_shipped %}
-  {% assign previous_products = previous_quarter_data.data.products_shipped %}
-  {% if previous_products > 0 %}
-    {% assign products_change = current_products | minus: previous_products %}
-    {% assign products_percent = products_change | times: 100.0 | divided_by: previous_products | round %}
-  {% endif %}
-  
   {% comment %} Calculate staging issues trend {% endcomment %}
   {% assign current_staging = latest_quarter_data.data.total_staging_issues %}
   {% assign previous_staging = previous_quarter_data.data.total_staging_issues %}
   {% if previous_staging > 0 %}
     {% assign staging_change = current_staging | minus: previous_staging %}
     {% assign staging_percent = staging_change | times: 100.0 | divided_by: previous_staging | round %}
+  {% endif %}
+
+  {% comment %} Calculate avg collab cycle time trend {% endcomment %}
+  {% assign current_avg_time = latest_quarter_data.data.avg_collab_cycle_time %}
+  {% assign previous_avg_time = previous_quarter_data.data.avg_collab_cycle_time %}
+  {% if previous_avg_time > 0 %}
+    {% assign avg_time_change = current_avg_time | minus: previous_avg_time %}
+    {% assign avg_time_percent = avg_time_change | times: 100.0 | divided_by: previous_avg_time | round %}
   {% endif %}
   
   {% comment %} Calculate launch blocking trend {% endcomment %}
@@ -68,11 +68,7 @@ To get the previous quarter, we extract the year and quarter number, then calcul
 
   <!-- Summary Metrics Cards -->
   <section aria-labelledby="summary-heading">
-    <h2 id="summary-heading">Quarterly Summary 
-      {% if site.data.metrics.governance-index.latest_complete_quarter %}
-        ({{ site.data.metrics.governance-index.latest_complete_quarter }})
-      {% endif %}
-    </h2>
+    <h2 id="summary-heading">Summary</h2>
   
     <!-- Summary cards -->
     <div class="vads-l-row vads-u-justify-content--center">
@@ -97,39 +93,44 @@ To get the previous quarter, we extract the year and quarter number, then calcul
       
       <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--3">
         <va-card class="metric-card">
-        <h3 id="products-shipped-label">Products Shipped</h3>
-        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="products-shipped" aria-labelledby="products-shipped-label">
-          {% if latest_quarter_data.data.products_shipped != nil %}
-            {{ latest_quarter_data.data.products_shipped }}
+        <h3 id="staging-review-findings-label">Staging Review Findings</h3>
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="staging-review-findings" aria-labelledby="staging-review-findings-label">
+          {% if latest_quarter_data.data.total_staging_issues != nil %}
+            {{ latest_quarter_data.data.total_staging_issues }}
           {% else %}
-            8
+            0
           {% endif %}
         </div>
         {% include metric-trend.html
-           trend_id="products-shipped-trend"
-           aria_label="Products shipped trend indicator"
-           percent=products_percent
-           change=products_change
+           trend_id="staging-review-findings-trend"
+           aria_label="Staging review findings trend indicator"
+           percent=staging_percent
+           change=staging_change
            governance_index=governance_index %}
         </va-card>
       </div>
       
       <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--3">
         <va-card class="metric-card">
-        <h3 id="staging-issues-label">Staging Review Issues</h3>
-        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="staging-issues" aria-labelledby="staging-issues-label">
-          {% if latest_quarter_data.data.total_staging_issues != nil %}
-            {{ latest_quarter_data.data.total_staging_issues }}
+        <h3 id="avg-collab-cycle-time-label">Avg Collab Cycle Time</h3>
+        {% comment %}
+        Use FY2025 data from the collab-cycle-time script
+        {% endcomment %}
+        {% assign fy2025_data = site.data.metrics.collab-cycle-time-FY2025 %}
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="avg-collab-cycle-time" aria-labelledby="avg-collab-cycle-time-label">
+          {% if fy2025_data.statistics.mean %}
+            {{ fy2025_data.statistics.mean }} days
           {% else %}
-            55
+            0 days
           {% endif %}
         </div>
-        {% include metric-trend.html
-           trend_id="staging-issues-trend"
-           aria_label="Staging review issues trend indicator"
-           percent=staging_percent
-           change=staging_change
-           governance_index=governance_index %}
+        <div class="metric-trend trend-neutral" id="avg-collab-cycle-time-trend" aria-label="Average collab cycle time fiscal year indicator">
+          <span>
+            {% if fy2025_data.fiscal_year %}
+              ({{ fy2025_data.fiscal_year }})
+            {% endif %}
+          </span>
+        </div>
         </va-card>
       </div>
       <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--3">
@@ -155,12 +156,92 @@ To get the previous quarter, we extract the year and quarter number, then calcul
       </div>
     </div>
   </section>
-  
+
+  <!-- Team Metrics Section -->
+  <section aria-labelledby="team-metrics-heading">
+    <h2 id="team-metrics-heading">Team Metrics</h2>
+    <p>Metrics tracking team engagement with the Platform and Collaboration Cycle process.</p>
+
+    {% comment %} Calculate team metrics trends {% endcomment %}
+    {% if latest_quarter_data.data and previous_quarter_data.data %}
+      {% comment %} Calculate unique teams trend {% endcomment %}
+      {% assign current_unique_teams = latest_quarter_data.data.unique_teams_in_collab_cycle %}
+      {% assign previous_unique_teams = previous_quarter_data.data.unique_teams_in_collab_cycle %}
+      {% if current_unique_teams and previous_unique_teams and previous_unique_teams > 0 %}
+        {% assign unique_teams_change = current_unique_teams | minus: previous_unique_teams %}
+        {% assign unique_teams_percent = unique_teams_change | times: 100.0 | divided_by: previous_unique_teams | round %}
+      {% endif %}
+
+      {% comment %} Calculate avg findings per team trend {% endcomment %}
+      {% assign current_avg_findings = latest_quarter_data.data.avg_staging_findings_per_team %}
+      {% assign previous_avg_findings = previous_quarter_data.data.avg_staging_findings_per_team %}
+      {% if current_avg_findings and previous_avg_findings and previous_avg_findings > 0 %}
+        {% assign avg_findings_change = current_avg_findings | minus: previous_avg_findings %}
+        {% assign avg_findings_percent = avg_findings_change | times: 100.0 | divided_by: previous_avg_findings | round %}
+      {% endif %}
+    {% endif %}
+
+    <div class="vads-l-row vads-u-justify-content--center">
+      <div class="vads-l-col--12 medium-screen:vads-l-col--4">
+        <va-card class="metric-card">
+          <h3 id="total-platform-teams-label">Total Platform Teams</h3>
+          <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="total-platform-teams" aria-labelledby="total-platform-teams-label">
+            {% if latest_quarter_data.data.total_platform_teams != nil %}
+              {{ latest_quarter_data.data.total_platform_teams }}
+            {% else %}
+              N/A
+            {% endif %}
+          </div>
+          <div class="metric-trend trend-neutral" id="total-platform-teams-trend" aria-label="Total platform teams indicator">
+            <span>Point-in-time count from Teams Manifest</span>
+          </div>
+        </va-card>
+      </div>
+
+      <div class="vads-l-col--12 medium-screen:vads-l-col--4">
+        <va-card class="metric-card">
+          <h3 id="unique-teams-collab-cycle-label">Teams in Collab Cycle</h3>
+          <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="unique-teams-collab-cycle" aria-labelledby="unique-teams-collab-cycle-label">
+            {% if latest_quarter_data.data.unique_teams_in_collab_cycle != nil %}
+              {{ latest_quarter_data.data.unique_teams_in_collab_cycle }}
+            {% else %}
+              N/A
+            {% endif %}
+          </div>
+          {% include metric-trend.html
+             trend_id="unique-teams-collab-cycle-trend"
+             aria_label="Unique teams in Collab Cycle trend indicator"
+             percent=unique_teams_percent
+             change=unique_teams_change
+             governance_index=governance_index %}
+        </va-card>
+      </div>
+
+      <div class="vads-l-col--12 medium-screen:vads-l-col--4">
+        <va-card class="metric-card">
+          <h3 id="avg-findings-per-team-label">Average Findings Per Team</h3>
+          <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="avg-findings-per-team" aria-labelledby="avg-findings-per-team-label">
+            {% if latest_quarter_data.data.avg_staging_findings_per_team != nil %}
+              {{ latest_quarter_data.data.avg_staging_findings_per_team }}
+            {% else %}
+              N/A
+            {% endif %}
+          </div>
+          {% include metric-trend.html
+             trend_id="avg-findings-per-team-trend"
+             aria_label="Average findings per team trend indicator"
+             percent=avg_findings_percent
+             change=avg_findings_change
+             governance_index=governance_index %}
+        </va-card>
+      </div>
+    </div>
+  </section>
+
   <!-- Quarterly Governance Metrics Section -->
   <section aria-labelledby="quarterly-governance-heading">
     <h2 id="quarterly-governance-heading">Quarterly Governance Metrics</h2>
     <div class="data-freshness" id="governance-data-freshness">
-      <small>
       {% if latest_quarter_data.generated_at %}
           Data last updated: {{ latest_quarter_data.generated_at | date: "%B %-d, %Y at %-I:%M %p" }} 
           ({{ governance_index.latest_complete_quarter }})
@@ -170,10 +251,13 @@ To get the previous quarter, we extract the year and quarter number, then calcul
       {% else %}
         Sample data for demonstration purposes
       {% endif %}
-      </small>
     </div>
     <div class="metrics-section">
-      <h3>Collaboration Cycle Activity by Quarter</h3>
+      <h3>Collaboration Cycle Activity by Quarter
+        {% if governance_index.latest_complete_quarter %}
+          (most recent: {{ governance_index.latest_complete_quarter }})
+        {% endif %}
+      </h3>
       <p>Shows governance activity including touchpoints completed, products shipped, and staging review issue patterns over time</p>
       
       <va-table id="governance-quarterly-va-table"
@@ -181,19 +265,32 @@ To get the previous quarter, we extract the year and quarter number, then calcul
                 stacked="true"
                 sortable="true"
                 table-type="borderless"
-                right-align-cols="1,2,3,4,5">
+                right-align-cols="1,2,3,4">
         <va-table-row slot="headers">
           <span>Quarter</span>
           <span>Touchpoints Held</span>
-          <span>Products Shipped</span>
-          <span>Staging Issues</span>
+          <span>Staging Review Findings</span>
           <span>Launch-Blocking Issues</span>
           <span>Launch-Blocking %</span>
         </va-table-row>
         {% comment %}
-        Create an array of quarters in reverse chronological order (most recent first)
+        Dynamically build quarters array from available governance-metrics-* data files.
+        This iterates over all metrics data, filters for governance files, extracts quarter
+        names, and sorts them in reverse chronological order (most recent first).
         {% endcomment %}
-        {% assign quarters = "2025Q3,2025Q2,2025Q1,2024Q4,2024Q3,2024Q2,2024Q1" | split: "," %}
+        {% assign quarters_string = "" %}
+        {% for item in site.data.metrics %}
+          {% assign key = item[0] %}
+          {% if key contains "governance-metrics-" %}
+            {% assign quarter = key | remove: "governance-metrics-" %}
+            {% if quarters_string == "" %}
+              {% assign quarters_string = quarter %}
+            {% else %}
+              {% assign quarters_string = quarters_string | append: "," | append: quarter %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+        {% assign quarters = quarters_string | split: "," | sort | reverse %}
         {% for quarter in quarters %}
           {% assign quarter_data_key = "governance-metrics-" | append: quarter %}
           {% assign quarter_data = site.data.metrics[quarter_data_key] %}
@@ -201,10 +298,100 @@ To get the previous quarter, we extract the year and quarter number, then calcul
             <va-table-row>
               <span>{{ quarter_data.data.period }}</span>
               <span>{{ quarter_data.data.touchpoints_held }}</span>
-              <span>{{ quarter_data.data.products_shipped }}</span>
               <span>{{ quarter_data.data.total_staging_issues }}</span>
               <span>{{ quarter_data.data.launch_blocking_issues }}</span>
               <span>{{ quarter_data.data.launch_blocking_percentage }}%</span>
+            </va-table-row>
+          {% endif %}
+        {% endfor %}
+      </va-table>
+
+      <h3>Touchpoint Types Breakdown</h3>
+      <p>Breakdown of the specific types of touchpoints held during each quarter.</p>
+      
+      <va-table id="touchpoints-breakdown-table"
+                table-title="Touchpoint Types Breakdown: Specific touchpoint types held by quarter"
+                stacked="true"
+                sortable="true"
+                table-type="borderless"
+                right-align-cols="1,2,3,4,5,6,7">
+        <va-table-row slot="headers">
+          <span>Quarter</span>
+          <span>Kick-off</span>
+          <span>PO Sync</span>
+          <span>Architecture Intent</span>
+          <span>Design Intent</span>
+          <span>Midpoint Review</span>
+          <span>Staging Review</span>
+          <span>Total Touchpoints</span>
+        </va-table-row>
+        {% for quarter in quarters %}
+          {% assign quarter_data_key = "governance-metrics-" | append: quarter %}
+          {% assign quarter_data = site.data.metrics[quarter_data_key] %}
+          {% if quarter_data.data %}
+            <va-table-row>
+              <span>{{ quarter_data.data.period }}</span>
+              <span>{{ quarter_data.data.total_kickoffs }}</span>
+              <span>{{ quarter_data.data.po_sync_held }}</span>
+              <span>{{ quarter_data.data.architecture_intent_held }}</span>
+              <span>{{ quarter_data.data.design_intent_held }}</span>
+              <span>{{ quarter_data.data.midpoint_review_held }}</span>
+              <span>{{ quarter_data.data.staging_review_held }}</span>
+              <span>{{ quarter_data.data.touchpoints_held }}</span>
+            </va-table-row>
+          {% endif %}
+        {% endfor %}
+      </va-table>
+    </div>
+  </section>
+
+  <!-- Collaboration Cycle Time Trends Section -->
+  <section aria-labelledby="cycle-time-heading">
+    <h2 id="cycle-time-heading">Collaboration Cycle Time Trends</h2>
+    <div class="data-freshness" id="cycle-time-data-freshness">
+      {% assign fy2025_data = site.data.metrics.collab-cycle-time-FY2025 %}
+      {% if fy2025_data.generated_at %}
+          Data last updated: {{ fy2025_data.generated_at | date: "%B %-d, %Y at %-I:%M %p" }}
+          {% if fy2025_data.data_source %}
+            | Source: {{ fy2025_data.data_source }}
+          {% endif %}
+      {% endif %}
+    </div>
+    
+    <div class="metrics-section">
+      <h3>Cycle Time Statistics by Fiscal Year</h3>
+      <va-table id="cycle-time-fy-table"
+                table-title="Statistical measures of time from kick-off to Staging Review by fiscal year (all values in days)"
+                stacked="true"
+                sortable="true"
+                striped="true"
+                table-type="borderless"
+                right-align-cols="1,2,3,4,5,6">
+        <va-table-row slot="headers">
+          <span>Fiscal Year</span>
+          <span>Teams</span>
+          <span>Products</span>
+          <span>Mean</span>
+          <span>Median</span>
+          <span>Max</span>
+          <span>Std Dev</span>
+        </va-table-row>
+        {% comment %}
+        Load fiscal year data files
+        {% endcomment %}
+        {% assign fiscal_years = "FY2025,FY2024,FY2023,FY2022" | split: "," %}
+        {% for fy in fiscal_years %}
+          {% assign fy_data_key = "collab-cycle-time-" | append: fy %}
+          {% assign fy_data = site.data.metrics[fy_data_key] %}
+          {% if fy_data.statistics %}
+            <va-table-row>
+              <span>{{ fy_data.fiscal_year }}</span>
+              <span>{{ fy_data.team_statistics | size }}</span>
+              <span>{{ fy_data.statistics.count }}</span>
+              <span>{{ fy_data.statistics.mean }}</span>
+              <span>{{ fy_data.statistics.median }}</span>
+              <span>{{ fy_data.statistics.max }}</span>
+              <span>{{ fy_data.statistics.standardDeviation }}</span>
             </va-table-row>
           {% endif %}
         {% endfor %}
@@ -223,10 +410,27 @@ To get the previous quarter, we extract the year and quarter number, then calcul
       <h4>Metric Definitions</h4>
       <ul>
         <li><strong>Touchpoints Held:</strong> Total collaboration cycle touchpoints conducted by the governance team in the quarter. This is the sum of Design Intent reviews, Midpoint reviews, and Staging reviews (issues with "governance-team" label plus specific touchpoint type labels that were created in the quarter)</li>
-        <li><strong>Products Shipped:</strong> VFS team products that completed the full Collaboration Cycle process by passing Staging Review (issues with both "collaboration-cycle" and "staging-review" labels that were closed in the quarter)</li>
-        <li><strong>Staging Issues:</strong> Total feedback issues filed during Staging Review process with labels "CC-Dashboard", "Staging", and "collab-cycle-feedback" created in the quarter</li>
+        <li><strong>Staging Review Findings:</strong> Total feedback issues filed during Staging Review process with labels "CC-Dashboard", "Staging", and "collab-cycle-feedback" created in the quarter. Each issue represents a specific finding or recommendation from the governance team</li>
+        <li><strong>Avg Collab Cycle Time:</strong> The average number of days from when a kick-off issue is created to when the "staging-review" label is added to that issue. This metric is calculated across the entire fiscal year (not quarterly) using label timestamp data from the GitHub API. Shows FY2025 data (Oct 2024 - Sep 2025)</li>
         <li><strong>Launch-Blocking Issues:</strong> Critical staging review issues that must be resolved before product launch (staging issues that also have the "launch-blocking" label)</li>
         <li><strong>Launch-Blocking Percentage:</strong> The percentage of staging review issues that are classified as launch-blocking (launch-blocking issues ÷ total staging issues × 100)</li>
+      </ul>
+
+      <h4>Team Metrics Definitions</h4>
+      <ul>
+        <li><strong>Total Platform Teams:</strong> The total number of teams registered in the <a href="https://github.com/department-of-veterans-affairs/va.gov-team-sensitive/tree/master/teams" target="_blank" rel="noopener noreferrer">Teams Manifest</a>. This is a point-in-time count from the team-lookup.json file and represents all teams active on the VA.gov Platform</li>
+        <li><strong>Teams in Collaboration Cycle:</strong> The number of unique Veteran-facing services (VFS) teams that initiated a Collaboration Cycle (kick-off) during the quarter. Team names are extracted from the "VFS team name" field in kick-off issue templates. Teams are counted case-insensitively to avoid duplicates from formatting differences</li>
+        <li><strong>Average Findings Per Team:</strong> The average number of staging review findings per team that went through the Collaboration Cycle. Calculated as: total staging review findings ÷ unique teams in Collaboration Cycle. This metric helps measure the typical feedback burden for teams going through the process</li>
+      </ul>
+
+      <h4>Cycle Time Statistics Definitions</h4>
+      <ul>
+        <li><strong>Teams:</strong> Number of unique VFS teams that participated in the collaboration cycle during the fiscal year</li>
+        <li><strong>Products:</strong> Total number of products that completed the collaboration cycle (from kick-off to Staging Review) during the fiscal year</li>
+        <li><strong>Mean:</strong> The arithmetic average of all cycle times. Calculated by summing all cycle times and dividing by the number of products. All values are shown in days</li>
+        <li><strong>Median:</strong> The middle value when all cycle times are sorted from shortest to longest. Half of products took less time, half took more</li>
+        <li><strong>Max:</strong> The longest cycle time recorded (slowest product through the collaboration cycle)</li>
+        <li><strong>Std Dev (Standard Deviation):</strong> Measures how spread out the cycle times are from the mean. A higher number indicates more variation in cycle times across teams</li>
       </ul>
       
       <h4>Data Collection Process</h4>

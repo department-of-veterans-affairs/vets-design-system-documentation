@@ -7,11 +7,14 @@ github-title: va-action-link
 intro-text: "Action links guide users to a new page to take an action or to start an online tool or digital service."
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1312%3A10315&mode=design&t=nYOotVcwdpiMCL5C-1
 status: use-deployed
+web-component: va-link-action
+uses_mermaid: true
 web: true
 mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage
+  - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Privacy guidance
@@ -52,6 +55,8 @@ The action link is an eye-catching link to start a digital service. An action li
 * **Use buttons for authentication actions.** Don’t use Link - Action for these actions: “sign up,” “submit” or “sign out.” For these actions, use [buttons]({{ site.baseurl }}/components/button) instead.
 * **Use a button for going to the next step in a form.** Use Button - Primary for moving between steps of an online application or tool. This is considered an action rather than navigation. Note that we prefer a [Back link]({{ site.baseurl }}/components/link/#back) for navigation backward in a flow but have instances of using a Button - Secondary in most forms.
 * **Don’t use Link - Action for non-actions.** Link - Action is not meant to replace all links. It should be used explicitly for actions.
+
+{% include component-docs.html component_name=page.web-component %}
 
 ## Content considerations
 

@@ -7,6 +7,7 @@ research-link: Buttons
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A152&mode=design&t=jMcVWkPlFhZu3RTh-1
 figma-link-mobile-app: https://www.figma.com/design/Zzt8z60hCtdEzXx2GFWghH/VA-Mobile---Component-Library?node-id=224-314
 status: use-deployed
+uses_mermaid: true
 sub-pages:
   - sub-page: Button group
   - sub-page: Button - Segmented
@@ -107,16 +108,16 @@ anchors:
 #### Behavior
 
 * **Avoid using many primary buttons on a single page or section.** Pages with many primary buttons reduces their impact and make it harder for users to know what to do next.
-* **Arrows are reserved.** Arrow icons should only appear for "Back" and "Continue" buttons that appear in forms.
-* **Use icons only when necessary.** [Icons]({{ site.baseurl }}/foundation/icons) can be used in buttons when additional clarity is required and the icon is highly relevant to the action. Icons should not be used for decoration. Note that va-button does not support iconography, but has some variations that use an icon. Use of icons in buttons will be made on a case-by-case basis. If you feel you need an icon for a button, [follow the process for requesting a new icon]({{ site.baseurl }}/components/icon#requesting-a-new-icon) .
 * **Avoid disabling buttons.** [Disabling buttons is strongly discouraged.](#do-not-disable-buttons)
+* **Use icons only when necessary.** [Icons]({{ site.baseurl }}/components/icon) can be used in buttons when additional clarity is required and the icon is highly relevant to the action. Icons should not be used for decoration. Note that va-button does not support iconography, but has some variations that use an icon. Use of icons in buttons will be made on a case-by-case basis. If you feel you need an icon for a button, [follow the process for requesting a new icon]({{ site.baseurl }}/components/icon#requesting-a-new-icon).
+  * **Note:** Chevrons should not be used in this component. Usage in the *Back* and *Continue* variations will be deprecated.
 
 ### Choosing between variations
 
 * **Use Primary for the most important action.** Use the primary button for the most important action that you want the user to take on the page, or in a section. Also, use primary buttons to take the user to the next step in a process.
 * **Use Secondary for non-primary actions.** Use secondary buttons for any actions that need to be _downplayed_ against other actions on the page, or in a section. Also, use secondary buttons for actions that happen on the current page.
 * **Use Big primary buttons for the only action.** Use the big variation of the primary button for the only action on the page.
-* **Use Continue and Back for advancing to the next step and returning to the previous step, respectively.** Note that these buttons can be used as a pair from [button pair]({{ site.baseurl }}/components/button/button-pair). Also, note that the Back button should not be used if it is only navigating rather than taking an action (like submitting data ala the Continue button).
+* **Use Continue and Back for advancing to the next step and returning to the previous step, respectively.** Note that these buttons can be used as a pair from [Button group]({{ site.baseurl }}/components/button/button-group). Also, note that the Back button should not be used if it is only navigating rather than taking an action (like submitting data ala the Continue button).
 * **Use Loading for actions that should only be triggered once.** Use the loading variation when it is necessary to block the user from additional clicks of a button that might cause transaction issues.
 * **Use Base, primary and secondary, in dark mode in mobile applications.** Use the base variations for dark mode or when primary buttons will not pass the required color contrast ratio.
 * **Use destructive for actions that have serious consequences.** Use the destructive button for any action that cannot be reversed and may result in data loss. Currently used in the mobile app when canceling an appointment and when removing contact information.
@@ -164,14 +165,9 @@ This variation substitutes the large tap target of a button where a radio button
 ### Additional guidance for VA
 
 * **Button labels should never change dynamically or be used to communicate a status.**
-* **Mind target size.** We follow the [WCAG 2.2 Target Size - Level AAA](https://www.w3.org/WAI/WCAG22/quickref/#target-size) criteria which states:
-> "The size of the target for pointer inputs is at least 44 by 44 CSS pixels..."
-
-That guidance agrees with [Apple's Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/components/menus-and-actions/buttons) which recommend that:
-> "On a touchscreen, buttons need a hit target of at least 44x44 points to accommodate a fingertip. On all screens, it’s essential to include enough space around a button so that people can visually distinguish it from surrounding components and content, whether people use touch, a pointer, or a system that expands a button when it’s in focus."
-
+* **Mind target size.** We follow the [WCAG 2.2 Target Size (Minimum) - Level AA](https://www.w3.org/WAI/WCAG22/quickref/#target-size-minimum) criteria which states:
+> "The size of the target for pointer inputs is at least 24 by 24 CSS pixels..."
 * **Use at least [1 spacing unit]({{ site.baseurl }}/foundation/spacing-units) separating tappable elements.**
-
 * **Prioritize a clear and concise button label and only use `message-aria-describedby` when it enhances understanding and accessibility.** The `message-aria-describedby` property emulates HTML's `aria-describedby` due to web component limitations. It allows adding an additional description that is visually hidden, but screen reader accessible.
   * When to use:
     * **Providing additional context or instructions.** If the button label is concise but requires further explanation.

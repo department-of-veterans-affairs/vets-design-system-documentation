@@ -9,7 +9,6 @@ mobile-app: false
 sub-pages:
   - sub-page: Maintenance
   - sub-page: Official Gov
-  - sub-page: Promo
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -54,7 +53,6 @@ anchors:
 
 * **User feedback.** User feedback is provided via [feedback messages]({{ site.baseurl }}/content-style-guide/error-messages/feedback) that respond to an action a user has taken and to draw their attention to something that they need to correct or to confirm successful completion of a task. These messages are handled by the [Alert]({{ site.baseurl }}/components/alert) component.
 * **In-application system status, engagement, and access messages.** All of the messages in our [messages dictionary]({{ site.baseurl }}/content-style-guide/error-messages) are handled by the [Alert]({{ site.baseurl }}/components/alert) component. For application-level maintenance, review the [downtime notifications guidance](https://depo-platform-documentation.scrollhelp.site/developer-docs/downtime-notifications).
-* **News, promotion, new tools, etc.** Promotional items or general news that may be relevant to a broad audience of Veterans is better placed in the [Banner - Promo]({{ site.baseurl }}/components/banner/promo) component. To ensure that customers always know they can find critical service information in this area, don’t use Banner for general press, outreach, or administrative messages.
 * **System maintenance.** Before and during maintenance there are [specific system status messages]({{ site.baseurl }}/content-style-guide/error-messages/system) that we use to communicate the maintenance window to users which is handled by the [Banner - Maintenance]({{ site.baseurl }}/components/banner/maintenance) component. 
 * **Helping a Veteran maintain their health.** Another category of messages are broadly related to helping Veterans manage their health. These messages should be managed with a combination of Content Management System (CMS) components as follows:
   * Call center/secure messaging promotion: Story with spotlight.
@@ -68,7 +66,7 @@ anchors:
 * **Don't stack banners.** Only one Banner may appear on any page at one time. If multiple emergency issues occur at once, combine the message and link out to a landing page or to individual affected medical centers, for example.
 * **Info and warning only.** Banner is only available in `info` or `warning` styles.
 * **Dismissible by default.** Banners should generally be dismissible by the user.
-* **Links, not buttons.** Don't use buttons in Banner. [Buttons are reserved for actions whereas links are for navigation]({{ site.baseurl }}/components/link/#links-vs-buttons).
+* **Links, not buttons.** Don't use buttons in Banner. [Buttons are reserved for actions whereas links are for navigation]({{ site.baseurl }}/components/link#choose-the-right-element-buttons-vs-links).
 
 ### Placement
 

@@ -52,6 +52,10 @@
     "maturityCategory": "use",
     "maturityLevel": "deployed"
   },
+  "va-card-status": {
+    "maturityCategory": "caution",
+    "maturityLevel": "available"
+  },
   "va-checkbox": {
     "maturityCategory": "use",
     "maturityLevel": "deployed"
@@ -209,6 +213,10 @@
     "maturityLevel": "best_practice"
   },
   "va-tabs": {
+    "maturityCategory": "caution",
+    "maturityLevel": "candidate"
+  },
+  "va-tag-status": {
     "maturityCategory": "caution",
     "maturityLevel": "candidate"
   },

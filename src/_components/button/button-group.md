@@ -53,16 +53,17 @@ type="secondary"
 ### When to consider something else
 
 - **Navigation outside of the flow.** For navigation to pages outside of the form flow, use a [link]({{ site.baseurl }}/components/link).
-- **Call-To-Action.** For a visually prominent call to action (CTA) that links to another page, use an [action link]({{ site.baseurl }}/components/action-link).
+- **Call-To-Action.** For a visually prominent call to action (CTA) that links to another page, use an [action link]({{ site.baseurl }}/components/link/action).
 
 ### Behavior
 
 - **Avoid using too many buttons on a page.** Pages with many buttons may signal that the page content needs to be split up.
-- **Arrows are reserved.** Arrow icons should only appear for the [Back/Continue](#backcontinue) button group.
+
+
 
 ### Mobile behavior
 
-- Primary and secondary buttons should appear full-width up until the [mobile-lg breakpoint]({{ site.baseurl }}/foundation/breakpoints#names-and-values) with the primary button being on top of the secondary button with [2 spacing unit]({{ site.baseurl }}/foundation/spacing-units#spacing-unit-tokens) of separation between them.
+- Primary and secondary buttons should appear full-width up until the [mobile-lg breakpoint]({{ site.baseurl }}/foundation/breakpoints#names-and-values) with the primary button being on top of the secondary button with [2 spacing unit]({{ site.baseurl }}/foundation/spacing-units#spacing-tokens) of separation between them.
 - At and after the [mobile-lg breakpoint]({{ site.baseurl }}/foundation/breakpoints#names-and-values) the buttons left align and revert to a natural width (i.e. as wide as they need to be to accommodate their label) with the primary button continuing to appear before the secondary button.
 
 ### Choosing between variations

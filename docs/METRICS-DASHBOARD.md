@@ -108,6 +108,55 @@ date,component_name,uswds,static_content_templates,yellow_ribbon_schools,...[123
 3. **Implementation Tracking**: Tracks which experimental designs become official
 4. **Output**: Creates `experimental-metrics.json` in both locations
 
+### 4. Governance Metrics (GitHub API → JSON)
+
+**Source**: GitHub Issues from `va.gov-team` repository + Teams Manifest from `va.gov-team-sensitive`
+**Script**: `scripts/collect-governance-metrics.js`
+**Frequency**: Runs weekly via GitHub Actions and produces quarter-based JSON aggregates
+
+#### Data Collection:
+1. **Touchpoint Issues**: Fetches issues with governance-team labels using `gh` CLI
+2. **Staging Review Findings**: Issues labeled with CC-Dashboard, Staging, collab-cycle-feedback
+3. **Team Data**:
+   - Total platform teams from `va.gov-team-sensitive/teams/team-lookup.json`
+   - Unique teams extracted from "VFS team name" field in kick-off issue bodies via GraphQL API
+4. **Calculations**: Average staging findings per team, launch-blocking percentages
+5. **Output**: Creates `governance-metrics-YYYYQN.json` files by quarter
+
+#### JSON Output:
+```json
+{
+  "quarter": "2025Q4",
+  "data": {
+    "period": "2025-Q4",
+    "total_kickoffs": 30,
+    "touchpoints_held": 64,
+    "po_sync_held": 7,
+    "architecture_intent_held": 10,
+    "design_intent_held": 13,
+    "midpoint_review_held": 15,
+    "staging_review_held": 19,
+    "total_staging_issues": 477,
+    "launch_blocking_issues": 128,
+    "launch_blocking_percentage": 27,
+    "total_platform_teams": 60,
+    "unique_teams_in_collab_cycle": 23,
+    "avg_staging_findings_per_team": 20.7
+  },
+  "generated_at": "2026-02-03T17:34:20.501Z",
+  "data_source": "va.gov-team repository"
+}
+```
+
+#### Team Metrics:
+- **total_platform_teams**: Count of teams from Teams Manifest (requires access to va.gov-team-sensitive)
+- **unique_teams_in_collab_cycle**: Unique teams that started Collab Cycle this quarter (case-insensitive)
+- **avg_staging_findings_per_team**: total_staging_issues ÷ unique_teams_in_collab_cycle
+
+#### Troubleshooting:
+- If `total_platform_teams` is null, verify GitHub token has access to `va.gov-team-sensitive` repository
+- Team names are extracted from markdown format `[Team Name](URL)` or plain text in kick-off issues
+
 ## File Locations
 
 ### Source Data (Input)
@@ -160,6 +209,22 @@ Each JSON file exists in TWO locations:
   - Tracks implementation status
   - Groups by quarterly periods
 - **Output**: `experimental-metrics.json` (both locations)
+
+### 4. `scripts/analyze_issues.js`
+
+- **Purpose**: Analyzes open GitHub issues by component labels
+- **Input**: GitHub Issues API data (open issues only)
+- **Processing**:
+  - Categorizes issues by component labels
+  - Counts bug issues per component
+  - Tracks accessibility defects by severity (0=Critical, 1=Serious, 2=Moderate, 3=Minor, 4=Enhancement)
+  - When an issue has multiple a11y-defect labels, counts only the most severe
+  - Generates markdown report with sortable tables and quick links
+- **Output**: `component-issues-report.md` in `/src/_data/metrics/`
+- **Usage**: `yarn analyze-issues` or `node scripts/analyze_issues.js`
+- **Requirements**:
+  - GitHub CLI (`gh`) installed and authenticated (`gh auth login`)
+  - Internet connection for API calls
 
 ## Automation (GitHub Actions)
 
@@ -241,6 +306,9 @@ GITHUB_TOKEN=your_token node scripts/collect-issue-metrics.js
 
 # Update experimental metrics  
 GITHUB_TOKEN=your_token node scripts/collect-experimental-metrics.js
+
+# Analyze component issues (generates markdown report)
+node scripts/analyze_issues.js
 ```
 
 ### Verification Commands:

@@ -230,7 +230,25 @@ Do not use monospace fonts for phone numbers, zip codes, dates, or other data th
 
 {% include snippet.html content='html/eyebrow.html' %}
 
-The eyebrow sits above a heading and provides a label for a sequence of pages in a process. It can be used when implementing the [Help users to complete a sub task]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task) pattern. This component has been [tested indirectly with success](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/checkin/research/2023-04%20Unified%20Check-In%20Experience%20Usability%20Study/research-findings.md#key-findings).
+### Card with Eyebrow
+
+<div class="site-showcase">
+  {% include_relative html/eyebrow-card.html %}
+</div>
+
+{% include snippet.html content='html/eyebrow-card.html' %}
+
+The eyebrow sits above a heading and provides a label for a sequence of pages in a process or for groups of related content, such as multiple cards. 
+
+### When to use
+- Use the eyebrow when you implement the [Help users to complete a sub task]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task) pattern.
+- Use the eyebrow to indicate content type or category across related cards or pages.
+- Use the eyebrow to provide high-level context that helps users compare or scan multiple cards.
+
+### When to use something else
+- Use [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) above the header to indicate status.
+
+Note: This component has been [tested indirectly with success](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/checkin/research/2023-04%20Unified%20Check-In%20Experience%20Usability%20Study/research-findings.md#key-findings).
 
 ## Paragraphs
 
