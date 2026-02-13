@@ -20,11 +20,11 @@ anchors:
 
 ### When to use this pattern
 
-- **When you prefill a users's data into an application, form, or other online tool.** When using this pattern, clearly tell the person where their information is being pulled from to prefill for them.
+- **When you prefill a user's information into an application, form, or other online tool.** When using this pattern, clearly tell the user where their information is being pulled from to prefill for them.
 - **When users can update prefilled information.** Review the "[Help users to... Update prefilled information](/patterns/help-users-to/update-prefilled-information)" pattern for guidance on helping users update this prefilled information.
 
 ### When not to use this pattern
-- **For unauthenticated users.** Users who aren't signed in shouldn't see their information prefilled when they interact with an application, form, or tool. But, when forms don't require users to be signed in, they should get an informational alert describing the benefits of signing in. Use the [unauthenticated intro page alert](#unauthenticated-intro-page-alert) described on this page.
+- **For unauthenticated users.** Users who aren't signed in shouldn't see their information prefilled when they interact with an application, form, or tool. But, when forms don't require users to be signed in, they should get the [Sign-in alert](/components/alert/alert-sign-in/) describing the benefits of signing in.
 - **When there's no prefill data for the user.**
 
 ### When to use caution
@@ -46,7 +46,7 @@ This pattern involves these types of pages found in VA.gov forms:
 
 ### How this pattern works
 
-#### Communicate information that the user can be edit
+#### Communicate information that the user can edit
 Here’s how to communicate that people can update certain information online:
 
 - **Displaying editable prefilled information in a card with an edit link.** Display prefilled information in a card component with a link to edit the information. This information may include contact information, such as a phone number, email address, or mailing address.  
@@ -55,15 +55,16 @@ Here’s how to communicate that people can update certain information online:
 #### Communicate information that the user can't edit
 Here’s how to communicate that people can’t update certain information online:
 
-- **Omitting the edit link in cards with uneditable information.** For information the user can't be changed online (such as legal name, date of birth, and Social Security number), remove the edit link within the card component.  
+- **Omitting the edit link in cards with uneditable information.** For information that the user can't change online (such as legal name, date of birth, and Social Security number), remove the edit link within the card component.  
 - **Include instructions for how to update uneditable information**. Under the card with the uneditable information, display a note starting with the bolded word “Note:” followed by directions to help users find out how to update this information by phone or another way. These directions will vary by form or type of information. You’ll need to confirm that the directions are accurate for updating that specific type of information. See the **Content considerations** section  
-- **Consider adding a pathway for the user to currect their information for th eform itself.** ince information from the person’s profile may be inaccurate, it’s helpful to have this option.  Clarify that since they can't update the information online, we'll only update the information they requested on the curent form.
+- **Consider adding a pathway for the user to correct their information for the form itself.** Since information from the person’s profile may be inaccurate, it’s helpful to have this option.  Clarify that since they can't update the information online, we'll only update the information they requested on the current form.
 
 ### Components used in this pattern
 - [Alert](/components/alert/) - To inform the user about prefilled information and where we will save changes
+- [Alert - Sign-in](/components/alert/alert-sign-in/) - To inform the user that they can sign so we can prefill their information
 - [Card](/components/card/) - To display prefilled information in organized sections
-- [Link]({{ site.baseurl }}/components/link) - To give the user an opportunity to make changes to their prefilled information
-- [Prefill]({{ site.baseurl }}/components/form/prefill) - To inform the user before starting the form that we will prefill their information if they sign in
+- [Link](/components/link) - To give the user an opportunity to make changes to their prefilled information
+- [Prefill](/components/form/prefill) - To inform the user before starting the form that we will prefill their information if they sign in
 
 ## Examples
 
@@ -81,6 +82,9 @@ Here’s how to communicate that people can’t update certain information onlin
 
 ### Uneditable prefill card
 ![Uneditable prefill card]({{site.baseurl}}/images/patterns/help-users-to/know-when-their-information-is-prefilled/Uneditable-prefill-card.png)
+
+## Code Usage
+Code for the [prefill pattern](https://github.com/department-of-veterans-affairs/vets-website/tree/main/src/platform/forms-system/src/js/patterns/prefill) can be found in the Forms library.
 
 ## Content considerations
 ### Directions for updating uneditable information
