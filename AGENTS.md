@@ -197,6 +197,20 @@ Use the GitHub CLI (`gh`) for all GitHub-related operations.
 
 **IMPORTANT**: When using the `--json` flag with any GitHub CLI command, ALWAYS pipe the output to `cat` (e.g., `gh issue list --json number,title | cat`) to prevent the output from going to a pager which agents cannot interact with.
 
+**IMPORTANT**: When passing multi-line or markdown content to any `gh` command, ALWAYS write the content to a temp file first and use `--body-file` instead of `--body`. Markdown content with quotes, backticks, brackets, and other special characters will break shell escaping with `--body`.
+
+```bash
+# CORRECT — write to temp file, use --body-file
+cat > /tmp/gh-body.md << 'GHEOF'
+## My Comment
+
+Content with `backticks`, "quotes", and [links](url) works fine.
+GHEOF
+
+gh issue comment 123 --body-file /tmp/gh-body.md
+gh pr create --title "My PR" --body-file /tmp/gh-body.md --draft
+```
+
 ### Issue Management
 ```bash
 # Create new issues
@@ -332,6 +346,11 @@ This repo includes automated workflows in `.claude/skills/` to help with common 
 Helps designers efficiently process documentation and guidance issues from quarterly epics. Finds the current quarterly documentation epic, presents oldest unassigned issues, assigns the issue, guides through making documentation changes, creates a PR, and updates the project board.
 
 See `.claude/skills/doc-queue/SKILL.md` for full details.
+
+### Guidance Issue Grooming
+Analyzes a documentation issue, identifies missing context, prompts the designer for decisions, and posts a structured `## Grooming Summary` comment. Bridges issue selection (doc-queue) and documentation writing (writing-vads-guidance). Prepares issues for both human writers and the Copilot coding agent.
+
+See `.claude/skills/guidance-grooming/SKILL.md` for full details.
 
 ### Documentation Writing Standards
 Ensures documentation follows VADS templates and style standards when writing component, pattern, or template guidance. Loads the appropriate template, ensures documentation structure matches, handles deviations when justified, enforces YAML front matter protection, and provides required Jekyll include syntax.
