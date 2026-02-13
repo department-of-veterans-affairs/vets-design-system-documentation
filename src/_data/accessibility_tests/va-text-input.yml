@@ -1,0 +1,25 @@
+component: va-text-input
+component_url: /components/text-input/
+storybook_url: /storybook/?path=/docs/components-va-text-input--docs
+
+# Tests applied to this component
+tests:
+  - id: WEB-131-006
+  - id: WEB-143
+  - id: WEB-144
+  - id: WEB-1410
+  - id: DST-1411-002
+  - id: DST-211-002
+  - id: WEB-212
+  - id: WEB-246-002
+  - id: WEB-247
+  - id: WEB-253
+  - id: DST-321-001
+  - id: DST-331-003
+  - id: WEB-322
+  - id: WEB-332
+  - id: WEB-332-002
+  - id: WEB-332-003
+  - id: DST-331-002
+  - id: DST-331-004
+  - id: DST-331-005

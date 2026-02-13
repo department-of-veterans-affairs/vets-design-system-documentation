@@ -1,0 +1,69 @@
+# VA.gov Accessibility Test Library Configuration
+# Shared configuration for all test files
+# Version: 1.0
+# Last updated: 2026-02-10
+
+# Supported test environments
+environments:
+  general:
+    - MacOS/Chrome
+    - Windows/Chrome
+  keyboard:
+    - MacOS/Chrome
+    - Windows/Chrome
+  mobile:
+    - Android Chrome
+    - iOS Safari
+  screen_reader:
+    - name: MacOS Safari/VoiceOver
+      required: true
+    - name: Windows Chrome/JAWS
+      required: true
+    - name: Windows Edge/NVDA
+      required: true
+    - name: MacOS Chrome/VoiceOver
+      required: false
+    - name: Android Chrome/Talkback
+      required: false
+    - name: iOS Safari/VoiceOver
+      required: false
+  structural:
+    - MacOS/Chrome
+    - Windows/Chrome
+  visual:
+    - MacOS/Chrome
+    - Windows/Chrome
+  voice_control:
+    - MacOS/Voice Control
+    - Windows/Voice Recognition
+  zoom:
+    - MacOS/Chrome
+    - Windows/Chrome
+
+# Test categories
+categories:
+  - general
+  - keyboard
+  - mobile
+  - screen_reader
+  - structural
+  - visual
+  - voice_control
+  - zoom
+
+# Metadata
+metadata:
+  version: "1.0"
+  created: "2024-02-05"
+  last_updated: "2026-02-10"
+  total_tests: 55
+  total_subtests: 30
+  test_breakdown:
+    general: 36
+    keyboard: 9
+    screen_reader: 8
+    structural: 2
+    mobile: 2
+    visual: 0
+    voice_control: 0
+    zoom: 0
