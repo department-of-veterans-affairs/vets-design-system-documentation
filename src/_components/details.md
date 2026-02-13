@@ -79,7 +79,7 @@ The following are places where Details can be used:
 ## Accessibility considerations
 
 * **Wrap content in HTML elements.** All text content inside `va-details` must be wrapped in an appropriate HTML element such as `<p>`, `<span>`, or `<div>`. Some screen readers, particularly NVDA, may ignore unwrapped plain text. For example, use `<p>This is the content.</p>` instead of placing text directly inside the component without a wrapper element.
-* **Do not add ARIA roles or state attributes.** The details component uses the `<details>` HTML elemnt that exposes expanded/collapsed state and interactive behavior natively. Adding any `role="button"` or `aria-expanded` is redundant and can create conflicting announcements in assistive technology.
+* **Do not add ARIA roles or state attributes.** The details component uses the `<details>` HTML element that exposes expanded/collapsed state and interactive behavior natively. Adding any `role="button"` or `aria-expanded` is redundant and can create conflicting announcements in assistive technology.
 * **Keyboard interaction is provided natively.** Users must be able to tab to the component, toggle it using Enter or Space, and if there are interactive elements in the component, the next tab takes them to those interactive elements.
 
 ## Related
