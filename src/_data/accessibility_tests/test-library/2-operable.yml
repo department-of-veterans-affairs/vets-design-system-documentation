@@ -36,7 +36,7 @@ tests:
     508_severity: Critical
     wcag_url: https://www.w3.org/TR/WCAG21/#no-keyboard-trap
     description_short: |
-      Keyboard focus does not get trapped on interactive elements.
+      Keyboard focus does not get trapped.
     description_full: |
       When you move focus to any interactive element with a keyboard,
       you can move focus away from that element using only standard keyboard keys (Tab, Shift+Tab, arrow keys, or Escape).
@@ -176,10 +176,10 @@ tests:
           you find the heading text accurately describes the topic or purpose of the content that follows.
       - id: WEB-246-002
         description_short: |
-          Labels are descriptive.
+          Input labels are descriptive.
         description_full: |
           When you view or interact with a form input,
-          its label clearly describes the expected input.
+          you find that its label clearly describes the expected input.
   - id: WEB-247
     category: keyboard
     wcag_criterion: 2.4.7
@@ -249,10 +249,17 @@ tests:
     508_severity: N/A
     wcag_url: https://www.w3.org/TR/WCAG21/#label-in-name
     description_short: |
-      Screen reader announcements match visible text.
+      Accessible name matches visible text.
     description_full: |
-      When you focus on an interactive element with a screen reader,
-      you hear an announcement that matches the visible text for that element.
+      When you inspect an interactive element that has visible text,
+      you find that the accessible name matches the visible text for that element.
+    subtests:
+      - id: DST-253-001
+        description_short: |
+          Screen reader announcements match visible text.
+        description_full: |
+          When you focus on a link with a screen reader,
+          you hear an announcement that matches the visible text of the link.
   - id: WEB-254
     category: mobile
     wcag_criterion: 2.5.4

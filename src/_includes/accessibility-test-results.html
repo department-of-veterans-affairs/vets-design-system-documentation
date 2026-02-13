@@ -90,6 +90,7 @@
 {% assign structural_tests = "" | split: "" %}
 {% assign mobile_tests = "" | split: "" %}
 {% assign zoom_tests = "" | split: "" %}
+{% assign visual_tests = "" | split: "" %}
 
 {% for test in component_tests.tests %}
   {% assign test_def = nil %}
@@ -124,20 +125,22 @@
       {% assign test_category = test_def.category %}
     {% endif %}
 
-    {% if test_category == "keyboard" %}
-      {% assign keyboard_tests = keyboard_tests | push: test %}
-    {% elsif test_category == "screen_reader" %}
-      {% assign screen_reader_tests = screen_reader_tests | push: test %}
-    {% elsif test_category == "general" %}
+    {% if test_category == "general" %}
       {% assign general_tests = general_tests | push: test %}
-    {% elsif test_category == "voice_control" %}
-      {% assign voice_control_tests = voice_control_tests | push: test %}
+    {% elsif test_category == "keyboard" %}
+      {% assign keyboard_tests = keyboard_tests | push: test %}
     {% elsif test_category == "mobile" %}
       {% assign mobile_tests = mobile_tests | push: test %}
-    {% elsif test_category == "zoom" %}
-      {% assign zoom_tests = zoom_tests | push: test %}
+    {% elsif test_category == "screen_reader" %}
+      {% assign screen_reader_tests = screen_reader_tests | push: test %}
     {% elsif test_category == "structural" %}
       {% assign structural_tests = structural_tests | push: test %}
+    {% elsif test_category == "visual" %}
+      {% assign visual_tests = visual_tests | push: test %}
+    {% elsif test_category == "voice_control" %}
+      {% assign voice_control_tests = voice_control_tests | push: test %}
+    {% elsif test_category == "zoom" %}
+      {% assign zoom_tests = zoom_tests | push: test %}
     {% endif %}
   {% endif %}
 {% endfor %}
@@ -278,7 +281,7 @@ va-table va-table-row span:first-child {
         {% if test_runs and test_runs.size > 0 %}
           {% for run in test_runs %}
           <va-table-row>
-            <span>{{ run.version }}</span>
+            <span>v{{ run.version }}</span>
             {% for env_name in all_environments %}
             <span>
               {% assign env_result = nil %}

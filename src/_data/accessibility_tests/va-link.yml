@@ -5,6 +5,12 @@ storybook_url: /storybook/?path=/docs/components-va-link--docs
 # Tests applied to this component
 tests:
   - id: WEB-1410
+    test_results:
+      - version: 54.6.1
+        tester: John Doe
+        environments:
+          - name: MacOS/Chrome
+            result: pass
   - id: DST-141-001
     test_results:
       - version: 54.6.1
@@ -18,9 +24,14 @@ tests:
       - version: 54.6.0
         tester: Jane Smith
         environments:
-          - name: Windows Edge/NVDA
+          - name: MacOS/Chrome
             result: pass
-          - name: Android Chrome/Talkback
+  - id: DST-1411-001
+    test_results:
+      - version: 54.6.1
+        tester: John Doe
+        environments:
+          - name: MacOS/Chrome
             result: pass
   - id: DST-211-001
     test_results:
@@ -29,8 +40,13 @@ tests:
         environments:
           - name: MacOS/Chrome
             result: pass
-        notes: All links keyboard accessible via Tab and activated with Enter key.
   - id: WEB-212
+    test_results:
+      - version: 54.6.0
+        tester: Jane Smith
+        environments:
+          - name: MacOS/Chrome
+            result: pass
   - id: WEB-244
     test_results:
       - version: 54.6.1
@@ -38,8 +54,7 @@ tests:
         date: 2026-02-03
         environments:
           - name: MacOS/Chrome
-            result: pass
-        notes: Screen readers announce link purpose correctly. External links announce "opens in new tab".
+            result: conditional
   - id: WEB-247
     test_results:
       - version: 54.6.0
@@ -47,25 +62,29 @@ tests:
         environments:
           - name: MacOS/Chrome
             result: pass
-        notes: Focus indicator clearly visible on all variants.
+        notes: Focus outline is visible but does not meet 3:1 contrast ratio. This is a known issue that will be addressed in a future release.
   - id: WEB-253
     test_results:
       - version: 54.6.0
         tester: Jane Smith
         environments:
-          - name: Windows Edge/NVDA
-            result: pass
-          - name: Android Chrome/Talkback
+          - name: MacOS/Chrome
             result: pass
   - id: DST-258-001
-  - id: DST-412-001
     test_results:
       - version: 54.6.1
         tester: John Doe
         environments:
           - name: MacOS/Chrome
             result: pass
-  - id: DST-1411-001
+  - id: DST-412-001
+    test_results:
+      - version: 54.6.1
+        tester: John Doe
+        environments:
+          - name: MacOS/Chrome
+            result: conditional
+        notes: This is dependent on the implementation of the link component. If the link is implemented with an anchor element and has a valid href, it should pass.
 
 # Summary statistics (auto-generated from tests)
 summary:

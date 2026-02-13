@@ -123,8 +123,8 @@ tests:
         description_short: |
           Invalid inputs have visible error styles.
         description_full: |
-          When receiving an error message for an invalid input,
-          you see a distinct visual style indicating which input has the error.
+          When you trigger an error state on a form input,
+          you see a distinct visual style indicating that the input is in error.
       - id: DST-331-004
         category: screen_reader
         description_short: |
@@ -139,7 +139,7 @@ tests:
         description_full: |
           When you receive an error message,
           you find it appears in a location that associates it with the relevant input,
-          or the message clearly indicates which input has the error.
+          or the message clearly indicates which input is in error.
   - id: WEB-332
     category: general
     wcag_criterion: 3.3.2
@@ -168,10 +168,10 @@ tests:
           you find they provide instructions or examples.
       - id: WEB-332-003
         description_short: |
-          Form inputs clearly mark required or optional fields.
+          Form inputs clearly mark required fields.
         description_full: |
-          When you view form inputs,
-          you find visible labels or instructions identify which fields are required or optional.
+          When you interact with a form input,
+          you find labels or instructions that identify which fields are required.
   - id: WEB-333
     category: general
     wcag_criterion: 3.3.3

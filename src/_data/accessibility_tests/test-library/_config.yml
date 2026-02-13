@@ -19,10 +19,10 @@ environments:
       required: true
     - name: Windows Chrome/JAWS
       required: true
-    - name: MacOS Chrome/VoiceOver
-      required: false
     - name: Windows Edge/NVDA
       required: true
+    - name: MacOS Chrome/VoiceOver
+      required: false
     - name: Android Chrome/Talkback
       required: false
     - name: iOS Safari/VoiceOver
