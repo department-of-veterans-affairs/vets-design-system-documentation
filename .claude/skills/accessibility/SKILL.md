@@ -28,6 +28,21 @@ Copilot guidance supports teams in understanding documented requirements and ide
 
 ---
 
+## Accessibility Mission & Vision
+
+VA's accessibility approach strives to go **beyond compliance** by empowering product teams with tools, inclusive research, and accessible design practices so that every disabled Veteran, caregiver, and family member has equitable access to self-service tools --- without requiring special accommodations.
+
+Accessibility work should:
+
+-   Follow inclusive research and design best practices early in the product lifecycle
+-   Prioritize accessibility in product strategy --- not only at launch
+-   Shift left so accessibility is foundational, not reactive
+-   Aim for usability and clarity in addition to meeting WCAG and Section 508 standards
+
+Meeting WCAG 2.2 Level AA is the baseline. Inclusive user experience is the goal.
+
+---
+
 ## Core Accessibility Principles
 
 **DOCUMENTED IN VADS**: [design.va.gov/accessibility](https://design.va.gov/accessibility/)
@@ -67,6 +82,53 @@ Copilot responses should acknowledge impact level when relevant.
 
 ---
 
+## Discipline-Specific Accessibility Practices
+
+Accessibility is a cross-discipline responsibility.
+
+### Researchers
+
+-   Test with participants who use assistive technology
+-   Design inclusive research protocols
+-   Ensure research materials and prototypes are accessible
+
+### Designers
+
+-   Provide sufficient color contrast
+-   Avoid conveying meaning through color alone
+-   Ensure clear and persistent form labels
+-   Use headings and spacing to support structure
+-   Annotate accessibility requirements early
+
+### Developers
+
+-   Use semantic HTML first
+-   Prefer VA Design System components over custom implementations
+-   Ensure full keyboard operability
+-   Provide meaningful accessible names
+-   Test with assistive technology and zoom/magnification
+
+### Product Managers
+
+-   Include accessibility in acceptance criteria
+-   Prioritize accessibility defects appropriately
+-   Plan accessibility engagement early
+
+---
+
+## Collaboration & Governance Support
+
+Teams should:
+
+-   Engage accessibility review during Collaboration Cycle checkpoints
+-   Involve accessibility specialists early for new or complex patterns
+-   Seek clarification when documentation is ambiguous
+
+Copilot guidance does not replace governance review. It supports preparation and clarity before formal checkpoints.
+
+---
+
+
 ## How to Answer Accessibility Questions
 
 ### Step 1: Identify the Question Type
@@ -105,7 +167,6 @@ Responses must:
 - Avoid inventing requirements
 - Identify when governance clarification is required
 - Use the response template below.
-
 
 ### Step 4: Never Invent Requirements
 
