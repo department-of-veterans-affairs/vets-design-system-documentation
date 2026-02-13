@@ -2,11 +2,29 @@
 title: "feat: My VA Interactive Prototyping Workflow"
 type: feat
 date: 2026-02-03
-updated: 2026-02-11
+updated: 2026-02-13
+implementation_started: 2026-02-13
 github_issue: https://github.com/department-of-veterans-affairs/digital-experience-products/issues/1385
 ---
 
 # My VA Interactive Prototyping Workflow
+
+## Current Status (2026-02-13)
+
+| Phase | Status | Notes |
+|-------|--------|-------|
+| **M0: Foundation** | ✅ Complete | MCP server with 3 tools, resources, prompt. 27 tests. Local at `~/repos/vads-mcp-server`. |
+| **M1: Tokens & Validation** | ⬜ Next | `validate_component_api` done early (in M0). Remaining: token parser, token tools, token resources. |
+| **M2: Guides & Utilities** | ⬜ Not started | Static guides, utility classes tool, packaging for distribution. |
+| **M3: Figma Mapping** | ⬜ Not started | Figma component mapping, `map_figma_component` tool. Uses southleft/figma-console-mcp. |
+| **P0: Prototype Kit Setup** | ⬜ Not started | Can run in parallel with M1. Vite + vanilla-ts repo at `~/repos/va-prototype-kit`. |
+| **P1: Reference Prototype** | ⬜ Not started | Requires M0 complete (✅). My VA Dashboard PRD-driven generation. |
+| **P2: Workflow Docs** | ⬜ Not started | Skills/guides for prototype workflow, Figma-to-prototype, setup. |
+| **P3: Polish** | ⬜ Not started | README, designer testing, iteration. |
+
+**To resume:** Start with M1 (token parser) or P0 (prototype kit scaffolding) — these can run in parallel. The MCP server repo is ready to build on.
+
+---
 
 ## Overview
 
@@ -88,7 +106,7 @@ The prototype kit must work with **any AI coding agent**, not just Claude Code. 
 - Without accurate component knowledge, AI generates incorrect HTML attributes, uses wrong event names, and invents non-existent components
 - The NYSDS demo succeeded because their MCP server made Claude Code's output correct on the first try
 - The MCP server benefits ALL AI-assisted VA development, not just prototyping — it's infrastructure with broad value
-- Stencil's `component-docs.json` (67 components, full prop/event/slot/parts data) is directly analogous to NYSDS's Custom Elements Manifest
+- Stencil's `component-docs.json` (77+ components, full prop/event/slot/parts data) is directly analogous to NYSDS's Custom Elements Manifest
 
 ### Architecture Decision: PRD-Driven Generation (replaces custom framework)
 
@@ -124,22 +142,23 @@ State management (sessionStorage, scenario switching, form persistence) becomes 
 
 ### Architecture Decision: Figma-to-Code via Dual MCP Servers
 
-Designers will often start from a Figma design rather than a blank PRD. The workflow uses **two MCP servers together** — the Figma MCP server to read the design, and the VADS MCP server to map it to correct web components.
+Designers will often start from a Figma design rather than a blank PRD. The workflow uses **two MCP servers together** — the [southleft/figma-console-mcp](https://github.com/southleft/figma-console-mcp) server to read the design, and the VADS MCP server to map it to correct web components.
 
-**The problem:** VA Design System Figma components and web components are not yet connected via [Figma Code Connect](https://www.figma.com/developers/code-connect). This means the Figma MCP server's `get_code_connect_map` tool returns nothing useful — the AI agent has no automatic mapping from Figma component instances to `<va-*>` web component tags.
+**The problem:** VA Design System Figma components and web components are not yet connected via [Figma Code Connect](https://www.figma.com/developers/code-connect). This means there's no automatic mapping from Figma component instances to `<va-*>` web component tags.
 
 **The solution: A Figma-to-VADS component mapping maintained in the VADS MCP server.** The mapping bridges the gap between Figma component names (e.g., "Alert - Warning") and web component tags (e.g., `<va-alert status="warning">`). This is a manual mapping table that we maintain until CodeConnect is established.
 
 #### How the Figma-to-Code Workflow Works
 
-**Step 1: Read the Figma design** (Figma MCP server)
+**Step 1: Read the Figma design** (southleft/figma-console-mcp)
 
-The AI agent calls Figma MCP tools in sequence:
+The AI agent calls Figma Console MCP tools to extract design information:
 
-1. **`get_metadata`** — Gets the sparse node tree: layer IDs, names, types, positions, sizes, and screenshots. This reveals the page structure (what sections exist, nesting, ordering) and identifies component instances by their Figma component names.
-2. **`get_design_context`** — Gets the full structured representation for specific nodes. Returns layout properties (auto layout direction, gap, padding → translates to flex/grid), component properties (variants, states, overrides), and text content.
-3. **`get_variable_defs`** — Gets Figma variables used in the design (colors, spacing, typography). These map to VADS design tokens.
-4. **`get_screenshot`** — Gets visual screenshots for reference, ensuring the AI can see what the final result should look like.
+1. **`figma_get_file_data`** — Gets the full file structure: layer hierarchy, names, types, positions, sizes. This reveals the page structure (what sections exist, nesting, ordering) and identifies component instances by their Figma component names.
+2. **`figma_get_component`** — Gets detailed component metadata for specific component instances. Returns component properties, variants, and configuration.
+3. **`figma_get_variables`** — Extracts design tokens (colors, spacing, typography variables) used in the design. These map to VADS design tokens.
+4. **`figma_get_styles`** — Gets color, text, and effect styles applied to elements.
+5. **`figma_take_screenshot`** — Captures visual screenshots for reference, ensuring the AI can see what the final result should look like.
 
 **Step 2: Identify the page layout** (AI reasoning + local templates)
 
@@ -170,7 +189,7 @@ For each Figma component instance found in step 1, the AI:
 **Step 4: Map Figma variables to VADS tokens** (VADS MCP server)
 
 Figma variables (colors, spacing, typography) need to map to VADS CSS custom properties:
-1. AI calls `get_variable_defs` from Figma MCP to get the variable names and values
+1. AI calls `figma_get_variables` from Figma Console MCP to get the variable names and values
 2. AI calls VADS MCP `find_tokens` to find the matching VADS token by value or name pattern
 3. Uses the VADS CSS custom property name (e.g., `--vads-color-base`) instead of raw hex values
 
@@ -215,7 +234,7 @@ Example mapping entries:
 
 This mapping table is maintained as a JSON file shipped with the MCP server (`data/figma-component-map.json`). It should be updated whenever new components are added to the Figma library or web component library.
 
-**Future: CodeConnect replaces this mapping.** Once Figma CodeConnect is configured for the VADS Figma library, the Figma MCP server's `get_code_connect_map` will return the correct web component for each Figma instance automatically. At that point, the `map_figma_component` tool becomes a fallback for unmapped components.
+**Future: CodeConnect replaces this mapping.** Once Figma CodeConnect is configured for the VADS Figma library, Figma-aware tools will return the correct web component for each Figma instance automatically. At that point, the `map_figma_component` tool becomes a fallback for unmapped components.
 
 ---
 
@@ -229,9 +248,9 @@ The MCP server exposes VA Design System knowledge through the [Model Context Pro
 
 | Data Source | Package | What It Provides |
 |-------------|---------|------------------|
-| Stencil `component-docs.json` | `@department-of-veterans-affairs/component-library` | 67 components with props, events, slots, parts, dependency graphs |
-| CSS Library | `@department-of-veterans-affairs/css-library` | VADS utility classes, grid system, spacing, typography |
-| Design Tokens | `@department-of-veterans-affairs/va-design-system-tokens` | Color, spacing, font, elevation tokens in JSON + CSS |
+| Stencil `component-docs.json` | `@department-of-veterans-affairs/web-components` | 77+ components with props, events, slots, parts, dependency graphs |
+| CSS Library | `@department-of-veterans-affairs/css-library` | VADS utility classes, grid system, spacing, typography, **and design tokens as CSS custom properties** (canonical token source for now) |
+| Design Tokens (future) | `@department-of-veterans-affairs/va-design-system-resources` | Color, spacing, font, elevation tokens in JSON + CSS. Will become the canonical token source later this quarter when published as a distinct npm package. |
 | Documentation site | `design.va.gov` | Component guidance, patterns, accessibility notes, usage examples |
 
 #### Component Data Schema (from Stencil)
@@ -274,21 +293,23 @@ Each component in `component-docs.json` includes:
 }
 ```
 
-#### Token Data Schema (from va-design-system-resources)
+#### Token Data (from CSS Library)
 
-Tokens are available in JSON source format with alias references:
+Tokens are currently sourced as CSS custom properties from `@department-of-veterans-affairs/css-library`:
 
-```json
-{
-  "vads-color-background-default-on-light": {
-    "name": "vads-color-background-default-on-light",
-    "value": "{vads-color-base-lightest.*}",
-    "attributes": { "category": "color" }
-  }
+```css
+:root {
+  --vads-color-base: #1b1b1b;
+  --vads-color-base-lightest: #f0f0f0;
+  --vads-color-background-default-on-light: var(--vads-color-base-lightest);
+  --vads-spacing-unit-1: 0.5rem;
+  /* ... 200+ tokens */
 }
 ```
 
-Categories: `color` (semantic, component, primitive), `font` (family, size, lineHeight, letterSpacing, typography), `spacing`, `elevation`, `shape`, `size`.
+Token categories (inferred from naming convention): `color` (semantic, component, primitive), `font` (family, size, lineHeight, letterSpacing, typography), `spacing`, `elevation`, `shape`, `size`.
+
+**Future:** When `@department-of-veterans-affairs/va-design-system-resources` publishes tokens as structured JSON (later this quarter), the parser will switch to the richer JSON format with alias references and metadata.
 
 ### MCP Server Architecture
 
@@ -348,7 +369,7 @@ vads-mcp-server/
 
 | URI | Content |
 |-----|---------|
-| `vads://components` | JSON list of all 67 components with tag names and summaries |
+| `vads://components` | JSON list of all 77+ components with tag names and summaries |
 | `vads://component/{tag}` | Full component documentation as JSON |
 | `vads://tokens` | All tokens with CSS variable names |
 | `vads://tokens/{category}` | Tokens filtered by category (color, font, spacing, etc.) |
@@ -363,18 +384,17 @@ vads-mcp-server/
 - Instructs: "Use VADS design tokens via CSS custom properties for consistent styling"
 - Instructs: "Follow accessibility guidelines built into VADS components"
 - References design.va.gov for component documentation
-- Lists the 67 available components by category
+- Lists the 77+ available components by category
 
 ### Key Implementation Details
 
 #### Component Parser (`component-parser.ts`)
 
-Reads `component-docs.json` from the installed `@department-of-veterans-affairs/component-library` package (or `web-components` sub-package). The file is auto-generated by Stencil and includes the full API surface.
+Reads `component-docs.json` from the installed `@department-of-veterans-affairs/web-components` package. The file is auto-generated by Stencil and includes the full API surface.
 
 File resolution order (to support dev and installed contexts):
 1. `node_modules/@department-of-veterans-affairs/web-components/component-docs.json`
-2. `node_modules/@department-of-veterans-affairs/component-library/component-docs.json`
-3. `{cwd}/component-docs.json` (for local development)
+2. `{cwd}/component-docs.json` (for local development)
 
 Key transformations:
 - Extract `props` into a clean attributes list with `attr` (HTML attribute name), `type`, `default`, `required`, `docs`
@@ -385,11 +405,14 @@ Key transformations:
 
 #### Token Parser (`token-parser.ts`)
 
-Reads token JSON from `@department-of-veterans-affairs/va-design-system-tokens`. Transforms source format into CSS-centric representation:
-- Convert token names to CSS custom properties (e.g., `vads-color-base` → `--vads-color-base`)
-- Resolve alias references (e.g., `{vads-color-base-lightest.*}` → resolved hex value)
-- Classify tokens by category and layer (primitive, semantic, component)
+Reads design tokens from `@department-of-veterans-affairs/css-library` CSS custom properties (the current canonical source). Later this quarter, the canonical source will migrate to `@department-of-veterans-affairs/va-design-system-resources` as a distinct npm package with JSON + CSS formats.
+
+Parsing approach:
+- Extract CSS custom properties matching `--vads-*` from the CSS library stylesheet
+- Classify tokens by category based on naming convention (e.g., `--vads-color-*` → color, `--vads-font-*` → font, `--vads-spacing-*` → spacing)
+- Resolve alias references where possible from CSS `var()` declarations
 - Support token search by name, value, or description
+- **Future migration path:** When `va-design-system-resources` publishes tokens as JSON, switch to parsing structured JSON (with alias references) and fall back to CSS parsing
 
 #### Validation Tool (`validation-tools.ts`)
 
@@ -410,61 +433,70 @@ Hand-authored markdown for procedural knowledge that can't be derived from compo
 
 ### MCP Server Implementation Phases
 
-#### Phase M0: Foundation
+> **Phase parallelism:** Prototype Kit Phase P0 (repo setup, scaffolding) can run in parallel with MCP Server Phases M0-M1. Phase P1 (reference prototype) requires M0 to be complete.
 
-- [ ] **Create `vads-mcp-server` repository (or package directory)**
-  - Initialize with TypeScript, `@modelcontextprotocol/sdk` dependency
-  - Configure as CLI binary (`vads-mcp` entry point)
-  - Add `@department-of-veterans-affairs/component-library` as a dependency (for `component-docs.json`)
-  - Set up build script (`tsc` — no bundler needed)
+#### Phase M0: Foundation ✅ COMPLETE
 
-- [ ] **Implement component parser**
+> **Local repo:** `~/repos/vads-mcp-server` (4 commits on `main`)
+>
+> **GFE note:** Government-furnished equipment blocks execution of files in dot-directories (e.g., `node_modules/.bin/`). Workarounds applied: npm scripts use `node node_modules/...` paths directly; `esbuild-wasm` override replaces native esbuild binary. See `~/.claude/CLAUDE.md` for details.
+
+- [x] **Create `vads-mcp-server` repository** (`3b9ba03`)
+  - Created at `~/repos/vads-mcp-server` (not yet pushed to GitHub org)
+  - TypeScript, `@modelcontextprotocol/sdk` (^1.26.0), Vitest, Zod
+  - CLI binary entry point: `dist/index.js`
+  - Dependencies: `@department-of-veterans-affairs/web-components` (^22.6.2), `@department-of-veterans-affairs/css-library` (^0.30.0-rc2)
+  - `esbuild-wasm` npm override for GFE compatibility
+  - npm scripts use `node node_modules/...` paths to bypass `.bin` restriction
+
+- [x] **Implement component parser** (`5bcab18`)
   - File: `src/lib/component-parser.ts`
-  - Read and cache `component-docs.json` from installed package
-  - Parse 67 components into structured format
-  - Build name → tag lookup, fuzzy search index
+  - Reads and caches `component-docs.json` from installed `web-components` package
+  - Parses 67 components (count from installed v22.6.2) into structured format
+  - Extracts props (with `attr` names), events, slots, CSS parts, maturity info, dependency graphs
+  - Search by tag name, component name, or description (case-insensitive)
+  - 16 unit tests in `test/lib/component-parser.test.ts`
 
-- [ ] **Implement `find_components` and `get_component` tools**
-  - File: `src/tools/component-tools.ts`
-  - `find_components`: list all or search by name/description
-  - `get_component`: full component docs with props, events, slots, parts
-  - Register tools with `server.tool()` using Zod schemas for parameters
+- [x] **Implement `find_components`, `get_component`, and `validate_component_api` tools** (`9bfbd77`)
+  - File: `src/tools/component-tools.ts` — pure handler functions (testable without MCP)
+  - File: `src/server.ts` — McpServer with `server.tool()` registration using Zod schemas
+  - File: `src/index.ts` — CLI entry point with stdio transport
+  - `validate_component_api` catches prop-name vs attr-name mistakes (e.g., `openSingle` → `open-single`)
+  - 11 unit tests in `test/tools/component-tools.test.ts`
 
-- [ ] **Implement component resources**
+- [x] **Implement component resources** (`d647eee`)
   - File: `src/resources/components.ts`
-  - `vads://components`: JSON list of all components
-  - `vads://component/{tag}`: full docs for a specific component
+  - `vads://components`: JSON list of all 67 components
+  - `vads://component/{tag}`: full docs for a specific component (ResourceTemplate)
 
-- [ ] **Implement `vads_mode` prompt**
+- [x] **Implement `vads_mode` prompt** (`d647eee`)
   - File: `src/prompts/vads-mode.ts`
-  - System prompt listing capabilities, best practices, available tools
-  - Component categories and available tag names
+  - 3,774-char system prompt with coding rules, all component tags, VA.gov page structure, a11y guidance
 
-- [ ] **Test with Claude Code**
-  - Configure MCP server in Claude Code settings
-  - Verify `find_components` returns correct results
-  - Verify `get_component` returns full API for `va-text-input`, `va-alert`, etc.
-  - Generate a simple page using VADS components — confirm correct attribute names
+- [x] **Integration test** (manual, not yet configured in Claude Code)
+  - All 3 tools verified via JSON-RPC over stdio
+  - Resources and prompt verified via JSON-RPC
+  - 27 unit tests passing (262ms)
+  - **Remaining:** Configure MCP server in Claude Code settings and test live generation
 
 #### Phase M1: Tokens & Validation
 
 - [ ] **Implement token parser**
   - File: `src/lib/token-parser.ts`
-  - Read tokens from `@department-of-veterans-affairs/va-design-system-tokens` or fallback to local CSV/JSON
-  - Parse into CSS variable names with resolved values
-  - Classify by category (color, font, spacing, elevation, shape, size)
-  - Build search index
+  - Parse CSS custom properties (`--vads-*`) from `@department-of-veterans-affairs/css-library` stylesheet
+  - Extract variable names, values, and classify by naming convention (color, font, spacing, elevation, shape, size)
+  - Build search index by name and value
 
 - [ ] **Implement token tools**
   - File: `src/tools/token-tools.ts`
   - `get_tokens`: filter by category
   - `find_tokens`: search by name/value/description
 
-- [ ] **Implement `validate_component_api` tool**
-  - File: `src/tools/validation-tools.ts`
-  - Accept tag name + list of attributes
-  - Cross-reference against `props` array (using `attr` field for HTML attribute names)
-  - Return valid/invalid with suggestions for corrections
+- [x] **Implement `validate_component_api` tool** (completed in M0, `9bfbd77`)
+  - Implemented in `src/tools/component-tools.ts` (co-located with other component tools)
+  - Accepts tag name + list of attributes
+  - Cross-references against `props` array (using `attr` field for HTML attribute names)
+  - Returns valid/invalid with suggestions for corrections (e.g., prop name → attr name)
 
 - [ ] **Implement token resources**
   - File: `src/resources/tokens.ts`
@@ -482,7 +514,8 @@ Hand-authored markdown for procedural knowledge that can't be derived from compo
 
 - [ ] **Implement guide and utility tools**
   - File: `src/tools/guide-tools.ts` — `get_guide` tool
-  - File: `src/tools/utility-tools.ts` — `get_utility_classes` tool with VADS CSS class reference
+  - File: `src/tools/utility-tools.ts` — `get_utility_classes` tool
+  - Data source: Parse utility class names from `@department-of-veterans-affairs/css-library` CSS, supplemented by a static reference in `data/guides/utility-classes.md` for categorized documentation (grid, spacing, display, typography, visibility)
 
 - [ ] **Implement guide resources**
   - File: `src/resources/guides.ts`
@@ -494,8 +527,9 @@ Hand-authored markdown for procedural knowledge that can't be derived from compo
     - Claude Code: `.claude/settings.json`
     - GitHub Copilot: `.vscode/mcp.json`
     - Cursor: `.cursor/mcp.json`
-  - All use the same command: `npx @department-of-veterans-affairs/vads-mcp-server`
-  - Publish to npm (or internal registry)
+  - **Initial distribution:** Publish to GitHub Packages (`@department-of-veterans-affairs` scope on GitHub npm registry)
+  - **Future:** Publish to public npm registry once per-package approval is obtained
+  - Install command (GitHub Packages): `npx @department-of-veterans-affairs/vads-mcp-server` (requires `.npmrc` with GitHub Packages registry config)
 
 #### Phase M3: Figma Component Mapping
 
@@ -520,13 +554,13 @@ Hand-authored markdown for procedural knowledge that can't be derived from compo
   - Step-by-step workflow for the dual MCP server approach
   - How to set up the Figma MCP server (desktop and remote options)
   - How to select frames in Figma and pass links to the AI agent
-  - How the AI uses `get_metadata` → `get_design_context` → `map_figma_component` → `get_component`
+  - How the AI uses `figma_get_file_data` → `figma_get_component` → VADS `map_figma_component` → VADS `get_component`
   - Troubleshooting unmapped components
   - Tips for Figma file structure that produces better results (named layers, auto layout, variables)
 
 - [ ] **Test the Figma-to-code workflow end-to-end**
   - Select a real VADS Figma design (e.g., My VA dashboard mockup)
-  - Run the dual MCP workflow with an AI agent
+  - Run the dual MCP workflow (southleft/figma-console-mcp + VADS MCP) with an AI agent
   - Measure: how many components mapped correctly on first pass?
   - Identify gaps in the mapping table, iterate
 
@@ -608,7 +642,7 @@ va-prototype-kit/
 1. **Designer clones the repo** and runs `npm install`
 2. **Designer configures MCP servers** for their AI tool:
    - **VADS MCP server:** Pre-configured in `.claude/settings.json`, `.vscode/mcp.json`, `.cursor/mcp.json`
-   - **Figma MCP server (optional):** Designer follows `docs/skills/setup-figma-mcp.md` to connect their Figma account. Requires Figma Dev seat for full access.
+   - **Figma Console MCP server (optional):** Designer follows `docs/skills/setup-figma-mcp.md` to connect their Figma account via [southleft/figma-console-mcp](https://github.com/southleft/figma-console-mcp). Requires a Figma Personal Access Token.
 
 **Per-prototype workflow — two paths:**
 
@@ -626,11 +660,12 @@ va-prototype-kit/
 #### Path B: Starting from a Figma design
 
 3. **Designer shares a Figma link** with their AI agent (frame or page URL)
-4. **AI agent reads the Figma design** via the Figma MCP server:
-   - Calls `get_metadata` to understand the page structure and identify components
-   - Calls `get_design_context` for detailed layout and component properties
-   - Calls `get_variable_defs` for design tokens used
-   - Calls `get_screenshot` for visual reference
+4. **AI agent reads the Figma design** via the southleft/figma-console-mcp server:
+   - Calls `figma_get_file_data` to understand the page structure and identify components
+   - Calls `figma_get_component` for detailed component metadata and properties
+   - Calls `figma_get_variables` for design tokens used
+   - Calls `figma_get_styles` for color, text, and effect styles
+   - Calls `figma_take_screenshot` for visual reference
 5. **AI agent maps to VADS web components** via the VADS MCP server:
    - Calls `map_figma_component` for each Figma component instance found
    - Calls `get_component` to get the full API for matched web components
@@ -735,7 +770,7 @@ Claude Code users can also invoke these as `/skills` if we add symlinks or refer
 | **Core approach** | Custom framework (loader, binder, controls) | PRD-driven AI generation via MCP server |
 | **Scenario switching** | Client-side JS framework with JSON fetch | AI-generated state management (sessionStorage/URL params) |
 | **Data binding** | `data-bind="path.to.field"` attribute convention | Direct DOM manipulation in generated TypeScript |
-| **Page templates** | Pre-built HTML templates designers fill in | AI generates pages from PRD descriptions |
+| **Page templates** | Pre-built HTML templates designers fill in | Layout templates as AI starting points; AI selects appropriate template and populates with content |
 | **Designer edits** | JSON scenario files | Generated TypeScript/HTML code |
 | **State management** | Reusable prototype-state.js library | Per-prototype generated code |
 | **AI dependency** | Optional (Claude Code skills for onboarding) | Central (MCP server enables correct generation) |
@@ -749,11 +784,34 @@ Claude Code users can also invoke these as `/skills` if we add symlinks or refer
 - [ ] **Create `va-prototype-kit` repository**
   - Create repo in `department-of-veterans-affairs` org (or personal for initial development)
   - Initialize with README, .gitignore (Node), MIT license
-  - Enable GitHub Pages (deploy from `gh-pages` branch)
+  - Enable GitHub Pages (GitHub Actions deployment — see deploy workflow below)
 
 - [ ] **Initialize Vite project**
   - `npm create vite@latest . -- --template vanilla-ts`
-  - Configure `vite.config.ts` for multi-page app support (one entry per prototype)
+  - Configure `vite.config.ts` for multi-page app support using **auto-glob discovery**:
+    ```ts
+    // vite.config.ts — auto-discovers prototypes, no manual registration needed
+    import { resolve } from 'path';
+    import { globSync } from 'glob';
+
+    const prototypeEntries = Object.fromEntries(
+      globSync('src/prototypes/*/index.html').map(file => [
+        file.replace('src/prototypes/', '').replace('/index.html', ''),
+        resolve(__dirname, file),
+      ])
+    );
+
+    export default defineConfig({
+      build: {
+        rollupOptions: {
+          input: {
+            main: resolve(__dirname, 'index.html'),
+            ...prototypeEntries,
+          },
+        },
+      },
+    });
+    ```
   - Add dependencies:
     - `@department-of-veterans-affairs/component-library` (^54.6.0)
     - `@department-of-veterans-affairs/css-library` (^0.29.0)
@@ -761,7 +819,11 @@ Claude Code users can also invoke these as `/skills` if we add symlinks or refer
 
 - [ ] **Set up global imports**
   - File: `src/main.ts`
-  - Import component-library (registers all custom elements)
+  - Import and register all web components:
+    ```ts
+    import { defineCustomElements } from '@department-of-veterans-affairs/web-components/loader';
+    defineCustomElements();
+    ```
   - Import css-library for VADS utility classes
   - Import app-level styles
 
@@ -780,8 +842,8 @@ Claude Code users can also invoke these as `/skills` if we add symlinks or refer
     - `.claude/settings.json` (Claude Code)
     - `.vscode/mcp.json` (Copilot)
     - `.cursor/mcp.json` (Cursor)
-  - Include Figma MCP server config stubs (designer adds their own auth):
-    - Document both desktop (`http://127.0.0.1:3845/mcp`) and remote (`https://mcp.figma.com/mcp`) options
+  - Include southleft/figma-console-mcp config stubs (designer adds their own PAT):
+    - Document NPX setup (recommended, full capabilities) and remote SSE (`https://figma-console-mcp.southleft.com/sse`, read-only)
   - Write PRD template in `docs/prd-template.md`
   - Create Claude Code agent definitions in `.claude/agents/` (optional enhancement)
 
@@ -844,25 +906,27 @@ Build the first prototype using the PRD-driven workflow to validate the approach
 
 - [ ] **Create Figma MCP setup guide**
   - File: `docs/skills/setup-figma-mcp.md`
-  - How to configure the Figma MCP server for each AI tool
-  - Desktop server setup (requires Figma Desktop app, connects at `http://127.0.0.1:3845/mcp`)
-  - Remote server setup (connects to `https://mcp.figma.com/mcp`, requires OAuth)
-  - Figma seat requirements (Dev or Full seat on paid plans for reasonable rate limits; Starter/View/Collab limited to 6 tool calls/month)
-  - How to verify the connection works
+  - How to configure [southleft/figma-console-mcp](https://github.com/southleft/figma-console-mcp) for each AI tool
+  - **NPX setup (recommended):** ~10 min, 56+ tools including design creation. Requires Figma PAT (`FIGMA_ACCESS_TOKEN`) and Desktop Bridge plugin import.
+  - **Remote SSE setup:** ~2 min, 21 read-only tools. Connects to `https://figma-console-mcp.southleft.com/sse` with automatic OAuth.
+  - **Local Git setup:** Clone repo, build, configure with local dist path.
+  - Figma access requirements (PAT for NPX/local; OAuth for remote SSE)
+  - How to verify the connection works (call `figma_get_status`)
   - Troubleshooting common issues
 
 - [ ] **Create Figma-to-prototype guide (with MCP)**
   - File: `docs/skills/figma-to-prototype.md`
   - The full dual-MCP workflow: Figma link → design analysis → component mapping → code generation
   - Step-by-step instructions the AI agent follows:
-    1. Call Figma `get_metadata` to understand page structure
-    2. Call Figma `get_design_context` for each major section
-    3. Call Figma `get_variable_defs` for tokens
-    4. Call Figma `get_screenshot` for visual reference
-    5. Call VADS `map_figma_component` for each Figma component found
-    6. Call VADS `get_component` for full API of matched components
-    7. Select layout template from `src/templates/` based on identified page type
-    8. Generate code combining template + components + content
+    1. Call `figma_get_file_data` to understand page structure
+    2. Call `figma_get_component` for each major component instance
+    3. Call `figma_get_variables` for design tokens
+    4. Call `figma_get_styles` for color/text/effect styles
+    5. Call `figma_take_screenshot` for visual reference
+    6. Call VADS `map_figma_component` for each Figma component found
+    7. Call VADS `get_component` for full API of matched components
+    8. Select layout template from `src/templates/` based on identified page type
+    9. Generate code combining template + components + content
   - How to handle unmapped components (fallback to `find_components` search)
   - How to handle custom/one-off Figma elements that aren't VADS components
   - Tips for designers: name your Figma layers well, use auto layout, use VADS variables
@@ -904,7 +968,7 @@ Build the first prototype using the PRD-driven workflow to validate the approach
 
 ### VADS MCP Server
 
-- [ ] `find_components` returns all 67 components with correct tag names
+- [ ] `find_components` returns all 77+ components with correct tag names
 - [ ] `get_component` returns complete API (props, events, slots, parts) for any component
 - [ ] `validate_component_api` correctly identifies invalid attributes and suggests corrections
 - [ ] `get_tokens` returns tokens by category with CSS variable names
@@ -913,7 +977,7 @@ Build the first prototype using the PRD-driven workflow to validate the approach
 - [ ] `get_guide` returns installation, page-structure, form-patterns guides
 - [ ] `map_figma_component` returns correct VADS web component for common Figma component names
 - [ ] MCP server works with Claude Code, GitHub Copilot, and Cursor
-- [ ] `npx @department-of-veterans-affairs/vads-mcp-server` starts successfully
+- [ ] MCP server starts successfully via `npx` (GitHub Packages) or local `node dist/index.js`
 - [ ] MCP server configuration files ship in repo for all three tools (`.claude/`, `.vscode/`, `.cursor/`)
 
 ### VA Prototype Kit
@@ -961,8 +1025,8 @@ Build the first prototype using the PRD-driven workflow to validate the approach
 **Component library:**
 - `@department-of-veterans-affairs/component-library` v54.6.0+ (Stencil web components)
 - `@department-of-veterans-affairs/css-library` v0.29.0+ (VADS utility classes)
-- `@department-of-veterans-affairs/va-design-system-tokens` v0.0.10+ (design tokens)
-- Components available (67 total):
+- Design tokens: sourced from `@department-of-veterans-affairs/css-library` CSS custom properties (migrating to `@department-of-veterans-affairs/va-design-system-resources` later this quarter)
+- Components available (77+ total, key components listed below):
   - Layout: `va-card`, `va-accordion`, `va-breadcrumbs`, `va-tabs`
   - Content: `va-alert`, `va-critical-action`, `va-service-list-item`, `va-card-status`, `va-need-help`, `va-summary-box`
   - Navigation: `va-link`, `va-link-action`, `va-button`, `va-button-pair`, `va-segmented-progress-bar`, `va-pagination`
@@ -971,9 +1035,11 @@ Build the first prototype using the PRD-driven workflow to validate the approach
   - Global: `va-official-gov-banner`, `va-header-minimal`, `va-minimal-footer`, `va-back-to-top`, `va-crisis-line-modal`
 
 **MCP server:**
-- `@modelcontextprotocol/sdk` (^1.0.0) — only runtime dependency
-- TypeScript for build
-- Published as npm package with CLI binary
+- `@modelcontextprotocol/sdk` (^1.26.0) — runtime dependency
+- `@department-of-veterans-affairs/web-components` — for `component-docs.json`
+- `@department-of-veterans-affairs/css-library` — for design tokens and utility classes
+- TypeScript for build, Vitest for TDD
+- Initially published to GitHub Packages; public npm later
 
 **Development tooling (auto-installed via npm):**
 - Vite 6.x for dev server and builds
@@ -994,7 +1060,7 @@ Build the first prototype using the PRD-driven workflow to validate the approach
 | Designers prefer Figma anyway | Medium | Medium | Make the workflow genuinely faster; provide clear value proposition; gather feedback early |
 | PRD-driven approach produces inconsistent results | Medium | Medium | Provide a detailed PRD template; create good agent instructions; iterate based on feedback |
 | Figma-to-VADS component mapping is incomplete or stale | High | High | Audit VADS Figma library thoroughly at launch; automate mapping updates when possible; fallback to `find_components` fuzzy search for unmapped components |
-| Figma MCP server access limited by seat type | Medium | Medium | Document seat requirements clearly; provide screenshot-based fallback (`populate-from-figma.md`) for designers without Dev seats |
+| Figma Console MCP server setup complexity | Medium | Medium | Document all three setup options (NPX, remote SSE, local); provide screenshot-based fallback (`populate-from-figma.md`) for designers who can't set up the MCP server |
 | Figma designs use non-VADS components or custom elements | Medium | High | Guide instructs AI to flag unmapped elements; designer manually resolves or AI uses closest VADS equivalent |
 | Component library auth/access issues in npm | Low | Low | Package is public on npm; document fallback for internal registry |
 
@@ -1004,7 +1070,7 @@ Build the first prototype using the PRD-driven workflow to validate the approach
 
 1. **GitHub Codespaces integration:** One-click cloud development environment for designers without local Node.js
 2. **PR preview deployments:** GitHub Actions to deploy prototype branches to preview URLs automatically
-3. **Figma CodeConnect:** Establish CodeConnect mappings between VADS Figma library components and `<va-*>` web components. Once configured, the Figma MCP server's `get_code_connect_map` tool will automatically return the correct web component for each Figma instance, replacing the manual `figma-component-map.json` maintained in the VADS MCP server.
+3. **Figma CodeConnect:** Establish CodeConnect mappings between VADS Figma library components and `<va-*>` web components. Once configured, Figma-aware tools will automatically return the correct web component for each Figma instance, replacing the manual `figma-component-map.json` maintained in the VADS MCP server.
 4. **MCP server for vets-website:** Extend MCP server with vets-website-specific patterns (Forms System, platform utilities)
 5. **Component library contribution:** Improve JSDoc annotations in component-library source to enrich MCP server data (following NYSDS's approach of improving source docs for better AI output)
 6. **Visual regression testing:** Playwright for screenshot comparison of generated prototypes
@@ -1017,10 +1083,9 @@ Build the first prototype using the PRD-driven workflow to validate the approach
 
 ### VA Design System Ecosystem
 
-- Component Library: https://github.com/department-of-veterans-affairs/component-library (Stencil, 67 components)
+- Component Library: https://github.com/department-of-veterans-affairs/component-library (Stencil, 77+ components)
 - CSS Library: `@department-of-veterans-affairs/css-library` (VADS utility classes)
-- Design System Resources: https://github.com/department-of-veterans-affairs/va-design-system-resources (tokens, assets)
-- Design Tokens: `@department-of-veterans-affairs/va-design-system-tokens` (color, font, spacing in JSON)
+- Design System Resources: https://github.com/department-of-veterans-affairs/va-design-system-resources (tokens, assets — will become canonical token source later this quarter)
 - Documentation Site: https://design.va.gov/components/
 - Storybook: https://design.va.gov/storybook/
 
@@ -1028,7 +1093,7 @@ Build the first prototype using the PRD-driven workflow to validate the approach
 
 - Service List Item component: `src/_components/service-list-item.md`
 - Manage Benefits pattern: `src/_patterns/help-users-to/manage-benefits-and-tools.md`
-- Component docs data: `src/_data/component-docs.json` (Stencil-generated, 67 components)
+- Component docs data: `src/_data/component-docs.json` (Stencil-generated, 77+ components)
 - Token CSVs: `src/_data/tokens/vads-color-semantic.csv`, `vads-spacing-semantic.csv`, etc.
 
 ### NYSDS Prior Art (Primary Inspiration)
@@ -1053,8 +1118,8 @@ Build the first prototype using the PRD-driven workflow to validate the approach
 - **MCP Protocol:** https://modelcontextprotocol.io/
 - **AGENTS.md Specification:** https://agents.md/ — Open standard for AI agent instructions, supported by 20+ tools
 - **Copilot Custom Instructions:** https://docs.github.com/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot
-- **Figma MCP Server:** https://developers.figma.com/docs/figma-mcp-server/ — Official Figma MCP server documentation
-- **Figma MCP Tools & Prompts:** https://developers.figma.com/docs/figma-mcp-server/tools-and-prompts/ — Tool reference
+- **Figma Console MCP Server:** https://github.com/southleft/figma-console-mcp — southleft's Figma MCP server (56+ tools, design extraction and creation)
+- **Figma MCP Server (Official):** https://developers.figma.com/docs/figma-mcp-server/ — Official Figma MCP server (alternative option)
 - **Figma Code Connect:** https://www.figma.com/developers/code-connect — Design-to-code component mapping (future)
 
 ### External References
@@ -1071,7 +1136,7 @@ Build the first prototype using the PRD-driven workflow to validate the approach
 | NYSDS | VADS | Notes |
 |-------|------|-------|
 | Custom Elements Manifest (CEM) from `@custom-elements-manifest/analyzer` | `component-docs.json` from Stencil `@stencil/core` | Different generators, same concept. Stencil's format has `props` with `attr` field; CEM has `attributes`. Both provide events, slots, parts. |
-| DTCG tokens JSON (`tokens.json`) | Token JSON from `@department-of-veterans-affairs/va-design-system-tokens` | NYSDS uses DTCG format natively. VA tokens use a simpler `{name, value, attributes}` format with alias references. |
+| DTCG tokens JSON (`tokens.json`) | CSS custom properties from `@department-of-veterans-affairs/css-library` (migrating to `va-design-system-resources` JSON later) | NYSDS uses DTCG format natively. VA tokens are currently consumed as CSS custom properties. Structured JSON format coming later this quarter. |
 | `tokens.css` (generated) | CSS from `@department-of-veterans-affairs/css-library` | Both provide CSS custom properties. VA's also includes utility classes. |
 | Lit web components | Stencil web components | Both compile to standard web components. Stencil generates shadow DOM components. Usage in HTML is identical. |
 | `@nysds/styles` (full bundle) | `@department-of-veterans-affairs/css-library` | Both provide reset, typography, and utility classes. |
