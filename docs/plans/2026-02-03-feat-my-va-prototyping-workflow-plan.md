@@ -20,13 +20,13 @@ github_issue: https://github.com/department-of-veterans-affairs/digital-experien
 | **P0: Prototype Kit Setup** | ✅ Complete | Repo at `~/repos/va-prototype-kit`. 2 commits on `main`. 27 files. Vite build, deploy workflow, AI configs, 7 templates, MCP server configs for 3 tools. |
 | **P1: Reference Prototype** | ✅ Complete | PRD (343 lines), 5 scenario data files, TypeScript types, app.ts with 7 section renderers. 5 commits on `main`. |
 | **P2: Workflow Docs** | ✅ Complete | 5 guides (prototype-workflow, setup-figma-mcp, figma-to-prototype, populate-from-figma, reproduce-page). 3 Claude Code skill wrappers. |
-| **P3: Polish** | ⬜ Not started | README, designer testing, iteration. |
+| **P3: Polish** | 🔄 In progress | README complete (9 commits on `main`). Remaining: designer testing and iteration. |
 
 **MCP server totals:** 8 tools, 5 resources, 1 prompt, 102 tests across 7 test files.
 
-**Prototype Kit totals:** 8 commits on `main`, ~40 tracked files. My VA Dashboard prototype with 5 scenario states, 7 section renderers, dynamic JSON import. 5 workflow guides, 3 Claude Code skills.
+**Prototype Kit totals:** 9 commits on `main`, ~40 tracked files. My VA Dashboard prototype with 5 scenario states, 7 section renderers, dynamic JSON import. 5 workflow guides, 3 Claude Code skills. Comprehensive README.
 
-**To resume:** P3 — Write comprehensive README, test with a real designer, iterate.
+**To resume:** P3 — Test with a real designer, gather feedback, iterate.
 
 **Key P1 discovery:** PRD-driven approach worked well. TypeScript types caught data structure issues at compile time. Dynamic JSON import makes scenario switching trivial. All 11 VADS components mapped correctly on first try.
 
