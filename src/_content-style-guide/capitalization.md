@@ -18,6 +18,14 @@ Use sentence case capitalization for most content, including page titles, headin
 - Global navigation, top menu labels (VA Benefits and Health Care; About VA; Find a VA Location)
 - For mobile app native actions, use title case for iOS and all caps for Android
 
+### Exceptions where we use all caps
+
+On VA.gov web pages and components, all-caps text is only permitted for the following specific components (aside from the Android native actions exception noted above). Don't use all caps for any other purpose. Longer uppercase text reduces legibility and can be harder to read for people with cognitive disabilities or low vision.
+
+- [Eyebrow]({{ site.baseurl }}/foundation/typography#eyebrow) text labels
+- [Button - Icon]({{ site.baseurl }}/components/button/button-icon) labels
+
+Authors should enter these labels in sentence case; the components will render them in all caps through styling.
 ### Exceptions where we use initial capitalization
 - SEO title tags (example: VA Prescription Refill And Tracking \| Veterans Affairs). See [Writing for SEO]({{ site.baseurl }}/content-style-guide/seo) for more information.
 
