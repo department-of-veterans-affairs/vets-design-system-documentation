@@ -41,7 +41,7 @@ This pattern involves these types of pages found in VA.gov forms:
 * **Prefilled information the user cannot update:** This is usually personal information like name, date of birth, and Social Security number.  
 * **Prefilled information the user can update:** This can be many different types of information, like email addresses and mailing addresses, that the user can update directly on the screen where we display it.
 
-Refer to the related \["Help users to... Know when their information is prefilled"\]({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled) pattern for guidance on helping users know when their information is prefilled.
+Refer to the related ["Help users to... Know when their information is prefilled"]({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled) pattern for guidance on helping users know when their information is prefilled.
 
 #### Prefilled information the user can't update
 
