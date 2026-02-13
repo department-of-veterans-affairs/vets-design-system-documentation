@@ -53,7 +53,7 @@ anchors:
 
 The Details component uses native HTML `<details>` and `<summary>` elements, which provide several advantages over JavaScript-based implementations:
 
-* **Searchable and discoverable content**: Browser search (Ctrl+F or Cmd+F) can find text inside collapsed Details, and search engines can index the content for better SEO.
+* **Searchable and discoverable content**: Browser search (Ctrl+F or Cmd+F) can find text inside collapsed Details, and search engines can index the content for better search engine optimization (SEO).
 * **Better performance and reliability**: No JavaScript required for basic functionality, improving load times and ensuring content works even when JavaScript fails.
 * **Enhanced accessibility**: Native semantic meaning provides better assistive technology support without additional ARIA attributes, following web standards universally supported across browsers.
 
@@ -78,12 +78,9 @@ The following are places where Details can be used:
 
 ## Accessibility considerations
 
-<!-- TO DO: Review accessibility guidance -->
-* The Details component should be validated to meet the WCAG 2.2 AA accessibility guidelines.
-* The Details component uses aria-controls and aria-expanded attributes to convey the expand and collapse functionality to assistive technologies.
-* Pressing the close button (a element with role of button) must close the Details.
-* The link element that acts as the trigger for the drawer to open and close has a role of heading so it can be found in the page. Setting an aria-level is recommended.
 * **Wrap content in HTML elements.** All text content inside `va-details` must be wrapped in an appropriate HTML element such as `<p>`, `<span>`, or `<div>`. Some screen readers, particularly NVDA, may ignore unwrapped plain text. For example, use `<p>This is the content.</p>` instead of placing text directly inside the component without a wrapper element.
+* **Do not add ARIA roles or state attributes.** The details component uses the `<details>` HTML elemnt that exposes expanded/collapsed state and interactive behavior natively. Adding any `role="button"` or `aria-expanded` is redundant and can create conflicting announcements in assistive technology.
+* **Keyboard interaction is provided natively.** Users must be able to tab to the component, toggle it using Enter or Space, and if there are interactive elements in the component, the next tab takes them to those interactive elements.
 
 ## Related
 
