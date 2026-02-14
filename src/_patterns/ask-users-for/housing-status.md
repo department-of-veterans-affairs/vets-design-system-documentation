@@ -64,6 +64,6 @@ In addition, it may be appropriate to ask the user for a point of contact to ass
 
 ### Components used in this pattern
 
-* [Additional info]({{ site.baseurl }}/components/additional-info)
+* [Details]({{ site.baseurl }}/components/details)
 * [Checkbox]({{ site.baseurl }}/components/form/checkbox)
 * [Radio Button]({{ site.baseurl }}/components/form/radio-button)

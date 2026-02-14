@@ -93,7 +93,7 @@ Example:
 - List the information and documents needed to complete the form
 - Aim for 5 bullets max, and consider separate lists for required and optional info
 - If a form requires several different types of supporting documents, or different supporting documents depending on the user story, link to the static "How to apply" page for this information
-- If the form requires especially private or sensitive information (like detailed financial or medical information), consider adding an additional info component with this header: "Why we need this information"
+- If the form requires especially private or sensitive information (like detailed financial or medical information), consider adding a Details component with this header: "Why we need this information"
 
 Example intros to bulleted lists of information and documents:
 
@@ -104,12 +104,12 @@ Example intros to bulleted lists of information and documents:
 **3. Start your application**
 
 - Use this exact text under the header: "We’ll take you through each step of the process. It should take about [estimated time burden] minutes."
-- Include an additional info component at the end of this section with the header "What happens after you apply." Use this component to explain how we'll contact them with our decision and provide an estimated time to get a decision, if available.
+- Include a Details component at the end of this section with the header "What happens after you apply." Use this component to explain how we'll contact them with our decision and provide an estimated time to get a decision, if available.
 - **Variations:** You can vary this H3 and other content in this section if the form is not called an "application." For example, H3 could be "Start your claim" or "Start your request."
 
 Example:
 
-> What happens after you apply [additional info component header]
+> What happens after you apply [Details component header]
 > We process health care applications within about a week. We’ll send you a letter in the mail with our decision.
 
 ## What to know section (for variation with no process list)

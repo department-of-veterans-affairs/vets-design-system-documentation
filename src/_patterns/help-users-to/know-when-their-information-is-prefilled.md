@@ -73,10 +73,10 @@ This pattern communicates information that can be edited by:
 - **Inform users where the changes were saved.** Display a success alert informing users "We've made these changes to this form and your VA.gov profile" or "We've made these changes to only this form.” This alert should be placed at the top of the page, below the stepper and text "We’ll save your application on every change." Use a standard alert within the form steps. Use a slim alert if the user made changes from the final review page.
 
 ### Components used in this pattern
-- [Alert](/components/alert/) - To inform users about prefilled information and where changes will be saved
-- [Card](/components/card/) - To display prefilled information in organized sections
-- [Radio button](/components/form/radio-button) - To give users choice about where to save their updated information
-- [Additional info](/components/additional-info) - To provide expandable details about updating information
+- [Alert]({{ site.baseurl }}/components/alert/) - To inform users about prefilled information and where changes will be saved
+- [Card]({{ site.baseurl }}/components/card/) - To display prefilled information in organized sections
+- [Radio button]({{ site.baseurl }}/components/form/radio-button) - To give users choice about where to save their updated information
+- [Details]({{ site.baseurl }}/components/details) - To provide expandable details about updating information
 
 
 ## Examples
