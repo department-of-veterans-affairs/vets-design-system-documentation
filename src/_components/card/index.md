@@ -77,7 +77,7 @@ Card is a flexible container component. Teams build and pass in their own conten
 3. **Secondary content.** Teams provide body text, which can include any combination of text, dates, or other content.
 4. **Call to action.** Teams add their own links - typically an [action link]({{ site.baseurl }}/components/link/action) or [link]({{ site.baseurl }}/components/link).
 
-**Note:** If your card needs to display a status tag, or have an error state, use the [Card - Status]({{ site.baseurl }}/components/card/card-status) component instead, which is specifically designed for status communication and includes built-in support for status tags, error states, and screen reader announcements.
+**Note:** You can use a status tag in either Card or [Card - Status]({{ site.baseurl }}/components/card/card-status). **Card Status is required** if you need an error state on the card, as it's the only card component that supports error states. Use Card Status when you need a consistent, structured pattern with a single action link. Use the regular Card component when you need multiple calls to action or flexible content structure.
 
 You can see these options in use in the [variations](#variations) below.
 
