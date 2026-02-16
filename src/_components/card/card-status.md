@@ -6,7 +6,7 @@ permalink: /components/card/card-status/
 github-title: va-card-status
 research-title: card-status
 figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=44355-6605&t=CELULnAK5Ke87Rc1-1
-intro-text: "Card Status is a structured card that requires specific information to enforce a consistent pattern for status-driven scenarios."
+intro-text: "Card Status displays information that users can edit, such as appointments or contact details. It can show a status and provides a single action link. The component uses required fields to maintain consistency."
 web-component: va-card-status
 web: true
 mobile-app: false
