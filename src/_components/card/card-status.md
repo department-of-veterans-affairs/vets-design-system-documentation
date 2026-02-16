@@ -84,6 +84,24 @@ This state is triggered when validation errors occur, such as when a user tries 
 * **Single CTA only.** Card Status supports only one call to action, typically to add or edit data. This is more restrictive than the standard [Card component]({{ site.baseurl }}/components/card), which allows up to 3 CTAs.
 * **Use action links.** The CTA should use a [secondary action link]({{ site.baseurl }}/components/link/action).
 
+### Using Critical Action within Card Status
+
+Card Status can include the [Critical Action component]({{ site.baseurl }}/components/critical-action) for urgent, time-sensitive actions that are separate from the card's primary purpose.
+
+**The distinction:**
+* **Card Status action link** – Takes action directly on the information within the card (e.g., "Edit contact information", "Add dependent")
+* **Critical Action component** – Highlights an urgent action elsewhere that may relate to but is separate from the card's data (e.g., "Verify your dependents by June 4, 2025", "Pay your $30 copay by May 1, 2025")
+
+**When to include both:**
+Use both when a card shows information that can be edited (Card Status action link) AND contains an urgent reminder about a related but separate action (Critical Action component). For example, a prescription card might have:
+- Card Status action link: "Manage this prescription"
+- Critical Action: "Request refill by March 15, 2025"
+
+**When to use only one:**
+* Use **only the Card Status action link** when the card simply needs to allow users to edit or manage the displayed information without urgent external actions.
+* Use **only a Critical Action** (without Card Status) when there's no information to edit within the card itself – just an urgent task to highlight.
+
+
 ### Placement
 
 Card Status uses the same placement, dimensions, and layout as described in the [Card component]({{ site.baseurl }}/components/card#placement).
@@ -102,10 +120,11 @@ Additionally:
 
 Card Status follows the same [basic accessibility considerations as the Card component]({{ site.baseurl }}/components/card#accessibility-considerations), including list markup and keyboard navigation.
 
-The Card Status component handles most status and error accessibility automatically and meets WCAG 2.2 AA criteria. Teams need to:
+The Card Status component handles most status and error accessibility automatically and meets WCAG 2.2 AA criteria. Teams have three key responsibilities.
 
 * **Set appropriate heading levels.** Choose the heading level that fits your page's outline structure. For example, if Card Status appears in a section under an `<h2>`, use `<h3>` for card headings.
 * **Write clear error messages.** Follow the VA.gov pattern: state what's wrong and how to fix it.
+* **Provide descriptive link text.** Link text should clearly describe the action. For example, instead of "Edit," use "Edit mailing address."
 
 ### How Card Status handles accessibility programmatically
 

@@ -52,7 +52,9 @@ anchors:
 
 #### Placement details
 
-In most cases, display the Critical Action component in a [Card]({{ site.baseurl }}/components/card) or [Service List Item]({{ site.baseurl }}/components/service-list-item) component. Place the component directly below the [Status Tag]({{ site.baseurl }}/components/tag/tag-status) component and take up the width of the component it is nested within. Include only one Critical Action component in a Card or Service List Item. Do not include multiple Critical Action components in a single Card or Service List Item.
+In most cases, display the Critical Action component in a [Card]({{ site.baseurl }}/components/card), [Card Status]({{ site.baseurl }}/components/card/card-status), or [Service List Item]({{ site.baseurl }}/components/service-list-item) component. Card Status is particularly appropriate when highlighting an urgent action related to information with a specific status. See [guidance on using Critical Action within Card Status]({{ site.baseurl }}/components/card/card-status#using-critical-action-within-card-status) for when to use both components together.
+
+Place the component directly below the [Status Tag]({{ site.baseurl }}/components/tag/tag-status) component and take up the width of the component it is nested within. Include only one Critical Action component in a Card or Service List Item. Do not include multiple Critical Action components in a single Card or Service List Item.
 
 {% include component-example.html
   class="x2"
