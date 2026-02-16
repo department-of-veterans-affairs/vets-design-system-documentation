@@ -86,24 +86,6 @@ This state is triggered when validation errors occur, such as when a user tries 
 * **Cannot include Critical Action.** Because Card Status is limited to one call to action, it cannot include the [Critical Action component]({{ site.baseurl }}/components/critical-action), which is itself a link. If you need both an urgent action reminder and another action link, use the [Card component]({{ site.baseurl }}/components/card) instead.
 * **Use action links.** The CTA should use a [secondary action link]({{ site.baseurl }}/components/link/action).
 
-### Using Critical Action within Card Status
-
-Card Status can include the [Critical Action component]({{ site.baseurl }}/components/critical-action) for urgent, time-sensitive actions that are separate from the card's primary purpose.
-
-**The distinction:**
-* **Card Status action link** – Takes action directly on the information within the card (e.g., "Edit contact information", "Add dependent")
-* **Critical Action component** – Highlights an urgent action elsewhere that may relate to but is separate from the card's data (e.g., "Verify your dependents by June 4, 2025", "Pay your $30 copay by May 1, 2025")
-
-**When to include both:**
-Use both when a card shows information that can be edited (Card Status action link) AND contains an urgent reminder about a related but separate action (Critical Action component). For example, a prescription card might have:
-- Card Status action link: "Manage this prescription"
-- Critical Action: "Request refill by March 15, 2025"
-
-**When to use only one:**
-* Use **only the Card Status action link** when the card simply needs to allow users to edit or manage the displayed information without urgent external actions.
-* Use **only a Critical Action** (without Card Status) when there's no information to edit within the card itself – just an urgent task to highlight.
-
-
 ### Placement
 
 Card Status uses the same placement, dimensions, and layout as described in the [Card component]({{ site.baseurl }}/components/card#placement).
