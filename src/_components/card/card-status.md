@@ -6,7 +6,7 @@ permalink: /components/card/card-status/
 github-title: va-card-status
 research-title: card-status
 figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=44355-6605&t=CELULnAK5Ke87Rc1-1
-intro-text: "Card Status displays information that users can edit, such as appointments or contact details. It can show a status and provides a single action link. The component uses required fields to maintain consistency."
+intro-text: "Card Status displays information like appointments or contact details with a single action link and optional status. It uses required props to maintain consistency."
 web-component: va-card-status
 web: true
 mobile-app: false
@@ -49,7 +49,7 @@ anchors:
 
 ### How this component works
 
-Card Status differs from Card in its structure. While [Card]({{ site.baseurl }}/components/card) is a flexible container where teams build their own content, Card Status uses required fields to maintain consistency. Use Card Status for information users can edit, with an optional status when information is missing or needs action.
+Card Status differs from Card in its structure. While [Card]({{ site.baseurl }}/components/card) is a flexible container where teams build their own content, Card Status uses required props to maintain consistency. It provides a single action link and optional status display for information like appointments, claims, or contact details.
 
 #### Default
 
