@@ -46,6 +46,7 @@ anchors:
 - **When you need flexible content structure.** Use the [Card component]({{ site.baseurl }}/components/card) when you need full control over the card's content and structure, rather than working with predefined props.
 - **When status isn't the focus.** Use the [Card component]({{ site.baseurl }}/components/card) for informational cards where status communication isn't the primary purpose.
 - **When you need multiple calls to action.** Use the [Card component]({{ site.baseurl }}/components/card) if you need more than one call to action (Card allows up to 3 CTAs).
+- **When you need to include a Critical Action component.** Use the [Card component]({{ site.baseurl }}/components/card) with a [Critical Action component]({{ site.baseurl }}/components/critical-action) if you need both an urgent action reminder and a secondary action link. Card Status only supports one call to action and cannot include Critical Action.
 
 ### How this component works
 
@@ -82,6 +83,7 @@ This state is triggered when validation errors occur, such as when a user tries 
 ### Calls to action (CTA)
 
 * **Single CTA only.** Card Status supports only one call to action, typically to add or edit data. This is more restrictive than the standard [Card component]({{ site.baseurl }}/components/card), which allows up to 3 CTAs.
+* **Cannot include Critical Action.** Because Card Status is limited to one call to action, it cannot include the [Critical Action component]({{ site.baseurl }}/components/critical-action), which is itself a link. If you need both an urgent action reminder and another action link, use the [Card component]({{ site.baseurl }}/components/card) instead.
 * **Use action links.** The CTA should use a [secondary action link]({{ site.baseurl }}/components/link/action).
 
 ### Using Critical Action within Card Status
