@@ -121,11 +121,11 @@ Please note that there is currently a [ticket](https://github.com/department-of-
 
 ### Note after uneditable prefilled information
 
-Explain the steps the user needs to take to update this information. These instructions will vary by form. For some forms, the person will need to call us to find out how to update this information. The specific number to call will vary by form.
+Explain the steps the user needs to take to update this information. These instructions will vary by form. For some forms, the user will need to call us to find out how to update this information. The specific number to call will vary by form.
 
 {% include component-example.html class="x2" alt="A note to the user explaining why they can't edit personal information online. It starts with the bolded word 'Note' and ends with a link to find more detailed instructions on how to change their legal name." file="/images/patterns/help-users-to/update-prefilled-information/how-to-edit-personal-information.png" %}
 
-### Alert informing user we'll save changes to their profile
+### Alert informing the user we'll save changes to their profile
 
 Inform the user that their changes will save to their profile before they make the changes. If your form does not save changes to their profile, use a radio button question instead (example in the Radio button section).
 
