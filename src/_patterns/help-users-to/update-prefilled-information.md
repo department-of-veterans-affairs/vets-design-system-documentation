@@ -110,12 +110,12 @@ Please note that there is currently a [ticket](https://github.com/department-of-
 
 ### Components used in this pattern
 
-* \[Additional info\]({{ site.baseurl }}/components/additional-info)  
-* \[Alert\]({{ site.baseurl }}/components/alert)  
-* \[Card\]({{ site.baseurl }}/components/card)
-* \[Card - Status\]({{ site.baseurl }}/components/card-status)
-* \[Link\]({{ site.baseurl }}/components/link)  
-* \[Radio button\]({{ site.baseurl }}/components/form/radio-button)
+* [Additional info]({{ site.baseurl }}/components/additional-info)  
+* [Alert]({{ site.baseurl }}/components/alert)  
+* [Card]({{ site.baseurl }}/components/card)
+* [Card - Status]({{ site.baseurl }}/components/card-status)
+* [Link]({{ site.baseurl }}/components/link)  
+* [Radio button]({{ site.baseurl }}/components/form/radio-button)
 
 ## Examples
 
