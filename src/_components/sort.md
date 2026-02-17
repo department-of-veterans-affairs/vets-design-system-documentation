@@ -147,8 +147,7 @@ anchors:
 
 
 ### Additional guidance
-* **Consider allowing users to sort in both directions**—for example, A to Z and Z to A.
-    * Offering both directions isn't necessary when the reverse order wouldn't be meaningful or useful for users' goals. For example, it may not make sense to sort VA locations from furthest to closest.
+* **Consider allowing users to sort in both directions.** This is not necessary when the reverse order wouldn't be meaningful or useful for users' goals. For example, it may not make sense to sort VA locations from furthest to closest.
   
 * **Only include sort options that provide clear value.** The ability to sort data doesn't automatically mean it will help users.
 
