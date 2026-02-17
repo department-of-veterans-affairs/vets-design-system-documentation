@@ -63,6 +63,7 @@ Here’s how to communicate that people can’t update certain information onlin
 - [Alert](/components/alert/) - To inform the user about prefilled information and where we will save changes
 - [Alert - Sign-in](/components/alert/alert-sign-in/) - To inform the user that they can sign so we can prefill their information
 - [Card](/components/card/) - To display prefilled information in organized sections
+- [Card - Status](/components/card-status) - To display prefilled information that the user can edit
 - [Link](/components/link) - To give the user an opportunity to make changes to their prefilled information
 - [Prefill](/components/form/prefill) - To inform the user before starting the form that we will prefill their information if they sign in
 
@@ -75,8 +76,6 @@ Here’s how to communicate that people can’t update certain information onlin
 {% include storybook-preview.html story="patterns-components-prefill-alert--unauthenticated-prefill-alert" height="415px" link_text="unauthenticated prefill alert" %}
 
 ### Editable prefill card
-![Editable prefill card]({{site.baseurl}}/images/patterns/help-users-to/know-when-their-information-is-prefilled/Editable-prefill-card.png)
-
 {% include component-example.html alt="A card showing information that can be edited by the user." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/Editable-prefill-card.png" caption="editable prefill card” 
 " class="x2" %}
 
