@@ -121,8 +121,8 @@ anchors:
 * **Provide a default sort option** that reflects what users expect in the given context. In search experiences, *Relevance* is often the default.
 
 * **Name sort options clearly and consistently** using this convention:
-    * `[Sort attribute] (sort method)`
-        * `[Sort attribute]` describes what the results are sorted by.
+    * `Sort attribute (sort method)`
+        * `Sort attribute` describes what the results are sorted by.
             * Examples: Medication name, entry date, distance
         * `(Sort method)` describes how the results are ordered. Use familiar, plain language terms such as:
             * **Alphabetical**
