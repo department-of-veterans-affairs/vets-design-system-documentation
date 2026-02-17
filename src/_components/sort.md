@@ -65,6 +65,10 @@ anchors:
     * For example, don't use Sort to filter by date ranges. <img src="{{ site.baseurl }}/images/components/sort/sort_nonexample.png" alt="Nonexample where Sort is being used to filter by a date range" style="width:50%;"/>
 * **When sorting within a table**, use the sort columns baked into the `va-table` component.
 
+{% include component-docs.html %}
+
+{% include component-docs.html component_name=page.web-component %}
+
 ## Behavior
 
 ### Web
@@ -98,11 +102,6 @@ anchors:
     * <img src="{{ site.baseurl }}/images/components/sort/va_mobile_filter_sort.png" alt="A Filter and Sort button that opens a modal that allows a user to explicitly submit sort and filter options." style="width:100%;"/>
 
 * **Keep sort option naming consistent across mobile and desktop experiences.**
-
-
-
-{% include component-docs.html component_name=page.web-component %}
-
 
 * **Using an API to sort and paginate data is acceptable.** If sorting data on the frontend is more efficient, remember to format times and dates in a way that will ensure a correct chronological sort.
     * Store date and time as an [ISO-formatted string](https://en.wikipedia.org/wiki/ISO_8601#:~:text=Date%20and%20time%0Ain,00%20UTC%E2%88%9212%3A00) (date and time in UTC or date and time with offset).
