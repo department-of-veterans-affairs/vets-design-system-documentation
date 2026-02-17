@@ -102,10 +102,11 @@ Additionally:
 
 Card Status follows the same [basic accessibility considerations as the Card component]({{ site.baseurl }}/components/card#accessibility-considerations), including list markup and keyboard navigation.
 
-The Card Status component handles most status and error accessibility automatically and meets WCAG 2.2 AA criteria. Teams need to:
+The Card Status component handles most status and error accessibility automatically and meets WCAG 2.2 AA criteria. Teams have three key responsibilities.
 
 * **Set appropriate heading levels.** Choose the heading level that fits your page's outline structure. For example, if Card Status appears in a section under an `<h2>`, use `<h3>` for card headings.
 * **Write clear error messages.** Follow the VA.gov pattern: state what's wrong and how to fix it.
+* **Provide descriptive link text.** Link text should clearly describe the action. For example, instead of "Edit," use "Edit mailing address."
 
 ### How Card Status handles accessibility programmatically
 
