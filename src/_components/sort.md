@@ -119,12 +119,12 @@ anchors:
 
 ### Content expectations
 * **Provide a default sort option** that reflects what users expect in the given context. In search experiences, *Relevance* is often the default.
-    * Don't present a placeholder option (such as *- Select -*) as a selectable sort choice.
 
-* **Name sort options clearly and consistently** so users understand both *what* is being sorted and *how* it's ordered.
-    * Use this convention: `[Sort attribute] (sort method)`
-        * `[Sort attribute]` describes what the results are sorted by (for example, medication name, entry date, or distance).
-        * `(Sort method)` describes the ordering. Use familiar, plain language terms such as:
+* **Name sort options clearly and consistently** using this convention:
+    * `[Sort attribute] (sort method)`
+        * `[Sort attribute]` describes what the results are sorted by.
+            * Examples: Medication name, entry date, distance
+        * `(Sort method)` describes how the results are ordered. Use familiar, plain language terms such as:
             * **Alphabetical**
                 * A to Z      
             * **Chronological**
@@ -135,15 +135,15 @@ anchors:
                 * Smallest to largest
                 * Lowest to highest
                 * Shortest to longest
-    * **Note:** Avoid offering a sort method on its own without clearly identifying the attribute being sorted.
-        * For example, if a Vaccine history card only shows a date value, use a label like *Date received (newest to oldest)* rather than *Newest to oldest*.
     * Examples of clear and consistent sort option labels include:
         * *Medication name (A to Z)*
         * *Date entered (newest to oldest)*
         * *Refills remaining (least to most)*
         * *Distance (closest to furthest)*
 
-    * **Keep sort option labels consistent across mobile and desktop.** For example, if mobile uses *Date filled (newest to oldest)*, desktop should use the same wording—not something different like *Fill date (newest to oldest)*.
+* **Avoid offering a sort method as a sort option on its own.** For example, if a Vaccine history card only shows a date value, label the sort option as *Date received (newest to oldest)* rather than *Newest to oldest*.
+
+* **Keep sort option labels consistent across mobile and desktop.** If mobile uses *Date filled (newest to oldest)*, desktop should use the same wording—not something different like *Fill date (newest to oldest)*.
 
 
 ### Additional guidance
