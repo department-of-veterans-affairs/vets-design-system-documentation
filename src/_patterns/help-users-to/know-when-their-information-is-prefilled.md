@@ -76,10 +76,7 @@ Here’s how to communicate that people can’t update certain information onlin
 {% include storybook-preview.html story="patterns-components-prefill-alert--unauthenticated-prefill-alert" height="415px" link_text="unauthenticated prefill alert" %}
 
 ### Editable prefill card
-{% include component-example.html alt="A card showing information that can be edited by the user." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/Editable-prefill-card.png" caption="editable prefill card” 
-" class="x2" %}
-
-For editable information, use a prominent note or alert to inform users that changes will be reflected in their profile. Display a success alert informing the person “We saved these changes to this form and your profile. Place this alert at the top of the page, after the stepper and the auto-save text. Use a standard alert if the person made the changes on a form step page. Use a slim alert if the person made the changes on the final review page.
+{% include component-example.html alt="A card showing information that can be edited by the user." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/Editable-prefill-card.png" caption="editable prefill card" class="x2" %}
 
 ### Uneditable prefill card
 ![Uneditable prefill card]({{site.baseurl}}/images/patterns/help-users-to/know-when-their-information-is-prefilled/Uneditable-prefill-card.png)
