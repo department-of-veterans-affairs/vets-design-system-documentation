@@ -65,13 +65,10 @@ anchors:
     * For example, don't use Sort to filter by date ranges. <img src="{{ site.baseurl }}/images/components/sort/sort_nonexample.png" alt="Nonexample where Sort is being used to filter by a date range" style="width:50%;"/>
 * **When sorting within a table**, use the sort columns baked into the `va-table` component.
 
-{% include component-docs.html %}
 
-{% include component-docs.html component_name=page.web-component %}
+### Behavior
 
-## Behavior
-
-### Web
+#### Web
 
 * **User clicks the dropdown to open a list of sort options.** Alternatively, a screen-reader user may arrow up and down the list without opening the menu. The Sort component uses the [Select]({{ site.baseurl }}/components/form/select) as the foundation and shares similar behavior.
 
@@ -91,7 +88,7 @@ anchors:
     * On mobile resolutions, the component is full-width and responsive. The *Sort by* label is stacked on top of the dropdown.
 
 
-### Placement
+#### Placement
 
 * **Place Sort above and aligned with the content that it affects.** It serves as a visual indicator of the current order.
 * **Place Sort after the Search Filter's [results description]({{ site.baseurl }}/templates/search-results#results-description) when used with filtering.** This prevents the focus from skipping the Sort component given that the focus for filtering moves to results description or results heading and the focus for sorting is maintained on the component.
@@ -103,6 +100,9 @@ anchors:
 
 * **Keep sort option naming consistent across mobile and desktop experiences.**
 
+
+{% include component-docs.html component_name=page.web-component %}
+
 * **Using an API to sort and paginate data is acceptable.** If sorting data on the frontend is more efficient, remember to format times and dates in a way that will ensure a correct chronological sort.
     * Store date and time as an [ISO-formatted string](https://en.wikipedia.org/wiki/ISO_8601#:~:text=Date%20and%20time%0Ain,00%20UTC%E2%88%9212%3A00) (date and time in UTC or date and time with offset).
         * Attempting to sort dates as strings like *2/20/2025*, *10/1/2024*, *9/5/2023* from newest to oldest, for example, could result in a non-chronological A-Z sort:
@@ -113,6 +113,7 @@ anchors:
             * *2/20/****2025***
             * *10/1/****2024***
             * *9/5/****2023***
+
 
 
 ## Content considerations
