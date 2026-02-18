@@ -81,7 +81,7 @@ Here’s how to communicate that people can’t update certain information onlin
 ### Uneditable prefill card
 ![Uneditable prefill card]({{site.baseurl}}/images/patterns/help-users-to/know-when-their-information-is-prefilled/Uneditable-prefill-card.png)
 
-### Example within a mock form flow
+### Example within a mock form
 An example of the prefill pattern can be found in the [Forms library mock form on staging](https://staging.va.gov/mock-form-prefill/introduction). Sign in with any staging user.
 
 ## Code Usage

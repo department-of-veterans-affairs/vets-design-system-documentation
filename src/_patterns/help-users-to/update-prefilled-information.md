@@ -144,6 +144,9 @@ In cases where the information might change frequently (like a temporary mailing
 
 {% include component-example.html class="x2" alt="A required radio button field asking the user if they also want to update this information in their profile." file="/images/patterns/help-users-to/update-prefilled-information/radio-button.png" %}
 
+### Example within a mock form
+An example of the prefill pattern can be found in the [Forms library mock form on staging](https://staging.va.gov/mock-form-prefill/introduction). Sign in with any staging user.
+
 ## Code usage
 
 Code for the [prefill pattern](https://github.com/department-of-veterans-affairs/vets-website/tree/main/src/platform/forms-system/src/js/patterns/prefill) can be found in the Forms library.
