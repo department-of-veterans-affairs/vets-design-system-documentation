@@ -63,7 +63,7 @@ Here’s how to communicate that people can’t update certain information onlin
 - [Alert]({{ site.baseurl }}/components/alert/) - To inform the user about prefilled information and where we will save changes
 - [Alert - Sign-in]({{ site.baseurl }}/components/alert/alert-sign-in/) - To inform the user that they can sign so we can prefill their information
 - [Card]({{ site.baseurl }}/components/card/) - To display prefilled information in organized sections
-- [Card - Status]({{ site.baseurl }}/components/card-status) - To display prefilled information that the user can edit
+- [Card - Status]({{ site.baseurl }}/components/card/card-status) - To display prefilled information that the user can edit
 - [Link]({{ site.baseurl }}/components/link) - To give the user an opportunity to make changes to their prefilled information
 - [Prefill]({{ site.baseurl }}/components/form/prefill) - To inform the user before starting the form that we will prefill their information if they sign in
 

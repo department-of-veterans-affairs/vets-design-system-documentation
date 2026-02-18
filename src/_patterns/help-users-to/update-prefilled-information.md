@@ -110,7 +110,7 @@ Please note that there is currently a [ticket](https://github.com/department-of-
 * [Additional info]({{ site.baseurl }}/components/additional-info)  
 * [Alert]({{ site.baseurl }}/components/alert)  
 * [Card]({{ site.baseurl }}/components/card)
-* [Card - Status]({{ site.baseurl }}/components/card-status)
+* [Card - Status]({{ site.baseurl }}/components/card/card-status)
 * [Link]({{ site.baseurl }}/components/link)  
 * [Radio button]({{ site.baseurl }}/components/form/radio-button)
 
