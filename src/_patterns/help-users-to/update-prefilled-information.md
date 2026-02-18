@@ -91,7 +91,7 @@ In certain cases, users may need to choose which piece of information they want 
 
 #### Prefilled information that is missing and required
 
-There may be instances where some information that would usually be prefilled is missing from the database, but is also required by the form itself. In those instances, we'll take the user to a page with a status card that uses a colored tag to indicate that the information is missing. The card will also have the word "(\*Required)" next to the field heading text to indicate the user needs to provide that information.
+There may be instances where some information that would usually be prefilled is missing from the database, but is also required by the form itself. In those instances, we show a status card that uses a colored tag to indicate that the information is missing. The card will also have the word "(\*Required)" next to the field heading text to indicate the user needs to provide that information. The link secondary action link for this card would say "Add [item]" rather than "Edit [item]".
 
 {% include component-example.html class="x2" alt="A page showing users they have missing and required information they will need to add." file="/images/patterns/help-users-to/update-prefilled-information/missing-prefilled-info.png" %}
 
@@ -107,11 +107,10 @@ Please note that there is currently a [ticket](https://github.com/department-of-
 
 ### Components used in this pattern
 
-* [Additional info]({{ site.baseurl }}/components/additional-info)  
-* [Alert]({{ site.baseurl }}/components/alert)  
+* [Alert]({{ site.baseurl }}/components/alert)
 * [Card]({{ site.baseurl }}/components/card)
 * [Card - Status]({{ site.baseurl }}/components/card/card-status)
-* [Link]({{ site.baseurl }}/components/link)  
+* [Link]({{ site.baseurl }}/components/link) 
 * [Radio button]({{ site.baseurl }}/components/form/radio-button)
 
 ## Examples
