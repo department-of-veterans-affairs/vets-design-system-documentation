@@ -6,7 +6,7 @@ sub-section: help-users-to
 intro-text: Follow this pattern to help people know when their information will be prefilled for them in an application, form, or tool.
 figma-link: https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates--Patterns--and-Forms?m=auto&node-id=13451-91712&t=eoaTAXv2PGPTU6mE-1
 research-title: Help users know when their info is prefilled
-status: use-with-caution-available
+status: use-deployed
 anchors:
   - anchor: Usage
   - anchor: How to design and build
@@ -21,10 +21,10 @@ anchors:
 ### When to use this pattern
 
 - **When you prefill a user's information into an application, form, or other online tool.** When using this pattern, clearly tell the user where their information is being pulled from to prefill for them.
-- **When users can update prefilled information.** Review the "[Help users to... Update prefilled information](/patterns/help-users-to/update-prefilled-information)" pattern for guidance on helping users update this prefilled information.
+- **When users can update prefilled information.** Review the "[Help users to... Update prefilled information]({{ site.baseurl }}/patterns/help-users-to/update-prefilled-information)" pattern for guidance on helping users update this prefilled information.
 
 ### When not to use this pattern
-- **For unauthenticated users.** Users who aren't signed in shouldn't see their information prefilled when they interact with an application, form, or tool. But, when forms don't require users to be signed in, they should get the [Sign-in alert](/components/alert/alert-sign-in/) describing the benefits of signing in.
+- **For unauthenticated users.** Users who aren't signed in shouldn't see their information prefilled when they interact with an application, form, or tool. But, when forms don't require users to be signed in, they should get the [Sign-in alert]({{ site.baseurl }}/components/alert/alert-sign-in/) describing the benefits of signing in.
 - **When there's no prefill data for the user.**
 
 ### When to use caution
@@ -40,9 +40,9 @@ This pattern involves these types of pages found in VA.gov forms:
 
 #### Introduction page and sign in alerts
 
-- Use the [form introduction page templates](/templates/forms/introduction). The existing templates are already updated to support this pattern for both the unauthenticated and authenticated experiences.
-- Use the [existing sign-in alert pattern](patterns/help-users-to/sign-in) that notifies a user that we will prefill their information will be prefilled when signing in.
-- Use the [prefill alert](/components/form/prefill) when the user is signed in to notify them that we prefilled some of their information.
+- Use the [form introduction page templates]({{ site.baseurl }}/templates/forms/introduction). The existing templates are already updated to support this pattern for both the unauthenticated and authenticated experiences.
+- Use the [existing sign-in alert pattern]({{ site.baseurl }}/patterns/help-users-to/sign-in) that notifies a user that we will prefill their information will be prefilled when signing in.
+- Use the [prefill alert]{{ site.baseurl }}(/components/form/prefill) when the user is signed in to notify them that we prefilled some of their information.
 
 ### How this pattern works
 
@@ -50,7 +50,7 @@ This pattern involves these types of pages found in VA.gov forms:
 Here’s how to communicate that people can update certain information online:
 
 - **Displaying editable prefilled information in a card with an edit link.** Display prefilled information in a card component with a link to edit the information. This information may include contact information, such as a phone number, email address, or mailing address.  
-- Use the [Help users to… Update prefilled information](/patterns/help-users-to/update-prefilled-information) pattern when the user can update their information.
+- Use the [Help users to… Update prefilled information]({{ site.baseurl }}/patterns/help-users-to/update-prefilled-information) pattern when the user can update their information.
 
 #### Communicate information that the user can't edit
 Here’s how to communicate that people can’t update certain information online:
@@ -60,12 +60,12 @@ Here’s how to communicate that people can’t update certain information onlin
 - **Consider adding a pathway for the user to correct their information for the form itself.** Since information from the person’s profile may be inaccurate, it’s helpful to have this option.  Clarify that since they can't update the information online, we'll only update the information they requested on the current form.
 
 ### Components used in this pattern
-- [Alert](/components/alert/) - To inform the user about prefilled information and where we will save changes
-- [Alert - Sign-in](/components/alert/alert-sign-in/) - To inform the user that they can sign so we can prefill their information
-- [Card](/components/card/) - To display prefilled information in organized sections
-- [Card - Status](/components/card-status) - To display prefilled information that the user can edit
-- [Link](/components/link) - To give the user an opportunity to make changes to their prefilled information
-- [Prefill](/components/form/prefill) - To inform the user before starting the form that we will prefill their information if they sign in
+- [Alert]({{ site.baseurl }}/components/alert/) - To inform the user about prefilled information and where we will save changes
+- [Alert - Sign-in]({{ site.baseurl }}/components/alert/alert-sign-in/) - To inform the user that they can sign so we can prefill their information
+- [Card]({{ site.baseurl }}/components/card/) - To display prefilled information in organized sections
+- [Card - Status]({{ site.baseurl }}/components/card-status) - To display prefilled information that the user can edit
+- [Link]({{ site.baseurl }}/components/link) - To give the user an opportunity to make changes to their prefilled information
+- [Prefill]({{ site.baseurl }}/components/form/prefill) - To inform the user before starting the form that we will prefill their information if they sign in
 
 ## Examples
 
@@ -81,12 +81,15 @@ Here’s how to communicate that people can’t update certain information onlin
 ### Uneditable prefill card
 ![Uneditable prefill card]({{site.baseurl}}/images/patterns/help-users-to/know-when-their-information-is-prefilled/Uneditable-prefill-card.png)
 
+### Example within a mock form flow
+An example of the prefill pattern can be found in the [Forms library mock form on staging](https://staging.va.gov/mock-form-prefill/introduction). Sign in with any staging user.
+
 ## Code Usage
 Code for the [prefill pattern](https://github.com/department-of-veterans-affairs/vets-website/tree/main/src/platform/forms-system/src/js/patterns/prefill) can be found in the Forms library.
 
 ## Content considerations
 ### Directions for updating uneditable information
-Directions for updating information that can’t be updated online vary by form and type of information. The  "[Help users to... Update Prefilled information](/patterns/help-users-to/update-prefilled-information)" pattern has guidance for these directions.
+Directions for updating information that can’t be updated online vary by form and type of information. The  "[Help users to... Update Prefilled information]({{ site.baseurl }}/patterns/help-users-to/update-prefilled-information)" pattern has guidance for these directions.
 
 ## Research findings
 The Authenticated Experience Design Patterns team conducted [user research](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design-and-research/2024-07-Research-Initiative-One-Prefill/Prefill%20Research%20Report%2009_2024.md) in mid 2024 to gather validation about this pattern. The pattern was [further tested](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design-and-research/2024-09-Research-Initiative-Two-Update-Prefill/Update%20Prefill%20Research%20Report.md) as part of a late 2024 study by the same team.
