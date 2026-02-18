@@ -25,7 +25,7 @@ anchors:
 ### When not to use this pattern
 
 * **When you don't prefill the user's information.**  
-* **For unauthenticated users.** Users who aren't signed in shouldn't have their information prefilled when they interact with an application, or be able to update prefilled information. But, when forms don't require users to be signed in, they should see an informational alert describing benefits to signing in. [Check the unauthenticated intro page alert\]({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled\#unauthenticated-intro-page-alert) within the [Help users to... Know when their information is prefilled]({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled) pattern.
+* **For unauthenticated users.** Users who aren't signed in shouldn't have their information prefilled when they interact with an application, or be able to update prefilled information. But, when forms don't require users to be signed in, they should see an informational alert describing benefits to signing in. [Check the unauthenticated intro page alert]({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled#unauthenticated-prefill-alert) within the [Help users to... Know when their information is prefilled]({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled) pattern.
 
 ### When to use caution
 
@@ -44,22 +44,16 @@ This pattern involves these types of pages found in VA.gov forms:
 Refer to the related ["Help users to... Know when their information is prefilled"]({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled) pattern for guidance on helping users know when their information is prefilled.
 
 #### Prefilled information the user can't update
-
-{% include component-example.html class="x2" alt="A form page asking users to confirm their personal information, such as legal name, date of birth, and Social Security number. That information is contained in a white card. Below the white card is a string of text explaining why users can't update that information online." file="/images/patterns/help-users-to/update-prefilled-information/personal-information-page.png" %}
-
 Here's how to communicate that users can't update certain information online:
-
 * **Omit the edit link in cards with uneditable information.**  
 * **Include instructions for how to update uneditable information.** Under the card with the uneditable information, display a note starting with the bolded word “Note:” followed by directions to help users find out how to update this information by phone or another way. These directions will vary by form or type of information. You’ll need to confirm that the directions are accurate for updating that specific type of information. See the Content considerations section for more guidance.
 
-
 #### Prefilled information the user can update
-
 Here's how to communicate that users can update certain information online:
 
 **Display editable prefilled information in a card with an edit link.** Display prefilled information in a card component with a link to edit the information. This information may include contact information, such as phone number, email address, or mailing address.
 
-{% include component-example.html class="x2" alt="A card that shows the address information along with a link to edit if needed." file="/images/patterns/help-users-to/update-prefilled-information/address-page.png" %}
+{% include component-example.html class="x2" alt="Cards that show contact info with links to edit if needed." file="/images/patterns/help-users-to/update-prefilled-information/editable-prefill-contact-info.png" %}
 
 When the user updates this information, there are two potential pathways.
 
@@ -80,7 +74,8 @@ Consider using this variation for information that may change frequently. For ex
 After the form fields the person is updating, include this question:
 
 >Do you want to update this information in your profile? (*Required)
-If you select “yes,” we’ll update this information across multiple VA benefits and services. [LINK: Learn more about changing your address in your profile (opens in a new tab)]
+>
+>Hint text: If you select “yes,” we’ll update this information across multiple VA benefits and services. [LINK: Learn more about changing your address in your profile (opens in a new tab)]
 
 The radio options should be:
 - Yes, also update my profile
@@ -92,6 +87,8 @@ The radio options should be:
 
 In certain cases, users may need to choose which piece of information they want to use on the form. An example of this is if you prefill the user’s mobile and home telephone numbers, but the form only asks for a primary phone number. In these instances, after the user confirms their prefilled information, display a question with radio button response options asking the user which option they want to use on the form. 
 
+{% include component-example.html class="x2" alt="A page for users to choose their primary phone number.'" file="/images/patterns/help-users-to/update-prefilled-information/primary-phone.png" %}
+
 #### Prefilled information that is missing and required
 
 There may be instances where some information that would usually be prefilled is missing from the database, but is also required by the form itself. In those instances, we'll take the user to a page with a status card that uses a colored tag to indicate that the information is missing. The card will also have the word "(\*Required)" next to the field heading text to indicate the user needs to provide that information.
@@ -100,9 +97,9 @@ There may be instances where some information that would usually be prefilled is
 
 If the user does not provide the required missing information and selects the "Continue" button to try and move forward, they'll get the same page with that status card in an error state and some red error text telling them what information they need to provide. Once they select "Add" and provide the information on an edit page, they will be redirected back to this screen and can continue through the form.
 
-{% include component-example.html class="x2" alt="A page showing users an error state of the card with missing and required information they need to add." file="/images/patterns/help-users-to/update-prefilled-information/card-with-missing-info-error-state.png" %}
+{% include component-example.html class="x2" alt="A page showing users an error alert and error state of the card with missing and required information they need to add." file="/images/patterns/help-users-to/update-prefilled-information/card-with-missing-info-error-state.png" %}
 
-Please note that there is currently a [ticket](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/4276) to update the card component to include this error state. It may not yet be available for use in the VADS Figma design files.
+Please note that there is currently a [ticket](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/4276) to update the card component to include this error state.
 
 #### Communicate when and where we'll save updates to prefilled information
 
@@ -147,6 +144,10 @@ In cases where the information might change frequently (like a temporary mailing
 
 {% include component-example.html class="x2" alt="A required radio button field asking the user if they also want to update this information in their profile." file="/images/patterns/help-users-to/update-prefilled-information/radio-button.png" %}
 
+## Code usage
+
+Code for the [prefill pattern](https://github.com/department-of-veterans-affairs/vets-website/tree/main/src/platform/forms-system/src/js/patterns/prefill) can be found in the Forms library.
+
 ## Content considerations
 
 ### Directions for updating uneditable information
@@ -162,17 +163,17 @@ Here's an example that tells people to call the VA benefits hotline:
 ### Error messages
 If the information can’t be saved onto profile, but can be used for the form
 
-Error alert: We can’t update your information in your profile. But you can continuing filling out this [form/application] and update your profile information later.
+>Error alert: We can’t update your information in your profile. But you can continuing filling out this [form/application] and update your profile information later.
 
 
 If the information can’t be saved for profile or for the form
 
-Error alert: We can’t save your current information. Try again later.
+>Error alert: We can’t save your current information. Try again later.
 
 
 If the required information is missing
 
-Inline error message: Select “Add” to enter your [missing content].
+>Inline error message: Select “Add” to enter your [missing content].
 
 ## Accessibility considerations
 
