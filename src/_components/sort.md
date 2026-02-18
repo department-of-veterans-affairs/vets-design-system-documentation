@@ -24,21 +24,31 @@ anchors:
 
 {% include storybook-preview.html story="components-va-sort--default" link_text="va-sort default" %}
 
-### Medications
+### Custom Default Value
 
-#### Mobile
+{% include storybook-preview.html story="components-va-sort--custom-default-value" link_text="va-sort--custom-default-value" %}
+
+### Widths
+
+{% include storybook-preview.html story="components-va-sort--widths" link_text="va-sort--widths" %}
+
+### Mockups
+
+#### Medications
+
+##### Mobile
 {% include component-example.html alt="Mobile example of medications on the My HealtheVet Medications page placed below the Filter and above the search results." file="/images/components/sort/medications_sort_mobile.png" caption="Mobile example of My HealtheVet medications sorted by last fill date (newest to oldest) alongside the Search Filter component." width="25%" %}
 
-#### Desktop
+##### Desktop
 {% include component-example.html alt="Desktop example of medications on the My HealtheVet Medications page placed below the Filter and above the search results" file="/images/components/sort/medications_sort.png" caption="Desktop example of My HealtheVet medications sorted by last fill date (newest to oldest) alongside the Search Filter component." width="50%" %}
 
-### Questions
+#### Questions
 {% include component-example.html alt="Desktop example of Sort placed below the Search Input component, separated by a divider with the Search Filter in a column to the left." file="/images/components/sort/askva_sort_search_input_filter.png" caption="Desktop example of AskVA questions sorted by last updated (newest to oldest) alongside the Search Input and Search Filter components." width="50%" %}
 
-### Find a Form
+#### Find a Form
 {% include component-example.html alt="Screenshot of the VA Find a Form search results page showing a Sort by dropdown set to the default option above a list of form results." file="/images/components/sort/find_a_form_sort.png" caption="Desktop example of VA forms sorted by relevance on VA Find a Form." width="50%" %}
 
-### Secure Messaging
+#### Secure Messaging
 {% include component-example.html alt="Example of messages sorted by send date (newest to oldest) in the My HealtheVet Inbox" file="/images/components/sort/inbox_sort.png" caption="Desktop example of messages sorted by last updated (newest to oldest) in the My HealtheVet Inbox." width="50%" %}
 
 
