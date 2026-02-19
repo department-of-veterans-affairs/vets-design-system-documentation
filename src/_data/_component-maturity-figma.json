@@ -129,16 +129,6 @@
       "$value": "Deployed"
     }
   },
-  "va-card-status": {
-    "category": {
-      "$type": "string",
-      "$value": "Use with caution"
-    },
-    "level": {
-      "$type": "string",
-      "$value": "Available"
-    }
-  },
   "va-checkbox": {
     "category": {
       "$type": "string",
@@ -487,16 +477,6 @@
     "level": {
       "$type": "string",
       "$value": "Candidate"
-    }
-  },
-  "va-sort": {
-    "category": {
-      "$type": "string",
-      "$value": "Use with caution"
-    },
-    "level": {
-      "$type": "string",
-      "$value": "Available"
     }
   },
   "va-statement-of-truth": {

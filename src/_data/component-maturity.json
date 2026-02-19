@@ -52,10 +52,6 @@
     "maturityCategory": "use",
     "maturityLevel": "deployed"
   },
-  "va-card-status": {
-    "maturityCategory": "caution",
-    "maturityLevel": "available"
-  },
   "va-checkbox": {
     "maturityCategory": "use",
     "maturityLevel": "deployed"
@@ -195,10 +191,6 @@
   "va-sidenav": {
     "maturityCategory": "caution",
     "maturityLevel": "candidate"
-  },
-  "va-sort": {
-    "maturityCategory": "caution",
-    "maturityLevel": "available"
   },
   "va-statement-of-truth": {
     "maturityCategory": "use",
