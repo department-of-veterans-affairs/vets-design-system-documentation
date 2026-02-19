@@ -238,7 +238,7 @@ Do not use monospace fonts for phone numbers, zip codes, dates, or other data th
 
 {% include snippet.html content='html/eyebrow-card.html' %}
 
-The eyebrow sits above a heading and provides a label for a sequence of pages in a process or for groups of related content, such as multiple cards. The eyebrow component renders its text in uppercase via styling; authored labels should be written in sentence or title case, not in ALL CAPS. See [Capitalization]({{ site.baseurl }}/content-style-guide/capitalization) for guidance on when all caps is permitted.
+The eyebrow sits above a heading and provides a label for a sequence of pages in a process or for groups of related content, such as multiple cards. The eyebrow component renders its text in uppercase through styling. Authors should still always enter label text in sentence case, not in ALL CAPS. Refer to [Capitalization]({{ site.baseurl }}/content-style-guide/capitalization) for guidance on when we permit all caps.
 
 ### When to use
 - Use the eyebrow when you implement the [Help users to complete a sub task]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task) pattern.
