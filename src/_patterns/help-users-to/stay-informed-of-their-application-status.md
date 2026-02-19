@@ -11,7 +11,6 @@ anchors:
   - anchor: Usage
   - anchor: Examples
   - anchor: How to design and build
-  - anchor: Examples in production
 ---
 
 ## Usage
@@ -28,7 +27,7 @@ anchors:
 
 ### Form submission status in My VA
 
-{% include component-example.html alt="Screen shots of 3 My VA status cards." file="/images/patterns/help-users-to/stay-informed-of-their-application-status/myva-status-cards.png" caption="Three Card component variations used to show the status of someone's submission in My VA for Benefits applications." reverse="true" %}
+{% include component-example.html alt="Screenshots of 4 My VA status cards." file="/images/patterns/help-users-to/stay-informed-of-their-application-status/myva-status-cards.png" caption="Four Card component variations used to show the status of someone's form or application submission in My VA." reverse="true" %}
 
 ## How to design and build
 
@@ -48,8 +47,8 @@ Submit a [VA Notify intake ticket](https://github.com/department-of-Veterans-aff
 
 If there's a lag time between when someone submits the form and when VA receives it in the system of record, you must implement these 3 email notifications:
 
-1. **Submission in progress**: The notification we send immediately after someone selects the **Submit** button on an online form. This means that the form submission has successfully started, but it has not yet reached the system of record. During this time, data submitted by the person may travel through several systems.
-2. **Received**: The notification we send when we've received a submitted form in the system of record. This means the form is ready for processing. **Only send this status notification when we have confirmation that the request has reached the system of record.**
+1. **Submission in progress:** The notification we send immediately after someone selects the Submit button on an online form. This means that the form submission has successfully started, but it has not yet reached the system of record. During this time, data submitted by the person may travel through several systems.
+2. **Received:** The notification we send when we've received a submitted form in the system of record. This means the form is ready for processing. Only send this status notification when we have confirmation that the request has reached the system of record.
 3. **Action needed:** The error notification we send if a form submission fails to reach the system of record. This means we need the person to resubmit or take another action before we can process their form. This notification must include instructions for the person to recover from the error. There are different templates available based on the remediation steps specific to the form.
 
 VA Notify templates are available for these 3 email notifications. Submit a [VA Notify intake ticket](https://github.com/department-of-Veterans-affairs/va.gov-team/issues/new?assignees=christy-tongty%2C+mjones-oddball%2C+GitSamJennings&labels=vanotify-intake&template=VANotify-Business-Intake.md&title=Business+intake+form+for+%5BBusiness+or+team%5D) to start the process of activating email notifications for your application.
@@ -68,7 +67,7 @@ In the event that an action needed notification to the form submitter's primary 
 **Important!** Regardless of the notification status, the status of the form submission should be visible in the user interface of VA.gov or the Health and Benefits mobile application. This may be accomplished via [My VA](#form-submission-status-in-my-va), Claim Status Tool, or another service.
 
 1. **Email to alternative email address.** If the primary email notification fails, as determined via callback to VA Notify or other mechanism, fallback to any alternative email addresses available. **Note:** This only applies to a limited set of applications that obtain a secondary email address.
-2. **Text message to primary phone number.** If the secondary email notification fails, fallback to sending a text message via VA Notify to the primary phone number either collected in the form or obtained from the user's profile. Users don't need to opt-in to this message as it's a critical communication.
+2. **Text message to mobile phone number.** If the secondary email notification fails, fallback to sending a text message via VA Notify to the mobile phone number either collected in the form or obtained from the user's profile. Users don't need to opt-in to this message as it's a critical communication.
 3. **Hand-off to Veteran Support team.** At this point, if all of the notification mechanisms have returned a failure then teams must hand off contacting the Veteran to the Veteran support team (use Slack channel #vsp-contact-center-support). A Support team member will contact the Veteran and assist them with re-submitting their request.
 
 ### Showing form submission status on the form confirmation page
@@ -89,30 +88,33 @@ If there's a lag time between when someone submits the form and when VA receives
 
 ### Showing form submission status in My VA
 
-Form submissions on VA.gov or in the mobile app must show the submission status in My VA for people who are authenticated. These statuses appear in the **Benefit applications and forms** section of My VA. This section currently gets statuses from an API polling mechanism for submissions processed asynchronously.
+Form submissions on VA.gov or in the mobile app must show the submission status in My VA for people who are authenticated. These statuses appear in the **Forms and application** section of My VA. This section currently gets statuses from an API on page load for submissions processed asynchronously. Once complete, cards stay on My VA for 60 days, then are removed for security purposes.
 
-Some forms also show a "received" status in the **Claims and appeals** section of My VA. If your form appears as a claim, decision review, or appeal in the claim status tool, work with the team that manages that tool to determine how and where you should show form submission status in My VA.
+If your form or application is linked to Claim Status Tool, the current status will also appear in the **Claims and appeals** section of My VA.
+
+Refer to the [My VA documentation on displaying form status](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/identity-personalization/my-va/forms-status-on-My-VA/adding-a-form.md) for more information.
 
 #### How to display status for VA form and application submissions
 
-VA form and application submissions on My VA display status to help people stay informed about their submission. Follow this guidance and backend workflow for new forms or patterns.
+VA form and application submissions on My VA display statuses to help people stay informed about their submission. Follow this guidance and backend workflow for new forms or patterns.
 
 #### Supported statuses
 
-Forms and applications can show the following statuses:
+**Forms and applications** card statuses are retrieved from vets-api. Although different forms are backed by various APIs, they can all show the following statuses:
 
-| Status                     | Description                                               | Managed by           |
-|----------------------------|----------------------------------------------------------|----------------------|
-| Submission in progress     | VA is processing your submission                         | Backend/API          |
-| Received                   | VA received your submission and it is being reviewed     | Backend/API          |
-| Action needed              | VA needs additional info from you                        | Backend/API          |
+| Status | Description |
+| :---- | :---- |
+| Draft | You started this form online but haven’t submitted it yet |
+| Submission in progress | VA is processing your submission | 
+| Received | VA received your submission and it is being reviewed |
+| Action needed | VA needs additional info from you |
 
 #### Status card variants
 
 There are two card variants for displaying form status:
 
-- **Uploaded Forms**: fallback title, e.g., "VA Form XX-XXXX"
-- **Online Forms**: product title with subheading (from application configuration)
+* **Uploaded Forms:** fallback title, e.g., "VA Form XX-XXXX"
+* **Online Forms:** product title with subheading (from application configuration)
 
 #### How to handle forms submitted within the process of another form (sub-forms)
 

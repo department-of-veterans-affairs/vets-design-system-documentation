@@ -196,6 +196,10 @@
     "maturityCategory": "caution",
     "maturityLevel": "candidate"
   },
+  "va-sort": {
+    "maturityCategory": "caution",
+    "maturityLevel": "available"
+  },
   "va-statement-of-truth": {
     "maturityCategory": "use",
     "maturityLevel": "deployed"
