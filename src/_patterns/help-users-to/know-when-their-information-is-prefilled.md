@@ -32,7 +32,7 @@ anchors:
 
 ## How to design and build
 ### Anatomy or layout details
-This pattern involves these types of pages found in VA.gov forms:
+This pattern involves these types of areas found in VA.gov forms:
 
 - **Introduction page:** The first page of a form. Introduces the process the Veteran or other beneficiary will follow to apply for a benefit or to complete a supporting form. Changes slightly after a user signs in.  
 - **Prefilled information the user cannot update:** This is usually personal information like name, date of birth, and Social Security number.  
@@ -42,21 +42,21 @@ This pattern involves these types of pages found in VA.gov forms:
 
 - Use the [form introduction page templates]({{ site.baseurl }}/templates/forms/introduction). The existing templates are already updated to support this pattern for both the unauthenticated and authenticated experiences.
 - Use the [existing sign-in alert pattern]({{ site.baseurl }}/patterns/help-users-to/sign-in) that notifies a user that we will prefill their information will be prefilled when signing in.
-- Use the [prefill alert]{{ site.baseurl }}(/components/form/prefill) when the user is signed in to notify them that we prefilled some of their information.
+- Use the [prefill alert]({{ site.baseurl }}/components/form/prefill) when the user is signed in to notify them that we prefilled some of their information.
 
 ### How this pattern works
 
 #### Communicate information that the user can edit
 Here’s how to communicate that people can update certain information online:
 
-- **Displaying editable prefilled information in a card with an edit link.** Display prefilled information in a card component with a link to edit the information. This information may include contact information, such as a phone number, email address, or mailing address.  
-- Use the [Help users to… Update prefilled information]({{ site.baseurl }}/patterns/help-users-to/update-prefilled-information) pattern when the user can update their information.
+- **Display an edit link.** Display prefilled information in a card component with a link to edit the information. This information may include contact information, such as a phone number, email address, or mailing address.  
+- **Include a pathway to edit the information.** Use the [Help users to… Update prefilled information]({{ site.baseurl }}/patterns/help-users-to/update-prefilled-information) pattern when the user can update their information.
 
 #### Communicate information that the user can't edit
 Here’s how to communicate that people can’t update certain information online:
 
 - **Omitting the edit link in cards with uneditable information.** For information that the user can't change online (such as legal name, date of birth, and Social Security number), remove the edit link within the card component.  
-- **Include instructions for how to update uneditable information**. Under the card with the uneditable information, display a note starting with the bolded word “Note:” followed by directions to help users find out how to update this information by phone or another way. These directions will vary by form or type of information. You’ll need to confirm that the directions are accurate for updating that specific type of information. See the **Content considerations** section  
+- **Include instructions for how to update uneditable information**. Under the card with the uneditable information, display a note starting with the bolded word “Note:” followed by directions to help users find out how to update this information by phone or another way. These directions will vary by form or type of information. You’ll need to confirm that the directions are accurate for updating that specific type of information. See the [Content considerations](#content-considerations) section  
 - **Consider adding a pathway for the user to correct their information for the form itself.** Since information from the person’s profile may be inaccurate, it’s helpful to have this option.  Clarify that since they can't update the information online, we'll only update the information they requested on the current form.
 
 ### Components used in this pattern
@@ -76,10 +76,10 @@ Here’s how to communicate that people can’t update certain information onlin
 {% include storybook-preview.html story="patterns-components-prefill-alert--unauthenticated-prefill-alert" height="415px" link_text="unauthenticated prefill alert" %}
 
 ### Editable prefill card
-{% include component-example.html alt="A card showing information that can be edited by the user." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/Editable-prefill-card.png" caption="editable prefill card" class="x2" %}
+{% include component-example.html alt="A card showing information that can be edited by the user." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/Editable-prefill-card.png" caption="Editable prefill card (Screenshot)" class="x2" %}  
 
 ### Uneditable prefill card
-![Uneditable prefill card]({{site.baseurl}}/images/patterns/help-users-to/know-when-their-information-is-prefilled/Uneditable-prefill-card.png)
+{% include component-example.html alt="A card showing information that can be edited by the user." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/Uneditable-prefill-card.png" caption="Uneditable prefill card (Screenshot)" class="x2" %}  
 
 ### Example within a mock form
 An example of the prefill pattern can be found in the [Forms library mock form on staging](https://staging.va.gov/mock-form-prefill/introduction). Sign in with any staging user.
