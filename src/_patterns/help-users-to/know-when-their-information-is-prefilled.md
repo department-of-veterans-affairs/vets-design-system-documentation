@@ -32,7 +32,7 @@ anchors:
 
 ## How to design and build
 ### Anatomy or layout details
-This pattern involves these types of areas found in VA.gov forms:
+This pattern involves these types of sections found in VA.gov forms:
 
 - **Introduction page:** The first page of a form. Introduces the process the Veteran or other beneficiary will follow to apply for a benefit or to complete a supporting form. Changes slightly after a user signs in.  
 - **Prefilled information the user cannot update:** This is usually personal information like name, date of birth, and Social Security number.  
