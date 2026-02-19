@@ -51,7 +51,7 @@ anchors:
 
 ### How this component works
 
-* **Icon plus action label.** These buttons are composed of an icon and a concise label. For the label, use a verb that describes the action the person is taking, and aim to limit the label text to 1 or 2 words. For example, "Change file", "Delete", or "Cancel". The component’s visual style may sometimes render labels in uppercase, but authors should always provide label text in sentence case. Refer to [Capitalization]({{ site.baseurl }}/content-style-guide/capitalization) for guidance on when we permit all caps in visual treatments.
+* **Icon plus action label.** These buttons are composed of an icon and a concise label. For the label, use a verb that describes the action the person is taking, and aim to limit the label text to 1 or 2 words. For example, "Change file", "Delete", or "Cancel". The component’s visual style renders labels in uppercase, but authors should always provide label text in sentence case. Refer to [Capitalization]({{ site.baseurl }}/content-style-guide/capitalization) for guidance on when we permit all caps in visual treatments.
 
 ## Requesting new instances
 
