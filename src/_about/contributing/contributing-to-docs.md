@@ -40,11 +40,11 @@ Submit your new page as a pull request. The team will review and respond as soon
 
 ## Writing for VADS
 
-When writing content specifically for the VA Design System (VADS), follow the VA.gov Content Style Guide (VA-CSG). 
+When writing content specifically for the VA Design System (VADS), follow the VA.gov Content Style Guide (VA-CSG).
 
 [View the complete VA.gov Content Style Guide]({{ site.baseurl }}/content-style-guide/)
 
-However, there are some situations where the VA-CSG doesn’t cover VADS-specific content, or where the unique user base for VADS demands deviation from the VA-CSG. This page contains guidance for these situations. 
+However, there are some situations where the VA-CSG doesn’t cover VADS-specific content, or where the unique user base for VADS demands deviation from the VA-CSG. This page contains guidance for these situations.
 
 For issues not covered in this style guide, refer to:
 
@@ -56,15 +56,16 @@ For issues not covered in this style guide, refer to:
 
 #### [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms)
 
-While there are abbreviations and acronyms that we use extensively in the Design System, we should be careful to define these when they’re first used on a page. This ensures that VADS pages can be used by both experienced and new Veteran-Facing Services (VFS) teams. 
+While there are abbreviations and acronyms that we use extensively in the Design System, we should be careful to define these when they’re first used on a page. This ensures that VADS pages can be used by both experienced and new Veteran-Facing Services (VFS) teams.
+**Using e.g. and i.e.:** The VA.gov Content Style Guide discourages "e.g." and "i.e." in Veteran-facing content, but these abbreviations are acceptable in VADS documentation. Our audience of designers and developers is familiar with these terms, and they help keep technical guidance concise. Always include a comma after "e.g." and "i.e." (e.g., like this).
 
 #### [Capitalization]({{ site.baseurl }}/content-style-guide/capitalization)
 
-While the VA-CSG avoids title case altogether, title case is allowed for the naming of components, patterns, and templates in VADS. [Find more details on naming components in the “Component, pattern, and template names” section of this page.](#referencing-components-patterns-and-templates) 
+While the VA-CSG avoids title case altogether, title case is allowed for the naming of components, patterns, and templates in VADS. [Find more details on naming components in the “Component, pattern, and template names” section of this page.](#referencing-components-patterns-and-templates)
 
 #### Including "AKA" sections
 
-Often, there are several colloquial names for a component, pattern, or template. For example, users often call the [Search Input component]({{ site.baseurl }}/components/search-input) a search box, search field, or search bar. When possible, include a section in the component guidance with a list of these other names. This helps users find what they’re looking for even if they’re familiar with a term that differs from the component name. 
+Often, there are several colloquial names for a component, pattern, or template. For example, users often call the [Search Input component]({{ site.baseurl }}/components/search-input) a search box, search field, or search bar. When possible, include a section in the component guidance with a list of these other names. This helps users find what they’re looking for even if they’re familiar with a term that differs from the component name.
 
 #### [Links]({{ site.baseurl }}/content-style-guide/links)
 
@@ -78,7 +79,7 @@ In Veteran-facing content, avoid "user" or "users" and instead use "Veterans" or
 
 #### [Plain language]({{ site.baseurl }}/content-style-guide/plain-language/)
 
-VA.gov plain language standards still apply to VADS. However, there may be instances where communication with VA.gov product teams demands a higher level of expertise than the plain language standards account for. This is particularly likely in these areas: 
+VA.gov plain language standards still apply to VADS. However, there may be instances where communication with VA.gov product teams demands a higher level of expertise than the plain language standards account for. This is particularly likely in these areas:
 
 - [Use short sentences]({{ site.baseurl }}/content-style-guide/plain-language/use-short-sentences)
 - [Use simple words and terms]({{ site.baseurl }}/content-style-guide/plain-language/use-simple-words-and-terms)
