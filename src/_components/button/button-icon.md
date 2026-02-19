@@ -61,7 +61,7 @@ The 3 examples above are the only currently approved instances of this component
 
 ## Content considerations
 
-* **Use the verb that describes exactly what will happen when the person takes the action.** For example, use "Delete" instead of "Remove" for when the action will delete a file. Note: Currently, icon and button labels are hard-coded into the component. You must follow the instructions on this page to request any new icons or label.
+* **Use the verb that describes exactly what will happen when the person takes the action.** For example, use "Delete" instead of "Remove" for when the action will delete a file. Note: Currently, icon and button labels are hard-coded into the component. You must follow the [instructions to request any new icons or label](#requesting-new-instances).
 
 ### Button labels
 
