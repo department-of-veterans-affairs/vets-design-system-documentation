@@ -56,7 +56,7 @@ anchors:
 ### When to use Sort
 
 * **When there are clear, meaningful ways to sort.** Common contexts include:
-    * Search results 
+    * Search 
     * Medications
     * Appointments
     * Secure messages
@@ -79,7 +79,7 @@ anchors:
 
 #### Web
 
-* **User clicks the dropdown to open a list of sort options.** Alternatively, a screen-reader user may arrow up and down the list without opening the menu. The Sort component uses the [Select]({{ site.baseurl }}/components/form/select) as the foundation and shares similar behavior.
+* **Clicking or tapping the component opens the list of sort options.** Alternatively, a screen-reader user may arrow up and down the list without opening the menu. The Sort component uses the [Select]({{ site.baseurl }}/components/form/select) as the foundation and shares similar behavior.
 
 * **Results automatically update when you select a sort option.** This is known as implicit submission.
     * **Why implicit submission?**
