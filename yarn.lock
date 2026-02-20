@@ -920,7 +920,7 @@
 
 "@department-of-veterans-affairs/component-library@^54.7.0":
   version "54.7.0"
-  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/component-library/-/component-library-54.7.0.tgz#0bcb853c9a1f68a85768a92e7be09a58dcb34dfb"
+  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/component-library/-/component-library-54.7.0.tgz#0bcb853c9a1f68a85768a92e7be09a58dcb34dfb"
   integrity sha512-pqYp0fn+f6E4EeSm26dmH5qKeTecZd+ouBzp1+ydIDVbB6/Fjac/kD+nNgybQTBAMBvjDOz/P3y7k7ooDnpi5w==
   dependencies:
     "@department-of-veterans-affairs/react-components" "28.3.1"
@@ -932,7 +932,7 @@
 
 "@department-of-veterans-affairs/css-library@^0.29.1":
   version "0.29.1"
-  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/css-library/-/css-library-0.29.1.tgz#f3c3c25b50a2bae5adb1c29755b1eb989e5f211e"
+  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/css-library/-/css-library-0.29.1.tgz#f3c3c25b50a2bae5adb1c29755b1eb989e5f211e"
   integrity sha512-WN5FQw0InMBTRFopyGixqAEMjOta3wAi0ijlpLUTecld8GkrnfRNeQic6GmuPg0iLJQCqEew5wDXZPTLV10Zxw==
   dependencies:
     "@divriots/style-dictionary-to-figma" "0.4.0"
@@ -953,7 +953,7 @@
 
 "@department-of-veterans-affairs/web-components@22.7.0":
   version "22.7.0"
-  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/web-components/-/web-components-22.7.0.tgz#1f4580904fb7e5e58c61908280aeb67682cfa885"
+  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/web-components/-/web-components-22.7.0.tgz#1f4580904fb7e5e58c61908280aeb67682cfa885"
   integrity sha512-nqWAi+Fjttw8eJgOehnWhYRDJXf893uQrJJ4dzBR81CnDf/5J332d/Lwe6M0K6ZRqEdyWB9vnOohVWJXNBNchQ==
   dependencies:
     "@stencil/core" "4.20.0"

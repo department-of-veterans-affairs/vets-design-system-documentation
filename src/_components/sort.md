@@ -2,18 +2,12 @@
 layout: component
 title: Sort
 permalink: /components/sort/
-# contributors: Comma separated list of contributor names with (org name) following, if applicable
-draft: false
+github-title: va-sort
+figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=40936-5762&t=RJz70e6yAZDcvGY3-1
+intro-text: "The Sort component allows users to reorder search results and lists of information to make information easier to analyze."
+web-component: va-sort
 web: true
 mobile-app: false
-intro-text: "The Sort component allows users to reorder search results and lists of information to make information easier to analyze."
-# github-title: va-component-name - Only use this if the component is not actually a web component and thus just needs a label that matches that format.
-# research-title: Use this to match the label in the research repo. Only use if web-component does not match the label.
-figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=40936-5762&t=RJz70e6yAZDcvGY3-1
-
-status: use-with-caution-candidate
-# web-component: va-sort
-
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -26,21 +20,34 @@ anchors:
 
 ## Examples
 
-### Medications
+### Default
 
-#### Mobile
+{% include storybook-preview.html story="components-va-sort--default" link_text="va-sort default" %}
+
+### Custom Default Value
+
+{% include storybook-preview.html story="components-va-sort--custom-default-value" link_text="va-sort--custom-default-value" %}
+
+### Widths
+
+{% include storybook-preview.html story="components-va-sort--widths" link_text="va-sort--widths" %}
+
+### Mockups
+
+#### Medications (Mobile)
+
 {% include component-example.html alt="Mobile example of medications on the My HealtheVet Medications page placed below the Filter and above the search results." file="/images/components/sort/medications_sort_mobile.png" caption="Mobile example of My HealtheVet medications sorted by last fill date (newest to oldest) alongside the Search Filter component." width="25%" %}
 
-#### Desktop
+#### Medications (Desktop)
 {% include component-example.html alt="Desktop example of medications on the My HealtheVet Medications page placed below the Filter and above the search results" file="/images/components/sort/medications_sort.png" caption="Desktop example of My HealtheVet medications sorted by last fill date (newest to oldest) alongside the Search Filter component." width="50%" %}
 
-### Questions
+#### Questions
 {% include component-example.html alt="Desktop example of Sort placed below the Search Input component, separated by a divider with the Search Filter in a column to the left." file="/images/components/sort/askva_sort_search_input_filter.png" caption="Desktop example of AskVA questions sorted by last updated (newest to oldest) alongside the Search Input and Search Filter components." width="50%" %}
 
-### Find a Form
+#### Find a Form
 {% include component-example.html alt="Screenshot of the VA Find a Form search results page showing a Sort by dropdown set to the default option above a list of form results." file="/images/components/sort/find_a_form_sort.png" caption="Desktop example of VA forms sorted by relevance on VA Find a Form." width="50%" %}
 
-### Secure Messaging
+#### Secure Messaging
 {% include component-example.html alt="Example of messages sorted by send date (newest to oldest) in the My HealtheVet Inbox" file="/images/components/sort/inbox_sort.png" caption="Desktop example of messages sorted by last updated (newest to oldest) in the My HealtheVet Inbox." width="50%" %}
 
 
@@ -48,8 +55,8 @@ anchors:
 
 ### When to use Sort
 
-* **When there are clear, meaningful ways to sort.** Sort options should help users achieve their goals. Common contexts include:
-    * Search results 
+* **When there are clear, meaningful ways to sort.** Common contexts include:
+    * Search 
     * Medications
     * Appointments
     * Secure messages
@@ -67,11 +74,12 @@ anchors:
     * For example, don't use Sort to filter by date ranges. <img src="{{ site.baseurl }}/images/components/sort/sort_nonexample.png" alt="Nonexample where Sort is being used to filter by a date range" style="width:50%;"/>
 * **When sorting within a table**, use the sort columns baked into the `va-table` component.
 
-## Behavior
 
-### Web
+### Behavior
 
-* **User clicks the dropdown to open a list of sort options.** Alternatively, a screen-reader user may arrow up and down the list without opening the menu. The Sort component uses the [Select]({{ site.baseurl }}/components/form/select) as the foundation and shares similar behavior.
+#### Web
+
+* **Clicking or tapping the component opens the list of sort options.** Alternatively, a screen-reader user may arrow up and down the list without opening the menu. The Sort component uses the [Select]({{ site.baseurl }}/components/form/select) as the foundation and shares similar behavior.
 
 * **Results automatically update when you select a sort option.** This is known as implicit submission.
     * **Why implicit submission?**
@@ -84,28 +92,26 @@ anchors:
 * **Sort selections persist across interactions.** The sort criteria should remain when users navigate through paginated results or refresh the page.
 
 * **Sizing and alignment differ on mobile and desktop.**
-    * On desktop resolutions, the width is fixed and the *Sort by* label is in line with the dropdown.
-        * Choose Medium (md), Large (lg), or Extra Large (xl) size, whichever prevents truncating the longest sort option.
-    * On mobile resolutions, the component is full-width and responsive. The *Sort by* label is stacked on top of the dropdown.
+    * On desktop resolutions, the *Sort by* label is in line with the dropdown and the width is fixed. Choose the Medium (md), Large (lg), or Extra Large (xl) size, whichever prevents truncating the longest sort option.
+    * On mobile resolutions, the *Sort by* label is stacked on top of the dropdown and the component is full-width and responsive. 
 
 
-
-### Placement
+#### Placement
 
 * **Place Sort above and aligned with the content that it affects.** It serves as a visual indicator of the current order.
-* **If used with the Search Filter, place Sort after the Search Filter's [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how).** This prevents the focus from skipping the Sort component given that the focus for filtering moves to results description or results heading and the focus for sorting is maintained on the component.
+* **Place Sort after the Search Filter's [results description]({{ site.baseurl }}/templates/search-results#results-description) when used with filtering.** This prevents the focus from skipping the Sort component given that the focus for filtering moves to results description or results heading and the focus for sorting is maintained on the component.
 
 ### Mobile app
 
-* **The VA mobile app does not currently use this component.** It uses its own combined Filter & Sort button that opens a modal to select and explicitly submit sort and filter options.
+* **Note that the VA mobile app does not currently use this component.** It uses its own combined Filter & Sort button that opens a modal to select and explicitly submit sort and filter options.
     * <img src="{{ site.baseurl }}/images/components/sort/va_mobile_filter_sort.png" alt="A Filter and Sort button that opens a modal that allows a user to explicitly submit sort and filter options." style="width:100%;"/>
 
-* **The naming of sort options must still remain consistent across mobile and desktop experiences.**
+* **Keep sort option naming consistent across mobile and desktop experiences.**
 
 
+{% include component-docs.html component_name=page.web-component %}
 
-## Code usage
-* **Relying on an API to sort and paginate data is permissible.** If sorting data on the frontend is more efficient, remember to format times and dates in a way that will ensure a correct chronological sort.
+* **Using an API to sort and paginate data is acceptable.** If sorting data on the frontend is more efficient, remember to format times and dates in a way that will ensure a correct chronological sort.
     * Store date and time as an [ISO-formatted string](https://en.wikipedia.org/wiki/ISO_8601#:~:text=Date%20and%20time%0Ain,00%20UTC%E2%88%9212%3A00) (date and time in UTC or date and time with offset).
         * Attempting to sort dates as strings like *2/20/2025*, *10/1/2024*, *9/5/2023* from newest to oldest, for example, could result in a non-chronological A-Z sort:
             * ***1****0/1/2024*
@@ -117,16 +123,17 @@ anchors:
             * *9/5/****2023***
 
 
+
 ## Content considerations
 
 ### Content expectations
 * **Provide a default sort option** that reflects what users expect in the given context. In search experiences, *Relevance* is often the default.
-    * Don't present a placeholder option (such as *- Select -*) as a selectable sort choice.
 
-* **Name sort options clearly and consistently** so users understand both *what* is being sorted and *how* it's ordered.
-    * Use this convention: `[Sort attribute] (sort method)`
-        * `[Sort attribute]` describes what the results are sorted by (for example, medication name, entry date, or distance).
-        * `(Sort method)` describes the ordering. Use familiar, plain language terms such as:
+* **Name sort options clearly and consistently** using this convention:
+    * `Sort attribute (sort method)`
+        * `Sort attribute` describes what the results are sorted by.
+            * Examples: Medication name, entry date, distance
+        * `(Sort method)` describes how the results are ordered. Use familiar, plain language terms such as:
             * **Alphabetical**
                 * A to Z      
             * **Chronological**
@@ -137,24 +144,24 @@ anchors:
                 * Smallest to largest
                 * Lowest to highest
                 * Shortest to longest
-    * **Note:** Avoid offering a sort method on its own without clearly identifying the attribute being sorted.
-        * For example, if a Vaccine history card only shows a date value, use a label like *Date received (newest to oldest)* rather than *Newest to oldest*.
     * Examples of clear and consistent sort option labels include:
         * *Medication name (A to Z)*
         * *Date entered (newest to oldest)*
         * *Refills remaining (least to most)*
         * *Distance (closest to furthest)*
 
-    * **Keep sort option labels consistent across mobile and desktop.** For example, if mobile uses *Date filled (newest to oldest)*, desktop should use the same wording—not something different like *Fill date (newest to oldest)*.
+* **Avoid offering a sort method as an option on its own.** For example, if a Vaccine history card only shows a date value, label the sort option as *Date received (newest to oldest)* rather than *Newest to oldest*.
+
+* **Keep sort option labels consistent across mobile and desktop.** If mobile uses *Date filled (newest to oldest)*, desktop should use the same wording.
 
 
 ### Additional guidance
-* **Consider allowing users to sort in both directions**—for example, A to Z and Z to A.
-    * Offering both directions isn't necessary when the reverse order wouldn't be meaningful or useful for users' goals. For example, it may not make sense to sort VA locations from furthest to closest.
-  
-* **Only include sort options that provide clear value.** The ability to sort data doesn't automatically mean it will help users.
 
-* **Sort does not need to be reflected in the [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how) for web and mobile.** The component already acts as a visual indicator of the order. However, it is required for the mobile app since the sort state is hidden within the modal.
+* **Only include sort options that are relevant to a user goal.** 
+
+* **Allow users to sort in both directions.** This is not necessary when the reverse order is not meaningful or useful. For example, it may not make sense to sort VA locations from furthest to closest.
+
+* **Sort does not need to be reflected in the [results description]({{ site.baseurl }}/templates/search-results#results-description) for web and mobile.** The component already acts as a visual indicator of the order. However, it is required for the mobile app since the sort state is hidden within the modal.
 
 
 
@@ -162,11 +169,11 @@ anchors:
 These considerations describe how sorting changes are communicated and experienced by users of assistive technologies.
 
 ### User experience expectations
-* When a sort option is selected, users need to be informed that the results have updated. This is especially important for screen reader users who may not see the visual change.
-* Sorted results should update in a meaningful and predictable order so all users perceive the same sequence of information ([WCAG 1.3.2 Meaningful Sequence](https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html)).
-* Sorting updates the results in place and does not trigger page navigation or a full context change.
-* Focus remains stable on the sort control during sorting so users can continue interacting without losing their place.
-* If sorting takes time, inform users that an update is in progress by following the [loading indicator guidance]({{ site.baseurl }}/components/loading-indicator).
+* Inform users when results have updated after a sort option is selected. This is especially important for screen reader users who may not see the visual change.
+* Ensure sorted results update in a meaningful and predictable order so all users perceive the same sequence of information ([WCAG 1.3.2 Meaningful Sequence](https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html)).
+* Update results in place during sorting and do not trigger page navigation or a full context change.
+* Keep focus stable on the sort control during sorting so users can continue interacting without losing their place.
+* Inform users that an update is in progress if sorting takes time by following the [Loading Indicator guidance]({{ site.baseurl }}/components/loading-indicator).
 
 ### Implementation notes
 * Announce sorting changes in a non-disruptive way using `aria-live="polite"` so assistive technology users understand that results have changed without interrupting their workflow.
