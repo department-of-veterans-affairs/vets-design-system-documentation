@@ -55,7 +55,7 @@ anchors:
 
 ### When to use Sort
 
-* **When there are clear, meaningful ways to sort.** Sort options should help users achieve their goals. Common contexts include:
+* **When there are clear, meaningful ways to sort.** Common contexts include:
     * Search results 
     * Medications
     * Appointments
@@ -92,9 +92,8 @@ anchors:
 * **Sort selections persist across interactions.** The sort criteria should remain when users navigate through paginated results or refresh the page.
 
 * **Sizing and alignment differ on mobile and desktop.**
-    * On desktop resolutions, the width is fixed and the *Sort by* label is in line with the dropdown.
-        * Choose Medium (md), Large (lg), or Extra Large (xl) size, whichever prevents truncating the longest sort option.
-    * On mobile resolutions, the component is full-width and responsive. The *Sort by* label is stacked on top of the dropdown.
+    * On desktop resolutions, the *Sort by* label is in line with the dropdown and the width is fixed. Choose the Medium (md), Large (lg), or Extra Large (xl) size, whichever prevents truncating the longest sort option.
+    * On mobile resolutions, the *Sort by* label is stacked on top of the dropdown and the component is full-width and responsive. 
 
 
 #### Placement
@@ -151,15 +150,16 @@ anchors:
         * *Refills remaining (least to most)*
         * *Distance (closest to furthest)*
 
-* **Avoid offering a sort method as a sort option on its own.** For example, if a Vaccine history card only shows a date value, label the sort option as *Date received (newest to oldest)* rather than *Newest to oldest*.
+* **Avoid offering a sort method as an option on its own.** For example, if a Vaccine history card only shows a date value, label the sort option as *Date received (newest to oldest)* rather than *Newest to oldest*.
 
-* **Keep sort option labels consistent across mobile and desktop.** If mobile uses *Date filled (newest to oldest)*, desktop should use the same wording—not something different like *Fill date (newest to oldest)*.
+* **Keep sort option labels consistent across mobile and desktop.** If mobile uses *Date filled (newest to oldest)*, desktop should use the same wording.
 
 
 ### Additional guidance
-* **Allow users to sort in both directions.** This is not necessary when the reverse order wouldn't be meaningful or useful for users' goals. For example, it may not make sense to sort VA locations from furthest to closest.
-  
-* **Only include sort options that provide clear value.** The ability to sort data doesn't automatically mean it will help users.
+
+* **Only include sort options that are relevant to a user goal.** 
+
+* **Allow users to sort in both directions.** This is not necessary when the reverse order is not meaningful or useful. For example, it may not make sense to sort VA locations from furthest to closest.
 
 * **Sort does not need to be reflected in the [results description]({{ site.baseurl }}/templates/search-results#results-description) for web and mobile.** The component already acts as a visual indicator of the order. However, it is required for the mobile app since the sort state is hidden within the modal.
 
