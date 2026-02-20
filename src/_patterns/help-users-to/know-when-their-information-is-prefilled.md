@@ -56,7 +56,7 @@ Here’s how to communicate that people can update certain information online:
 Here’s how to communicate that people can’t update certain information online:
 
 - **Omitting the edit link in cards with uneditable information.** For information that the user can't change online (such as legal name, date of birth, and Social Security number), remove the edit link within the card component.  
-- **Include instructions for how to update uneditable information**. Under the card with the uneditable information, display a note starting with the bolded word “Note:” followed by directions to help users find out how to update this information by phone or another way. These directions will vary by form or type of information. You’ll need to confirm that the directions are accurate for updating that specific type of information. See the [Content considerations](#content-considerations) section  
+- **Include instructions for how to update uneditable information**. Under the card with the uneditable information, display a note starting with the bolded word “Note:” followed by directions to help users find out how to update this information by phone or another way. These directions will vary by form or type of information. You’ll need to confirm that the directions are accurate for updating that specific type of information. See the [Content considerations](#content-considerations) section.  
 - **Consider adding a pathway for the user to correct their information for the form itself.** Since information from the person’s profile may be inaccurate, it’s helpful to have this option.  Clarify that since they can't update the information online, we'll only update the information they requested on the current form.
 
 ### Components used in this pattern
