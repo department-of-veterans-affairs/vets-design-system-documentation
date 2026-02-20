@@ -8,6 +8,7 @@ uswds-v3: default
 web-component: va-accordion
 web: true
 mobile-app: false
+uses_mermaid: true
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -65,9 +66,11 @@ anchors:
 
 #### Additional reasons to consider something else
 
-* **Users would benefit from seeing additional context for a discrete piece of content.** Use the [Additional info]({{ site.baseurl }}/components/additional-info) component instead to leverage show/hide functionality, especially in a form.
-* **Content that can be organized under the current heading.** Use the [Additional info]({{ site.baseurl }}/components/additional-info) component if you have additional content that provides context and makes sense under the same heading as the content nearby.
+* **Users would benefit from seeing additional context for a discrete piece of content.** Use the [Details]({{ site.baseurl }}/components/details) component instead to leverage show/hide functionality, especially in a form.
+* **Content that can be organized under the current heading.** Use the [Details]({{ site.baseurl }}/components/details) component if you have additional content that provides context and makes sense under the same heading as the content nearby.
 * **Required content**: If the majority of people need the content to accomplish the main task then it should not be hidden from view.
+
+{% include content/details-vs-hint-text-vs-accordion.md %}
 
 ### Behavior
 
@@ -92,6 +95,6 @@ anchors:
 
 ## Related
 
-* [Additional info]({{ site.baseurl }}/components/additional-info)
+* [Details]({{ site.baseurl }}/components/details)
 
 {% include _component-checklist.html component_name=page.web-component %}

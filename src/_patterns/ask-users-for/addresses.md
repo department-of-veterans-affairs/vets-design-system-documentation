@@ -59,7 +59,7 @@ Here is the content structure for asking a user for an address:
 * Header - Mailing or Home Address
 * Relevant information regarding this form and the user’s address (if applicable)
 * Checkbox for military address (if applicable)
-* Additional info component (if applicable)
+* Details component (if applicable)
 * Country select box
 * Street address text input
 * Street address line 2 text input
@@ -73,7 +73,7 @@ Here is the content structure for asking a user for an address:
 
 #### Single address details
 
-* **If required, include a checkbox for United States military base address.** Under the additional information component, there should be an explanation:
+* **If required, include a checkbox for United States military base address.** Under the Details component, there should be an explanation:
 
 > The United States is automatically chosen as your country if you live on a military base outside of the country.
 

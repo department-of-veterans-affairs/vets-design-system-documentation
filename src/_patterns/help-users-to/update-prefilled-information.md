@@ -124,7 +124,7 @@ Here's how to communicate that users can update certain information online:
 
 ### Components used in this pattern
 
-- [Additional info]({{ site.baseurl }}/components/additional-info)
+- [Details]({{ site.baseurl }}/components/details)
 - [Alert]({{ site.baseurl }}/components/alert)
 - [Card]({{ site.baseurl }}/components/card)
 - [Link]({{ site.baseurl }}/components/link)

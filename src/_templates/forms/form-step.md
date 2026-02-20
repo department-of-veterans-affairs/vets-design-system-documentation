@@ -64,15 +64,15 @@ The unauthenticated form step template consists of:
 ## Structure
 
 ### Breadcrumb
-The breadcrumb will remain static across all form step pages for a single form. [Learn more about expected breadcrumb behavior in the design system](https://design.va.gov/components/breadcrumbs). We recommend that designers create a breadcrumb local component in Figma to insert into the form step template rather than manually updating each form step template page individually.
+The breadcrumb will remain static across all form step pages for a single form. [Learn more about expected breadcrumb behavior in the design system]({{ site.baseurl }}/components/breadcrumbs). We recommend that designers create a breadcrumb local component in Figma to insert into the form step template rather than manually updating each form step template page individually.
 
 ### Form title and subtitle
 
-Use the same `H1` form title and subtitle on all pages of the form including the introduction, review, and confirmation pages. [Review the form introduction template for form title and subtitle for more guidance and examples](https://design.va.gov/templates/forms/introduction#structure). We recommend that designers create a form title and subtitle local component in Figma to insert into the form step template rather than manually updating each form step template page individually.
+Use the same `H1` form title and subtitle on all pages of the form including the introduction, review, and confirmation pages. [Review the form introduction template for form title and subtitle for more guidance and examples]({{ site.baseurl }}/templates/forms/introduction#structure). We recommend that designers create a form title and subtitle local component in Figma to insert into the form step template rather than manually updating each form step template page individually.
 
 ### Progress bar & overall form step structure
 
-Use the [progress bar - segmented component](https://design.va.gov/templates/forms/introduction#structure) to organize form steps. The progress bar will be the `H2` for the form pages.
+Use the [progress bar - segmented component]({{ site.baseurl }}/components/form/progress-bar-segmented) to organize form steps. The progress bar will be the `H2` for the form pages.
 
 The name for each step within the progress bar is the “step header.” The way you organize the form steps will also impact the “page title” (the `H3` that begins the form content section), pattern, and content. A step could, but doesn't have to, include multiple pages. Because of limitations on the progress bar UI, we recommend limiting all forms to 13 steps total.
 
@@ -84,7 +84,7 @@ If your form contains conditionals, you may need multiple versions of the progre
 
 {% include component-example.html alt="Screenshot of form page distinguishing that the step header and page title should have different content." file="/images/templates/forms/form-step/3-step-header-page-title.png" caption="Distinguishing an example of when the step header and page title should have different content" class="x2" %}
 
-The step header and page title content are important tools to help the person filling out and submitting a form to understand when you're asking for their information versus another person’s information. Use the step header and the page title to specify the role of the form submitter as needed. For example, use “your” only when referring to the person filling out and submitting the form. [Read more in the content style guide about how to use pronouns to promote an active, conversational voice.](https://design.va.gov/content-style-guide/plain-language/use-pronouns) It is an information architecture best practice to ask for information that is easiest to recall first. Therefore, organize your form to ask for the form submitter's information first if they are a different person than a Veteran or a non-Veteran claimant.
+The step header and page title content are important tools to help the person filling out and submitting a form to understand when you're asking for their information versus another person’s information. Use the step header and the page title to specify the role of the form submitter as needed. For example, use “your” only when referring to the person filling out and submitting the form. [Read more in the content style guide about how to use pronouns to promote an active, conversational voice.]({{ site.baseurl }}/content-style-guide/plain-language/use-pronouns) It is an information architecture best practice to ask for information that is easiest to recall first. Therefore, organize your form to ask for the form submitter's information first if they are a different person than a Veteran or a non-Veteran claimant.
 
 Identifying within your form’s information architecture who the form submitter is and which pages are asking for their information will also allow you to more easily leverage prefilled information since, as of right now, someone can only be logged in to va.gov as themselves. 
 
@@ -103,11 +103,11 @@ View an example of the form step structure using mockups for step two. The conte
 ### Saved as message with application ID
 Text area notifying a user that their application is saved automatically and provides an application ID number. This only needs to appear on the first page of the form.
 ### Form step content
-Insert customized form step content in this section of the form step template. Consult the form step structure guidance above and the [One thing per page design principle](https://design.va.gov/patterns/ask-users-for/a-single-response#design-principles) to determine how much form content to fit onto a single page.
+Insert customized form step content in this section of the form step template. Consult the form step structure guidance above and the [One thing per page design principle]({{ site.baseurl }}/patterns/ask-users-for/a-single-response#design-principles) to determine how much form content to fit onto a single page.
 
-Some components may include the option to add body text, hint text, or additional information. Use these guidelines to decide which one to use. 
+Some components may include the option to add body text, hint text, or Details (expandable help content). Use these guidelines to decide which one to use. 
 #### Body text
-Use body text to add clarifying information that is relevant to all the information under a page title. The body text should either clarify what type of information we need, or explain what we’re going to do with the data. Aim for fewer than fifty words in the body text. If you need more space, consider moving nonessential information to an additional info component. 
+Use body text to add clarifying information that is relevant to all the information under a page title. The body text should either clarify what type of information we need, or explain what we’re going to do with the data. Aim for fewer than fifty words in the body text. If you need more space, consider moving nonessential information to a Details component. 
 #### Hint text
 Add hint text under a field label if it would help someone choose the right response to give–like “We’ll use your email address to confirm when we receive your form” since knowing how we’ll use their email may help them choose which email to enter. Or use hint text to help someone answer a question more easily–like “For example: January 1, 2001”. Don’t use punctuation in hint text unless the copy is two sentences or more.  
 #### Field label text (also called legend)
@@ -115,8 +115,8 @@ On a form step page with only one question, you must create a separate page titl
 
 {% include component-example.html alt="Figma annotations distinguishing a page title and field label from the fieldset for a radio button set." file="/images/templates/forms/form-step/7-label-title.png" caption="Figma annotations distinguishing a page title and field label from the fieldset for a radio button set." class="x2" %}
 
-#### Additional information
-Use the additional information component if there’s relevant information that may be important for some people, but it’s not critical information for everyone filling out the form. [Review guidelines for using the additional information component.](https://design.va.gov/components/additional-info) 
+#### Details
+Use the Details component if there’s relevant information that may be important for some people, but it’s not critical information for everyone filling out the form. [Review guidelines for using the Details component.]({{ site.baseurl }}/components/details) 
 ### Finish this application later link
 A link that allows authenticated users to exit the process with their progress saved.
 ### Button pair
