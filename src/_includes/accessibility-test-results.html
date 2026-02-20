@@ -1,0 +1,379 @@
+{% assign component_name = include.component_name %}
+{% assign component_tests = site.data.accessibility_tests[component_name] %}
+
+{% include accessibility-test-library-loader.html %}
+
+{% if component_tests %}
+
+<script type="application/json" id="component-test-data">
+{
+  "component_name": "{{ component_name }}",
+  "tests": [
+    {% for test in component_tests.tests %}
+      {% assign test_def = nil %}
+      {% assign parent_def = nil %}
+
+      {% comment %} First, try to find as a top-level test {% endcomment %}
+      {% assign test_def = test_library | where: "id", test.id | first %}
+
+      {% comment %} If not found, search through subtests {% endcomment %}
+      {% unless test_def %}
+        {% for parent in test_library %}
+          {% if parent.subtests %}
+            {% for subtest in parent.subtests %}
+              {% if subtest.id == test.id %}
+                {% assign test_def = subtest %}
+                {% assign parent_def = parent %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+          {% if test_def %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endunless %}
+
+      {% if test_def %}
+      {
+        "id": "{{ test.id }}",
+        "name": "{{ test_def.name | escape }}",
+        {% if parent_def %}
+        "category": "{{ test_def.category | default: parent_def.category }}",
+        "wcag_criterion": "{{ test_def.wcag_criterion | default: parent_def.wcag_criterion }}",
+        "wcag_name": "{{ test_def.wcag_name | default: parent_def.wcag_name | escape }}",
+        "wcag_level": "{{ test_def.wcag_level | default: parent_def.wcag_level }}",
+        "wcag_url": "{{ test_def.wcag_url | default: parent_def.wcag_url }}",
+        {% else %}
+        "category": "{{ test_def.category }}",
+        "wcag_criterion": "{{ test_def.wcag_criterion }}",
+        "wcag_name": "{{ test_def.wcag_name | escape }}",
+        "wcag_level": "{{ test_def.wcag_level }}",
+        "wcag_url": "{{ test_def.wcag_url }}",
+        {% endif %}
+        "description_short": "{{ test_def.description_short | strip | escape }}",
+        "description_full": "{{ test_def.description_full | strip | escape }}",
+        "applies_to": "{{ test.applies_to }}",
+        "test_results": [
+          {% if test.test_results %}
+            {% for run in test.test_results %}
+            {
+              "date": "{{ run.date }}",
+              "version": "{{ run.version }}",
+              "tester": "{{ run.tester | escape }}",
+              "environments": [
+                {% for env in run.environments %}
+                {
+                  "name": "{{ env.name | default: env | escape }}",
+                  "result": "{{ env.result | default: run.result }}"
+                }{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+              ],
+              "notes": "{{ run.notes | escape }}"
+            }{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+          {% endif %}
+        ]
+      }{% unless forloop.last %},{% endunless %}
+      {% endif %}
+    {% endfor %}
+  ]
+}
+</script>
+
+{% assign summary = component_tests.summary %}
+{% assign tests_by_category = "" | split: "" %}
+{% assign keyboard_tests = "" | split: "" %}
+{% assign screen_reader_tests = "" | split: "" %}
+{% assign general_tests = "" | split: "" %}
+{% assign voice_control_tests = "" | split: "" %}
+{% assign structural_tests = "" | split: "" %}
+{% assign mobile_tests = "" | split: "" %}
+{% assign zoom_tests = "" | split: "" %}
+{% assign visual_tests = "" | split: "" %}
+
+{% for test in component_tests.tests %}
+  {% assign test_def = nil %}
+  {% assign parent_def = nil %}
+
+  {% comment %} First, try to find as a top-level test {% endcomment %}
+  {% assign test_def = test_library | where: "id", test.id | first %}
+
+  {% comment %} If not found, search through subtests {% endcomment %}
+  {% unless test_def %}
+    {% for parent in test_library %}
+      {% if parent.subtests %}
+        {% for subtest in parent.subtests %}
+          {% if subtest.id == test.id %}
+            {% assign test_def = subtest %}
+            {% assign parent_def = parent %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      {% if test_def %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% endunless %}
+
+  {% if test_def %}
+    {% comment %} Use subtest's category if defined, otherwise fall back to parent category {% endcomment %}
+    {% if parent_def %}
+      {% assign test_category = test_def.category | default: parent_def.category %}
+    {% else %}
+      {% assign test_category = test_def.category %}
+    {% endif %}
+
+    {% if test_category == "general" %}
+      {% assign general_tests = general_tests | push: test %}
+    {% elsif test_category == "keyboard" %}
+      {% assign keyboard_tests = keyboard_tests | push: test %}
+    {% elsif test_category == "mobile" %}
+      {% assign mobile_tests = mobile_tests | push: test %}
+    {% elsif test_category == "screen_reader" %}
+      {% assign screen_reader_tests = screen_reader_tests | push: test %}
+    {% elsif test_category == "structural" %}
+      {% assign structural_tests = structural_tests | push: test %}
+    {% elsif test_category == "visual" %}
+      {% assign visual_tests = visual_tests | push: test %}
+    {% elsif test_category == "voice_control" %}
+      {% assign voice_control_tests = voice_control_tests | push: test %}
+    {% elsif test_category == "zoom" %}
+      {% assign zoom_tests = zoom_tests | push: test %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+<style>
+va-table-row {
+  display: none;
+}
+
+/* Set consistent first column width */
+va-table va-table-row span:first-child {
+  min-width: 150px;
+  width: 150px;
+}
+</style>
+
+<h2>Test Summary</h2>
+
+
+{% if component_tests.size > 0 %}
+
+{% comment %} Define test categories {% endcomment %}
+{% assign test_categories = "general_tests,General Tests|keyboard_tests,Keyboard Tests|screen_reader_tests,Screen Reader Tests|voice_control_tests,Voice Control Tests|mobile_tests,Mobile Tests|zoom_tests,Zoom Tests|structural_tests,Structural Tests|visual_tests,Visual Tests" | split: "|" %}
+
+{% for category_config in test_categories %}
+  {% assign config_parts = category_config | split: "," %}
+  {% assign category_var = config_parts[0] %}
+  {% assign category_title = config_parts[1] %}
+
+  {% comment %} Get the test array for this category {% endcomment %}
+  {% if category_var == "general_tests" %}
+    {% assign category_tests = general_tests %}
+  {% elsif category_var == "keyboard_tests" %}
+    {% assign category_tests = keyboard_tests %}
+  {% elsif category_var == "screen_reader_tests" %}
+    {% assign category_tests = screen_reader_tests %}
+  {% elsif category_var == "voice_control_tests" %}
+    {% assign category_tests = voice_control_tests %}
+  {% elsif category_var == "mobile_tests" %}
+    {% assign category_tests = mobile_tests %}
+  {% elsif category_var == "zoom_tests" %}
+    {% assign category_tests = zoom_tests %}
+  {% elsif category_var == "structural_tests" %}
+    {% assign category_tests = structural_tests %}
+  {% elsif category_var == "visual_tests" %}
+    {% assign category_tests = visual_tests %}
+  {% endif %}
+
+  {% if category_tests.size > 0 %}
+  <h3>{{ category_title }}</h3>
+  <ul class="a11y-test-list">
+    {% for test in category_tests %}
+    {% assign test_def = nil %}
+    {% assign parent_def = nil %}
+
+    {% comment %} First, try to find as a top-level test {% endcomment %}
+    {% assign test_def = test_library | where: "id", test.id | first %}
+
+    {% comment %} If not found, search through subtests {% endcomment %}
+    {% unless test_def %}
+      {% for parent in test_library %}
+        {% if parent.subtests %}
+          {% for subtest in parent.subtests %}
+            {% if subtest.id == test.id %}
+              {% assign test_def = subtest %}
+              {% assign parent_def = parent %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+        {% if test_def %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    {% endunless %}
+
+    {% if test_def %}
+    <li>
+      <p>
+        <strong>{{ test_def.description_short | strip }}</strong>
+      </p>
+      <p>
+        {{ test_def.description_full | strip }}
+      </p>
+      <!-- <p>
+                {{ test_def.id }} - <a href="{{ test_def.wcag_url }}">{{ test_def.wcag_criterion }} - {{ test_def.wcag_name }}</a>
+
+      </p> -->
+      <ul class="a11y-test-details-list">
+        <li>
+          <span class="usa-label">
+            {% if parent_def %}
+              {{ test.id }}
+            {% else %}
+              {{ test_def.id }}
+            {% endif %}
+          </span>
+        </li>
+        <li>
+          {% if parent_def %}
+            <a href="{{ parent_def.wcag_url }}">WCAG {{ parent_def.wcag_criterion }} - {{ parent_def.wcag_name }}</a> (Level {{ parent_def.wcag_level }})
+          {% else %}
+            <a href="{{ test_def.wcag_url }}">WCAG {{ test_def.wcag_criterion }} - {{ test_def.wcag_name }}</a> (Level {{ test_def.wcag_level }})
+          {% endif %}
+        </li>
+      </ul>
+
+      {% comment %} Test Results Table {% endcomment %}
+      {% assign test_runs = test.test_results %}
+
+      {% comment %} Get expected test environments from category mapping {% endcomment %}
+      {% comment %} Use subtest's category if defined, otherwise fall back to parent category {% endcomment %}
+      {% if parent_def %}
+        {% assign test_category = test_def.category | default: parent_def.category %}
+      {% else %}
+        {% assign test_category = test_def.category %}
+      {% endif %}
+      {% assign all_environments = site.data.accessibility_tests.test-library._config.environments[test_category] %}
+
+      {% comment %} Fall back to general environments if category doesn't have specific environments {% endcomment %}
+      {% unless all_environments %}
+        {% assign all_environments = site.data.accessibility_tests.test-library._config.environments.general %}
+      {% endunless %}
+
+      <va-table full-width table-type="bordered" scrollable>
+        <va-table-row slot="headers">
+          <span>Version Tested</span>
+          {% for env in all_environments %}
+          <span>
+            {% if env.name %}
+              {{ env.name }}{% if env.required %}*{% endif %}
+            {% else %}
+              {{ env }}
+            {% endif %}
+          </span>
+          {% endfor %}
+        </va-table-row>
+        {% if test_runs and test_runs.size > 0 %}
+          {% for run in test_runs %}
+          <va-table-row>
+            <span>v{{ run.version }}</span>
+            {% for env_name in all_environments %}
+            <span>
+              {% assign env_result = nil %}
+              {% comment %} Get the actual environment name (could be string or object) {% endcomment %}
+              {% if env_name.name %}
+                {% assign env_name_str = env_name.name %}
+              {% else %}
+                {% assign env_name_str = env_name %}
+              {% endif %}
+              {% for env in run.environments %}
+                {% assign current_env_name = env.name %}
+                {% if current_env_name == env_name_str %}
+                  {% assign env_result = env.result %}
+                {% endif %}
+              {% endfor %}
+
+              {% if env_result %}
+                {% if env_result == "pass" %}
+                  <va-tag-status
+                    status="success"
+                    text="Pass"
+                  ></va-tag-status>
+                {% elsif env_result == "fail" %}
+                  <va-tag-status
+                    status="error"
+                    text="Fail"
+                  ></va-tag-status>
+                {% elsif env_result == "conditional" %}
+                  <va-tag-status
+                    status="info"
+                    text="Conditional"
+                  />
+                {% endif %}
+              {% else %}
+                <span>Untested</span>
+              {% endif %}
+            </span>
+            {% endfor %}
+          </va-table-row>
+          {% endfor %}
+        {% else %}
+          {% comment %} No test results yet - show all environments as Untested {% endcomment %}
+          <va-table-row>
+            <span>Not yet tested</span>
+            {% for env_name in all_environments %}
+            <span>Untested</span>
+            {% endfor %}
+          </va-table-row>
+        {% endif %}
+      </va-table>
+
+      {% comment %} Display notes outside the table {% endcomment %}
+      {% if test_runs and test_runs.size > 0 %}
+        {% for run in test_runs %}
+          {% if run.notes %}
+          <i class="vads-u-margin-top--0">
+            <strong>Notes ({{ run.version }}):</strong> {{ run.notes }}
+          </i>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+  {% endif %}
+{% endfor %}
+{% comment %} Summary Dashboard {% endcomment %}
+  <h2 id="test-summary">Test Summary</h2>
+
+  <ul>
+    <li class="vads-u-margin-bottom--1">
+      <strong>Component:</strong> {{ component_name | replace: "-", " " | capitalize }}
+    </li>
+    <li class="vads-u-margin-bottom--1">
+      <strong>Total Tests:</strong> {{ component_tests.summary.total_tests }}
+    </li>
+    <li class="vads-u-margin-bottom--1">
+      <strong>Passed:</strong> {{ component_tests.summary.passed }}
+    </li>
+    <li class="vads-u-margin-bottom--1">
+      <strong>Conditional:</strong> {{ component_tests.summary.conditional }}
+    </li>
+    <li class="vads-u-margin-bottom--1">
+      <strong>Failed:</strong> {{ component_tests.summary.failed }}
+    </li>
+  </ul>
+
+  <p class="vads-u-color--gray-dark vads-u-font-size--sm vads-u-margin-top--2">
+    <strong>Last Updated:</strong> {{ summary.last_updated | date: "%B %d, %Y" }}
+  </p>
+{% endif %}
+{% else %}
+  <p>No accessibility test results available for the {{ component_name }} component.</p>
+{% endif %}

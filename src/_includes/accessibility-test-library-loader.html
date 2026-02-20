@@ -1,0 +1,15 @@
+
+{% comment %}
+  Loads all WCAG principle-based test files and merges into single test_library array.
+  Also loads required CSS for accessibility test displays.
+  Usage: {% include accessibility-test-library-loader.html %}
+  Output: Sets test_library variable with all tests from 4 WCAG principle files
+{% endcomment %}
+{% assign test_library = "" | split: "" %}
+{% assign perceivable_tests = site.data.accessibility_tests.test-library["1-perceivable"].tests %}
+{% assign operable_tests = site.data.accessibility_tests.test-library["2-operable"].tests %}
+{% assign understandable_tests = site.data.accessibility_tests.test-library["3-understandable"].tests %}
+{% assign robust_tests = site.data.accessibility_tests.test-library["4-robust"].tests %}
+{% assign test_library = test_library | concat: perceivable_tests | concat: operable_tests | concat: understandable_tests | concat: robust_tests %}
+
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/stylesheets/accessibility-tests.css">

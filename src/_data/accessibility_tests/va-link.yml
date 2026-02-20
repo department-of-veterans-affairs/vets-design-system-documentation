@@ -1,0 +1,96 @@
+component: va-link
+component_url: /components/link/
+storybook_url: /storybook/?path=/docs/components-va-link--docs
+
+# Tests applied to this component
+tests:
+  - id: WEB-1410
+    test_results:
+      - version: 54.6.1
+        tester: John Doe
+        environments:
+          - name: MacOS/Chrome
+            result: pass
+  - id: DST-141-001
+    test_results:
+      - version: 54.6.1
+        tester: John Doe
+        environments:
+          - name: MacOS/Chrome
+            result: pass
+        notes: Sample notes about the test results.
+  - id: WEB-143
+    test_results:
+      - version: 54.6.0
+        tester: Jane Smith
+        environments:
+          - name: MacOS/Chrome
+            result: pass
+  - id: DST-1411-001
+    test_results:
+      - version: 54.6.1
+        tester: John Doe
+        environments:
+          - name: MacOS/Chrome
+            result: pass
+  - id: DST-211-001
+    test_results:
+      - version: 54.6.1
+        tester: John Doe
+        environments:
+          - name: MacOS/Chrome
+            result: pass
+  - id: WEB-212
+    test_results:
+      - version: 54.6.0
+        tester: Jane Smith
+        environments:
+          - name: MacOS/Chrome
+            result: pass
+  - id: WEB-244
+    test_results:
+      - version: 54.6.1
+        tester: John Doe
+        date: 2026-02-03
+        environments:
+          - name: MacOS/Chrome
+            result: conditional
+  - id: WEB-247
+    test_results:
+      - version: 54.6.0
+        tester: Jane Smith
+        environments:
+          - name: MacOS/Chrome
+            result: pass
+        notes: Focus outline is visible but does not meet 3:1 contrast ratio. This is a known issue that will be addressed in a future release.
+  - id: WEB-253
+    test_results:
+      - version: 54.6.0
+        tester: Jane Smith
+        environments:
+          - name: MacOS/Chrome
+            result: pass
+  - id: DST-258-001
+    test_results:
+      - version: 54.6.1
+        tester: John Doe
+        environments:
+          - name: MacOS/Chrome
+            result: pass
+  - id: DST-412-001
+    test_results:
+      - version: 54.6.1
+        tester: John Doe
+        environments:
+          - name: MacOS/Chrome
+            result: conditional
+        notes: This is dependent on the implementation of the link component. If the link is implemented with an anchor element and has a valid href, it should pass.
+
+# Summary statistics (auto-generated from tests)
+summary:
+  total_tests: 9
+  passed: 4
+  passed_with_exceptions: 0
+  conditional: 0
+  failed: 0
+  last_updated: 2026-02-09

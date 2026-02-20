@@ -12,6 +12,7 @@ mobile-app: true
 sub-pages:
   - sub-page: Action
   - sub-page: Collection
+  - sub-page: Accessibility Tests
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -201,6 +202,12 @@ Links that point to localized content in another language should have an `hrefla
 Refer to the [Content Style Guide on Links]({{ site.baseurl }}/content-style-guide/links).
 
 ## Accessibility considerations
+
+### Test results
+
+View comprehensive [accessibility test results]({{ site.baseurl }}/components/link/accessibility-tests/) for the Link component, including WCAG compliance verification across multiple screen readers and testing environments.
+
+### Guidelines
 
 * **Material honesty.** Do not style a link to look or behave like a button ([material honesty](https://alistapart.com/article/material-honesty-on-the-web/)).
 * **Screen magnification.** To ensure links are sized properly for screen magnification or browser zoomed-in users, wrap `<va-link>` in the appropriate semantic tag like `<p>`. `<va-link>` will not resize if it is wrapped in a `<div>`.

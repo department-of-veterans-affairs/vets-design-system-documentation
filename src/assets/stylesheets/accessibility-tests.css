@@ -1,0 +1,111 @@
+/* Accessibility Test Display Styles */
+/* Used in component test results and test library pages */
+
+.a11y-test-list {
+  background: white;
+  list-style: none;
+  margin: 0;
+  padding: 2rem;
+  max-width: 100% !important;
+}
+
+.a11y-test-list > li {
+  border-bottom: 1px solid var(--vads-color-base-light);
+  padding: 1.5rem 0;
+  max-width: 100%;
+}
+
+.a11y-test-list > li:first-of-type {
+  padding-top: 0;
+}
+
+.a11y-test-list li > p {
+  margin-block: 0;
+  max-width: 77ch;
+}
+
+.a11y-test-details-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.a11y-test-details-list li {
+  margin-right: 1rem;
+}
+
+.a11y-test-category {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.a11y-test-category.category-general {
+  background-color: #e7f6f8;
+  color: #005ea2;
+}
+
+.a11y-test-category.category-keyboard {
+  background-color: #f0e8f5;
+  color: #54278f;
+}
+
+.a11y-test-category.category-screen_reader {
+  background-color: #fef0e6;
+  color: #936938;
+}
+
+.a11y-test-category.category-mobile {
+  background-color: #e7f4e4;
+  color: #2e8540;
+}
+
+.a11y-test-category.category-zoom {
+  background-color: #e1f3f8;
+  color: #00687d;
+}
+
+/* Nested subtests */
+.a11y-test-list .a11y-test-subtest-list {
+  list-style: none;
+  margin: 1rem 0 0 2rem;
+  padding: 0;
+  border-left: 3px solid var(--vads-color-base-lighter);
+}
+
+.a11y-test-list .a11y-test-subtest-list > li {
+  border-bottom: none;
+  padding: 1rem 0 1rem 1rem;
+  border-top: 1px solid var(--vads-color-base-lightest);
+}
+
+.a11y-test-list .a11y-test-subtest-list > li:first-child {
+  border-top: none;
+  padding-top: 0.5rem;
+}
+
+/* WCAG criterion headers */
+h3.a11y-wcag-criterion-header {
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-bottom: 2px solid var(--vads-color-primary);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+h3.a11y-wcag-criterion-header a {
+  text-decoration: none;
+  color: var(--vads-color-base-darkest);
+}
+
+h3.a11y-wcag-criterion-header a:hover {
+  text-decoration: underline;
+  color: var(--vads-color-primary);
+}
