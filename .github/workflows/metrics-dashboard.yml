@@ -342,13 +342,22 @@ jobs:
           git add src/assets/data/metrics/governance-metrics-*.json 2>/dev/null || true
           git add src/_data/metrics/governance-metrics-*.json 2>/dev/null || true
 
-          # Add CSV files if they exist
-          # Note: Only CSV files in src/assets/data/metrics/ are added
-          # CSV files in src/_data/metrics/ (if generated) are intentionally excluded
-          # to avoid duplication since they're copied from src/assets/data/metrics/
+          # Add CSV files from assets
           for file in \
             src/assets/data/metrics/ds-components-latest.csv \
             src/assets/data/metrics/governance-metrics.csv; do
+            if [ -f "$file" ]; then
+              git add "$file"
+            fi
+          done
+
+          # Add ds-components CSV files from _data/metrics so the source data is
+          # committed alongside component-usage.json. process-ds-components.js reads
+          # from src/_data/metrics/ to find the latest CSV, so committing these files
+          # ensures future runs use accurate data and the PR shows what CSV was processed.
+          for file in \
+            "src/_data/metrics/ds-components-${CURRENT_DATE}.csv" \
+            "src/_data/metrics/ds-components-latest.csv"; do
             if [ -f "$file" ]; then
               git add "$file"
             fi
