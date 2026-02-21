@@ -31,10 +31,10 @@ anchors:
 
 * This modal must always appear in the VA.gov header, including the [minimal variation]({{ site.baseurl }}/components/header/header-minimal).
 
+{% include component-docs.html component_name=page.web-component %}
+
 ## Content considerations
 
 * **Do not alter the contents of this component.** The contents of this component are governed by CAIA.
-
-{% include component-docs.html component_name=page.web-component %}
 
 {% include _component-checklist.html component_name=page.web-component %}

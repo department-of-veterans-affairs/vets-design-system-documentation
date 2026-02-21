@@ -12,6 +12,17 @@ Write VA Design System documentation that follows established templates and styl
 **Announce at start:** "I'm using the writing-vads-guidance skill to help write documentation that follows VADS standards."
 
 **Called by:** doc-queue (Step 5: Execute Documentation Updates)
+**Expects input from:** guidance-grooming (the `## Grooming Summary` comment on the issue)
+
+### Using the Grooming Comment
+
+When this skill is called from the doc-queue workflow, the issue will have a `## Grooming Summary` comment posted by the guidance-grooming skill. Use it as follows:
+
+1. Read the grooming comment to get the list of files, changes, and design decisions
+2. Follow the "Changes to make" checklist item by item
+3. Apply all "Design decisions" as documented — do not re-ask questions that were already resolved
+4. Cross-reference the "Acceptance criteria" when verifying your work
+5. If something in the grooming comment is unclear, ask the user rather than guessing
 
 ## When to Use
 

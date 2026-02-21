@@ -17,7 +17,8 @@ mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage
-  - anchor: Requesting a new instance
+  - anchor: Requesting new instances
+  - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Privacy guidance
@@ -50,15 +51,17 @@ anchors:
 
 ### How this component works
 
-* **Icon plus uppercase label.** These buttons are composed of an icon and an uppercase label. The label is a verb that represents an action that the user is taking. Because the visual style of this button uses uppercase text, labels must be very concise actions and thus are limited to one or two words only. For example, "Change file", "Delete", and "Cancel".
+* **Icon plus action label.** These buttons are composed of an icon and a concise label. For the label, use a verb that describes the action the person is taking, and aim to limit the label text to 1 or 2 words. For example, "Change file", "Delete", or "Cancel". The component’s visual style renders labels in uppercase, but authors should always provide label text in sentence case. Refer to [Capitalization]({{ site.baseurl }}/content-style-guide/capitalization) for guidance on when we permit all caps in visual treatments.
 
 ## Requesting new instances
 
 The 3 examples above are the only currently approved instances of this component. Use of icons in buttons of any type will be made on a case-by-case basis. If you feel you need an icon for a button, [follow the process for requesting a new icon]({{ site.baseurl }}/components/icon#requesting-a-new-icon) and indicate that you would like to use it in Button - Icon or another button type.
 
+{% include component-docs.html component_name=page.web-component %}
+
 ## Content considerations
 
-* **Delete is preferred to remove.** We prefer words that describe exactly what will happen when you tap or click. Note: Currently, icon and button labels are hard-coded into the component. New icons and labels must be requested following the instructions above.
+* **Use the verb that describes exactly what will happen when the person takes the action.** For example, use "Delete" instead of "Remove" for when the action will delete a file. Note: Currently, icon and button labels are hard-coded into the component. You must follow the [instructions to request any new icons or label](#requesting-new-instances).
 
 ### Button labels
 

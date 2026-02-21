@@ -77,7 +77,7 @@ Card is a flexible container component. Teams build and pass in their own conten
 3. **Secondary content.** Teams provide body text, which can include any combination of text, dates, or other content.
 4. **Call to action.** Teams add their own links - typically an [action link]({{ site.baseurl }}/components/link/action) or [link]({{ site.baseurl }}/components/link).
 
-**Note:** If your card needs to display a status tag, or have an error state, use the [Card - Status]({{ site.baseurl }}/components/card/card-status) component instead, which is specifically designed for status communication and includes built-in support for status tags, error states, and screen reader announcements.
+**Note:** You can use [Tag - Status]({{ site.baseurl }}/components/tag/status) in either Card or [Card - Status]({{ site.baseurl }}/components/card/card-status). **Card Status is required** if you need an error state on the card, as it's the only card component that supports error states. Use Card Status when you need a consistent, structured pattern with a single action link. Use the default Card component when you need multiple calls to action or flexible content structure.
 
 You can see these options in use in the [variations](#variations) below.
 
@@ -93,7 +93,7 @@ This variation is the [default](#default). New variations of Card start with thi
 
 #### 2. With Background
 
-[This variation](#with-background) was the previous default and is the Card variation most widely found across VA.gov. However, it is no longer preferred. Visually, it features a gray background (`$color-gray-lightest`) with no border or drop shadow. [Benefit payments](#benefit-payments) and [Application status](#application-status-benefit-application-drafts) are examples of this variation.
+[This variation](#with-background) was the previous default and is the Card variation most widely found across VA.gov. However, it is no longer preferred. Visually, it features a gray background (`$color-gray-lightest`) with no border or drop shadow.
 
 #### 3. With Drop Shadow
 
@@ -117,7 +117,7 @@ There are many instances of the Card component in production. This is not an exh
 
 #### Media
 
-{% include component-example.html alt="A media card for the GI Bill Comparison Tool ." file="/images/components/card/media.png" caption="A media card features an image or icon and contains a call-to-action with a description." reverse=true width="50%" %}
+{% include component-example.html alt="A media card for the GI Bill Comparison Tool." file="/images/components/card/media.png" caption="A media card features an image or icon and contains a call to action with a description." reverse=true width="50%" %}
 
 #### Navigation
 
@@ -136,8 +136,8 @@ There are many instances of the Card component in production. This is not an exh
 ### Calls to action
 
 - **Make cards actionable.** A Card should be actionable. Accomplish this by using the [action link]({{ site.baseurl }}/components/link/action) component.
-- **Action links for primary CTA.** Use an [action link]({{ site.baseurl }}/components/link/action) for the primary call-to-action.
-- **Max 3 CTAs.** A card should not contain more than three calls-to-action (CTAs).
+- **Action links for primary CTA.** Use an [action link]({{ site.baseurl }}/components/link/action) for the primary call to action.
+- **Max 3 CTAs.** A card should not contain more than three calls to action (CTAs).
 - **Secondary and tertiary actions.** Secondary and tertiary actions can use the [secondary variation of action link]({{ site.baseurl }}/components/link/action), an [active or other link variation]({{ site.baseurl }}/components/link/#variations), or a [default link]({{ site.baseurl }}/components/link).
 
 ### Placement

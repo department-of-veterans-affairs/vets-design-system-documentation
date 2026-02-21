@@ -489,6 +489,16 @@
       "$value": "Candidate"
     }
   },
+  "va-sort": {
+    "category": {
+      "$type": "string",
+      "$value": "Use with caution"
+    },
+    "level": {
+      "$type": "string",
+      "$value": "Available"
+    }
+  },
   "va-statement-of-truth": {
     "category": {
       "$type": "string",

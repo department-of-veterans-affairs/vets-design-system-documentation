@@ -1,3 +1,8 @@
+---
+layout: null
+permalink: /llms.txt
+---
+
 # VA Design System Documentation
 
 > The official design system for the Department of Veterans Affairs (VA.gov). This site provides design guidelines, components, patterns, and content strategies for building digital services that serve Veterans.

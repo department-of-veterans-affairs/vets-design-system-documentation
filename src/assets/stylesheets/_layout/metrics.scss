@@ -82,15 +82,15 @@
 }
 
 .chart-container {
-  height: 400px;
+  min-height: 400px;
   margin: var(--vads-spacing-2) 0;
   background: var(--vads-color-gray-lightest);
   border-radius: var(--vads-radius-sm);
   position: relative;
-  
+
   // Ensure charts have adequate space on mobile
   @media (max-width: $medium-screen) {
-    height: 350px;
+    min-height: 350px;
     margin: var(--vads-spacing-3) 0;
   }
 }

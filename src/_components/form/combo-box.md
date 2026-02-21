@@ -97,6 +97,6 @@ anchors:
 
 * [Select]({{ site.baseurl }}/components/form/select)
 * [Radio button]({{ site.baseurl }}/components/form/radio-button)
-* [Search input]({{ site.baseurl }}/components/search-input)
+* [Search Input]({{ site.baseurl }}/components/search-input)
 
 {% include _component-checklist.html component_name=page.web-component %}

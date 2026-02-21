@@ -52,7 +52,7 @@
     },
     {
       "period": "2023-Q4",
-      "issues_opened": 5,
+      "issues_opened": 4,
       "issues_closed": 0
     },
     {
@@ -94,6 +94,11 @@
       "period": "2025-Q4",
       "issues_opened": 11,
       "issues_closed": 0
+    },
+    {
+      "period": "2026-Q1",
+      "issues_opened": 1,
+      "issues_closed": 0
     }
   ],
   "experimental_summary": {
@@ -101,7 +106,7 @@
     "open_experimental_issues": 0,
     "closed_experimental_this_month": 0,
     "avg_experimental_resolution_days": 0,
-    "last_updated": "2026-01-23T18:11:13.871Z"
+    "last_updated": "2026-02-13T18:18:41.710Z"
   },
-  "generated_at": "2026-01-23T18:11:13.871Z"
+  "generated_at": "2026-02-13T18:18:41.710Z"
 }

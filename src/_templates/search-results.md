@@ -83,7 +83,7 @@ See the [Search Filter]({{ site.baseurl }}/components/search-filter) component.
 The search results page can feature all of the following, but not all aspects are required.
 
 1. [Page title](#page-title)
-2. [Search input](#search-input-component)
+2. [Search Input](#search-input-component)
 3. [Active filters](#active-filters)
 4. [Filters](#filters)
 5. [Sort](#sort)
@@ -97,9 +97,9 @@ The search results page can feature all of the following, but not all aspects ar
 
 H1 describing what is being searched.
 
-### Search input component
+### Search Input component
 
-Allows the user to enter a search query. Use the [search input]({{ site.baseurl }}/components/search-input) component.
+Allows the user to enter a search query. Use the [Search Input]({{ site.baseurl }}/components/search-input) component.
 
 ### Active filters
 
@@ -160,7 +160,7 @@ The text of the link of the matching page. This should not be a link (the header
 
 <va-link-action
   href="{{ site.baseurl }}/components/search-filter"
-  text="Follow the guidance for the search filter component"
+  text="Follow the guidance for the Search Filter component"
   type="secondary"
 ></va-link-action>
 
@@ -168,7 +168,7 @@ The text of the link of the matching page. This should not be a link (the header
 ### Sorting
 <va-link-action
   href="{{ site.baseurl }}/components/sort"
-  text="Follow the guidance for the sort component"
+  text="Follow the guidance for the Sort component"
   type="secondary"
 ></va-link-action>
 

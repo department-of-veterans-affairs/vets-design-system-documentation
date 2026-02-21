@@ -49,7 +49,7 @@ describe('Metrics Dashboard Browser Compatibility Tests - Real Implementation', 
       
       expect(metricsDiv).toBeTruthy();
       expect(allSections.length).toBeGreaterThan(0);
-      expect(vaTabs.length).toBe(4);
+      expect(vaTabs.length).toBe(9);
     });
 
     test('Should support modern CSS selectors across browsers', () => {
@@ -72,9 +72,9 @@ describe('Metrics Dashboard Browser Compatibility Tests - Real Implementation', 
       const vaTables = document.querySelectorAll('va-table');
       const tabItems = document.querySelectorAll('va-tab-item');
       
-      expect(charts.length).toBe(4);
-      expect(vaTables.length).toBe(4);
-      expect(tabItems.length).toBe(8);
+      expect(charts.length).toBe(9);
+      expect(vaTables.length).toBe(9);
+      expect(tabItems.length).toBe(18);
       
       // Test getAttribute with real elements
       charts.forEach(chart => {
@@ -226,8 +226,8 @@ describe('Metrics Dashboard Browser Compatibility Tests - Real Implementation', 
     test('Should provide proper ARIA roles for screen readers', () => {
       // Test ARIA roles that are critical for screen readers using real elements
       const expectedRoles = [
-        { selector: '[role="img"]', role: 'img', expectedCount: 4 },
-        { selector: '[role="tabpanel"]', role: 'tabpanel', expectedCount: 8 }
+        { selector: '[role="img"]', role: 'img', expectedCount: 9 },
+        { selector: '[role="tabpanel"]', role: 'tabpanel', expectedCount: 18 }
         // Note: main role is now provided by Jekyll layout, not the metrics content itself
       ];
       
@@ -268,13 +268,13 @@ describe('Metrics Dashboard Browser Compatibility Tests - Real Implementation', 
 
     test('Should provide va-table with proper accessibility attributes', () => {
       const vaTables = document.querySelectorAll('va-table');
-      expect(vaTables.length).toBe(4);
-      
+      expect(vaTables.length).toBe(9);
+
       vaTables.forEach(table => {
         // va-table should have accessibility attributes from real implementation
         expect(table).toHaveAttribute('table-title');
         expect(table).toHaveAttribute('stacked', 'true');
-        expect(table).toHaveAttribute('sortable', 'true');
+        // sortable is added dynamically via JS based on viewport width
         expect(table).toHaveAttribute('table-type', 'borderless');
       });
     });
@@ -285,7 +285,7 @@ describe('Metrics Dashboard Browser Compatibility Tests - Real Implementation', 
       const vaTabItems = document.querySelectorAll('va-tab-item');
       
       expect(explicitlyFocusable.length).toBeGreaterThan(0);
-      expect(vaTabItems.length).toBe(8);
+      expect(vaTabItems.length).toBe(18);
       
       explicitlyFocusable.forEach(element => {
         // Element should be in tab order
@@ -308,10 +308,10 @@ describe('Metrics Dashboard Browser Compatibility Tests - Real Implementation', 
       const vaTabPanels = document.querySelectorAll('va-tab-panel');
       const vaTables = document.querySelectorAll('va-table');
       
-      expect(vaTabs.length).toBe(4);
-      expect(vaTabItems.length).toBe(8); // 4 tabs × 2 items each
-      expect(vaTabPanels.length).toBe(8); // 4 tabs × 2 panels each
-      expect(vaTables.length).toBe(4);
+      expect(vaTabs.length).toBe(9);
+      expect(vaTabItems.length).toBe(18); // 9 tabs × 2 items each
+      expect(vaTabPanels.length).toBe(18); // 9 tabs × 2 panels each
+      expect(vaTables.length).toBe(9);
       
       // Test custom attributes specific to VA components
       vaTabItems.forEach(item => {
@@ -327,7 +327,7 @@ describe('Metrics Dashboard Browser Compatibility Tests - Real Implementation', 
       vaTables.forEach(table => {
         expect(table.getAttribute('table-title')).toBeTruthy();
         expect(table.getAttribute('stacked')).toBe('true');
-        expect(table.getAttribute('sortable')).toBe('true');
+        // sortable is added dynamically via JS based on viewport width
       });
     });
 
@@ -457,8 +457,8 @@ describe('Metrics Dashboard Browser Compatibility Tests - Real Implementation', 
     test('Should provide accessible fallbacks for complex interactions', () => {
       // Ensure that both charts and tables are available as alternatives
       const tabGroups = document.querySelectorAll('va-tabs');
-      expect(tabGroups.length).toBe(4);
-      
+      expect(tabGroups.length).toBe(9);
+
       tabGroups.forEach(tabGroup => {
         const chartPanel = tabGroup.querySelector('va-tab-panel[panel-id*="graph"]');
         const tablePanel = tabGroup.querySelector('va-tab-panel[panel-id*="table"]');
