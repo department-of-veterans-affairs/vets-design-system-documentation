@@ -21,6 +21,7 @@ github_issue: https://github.com/department-of-veterans-affairs/digital-experien
 | **P1: Reference Prototype** | ✅ Complete | PRD (343 lines), 5 scenario data files, TypeScript types, app.ts with 7 section renderers. 5 commits on `main`. |
 | **P2: Workflow Docs** | ✅ Complete | 5 guides (prototype-workflow, setup-figma-mcp, figma-to-prototype, populate-from-figma, reproduce-page). 3 Claude Code skill wrappers. |
 | **P3: Polish** | 🔄 In progress | README complete (9 commits on `main`). Remaining: designer testing and iteration. |
+| **P4: Accessibility** | 📋 Planned | Strategy documented. 4 tasks: agent guidance, axe test suite, CI workflow, designer docs. |
 
 **MCP server totals:** 8 tools, 5 resources, 1 prompt, 102 tests across 7 test files.
 
@@ -1389,6 +1390,339 @@ git commit -m "feat: add Claude Code skill wrappers for workflow guides"
   - Gather feedback on pain points
   - Iterate on PRD template, agent instructions, README
 
+#### Phase P4: Accessibility
+
+**Goal:** Designers can be confident that a prototype is accessible before deploying it. The AI agent follows the same rules at build time that the automated test suite enforces at deploy time — with no duplication of guidance between repos.
+
+**Architecture:** Accessibility rules live once — in `vads-mcp-server/data/guides/accessibility.md`. AGENTS.md directs agents to fetch that guide via `get_guide('accessibility')` rather than repeating it inline. The test suite enforces the guide's testing checklist as executable assertions. When the guide is updated in the MCP server, all agents and all documentation automatically reflect the change.
+
+```
+vads-mcp-server/
+  data/guides/accessibility.md     ← RULES LIVE HERE (already complete)
+
+va-prototype-kit/
+  AGENTS.md                         ← Updated to call get_guide('accessibility'), not repeat rules
+  .claude/agents/a11y-reviewer.md   ← Subagent: fetches guide + audits with Playwright + reports findings
+  tests/a11y/                       ← Test suite enforcing the guide's testing checklist
+    setup.ts                        ← Shared Playwright + axe config
+    prototypes.test.ts              ← Auto-discovers all prototypes, runs all checks
+  playwright.config.ts              ← Playwright test configuration
+  .github/workflows/a11y.yml        ← Runs tests on every PR before deployment
+  docs/skills/accessibility-testing.md ← Designer guide to running and reading test results
+```
+
+##### Task P4.1: Strengthen agent-time accessibility guidance
+
+**Files:**
+- Update: `AGENTS.md` (Accessibility Requirements section)
+- Create: `.claude/agents/a11y-reviewer.md`
+
+**Step 1: Update AGENTS.md accessibility section**
+
+Replace the inline bullet-point accessibility section with a directive to fetch the live guide from the MCP server. The guide already contains correct heading hierarchy rules, focus management patterns with code examples, keyboard navigation requirements, screen reader considerations, color and contrast requirements, and a full testing checklist.
+
+New accessibility section in AGENTS.md:
+
+```markdown
+## Accessibility Requirements
+
+All prototypes must meet **WCAG 2.1 Level AA** standards.
+
+**At the start of any prototype build**, fetch the canonical accessibility guide from the MCP server:
+
+```
+get_guide("accessibility")
+```
+
+This guide is authoritative. Follow it for:
+- Heading hierarchy (one `<h1>` per page, no skipped levels)
+- Focus management when navigating between pages or steps
+- Keyboard navigation requirements
+- Screen reader considerations (live regions, accessible names)
+- Color and contrast (use VADS tokens, never override component colors)
+
+**Quick reminders (see guide for full details):**
+- VADS components handle accessibility internally. Do NOT add redundant ARIA attributes.
+- Every page must have `<main id="main-content">` (required for skip navigation).
+- After any simulated navigation, move focus to the new page's `<h1>`.
+- All form fields must use VADS form components — they handle label association automatically.
+```
+
+**Step 2: Create `.claude/agents/a11y-reviewer.md`**
+
+This Claude Code subagent is invoked after prototype generation to audit accessibility before the designer deploys. Use model `claude-sonnet-4-6` (sufficient for this analysis task).
+
+The agent should:
+1. Fetch `get_guide("accessibility")` from the MCP server (canonical rules)
+2. Read all HTML files in the specified prototype directory
+3. Use the Playwright MCP to render each page and take screenshots
+4. Run `npm run test:a11y` to get axe scan results
+5. Report findings organized by severity matching the guide's framework:
+   - **Critical (launch-blocking):** Axe violations at `critical` or `serious` impact, heading hierarchy failures, missing `#main-content`, form fields without labels
+   - **Serious:** Axe `moderate` violations, missing focus management on navigation, hardcoded colors
+   - **Minor:** Improvements that don't block launch
+6. For each finding: quote the relevant rule from the guide, show the failing element, provide the exact fix
+
+**Commit:**
+```bash
+git add AGENTS.md .claude/agents/a11y-reviewer.md
+git commit -m "feat(a11y): strengthen agent-time accessibility guidance"
+```
+
+##### Task P4.2: Automated axe-core test suite
+
+**Files:**
+- Install: `@playwright/test`, `@axe-core/playwright` (new devDependencies)
+- Create: `playwright.config.ts`
+- Create: `tests/a11y/setup.ts`
+- Create: `tests/a11y/prototypes.test.ts`
+- Update: `package.json` (add test scripts)
+
+**Step 1: Install dependencies**
+
+```bash
+npm install --save-dev @playwright/test @axe-core/playwright
+```
+
+**GFE note:** After installing, verify with `node node_modules/@playwright/test/bin/playwright.js --version`. The PLAYWRIGHT_BROWSERS_PATH is already set to `/opt/ms-playwright` in the existing Playwright MCP configuration.
+
+**Step 2: Create `playwright.config.ts`**
+
+```typescript
+import { defineConfig } from '@playwright/test';
+
+export default defineConfig({
+  testDir: './tests/a11y',
+  use: {
+    baseURL: 'http://localhost:4173',
+    // Inherit browser path from env (set to /opt/ms-playwright on GFE)
+  },
+  webServer: {
+    command: 'node node_modules/vite/bin/vite.js preview --port 4173',
+    url: 'http://localhost:4173',
+    reuseExistingServer: !process.env.CI,
+    timeout: 30_000,
+  },
+  reporter: process.env.CI ? 'github' : 'html',
+});
+```
+
+**Step 3: Create `tests/a11y/prototypes.test.ts`**
+
+Uses glob to auto-discover all prototypes — no changes needed when new prototypes are added.
+
+```typescript
+import { test, expect } from '@playwright/test';
+import AxeBuilder from '@axe-core/playwright';
+import { globSync } from 'glob';
+
+// Auto-discover all prototype entry points (same pattern as vite.config.ts)
+const prototypes = globSync('src/prototypes/*/index.html').map((f) => {
+  const name = f.split('/')[2];
+  return { name, url: `/src/prototypes/${name}/index.html` };
+});
+
+for (const { name, url } of prototypes) {
+  test.describe(name, () => {
+    test('passes axe WCAG 2.1 AA scan', async ({ page }) => {
+      await page.goto(url);
+      await page.waitForLoadState('networkidle');
+
+      const results = await new AxeBuilder({ page })
+        .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa'])
+        .analyze();
+
+      // Fail on critical and serious only — matches guide's "launch-blocking barrier" framing.
+      // Moderate and minor violations are surfaced in the report but don't block CI.
+      const blocking = results.violations.filter(
+        (v) => v.impact === 'critical' || v.impact === 'serious'
+      );
+
+      expect(
+        blocking,
+        `${blocking.length} critical/serious axe violations on ${name}:\n` +
+          blocking.map((v) => `  [${v.impact}] ${v.id}: ${v.description}`).join('\n')
+      ).toHaveLength(0);
+    });
+
+    test('has exactly one <h1>', async ({ page }) => {
+      await page.goto(url);
+      const h1Count = await page.locator('h1').count();
+      expect(h1Count, `Expected exactly 1 <h1> on ${name}, found ${h1Count}`).toBe(1);
+    });
+
+    test('has <main id="main-content"> (required for skip navigation)', async ({ page }) => {
+      await page.goto(url);
+      await expect(
+        page.locator('main#main-content'),
+        `Missing <main id="main-content"> on ${name} — required for VA header skip link`
+      ).toBeAttached();
+    });
+  });
+}
+```
+
+**Step 4: Update `package.json` scripts**
+
+Following GFE convention (use `node node_modules/...` instead of `.bin`):
+
+```json
+"test:a11y": "node node_modules/@playwright/test/bin/playwright.js test",
+"test:a11y:report": "node node_modules/@playwright/test/bin/playwright.js test --reporter=html && node node_modules/@playwright/test/bin/playwright.js show-report"
+```
+
+**Step 5: Verify locally**
+
+```bash
+# Start preview server in one terminal
+npm run build && npm run preview
+
+# Run tests in another terminal
+npm run test:a11y
+```
+
+Expected output on a well-built prototype: all tests passing. If violations are found, the output shows the axe rule ID, description, and the failing DOM element.
+
+**Commit:**
+```bash
+git add playwright.config.ts tests/ package.json
+git commit -m "feat(a11y): add axe-core + Playwright accessibility test suite"
+```
+
+##### Task P4.3: GitHub Actions CI integration
+
+**Files:**
+- Create: `.github/workflows/a11y.yml`
+
+**Step 1: Create the workflow**
+
+```yaml
+name: Accessibility Tests
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  a11y:
+    name: WCAG 2.1 AA
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Build prototype kit
+        run: npm run build
+
+      - name: Run accessibility tests
+        run: npx playwright test
+        env:
+          CI: true
+
+      - name: Upload test report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-a11y-report
+          path: playwright-report/
+          retention-days: 30
+```
+
+**Note on CI vs local:** In GitHub Actions (Linux, not GFE), `npx playwright install` works normally. The GFE `node node_modules/...` workaround is only needed for local development scripts in `package.json`. The workflow uses standard `npx` because it runs on GitHub's infrastructure.
+
+**Step 2: Verify the workflow runs**
+
+Push to a branch, open a PR, and confirm:
+- The "Accessibility Tests" check appears on the PR
+- Test results and the HTML report artifact are visible in the Actions run
+
+**Commit:**
+```bash
+git add .github/workflows/a11y.yml
+git commit -m "feat(a11y): add CI accessibility testing workflow"
+```
+
+##### Task P4.4: Designer documentation
+
+**Files:**
+- Create: `docs/skills/accessibility-testing.md`
+- Update: `docs/prd-template.md` (add accessibility acceptance criteria section)
+
+**Step 1: Create `docs/skills/accessibility-testing.md`**
+
+A practical guide for designers covering:
+
+1. **Why we test** — Prototypes are tested with users of assistive technology (JAWS, VoiceOver, NVDA). A prototype with broken heading structure or missing focus management will give misleading usability test results.
+
+2. **What automated tests cover (~30-40% of issues)**
+   - WCAG 2.1 AA axe scan (color contrast, ARIA correctness, labels, etc.)
+   - Heading structure (exactly one `<h1>`, no skipped levels)
+   - Skip navigation target (`<main id="main-content">`)
+
+3. **What you must test manually** (automated tools cannot catch these)
+   - Tab through every page — verify focus is visible, order is logical, no traps
+   - Zoom to 400% — verify no content is cut off
+   - Screen reader test with VoiceOver (Cmd+F5 on macOS):
+     - Page title announced on load
+     - Form fields announce their label and required status
+     - Dynamic content changes are announced (scenario switching, alerts)
+
+4. **Running the automated tests**
+   ```bash
+   npm run build && npm run test:a11y
+   # View detailed report:
+   npm run test:a11y:report
+   ```
+
+5. **Reading the results**
+   - **Critical/Serious violations** — Fix before deploying. The PR check will block until resolved.
+   - **Moderate/Minor violations** — Logged in the report but don't block CI. Fix before usability testing if possible.
+   - **Heading structure failures** — Look for missing `<h1>`, heading levels that jump (e.g., `<h1>` followed by `<h3>`), or heading used for visual styling instead of structure.
+
+6. **Getting AI help with fixes**
+   - Ask your AI agent: "Run the a11y-reviewer on this prototype"
+   - The subagent fetches the VADS accessibility guide and gives you specific, actionable fixes
+
+7. **Pre-deploy checklist** (maps directly to guide's testing checklist)
+   - [ ] `npm run test:a11y` passes with no critical/serious violations
+   - [ ] Tabbed through every page — all interactive elements receive visible focus
+   - [ ] Zoomed to 400% — no content cut off, no horizontal scroll
+   - [ ] Checked heading structure (HeadingsMap browser extension)
+   - [ ] Tested form flows with VoiceOver — labels and errors announced correctly
+
+**Step 2: Update `docs/prd-template.md`**
+
+Add an "Accessibility" section to the PRD template so designers think about a11y requirements before generation, not after:
+
+```markdown
+## Accessibility
+
+- Viewport tested with assistive technology: [ ] Mobile VoiceOver  [ ] Desktop JAWS/NVDA
+- Custom interactions requiring focus management: [describe any non-standard navigation]
+- Dynamic content requiring live regions: [describe any content that updates without navigation]
+- Known complexity: [any patterns that may need extra a11y attention, e.g., custom accordions, modals]
+```
+
+**Commit:**
+```bash
+git add docs/skills/accessibility-testing.md docs/prd-template.md
+git commit -m "docs(a11y): add accessibility testing guide and PRD template section"
+```
+
 ---
 
 ## Acceptance Criteria
@@ -1416,6 +1750,18 @@ git commit -m "feat: add Claude Code skill wrappers for workflow guides"
 - [ ] GitHub Pages deployment works and is accessible via public URL
 - [ ] AI coding agent with MCP server generates valid VADS component usage
 - [ ] PRD-driven generation produces a functional prototype
+
+### Accessibility
+
+- [ ] `npm run test:a11y` runs axe WCAG 2.1 AA scan against all prototypes in `src/prototypes/`
+- [ ] All prototype pages have zero critical or serious axe violations
+- [ ] All prototype pages have exactly one `<h1>`
+- [ ] All prototype pages have `<main id="main-content">`
+- [ ] GitHub Actions `a11y.yml` workflow runs on every PR and reports pass/fail
+- [ ] AGENTS.md directs agents to call `get_guide('accessibility')` before building (not inline rules)
+- [ ] `.claude/agents/a11y-reviewer.md` subagent exists and audits a prototype on demand
+- [ ] `docs/skills/accessibility-testing.md` provides designer-facing pre-deploy checklist
+- [ ] PRD template includes an Accessibility section
 
 ### End-to-End Workflow
 
