@@ -60,6 +60,11 @@
           "github_label": "21P-0847"
         },
         {
+          "product_name": "26-1880 - Request a VA home loan Certificate of Eligibility (COE)",
+          "path_to_code": "src/applications/lgy/coe/form",
+          "github_label": "COE"
+        },
+        {
           "product_name": "26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant",
           "path_to_code": "src/applications/simple-forms/26-4555"
         },
@@ -73,9 +78,9 @@
           "github_label": "BDD"
         }
       ],
-      "usage_count": 15,
+      "usage_count": 16,
       "total_forms": 55,
-      "compliance_percentage": 27
+      "compliance_percentage": 29
     },
     {
       "pattern_name": "Dates",

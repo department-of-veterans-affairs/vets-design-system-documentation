@@ -10,7 +10,7 @@
 | Pattern | Forms Using | Compliance % |
 |---------|-------------|--------------|
 | Phone numbers | 17/55 | 31% |
-| Addresses | 15/55 | 27% |
+| Addresses | 16/55 | 29% |
 | Dates | 14/55 | 25% |
 | Social security or VA file number | 14/55 | 25% |
 | Email address | 13/55 | 24% |
@@ -53,7 +53,7 @@
 **Code:** [`src/platform/forms-system/src/js/web-component-patterns/addressPattern.jsx`](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/addressPattern.jsx)
 **Docs:** [Addresses](/patterns/ask-users-for/addresses)
 
-**Usage:** 15 forms (27%)
+**Usage:** 16 forms (29%)
 
 **Forms using this pattern:**
 
@@ -69,6 +69,7 @@
 - 21-4138 - Statement in support of claim
 - 21-4142 - Authorization to Disclose Information to the VA
 - 21P-0847 - Request to be substitute claimant
+- 26-1880 - Request a VA home loan Certificate of Eligibility (COE)
 - 26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant
 - 40-0247 Presidential Memorial Certificate
 - Benefits Delivery at Discharge
@@ -255,7 +256,7 @@
 | 22-1990e - Apply to use transferred education benefits |  |  |  |  |  |  |  |  |  |
 | 22-1995 - Education Change of Program or Training Application |  |  |  | ✅ |  |  |  |  |  |
 | 22-8794 - Designation of Certifying Official(s) |  |  |  |  |  |  |  |  |  |
-| 26-1880 - Request a VA home loan Certificate of Eligibility (COE) |  |  | ✅ |  |  |  |  |  |  |
+| 26-1880 - Request a VA home loan Certificate of Eligibility (COE) |  | ✅ | ✅ |  |  |  |  |  |  |
 | 26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |
 | 40-0247 Presidential Memorial Certificate | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |  |
 | Benefits Delivery at Discharge | ✅ | ✅ | ✅ |  | ✅ |  |  |  |  |
