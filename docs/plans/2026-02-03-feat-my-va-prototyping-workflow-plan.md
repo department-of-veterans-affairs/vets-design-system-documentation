@@ -2,14 +2,14 @@
 title: "feat: My VA Interactive Prototyping Workflow"
 type: feat
 date: 2026-02-03
-updated: 2026-02-13
+updated: 2026-02-23
 implementation_started: 2026-02-13
 github_issue: https://github.com/department-of-veterans-affairs/digital-experience-products/issues/1385
 ---
 
 # My VA Interactive Prototyping Workflow
 
-## Current Status (2026-02-13)
+## Current Status (2026-02-23)
 
 | Phase | Status | Notes |
 |-------|--------|-------|
@@ -20,14 +20,15 @@ github_issue: https://github.com/department-of-veterans-affairs/digital-experien
 | **P0: Prototype Kit Setup** | ✅ Complete | Repo at `~/repos/va-prototype-kit`. 2 commits on `main`. 27 files. Vite build, deploy workflow, AI configs, 7 templates, MCP server configs for 3 tools. |
 | **P1: Reference Prototype** | ✅ Complete | PRD (343 lines), 5 scenario data files, TypeScript types, app.ts with 7 section renderers. 5 commits on `main`. |
 | **P2: Workflow Docs** | ✅ Complete | 5 guides (prototype-workflow, setup-figma-mcp, figma-to-prototype, populate-from-figma, reproduce-page). 3 Claude Code skill wrappers. |
-| **P3: Polish** | 🔄 In progress | README complete (9 commits on `main`). Remaining: designer testing and iteration. |
-| **P4: Accessibility** | 📋 Planned | Strategy documented. 4 tasks: agent guidance, axe test suite, CI workflow, designer docs. |
+| **P3: Polish** | ✅ Complete | README, designer testing, iteration on PRD template and agent instructions. |
+| **P4: Accessibility** | ✅ Complete | Agent guidance (AGENTS.md + a11y-reviewer subagent), axe-core + Playwright test suite, CI workflow, designer docs. |
+| **P5: Form State Utility** | 📋 Planned | `FormState` TypeScript module for multi-step form prototypes. sessionStorage wrapper with auto-save, restore, and debug. |
 
 **MCP server totals:** 8 tools, 5 resources, 1 prompt, 102 tests across 7 test files.
 
-**Prototype Kit totals:** 9 commits on `main`, ~40 tracked files. My VA Dashboard prototype with 5 scenario states, 7 section renderers, dynamic JSON import. 5 workflow guides, 3 Claude Code skills. Comprehensive README.
+**Prototype Kit totals:** 9 commits on `main`, ~40 tracked files. My VA Dashboard prototype with 5 scenario states, 7 section renderers, dynamic JSON import. 5 workflow guides, 3 Claude Code skills. Comprehensive README. Accessibility test suite with axe-core + Playwright CI.
 
-**To resume:** P3 — Test with a real designer, gather feedback, iterate.
+**To resume:** P5 — Implement `FormState` utility module, wire up a multi-step form prototype, update agent instructions.
 
 **Key P1 discovery:** PRD-driven approach worked well. TypeScript types caught data structure issues at compile time. Dynamic JSON import makes scenario switching trivial. All 11 VADS components mapped correctly on first try.
 
@@ -1411,6 +1412,8 @@ va-prototype-kit/
   docs/skills/accessibility-testing.md ← Designer guide to running and reading test results
 ```
 
+**P4 completed 2026-02-23.** All 4 tasks implemented: agent guidance in AGENTS.md with `get_guide('accessibility')` directive, a11y-reviewer subagent, axe-core + Playwright test suite with auto-discovery of all prototypes, GitHub Actions CI workflow, and designer-facing accessibility testing guide with pre-deploy checklist.
+
 ##### Task P4.1: Strengthen agent-time accessibility guidance
 
 **Files:**
@@ -1723,6 +1726,76 @@ git add docs/skills/accessibility-testing.md docs/prd-template.md
 git commit -m "docs(a11y): add accessibility testing guide and PRD template section"
 ```
 
+#### Phase P5: Form State Utility
+
+**Goal:** Multi-step form prototypes have a consistent, typed API for carrying user input across page navigations. Designers and AI agents follow one pattern instead of reinventing raw `sessionStorage` calls in each prototype.
+
+**Architecture:** A thin `FormState` TypeScript module at `src/utils/form-state.ts` wraps sessionStorage behind a prototype-scoped API. Each prototype uses a unique namespace key so multiple prototypes coexist without collisions. The module provides `saveStep`, `loadStep`, `getAll`, `restoreFields`, `autoSave`, `clear`, and `debug` methods.
+
+```
+va-prototype-kit/
+  src/utils/form-state.ts             ← FormState class
+  AGENTS.md                            ← Updated with FormState usage conventions
+  docs/skills/form-patterns.md         ← Updated or referenced by MCP server guide
+```
+
+##### Task P5.1: Create `src/utils/form-state.ts`
+
+**Files:**
+- Create: `src/utils/form-state.ts`
+
+Implement the `FormState` class with:
+- **Constructor:** Takes a `formId` string, creates a namespaced sessionStorage key (`va-prototype-form:{formId}`)
+- **`saveStep(stepId, data)`:** Merges data for a step into accumulated form state
+- **`loadStep(stepId)`:** Returns saved data for a step (empty object if none)
+- **`getAll()`:** Returns all accumulated form data across all steps
+- **`hasStep(stepId)`:** Returns true if the step has saved data
+- **`clear()`:** Removes all form data for this form from sessionStorage
+- **`restoreFields(stepId, container?)`:** Finds VADS input elements in the container and sets their `value` attribute from saved state
+- **`autoSave(stepId, container?)`:** Listens for `vaInput`, `vaChange`, `vaSelect`, `vaValueChange` events and auto-saves field values
+- **`debug()`:** Prints current form state to the console in a readable grouped format
+
+**Commit:**
+```bash
+git add src/utils/form-state.ts
+git commit -m "feat(forms): add FormState utility for multi-step form prototypes"
+```
+
+##### Task P5.2: Demonstrate FormState in a prototype
+
+Create or update a multi-step form prototype (e.g., `overpayment-balances` or a new form prototype) to demonstrate the full pattern:
+- Auto-save on each step via `form.autoSave(STEP_ID)`
+- Restore on back navigation via `form.restoreFields(STEP_ID)`
+- Read all accumulated data on review page via `form.getAll()`
+- Clear on confirmation page via `form.clear()`
+- `form.debug()` available for development inspection
+
+**Commit:**
+```bash
+git add src/prototypes/
+git commit -m "feat(forms): demonstrate FormState in multi-step form prototype"
+```
+
+##### Task P5.3: Update agent instructions
+
+**Files:**
+- Update: `AGENTS.md` (add FormState conventions)
+- Update: MCP server `form-patterns` guide (or `docs/skills/`)
+
+Add to agent instructions:
+- All multi-step form prototypes use `FormState` from `/src/utils/form-state.ts` — never call `sessionStorage` directly
+- Instantiate with the prototype's directory name as the `formId`
+- Define a `STEP_ID` constant at the top of each step's `app.ts`
+- Call `form.restoreFields(STEP_ID)` and `form.autoSave(STEP_ID)` in every step's `DOMContentLoaded` handler
+- Call `form.clear()` on the confirmation page
+- Use `form.debug()` during development to inspect accumulated state
+
+**Commit:**
+```bash
+git add AGENTS.md docs/
+git commit -m "docs(forms): add FormState usage conventions to agent instructions"
+```
+
 ---
 
 ## Acceptance Criteria
@@ -1762,6 +1835,17 @@ git commit -m "docs(a11y): add accessibility testing guide and PRD template sect
 - [ ] `.claude/agents/a11y-reviewer.md` subagent exists and audits a prototype on demand
 - [ ] `docs/skills/accessibility-testing.md` provides designer-facing pre-deploy checklist
 - [ ] PRD template includes an Accessibility section
+
+### Form State Utility
+
+- [ ] `src/utils/form-state.ts` exists and exports `FormState` class
+- [ ] `restoreFields` correctly populates VADS input components from saved state
+- [ ] `autoSave` correctly captures input from `vaInput`, `vaChange`, `vaSelect`, and `vaValueChange` events
+- [ ] `clear` is called on the confirmation page and removes state from sessionStorage
+- [ ] `debug` prints a readable summary of current form state to the console
+- [ ] A multi-step form prototype demonstrates the full pattern: auto-save on each step, restore on back navigation, read all on review, clear on confirmation
+- [ ] `AGENTS.md` updated with `FormState` usage conventions
+- [ ] No direct `sessionStorage` calls in any prototype (enforced via AGENTS.md instruction)
 
 ### End-to-End Workflow
 
