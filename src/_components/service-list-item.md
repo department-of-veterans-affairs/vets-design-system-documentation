@@ -58,7 +58,7 @@ anchors:
 
 ### Anatomy or layout details
 
-A Service List Item can have (in order):
+A Service List Item can have:
 
 * **Status (required)**
   * Status must be represented by a gray Tag component.
