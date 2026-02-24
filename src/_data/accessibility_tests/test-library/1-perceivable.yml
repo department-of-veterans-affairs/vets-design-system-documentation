@@ -11,26 +11,26 @@ tests:
     508_severity: Critical
     wcag_url: https://www.w3.org/TR/WCAG21/#non-text-content
     description_short: |
-      Non-text content includes equivalent text alternatives.
+      Non-text content such as images, audio, and video include equivalent text alternatives.
     description_full: |
       When you view or interact with non-text content on the page,
-      you hear a text alternative that helps you understand its purpose.
+      you hear a text summary that helps you understand its purpose.
     subtests:
       - id: WEB-111-001
         description_short: |
-          Screen readers announce meaningful images.
+          Screen readers announce descriptions for meaningful images.
         description_full: |
           When you navigate to an informative image with a screen reader,
           you hear a description of the image that conveys the content and function of the image.
       - id: WEB-111-002
         description_short: |
-          Complex images include both alt text and detailed descriptions.
+          Screen readers announce both brief and detailed descriptions for graphs, maps, and charts.
         description_full: |
-          When you view a complex image, such as a chart, graph, or diagram,
-          you hear both a concise alt text description and a longer description that together provide all relevant information conveyed by the image.
+          When you view a complex visual element, such as a chart, graph, or diagram,
+          you hear both a concise alt text description and a longer description that together provide all relevant information conveyed by the visual element.
       - id: WEB-111-003
         description_short: |
-          Screen readers ignore decorative images.
+          Screen readers do not announce decorative images.
         description_full: |
           When you navigate to a decorative image with a screen reader,
           you do not hear any information about the image.
@@ -42,10 +42,10 @@ tests:
           the image is purely decorative and does not contain any important information or functionality.
       - id: WEB-111-005
         description_short: |
-          Videos and audio files include brief descriptions.
+          Screen readers announce brief descriptions of videos and audio files.
         description_full: |
-          When you view video or audio content,
-          you hear short descriptive text alternatives that identify the purpose of the content.
+          When you navigate to video or audio content,
+          you hear a short description that conveys the purpose of the content.
   - id: WEB-121
     category: general
     wcag_criterion: 1.2.1
@@ -54,10 +54,10 @@ tests:
     508_severity: Critical
     wcag_url: https://www.w3.org/TR/WCAG21/#audio-only-and-video-only-prerecorded
     description_short: |
-      Audio and video-only content includes text transcripts.
+      Audio and video-only content include a text transcript.
     description_full: |
-      When you view audio-only or video-only media,
-      you find a transcript that provides the same information as presented in the original media content.
+      When you interact with audio-only or video-only media,
+      you can find a transcript that provides the same information as presented in the original media content.
   - id: WEB-122
     category: general
     wcag_criterion: 1.2.2
@@ -66,7 +66,7 @@ tests:
     508_severity: Critical
     wcag_url: https://www.w3.org/TR/WCAG21/#captions-prerecorded
     description_short: |
-      Prerecorded videos include captions.
+      Prerecorded videos provide captions.
     description_full: |
       When you view prerecorded videos,
       you find synchronized captions for dialogue, sound effects, and relevant audio.
@@ -80,7 +80,7 @@ tests:
     description_short: |
       Videos with audio include transcripts or audio descriptions.
     description_full: |
-      When you view non-live video content,
+      When you interact with video content,
       you have access to a full descriptive transcript or an audio description.
   - id: WEB-124
     category: general
@@ -92,7 +92,7 @@ tests:
     description_short: |
       Live videos include real-time captions.
     description_full: |
-      When you view live video content,
+      When you interact with live video content,
       you find synchronized captions generated in real-time.
   - id: WEB-125
     category: general
@@ -104,7 +104,7 @@ tests:
     description_short: |
       Videos with important visual information include audio descriptions.
     description_full: |
-      When you view multimedia content,
+      When you interact with multimedia content,
       you have access to an audio description that accurately informs you of any important visual information not already conveyed through audio.
   - id: WEB-131
     category: general
@@ -114,22 +114,24 @@ tests:
     508_severity: Critical
     wcag_url: https://www.w3.org/TR/WCAG21/#info-and-relationships
     description_short: |
-      Visual and auditory content conveys information programmatically.
+      Information, structure, and relationships are conveyed through code, not just presentation.
     description_full: |
-      When you inspect the page,
-      you find that information, structure, and relationships conveyed through presentation are also programmatically determinable or available in text.
+      When you interact with the page,
+      you find that information, structure, and relationships are conveyed through proper HTML elements and ARIA roles,
+      and not just visual presentation.
     subtests:
       - id: WEB-131-001
+        category: screen_reader
         description_short: |
-          Headings match the content hierarchy and use proper HTML tags.
+          Headings are used to convey structure.
         description_full: |
-          When you inspect headings on the page,
-          you find that they accurately reflect content hierarchy and are semantically marked.
+          When you use a screen reader to navigate the page by heading,
+          you find that all elements that act as content headings are included in the heading structure.
       - id: WEB-131-002
         description_short: |
           Headings follow a logical order.
         description_full: |
-          When you review the heading structure in the component,
+          When you review the heading structure in the page or component,
           you find that heading levels follow a logical, sequential hierarchy and do not skip heading levels.
       - id: WEB-131-003
         description_short: |
@@ -139,20 +141,21 @@ tests:
           you find a single H1 exists for the page or screen.
       - id: WEB-131-004
         description_short: |
-          Lists use semantic list markup.
+          Screen readers announce list items.
         description_full: |
-          When you view visually apparent lists,
-          you find they use semantic list types.
+          When you use a screen reader to navigate a list,
+          you hear an announcement that indicates the number of items in the list and the position of each item within the list.
       - id: WEB-131-005
+        category: screen_reader
         description_short: |
-          Forms group related elements together.
+          Screen readers announce related form elements as a group.
         description_full: |
-          When you inspect related form controls,
-          you find they are semantically grouped to convey their relationships.
+          When you use a screen reader to interact with a group of related form elements, such as a set of radio buttons, checkboxes or grouped text inputs,
+          you hear an announcement that includes the group label, the item label, and indicates the elements are related.
       - id: WEB-131-006
         category: screen_reader
         description_short: |
-          Screen readers announce the form input labels and instructions.
+          Screen readers announce input labels and instructions.
         description_full: |
           When you interact with the form input with a screen reader,
           you hear an announcement that includes the label, hint text, required state, and error message when applicable.
@@ -164,24 +167,27 @@ tests:
           When you interact with required fields using a screen reader,
           you hear an announcement indicating that the field is required.
       - id: WEB-131-008
-        category: general
+        category: screen_reader
         description_short: |
-          Page uses landmarks correctly.
+          Screen reader users can navigate by landmarks.
         description_full: |
-          When you inspect the page,
-          you find ARIA or HTML5 landmarks are correctly used to identify and organize page content, and have unique and accurate names when provided.
+          When you use a screen reader to navigate the page by landmarks,
+          you find that you can easily identify and navigate to key sections of the page, such as the main content, navigation, and complementary content.
       - id: WEB-131-009
+        category: screen_reader
         description_short: |
-          Tables present tabular data with clear structure.
+          Screen readers announce relationship between table headers and data cells.
         description_full: |
-          When you view data tables,
-          you find they present tabular data and clearly structure it for assistive technology.
+          When you use a screen reader to interact with a table,
+          you hear announcements that include table headers and associations between headers and data cells,
+          allowing you to understand the structure and content of the table.
       - id: WEB-131-010
+        category: screen_reader
         description_short: |
-          Elements clearly communicate parent-child relationships.
+          Screen readers announce parent-child relationships.
         description_full: |
-          When you inspect elements,
-          you find they use proper semantic roles and contain all required parent and child elements.
+          When you use a screen reader to navigate a page with nested content, such as a dropdown menu or an accordion,
+          you hear announcements that clearly indicate the parent-child relationships between elements.
   - id: WEB-132
     category: general
     wcag_criterion: 1.3.2
@@ -190,10 +196,10 @@ tests:
     508_severity: High
     wcag_url: https://www.w3.org/TR/WCAG21/#meaningful-sequence
     description_short: |
-      Content appears in a logical order in the code.
+      Content is presented in a logical order.
     description_full: |
-      When you inspect the DOM,
-      you find the DOM presents content in a logical order.
+      When you view and interact with the page or component,
+      you find that content is presented in a meaningful sequence that supports comprehension and navigation.
   - id: WEB-133
     category: general
     wcag_criterion: 1.3.3
@@ -202,10 +208,11 @@ tests:
     508_severity: Critical
     wcag_url: https://www.w3.org/TR/WCAG21/#sensory-characteristics
     description_short: |
-      Instructions don't rely only on color, shape, size, or sound.
+      Instructions do not rely only on visual cues to convey meaning.
     description_full: |
-      When you view instructions and cues,
-      you find they do not rely exclusively on sensory characteristics.
+      When you read instructions,
+      you find that they do not rely exclusively on shape, color, or location to convey meaning.
+      For example, instructions that say "click the red button" or "select the top option" would not meet this criterion.
   - id: WEB-134
     category: mobile
     wcag_criterion: 1.3.4
@@ -226,7 +233,7 @@ tests:
     508_severity: N/A
     wcag_url: https://www.w3.org/TR/WCAG21/#identify-input-purpose
     description_short: |
-      Form fields use autocomplete attributes appropriately.
+      Form fields appropriately use autocomplete attributes.
     description_full: |
       When you inspect form fields,
       you find autocomplete attributes are correctly and validly applied to support user personalization.
@@ -240,9 +247,8 @@ tests:
     description_short: |
       Color is not the only method used to convey information.
     description_full: |
-      When you view the component,
-      you see that anything shown by color is also communicated through another visual cue
-      like shape or text.
+      When you view the page or component,
+      you find that anything shown by color is also communicated through another visual cue like shape or text.
     subtests:
       - id: DST-141-001
         description_short: |
@@ -286,7 +292,7 @@ tests:
       Text resizes to 200% without loss of content or functionality.
     description_full: |
       When you increase text size up to 200%,
-      all content remains visible and functional without needing to scroll in two dimensions.
+      all content remains visible and functional without needing to scroll both horizontally and vertically.
   - id: WEB-145
     category: general
     wcag_criterion: 1.4.5
@@ -297,21 +303,21 @@ tests:
     description_short: |
       Text is not presented as images.
     description_full: |
-      When you view the page,
-      you find the design does not use images of text when native HTML/CSS can achieve the same presentation, excluding logos and branding.
+      When you view the component or page,
+      you find the design does not use images of text when native HTML/CSS can achieve the same presentation.
   - id: WEB-1410
-    category: visual
+    category: zoom
     wcag_criterion: 1.4.10
     wcag_name: Reflow
     wcag_level: AA
     508_severity: N/A
     wcag_url: https://www.w3.org/TR/WCAG21/#reflow
     description_short: |
-      Content adapts to small screens.
+      Content adapts to small screens and zoom.
     description_full: |
-      When you open the component in a viewport that is 320 pixels wide,
-      you can see and interact with all content without needing to scroll both
-      horizontally and vertically.
+      When you open the component in a viewport that is 320 pixels wide
+      or when you zoom in up to 400% on a viewport that is at least 1280 pixels wide,
+      you can see and interact with all content without needing to scroll both horizontally and vertically.
   - id: WEB-1411
     category: visual
     wcag_criterion: 1.4.11
@@ -327,28 +333,28 @@ tests:
     subtests:
       - id: WEB-1411-001
         description_short: |
-          Interactive elements are visually distinct from surroundings.
+          Interactive elements have sufficient contrast against their surroundings.
         description_full: |
-          When you check the contrast of interactive elements,
-          you find that active UI components achieve a 3:1 contrast ratio against adjacent colors.
+          When you use a color contrast checker tool to compare the color of an interactive element against its surroundings,
+          you find it has a contrast ratio of at least 3:1.
       - id: WEB-1411-002
         description_short: |
           Meaningful icons and graphic elements have sufficient contrast.
         description_full: |
-          When you check the contrast of meaningful icons and graphic elements,
-          you find that they have a 3:1 contrast ratio against their background.
+          When you use a color contrast checker tool to compare the color of a meaningful icon and graphic element against its background,
+          you find it has a contrast ratio of at least 3:1.
       - id: DST-1411-001
         description_short: |
           Icons have sufficient contrast against their background.
         description_full: |
-          When you compare the color of the icon against its background using a contrast checker tool,
-          you find that the icon has at least a 3:1 contrast ratio against its background.
+          When you use a color contrast checker tool to compare the color of an icon against its background,
+          you find it has a contrast ratio of at least 3:1.
       - id: DST-1411-002
         description_short: |
-         Form inputs have sufficient contrast against their background.
+         Form inputs have sufficient contrast against their surroundings.
         description_full: |
-          When you compare the color of the form input against its background using a contrast checker tool,
-          you find that the form input has at least a 3:1 contrast ratio against its background.
+          When you use a color contrast checker tool to compare the color of a form input against its surroundings,
+          you find it has a contrast ratio of at least 3:1.
   - id: WEB-1412
     category: general
     wcag_criterion: 1.4.12
@@ -369,7 +375,7 @@ tests:
     508_severity: N/A
     wcag_url: https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus
     description_short: |
-      Users can dismiss content that hover or focus triggers.
+      Users can dismiss content that appears on hover or focus.
     description_full: |
-      When hover or focus triggers content,
-      you find you can dismiss it without moving the pointer or focus.
+      When you encounter content that appears when you hover over or focus on an element,
+      you are able to dismiss it without moving the pointer or focus.

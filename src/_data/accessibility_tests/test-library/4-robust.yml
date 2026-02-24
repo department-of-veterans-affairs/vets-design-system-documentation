@@ -11,21 +11,21 @@ tests:
     508_severity: Critical
     wcag_url: https://www.w3.org/TR/WCAG21/#name-role-value
     description_short: |
-      Links navigate to different pages or sections and buttons perform actions on the current page.
+      Every interactive element has a clear name and purpose.
     description_full: |
-      When you interact with links and buttons on the page,
-      you find that links navigate to new pages or sections and buttons perform in-page actions.
+      When you interact with interactive elements such as links and buttons,
+      you can easily understand what they are and what they do based on their accessible names and roles.
     subtests:
       - id: WEB-412-001
         description_short: |
           Every interactive element has a clear name and purpose.
         description_full: |
-          When you inspect interactive elements,
-          you find they have accessible names that identify what they are and what they do.
+          When you interact with interactive elements such as links and buttons,
+          you can easily understand what they are and what they do based on their accessible names and roles.
       - id: WEB-412-002
         category: screen_reader
         description_short: |
-          Screen readers announce element states.
+          Screen readers announce state.
         description_full: |
           When you use a screen reader,
           you hear announcements for dynamic states like expanded, checked, or disabled.
@@ -55,7 +55,7 @@ tests:
     508_severity: N/A
     wcag_url: https://www.w3.org/TR/WCAG21/#status-messages
     description_short: |
-      Screen readers automatically announce important updates.
+      Screen readers announce important updates.
     description_full: |
       When a status message is added or updated while using a screen reader,
       you hear the message announced without needing to move focus to the message.

@@ -20,14 +20,14 @@ tests:
         description_short: |
           Link is fully operable using only a keyboard.
         description_full: |
-          When you access a link using only a keyboard,
+          When you interact with a link using only a keyboard,
           you can navigate to the link, activate it, and navigate away from it.
       - id: DST-211-002
         description_short: |
           Form inputs are fully operable using only a keyboard.
         description_full: |
-          When you access a form input using only a keyboard,
-          you can navigate to the input, activate it, and navigate away from it.
+          When you interact with a form input using only a keyboard,
+          you can navigate to the input, update the value, and navigate away from it.
   - id: WEB-212
     category: keyboard
     wcag_criterion: 2.1.2
@@ -38,15 +38,21 @@ tests:
     description_short: |
       Keyboard focus does not get trapped.
     description_full: |
-      When you move focus to any interactive element with a keyboard,
+      When you move focus to an interactive element with a keyboard,
       you can move focus away from that element using only standard keyboard keys (Tab, Shift+Tab, arrow keys, or Escape).
     subtests:
       - id: DST-212-001
         description_short: |
-          Keyboard focus does not get trapped when interacting with the link.
+          Links do not trap keyboard focus.
         description_full: |
           When you navigate to the link using a keyboard,
           you can move focus away from the link using only standard keyboard keys (Tab, Shift+Tab, arrow keys, or Escape).
+      - id: DST-212-002
+        description_short: |
+          Form inputs do not trap keyboard focus.
+        description_full: |
+          When you navigate to a form input using a keyboard,
+          you can move focus away from the input using only standard keyboard keys (Tab, Shift+Tab, arrow keys, or Escape).
   - id: WEB-214
     category: keyboard
     wcag_criterion: 2.1.4
@@ -69,8 +75,8 @@ tests:
     description_short: |
       Content allows users to turn off or extend time limits.
     description_full: |
-      When you encounter time limits,
-      you find they can be disabled, extended (with a 20-second warning and the ability to extend at least ten times), or significantly adjusted unless timing is essential.
+      When you encounter a time limit,
+      you find it can be disabled, extended (with a 20-second warning and the ability to extend at least ten times), or significantly adjusted unless timing is essential.
   - id: WEB-222
     category: general
     wcag_criterion: 2.2.2
@@ -79,7 +85,7 @@ tests:
     508_severity: Critical
     wcag_url: https://www.w3.org/TR/WCAG21/#pause-stop-hide
     description_short: |
-      Content provides controls to pause or stop automatically moving elements.
+      Movement can be paused or stopped.
     description_full: |
       When you view moving, blinking, scrolling, or auto-updating content that starts automatically and lasts over 5 seconds,
       you find mechanisms to pause, stop, hide, or control its frequency.
@@ -94,7 +100,7 @@ tests:
       Nothing flashes more than three times per second.
     description_full: |
       When you view the page,
-      you find no content flashes more than 3 times per any 1-second period.
+      you find no content flashes more than three times per any one-second period.
   - id: WEB-241
     category: general
     wcag_criterion: 2.4.1
@@ -107,6 +113,13 @@ tests:
     description_full: |
       When you navigate the page,
       you find a mechanism to bypass repeated blocks of content such as a skip link or HTML5 landmarks.
+    subtests:
+      - id: DST-241-001
+        description_short: |
+          Skip link allows users to bypass repeated content.
+        description_full: |
+          When you navigate the page with a keyboard,
+          you find a skip link at the beginning of the page that allows you to bypass repeated content and jump directly to the main content.
   - id: WEB-242
     category: general
     wcag_criterion: 2.4.2
@@ -117,8 +130,8 @@ tests:
     description_short: |
       Each page includes a unique, descriptive title.
     description_full: |
-      When you view each web page or screen,
-      you find it has a unique and descriptive title reflecting its purpose.
+      When you open a new page,
+      you find it has a unique and descriptive title reflecting the page's purpose.
   - id: WEB-243
     category: keyboard
     wcag_criterion: 2.4.3
@@ -129,7 +142,7 @@ tests:
     description_short: |
       Tab order follows a logical sequence.
     description_full: |
-      When you navigate with the keyboard,
+      When you navigate the page or component with a keyboard,
       you find focus moves through interactive elements in a meaningful order.
   - id: WEB-244
     category: general
@@ -151,10 +164,11 @@ tests:
     508_severity: Low
     wcag_url: https://www.w3.org/TR/WCAG21/#multiple-ways
     description_short: |
-      Content provides multiple ways to locate pages.
+      There is more than one way to access a page.
     description_full: |
-      When you look for content,
-      you find two or more mechanisms of finding a webpage, unless the page is accessed as part of a step in a process.
+      When you navigate the site,
+      you find more than one way to access important pages,
+      such as through a link in the main navigation and a link within the page content.
   - id: WEB-246
     category: general
     wcag_criterion: 2.4.6
@@ -172,14 +186,14 @@ tests:
         description_short: |
           Headings are descriptive.
         description_full: |
-          When you view headings,
-          you find the heading text accurately describes the topic or purpose of the content that follows.
+          When you read heading text,
+          you find that it accurately describes the topic or purpose of the content that follows.
       - id: WEB-246-002
         description_short: |
           Input labels are descriptive.
         description_full: |
-          When you view or interact with a form input,
-          you find that its label clearly describes the expected input.
+          When you read an input label,
+          you find that its accurately describes the purpose of the input field and the expected value.
   - id: WEB-247
     category: keyboard
     wcag_criterion: 2.4.7
@@ -202,8 +216,8 @@ tests:
     description_short: |
       Content uses headings to organize sections.
     description_full: |
-      When you view content organized in sections,
-      you find the content includes section headings.
+      When you read content that is organized in sections,
+      you find that each section has a descriptive heading that helps you understand the section and what it's about.
   - id: WEB-2411
     category: keyboard
     wcag_criterion: 2.4.11
@@ -225,10 +239,11 @@ tests:
     508_severity: N/A
     wcag_url: https://www.w3.org/TR/WCAG21/#pointer-gestures
     description_short: |
-      All actions work with simple taps or clicks.
+      Interaction doesn't require complex gestures.
     description_full: |
       When you interact with the page using a pointer device, such as a mouse, touchscreen, or stylus,
-      you find that all functionality is operable with simple pointer actions like taps or clicks.
+      you find that all functionality is operable with simple pointer actions like taps or clicks,
+      rather than requiring complex gestures like swiping, pinching, or dragging.
   - id: WEB-252
     category: general
     wcag_criterion: 2.5.2
@@ -237,9 +252,9 @@ tests:
     508_severity: N/A
     wcag_url: https://www.w3.org/TR/WCAG21/#pointer-cancellation
     description_short: |
-      Actions happen on release and users can cancel them.
+      Pointer actions are reversible and don't execute on touch down.
     description_full: |
-      When you interact with pointer actions,
+      When you interact with the page using a pointer device, such as a mouse, touchscreen, or stylus,
       you find they execute on the up-event and can be cancelled before release.
   - id: WEB-253
     category: voice_control
@@ -255,11 +270,12 @@ tests:
       you find that the accessible name matches the visible text for that element.
     subtests:
       - id: DST-253-001
+        category: screen_reader
         description_short: |
           Screen reader announcements match visible text.
         description_full: |
-          When you focus on a link with a screen reader,
-          you hear an announcement that matches the visible text of the link.
+          When you focus on an interactive element with a screen reader,
+          you hear an announcement that matches the element's visible text.
   - id: WEB-254
     category: mobile
     wcag_criterion: 2.5.4
@@ -282,8 +298,8 @@ tests:
     description_short: |
       Drag-and-drop actions have click-based alternatives.
     description_full: |
-      When you use drag functionality,
-      you find it's also available through click, keyboard, or other non-dragging methods.
+      When you interact with a component that offers drag functionality,
+      you find that functionality is also available through click, keyboard, or other non-dragging methods.
   - id: WEB-258
     category: general
     wcag_criterion: 2.5.8
@@ -292,10 +308,10 @@ tests:
     508_severity: N/A
     wcag_url: https://www.w3.org/TR/WCAG22/#target-size-minimum
     description_short: |
-      Interactive elements meet the minimum size of 24 pixels.
+      Interactive element size is at least 24 pixels.
     description_full: |
-      When you inspect the size of clickable elements on the page,
-      you find that each link has a target size of at least 24x24 pixels.
+      When you inspect the size of interactive elements on the page,
+      you find that each element has a target size of at least 24x24 pixels.
     subtests:
       - id: DST-258-001
         description_short: |

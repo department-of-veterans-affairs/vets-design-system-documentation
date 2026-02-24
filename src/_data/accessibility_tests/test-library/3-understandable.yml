@@ -27,6 +27,14 @@ tests:
     description_full: |
       When you view text in different languages from the page's primary language,
       you find it is marked with `lang` attributes.
+    subtests:
+      - id: DST-312-001
+        category: screen_reader
+        description_short: |
+          Screen readers announce language changes.
+        description_full: |
+          When you encounter text in a different language while using a screen reader,
+          you hear an announcement indicating the language change.
   - id: WEB-321
     category: keyboard
     wcag_criterion: 3.2.1
@@ -35,14 +43,14 @@ tests:
     508_severity: Critical
     wcag_url: https://www.w3.org/TR/WCAG21/#on-focus
     description_short: |
-      Focusing on an element doesn't trigger unexpected changes.
+      Focusing on an element does not trigger unexpected changes.
     description_full: |
       When you focus on an element,
-      you find it does not trigger a change of context.
+      you find it does not trigger a change of context such as opening a new page, displaying a modal, or causing content to appear or disappear.
     subtests:
       - id: DST-321-001
         description_short: |
-          Focusing on an input doesn't trigger unexpected changes.
+          Focusing on an input does not trigger unexpected changes.
         description_full: |
           When you focus on an input,
           you find it does not trigger a change of context such as opening a new page, displaying a modal, or causing content to appear or disappear.
@@ -54,10 +62,10 @@ tests:
     508_severity: High
     wcag_url: https://www.w3.org/TR/WCAG21/#on-input
     description_short: |
-      Changing the input value doesn't trigger unexpected changes.
+      Changing the input value does not trigger unexpected changes.
     description_full: |
       When you change a form input value,
-      you find it does not automatically cause navigation or context changes without warning.
+      you find it does not trigger a change of context such as opening a new page, displaying a modal, or causing content to appear or disappear.
   - id: WEB-323
     category: general
     wcag_criterion: 3.2.3
@@ -102,9 +110,9 @@ tests:
     508_severity: Critical
     wcag_url: https://www.w3.org/TR/WCAG21/#error-identification
     description_short: |
-      Users receive error messages when they enter invalid input.
+      Users receive error messages.
     description_full: |
-      When you enter an invalid value in a form input and attempt to advance the form,
+      When you enter an invalid value in a form input,
       you receive a descriptive error message that identifies the problem.
     subtests:
       - id: DST-331-001
@@ -115,13 +123,13 @@ tests:
           you receive an error message that identifies the problem.
       - id: DST-331-002
         description_short: |
-          Invalid inputs have a descriptive error message.
+          Invalid inputs provide a descriptive error message.
         description_full: |
-          When you enter an invalid value in a form input and attempt to advance the form,
+          When you enter an invalid value in a form input,
           you receive a descriptive error message that identifies the problem.
       - id: DST-331-003
         description_short: |
-          Invalid inputs have visible error styles.
+          Invalid inputs display visible error styles.
         description_full: |
           When you trigger an error state on a form input,
           you see a distinct visual style indicating that the input is in error.
@@ -130,7 +138,7 @@ tests:
         description_short: |
           Screen readers announce errors when they occur.
         description_full: |
-          When you receive an error message while using a screen reader,
+          When you use a screen reader and receive an error message,
           you hear the error message announced without needing to move focus to the message.
       - id: DST-331-005
         category: visual
@@ -138,7 +146,7 @@ tests:
           Error messages are visually associated with the invalid element.
         description_full: |
           When you receive an error message,
-          you find it appears in a location that associates it with the relevant input,
+          you find it appears in a location that visually associates it with the relevant input,
           or the message clearly indicates which input is in error.
   - id: WEB-332
     category: general
@@ -159,7 +167,7 @@ tests:
           Form inputs display visible labels.
         description_full: |
           When you view form inputs,
-          you find visible labels or instructions are available for all inputs and input groupings.
+          you find persistent, visible labels or instructions that are available for all inputs and input groupings.
       - id: WEB-332-002
         description_short: |
           Inputs with specific formats include instructions.
@@ -171,7 +179,7 @@ tests:
           Form inputs clearly mark required fields.
         description_full: |
           When you interact with a form input,
-          you find labels or instructions that identify which fields are required.
+          you find labels or instructions that identify which fields are required and which are optional.
   - id: WEB-333
     category: general
     wcag_criterion: 3.3.3
@@ -183,8 +191,7 @@ tests:
       Error messages explain how to fix the problem.
     description_full: |
       When you receive an error message,
-      the message provides clear suggestions for correcting input errors,
-      unless doing so would compromise security or the content's purpose.
+      you find the message provides clear suggestions for correcting the error.
   - id: WEB-334
     category: general
     wcag_criterion: 3.3.4
@@ -219,8 +226,8 @@ tests:
     description_short: |
       Users don't have to re-enter the same information.
     description_full: |
-      When you complete a process,
-      you find you are not required to refill the same information unless doing so is essential, ensuring security, or the original information is no longer valid.
+      When you enter information on the site,
+      you find you are not required to refill the same information unless doing so is essential or the original information is no longer valid.
   - id: WEB-338
     category: general
     wcag_criterion: 3.3.8
