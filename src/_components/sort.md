@@ -99,7 +99,7 @@ anchors:
 #### Placement
 
 * **Place Sort above and aligned with the content that it affects.** It serves as a visual indicator of the current order.
-* **Place Sort after the [Search Filter]({{ site.baseurl }}/components/search-filter)'s [results description]({{ site.baseurl }}/templates/search-results#results-description) when used with filtering.** This prevents the focus from skipping the Sort component given that the focus for filtering moves to results description or results heading and the focus for sorting is maintained on the component.
+* **If used with the [Search Filter]({{ site.baseurl }}/components/search-filter), place Sort after the Search Filter's [results description]({{ site.baseurl }}/templates/search-results#results-description).** This prevents the focus from skipping the Sort component given that the focus for filtering moves to results description or results heading and the focus for sorting is maintained on the component.
 
 ### Mobile app
 
