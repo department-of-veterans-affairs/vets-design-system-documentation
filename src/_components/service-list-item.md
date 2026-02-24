@@ -58,27 +58,24 @@ anchors:
 
 ### Anatomy or layout details
 
-{% include component-example.html alt="An annotated Service List Item, calling out the header, Critical Action, status, details, and link." file="/images/components/service-list-item/annotated-service-list-item-component.png" %}
+A Service List Item can have (in order):
 
-A Service List Item can have:
-
+* **Status (required)**
+  * Status must be represented by a gray Tag component.
+  * Every benefit or tool in a list has a set of internal states, which are used to track the progress of enrolling in that benefit or using that tool. A status is the way to communicate the item's state to the user (such as Active, Pending, etc).
+  * Statuses do not have to mirror internal states in a one-to-one manner. (They can, but they are not required to.) Every state change does not necessarily warrant a status change.
 * **Header (required)**
   * The header consists of an icon (optional), header text, and chevron. These elements combine to create a link to a page with more details about the benefit or tool. All Service List Items must link to a details page from the header.
   * The icon should only be used when listing VA benefits. The icons should include the [standard icons](https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=293-6211&t=h01Z6dAbcelp997f-1) for VA benefits, placed within a circle using the [color]({{ site.baseurl }}/foundation/color-palette#semantic-color-tokens) associated with each benefit.
   * Headers should be visually consistent in each list item within the list. For example, if some list item headers have icons, all list items in the list should have icons.
   * The header has a default, hover, active, focus, and visited state. See details in the [Header states section](#header-states) below.
-* **Status (required)**
-  * Status must be represented by a gray Tag component.
-  * Every benefit or tool in a list has a set of internal states, which are used to track the progress of enrolling in that benefit or using that tool. A status is the way to communicate the item's state to the user (such as Active, Pending, etc).
-  * Statuses do not have to mirror internal states in a one-to-one manner. (They can, but they are not required to.) Every state change does not necessarily warrant a status change.
 * **Critical Action**
   * The [Critical Action]({{ site.baseurl }}/components/critical-action) component is still under development. It navigates the user to the most direct path to take action on the critical action. Future updates will include adjustments to color contrast, focus states, and more.
 * **Details (required)**
   * The details provide users with helpful information, formatted in a “Label: Value” structure (for example, “Approved on: May 5, 2011”).
   * There can be anywhere from one to five lines of “Label: Value” pairs.
 * **Link (optional)**
-  * Some Service List Items might require an additional link, in addition to the details page linked to from the header and the actionable link offered in the [Critical Action]({{ site.baseurl }}/components/critical-action) component. In these cases, one additional link may be displayed at the bottom of the Service List Item.
-The link should use the standard default, hover, focus, active, and visited link states.
+  * Some Service List Items might require an additional link, in addition to the details page linked to from the header and the actionable link offered in the [Critical Action]({{ site.baseurl }}/components/critical-action) component. In these cases, one additional link may be displayed at the bottom of the Service List Item. The link should use the standard default, hover, focus, active, and visited link states.
 
 ### Header states
 * **Default**: The link and chevron are the standard vads-color-link.
