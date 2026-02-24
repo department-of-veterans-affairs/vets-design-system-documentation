@@ -131,8 +131,7 @@ anchors:
 
 * **Name sort options clearly and consistently** using this convention:
     * `Sort attribute (sort method)`
-        * `Sort attribute` describes what the results are sorted by.
-            * Examples: Medication name, entry date, distance
+        * `Sort attribute` describes what the results are sorted by. For example, medication name, entry date, or distance.
         * `(Sort method)` describes how the results are ordered. Use familiar, plain language terms such as:
             * **Alphabetical**
                 * A to Z      
