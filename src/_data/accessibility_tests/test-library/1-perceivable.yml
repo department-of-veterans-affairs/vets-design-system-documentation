@@ -256,19 +256,6 @@ tests:
         description_full: |
           When you view a link,
           you see that the link has a text underline and uses the expected VA colors for default, hover, focus, and visited states.
-  - id: WEB-143
-    category: visual
-    wcag_criterion: 1.4.3
-    wcag_name: Contrast (Minimum)
-    wcag_level: AA
-    508_severity: Medium
-    wcag_url: https://www.w3.org/TR/WCAG21/#contrast-minimum
-    description_short: |
-      Text has sufficient contrast against its background.
-    description_full: |
-      When you compare the color of body text against its background using a contrast checker tool,
-      you find that it has a contrast ratio of at least 4.5:1.
-      For large text, the contrast ratio is at least 3:1.
   - id: WEB-142
     category: general
     wcag_criterion: 1.4.2
@@ -281,6 +268,18 @@ tests:
     description_full: |
       When you encounter audio that plays automatically for more than 3 seconds,
       you find you can pause it or it has an independent volume control.
+  - id: WEB-143
+    category: visual
+    wcag_criterion: 1.4.3
+    wcag_name: Contrast (Minimum)
+    wcag_level: AA
+    508_severity: Medium
+    wcag_url: https://www.w3.org/TR/WCAG21/#contrast-minimum
+    description_short: |
+      Text has sufficient contrast against its background.
+    description_full: |
+      When you use a contrast checker tool to compare the color of text against its background,
+      you find that it has a contrast ratio of at least 4.5:1.
   - id: WEB-144
     category: visual
     wcag_criterion: 1.4.4
@@ -315,8 +314,7 @@ tests:
     description_short: |
       Content adapts to small screens and zoom.
     description_full: |
-      When you open the component in a viewport that is 320 pixels wide
-      or when you zoom in up to 400% on a viewport that is at least 1280 pixels wide,
+      When you zoom in 400% on a viewport that is 1280 pixels wide,
       you can see and interact with all content without needing to scroll both horizontally and vertically.
   - id: WEB-1411
     category: visual

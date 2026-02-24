@@ -63,7 +63,7 @@ tests:
           - name: MacOS/Chrome
             result: pass
         notes: Focus outline is visible but does not meet 3:1 contrast ratio. This is a known issue that will be addressed in a future release.
-  - id: WEB-253
+  - id: WEB-253-001
     test_results:
       - version: 54.6.0
         tester: Jane Smith

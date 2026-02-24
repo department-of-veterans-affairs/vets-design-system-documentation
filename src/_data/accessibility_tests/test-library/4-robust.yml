@@ -37,13 +37,13 @@ tests:
           you find the code uses link elements for navigation and button elements to perform in-page actions or submit forms.
       - id: DST-412-001
         description_short: |
-          Links navigate to a new page or section.
+          Link navigates to a new page or section.
         description_full: |
           When you activate a link,
           you are taken to a different page or a section on the current page.
       - id: DST-412-002
         description_short: |
-          Buttons perform actions on the current page.
+          Button performs an action on the current page.
         description_full: |
           When you activate a button,
           you find that it performs an action on the current page.

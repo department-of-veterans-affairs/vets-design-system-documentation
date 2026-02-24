@@ -112,7 +112,7 @@ tests:
     description_short: |
       Users receive error messages.
     description_full: |
-      When you enter an invalid value in a form input,
+      When you enter an invalid value,
       you receive a descriptive error message that identifies the problem.
     subtests:
       - id: DST-331-001
@@ -123,9 +123,9 @@ tests:
           you receive an error message that identifies the problem.
       - id: DST-331-002
         description_short: |
-          Invalid inputs provide a descriptive error message.
+          Error messages describe the reason for the error.
         description_full: |
-          When you enter an invalid value in a form input,
+          When you enter an invalid value in a form input or a required field is left empty,
           you receive a descriptive error message that identifies the problem.
       - id: DST-331-003
         description_short: |
@@ -188,7 +188,7 @@ tests:
     508_severity: Low
     wcag_url: https://www.w3.org/TR/WCAG21/#error-suggestion
     description_short: |
-      Error messages explain how to fix the problem.
+      Error messages explain how to fix the error.
     description_full: |
       When you receive an error message,
       you find the message provides clear suggestions for correcting the error.

@@ -35,6 +35,7 @@ tests:
           - name: MacOS/Chrome
             result: conditional
   - id: WEB-247
+  - id: DST-331-002
   - id: DST-331-005
   - id: WEB-333
     test_results:
