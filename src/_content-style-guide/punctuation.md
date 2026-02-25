@@ -232,7 +232,7 @@ You'll need an itemized billing statement (sometimes called a superbill, UB-O4, 
 
 #### Plurals
 
-Don't use "(s)," "(es)," or "(ies)" as the end of a word to show a possible plural. Screen readers don't announce the parenthetical in a way that people can easily understand. Instead, use the plural version of the word. You can also reword the sentence to use "any" before the plural to mean 1 or multiple.
+Don't use "(s)," "(es)," or "(ies)" at the end of a word to show a possible plural. Screen readers don't announce the parenthetical in a way that people can easily understand. Instead, use the plural version of the word. You can also reword the sentence to use "any" before the plural to mean 1 or multiple.
 
 <div class="do-dont">
 <div class="do-dont__do">
