@@ -6,6 +6,7 @@ anchors:
   - anchor: Considerations
   - anchor: Punctuation
   - anchor: Links in lists
+  - anchor: What to consider when ordering bulleted lists
 ---
 
 ## Considerations
@@ -164,3 +165,89 @@ Here's what you'll need to apply:
 ## Links in lists
 
 {% include content/links-in-lists.md %}
+
+## What to consider when ordering bulleted lists
+
+Bulleted lists generally don’t need to be in a specific order. But in some cases, you may want to consider ordering the list based on the type of list items.
+
+### Grouping like items
+
+Some lists may include sets of similar items. For example, a list of documents may include some documents related to education, some for personal information, and some for financial information. In this case, group each set of similar items together in the list.
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+  
+* Valid, state-issued ID
+* Birth certificate
+* Most recent bank statement
+* Loan agreement
+* College enrollment form
+* College transcript
+
+</div>
+</div>
+</div>
+
+### Order of importance or level of urgency
+
+In some lists, certain items may be more important or urgent than others. In this case, order the list with the most important or urgent item first. Consider a numbered list if appropriate for the content.
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+
+Here are 2 ways to avoid VA benefit debt:
+
+* Tell us right away about any life changes that may affect your benefits. These include changes like marriage or divorce, a dependent who leaves school, or a new job that pays more money.
+* Keep your contact information up to date. This helps make sure you receive any benefit letters.
+
+</div>
+</div>
+</div>
+
+### Numerical
+
+In lists of dates, dollar values, percentages, or other numerical values, it may make sense to order the list from either high to low or low to high.
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+
+* **Months 1 to 6:** 100% of the full BAH rate
+* **Months 7 to 12:** 80% of the full BAH rate
+* **Months 13 to 18:** 60% of the full BAH rate
+* **Months 19 to 24:** 40% of the full BAH rate
+* **2 years and beyond:** 20% of the full BAH rate
+
+</div>
+</div>
+</div>
+
+### Alphabetical
+
+Use alphabetical order for lists of certain items, like medications or specific locations. But don't default to aplhabetical order for all lists.
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+
+* Astepro (azelastine): nasal spray
+* Bactrim (sulfamethoxazole/trimethoprim): tablets
+* Folic acid: tablets
+* Maxalt (rizatriptan): tablets, ODT
+---
+*	[Captain James A. Lovell Federal Health Care Center](https://www.va.gov/lovell-federal-health-care-va/locations/captain-james-a-lovell-federal-health-care-center/) (North Chicago, Illinois)
+*	[Jonathan M. Wainwright Memorial VA Medical Center](https://www.va.gov/walla-walla-health-care/) (Walla Walla, Washington)
+*	[Mann-Grandstaff VA Medical Center](https://www.va.gov/spokane-health-care/) (Spokane, Washington)
+*	[Roseburg VA Health Care System](https://www.va.gov/roseburg-health-care/locations/roseburg-va-medical-center/) (Roseburg, Oregon)
+*	[VA Central Ohio Health Care System](https://www.va.gov/central-ohio-health-care/) (Columbus, Ohio)
+*	[VA Southern Oregon Rehabilitation Center and Clinics](https://www.va.gov/southern-oregon-health-care/) (White City, Oregon)
+
+</div>
+</div>
+</div>
