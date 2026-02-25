@@ -3,42 +3,70 @@
 # Version: 1.0
 # Last updated: 2026-02-10
 
-# Supported test environments
-environments:
-  general:
-    - MacOS/Chrome
-    - Windows/Chrome
-  keyboard:
-    - MacOS/Chrome
-    - Windows/Chrome
+# Common environment definitions (ID to display name mappings)
+# These can be used by any test in any category
+environment_definitions:
+  # Desktop browsers
+  mac-chrome:
+    name: macOS Chrome
+  mac-firefox:
+    name: macOS Firefox
+  mac-edge:
+    name: macOS Edge
+  mac-safari:
+    name: macOS Safari
+  windows-chrome:
+    name: Windows Chrome
+  windows-firefox:
+    name: Windows Firefox
+  windows-edge:
+    name: Windows Edge
+  # Mobile browsers
+  android-chrome:
+    name: Android Chrome
+  ios-safari:
+    name: iOS Safari
+  # Screen readers
+  mac-safari-voiceover:
+    name: macOS Safari/VoiceOver
+  mac-chrome-voiceover:
+    name: macOS Chrome/VoiceOver
+  windows-chrome-jaws:
+    name: Windows Chrome/JAWS
+  windows-edge-nvda:
+    name: Windows Edge/NVDA
+  android-chrome-talkback:
+    name: Android Chrome/Talkback
+  ios-safari-voiceover:
+    name: iOS Safari/VoiceOver
+  # Voice control
+  mac-voice-control:
+    name: macOS Voice Control
+  windows-voice-recognition:
+    name: Windows Voice Recognition
+
+# Required environments for specific categories
+# Categories not listed here (general, keyboard, structural, visual, zoom) can use any environment
+required_environments:
   mobile:
-    - Android Chrome
-    - iOS Safari
+    - android-chrome
+    - ios-safari
   screen_reader:
-    - name: MacOS Safari/VoiceOver
+    - id: mac-safari-voiceover
       required: true
-    - name: Windows Chrome/JAWS
+    - id: windows-chrome-jaws
       required: true
-    - name: Windows Edge/NVDA
+    - id: windows-edge-nvda
       required: true
-    - name: MacOS Chrome/VoiceOver
+    - id: mac-chrome-voiceover
       required: false
-    - name: Android Chrome/Talkback
+    - id: android-chrome-talkback
       required: false
-    - name: iOS Safari/VoiceOver
+    - id: ios-safari-voiceover
       required: false
-  structural:
-    - MacOS/Chrome
-    - Windows/Chrome
-  visual:
-    - MacOS/Chrome
-    - Windows/Chrome
   voice_control:
-    - MacOS/Voice Control
-    - Windows/Voice Recognition
-  zoom:
-    - MacOS/Chrome
-    - Windows/Chrome
+    - mac-voice-control
+    - windows-voice-recognition
 
 # Test categories
 categories:

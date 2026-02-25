@@ -6,17 +6,21 @@
   list-style: none;
   margin: 0;
   padding: 2rem;
-  max-width: 100% !important;
 }
 
 .a11y-test-list > li {
   border-bottom: 1px solid var(--vads-color-base-light);
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 1rem;
   max-width: 100%;
 }
 
 .a11y-test-list > li:first-of-type {
   padding-top: 0;
+}
+
+.a11y-test-list > li:last-of-type {
+  border: none;
+  padding-bottom: 0;
 }
 
 .a11y-test-list li > p {
@@ -37,44 +41,10 @@
   margin-right: 1rem;
 }
 
-.a11y-test-category {
-  display: inline-block;
-  padding: 0.25rem 0.5rem;
-  border-radius: 3px;
-  font-size: 0.75rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.a11y-test-category.category-general {
-  background-color: #e7f6f8;
-  color: #005ea2;
-}
-
-.a11y-test-category.category-keyboard {
-  background-color: #f0e8f5;
-  color: #54278f;
-}
-
-.a11y-test-category.category-screen_reader {
-  background-color: #fef0e6;
-  color: #936938;
-}
-
-.a11y-test-category.category-mobile {
-  background-color: #e7f4e4;
-  color: #2e8540;
-}
-
-.a11y-test-category.category-zoom {
-  background-color: #e1f3f8;
-  color: #00687d;
-}
-
 /* Nested subtests */
 .a11y-test-list .a11y-test-subtest-list {
   list-style: none;
-  margin: 1rem 0 0 2rem;
+  margin: 1rem 0 0 1rem;
   padding: 0;
   border-left: 3px solid var(--vads-color-base-lighter);
 }
