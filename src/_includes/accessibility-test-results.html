@@ -15,6 +15,7 @@
 {% assign zoom_tests = "" | split: "" %}
 {% assign visual_tests = "" | split: "" %}
 
+{% comment %} Categorize tests {% endcomment %}
 {% for test in component_tests.tests %}
   {% assign test_def = nil %}
   {% assign parent_def = nil %}
@@ -68,14 +69,10 @@
   {% endif %}
 {% endfor %}
 
-<style>
-va-table-row {
-  display: none;
-}
-</style>
+{% comment %} Render categorized tests {% endcomment %}
 {% if component_tests.size > 0 %}
 
-{% comment %} Define test categories {% endcomment %}
+{% comment %} Define test categories in display order {% endcomment %}
 {% assign test_categories = "general_tests,General Tests|keyboard_tests,Keyboard Tests|screen_reader_tests,Screen Reader Tests|voice_control_tests,Voice Control Tests|mobile_tests,Mobile Tests|zoom_tests,Zoom Tests|structural_tests,Structural Tests|visual_tests,Visual Tests" | split: "|" %}
 
 {% for category_config in test_categories %}
@@ -83,49 +80,36 @@ va-table-row {
   {% assign category_var = config_parts[0] %}
   {% assign category_title = config_parts[1] %}
 
-  {% comment %} Get the test array for this category {% endcomment %}
-  {% if category_var == "general_tests" %}
-    {% assign category_tests = general_tests %}
-  {% elsif category_var == "keyboard_tests" %}
-    {% assign category_tests = keyboard_tests %}
-  {% elsif category_var == "screen_reader_tests" %}
-    {% assign category_tests = screen_reader_tests %}
-  {% elsif category_var == "voice_control_tests" %}
-    {% assign category_tests = voice_control_tests %}
-  {% elsif category_var == "mobile_tests" %}
-    {% assign category_tests = mobile_tests %}
-  {% elsif category_var == "zoom_tests" %}
-    {% assign category_tests = zoom_tests %}
-  {% elsif category_var == "structural_tests" %}
-    {% assign category_tests = structural_tests %}
-  {% elsif category_var == "visual_tests" %}
-    {% assign category_tests = visual_tests %}
-  {% endif %}
+  {% comment %} Map category variable name to test array {% endcomment %}
+  {% case category_var %}
+    {% when "general_tests" %}{% assign category_tests = general_tests %}
+    {% when "keyboard_tests" %}{% assign category_tests = keyboard_tests %}
+    {% when "screen_reader_tests" %}{% assign category_tests = screen_reader_tests %}
+    {% when "voice_control_tests" %}{% assign category_tests = voice_control_tests %}
+    {% when "mobile_tests" %}{% assign category_tests = mobile_tests %}
+    {% when "zoom_tests" %}{% assign category_tests = zoom_tests %}
+    {% when "structural_tests" %}{% assign category_tests = structural_tests %}
+    {% when "visual_tests" %}{% assign category_tests = visual_tests %}
+  {% endcase %}
 
   {% if category_tests.size > 0 %}
   <h3>{{ category_title }}</h3>
   <ul class="a11y-test-list">
     {% for test in category_tests %}
-    {% assign test_def = nil %}
+    {% comment %} Look up test definition from test library {% endcomment %}
+    {% assign test_def = test_library | where: "id", test.id | first %}
     {% assign parent_def = nil %}
 
-    {% comment %} First, try to find as a top-level test {% endcomment %}
-    {% assign test_def = test_library | where: "id", test.id | first %}
-
-    {% comment %} If not found, search through subtests {% endcomment %}
+    {% comment %} If not a top-level test, search subtests {% endcomment %}
     {% unless test_def %}
       {% for parent in test_library %}
         {% if parent.subtests %}
-          {% for subtest in parent.subtests %}
-            {% if subtest.id == test.id %}
-              {% assign test_def = subtest %}
-              {% assign parent_def = parent %}
-              {% break %}
-            {% endif %}
-          {% endfor %}
-        {% endif %}
-        {% if test_def %}
-          {% break %}
+          {% assign subtest = parent.subtests | where: "id", test.id | first %}
+          {% if subtest %}
+            {% assign test_def = subtest %}
+            {% assign parent_def = parent %}
+            {% break %}
+          {% endif %}
         {% endif %}
       {% endfor %}
     {% endunless %}
@@ -138,22 +122,27 @@ va-table-row {
       <p>
         {{ test_def.description_full | strip }}
       </p>
+      {% comment %} Use parent metadata if this is a subtest, otherwise use test's own metadata {% endcomment %}
+      {% if parent_def %}
+        {% assign display_id = test.id %}
+        {% assign wcag_url = parent_def.wcag_url %}
+        {% assign wcag_criterion = parent_def.wcag_criterion %}
+        {% assign wcag_name = parent_def.wcag_name %}
+        {% assign wcag_level = parent_def.wcag_level %}
+      {% else %}
+        {% assign display_id = test_def.id %}
+        {% assign wcag_url = test_def.wcag_url %}
+        {% assign wcag_criterion = test_def.wcag_criterion %}
+        {% assign wcag_name = test_def.wcag_name %}
+        {% assign wcag_level = test_def.wcag_level %}
+      {% endif %}
+
       <ul class="a11y-test-details-list">
         <li>
-          <span class="usa-label">
-            {% if parent_def %}
-              {{ test.id }}
-            {% else %}
-              {{ test_def.id }}
-            {% endif %}
-          </span>
+          <span class="usa-label">{{ display_id }}</span>
         </li>
         <li>
-          {% if parent_def %}
-            <a href="{{ parent_def.wcag_url }}">WCAG {{ parent_def.wcag_criterion }} - {{ parent_def.wcag_name }}</a> (Level {{ parent_def.wcag_level }})
-          {% else %}
-            <a href="{{ test_def.wcag_url }}">WCAG {{ test_def.wcag_criterion }} - {{ test_def.wcag_name }}</a> (Level {{ test_def.wcag_level }})
-          {% endif %}
+          <a href="{{ wcag_url }}">WCAG {{ wcag_criterion }} - {{ wcag_name }}</a> (Level {{ wcag_level }})
         </li>
       </ul>
 
@@ -193,19 +182,15 @@ va-table-row {
             <span>v{{ run.version }}</span>
             {% for env_name in all_environments %}
             <span>
+              {% comment %} Extract environment name (handle both string and object formats) {% endcomment %}
+              {% assign env_name_str = env_name.name | default: env_name %}
+
+              {% comment %} Find matching result for this environment {% endcomment %}
               {% assign env_result = nil %}
-              {% comment %} Get the actual environment name (could be string or object) {% endcomment %}
-              {% if env_name.name %}
-                {% assign env_name_str = env_name.name %}
-              {% else %}
-                {% assign env_name_str = env_name %}
+              {% assign matching_env = run.environments | where: "name", env_name_str | first %}
+              {% if matching_env %}
+                {% assign env_result = matching_env.result %}
               {% endif %}
-              {% for env in run.environments %}
-                {% assign current_env_name = env.name %}
-                {% if current_env_name == env_name_str %}
-                  {% assign env_result = env.result %}
-                {% endif %}
-              {% endfor %}
 
               {% if env_result %}
                 {% if env_result == "pass" %}

@@ -13,7 +13,7 @@ tests:
   - id: WEB-212
   - id: WEB-246-002
   - id: WEB-247
-  - id: WEB-253-001
+  - id: DST-253-001
   - id: DST-321-001
   - id: WEB-322
   - id: DST-331-002

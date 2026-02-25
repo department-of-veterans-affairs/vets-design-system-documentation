@@ -109,3 +109,8 @@ h3.a11y-wcag-criterion-header a:hover {
   text-decoration: underline;
   color: var(--vads-color-primary);
 }
+
+/* Accessibility test results table styles */
+.a11y-test-list va-table-row {
+  display: none;
+}

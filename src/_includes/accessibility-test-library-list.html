@@ -12,39 +12,6 @@
   {% endif %}
 {% endfor %}
 
-{% comment %} Create array with sort keys for proper numeric ordering {% endcomment %}
-{% assign tests_with_sort_keys = "" | split: "" %}
-
-{% for test in all_tests %}
-  {% assign id_parts = test.id | split: "-" %}
-  {% assign main_number = id_parts[1] %}
-
-  {% comment %} Pad the main number to 4 digits for proper sorting {% endcomment %}
-  {% if main_number.size == 1 %}
-    {% assign padded_number = main_number | prepend: "000" %}
-  {% elsif main_number.size == 2 %}
-    {% assign padded_number = main_number | prepend: "00" %}
-  {% elsif main_number.size == 3 %}
-    {% assign padded_number = main_number | prepend: "0" %}
-  {% else %}
-    {% assign padded_number = main_number %}
-  {% endif %}
-
-  {% comment %} Determine if this is a parent test or subtest {% endcomment %}
-  {% if id_parts.size == 2 %}
-    {% assign sort_priority = "0" %}
-  {% else %}
-    {% assign sort_priority = "1" %}
-  {% endif %}
-
-  {% comment %} Create sort key: padded_number-priority-original_id {% endcomment %}
-  {% assign sort_key = padded_number | append: "-" | append: sort_priority | append: "-" | append: test.id %}
-
-  {% comment %} Create a hash with both test data and sort key {% endcomment %}
-  {% assign test_with_key = test | jsonify | prepend: '{"sort_key":"' | prepend: sort_key | append: '",' | append: '}' %}
-  {% assign tests_with_sort_keys = tests_with_sort_keys | push: test %}
-{% endfor %}
-
 {% comment %} Sort all tests by their numeric ID part, then by parent/subtest, then by full ID {% endcomment %}
 {% assign sorted_tests = "" | split: "" %}
 {% assign used_indices = "" | split: "" %}
@@ -97,23 +64,13 @@
 {% assign wcag_criteria = "" | split: "" %}
 
 {% for test in sorted_tests %}
-  {% assign parent_test = nil %}
   {% assign test_id_parts = test.id | split: "-" %}
 
+  {% comment %} Find parent test for subtests (3+ part IDs) {% endcomment %}
+  {% assign parent_test = nil %}
   {% if test_id_parts.size > 2 %}
-    {% for potential_parent in test_library %}
-      {% if potential_parent.subtests %}
-        {% for subtest in potential_parent.subtests %}
-          {% if subtest.id == test.id %}
-            {% assign parent_test = potential_parent %}
-            {% break %}
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-      {% if parent_test %}
-        {% break %}
-      {% endif %}
-    {% endfor %}
+    {% assign parent_id = test_id_parts[0] | append: "-" | append: test_id_parts[1] %}
+    {% assign parent_test = test_library | where: "id", parent_id | first %}
   {% endif %}
 
   {% comment %} Get WCAG criterion with inheritance {% endcomment %}
@@ -131,28 +88,18 @@
 
 {% comment %} Display tests grouped by WCAG criterion {% endcomment %}
 {% for criterion in wcag_criteria %}
-  {% comment %} Find first test with this criterion to get WCAG info {% endcomment %}
+  {% comment %} Find first test with this criterion to get WCAG info for section header {% endcomment %}
   {% assign criterion_wcag_name = "" %}
   {% assign criterion_wcag_url = "" %}
 
   {% for test in sorted_tests %}
-    {% assign parent_test = nil %}
     {% assign test_id_parts = test.id | split: "-" %}
 
+    {% comment %} Find parent test for subtests {% endcomment %}
+    {% assign parent_test = nil %}
     {% if test_id_parts.size > 2 %}
-      {% for potential_parent in test_library %}
-        {% if potential_parent.subtests %}
-          {% for subtest in potential_parent.subtests %}
-            {% if subtest.id == test.id %}
-              {% assign parent_test = potential_parent %}
-              {% break %}
-            {% endif %}
-          {% endfor %}
-        {% endif %}
-        {% if parent_test %}
-          {% break %}
-        {% endif %}
-      {% endfor %}
+      {% assign parent_id = test_id_parts[0] | append: "-" | append: test_id_parts[1] %}
+      {% assign parent_test = test_library | where: "id", parent_id | first %}
     {% endif %}
 
     {% if parent_test %}
@@ -170,10 +117,26 @@
     {% endif %}
   {% endfor %}
 
+  {% comment %} Check if this criterion has any parent tests to display {% endcomment %}
+  {% assign has_tests_for_criterion = false %}
+  {% for test in sorted_tests %}
+    {% assign test_id_parts = test.id | split: "-" %}
+    {% if test_id_parts.size == 2 and test.wcag_criterion == criterion %}
+      {% assign has_tests_for_criterion = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+  {% if has_tests_for_criterion %}
   <h3 class="a11y-wcag-criterion-header">
     <a href="{{ criterion_wcag_url }}">WCAG {{ criterion }} - {{ criterion_wcag_name }}</a>
   </h3>
 
+{% comment %}
+  Note: Parent and subtest rendering differ structurally and can't easily be extracted:
+  - Parent: ID displayed separately, category in label
+  - Subtest: Category as eyebrow, ID in label, inherits parent properties
+{% endcomment %}
 <ul class="a11y-test-list">
   {% for test in sorted_tests %}
   {% assign test_id_parts = test.id | split: "-" %}
@@ -193,28 +156,25 @@
       </p>
       <ul class="a11y-test-details-list">
         <li>
-          <span class="usa-label">{{ test.id }}</span>
+          <span class="usa-label">
+            {{ test.id }}
+          </span>
         </li>
         <li>
           <a href="{{ test.wcag_url }}">WCAG {{ test.wcag_criterion }} - {{ test.wcag_name }} (Level {{ test.wcag_level }})</a>
         </li>
-        <li>
-          <span class="a11y-test-category category-{{ test.category }}">
-            {{ test.category | replace: "_", " " }}
-          </span>
-        </li>
+
       </ul>
 
       {% comment %} Find and display subtests for this parent {% endcomment %}
-      {% assign has_subtests = false %}
       {% for lib_test in test_library %}
         {% if lib_test.id == test.id and lib_test.subtests %}
-          {% assign has_subtests = true %}
           <ul class="a11y-test-subtest-list">
           {% for subtest in lib_test.subtests %}
             {% comment %} Check if subtest matches current criterion {% endcomment %}
             {% assign subtest_wcag_criterion = subtest.wcag_criterion | default: test.wcag_criterion %}
             {% if subtest_wcag_criterion == criterion %}
+            {% assign subtest_category = subtest.category | default: test.category %}
             <li>
               <p>
                 <strong>{{ subtest.description_short | strip }}</strong>
@@ -229,12 +189,6 @@
                 <li>
                   <a href="{{ subtest.wcag_url | default: test.wcag_url }}">WCAG {{ subtest.wcag_criterion | default: test.wcag_criterion }} - {{ subtest.wcag_name | default: test.wcag_name }} (Level {{ subtest.wcag_level | default: test.wcag_level }})</a>
                 </li>
-                <li>
-                  {% assign subtest_category = subtest.category | default: test.category %}
-                  <span class="a11y-test-category category-{{ subtest_category }}">
-                    {{ subtest_category | replace: "_", " " }}
-                  </span>
-                </li>
               </ul>
             </li>
             {% endif %}
@@ -248,6 +202,7 @@
   {% endif %}
   {% endfor %}
 </ul>
+  {% endif %}
 {% endfor %}
 
 <p class="vads-u-margin-top--3">
