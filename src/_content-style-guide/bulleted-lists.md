@@ -229,7 +229,7 @@ In lists of dates, dollar values, percentages, or other numerical values, it may
 
 ### Alphabetical
 
-Use alphabetical order for lists of certain items, like medications or specific locations. But don't default to aplhabetical order for all lists.
+Use alphabetical order for lists of certain items, like medications or specific locations. But don't default to alphabetical order for all lists.
 
 <div class="do-dont">
 <div class="do-dont__do">
