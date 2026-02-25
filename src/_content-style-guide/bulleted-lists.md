@@ -240,7 +240,9 @@ Use alphabetical order for lists of certain items, like medications or specific 
 * Bactrim (sulfamethoxazole/trimethoprim): tablets
 * Folic acid: tablets
 * Maxalt (rizatriptan): tablets, ODT
+
 ---
+
 *	[Captain James A. Lovell Federal Health Care Center](https://www.va.gov/lovell-federal-health-care-va/locations/captain-james-a-lovell-federal-health-care-center/) (North Chicago, Illinois)
 *	[Jonathan M. Wainwright Memorial VA Medical Center](https://www.va.gov/walla-walla-health-care/) (Walla Walla, Washington)
 *	[Mann-Grandstaff VA Medical Center](https://www.va.gov/spokane-health-care/) (Spokane, Washington)
