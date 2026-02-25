@@ -86,7 +86,7 @@ Overall questions should be in a content area accessed by the "on this page" com
     </va-alert>
     
     
-    <va-link class="vads-u-margin-top--1" href="/disability/view-claim-status/" active text="Details" />
+    <va-link class="vads-u-margin-top--2" href="/disability/view-claim-status/" active text="Details" />
   </va-card>
 </div>
 
