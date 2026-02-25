@@ -19,7 +19,7 @@ We use the serial comma, sometimes called the Oxford comma. This is the comma us
 <h3 class="do-dont__heading">Like this</h3>
 <div class="do-dont__content" markdown="1">
 
-In his acceptance speech, the actor thanked his parents, Martin Scorsese, and Robert De Niro.
+In their acceptance speech, the actor thanked their parents, Martin Scorsese, and Robert De Niro.
 
 </div>
 </div>
@@ -27,7 +27,7 @@ In his acceptance speech, the actor thanked his parents, Martin Scorsese, and Ro
 <h3 class="do-dont__heading">Not this</h3>
 <div class="do-dont__content" markdown="1">
 
-In his acceptance speech, the actor thanked his parents, Martin Scorsese and Robert De Niro.
+In their acceptance speech, the actor thanked their parents, Martin Scorsese and Robert De Niro.
 
 </div>
 </div>
@@ -179,7 +179,7 @@ What’s the difference between a “condition” and a “disability?”
 
 * For short examples within a sentence
 * To set off brief additional information (an aside) that helps readers understand the sentence, the context, or a specific word or phrase
-* To introduce an acornym or abbreviation
+* To introduce an acronym or abbreviation
 * To add a VA form number after the form title
 
 <div class="do-dont">
