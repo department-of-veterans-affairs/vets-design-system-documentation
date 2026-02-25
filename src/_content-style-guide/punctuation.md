@@ -173,6 +173,95 @@ What’s the difference between a “condition” and a “disability?”
 </div>
 </div>
 
+### Parentheticals in content
+
+#### When to use parentheses
+
+* For short examples within a sentence
+* To set off brief additional information (an aside) that helps readers understand the sentence, the context, or a specific word or phrase
+* To introduce an acornym or abbreviation
+* To add a VA form number after the form title
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+
+As the family member or caregiver of a Veteran, you may qualify for VA health care benefits, compensation (payments), or caregiver support programs.
+
+A Medicare Advantage plan (also called Part C) also meets this requirement.
+
+The service member needs to request a Transfer of Education Benefits (TEB) through milConnect first.
+
+You’ll need to include a completed CHAMPVA Claim Form (VA Form 10-7959A) and your supporting documents.
+
+</div>
+</div>
+</div>
+
+#### When not to use parentheses
+
+Consider making the parenthetical a separate sentence in these cases:
+
+* If the parenthetical is a full sentence on its own
+* If the parenthetical is long or makes the sentence harder to understand
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+
+Having an SEH means your service-connected disability significantly limits your ability to prepare for, get, and keep suitable employment. Suitable employment is a job that doesn't make your disability worse, is stable, and matches your abilities, aptitudes, and interests.
+
+You'll need an itemized billing statement from your provider. This statement could be forms UB-O4, HCFA, or CMS 1500. Some providers call this statement a superbill.
+
+</div>
+</div>
+
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
+
+Having an SEH means your service-connected disability significantly limits your ability to prepare for, get, and keep suitable employment (a job that doesn't make your disability worse, is stable, and matches your abilities, aptitudes, and interests).
+
+You'll need an itemized billing statement (sometimes called a superbill, UB-O4, HCFA, or CMS 1500) from your provider.
+
+</div>
+</div>
+</div>
+
+#### Plurals
+
+Don't use "(s)," "(es)," or "(ies)" as the end of a word to show a possible plural. Screen readers don't announce the parenthetical in a way that people can easily understand. Instead, use the plural version of the word. You can also reword the sentence to use "any" before the plural to mean 1 or multiple.
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+
+Send us your documents.
+
+Tell us about your service-related injuries.
+
+If you have any questions for your VA health provider, send a secure message.
+
+</div>
+</div>
+
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
+
+Send us your document(s).
+
+Tell us about your service-related injury(ies).
+
+If you have a question(s) for your VA health provider, send a secure message.
+
+</div>
+</div>
+</div>
+
 ### Hint text and error message punctuation
 
 #### Hint text in form fields
