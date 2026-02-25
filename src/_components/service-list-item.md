@@ -61,7 +61,7 @@ anchors:
 A Service List Item can have:
 
 * **Status (required)**
-  * Status must be represented by a gray Tag component.
+  * Status must be represented by a [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component.
   * Every benefit or tool in a list has a set of internal states, which are used to track the progress of enrolling in that benefit or using that tool. A status is the way to communicate the item's state to the user (such as Active, Pending, etc).
   * Statuses do not have to mirror internal states in a one-to-one manner. (They can, but they are not required to.) Every state change does not necessarily warrant a status change.
 * **Header (required)**
