@@ -69,7 +69,26 @@ The on this page component should start with a link to the list itself, and then
 #### Integrating contextual questions in the cards
 Overall questions should be in a content area accessed by the "on this page" component, but more contextual questions can be "additional info" components on the cards themselves. Example provided.
 
-![image]({{site.baseurl}}/images/patterns/help-users-to/check-personal-information/additional-info.png)
+<div class="site-component-example vads-u-padding--2">
+  <va-card>
+    <va-tag-status status="info" text="In progress"></va-tag-status>
+    <h3 class="vads-u-margin-top--1">Claim for compensation</h3>
+    <span>Received: May 15, 2023</span>
+    <div class="status-indicator vads-u-margin-top--1">
+      <va-icon icon="mail" size="3"></va-icon>
+      <span>We sent you a development letter</span>
+    </div>
+    <p class="vads-u-margin-top--1">Step 3 of 5: Evidence gathering, review, and decision <br/>
+    Moved to this step on June 21, 2024</p>
+    
+    <va-alert status="warning" slim class="vads-u-margin-top--2">
+      <p class="vads-u-margin-y--0">An item in the claim needs your attention</p>
+    </va-alert>
+    
+    
+    <va-link class="vads-u-margin-top--1" href="/disability/view-claim-status/" active text="Details" />
+  </va-card>
+</div>
 
 #### Items on the card and optional card elements 
 Make sure to not overload elements on the cards. If you're finding you need to let the user know about a fair amount of information about a single card, link to a details page with more detail.

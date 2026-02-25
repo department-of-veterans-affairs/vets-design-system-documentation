@@ -82,10 +82,6 @@ Below are some potential benefits a Veteran or family member may enroll in, whic
 * Pension
 * Vocational rehabilitation (VRE)
 
-## Examples
-
-### VA.gov benefit management interface
-
 {% include storybook-preview.html story="components-va-service-list-item--service-list-with-multiple-service-list-items" link_text="Service List showing multiple benefits" height="600px" %}
 
 ### Tools
