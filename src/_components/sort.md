@@ -92,8 +92,8 @@ anchors:
 * **Sort selections persist across interactions.** The sort criteria should remain when users navigate through paginated results or refresh the page.
 
 * **Sizing and alignment differ on mobile and desktop.**
-    * On desktop resolutions, the *Sort by* label is in line with the dropdown and the width is fixed. Choose the Medium (md), Large (lg), or Extra Large (xl) size, whichever prevents truncating the longest sort option.
-    * On mobile resolutions, the *Sort by* label is stacked on top of the dropdown and the component is full-width and responsive. 
+    * On desktop resolutions, the **Sort by** label is in line with the dropdown and the width is fixed. Choose the Medium (md), Large (lg), or Extra Large (xl) size, whichever prevents truncating the longest sort option.
+    * On mobile resolutions, the **Sort by** label is stacked on top of the dropdown and the component is full-width and responsive. 
 
 
 #### Placement
