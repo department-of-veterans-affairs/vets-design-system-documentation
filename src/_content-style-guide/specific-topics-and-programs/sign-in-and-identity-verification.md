@@ -15,9 +15,9 @@ anchors:
 
 - We want to encourage Veterans to create **ID.me** or **Login.gov** accounts. **ID.me** provides more flexibility for identity verification for Veterans in certain situations, such as living outside the U.S.
 - Research has shown that some people confuse **Login.gov** with being a separate tool, and some people think they need to go to the **ID.me** or **Login.gov** websites to sign in rather than VA.gov. So, we reinforce that **ID.me** and **Login.gov** are types of sign-in accounts—not separate tools or websites—by using the phrase “**ID.me** account” or “**Login.gov** account.” 
-- We bold the terms **ID.me** and **Login.gov** when we're referring to types of sign-in accounts.
-**Like this:** “You can use your **ID.me** or **Login.gov** account to access your VA benefits, services, and information online.”  
-**Not this:** “You can use ID.me or Login.gov to access your VA benefits, services, and information online.”  
+- We bold the terms **ID.me** and **Login.gov** when we're referring to types of sign-in accounts.<br>
+**Like this:** “You can use your **ID.me** or **Login.gov** account to access your VA benefits, services, and information online.”<br> 
+**Not this:** “You can use ID.me or Login.gov to access your VA benefits, services, and information online.”<br>
 **Exception:** We don’t need “account” to follow “**Login.gov**” in this example: “**Login.gov** is our government’s one account provider for VA and other government benefits and services.” 
 - When describing reasons for creating an account or changing to a new type of account, keep the focus on how Veterans can benefit. For example, "to protect all Veterans’ information and prevent scammers from stealing your benefits." Don’t use phrases like “to protect VA’s data security,” since that puts the responsibility for VA data security on Veterans.
 
