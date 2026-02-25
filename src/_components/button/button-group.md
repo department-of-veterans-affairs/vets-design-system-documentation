@@ -48,23 +48,25 @@ type="secondary"
 ### Additional guidance for VA
 
 - NOTE: We will be changing the name of this component from button-pair to button-group to align with the USWDS.
-- NOTE: We do not yet offer the Segmented button group option for web, but it is used in the mobile app.
 
 ### When to consider something else
 
 - **Navigation outside of the flow.** For navigation to pages outside of the form flow, use a [link]({{ site.baseurl }}/components/link).
-- **Call-To-Action.** For a visually prominent call to action (CTA) that links to another page, use an [action link]({{ site.baseurl }}/components/link/action).
+- **Call to action.** For a visually prominent call to action (CTA) that links to another page, use an [Action link]({{ site.baseurl }}/components/link/action).
 
 ### Behavior
 
 - **Avoid using too many buttons on a page.** Pages with many buttons may signal that the page content needs to be split up.
 
+### Responsive behavior
 
+- Buttons appear full width up to the [mobile-lg breakpoint]({{ site.baseurl }}/foundation/breakpoints#names-and-values), with the primary button on top of the secondary button.
+- At and above the [mobile-lg breakpoint]({{ site.baseurl }}/foundation/breakpoints#names-and-values), buttons left-align and revert to their natural width (i.e., as wide as they need to be to accommodate their label). The primary button continues to appear before the secondary button.
 
-### Mobile behavior
+### Button groups in modals
 
-- Primary and secondary buttons should appear full-width up until the [mobile-lg breakpoint]({{ site.baseurl }}/foundation/breakpoints#names-and-values) with the primary button being on top of the secondary button with [2 spacing unit]({{ site.baseurl }}/foundation/spacing-units#spacing-tokens) of separation between them.
-- At and after the [mobile-lg breakpoint]({{ site.baseurl }}/foundation/breakpoints#names-and-values) the buttons left align and revert to a natural width (i.e. as wide as they need to be to accommodate their label) with the primary button continuing to appear before the secondary button.
+- Button groups within [default modals]({{ site.baseurl }}/components/modal/#default) always stack vertically at full width, regardless of breakpoint size.
+- Button groups within [**large** modals]({{ site.baseurl }}/components/modal/#large) stack vertically at full width until the [tablet breakpoint]({{ site.baseurl }}/foundation/breakpoints#names-and-values). Above that breakpoint, buttons revert to their natural width and appear inline, with the primary button before the secondary button.
 
 ### Choosing between variations
 
@@ -92,8 +94,8 @@ type="secondary"
 
 ## Accessibility considerations
 
-- Include more contextual information in the button label for screen readers. You can use an aria label, using the ariaLabel or ariaDescribedby properties, to specify form numbers or program names in the buttons for greater context.
-- Refer to our guidance for the [Button component]({{ site.baseurl }}/components/button/#accessibility-considerations)
+- Include more contextual information in the button label for screen readers. You can use an ARIA label, using the `ariaLabel` or `ariaDescribedby` properties, to specify form numbers or program names in the buttons for greater context.
+- Refer to our guidance for the [Button component]({{ site.baseurl }}/components/button/#accessibility-considerations).
 
 ## Privacy guidance
 
