@@ -114,13 +114,13 @@ anchors:
 * **Using an API to sort and paginate data is acceptable.** If sorting data on the frontend is more efficient, remember to format times and dates in a way that will ensure a correct chronological sort.
     * Store date and time as an [ISO-formatted string](https://en.wikipedia.org/wiki/ISO_8601#:~:text=Date%20and%20time%0Ain,00%20UTC%E2%88%9212%3A00) (date and time in UTC or date and time with offset).
         * Attempting to sort dates as strings like 2/20/2025, 10/1/2024, 9/5/2023 from newest to oldest, for example, could result in a non-chronological A-Z sort:
-            * **1****0/1/2024
-            * **2****/20/2025
-            * **9****/5/2023
+            * **1**0/1/2024
+            * **2**/20/2025
+            * **9**/5/2023
         * A true chronological sort by year, month, then day would instead be:
-            * 2/20/****2025**
-            * 10/1/****2024**
-            * 9/5/****2023**
+            * 2/20/**2025**
+            * 10/1/**2024**
+            * 9/5/**2023**
 
 
 
