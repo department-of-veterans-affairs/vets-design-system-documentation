@@ -20,15 +20,15 @@ When we write about debt, we want to always communicate these things:
 
 ## Related terms
 
-**benefit overpayment (or overpayment)**
-: We use this term to describe when VA pays a Veteran too much money related to a VA benefit (such as disability, education, or pension benefits) and the Veteran now owes that money back to VA.
-
-: **Note:** Use "benefit overpayment" on first mention and "overpayment" for all subsequent mentions. "Overpayments" alone is OK for all instances with limited character counts.
-
 **balance**
 : Use "balance" when you refer to the total amount owed for copay bills or overpayment debt.
 
 : **Like this:** Pay your full balance or request help by the due date on your collection letter or billing statement.
+
+**benefit overpayment (or overpayment)**
+: We use this term to describe when VA pays a Veteran too much money related to a VA benefit (such as disability, education, or pension benefits) and the Veteran now owes that money back to VA.
+
+: **Note:** Use "benefit overpayment" on first mention and "overpayment" for all subsequent mentions. "Overpayments" alone is OK for all instances with limited character counts.
 
 **benefit debt**
 : Go to the "benefit debt" entry in the [Retired terms](#retired-terms) section.
@@ -63,12 +63,6 @@ When we write about debt, we want to always communicate these things:
 **overpayment (or overpayment debt)** 
 : We use this term to refer to a debt that's because of an overpayment. In some cases, we can go with "overpayments" (and not add "overpayment debts").
 
-**payment (or payments, or VA payment)** 
-: We use these terms in different contexts. We typically use "VA payment" to describe a payment that VA makes to the Veteran. However, we do use "payment" (without "VA") in the context of payment history to describe the display of a historical record of payments from VA to the Veteran. We also use the plural version of this term ("payments") as the top-level category to house debts and payment history in the VA mobile app. We also use "payment" in the context of a payment a Veteran can make to pay down a debt.
-
-**payment history** 
-: We use this term for displaying a history of payments from VA to a Veteran.
-
 **pay**
 : We use this term to describe paying a copay bill.
 
@@ -76,6 +70,12 @@ When we write about debt, we want to always communicate these things:
 
 **pay down a debt**
 : We use this phrase to describe how a Veteran makes payments toward paying down a debt over time.
+
+**payment (or payments, or VA payment)** 
+: We use these terms in different contexts. We typically use "VA payment" to describe a payment that VA makes to the Veteran. However, we do use "payment" (without "VA") in the context of payment history to describe the display of a historical record of payments from VA to the Veteran. We also use the plural version of this term ("payments") as the top-level category to house debts and payment history in the VA mobile app. We also use "payment" in the context of a payment a Veteran can make to pay down a debt.
+
+**payment history** 
+: We use this term for displaying a history of payments from VA to a Veteran.
 
 **repay** 
 : We use this term (instead of "pay") to describe repaying an overpayment from VA.
