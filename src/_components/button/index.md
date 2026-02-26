@@ -137,13 +137,6 @@ anchors:
 
 {% include component-example.html alt="Example of a primary button with a secondary link." file="/images/components/button/primary-with-secondary-link.png" caption="An example of a primary button used with a secondary link." reverse=true %}
 
-#### Buttons used as radio buttons (not recommended)
-
-* **Don't use buttons as radio buttons.** When people need to choose a single option from a set, use radio buttons or a segmented button group rather than multiple primary or secondary buttons.
-
-{% include component-example.html alt="Buttons incorrectly used as radio buttons." file="/images/components/button/button-as-radio.png" caption="An example of buttons used like radio buttons, which is not recommended." reverse=false %}
-{% include component-docs.html component_name=page.web-component %}
-
 ## Content considerations
 
 ### Button labels
