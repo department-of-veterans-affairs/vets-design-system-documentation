@@ -320,8 +320,8 @@ For terms that are not on this list, refer to the Merriam-Websiter Dictionary.
 **education**
 : In general, on VA.gov we use "education" as a noun, and sometimes as part of a compound noun or attributive noun to modify another noun.
 
-: - **Like this:** education benefits **or** education and training opportunities
-: - **Not this:** educational benefits **or** educational and training opportunities
+: - **Like this:** education benefits or education and training opportunities
+: - **Not this:** educational benefits or educational and training opportunities
 
 **education benefit**
 : Use “education benefit” rather than “education program.” This helps avoid confusion with “school programs.”
