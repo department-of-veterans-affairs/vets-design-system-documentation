@@ -1,4 +1,4 @@
-### Choosing the right component for the forms
+### Choosing the right component for forms
 
 When deciding which component to use inside a form, consider how essential the information is and how it relates to nearby content:
 
