@@ -25,10 +25,10 @@ When we write about debt, we want to always communicate these things:
 
 : **Note:** Use "benefit overpayment" on first mention and "overpayment" for all subsequent mentions. "Overpayments" alone is OK for all instances with limited character counts.
 
-**balance (used with "debt balance" and "copay bill balance")**
-: We use this term to describe the remaining amount a Veteran owes on a debt or copay bill.
+**balance**
+: Use "balance" when you refer to the total amount owed for copay bills or overpayment debt.
 
-: **Note:** We use this term mainly within the online debt portal itself.
+: **Like this:** Pay your full balance or request help by the due date on your collection letter or billing statement.
 
 **benefit debt**
 : Go to the "benefit debt" entry in the [Retired terms](#retired-terms) section.
