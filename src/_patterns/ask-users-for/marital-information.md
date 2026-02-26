@@ -26,7 +26,7 @@ anchors:
 
 ### Design principles
 
-* **Take a trauma-informed approach.** Although commonly asked, questions about marital status and previous marriages can bring up complex feelings and memories in respondents. Explain why we ask the question with an [Additional Info](https://design.va.gov/components/additional-info) component. 
+* **Take a trauma-informed approach.** Although commonly asked, questions about marital status and previous marriages can bring up complex feelings and memories in respondents. Explain why we ask the question with a [Details]({{ site.baseurl }}/components/details) component. 
 
 * **Only ask for what you really need.** While this pattern includes multiple follow-up questions, only collect the specific data that your form requires. 
 
@@ -45,14 +45,14 @@ anchors:
     * Widowed
     * Never married 
 
-{% include component-example.html alt="A display of the standard Marital Status question with reponses available with radio buttons and an Additional Info component that provides more information on why we ask this information." file="/images/patterns/ask-users-for/marital-information/standard-marital-status.png" caption="The standard Marital Status question to be used in most forms. Always provide a detailed explanation in the Additional Info component that tells the user why you need this information." width="50%" %}
+{% include component-example.html alt="A display of the standard Marital Status question with responses available with radio buttons and a Details component that provides more information on why we ask this information." file="/images/patterns/ask-users-for/marital-information/standard-marital-status.png" caption="The standard Marital Status question to be used in most forms. Always provide a detailed explanation in the Details component that tells the user why you need this information." width="50%" %}
 
 
 * **If your form doesn't need this level of detail, simply ask "Are you currently married?".** Include "Yes/No" radio button options for a response. Map those to the "Married/Never Married" workflows.
 
-{% include component-example.html alt="An annotated display of the simplified version of the Marital Status question with reponses available with radio buttons and an Additional Info component that provides more information on why we ask this information." file="/images/patterns/ask-users-for/marital-information/simple-marital-status.png" caption="Use the simplified Marital Status question in forms that don't need to collect detailed information on the user's marital status. Use when your form only needs a yes/no answer to the question." width="60%" %}
+{% include component-example.html alt="An annotated display of the simplified version of the Marital Status question with reponses available with radio buttons and an Details component that provides more information on why we ask this information." file="/images/patterns/ask-users-for/marital-information/simple-marital-status.png" caption="Use the simplified Marital Status question in forms that don't need to collect detailed information on the user's marital status. Use when your form only needs a yes/no answer to the question." width="60%" %}
 
-* **Include an explanation for why we ask this question.** Place this explanation in an [Additional Info](https://design.va.gov/components/additional-info) component for questions that may feel particularly invasive or difficult for users to answer. 
+* **Include an explanation for why we ask this question.** Place this explanation in a [Details]({{ site.baseurl }}/components/details) component for questions that may feel particularly invasive or difficult for users to answer. 
 
 Only use the following questions in this pattern if your form needs more information. 
 
@@ -99,7 +99,7 @@ This optional section includes questions about the marriage, such as:
 
 #### Previous marriage information
 
-This optional section features the [Multiple Responses](https://design.va.gov/patterns/ask-users-for/multiple-responses) (also known as: List & Loop) pattern to ask questions about previous marriages, including:
+This optional section features the [Multiple Responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses) (also known as: List & Loop) pattern to ask questions about previous marriages, including:
 
 * Name(s) of former spouse(s)
 * Veteran status of former spouse(s)
@@ -109,16 +109,16 @@ This optional section features the [Multiple Responses](https://design.va.gov/pa
 
 ### Patterns and components used in this pattern
 
-* [Radio Button](https://design.va.gov/components/form/radio-button)
-* [Select](https://design.va.gov/components/form/select)
-* [Multiple Responses](https://design.va.gov/patterns/ask-users-for/multiple-responses)
-* [Additional Info](https://design.va.gov/components/additional-info)
+* [Radio Button]({{ site.baseurl }}/components/form/radio-button)
+* [Select]({{ site.baseurl }}/components/form/select)
+* [Multiple Responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses)
+* [Details]({{ site.baseurl }}/components/details)
 
 ### Additional considerations
 
 * If a form requires file uploads (for example, a marriage certificate or divorce decree), state that these files are needed on the form introduction page.
 * As the user moves through the form, if they provide a response that triggers conditionally-required file uploads, explain why the file upload is needed. For example, if a user indicates that they were married in a way that is not among the standard responses, include text like this: "Based on your answer, you'll need to provide supporting documents to help us understand your marital status. We'll ask you to upload these documents on the next screen [or on the final screen of the form, depending on your form's situation]."
-* If you are asking only one question on a page, the question label should be an h3, as shown in the [Ask Users For... A Single Response](https://design.va.gov/patterns/ask-users-for/a-single-response#annotated) pattern. However, if you are asking multiple questions per page, give the page a descriptive page title as an h3 and use standard (non-header) labels for questions.
+* If you are asking only one question on a page, the question label should be an h3, as shown in the [Ask Users For... A Single Response]({{ site.baseurl }}/patterns/ask-users-for/a-single-response#annotated) pattern. However, if you are asking multiple questions per page, give the page a descriptive page title as an h3 and use standard (non-header) labels for questions.
 
 
 ## Code usage
@@ -158,6 +158,6 @@ A [secondary research report](https://github.com/department-of-veterans-affairs/
 
 This pattern would benefit from additional research. Some areas that were identified as potentially high-impact include learning:
 * How users respond to trauma-informed language throughout the pattern
-* How users respond to the information inside the Additional Info components
+* How users respond to the information inside the Details components
 * If users have any confusion about whose information is needed in the portion of the pattern asking for information on their current spouse's previous partner(s)
 * The best location for both optional and required file uploads (either in the context of the marital information pattern/step, or at the end of the form flow)

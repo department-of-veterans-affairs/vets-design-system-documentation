@@ -107,6 +107,7 @@ Please note that there is currently a [ticket](https://github.com/department-of-
 
 ### Components used in this pattern
 
+* [Details]({{ site.baseurl }}/components/details)
 * [Alert]({{ site.baseurl }}/components/alert)
 * [Card]({{ site.baseurl }}/components/card)
 * [Card - Status]({{ site.baseurl }}/components/card/card-status)
