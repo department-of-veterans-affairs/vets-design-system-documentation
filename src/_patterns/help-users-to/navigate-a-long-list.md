@@ -28,7 +28,7 @@ anchors:
 
 ### When not to use this pattern
 
-* **Additional content.** Do not use this pattern to disclose additional static content unrelated to the list or when you need to allow the user to show and hide information. If you need to reveal additional information, use the [additional information component]({{ site.baseurl }}/components/additional-info).
+* **Additional content.** Do not use this pattern to disclose additional static content unrelated to the list or when you need to allow the user to show and hide information. If you need to reveal additional information, use the [Details component]({{ site.baseurl }}/components/details).
 
 ## Examples
 

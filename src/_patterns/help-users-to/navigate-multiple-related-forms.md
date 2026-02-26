@@ -125,7 +125,7 @@ Use this pattern primarily on confirmation pages as part of the "What to expect 
 
 * [Process list]({{ site.baseurl }}/components/process-list) - For sequential steps or ordered forms
 * [Link]({{ site.baseurl }}/components/link) - For linking to online forms and PDFs
-* [Additional info]({{ site.baseurl }}/components/additional-info) - For optional details about form purposes
+* [Details]({{ site.baseurl }}/components/details) - For optional details about form purposes
 * [Alert]({{ site.baseurl }}/components/alert) - For notifying users of additional actions that need to be taken
 
 ## Content considerations
