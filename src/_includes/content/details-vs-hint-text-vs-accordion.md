@@ -1,6 +1,6 @@
-### Choosing the right component for the task
+### Choosing the right component for the forms
 
-When deciding which component to use, consider how essential the information is and how it relates to nearby content:
+When deciding which component to use inside a form, consider how essential the information is and how it relates to nearby content:
 
 * **Essential information for form fields:** Use {% if page.url == '/components/form/label' %}hint text{% else %}[hint text]({{ site.baseurl }}/components/form/label#hint-text){% endif %} for brief, critical information that most users need to complete a field successfully.
 * **Helpful context tied to specific content:** Use {% if page.url == '/components/details' %}Details{% else %}[Details]({{ site.baseurl }}/components/details){% endif %} for brief explanations related to nearby form fields or sections that users can access when needed.
@@ -14,7 +14,7 @@ When deciding which component to use, consider how essential the information is 
   </div>
   {% include mermaid-chart.html 
      id="details-hint-accordion-decision-flowchart" 
-     caption="Decision flowchart for choosing between Details, hint text, or Accordion components."
+     caption="Decision flowchart for choosing between Details, hint text, or Accordion components when used inside a form."
      chart="
 flowchart TD
     Start[\"<b>What type of additional information<br/>do you need to provide?</b>\"]:::node-start --> Q1{\"<b>Is this information essential<br/>for completing a form field?</b>\"}:::node-question
