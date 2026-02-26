@@ -13,13 +13,25 @@ Use sentence case capitalization for most content, including page titles, headin
 
 ### Exceptions where we use title capitalization
 
-- Proper nouns (example: branded terms like "VA.gov," official program names, state names, names of federal agencies, days of the week and months, compositions such as titles of books, etc.)
-- The word “Veterans”
-- Global navigation, top menu labels (VA Benefits and Health Care; About VA; Find a VA Location)
+- Proper nouns (such as branded terms like "VA.gov," official program names, state names, names of federal agencies, days of the week and months, and titles of books)
+- The word “Veteran” or "Veterans"
+- Global navigation and top menu labels (such as VA Benefits and Health Care, About VA, and Find a VA Location)
 - For mobile app native actions, use title case for iOS and all caps for Android
 
+### Exceptions where we use all caps
+
+On VA.gov web pages and components, avoid all caps for any purpose except the exceptions listed here. Longer uppercase text reduces legibility and can be harder to read for people with cognitive disabilities or low vision. 
+
+We permit all-caps text only for Android mobile app native actions and these specific web components:
+
+- [Eyebrow]({{ site.baseurl }}/foundation/typography#eyebrow) text labels
+- [Button - Icon]({{ site.baseurl }}/components/button/button-icon) labels
+
+Authors should still enter these labels in sentence case. The components will render them in all caps through styling.
+
 ### Exceptions where we use initial capitalization
-- SEO title tags (example: VA Prescription Refill And Tracking \| Veterans Affairs). See [Writing for SEO]({{ site.baseurl }}/content-style-guide/seo) for more information.
+
+- SEO title tags (example: VA Prescription Refill And Tracking | Veterans Affairs). Refer to [Writing for SEO]({{ site.baseurl }}/content-style-guide/seo) for more information.
 
 <div class="do-dont">
 <div class="do-dont__do">
