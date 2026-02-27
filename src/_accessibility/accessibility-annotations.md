@@ -225,7 +225,7 @@ The second part of Example 2 that the designer annotated was the address input a
 
 In theory, since the whole address input is a pattern in the design system, it could have been handled with the “Pattern” annotation component and details card.
 
-However, since this was the first time the designer was collaborating with their developers, they wanted to provide extra details. The designer decided to annotate the “Learn more about…” using the Additional info component, as well as the individual address inputs to provide additional information on proper elements and autocomplete features.
+However, since this was the first time the designer was collaborating with their developers, they wanted to provide extra details. The designer decided to annotate the "Learn more about…" using the Details component, as well as the individual address inputs to provide additional information on proper elements and autocomplete features.
 
 ## Make annotations a communication tool
 
