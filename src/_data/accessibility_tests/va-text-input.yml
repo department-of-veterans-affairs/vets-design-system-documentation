@@ -8,6 +8,19 @@ tests:
   - id: WEB-143
   - id: WEB-144
   - id: WEB-1410
+    test_results:
+      - version: 54.6.1
+        tester: John Doe
+        environments:
+          - name: mac-chrome
+            result: pass
+        notes: Issue fixed in this version.
+      - version: 54.6.0
+        tester: Jane Smith
+        environments:
+          - name: mac-chrome
+            result: fail
+        notes: Button text does not meet contrast requirements.
   - id: DST-1411-002
   - id: DST-211-002
   - id: WEB-212

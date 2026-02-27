@@ -5,7 +5,6 @@
 
 {% if component_tests %}
 
-{% assign summary = component_tests.summary %}
 {% assign keyboard_tests = "" | split: "" %}
 {% assign screen_reader_tests = "" | split: "" %}
 {% assign general_tests = "" | split: "" %}
@@ -15,10 +14,19 @@
 {% assign zoom_tests = "" | split: "" %}
 {% assign visual_tests = "" | split: "" %}
 
-{% comment %} Categorize tests {% endcomment %}
+{% comment %} Calculate summary statistics {% endcomment %}
+{% assign total_tests = 0 %}
+{% assign passed_count = 0 %}
+{% assign failed_count = 0 %}
+{% assign conditional_count = 0 %}
+{% assign untested_count = 0 %}
+{% assign latest_version = "" %}
+
+{% comment %} Categorize tests and calculate statistics {% endcomment %}
 {% for test in component_tests.tests %}
   {% assign test_def = nil %}
   {% assign parent_def = nil %}
+  {% assign total_tests = total_tests | plus: 1 %}
 
   {% comment %} First, try to find as a top-level test {% endcomment %}
   {% assign test_def = test_library | where: "id", test.id | first %}
@@ -67,14 +75,75 @@
       {% assign zoom_tests = zoom_tests | push: test %}
     {% endif %}
   {% endif %}
+
+  {% comment %} Calculate result counts and find latest version {% endcomment %}
+  {% if test.test_results and test.test_results.size > 0 %}
+    {% assign has_pass = false %}
+    {% assign has_fail = false %}
+    {% assign has_conditional = false %}
+
+    {% for run in test.test_results %}
+      {% comment %} Track latest version {% endcomment %}
+      {% if latest_version == "" or run.version > latest_version %}
+        {% assign latest_version = run.version %}
+      {% endif %}
+
+      {% comment %} Check all environments for this test run {% endcomment %}
+      {% for env in run.environments %}
+        {% if env.result == "pass" %}
+          {% assign has_pass = true %}
+        {% elsif env.result == "fail" %}
+          {% assign has_fail = true %}
+        {% elsif env.result == "conditional" %}
+          {% assign has_conditional = true %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+
+    {% comment %} Count test based on worst result {% endcomment %}
+    {% if has_fail %}
+      {% assign failed_count = failed_count | plus: 1 %}
+    {% elsif has_conditional %}
+      {% assign conditional_count = conditional_count | plus: 1 %}
+    {% elsif has_pass %}
+      {% assign passed_count = passed_count | plus: 1 %}
+    {% else %}
+      {% assign untested_count = untested_count | plus: 1 %}
+    {% endif %}
+  {% else %}
+    {% assign untested_count = untested_count | plus: 1 %}
+  {% endif %}
 {% endfor %}
 
 {% comment %} Render categorized tests {% endcomment %}
 {% if component_tests.size > 0 %}
 
-{% comment %} Define test categories in display order {% endcomment %}
-{% assign test_categories = "general_tests,General Tests|keyboard_tests,Keyboard Tests|screen_reader_tests,Screen Reader Tests|voice_control_tests,Voice Control Tests|mobile_tests,Mobile Tests|zoom_tests,Zoom Tests|structural_tests,Structural Tests|visual_tests,Visual Tests" | split: "|" %}
+{% comment %} Summary Dashboard {% endcomment %}
+{% assign display_component_name = component_name | replace: "va-", "" | replace: "-", " " | capitalize %}
 
+<va-table
+  table-type="bordered"
+  table-title="Accessibility test results for {{ display_component_name }} component - Last tested: v{{ latest_version }}"
+  full-width
+>
+  <va-table-row slot="headers">
+    <span>Total tests</span>
+    <span>Passed</span>
+    <span>Conditional</span>
+    <span>Failed</span>
+  </va-table-row>
+  <va-table-row>
+    <span>{{ total_tests }}</span>
+    <span>{{ passed_count }}</span>
+    <span>{{ conditional_count }}</span>
+    <span>{{ failed_count }}</span>
+  </va-table-row>
+</va-table>
+
+{% comment %} Define test categories in display order {% endcomment %}
+{% assign test_categories = "general_tests,General tests|keyboard_tests,Keyboard tests|screen_reader_tests,Screen reader tests|voice_control_tests,Voice control tests|mobile_tests,Mobile tests|zoom_tests,Zoom tests|structural_tests,Structural tests|visual_tests,Visual tests" | split: "|" %}
+
+<va-accordion>
 {% for category_config in test_categories %}
   {% assign config_parts = category_config | split: "," %}
   {% assign category_var = config_parts[0] %}
@@ -93,8 +162,9 @@
   {% endcase %}
 
   {% if category_tests.size > 0 %}
-  <h3>{{ category_title }}</h3>
-  <ul class="a11y-test-list">
+  <va-accordion-item>
+    <h4 slot="headline">{{ category_title }}</h4>
+    <ul class="a11y-test-list">
     {% for test in category_tests %}
     {% comment %} Look up test definition from test library {% endcomment %}
     {% assign test_def = test_library | where: "id", test.id | first %}
@@ -329,32 +399,10 @@
     {% endif %}
     {% endfor %}
   </ul>
+  </va-accordion-item>
   {% endif %}
 {% endfor %}
-{% comment %} Summary Dashboard {% endcomment %}
-  <h2 id="test-summary">Test Summary</h2>
-
-  <ul>
-    <li class="vads-u-margin-bottom--1">
-      <strong>Component:</strong> {{ component_name | replace: "-", " " | capitalize }}
-    </li>
-    <li class="vads-u-margin-bottom--1">
-      <strong>Total Tests:</strong> {{ component_tests.summary.total_tests }}
-    </li>
-    <li class="vads-u-margin-bottom--1">
-      <strong>Passed:</strong> {{ component_tests.summary.passed }}
-    </li>
-    <li class="vads-u-margin-bottom--1">
-      <strong>Conditional:</strong> {{ component_tests.summary.conditional }}
-    </li>
-    <li class="vads-u-margin-bottom--1">
-      <strong>Failed:</strong> {{ component_tests.summary.failed }}
-    </li>
-  </ul>
-
-  <p class="vads-u-color--gray-dark vads-u-font-size--sm vads-u-margin-top--2">
-    <strong>Last Updated:</strong> {{ summary.last_updated | date: "%B %d, %Y" }}
-  </p>
+</va-accordion>
 {% endif %}
 {% else %}
   <p>No accessibility test results available for the {{ component_name }} component.</p>

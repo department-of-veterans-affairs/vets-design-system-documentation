@@ -127,6 +127,10 @@ The Card Status component handles most status and error accessibility automatica
 * Tab key navigates to the action link within the card
 * Enter key or spacebar activates the link
 
+## Accessibility tests
+
+{% include accessibility-test-results.html component_name="va-card-status" %}
+
 ## Related
 * [Card]({{ site.baseurl }}/components/card) - Base component for non-status cards
 * [Service list item]({{ site.baseurl }}/components/service-list-item)

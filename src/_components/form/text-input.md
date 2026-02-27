@@ -103,7 +103,7 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
 ### Prefix and Suffix
 
 {% include storybook-preview.html story="uswds-va-text-input--with-icon-and-suffix" link_text="va-text-input with icon and suffix" height="175px" %}
-  
+
 ### Widths
 
 {% include storybook-preview.html story="uswds-va-text-input--widths" link_text="va-text-input widths" height="800px" %}
@@ -135,7 +135,7 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
 * **Error.** Highlights the text input field where the user has made an error that needs to be corrected.
 * **Success.** Indicates to the user in realtime that an error has been cleared and the text entry is now valid. NOTE: This isn't typically used currently.
 * **Internationalization.** Demonstrates how this components changes when used with the language toggle.
-* **Prefix and Suffix.** Allows an icon or text to be set as an input prefix and/or suffix. See [USWDS Input Prefix and Suffix](https://designsystem.digital.gov/components/input-prefix-suffix/) for additional guidance. 
+* **Prefix and Suffix.** Allows an icon or text to be set as an input prefix and/or suffix. See [USWDS Input Prefix and Suffix](https://designsystem.digital.gov/components/input-prefix-suffix/) for additional guidance.
 * **Widths.** Indicates to the user the expected length of text input by sizing the field relative to what is expected.
 * **Password.** Masks the text entered for sensitive information like passwords, PINs, or Security Security numbers. Use for authentication fields and temporary verification codes. Don't use for [phone numbers]({{ site.baseurl }}/patterns/ask-users-for/phone-numbers), or other information that users may need to verify visually. For encrypted file passwords, see [File input]({{ site.baseurl }}/components/form/file-input#accepts-file-password).
 
@@ -178,6 +178,10 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
 ### Additional accessibility considerations for VA
 
 * **Avoid `placeholder` text.** Excluding our max characters variation (v1), avoid using placeholder text. Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio. Also, placeholder text is no longer visible once a user clicks into the field. Thus users will no longer have that text available when they need to review their entries. People who have cognitive or visual disabilities have additional problems with placeholder text.
+
+## Accessibility tests
+
+{% include accessibility-test-results.html component_name="va-text-input" %}
 
 ## Privacy guidance
 {% include content/privacy-open-text.md %}

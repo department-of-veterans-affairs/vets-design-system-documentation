@@ -2,10 +2,9 @@
 /* Used in component test results and test library pages */
 
 .a11y-test-list {
-  background: white;
   list-style: none;
   margin: 0;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .a11y-test-list > li {
