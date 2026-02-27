@@ -99,8 +99,6 @@ If the user does not provide the required missing information and selects the "C
 
 {% include component-example.html class="x2" alt="A page showing users an error alert and error state of the card with missing and required information they need to add." file="/images/patterns/help-users-to/update-prefilled-information/card-with-missing-info-error-state.png" %}
 
-Please note that there is currently a [ticket](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/4276) to update the card component to include this error state.
-
 #### Communicate when and where we'll save updates to prefilled information
 
 **Inform users where we saved the changes.** Display a success alert informing the user “We’ve saved these changes to this form and your profile.” or “We’ve saved these changes to this form only.” Place this alert at the top of the page, below the stepper. Use a standard alert if the user made the changes on a form step page. Use a slim alert if the user made the changes on the final review page.
