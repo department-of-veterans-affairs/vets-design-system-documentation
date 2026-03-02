@@ -189,7 +189,7 @@ For terms that are not on this list, refer to the Merriam-Websiter Dictionary.
 : Define on first mention as "illnesses or injuries (also known as conditions)." For all other mentions, "condition" or "conditions" is OK.
 
 **confirm or confirmation**
-: Use "confirm" or "confirmation" when asking a person to check the information they provided on a form or application, like an email address or mailing address. We only use the terms "verify" and "verification" to describe the initial, one-time process of verifying your identity with an **ID.me** or **Login.gov** account.
+: Use "confirm" or "confirmation" when asking a person to check the information they provided on a form or application, like an email address or mailing address. Avoid using the terms "verify" or "verification" in this context. We only use the terms "verify" and "verification" to describe the initial, one-time process of verifying your identity with an **ID.me** or **Login.gov** account.
 
 **contamination**
 : Define on first mention in body copy as "water that was found to have toxic chemicals in it." Include the definition in another sentence, as a parenthetical, or set off with commas.
