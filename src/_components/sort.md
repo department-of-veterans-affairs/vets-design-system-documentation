@@ -4,7 +4,7 @@ title: Sort
 permalink: /components/sort/
 github-title: va-sort
 figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=40936-5762&t=RJz70e6yAZDcvGY3-1
-intro-text: "The Sort component allows users to reorder search results and lists of information to make information easier to analyze."
+intro-text: "The Sort component allows users to reorder search results and lists of information, making information easier to analyze."
 web-component: va-sort
 web: true
 mobile-app: false
@@ -63,7 +63,7 @@ anchors:
     * Claims
     * History 
 
-* **When there is more than one page of results or more than 10 items.**
+* **When there's more than one page of results or more than 10 items.**
 
 
 ### When to consider something else
@@ -72,14 +72,14 @@ anchors:
 * **When there's only one obvious order.** You need at least two sort options to use this component.
 * **When you want to narrow results down.** Use a [Filter]({{ site.baseurl }}/components/search-filter) instead.
     * For example, don't use Sort to filter by date ranges. <img src="{{ site.baseurl }}/images/components/sort/sort_nonexample.png" alt="Nonexample where Sort is being used to filter by a date range" style="width:50%;"/>
-* **When sorting within a table**, use the sort columns baked into the `va-table` component.
+* **When sorting within a table**, use the sort columns baked into the [Table]({{ site.baseurl }}/components/table) component.
 
 
 ### Behavior
 
 #### Web
 
-* **Clicking or tapping the component opens the list of sort options.** Alternatively, a screen-reader user may arrow up and down the list without opening the menu. The Sort component uses the [Select]({{ site.baseurl }}/components/form/select) as the foundation and shares similar behavior.
+* **Clicking or tapping the component opens the list of sort options.** Alternatively, a screen-reader user may arrow up and down the list without opening the menu. The Sort component uses the [Select]({{ site.baseurl }}/components/form/select) component as the foundation and shares similar behavior.
 
 * **Results automatically update when you select a sort option.** This is known as implicit submission.
     * **Why implicit submission?**
@@ -92,18 +92,18 @@ anchors:
 * **Sort selections persist across interactions.** The sort criteria should remain when users navigate through paginated results or refresh the page.
 
 * **Sizing and alignment differ on mobile and desktop.**
-    * On desktop resolutions, the *Sort by* label is in line with the dropdown and the width is fixed. Choose the Medium (md), Large (lg), or Extra Large (xl) size, whichever prevents truncating the longest sort option.
-    * On mobile resolutions, the *Sort by* label is stacked on top of the dropdown and the component is full-width and responsive. 
+    * On desktop resolutions, the **Sort by** label is in line with the dropdown and the width is fixed. Choose the Medium (md), Large (lg), or Extra Large (xl) size, whichever prevents truncating the longest sort option.
+    * On mobile resolutions, the **Sort by** label is stacked on top of the dropdown and the component is full-width and responsive. 
 
 
 #### Placement
 
 * **Place Sort above and aligned with the content that it affects.** It serves as a visual indicator of the current order.
-* **Place Sort after the Search Filter's [results description]({{ site.baseurl }}/templates/search-results#results-description) when used with filtering.** This prevents the focus from skipping the Sort component given that the focus for filtering moves to results description or results heading and the focus for sorting is maintained on the component.
+* **If used with the [Search Filter]({{ site.baseurl }}/components/search-filter), place Sort after the Search Filter's [results description]({{ site.baseurl }}/templates/search-results#results-description).** This prevents the focus from skipping the Sort component given that the focus for filtering moves to results description or results heading and the focus for sorting is maintained on the component.
 
 ### Mobile app
 
-* **Note that the VA mobile app does not currently use this component.** It uses its own combined Filter & Sort button that opens a modal to select and explicitly submit sort and filter options.
+* **Note that the VA mobile app doesn't currently use this component.** It uses its own combined Filter & Sort button that opens a modal to select and explicitly submit sort and filter options.
     * <img src="{{ site.baseurl }}/images/components/sort/va_mobile_filter_sort.png" alt="A Filter and Sort button that opens a modal that allows a user to explicitly submit sort and filter options." style="width:100%;"/>
 
 * **Keep sort option naming consistent across mobile and desktop experiences.**
@@ -113,26 +113,25 @@ anchors:
 
 * **Using an API to sort and paginate data is acceptable.** If sorting data on the frontend is more efficient, remember to format times and dates in a way that will ensure a correct chronological sort.
     * Store date and time as an [ISO-formatted string](https://en.wikipedia.org/wiki/ISO_8601#:~:text=Date%20and%20time%0Ain,00%20UTC%E2%88%9212%3A00) (date and time in UTC or date and time with offset).
-        * Attempting to sort dates as strings like *2/20/2025*, *10/1/2024*, *9/5/2023* from newest to oldest, for example, could result in a non-chronological A-Z sort:
-            * ***1****0/1/2024*
-            * ***2****/20/2025*
-            * ***9****/5/2023*
+        * Attempting to sort dates as strings like 2/20/2025, 10/1/2024, 9/5/2023 from newest to oldest, for example, could result in a non-chronological A-Z sort:
+            * **1**0/1/2024
+            * **2**/20/2025
+            * **9**/5/2023
         * A true chronological sort by year, month, then day would instead be:
-            * *2/20/****2025***
-            * *10/1/****2024***
-            * *9/5/****2023***
+            * 2/20/**2025**
+            * 10/1/**2024**
+            * 9/5/**2023**
 
 
 
 ## Content considerations
 
 ### Content expectations
-* **Provide a default sort option** that reflects what users expect in the given context. In search experiences, *Relevance* is often the default.
+* **Provide a default sort option** that reflects what users expect in the given context. In search experiences, "Relevance" is often the default.
 
 * **Name sort options clearly and consistently** using this convention:
     * `Sort attribute (sort method)`
-        * `Sort attribute` describes what the results are sorted by.
-            * Examples: Medication name, entry date, distance
+        * `Sort attribute` describes what the results are sorted by. For example, medication name, entry date, or distance.
         * `(Sort method)` describes how the results are ordered. Use familiar, plain language terms such as:
             * **Alphabetical**
                 * A to Z      
@@ -159,9 +158,9 @@ anchors:
 
 * **Only include sort options that are relevant to a user goal.** 
 
-* **Allow users to sort in both directions.** This is not necessary when the reverse order is not meaningful or useful. For example, it may not make sense to sort VA locations from furthest to closest.
+* **Allow users to sort in both directions.** This isn't necessary when the reverse order isn't meaningful or useful. For example, it may not make sense to sort VA locations from furthest to closest.
 
-* **Sort does not need to be reflected in the [results description]({{ site.baseurl }}/templates/search-results#results-description) for web and mobile.** The component already acts as a visual indicator of the order. However, it is required for the mobile app since the sort state is hidden within the modal.
+* **Sort doesn't need to be reflected in the [results description]({{ site.baseurl }}/templates/search-results#results-description) for web and mobile.** The component already acts as a visual indicator of the order. However, it's required for the mobile app since the sort state is hidden within the modal.
 
 
 
@@ -171,7 +170,7 @@ These considerations describe how sorting changes are communicated and experienc
 ### User experience expectations
 * Inform users when results have updated after a sort option is selected. This is especially important for screen reader users who may not see the visual change.
 * Ensure sorted results update in a meaningful and predictable order so all users perceive the same sequence of information ([WCAG 1.3.2 Meaningful Sequence](https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html)).
-* Update results in place during sorting and do not trigger page navigation or a full context change.
+* Update results in place during sorting and don't trigger page navigation or a full context change.
 * Keep focus stable on the sort control during sorting so users can continue interacting without losing their place.
 * Inform users that an update is in progress if sorting takes time by following the [Loading Indicator guidance]({{ site.baseurl }}/components/loading-indicator).
 
