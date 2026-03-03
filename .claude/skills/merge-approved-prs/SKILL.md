@@ -74,5 +74,5 @@ If any PRs fail, report them clearly:
 
 - The script uses `gh` CLI (already authenticated as `humancompanion-usds`)
 - Only non-draft PRs where your latest review state is APPROVED are processed
-- If a PR was re-reviewed after your approval (e.g., someone requested changes), it is excluded
-- The script does NOT skip PRs that are awaiting other reviewers — it merges anything you approved
+- PRs where the overall `reviewDecision` is `CHANGES_REQUESTED` (any reviewer requested changes) are excluded
+- PRs that are awaiting additional reviewers but have no change requests may still be merged

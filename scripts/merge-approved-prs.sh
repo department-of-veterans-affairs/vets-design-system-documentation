@@ -39,7 +39,19 @@ while [[ $# -gt 0 ]]; do
     --squash)            MERGE_FLAG="--squash"; shift ;;
     --rebase)            MERGE_FLAG="--rebase"; shift ;;
     --no-delete-branch)  DELETE_BRANCH_FLAG=""; shift ;;
-    --timeout)           CHECK_TIMEOUT="$2"; shift 2 ;;
+    --timeout)
+      if [[ -z ${2:-} ]]; then
+        echo "Error: --timeout requires an argument (seconds)." >&2
+        echo "Run with --help for usage." >&2
+        exit 1
+      fi
+      if ! [[ $2 =~ ^[0-9]+$ ]]; then
+        echo "Error: --timeout value must be a non-negative integer (seconds)." >&2
+        exit 1
+      fi
+      CHECK_TIMEOUT="$2"
+      shift 2
+      ;;
     --dry-run)           DRY_RUN=true; shift ;;
     -h|--help)
       grep '^#' "$0" | grep -v '#!/' | sed 's/^# \{0,1\}//'
@@ -120,8 +132,14 @@ import json, sys
 me, path = sys.argv[1], sys.argv[2]
 with open(path) as f:
     data = json.load(f)
-for pr in data['data']['repository']['pullRequests']['nodes']:
+prs = data['data']['repository']['pullRequests']['nodes']
+if len(prs) >= 100:
+    print("WARNING: 100 open PRs returned — the list may be truncated; some approved PRs may be missing.", file=sys.stderr)
+for pr in prs:
     if pr['isDraft']:
+        continue
+    # Skip if any reviewer has requested changes (overall decision is CHANGES_REQUESTED)
+    if pr.get('reviewDecision') == 'CHANGES_REQUESTED':
         continue
     my_reviews = [r for r in pr['reviews']['nodes'] if r['author']['login'] == me]
     if not my_reviews:
@@ -154,7 +172,7 @@ wait_for_checks() {
   local pr_num=$1
   local branch_was_updated=${2:-false}
   local start=$SECONDS
-  local checks_output pending failing passing total elapsed
+  local checks_output pending failing passing total elapsed checks_ever_seen=false
 
   if [ "$branch_was_updated" = true ]; then
     info "Waiting ${POST_UPDATE_SLEEP}s for CI to queue new runs..."
@@ -168,6 +186,10 @@ wait_for_checks() {
     elapsed=$(( SECONDS - start + update_offset ))
     if [ "$elapsed" -ge "$CHECK_TIMEOUT" ]; then
       echo ""
+      if [ "$checks_ever_seen" = false ]; then
+        warn "No checks detected after ${CHECK_TIMEOUT}s — proceeding to merge"
+        return 0
+      fi
       return 124
     fi
 
@@ -176,6 +198,8 @@ wait_for_checks() {
     pending=$(echo "$checks_output" | awk -F'\t' 'NF>1 && $2=="pending"' | wc -l | tr -d ' ')
     failing=$(echo "$checks_output" | awk -F'\t' 'NF>1 && $2=="fail"' | wc -l | tr -d ' ')
     passing=$(echo "$checks_output" | awk -F'\t' 'NF>1 && $2=="pass"' | wc -l | tr -d ' ')
+
+    [ "$total" -gt 0 ] && checks_ever_seen=true
 
     printf "\r  Watching checks: [%ds] %s checks — %s ✓  %s ⏳  %s ✗" \
       "$elapsed" "$total" "$passing" "$pending" "$failing"
@@ -191,13 +215,6 @@ wait_for_checks() {
       return 0
     fi
 
-    # If no checks have appeared after 90s, warn and continue
-    if [ "$total" -eq 0 ] && [ "$elapsed" -ge 90 ]; then
-      echo ""
-      warn "No checks detected after 90s — proceeding to merge"
-      return 0
-    fi
-
     sleep "$CHECK_POLL_INTERVAL"
   done
 }
@@ -209,6 +226,8 @@ MERGED=0
 FAILED=0
 MERGED_NUMS=""
 FAILED_ITEMS=""
+WOULD_MERGE=0
+WOULD_MERGE_NUMS=""
 
 while IFS=$'\t' read -r PR_NUM PR_TITLE; do
   [ -z "$PR_NUM" ] && continue
@@ -218,8 +237,8 @@ while IFS=$'\t' read -r PR_NUM PR_TITLE; do
 
   if [ "$DRY_RUN" = true ]; then
     ok "DRY RUN: would update branch, wait for checks, then merge"
-    MERGED=$(( MERGED + 1 ))
-    MERGED_NUMS="${MERGED_NUMS} #${PR_NUM}"
+    WOULD_MERGE=$(( WOULD_MERGE + 1 ))
+    WOULD_MERGE_NUMS="${WOULD_MERGE_NUMS} #${PR_NUM}"
     continue
   fi
 
@@ -331,9 +350,13 @@ PYEOF
 # ─────────────────────────────────────────────────────────────────────────────
 echo -e "$HR"
 echo -e "${BOLD}Summary${NC}\n"
-echo -e "  ${GREEN}Merged:${NC}         $MERGED PR(s)${MERGED_NUMS:+  ($MERGED_NUMS)}"
-echo -e "  ${RED}Failed/Skipped:${NC} $FAILED PR(s)"
-[ -n "$FAILED_ITEMS" ] && echo -e "$FAILED_ITEMS"
+if [ "$DRY_RUN" = true ]; then
+  echo -e "  ${GREEN}Would merge:${NC}    $WOULD_MERGE PR(s)${WOULD_MERGE_NUMS:+  ($WOULD_MERGE_NUMS)}"
+else
+  echo -e "  ${GREEN}Merged:${NC}         $MERGED PR(s)${MERGED_NUMS:+  ($MERGED_NUMS)}"
+  echo -e "  ${RED}Failed/Skipped:${NC} $FAILED PR(s)"
+  [ -n "$FAILED_ITEMS" ] && echo -e "$FAILED_ITEMS"
+fi
 echo ""
 echo -e "  ${BOLD}Remaining open PRs:${NC} $REMAINING_TOTAL"
 echo "    Awaiting review:     $REMAINING_AWAITING"
