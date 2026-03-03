@@ -1,8 +1,9 @@
 ---
 layout: default
 title: VA website organization
-slug: va-website-organization
 ---
+
+# VA website organization
 
 VA's goal is to provide authoritative, accessible, single-source-of-truth content that is easy to find, understand, trust, and use. This work is rooted in and guided by these strategies and inputs:
 
