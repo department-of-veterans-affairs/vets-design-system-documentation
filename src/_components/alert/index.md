@@ -269,18 +269,19 @@ Displaying multiple alerts should be avoided. However, when you need to display 
 
 ## Content considerations
 
-* When possible, keep alert and error message titles (headings) to 50 characters, including spaces. Titles should follow the general guidelines for page and section titles.<br>
+* Keep alert and error message titles (headings) to 50 characters (with spaces) when possible. Titles should follow the general guidelines for page and section titles.<br>
 [Learn more in the Page titles and section titles section of the content style guide](https://design.va.gov/content-style-guide/page-titles-and-section-titles)
+* Keep slim alerts to 100 characters (with spaces) when possible. If you have a slim alert that’s longer than 100 characters, contact the VA.gov content and IA team. The team will work with you to edit the alert or determine if we need to make an exception (up to 150 characters).
 * Acknowledge when an issue is our fault. Don’t place blame on the person, even if the person's actions caused the error.<br>
 **Note:** We no longer say, “please” in alert and error messages when making a request.
-* People may not read documentation, but they’re more likely to read a message that helps them resolve an error. Include some educational material in your alert and error messages when needed.
-* Don’t overdo it. Too many notifications can overwhelm or annoy the person, who may then ignore the messages.
+* Include brief educational material in your alert and error messages when needed. People may not read documentation, but they’re more likely to read a message that helps them resolve an error.
+* Don’t overdo it with alerts. Too many notifications can overwhelm or annoy the person, who may then ignore the messages.
 * Don’t use jargon or computer code in the message.
 
 <p>
 <va-link-action
   href="{{ site.baseurl }}/content-style-guide/error-messages"
-  text="View content for error messages"
+  text="Go to the Error and alert messages section of the style guide for alert examples"
   type="secondary"
 ></va-link-action>
 </p>
@@ -288,7 +289,7 @@ Displaying multiple alerts should be avoided. However, when you need to display 
 <p>
 <va-link-action
   href="{{ site.baseurl }}/patterns/help-users-to/recover-from-errors"
-  text="Review the help users to recover from errors pattern"
+  text="Review the Help users to...Recover from errors pattern"
   type="secondary"
 ></va-link-action>
 </p>
