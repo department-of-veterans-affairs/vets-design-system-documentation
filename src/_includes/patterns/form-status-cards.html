@@ -1,0 +1,60 @@
+<div class="site-component-example vads-u-padding--2">
+  <va-card>
+    <va-tag-status status="info" text="Draft"></va-tag-status>
+    <h3 class="vads-u-margin-top--1">Application for VA education benefits (22-1990)</h3>
+    <span>VA Form 22-1990N</span>
+    <div class="status-indicator vads-u-margin-top--1">
+      <va-icon icon="info" size="3"></va-icon>
+      <span>Application expires on: December 20, 2023</span>
+    </div>
+    <p class="vads-u-margin-top--1">Last saved on: December 20, 2023</p>
+    <va-link href="https://www.va.gov" text="Continue application" />
+  </va-card>
+</div>
+
+<div class="site-component-example vads-u-padding--2">
+  <va-card>
+    <va-tag-status status="info" text="Submission in progress"></va-tag-status>
+    <h3 class="vads-u-margin-top--1">Application for authorization to release medical information</h3>
+    <span>VA Form 21-4142</span>
+    <p class="vads-u-margin-top--1">Next step: We'll prepare your form for review. This may take up to 30 days.</p>
+    <p>If you have questions, call us at <va-telephone contact="8773459876"></va-telephone> (TTY: <va-telephone contact="711"></va-telephone>). We're here Monday through Friday, 8:00 a.m. to 9:00 p.m. ET.</p>
+  </va-card>
+</div>
+
+<div class="site-component-example vads-u-padding--2">
+  <va-card>
+    <va-tag-status status="success" text="Received"></va-tag-status>
+    <h3 class="vads-u-margin-top--1">Application for authorization to release medical information</h3>
+    <span>VA Form 21-4142</span>
+    <p class="vads-u-margin-top--1">
+      <va-link download filetype="PDF" href="https://www.va.gov" pages="5" text="Download your completed form" />
+    </p>
+    <p>Submitted on: [Month Day, 20XX] <br />
+    Received on: [Month Day, 20XX] <br />
+    Download available until: [Month Day, 20XX]
+    </p>
+    <p>Next step: We'll review your form. If we need more information, we'll contact you.</p>
+    <p>If you have questions, call us at <va-telephone contact="8773459876"></va-telephone> (TTY: <va-telephone contact="711"></va-telephone>). We're here Monday through Friday, 8:00 a.m. to 9:00 p.m. ET.</p>
+  </va-card>
+</div>
+
+<div class="site-component-example vads-u-padding--2">
+  <va-card>
+    <va-tag-status status="error" text="Action needed"></va-tag-status>
+    <h3 class="vads-u-margin-top--1">Application for authorization to release medical information</h3>
+    <span>VA Form 21-4142</span>
+    
+    <p class="vads-u-margin-top--1">
+      <va-link download filetype="PDF" href="https://www.va.gov" pages="5" text="Download your completed form" />
+    </p>
+
+    <p>Submitted on: [Month Day, 20XX] <br />
+    Submission failed on: [Month Day, 20XX] <br />
+    </p>
+
+    <va-alert status="error" slim class="vads-u-margin-top--2">
+      <p class="vads-u-margin-y--0">We're sorry. There was a problem with our system. We couldn't process this form. Call us at <va-telephone contact="8773459876"></va-telephone> (TTY: <va-telephone contact="711"></va-telephone>). We're here Monday through Friday, 8:00 a.m. to 9:00 p.m. ET.</p>
+    </va-alert>
+  </va-card>
+</div>
