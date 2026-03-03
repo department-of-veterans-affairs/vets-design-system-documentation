@@ -80,11 +80,11 @@ Let Veterans know how this direct deposit information is going to apply their ot
 > Information entered here won’t change your existing accounts for VA education or health benefits.
 These updates won’t change your bank account information for [add non-affected benefits].*
  
-#### Additional info component
+#### Details component
 
 Provide more information if Veterans do not have a bank account.
 
-{% include component-example.html alt="What if I don't have a bank account? additional information." file="/images/patterns/ask-users-for/direct-deposit/what-if-i-dont-have-a-bank-account.png" caption="An example using the additional information component to answer to the question of what Veterans can do if they do not have a bank account, also from the application for the Rogers STEM Scholarship." class="x2" %}
+{% include component-example.html alt="What if I don't have a bank account? additional information." file="/images/patterns/ask-users-for/direct-deposit/what-if-i-dont-have-a-bank-account.png" caption="An example using the Details component to answer to the question of what Veterans can do if they do not have a bank account, also from the application for the Rogers STEM Scholarship." class="x2" %}
 
 ## How to design and build - Review
 

@@ -137,7 +137,7 @@ Any style of alert box can be modified to be a Slim alert. The iconography for S
 ##### Web and mobile
 
 * **Unprompted and in-page alerts.** Consider the [Alert - Expandable]({{ site.baseurl }}/components/alert/alert-expandable) component to draw attention to important information on the page that is not a response to user feedback.
-* **Clarifying background information.** Use the [Additional info]({{ site.baseurl }}/components/additional-info) component when clarifying outcomes for an input or a form question as well as providing background information. Keep in mind that Alert - Expandable should warrant an alert and be used sparingly. The value of any type of alert is diminished if the page is littered with alerts of equal weight.
+* **Clarifying background information.** Use the [Details]({{ site.baseurl }}/components/details) component when clarifying outcomes for an input or a form question as well as providing background information. Keep in mind that Alert - Expandable should warrant an alert and be used sparingly. The value of any type of alert is diminished if the page is littered with alerts of equal weight.
 * **System maintenance on web.** Most [system messages]({{ site.baseurl }}/content-style-guide/error-messages/system) related to maintenance are handled by the [Banner - Maintenance]({{ site.baseurl }}/components/banner/maintenance) component.
 * **As the only content on a page.** An Alert should not be the only, or the majority of, content on a page. Reduce the length of the alert and include context in the content well of the page.
 * **For highlighting a single task that is urgent, time-sensitive, or required.** Consider the [Critical Action]({{ site.baseurl }}/components/critical-action) component when you want to highlight a single task that will otherwise block the user from proceeding. This can be used within [cards]({{ site.baseurl }}/components/card) or [service list items]({{ site.baseurl }}/components/service-list-item).
@@ -170,7 +170,7 @@ When the user is required to do something in response to an alert, let them know
 * Don't stack alerts one after the other.
 * When there are multiple alerts on the page, order them by severity with the most critical being first and ideally top of the page.
 * If the alert appears within the page body content, it should be co-located with relevant content.
-* Alerts should not contain other expandable components such as the [Additional info]({{ site.baseurl }}/components/) component.
+* Alerts should not contain other expandable components such as the [Details]({{ site.baseurl }}/components/details) component.
 * Messaging should be direct, concise, and in [plain language]({{ site.baseurl }}/content-style-guide/plain-language/).
 * Standard alerts must contain headings as opposed to Slim alerts which do not contain headings.
 
@@ -269,18 +269,19 @@ Displaying multiple alerts should be avoided. However, when you need to display 
 
 ## Content considerations
 
-* When possible, keep alert and error message titles (headings) to 50 characters, including spaces. Titles should follow the general guidelines for page and section titles.<br>
+* Keep alert and error message titles (headings) to 50 characters (with spaces) when possible. Titles should follow the general guidelines for page and section titles.<br>
 [Learn more in the Page titles and section titles section of the content style guide](https://design.va.gov/content-style-guide/page-titles-and-section-titles)
+* Keep slim alerts to 100 characters (with spaces) when possible. If you have a slim alert that’s longer than 100 characters, contact the VA.gov content and IA team. The team will work with you to edit the alert or determine if we need to make an exception (up to 150 characters).
 * Acknowledge when an issue is our fault. Don’t place blame on the person, even if the person's actions caused the error.<br>
 **Note:** We no longer say, “please” in alert and error messages when making a request.
-* People may not read documentation, but they’re more likely to read a message that helps them resolve an error. Include some educational material in your alert and error messages when needed.
-* Don’t overdo it. Too many notifications can overwhelm or annoy the person, who may then ignore the messages.
+* Include brief educational material in your alert and error messages when needed. People may not read documentation, but they’re more likely to read a message that helps them resolve an error.
+* Don’t overdo it with alerts. Too many notifications can overwhelm or annoy the person, who may then ignore the messages.
 * Don’t use jargon or computer code in the message.
 
 <p>
 <va-link-action
   href="{{ site.baseurl }}/content-style-guide/error-messages"
-  text="View content for error messages"
+  text="Go to the Error and alert messages section of the style guide for alert examples"
   type="secondary"
 ></va-link-action>
 </p>
@@ -288,7 +289,7 @@ Displaying multiple alerts should be avoided. However, when you need to display 
 <p>
 <va-link-action
   href="{{ site.baseurl }}/patterns/help-users-to/recover-from-errors"
-  text="Review the help users to recover from errors pattern"
+  text="Review the Help users to...Recover from errors pattern"
   type="secondary"
 ></va-link-action>
 </p>
