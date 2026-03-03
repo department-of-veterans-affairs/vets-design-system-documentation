@@ -40,7 +40,22 @@ Note that breadcrumbs should be excluded from the print preview/final printout, 
 
 ### My VA card with download link
 
-{% include component-example.html alt="An example My VA status card with download link" file="/images/patterns/help-users-to/stay-informed-of-their-application-status/myva-status-cards.png" width="75%" %}
+<div class="site-component-example vads-u-padding--2">
+  <va-card>
+    <va-tag-status status="success" text="Received"></va-tag-status>
+    <h3 class="vads-u-margin-top--1">Application for authorization to release medical information</h3>
+    <span>VA Form 21-4142</span>
+    <p class="vads-u-margin-top--1">
+      <va-link download filetype="PDF" href="https://www.va.gov" pages="5" text="Download your completed form" />
+    </p>
+    <p>Submitted on: [Month Day, 20XX] <br />
+    Received on: [Month Day, 20XX] <br />
+    Download available until: [Month Day, 20XX]
+    </p>
+    <p>Next step: We'll review your form. If we need more information, we'll contact you.</p>
+    <p>If you have questions, call us at <va-telephone contact="8773459876"></va-telephone> (TTY: <va-telephone contact="711"></va-telephone>). We're here Monday through Friday, 8:00 a.m. to 9:00 p.m. ET.</p>
+  </va-card>
+</div>
 
 Note that the download link includes the expiration date for the file download (60 days from submission, as described in the research findings below).
 
