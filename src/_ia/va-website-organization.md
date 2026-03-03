@@ -1,5 +1,5 @@
 ---
-layout: documentation
+layout: default
 title: VA website organization
 permalink: /ia/va-website-organization
 ---
