@@ -13,11 +13,11 @@ anchors:
 
 ## Considerations
 
-- We want to encourage Veterans to create **ID.me** or **Login.gov** accounts. 
+- We want to encourage Veterans to create **ID.me** or **Login.gov** accounts. **ID.me** provides more flexibility for identity verification for Veterans in certain situations, such as living outside the U.S.
 - Research has shown that some people confuse **Login.gov** with being a separate tool, and some people think they need to go to the **ID.me** or **Login.gov** websites to sign in rather than VA.gov. So, we reinforce that **ID.me** and **Login.gov** are types of sign-in accounts—not separate tools or websites—by using the phrase “**ID.me** account” or “**Login.gov** account.” 
-- We bold the terms **ID.me** and **Login.gov** when we're referring to types of sign-in accounts.
-**Like this:** “You can use your **ID.me** or **Login.gov** account to access your VA benefits, services, and information online.”  
-**Not this:** “You can use ID.me or Login.gov to access your VA benefits, services, and information online.”  
+- We bold the terms **ID.me** and **Login.gov** when we're referring to types of sign-in accounts.<br>
+**Like this:** “You can use your **ID.me** or **Login.gov** account to access your VA benefits, services, and information online.”<br> 
+**Not this:** “You can use ID.me or Login.gov to access your VA benefits, services, and information online.”<br>
 **Exception:** We don’t need “account” to follow “**Login.gov**” in this example: “**Login.gov** is our government’s one account provider for VA and other government benefits and services.” 
 - When describing reasons for creating an account or changing to a new type of account, keep the focus on how Veterans can benefit. For example, "to protect all Veterans’ information and prevent scammers from stealing your benefits." Don’t use phrases like “to protect VA’s data security,” since that puts the responsibility for VA data security on Veterans.
 
@@ -42,11 +42,11 @@ VA no longer offers the ability to sign in with a DS Logon username and password
 
 **identity verification** and **verify your identity**
 
-- We use these phrases to describe the one-time process of verifying your identity through **ID.me** or **Login.gov**. For example, “Identity verification helps us make sure that the person creating your account is really you—and not someone pretending to be you."
+- We use these terms to describe the one-time process of verifying your identity with an **ID.me** or **Login.gov** account. For example, “Identity verification helps us make sure that the person creating your account is really you—and not someone pretending to be you."
 - When we're instructing Veterans to verify, we use "**verify your identity for your account**" on the first instance in body text (or variations like "for your **ID.me** account" or "for that account" as needed). Then we can shorten to "verify your identity" and simply "verify" after the first instance, depending on context. This is to help make the connection to account security and avoid any confusion about VA doubting or questioning a Veteran's identity.
 - When we're describing the security level of an account, we use "**identity-verified account**" on the first instance and "**verified account**" after the first instance. If the first instance is in a header and length is a concern, we can use "identity-verified account" on the first instance in body text instead. This is to help make the connection with CTA wording to "verify your identity."
 
-**Note:** We don't use "verify your identity" to describe the repetitive processes of signing in to VA.gov with an account you've already verified, using multifactor authentication, or using the "LOROTA" sign-in process for check-in and pre-check-in. We reserve this term only for the initial, one-time process of verifying your identity through an account provider.
+**Note:** We don't use "verify your identity" to describe the repetitive processes of signing in to VA.gov with an account you've already verified, using multifactor authentication, or using the "LOROTA" sign-in process for check-in and pre-check-in. We reserve this term only for the initial, one-time process of verifying your identity through an account provider. When asking someone to check the information they’ve provided in a form (like their mailing or email address), use “confirm” or “confirmation.”
  
 **multifactor authentication (MFA)**
 
