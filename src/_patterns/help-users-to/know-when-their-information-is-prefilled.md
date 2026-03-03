@@ -60,12 +60,14 @@ Here’s how to communicate that people can’t update certain information onlin
 - **Consider adding a pathway for the user to correct their information for the form itself.** Since information from the person’s profile may be inaccurate, it’s helpful to have this option.  Clarify that since they can't update the information online, we'll only update the information they requested on the current form.
 
 ### Components used in this pattern
+
 - [Alert]({{ site.baseurl }}/components/alert/) - To inform the user about prefilled information and where we will save changes
 - [Alert - Sign-in]({{ site.baseurl }}/components/alert/alert-sign-in/) - To inform the user that they can sign so we can prefill their information
 - [Card]({{ site.baseurl }}/components/card/) - To display prefilled information in organized sections
 - [Card - Status]({{ site.baseurl }}/components/card/card-status) - To display prefilled information that the user can edit
 - [Link]({{ site.baseurl }}/components/link) - To give the user an opportunity to make changes to their prefilled information
 - [Prefill]({{ site.baseurl }}/components/form/prefill) - To inform the user before starting the form that we will prefill their information if they sign in
+- [Details]({{ site.baseurl }}/components/details) - To provide expandable details about updating information
 
 ## Examples
 

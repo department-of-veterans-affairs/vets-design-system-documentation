@@ -111,7 +111,7 @@ Forms combine multiple components to create complete experiences:
 * [Error messages]({{ site.baseurl }}/content-style-guide/error-messages) - Helpful guidance when things go wrong
 
 #### Supporting components  
-* [Additional info]({{ site.baseurl }}/components/additional-info) - Expandable help content
+* [Details]({{ site.baseurl }}/components/details) - Expandable help content
 * [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented) - Show progress through multi-step forms
 * [Button group]({{ site.baseurl }}/components/button/button-group) - Navigation between form steps
 
@@ -165,7 +165,7 @@ You may need to get PRA approval or other kinds of approval if you are tweaking 
 
 While forms sometimes require legal or regulatory language, prioritize plain language whenever possible. You can:
 
-* Provide plain language summaries with legal text in [Additional info]({{ site.baseurl }}/components/additional-info) components
+* Provide plain language summaries with legal text in [Details]({{ site.baseurl }}/components/details) components
 * Use parenthetical explanations: "Dependents (spouse, children, or other family members you support)"
 * Link to detailed legal definitions rather than including them inline
 
