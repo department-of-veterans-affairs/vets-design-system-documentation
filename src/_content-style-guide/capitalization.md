@@ -31,7 +31,7 @@ Authors should still enter these labels in sentence case. The components will re
 
 ### Exceptions where we use initial capitalization
 
-- SEO title tags (example: VA Prescription Refill And Tracking | Veterans Affairs). Refer to [Writing for SEO]({{ site.baseurl }}/content-style-guide/seo) for more information.
+SEO title tags (example: VA Prescription Refill And Tracking &#124; Veterans Affairs). Refer to [Writing for SEO]({{ site.baseurl }}/content-style-guide/seo) for more information.
 
 <div class="do-dont">
 <div class="do-dont__do">

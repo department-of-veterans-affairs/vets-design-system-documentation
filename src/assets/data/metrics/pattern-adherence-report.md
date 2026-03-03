@@ -10,13 +10,13 @@
 | Pattern | Forms Using | Compliance % |
 |---------|-------------|--------------|
 | Phone numbers | 17/55 | 31% |
-| Addresses | 15/55 | 27% |
+| Addresses | 16/55 | 29% |
 | Dates | 14/55 | 25% |
 | Social security or VA file number | 14/55 | 25% |
 | Email address | 13/55 | 24% |
 | Signature | 12/55 | 22% |
 | Names | 9/55 | 16% |
-| Relationship to Veteran | 3/55 | 5% |
+| Relationship to Veteran | 4/55 | 7% |
 | Keep a record of submitted information | 0/55 | 0% |
 
 ## Detailed Pattern Usage
@@ -53,7 +53,7 @@
 **Code:** [`src/platform/forms-system/src/js/web-component-patterns/addressPattern.jsx`](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/addressPattern.jsx)
 **Docs:** [Addresses](/patterns/ask-users-for/addresses)
 
-**Usage:** 15 forms (27%)
+**Usage:** 16 forms (29%)
 
 **Forms using this pattern:**
 
@@ -69,6 +69,7 @@
 - 21-4138 - Statement in support of claim
 - 21-4142 - Authorization to Disclose Information to the VA
 - 21P-0847 - Request to be substitute claimant
+- 26-1880 - Request a VA home loan Certificate of Eligibility (COE)
 - 26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant
 - 40-0247 Presidential Memorial Certificate
 - Benefits Delivery at Discharge
@@ -190,11 +191,12 @@
 **Code:** [`src/platform/forms-system/src/js/web-component-patterns/relationshipToVeteranPattern.jsx`](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/relationshipToVeteranPattern.jsx)
 **Docs:** [Relationship to Veteran](/patterns/ask-users-for/relationship)
 
-**Usage:** 3 forms (5%)
+**Usage:** 4 forms (7%)
 
 **Forms using this pattern:**
 
 - 21-0966 - Intent to file a claim
+- 21-4138 - Statement in support of claim
 - 21-4142 - Authorization to Disclose Information to the VA
 - 21P-0847 - Request to be substitute claimant
 
@@ -230,7 +232,7 @@
 | 21-0972 - Sign VA claim forms as an alternate signer | ✅ | ✅ |  | ✅ | ✅ | ✅ |  |  |  |
 | 21-10210 - Lay or Witness Statement | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |  |
 | 21-2680 - Examination for Housebound Status or Permanent Need for Regular Aid & Attendance | ✅ | ✅ | ✅ | ✅ | ✅ |  | ✅ |  |  |
-| 21-4138 - Statement in support of claim | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |
+| 21-4138 - Statement in support of claim | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |
 | 21-4142 - Authorization to Disclose Information to the VA | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |
 | 21-4192 - Request for Employment Information in Connection with Claim for Disability Benefits |  |  |  |  |  |  |  |  |  |
 | 21-526EZ - AI Document Classification API |  |  |  |  |  |  |  |  |  |
@@ -255,7 +257,7 @@
 | 22-1990e - Apply to use transferred education benefits |  |  |  |  |  |  |  |  |  |
 | 22-1995 - Education Change of Program or Training Application |  |  |  | ✅ |  |  |  |  |  |
 | 22-8794 - Designation of Certifying Official(s) |  |  |  |  |  |  |  |  |  |
-| 26-1880 - Request a VA home loan Certificate of Eligibility (COE) |  |  | ✅ |  |  |  |  |  |  |
+| 26-1880 - Request a VA home loan Certificate of Eligibility (COE) |  | ✅ | ✅ |  |  |  |  |  |  |
 | 26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |
 | 40-0247 Presidential Memorial Certificate | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |  |
 | Benefits Delivery at Discharge | ✅ | ✅ | ✅ |  | ✅ |  |  |  |  |

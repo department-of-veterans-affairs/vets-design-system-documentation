@@ -79,6 +79,7 @@ Use the error status to indicate critical issues, failure states, or items that 
 * **Use Tags sparingly.** Don't overdo it. If everything on a page is called out as important, nothing is important.
 * **Use semantic colors consistently.** Apply the same color meanings across all components (tags, alerts, etc.) to create a cohesive experience for users.
 * **For status within Cards.** When using Tags to communicate status within card components, see the [Card Status guidance]({{ site.baseurl }}/components/card/card-status) for specific implementation details and best practices.
+* **Use sentence case.** While [Tags]({{ site.baseurl }}/components/tag/) without status are capitalized, status tags use sentence case to improve readability in case the status text is longer than 1–2 words.
 
 {% include component-docs.html component_name=page.web-component %}
 

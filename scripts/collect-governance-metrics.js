@@ -528,7 +528,24 @@ async function processCollaborationCycleMetrics(specificQuarter = null) {
   }
 
   // Fetch total platform teams once (this is a point-in-time count, not quarterly)
-  const totalPlatformTeams = await fetchTotalPlatformTeams();
+  let totalPlatformTeams = await fetchTotalPlatformTeams();
+
+  // If the API call failed, try to preserve the last known value from the existing quarter file
+  if (totalPlatformTeams === null) {
+    console.warn('  total_platform_teams unavailable from API. Attempting to read last known value...');
+    try {
+      const existingFile = path.join(DATA_DIR, `governance-metrics-${specificQuarter || getMostRecentCompleteQuarter()}.json`);
+      const existingContent = await fs.readFile(existingFile, 'utf8');
+      const existingData = JSON.parse(existingContent);
+      const lastKnown = existingData?.data?.total_platform_teams;
+      if (typeof lastKnown === 'number') {
+        totalPlatformTeams = lastKnown;
+        console.log(`  Using last known value: ${totalPlatformTeams}`);
+      }
+    } catch {
+      console.warn('  No existing quarter file to fall back to. total_platform_teams will remain null.');
+    }
+  }
 
   const quarterlyData = [];
 
