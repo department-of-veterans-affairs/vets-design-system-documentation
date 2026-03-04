@@ -25,7 +25,7 @@ anchors:
 ### Default
 
 Component is currently in development.
-<!-- {% include storybook-preview.html  story="uswds-va-details--default" link_text="va-details default" %} -->
+{% comment %}{% include storybook-preview.html  story="uswds-va-details--default" link_text="va-details default" %}{% endcomment %}
 
 ## Usage
 
