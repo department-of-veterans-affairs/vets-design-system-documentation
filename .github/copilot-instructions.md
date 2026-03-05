@@ -71,6 +71,63 @@ Use the [PR template](PULL_REQUEST_TEMPLATE.md). Follow these conventions:
 - Do not change component status values without explicit approval
 - When writing multi-line content to `gh` commands, always write to a temp file and use `--body-file` (see AGENTS.md for details)
 
+## PR Review: Guidance Content Changes
+
+When reviewing a PR that modifies files in `src/_components/`, `src/_patterns/`, `src/_templates/`, or `src/_content-style-guide/`, apply the following content standards. These rules apply to the markdown content only — **never flag or suggest changes to YAML front matter** (the content between `---` lines at the top of a file).
+
+### Abbreviations and acronyms
+
+- Spell out abbreviations and acronyms on first use on a page, followed by the abbreviation in parentheses. Example: "Department of Veterans Affairs (VA)".
+- Avoid abbreviations and acronyms that are not common to designers and developers.
+- Exception: These VADS-specific abbreviations don't need to be spelled out: VA, VADS, API, URL, CSS, HTML, UI, UX, CTA.
+
+### Capitalization
+
+- Use sentence case for headings and body text.
+- **Exception:** Component, pattern, and template names use title case when used as proper nouns. Example: "the Alert component", "the Help users to... pattern".
+- Don't capitalize "component", "pattern", or "template" when used generically. Example: "this component", "a pattern for..."
+- VA and all VA office/program abbreviations are always all caps.
+
+### Numbers
+
+- Spell out numbers one through ten. Use numerals for 11 and above.
+- Use numerals for all numbers in technical contexts (version numbers, pixel values, percentages, measurements).
+- Don't start a sentence with a numeral — spell it out or rewrite the sentence.
+
+### Punctuation
+
+- Use the Oxford comma in lists of three or more items.
+- Use straight quotation marks, not curly/smart quotes.
+- Don't use ampersands (&) in place of "and" unless part of a proper name.
+- Avoid exclamation points.
+
+### Voice and tone
+
+- Use active voice. Flag passive constructions and suggest active alternatives.
+- Use contractions (it's, don't, you'll) — they make content friendlier and more readable.
+- Write for the technical audience (designers and developers), but keep language plain and direct.
+- Avoid jargon, buzzwords, and overly formal phrasing.
+
+### Sentence length and structure
+
+- Flag sentences longer than ~30 words and suggest breaking them up.
+- Prefer simple sentences over complex compound structures.
+- Lead with the main point — don't bury it in a clause.
+
+### Branded names
+
+- Avoid or minimize references to VA program or product brand names when a plain-language alternative exists.
+- Don't use branded names as verbs. Example: don't write "Veteran used MyHealtheVet to..." — write "the Veteran used the portal to...".
+
+### Links
+
+- Link text should describe the destination, not use generic phrases like "click here" or "learn more" alone.
+- When referencing a component, pattern, or template by name, link to its documentation page on the first reference.
+
+### YAML front matter
+
+- **Never suggest changes to YAML front matter.** Flag only if front matter appears to have been unintentionally modified by the PR.
+
 ## Chatmodes
 
 See `.github/chatmodes/4.1.chatmode.md` for the custom chatmode configuration.
