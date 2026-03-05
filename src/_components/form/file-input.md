@@ -142,18 +142,24 @@ The file input component gives users a way to select and upload files. You have 
 
 ### When to use this component
 
-* Users need to attach or upload one or more files
-* The upload is a required part of the form submission
-* You need to restrict file types or size for validation
+* **Single file upload.** When users need to attach or upload one file.
+* **Multiple file upload.** When users need to upload several files without additional form fields per file. If you need to ask for additional information with each file, use the [Ask users for Files pattern]({{ site.baseurl }}/patterns/ask-users-for/files) instead.
+* **Required documentation.** When the upload is a required part of the form submission.
+* **File validation.** When you need to restrict file types or size for validation.
+
+### When to consider something else
+
+* **Additional form fields with multiple files.** If each uploaded file requires additional form fields, such as a document type selection or a description, use the [Ask users for Files pattern]({{ site.baseurl }}/patterns/ask-users-for/files) instead. That pattern provides guidance on how to pair file inputs with additional fields in a multiple file upload flow.
 
 ### How file inputs work at VA
 
 **Upload one file at a time.** The file input component uploads a single file per interaction. People cannot select multiple files at once because:
 * Not everyone knows how to select multiple files in their OS file browser
-* Some mobile devices, such as those running iOS, do not support selecting multiple files at once
-* This approach works better on mobile devices overall
+* Some mobile devices do not support selecting multiple files at once
 
-**For multiple file uploads**, follow the [files pattern guidance]({{ site.baseurl }}/patterns/ask-users-for/files) and use the [Multiple responses / List & Loop pattern]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses) to break up the file upload requests. This reduces cognitive load and improves the user experience.
+**When you need additional form inputs with each file**, use the [Ask users for Files pattern]({{ site.baseurl }}/patterns/ask-users-for/files). For example, if each uploaded file requires a document type selection or a description, the pattern shows you how to structure file inputs with accompanying form fields. This approach works better on mobile devices overall.
+
+**For multiple file uploads**, follow the [Ask users for Files pattern]({{ site.baseurl }}/patterns/ask-users-for/files) and use the [Multiple responses / List & Loop pattern]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses) to break up the file upload requests. This reduces cognitive load and improves the user experience.
 
 ### Implementation best practices
 
