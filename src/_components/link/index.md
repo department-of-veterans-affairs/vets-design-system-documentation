@@ -173,16 +173,16 @@ If for some reason you do not use a link web-component links must meet the follo
     Platform --> Web[Web]:::node-answer-primary
     Web --> WebDest{Where does the link go?}:::node-question
     
-    WebDest --> External[External site]:::node-answer-primary
-    External --> NewTab1[Open in NEW TAB<br/>Add text about new tab<br/>Use external link variation]:::node-result-button
+    WebDest --> External[External site<br/>Link to another website]:::node-answer-primary
+    External --> NewTab1[Open in NEW TAB<br/>Add opens in new tab text<br/>Use external link variation]:::node-result-button
     
-    WebDest --> Internal[Internal VA.gov]:::node-answer-secondary
+    WebDest --> Internal[Internal VA.gov<br/>Link to another VA.gov page]:::node-answer-secondary
     Internal --> DataLoss{Will clicking cause user to<br/>lose progress or data?}:::node-question
     
-    DataLoss --> LossYes[YES - Form in progress<br/>or unsaved data]:::node-answer-primary
+    DataLoss --> LossYes[YES<br/>Form in progress,<br/>unsaved data]:::node-answer-primary
     LossYes --> NewTab1
     
-    DataLoss --> LossNo[NO - General navigation<br/>or reading content]:::node-answer-secondary
+    DataLoss --> LossNo[NO<br/>General navigation,<br/>reading content]:::node-answer-secondary
     LossNo --> SameWindow[Open in SAME WINDOW]:::node-result-link
     
     %% Mobile App Flow  
@@ -204,8 +204,8 @@ If for some reason you do not use a link web-component links must meet the follo
     SignInNeeded --> SignNo[NO]:::node-answer-secondary
     SignNo --> WebView[Open in WEBVIEW<br/>Stay within app]:::node-result-link
     
-    MobileType --> ActionLink[Action link<br/>Phone call, calendar event<br/>directions, file download]:::node-answer-secondary
-    ActionLink --> ActionConfirm[Show CONFIRMATION<br/>Then open relevant app]:::node-result-action" %}
+    MobileType --> ActionLink[Action link<br/>Phone call, calendar event,<br/>directions, file download]:::node-answer-secondary
+    ActionLink --> ActionConfirm[Show CONFIRMATION<br/>Then open relevant app<br/>Phone, Calendar, Maps, etc.]:::node-result-action" %}
 </div>
 
 <va-additional-info trigger="View text-based decision list for link opening behavior" id="link-opening-decision-list">

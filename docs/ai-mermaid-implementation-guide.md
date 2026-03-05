@@ -34,9 +34,10 @@ This guide provides specific instructions for AI tools to efficiently implement 
 
 ### Node Content Guidelines
 - Keep nodes clean and concise
-- Include specific details directly without "Example:" or "Examples:" labels
+- Include specific details and examples directly without "Example:" or "Examples:" labels
 - Use concrete, actionable descriptions
 - Bold primary text with `<b>` tags
+- Add helpful context using line breaks (`<br/>`)
 
 ## AI Prompts for Common Tasks
 
@@ -138,8 +139,9 @@ When created, AI should generate:
 Common mistakes AI should avoid:
 - Missing `:::` class syntax on nodes
 - Forgetting `<b>` tags for primary text  
-- Not including examples in answer nodes
+- Not including helpful examples and context in answer nodes
 - Using wrong width class for chart complexity
 - Missing screen reader alternative text
 - Inconsistent node naming/IDs
 - Duplicate result outcomes that could be merged
+- Adding "Example:" or "Examples:" labels (include context directly)

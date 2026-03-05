@@ -9,8 +9,8 @@ Reusable templates for common decision tree patterns in VA Design System documen
 ```
 Start["<b>[MAIN_QUESTION]</b>"]:::node-start --> Decision{"<b>[DECISION_POINT]</b>"}:::node-question
 
-Decision --> Yes(["<b>YES</b><br/>Examples:<br/>[YES_EXAMPLES]"]):::node-answer-primary  
-Decision --> No(["<b>NO</b><br/>Examples:<br/>[NO_EXAMPLES]"]):::node-answer-secondary
+Decision --> Yes(["<b>YES</b><br/>[YES_EXAMPLES]<br/>[YES_CONTEXT]"]):::node-answer-primary  
+Decision --> No(["<b>NO</b><br/>[NO_EXAMPLES]<br/>[NO_CONTEXT]"]):::node-answer-secondary
 
 Yes --> ResultA["<b>[OUTCOME_A_TITLE]</b><br/>[OUTCOME_A_DETAILS]"]:::node-result-[TYPE]
 No --> ResultB["<b>[OUTCOME_B_TITLE]</b><br/>[OUTCOME_B_DETAILS]"]:::node-result-[TYPE]
@@ -19,7 +19,8 @@ No --> ResultB["<b>[OUTCOME_B_TITLE]</b><br/>[OUTCOME_B_DETAILS]"]:::node-result
 **Variables to replace:**
 - `[MAIN_QUESTION]` - Primary question the chart answers
 - `[DECISION_POINT]` - The specific decision being made  
-- `[YES_EXAMPLES]` / `[NO_EXAMPLES]` - Concrete details for each path (no "Examples:" label)
+- `[YES_EXAMPLES]` / `[NO_EXAMPLES]` - Concrete example scenarios (no "Examples:" label)
+- `[YES_CONTEXT]` / `[NO_CONTEXT]` - Additional context or details for each path
 - `[OUTCOME_A_TITLE]` / `[OUTCOME_B_TITLE]` - Result titles
 - `[OUTCOME_A_DETAILS]` / `[OUTCOME_B_DETAILS]` - Additional result info
 - `[TYPE]` - Result type: `button`, `link`, `action`, or `special`
