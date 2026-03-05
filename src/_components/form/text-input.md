@@ -50,9 +50,9 @@ Also refer to the overall [form guidance]({{ site.baseurl }}/components/form#hin
 
 {% include storybook-preview.html story="uswds-va-text-input--with-inline-hint-text" link_text="va-text-input with inline Hint text" height="155px" auto_resize=false %}
 
-### Additional Info
+### Details
 
-{% include storybook-preview.html story="uswds-va-text-input--with-additional-info" link_text="va-text-input with Additional info" %}
+{% include storybook-preview.html story="uswds-va-text-input--with-details" link_text="va-text-input with Details" %}
 
 ### Character count
 
@@ -126,7 +126,7 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
 * **Autocomplete.** Specifies what if any permission the user agent has to provide automated assistance in filling out form field values, as well as guidance to the browser as to the type of information expected in the field.
 * **Hint Text.** Provides a short hint to the user on what to enter into the field.
 * **Inline Hint Text.** Provides a very short hint to the user within the label on what to enter into the field. Hint text is preferred to inline hint text.
-* **Additional Info.** Depicts how to use the [additional info component]({{ site.baseurl }}/components/additional-info) within a va-text-input.
+* **Details.** Depicts how to use the [Details component]({{ site.baseurl }}/components/details) within a va-text-input.
 * **Character count.** Implements the [USWDS Character count](https://designsystem.digital.gov/components/character-count/) functionality which displays the character count below the text input. However, our implementation differs from USWDS in that it does not allow for entering more text after the maxlength.
 * **Currency.** Indicates that the input accepts a dollar amount.
 * **Forms pattern - Single.** This variation can be used to support the [One thing per page content principle]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task#design-principles) where we gather one decision, question, or piece of information on the page.

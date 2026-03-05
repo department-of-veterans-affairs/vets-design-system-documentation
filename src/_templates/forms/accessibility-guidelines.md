@@ -120,7 +120,7 @@ For complete technical guidance on fieldsets and legends, see [Fieldsets, legend
 ### Hint text and help content
 
 * Keep essential instructions visible rather than hidden in expandable sections
-* Use [Additional info]({{ site.baseurl }}/components/additional-info) components sparingly to avoid cognitive overload
+* Use [Details]({{ site.baseurl }}/components/details) components sparingly to avoid cognitive overload
 * Consider how hint text affects the overall form flow and completion time
 
 For technical implementation of hint text, see [Hint text guidelines]({{ site.baseurl }}/components/form/#hint-text).

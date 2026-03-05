@@ -77,7 +77,7 @@ Card is a flexible container component. Teams build and pass in their own conten
 3. **Secondary content.** Teams provide body text, which can include any combination of text, dates, or other content.
 4. **Call to action.** Teams add their own links - typically an [action link]({{ site.baseurl }}/components/link/action) or [link]({{ site.baseurl }}/components/link).
 
-**Note:** If your card needs to display a status tag, or have an error state, use the [Card - Status]({{ site.baseurl }}/components/card/card-status) component instead, which is specifically designed for status communication and includes built-in support for status tags, error states, and screen reader announcements.
+**Note:** You can use [Tag - Status]({{ site.baseurl }}/components/tag/status) in either Card or [Card - Status]({{ site.baseurl }}/components/card/card-status). **Card Status is required** if you need an error state on the card, as it's the only card component that supports error states. Use Card Status when you need a consistent, structured pattern with a single action link. Use the default Card component when you need multiple calls to action or flexible content structure.
 
 You can see these options in use in the [variations](#variations) below.
 
@@ -183,7 +183,7 @@ A radio button tile has a title and description within the label and a Card-like
 
 ### A list of services or tools
 
-{% include component-example.html alt="A set of information—designed to be shown within a list—that contains a header, a bright call to action, a Status Tag, four sets of data formatted as 'Label: Value' pairs, and a link."  file="/images/components/service-list-item/annotated-service-list-item-component.png" %}
+{% include storybook-preview.html story="components-va-service-list-item--maximal-base" link_text="va-service-list-item maximal example" height="400px" %}
 
 When you want to show benefits or tools the user is currently enrolled in or has access to, use the [Service list item]({{ site.baseurl }}/components/service-list-item) component instead of the Card component.
 
