@@ -67,8 +67,14 @@ This approach allows charts to be generated from structured JSON data, making it
    chart="
 flowchart TD
 {% for node_name, node in include.data.nodes %}
-    {{ node_name | capitalize }}[\"<b>{{ node.text }}</b>{% if node.examples %}<br/>Examples:<br/>{{ node.examples | join: ',<br/>' }}{% endif %}{% if node.details %}<br/>{{ node.details | join: '<br/>' }}{% endif %}\"]:::node-{{ node.type }}
-{% endfor %}
+    {% capture node_label %}<b>{{ node.text }}</b>{% if node.examples %}<br/>Examples:<br/>{{ node.examples | join: ',<br/>' }}{% endif %}{% if node.details %}<br/>{{ node.details | join: '<br/>' }}{% endif %}{% endcapture %}
+    {% if node.type == 'question' %}
+    {{ node_name | capitalize }}{\"{{ node_label }}\"}:::node-{{ node.type }}
+    {% elsif node.type contains 'answer' or node.type == 'context' %}
+    {{ node_name | capitalize }}([\"{{ node_label }}\"]):::node-{{ node.type }}
+    {% else %}
+    {{ node_name | capitalize }}[\"{{ node_label }}\"]:::node-{{ node.type }}
+    {% endif %}{% endfor %}
 {% for connection in include.data.connections %}
     {{ connection.from | capitalize }} --> {{ connection.to | capitalize }}
 {% endfor %}
