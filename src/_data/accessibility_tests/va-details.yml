@@ -21,7 +21,7 @@ tests:
             result: pass
           - name: android-chrome-talkback
             result: pass
-        notes: Chrome announces "disclosure triangle" as the role description for the native <summary> element — this is browser-native behavior, not an announcement of the decorative chevron icon. The icon itself is not announced.
+        notes: Chrome announces "disclosure triangle" as the role description for the native summary element — this is browser-native behavior, not an announcement of the decorative chevron icon. The icon itself is not announced.
 
   # 1.3.1 - Expanded/collapsed state conveyed through code, not just visually
   - id: WEB-131
@@ -306,29 +306,33 @@ tests:
             result: pass
           - name: ios-safari-voiceover
             result: pass
-        notes: iOS VoiceOver prevents native `<details>/<summary>` interaction in the shadow DOM. We are overriding the default `<details>` event handling with manual open attribute management to enable functionality in iOS VoiceOver. Additionally, we added a short timeout to prevent the VoiceOver announcement from getting cut off.
+        notes: iOS VoiceOver prevents native details interaction in the shadow DOM. We are overriding the default details event handling with manual open attribute management to enable functionality in iOS VoiceOver. Additionally, we added a short timeout to prevent the VoiceOver announcement from getting cut off.
 
   # Implementation-level tests
   # 4.1.2 subtest - Summary has clear and unique accessible name from label prop
   - id: DST-412-003
+    category: implementation
     test_results:
       - version: unreleased (base 56.0.0) 
         notes: Implementation-level test. Teams using this component are responsible for verifying content sequence in context. When there are multiple instances on a page, each has a unique label
 
   # 1.3.2 - Content is presented in a logical order 
   - id: WEB-132
+    category: implementation
     test_results:
       - version: unreleased (base 56.0.0) 
         notes: Implementation-level test. Teams using this component are responsible for verifying content sequence in context. In this test, the Summary is indeed a summary of the content contained within.
 
   # 2.4.11 - Focused summary not obscured by sticky headers or overlays
   - id: WEB-2411
+    category: implementation
     test_results:
       - version: unreleased (base 56.0.0) 
         notes: Implementation-level test. Teams using this component are responsible for verifying that the details component is not obscured by sticky headers or overlays.
 
   # 2.4.6 - Summary label text is descriptive of the content it reveals
   - id: WEB-246
+    category: implementation
     test_results:
       - version: unreleased (base 56.0.0) 
         notes: Implementation-level test. Teams using this component are responsible for verifying that the summary label is descriptive of the content it reveals
