@@ -21,7 +21,7 @@ This skill enables efficient creation and standardization of Mermaid decision fl
 2. Replace template variables with specific content
 3. Use correct width class (.mermaid-width or .mermaid-width-wide)
 4. Apply standardized node types (:::node-start, :::node-question, etc.)
-5. Add concrete examples to answer nodes
+5. Add specific details to answer nodes without "Example:" labels
 6. Ensure all primary text uses `<b>` tags
 7. Merge duplicate result outcomes
 8. Include screen reader alternative text
@@ -69,8 +69,9 @@ flowchart TD
 - Chart renders correctly without errors
 - All nodes use appropriate styling classes
 - Decision flow is logical and easy to follow  
-- Examples make options concrete and clear
+- Specific details make options concrete and clear
 - Screen reader users can understand the decision process
 - Chart width is appropriate for content complexity
 - Text-based alternative provided using va-additional-info component
-- **Text alternative exactly matches visual chart** (same paths, questions, examples, outcomes, capitalization)
+- **Text alternative exactly matches visual chart** (same paths, questions, details, outcomes, capitalization)
+- No unnecessary "Example:" labels cluttering the design

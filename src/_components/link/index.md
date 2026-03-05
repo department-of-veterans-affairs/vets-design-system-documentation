@@ -174,23 +174,23 @@ flowchart TD
     Platform --> Web([\"<b>Web</b>\"]):::node-answer-primary
     Web --> WebDest{\"<b>Where does the link go?</b>\"}:::node-question
     
-    WebDest --> External([\"<b>External site</b><br/>Example:<br/>Link to another website\"]):::node-answer-primary
-    External --> NewTab1[\"<b>Open in NEW TAB</b><br/>Add '(opens in a new tab)' text<br/>Use external link variation\"]:::node-result-button
+    WebDest --> External(["<b>External site</b><br/>Link to another website"]):::node-answer-primary
+    External --> NewTab1["<b>Open in NEW TAB</b><br/>Add '(opens in a new tab)' text<br/>Use external link variation"]:::node-result-button
     
-    WebDest --> Internal([\"<b>Internal VA.gov</b><br/>Example:<br/>Link to another VA.gov page\"]):::node-answer-secondary  
+    WebDest --> Internal(["<b>Internal VA.gov</b><br/>Link to another VA.gov page"]):::node-answer-secondary
     Internal --> DataLoss{\"<b>Will clicking cause user to<br/>lose progress or data?</b>\"}:::node-question
     
-    DataLoss --> LossYes([\"<b>YES</b><br/>Examples:<br/>Form in progress,<br/>unsaved data\"]):::node-answer-primary
+    DataLoss --> LossYes(["<b>YES</b><br/>Form in progress,<br/>unsaved data"]):::node-answer-primary
     LossYes --> NewTab1
     
-    DataLoss --> LossNo([\"<b>NO</b><br/>Examples:<br/>General navigation,<br/>reading content\"]):::node-answer-secondary
+    DataLoss --> LossNo(["<b>NO</b><br/>General navigation,<br/>reading content"]):::node-answer-secondary
     LossNo --> SameWindow[\"<b>Open in SAME WINDOW</b>\"]:::node-result-link
     
     %% Mobile App Flow
     Platform --> Mobile([\"<b>Mobile App</b>\"]):::node-answer-secondary
     Mobile --> MobileType{\"<b>What type of link?</b>\"}:::node-question
     
-    MobileType --> ContentLink([\"<b>Content link</b><br/>Examples:<br/>Reading pages, viewing info\"]):::node-answer-primary
+    MobileType --> ContentLink(["<b>Content link</b><br/>Reading pages, viewing info"]):::node-answer-primary
     ContentLink --> ContentLocation{\"<b>Where is the content?</b>\"}:::node-question
     
     ContentLocation --> InApp([\"<b>Within the app</b>\"]):::node-answer-primary
@@ -205,7 +205,7 @@ flowchart TD
     SignInNeeded --> SignNo([\"<b>NO</b>\"]):::node-answer-secondary
     SignNo --> WebView[\"<b>Open in WEBVIEW</b><br/>Stay within app\"]:::node-result-link
     
-    MobileType --> ActionLink([\"<b>Action link</b><br/>Examples:<br/>Phone call, calendar event,<br/>directions, file download\"]):::node-answer-secondary
+    MobileType --> ActionLink(["<b>Action link</b><br/>Phone call, calendar event,<br/>directions, file download"]):::node-answer-secondary
     ActionLink --> ActionConfirm[\"<b>Show CONFIRMATION</b><br/>Then open relevant app<br/>(Phone, Calendar, Maps, etc.)\"]:::node-result-action
 " %}
 </div>

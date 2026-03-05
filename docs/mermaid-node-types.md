@@ -20,8 +20,8 @@ This document defines the standardized node types available for Mermaid charts i
 - **Primary**: `:::node-answer-primary` (for "yes" or primary path answers)
 - **Secondary**: `:::node-answer-secondary` (for "no" or secondary path answers)
 - **Usage**: Intermediate nodes that provide context before next decision
-- **Style**: Rounded rectangle with examples
-- **Example**: `Answer(["<b>Web</b><br/>Examples:<br/>Desktop, mobile browser"]):::node-answer-primary`
+- **Style**: Rounded rectangle with specific details
+- **Example**: `Answer(["<b>Web</b><br/>Desktop, mobile browser"]):::node-answer-primary`
 
 ### Result Nodes
 - **Button**: `:::node-result-button` (for button-like actions)
@@ -48,7 +48,7 @@ This document defines the standardized node types available for Mermaid charts i
 
 1. **Consistent Naming**: Always use descriptive variable names (Start, Question1, Answer1, etc.)
 2. **Bold Headers**: Use `<b>` tags for main text in all nodes
-3. **Examples in Answers**: Include concrete examples in answer nodes for clarity
+3. **Clean Content**: Include specific details directly without "Example:" labels
 4. **Logical Flow**: Follow the pattern: Start → Question → Answer → Question/Result
 5. **Merge Duplicate Outcomes**: Combine nodes that lead to the same result
 6. **Accessibility**: Always provide text-based alternative using va-additional-info component
@@ -58,8 +58,8 @@ This document defines the standardized node types available for Mermaid charts i
 ### Simple Binary Decision
 ```
 Start["<b>Question?</b>"]:::node-start --> Decision{"<b>Decision point?</b>"}:::node-question
-Decision --> Yes(["<b>YES</b><br/>Examples"]):::node-answer-primary
-Decision --> No(["<b>NO</b><br/>Examples"]):::node-answer-secondary  
+Decision --> Yes(["<b>YES</b><br/>Specific details"]):::node-answer-primary
+Decision --> No(["<b>NO</b><br/>Specific details"]):::node-answer-secondary  
 Yes --> ResultA["<b>Outcome A</b>"]:::node-result-button
 No --> ResultB["<b>Outcome B</b>"]:::node-result-link
 ```

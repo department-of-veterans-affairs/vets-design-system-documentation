@@ -19,7 +19,7 @@ No --> ResultB["<b>[OUTCOME_B_TITLE]</b><br/>[OUTCOME_B_DETAILS]"]:::node-result
 **Variables to replace:**
 - `[MAIN_QUESTION]` - Primary question the chart answers
 - `[DECISION_POINT]` - The specific decision being made  
-- `[YES_EXAMPLES]` / `[NO_EXAMPLES]` - Concrete examples for each path
+- `[YES_EXAMPLES]` / `[NO_EXAMPLES]` - Concrete details for each path (no "Examples:" label)
 - `[OUTCOME_A_TITLE]` / `[OUTCOME_B_TITLE]` - Result titles
 - `[OUTCOME_A_DETAILS]` / `[OUTCOME_B_DETAILS]` - Additional result info
 - `[TYPE]` - Result type: `button`, `link`, `action`, or `special`
@@ -96,8 +96,8 @@ Add text-based decision list using va-additional-info component after the chart:
 <ul>
 <li><strong>[First Decision]</strong>
     <ul>
-    <li><strong>[Option 1]</strong> ([Specific examples]) → <strong>[Final Outcome 1]</strong></li>
-    <li><strong>[Option 2]</strong> ([Specific examples]) → <strong>[Final Outcome 2]</strong></li>
+    <li><strong>[Option 1]</strong> ([Specific details]) → <strong>[Final Outcome 1]</strong></li>
+    <li><strong>[Option 2]</strong> ([Specific details]) → <strong>[Final Outcome 2]</strong></li>
     </ul>
 </li>
 </ul>
@@ -105,7 +105,7 @@ Add text-based decision list using va-additional-info component after the chart:
 </va-additional-info>
 ```
 
-**Critical**: The text alternative must exactly mirror the visual chart - same decision paths, questions, examples, outcomes, and capitalization.
+**Critical**: The text alternative must exactly mirror the visual chart - same decision paths, questions, specific details, outcomes, and capitalization. Do not include "Example:" or "Examples:" labels.
 
 ### Step 5: Test and Refine
 - Build locally to verify rendering

@@ -32,6 +32,12 @@ This guide provides specific instructions for AI tools to efficiently implement 
 </va-additional-info>
 ```
 
+### Node Content Guidelines
+- Keep nodes clean and concise
+- Include specific details directly without "Example:" or "Examples:" labels
+- Use concrete, actionable descriptions
+- Bold primary text with `<b>` tags
+
 ## AI Prompts for Common Tasks
 
 ### Creating a New Decision Chart
@@ -41,9 +47,9 @@ This guide provides specific instructions for AI tools to efficiently implement 
 1. Use the platform-specific template if web vs mobile behavior differs
 2. Start with: Start["<b>[MAIN_QUESTION]</b>"]:::node-start
 3. Use :::node-question for decision diamonds
-4. Use :::node-answer-primary/secondary for intermediate steps with examples
+4. Use :::node-answer-primary/secondary for intermediate steps with specific details
 5. Use :::node-result-button/link/action for final outcomes
-6. Include concrete examples in answer nodes
+6. Include concrete details directly in nodes without "Example:" labels
 7. Use .mermaid-width-wide for complex charts
 8. Make text bold with <b> tags
 9. Add screen reader alternative text in .sr-only div above chart
@@ -59,10 +65,11 @@ This guide provides specific instructions for AI tools to efficiently implement 
 
 Follow VA Design System patterns:
 - Extract decision points as :::node-question diamonds
-- Convert examples into :::node-answer nodes  
+- Convert details into :::node-answer nodes with specific content
 - Use appropriate result node types based on action type
 - Merge duplicate outcomes into single result nodes
 - Use .mermaid-width-wide wrapper class
+- Include concrete details without "Example:" labels
 - Add text-based alternative using va-additional-info component"
 ```
 
@@ -74,7 +81,8 @@ Follow VA Design System patterns:
 
 Apply these improvements:
 - Add <b> tags to all primary text
-- Include examples in answer nodes where helpful
+- Remove "Example:" or "Examples:" labels for cleaner presentation
+- Include specific details directly in answer nodes
 - Use consistent node type classes (:::node-start, :::node-question, etc.)
 - Merge any duplicate result outcomes
 - Ensure proper width class for chart complexity
@@ -96,7 +104,7 @@ Before implementation, verify:
 
 - [ ] Start node uses :::node-start
 - [ ] All questions use :::node-question with diamond syntax `{}`
-- [ ] Answer nodes include examples where helpful
+- [ ] Answer nodes include specific details without "Example:" labels
 - [ ] Result nodes use appropriate type (button/link/action/special)
 - [ ] Text is bold with `<b>` tags
 - [ ] Duplicate outcomes are merged
