@@ -1,5 +1,5 @@
 component: va-text-input
-component_url: /components/text-input/
+component_url: /components/form/text-input
 storybook_url: /storybook/?path=/docs/components-va-text-input--docs
 
 # Tests applied to this component

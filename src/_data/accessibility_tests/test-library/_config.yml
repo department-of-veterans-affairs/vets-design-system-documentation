@@ -65,8 +65,8 @@ required_environments:
     - id: ios-safari-voiceover
       required: false
   voice_control:
-    - mac-voice-control
-    - windows-voice-recognition
+    - mac-safari-voice-control
+    - windows-edge-voice-recognition
 
 # Test categories
 categories:

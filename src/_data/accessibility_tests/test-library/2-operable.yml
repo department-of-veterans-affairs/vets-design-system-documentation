@@ -9,7 +9,7 @@ tests:
     wcag_name: Keyboard
     wcag_level: A
     508_severity: Critical
-    wcag_url: https://www.w3.org/TR/WCAG21/#keyboard
+    wcag_url: https://www.w3.org/TR/WCAG22/#keyboard
     description_short: |
       Interactive elements are fully operable using only a keyboard.
     description_full: |
@@ -34,7 +34,7 @@ tests:
     wcag_name: No Keyboard Trap
     wcag_level: A
     508_severity: Critical
-    wcag_url: https://www.w3.org/TR/WCAG21/#no-keyboard-trap
+    wcag_url: https://www.w3.org/TR/WCAG22/#no-keyboard-trap
     description_short: |
       Keyboard focus does not get trapped.
     description_full: |
@@ -59,7 +59,7 @@ tests:
     wcag_name: Character Key Shortcuts
     wcag_level: A
     508_severity: N/A
-    wcag_url: https://www.w3.org/TR/WCAG21/#character-key-shortcuts
+    wcag_url: https://www.w3.org/TR/WCAG22/#character-key-shortcuts
     description_short: |
       Users can turn off or customize single-key shortcuts.
     description_full: |
@@ -71,7 +71,7 @@ tests:
     wcag_name: Timing Adjustable
     wcag_level: A
     508_severity: Medium
-    wcag_url: https://www.w3.org/TR/WCAG21/#timing-adjustable
+    wcag_url: https://www.w3.org/TR/WCAG22/#timing-adjustable
     description_short: |
       Content allows users to turn off or extend time limits.
     description_full: |
@@ -83,7 +83,7 @@ tests:
     wcag_name: Pause, Stop, Hide
     wcag_level: A
     508_severity: Critical
-    wcag_url: https://www.w3.org/TR/WCAG21/#pause-stop-hide
+    wcag_url: https://www.w3.org/TR/WCAG22/#pause-stop-hide
     description_short: |
       Movement can be paused or stopped.
     description_full: |
@@ -95,7 +95,7 @@ tests:
     wcag_name: Three Flashes or Below Threshold
     wcag_level: A
     508_severity: Critical
-    wcag_url: https://www.w3.org/TR/WCAG21/#three-flashes-or-below-threshold
+    wcag_url: https://www.w3.org/TR/WCAG22/#three-flashes-or-below-threshold
     description_short: |
       Nothing flashes more than three times per second.
     description_full: |
@@ -107,7 +107,7 @@ tests:
     wcag_name: Bypass Blocks
     wcag_level: A
     508_severity: High
-    wcag_url: https://www.w3.org/TR/WCAG21/#bypass-blocks
+    wcag_url: https://www.w3.org/TR/WCAG22/#bypass-blocks
     description_short: |
       Users can skip repeated content like headers and navigation.
     description_full: |
@@ -126,7 +126,7 @@ tests:
     wcag_name: Page Titled
     wcag_level: A
     508_severity: Low
-    wcag_url: https://www.w3.org/TR/WCAG21/#page-titled
+    wcag_url: https://www.w3.org/TR/WCAG22/#page-titled
     description_short: |
       Each page includes a unique, descriptive title.
     description_full: |
@@ -138,7 +138,7 @@ tests:
     wcag_name: Focus Order
     wcag_level: A
     508_severity: High
-    wcag_url: https://www.w3.org/TR/WCAG21/#focus-order
+    wcag_url: https://www.w3.org/TR/WCAG22/#focus-order
     description_short: |
       Tab order follows a logical sequence.
     description_full: |
@@ -150,7 +150,7 @@ tests:
     wcag_name: Link Purpose (In Context)
     wcag_level: A
     508_severity: High
-    wcag_url: https://www.w3.org/TR/WCAG21/#link-purpose-in-context
+    wcag_url: https://www.w3.org/TR/WCAG22/#link-purpose-in-context
     description_short: |
       Link text is clear and descriptive.
     description_full: |
@@ -162,7 +162,7 @@ tests:
     wcag_name: Multiple Ways
     wcag_level: AA
     508_severity: Low
-    wcag_url: https://www.w3.org/TR/WCAG21/#multiple-ways
+    wcag_url: https://www.w3.org/TR/WCAG22/#multiple-ways
     description_short: |
       There is more than one way to access a page.
     description_full: |
@@ -175,7 +175,7 @@ tests:
     wcag_name: Headings and Labels
     wcag_level: AA
     508_severity: Medium
-    wcag_url: https://www.w3.org/TR/WCAG21/#headings-and-labels
+    wcag_url: https://www.w3.org/TR/WCAG22/#headings-and-labels
     description_short: |
       Headings and labels clearly describe their purpose.
     description_full: |
@@ -200,7 +200,7 @@ tests:
     wcag_name: Focus Visible
     wcag_level: AA
     508_severity: Critical
-    wcag_url: https://www.w3.org/TR/WCAG21/#focus-visible
+    wcag_url: https://www.w3.org/TR/WCAG22/#focus-visible
     description_short: |
       Interactive elements display a clear focus indicator.
     description_full: |
@@ -212,7 +212,7 @@ tests:
     wcag_name: Section Headings
     wcag_level: AAA
     508_severity: N/A
-    wcag_url: https://www.w3.org/TR/WCAG21/#section-headings
+    wcag_url: https://www.w3.org/TR/WCAG22/#section-headings
     description_short: |
       Content uses headings to organize sections.
     description_full: |
@@ -237,7 +237,7 @@ tests:
     wcag_name: Pointer Gestures
     wcag_level: A
     508_severity: N/A
-    wcag_url: https://www.w3.org/TR/WCAG21/#pointer-gestures
+    wcag_url: https://www.w3.org/TR/WCAG22/#pointer-gestures
     description_short: |
       Interaction doesn't require complex gestures.
     description_full: |
@@ -250,7 +250,7 @@ tests:
     wcag_name: Pointer Cancellation
     wcag_level: A
     508_severity: N/A
-    wcag_url: https://www.w3.org/TR/WCAG21/#pointer-cancellation
+    wcag_url: https://www.w3.org/TR/WCAG22/#pointer-cancellation
     description_short: |
       Pointer actions are reversible and don't execute on touch down.
     description_full: |
@@ -262,7 +262,7 @@ tests:
     wcag_name: Label in Name
     wcag_level: A
     508_severity: N/A
-    wcag_url: https://www.w3.org/TR/WCAG21/#label-in-name
+    wcag_url: https://www.w3.org/TR/WCAG22/#label-in-name
     description_short: |
       Accessible name matches visible text.
     description_full: |
@@ -282,7 +282,7 @@ tests:
     wcag_name: Motion Actuation
     wcag_level: A
     508_severity: N/A
-    wcag_url: https://www.w3.org/TR/WCAG21/#motion-actuation
+    wcag_url: https://www.w3.org/TR/WCAG22/#motion-actuation
     description_short: |
       Features don't require shaking or tilting the device.
     description_full: |

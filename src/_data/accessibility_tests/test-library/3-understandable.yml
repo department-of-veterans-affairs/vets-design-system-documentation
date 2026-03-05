@@ -9,7 +9,7 @@ tests:
     wcag_name: Language of Page
     wcag_level: A
     508_severity: Medium
-    wcag_url: https://www.w3.org/TR/WCAG21/#language-of-page
+    wcag_url: https://www.w3.org/TR/WCAG22/#language-of-page
     description_short: |
       Page declares its language.
     description_full: |
@@ -21,7 +21,7 @@ tests:
     wcag_name: Language of Parts
     wcag_level: AA
     508_severity: Low
-    wcag_url: https://www.w3.org/TR/WCAG21/#language-of-parts
+    wcag_url: https://www.w3.org/TR/WCAG22/#language-of-parts
     description_short: |
       Content declares language changes.
     description_full: |
@@ -41,7 +41,7 @@ tests:
     wcag_name: On Focus
     wcag_level: A
     508_severity: Critical
-    wcag_url: https://www.w3.org/TR/WCAG21/#on-focus
+    wcag_url: https://www.w3.org/TR/WCAG22/#on-focus
     description_short: |
       Focusing on an element does not trigger unexpected changes.
     description_full: |
@@ -60,7 +60,7 @@ tests:
     wcag_name: On Input
     wcag_level: AA
     508_severity: High
-    wcag_url: https://www.w3.org/TR/WCAG21/#on-input
+    wcag_url: https://www.w3.org/TR/WCAG22/#on-input
     description_short: |
       Changing the input value does not trigger unexpected changes.
     description_full: |
@@ -72,7 +72,7 @@ tests:
     wcag_name: Consistent Navigation
     wcag_level: AA
     508_severity: High
-    wcag_url: https://www.w3.org/TR/WCAG21/#consistent-navigation
+    wcag_url: https://www.w3.org/TR/WCAG22/#consistent-navigation
     description_short: |
       Navigation structure is the same across pages.
     description_full: |
@@ -84,7 +84,7 @@ tests:
     wcag_name: Consistent Identification
     wcag_level: AA
     508_severity: Medium
-    wcag_url: https://www.w3.org/TR/WCAG21/#consistent-identification
+    wcag_url: https://www.w3.org/TR/WCAG22/#consistent-identification
     description_short: |
       Similar features have the same labels across pages.
     description_full: |
@@ -108,7 +108,7 @@ tests:
     wcag_name: Error Identification
     wcag_level: A
     508_severity: Critical
-    wcag_url: https://www.w3.org/TR/WCAG21/#error-identification
+    wcag_url: https://www.w3.org/TR/WCAG22/#error-identification
     description_short: |
       Users receive error messages.
     description_full: |
@@ -154,7 +154,7 @@ tests:
     wcag_name: Labels or Instructions
     wcag_level: A
     508_severity: Critical
-    wcag_url: https://www.w3.org/TR/WCAG21/#labels-or-instructions
+    wcag_url: https://www.w3.org/TR/WCAG22/#labels-or-instructions
     description_short: |
       Form inputs have a persistent label.
     description_full: |
@@ -186,7 +186,7 @@ tests:
     wcag_name: Error Suggestion
     wcag_level: AA
     508_severity: Low
-    wcag_url: https://www.w3.org/TR/WCAG21/#error-suggestion
+    wcag_url: https://www.w3.org/TR/WCAG22/#error-suggestion
     description_short: |
       Error messages explain how to fix the error.
     description_full: |
@@ -198,7 +198,7 @@ tests:
     wcag_name: Error Prevention (Legal, Financial, Data)
     wcag_level: AA
     508_severity: Critical
-    wcag_url: https://www.w3.org/TR/WCAG21/#error-prevention-legal-financial-data
+    wcag_url: https://www.w3.org/TR/WCAG22/#error-prevention-legal-financial-data
     description_short: |
       Users can review or undo important submissions.
     description_full: |
@@ -210,7 +210,7 @@ tests:
     wcag_name: Error Prevention (All)
     wcag_level: AAA
     508_severity: N/A
-    wcag_url: https://www.w3.org/TR/WCAG21/#error-prevention-all
+    wcag_url: https://www.w3.org/TR/WCAG22/#error-prevention-all
     description_short: |
       Users can review and correct incorrect information.
     description_full: |
