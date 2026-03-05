@@ -49,6 +49,7 @@ This approach allows charts to be generated from structured JSON data, making it
     {"from": "platform", "to": "web"},
     {"from": "platform", "to": "mobile"}, 
     {"from": "web", "to": "web_destination"},
+    {"from": "web_destination", "to": "external_site"},
     {"from": "external_site", "to": "new_tab"}
   ]
 }
