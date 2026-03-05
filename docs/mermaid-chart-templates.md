@@ -68,8 +68,8 @@ Step1Option2 --> EarlyResult["<b>[EARLY_RESULT]</b><br/>[EARLY_DETAILS]"]:::node
 Step2 --> Step2Option1(["<b>[STEP_2_OPTION_1]</b><br/>Examples:<br/>[STEP_2_EXAMPLES_1]"]):::node-answer-primary  
 Step2 --> Step2Option2(["<b>[STEP_2_OPTION_2]</b><br/>Examples:<br/>[STEP_2_EXAMPLES_2]"]):::node-answer-secondary
 
-Step2Option1 --> FinalResult1["<b>[FINAL_RESULT_1]</b><br/>[final_DETAILS_1]"]:::node-result-[TYPE]
-Step2Option2 --> FinalResult2["<b>[FINAL_RESULT_2]</b><br/>[final_DETAILS_2]"]:::node-result-[TYPE]
+Step2Option1 --> FinalResult1["<b>[FINAL_RESULT_1]</b><br/>[FINAL_DETAILS_1]"]:::node-result-[TYPE]
+Step2Option2 --> FinalResult2["<b>[FINAL_RESULT_2]</b><br/>[FINAL_DETAILS_2]"]:::node-result-[TYPE]
 ```
 
 ## AI Implementation Guide
