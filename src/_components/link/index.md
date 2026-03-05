@@ -156,10 +156,65 @@ If for some reason you do not use a link web-component links must meet the follo
 
 ## Behavior
 
+### When to open links in a new tab vs same window
+
+<div class="sr-only">
+  If you use a screen reader: This flowchart helps determine link opening behavior based on platform (web or mobile app), destination (internal vs external), and whether clicking would cause users to lose progress or data. For web links: external links always open in new tabs; internal links open in same window unless they cause data loss. For mobile apps: content within the app stays in-app, external content may open in webview or browser depending on sign-in requirements, and action links open relevant native apps with confirmation messages.
+</div>
+
+<div class="mermaid-width-wide">
+  {% include mermaid-chart.html 
+   id="link-opening-decision-flowchart" 
+   caption="Decision flowchart for determining when links should open in the same window versus a new tab for both web and mobile platforms."
+   chart="
+flowchart TD
+    Start[\"<b>Should this link open in a new tab?</b>\"]:::node-start --> Platform{\"<b>What platform?</b>\"}:::node-question
+    
+    %% Web Flow
+    Platform --> Web([\"<b>Web</b>\"]):::node-answer-primary
+    Web --> WebDest{\"<b>Where does the link go?</b>\"}:::node-question
+    
+    WebDest --> External([\"<b>External site</b><br/>Example:<br/>Link to another website\"]):::node-answer-primary
+    External --> NewTab1[\"<b>Open in NEW TAB</b><br/>Add '(opens in a new tab)' text<br/>Use external link variation\"]:::node-result-button
+    
+    WebDest --> Internal([\"<b>Internal VA.gov</b><br/>Example:<br/>Link to another VA.gov page\"]):::node-answer-secondary  
+    Internal --> DataLoss{\"<b>Will clicking cause user to<br/>lose progress or data?</b>\"}:::node-question
+    
+    DataLoss --> LossYes([\"<b>YES</b><br/>Examples:<br/>Form in progress,<br/>unsaved data\"]):::node-answer-primary
+    LossYes --> NewTab1
+    
+    DataLoss --> LossNo([\"<b>NO</b><br/>Examples:<br/>General navigation,<br/>reading content\"]):::node-answer-secondary
+    LossNo --> SameWindow[\"<b>Open in SAME WINDOW</b>\"]:::node-result-link
+    
+    %% Mobile App Flow
+    Platform --> Mobile([\"<b>Mobile App</b>\"]):::node-answer-secondary
+    Mobile --> MobileLocation{\"<b>Where is the content?</b>\"}:::node-question
+    
+    MobileLocation --> InApp([\"<b>Within the app</b><br/>Examples:<br/>App pages, content\"]):::node-answer-primary
+    InApp --> ActionNeeded{\"<b>Is this an action link?</b>\"}:::node-question
+    
+    ActionNeeded --> ActionNo([\"<b>NO</b><br/>Examples:<br/>Reading content,<br/>viewing details\"]):::node-answer-secondary
+    ActionNo --> FullPanel[\"<b>Open in FULL PANEL</b><br/>Stay within app\"]:::node-result-link
+    
+    ActionNeeded --> ActionYes([\"<b>YES</b><br/>Examples:<br/>Phone, calendar,<br/>directions\"]):::node-answer-primary
+    ActionYes --> Confirm[\"<b>Show CONFIRMATION</b><br/>Open relevant app<br/>with user consent\"]:::node-result-action
+    
+    MobileLocation --> OutApp([\"<b>Outside the app</b><br/>Examples:<br/>Websites, external content\"]):::node-answer-secondary
+    OutApp --> SignIn{\"<b>Requires sign-in or<br/>is third party?</b>\"}:::node-question
+    
+    SignIn --> SignYes([\"<b>YES</b><br/>Examples:<br/>Secure sites,<br/>third-party services\"]):::node-answer-primary
+    SignYes --> Browser[\"<b>Open in BROWSER</b><br/>Show alert warning<br/>User leaves app\"]:::node-result-action
+    
+    SignIn --> SignNo([\"<b>NO</b><br/>Examples:<br/>Public content,<br/>VA.gov pages\"]):::node-answer-secondary
+    SignNo --> WebView[\"<b>Open in WEBVIEW</b><br/>Stay within app\"]:::node-result-link
+" %}
+</div>
+
 ### Web
 
-* **Open links in the same window, with exceptions.** Links on VA.gov should open in a new tab only if clicking the link will cause the user to lose progress or data. This should be avoided when possible. In all other cases, links should open in the same window.<br>
-[Review guidance on link text in the content style guide for more information]({{ site.baseurl }}/content-style-guide/links)
+* **Open links in the same window, with exceptions.** Links on VA.gov should open in a new tab only if clicking the link will cause the user to lose progress or data. This should be avoided when possible. In all other cases, links should open in the same window.
+* **External links always open in a new tab.** All external links must use the external link variation and include "(opens in a new tab)" text for accessibility.
+* **Always notify users when opening in a new tab.** Add "(opens in a new tab)" text to the link. Don't use the new window icon unless there are space constraints.
 * **Use appropriate encodings for email and phone links.** Use mailto: for email links and tel: for phone links.
 
 #### Choosing between variations

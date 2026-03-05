@@ -148,6 +148,10 @@ these can be removed along with an update to how classes are generated in color-
      max-width: 528px;
    }
 
+   .mermaid-width-wide {
+     max-width: 800px;
+   }
+
 /* Container Layout */
 .mermaid-chart-container {
   margin: var(--vads-spacing-4) auto;
@@ -214,8 +218,11 @@ these can be removed along with an update to how classes are generated in color-
 /* Edge and Interaction Styling */
 /* Use a more specific selector and document why !important is needed: Mermaid sets border inline */
 .mermaid-chart-container .mermaid .edgeLabel {
-  background-color: transparent !important;
-  border: none !important; /* !important required to override Mermaid's inline border */
+  background-color: white !important; /* White background for readability on arrow lines */
+  border: 1px solid var(--vads-color-gray-light) !important; /* !important required to override Mermaid's inline border */
+  padding: 2px 4px !important; /* Add padding for better text spacing */
+  border-radius: 2px !important; /* Subtle rounded corners */
+  font-weight: 600 !important; /* Bold text for better visibility */
 }
 
 .mermaid-chart-container .mermaid .node {
