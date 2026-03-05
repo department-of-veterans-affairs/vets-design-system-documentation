@@ -10,6 +10,13 @@ on:
         required: false
         default: 'Manual deployment triggered'
 
+# Prevent concurrent deploys from racing to write to S3.
+# If a newer push arrives while a deploy is in progress, cancel the older one.
+# The latest commit always has the most up-to-date content.
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   deploy:
     strategy:
