@@ -188,25 +188,25 @@ flowchart TD
     
     %% Mobile App Flow
     Platform --> Mobile([\"<b>Mobile App</b>\"]):::node-answer-secondary
-    Mobile --> MobileLocation{\"<b>Where is the content?</b>\"}:::node-question
+    Mobile --> MobileType{\"<b>What type of link?</b>\"}:::node-question
     
-    MobileLocation --> InApp([\"<b>Within the app</b><br/>Examples:<br/>App pages, content\"]):::node-answer-primary
-    InApp --> ActionNeeded{\"<b>Is this an action link?</b>\"}:::node-question
+    MobileType --> ContentLink([\"<b>Content link</b><br/>Examples:<br/>Reading pages, viewing info\"]):::node-answer-primary
+    ContentLink --> ContentLocation{\"<b>Where is the content?</b>\"}:::node-question
     
-    ActionNeeded --> ActionNo([\"<b>NO</b><br/>Examples:<br/>Reading content,<br/>viewing details\"]):::node-answer-secondary
-    ActionNo --> FullPanel[\"<b>Open in FULL PANEL</b><br/>Stay within app\"]:::node-result-link
+    ContentLocation --> InApp([\"<b>Within the app</b>\"]):::node-answer-primary
+    InApp --> FullPanel[\"<b>Open in FULL PANEL</b><br/>Stay within app\"]:::node-result-link
     
-    ActionNeeded --> ActionYes([\"<b>YES</b><br/>Examples:<br/>Phone, calendar,<br/>directions\"]):::node-answer-primary
-    ActionYes --> Confirm[\"<b>Show CONFIRMATION</b><br/>Open relevant app<br/>with user consent\"]:::node-result-action
+    ContentLocation --> OutApp([\"<b>Outside the app</b>\"]):::node-answer-secondary
+    OutApp --> SignInNeeded{\"<b>Requires sign-in or<br/>is third party?</b>\"}:::node-question
     
-    MobileLocation --> OutApp([\"<b>Outside the app</b><br/>Examples:<br/>Websites, external content\"]):::node-answer-secondary
-    OutApp --> SignIn{\"<b>Requires sign-in or<br/>is third party?</b>\"}:::node-question
-    
-    SignIn --> SignYes([\"<b>YES</b><br/>Examples:<br/>Secure sites,<br/>third-party services\"]):::node-answer-primary
+    SignInNeeded --> SignYes([\"<b>YES</b>\"]):::node-answer-primary
     SignYes --> Browser[\"<b>Open in BROWSER</b><br/>Show alert warning<br/>User leaves app\"]:::node-result-action
     
-    SignIn --> SignNo([\"<b>NO</b><br/>Examples:<br/>Public content,<br/>VA.gov pages\"]):::node-answer-secondary
+    SignInNeeded --> SignNo([\"<b>NO</b>\"]):::node-answer-secondary
     SignNo --> WebView[\"<b>Open in WEBVIEW</b><br/>Stay within app\"]:::node-result-link
+    
+    MobileType --> ActionLink([\"<b>Action link</b><br/>Examples:<br/>Phone call, calendar event,<br/>directions, file download\"]):::node-answer-secondary
+    ActionLink --> ActionConfirm[\"<b>Show CONFIRMATION</b><br/>Then open relevant app<br/>(Phone, Calendar, Maps, etc.)\"]:::node-result-action
 " %}
 </div>
 
