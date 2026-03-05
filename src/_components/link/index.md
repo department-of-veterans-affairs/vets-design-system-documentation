@@ -156,19 +156,19 @@ If for some reason you do not use a link web-component links must meet the follo
 
 ## Behavior
 
-### When to open links in a new tab vs same window
+### When and how to open links
 
 <div class="sr-only">
-  If you use a screen reader: This flowchart helps determine link opening behavior based on platform (web or mobile app), destination (internal vs external), and whether clicking would cause users to lose progress or data. For web links: external links always open in new tabs; internal links open in same window unless they cause data loss. For mobile apps: content within the app stays in-app, external content may open in webview or browser depending on sign-in requirements, and action links open relevant native apps with confirmation messages.
+  If you use a screen reader: This flowchart helps determine how links should open based on platform and content. For web: external links open in new tabs, internal links open in same window unless they cause data loss. For mobile apps: content links open in full panels or webviews within the app, while action links open relevant native apps with confirmation messages.
 </div>
 
 <div class="mermaid-width-wide">
   {% include mermaid-chart.html 
    id="link-opening-decision-flowchart" 
-   caption="Decision flowchart for determining when links should open in the same window versus a new tab for both web and mobile platforms."
+   caption="Decision flowchart for determining how links should open across web and mobile app platforms."
    chart="
 flowchart TD
-    Start[\"<b>Should this link open in a new tab?</b>\"]:::node-start --> Platform{\"<b>What platform?</b>\"}:::node-question
+    Start[\"<b>How should this link open?</b>\"]:::node-start --> Platform{\"<b>What platform?</b>\"}:::node-question
     
     %% Web Flow
     Platform --> Web([\"<b>Web</b>\"]):::node-answer-primary
@@ -209,6 +209,71 @@ flowchart TD
     ActionLink --> ActionConfirm[\"<b>Show CONFIRMATION</b><br/>Then open relevant app<br/>(Phone, Calendar, Maps, etc.)\"]:::node-result-action
 " %}
 </div>
+
+<va-additional-info trigger="View text-based decision list for link opening behavior" id="link-opening-decision-list">
+
+<h4>How should this link open?</h4>
+
+<ul>
+<li><strong>What platform?</strong>
+    <ul>
+    <li><strong>Web</strong>
+      <ul>
+      <li><strong>Where does the link go?</strong>
+        <ul>
+        <li><strong>External site</strong> (Link to another website) → <strong>Open in NEW TAB</strong>
+          <ul>
+          <li>Add "(opens in a new tab)" text</li>
+          <li>Use external link variation</li>
+          </ul>
+        </li>
+        <li><strong>Internal VA.gov</strong> (Link to another VA.gov page)
+          <ul>
+          <li><strong>Will clicking cause user to lose progress or data?</strong>
+            <ul>
+            <li><strong>YES</strong> (Form in progress, unsaved data) → <strong>Open in NEW TAB</strong></li>
+            <li><strong>NO</strong> (General navigation, reading content) → <strong>Open in SAME WINDOW</strong></li>
+            </ul>
+          </li>
+          </ul>
+        </li>
+        </ul>
+      </li>
+      </ul>
+    </li>
+    <li><strong>Mobile App</strong>
+      <ul>
+      <li><strong>What type of link?</strong>
+        <ul>
+        <li><strong>Content link</strong> (Reading pages, viewing info)
+          <ul>
+          <li><strong>Where is the content?</strong>
+            <ul>
+            <li><strong>Within the app</strong> → <strong>Open in FULL PANEL</strong> (Stay within app)</li>
+            <li><strong>Outside the app</strong>
+              <ul>
+              <li><strong>Requires sign-in or is third party?</strong>
+                <ul>
+                <li><strong>YES</strong> → <strong>Open in BROWSER</strong> (Show alert warning, user leaves app)</li>
+                <li><strong>NO</strong> → <strong>Open in WEBVIEW</strong> (Stay within app)</li>
+                </ul>
+              </li>
+              </ul>
+            </li>
+            </ul>
+          </li>
+          </ul>
+        </li>
+        <li><strong>Action link</strong> (Phone call, calendar event, directions, file download) → <strong>Show CONFIRMATION</strong> then open relevant app (Phone, Calendar, Maps, etc.)</li>
+        </ul>
+      </li>
+      </ul>
+    </li>
+    </ul>
+</li>
+</ul>
+
+</va-additional-info>
 
 ### Web
 

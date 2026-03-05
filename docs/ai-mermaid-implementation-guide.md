@@ -20,6 +20,16 @@ This guide provides specific instructions for AI tools to efficiently implement 
 [MERMAID_FLOWCHART_SYNTAX]
 " %}
 </div>
+
+<va-additional-info trigger="View text-based decision list for [TOPIC]" id="[CHART_ID]-decision-list">
+
+<h4>[Main Question]</h4>
+
+<ul>
+[HIERARCHICAL_TEXT_DECISION_TREE]
+</ul>
+
+</va-additional-info>
 ```
 
 ## AI Prompts for Common Tasks
@@ -36,7 +46,8 @@ This guide provides specific instructions for AI tools to efficiently implement 
 6. Include concrete examples in answer nodes
 7. Use .mermaid-width-wide for complex charts
 8. Make text bold with <b> tags
-9. Add screen reader alternative text in .sr-only div above chart"
+9. Add screen reader alternative text in .sr-only div above chart
+10. Add text-based decision list using va-additional-info component after chart"
 ```
 
 ### Converting Existing Content to Chart
@@ -50,7 +61,8 @@ Follow VA Design System patterns:
 - Convert examples into :::node-answer nodes  
 - Use appropriate result node types based on action type
 - Merge duplicate outcomes into single result nodes
-- Use .mermaid-width-wide wrapper class"
+- Use .mermaid-width-wide wrapper class
+- Add text-based alternative using va-additional-info component"
 ```
 
 ### Updating Existing Chart
@@ -65,7 +77,8 @@ Apply these improvements:
 - Use consistent node type classes (:::node-start, :::node-question, etc.)
 - Merge any duplicate result outcomes
 - Ensure proper width class for chart complexity
-- Add accessible alternative text"
+- Add accessible alternative text
+- Add text-based decision list using va-additional-info component"
 ```
 
 ## Decision Tree for Chart Width
@@ -90,6 +103,7 @@ Before implementation, verify:
 - [ ] Screen reader alternative provided
 - [ ] Chart ID is unique and descriptive
 - [ ] Caption describes chart purpose
+- [ ] Text-based decision list added using va-additional-info component
 
 ## Common Patterns by Use Case
 

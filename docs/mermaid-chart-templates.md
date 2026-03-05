@@ -85,10 +85,31 @@ Systematically replace all bracketed variables with specific content.
 - Use `.mermaid-width-wide` for complex charts (> 3 decision points)  
 - Always include screen reader alternative text
 
-### Step 4: Test and Refine
+### Step 4: Add Accessibility
+Add text-based decision list using va-additional-info component after the chart:
+
+```html
+<va-additional-info trigger="View text-based decision list for [TOPIC]" id="[CHART_ID]-decision-list">
+
+<h4>[Main Question]</h4>
+
+<ul>
+<li><strong>[First Decision]</strong>
+    <ul>
+    <li><strong>[Option 1]</strong> ([Specific examples]) → <strong>[Final Outcome 1]</strong></li>
+    <li><strong>[Option 2]</strong> ([Specific examples]) → <strong>[Final Outcome 2]</strong></li>
+    </ul>
+</li>
+</ul>
+
+</va-additional-info>
+```
+
+### Step 5: Test and Refine
 - Build locally to verify rendering
 - Check for merged duplicate outcomes
 - Ensure logical flow and clear examples
+- Verify text alternative covers all decision paths
 
 ## Copy-Paste Ready Example
 

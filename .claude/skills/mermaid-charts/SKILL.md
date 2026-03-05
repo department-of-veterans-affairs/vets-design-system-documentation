@@ -25,7 +25,8 @@ This skill enables efficient creation and standardization of Mermaid decision fl
 6. Ensure all primary text uses `<b>` tags
 7. Merge duplicate result outcomes
 8. Include screen reader alternative text
-9. Test build locally
+9. Add text-based decision list using va-additional-info component
+10. Test build locally
 
 ## Standard pattern
 ```html
@@ -42,6 +43,21 @@ flowchart TD
     Option2 --> Result2[\"<b>Outcome B</b><br/>Additional details\"]:::node-result-link
 " %}
 </div>
+
+<va-additional-info trigger="View text-based decision list for [topic]" id="chart-id-decision-list">
+
+<h4>Main question</h4>
+
+<ul>
+<li><strong>Decision point?</strong>
+    <ul>
+    <li><strong>Option 1</strong> (Example A, Example B) → <strong>Outcome A</strong></li>
+    <li><strong>Option 2</strong> (Example C, Example D) → <strong>Outcome B</strong></li>
+    </ul>
+</li>
+</ul>
+
+</va-additional-info>
 ```
 
 ## Templates available
@@ -56,3 +72,4 @@ flowchart TD
 - Examples make options concrete and clear
 - Screen reader users can understand the decision process
 - Chart width is appropriate for content complexity
+- Text-based alternative provided using va-additional-info component
