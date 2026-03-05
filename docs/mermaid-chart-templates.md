@@ -105,6 +105,8 @@ Add text-based decision list using va-additional-info component after the chart:
 </va-additional-info>
 ```
 
+**Critical**: The text alternative must exactly mirror the visual chart - same decision paths, questions, examples, outcomes, and capitalization.
+
 ### Step 5: Test and Refine
 - Build locally to verify rendering
 - Check for merged duplicate outcomes

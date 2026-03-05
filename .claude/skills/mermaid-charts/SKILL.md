@@ -73,3 +73,4 @@ flowchart TD
 - Screen reader users can understand the decision process
 - Chart width is appropriate for content complexity
 - Text-based alternative provided using va-additional-info component
+- **Text alternative exactly matches visual chart** (same paths, questions, examples, outcomes, capitalization)

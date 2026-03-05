@@ -47,7 +47,8 @@ This guide provides specific instructions for AI tools to efficiently implement 
 7. Use .mermaid-width-wide for complex charts
 8. Make text bold with <b> tags
 9. Add screen reader alternative text in .sr-only div above chart
-10. Add text-based decision list using va-additional-info component after chart"
+10. Add text-based decision list using va-additional-info component after chart
+11. **Ensure text alternative exactly mirrors visual chart** (same decision paths, questions, examples, outcomes, and capitalization)"
 ```
 
 ### Converting Existing Content to Chart
@@ -104,6 +105,7 @@ Before implementation, verify:
 - [ ] Chart ID is unique and descriptive
 - [ ] Caption describes chart purpose
 - [ ] Text-based decision list added using va-additional-info component
+- [ ] **Text alternative exactly matches visual chart** (same paths, questions, examples, outcomes, capitalization)
 
 ## Common Patterns by Use Case
 

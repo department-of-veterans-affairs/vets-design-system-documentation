@@ -254,7 +254,7 @@ flowchart TD
               <ul>
               <li><strong>Requires sign-in or is third party?</strong>
                 <ul>
-                <li><strong>YES</strong> → <strong>Open in BROWSER</strong> (Show alert warning, user leaves app)</li>
+                <li><strong>YES</strong> → <strong>Open in BROWSER</strong> (Show alert warning, User leaves app)</li>
                 <li><strong>NO</strong> → <strong>Open in WEBVIEW</strong> (Stay within app)</li>
                 </ul>
               </li>
