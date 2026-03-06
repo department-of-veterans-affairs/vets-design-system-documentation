@@ -6,7 +6,7 @@
 {% comment %}
   Capture github URL (to convert to markdown-type link)
 {% endcomment %}
-{% assign reGithubUrl = '(https?:\/\/(www\.)?github\.com(?:\/.*)?)' %}
+{% assign reGithubUrl = '(https?:\/\/(www\.)?github\.com[^\s\]\)\|<]+)' %}
 
 {% comment %}
   Capture any issue numbers in titles (to make them links)
@@ -14,9 +14,9 @@
 {% assign reIssueNumbersInTitle = '(#(\d+))' %}
 
 {% comment %}
-  Capture PR number from URL (to create a link to the PR)
+  Capture markdown links where link text is a raw PR URL and convert text to #PR
 {% endcomment %}
-{% assign rePrUrl = '\[https?:\/\/(www\.)?github\.com(?:\/.*)?pull\/(\d+)\s?\]' %}
+{% assign rePrUrl = '\[(https?:\/\/(www\.)?github\.com[^\]\s]*\/pull\/(\d+))\]\(\1\)' %}
 
 {% comment %}
   Capture h2-h5 headings (to +1 heading level so the HTML stays semantically structured with our page)
@@ -29,6 +29,13 @@
 {% assign reUsernames = '\s(@(\S+))\s' %}
 
 {% comment %}
+  Capture markdown table starts and ensure a blank line before the header row.
+  Some generated release notes place a table immediately after a heading, and
+  kramdown requires a blank line to parse it as a table.
+{% endcomment %}
+{% assign reLineBreakBeforeTable = '(\r\n)(\|[^\r\n]+\|\r\n\|[\s:\-\|]+\|)' %}
+
+{% comment %}
   Trim number of releases to show
 {% endcomment %}
 {% assign recentReleases = include.json | slice: 0, include.num_recent_releases %}
@@ -37,14 +44,17 @@
 <va-card class="vads-u-margin-bottom--2">
   <span class="usa-label">{{ release.name }}</span>
   <div class="vads-u-font-size--xl vads-u-font-weight--bold vads-u-font-family--serif">{{ release.published_at | date: "%B %-d, %Y" }}</div>
+  <div class="release-notes-markdown">
   {{ release.body
     | regexreplace: reLineBreakBeforeHeader, '\1\1#'
+    | regexreplace: reLineBreakBeforeTable, '\1\1\2'
     | regexreplace: reGithubUrl, '[\1](\1)'
-    | regexreplace: reIssueNumbersInTitle, '[\1](https:/github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/\2)'
-    | regexreplace: rePrUrl, '[\#\2]'
+    | regexreplace: reIssueNumbersInTitle, '[\1](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/\2)'
+    | regexreplace: rePrUrl, '[\#\3](\1)'
     | regexreplace: reHeadingLevels, '\1# '
     | regexreplace: reUsernames, ' [\1](https://github.com/\2) '
     | markdownify
   }}
+  </div>
 </va-card>
 {% endfor %}
