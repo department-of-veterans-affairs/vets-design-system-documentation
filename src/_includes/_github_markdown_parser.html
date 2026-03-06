@@ -44,7 +44,7 @@
 <va-card class="vads-u-margin-bottom--2">
   <span class="usa-label">{{ release.name }}</span>
   <div class="vads-u-font-size--xl vads-u-font-weight--bold vads-u-font-family--serif">{{ release.published_at | date: "%B %-d, %Y" }}</div>
-  <div class="release-notes-markdown">
+  <div class="markdown">
   {{ release.body
     | regexreplace: reLineBreakBeforeHeader, '\1\1#'
     | regexreplace: reLineBreakBeforeTable, '\1\1\2'
