@@ -7,7 +7,7 @@ Reusable templates for common decision tree patterns in VA Design System documen
 **Use case**: Yes/No decisions with two clear outcomes
 
 ```
-Start["<b>[MAIN_QUESTION]</b>"]:::node-start --> Decision{"<b>[DECISION_POINT]</b>"}:::node-question
+Start[<b>[MAIN_QUESTION]</b>]:::node-start --> Decision{<b>[DECISION_POINT]</b>}:::node-question
 
 Decision --> Yes(["<b>YES</b><br/>[YES_EXAMPLES]<br/>[YES_CONTEXT]"]):::node-answer-primary  
 Decision --> No(["<b>NO</b><br/>[NO_EXAMPLES]<br/>[NO_CONTEXT]"]):::node-answer-secondary
@@ -58,19 +58,19 @@ MobileOption2 --> MobileResult2["<b>[MOBILE_RESULT_2]</b><br/>[MOBILE_DETAILS_2]
 **Use case**: Multiple decision points in sequence
 
 ```
-Start["<b>[MAIN_QUESTION]</b>"]:::node-start --> Step1{"<b>[STEP_1_QUESTION]</b>"}:::node-question
+Start[<b>[MAIN_QUESTION]</b>]:::node-start --> Step1{<b>[STEP_1_QUESTION]</b>}:::node-question
 
-Step1 --> Step1Option1(["<b>[STEP_1_OPTION_1]</b><br/>Examples:<br/>[STEP_1_EXAMPLES_1]"]):::node-answer-primary
-Step1 --> Step1Option2(["<b>[STEP_1_OPTION_2]</b><br/>Examples:<br/>[STEP_1_EXAMPLES_2]"]):::node-answer-secondary
+Step1 --> Step1Option1([<b>[STEP_1_OPTION_1]</b><br/>[STEP_1_EXAMPLES_1]]):::node-answer-primary
+Step1 --> Step1Option2([<b>[STEP_1_OPTION_2]</b><br/>[STEP_1_EXAMPLES_2]]):::node-answer-secondary
 
-Step1Option1 --> Step2{"<b>[STEP_2_QUESTION]</b>"}:::node-question
-Step1Option2 --> EarlyResult["<b>[EARLY_RESULT]</b><br/>[EARLY_DETAILS]"]:::node-result-[TYPE]
+Step1Option1 --> Step2{<b>[STEP_2_QUESTION]</b>}:::node-question
+Step1Option2 --> EarlyResult[<b>[EARLY_RESULT]</b><br/>[EARLY_DETAILS]]:::node-result-[TYPE]
 
-Step2 --> Step2Option1(["<b>[STEP_2_OPTION_1]</b><br/>Examples:<br/>[STEP_2_EXAMPLES_1]"]):::node-answer-primary  
-Step2 --> Step2Option2(["<b>[STEP_2_OPTION_2]</b><br/>Examples:<br/>[STEP_2_EXAMPLES_2]"]):::node-answer-secondary
+Step2 --> Step2Option1([<b>[STEP_2_OPTION_1]</b><br/>[STEP_2_EXAMPLES_1]]):::node-answer-primary  
+Step2 --> Step2Option2([<b>[STEP_2_OPTION_2]</b><br/>[STEP_2_EXAMPLES_2]]):::node-answer-secondary
 
-Step2Option1 --> FinalResult1["<b>[FINAL_RESULT_1]</b><br/>[FINAL_DETAILS_1]"]:::node-result-[TYPE]
-Step2Option2 --> FinalResult2["<b>[FINAL_RESULT_2]</b><br/>[FINAL_DETAILS_2]"]:::node-result-[TYPE]
+Step2Option1 --> FinalResult1[<b>[FINAL_RESULT_1]</b><br/>[FINAL_DETAILS_1]]:::node-result-[TYPE]
+Step2Option2 --> FinalResult2[<b>[FINAL_RESULT_2]</b><br/>[FINAL_DETAILS_2]]:::node-result-[TYPE]
 ```
 
 ## AI Implementation Guide

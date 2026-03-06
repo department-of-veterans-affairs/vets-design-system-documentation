@@ -16,9 +16,10 @@ This guide provides specific instructions for AI tools to efficiently implement 
   {% include mermaid-chart.html 
    id="[unique-chart-id]" 
    caption="[Descriptive caption for accessibility]"
-   chart="
-[MERMAID_FLOWCHART_SYNTAX]
-" %}
+   chart="flowchart TD
+    Start[<b>[MAIN_QUESTION]</b>]:::node-start --> Question{<b>[DECISION_POINT]</b>}:::node-question
+    Question --> Answer[<b>[ANSWER_OPTION]</b><br/>[EXAMPLE_CONTEXT]]:::node-answer-primary
+    Answer --> Result[<b>[FINAL_OUTCOME]</b><br/>[IMPLEMENTATION_DETAILS]]:::node-result-link" %}
 </div>
 
 <va-additional-info trigger="View text-based decision list for [TOPIC]" id="[CHART_ID]-decision-list">
@@ -32,11 +33,16 @@ This guide provides specific instructions for AI tools to efficiently implement 
 </va-additional-info>
 ```
 
+### Bold Tag Syntax
+- Use `<b>` tags inside node brackets without additional quotes: `[<b>Text</b>]`
+- Avoid wrapping entire node content in quotes when using HTML tags
+- Place bold tags around primary text for better readability
+
 ### Node Content Guidelines
 - Keep nodes clean and concise
 - Include specific details and examples directly without "Example:" or "Examples:" labels
 - Use concrete, actionable descriptions
-- Bold primary text with `<b>` tags
+- Bold primary text with `<b>` tags (place inside node brackets without extra quotes)
 - Add helpful context using line breaks (`<br/>`)
 
 ## AI Prompts for Common Tasks
