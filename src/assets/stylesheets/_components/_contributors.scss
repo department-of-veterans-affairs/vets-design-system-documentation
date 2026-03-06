@@ -1,3 +1,6 @@
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/functions' as *;
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/tokens/scss/variables' as *;
+
 // Contributors to a component or pattern
 .site-component-contributors {
   margin-bottom: units(3);

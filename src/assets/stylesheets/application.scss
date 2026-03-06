@@ -3,67 +3,67 @@ front-matter: yay
 ---
 
 // CSS-Library
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/tokens/scss/variables.scss';
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/tokens/css/variables';
-
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/_mixins.scss';
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/site/_m-crisis-line.scss';
-
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/_mixins.scss' as *;
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/site/_m-crisis-line.scss';
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/tokens/scss/variables' as *;
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/formation-overrides/variables' as *;
 // needs to be imported before core
-@import '_components/accordions';
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/core';
+@use '_components/accordions';
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/core';
 
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/utilities';
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/functions';
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/utilities';
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/functions' as *;
 
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-action-link';
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-additional-info';
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-alert';
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-breadcrumbs';
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-button';
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-dropdown';
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-eyebrow';
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-form-elements';
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-hub-page-link-list';
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-loading-indicator';
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-megamenu';
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-modal';
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-nav-linklist';
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-nav-sidebar';
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-overlay';
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-print';
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-process-list';
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/mobile-typography';
-@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/shame';
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-action-link';
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-additional-info';
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-alert';
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-breadcrumbs';
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-button';
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-dropdown';
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-eyebrow';
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-form-elements';
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-hub-page-link-list';
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-loading-indicator';
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-megamenu';
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-modal';
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-nav-linklist';
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-nav-sidebar';
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-overlay';
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-print';
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-process-list';
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/mobile-typography';
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/shame';
 
 // Site CSS
-@import '_settings/variables';
-@import '_helpers/clip';
-@import '_helpers/media';
-@import '_base/base';
-@import '_layout/site-content';
-@import '_layout/content-wrappers';
-@import '_layout/metrics';
-@import '_components/anchors';
-@import '_components/badge';
-@import '_components/code-snippets';
-@import '_components/component-label';
-@import '_components/component-checklist';
-@import '_components/do-dont';
-@import '_components/example';
-@import '_components/fields';
-@import '_components/footer';
-@import '_components/header';
-@import '_components/hero';
-@import '_components/in-this-section';
-@import '_components/iframe-preview';
-@import '_components/link';
-@import '_components/mobile-nav';
-@import '_components/resource-links';
-@import '_components/contributors';
-@import '_components/search-results';
-@import '_components/showcase';
-@import '_components/sidenav';
+@use '_settings/variables';
+@use '_helpers/clip';
+@use '_helpers/media';
+@use '_base/base';
+@use '_layout/site-content';
+@use '_layout/content-wrappers';
+@use '_layout/metrics';
+@use '_components/anchors';
+@use '_components/badge';
+@use '_components/code-snippets';
+@use '_components/component-label';
+@use '_components/component-checklist';
+@use '_components/do-dont';
+@use '_components/example';
+@use '_components/fields';
+@use '_components/footer';
+@use '_components/header';
+@use '_components/hero';
+@use '_components/in-this-section';
+@use '_components/iframe-preview';
+@use '_components/link';
+@use '_components/mobile-nav';
+@use '_components/resource-links';
+@use '_components/contributors';
+@use '_components/search-results';
+@use '_components/showcase';
+@use '_components/sidenav';
+
+@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/tokens/css/variables';
 
 .usa-skipnav {
   background: transparent;
