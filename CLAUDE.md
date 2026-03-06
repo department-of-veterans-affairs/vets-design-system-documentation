@@ -35,3 +35,18 @@ Ensures documentation follows VADS templates and style standards when writing co
 5. Provides required Jekyll include syntax
 
 See `.claude/skills/writing-vads-guidance/SKILL.md` for full details.
+
+### `/merge-approved-prs` - Batch Merge Approved PRs
+Merges all open PRs you have approved, one by one, after updating each branch from main and waiting for CI checks to pass.
+
+**Trigger by saying:** "merge my approved PRs", "merge-approved-prs", or "batch merge approved PRs"
+
+**What it does:**
+1. Finds all open, non-draft PRs where your most recent review is APPROVED
+2. For each: updates the branch from main, waits for all CI checks to pass, then merges
+3. Updates your local main branch with `git pull`
+4. Reports how many were merged, any failures, and remaining PR stats (awaiting review / draft)
+
+**Run directly:** `bash scripts/merge-approved-prs.sh [--squash] [--dry-run] [--no-delete-branch]`
+
+See `.claude/skills/merge-approved-prs/SKILL.md` for full details.
