@@ -53,7 +53,7 @@ anchors:
 
 {% include storybook-preview.html story="components-va-link--download" link_text="download va-link" height="50px" %}
 
-#### External
+#### External {#external}
 
 {% include storybook-preview.html story="components-va-link--external" link_text="external va-link" height="50px" %}
 
@@ -275,8 +275,8 @@ If for some reason you do not use a link web-component links must meet the follo
 
 ### Web
 
-* **Open internal VA.gov links in the same window, with exceptions.** All internal links should open in the same window.Only open internal links in a new tab if clicking the link would cause the user to lose progress or unsaved data.
-* **External links always open in a new tab.** All external links must use the external link variation and include "(opens in a new tab)" text for accessibility.
+* **Open internal VA.gov links in the same window, with exceptions.** All internal links should open in the same window. Only open internal links in a new tab if clicking the link would cause the user to lose progress or unsaved data.
+* **External links always open in a new tab.** All external links or links that would cause data loss must use the [external link variation](#external) and include "(opens in a new tab)" text for accessibility.
 * **Always notify users when opening in a new tab.** Add "(opens in a new tab)" text to the link. Don't use the new window icon unless there are space constraints.
 * **Use appropriate encodings for email and phone links.** Use mailto: for email links and tel: for phone links.
 
