@@ -10,15 +10,15 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 4.3.0"
 
-# This allows us to use jekyll-sass-converter, which uses Dart Sass as a compiler
+# This allows jekyll-sass-converter v3+ to use Dart Sass as a compiler.
 # https://github.com/jekyll/jekyll-sass-converter#usage
 gem 'sass-embedded', '~> 1.63.0'
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"
 
-# Pin sass converter to avoid Sass module conflicts
-gem "jekyll-sass-converter", "~> 2.2.0"
+# Use Dart Sass-compatible converter (v3+); v2 uses LibSass and fails on module syntax.
+gem "jekyll-sass-converter", "~> 3.0"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
