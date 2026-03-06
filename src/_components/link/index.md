@@ -53,7 +53,7 @@ anchors:
 
 {% include storybook-preview.html story="components-va-link--download" link_text="download va-link" height="50px" %}
 
-#### External
+#### External {#external}
 
 {% include storybook-preview.html story="components-va-link--external" link_text="external va-link" height="50px" %}
 
@@ -156,10 +156,128 @@ If for some reason you do not use a link web-component links must meet the follo
 
 ## Behavior
 
+### When and how to open links
+
+<div class="sr-only">
+  If you use a screen reader: This flowchart helps determine how links should open based on platform and content. For web: external links open in new tabs, internal links open in same window unless they cause data loss. For mobile apps: content links open in full panels or webviews within the app, while action links open relevant native apps with confirmation messages.
+</div>
+
+<div class="mermaid-width-wide">
+  {% include mermaid-chart.html 
+   id="link-opening-decision-flowchart" 
+   caption="Decision flowchart for determining how links should open across web and mobile app platforms."
+   chart="flowchart TD
+    Start[<b>How should this link open?</b>]:::node-start --> Platform{<b>What platform?</b>}:::node-question
+    
+    %% Web Flow
+    Platform --> Web[<b>Web</b>]:::node-answer-primary
+    Web --> WebDest{<b>Where does the link go?</b>}:::node-question
+    
+    WebDest --> External[<b>External site</b><br/>Link to another website]:::node-answer-primary
+    External --> NewTab1[<b>Open in NEW TAB</b><br/>Add opens in new tab text<br/>Use external link variation]:::node-result-button
+    
+    WebDest --> Internal[<b>Internal VA.gov</b><br/>Link to another VA.gov page]:::node-answer-secondary
+    Internal --> DataLoss{<b>Will clicking cause user to<br/>lose progress or data?</b>}:::node-question
+    
+    DataLoss --> LossYes[<b>YES</b><br/>Form in progress,<br/>unsaved data]:::node-answer-primary
+    LossYes --> NewTab1
+    
+    DataLoss --> LossNo[<b>NO</b><br/>General navigation,<br/>reading content]:::node-answer-secondary
+    LossNo --> SameWindow[<b>Open in SAME WINDOW</b>]:::node-result-link
+    
+    %% Mobile App Flow  
+    Platform --> Mobile[<b>Mobile App</b>]:::node-answer-secondary
+    Mobile --> MobileType{<b>What type of link?</b>}:::node-question
+    
+    MobileType --> ContentLink[<b>Content link</b><br/>Reading pages, viewing info]:::node-answer-primary
+    ContentLink --> ContentLocation{<b>Where is the content?</b>}:::node-question
+    
+    ContentLocation --> InApp[<b>Within the app</b>]:::node-answer-primary
+    InApp --> FullPanel[<b>Open in FULL PANEL</b><br/>Stay within app]:::node-result-link
+    
+    ContentLocation --> OutApp[<b>Outside the app</b>]:::node-answer-secondary
+    OutApp --> SignInNeeded{<b>Requires sign-in or<br/>is third party?</b>}:::node-question
+    
+    SignInNeeded --> SignYes[<b>YES</b>]:::node-answer-primary
+    SignYes --> Browser[<b>Open in BROWSER</b><br/>Show alert warning<br/>User leaves app]:::node-result-action
+    
+    SignInNeeded --> SignNo[<b>NO</b>]:::node-answer-secondary
+    SignNo --> WebView[<b>Open in WEBVIEW</b><br/>Stay within app]:::node-result-link
+    
+    MobileType --> ActionLink[<b>Action link</b><br/>Phone call, calendar event,<br/>directions, file download]:::node-answer-secondary
+    ActionLink --> ActionConfirm[<b>Show CONFIRMATION</b><br/>Then open relevant app<br/>Phone, Calendar, Maps, etc.]:::node-result-action" %}
+</div>
+
+<va-additional-info trigger="View text-based decision list for link opening behavior" id="link-opening-decision-list">
+
+<h4>How should this link open?</h4>
+
+<ul>
+<li><strong>What platform?</strong>
+    <ul>
+    <li><strong>Web</strong>
+      <ul>
+      <li><strong>Where does the link go?</strong>
+        <ul>
+        <li><strong>External site</strong> (Link to another website) → <strong>Open in NEW TAB</strong>
+          <ul>
+          <li>Add "(opens in a new tab)" text</li>
+          <li>Use external link variation</li>
+          </ul>
+        </li>
+        <li><strong>Internal VA.gov</strong> (Link to another VA.gov page)
+          <ul>
+          <li><strong>Will clicking cause user to lose progress or data?</strong>
+            <ul>
+            <li><strong>YES</strong> (Form in progress, unsaved data) → <strong>Open in NEW TAB</strong></li>
+            <li><strong>NO</strong> (General navigation, reading content) → <strong>Open in SAME WINDOW</strong></li>
+            </ul>
+          </li>
+          </ul>
+        </li>
+        </ul>
+      </li>
+      </ul>
+    </li>
+    <li><strong>Mobile App</strong>
+      <ul>
+      <li><strong>What type of link?</strong>
+        <ul>
+        <li><strong>Content link</strong> (Reading pages, viewing info)
+          <ul>
+          <li><strong>Where is the content?</strong>
+            <ul>
+            <li><strong>Within the app</strong> → <strong>Open in FULL PANEL</strong> (Stay within app)</li>
+            <li><strong>Outside the app</strong>
+              <ul>
+              <li><strong>Requires sign-in or is third party?</strong>
+                <ul>
+                <li><strong>YES</strong> → <strong>Open in BROWSER</strong> (Show alert warning, User leaves app)</li>
+                <li><strong>NO</strong> → <strong>Open in WEBVIEW</strong> (Stay within app)</li>
+                </ul>
+              </li>
+              </ul>
+            </li>
+            </ul>
+          </li>
+          </ul>
+        </li>
+        <li><strong>Action link</strong> (Phone call, calendar event, directions, file download) → <strong>Show CONFIRMATION</strong> then open relevant app (Phone, Calendar, Maps, etc.)</li>
+        </ul>
+      </li>
+      </ul>
+    </li>
+    </ul>
+</li>
+</ul>
+
+</va-additional-info>
+
 ### Web
 
-* **Open links in the same window, with exceptions.** Links on VA.gov should open in a new tab only if clicking the link will cause the user to lose progress or data. This should be avoided when possible. In all other cases, links should open in the same window.<br>
-[Review guidance on link text in the content style guide for more information]({{ site.baseurl }}/content-style-guide/links)
+* **Open internal VA.gov links in the same window, with exceptions.** All internal links should open in the same window. Only open internal links in a new tab if clicking the link would cause the user to lose progress or unsaved data.
+* **External links always open in a new tab.** All external links or links that would cause data loss must use the [external link variation](#external) and include "(opens in a new tab)" text for accessibility.
+* **Always notify users when opening in a new tab.** Add "(opens in a new tab)" text to the link. Don't use the new window icon unless there are space constraints.
 * **Use appropriate encodings for email and phone links.** Use mailto: for email links and tel: for phone links.
 
 #### Choosing between variations
