@@ -236,6 +236,7 @@ jobs:
       contents: read
       issues: read
       pull-requests: read
+      discussions: read
     concurrency:
       group: "gh-aw-copilot-${{ github.workflow }}"
     env:
@@ -621,7 +622,7 @@ jobs:
                 "env": {
                   "GITHUB_PERSONAL_ACCESS_TOKEN": "\${GITHUB_MCP_SERVER_TOKEN}",
                   "GITHUB_READ_ONLY": "1",
-                  "GITHUB_TOOLSETS": "context,repos,issues,pull_requests"
+                  "GITHUB_TOOLSETS": "context,repos,issues,pull_requests,discussions"
                 }
               },
               "safeoutputs": {

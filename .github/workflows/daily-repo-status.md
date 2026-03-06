@@ -13,15 +13,17 @@ permissions:
   contents: read
   issues: read
   pull-requests: read
+  discussions: read
 
 network: defaults
 
 tools:
   github:
-    # If in a public repo, setting `lockdown: false` allows
-    # reading issues, pull requests and comments from 3rd-parties
-    # If in a private repo this has no particular effect.
-    lockdown: false
+    # Keep lockdown enabled to avoid reading untrusted 3rd-party
+    # content (e.g., comments on public PRs) in this agentic workflow.
+    # This still allows access to first-party repository data needed
+    # to generate the daily status report.
+    lockdown: true
 
 safe-outputs:
   mentions: false
