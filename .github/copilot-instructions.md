@@ -112,7 +112,7 @@ When reviewing a PR that modifies files in `src/_components/`, `src/_patterns/`,
 
 ### Sentence length and structure
 
-- Flag sentences longer than ~30 words and suggest breaking them up.
+- Flag sentences longer than 25 words and suggest breaking them up.
 - Prefer simple sentences over complex compound structures.
 - Lead with the main point — don't bury it in a clause.
 
