@@ -90,9 +90,11 @@ When reviewing a PR that modifies files in `src/_components/`, `src/_patterns/`,
 
 ### Numbers
 
-- Spell out numbers one through ten. Use numerals for 11 and above.
-- Use numerals for all numbers in technical contexts (version numbers, pixel values, percentages, measurements).
+- Use numerals for all numbers, including 1 to 10.
+- Spell out "one" in expressions like "one-on-one", "one-time", and "one of the reasons...".
+- Spell out ordinal numbers up to "tenth" unless they're part of a series or range.
 - Don't start a sentence with a numeral — spell it out or rewrite the sentence.
+- Use numerals for all numbers in technical contexts (version numbers, pixel values, percentages, measurements).
 
 ### Punctuation
 
