@@ -8,11 +8,11 @@
   Original: @import "~uswds/src/stylesheets/components/accordions";
   ***THIS IS USWDS v1***
 */
-@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/tokens/scss/variables.scss' as vars;
-@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/formation-overrides/variables' as fo_vars;
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/tokens/scss/variables.scss' as *;
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/formation-overrides/variables' as *;
 
 // Variables
-$accordion-border: 3px solid vars.$vads-color-base-lightest;
+$accordion-border: 3px solid $vads-color-base-lightest;
 
 // Accordion Styles
 
@@ -33,15 +33,15 @@ $v-padding: 15px;
 
 @mixin accordion-list-styles {
   @include unstyled-list;
-  color: vars.$vads-color-black;
+  color: $vads-color-black;
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
 @mixin accordion-list-item-styles {
-  background-color: vars.$vads-color-base-lightest;
-  font-family: vars.$font-family-sans;
+  background-color: $vads-color-base-lightest;
+  font-family: $font-family-sans;
   list-style: none;
   margin-bottom: 5px;
   width: 100%;
@@ -51,7 +51,7 @@ $v-padding: 15px;
   background-color: transparent;
   border: 0;
   border-radius: 0;
-  font-weight: vars.$font-weight-normal;
+  font-weight: $font-weight-normal;
   margin: 0;
   padding: 0;
   text-align: left;
@@ -76,24 +76,24 @@ $v-padding: 15px;
 // scss-lint:disable PropertyCount
 @mixin accordion-button-styles {
   @include button-unstyled;
-  background-color: vars.$vads-color-base-lightest;
+  background-color: $vads-color-base-lightest;
   background-image: url(~@department-of-veterans-affairs/css-library/dist/img/minus.png);
   background-image: url(~@department-of-veterans-affairs/css-library/dist/img/minus.svg);
   background-position: right $h-padding center;
   background-repeat: no-repeat;
   background-size: $icon-size;
-  color: fo_vars.$color-base;
+  color: $color-base;
   cursor: pointer;
   display: inline-block;
-  font-family: vars.$font-family-sans;
-  font-weight: fo_vars.$font-bold;
+  font-family: $font-family-sans;
+  font-weight: $font-bold;
   margin: 0;
   padding: $v-padding ($h-padding * 2 + $icon-size) $v-padding $h-padding;
   width: 100%;
 
   &:hover {
-    background-color: fo_vars.$color-gray-lighter;
-    color: fo_vars.$color-base;
+    background-color: $color-gray-lighter;
+    color: $color-base;
   }
 
   h1,
@@ -171,7 +171,7 @@ $v-padding: 15px;
 }
 
 .usa-accordion-content {
-  background-color: vars.$vads-color-white;
+  background-color: $vads-color-white;
   overflow: auto;
   padding: 15px 20px;
 
