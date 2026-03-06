@@ -179,10 +179,13 @@ If for some reason you do not use a link web-component links must meet the follo
     WebDest --> Internal[<b>Internal VA.gov</b><br/>Link to another VA.gov page]:::node-answer-secondary
     Internal --> DataLoss{<b>Will clicking cause user to<br/>lose progress or data?</b>}:::node-question
     
-    DataLoss --> LossYes[<b>YES</b><br/>Form in progress,<br/>unsaved data]:::node-answer-primary
+    DataLoss --> Yes[<b>YES</b>]:::node-answer-primary
+    DataLoss --> No[<b>NO</b>]:::node-answer-secondary
+    
+    Yes --> LossYes[<b>Form in progress,<br/>unsaved data</b>]:::node-answer-primary
     LossYes --> NewTab1
     
-    DataLoss --> LossNo[<b>NO</b><br/>General navigation,<br/>reading content]:::node-answer-secondary
+    No --> LossNo[<b>General navigation,<br/>reading content</b>]:::node-answer-secondary
     LossNo --> SameWindow[<b>Open in SAME WINDOW</b>]:::node-result-link
     
     %% Mobile App Flow  
@@ -198,11 +201,11 @@ If for some reason you do not use a link web-component links must meet the follo
     ContentLocation --> OutApp[<b>Outside the app</b>]:::node-answer-secondary
     OutApp --> SignInNeeded{<b>Requires sign-in or<br/>is third party?</b>}:::node-question
     
-    SignInNeeded --> SignYes[<b>YES</b>]:::node-answer-primary
-    SignYes --> Browser[<b>Open in BROWSER</b><br/>Show alert warning<br/>User leaves app]:::node-result-action
+    SignInNeeded --> Yes2[<b>YES</b>]:::node-answer-primary
+    SignInNeeded --> No2[<b>NO</b>]:::node-answer-secondary
     
-    SignInNeeded --> SignNo[<b>NO</b>]:::node-answer-secondary
-    SignNo --> WebView[<b>Open in WEBVIEW</b><br/>Stay within app]:::node-result-link
+    Yes2 --> Browser[<b>Open in BROWSER</b><br/>Show alert warning<br/>User leaves app]:::node-result-action
+    No2 --> WebView[<b>Open in WEBVIEW</b><br/>Stay within app]:::node-result-link
     
     MobileType --> ActionLink[<b>Action link</b><br/>Phone call, calendar event,<br/>directions, file download]:::node-answer-secondary
     ActionLink --> ActionConfirm[<b>Show CONFIRMATION</b><br/>Then open relevant app<br/>Phone, Calendar, Maps, etc.]:::node-result-action" %}
