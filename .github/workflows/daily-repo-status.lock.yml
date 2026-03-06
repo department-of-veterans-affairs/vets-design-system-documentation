@@ -46,7 +46,7 @@ run-name: "Daily Repo Status"
 
 jobs:
   activation:
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     outputs:
