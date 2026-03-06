@@ -24,7 +24,7 @@
   <!-- Web component setup -->
   <link rel="stylesheet" type="text/css" href="{{ '/assets/stylesheets/component-library.css' | append: cacheBust }}" />
   <script type="module">
-    import { defineCustomElements } from "/vendor/javascripts/component-library/loader/index.es2017.js";
+    import { defineCustomElements } from "{{ site.baseurl }}/vendor/javascripts/component-library/loader/index.es2017.js";
     defineCustomElements();
 </script>
 
@@ -42,8 +42,8 @@
 
   {% if page.uses_mermaid %}
   <!-- Mermaid Charts -->
-  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js" 
-          integrity="sha384-WmdflGW9aGfoBdHc4rRyWzYuAjEmDwMdGdiPNacbwfGKxBW/SO6guzuQ76qjnSlr" 
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"
+          integrity="sha384-WmdflGW9aGfoBdHc4rRyWzYuAjEmDwMdGdiPNacbwfGKxBW/SO6guzuQ76qjnSlr"
           crossorigin="anonymous"></script>
   <script>
     mermaid.initialize({
@@ -60,22 +60,22 @@
           overlay.style.display = 'none';
         });
       }
-      
+
       mermaid.run().then(() => {
         const MAX_WIDTH = 528;
-        
+
         document.querySelectorAll('.mermaid svg').forEach(svg => {
           const currentWidth = svg.getAttribute('width') || svg.viewBox?.baseVal?.width || MAX_WIDTH;
           const targetWidth = Math.min(currentWidth, MAX_WIDTH);
           const widthPx = targetWidth + 'px';
-          
+
           // Apply responsive styling - use max-width for mobile scaling
           Object.assign(svg.style, {
             width: '100%',
             height: 'auto',
             maxWidth: widthPx
           });
-          
+
           // Resize mermaid container to be responsive
           const container = svg.closest('.mermaid');
           if (container) {
@@ -85,13 +85,13 @@
             });
           }
         });
-        
+
         // Hide loading overlays after charts are rendered
         hideLoadingOverlays();
       }).catch((error) => {
         // Hide loading overlays even if rendering fails
         hideLoadingOverlays();
-        
+
         // Log error for debugging
         console.error('Mermaid chart rendering failed:', error);
       });

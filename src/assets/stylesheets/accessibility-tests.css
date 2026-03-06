@@ -1,0 +1,85 @@
+/* Accessibility Test Display Styles */
+/* Used in component test results and test library pages */
+
+.a11y-test-list {
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+}
+
+.a11y-test-list > li {
+  border-bottom: 1px solid var(--vads-color-base-light);
+  padding: 1.5rem 0 1rem;
+  max-width: 100%;
+}
+
+.a11y-test-list > li:first-of-type {
+  padding-top: 0;
+}
+
+.a11y-test-list > li:last-of-type {
+  border: none;
+  padding-bottom: 0;
+}
+
+.a11y-test-list li > p {
+  margin-block: 0;
+  max-width: 77ch;
+}
+
+.a11y-test-details-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.a11y-test-details-list li {
+  margin-right: 1rem;
+}
+
+/* Nested subtests */
+.a11y-test-list .a11y-test-subtest-list {
+  list-style: none;
+  margin: 1rem 0 0 1rem;
+  padding: 0;
+  border-left: 3px solid var(--vads-color-base-lighter);
+}
+
+.a11y-test-list .a11y-test-subtest-list > li {
+  border-bottom: none;
+  padding: 1rem 0 1rem 1rem;
+  border-top: 1px solid var(--vads-color-base-lightest);
+}
+
+.a11y-test-list .a11y-test-subtest-list > li:first-child {
+  border-top: none;
+  padding-top: 0.5rem;
+}
+
+/* WCAG criterion headers */
+h3.a11y-wcag-criterion-header {
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-bottom: 2px solid var(--vads-color-primary);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+h3.a11y-wcag-criterion-header a {
+  text-decoration: none;
+  color: var(--vads-color-base-darkest);
+}
+
+h3.a11y-wcag-criterion-header a:hover {
+  text-decoration: underline;
+  color: var(--vads-color-primary);
+}
+
+/* Accessibility test results table styles */
+.a11y-test-list va-table-row {
+  display: none;
+}
