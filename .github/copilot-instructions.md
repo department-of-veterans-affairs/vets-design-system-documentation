@@ -71,9 +71,12 @@ Use the [PR template](PULL_REQUEST_TEMPLATE.md). Follow these conventions:
 - Do not change component status values without explicit approval
 - When writing multi-line content to `gh` commands, always write to a temp file and use `--body-file` (see AGENTS.md for details)
 
-## Chatmodes
+## PR Review: Guidance Content Changes
 
-See `.github/chatmodes/4.1.chatmode.md` for the custom chatmode configuration.
+Content review standards for PRs modifying `src/_components/`, `src/_patterns/`, `src/_templates/`, and `src/_content-style-guide/` are defined in scoped instruction files in `.github/instructions/`:
+
+- `component-guidance.instructions.md` — writing and style rules for `src/_components/**`
+- `component-guidance-structure.instructions.md` — required sections, Jekyll includes, and image conventions for `src/_components/**`
 
 ## Playwright MCP Setup for Government Environments
 
