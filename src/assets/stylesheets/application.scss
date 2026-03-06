@@ -3,12 +3,10 @@ front-matter: yay
 ---
 
 // CSS-Library
-@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/tokens/scss/variables.scss' as *;
 @use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/_mixins.scss' as *;
 @use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/site/_m-crisis-line.scss';
 @use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/tokens/scss/variables' as *;
 @use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/formation-overrides/variables' as *;
-
 // needs to be imported before core
 @use '_components/accordions';
 @use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/core';
