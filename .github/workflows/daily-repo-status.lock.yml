@@ -1049,7 +1049,7 @@ jobs:
   safe_outputs:
     needs: agent
     if: ((!cancelled()) && (needs.agent.result != 'skipped')) && (needs.agent.outputs.detection_success == 'true')
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       issues: write
