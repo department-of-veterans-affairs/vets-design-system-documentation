@@ -1,3 +1,6 @@
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/_mixins.scss' as *;
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/tokens/scss/variables' as *;
+
 .clip-bottom {
   overflow: hidden;
   -webkit-clip-path: polygon(100% 0px, 100% 93.60%, 25.38vw 97.39%, 0px 94.85%, 0px 0px);

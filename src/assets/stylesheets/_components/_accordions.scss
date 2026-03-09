@@ -8,6 +8,8 @@
   Original: @import "~uswds/src/stylesheets/components/accordions";
   ***THIS IS USWDS v1***
 */
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/tokens/scss/variables.scss' as *;
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/formation-overrides/variables' as *;
 
 // Variables
 $accordion-border: 3px solid $vads-color-base-lightest;

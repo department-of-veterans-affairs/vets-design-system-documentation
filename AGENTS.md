@@ -362,6 +362,13 @@ Provides explicit instructions for answering questions about designing and build
 
 See `.claude/skills/accessibility/SKILL.md` for full details.
 
+### Batch PR Merging
+Merges all open PRs you have approved, one by one, after updating each branch from main and waiting for CI checks to pass. Finds all open, non-draft PRs where your most recent review is APPROVED, updates each branch, waits for CI to pass, then merges. Reports merged count, failures, and remaining PR stats (awaiting review / draft).
+
+**Run directly:** `bash scripts/merge-approved-prs.sh [--squash] [--dry-run] [--no-delete-branch]`
+
+See `.claude/skills/merge-approved-prs/SKILL.md` for full details.
+
 ## Support & Resources
 
 ### Internal Contacts
