@@ -1,3 +1,7 @@
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/functions' as *;
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/tokens/scss/variables' as *;
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/formation-overrides/variables' as *;
+
 .site-code-snippet__button,
 .site-code-snippet__link,
 .site-code-snippet__link:visited {
