@@ -177,7 +177,7 @@ If for some reason you do not use a link web-component links must meet the follo
     External --> NewTab1[<b>Open in NEW TAB</b><br/>Add opens in new tab text<br/>Use external link variation]:::node-result-button
     
     WebDest --> Internal[<b>Internal VA.gov</b><br/>Link to another VA.gov page]:::node-answer-secondary
-    Internal --> DataLoss{<b>Will clicking cause user to<br/>lose progress or data?</b>}:::node-question
+    Internal --> DataLoss{<b>Will clicking cause the user to<br/>lose progress or data?</b>}:::node-question
     
     DataLoss --> LossYes[<b>YES</b><br/>Form in progress,<br/>unsaved data]:::node-answer-primary
     LossYes --> NewTab1
