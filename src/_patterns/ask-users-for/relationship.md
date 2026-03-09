@@ -66,11 +66,9 @@ Use the [VADS templates (Patterns & Forms) for Relationship to Veteran in Figma]
 
 ## Adoption
 
-**4 of 55 VA.gov forms (7%) use this pattern.**
-
-<va-accordion>
+<va-accordion open-single>
   <va-accordion-item id="adoption-relationship-to-veteran">
-    <h3 slot="headline">Forms using this pattern</h3>
+    <h3 slot="headline">Forms using this pattern: 4 of 55 (7%)</h3>
     <ul>
       <li>21-0966 - Intent to file a claim</li>
       <li>21-4138 - Statement in support of claim</li>

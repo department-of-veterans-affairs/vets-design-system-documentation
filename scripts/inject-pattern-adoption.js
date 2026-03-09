@@ -47,7 +47,6 @@ function generateAdoptionSection(pattern) {
   const { usage_count, total_forms, compliance_percentage, forms_using_pattern, pattern_name } = pattern;
 
   let section = '\n## Adoption\n\n';
-  section += `**${usage_count} of ${total_forms} VA.gov forms (${compliance_percentage}%) use this pattern.**\n\n`;
 
   if (usage_count === 0) {
     section += 'No forms currently use this pattern.\n';
@@ -58,9 +57,9 @@ function generateAdoptionSection(pattern) {
     .map(f => `      <li>${f.product_name}</li>`)
     .join('\n');
 
-  section += `<va-accordion>\n`;
+  section += `<va-accordion open-single>\n`;
   section += `  <va-accordion-item id="adoption-${slugify(pattern_name)}">\n`;
-  section += `    <h3 slot="headline">Forms using this pattern</h3>\n`;
+  section += `    <h3 slot="headline">Forms using this pattern: ${usage_count} of ${total_forms} (${compliance_percentage}%)</h3>\n`;
   section += `    <ul>\n`;
   section += formItems + '\n';
   section += `    </ul>\n`;

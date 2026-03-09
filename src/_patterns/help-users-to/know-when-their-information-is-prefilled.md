@@ -99,11 +99,9 @@ The Authenticated Experience Design Patterns team conducted [user research](http
 
 ## Adoption
 
-**2 of 55 VA.gov forms (4%) use this pattern.**
-
-<va-accordion>
+<va-accordion open-single>
   <va-accordion-item id="adoption-know-when-their-information-is-prefilled">
-    <h3 slot="headline">Forms using this pattern</h3>
+    <h3 slot="headline">Forms using this pattern: 2 of 55 (4%)</h3>
     <ul>
       <li>21-4138 - Statement in support of claim</li>
       <li>22-10272 - Request for Reimbursement of Preparatory (Prep) Course for Licensing or Certification Test</li>

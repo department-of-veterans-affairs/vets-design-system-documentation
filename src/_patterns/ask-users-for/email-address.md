@@ -83,11 +83,9 @@ Use the [VADS templates (Patterns & Forms) for Names in Figma]({{ page.figma-lin
 
 ## Adoption
 
-**13 of 55 VA.gov forms (24%) use this pattern.**
-
-<va-accordion>
+<va-accordion open-single>
   <va-accordion-item id="adoption-email-address">
-    <h3 slot="headline">Forms using this pattern</h3>
+    <h3 slot="headline">Forms using this pattern: 13 of 55 (24%)</h3>
     <ul>
       <li>20-10206 - Privacy Act</li>
       <li>20-10207 - Request for priority processing</li>

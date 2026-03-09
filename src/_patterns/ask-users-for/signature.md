@@ -106,11 +106,9 @@ This guide is for software engineers generating a PDF for submission to the <a h
 
 ## Adoption
 
-**12 of 55 VA.gov forms (22%) use this pattern.**
-
-<va-accordion>
+<va-accordion open-single>
   <va-accordion-item id="adoption-signature">
-    <h3 slot="headline">Forms using this pattern</h3>
+    <h3 slot="headline">Forms using this pattern: 12 of 55 (22%)</h3>
     <ul>
       <li>20-10206 - Privacy Act</li>
       <li>20-10207 - Request for priority processing</li>

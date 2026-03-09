@@ -128,11 +128,9 @@ In [2024, VFF/MY VA Form Status Research](https://github.com/department-of-veter
 
 ## Adoption
 
-**18 of 55 VA.gov forms (33%) use this pattern.**
-
-<va-accordion>
+<va-accordion open-single>
   <va-accordion-item id="adoption-keep-a-record-of-submitted-information">
-    <h3 slot="headline">Forms using this pattern</h3>
+    <h3 slot="headline">Forms using this pattern: 18 of 55 (33%)</h3>
     <ul>
       <li>10182 - Request a Board Appeal</li>
       <li>20-0995 - Supplemental Claim Form</li>

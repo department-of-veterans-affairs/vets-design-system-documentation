@@ -98,11 +98,9 @@ Use the [VADS templates (Patterns & Forms) for Phone numbers in Figma]({{ page.f
 
 ## Adoption
 
-**17 of 55 VA.gov forms (31%) use this pattern.**
-
-<va-accordion>
+<va-accordion open-single>
   <va-accordion-item id="adoption-phone-numbers">
-    <h3 slot="headline">Forms using this pattern</h3>
+    <h3 slot="headline">Forms using this pattern: 17 of 55 (31%)</h3>
     <ul>
       <li>20-0995 - Supplemental Claim Form</li>
       <li>20-10206 - Privacy Act</li>
