@@ -6,7 +6,7 @@ sidebar: false
 on-this-page: false
 ---
 
-<va-tabs initially-selected=0 label="Updates">
+<va-tabs initially-selected="0" label="Updates">
   <va-tab-item button-text="Guidance Site" target-id="panel-1"></va-tab-item>
   <va-tab-panel panel-id="panel-1">
     {% include _github_markdown_parser.html json=site.data.site_releases num_recent_releases=3 %}
@@ -27,7 +27,7 @@ on-this-page: false
 
   <va-tab-item button-text="Figma Component Library" target-id="panel-3"></va-tab-item>
   <va-tab-panel panel-id="panel-3">
-    <iframe src="{{ site.figma_changelog_embed_url }}" style="width:100%; height:640px; max-height:80vh"></iframe>
+    <iframe src="{{ site.figma_changelog_embed_url }}" title="Figma Component Library changelog" style="width:100%; height:640px; max-height:80vh"></iframe>
     <va-link-action
       href="{{ site.figma_changelog_direct_url }}"
       text="Open Component Library changelog in Figma"

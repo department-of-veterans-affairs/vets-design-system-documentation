@@ -5,8 +5,9 @@
 
 {% comment %}
   Capture github URL (to convert to markdown-type link)
+  Uses a negative lookbehind to skip URLs already inside a markdown link's [] or ()
 {% endcomment %}
-{% assign reGithubUrl = '(https?:\/\/(www\.)?github\.com[^\s\]\)\|<]+)' %}
+{% assign reGithubUrl = '(?<![(\[])(https?:\/\/(www\.)?github\.com[^\s\]\)\|<]+)' %}
 
 {% comment %}
   Capture any issue numbers in titles (to make them links)
@@ -49,9 +50,10 @@
     | strip_html
     | regexreplace: reLineBreakBeforeHeader, '\1\1#'
     | regexreplace: reLineBreakBeforeTable, '\1\1\2'
+    | regexreplace: rePrUrl, '[#\3](\1)'
     | regexreplace: reGithubUrl, '[\1](\1)'
+    | regexreplace: rePrUrl, '[#\3](\1)'
     | regexreplace: reIssueNumbersInTitle, '[\1](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/\2)'
-    | regexreplace: rePrUrl, '[\#\3](\1)'
     | regexreplace: reHeadingLevels, '\1# '
     | regexreplace: reUsernames, ' [\1](https://github.com/\2) '
     | markdownify
