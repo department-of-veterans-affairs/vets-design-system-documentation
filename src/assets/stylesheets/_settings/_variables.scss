@@ -1,3 +1,5 @@
+@use 'sass:math';
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/tokens/scss/variables' as *;
 /*
 ===========================================
 Additional Breakpoints
@@ -8,8 +10,8 @@ $default-feature: min-width;
 $nav-width: 840px;
 
 @mixin flexbox-col($size) {
-  flex: 0 0 percentage($size / $grid-columns);
-  max-width: percentage($size / $grid-columns); // IE10+ and Firefox
+  flex: 0 0 math.percentage(math.div($size, $grid-columns));
+  max-width: math.percentage(math.div($size, $grid-columns)); // IE10+ and Firefox
 }
 
 @mixin equal-width-flexbox-col() {
@@ -54,7 +56,7 @@ More info: https://spec.fm/specifics/8-pt-grid
 $base-unit: 8px;
 
 // Variables based on base units
-$units-0_5:   calc($base-unit / 2);
+$units-0_5:   math.div($base-unit, 2);
 $units-1:     $base-unit;
 $units-1_5:   $base-unit * 1.5;
 $units-2:     $base-unit * 2;
