@@ -103,3 +103,27 @@ This guide is for software engineers generating a PDF for submission to the <a h
 ### Page templates available for this pattern
 
 * [VADS Templates](https://www.figma.com/file/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates---SANDBOX-USE-WITH-CAUTION?type=design&node-id=112%3A11074&mode=design&t=jGEZxdu9cs3idXUa-1) contains a page template for the Review page which contains this pattern.
+
+## Adoption
+
+**12 of 55 VA.gov forms (22%) use this pattern.**
+
+<va-accordion>
+  <va-accordion-item id="adoption-signature">
+    <h3 slot="headline">Forms using this pattern</h3>
+    <ul>
+      <li>20-10206 - Privacy Act</li>
+      <li>20-10207 - Request for priority processing</li>
+      <li>21-0538 - Dependency Verification</li>
+      <li>21-0845 - Authorization to Disclose Personal Information to a Third Party</li>
+      <li>21-0966 - Intent to file a claim</li>
+      <li>21-0972 - Sign VA claim forms as an alternate signer</li>
+      <li>21-10210 - Lay or Witness Statement</li>
+      <li>21-4138 - Statement in support of claim</li>
+      <li>21-4142 - Authorization to Disclose Information to the VA</li>
+      <li>21P-0847 - Request to be substitute claimant</li>
+      <li>26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant</li>
+      <li>40-0247 Presidential Memorial Certificate</li>
+    </ul>
+  </va-accordion-item>
+</va-accordion>

@@ -5,6 +5,7 @@ permalink: /patterns/help-users-to/know-when-their-information-is-prefilled
 sub-section: help-users-to
 intro-text: Follow this pattern to help people know when their information will be prefilled for them in an application, form, or tool.
 figma-link: https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates--Patterns--and-Forms?m=auto&node-id=13451-91712&t=eoaTAXv2PGPTU6mE-1
+code-link: https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/patterns/prefill/index.js
 research-title: Help users know when their info is prefilled
 status: use-deployed
 anchors:
@@ -95,3 +96,17 @@ Directions for updating information that can’t be updated online vary by form 
 
 ## Research findings
 The Authenticated Experience Design Patterns team conducted [user research](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design-and-research/2024-07-Research-Initiative-One-Prefill/Prefill%20Research%20Report%2009_2024.md) in mid 2024 to gather validation about this pattern. The pattern was [further tested](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design-and-research/2024-09-Research-Initiative-Two-Update-Prefill/Update%20Prefill%20Research%20Report.md) as part of a late 2024 study by the same team.
+
+## Adoption
+
+**2 of 55 VA.gov forms (4%) use this pattern.**
+
+<va-accordion>
+  <va-accordion-item id="adoption-know-when-their-information-is-prefilled">
+    <h3 slot="headline">Forms using this pattern</h3>
+    <ul>
+      <li>21-4138 - Statement in support of claim</li>
+      <li>22-10272 - Request for Reimbursement of Preparatory (Prep) Course for Licensing or Certification Test</li>
+    </ul>
+  </va-accordion-item>
+</va-accordion>

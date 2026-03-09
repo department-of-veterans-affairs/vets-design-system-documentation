@@ -77,6 +77,12 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.VADS_WORKFLOWS }}
 
+      - name: Inject adoption sections into pattern files
+        run: |
+          echo "Injecting adoption sections into pattern markdown files..."
+          node scripts/inject-pattern-adoption.js
+          echo "Adoption section injection completed"
+
       - name: Verify generated data files
         run: |
           echo "Checking for generated files..."
@@ -104,6 +110,7 @@ jobs:
           git add src/assets/data/metrics/pattern-adherence.json
           git add src/assets/data/metrics/pattern-adherence-report.md
           git add src/_data/metrics/pattern-adherence.json
+          git add src/_patterns/
 
           if git diff --staged --quiet; then
             echo "changes=false" >> $GITHUB_OUTPUT

@@ -74,3 +74,8 @@ Any content rules or recommendations for the pattern.
 ## Accessibility considerations
 
 Calling out specific accessibility concerns and considerations.
+
+## Adoption
+
+Adoption data is generated automatically and updated weekly.
+Run `node scripts/inject-pattern-adoption.js` to refresh locally.

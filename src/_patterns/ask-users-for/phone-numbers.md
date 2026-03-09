@@ -95,3 +95,32 @@ Use the [VADS templates (Patterns & Forms) for Phone numbers in Figma]({{ page.f
 ### Labels, error messages, and hint text
 
 {% include _field-labels.html labels=site.data.content.patterns.ask-users-for.phone-numbers %}
+
+## Adoption
+
+**17 of 55 VA.gov forms (31%) use this pattern.**
+
+<va-accordion>
+  <va-accordion-item id="adoption-phone-numbers">
+    <h3 slot="headline">Forms using this pattern</h3>
+    <ul>
+      <li>20-0995 - Supplemental Claim Form</li>
+      <li>20-10206 - Privacy Act</li>
+      <li>20-10207 - Request for priority processing</li>
+      <li>21-0538 - Dependency Verification</li>
+      <li>21-0779 - Request for Nursing Home Information (Aid & Attendance)</li>
+      <li>21-0845 - Authorization to Disclose Personal Information to a Third Party</li>
+      <li>21-0966 - Intent to file a claim</li>
+      <li>21-0972 - Sign VA claim forms as an alternate signer</li>
+      <li>21-10210 - Lay or Witness Statement</li>
+      <li>21-2680 - Examination for Housebound Status or Permanent Need for Regular Aid & Attendance</li>
+      <li>21-4138 - Statement in support of claim</li>
+      <li>21-4142 - Authorization to Disclose Information to the VA</li>
+      <li>21P-0847 - Request to be substitute claimant</li>
+      <li>26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant</li>
+      <li>40-0247 Presidential Memorial Certificate</li>
+      <li>Benefits Delivery at Discharge</li>
+      <li>Higher Level Review</li>
+    </ul>
+  </va-accordion-item>
+</va-accordion>

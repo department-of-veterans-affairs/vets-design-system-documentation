@@ -7,7 +7,7 @@ intro-text: "This pattern provides the user with a printable record of their sub
 status: use-deployed
 research-title: Help users to keep a record of submitted info
 figma-link: https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?node-id=2988-66786&t=4uWczdHlyBNGV123-1
-code-link: https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/components/ConfirmationView/README.md
+code-link: https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/components/ConfirmationView/index.js
 anchors:
   - anchor: Usage
   - anchor: Examples
@@ -125,3 +125,33 @@ Review the USWDS [Keep a record pattern](https://designsystem.digital.gov/patter
 
 In [2024, VFF/MY VA Form Status Research](https://github.com/department-of-veterans-affairs/VA.gov-team-forms/blob/main/Product/2024-05%20VFF%20and%20My%20VA%20Form%20Submission%20Research/Research/Research%20Findings%20for%202024-05%20VFF%20and%20My%20VA%20Form%20Submission%20Research%20Study.md) found that a majority of Veterans indicated they would download a copy of their form submission. But, they were equally confused about the expiration date next to the PDF in My VA.
   - The majority of participants expressed a desire to download a copy of their form submission (10 of 12), and 5 of 12 participants also indicated they would want to print a copy of their form submission. With the option to download a PDF copy of the form they submitted, there was uncertainty about the significance of the date in the associated link. In My VA, the download link will only be available for 60 days due to data security concerns.
+
+## Adoption
+
+**18 of 55 VA.gov forms (33%) use this pattern.**
+
+<va-accordion>
+  <va-accordion-item id="adoption-keep-a-record-of-submitted-information">
+    <h3 slot="headline">Forms using this pattern</h3>
+    <ul>
+      <li>10182 - Request a Board Appeal</li>
+      <li>20-0995 - Supplemental Claim Form</li>
+      <li>20-10206 - Privacy Act</li>
+      <li>20-10207 - Request for priority processing</li>
+      <li>21-0538 - Dependency Verification</li>
+      <li>21-0779 - Request for Nursing Home Information (Aid & Attendance)</li>
+      <li>21-0845 - Authorization to Disclose Personal Information to a Third Party</li>
+      <li>21-0966 - Intent to file a claim</li>
+      <li>21-0972 - Sign VA claim forms as an alternate signer</li>
+      <li>21-10210 - Lay or Witness Statement</li>
+      <li>21-2680 - Examination for Housebound Status or Permanent Need for Regular Aid & Attendance</li>
+      <li>21-4138 - Statement in support of claim</li>
+      <li>21-4142 - Authorization to Disclose Information to the VA</li>
+      <li>21P-0847 - Request to be substitute claimant</li>
+      <li>22-10272 - Request for Reimbursement of Preparatory (Prep) Course for Licensing or Certification Test</li>
+      <li>26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant</li>
+      <li>Benefits Delivery at Discharge</li>
+      <li>Higher Level Review</li>
+    </ul>
+  </va-accordion-item>
+</va-accordion>

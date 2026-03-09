@@ -63,3 +63,19 @@ Use the [VADS templates (Patterns & Forms) for Relationship to Veteran in Figma]
 
 **When a user doesn’t select a relationship...**
 : Say "Please select your relationship to the Veteran"
+
+## Adoption
+
+**4 of 55 VA.gov forms (7%) use this pattern.**
+
+<va-accordion>
+  <va-accordion-item id="adoption-relationship-to-veteran">
+    <h3 slot="headline">Forms using this pattern</h3>
+    <ul>
+      <li>21-0966 - Intent to file a claim</li>
+      <li>21-4138 - Statement in support of claim</li>
+      <li>21-4142 - Authorization to Disclose Information to the VA</li>
+      <li>21P-0847 - Request to be substitute claimant</li>
+    </ul>
+  </va-accordion-item>
+</va-accordion>
