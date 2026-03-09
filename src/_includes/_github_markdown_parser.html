@@ -46,6 +46,7 @@
   <div class="vads-u-font-size--xl vads-u-font-weight--bold vads-u-font-family--serif">{{ release.published_at | date: "%B %-d, %Y" }}</div>
   <div class="markdown">
   {{ release.body
+    | strip_html
     | regexreplace: reLineBreakBeforeHeader, '\1\1#'
     | regexreplace: reLineBreakBeforeTable, '\1\1\2'
     | regexreplace: reGithubUrl, '[\1](\1)'
