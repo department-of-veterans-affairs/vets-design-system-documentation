@@ -227,7 +227,7 @@ If for some reason you do not use a link web-component links must meet the follo
         </li>
         <li><strong>Internal VA.gov</strong> (Link to another VA.gov page)
           <ul>
-          <li><strong>Will clicking cause user to lose progress or data?</strong>
+          <li><strong>Will clicking cause the user to lose progress or data?</strong>
             <ul>
             <li><strong>YES</strong> (Form in progress, unsaved data) → <strong>Open in NEW TAB</strong></li>
             <li><strong>NO</strong> (General navigation, reading content) → <strong>Open in SAME WINDOW</strong></li>
