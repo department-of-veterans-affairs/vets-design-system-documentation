@@ -96,15 +96,3 @@ Directions for updating information that can’t be updated online vary by form 
 
 ## Research findings
 The Authenticated Experience Design Patterns team conducted [user research](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design-and-research/2024-07-Research-Initiative-One-Prefill/Prefill%20Research%20Report%2009_2024.md) in mid 2024 to gather validation about this pattern. The pattern was [further tested](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design-and-research/2024-09-Research-Initiative-Two-Update-Prefill/Update%20Prefill%20Research%20Report.md) as part of a late 2024 study by the same team.
-
-## Adoption
-
-<va-accordion open-single>
-  <va-accordion-item id="adoption-know-when-their-information-is-prefilled">
-    <h3 slot="headline">Forms using this pattern: 2 of 55 (4%)</h3>
-    <ul>
-      <li>21-4138 - Statement in support of claim</li>
-      <li>22-10272 - Request for Reimbursement of Preparatory (Prep) Course for Licensing or Certification Test</li>
-    </ul>
-  </va-accordion-item>
-</va-accordion>

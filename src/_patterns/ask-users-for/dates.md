@@ -96,27 +96,3 @@ Use the [VADS templates (Patterns & Forms) for Dates in Figma]({{ page.figma-lin
 ### Labels, error messages, and hint text
 
 {% include _field-labels.html labels=site.data.content.patterns.ask-users-for.dates %}
-
-## Adoption
-
-<va-accordion open-single>
-  <va-accordion-item id="adoption-dates">
-    <h3 slot="headline">Forms using this pattern: 14 of 55 (25%)</h3>
-    <ul>
-      <li>20-10206 - Privacy Act</li>
-      <li>20-10207 - Request for priority processing</li>
-      <li>21-0538 - Dependency Verification</li>
-      <li>21-0779 - Request for Nursing Home Information (Aid & Attendance)</li>
-      <li>21-0845 - Authorization to Disclose Personal Information to a Third Party</li>
-      <li>21-0966 - Intent to file a claim</li>
-      <li>21-10210 - Lay or Witness Statement</li>
-      <li>21-2680 - Examination for Housebound Status or Permanent Need for Regular Aid & Attendance</li>
-      <li>21-4138 - Statement in support of claim</li>
-      <li>21-4142 - Authorization to Disclose Information to the VA</li>
-      <li>26-1880 - Request a VA home loan Certificate of Eligibility (COE)</li>
-      <li>26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant</li>
-      <li>40-0247 Presidential Memorial Certificate</li>
-      <li>Benefits Delivery at Discharge</li>
-    </ul>
-  </va-accordion-item>
-</va-accordion>
