@@ -787,6 +787,33 @@ async function buildPatternAdherence() {
 }
 
 /**
+ * Save adoption data as a permalink-keyed JSON file for Jekyll/Liquid consumption.
+ * Keying by permalink avoids looping in Liquid: site.data.metrics.pattern_adoption[page.permalink]
+ */
+async function saveAdoptionData(data) {
+  const adoptionByPermalink = {};
+
+  for (const pattern of data.patterns) {
+    if (!pattern.pattern_permalink) continue;
+
+    adoptionByPermalink[pattern.pattern_permalink] = {
+      pattern_name: pattern.pattern_name,
+      usage_count: pattern.usage_count,
+      total_forms: pattern.total_forms,
+      compliance_percentage: pattern.compliance_percentage,
+      forms_using_pattern: pattern.forms_using_pattern.map(f => ({
+        product_name: f.product_name
+      }))
+    };
+  }
+
+  const adoptionFile = path.join(JEKYLL_DATA_DIR, 'pattern_adoption.json');
+  await fs.writeFile(adoptionFile, JSON.stringify(adoptionByPermalink, null, 2), 'utf8');
+
+  console.log(`   ${adoptionFile}`);
+}
+
+/**
  * Save adherence data as JSON
  */
 async function saveAdherenceData(data) {
@@ -805,6 +832,8 @@ async function saveAdherenceData(data) {
   console.log(`\n✅ Saved pattern adherence data to:`);
   console.log(`   ${outputFile}`);
   console.log(`   ${jekyllFile}`);
+
+  await saveAdoptionData(data);
 }
 
 /**
@@ -976,5 +1005,6 @@ module.exports = {
   generateMarkdownReport,
   saveMarkdownReport,
   saveAdherenceData,
+  saveAdoptionData,
   main
 };

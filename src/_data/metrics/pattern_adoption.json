@@ -1,0 +1,439 @@
+{
+  "/patterns/ask-users-for/addresses": {
+    "pattern_name": "Addresses",
+    "usage_count": 16,
+    "total_forms": 55,
+    "compliance_percentage": 29,
+    "forms_using_pattern": [
+      {
+        "product_name": "20-10206 - Privacy Act"
+      },
+      {
+        "product_name": "20-10207 - Request for priority processing"
+      },
+      {
+        "product_name": "21-0538 - Dependency Verification"
+      },
+      {
+        "product_name": "21-0779 - Request for Nursing Home Information (Aid & Attendance)"
+      },
+      {
+        "product_name": "21-0845 - Authorization to Disclose Personal Information to a Third Party"
+      },
+      {
+        "product_name": "21-0966 - Intent to file a claim"
+      },
+      {
+        "product_name": "21-0972 - Sign VA claim forms as an alternate signer"
+      },
+      {
+        "product_name": "21-10210 - Lay or Witness Statement"
+      },
+      {
+        "product_name": "21-2680 - Examination for Housebound Status or Permanent Need for Regular Aid & Attendance"
+      },
+      {
+        "product_name": "21-4138 - Statement in support of claim"
+      },
+      {
+        "product_name": "21-4142 - Authorization to Disclose Information to the VA"
+      },
+      {
+        "product_name": "21P-0847 - Request to be substitute claimant"
+      },
+      {
+        "product_name": "26-1880 - Request a VA home loan Certificate of Eligibility (COE)"
+      },
+      {
+        "product_name": "26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant"
+      },
+      {
+        "product_name": "40-0247 Presidential Memorial Certificate"
+      },
+      {
+        "product_name": "Benefits Delivery at Discharge"
+      }
+    ]
+  },
+  "/patterns/ask-users-for/dates": {
+    "pattern_name": "Dates",
+    "usage_count": 14,
+    "total_forms": 55,
+    "compliance_percentage": 25,
+    "forms_using_pattern": [
+      {
+        "product_name": "20-10206 - Privacy Act"
+      },
+      {
+        "product_name": "20-10207 - Request for priority processing"
+      },
+      {
+        "product_name": "21-0538 - Dependency Verification"
+      },
+      {
+        "product_name": "21-0779 - Request for Nursing Home Information (Aid & Attendance)"
+      },
+      {
+        "product_name": "21-0845 - Authorization to Disclose Personal Information to a Third Party"
+      },
+      {
+        "product_name": "21-0966 - Intent to file a claim"
+      },
+      {
+        "product_name": "21-10210 - Lay or Witness Statement"
+      },
+      {
+        "product_name": "21-2680 - Examination for Housebound Status or Permanent Need for Regular Aid & Attendance"
+      },
+      {
+        "product_name": "21-4138 - Statement in support of claim"
+      },
+      {
+        "product_name": "21-4142 - Authorization to Disclose Information to the VA"
+      },
+      {
+        "product_name": "26-1880 - Request a VA home loan Certificate of Eligibility (COE)"
+      },
+      {
+        "product_name": "26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant"
+      },
+      {
+        "product_name": "40-0247 Presidential Memorial Certificate"
+      },
+      {
+        "product_name": "Benefits Delivery at Discharge"
+      }
+    ]
+  },
+  "/patterns/ask-users-for/email-address": {
+    "pattern_name": "Email address",
+    "usage_count": 13,
+    "total_forms": 55,
+    "compliance_percentage": 24,
+    "forms_using_pattern": [
+      {
+        "product_name": "20-10206 - Privacy Act"
+      },
+      {
+        "product_name": "20-10207 - Request for priority processing"
+      },
+      {
+        "product_name": "21-0538 - Dependency Verification"
+      },
+      {
+        "product_name": "21-0966 - Intent to file a claim"
+      },
+      {
+        "product_name": "21-0972 - Sign VA claim forms as an alternate signer"
+      },
+      {
+        "product_name": "21-10210 - Lay or Witness Statement"
+      },
+      {
+        "product_name": "21-2680 - Examination for Housebound Status or Permanent Need for Regular Aid & Attendance"
+      },
+      {
+        "product_name": "21-4138 - Statement in support of claim"
+      },
+      {
+        "product_name": "21-4142 - Authorization to Disclose Information to the VA"
+      },
+      {
+        "product_name": "26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant"
+      },
+      {
+        "product_name": "40-0247 Presidential Memorial Certificate"
+      },
+      {
+        "product_name": "Benefits Delivery at Discharge"
+      },
+      {
+        "product_name": "Higher Level Review"
+      }
+    ]
+  },
+  "/patterns/ask-users-for/names": {
+    "pattern_name": "Names",
+    "usage_count": 9,
+    "total_forms": 55,
+    "compliance_percentage": 16,
+    "forms_using_pattern": [
+      {
+        "product_name": "20-10206 - Privacy Act"
+      },
+      {
+        "product_name": "21-0538 - Dependency Verification"
+      },
+      {
+        "product_name": "21-0779 - Request for Nursing Home Information (Aid & Attendance)"
+      },
+      {
+        "product_name": "21-0845 - Authorization to Disclose Personal Information to a Third Party"
+      },
+      {
+        "product_name": "21-0966 - Intent to file a claim"
+      },
+      {
+        "product_name": "21-2680 - Examination for Housebound Status or Permanent Need for Regular Aid & Attendance"
+      },
+      {
+        "product_name": "21-4138 - Statement in support of claim"
+      },
+      {
+        "product_name": "21-4142 - Authorization to Disclose Information to the VA"
+      },
+      {
+        "product_name": "26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant"
+      }
+    ]
+  },
+  "/patterns/ask-users-for/phone-numbers": {
+    "pattern_name": "Phone numbers",
+    "usage_count": 17,
+    "total_forms": 55,
+    "compliance_percentage": 31,
+    "forms_using_pattern": [
+      {
+        "product_name": "20-0995 - Supplemental Claim Form"
+      },
+      {
+        "product_name": "20-10206 - Privacy Act"
+      },
+      {
+        "product_name": "20-10207 - Request for priority processing"
+      },
+      {
+        "product_name": "21-0538 - Dependency Verification"
+      },
+      {
+        "product_name": "21-0779 - Request for Nursing Home Information (Aid & Attendance)"
+      },
+      {
+        "product_name": "21-0845 - Authorization to Disclose Personal Information to a Third Party"
+      },
+      {
+        "product_name": "21-0966 - Intent to file a claim"
+      },
+      {
+        "product_name": "21-0972 - Sign VA claim forms as an alternate signer"
+      },
+      {
+        "product_name": "21-10210 - Lay or Witness Statement"
+      },
+      {
+        "product_name": "21-2680 - Examination for Housebound Status or Permanent Need for Regular Aid & Attendance"
+      },
+      {
+        "product_name": "21-4138 - Statement in support of claim"
+      },
+      {
+        "product_name": "21-4142 - Authorization to Disclose Information to the VA"
+      },
+      {
+        "product_name": "21P-0847 - Request to be substitute claimant"
+      },
+      {
+        "product_name": "26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant"
+      },
+      {
+        "product_name": "40-0247 Presidential Memorial Certificate"
+      },
+      {
+        "product_name": "Benefits Delivery at Discharge"
+      },
+      {
+        "product_name": "Higher Level Review"
+      }
+    ]
+  },
+  "/patterns/ask-users-for/relationship": {
+    "pattern_name": "Relationship to Veteran",
+    "usage_count": 4,
+    "total_forms": 55,
+    "compliance_percentage": 7,
+    "forms_using_pattern": [
+      {
+        "product_name": "21-0966 - Intent to file a claim"
+      },
+      {
+        "product_name": "21-4138 - Statement in support of claim"
+      },
+      {
+        "product_name": "21-4142 - Authorization to Disclose Information to the VA"
+      },
+      {
+        "product_name": "21P-0847 - Request to be substitute claimant"
+      }
+    ]
+  },
+  "/patterns/ask-users-for/signature": {
+    "pattern_name": "Signature",
+    "usage_count": 12,
+    "total_forms": 55,
+    "compliance_percentage": 22,
+    "forms_using_pattern": [
+      {
+        "product_name": "20-10206 - Privacy Act"
+      },
+      {
+        "product_name": "20-10207 - Request for priority processing"
+      },
+      {
+        "product_name": "21-0538 - Dependency Verification"
+      },
+      {
+        "product_name": "21-0845 - Authorization to Disclose Personal Information to a Third Party"
+      },
+      {
+        "product_name": "21-0966 - Intent to file a claim"
+      },
+      {
+        "product_name": "21-0972 - Sign VA claim forms as an alternate signer"
+      },
+      {
+        "product_name": "21-10210 - Lay or Witness Statement"
+      },
+      {
+        "product_name": "21-4138 - Statement in support of claim"
+      },
+      {
+        "product_name": "21-4142 - Authorization to Disclose Information to the VA"
+      },
+      {
+        "product_name": "21P-0847 - Request to be substitute claimant"
+      },
+      {
+        "product_name": "26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant"
+      },
+      {
+        "product_name": "40-0247 Presidential Memorial Certificate"
+      }
+    ]
+  },
+  "/patterns/ask-users-for/social-security-number": {
+    "pattern_name": "Social security or VA file number",
+    "usage_count": 14,
+    "total_forms": 55,
+    "compliance_percentage": 25,
+    "forms_using_pattern": [
+      {
+        "product_name": "20-10206 - Privacy Act"
+      },
+      {
+        "product_name": "20-10207 - Request for priority processing"
+      },
+      {
+        "product_name": "21-0538 - Dependency Verification"
+      },
+      {
+        "product_name": "21-0779 - Request for Nursing Home Information (Aid & Attendance)"
+      },
+      {
+        "product_name": "21-0966 - Intent to file a claim"
+      },
+      {
+        "product_name": "21-0972 - Sign VA claim forms as an alternate signer"
+      },
+      {
+        "product_name": "21-10210 - Lay or Witness Statement"
+      },
+      {
+        "product_name": "21-2680 - Examination for Housebound Status or Permanent Need for Regular Aid & Attendance"
+      },
+      {
+        "product_name": "21-4138 - Statement in support of claim"
+      },
+      {
+        "product_name": "21-4142 - Authorization to Disclose Information to the VA"
+      },
+      {
+        "product_name": "21P-0847 - Request to be substitute claimant"
+      },
+      {
+        "product_name": "22-1995 - Education Change of Program or Training Application"
+      },
+      {
+        "product_name": "26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant"
+      },
+      {
+        "product_name": "40-0247 Presidential Memorial Certificate"
+      }
+    ]
+  },
+  "/patterns/help-users-to/keep-a-record-of-submitted-information": {
+    "pattern_name": "Keep a record of submitted information",
+    "usage_count": 18,
+    "total_forms": 55,
+    "compliance_percentage": 33,
+    "forms_using_pattern": [
+      {
+        "product_name": "10182 - Request a Board Appeal"
+      },
+      {
+        "product_name": "20-0995 - Supplemental Claim Form"
+      },
+      {
+        "product_name": "20-10206 - Privacy Act"
+      },
+      {
+        "product_name": "20-10207 - Request for priority processing"
+      },
+      {
+        "product_name": "21-0538 - Dependency Verification"
+      },
+      {
+        "product_name": "21-0779 - Request for Nursing Home Information (Aid & Attendance)"
+      },
+      {
+        "product_name": "21-0845 - Authorization to Disclose Personal Information to a Third Party"
+      },
+      {
+        "product_name": "21-0966 - Intent to file a claim"
+      },
+      {
+        "product_name": "21-0972 - Sign VA claim forms as an alternate signer"
+      },
+      {
+        "product_name": "21-10210 - Lay or Witness Statement"
+      },
+      {
+        "product_name": "21-2680 - Examination for Housebound Status or Permanent Need for Regular Aid & Attendance"
+      },
+      {
+        "product_name": "21-4138 - Statement in support of claim"
+      },
+      {
+        "product_name": "21-4142 - Authorization to Disclose Information to the VA"
+      },
+      {
+        "product_name": "21P-0847 - Request to be substitute claimant"
+      },
+      {
+        "product_name": "22-10272 - Request for Reimbursement of Preparatory (Prep) Course for Licensing or Certification Test"
+      },
+      {
+        "product_name": "26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant"
+      },
+      {
+        "product_name": "Benefits Delivery at Discharge"
+      },
+      {
+        "product_name": "Higher Level Review"
+      }
+    ]
+  },
+  "/patterns/help-users-to/know-when-their-information-is-prefilled": {
+    "pattern_name": "Know when their information is prefilled",
+    "usage_count": 2,
+    "total_forms": 55,
+    "compliance_percentage": 4,
+    "forms_using_pattern": [
+      {
+        "product_name": "21-4138 - Statement in support of claim"
+      },
+      {
+        "product_name": "22-10272 - Request for Reimbursement of Preparatory (Prep) Course for Licensing or Certification Test"
+      }
+    ]
+  }
+}
