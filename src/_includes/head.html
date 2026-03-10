@@ -22,9 +22,9 @@
   {% endif %}
 
   <!-- Web component setup -->
-  <link rel="stylesheet" type="text/css" href="{{ '/assets/stylesheets/component-library.css' | append: cacheBust }}" />
+  <link rel="stylesheet" type="text/css" href="{{ '/assets/stylesheets/component-library.css' | prepend: site.baseurl | append: cacheBust }}" />
   <script type="module">
-    import { defineCustomElements } from "/vendor/javascripts/component-library/loader/index.es2017.js";
+    import { defineCustomElements } from "{{ '/vendor/javascripts/component-library/loader/index.es2017.js' | prepend: site.baseurl }}";
     defineCustomElements();
 </script>
 
