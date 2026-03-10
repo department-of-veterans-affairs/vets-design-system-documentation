@@ -35,9 +35,7 @@ anchors:
 
 [Review more guidance for neutral language](https://design.va.gov/content-style-guide/neutral-language)
 
-**Note:** If a link needs to open in a new tab, add “(opens in a new tab)” to notify the person. Don’t use the new window icon unless there are space constraints.
-
-[Review guidance on when to open links in a new tab in the Components section](https://design.va.gov/components/link/)
+**Note:** For comprehensive guidance on when and how to open links in a new tab vs same window, see the [Link component behavior section]({{ site.baseurl }}/components/link/#when-and-how-to-open-links). When a link does need to open in a new tab, add "(opens in a new tab)" to notify the person. Don't use the new window icon unless there are space constraints.
 
 <div class="do-dont">
 <div class="do-dont__do">
