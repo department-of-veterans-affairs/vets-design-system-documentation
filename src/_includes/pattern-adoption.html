@@ -1,0 +1,19 @@
+{% assign adoption = site.data.metrics.pattern_adoption[page.permalink] %}
+{% if adoption %}
+<h2 id="adoption">Adoption</h2>
+
+{% if adoption.usage_count == 0 %}
+<p>No forms currently use this pattern.</p>
+{% else %}
+<va-accordion open-single>
+  <va-accordion-item id="adoption-{{ page.permalink | split: '/' | last }}">
+    <h3 slot="headline">Forms using this pattern: {{ adoption.usage_count }} of {{ adoption.total_forms }} ({{ adoption.compliance_percentage }}%)</h3>
+    <ul>
+      {% for form in adoption.forms_using_pattern %}
+      <li>{{ form.product_name }}</li>
+      {% endfor %}
+    </ul>
+  </va-accordion-item>
+</va-accordion>
+{% endif %}
+{% endif %}
