@@ -323,9 +323,11 @@ async function findJSFiles(dir, baseDir = dir) {
  * This pattern is special because confirmation pages live in containers/
  * or components/ directories, not config/ or pages/. Forms import from
  * 'platform/forms-system/src/js/components/ConfirmationView'.
+ * All non-test JS/JSX files are scanned because the import can appear
+ * in container, component, or other application files.
  */
 async function findConfirmationViewPattern() {
-  console.log(`  Looking for ConfirmationView imports in container/component files...`);
+  console.log(`  Looking for ConfirmationView imports across all non-test JS/JSX files...`);
 
   if (VETS_WEBSITE_PATH) {
     console.log(`  Using local vets-website at: ${VETS_WEBSITE_PATH}`);
