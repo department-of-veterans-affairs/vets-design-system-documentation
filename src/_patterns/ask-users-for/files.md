@@ -34,7 +34,7 @@ anchors:
 
 ### Asking for a single file
 
-{% include component-example.html alt="A standard of file upload page in a form." file="/images/patterns/ask-users-for/files/0779-file-upload.png" caption="File upload in a standard file upload page before a user has interacted with the file input component." class="x2" %}
+{% include component-example.html alt="A standard file upload page in a form." file="/images/patterns/ask-users-for/files/0779-file-upload.png" caption="File upload in a standard file upload page before a user has interacted with the file input component." class="x2" %}
 
 <a href="https://staging.va.gov/mock-form-patterns/upload-file" class="va-link--secondary">View a mock form example of a file upload</a>
 
