@@ -47,7 +47,7 @@ anchors:
 
 ### Asking for additional information
 
-{% include component-example.html alt="Select input fields with questions about a file" file="/images/patterns/ask-users-for/files/file-upload-with-additional.png" caption="Additional questions about the file is asked outside of the file input component" class="x2" %}
+{% include component-example.html alt="Select input fields with questions about a file" file="/images/patterns/ask-users-for/files/file-upload-with-additional.png" caption="Additional questions about the file are asked outside of the file input component." class="x2" %}
 
 ## How to design and build
 
