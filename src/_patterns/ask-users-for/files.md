@@ -44,7 +44,6 @@ anchors:
 
 {% include component-example.html alt="Multiple resposne file request." file="/images/patterns/ask-users-for/files/file-upload-multiple-response-array.png" caption="File upload within a multiple response pattern" class="x2" %}
 
-
 ### Asking for additional information
 
 {% include component-example.html alt="Select input fields with questions about a file" file="/images/patterns/ask-users-for/files/file-upload-with-additional.png" caption="Additional questions about the file are asked outside of the file input component." class="x2" %}
