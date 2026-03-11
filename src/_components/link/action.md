@@ -66,8 +66,7 @@ The action link is an eye-catching link to start a digital service. An action li
 ## Accessibility considerations
 
 * **Purpose and target.** Link text that doesn't indicate a clear purpose or destination makes it harder for everyone--especially screen reader users--to understand where they're getting routed off to.
-* **External links must indicate that they are external.** Follow the methods detailed in [linking to external sites]({{ site.baseurl }}/content-style-guide/links#linking-to-external-sites).
-  * By default, the link component's external link variation will append the text, "(opens in a new tab)", instead of using an icon. This follows [Techniques for WCAG 2.0](https://www.w3.org/TR/WCAG20-TECHS/G201.html) advice on providing users with both a spoken and visual warning that this link opens in a new tab.
+* **Link opening behavior and external links.** For comprehensive accessibility requirements on when links open in new tabs, see the [Link behavior considerations]({{ site.baseurl }}/components/link/#when-and-how-to-open-links).
 
 {% include content/links-vs-buttons.md %}
 
