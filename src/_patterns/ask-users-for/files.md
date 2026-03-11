@@ -40,9 +40,9 @@ anchors:
 
 ### Asking for multiple files
 
-{% include component-example.html alt="Multiple resposne file request." file="/images/patterns/ask-users-for/files/file-upload-multiple-response-start.png" caption="Use the multiple response pattern to capture multiple files within a form" class="x2" %}
+{% include component-example.html alt="Multiple response file request." file="/images/patterns/ask-users-for/files/file-upload-multiple-response-start.png" caption="Use the multiple response pattern to capture multiple files within a form" class="x2" %}
 
-{% include component-example.html alt="Multiple resposne file request." file="/images/patterns/ask-users-for/files/file-upload-multiple-response-array.png" caption="File upload within a multiple response pattern" class="x2" %}
+{% include component-example.html alt="Multiple response file request." file="/images/patterns/ask-users-for/files/file-upload-multiple-response-array.png" caption="File upload within a multiple response pattern" class="x2" %}
 
 ### Asking for additional information
 
