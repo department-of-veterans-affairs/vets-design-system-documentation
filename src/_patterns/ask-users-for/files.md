@@ -61,11 +61,11 @@ Use the [File input]({{ site.baseurl }}/components/form/file-input) component al
 * **Instructions** explaining what file(s) to upload and why they're needed
 * **Bullet list** of allowed file types and maximum file sizes
 
-**Important:** Avoid allowing batch file uploads. Batch uploads are not mobile-friendly and can create user experience and technical issues. Instead, use multiple individual file input components when you need users to upload several files.
+**Important:** Avoid allowing batch file uploads where users select many files at once in a single action (for example, selecting a whole folder or many files in one native file picker). These batch uploads are not mobile-friendly and can create user experience and technical issues. Instead, let users add files one at a time using repeated single file inputs or the multiple file upload pattern described below.
 
 #### Multiple file upload
 
-* If users only need to upload files, use the multiple file input component.
+* If users only need to upload files and don't need to answer separate questions about each one, use the multiple file upload pattern. This pattern lets users add files one at a time (not as a single batch selection) and review or remove each file before continuing.
 * If users also need to provide additional information about each file, use the [Ask for... Multiple Responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses) pattern with single file upload inputs.
 
 #### Additional questions about the file
