@@ -25,10 +25,9 @@ tools:
     - "git commit"
     - "git config"
     - "git branch"
-    - "make recompile"
-    - "make fmt"
-    - "make lint"
-    - "make test-unit"
+    - "yarn test"
+    - "yarn build"
+    - "gh aw compile"
     - "cat"
     - "echo"
     - "ls"
@@ -46,11 +45,6 @@ steps:
       git config user.name "github-actions[bot]"
       git config user.email "github-actions[bot]@users.noreply.github.com"
       
-      # Create .gitignore to exclude workflow YAML files
-      cat > /tmp/merge-gitignore << 'EOF'
-      # Exclude all .yml files in .github/workflows/
-      .github/workflows/*.yml
-      EOF
 imports:
   - shared/mood.md
 source: github/gh-aw/.github/workflows/mergefest.md@852cb06ad52958b402ed982b69957ffc57ca0619
@@ -140,13 +134,9 @@ Replace <BASE_BRANCH> with the actual base branch name from the GitHub API respo
 Set up git to never stage or commit `.yml` files in `.github/workflows/`:
 
 ```bash
-# Add .github/workflows/*.yml to .git/info/exclude (local gitignore)
+# Add patterns to .git/info/exclude (local gitignore - never committed)
 echo ".github/workflows/*.yml" >> .git/info/exclude
-
-# Also create a temporary .gitignore for this merge operation
-cat > .github/workflows/.gitignore << 'EOF'
-*.yml
-EOF
+echo "!.github/workflows/*.lock.yml" >> .git/info/exclude
 ```
 
 ### 6. Perform the Merge
@@ -218,7 +208,7 @@ git merge --continue || git commit --no-edit -m "Resolve merge conflicts from ma
 # Check if we resolved any .lock.yml conflicts
 if git log -1 --stat | grep '\.lock\.yml'; then
   echo "🔄 Recompiling workflows after .lock.yml conflicts"
-  make recompile
+  gh aw compile
   
   # Stage the recompiled files (but NOT .yml files, only .lock.yml and .md)
   git add .github/workflows/*.lock.yml 2>/dev/null || true
@@ -236,28 +226,20 @@ fi
 After the merge is complete, ensure code quality:
 
 ```bash
-# Format the code
-echo "🎨 Formatting code..."
-make fmt
-
-# Lint the code
-echo "🔍 Linting code..."
-make lint
-
 # Run unit tests
 echo "🧪 Running tests..."
-make test-unit
+yarn test
 
-# Recompile all workflows to ensure they're up to date
-echo "🔄 Recompiling workflows..."
-make recompile
+# Rebuild the site to ensure everything compiles
+echo "🔄 Rebuilding site..."
+yarn build
 
-# Stage any changes from formatting or recompilation
+# Stage any changes from build
 git add -A
 
 # Commit if there are changes
 if ! git diff --cached --quiet; then
-  git commit -m "Format, lint, and recompile after merge"
+  git commit -m "Rebuild after merge"
 fi
 ```
 
@@ -266,21 +248,19 @@ fi
 Before pushing, double-check that no `.yml` files from `.github/workflows/` are staged:
 
 ```bash
-# List all staged files
-STAGED_FILES="$(git diff --cached --name-only)"
+# List all files changed in the last commit
+CHANGED_FILES="$(git diff --name-only HEAD~1 HEAD)"
 
 # Check for any .yml files in workflows directory
-WORKFLOW_YMLS="$(echo "$STAGED_FILES" | grep -E '^\.github/workflows/.*\.yml$' || true)"
+WORKFLOW_YMLS="$(echo "$CHANGED_FILES" | grep -E '^\.github/workflows/.*\.yml$' || true)"
 
 if [ -n "$WORKFLOW_YMLS" ]; then
-  echo "⚠️ WARNING: Workflow .yml files are staged, removing them"
-  echo "$WORKFLOW_YMLS" | while read -r file; do
-    git reset HEAD "$file"
-    echo "Unstaged: $file"
-  done
+  echo "⚠️ WARNING: Workflow .yml files were committed, this should not happen"
+  echo "$WORKFLOW_YMLS"
+  exit 1
 fi
 
-# Verify clean staging
+# Verify repository state
 git status
 ```
 
@@ -306,8 +286,8 @@ The `push-to-pull-request-branch` safe output will automatically:
 
 - **Be Careful**: This operation modifies the PR branch directly
 - **Never Commit Workflow YMLs**: Always exclude `.github/workflows/*.yml` files
-- **Recompile After Lock File Conflicts**: Run `make recompile` if `.lock.yml` files had conflicts
-- **Format, Lint, Test**: Always run `make fmt`, `make lint`, `make test-unit`, and `make recompile` after merge
+- **Recompile After Lock File Conflicts**: Run `gh aw compile` if `.lock.yml` files had conflicts
+- **Test and Build**: Always run `yarn test` and `yarn build` after merge
 - **Verify Before Pushing**: Always check what's staged before pushing
 - **Handle Conflicts Intelligently**: Use repository knowledge to resolve conflicts
 - **Document Actions**: Explain what was merged and any conflicts resolved
