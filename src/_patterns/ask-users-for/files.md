@@ -28,25 +28,31 @@ anchors:
 
 ### When not to use this pattern
 
-* **Don’t ask for a file if does not affect the delivery of a service.** You should only ask users to upload documents if absolutely necessary.
+* **Don’t ask for a file if it does not affect service delivery.** Only ask users to upload documents when it is absolutely necessary.
 
 ## Examples
 
-### Default
+### Asking for a single file
 
-{% include component-example.html alt="The default state of file upload." file="/images/patterns/ask-users-for/files/form-upload-default.png" caption="File upload in the default state before a user has interacted with the file input component." class="x2" %}
+{% include component-example.html alt="A standard file upload page in a form." file="/images/patterns/ask-users-for/files/0779-file-upload.png" caption="File upload in a standard file upload page before a user has interacted with the file input component." class="x2" %}
 
-### Review
+<a href="https://staging.va.gov/mock-form-patterns/upload-file" class="va-link--secondary">View a mock form example of a file upload</a>
 
-{% include component-example.html alt="The review state of file upload." file="/images/patterns/ask-users-for/files/form-upload-review.png" caption="The review state of file upload includes a card with the file name and options to change or delete the file." class="x2" %}
+### Asking for multiple files
 
-### Delete
+{% include component-example.html alt="Multiple response file request." file="/images/patterns/ask-users-for/files/file-upload-multiple-response-start.png" caption="Use the multiple response pattern to capture multiple files within a form" class="x2" %}
 
-{% include component-example.html alt="The delete state of file upload." file="/images/patterns/ask-users-for/files/form-upload-delete.png" caption="A modal is displayed confirming the destructive action of deleting the uploaded file." class="x2" %}
+{% include component-example.html alt="Multiple response file request." file="/images/patterns/ask-users-for/files/file-upload-multiple-response-array.png" caption="File upload within a multiple response pattern" class="x2" %}
+
+### Asking for additional information
+
+{% include component-example.html alt="Select input fields with questions about a file" file="/images/patterns/ask-users-for/files/file-upload-with-additional.png" caption="Additional questions about the file are asked outside of the file input component." class="x2" %}
 
 ## How to design and build
 
 ### Layout details
+
+#### Single file upload
 
 Use the [File input]({{ site.baseurl }}/components/form/file-input) component along with the following content placed above it:
 
@@ -54,7 +60,20 @@ Use the [File input]({{ site.baseurl }}/components/form/file-input) component al
 * **Instructions** explaining what file(s) to upload and why they're needed
 * **Bullet list** of allowed file types and maximum file sizes
 
-**Important:** Avoid allowing batch file uploads. Batch uploads are not mobile-friendly and can create user experience and technical issues. Instead, use multiple individual file input components when you need users to upload several files.
+**Important:** Avoid allowing batch file uploads where users select many files at once in a single action (for example, selecting a whole folder or many files in one native file picker). These batch uploads are not mobile-friendly and can create user experience and technical issues. Instead, let users add files one at a time using repeated single file inputs or the multiple file upload pattern described below.
+
+#### Multiple file upload
+
+* If users only need to upload files and don't need to answer separate questions about each one, use the multiple file upload pattern. This pattern lets users add files one at a time (not as a single batch selection) and review or remove each file before continuing.
+* If users also need to provide additional information about each file, use the [Ask for... Multiple Responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses) pattern with single file upload inputs.
+
+#### Additional questions about the file
+
+Within forms, ask questions about the file using separate form fields on the same page as the file upload component when possible.
+
+This is especially helpful for multiple file uploads because users can review file details with each file.
+* If you need to ask more than 2 questions, consider moving those questions to a separate page after file upload.
+* If you use a single file upload outside a form flow, you can use the slot in the file input component to ask for additional information about the file.
 
 ### How this pattern works
 
@@ -69,7 +88,7 @@ We've updated the [File input]({{ site.baseurl }}/components/form/file-input) co
 <p>
 <va-link-action
   href="https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/fileInputMultiplePattern.jsx"
-  text="Multifile input pattern in forms library"
+  text="Multiple file input pattern in forms library"
   type="secondary"
 ></va-link-action>
 </p>
@@ -77,7 +96,7 @@ We've updated the [File input]({{ site.baseurl }}/components/form/file-input) co
 <p>
 <va-link-action
   href="https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/fileInputPattern.jsx"
-  text="Single File input pattern in forms library"
+  text="Single file input pattern in forms library"
   type="secondary"
 ></va-link-action>
 </p>
@@ -85,10 +104,15 @@ We've updated the [File input]({{ site.baseurl }}/components/form/file-input) co
 <p>
 <va-link-action
   href="https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/applications/ds-v3-playground/pages/VaFileInputMultiple.jsx"
-  text="Multifile input as a standalone component"
+  text="Multiple file input as a standalone component"
   type="secondary"
 ></va-link-action>
 </p>
+
+### Components used in this pattern
+
+* [File input]({{ site.baseurl }}/components/form/file-input)
+* [Modal]({{ site.baseurl }}/components/modal)
 
 ### Forms library validation
 
