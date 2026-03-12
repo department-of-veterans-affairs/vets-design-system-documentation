@@ -25,9 +25,11 @@
       <article class="site-content__content">
         {% if page.sidebar %}
         <main id="main-content" class="site-l-content-wrapper--sidebar desktop-lg:vads-u-margin-top--neg2">
+          {% if page['on-this-page'] != false %}
           <aside class="main-content__sidebar">
             <va-on-this-page></va-on-this-page>
           </aside>
+          {% endif %}
           <div class="main-content__content">
             {% if page.draft %}
               {% include _draft.html %}
@@ -64,7 +66,9 @@
             {{ page.intro-text }}
           </div>
           {% endif %}
+          {% if page['on-this-page'] != false %}
           <va-on-this-page></va-on-this-page>
+          {% endif %}
           {{ content }}
         </main>
         {% endif %}
