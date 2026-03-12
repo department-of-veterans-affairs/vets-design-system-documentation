@@ -306,3 +306,22 @@
     }
   }
 }
+
+.markdown {
+  table {
+    border-collapse: collapse;
+    margin: units(2) 0;
+    width: 100%;
+  }
+
+  th,
+  td {
+    border: 1px solid $vads-color-base-lighter;
+    padding: units(1);
+    vertical-align: top;
+  }
+
+  thead th {
+    background-color: $vads-color-base-lightest;
+  }
+}
