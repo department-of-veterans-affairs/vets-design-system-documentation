@@ -9,6 +9,7 @@ tests:
     wcag_name: Name, Role, Value
     wcag_level: A
     508_severity: Critical
+    governance_severity: High-Critical
     wcag_url: https://www.w3.org/TR/WCAG22/#name-role-value
     description_short: |
       Every interactive element has a clear name and purpose.
@@ -59,6 +60,7 @@ tests:
     wcag_name: Status Messages
     wcag_level: AA
     508_severity: N/A
+    governance_severity: High
     wcag_url: https://www.w3.org/TR/WCAG22/#status-messages
     description_short: |
       Screen readers announce important updates.
