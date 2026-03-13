@@ -48,6 +48,26 @@
   border-left: 3px solid var(--vads-color-base-lighter);
 }
 
+/* Table header with icons */
+.a11y-table-header {
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+}
+
+/* Icon colors for test results */
+.a11y-icon-success {
+  color: var(--vads-color-success-darker);
+}
+
+.a11y-icon-info {
+  color: var(--vads-color-info-darker);
+}
+
+.a11y-icon-error {
+  color: var(--vads-color-error-dark);
+}
+
 .a11y-test-list .a11y-test-subtest-list > li {
   border-bottom: none;
   padding: 1rem 0 1rem 1rem;

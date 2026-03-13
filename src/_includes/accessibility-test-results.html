@@ -127,24 +127,24 @@
 {% comment %} Summary Dashboard {% endcomment %}
 {% assign display_component_name = component_name | replace: "va-", "" | replace: "-", " " | capitalize %}
 
+{% assign context_dependent_count = conditional_count | plus: implementation_tests.size %}
+
 <va-table
   table-type="bordered"
-  table-title="Accessibility test results for {{ display_component_name }} component - Last tested: v{{ latest_version }}"
+  table-title="Accessibility test results for {{ display_component_name }} component"
   full-width
 >
   <va-table-row slot="headers">
-    <span>Total tests</span>
-    <span>Passed</span>
-    <span>Conditional</span>
-    <span>Implementation</span>
-    <span>Failed</span>
+    <span class="a11y-table-header">Version tested</span>
+    <span class="a11y-table-header"><va-icon icon="check_circle" class="a11y-icon-success"></va-icon> Passed</span>
+    <span class="a11y-table-header"><va-icon icon="error" class="a11y-icon-error"></va-icon> Failed</span>
+    <span class="a11y-table-header"><va-icon icon="info" class="a11y-icon-info"></va-icon> Conditional on implementation</span>
   </va-table-row>
   <va-table-row>
-    <span>{{ total_tests }}</span>
+    <span>{{ latest_version }}</span>
     <span>{{ passed_count }}</span>
-    <span>{{ conditional_count }}</span>
-    <span>{{ implementation_tests.size }}</span>
     <span>{{ failed_count }}</span>
+    <span>{{ context_dependent_count }}</span>
   </va-table-row>
 </va-table>
 
