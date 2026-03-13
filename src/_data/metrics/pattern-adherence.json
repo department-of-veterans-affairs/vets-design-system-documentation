@@ -1,5 +1,5 @@
 {
-  "total_patterns": 9,
+  "total_patterns": 10,
   "total_forms": 55,
   "patterns": [
     {
@@ -519,11 +519,111 @@
       "pattern_name": "Keep a record of submitted information",
       "pattern_file": "help-users-to/keep-a-record-of-submitted-information.md",
       "pattern_permalink": "/patterns/help-users-to/keep-a-record-of-submitted-information",
-      "code_file": "src/platform/forms-system/src/js/components/ConfirmationView/README.md",
-      "forms_using_pattern": [],
-      "usage_count": 0,
+      "code_file": "src/platform/forms-system/src/js/components/ConfirmationView/index.js",
+      "forms_using_pattern": [
+        {
+          "product_name": "10182 - Request a Board Appeal",
+          "path_to_code": "src/applications/appeals/10182",
+          "github_label": "NOD"
+        },
+        {
+          "product_name": "20-0995 - Supplemental Claim Form",
+          "path_to_code": "src/applications/appeals/995",
+          "github_label": "Decision-Reviews-Team"
+        },
+        {
+          "product_name": "20-10206 - Privacy Act",
+          "path_to_code": "src/applications/simple-forms/20-10206"
+        },
+        {
+          "product_name": "20-10207 - Request for priority processing",
+          "path_to_code": "src/applications/simple-forms/20-10207",
+          "github_label": "20-10207"
+        },
+        {
+          "product_name": "21-0538 - Dependency Verification",
+          "path_to_code": "/src/applications/dependents/dependents-verification"
+        },
+        {
+          "product_name": "21-0779 - Request for Nursing Home Information (Aid & Attendance)",
+          "path_to_code": "src/applications/benefits-optimization-aquia/21-0779-nursing-home-information"
+        },
+        {
+          "product_name": "21-0845 - Authorization to Disclose Personal Information to a Third Party",
+          "path_to_code": "src/applications/simple-forms/21-0845"
+        },
+        {
+          "product_name": "21-0966 - Intent to file a claim",
+          "path_to_code": "src/applications/simple-forms/21-0966"
+        },
+        {
+          "product_name": "21-0972 - Sign VA claim forms as an alternate signer",
+          "path_to_code": "src/applications/simple-forms/21-0972"
+        },
+        {
+          "product_name": "21-10210 - Lay or Witness Statement",
+          "path_to_code": "src/applications/simple-forms/21-10210"
+        },
+        {
+          "product_name": "21-2680 - Examination for Housebound Status or Permanent Need for Regular Aid & Attendance",
+          "path_to_code": "src/applications/benefits-optimization-aquia/21-2680-house-bound-status"
+        },
+        {
+          "product_name": "21-4138 - Statement in support of claim",
+          "path_to_code": "src/applications/simple-forms/21-4138",
+          "github_label": "21-4138"
+        },
+        {
+          "product_name": "21-4142 - Authorization to Disclose Information to the VA",
+          "path_to_code": "src/applications/simple-forms/21-4142"
+        },
+        {
+          "product_name": "21P-0847 - Request to be substitute claimant",
+          "path_to_code": "src/applications/simple-forms/21P-0847",
+          "github_label": "21P-0847"
+        },
+        {
+          "product_name": "22-10272 - Request for Reimbursement of Preparatory (Prep) Course for Licensing or Certification Test",
+          "path_to_code": "src/applications/edu-benefits/10272"
+        },
+        {
+          "product_name": "26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant",
+          "path_to_code": "src/applications/simple-forms/26-4555"
+        },
+        {
+          "product_name": "Benefits Delivery at Discharge",
+          "path_to_code": "src/applications/disability-benefits/all-claims",
+          "github_label": "BDD"
+        },
+        {
+          "product_name": "Higher Level Review",
+          "path_to_code": "src/applications/appeals/996",
+          "github_label": "HLR"
+        }
+      ],
+      "usage_count": 18,
       "total_forms": 55,
-      "compliance_percentage": 0
+      "compliance_percentage": 33
+    },
+    {
+      "pattern_name": "Know when their information is prefilled",
+      "pattern_file": "help-users-to/know-when-their-information-is-prefilled.md",
+      "pattern_permalink": "/patterns/help-users-to/know-when-their-information-is-prefilled",
+      "code_file": "src/platform/forms-system/src/js/patterns/prefill/index.js",
+      "forms_using_pattern": [
+        {
+          "product_name": "21-4138 - Statement in support of claim",
+          "path_to_code": "src/applications/simple-forms/21-4138",
+          "github_label": "21-4138"
+        },
+        {
+          "product_name": "22-10272 - Request for Reimbursement of Preparatory (Prep) Course for Licensing or Certification Test",
+          "path_to_code": "src/applications/edu-benefits/10272"
+        }
+      ],
+      "usage_count": 2,
+      "total_forms": 55,
+      "compliance_percentage": 4
     }
   ],
   "forms": [
