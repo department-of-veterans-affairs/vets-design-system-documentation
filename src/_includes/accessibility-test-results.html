@@ -131,14 +131,14 @@
 
 <va-table
   table-type="bordered"
-  table-title="Accessibility test results for {{ display_component_name }} component"
+  table-title="Accessibility test result summary for {{ display_component_name }} component"
   full-width
 >
   <va-table-row slot="headers">
     <span class="a11y-table-header">Version tested</span>
     <span class="a11y-table-header"><va-icon icon="check_circle" class="a11y-icon-success"></va-icon> Passed</span>
     <span class="a11y-table-header"><va-icon icon="error" class="a11y-icon-error"></va-icon> Failed</span>
-    <span class="a11y-table-header"><va-icon icon="info" class="a11y-icon-info"></va-icon> Conditional on implementation</span>
+    <span class="a11y-table-header"><va-icon icon="info" class="a11y-icon-info"></va-icon> Conditional</span>
   </va-table-row>
   <va-table-row>
     <span>{{ latest_version }}</span>
