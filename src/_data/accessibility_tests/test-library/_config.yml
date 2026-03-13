@@ -1,0 +1,98 @@
+# VA.gov Accessibility Test Library Configuration
+# Shared configuration for all test files
+# Version: 1.0
+# Last updated: 2026-02-10
+
+# Common environment definitions (ID to display name mappings)
+# These can be used by any test in any category
+environment_definitions:
+  # Desktop browsers
+  mac-chrome:
+    name: macOS Chrome
+  mac-firefox:
+    name: macOS Firefox
+  mac-edge:
+    name: macOS Edge
+  mac-safari:
+    name: macOS Safari
+  windows-chrome:
+    name: Windows Chrome
+  windows-firefox:
+    name: Windows Firefox
+  windows-edge:
+    name: Windows Edge
+  # Mobile browsers
+  android-chrome:
+    name: Android Chrome
+  ios-safari:
+    name: iOS Safari
+  # Screen readers
+  mac-safari-voiceover:
+    name: macOS Safari/VoiceOver
+  mac-chrome-voiceover:
+    name: macOS Chrome/VoiceOver
+  windows-chrome-jaws:
+    name: Windows Chrome/JAWS
+  windows-edge-nvda:
+    name: Windows Edge/NVDA
+  android-chrome-talkback:
+    name: Android Chrome/Talkback
+  ios-safari-voiceover:
+    name: iOS Safari/VoiceOver
+  # Voice control
+  mac-voice-control:
+    name: macOS Voice Control
+  windows-voice-recognition:
+    name: Windows Voice Recognition
+
+# Required environments for specific categories
+# Categories not listed here (general, keyboard, structural, visual, zoom) can use any environment
+required_environments:
+  mobile:
+    - android-chrome
+    - ios-safari
+  screen_reader:
+    - id: mac-safari-voiceover
+      required: true
+    - id: windows-chrome-jaws
+      required: true
+    - id: windows-edge-nvda
+      required: true
+    - id: mac-chrome-voiceover
+      required: false
+    - id: android-chrome-talkback
+      required: false
+    - id: ios-safari-voiceover
+      required: false
+  voice_control:
+    - mac-safari-voice-control
+    - windows-edge-voice-recognition
+
+# Test categories
+categories:
+  - general
+  - keyboard
+  - mobile
+  - screen_reader
+  - structural
+  - visual
+  - voice_control
+  - zoom
+  - implementation
+
+# Metadata
+metadata:
+  version: "1.0"
+  created: "2024-02-05"
+  last_updated: "2026-02-10"
+  total_tests: 55
+  total_subtests: 30
+  test_breakdown:
+    general: 36
+    keyboard: 9
+    screen_reader: 8
+    structural: 2
+    mobile: 2
+    visual: 0
+    voice_control: 0
+    zoom: 0

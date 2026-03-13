@@ -1,0 +1,69 @@
+# WCAG Principle 4: Robust
+# Content must be robust enough that it can be interpreted by a wide variety of user agents, including assistive technologies.
+# Tests: WEB-4xx series
+
+tests:
+  - id: WEB-412
+    category: general
+    wcag_criterion: 4.1.2
+    wcag_name: Name, Role, Value
+    wcag_level: A
+    508_severity: Critical
+    governance_severity: High-Critical
+    wcag_url: https://www.w3.org/TR/WCAG22/#name-role-value
+    description_short: |
+      Every interactive element has a clear name and purpose.
+    description_full: |
+      When you interact with interactive elements such as links and buttons,
+      you can easily understand what they are and what they do based on their accessible names and roles.
+    subtests:
+      - id: WEB-412-001
+        description_short: |
+          Every interactive element has a clear name and purpose.
+        description_full: |
+          When you interact with interactive elements such as links and buttons,
+          you can easily understand what they are and what they do based on their accessible names and roles.
+      - id: WEB-412-002
+        category: screen_reader
+        description_short: |
+          Screen readers announce state.
+        description_full: |
+          When you use a screen reader,
+          you hear announcements for dynamic states like expanded, checked, or disabled.
+      - id: WEB-412-003
+        description_short: |
+          Links navigate to pages; buttons perform actions.
+        description_full: |
+          When you interact with UI elements,
+          you find the code uses link elements for navigation and button elements to perform in-page actions or submit forms.
+      - id: DST-412-001
+        description_short: |
+          Link navigates to a new page or section.
+        description_full: |
+          When you activate a link,
+          you are taken to a different page or a section on the current page.
+      - id: DST-412-002
+        description_short: |
+          Button performs an action on the current page.
+        description_full: |
+          When you activate a button,
+          you find that it performs an action on the current page.
+      - id: DST-412-003
+        description_short: |
+          Multiple instances have unique labels.
+        description_full: |
+          When you navigate a page with the same component multiple times, using a screen reader,
+          you hear a unique label for each instance that describes its specific content.
+  - id: WEB-413
+    category: screen_reader
+    wcag_criterion: 4.1.3
+    wcag_name: Status Messages
+    wcag_level: AA
+    508_severity: N/A
+    governance_severity: High
+    wcag_url: https://www.w3.org/TR/WCAG22/#status-messages
+    description_short: |
+      Screen readers announce important updates.
+    description_full: |
+      When a status message is added or updated while using a screen reader,
+      you hear the message announced without needing to move focus to the message.
