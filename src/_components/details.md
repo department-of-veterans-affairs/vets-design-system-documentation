@@ -24,8 +24,12 @@ anchors:
 
 ### Default
 
-Component is currently in development.
-{% comment %}{% include storybook-preview.html  story="uswds-va-details--default" link_text="va-details default" %}{% endcomment %}
+{% include storybook-preview.html  story="components-va-details--default" link_text="va-details default" %}
+
+### Different widths
+Use the Details component with a reduced width when you need the Details component to have less visual space on the page. 
+
+{% include storybook-preview.html  story="components-va-details--widths" link_text="va-details widths" %}
 
 ## Usage
 
