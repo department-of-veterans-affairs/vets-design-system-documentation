@@ -102,25 +102,25 @@ anchors:
 
 #### When to consider something else
 
-* **Non-actions.** For navigation between pages of a website, default to using links. Buttons can be used for navigation between pages within a form flow but otherwise use links. Read the guidance on [Buttons vs. Links](#choose-the-right-element-buttons-vs-links).
-* **Call-to-action.** For a visually prominent call to action that links to another page, use an [Action link]({{ site.baseurl }}/components/link/#choose-the-right-element-buttons-vs-links).
+* **Non-actions.** For navigation between pages of a website, default to using links. You can use buttons for navigation within a form flow, but otherwise use links. Read the guidance on [Buttons vs. Links](#choose-the-right-element-buttons-vs-links).
+* **Call-to-action.** For a visually prominent call to action that links to another page, use an [Action Link]({{ site.baseurl }}/components/link/action).
 
 #### Behavior
 
-* **Avoid using many primary buttons on a single page or section.** Pages with many primary buttons reduces their impact and make it harder for users to know what to do next.
-* **Avoid disabling buttons.** [Disabling buttons is strongly discouraged.](#do-not-disable-buttons)
-* **Use icons only when necessary.** [Icons]({{ site.baseurl }}/components/icon) can be used in buttons when additional clarity is required and the icon is highly relevant to the action. Icons should not be used for decoration. Note that va-button does not support iconography, but has some variations that use an icon. Use of icons in buttons will be made on a case-by-case basis. If you feel you need an icon for a button, [follow the process for requesting a new icon]({{ site.baseurl }}/components/icon#requesting-a-new-icon).
-  * **Note:** Chevrons should not be used in this component. Usage in the *Back* and *Continue* variations will be deprecated.
+* **Avoid using many primary buttons on a single page or section.** Using too many primary buttons on a single page or section reduces their impact and makes it harder for users to know what to do next.
+* **Avoid disabling buttons.** Refer to [Do not disable buttons](#do-not-disable-buttons) for details.
+* **Use icons only when necessary.** Use [Icons]({{ site.baseurl }}/components/icon) in buttons only when they add clarity and are highly relevant to the action. Don't use icons for decoration. Note that va-button doesn't support iconography but has some variations that include an icon. The team evaluates icon use in buttons on a case-by-case basis. If you need an icon for a button, [follow the process for requesting a new icon]({{ site.baseurl }}/components/icon#requesting-a-new-icon).
+  * **Note:** Don't use chevrons in this component. We plan to deprecate chevron usage in the *Back* and *Continue* variations.
 
 ### Choosing between variations
 
 * **Use Primary for the most important action.** Use the primary button for the most important action that you want the user to take on the page, or in a section. Also, use primary buttons to take the user to the next step in a process.
-* **Use Secondary for non-primary actions.** Use secondary buttons for any actions that need to be _downplayed_ against other actions on the page, or in a section. Also, use secondary buttons for actions that happen on the current page.
+* **Use Secondary for non-primary actions.** Use secondary buttons for any actions that you need to _downplay_ against other actions on the page, or in a section. Also, use secondary buttons for actions that happen on the current page.
 * **Use Big primary buttons for the only action.** Use the big variation of the primary button for the only action on the page.
-* **Use Continue and Back for advancing to the next step and returning to the previous step, respectively.** Note that these buttons can be used as a pair from [Button group]({{ site.baseurl }}/components/button/button-group). Also, note that the Back button should not be used if it is only navigating rather than taking an action (like submitting data ala the Continue button).
-* **Use Loading for actions that should only be triggered once.** Use the loading variation when it is necessary to block the user from additional clicks of a button that might cause transaction issues.
-* **Use Base, primary and secondary, in dark mode in mobile applications.** Use the base variations for dark mode or when primary buttons will not pass the required color contrast ratio.
-* **Use destructive for actions that have serious consequences.** Use the destructive button for any action that cannot be reversed and may result in data loss. Currently used in the mobile app when canceling an appointment and when removing contact information.
+* **Use Continue and Back for advancing to the next step and returning to the previous step, respectively.** You can use these buttons as a pair from [Button Group]({{ site.baseurl }}/components/button/button-group). Don't use the Back button for navigation only. Reserve it for cases where it also performs an action, similar to how the Continue button submits data.
+* **Use Loading for actions that should only be triggered once.** Use the loading variation when it's necessary to block the user from additional clicks of a button that might cause transaction issues.
+* **Use Base, primary and secondary, in dark mode in mobile applications.** Use the base variations for dark mode or when primary buttons won't pass the required color contrast ratio.
+* **Use destructive for actions that have serious consequences.** Use the destructive button for any action that can't be reversed and may result in data loss. The mobile app currently uses this button when canceling an appointment and when removing contact information.
   * Don't rely on the red color alone to communicate the destructive nature of the action. Always ensure the button text clearly communicates what will happen.
   * Since destructive buttons have serious consequences, always add friction before completing the action. This can be in the form of a native confirmation message (alert or action sheet) in the mobile app or a modal on web.
 
@@ -133,7 +133,7 @@ anchors:
 
 #### Primary button with a secondary link
 
-* **Links can substitute for secondary buttons.** It is not always necessary to pair a secondary button with a primary button. In the example below a link can also suffice for a non-primary action.
+* **Links can substitute for secondary buttons.** It's not always necessary to pair a secondary button with a primary button. In the example below, a link also works well for a non-primary action.
 
 {% include component-example.html alt="Example of a primary button with a secondary link." file="/images/components/button/primary-with-secondary-link.png" caption="An example of a primary button used with a secondary link." reverse=true %}
 
@@ -153,16 +153,16 @@ anchors:
 
 ### Additional guidance for VA
 
-* **Button labels should never change dynamically or be used to communicate a status.**
-* **Mind target size.** We follow the [WCAG 2.2 Target Size (Minimum) - Level AA](https://www.w3.org/WAI/WCAG22/quickref/#target-size-minimum) criteria which states:
+* **Don't change button labels dynamically or use them to communicate a status.**
+* **Mind target size.** We follow the [Web Content Accessibility Guidelines (WCAG) 2.2 Target Size (Minimum) - Level AA](https://www.w3.org/WAI/WCAG22/quickref/#target-size-minimum) criteria, which states:
 > "The size of the target for pointer inputs is at least 24 by 24 CSS pixels..."
 * **Use at least [1 spacing unit]({{ site.baseurl }}/foundation/spacing-units) separating tappable elements.**
-* **Prioritize a clear and concise button label and only use `message-aria-describedby` when it enhances understanding and accessibility.** The `message-aria-describedby` property emulates HTML's `aria-describedby` due to web component limitations. It allows adding an additional description that is visually hidden, but screen reader accessible.
+* **Prioritize a clear and concise button label and only use `message-aria-describedby` when it enhances understanding and accessibility.** The `message-aria-describedby` property emulates HTML's `aria-describedby` due to web component limitations. Use it to add a description that is visually hidden but accessible to screen readers.
   * When to use:
     * **Providing additional context or instructions.** If the button label is concise but requires further explanation.
   * When _not_ to use:
     * **Duplicating information.** If the button's label is clear and concise, adding additional information may be redundant and cumbersome for users of assistive technology.
-    * **Providing essential information.** Crucial information for the button's purpose should be the button label itself, _not_ solely relying on an additional description.
+    * **Providing essential information.** Put crucial information about the button's purpose in the button label itself. Don't rely solely on an additional description.
 
 {% include content/links-vs-buttons.md %}
 
