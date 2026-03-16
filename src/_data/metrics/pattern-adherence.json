@@ -583,8 +583,9 @@
           "github_label": "21P-0847"
         },
         {
-          "product_name": "22-10272 - Request for Reimbursement of Preparatory (Prep) Course for Licensing or Certification Test",
-          "path_to_code": "src/applications/edu-benefits/10272"
+          "product_name": "26-1880 - Request a VA home loan Certificate of Eligibility (COE)",
+          "path_to_code": "src/applications/lgy/coe/form",
+          "github_label": "COE"
         },
         {
           "product_name": "26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant",
@@ -617,8 +618,9 @@
           "github_label": "21-4138"
         },
         {
-          "product_name": "22-10272 - Request for Reimbursement of Preparatory (Prep) Course for Licensing or Certification Test",
-          "path_to_code": "src/applications/edu-benefits/10272"
+          "product_name": "26-1880 - Request a VA home loan Certificate of Eligibility (COE)",
+          "path_to_code": "src/applications/lgy/coe/form",
+          "github_label": "COE"
         }
       ],
       "usage_count": 2,
