@@ -103,7 +103,7 @@ anchors:
 #### When to consider something else
 
 * **Non-actions.** For navigation between pages of a website, default to using links. You can use buttons for navigation within a form flow, but otherwise use links. Read the guidance on [Buttons vs. Links](#choose-the-right-element-buttons-vs-links).
-* **Call-to-action.** For a visually prominent call to action that links to another page, use an [Action Link]({{ site.baseurl }}/components/link/action).
+* **Call-to-action.** For a visually prominent call to action that links to another page, use an [Action link]({{ site.baseurl }}/components/link/action).
 
 #### Behavior
 
@@ -117,7 +117,7 @@ anchors:
 * **Use Primary for the most important action.** Use the primary button for the most important action that you want the user to take on the page, or in a section. Also, use primary buttons to take the user to the next step in a process.
 * **Use Secondary for non-primary actions.** Use secondary buttons for any actions that you need to _downplay_ against other actions on the page, or in a section. Also, use secondary buttons for actions that happen on the current page.
 * **Use Big primary buttons for the only action.** Use the big variation of the primary button for the only action on the page.
-* **Use Continue and Back for advancing to the next step and returning to the previous step, respectively.** You can use these buttons as a pair from [Button Group]({{ site.baseurl }}/components/button/button-group). Don't use the Back button for navigation only. Reserve it for cases where it also performs an action, similar to how the Continue button submits data.
+* **Use Continue and Back for advancing to the next step and returning to the previous step, respectively.** You can use these buttons as a pair from [Button group]({{ site.baseurl }}/components/button/button-group). Don't use the Back button for navigation only. Reserve it for cases where it also performs an action, similar to how the Continue button submits data.
 * **Use Loading for actions that should only be triggered once.** Use the loading variation when it's necessary to block the user from additional clicks of a button that might cause transaction issues.
 * **Use Base, primary and secondary, in dark mode in mobile applications.** Use the base variations for dark mode or when primary buttons won't pass the required color contrast ratio.
 * **Use destructive for actions that have serious consequences.** Use the destructive button for any action that can't be reversed and may result in data loss. The mobile app currently uses this button when canceling an appointment and when removing contact information.
