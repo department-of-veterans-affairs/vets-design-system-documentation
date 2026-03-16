@@ -34,7 +34,7 @@ anchors:
 
 ### When to use Banner
 
-* **Emergency or very urgent communications.** On the home page, Banner is to be used exclusively for urgent communications which notify Veterans, VA employees, and the public of events that affect VA services. For example, a government shutdown affecting VA services.
+* **Emergency or very urgent communications.** On the home page, use Banner exclusively for urgent communications that notify Veterans, VA employees, and the public of events that affect VA services. For example, a government shutdown affecting VA services.
 * **Preparing a Veteran to visit a VA facility.** Many of the messages typically found in banners are managed by VA Facilities and help a Veteran prepare for their visit to a facility. Those messages include, but are not limited to:
   * Active threat training exercise warnings
   * Changes to availability, hours, or wait times for emergency or urgent care
@@ -45,16 +45,16 @@ anchors:
   * Utility outages (phone, water, etc.)
   * Wildfire, natural disasters, and inclement weather
   * Delays in filling prescriptions
-* **Additional Veteran actions.** Finally there are additional messages that require an action from a Veteran that may use this component:
+* **Additional Veteran actions.** Finally, there are additional messages that require an action from a Veteran that may use this component:
   * IRS deadline for benefit declarations
   * Sign up for notifications
 
 ### When to consider something else
 
-* **User feedback.** User feedback is provided via [feedback messages]({{ site.baseurl }}/content-style-guide/error-messages/feedback) that respond to an action a user has taken and to draw their attention to something that they need to correct or to confirm successful completion of a task. These messages are handled by the [Alert]({{ site.baseurl }}/components/alert) component.
-* **In-application system status, engagement, and access messages.** All of the messages in our [messages dictionary]({{ site.baseurl }}/content-style-guide/error-messages) are handled by the [Alert]({{ site.baseurl }}/components/alert) component. For application-level maintenance, review the [downtime notifications guidance](https://depo-platform-documentation.scrollhelp.site/developer-docs/downtime-notifications).
-* **System maintenance.** Before and during maintenance there are [specific system status messages]({{ site.baseurl }}/content-style-guide/error-messages/system) that we use to communicate the maintenance window to users which is handled by the [Banner - Maintenance]({{ site.baseurl }}/components/banner/maintenance) component. 
-* **Helping a Veteran maintain their health.** Another category of messages are broadly related to helping Veterans manage their health. These messages should be managed with a combination of Content Management System (CMS) components as follows:
+* **User feedback.** Use [feedback messages]({{ site.baseurl }}/content-style-guide/error-messages/feedback) to respond to an action a user has taken and to draw their attention to something they need to correct or confirm. The [Alert]({{ site.baseurl }}/components/alert) component handles these messages.
+* **In-application system status, engagement, and access messages.** The [Alert]({{ site.baseurl }}/components/alert) component handles all messages in our [messages dictionary]({{ site.baseurl }}/content-style-guide/error-messages). For application-level maintenance, review the [downtime notifications guidance](https://depo-platform-documentation.scrollhelp.site/developer-docs/downtime-notifications).
+* **System maintenance.** Use the [Banner - Maintenance]({{ site.baseurl }}/components/banner/maintenance) component to display [specific system status messages]({{ site.baseurl }}/content-style-guide/error-messages/system) that communicate the maintenance window to users before and during maintenance.
+* **Helping a Veteran maintain their health.** Another category of messages broadly relates to helping Veterans manage their health. Manage these messages with a combination of Content Management System (CMS) components as follows:
   * Call center/secure messaging promotion: Story with spotlight.
   * Flu shot general availability/promotion of flu clinic: Story with spotlight, Event for flu clinics, or a program page with a link to a spotlight area.
   * Learn about vaccinations: Program page with link from spotlight area or Story with spotlight. Note: Do not duplicate national content.
@@ -65,8 +65,8 @@ anchors:
 
 * **Don't stack banners.** Only one Banner may appear on any page at one time. If multiple emergency issues occur at once, combine the message and link out to a landing page or to individual affected medical centers, for example.
 * **Info and warning only.** Banner is only available in `info` or `warning` styles.
-* **Dismissible by default.** Banners should generally be dismissible by the user.
-* **Links, not buttons.** Don't use buttons in Banner. [Buttons are reserved for actions whereas links are for navigation]({{ site.baseurl }}/components/link#choose-the-right-element-buttons-vs-links).
+* **Dismissible by default.** Generally, make banners dismissible by the user.
+* **Links, not buttons.** Don't use buttons in Banner. [Use buttons for actions and links for navigation]({{ site.baseurl }}/components/link#choose-the-right-element-buttons-vs-links).
 
 ### Placement
 
