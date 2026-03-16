@@ -31,9 +31,9 @@ This includes specific guidance on:
 
 When the changed files include component documentation in `src/_components/`, also apply these standards:
 
-[component-guidance.instructions.md](../.github/instructions/component-guidance.instructions.md)
+[component-guidance.instructions.md](../instructions/component-guidance.instructions.md)
 
-[component-guidance-structure.instructions.md](../.github/instructions/component-guidance-structure.instructions.md)
+[component-guidance-structure.instructions.md](../instructions/component-guidance-structure.instructions.md)
 
 ## Review Process
 
