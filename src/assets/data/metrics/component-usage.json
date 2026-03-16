@@ -19216,11 +19216,11 @@
     "applications_tracked": 140,
     "usage_trend": {
       "direction": "up",
-      "percentage": 1564,
-      "value": 7071
+      "percentage": 2,
+      "value": 160
     }
   },
   "data_source": "component-library/ds-components",
-  "generated_at": "2026-03-16T16:00:05.281Z",
+  "generated_at": "2026-03-16T17:52:44.755Z",
   "report_date": "2026-03-13"
 }
