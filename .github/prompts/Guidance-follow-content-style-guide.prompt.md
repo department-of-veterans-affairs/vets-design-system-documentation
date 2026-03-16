@@ -27,6 +27,14 @@ This includes specific guidance on:
 * [Plain language considerations for technical audiences](../../src/_about/contributing/contributing-to-docs.md#plain-language)
 * [Referencing components, patterns, and templates](../../src/_about/contributing/contributing-to-docs.md#referencing-components-patterns-and-templates)
 
+## Component guidance
+
+When the changed files include component documentation in `src/_components/`, also apply these standards:
+
+[component-guidance.instructions.md](../.github/instructions/component-guidance.instructions.md)
+
+[component-guidance-structure.instructions.md](../.github/instructions/component-guidance-structure.instructions.md)
+
 ## Review Process
 
 When reviewing pull requests that modify guidance content, ensure:
