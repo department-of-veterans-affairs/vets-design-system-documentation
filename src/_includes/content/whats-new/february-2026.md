@@ -5,8 +5,8 @@
 - Added guidance on writing out a length of time:
   > When writing out a length of time, use XX hours and XX minutes. We should only use decimals, like 3.5 hours, if it’s in a table where space is limited.
 - Added guidance on when to add ".00" to dollar amounts:
-  >• When you have a dollar amount that doesn’t include cents in running text, don’t add the “.00” at the end<br>
-• When you have a dollar amount that doesn’t include cents in a list or a table, add the “.00” at the end
+  >• When you have a dollar amount that doesn’t include cents in running text, don’t add the “.00” at the end.<br>
+• When you have a dollar amount that doesn’t include cents in a list or a table, add the “.00” at the end.
 
 #### [Dates, times, phone numbers, and addresses](https://design.va.gov/content-style-guide/dates-and-numbers)
 
@@ -23,7 +23,7 @@ We made these changes throughout all 4 sections:
 - Removed all directional language
 - Revised alerts to use active voice
 - Revised alerts to be more concise and show where they can be customized
-- Revised alerts to remove any idioms, like "one our end"
+- Revised alerts to remove any idioms, like "on our end"
 - Revised similar alerts so they have consistent wording
 - Aligned the alerts with current style guide guidance
 
