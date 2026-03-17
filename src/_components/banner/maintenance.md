@@ -31,24 +31,23 @@ anchors:
 
 ### When to use Banner - Maintenance
 
-* **System maintenance.** Before and during maintenance there are [specific system status messages]({{ site.baseurl }}/content-style-guide/error-messages/system) that we use to communicate the maintenance window to users. Maintenance messages are used when all (or most) unauthenticated and authenticated applications, tools, or sign in experiences across the entire site are affected (e.g., vets-api).
+* **System maintenance.** Before and during maintenance, we use [specific system status messages]({{ site.baseurl }}/content-style-guide/error-messages/system) to communicate the maintenance window to users. Use maintenance messages when all (or most) unauthenticated and authenticated applications, tools, or sign-in experiences across the entire site are affected (e.g., vets-api).
 
 ### When to consider something else
 
-* **Anything that is not a System status message.** This component is ONLY for site-wide [system status messages]({{ site.baseurl }}/content-style-guide/error-messages/system). There is no other appropriate use. For application-level maintenance, review the [downtime notifications guidance](https://depo-platform-documentation.scrollhelp.site/developer-docs/downtime-notifications).
+* **Anything that is not a system status message.** This component is only for site-wide [system status messages]({{ site.baseurl }}/content-style-guide/error-messages/system). There is no other appropriate use. For application-level maintenance, review the [downtime notifications guidance](https://depo-platform-documentation.scrollhelp.site/developer-docs/downtime-notifications).
 
 ## Behavior
 
 The content and UX behavior of site-wide maintenance banners are standardized. Only the duration, dates, and times are customizable.
 
-The Public Website Team (Office of the CTO Digital Experience) publishes downtime maintenance banners.
+The Public Website Team (Office of the CTO Digital Experience) publishes downtime maintenance banners. These banners have the following characteristics:
 
-* Specify custom dates and times.
-* Specify custom duration (how many hours or minutes) in the upcoming/before message.
-* Times are always given in ET.
-* Site-wide maintenance banners are always dismissible per session.
-* The ‘upcoming’ before message should be published at least 12 hours in advance. (Can be more in advance when the outage is unusually long or comprehensive.)
-* Banner expires and automatically removed when downtime is complete.
-* A maximum of 3 banners are allowed simultaneously.
+* Dates, times, and duration (how many hours or minutes) are customizable in the upcoming/before message.
+* Times are always given in Eastern time (ET).
+* Banners are always dismissible per session.
+* The "upcoming" before message should be published at least 12 hours in advance. Allow more lead time when the outage is unusually long or comprehensive.
+* The banner automatically expires when downtime is complete.
+* A maximum of 3 banners can appear simultaneously.
 
 {% include component-docs.html component_name=page.web-component %}
