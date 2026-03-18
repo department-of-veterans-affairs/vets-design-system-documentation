@@ -21,17 +21,20 @@ The metrics dashboard tracks component usage and overall issue counts, but doesn
 
 **Inputs:**
 - GitHub Issues API via `gh` CLI — all open issues with `bug` label in this repo
-- `component-maturity.json` — source of truth for component names (used as label names)
-- `component-usage.json` — usage counts per component from the component-library CSV pipeline
+- `component-maturity.json` — source of truth for component names (used as label names). The `_warning` key must be excluded; only `va-*` keys are valid components.
+- `component-usage.json` — usage counts per component from the component-library CSV pipeline. This file uses display names (e.g., `"Link"`) with a `sourceComponents` array containing the `va-*` tag forms. Join usage data by matching `component-maturity.json` keys against entries in `sourceComponents` arrays.
 
 **Processing:**
 1. Fetch all open issues labeled `bug` using `gh` CLI (same auth pattern as `collect-issue-metrics.js`)
-2. For each issue, check which `va-*` component labels it has (from `component-maturity.json` keys)
-3. Count bugs per component
-4. Load `component-usage.json` and match components to get usage counts
-5. Calculate defect rate: `(bug_count / usage_count) * 100`, expressed as a percentage
-6. If a component has no usage data, `usage_count` and `defect_rate` are `null` (displayed as "N/A")
-7. Generate GitHub query URL per component: `https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:{component}`
+2. Load component list from `component-maturity.json` keys, excluding `_warning` and any other non-`va-*` keys
+3. For each issue, check which component labels it has (matching against the filtered component list)
+4. Count bugs per component. An issue with multiple component labels increments the count for each matching component.
+5. Load `component-usage.json` and match components by finding the `top_components_overall` entry whose `sourceComponents` array contains the `va-*` key
+6. Calculate defect rate: `(bug_count / usage_count) * 100`, expressed as a percentage
+7. If a component has no usage data, `usage_count` and `defect_rate` are `null` (displayed as "N/A")
+8. If a component has `usage_count` of `0`, treat the same as no usage data — set `usage_count` to `0` and `defect_rate` to `null` (displayed as "N/A") to avoid division by zero
+9. Include ALL components from `component-maturity.json` in `by_component`, even those with zero bugs (`bug_count: 0`). This ensures the table can show every component without needing a separate merge step in the UI.
+10. Generate GitHub query URL per component: `https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:{component}`
 
 **Output:** `component-bug-metrics.json` written to both:
 - `/src/_data/metrics/` (for Jekyll Liquid templates)
@@ -55,11 +58,19 @@ The metrics dashboard tracks component usage and overall issue counts, but doesn
       "usage_count": null,
       "defect_rate": null,
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-text-input"
+    },
+    {
+      "name": "va-card",
+      "bug_count": 0,
+      "usage_count": 45,
+      "defect_rate": 0,
+      "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-card"
     }
   ],
   "summary": {
     "total_components_with_bugs": 15,
     "total_bug_issues": 42,
+    "total_components": 55,
     "highest_defect_rate_component": "va-segmented-progress-bar",
     "most_bugs_component": "va-modal",
     "last_updated": "2026-03-17T00:00:00.000Z"
@@ -69,7 +80,11 @@ The metrics dashboard tracks component usage and overall issue counts, but doesn
 }
 ```
 
-Components in `by_component` are sorted by `bug_count` descending.
+Components in `by_component` are sorted by `bug_count` descending, then alphabetically by name for ties (including zero-bug components).
+
+**Field definitions:**
+- `total_bug_issues` — the count of **unique** open issues with the `bug` label in the repo. Because one issue can have multiple component labels, the sum of per-component `bug_count` values may exceed this number.
+- `total_components` — the total number of components in `by_component` (including zero-bug entries).
 
 ## Dashboard Display
 
@@ -119,10 +134,10 @@ Add a new step in `.github/workflows/metrics-dashboard.yml`:
 - name: Collect component bug metrics
   run: node scripts/collect-component-bug-metrics.js
   env:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    GITHUB_TOKEN: ${{ secrets.VADS_WORKFLOWS }}
 ```
 
-- Runs after `collect-issue-metrics.js` (shares the same token)
+- Runs after `collect-issue-metrics.js` (uses `secrets.VADS_WORKFLOWS`, consistent with all other steps in the workflow)
 - Add `component-bug-metrics.json` to the verification step that checks both output locations
 
 ## JavaScript Integration
