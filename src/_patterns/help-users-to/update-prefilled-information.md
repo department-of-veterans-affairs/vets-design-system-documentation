@@ -178,7 +178,6 @@ If the required information is missing
 
 ## Accessibility considerations
 
-- Aria-labels for edit links for cards should include the name of the item that’s being edited. For example: Use “Edit phone number” for an edit link for a phone number card. 
 - Focus should return to the success alert when an item has been updated.
 
 ## Research findings
