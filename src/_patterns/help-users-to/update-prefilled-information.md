@@ -164,7 +164,7 @@ Here's an example that tells people to call the VA benefits hotline:
 ### Error messages
 If the information can’t be saved onto profile, but can be used for the form
 
->Error alert: We can’t update your information in your profile. But you can continuing filling out this [form/application] and update your profile information later.
+>Warning alert: We can’t update your information in your profile. But you can continuing filling out this [form/application] and update your profile information later.
 
 
 If the information can’t be saved for profile or for the form
@@ -174,7 +174,7 @@ If the information can’t be saved for profile or for the form
 
 If the required information is missing
 
->Inline error message: Select “Add” to enter your [missing content].
+>Inline error message: You must add your [missing content].
 
 ## Accessibility considerations
 
