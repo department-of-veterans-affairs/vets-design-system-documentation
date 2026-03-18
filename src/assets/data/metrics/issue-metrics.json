@@ -147,8 +147,8 @@
     },
     {
       "period": "2026-Q1",
-      "issues_opened": 414,
-      "issues_closed": 470
+      "issues_opened": 494,
+      "issues_closed": 563
     }
   ],
   "velocity": [
@@ -594,8 +594,13 @@
     },
     {
       "period": "2026-02",
-      "issues_opened": 209,
-      "issues_closed": 279
+      "issues_opened": 212,
+      "issues_closed": 288
+    },
+    {
+      "period": "2026-03",
+      "issues_opened": 77,
+      "issues_closed": 84
     }
   ],
   "experimental_quarterly": [
@@ -716,8 +721,8 @@
     {
       "period": "2026-Q1",
       "issues_opened": 1,
-      "issues_closed": 4,
-      "issues_implemented": 3
+      "issues_closed": 5,
+      "issues_implemented": 4
     }
   ],
   "a11y_monthly": {
@@ -1207,38 +1212,38 @@
         "a11y_defect_0": 0,
         "a11y_defect_1": 1,
         "a11y_defect_2": 2,
-        "a11y_defect_3": 4
+        "a11y_defect_3": 5
       },
       {
         "period": "2026-02",
         "a11y_defect_0": 0,
         "a11y_defect_1": 3,
-        "a11y_defect_2": 0,
+        "a11y_defect_2": 1,
         "a11y_defect_3": 1
       }
     ]
   },
   "summary": {
-    "open_issues": 576,
-    "closed_this_month": 279,
-    "avg_resolution_days": 120,
-    "total_issues": 5728,
-    "last_updated": "2026-02-27T18:16:25.480Z",
+    "open_issues": 563,
+    "closed_this_month": 84,
+    "avg_resolution_days": 119,
+    "total_issues": 5808,
+    "last_updated": "2026-03-13T18:16:05.717Z",
     "open_issues_trend": {
-      "direction": "up",
-      "percentage": 2,
-      "value": 14
+      "direction": "down",
+      "percentage": 12,
+      "value": -76
     },
     "closed_month_trend": {
-      "direction": "up",
-      "percentage": 46,
-      "value": 88
+      "direction": "down",
+      "percentage": 71,
+      "value": -204
     },
     "resolution_time_trend": {
       "direction": "up",
-      "percentage": 27,
-      "value": 26
+      "percentage": 20,
+      "value": 19
     }
   },
-  "generated_at": "2026-02-27T18:16:26.089Z"
+  "generated_at": "2026-03-13T18:16:06.183Z"
 }

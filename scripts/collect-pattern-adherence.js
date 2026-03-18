@@ -318,6 +318,139 @@ async function findJSFiles(dir, baseDir = dir) {
 }
 
 /**
+ * Find applications using the ConfirmationView pattern
+ *
+ * This pattern is special because confirmation pages live in containers/
+ * or components/ directories, not config/ or pages/. Forms import from
+ * 'platform/forms-system/src/js/components/ConfirmationView'.
+ * All non-test JS/JSX files are scanned because the import can appear
+ * in container, component, or other application files.
+ */
+async function findConfirmationViewPattern() {
+  console.log(`  Looking for ConfirmationView imports across all non-test JS/JSX files...`);
+
+  if (VETS_WEBSITE_PATH) {
+    console.log(`  Using local vets-website at: ${VETS_WEBSITE_PATH}`);
+    const applicationsDir = path.join(VETS_WEBSITE_PATH, 'src/applications');
+
+    try {
+      await fs.access(applicationsDir);
+    } catch {
+      console.warn(`  ⚠️  Directory not found: ${applicationsDir}`);
+      return [];
+    }
+
+    const allFiles = await findJSFiles(applicationsDir);
+    const candidateFiles = allFiles.filter(p =>
+      !p.includes('/tests/') && !p.includes('.unit.') && !p.includes('.spec.')
+    );
+
+    console.log(`  Found ${candidateFiles.length} files to scan`);
+
+    const appPaths = new Set();
+    let checked = 0;
+    let found = 0;
+
+    for (const filePath of candidateFiles) {
+      try {
+        checked++;
+        const fullPath = path.join(applicationsDir, filePath);
+        const content = await fs.readFile(fullPath, 'utf8');
+
+        if (content.includes('components/ConfirmationView')) {
+          found++;
+          const segments = filePath.replace(/^\//, '').split('/').filter(Boolean);
+          const appId = segments.length >= 2
+            ? `${segments[0]}/${segments[1]}`
+            : (segments[0] || null);
+          if (appId) {
+            appPaths.add(appId);
+          }
+        }
+      } catch (error) {
+        if (!error.message.includes('ENOENT')) {
+          console.warn(`⚠️  Could not read ${filePath}: ${error.message}`);
+        }
+      }
+    }
+
+    const apps = Array.from(appPaths);
+    console.log(`  ✓ Found ${apps.length} apps using this pattern (checked ${checked} files, ${found} matches)`);
+    return apps;
+
+  } else {
+    console.warn(`  ⚠️  ConfirmationView pattern detection via GitHub API not yet implemented`);
+    console.warn(`  ⚠️  Please use --vets-website-path for accurate ConfirmationView pattern detection`);
+    return [];
+  }
+}
+
+/**
+ * Find applications using the Prefill pattern
+ *
+ * This pattern is special because forms import from a different path
+ * (platform/forms-system/src/js/patterns/prefill) rather than web-component-patterns.
+ */
+async function findPrefillPattern() {
+  console.log(`  Looking for prefill pattern imports in form configs...`);
+
+  if (VETS_WEBSITE_PATH) {
+    console.log(`  Using local vets-website at: ${VETS_WEBSITE_PATH}`);
+    const applicationsDir = path.join(VETS_WEBSITE_PATH, 'src/applications');
+
+    try {
+      await fs.access(applicationsDir);
+    } catch {
+      console.warn(`  ⚠️  Directory not found: ${applicationsDir}`);
+      return [];
+    }
+
+    const allFiles = await findJSFiles(applicationsDir);
+    const configFiles = allFiles.filter(p =>
+      p.endsWith('/config/form.js') || p.endsWith('/config/form.jsx')
+    );
+
+    console.log(`  Found ${configFiles.length} form config files`);
+
+    const appPaths = new Set();
+    let checked = 0;
+    let found = 0;
+
+    for (const filePath of configFiles) {
+      try {
+        checked++;
+        const fullPath = path.join(applicationsDir, filePath);
+        const content = await fs.readFile(fullPath, 'utf8');
+
+        if (content.includes('forms-system/src/js/patterns/prefill')) {
+          found++;
+          const segments = filePath.replace(/^\//, '').split('/').filter(Boolean);
+          const appId = segments.length >= 2
+            ? `${segments[0]}/${segments[1]}`
+            : (segments[0] || null);
+          if (appId) {
+            appPaths.add(appId);
+          }
+        }
+      } catch (error) {
+        if (!error.message.includes('ENOENT')) {
+          console.warn(`⚠️  Could not read ${filePath}: ${error.message}`);
+        }
+      }
+    }
+
+    const apps = Array.from(appPaths);
+    console.log(`  ✓ Found ${apps.length} apps using this pattern (checked ${checked} files, ${found} matches)`);
+    return apps;
+
+  } else {
+    console.warn(`  ⚠️  Prefill pattern detection via GitHub API not yet implemented`);
+    console.warn(`  ⚠️  Please use --vets-website-path for accurate Prefill pattern detection`);
+    return [];
+  }
+}
+
+/**
  * Find applications using the Signature pattern (FormSignature.jsx)
  *
  * This pattern is special because forms don't import it - they use
@@ -412,6 +545,16 @@ async function findImporters(patternCodeFile) {
     // Special case: FormSignature pattern uses declarative config
     if (filename === 'FormSignature.jsx') {
       return await findSignaturePattern();
+    }
+
+    // Special case: Prefill pattern imports from a non-web-component-patterns path
+    if (filename === 'index.js' && patternCodeFile.includes('patterns/prefill')) {
+      return await findPrefillPattern();
+    }
+
+    // Special case: ConfirmationView pattern lives in components/ and is used in container files
+    if (filename === 'index.js' && patternCodeFile.includes('ConfirmationView')) {
+      return await findConfirmationViewPattern();
     }
 
     // Get the export names for this pattern
@@ -646,6 +789,33 @@ async function buildPatternAdherence() {
 }
 
 /**
+ * Save adoption data as a permalink-keyed JSON file for Jekyll/Liquid consumption.
+ * Keying by permalink avoids looping in Liquid: site.data.metrics.pattern_adoption[page.permalink]
+ */
+async function saveAdoptionData(data) {
+  const adoptionByPermalink = {};
+
+  for (const pattern of data.patterns) {
+    if (!pattern.pattern_permalink) continue;
+
+    adoptionByPermalink[pattern.pattern_permalink] = {
+      pattern_name: pattern.pattern_name,
+      usage_count: pattern.usage_count,
+      total_forms: pattern.total_forms,
+      compliance_percentage: pattern.compliance_percentage,
+      forms_using_pattern: pattern.forms_using_pattern.map(f => ({
+        product_name: f.product_name
+      }))
+    };
+  }
+
+  const adoptionFile = path.join(JEKYLL_DATA_DIR, 'pattern_adoption.json');
+  await fs.writeFile(adoptionFile, JSON.stringify(adoptionByPermalink, null, 2), 'utf8');
+
+  console.log(`   ${adoptionFile}`);
+}
+
+/**
  * Save adherence data as JSON
  */
 async function saveAdherenceData(data) {
@@ -664,6 +834,8 @@ async function saveAdherenceData(data) {
   console.log(`\n✅ Saved pattern adherence data to:`);
   console.log(`   ${outputFile}`);
   console.log(`   ${jekyllFile}`);
+
+  await saveAdoptionData(data);
 }
 
 /**
@@ -829,9 +1001,12 @@ module.exports = {
   getFormProducts,
   isFormProduct,
   findImporters,
+  findConfirmationViewPattern,
+  findPrefillPattern,
   buildPatternAdherence,
   generateMarkdownReport,
   saveMarkdownReport,
   saveAdherenceData,
+  saveAdoptionData,
   main
 };

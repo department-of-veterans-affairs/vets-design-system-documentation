@@ -75,16 +75,19 @@ async function parseDSComponentsCSV(csvPath) {
     // Find column indices
     const dateIndex = headers.findIndex(h => h.toLowerCase() === 'date');
     const componentIndex = headers.findIndex(h => h.toLowerCase() === 'component_name');
-    const uswdsIndex = headers.findIndex(h => h.toLowerCase() === 'uswds');
-    
+
     if (dateIndex === -1 || componentIndex === -1) {
       throw new Error('Required columns (date, component_name) not found in CSV');
     }
-    
-    // Application columns start after the standard columns (date, component_name, uswds)
-    const applicationStartIndex = Math.max(uswdsIndex + 1, 3);
-    const applicationColumns = headers.slice(applicationStartIndex);
-    
+
+    // Application columns: everything except known metadata and pre-calculated totals.
+    // Using exclusion (not position) so column order in the CSV doesn't matter.
+    // 'uswds' is excluded — the USWDS v3 migration is complete and that count is no
+    // longer meaningful to sum. 'total' is excluded to prevent double-counting.
+    const EXCLUDED_COLUMNS = new Set(['date', 'component_name', 'uswds', 'total']);
+    const applicationColumns = headers.filter(h => !EXCLUDED_COLUMNS.has(h.toLowerCase()));
+    const applicationColumnIndices = applicationColumns.map(col => headers.indexOf(col));
+
     console.log(`Processing ${lines.length - 1} component records...`);
     console.log(`Application columns: ${applicationColumns.length} (${applicationColumns.slice(0, 3).join(', ')}...)`);
     
@@ -95,37 +98,33 @@ async function parseDSComponentsCSV(csvPath) {
     for (let i = 1; i < lines.length; i++) {
       const values = parseCSVLine(lines[i]);
       
-      // Improved column count validation - handle both too few and too many columns
-      if (values.length < Math.min(headers.length, applicationStartIndex + 1)) {
-        console.warn(`Row ${i + 1} has ${values.length} values but expected at least ${applicationStartIndex + 1} (${headers.length} total columns), skipping`);
-        continue;
-      }
-      
-      // Handle rows with more columns than headers (pad headers or truncate values)
+      // Handle rows with more columns than headers
       if (values.length > headers.length) {
         console.warn(`Row ${i + 1} has ${values.length} values but only ${headers.length} headers, truncating extra values`);
-        values.length = headers.length; // Truncate extra values
+        values.length = headers.length;
       }
-      
+
       const date = values[dateIndex];
       const componentName = values[componentIndex];
-      
+
       // Set report date from first row
       if (!reportDate) {
         reportDate = date;
       }
-      
+
       if (!componentName || componentName.trim() === '') {
         continue;
       }
-      
-      // Calculate total usage across all applications (ignoring USWDS column)
+
+      // Sum only application columns. Iterating by pre-built index list means
+      // column order in the CSV doesn't affect which columns are counted.
       let totalUsage = 0;
       const applicationUsage = {};
-      
-      for (let j = applicationStartIndex; j < Math.min(values.length, headers.length); j++) {
-        const appName = headers[j];
-        const usageCount = parseInt(values[j]) || 0;
+
+      for (let k = 0; k < applicationColumnIndices.length; k++) {
+        const colIndex = applicationColumnIndices[k];
+        const appName = applicationColumns[k];
+        const usageCount = parseInt(values[colIndex]) || 0;
         applicationUsage[appName] = usageCount;
         totalUsage += usageCount;
       }
