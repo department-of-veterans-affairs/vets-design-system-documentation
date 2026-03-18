@@ -33,9 +33,9 @@ on-this-page: false
   </va-tab-panel>
   <va-tab-item button-text="Content Style Guide" target-id="panel-4"></va-tab-item>
   <va-tab-panel panel-id="panel-4">
-    <h3>January 2026</h3>
+    <h3>February 2026</h3>
     {% capture content_style_guide_updates %}
-{% include content/whats-new/january-2026.md %}
+{% include content/whats-new/february-2026.md %}
     {% endcapture %}
     {{ content_style_guide_updates | markdownify }}
     <va-link-action href="{{ site.baseurl }}/content-style-guide/whats-new" text="Read about older updates in the content style guide what's new page"></va-link-action>
