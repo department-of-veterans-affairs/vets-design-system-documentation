@@ -105,7 +105,9 @@ function fetchOpenBugIssues() {
 }
 
 /**
- * Count bugs per component and track unique issue count
+ * Count bugs per component from issue labels.
+ * Returns a Map of component name -> bug count.
+ * An issue with multiple component labels increments the count for each.
  */
 function countBugsByComponent(issues, componentNames) {
   const bugCounts = new Map();
