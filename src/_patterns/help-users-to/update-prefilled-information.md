@@ -97,7 +97,7 @@ There may be instances where some information that would usually be prefilled is
 
 If the user does not provide the required missing information and selects the "Continue" button to try and move forward, they'll get the same page with that status card in an error state and red error text telling them what information they need to provide. Once they select "Add" and provide the information on an edit page, they will be redirected back to this screen and can continue through the form.
 
-{% include component-example.html class="x2" alt="A page showing users an error state of the card with missing and required information they need to add." file="/images/patterns/help-users-to/update-prefilled-information/card-with-missing-info-error-state.png" %}
+{% include component-example.html class="x2" alt="A page with a status card in an error state for missing required information the user must add." file="/images/patterns/help-users-to/update-prefilled-information/card-with-missing-info-error-state.png" %}
 
 #### Communicate when and where we'll save updates to prefilled information
 
