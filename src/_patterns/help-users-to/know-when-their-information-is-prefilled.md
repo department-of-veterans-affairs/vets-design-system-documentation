@@ -5,6 +5,7 @@ permalink: /patterns/help-users-to/know-when-their-information-is-prefilled
 sub-section: help-users-to
 intro-text: Follow this pattern to help people know when their information will be prefilled for them in an application, form, or tool.
 figma-link: https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates--Patterns--and-Forms?m=auto&node-id=13451-91712&t=eoaTAXv2PGPTU6mE-1
+code-link: https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/patterns/prefill/index.js
 research-title: Help users know when their info is prefilled
 status: use-deployed
 anchors:
