@@ -1,3 +1,7 @@
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/functions' as *;
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/_mixins.scss' as *;
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/tokens/scss/variables' as *;
+
 .site-l-content-wrapper {
   max-width: 1200px;
 }
@@ -300,5 +304,24 @@
       flex-basis: 256px;
       order: 2;
     }
+  }
+}
+
+.markdown {
+  table {
+    border-collapse: collapse;
+    margin: units(2) 0;
+    width: 100%;
+  }
+
+  th,
+  td {
+    border: 1px solid $vads-color-base-lighter;
+    padding: units(1);
+    vertical-align: top;
+  }
+
+  thead th {
+    background-color: $vads-color-base-lightest;
   }
 }

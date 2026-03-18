@@ -8,6 +8,7 @@ sub-pages:
   - sub-page: Domain structure
   - sub-page: URL Standards
   - sub-page: VA Health and Benefits app
+  - sub-page: VA website organization
 ---
 
 ## IA principles

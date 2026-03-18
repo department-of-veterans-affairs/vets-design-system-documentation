@@ -1,3 +1,8 @@
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/functions' as *;
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/_mixins.scss' as *;
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/tokens/scss/variables' as *;
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/formation-overrides/variables' as *;
+
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

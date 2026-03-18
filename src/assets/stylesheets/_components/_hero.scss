@@ -1,3 +1,7 @@
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/functions' as *;
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/_mixins.scss' as *;
+@use '../../../node_modules/@department-of-veterans-affairs/css-library/dist/tokens/scss/variables' as *;
+
 .site-hero {
   background: #16171F;
   color: #fff;
