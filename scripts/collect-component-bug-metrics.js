@@ -19,6 +19,7 @@ const DATA_DIR = path.join(__dirname, '../src/_data/metrics');
 const ASSETS_DIR = path.join(__dirname, '../src/assets/data/metrics');
 const COMPONENT_MATURITY_FILE = path.join(__dirname, '../src/_data/component-maturity.json');
 const COMPONENT_USAGE_FILE = path.join(DATA_DIR, 'component-usage.json');
+const DS_COMPONENTS_CSV_FILE = path.join(DATA_DIR, 'ds-components-latest.csv');
 
 /**
  * Load valid component names from component-maturity.json
@@ -39,32 +40,64 @@ function loadComponentNames() {
 }
 
 /**
- * Load component usage data and build a lookup map from va-* key to usage_count
+ * Load component usage data and build a lookup map from va-* key to usage_count.
+ * Reads from the full ds-components-latest.csv (all tracked components) and
+ * fills in any gaps with the top_components_overall list from component-usage.json.
  */
 function loadUsageData() {
+  const usageMap = new Map();
+
+  // Primary source: ds-components-latest.csv has all tracked va-* components
+  // with a pre-summed `total` column.
+  try {
+    const { readFileSync } = require('fs');
+    const csv = readFileSync(DS_COMPONENTS_CSV_FILE, 'utf8');
+    const lines = csv.trim().split('\n');
+    const headers = lines[0].split(',');
+    const nameIdx = headers.indexOf('component_name');
+    const totalIdx = headers.indexOf('total');
+
+    if (nameIdx !== -1 && totalIdx !== -1) {
+      lines.slice(1).forEach(line => {
+        const cols = line.split(',');
+        const name = cols[nameIdx];
+        const total = parseInt(cols[totalIdx], 10);
+        if (name && name.startsWith('va-') && !isNaN(total)) {
+          usageMap.set(name, total);
+        }
+      });
+      console.log(`Loaded usage data for ${usageMap.size} component tags from CSV`);
+    }
+  } catch (error) {
+    console.warn('Could not load ds-components-latest.csv:', error.message);
+  }
+
+  // Fallback / supplement: component-usage.json top_components_overall
+  // fills in any va-* names the CSV might not cover.
   try {
     const usageData = require(COMPONENT_USAGE_FILE);
-    const usageMap = new Map();
-
+    let added = 0;
     if (usageData.top_components_overall) {
       usageData.top_components_overall.forEach(entry => {
         if (entry.sourceComponents) {
           entry.sourceComponents.forEach(src => {
-            // Only map va-* web component names (not VaReact variants)
-            if (src.startsWith('va-')) {
+            if (src.startsWith('va-') && !usageMap.has(src)) {
               usageMap.set(src, entry.usage_count);
+              added++;
             }
           });
         }
       });
     }
-
-    console.log(`Loaded usage data for ${usageMap.size} component tags`);
-    return usageMap;
+    if (added > 0) {
+      console.log(`Added ${added} more component tags from component-usage.json`);
+    }
   } catch (error) {
     console.warn('Could not load component-usage.json:', error.message);
-    return new Map();
   }
+
+  console.log(`Total usage data: ${usageMap.size} component tags`);
+  return usageMap;
 }
 
 /**
