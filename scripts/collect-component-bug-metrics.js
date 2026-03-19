@@ -47,27 +47,47 @@ function loadComponentNames() {
 function loadUsageData() {
   const usageMap = new Map();
 
-  // Primary source: ds-components-latest.csv has all tracked va-* components
-  // with a pre-summed `total` column.
+  // Primary source: ds-components-latest.csv has all tracked components.
+  // Sum all application columns (excluding metadata and the stale partial `total`
+  // column), then combine web component + React variant usage — matching
+  // process-ds-components.js behavior so defect rates use the same denominator.
   try {
     const { readFileSync } = require('fs');
     const csv = readFileSync(DS_COMPONENTS_CSV_FILE, 'utf8');
     const lines = csv.trim().split('\n');
     const headers = lines[0].split(',');
     const nameIdx = headers.indexOf('component_name');
-    const totalIdx = headers.indexOf('total');
+    const EXCLUDED = new Set(['date', 'component_name', 'uswds', 'total']);
+    const appIndices = headers.reduce((acc, h, i) => {
+      if (!EXCLUDED.has(h)) acc.push(i);
+      return acc;
+    }, []);
 
-    if (nameIdx !== -1 && totalIdx !== -1) {
+    // Build a raw map of every component name → summed usage
+    const rawMap = new Map();
+    if (nameIdx !== -1) {
       lines.slice(1).forEach(line => {
         const cols = line.split(',');
         const name = cols[nameIdx];
-        const total = parseInt(cols[totalIdx], 10);
-        if (name && name.startsWith('va-') && !isNaN(total)) {
-          usageMap.set(name, total);
+        if (name) {
+          const total = appIndices.reduce((sum, i) => sum + (parseInt(cols[i], 10) || 0), 0);
+          rawMap.set(name, (rawMap.get(name) || 0) + total);
         }
       });
-      console.log(`Loaded usage data for ${usageMap.size} component tags from CSV`);
     }
+
+    // For each va-* component, sum its usage with the React variant (e.g.
+    // va-radio → VaRadio) so the denominator matches the processed JSON.
+    rawMap.forEach((count, name) => {
+      if (name.startsWith('va-')) {
+        const reactName = 'Va' + name.replace(/^va-/, '').split('-')
+          .map(w => w.charAt(0).toUpperCase() + w.slice(1)).join('');
+        const reactCount = rawMap.get(reactName) || 0;
+        usageMap.set(name, count + reactCount);
+      }
+    });
+
+    console.log(`Loaded usage data for ${usageMap.size} component tags from CSV`);
   } catch (error) {
     console.warn('Could not load ds-components-latest.csv:', error.message);
   }
@@ -173,7 +193,7 @@ function buildComponentMetrics(bugCounts, usageMap) {
     let defectRate = null;
 
     if (usageCount !== null && usageCount > 0) {
-      defectRate = Math.round((bugCount / usageCount) * 10000) / 100; // 2 decimal places
+      defectRate = Math.round((bugCount / usageCount) * 1000) / 10; // 1 decimal place
     } else if (usageCount === 0) {
       // Keep usage_count as 0, defect_rate as null to avoid division by zero
       defectRate = null;
