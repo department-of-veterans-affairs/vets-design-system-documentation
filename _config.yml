@@ -87,7 +87,7 @@ collections:
     permalink: /deprecated/:title
 
 include:
-  - vendor/javascripts/component-library/dist/esm/_commonjsHelpers-8b28c6fa.js
+  - vendor/javascripts/component-library/dist/esm/_commonjsHelpers-B85MJLTf.js
 
 # Exclusions are relative to the source directory (which is set to src)
 exclude:

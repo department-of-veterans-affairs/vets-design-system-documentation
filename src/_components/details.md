@@ -3,7 +3,7 @@ layout: component
 title: Details
 status: use-with-caution-candidate
 intro-text: "Details makes content easier to scan as it hides information that may not be applicable to all users or situations. We use the Details component to situate plain language help at the point of the process where it is most relevant."
-figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1350%3A22760&mode=design&t=TiJHClaf3VQ6wU6B-1
+figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=42924-290
 uswds-v3: default
 web-component: va-details
 web: true
