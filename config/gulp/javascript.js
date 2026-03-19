@@ -32,21 +32,38 @@ gulp.task('sync-jekyll-includes', function (done) {
 
     if (helpersFile) {
       var includePath = includePrefix + helpersFile;
-      var updated = config.replace(existingPattern, includePath);
-      if (updated !== config) {
-        fs.writeFileSync(configPath, updated);
-        console.log('sync-jekyll-includes: updated _config.yml to include ' + helpersFile);
+
+      if (existingPattern.test(config)) {
+        var updated = config.replace(existingPattern, includePath);
+        if (updated !== config) {
+          fs.writeFileSync(configPath, updated);
+          console.log('sync-jekyll-includes: updated _config.yml to include ' + helpersFile);
+        } else {
+          console.log('sync-jekyll-includes: _config.yml already references ' + helpersFile);
+        }
       } else {
-        console.log('sync-jekyll-includes: _config.yml already references ' + helpersFile);
+        // No existing _commonjsHelpers entry — insert one under the include: block.
+        var includeBlockPattern = /^include:[^\n]*$/m;
+        var updatedConfig;
+        if (includeBlockPattern.test(config)) {
+          updatedConfig = config.replace(includeBlockPattern, function (line) {
+            return line + '\n  - ' + includePath;
+          });
+        } else {
+          updatedConfig = config + '\ninclude:\n  - ' + includePath + '\n';
+        }
+        fs.writeFileSync(configPath, updatedConfig);
+        console.log('sync-jekyll-includes: added _config.yml include for ' + helpersFile);
       }
     } else {
       console.log('sync-jekyll-includes: no _commonjsHelpers file in web-components package, nothing to update');
     }
   } catch (e) {
     console.warn('sync-jekyll-includes: could not sync _config.yml includes:', e.message);
+    return done(e);
   }
 
-  done();
+  return done();
 });
 
 gulp.task('javascript', gulp.series('copy-web-components-js', 'sync-jekyll-includes'));
