@@ -2872,17 +2872,37 @@ function renderComponentBugChart(data) {
     .domain([0, d3.max(topComponents, d => d.bug_count)])
     .range([0, width]);
 
-  // Add axes
+  // Add axes — y-axis without tick labels (replaced by clickable links below)
   g.append('g')
-    .call(d3.axisLeft(y))
-    .selectAll('text')
-    .style('font-size', containerWidth < CHART_RESPONSIVE_BREAKPOINT ? '11px' : '12px');
+    .call(d3.axisLeft(y).tickFormat(() => ''));
 
   g.append('g')
     .attr('transform', `translate(0,${height})`)
     .call(d3.axisBottom(x).ticks(5).tickFormat(d3.format('d')));
 
-  // Add bars
+  // Add clickable y-axis labels linking to GitHub
+  const fontSize = containerWidth < CHART_RESPONSIVE_BREAKPOINT ? '11px' : '12px';
+  g.selectAll('.y-label-link')
+    .data(topComponents)
+    .enter()
+    .append('a')
+    .attr('href', d => d.github_url)
+    .attr('target', '_blank')
+    .attr('rel', 'noopener noreferrer')
+    .attr('aria-label', d => `View ${d.bug_count} bug ${d.bug_count === 1 ? 'issue' : 'issues'} for ${d.name} on GitHub`)
+    .append('text')
+    .attr('class', 'y-label-link')
+    .attr('x', -8)
+    .attr('y', d => y(d.name) + y.bandwidth() / 2)
+    .attr('dy', '0.35em')
+    .attr('text-anchor', 'end')
+    .style('font-size', fontSize)
+    .style('fill', '#0071bb')
+    .style('text-decoration', 'underline')
+    .style('cursor', 'pointer')
+    .text(d => d.name);
+
+  // Add bars (clickable)
   g.selectAll('.bar')
     .data(topComponents)
     .enter().append('rect')
@@ -2891,7 +2911,9 @@ function renderComponentBugChart(data) {
     .attr('y', d => y(d.name))
     .attr('width', d => x(d.bug_count))
     .attr('height', y.bandwidth())
-    .attr('fill', '#0071bb');
+    .attr('fill', '#0071bb')
+    .style('cursor', 'pointer')
+    .on('click', (event, d) => window.open(d.github_url, '_blank', 'noopener,noreferrer'));
 
   // Add value labels
   g.selectAll('.bar-label')
