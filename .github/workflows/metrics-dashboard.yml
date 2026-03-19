@@ -210,6 +210,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.VADS_WORKFLOWS }}
 
+      - name: Collect component bug metrics
+        continue-on-error: true
+        run: |
+          echo "Starting component bug metrics collection..."
+          node scripts/collect-component-bug-metrics.js
+          echo "Component bug metrics collection completed"
+        env:
+          GITHUB_TOKEN: ${{ secrets.VADS_WORKFLOWS }}
+
       - name: Verify generated data files
         run: |
           echo "Checking for generated files..."
@@ -313,6 +322,21 @@ jobs:
             echo "ℹ️ imposter-metrics.json not found for Jekyll (imposter metrics collection may have been skipped)"
           fi
 
+          # Check component bug metrics in both locations (non-blocking since collection has continue-on-error)
+          if [ -f "src/assets/data/metrics/component-bug-metrics.json" ]; then
+            echo "✅ component-bug-metrics.json generated successfully in assets"
+            echo "File size: $(du -h src/assets/data/metrics/component-bug-metrics.json)"
+          else
+            echo "ℹ️ component-bug-metrics.json not found in assets (collection may have been skipped)"
+          fi
+
+          if [ -f "src/_data/metrics/component-bug-metrics.json" ]; then
+            echo "✅ component-bug-metrics.json also generated for Jekyll"
+            echo "File size: $(du -h src/_data/metrics/component-bug-metrics.json)"
+          else
+            echo "ℹ️ component-bug-metrics.json not found for Jekyll (collection may have been skipped)"
+          fi
+
       - name: Check for changes
         id: git-check
         run: |
@@ -326,11 +350,13 @@ jobs:
             src/assets/data/metrics/component-usage.json \
             src/assets/data/metrics/governance-index.json \
             src/assets/data/metrics/imposter-metrics.json \
+            src/assets/data/metrics/component-bug-metrics.json \
             src/_data/metrics/issue-metrics.json \
             src/_data/metrics/experimental-metrics.json \
             src/_data/metrics/component-usage.json \
             src/_data/metrics/governance-index.json \
-            src/_data/metrics/imposter-metrics.json; do
+            src/_data/metrics/imposter-metrics.json \
+            src/_data/metrics/component-bug-metrics.json; do
             if [ -f "$file" ]; then
               git add "$file"
             fi

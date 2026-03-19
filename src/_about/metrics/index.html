@@ -327,6 +327,67 @@ mime_type: text/html
       </va-tabs>
     </div>
 
+    <!-- Bug Issues by Component Subsection -->
+    <div class="metrics-section">
+      <h3>Bug Issues by Component</h3>
+      <p>Open bug issues per component, with defect rate calculated relative to usage across VA applications. Click a component name to view its bug issues on GitHub.</p>
+      <div class="data-freshness" id="component-bugs-data-freshness">
+        {% if site.data.metrics.component-bug-metrics.summary.last_updated %}
+          {% assign last_updated = site.data.metrics.component-bug-metrics.summary.last_updated | date: "%B %d, %Y" %}
+          <small>Updated {{ last_updated }}</small>
+        {% else %}
+          <small>Data collection in progress</small>
+        {% endif %}
+      </div>
+
+      <va-tabs>
+        <va-tab-item button-text="Graph" target-id="component-bugs-graph-panel"></va-tab-item>
+        <va-tab-item button-text="Table" target-id="component-bugs-table-panel"></va-tab-item>
+
+        <va-tab-panel panel-id="component-bugs-graph-panel" role="tabpanel">
+          <div id="component-bugs-chart"
+               class="chart-container"
+               role="img"
+               aria-label="Horizontal bar chart showing top 10 components by open bug count"
+               tabindex="0">
+            <!-- Chart will be rendered here -->
+          </div>
+        </va-tab-panel>
+
+        <va-tab-panel panel-id="component-bugs-table-panel" role="tabpanel">
+          <va-table id="component-bugs-va-table"
+                    table-title="Bug Issues by Component: Open bugs, usage counts, and defect rates for all design system components"
+                    stacked="true"
+                    table-type="borderless"
+                    right-align-cols="1,2,3">
+            <va-table-row slot="headers">
+              <span>Component</span>
+              <span>Bug Count</span>
+              <span>Usage Count</span>
+              <span>Defect Rate</span>
+            </va-table-row>
+            {% if site.data.metrics.component-bug-metrics.by_component %}
+              {% for component in site.data.metrics.component-bug-metrics.by_component %}
+                <va-table-row>
+                  <span><a href="{{ component.github_url }}" target="_blank" rel="noopener noreferrer">{{ component.name }}</a></span>
+                  <span>{{ component.bug_count }}</span>
+                  <span>{% if component.usage_count != null %}{{ component.usage_count | number_with_delimiter }}{% else %}N/A{% endif %}</span>
+                  <span>{% if component.defect_rate != null %}{{ component.defect_rate }}%{% else %}N/A{% endif %}</span>
+                </va-table-row>
+              {% endfor %}
+            {% else %}
+              <va-table-row>
+                <span>No data available</span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </va-table-row>
+            {% endif %}
+          </va-table>
+        </va-tab-panel>
+      </va-tabs>
+    </div>
+
     <!-- Imposter Component Tracking Subsection -->
     <h3 id="imposter-tracking-heading">Imposter Component Tracking</h3>
     <p>Tracks progress toward the FY26 goal of replacing 150 imposter component instances in vets-website. Imposter components are custom implementations that should use VA Design System web components.</p>
@@ -1046,6 +1107,12 @@ document.addEventListener('DOMContentLoaded', function() {
         if (imposterInstancesAppChart) imposterInstancesAppChart.innerHTML = '';
       }
 
+      // Clear component bug chart if data has loaded
+      if (componentBugDataLoaded) {
+        const componentBugChart = document.getElementById('component-bugs-chart');
+        if (componentBugChart) componentBugChart.innerHTML = '';
+      }
+
       // Re-render with stored data
       if (MetricsDataManager.hasData()) {
         renderAllCharts(MetricsDataManager.getIssueData(), MetricsDataManager.getComponentData());
@@ -1057,11 +1124,19 @@ document.addEventListener('DOMContentLoaded', function() {
       if (imposterData) {
         renderImposterCharts(imposterData);
       }
+
+      // Re-render component bug charts with stored data
+      if (componentBugData) {
+        renderComponentBugChart(componentBugData.by_component);
+      }
     }, 150);
   });
 
   // Load imposter metrics data
   loadImposterData();
+
+  // Load component bug metrics data
+  loadComponentBugData();
 });
 
 // Setup listeners for tab changes to render charts when they become visible
@@ -1103,7 +1178,9 @@ function renderVisibleChartsIfNeeded() {
     { id: 'imposter-component-chart', renderFunc: () => imposterData && renderImposterComponentChart(imposterData.by_component) },
     // Imposter instance charts (from vets-website scanning)
     { id: 'imposter-instances-component-chart', renderFunc: () => imposterData && imposterData.instances && renderImposterInstancesComponentChart(imposterData.instances.by_component) },
-    { id: 'imposter-instances-app-chart', renderFunc: () => imposterData && imposterData.instances && renderImposterInstancesAppChart(imposterData.instances.by_application) }
+    { id: 'imposter-instances-app-chart', renderFunc: () => imposterData && imposterData.instances && renderImposterInstancesAppChart(imposterData.instances.by_application) },
+    // Component bug chart
+    { id: 'component-bugs-chart', renderFunc: () => componentBugData && renderComponentBugChart(componentBugData.by_component) }
   ];
 
   chartContainers.forEach(({ id, renderFunc }) => {
@@ -1186,6 +1263,10 @@ function showPlaceholders() {
     '<div class="chart-placeholder">Top components chart will be available once data collection is set up</div>';
   document.getElementById('a11y-defect-chart').innerHTML =
     '<div class="chart-placeholder">Accessibility defect chart will be available once data collection is set up</div>';
+  const componentBugChartEl = document.getElementById('component-bugs-chart');
+  if (componentBugChartEl) {
+    componentBugChartEl.innerHTML = '<div class="chart-placeholder">Component bug chart will be available once data collection is set up</div>';
+  }
 
 }
 
@@ -1237,6 +1318,21 @@ function enhanceDataFreshness(issueSummary, componentSummary) {
         }
       }
     });
+  }
+
+  // Check component bug metrics freshness
+  if (typeof componentBugData !== 'undefined' && componentBugData && componentBugData.summary && componentBugData.summary.last_updated) {
+    const lastUpdated = new Date(componentBugData.summary.last_updated);
+    const daysSince = Math.floor((Date.now() - lastUpdated.getTime()) / (1000 * 60 * 60 * 24));
+
+    const element = document.getElementById('component-bugs-data-freshness');
+    if (element && daysSince > 7) {
+      element.classList.add('warning');
+      const small = element.querySelector('small');
+      if (small && !small.textContent.includes('days ago')) {
+        small.textContent += ` (${daysSince} days ago)`;
+      }
+    }
   }
 }
 
@@ -2688,6 +2784,155 @@ function renderImposterInstancesAppChart(data) {
     .style('text-anchor', 'middle')
     .style('font-size', '12px')
     .text('Instance Count');
+}
+
+// Component Bug Metrics
+let componentBugData = null;
+let componentBugDataLoaded = false;
+
+function loadComponentBugData() {
+  fetch('{{ site.baseurl }}/assets/data/metrics/component-bug-metrics.json')
+    .then(response => {
+      if (!response.ok) {
+        if (response.status === 404) {
+          throw new Error('NOT_FOUND');
+        }
+        throw new Error(`HTTP_ERROR:${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      componentBugData = data;
+      componentBugDataLoaded = true;
+      renderComponentBugChart(data.by_component);
+    })
+    .catch(error => {
+      componentBugDataLoaded = true;
+      if (error.message === 'NOT_FOUND') {
+        console.log('Component bug metrics not yet available: data collection pending');
+        const chart = document.getElementById('component-bugs-chart');
+        if (chart) chart.innerHTML = '<div class="chart-placeholder">Chart will be available once data collection is set up</div>';
+      } else {
+        console.error('Failed to load component bug metrics:', error.message);
+        const chart = document.getElementById('component-bugs-chart');
+        if (chart) chart.innerHTML = '<div class="chart-placeholder chart-error">Unable to load component bug metrics data.</div>';
+      }
+    });
+}
+
+function renderComponentBugChart(data) {
+  if (!data || data.length === 0) {
+    return;
+  }
+
+  const container = document.getElementById('component-bugs-chart');
+  if (!container) return;
+
+  container.innerHTML = '';
+
+  if (!isElementVisible(container)) return;
+
+  const containerWidth = container.clientWidth;
+  if (containerWidth === 0) return;
+
+  // Only show components with at least 1 bug, top 10
+  const topComponents = data.filter(d => d.bug_count > 0).slice(0, 10);
+
+  if (topComponents.length === 0) {
+    container.innerHTML = '<div class="chart-placeholder">No open bugs found for any component</div>';
+    return;
+  }
+
+  const margin = {
+    top: 20,
+    right: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 30 : 40,
+    bottom: 40,
+    left: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 120 : 150
+  };
+
+  const width = containerWidth - margin.left - margin.right;
+  const barHeight = 25;
+  const height = topComponents.length * barHeight * 1.5;
+
+  const svg = d3.select('#component-bugs-chart')
+    .append('svg')
+    .attr('width', width + margin.left + margin.right)
+    .attr('height', height + margin.top + margin.bottom);
+
+  const g = svg.append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // Setup scales
+  const y = d3.scaleBand()
+    .domain(topComponents.map(d => d.name))
+    .range([0, height])
+    .padding(0.2);
+
+  const x = d3.scaleLinear()
+    .domain([0, d3.max(topComponents, d => d.bug_count)])
+    .range([0, width]);
+
+  // Add axes — y-axis without tick labels (replaced by clickable links below)
+  g.append('g')
+    .call(d3.axisLeft(y).tickFormat(() => ''));
+
+  g.append('g')
+    .attr('transform', `translate(0,${height})`)
+    .call(d3.axisBottom(x).ticks(5).tickFormat(d3.format('d')));
+
+  // Add clickable y-axis labels linking to GitHub
+  const fontSize = containerWidth < CHART_RESPONSIVE_BREAKPOINT ? '11px' : '12px';
+  g.selectAll('.y-label-link')
+    .data(topComponents)
+    .enter()
+    .append('a')
+    .attr('href', d => d.github_url)
+    .attr('target', '_blank')
+    .attr('rel', 'noopener noreferrer')
+    .attr('aria-label', d => `View ${d.bug_count} bug ${d.bug_count === 1 ? 'issue' : 'issues'} for ${d.name} on GitHub`)
+    .append('text')
+    .attr('class', 'y-label-link')
+    .attr('x', -8)
+    .attr('y', d => y(d.name) + y.bandwidth() / 2)
+    .attr('dy', '0.35em')
+    .attr('text-anchor', 'end')
+    .style('font-size', fontSize)
+    .style('fill', '#0071bb')
+    .style('text-decoration', 'underline')
+    .style('cursor', 'pointer')
+    .text(d => d.name);
+
+  // Add bars (clickable)
+  g.selectAll('.bar')
+    .data(topComponents)
+    .enter().append('rect')
+    .attr('class', 'bar')
+    .attr('x', 0)
+    .attr('y', d => y(d.name))
+    .attr('width', d => x(d.bug_count))
+    .attr('height', y.bandwidth())
+    .attr('fill', '#0071bb')
+    .style('cursor', 'pointer')
+    .on('click', (event, d) => window.open(d.github_url, '_blank', 'noopener,noreferrer'));
+
+  // Add value labels
+  g.selectAll('.bar-label')
+    .data(topComponents)
+    .enter().append('text')
+    .attr('class', 'bar-label')
+    .attr('x', d => x(d.bug_count) + 5)
+    .attr('y', d => y(d.name) + y.bandwidth() / 2)
+    .attr('dy', '0.35em')
+    .style('font-size', '11px')
+    .style('font-weight', 'bold')
+    .text(d => d.bug_count);
+
+  // Add axis label
+  g.append('text')
+    .attr('transform', `translate(${width / 2}, ${height + 35})`)
+    .style('text-anchor', 'middle')
+    .style('font-size', '12px')
+    .text('Bug Count');
 }
 
 </script>
