@@ -11,15 +11,15 @@ anchors:
 
 Here’s how we make sure that our core benefit and health care content is easy to find, understand, and use:
 
-1.	**We research the terms that Veterans and their families use.** We incorporate the terms that people use most to search for information about VA health care and benefits. We also directly test terms with Veterans and their families across multiple usability tests. 
+- **We research the terms that Veterans and their families use.** We incorporate the terms that people use most to search for information about VA health care and benefits. We also directly test terms with Veterans and their families across multiple usability tests. 
 
-2.	**We follow the VA.gov content style guide.** We’ve built and continue to refine and expand this guide based on a range of trusted standards as well as ongoing testing with and feedback from Veterans. 
+- **We follow the VA.gov content style guide.** We’ve built and continue to refine and expand this guide based on a range of trusted standards as well as ongoing testing with and feedback from Veterans. 
 
-3.	**We review our content against content and accessibility quality assurance (QA) standards.** We check our informational content against our QA checklists before publishing. And we review product content against content experience standards before launch.
+- **We review our content against content and accessibility quality assurance (QA) standards.** We check our informational content against our QA checklists before publishing. And we review product content against content experience standards before launch.
 
-4.	**We test our content—and the organization of our content—with Veterans and their family members.** Teams creating content and products across VA.gov regularly test navigation labels, content in forms, and informational content on webpages. We use the results to make each product better and to build our continued understanding of how to make all content easy to find, understand, and use.
+- **We test our content—and the organization of our content—with Veterans and their family members.** Teams creating content and products across VA.gov regularly test navigation labels, content in forms, and informational content on webpages. We use the results to make each product better and to build our continued understanding of how to make all content easy to find, understand, and use.
 
-5.	**We monitor content usage and survey feedback.** We monitor analytics and feedback to help determine if Veterans can find, understand, and use the information we provide. We use this data to identify ways to keep making our content better.
+- **We monitor content usage and survey feedback.** We monitor analytics and feedback to help determine if Veterans can find, understand, and use the information we provide. We use this data to identify ways to keep making our content better.
 
 ## Our approach to readability scores
 
