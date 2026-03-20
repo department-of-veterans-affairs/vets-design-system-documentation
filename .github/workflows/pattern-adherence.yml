@@ -104,6 +104,7 @@ jobs:
           git add src/assets/data/metrics/pattern-adherence.json
           git add src/assets/data/metrics/pattern-adherence-report.md
           git add src/_data/metrics/pattern-adherence.json
+          git add src/_data/metrics/pattern_adoption.json
 
           if git diff --staged --quiet; then
             echo "changes=false" >> $GITHUB_OUTPUT
@@ -158,6 +159,7 @@ jobs:
           - \`src/assets/data/metrics/pattern-adherence.json\`
           - \`src/assets/data/metrics/pattern-adherence-report.md\`
           - \`src/_data/metrics/pattern-adherence.json\`
+          - \`src/_data/metrics/pattern_adoption.json\`
 
           ### Test Plan
           - [ ] Verify JSON structure is valid
