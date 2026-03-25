@@ -39,7 +39,7 @@ flowchart TD
 " %}
 </div>
 
-<va-details label="View text-based decision guide" id="text-based-decision-guide">
+<va-details usa-input--2xl label="View text-based decision guide" id="text-based-decision-guide">
 
 <h4>Text-based decision guide</h4>
 
