@@ -66,6 +66,8 @@ For developer documentation on saving information changes to the profile, consul
 
 {% include component-example.html class="x2" alt="A page for users to update their mailing address. Above the fields is an informational alert stating, 'Any changes you make will also be reflected on your profile.'" file="/images/patterns/help-users-to/update-prefilled-information/edit-save-to-profile.png" %}
 
+**The profile alert can be shown or hidden depending on context.** By default, the profile alert is shown. However, in cases where the prefill pattern is used outside of a form—such as directly within the VA Profile experience—the alert is redundant and should be suppressed. The `showProfileAlert` prop (defaults to `true`) on the [ContactInfo prefill pattern](https://github.com/department-of-veterans-affairs/vets-website/tree/main/src/platform/forms-system/src/js/patterns/prefill/ContactInfo) controls whether this alert appears. Set it to `false` to hide the alert when the user is already editing their profile directly. See [GitHub issue #6014](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/6014) for more details.
+
 ##### If we let the user choose whether to save changes to their profile
 
 **In certain cases, users may need more control over where we save the changes.** Instead of displaying an informational alert at the top of the page, display a question with radio button response options asking the user where they want to save their changes. Learn more about these cases in the “communicate where changes will save” section below.
@@ -149,6 +151,14 @@ An example of the prefill pattern can be found in the [Forms library mock form o
 ## Code usage
 
 Code for the [prefill pattern](https://github.com/department-of-veterans-affairs/vets-website/tree/main/src/platform/forms-system/src/js/patterns/prefill) can be found in the Forms library.
+
+### Showing or hiding the profile alert
+
+The [ContactInfo prefill pattern](https://github.com/department-of-veterans-affairs/vets-website/tree/main/src/platform/forms-system/src/js/patterns/prefill/ContactInfo) supports a `showProfileAlert` prop (defaults to `true`) that controls whether the "Any changes you make will also be reflected on your profile." alert is displayed on the edit pages for email, home phone, and mobile phone.
+
+Set `showProfileAlert` to `false` when the prefill pattern is used outside of a form context—for example, when embedded directly within the VA Profile experience—where the alert would be redundant.
+
+This option was added to address [GitHub issue #6014](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/6014).
 
 ## Content considerations
 
