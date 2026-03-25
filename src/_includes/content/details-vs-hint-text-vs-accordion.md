@@ -39,7 +39,7 @@ flowchart TD
 " %}
 </div>
 
-<va-details trigger="View text-based decision guide" id="text-based-decision-guide">
+<va-details label="View text-based decision guide" id="text-based-decision-guide">
 
 <h4>Text-based decision guide</h4>
 
