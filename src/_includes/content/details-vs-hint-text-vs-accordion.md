@@ -6,7 +6,7 @@ When deciding which component to use inside a form, consider how essential the i
 * **Helpful context tied to specific content:** Use {% if page.url == '/components/details' %}Details{% else %}[Details]({{ site.baseurl }}/components/details){% endif %} for brief explanations related to nearby form fields or sections that users can access when needed.
 * **Substantial standalone information:** Use {% if page.url == '/components/accordion' %}Accordion{% else %}[Accordion]({{ site.baseurl }}/components/accordion){% endif %} for lengthy content that deserves its own heading or multiple related topics like FAQ sections.
 
-### Decision tree
+#### Decision tree
 
 <div class="mermaid-width mermaid-comparison">
   <div class="sr-only">
