@@ -70,7 +70,7 @@ You can use Details in these places:
 * Within, or at the end, of a [Form]({{ site.baseurl }}/components/form/label#with-details) to provide additional help text
 * When you need to help users understand a particular choice
 
-**Note:** Placement of Details doesn't change the [content considerations](#content-considerations) for this copmonent.
+**Note:** Placement of Details doesn't change the [content considerations](#content-considerations) for this component.
 
 {% include component-docs.html component_name=page.web-component %}
 
