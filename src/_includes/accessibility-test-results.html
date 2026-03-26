@@ -149,7 +149,7 @@
 </va-table>
 
 {% comment %} Define test categories in display order {% endcomment %}
-{% assign test_categories = "general_tests,General tests|keyboard_tests,Keyboard tests|screen_reader_tests,Screen reader tests|voice_control_tests,Voice control tests|mobile_tests,Mobile tests|zoom_tests,Zoom tests|structural_tests,Structural tests|visual_tests,Visual tests|implementation_tests,Implementation tests" | split: "|" %}
+{% assign test_categories = "general_tests,General tests|keyboard_tests,Keyboard tests|screen_reader_tests,Screen reader tests|voice_control_tests,Voice control tests|mobile_tests,Mobile tests|zoom_tests,Zoom tests|structural_tests,Structural tests|visual_tests,Visual tests|implementation_tests,Conditional tests" | split: "|" %}
 
 <va-accordion>
 {% for category_config in test_categories %}
@@ -296,6 +296,7 @@
         <va-table-row slot="headers">
           <span>Environment</span>
           <span>Result</span>
+          <span>Date</span>
           <span>Version</span>
         </va-table-row>
         {% if test_runs and test_runs.size > 0 and all_environments.size > 0 %}
@@ -353,6 +354,7 @@
                     <span class="vads-u-font-style--italic">Untested</span>
                   {% endif %}
                 </span>
+                <span>{% if run.date %}{{ run.date }}{% else %}—{% endif %}</span>
                 <span>{{ run.version }}</span>
               </va-table-row>
             {% endfor %}
@@ -387,12 +389,14 @@
                 </span>
                 <span class="vads-u-font-style--italic">Untested</span>
                 <span>—</span>
+                <span>—</span>
+
               </va-table-row>
             {% endfor %}
           {% else %}
             {% comment %} No predefined environments and no test results {% endcomment %}
             <va-table-row>
-              <span colspan="3" class="vads-u-font-style--italic vads-u-color--gray-dark">No test results yet</span>
+              <span colspan="4" class="vads-u-font-style--italic vads-u-color--gray-dark">No test results yet</span>
             </va-table-row>
           {% endif %}
         {% endif %}
