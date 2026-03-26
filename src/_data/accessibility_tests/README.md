@@ -1,15 +1,43 @@
-# Accessibility Test Results
+# Accessibility Tests
 
-This directory contains accessibility test results for VA Design System components. Test results are documented in YAML files, one per component.
+This directory contains accessibility test documentation for VA Design System components. Test results are documented in YAML files, one per component.
+
+## About the Test Library
+
+Test IDs reference tests defined in the `test-library/` directory at the root of this repository. Each test has specific success criteria, testing procedures, and WCAG compliance mappings. The complete test catalog is available at [/accessibility/test-library](/accessibility/test-library).
 
 ## Quick Start
 
+### Creating a New Component Test File (Recommended)
+
+**Use the AI prompt** at `.github/prompts/generate-component-accessibility-tests.prompt.md` to automatically generate a component test file.
+
+The prompt will:
+- Analyze the component implementation to understand its features
+- Select applicable tests from the test library based on component type
+- Use specific subtests instead of parent tests where appropriate
+- Pre-populate required environments for screen reader, mobile, and voice control tests
+- Create a properly formatted YAML file with metadata placeholders
+
+**To use the prompt:**
+1. In GitHub Copilot Chat, use the slash command: `/generate-component-accessibility-tests`
+2. Follow the prompts to provide component name, tester name, version, and date
+3. Review the generated file and save it to `src/_data/accessibility_tests/[component-name].yml`
+
+### Manual Workflow
+
+If you prefer to work manually or need to understand the file structure:
+
 1. **Create a new component test file**: Copy the template structure below
-2. **Add test IDs**: Reference tests from the `test-library/` directory
+2. **Add test IDs**: Reference tests from the `test-library/` directory (prefer specific subtests over parent tests)
 3. **Record test results**: Add version, tester, environments, and results
 4. **View results**: Test results appear on the component's documentation page
 
-## Creating a New Component Test File
+## Manual Creation
+
+Use this section if you need to create or edit files manually, understand the YAML structure, or add test results to existing files.
+
+### Step 1: Create the YAML file
 
 ### Step 1: Create the YAML file
 
@@ -29,7 +57,7 @@ tests:
 ```
 
 **Fields:**
-- `component`: Component name (must match the component's identifier)
+- `component`: Component name (e.g., `va-button`, `va-alert`) — must match the web component tag name
 - `component_url`: Relative URL to the component's documentation page
 - `storybook_url`: Relative URL to the component's Storybook documentation
 
@@ -49,7 +77,7 @@ tests:
   - id: WEB-321         # Example: Screen reader announcement
 ```
 
-You can add tests with or without results. Tests without results will show as "Untested" on the documentation page.
+You can add tests with or without results. Start by adding all applicable test IDs, then add results as testing is completed. Tests without results will show as "Untested" on the documentation page.
 
 ## Adding Test Results
 
@@ -63,7 +91,7 @@ tests:
     test_results:
       - version: 54.6.1
         tester: John Doe
-        date: 2026-02-03
+        date: 2024-11-15
         environments:
           - name: mac-chrome
             result: pass
@@ -81,6 +109,8 @@ tests:
 
 - **`date`**: Date the test was performed (format: `YYYY-MM-DD`)
 - **`notes`**: Additional context about the test results
+  - **Required** for `conditional` or `fail` results to explain the issue or limitation
+  - Optional for `pass` results to provide additional context
 
 ### Example: Single Environment
 
@@ -120,7 +150,7 @@ tests:
     test_results:
       - version: 54.6.1
         tester: Jane Smith
-        date: 2026-02-03
+        date: 2024-11-20
         environments:
           - name: mac-chrome
             result: conditional
@@ -184,9 +214,10 @@ All environment IDs are defined in `test-library/_config.yml`.
 
 Valid result values:
 - **`pass`**: Test passed without issues
-- **`fail`**: Test failed
-- **`conditional`**: Test passes with conditions or caveats (explain in `notes`)
-- **`untested`**: Test has not been performed (can be omitted)
+- **`fail`**: Test failed (must include `notes` explaining the failure)
+- **`conditional`**: Test passes with conditions or caveats (must include `notes` explaining the limitation)
+
+**Note:** Do not use `untested` as a result value. If a test hasn't been performed, simply omit the `test_results` entry for that test. The component page will automatically show it as "Untested."
 
 ## Complete Example
 
@@ -203,7 +234,7 @@ tests:
     test_results:
       - version: 54.6.1
         tester: Jane Smith
-        date: 2026-02-15
+        date: 2024-12-10
         environments:
           - name: mac-chrome
             result: pass
@@ -252,11 +283,44 @@ tests:
         notes: Issue resolved - targets now meet minimum size.
 ```
 
+## How Test Results Are Displayed
+
+Test results appear on each component's documentation page in an "Accessibility Testing" section. The display shows:
+
+- **Test name and WCAG criteria** from the test library
+- **Latest test result** across all versions and environments
+- **Environment coverage** indicating which platforms have been tested
+- **Version information** showing which component library version was tested
+- **Tester and date** for accountability and result freshness
+
+Components with comprehensive test coverage will display a summary indicating their accessibility testing status.
+
 ## Finding Test IDs
 
 View the complete list of tests with descriptions, categories, and WCAG criteria at:
 
 **[/accessibility/test-library](/accessibility/test-library)**
+
+### How to Choose Tests for Your Component
+
+When deciding which tests to apply:
+
+1. **Interactive elements** (buttons, links, form controls):
+   - Include keyboard navigation (WEB-212)
+   - Include focus indicators (WEB-244)
+   - Include touch target size for mobile (WEB-258)
+
+2. **Text content**:
+   - Include color contrast tests (WEB-1410)
+   - Include typography and readability tests
+
+3. **Screen reader support**:
+   - Include appropriate ARIA and semantic HTML tests
+   - Include screen reader announcement tests (WEB-321)
+
+4. **Dynamic content** (alerts, modals, live regions):
+   - Include focus management tests
+   - Include screen reader announcement tests for updates
 
 You can also check existing component test files (like `va-link.yml` or `va-card-status.yml`) to see which tests are commonly applied to similar components.
 
