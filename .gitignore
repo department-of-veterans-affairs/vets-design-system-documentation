@@ -32,3 +32,4 @@ component-issues-report.md
 
 # Test coverage reports
 coverage/
+.worktrees/
