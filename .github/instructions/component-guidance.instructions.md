@@ -42,6 +42,14 @@ When reviewing PRs that modify files in `src/_components/`, apply these content 
 - Avoid jargon, buzzwords, and overly formal phrasing.
 - "User" is acceptable in VADS documentation when referring to user research, user experience, and similar contexts.
 
+### Active voice examples
+
+* Use active voice like this: "After we correct the duty-to-assist error, we’ll make a new decision on your claim." and not like this: "Once the evidence is received and the duty-to-assist error is satisfied, you will be issued a new decision."
+* Use active voice like this: "If you meet the eligibility requirements for VALife, we’ll automatically approve your application." and not like this: "If you meet the eligibility requirements for VALife, your application will be automatically approved."
+* Use active voice like this: "We save your application each time you make an update." and not like this: "Your application will be saved with every change."
+* Use active voice like this: "If you think you’re eligible for VA health care and benefits, we encourage you to apply now." not like this: "If you think you’re eligible for VA health care and benefits, you are encouraged to apply now."
+
+
 ## Sentence length and structure
 
 - Flag sentences longer than 25 words and suggest breaking them up.
