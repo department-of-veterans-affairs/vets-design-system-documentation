@@ -122,7 +122,6 @@ Reference the test library at `src/_data/accessibility_tests/test-library/` to d
 **For ALL COMPONENTS WITH TEXT**, include:
 - `WEB-143` — Contrast (Minimum) - text has sufficient contrast
 - `WEB-144` — Resize Text (text resizes to 200% without loss of content or functionality)
-- `WEB-145` — Images of Text (text is not presented as images)
 - `WEB-1412` — Text Spacing (text remains readable when spacing is adjusted)
 
 **For ALL COMPONENTS WITH HEADINGS**, include:
@@ -164,6 +163,7 @@ Reference the test library at `src/_data/accessibility_tests/test-library/` to d
 
 **For COMPONENTS WITH IMAGES/ICONS**:
 - `WEB-111` or specific subtests — Non-text content (review subtests based on image type: `WEB-111-001` for informative images, `WEB-111-003` for decorative images, `WEB-111-005` for video/audio descriptions; include multiple if component has different image types)
+- `WEB-145` — Images of Text (text is not presented as images)
 
 **For DYNAMIC CONTENT** (alerts, modals, accordions, expandable content):
 - `WEB-253` or specific subtests — Label in Name (review subtests: `DST-253-001` if component label/content changes dynamically)
