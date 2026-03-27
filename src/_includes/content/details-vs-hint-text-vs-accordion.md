@@ -46,7 +46,7 @@ flowchart TD
 <ol>
 <li><strong>Is this information essential for completing a form field?</strong>
     <ul>
-    <li><strong>Yes</strong> (Field requirements, input patterns) → <em>Use hint text</em></li>
+    <li><strong>Yes</strong> (Field requirements, input patterns) → Use hint text</li>
     <li><strong>No</strong> (Background context, helpful clarifications) → Continue to question 2</li>
     </ul>
 </li>
@@ -54,14 +54,14 @@ flowchart TD
 <li><strong>Is content related to a nearby form field or section?</strong>
     <ul>
     <li><strong>Yes</strong> (Why we ask questions, field-specific help) → Continue to question 3</li>
-    <li><strong>No</strong> (General information, standalone topics) → <em>Use Accordion</em></li>
+    <li><strong>No</strong> (General information, standalone topics) → Use Accordion/li>
     </ul>
 </li>
 
 <li><strong>Is content brief and doesn't need a heading?</strong>
     <ul>
-    <li><strong>Yes</strong> (Short explanations, simple clarifications) → <em>Use Details</em></li>
-    <li><strong>No</strong> (Long content, complex explanations) → <em>Use Accordion</em></li>
+    <li><strong>Yes</strong> (Short explanations, simple clarifications) → Use Details</li>
+    <li><strong>No</strong> (Long content, complex explanations) → Use Accordion</li>
     </ul>
 </li>
 </ol>
