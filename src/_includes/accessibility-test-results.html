@@ -237,9 +237,7 @@
 
             {% if latest_env_version != "" %}
               <va-table-row>
-                <span>
-                  {{ env_display_name }}{% if env_is_required %}<span class="vads-u-color--secondary-dark">*</span>{% endif %}
-                </span>
+                <span>{{ env_display_name }}</span>
                 <span>
                   {% if latest_env_result == "pass" %}
                     <va-tag-status status="success" text="Pass"></va-tag-status>
@@ -256,9 +254,7 @@
             {% else %}
               {% comment %} No test results - show environment as untested {% endcomment %}
               <va-table-row>
-                <span>
-                  {{ env_display_name }}{% if env_is_required %}<span class="vads-u-color--secondary-dark">*</span>{% endif %}
-                </span>
+                <span>{{ env_display_name }}</span>
                 <span class="vads-u-font-style--italic">Untested</span>
                 <span>—</span>
               </va-table-row>
