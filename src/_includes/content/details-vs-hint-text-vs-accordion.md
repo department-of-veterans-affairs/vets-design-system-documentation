@@ -43,7 +43,9 @@ flowchart TD
 
 <h4>Text-based decision guide</h4>
 
-<ol>
+<ol style="font-size:1rem;">
+<!-- fontsize defined because the details component is resizing this text to 16.96px -->
+
 <li><strong>Is this information essential for completing a form field?</strong>
     <ul>
     <li><strong>Yes</strong> (Field requirements, input patterns) → Use hint text</li>
