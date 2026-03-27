@@ -213,6 +213,7 @@ Create `src/_data/accessibility_tests/[component-name].yml` with:
    - Check each test's category in the test library YAML files
    - If the category is `screen_reader`, `mobile`, or `voice_control`, add `environments` array with required environments and empty `result` fields
    - For all other categories, add an `environments` array with a single empty entry (empty `name` and `result` fields)
+   - See **File Format** section above for YAML structure examples
 6. Sort order: numerical by test ID (WEB-111-003, WEB-143, DST-211-001, WEB-212, etc.)
 
 **Do NOT include**:
@@ -220,32 +221,6 @@ Create `src/_data/accessibility_tests/[component-name].yml` with:
 - Notes text
 - Summary statistics
 - Parent test IDs when specific subtests are more appropriate
-
-**Test Results Template for tests WITHOUT required environments**:
-```yaml
-- id: [test-id]
-  test_results:
-    - version: [user-provided-version]
-      tester: [user-provided-name]
-      date: [user-provided-date]
-      environments:
-        - name:
-          result:
-```
-
-**Test Results Template for tests WITH required environments**:
-```yaml
-- id: [test-id]
-  test_results:
-    - version: [user-provided-version]
-      tester: [user-provided-name]
-      date: [user-provided-date]
-      environments:
-        - name: [required-environment-1]
-          result:
-        - name: [required-environment-2]
-          result:
-```
 
 ## Examples
 
@@ -293,11 +268,10 @@ When analyzing a component, ask:
 - [ ] **Is it a form input?** → Include all form-related tests (labels, errors, validation)
 - [ ] **Does it use color to convey information?** → Include color contrast and color-not-sole-indicator tests
 - [ ] **Does it contain images or icons?** → Include alternative text tests
-- [ ] **Does it have dynamic content or state changes?** → Include screen reader announcement and focus management tests (note: screen_reader category tests need required environments)
+- [ ] **Does it have dynamic content or state changes?** → Include screen reader announcement and focus management tests
 - [ ] **Does it expand/collapse or show/hide content?** → Include state announcement tests
-- [ ] **Is it used on mobile?** → Include touch target size tests (note: mobile category tests need required environments)
 - [ ] **Does it display error messages?** → Include error identification and suggestion tests
-- [ ] **Does it need voice control testing?** → Include voice control tests (note: voice_control category tests need required environments)
+- [ ] **Does it need voice control testing?** → Include voice control tests
 
 ## Validation
 
@@ -374,6 +348,5 @@ When this prompt is invoked:
         {% include accessibility-test-results.html component_name="[component-name]" %}
         ```
       - Replace `[component-name]` with the component's web-component value from the front matter (e.g., `va-accordion`, `va-details`)
-Do not check what test files already exist or suggest components unless specifically asked.
 
 The file you create will serve as the foundation for accessibility testing. Testers will fill in actual test results and environments as testing is completed.
