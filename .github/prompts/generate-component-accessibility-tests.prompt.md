@@ -38,7 +38,7 @@ tests:
             result:
 ```
 
-**Note**: All tests include an empty `test_results` entry with tester name, version, and date pre-populated. All tests also include an `environments` array. Tests with categories that have required environments (`mobile`, `screen_reader`, `voice_control`) have those environments pre-populated with empty `result` fields. Tests without required environments have a single empty environment entry that testers will fill in when performing testing.
+**Note**: All tests include an empty `test_results` entry with tester name, version, and date pre-populated. All tests also include an `environments` array. Tests with categories that have required environments (`mobile`, `screen_reader`) have those environments pre-populated with empty `result` fields. Tests without required environments have a single empty environment entry that testers will fill in when performing testing.
 
 ## How to Generate the File
 
@@ -114,7 +114,7 @@ Reference the test library at `src/_data/accessibility_tests/test-library/` to d
 
 **For ALL components**, include:
 - `WEB-134` - Orientation
-- `WEB-1410` — Reflow (content adapts to small screens and zoom)
+- `WEB-1410` or applicable subtests — Reflow (review subtests: `VADS-1410-001` for component content overflow at 400% zoom)
 
 **For MOST components with multiple elements**, include:
 - `WEB-132` - Meaningful sequence (content is presented in a meaningful order)
@@ -127,52 +127,56 @@ Reference the test library at `src/_data/accessibility_tests/test-library/` to d
 **For ALL COMPONENTS WITH HEADINGS**, include:
 - `WEB-131-001` — Headings are used to organize content (if applicable)
 - `WEB-131-002` — Headings are used in a logical order (if applicable)
-- `WEB-246` or specific subtests — Headings and labels describe topic or purpose (review subtests: `WEB-246-001` for heading descriptions, `WEB-246-002` for input labels)
+- `WEB-246` or applicable subtests — Headings and labels describe topic or purpose (review subtests: `WEB-246-001` for heading descriptions, `WEB-246-002` for input labels)
 
 **For ALL INTERACTIVE ELEMENTS** (applies to all buttons, links, and form controls):
-- `WEB-1411` or specific subtests — Non-text Contrast (review subtests based on component features)
+- `WEB-1411` or applicable subtests — Non-text Contrast (review subtests based on component features)
 - `WEB-212` — No Keyboard Trap (keyboard focus does not get trapped)
 - `WEB-243` — Focus Order (tab order follows a logical sequence)
-- `WEB-247` — Focus Visible (interactive elements display a clear focus indicator)
+- `WEB-247` or applicable subtests — Focus Visible (review subtests: `VADS-247-001` for VA Design System focus style)
 - `WEB-2411` — Focus Not Obscured (focused elements are fully visible)
-- `WEB-253` or specific subtests — Label in Name (review subtests: `VADS-253-001` for screen reader announcement matching if applicable)
-- `WEB-258` or specific subtests — Target Size (review subtests based on element type)
-- `WEB-412` or specific subtests — Name, Role, Value (review subtests based on element type and behavior)
+- `WEB-253` or applicable subtests — Label in Name (review subtests: `VADS-253-001` for screen reader announcement matching, `VADS-253-002` for voice control activation)
+- `WEB-258` or applicable subtests — Target Size (review subtests based on element type)
+- `WEB-412` or applicable subtests — Name, Role, Value (review subtests based on element type and behavior)
 
 **For LINKS** (in addition to all interactive element tests above):
-- `WEB-141` or specific subtests — Use of Color (review subtests: `VADS-141-001` for links indicated by color)
-- `WEB-211` or specific subtests — Keyboard operability (review subtests: typically `VADS-211-001` for links)
+- `WEB-141` or applicable subtests — Use of Color (review subtests: `VADS-141-001` for links indicated by color)
+- `WEB-211` or applicable subtests — Keyboard operability (review subtests: typically `VADS-211-001` for links)
 - `WEB-244` — Link Purpose (In Context) - link text is clear and descriptive
-- `WEB-412` or specific subtests — Name, Role, Value (review subtests: `WEB-412-003` for proper element types, `VADS-412-001` for link navigation)
+- `WEB-412` or applicable subtests — Name, Role, Value (review subtests: `WEB-412-003` for proper element types, `VADS-412-001` for link navigation)
 
 **For BUTTONS** (in addition to all interactive element tests above):
-- `WEB-211` — Keyboard operability (buttons must be keyboard accessible)
-- `WEB-412` or specific subtests — Name, Role, Value (review subtests: `WEB-412-002` for state announcements if stateful, `WEB-412-003` for proper element types, `VADS-412-002` for button actions)
+- `WEB-211` or applicable subtests — Keyboard operability (buttons must be keyboard accessible)
+- `WEB-412` or applicable subtests — Name, Role, Value (review subtests: `WEB-412-002` for state announcements if stateful, `WEB-412-003` for proper element types, `VADS-412-002` for button actions)
 
 **For FORM INPUTS** (text-input, select, checkbox, radio, textarea) — in addition to all interactive element tests above:
-- `WEB-131` or specific subtests — Info and Relationships (review subtests: e.g., `WEB-131-005` for grouped elements, `WEB-131-006` for input labels and instructions, `WEB-131-007` for required fields)
+- `WEB-131` or applicable subtests — Info and Relationships (review subtests: e.g., `WEB-131-005` for grouped elements, `WEB-131-006` for input labels and instructions, `WEB-131-007` for required fields)
 - `WEB-135` - Identify input purpose (if applicable)
-- `WEB-1413` — Content on Hover or Focus (users can dismiss content that appears on hover or focus)
-- `WEB-211` or specific subtests — Keyboard operability (review subtests: typically `VADS-211-002` for form inputs)
-- `WEB-246` or specific subtests — Headings and labels (review subtests: `WEB-246-002` for input labels)
+- `WEB-1413` or applicable subtests — Content on Hover or Focus (review subtests: `VADS-1413-001` for hover content persistence, `VADS-1413-002` for Escape key dismissal)
+- `WEB-211` or applicable subtests — Keyboard operability (review subtests: typically `VADS-211-002` for form inputs)
+- `WEB-246` or applicable subtests — Headings and labels (review subtests: `WEB-246-002` for input labels)
 - `WEB-321` or `VADS-321-001` (subtest) — On Focus (review subtests: use `VADS-321-001` for input-specific focus behavior if applicable)
-- `WEB-322` — On Input (changing the input value does not trigger unexpected changes)
-- `WEB-331` or specific subtests — Error Identification (review subtests: e.g., `VADS-331-001` for errors on blur, `VADS-331-002` for error descriptions, `VADS-331-003` for error styles, `VADS-331-004` for screen reader announcements, `VADS-331-005` for error placement)
-- `WEB-332` or specific subtests — Labels or Instructions (review subtests: `WEB-332-001` for visible labels, `WEB-332-002` for format instructions, `WEB-332-003` for required field marking)
-- `WEB-333` — Error Suggestion (error messages explain how to fix the error)
+- `WEB-322` or applicable subtests — On Input (review subtests: `VADS-322-001` for conditional reveal focus management)
+- `WEB-331` or applicable subtests — Error Identification (review subtests: e.g., `VADS-331-001` for errors on blur, `VADS-331-002` for error descriptions, `VADS-331-003` for error styles, `VADS-331-004` for screen reader announcements, `VADS-331-005` for error placement)
+- `WEB-332` or applicable subtests — Labels or Instructions (review subtests: `WEB-332-001` for visible labels, `WEB-332-002` for format instructions, `WEB-332-003` for required field marking)
+- `WEB-333` or applicable subtests — Error Suggestion (review subtests: `VADS-333-001` for error messages including expected format)
 
 **For COMPONENTS WITH IMAGES/ICONS**:
-- `WEB-111` or specific subtests — Non-text content (review subtests based on image type: `WEB-111-001` for informative images, `WEB-111-003` for decorative images, `WEB-111-005` for video/audio descriptions; include multiple if component has different image types)
+- `WEB-111` or applicable subtests — Non-text content (review subtests based on image type: `WEB-111-001` for informative images, `WEB-111-003` for decorative images, `WEB-111-005` for video/audio descriptions; include multiple if component has different image types)
 - `WEB-145` — Images of Text (text is not presented as images)
 
+**For TABLE COMPONENTS** (data tables, sortable tables):
+- `WEB-131-009` — Table header and data cell relationships (screen readers announce table structure)
+
 **For DYNAMIC CONTENT** (alerts, modals, accordions, expandable content):
-- `WEB-253` or specific subtests — Label in Name (review subtests: `VADS-253-001` if component label/content changes dynamically)
-- `WEB-412` or specific subtests — Name, Role, Value (review subtests: `WEB-412-002` for screen reader state announcements when content expands/collapses or shows/hides)
-- `WEB-413` — Status Messages (screen readers announce important updates without moving focus)
+- `WEB-243` or applicable subtests — Focus Order (review subtests: `VADS-243-001` for focus trapping inside modals, `VADS-243-002` for focus returning to trigger on close)
+- `WEB-253` or applicable subtests — Label in Name (review subtests: `VADS-253-001` if component label/content changes dynamically)
+- `WEB-412` or applicable subtests — Name, Role, Value (review subtests: `WEB-412-002` for screen reader state announcements when content expands/collapses or shows/hides)
+- `WEB-413` or applicable subtests — Status Messages (review subtests: `VADS-413-001` for loading status announcements, `VADS-413-002` for alert announcements)
 
 **For COMPONENTS WITH COLOR CODING** (components that use color to convey information or status, such as alerts, status badges, or color-coded indicators):
-- `WEB-141` or specific subtests — Use of Color (review subtests: `VADS-141-001` if component has links indicated by color)
-- `WEB-1411` or specific subtests — Non-text Contrast (review subtests based on component features: `VADS-1411-001` for icons, `VADS-1411-002` for form input borders, `WEB-1411-001` for interactive elements, `WEB-1411-002` for meaningful graphics)
+- `WEB-141` or applicable subtests — Use of Color (review subtests: `VADS-141-001` if component has links indicated by color)
+- `WEB-1411` or applicable subtests — Non-text Contrast (review subtests based on component features: `VADS-1411-001` for icons, `VADS-1411-002` for form input borders, `WEB-1411-001` for interactive elements, `WEB-1411-002` for meaningful graphics)
 
 **Additional considerations:**
 - **Navigation components** (breadcrumbs, pagination, menus) — These are typically collections of links, so apply the "For LINKS" category. If the component includes skip navigation functionality, also include `WEB-241` or `VADS-241-001` (Bypass Blocks)
@@ -189,14 +193,11 @@ Browse test definitions at:
 - `WEB` — Tests from VA governance team's accessibility testing library
 - `VADS` — Component-specific tests from the VA Design System team (often subtests of WEB tests)
 
-**Finding Subtests**:
-When browsing the test library YAML files, look for the `subtests:` array under each parent test. Subtests have their own `id` and `description_short`/`description_full` fields. Always prefer using the specific subtest ID rather than the parent test ID when a relevant subtest exists.
-
 **Test Categories and Required Environments**:
 Each test in the library has a `category` field. Some categories have required environments. Reference `src/_data/accessibility_tests/test-library/_config.yml` for:
-- The complete list of required environments for `screen_reader`, `mobile`, and `voice_control` categories
+- The complete list of required environments for `screen_reader` and `mobile` categories
 - Available environment definitions and their display names
-- Categories that do not have required environments (general, keyboard, structural, visual, zoom, implementation)
+- Categories that do not have required environments (general, keyboard, structural, visual, voice_control, zoom, implementation)
 
 ### Step 5: Generate the File
 
@@ -204,17 +205,16 @@ Create `src/_data/accessibility_tests/[component-name].yml` with:
 
 1. Component metadata (name, URLs)
 2. Sorted list of test IDs with **ALL tests including an empty test_results entry**
-3. **Use specific subtests** wherever they exist (e.g., `WEB-111-003` instead of `WEB-111`)
-4. **Pre-populate common metadata** in all test_results entries:
+3. **Pre-populate common metadata** in all test_results entries:
    - `version`: Component library version from user input
    - `tester`: Tester name from user input
    - `date`: Test date from user input
-5. **Add environments array for all tests**:
+4. **Add environments array for all tests**:
    - Check each test's category in the test library YAML files
-   - If the category is `screen_reader`, `mobile`, or `voice_control`, add `environments` array with required environments and empty `result` fields
+   - If the category is `screen_reader` or `mobile`, add `environments` array with required environments and empty `result` fields
    - For all other categories, add an `environments` array with a single empty entry (empty `name` and `result` fields)
    - See **File Format** section above for YAML structure examples
-6. Sort order: numerical by test ID (WEB-111-003, WEB-143, VADS-211-001, WEB-212, etc.)
+5. Sort order: numerical by test ID (WEB-111-003, WEB-143, VADS-211-001, WEB-212, etc.)
 
 **Do NOT include**:
 - Actual result values (leave `result:` empty)
@@ -235,7 +235,7 @@ Reference these complete example files to see proper test selection and structur
 
 - **`src/_data/accessibility_tests/va-text-input.yml`** — Form input component
   - Shows form-specific subtests (`WEB-131-006`, `VADS-211-002`, `WEB-246-002`)
-  - Demonstrates screen_reader category tests with required environments (`VADS-321-001`)
+  - Shows input-specific On Focus subtest (`VADS-321-001`)
   - Includes multiple error-related subtests (`VADS-331-002`, `VADS-331-003`, `VADS-331-004`, `VADS-331-005`)
   - 19 tests total
 
@@ -243,35 +243,14 @@ Reference these complete example files to see proper test selection and structur
   - Shows expandable/collapsible component tests
   - Demonstrates parent-child relationship test (`WEB-131-010`)
   - Includes state announcement test (`WEB-412-002`)
-  - 12 tests total
-
-- **`src/_data/accessibility_tests/va-card-status.yml`** — Status component
-  - Shows color-coding tests (`VADS-141-001`)
-  - Demonstrates icon contrast tests (`VADS-1411-001`)
-
-- **`src/_data/accessibility_tests/va-details.yml`** — Interactive disclosure
-  - Shows focus management for disclosure patterns (`VADS-253-001`)
-  - Demonstrates screen reader announcements for state changes
+  - Includes implementation-level tests for context-dependent verification
+  - 23 tests total
 
 **Key patterns demonstrated**:
 - All tests include pre-populated metadata (version, tester, date)
-- Tests with `screen_reader`, `mobile`, or `voice_control` categories have pre-populated required environments
+- Tests with `screen_reader` or `mobile` categories have pre-populated required environments
 - All other tests have a single empty environment entry
 - Specific subtests are used instead of parent tests (e.g., `VADS-211-001` not `VADS-211`)
-
-## Component Analysis Checklist
-
-When analyzing a component, ask:
-
-- [ ] **Is it a link?** (navigates to another page or section) → Include link-specific tests (keyboard operability, link purpose, target size)
-- [ ] **Is it a button?** (performs an action) → Include button-specific tests (keyboard operability, focus, proper element type)
-- [ ] **Is it a form input?** → Include all form-related tests (labels, errors, validation)
-- [ ] **Does it use color to convey information?** → Include color contrast and color-not-sole-indicator tests
-- [ ] **Does it contain images or icons?** → Include alternative text tests
-- [ ] **Does it have dynamic content or state changes?** → Include screen reader announcement and focus management tests
-- [ ] **Does it expand/collapse or show/hide content?** → Include state announcement tests
-- [ ] **Does it display error messages?** → Include error identification and suggestion tests
-- [ ] **Does it need voice control testing?** → Include voice control tests
 
 ## Validation
 
@@ -280,13 +259,12 @@ Before saving the file:
 1. **Check component name** matches the web component tag (e.g., `va-button`, not `Button`)
 2. **Verify URLs** follow the correct pattern for the component type
 3. **Ensure test IDs exist** in the test library files
-4. **Prefer specific subtests** over parent tests — Verify that you're using subtests (e.g., `WEB-111-003`) rather than parent tests (e.g., `WEB-111`) when subtests exist
-5. **All tests have test_results** — Every test should have an empty `test_results` entry with version, tester, and date pre-populated
-6. **Check for environments array** — All tests should have an `environments` array. Tests with `screen_reader`, `mobile`, or `voice_control` categories should have required environments pre-populated; other tests should have a single empty environment entry
-7. **Sort test IDs** numerically (WEB-111, WEB-143, VADS-211-001, WEB-212, etc.)
-8. **Verify metadata is pre-populated** — Version, tester name, and date should be filled in from user input
-9. **Result fields are empty** — For tests with required environments, `result:` should be present but empty
-10. **Use 2-space indentation** for YAML
+4. **All tests have test_results** — Every test should have an empty `test_results` entry with version, tester, and date pre-populated
+5. **Check for environments array** — All tests should have an `environments` array. Tests with `screen_reader` or `mobile` categories should have required environments pre-populated; other tests should have a single empty environment entry
+6. **Sort test IDs** numerically (WEB-111, WEB-143, VADS-211-001, WEB-212, etc.)
+7. **Verify metadata is pre-populated** — Version, tester name, and date should be filled in from user input
+8. **Result fields are empty** — For tests with required environments, `result:` should be present but empty
+9. **Use 2-space indentation** for YAML
 
 ## Resources
 
@@ -326,13 +304,13 @@ When this prompt is invoked:
 6. **Generate the YAML file** following the format above
    - **ALL tests get an empty test_results entry** with the tester name, version, and date pre-populated
    - **ALL tests get an environments array**
-   - For tests with `screen_reader`, `mobile`, or `voice_control` categories, pre-populate the `environments` array with required environments
+   - For tests with `screen_reader` or `mobile` categories, pre-populate the `environments` array with required environments
    - For all other tests, include a single empty environment entry (empty `name` and `result`)
 
 7. **Validate** using the checklist
 
 8. **Save** to `src/_data/accessibility_tests/[component-name].yml`
-10. **Update the component documentation page** at `src/_components/[component-name].md`:
+9. **Update the component documentation page** at `src/_components/[component-name].md`:
     - Read the component markdown file
     - **Add "Accessibility tests" to the anchors list** in the YAML front matter:
       - Find the `anchors:` list
