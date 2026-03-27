@@ -70,6 +70,13 @@ tests:
     description_full: |
       When you change a form input value,
       it doesn't trigger a change of context such as opening a new page, displaying a modal, or causing content to appear or disappear.
+    subtests:
+      - id: VADS-322-001
+        description_short: |
+          Conditional content that appears on input doesn't move focus.
+        description_full: |
+          When you select a value that reveals additional content,
+          you find that your focus stays on the current element and doesn't jump to the new content.
   - id: WEB-323
     category: general
     wcag_criterion: 3.2.3
@@ -202,6 +209,13 @@ tests:
     description_full: |
       When you receive an error message,
       you find the message provides clear suggestions for correcting the error.
+    subtests:
+      - id: VADS-333-001
+        description_short: |
+          Error messages include the expected format.
+        description_full: |
+          When you receive an error on an input that requires a specific format,
+          you find the error message includes the expected format or an example.
   - id: WEB-334
     category: general
     wcag_criterion: 3.3.4

@@ -153,6 +153,19 @@ tests:
     description_full: |
       When you navigate the page or component with a keyboard,
       you find focus moves through interactive elements in a meaningful order.
+    subtests:
+      - id: VADS-243-001
+        description_short: |
+          Focus is trapped inside a modal when it's open.
+        description_full: |
+          When you open a modal and press Tab or Shift+Tab,
+          you find that focus stays inside the modal and doesn't move to content behind it.
+      - id: VADS-243-002
+        description_short: |
+          Focus returns to the trigger when a modal closes.
+        description_full: |
+          When you close a modal,
+          you find that focus returns to the element that opened it.
   - id: WEB-244
     category: general
     wcag_criterion: 2.4.4
@@ -219,6 +232,14 @@ tests:
     description_full: |
       When you navigate to an interactive element with a keyboard,
       you see a clear visual indicator around the element showing that it has focus.
+    subtests:
+      - id: VADS-247-001
+        category: visual
+        description_short: |
+          Focus indicator uses the VA Design System focus style.
+        description_full: |
+          When you navigate to an interactive element with a keyboard,
+          you see the standard VA Design System focus indicator style.
   - id: WEB-2410
     category: general
     wcag_criterion: 2.4.10

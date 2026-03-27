@@ -67,3 +67,18 @@ tests:
     description_full: |
       When you're using a screen reader and a status message appears on the page,
       you hear it announced without needing to move focus to the message.
+    subtests:
+      - id: VADS-413-001
+        category: screen_reader
+        description_short: |
+          Screen readers announce loading status.
+        description_full: |
+          When you trigger an action that displays a loading indicator,
+          you hear a screen reader announcement that content is loading.
+      - id: VADS-413-002
+        category: screen_reader
+        description_short: |
+          Screen readers announce alerts.
+        description_full: |
+          When an alert appears on the page,
+          you hear a screen reader announcement with the alert message without needing to move focus to it.

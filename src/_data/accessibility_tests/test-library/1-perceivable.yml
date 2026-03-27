@@ -332,6 +332,13 @@ tests:
     description_full: |
       When you zoom in 400% on a viewport that is 1280 pixels wide,
       you can see and interact with all content without needing to scroll both horizontally and vertically.
+    subtests:
+      - id: VADS-1410-001
+        description_short: |
+          Component content doesn't overflow or get clipped at 400% zoom.
+        description_full: |
+          When you zoom in to 400% on a viewport that is 1280 pixels wide,
+          you find that the component's content isn't cut off, overlapping, or hidden.
   - id: WEB-1411
     category: visual
     wcag_criterion: 1.4.11
@@ -396,3 +403,16 @@ tests:
     description_full: |
       When you encounter content that appears when you hover over or focus on an element,
       you are able to dismiss it without moving the pointer or focus.
+    subtests:
+      - id: VADS-1413-001
+        description_short: |
+          Hover content remains visible when you move the pointer into it.
+        description_full: |
+          When content appears on hover and you move your pointer from the trigger into the new content,
+          the content stays visible.
+      - id: VADS-1413-002
+        description_short: |
+          Hover content can be dismissed with Escape.
+        description_full: |
+          When content appears on hover or focus,
+          you can dismiss it by pressing the Escape key without moving focus.
