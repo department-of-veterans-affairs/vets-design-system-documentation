@@ -25,61 +25,45 @@
 
 {% comment %} Categorize tests and calculate statistics {% endcomment %}
 {% for test in component_tests.tests %}
-  {% assign test_def = nil %}
-  {% assign parent_def = nil %}
   {% assign total_tests = total_tests | plus: 1 %}
 
-  {% comment %} First, try to find as a top-level test {% endcomment %}
+  {% comment %} Look up test definition from test library {% endcomment %}
   {% assign test_def = test_library | where: "id", test.id | first %}
+  {% assign parent_def = nil %}
 
-  {% comment %} If not found, search through subtests {% endcomment %}
+  {% comment %} If not a top-level test, search subtests {% endcomment %}
   {% unless test_def %}
     {% for parent in test_library %}
       {% if parent.subtests %}
-        {% for subtest in parent.subtests %}
-          {% if subtest.id == test.id %}
-            {% assign test_def = subtest %}
-            {% assign parent_def = parent %}
-            {% break %}
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-      {% if test_def %}
-        {% break %}
+        {% assign subtest = parent.subtests | where: "id", test.id | first %}
+        {% if subtest %}
+          {% assign test_def = subtest %}
+          {% assign parent_def = parent %}
+          {% break %}
+        {% endif %}
       {% endif %}
     {% endfor %}
   {% endunless %}
 
   {% if test_def %}
-    {% comment %} Check if test in component YAML has category field first {% endcomment %}
-    {% if test.category %}
-      {% assign test_category = test.category %}
-    {% elsif parent_def %}
-      {% comment %} Use subtest's category if defined, otherwise fall back to parent category {% endcomment %}
-      {% assign test_category = test_def.category | default: parent_def.category %}
-    {% else %}
-      {% assign test_category = test_def.category %}
+    {% comment %} Determine category (check override, then subtest, then parent) {% endcomment %}
+    {% assign test_category = test.category | default: test_def.category %}
+    {% if parent_def and test_category == nil %}
+      {% assign test_category = parent_def.category %}
     {% endif %}
 
-    {% if test_category == "general" %}
-      {% assign general_tests = general_tests | push: test %}
-    {% elsif test_category == "keyboard" %}
-      {% assign keyboard_tests = keyboard_tests | push: test %}
-    {% elsif test_category == "mobile" %}
-      {% assign mobile_tests = mobile_tests | push: test %}
-    {% elsif test_category == "screen_reader" %}
-      {% assign screen_reader_tests = screen_reader_tests | push: test %}
-    {% elsif test_category == "structural" %}
-      {% assign structural_tests = structural_tests | push: test %}
-    {% elsif test_category == "visual" %}
-      {% assign visual_tests = visual_tests | push: test %}
-    {% elsif test_category == "voice_control" %}
-      {% assign voice_control_tests = voice_control_tests | push: test %}
-    {% elsif test_category == "zoom" %}
-      {% assign zoom_tests = zoom_tests | push: test %}
-    {% elsif test_category == "implementation" %}
-      {% assign implementation_tests = implementation_tests | push: test %}
-    {% endif %}
+    {% comment %} Add to appropriate category array {% endcomment %}
+    {% case test_category %}
+      {% when "general" %}{% assign general_tests = general_tests | push: test %}
+      {% when "keyboard" %}{% assign keyboard_tests = keyboard_tests | push: test %}
+      {% when "mobile" %}{% assign mobile_tests = mobile_tests | push: test %}
+      {% when "screen_reader" %}{% assign screen_reader_tests = screen_reader_tests | push: test %}
+      {% when "structural" %}{% assign structural_tests = structural_tests | push: test %}
+      {% when "visual" %}{% assign visual_tests = visual_tests | push: test %}
+      {% when "voice_control" %}{% assign voice_control_tests = voice_control_tests | push: test %}
+      {% when "zoom" %}{% assign zoom_tests = zoom_tests | push: test %}
+      {% when "implementation" %}{% assign implementation_tests = implementation_tests | push: test %}
+    {% endcase %}
   {% endif %}
 
   {% comment %} Calculate result counts and find latest version {% endcomment %}
@@ -178,11 +162,10 @@
     {% endif %}
     <ul class="a11y-test-list">
     {% for test in category_tests %}
-    {% comment %} Look up test definition from test library {% endcomment %}
+    {% comment %} Look up test definition - already done in categorization loop, but needed here for display {% endcomment %}
     {% assign test_def = test_library | where: "id", test.id | first %}
     {% assign parent_def = nil %}
 
-    {% comment %} If not a top-level test, search subtests {% endcomment %}
     {% unless test_def %}
       {% for parent in test_library %}
         {% if parent.subtests %}
@@ -197,6 +180,8 @@
     {% endunless %}
 
     {% if test_def %}
+    {% comment %} Get WCAG metadata (use parent values if this is a subtest) {% endcomment %}
+    {% assign wcag_source = parent_def | default: test_def %}
     <li>
       <p>
         <strong>{{ test_def.description_short | strip }}</strong>
@@ -204,27 +189,13 @@
       <p>
         {{ test_def.description_full | strip }}
       </p>
-      {% comment %} Use parent metadata if this is a subtest, otherwise use test's own metadata {% endcomment %}
-      {% if parent_def %}
-        {% assign display_id = test.id %}
-        {% assign wcag_url = parent_def.wcag_url %}
-        {% assign wcag_criterion = parent_def.wcag_criterion %}
-        {% assign wcag_name = parent_def.wcag_name %}
-        {% assign wcag_level = parent_def.wcag_level %}
-      {% else %}
-        {% assign display_id = test_def.id %}
-        {% assign wcag_url = test_def.wcag_url %}
-        {% assign wcag_criterion = test_def.wcag_criterion %}
-        {% assign wcag_name = test_def.wcag_name %}
-        {% assign wcag_level = test_def.wcag_level %}
-      {% endif %}
 
       <ul class="a11y-test-details-list">
         <li>
-          <span class="usa-label">{{ display_id }}</span>
+          <span class="usa-label">{{ test.id }}</span>
         </li>
         <li>
-          <a href="{{ wcag_url }}">WCAG {{ wcag_criterion }} - {{ wcag_name }}</a> (Level {{ wcag_level }})
+          <a href="{{ wcag_source.wcag_url }}">WCAG {{ wcag_source.wcag_criterion }} - {{ wcag_source.wcag_name }}</a> (Level {{ wcag_source.wcag_level }})
         </li>
       </ul>
 
@@ -299,90 +270,52 @@
           <span>Date</span>
           <span>Version</span>
         </va-table-row>
-        {% if test_runs and test_runs.size > 0 and all_environments.size > 0 %}
-          {% for run in test_runs %}
-            {% for env_id in all_environments %}
-              {% comment %} Find matching result for this environment {% endcomment %}
-              {% assign env_result = nil %}
-              {% assign matching_env = run.environments | where: "name", env_id | first %}
-              {% if matching_env %}
-                {% assign env_result = matching_env.result %}
-              {% endif %}
+        {% if all_environments.size > 0 %}
+          {% comment %} Display environment rows - either with results or as untested {% endcomment %}
+          {% for env_id in all_environments %}
+            {% comment %} Look up environment display name once {% endcomment %}
+            {% assign env_def = env_definitions[env_id] %}
+            {% assign env_display_name = env_def.name | default: env_id %}
 
-              {% comment %} Look up display name from common definitions {% endcomment %}
-              {% assign env_display_name = env_id %}
-              {% assign env_def = env_definitions[env_id] %}
-              {% if env_def and env_def.name %}
-                {% assign env_display_name = env_def.name %}
-              {% endif %}
+            {% comment %} Check if required for this category once {% endcomment %}
+            {% assign is_required = false %}
+            {% if category_required_envs %}
+              {% for req_env in category_required_envs %}
+                {% assign req_id = req_env.id | default: req_env %}
+                {% if req_id == env_id and req_env.required %}
+                  {% assign is_required = true %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
 
-              {% comment %} Check if this environment is required for this category {% endcomment %}
-              {% assign is_required = false %}
-              {% if category_required_envs %}
-                {% for req_env in category_required_envs %}
-                  {% assign req_id = req_env.id | default: req_env %}
-                  {% if req_id == env_id and req_env.required %}
-                    {% assign is_required = true %}
-                    {% break %}
-                  {% endif %}
-                {% endfor %}
-              {% endif %}
+            {% comment %} Find all results for this environment across test runs {% endcomment %}
+            {% if test_runs and test_runs.size > 0 %}
+              {% for run in test_runs %}
+                {% assign matching_env = run.environments | where: "name", env_id | first %}
+                {% assign env_result = matching_env.result | default: nil %}
 
-              <va-table-row>
-                <span>
-                  {{ env_display_name }}{% if is_required %}<span class="vads-u-color--secondary-dark">*</span>{% endif %}
-                </span>
-                <span>
-                  {% if env_result %}
+                <va-table-row>
+                  <span>
+                    {{ env_display_name }}{% if is_required %}<span class="vads-u-color--secondary-dark">*</span>{% endif %}
+                  </span>
+                  <span>
                     {% if env_result == "pass" %}
-                      <va-tag-status
-                        status="success"
-                        text="Pass"
-                      ></va-tag-status>
+                      <va-tag-status status="success" text="Pass"></va-tag-status>
                     {% elsif env_result == "fail" %}
-                      <va-tag-status
-                        status="error"
-                        text="Fail"
-                      ></va-tag-status>
+                      <va-tag-status status="error" text="Fail"></va-tag-status>
                     {% elsif env_result == "conditional" %}
-                      <va-tag-status
-                        status="info"
-                        text="Conditional"
-                      ></va-tag-status>
+                      <va-tag-status status="info" text="Conditional"></va-tag-status>
+                    {% else %}
+                      <span class="vads-u-font-style--italic">Untested</span>
                     {% endif %}
-                  {% else %}
-                    <span class="vads-u-font-style--italic">Untested</span>
-                  {% endif %}
-                </span>
-                <span>{% if run.date %}{{ run.date }}{% else %}—{% endif %}</span>
-                <span>{{ run.version }}</span>
-              </va-table-row>
-            {% endfor %}
-          {% endfor %}
-        {% else %}
-          {% comment %} No test results yet {% endcomment %}
-          {% if all_environments.size > 0 %}
-            {% comment %} Show predefined environments as Untested {% endcomment %}
-            {% for env_id in all_environments %}
-              {% comment %} Look up display name from common definitions {% endcomment %}
-              {% assign env_display_name = env_id %}
-              {% assign env_def = env_definitions[env_id] %}
-              {% if env_def and env_def.name %}
-                {% assign env_display_name = env_def.name %}
-              {% endif %}
-
-              {% comment %} Check if this environment is required for this category {% endcomment %}
-              {% assign is_required = false %}
-              {% if category_required_envs %}
-                {% for req_env in category_required_envs %}
-                  {% assign req_id = req_env.id | default: req_env %}
-                  {% if req_id == env_id and req_env.required %}
-                    {% assign is_required = true %}
-                    {% break %}
-                  {% endif %}
-                {% endfor %}
-              {% endif %}
-
+                  </span>
+                  <span>{{ run.date | default: "—" }}</span>
+                  <span>{{ run.version }}</span>
+                </va-table-row>
+              {% endfor %}
+            {% else %}
+              {% comment %} No test results - show environment as untested {% endcomment %}
               <va-table-row>
                 <span>
                   {{ env_display_name }}{% if is_required %}<span class="vads-u-color--secondary-dark">*</span>{% endif %}
@@ -390,15 +323,14 @@
                 <span class="vads-u-font-style--italic">Untested</span>
                 <span>—</span>
                 <span>—</span>
-
               </va-table-row>
-            {% endfor %}
-          {% else %}
-            {% comment %} No predefined environments and no test results {% endcomment %}
-            <va-table-row>
-              <span colspan="4" class="vads-u-font-style--italic vads-u-color--gray-dark">No test results yet</span>
-            </va-table-row>
-          {% endif %}
+            {% endif %}
+          {% endfor %}
+        {% else %}
+          {% comment %} No environments defined at all {% endcomment %}
+          <va-table-row>
+            <span colspan="4" class="vads-u-font-style--italic vads-u-color--gray-dark">No test results yet</span>
+          </va-table-row>
         {% endif %}
       </va-table>
       {% comment %} Display notes separately if they exist {% endcomment %}
