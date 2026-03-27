@@ -1,8 +1,11 @@
 {% include accessibility-test-library-loader.html %}
 
-{% comment %} 
-  Build unique list of WCAG criteria from parent tests only.
-  Subtests inherit their parent's criterion and aren't displayed as section headers.
+{% comment %}
+  Build a deduplicated list of WCAG criteria (e.g., 1.1.1, 1.4.10, 4.1.2) for section headers.
+  - Only examines parent tests (2-part IDs like "WEB-111")
+  - Skips subtests (3-part IDs like "WEB-111-001") since they inherit their parent's criterion
+  - Each unique criterion becomes a section header grouping all related tests
+  - Tests are already in WCAG order from the source YAML files
 {% endcomment %}
 {% assign wcag_criteria = "" | split: "" %}
 {% for test in test_library %}
