@@ -177,33 +177,35 @@
       {% else %}
         {% assign test_category = test_def.category %}
       {% endif %}
-      {% assign category_required_envs = site.data.accessibility_tests.test-library._config.required_environments[test_category] %}
-      {% assign env_definitions = site.data.accessibility_tests.test-library._config.environment_definitions %}
+      {% assign category_envs = site.data.accessibility_tests.test-library._config.environment_definitions[test_category] %}
 
-      {% comment %} Build environment list from test results {% endcomment %}
+      {% comment %} Build environment list: always include required environments, then add any from test results {% endcomment %}
       {% assign all_environments = "" | split: "" %}
+
+      {% comment %} Step 1: Add required environments from category config {% endcomment %}
+      {% if category_envs %}
+        {% for env in category_envs %}
+          {% if env.required %}
+            {% assign all_environments = all_environments | push: env.id %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+
+      {% comment %} Step 2: Merge in any additional environments from test results {% endcomment %}
       {% if test_runs and test_runs.size > 0 %}
         {% for run in test_runs %}
           {% for env in run.environments %}
-            {% comment %} Check if this environment is already in the list {% endcomment %}
             {% assign env_exists = false %}
             {% for existing_env in all_environments %}
-              {% assign existing_id = existing_env.id | default: existing_env %}
-              {% if existing_id == env.name %}
+              {% if existing_env == env.name %}
                 {% assign env_exists = true %}
                 {% break %}
               {% endif %}
             {% endfor %}
-            {% unless env_exists %}
+            {% unless env_exists or env.name == blank %}
               {% assign all_environments = all_environments | push: env.name %}
             {% endunless %}
           {% endfor %}
-        {% endfor %}
-      {% elsif category_required_envs %}
-        {% comment %} No test results but category has required environments {% endcomment %}
-        {% for req_env in category_required_envs %}
-          {% assign req_id = req_env.id | default: req_env %}
-          {% assign all_environments = all_environments | push: req_id %}
         {% endfor %}
       {% endif %}
 
@@ -216,21 +218,7 @@
         {% if all_environments.size > 0 %}
           {% comment %} Display environment rows - either with results or as untested {% endcomment %}
           {% for env_id in all_environments %}
-            {% comment %} Look up environment display name once {% endcomment %}
-            {% assign env_def = env_definitions[env_id] %}
-            {% assign env_display_name = env_def.name | default: env_id %}
-
-            {% comment %} Check if required for this category once {% endcomment %}
-            {% assign is_required = false %}
-            {% if category_required_envs %}
-              {% for req_env in category_required_envs %}
-                {% assign req_id = req_env.id | default: req_env %}
-                {% if req_id == env_id and req_env.required %}
-                  {% assign is_required = true %}
-                  {% break %}
-                {% endif %}
-              {% endfor %}
-            {% endif %}
+            {% include accessibility-test-env-lookup.html env_id=env_id %}
 
             {% comment %} Find the latest result for this environment {% endcomment %}
             {% assign latest_env_result = nil %}
@@ -250,7 +238,7 @@
             {% if latest_env_version != "" %}
               <va-table-row>
                 <span>
-                  {{ env_display_name }}{% if is_required %}<span class="vads-u-color--secondary-dark">*</span>{% endif %}
+                  {{ env_display_name }}{% if env_is_required %}<span class="vads-u-color--secondary-dark">*</span>{% endif %}
                 </span>
                 <span>
                   {% if latest_env_result == "pass" %}
@@ -269,7 +257,7 @@
               {% comment %} No test results - show environment as untested {% endcomment %}
               <va-table-row>
                 <span>
-                  {{ env_display_name }}{% if is_required %}<span class="vads-u-color--secondary-dark">*</span>{% endif %}
+                  {{ env_display_name }}{% if env_is_required %}<span class="vads-u-color--secondary-dark">*</span>{% endif %}
                 </span>
                 <span class="vads-u-font-style--italic">Untested</span>
                 <span>—</span>
@@ -287,7 +275,7 @@
       {% if test_runs %}
         {% for run in test_runs %}
           {% if run.notes %}
-            <p class="vads-u-margin-bottom--0">
+            <p class="vads-u-margin-bottom--0 vads-u-font-size--sm vads-u-font-style--italic">
               <b>Notes (Version {{ run.version }}):</b> {{ run.notes }}
             </p>
           {% endif %}

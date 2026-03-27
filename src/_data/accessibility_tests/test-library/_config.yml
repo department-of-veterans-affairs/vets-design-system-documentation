@@ -3,70 +3,57 @@
 # Version: 1.0
 # Last updated: 2026-02-10
 
-# Common environment definitions (ID to display name mappings)
-# These can be used by any test in any category
+# Common environment definitions organized by testing methodology
+# The group key matches the test category where applicable
+# Use "required: true" to mark environments that must be tested for that category
 environment_definitions:
-  # Desktop browsers
-  mac-chrome:
-    name: macOS Chrome
-  mac-firefox:
-    name: macOS Firefox
-  mac-edge:
-    name: macOS Edge
-  mac-safari:
-    name: macOS Safari
-  windows-chrome:
-    name: Windows Chrome
-  windows-firefox:
-    name: Windows Firefox
-  windows-edge:
-    name: Windows Edge
+  # Desktop browsers (used for general, keyboard, structural, visual, and zoom tests)
+  browser:
+    - id: mac-chrome
+      name: macOS Chrome
+    - id: mac-firefox
+      name: macOS Firefox
+    - id: mac-edge
+      name: macOS Edge
+    - id: mac-safari
+      name: macOS Safari
+    - id: windows-chrome
+      name: Windows Chrome
+    - id: windows-firefox
+      name: Windows Firefox
+    - id: windows-edge
+      name: Windows Edge
   # Mobile browsers
-  android-chrome:
-    name: Android Chrome
-  ios-safari:
-    name: iOS Safari
-  # Screen readers
-  mac-safari-voiceover:
-    name: macOS Safari/VoiceOver
-  mac-chrome-voiceover:
-    name: macOS Chrome/VoiceOver
-  windows-chrome-jaws:
-    name: Windows Chrome/JAWS
-  windows-edge-nvda:
-    name: Windows Edge/NVDA
-  android-chrome-talkback:
-    name: Android Chrome/Talkback
-  ios-safari-voiceover:
-    name: iOS Safari/VoiceOver
-  # Voice control
-  mac-voice-control:
-    name: macOS Voice Control
-  windows-voice-recognition:
-    name: Windows Voice Recognition
-
-# Required environments for specific categories
-# Categories not listed here (general, keyboard, structural, visual, zoom) can use any environment
-required_environments:
   mobile:
-    - android-chrome
-    - ios-safari
+    - id: android-chrome
+      name: Android Chrome
+      required: true
+    - id: ios-safari
+      name: iOS Safari
+      required: true
+  # Screen readers
   screen_reader:
     - id: mac-safari-voiceover
+      name: macOS Safari/VoiceOver
       required: true
     - id: windows-chrome-jaws
+      name: Windows Chrome/JAWS
       required: true
     - id: windows-edge-nvda
+      name: Windows Edge/NVDA
       required: true
     - id: mac-chrome-voiceover
-      required: false
+      name: macOS Chrome/VoiceOver
     - id: android-chrome-talkback
-      required: false
+      name: Android Chrome/Talkback
     - id: ios-safari-voiceover
-      required: false
+      name: iOS Safari/VoiceOver
+  # Voice control
   voice_control:
-    - mac-safari-voice-control
-    - windows-edge-voice-recognition
+    - id: mac-voice-control
+      name: macOS Voice Control
+    - id: windows-voice-recognition
+      name: Windows Voice Recognition
 
 # Test categories
 categories:
