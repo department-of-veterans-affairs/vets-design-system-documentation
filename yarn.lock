@@ -930,10 +930,10 @@
     react-focus-on "3.5.4"
     react-transition-group "1.0.0"
 
-"@department-of-veterans-affairs/css-library@^0.31.0":
-  version "0.31.0"
-  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/css-library/-/css-library-0.31.0.tgz#96062beb215c26553468b2dde9da57f2173e80f3"
-  integrity sha512-fWnAN03UCDIirHhBl0AYdk2WqKOzihLsg7RfaZPtqI2ABgu7LWvMLQyjiXP8EOYQ7wL+3eEnWjKZXqT9jickBQ==
+"@department-of-veterans-affairs/css-library@^0.31.1":
+  version "0.31.1"
+  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/css-library/-/css-library-0.31.1.tgz#df1b6b76fc74e2a20f0d2517b314cad86a351ce0"
+  integrity sha512-mSH+VwEpbncLn7lnHnydnBC54E0I8GD+vRUuqjpuUCyQ49aZCRcqRlADH6R1hZavGgAaf7npNMy+gM3uZcjkFQ==
   dependencies:
     "@divriots/style-dictionary-to-figma" "0.4.0"
     "@uswds/uswds" "3.9.0"
@@ -4981,9 +4981,9 @@ picocolors@^1.1.1:
   integrity sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==
 
 picomatch@^2.0.4, picomatch@^2.2.3, picomatch@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
-  integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.2.tgz#5a942915e26b372dc0f0e6753149a16e6b1c5601"
+  integrity sha512-V7+vQEJ06Z+c5tSye8S+nHUfI51xoXIXjHQ99cQtKUkQqqO1kO/KCJUfZXuB47h/YBlDhah2H3hdUGXn8ie0oA==
 
 pify@^2.0.0:
   version "2.3.0"
