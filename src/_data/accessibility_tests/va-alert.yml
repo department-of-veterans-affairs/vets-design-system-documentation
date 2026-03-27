@@ -1,0 +1,301 @@
+component: va-alert
+component_url: /components/alert/
+storybook_url: /storybook/?path=/docs/uswds-va-alert--docs
+
+# Tests applied to this component
+tests:
+
+  # 1.1.1 - Decorative status icons not announced by screen readers
+  - id: WEB-111-003
+    test_results:
+      - version: 56.2.1
+        tester: jeana-adhoc
+        date: 2026-03-30
+        environments:
+          - name: mac-safari-voiceover
+            result:
+          - name: windows-chrome-jaws
+            result:
+          - name: windows-edge-nvda
+            result:
+
+  # 1.3.1 - Screen readers announce heading structure within alert
+  - id: WEB-131-001
+    test_results:
+      - version: 56.2.1
+        tester: jeana-adhoc
+        date: 2026-03-30
+        environments:
+          - name: mac-safari-voiceover
+            result:
+          - name: windows-chrome-jaws
+            result:
+          - name: windows-edge-nvda
+            result:
+
+  # 1.3.1 - Heading level follows logical order on page
+  - id: WEB-131-002
+    category: implementation
+    test_results:
+      - version: 56.2.1
+        notes: Implementation-level test. Teams using this component are responsible for verifying the alert heading level follows a logical hierarchy in the context of their page.
+
+  # 1.3.2 - Alert content is presented in a logical order
+  - id: WEB-132
+    category: implementation
+    test_results:
+      - version: 56.2.1
+        notes: Implementation-level test. Teams using this component are responsible for verifying that alert content follows a meaningful sequence in the context of their page.
+
+  # 1.3.4 - Alert available in both portrait and landscape orientations
+  - id: WEB-134
+    test_results:
+      - version: 56.2.1
+        tester: jeana-adhoc
+        date: 2026-03-30
+        environments:
+          - name: android-chrome
+            result:
+          - name: ios-safari
+            result:
+
+  # 1.4.1 - Status type not conveyed by color alone (icon and heading also indicate status)
+  - id: WEB-141
+    test_results:
+      - version: 56.2.1
+        tester: jeana-adhoc
+        date: 2026-03-30
+        environments:
+          - name:
+            result:
+
+  # 1.4.3 - Alert text has sufficient contrast against its background
+  - id: WEB-143
+    test_results:
+      - version: 56.2.1
+        tester: jeana-adhoc
+        date: 2026-03-30
+        environments:
+          - name:
+            result:
+
+  # 1.4.4 - Alert text resizes to 200% without loss of content or functionality
+  - id: WEB-144
+    test_results:
+      - version: 56.2.1
+        tester: jeana-adhoc
+        date: 2026-03-30
+        environments:
+          - name:
+            result:
+
+  # 1.4.5 - Alert does not use images of text
+  - id: WEB-145
+    test_results:
+      - version: 56.2.1
+        tester: jeana-adhoc
+        date: 2026-03-30
+        environments:
+          - name:
+            result:
+
+  # 1.4.10 - Alert reflows at 400% zoom without horizontal scrolling
+  - id: WEB-1410
+    test_results:
+      - version: 56.2.1
+        tester: jeana-adhoc
+        date: 2026-03-30
+        environments:
+          - name:
+            result:
+
+  # 1.4.11 - Close button has sufficient contrast against its surroundings
+  - id: WEB-1411-001
+    test_results:
+      - version: 56.2.1
+        tester: jeana-adhoc
+        date: 2026-03-30
+        environments:
+          - name:
+            result:
+
+  # 1.4.11 - Status icons have sufficient contrast against their background
+  - id: DST-1411-001
+    test_results:
+      - version: 56.2.1
+        tester: jeana-adhoc
+        date: 2026-03-30
+        environments:
+          - name:
+            result:
+
+  # 1.4.12 - Alert text remains readable when spacing is adjusted
+  - id: WEB-1412
+    test_results:
+      - version: 56.2.1
+        tester: jeana-adhoc
+        date: 2026-03-30
+        environments:
+          - name:
+            result:
+
+  # 2.1.1 - Close button is fully operable using only a keyboard
+  - id: WEB-211
+    test_results:
+      - version: 56.2.1
+        tester: jeana-adhoc
+        date: 2026-03-30
+        environments:
+          - name:
+            result:
+
+  # 2.1.2 - Keyboard focus does not get trapped in the alert
+  - id: WEB-212
+    test_results:
+      - version: 56.2.1
+        tester: jeana-adhoc
+        date: 2026-03-30
+        environments:
+          - name:
+            result:
+
+  # 2.4.3 - Focus order within the alert follows a logical sequence
+  - id: WEB-243
+    test_results:
+      - version: 56.2.1
+        tester: jeana-adhoc
+        date: 2026-03-30
+        environments:
+          - name:
+            result:
+
+  # 2.4.6 - Alert heading clearly describes the alert's purpose
+  - id: WEB-246-001
+    category: implementation
+    test_results:
+      - version: 56.2.1
+        notes: Implementation-level test. Teams using this component are responsible for verifying that the alert heading is descriptive of the alert's content and purpose.
+
+  # 2.4.7 - Close button displays a clear focus indicator
+  - id: WEB-247
+    test_results:
+      - version: 56.2.1
+        tester: jeana-adhoc
+        date: 2026-03-30
+        environments:
+          - name:
+            result:
+
+  # 2.4.11 - Focused close button is not obscured by sticky elements
+  - id: WEB-2411
+    category: implementation
+    test_results:
+      - version: 56.2.1
+        notes: Implementation-level test. Teams using this component are responsible for verifying that the focused close button is not obscured by sticky headers, footers, or other overlaying content.
+
+  # 2.5.2 - Close button activates on pointer up, not pointer down
+  - id: WEB-252
+    test_results:
+      - version: 56.2.1
+        tester: jeana-adhoc
+        date: 2026-03-30
+        environments:
+          - name:
+            result:
+
+  # 2.5.3 - Close button accessible name matches its visible label
+  - id: WEB-253
+    test_results:
+      - version: 56.2.1
+        tester: jeana-adhoc
+        date: 2026-03-30
+        environments:
+          - name: mac-safari-voice-control
+            result:
+          - name: windows-edge-voice-recognition
+            result:
+
+  # 2.5.8 - Close button touch target is at least 24x24 pixels
+  - id: WEB-258
+    test_results:
+      - version: 56.2.1
+        tester: jeana-adhoc
+        date: 2026-03-30
+        environments:
+          - name:
+            result:
+
+  # 3.2.4 - Alert component looks and behaves consistently across pages
+  - id: WEB-324
+    test_results:
+      - version: 56.2.1
+        tester: jeana-adhoc
+        date: 2026-03-30
+        environments:
+          - name:
+            result:
+
+  # 4.1.2 - Close button has a clear and descriptive accessible name
+  - id: WEB-412-001
+    test_results:
+      - version: 56.2.1
+        tester: jeana-adhoc
+        date: 2026-03-30
+        environments:
+          - name:
+            result:
+
+  # 4.1.2 - Screen readers announce alert status and state changes
+  - id: WEB-412-002
+    test_results:
+      - version: 56.2.1
+        tester: jeana-adhoc
+        date: 2026-03-30
+        environments:
+          - name: mac-safari-voiceover
+            result:
+          - name: windows-chrome-jaws
+            result:
+          - name: windows-edge-nvda
+            result:
+
+  # 4.1.2 - Close button uses a button element, not a link
+  - id: WEB-412-003
+    test_results:
+      - version: 56.2.1
+        tester: jeana-adhoc
+        date: 2026-03-30
+        environments:
+          - name:
+            result:
+
+  # 4.1.2 - Close button performs an in-page action (dismisses the alert)
+  - id: DST-412-002
+    test_results:
+      - version: 56.2.1
+        tester: jeana-adhoc
+        date: 2026-03-30
+        environments:
+          - name:
+            result:
+
+  # 4.1.2 - Multiple alerts on a page have unique accessible labels
+  - id: DST-412-003
+    category: implementation
+    test_results:
+      - version: 56.2.1
+        notes: Implementation-level test. Teams using this component are responsible for verifying that when multiple alerts appear on the same page, each has a unique label that distinguishes it from the others.
+
+  # 4.1.3 - Screen readers announce the alert without requiring focus to move to it
+  - id: WEB-413
+    test_results:
+      - version: 56.2.1
+        tester: jeana-adhoc
+        date: 2026-03-30
+        environments:
+          - name: mac-safari-voiceover
+            result:
+          - name: windows-chrome-jaws
+            result:
+          - name: windows-edge-nvda
+            result:
