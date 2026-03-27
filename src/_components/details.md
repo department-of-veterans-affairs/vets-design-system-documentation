@@ -2,7 +2,7 @@
 layout: component
 title: Details
 status: use-with-caution-candidate
-intro-text: "The Details component reveals optional, supporting information that is not required for most users to complete a task. It is used to provide plain language help at the point where it is most relevant."
+intro-text: "The Details component reveals optional, supporting information that isn't required for most users to complete a task. It is used to provide plain language help at the point where it is most relevant."
 figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=42924-290
 uswds-v3: default
 web-component: va-details
