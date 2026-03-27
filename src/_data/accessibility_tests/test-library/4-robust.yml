@@ -34,8 +34,8 @@ tests:
         description_short: |
           Links navigate to pages; buttons perform actions.
         description_full: |
-          When you interact with UI elements,
-          you find the code uses link elements for navigation and button elements to perform in-page actions or submit forms.
+          When you activate a link, it takes you to a new page or section.
+          When you activate a button, it performs an action on the current page.
       - id: DST-412-001
         description_short: |
           Link navigates to a new page or section.
@@ -65,5 +65,5 @@ tests:
     description_short: |
       Screen readers announce important updates.
     description_full: |
-      When a status message is added or updated while using a screen reader,
-      you hear the message announced without needing to move focus to the message.
+      When you're using a screen reader and a status message appears on the page,
+      you hear it announced without needing to move focus to the message.

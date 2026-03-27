@@ -38,20 +38,20 @@ tests:
     governance_severity: Critical
     wcag_url: https://www.w3.org/TR/WCAG22/#no-keyboard-trap
     description_short: |
-      Keyboard focus does not get trapped.
+      Keyboard focus doesn't get trapped.
     description_full: |
       When you move focus to an interactive element with a keyboard,
       you can move focus away from that element using only standard keyboard keys (Tab, Shift+Tab, arrow keys, or Escape).
     subtests:
       - id: DST-212-001
         description_short: |
-          Links do not trap keyboard focus.
+          Links don't trap keyboard focus.
         description_full: |
           When you navigate to the link using a keyboard,
           you can move focus away from the link using only standard keyboard keys (Tab, Shift+Tab, arrow keys, or Escape).
       - id: DST-212-002
         description_short: |
-          Form inputs do not trap keyboard focus.
+          Form inputs don't trap keyboard focus.
         description_full: |
           When you navigate to a form input using a keyboard,
           you can move focus away from the input using only standard keyboard keys (Tab, Shift+Tab, arrow keys, or Escape).
@@ -205,7 +205,7 @@ tests:
           Input labels are descriptive.
         description_full: |
           When you read an input label,
-          you find that its accurately describes the purpose of the input field and the expected value.
+          you find that it accurately describes the purpose of the input field and the expected value.
   - id: WEB-247
     category: keyboard
     wcag_criterion: 2.4.7
@@ -271,8 +271,8 @@ tests:
     description_short: |
       Pointer actions are reversible and don't execute on touch down.
     description_full: |
-      When you interact with the page using a pointer device, such as a mouse, touchscreen, or stylus,
-      you find they execute on the up-event and can be cancelled before release.
+      When you press and hold on an interactive element,
+      you can cancel the action by moving your pointer away before releasing.
   - id: WEB-253
     category: voice_control
     wcag_criterion: 2.5.3
@@ -284,8 +284,8 @@ tests:
     description_short: |
       Accessible name matches visible text.
     description_full: |
-      When you inspect an interactive element that has visible text,
-      you find that the accessible name matches the visible text for that element.
+      When you use voice control or a screen reader to activate an element that has visible text,
+      the spoken or accessible name matches what you see.
     subtests:
       - id: DST-253-001
         category: screen_reader
@@ -294,6 +294,13 @@ tests:
         description_full: |
           When you focus on an interactive element with a screen reader,
           you hear an announcement that matches the element's visible text.
+      - id: DST-253-002
+        category: voice_control
+        description_short: |
+          Voice control users can activate an element by speaking its visible text.
+        description_full: |
+          When you use voice control to say the visible text of an interactive element,
+          the element activates as expected.
   - id: WEB-254
     category: mobile
     wcag_criterion: 2.5.4
@@ -305,8 +312,8 @@ tests:
     description_short: |
       Features don't require shaking or tilting the device.
     description_full: |
-      When you use motion-activated features,
-      you find alternative input methods and the ability to disable them.
+      When you encounter a feature that responds to device motion like shaking or tilting,
+      you find an alternative way to perform the same action and a way to turn off motion activation.
   - id: WEB-257
     category: general
     wcag_criterion: 2.5.7
@@ -336,7 +343,7 @@ tests:
     subtests:
       - id: DST-258-001
         description_short: |
-         Link target size is at least 24 pixels.
+          Link target size is at least 24 pixels.
         description_full: |
           When you inspect the size of links on the page,
           you find that each link has a target size of at least 24x24 pixels.

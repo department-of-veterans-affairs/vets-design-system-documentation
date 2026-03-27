@@ -14,8 +14,8 @@ tests:
     description_short: |
       Page declares its language.
     description_full: |
-      When you inspect the page,
-      you find the html element includes a valid lang attribute specifying the page's primary language.
+      When you use a screen reader to read the page,
+      it pronounces content in the correct language.
   - id: WEB-312
     category: general
     wcag_criterion: 3.1.2
@@ -27,8 +27,8 @@ tests:
     description_short: |
       Content declares language changes.
     description_full: |
-      When you view text in different languages from the page's primary language,
-      you find it is marked with `lang` attributes.
+      When you encounter text in a different language from the rest of the page,
+      a screen reader pronounces it in the correct language.
     subtests:
       - id: DST-312-001
         category: screen_reader
@@ -46,30 +46,30 @@ tests:
     governance_severity: Critical
     wcag_url: https://www.w3.org/TR/WCAG22/#on-focus
     description_short: |
-      Focusing on an element does not trigger unexpected changes.
+      Focusing on an element doesn't trigger unexpected changes.
     description_full: |
       When you focus on an element,
-      you find it does not trigger a change of context such as opening a new page, displaying a modal, or causing content to appear or disappear.
+      it doesn't trigger a change of context such as opening a new page, displaying a modal, or causing content to appear or disappear.
     subtests:
       - id: DST-321-001
         description_short: |
-          Focusing on an input does not trigger unexpected changes.
+          Focusing on an input doesn't trigger unexpected changes.
         description_full: |
           When you focus on an input,
-          you find it does not trigger a change of context such as opening a new page, displaying a modal, or causing content to appear or disappear.
+          it doesn't trigger a change of context such as opening a new page, displaying a modal, or causing content to appear or disappear.
   - id: WEB-322
     category: keyboard
     wcag_criterion: 3.2.2
     wcag_name: On Input
-    wcag_level: AA
+    wcag_level: A
     508_severity: High
     governance_severity: High-Critical
     wcag_url: https://www.w3.org/TR/WCAG22/#on-input
     description_short: |
-      Changing the input value does not trigger unexpected changes.
+      Changing the input value doesn't trigger unexpected changes.
     description_full: |
       When you change a form input value,
-      you find it does not trigger a change of context such as opening a new page, displaying a modal, or causing content to appear or disappear.
+      it doesn't trigger a change of context such as opening a new page, displaying a modal, or causing content to appear or disappear.
   - id: WEB-323
     category: general
     wcag_criterion: 3.2.3
@@ -253,4 +253,4 @@ tests:
       Login doesn't rely solely on remembering information.
     description_full: |
       When you log in,
-      you find the process does not solely rely on cognitive tests and all steps support methods that do not rely on memory or knowledge.
+      you find the process doesn't solely rely on cognitive tests and all steps support methods that don't rely on memory or knowledge.
