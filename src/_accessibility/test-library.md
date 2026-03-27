@@ -3,46 +3,25 @@ layout: documentation
 title: Accessibility Test Library
 permalink: /accessibility/test-library
 anchors:
-  - anchor: Overview
-  - anchor: Test categories
-  - anchor: Complete test list
+  - anchor: About this library
+  - anchor: How we use it
+  - anchor: How other teams can use it
+  - anchor: Test library
 ---
 
-## Overview
+## About this library
 
-The VA Design System maintains a comprehensive library of accessibility tests based on the Web Content Accessibility Guidelines (WCAG) 2.1 and 2.2. These tests are organized by the four WCAG principles: Perceivable, Operable, Understandable, and Robust.
+The VA.gov Design System accessibility test library is a collection of tests mapped to WCAG 2.2 success criteria. Each test describes what to verify and which environments to test in, such as screen readers, keyboards, and mobile devices.
 
-Each test in this library includes:
-- **Test ID**: A unique identifier for the test
-- **Category**: The type of testing required (general, keyboard, screen reader, mobile, zoom)
-- **Description**: What the test verifies
-- **WCAG Criterion**: The specific WCAG success criterion the test validates
-- **WCAG Level**: The conformance level (A, AA, or AAA)
+This library is for the Design System team, VFS teams, and anyone building accessible experiences on VA.gov.
 
-## Test categories
+### How we use it
 
-Tests are categorized by the type of testing methodology required:
+The Design System team uses this library to audit each component and publish results. You can find accessibility test results in the **Accessibility tests** section of each component page. We're actively auditing components, so not all components have test results yet.
 
-- **General**: Visual inspection, code review, or automated testing tools
-- **Keyboard**: Testing with keyboard-only navigation
-- **Screen Reader**: Testing with assistive technologies like NVDA, JAWS, or VoiceOver
-- **Mobile**: Testing on mobile devices or responsive viewports
-- **Zoom**: Testing with browser zoom or text spacing adjustments
+### How other teams can use it
 
-## Complete test list
+Teams building on VA.gov can use the same tests to verify accessibility in their own products. Some tests are context-dependent, meaning they can only be evaluated within a specific product or workflow. These are marked as "Conditional" in component test results and are the responsibility of the implementing team.
 
-The table below lists all tests in the library in numerical order. Component teams can reference these test IDs when documenting accessibility testing for their components.
-
+## Test library
 {% include accessibility-test-library-list.html %}
-
-## Using the test library
-
-To apply tests to a component:
-
-1. Review the component's functionality and interaction patterns
-2. Select relevant tests from this library
-3. Document the selected tests in the component's accessibility test data file
-4. Execute tests according to the specified test category requirements
-5. Record test results including version, environment, and pass/fail status
-
-For questions about which tests apply to your component, consult with the Design System team in the [#platform-design-system Slack channel]({{ site.slack_channel_link }}).
