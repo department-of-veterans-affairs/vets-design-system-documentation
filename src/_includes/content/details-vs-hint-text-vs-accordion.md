@@ -56,7 +56,7 @@ flowchart TD
 <li><strong>Is content related to a nearby form field or section?</strong>
     <ul>
     <li><strong>Yes</strong> (Why we ask questions, field-specific help) → Continue to question 3</li>
-    <li><strong>No</strong> (General information, standalone topics) → Use Accordion/li>
+    <li><strong>No</strong> (General information, standalone topics) → Use Accordion</li>
     </ul>
 </li>
 
