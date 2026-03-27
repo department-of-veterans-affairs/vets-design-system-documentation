@@ -267,8 +267,7 @@
         <va-table-row slot="headers">
           <span>Environment</span>
           <span>Result</span>
-          <span>Date</span>
-          <span>Version</span>
+          <span>Last tested</span>
         </va-table-row>
         {% if all_environments.size > 0 %}
           {% comment %} Display environment rows - either with results or as untested {% endcomment %}
@@ -310,8 +309,7 @@
                       <span class="vads-u-font-style--italic">Untested</span>
                     {% endif %}
                   </span>
-                  <span>{{ run.date | default: "—" }}</span>
-                  <span>{{ run.version }}</span>
+                  <span>version {{ run.version }}{% if run.date %} ({{ run.date | date: "%B %d, %Y" }}){% endif %}</span>
                 </va-table-row>
               {% endfor %}
             {% else %}
@@ -322,14 +320,13 @@
                 </span>
                 <span class="vads-u-font-style--italic">Untested</span>
                 <span>—</span>
-                <span>—</span>
               </va-table-row>
             {% endif %}
           {% endfor %}
         {% else %}
           {% comment %} No environments defined at all {% endcomment %}
           <va-table-row>
-            <span colspan="4" class="vads-u-font-style--italic vads-u-color--gray-dark">No test results yet</span>
+            <span colspan="3" class="vads-u-font-style--italic vads-u-color--gray-dark">No test results yet</span>
           </va-table-row>
         {% endif %}
       </va-table>
