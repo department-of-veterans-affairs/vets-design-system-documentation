@@ -118,7 +118,7 @@ tests:
             result: pass
 
   # 1.4.11 subtest - Chevron icon contrast (3:1)
-  - id: DST-1411-001
+  - id: VADS-1411-001
     test_results:
       - version: unreleased (base 56.0.0) 
         tester: Jeana Clark
@@ -310,7 +310,7 @@ tests:
 
   # Implementation-level tests
   # 4.1.2 subtest - Summary has clear and unique accessible name from label prop
-  - id: DST-412-003
+  - id: VADS-412-003
     category: implementation
     test_results:
       - version: unreleased (base 56.0.0) 

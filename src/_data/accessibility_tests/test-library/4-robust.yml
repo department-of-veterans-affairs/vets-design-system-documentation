@@ -36,19 +36,19 @@ tests:
         description_full: |
           When you activate a link, it takes you to a new page or section.
           When you activate a button, it performs an action on the current page.
-      - id: DST-412-001
+      - id: VADS-412-001
         description_short: |
           Link navigates to a new page or section.
         description_full: |
           When you activate a link,
           you are taken to a different page or a section on the current page.
-      - id: DST-412-002
+      - id: VADS-412-002
         description_short: |
           Button performs an action on the current page.
         description_full: |
           When you activate a button,
           you find that it performs an action on the current page.
-      - id: DST-412-003
+      - id: VADS-412-003
         description_short: |
           Multiple instances have unique labels.
         description_full: |

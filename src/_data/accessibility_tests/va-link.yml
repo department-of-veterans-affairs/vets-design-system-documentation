@@ -11,7 +11,7 @@ tests:
         environments:
           - name: mac-chrome
             result: pass
-  - id: DST-141-001
+  - id: VADS-141-001
     test_results:
       - version: 54.6.1
         tester: John Doe
@@ -26,14 +26,14 @@ tests:
         environments:
           - name: mac-chrome
             result: pass
-  - id: DST-1411-001
+  - id: VADS-1411-001
     test_results:
       - version: 54.6.1
         tester: John Doe
         environments:
           - name: mac-chrome
             result: pass
-  - id: DST-211-001
+  - id: VADS-211-001
     test_results:
       - version: 54.6.1
         tester: John Doe
@@ -63,21 +63,21 @@ tests:
           - name: mac-chrome
             result: pass
         notes: Focus outline is visible but does not meet 3:1 contrast ratio. This is a known issue that will be addressed in a future release.
-  - id: DST-253-001
+  - id: VADS-253-001
     test_results:
       - version: 54.6.1
         tester: John Doe
         environments:
           - name: mac-chrome
             result: pass
-  - id: DST-258-001
+  - id: VADS-258-001
     test_results:
       - version: 54.6.1
         tester: John Doe
         environments:
           - name: mac-chrome
             result: pass
-  - id: DST-412-001
+  - id: VADS-412-001
     test_results:
       - version: 54.6.1
         tester: John Doe

@@ -73,7 +73,7 @@ storybook_url: /storybook/?path=/docs/components-va-button--docs
 tests:
   - id: WEB-1410        # Example: Color contrast test
   - id: WEB-212         # Example: Keyboard navigation
-  - id: DST-244-001     # Example: Focus indicator subtest
+  - id: VADS-244-001     # Example: Focus indicator subtest
   - id: WEB-321         # Example: Screen reader announcement
 ```
 

@@ -30,7 +30,7 @@ tests:
       When you encounter text in a different language from the rest of the page,
       a screen reader pronounces it in the correct language.
     subtests:
-      - id: DST-312-001
+      - id: VADS-312-001
         category: screen_reader
         description_short: |
           Screen readers announce language changes.
@@ -51,7 +51,7 @@ tests:
       When you focus on an element,
       it doesn't trigger a change of context such as opening a new page, displaying a modal, or causing content to appear or disappear.
     subtests:
-      - id: DST-321-001
+      - id: VADS-321-001
         description_short: |
           Focusing on an input doesn't trigger unexpected changes.
         description_full: |
@@ -123,32 +123,32 @@ tests:
       When you enter an invalid value,
       you receive a descriptive error message that identifies the problem.
     subtests:
-      - id: DST-331-001
+      - id: VADS-331-001
         description_short: |
           Errors are identified on blur.
         description_full: |
           When you enter an invalid value in a form input and move focus away from the input,
           you receive an error message that identifies the problem.
-      - id: DST-331-002
+      - id: VADS-331-002
         description_short: |
           Error messages describe the reason for the error.
         description_full: |
           When you enter an invalid value in a form input or a required field is left empty,
           you receive a descriptive error message that identifies the problem.
-      - id: DST-331-003
+      - id: VADS-331-003
         description_short: |
           Invalid inputs display visible error styles.
         description_full: |
           When you trigger an error state on a form input,
           you see a distinct visual style indicating that the input is in error.
-      - id: DST-331-004
+      - id: VADS-331-004
         category: screen_reader
         description_short: |
           Screen readers announce errors when they occur.
         description_full: |
           When you use a screen reader and receive an error message,
           you hear the error message announced without needing to move focus to the message.
-      - id: DST-331-005
+      - id: VADS-331-005
         category: visual
         description_short: |
           Error messages are visually associated with the invalid element.

@@ -261,7 +261,7 @@ tests:
       When you view the page or component,
       you find that anything shown by color is also communicated through another visual cue like shape or text.
     subtests:
-      - id: DST-141-001
+      - id: VADS-141-001
         description_short: |
           Links are indicated with more than just color.
         description_full: |
@@ -358,13 +358,13 @@ tests:
         description_full: |
           When you use a color contrast checker tool to compare the color of a meaningful icon and graphic element against its background,
           you find it has a contrast ratio of at least 3:1.
-      - id: DST-1411-001
+      - id: VADS-1411-001
         description_short: |
           Icons have sufficient contrast against their background.
         description_full: |
           When you use a color contrast checker tool to compare the color of an icon against its background,
           you find it has a contrast ratio of at least 3:1.
-      - id: DST-1411-002
+      - id: VADS-1411-002
         description_short: |
           Form inputs have sufficient contrast against their surroundings.
         description_full: |

@@ -20,19 +20,19 @@ The test library is organized into files based on the four WCAG principles:
 
 - **`1-perceivable.yml`** — Tests for WCAG Principle 1: Perceivable
   *Information and user interface components must be presentable to users in ways they can perceive*
-  Test IDs: `WEB-1xx` or `DST-1xx` series
+  Test IDs: `WEB-1xx` or `VADS-1xx` series
 
 - **`2-operable.yml`** — Tests for WCAG Principle 2: Operable
   *User interface components and navigation must be operable*
-  Test IDs: `WEB-2xx` or `DST-2xx` series
+  Test IDs: `WEB-2xx` or `VADS-2xx` series
 
 - **`3-understandable.yml`** — Tests for WCAG Principle 3: Understandable
   *Information and the operation of user interface must be understandable*
-  Test IDs: `WEB-3xx` or `DST-3xx` series
+  Test IDs: `WEB-3xx` or `VADS-3xx` series
 
 - **`4-robust.yml`** — Tests for WCAG Principle 4: Robust
   *Content must be robust enough that it can be interpreted by a wide variety of user agents*
-  Test IDs: `WEB-4xx` or `DST-4xx` series
+  Test IDs: `WEB-4xx` or `VADS-4xx` series
 
 ### Configuration File
 
@@ -67,7 +67,7 @@ Examples:
 - `WEB-111` → Governance test for WCAG 1.1.1 Non-text Content
 - `WEB-212` → Governance test for WCAG 2.1.2 No Keyboard Trap
 - `WEB-1410` → Governance test for WCAG 1.4.10 Reflow
-- `DST-211` → Design System Team test for keyboard operability
+- `VADS-211` → Design System Team test for keyboard operability
 
 ### Subtests
 Format: `XXX-YYY-ZZZ` where:
@@ -77,7 +77,7 @@ Format: `XXX-YYY-ZZZ` where:
 
 Examples:
 - `WEB-111-001` → Screen readers announce descriptions for meaningful images
-- `DST-211-001` → Link is fully operable using only a keyboard
+- `VADS-211-001` → Link is fully operable using only a keyboard
 - `WEB-244-001` → Focus indicator is visible
 
 Subtests allow for more granular testing of specific aspects within a broader WCAG criterion.
@@ -136,7 +136,7 @@ Each test in the library includes:
     When you move focus to an interactive element with a keyboard,
     you can move focus away from that element using only standard keyboard keys.
   subtests:
-    - id: DST-212-001
+    - id: VADS-212-001
       description_short: |
         Links do not trap keyboard focus.
       description_full: |

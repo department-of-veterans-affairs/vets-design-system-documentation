@@ -17,13 +17,13 @@ tests:
       When you access an interactive element using only a keyboard,
       you can navigate to the element, activate it, and navigate away from it.
     subtests:
-      - id: DST-211-001
+      - id: VADS-211-001
         description_short: |
           Link is fully operable using only a keyboard.
         description_full: |
           When you interact with a link using only a keyboard,
           you can navigate to the link, activate it, and navigate away from it.
-      - id: DST-211-002
+      - id: VADS-211-002
         description_short: |
           Form inputs are fully operable using only a keyboard.
         description_full: |
@@ -43,13 +43,13 @@ tests:
       When you move focus to an interactive element with a keyboard,
       you can move focus away from that element using only standard keyboard keys (Tab, Shift+Tab, arrow keys, or Escape).
     subtests:
-      - id: DST-212-001
+      - id: VADS-212-001
         description_short: |
           Links don't trap keyboard focus.
         description_full: |
           When you navigate to the link using a keyboard,
           you can move focus away from the link using only standard keyboard keys (Tab, Shift+Tab, arrow keys, or Escape).
-      - id: DST-212-002
+      - id: VADS-212-002
         description_short: |
           Form inputs don't trap keyboard focus.
         description_full: |
@@ -121,7 +121,7 @@ tests:
       When you navigate the page,
       you find a mechanism to bypass repeated blocks of content such as a skip link or HTML5 landmarks.
     subtests:
-      - id: DST-241-001
+      - id: VADS-241-001
         description_short: |
           Skip link allows users to bypass repeated content.
         description_full: |
@@ -287,14 +287,14 @@ tests:
       When you use voice control or a screen reader to activate an element that has visible text,
       the spoken or accessible name matches what you see.
     subtests:
-      - id: DST-253-001
+      - id: VADS-253-001
         category: screen_reader
         description_short: |
           Screen reader announcements match visible text.
         description_full: |
           When you focus on an interactive element with a screen reader,
           you hear an announcement that matches the element's visible text.
-      - id: DST-253-002
+      - id: VADS-253-002
         category: voice_control
         description_short: |
           Voice control users can activate an element by speaking its visible text.
@@ -341,7 +341,7 @@ tests:
       When you inspect the size of interactive elements on the page,
       you find that each element has a target size of at least 24x24 pixels.
     subtests:
-      - id: DST-258-001
+      - id: VADS-258-001
         description_short: |
           Link target size is at least 24 pixels.
         description_full: |

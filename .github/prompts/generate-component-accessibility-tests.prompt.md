@@ -84,7 +84,7 @@ Reference the test library at `src/_data/accessibility_tests/test-library/` to d
 
 **IMPORTANT**: Always prefer the most specific subtest over the parent test when available.
 
-**Subtest format**: `XXX-YYY-ZZZ` where `ZZZ` is the subtest number (e.g., `WEB-111-001`, `DST-211-002`)
+**Subtest format**: `XXX-YYY-ZZZ` where `ZZZ` is the subtest number (e.g., `WEB-111-001`, `VADS-211-002`)
 
 **Rules**:
 1. **Use specific subtests when they exist** — If a parent test (e.g., `WEB-111`) has subtests (e.g., `WEB-111-001`, `WEB-111-002`, `WEB-111-003`), use the specific subtests that apply to your component, not the parent test.
@@ -99,8 +99,8 @@ Reference the test library at `src/_data/accessibility_tests/test-library/` to d
 - ❌ **Wrong**: `WEB-111` for a component with images
 - ✅ **Right**: `WEB-111-001` for informative images, `WEB-111-003` for decorative icons
 
-- ❌ **Wrong**: `DST-211` for a button component
-- ✅ **Right**: `DST-211-001` for link operability OR `DST-211-002` for form input operability
+- ❌ **Wrong**: `VADS-211` for a button component
+- ✅ **Right**: `VADS-211-001` for link operability OR `VADS-211-002` for form input operability
 
 - ✅ **Acceptable**: `WEB-412` when no subtests exist and the general test applies
 
@@ -135,29 +135,29 @@ Reference the test library at `src/_data/accessibility_tests/test-library/` to d
 - `WEB-243` — Focus Order (tab order follows a logical sequence)
 - `WEB-247` — Focus Visible (interactive elements display a clear focus indicator)
 - `WEB-2411` — Focus Not Obscured (focused elements are fully visible)
-- `WEB-253` or specific subtests — Label in Name (review subtests: `DST-253-001` for screen reader announcement matching if applicable)
+- `WEB-253` or specific subtests — Label in Name (review subtests: `VADS-253-001` for screen reader announcement matching if applicable)
 - `WEB-258` or specific subtests — Target Size (review subtests based on element type)
 - `WEB-412` or specific subtests — Name, Role, Value (review subtests based on element type and behavior)
 
 **For LINKS** (in addition to all interactive element tests above):
-- `WEB-141` or specific subtests — Use of Color (review subtests: `DST-141-001` for links indicated by color)
-- `WEB-211` or specific subtests — Keyboard operability (review subtests: typically `DST-211-001` for links)
+- `WEB-141` or specific subtests — Use of Color (review subtests: `VADS-141-001` for links indicated by color)
+- `WEB-211` or specific subtests — Keyboard operability (review subtests: typically `VADS-211-001` for links)
 - `WEB-244` — Link Purpose (In Context) - link text is clear and descriptive
-- `WEB-412` or specific subtests — Name, Role, Value (review subtests: `WEB-412-003` for proper element types, `DST-412-001` for link navigation)
+- `WEB-412` or specific subtests — Name, Role, Value (review subtests: `WEB-412-003` for proper element types, `VADS-412-001` for link navigation)
 
 **For BUTTONS** (in addition to all interactive element tests above):
 - `WEB-211` — Keyboard operability (buttons must be keyboard accessible)
-- `WEB-412` or specific subtests — Name, Role, Value (review subtests: `WEB-412-002` for state announcements if stateful, `WEB-412-003` for proper element types, `DST-412-002` for button actions)
+- `WEB-412` or specific subtests — Name, Role, Value (review subtests: `WEB-412-002` for state announcements if stateful, `WEB-412-003` for proper element types, `VADS-412-002` for button actions)
 
 **For FORM INPUTS** (text-input, select, checkbox, radio, textarea) — in addition to all interactive element tests above:
 - `WEB-131` or specific subtests — Info and Relationships (review subtests: e.g., `WEB-131-005` for grouped elements, `WEB-131-006` for input labels and instructions, `WEB-131-007` for required fields)
 - `WEB-135` - Identify input purpose (if applicable)
 - `WEB-1413` — Content on Hover or Focus (users can dismiss content that appears on hover or focus)
-- `WEB-211` or specific subtests — Keyboard operability (review subtests: typically `DST-211-002` for form inputs)
+- `WEB-211` or specific subtests — Keyboard operability (review subtests: typically `VADS-211-002` for form inputs)
 - `WEB-246` or specific subtests — Headings and labels (review subtests: `WEB-246-002` for input labels)
-- `WEB-321` or `DST-321-001` (subtest) — On Focus (review subtests: use `DST-321-001` for input-specific focus behavior if applicable)
+- `WEB-321` or `VADS-321-001` (subtest) — On Focus (review subtests: use `VADS-321-001` for input-specific focus behavior if applicable)
 - `WEB-322` — On Input (changing the input value does not trigger unexpected changes)
-- `WEB-331` or specific subtests — Error Identification (review subtests: e.g., `DST-331-001` for errors on blur, `DST-331-002` for error descriptions, `DST-331-003` for error styles, `DST-331-004` for screen reader announcements, `DST-331-005` for error placement)
+- `WEB-331` or specific subtests — Error Identification (review subtests: e.g., `VADS-331-001` for errors on blur, `VADS-331-002` for error descriptions, `VADS-331-003` for error styles, `VADS-331-004` for screen reader announcements, `VADS-331-005` for error placement)
 - `WEB-332` or specific subtests — Labels or Instructions (review subtests: `WEB-332-001` for visible labels, `WEB-332-002` for format instructions, `WEB-332-003` for required field marking)
 - `WEB-333` — Error Suggestion (error messages explain how to fix the error)
 
@@ -166,28 +166,28 @@ Reference the test library at `src/_data/accessibility_tests/test-library/` to d
 - `WEB-145` — Images of Text (text is not presented as images)
 
 **For DYNAMIC CONTENT** (alerts, modals, accordions, expandable content):
-- `WEB-253` or specific subtests — Label in Name (review subtests: `DST-253-001` if component label/content changes dynamically)
+- `WEB-253` or specific subtests — Label in Name (review subtests: `VADS-253-001` if component label/content changes dynamically)
 - `WEB-412` or specific subtests — Name, Role, Value (review subtests: `WEB-412-002` for screen reader state announcements when content expands/collapses or shows/hides)
 - `WEB-413` — Status Messages (screen readers announce important updates without moving focus)
 
 **For COMPONENTS WITH COLOR CODING** (components that use color to convey information or status, such as alerts, status badges, or color-coded indicators):
-- `WEB-141` or specific subtests — Use of Color (review subtests: `DST-141-001` if component has links indicated by color)
-- `WEB-1411` or specific subtests — Non-text Contrast (review subtests based on component features: `DST-1411-001` for icons, `DST-1411-002` for form input borders, `WEB-1411-001` for interactive elements, `WEB-1411-002` for meaningful graphics)
+- `WEB-141` or specific subtests — Use of Color (review subtests: `VADS-141-001` if component has links indicated by color)
+- `WEB-1411` or specific subtests — Non-text Contrast (review subtests based on component features: `VADS-1411-001` for icons, `VADS-1411-002` for form input borders, `WEB-1411-001` for interactive elements, `WEB-1411-002` for meaningful graphics)
 
 **Additional considerations:**
-- **Navigation components** (breadcrumbs, pagination, menus) — These are typically collections of links, so apply the "For LINKS" category. If the component includes skip navigation functionality, also include `WEB-241` or `DST-241-001` (Bypass Blocks)
+- **Navigation components** (breadcrumbs, pagination, menus) — These are typically collections of links, so apply the "For LINKS" category. If the component includes skip navigation functionality, also include `WEB-241` or `VADS-241-001` (Bypass Blocks)
 
 ### Step 4: Reference the Test Library
 
 Browse test definitions at:
-- `src/_data/accessibility_tests/test-library/1-perceivable.yml` — Visual and sensory tests (WEB-1xx, DST-1xx)
-- `src/_data/accessibility_tests/test-library/2-operable.yml` — Interaction and navigation tests (WEB-2xx, DST-2xx)
-- `src/_data/accessibility_tests/test-library/3-understandable.yml` — Content clarity and input assistance (WEB-3xx, DST-3xx)
-- `src/_data/accessibility_tests/test-library/4-robust.yml` — ARIA and semantic markup (WEB-4xx, DST-4xx)
+- `src/_data/accessibility_tests/test-library/1-perceivable.yml` — Visual and sensory tests (WEB-1xx, VADS-1xx)
+- `src/_data/accessibility_tests/test-library/2-operable.yml` — Interaction and navigation tests (WEB-2xx, VADS-2xx)
+- `src/_data/accessibility_tests/test-library/3-understandable.yml` — Content clarity and input assistance (WEB-3xx, VADS-3xx)
+- `src/_data/accessibility_tests/test-library/4-robust.yml` — ARIA and semantic markup (WEB-4xx, VADS-4xx)
 
 **Test ID Prefixes**:
 - `WEB` — Tests from VA governance team's accessibility testing library
-- `DST` — Design System Team customizations and component-specific tests
+- `VADS` — Component-specific tests from the VA Design System team (often subtests of WEB tests)
 
 **Finding Subtests**:
 When browsing the test library YAML files, look for the `subtests:` array under each parent test. Subtests have their own `id` and `description_short`/`description_full` fields. Always prefer using the specific subtest ID rather than the parent test ID when a relevant subtest exists.
@@ -214,7 +214,7 @@ Create `src/_data/accessibility_tests/[component-name].yml` with:
    - If the category is `screen_reader`, `mobile`, or `voice_control`, add `environments` array with required environments and empty `result` fields
    - For all other categories, add an `environments` array with a single empty entry (empty `name` and `result` fields)
    - See **File Format** section above for YAML structure examples
-6. Sort order: numerical by test ID (WEB-111-003, WEB-143, DST-211-001, WEB-212, etc.)
+6. Sort order: numerical by test ID (WEB-111-003, WEB-143, VADS-211-001, WEB-212, etc.)
 
 **Do NOT include**:
 - Actual result values (leave `result:` empty)
@@ -229,14 +229,14 @@ Reference these complete example files to see proper test selection and structur
 ### Example Files
 
 - **`src/_data/accessibility_tests/va-link.yml`** — Simple interactive component
-  - Shows link-specific tests (`DST-211-001`) and focus management
-  - Demonstrates mobile category test with required environments (`DST-258-001`)
+  - Shows link-specific tests (`VADS-211-001`) and focus management
+  - Demonstrates mobile category test with required environments (`VADS-258-001`)
   - 11 tests total
 
 - **`src/_data/accessibility_tests/va-text-input.yml`** — Form input component
-  - Shows form-specific subtests (`WEB-131-006`, `DST-211-002`, `WEB-246-002`)
-  - Demonstrates screen_reader category tests with required environments (`DST-321-001`)
-  - Includes multiple error-related subtests (`DST-331-002`, `DST-331-003`, `DST-331-004`, `DST-331-005`)
+  - Shows form-specific subtests (`WEB-131-006`, `VADS-211-002`, `WEB-246-002`)
+  - Demonstrates screen_reader category tests with required environments (`VADS-321-001`)
+  - Includes multiple error-related subtests (`VADS-331-002`, `VADS-331-003`, `VADS-331-004`, `VADS-331-005`)
   - 19 tests total
 
 - **`src/_data/accessibility_tests/va-accordion.yml`** — Dynamic content component
@@ -246,18 +246,18 @@ Reference these complete example files to see proper test selection and structur
   - 12 tests total
 
 - **`src/_data/accessibility_tests/va-card-status.yml`** — Status component
-  - Shows color-coding tests (`DST-141-001`)
-  - Demonstrates icon contrast tests (`DST-1411-001`)
+  - Shows color-coding tests (`VADS-141-001`)
+  - Demonstrates icon contrast tests (`VADS-1411-001`)
 
 - **`src/_data/accessibility_tests/va-details.yml`** — Interactive disclosure
-  - Shows focus management for disclosure patterns (`DST-253-001`)
+  - Shows focus management for disclosure patterns (`VADS-253-001`)
   - Demonstrates screen reader announcements for state changes
 
 **Key patterns demonstrated**:
 - All tests include pre-populated metadata (version, tester, date)
 - Tests with `screen_reader`, `mobile`, or `voice_control` categories have pre-populated required environments
 - All other tests have a single empty environment entry
-- Specific subtests are used instead of parent tests (e.g., `DST-211-001` not `DST-211`)
+- Specific subtests are used instead of parent tests (e.g., `VADS-211-001` not `VADS-211`)
 
 ## Component Analysis Checklist
 
@@ -283,7 +283,7 @@ Before saving the file:
 4. **Prefer specific subtests** over parent tests — Verify that you're using subtests (e.g., `WEB-111-003`) rather than parent tests (e.g., `WEB-111`) when subtests exist
 5. **All tests have test_results** — Every test should have an empty `test_results` entry with version, tester, and date pre-populated
 6. **Check for environments array** — All tests should have an `environments` array. Tests with `screen_reader`, `mobile`, or `voice_control` categories should have required environments pre-populated; other tests should have a single empty environment entry
-7. **Sort test IDs** numerically (WEB-111, WEB-143, DST-211-001, WEB-212, etc.)
+7. **Sort test IDs** numerically (WEB-111, WEB-143, VADS-211-001, WEB-212, etc.)
 8. **Verify metadata is pre-populated** — Version, tester name, and date should be filled in from user input
 9. **Result fields are empty** — For tests with required environments, `result:` should be present but empty
 10. **Use 2-space indentation** for YAML

@@ -21,18 +21,18 @@ tests:
           - name: mac-chrome
             result: fail
         notes: Button text does not meet contrast requirements.
-  - id: DST-1411-002
-  - id: DST-211-002
+  - id: VADS-1411-002
+  - id: VADS-211-002
   - id: WEB-212
   - id: WEB-246-002
   - id: WEB-247
-  - id: DST-253-001
-  - id: DST-321-001
+  - id: VADS-253-001
+  - id: VADS-321-001
   - id: WEB-322
-  - id: DST-331-002
-  - id: DST-331-003
-  - id: DST-331-004
-  - id: DST-331-005
+  - id: VADS-331-002
+  - id: VADS-331-003
+  - id: VADS-331-004
+  - id: VADS-331-005
   - id: WEB-332
   - id: WEB-332-002
   - id: WEB-332-003
