@@ -95,7 +95,13 @@
 {% comment %} Summary Dashboard {% endcomment %}
 {% assign display_component_name = component_name | replace: "va-", "" | replace: "-", " " | capitalize %}
 
-{% assign context_dependent_count = conditional_count %}
+{% assign context_dependent_count = conditional_count | plus: implementation_tests.size %}
+
+<style>
+  .va-tag-status {
+    vertical-align: middle;
+  }
+</style>
 
 <va-table
   table-type="bordered"
@@ -139,8 +145,11 @@
   {% endcase %}
 
   {% if category_tests.size > 0 %}
-  <va-accordion-item>
-    <h4 slot="headline">{{ category_title }}</h4>
+
+  <va-accordion-item
+    header="{{ category_title }}"
+    id="{{ category_title}}"
+    >
     {% if category_var == "implementation_tests" %}
       <p>Teams are responsible for verifying these tests in their own context.</p>
     {% endif %}
@@ -249,7 +258,10 @@
                     <span class="vads-u-font-style--italic">Untested</span>
                   {% endif %}
                 </span>
-                <span>version {{ latest_env_version }}{% if latest_env_date %} ({{ latest_env_date | date: "%B %d, %Y" }}){% endif %}</span>
+                <span class="vads-u-display--block vads-u-line-height--1">
+                  {% if latest_env_date %}{{ latest_env_date | date: "%B %-d, %Y" }}<br />{% endif %}
+                  <span class="vads-u-font-size--sm">Version: {{ latest_env_version }}</span>
+                </span>
               </va-table-row>
             {% else %}
               {% comment %} No test results - show environment as untested {% endcomment %}
