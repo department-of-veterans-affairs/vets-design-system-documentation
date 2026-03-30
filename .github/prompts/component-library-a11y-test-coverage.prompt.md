@@ -122,9 +122,27 @@ There may be additional test files in the same directory (e.g., `va-[component]-
 
 ## Step 3: Audit coverage
 
-For each test ID assigned to the component where `automation_coverage` is `full` or `partial`:
+### Baseline requirement: axeCheck
+
+**Before auditing individual tests**, verify the component has at least one `axeCheck(page)` call in its e2e test files. This is a foundational accessibility test that every component should have.
+
+Search the e2e test files for:
+```typescript
+axeCheck(page)
+```
+
+**If no `axeCheck` call is found**:
+- Flag this as a **critical gap** in the audit report
+- Note that many tests marked "Covered by axeCheck" will be uncovered
+- Include generating an axeCheck test as the **highest priority** recommendation
+
+**If `axeCheck` is present**:
+- Proceed with auditing individual test coverage
+- Any test with `automation_notes` starting with "Covered by axeCheck '{rule}'" can be marked as **Covered**
 
 ### 3a. Filter out irrelevant tests
+
+For each test ID assigned to the component where `automation_coverage` is `full` or `partial`:
 
 Before auditing, skip tests that don't apply to this component:
 
@@ -178,6 +196,9 @@ Present results as a table:
 ```markdown
 ## Accessibility Test Coverage: va-[component]
 
+### Baseline Check
+- **axeCheck present**: ✅ Yes / ❌ No
+
 ### Summary
 - Total tests assigned: X
 - Automatable (full + partial): X
@@ -201,6 +222,10 @@ Present results as a table:
 ### Priority ranking for missing tests
 
 Rank uncovered tests by priority:
+
+**0. Baseline (if missing axeCheck)** — Add `axeCheck(page)` test first — this is the foundation that many other tests depend on
+
+Then for remaining gaps:
 1. **Critical** — `automation_coverage: full` + `508_severity: Critical` or `governance_severity: Critical`
 2. **High** — `automation_coverage: full` + High severity
 3. **Medium** — `automation_coverage: full` + Medium severity, or `automation_coverage: partial` + Critical severity
