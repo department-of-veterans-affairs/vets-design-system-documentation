@@ -19,11 +19,11 @@ anchors:
 
 This template is for all internal pages of a digitized form that asks Veterans to enter information, select an option, or upload supporting documents. 
 
-The form step - minimal template uses the Minimal header and Footer minimal components in a form flow. The header and footer are simpler and don't show navigation elements. This frees up space on the page and allows the form submitter to focus on the task.
+The form step - minimal template uses the Header minimal and Footer minimal components in a form flow. The header and footer are simpler and don't show navigation elements. This frees up space on the page and allows the form submitter to focus on the task.
 
-We display the [plain language form name](https://design.va.gov/templates/forms/introduction#title-subtitle-and-intro) in the minimal header without any heading structure. The plain language form name should match what is on the introduction page.
+We display the [plain language form name](https://design.va.gov/templates/forms/introduction#title-subtitle-and-intro) in the Header minimal without any heading structure. The plain language form name should match what is on the introduction page.
 
-Use the heading level 1 (H1) of the question page to describe the information needed or ask the specific question on the form page.
+Use the heading level 1 (`H1`) of the question page to describe the information needed or ask the specific question on the form page.
 
 ### Examples
 There are two versions of the form page template: 
@@ -36,7 +36,7 @@ There are two versions of the form page template:
 
 
 The authenticated form page template consists of:
-1. [Minimal header]({{ site.baseurl }}/components/header/header-minimal) with form title & subtitle
+1. [Header minimal]({{ site.baseurl }}/components/header/header-minimal) with form title & subtitle
 2. [Back link]({{ site.baseurl }}/components/link/#when-to-use-a-back-link)
 3. [Progress bar - segmented with step label]({{ site.baseurl }}/components/form/progress-bar-segmented)
 4. Autosave message
@@ -55,7 +55,7 @@ The authenticated form page template consists of:
 
 
 The unauthenticated question page has these items:
-1. [Minimal header]({{ site.baseurl }}/components/header/header-minimal) with form title & subtitle
+1. [Header minimal]({{ site.baseurl }}/components/header/header-minimal) with form title & subtitle
 2. [Back link]({{ site.baseurl }}/components/link/#when-to-use-a-back-link)
 3. [Progress bar - segmented with step label]({{ site.baseurl }}/components/form/progress-bar-segmented)
 4. Page header
@@ -69,32 +69,32 @@ The unauthenticated question page has these items:
 
 ### When to use this template
 
-**All new forms should use this template.** The templates in Figma and in code provide good starting points for new form development. Your forms will have unique `<h1>`'s and be more accessible for users. 
+**All new forms should use this template.** The templates in Figma and in code provide good starting points for new form development. Your form pages will have a unique `H1` and will be more accessible for users.
 
-This template is for the form pages themselves. The Minimal header and Footer minimal shouldn't be used on the form introduction page or the form confirmation page. Use the full header and footer for those pages. This allows users to logout or navigate to other parts of VA.gov
+This template is for the form pages themselves. The Header minimal and Footer minimal components shouldn't be used on the form introduction page or the form confirmation page. Use the full header and footer for those pages. This allows users to log out or navigate to other parts of VA.gov.
 
 ### When to consider something else
 
-Teams who want to migrate existing forms to this new template will gain advantages by having unique `<h1>`'s for every form page. However, it can be quite a considerable time investment because nearly every page in a form flow would need to be edited. If forms have already included heading level 3 (`<h3>`) elements on every form page, the lift won't be as large.
+Teams who want to migrate existing forms to this new template will gain advantages by having a unique `H1` for every form page. However, it can be quite a considerable time investment because nearly every page in a form flow would need to be edited. If forms have already included heading level 3 (`<h3>`) elements on every form page, the lift won't be as large.
 
 ### Instances of this template in production
 [Request personal records (VA Form 20-10206)](https://staging.va.gov/records/request-personal-records-form-20-10206/introduction)
 
 ## Structure
 
-### 1. Minimal header with form title and subtitle
-The form step template and the review page template uses the [minimal header component]({{ site.baseurl }}/components/header/header-minimal). 
+### 1. Header minimal with form title and subtitle
+The form step template and the review page template uses the [Header minimal component]({{ site.baseurl }}/components/header/header-minimal).
 
 Use the same plain language form title and subtitle as the form introduction and confirmation pages. 
 
 [Review the form introduction template for guidance and examples of a form title and subtitle.]({{ site.baseurl }}/templates/forms/introduction#structure)
 
-The form title and subtitle are in the minimal header without any semantic heading structure.
+The form title and subtitle are in the Header minimal without any semantic heading structure.
 
 
 ### 2. Back link
 
-Instead of a breadcrumb, we include a back link below the minimal header in this template. The back link remains consistent across all question pages within a single form. Its text should read “Back to previous page”.
+Instead of a breadcrumb, we include a back link below the Header minimal in this template. The back link remains consistent across all question pages within a single form. Its text should read “Back to previous page”.
 
 [Learn more about the expected behavior for the back link]({{ site.baseurl }}/components/link/#when-to-use-a-back-link). 
 
@@ -174,8 +174,7 @@ For complex questions, you may need to use one of these options to provide addit
 * Body text after the H1 page header (which can also serve as hint text for all fields on the page, and may include examples or bulleted lists) 
 * [A Details component]({{ site.baseurl }}/components/details)
 
-You can set the contents of a `<legend>` on the page as the page header (`<H1>`).  But, you may not always need the h1 to be inside the legend.  
-
+You can set the contents of a `<legend>` on the page as the page header (`H1`).  But, you may not always need the `H1` to be inside the legend.
 
 #### Fieldsets & legends
 
@@ -259,7 +258,7 @@ This form page layout aims to address pain-points related to the amount of redun
 * For Veterans with low vision who use magnification on mobile devices, questions can be hidden below “the fold” completely
 
 ## Code considerations
-[Minimal header (minimal form flow) pattern documentation](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/patterns/minimal-header/README.md) details how to implement this variation.
+[Header minimal (minimal form flow) pattern documentation](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/patterns/minimal-header/README.md) details how to implement this variation.
 
 ## Related
 
@@ -267,6 +266,6 @@ This form page layout aims to address pain-points related to the amount of redun
 - [Form review template]({{ site.baseurl }}/templates/forms/review)
 - [Form confirmation template]({{ site.baseurl }}/templates/forms/confirmation)
 - [Progress bar - segmented component]({{ site.baseurl }}/components/form/progress-bar-segmented)
-- [Minimal header component]({{ site.baseurl }}/components/header/header-minimal)
+- [Header minimal component]({{ site.baseurl }}/components/header/header-minimal)
 - [Footer minimal component]({{ site.baseurl }}/components/footer/footer-minimal)
 - [Ask users for a single response pattern]({{ site.baseurl }}/patterns/ask-users-for/a-single-response)
