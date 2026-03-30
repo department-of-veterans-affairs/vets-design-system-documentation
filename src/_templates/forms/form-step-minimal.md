@@ -4,7 +4,7 @@ permalink: /templates/forms/form-step-minimal
 has-parent: /templates/forms/
 title: Form Step - Minimal
 status: use-with-caution-available
-intro-text: Use the form step - minimal template to create all pages of a minimal form flow except for the introduction, and confirmation pages.
+intro-text: Use the form step - minimal template to create all pages of a minimal form flow except for the introduction and confirmation pages.
 figma-link: https://www.figma.com/design/WzqnYSC2B42aFaSCu7L3Dk/Minimal-Form-Flow-Template?node-id=1-114658&p=f&t=yvI1hQv6TghandYK-11
 anchors:
   - anchor: About
