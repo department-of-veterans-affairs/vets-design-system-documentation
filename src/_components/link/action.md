@@ -5,7 +5,7 @@ permalink: /components/link/action
 has-parent: /components/link/
 github-title: va-action-link
 intro-text: "Action links guide users to a new page to take an action or to start an online tool or digital service."
-figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1312%3A10315&mode=design&t=nYOotVcwdpiMCL5C-1
+figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=199-1227
 status: use-deployed
 web-component: va-link-action
 uses_mermaid: true
