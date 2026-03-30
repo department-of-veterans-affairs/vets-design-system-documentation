@@ -46,6 +46,8 @@ The form confirmation page consists of:
 
 ## Structure
 
+Use the [Header]({{site.baseurl}}/components/header/) and [Footer]({{site.baseurl}}/components/footer/) components for the confirmation page.
+
 ### Page title
 
 The page title (`H1`) for this page should carry over from the online form.

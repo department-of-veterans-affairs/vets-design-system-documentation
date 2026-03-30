@@ -35,6 +35,8 @@ The Review page consists of:
 
 ## Structure
 
+The review page header and footer should use the same header and footer as the form step pages.
+
 ### Page title and subtitle
 
 The H1 plain language title is in the format:

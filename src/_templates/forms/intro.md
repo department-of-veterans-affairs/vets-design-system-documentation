@@ -39,6 +39,8 @@ There are 2 versions of the intro page:
 
 ## Structure
 
+Use the [Header]({{site.baseurl}}/components/header/) and [Footer]({{site.baseurl}}/components/footer/) components for the introduction page.
+
 ### Title, subtitle, and intro
 
 **Plain language title**
