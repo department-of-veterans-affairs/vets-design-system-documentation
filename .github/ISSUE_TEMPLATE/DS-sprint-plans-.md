@@ -7,7 +7,7 @@ assignees: 'caw310'
 
 ---
 
-### Design System  Team Sprint XX Plan (date range) 
+### Design System Team Sprint XX Plan (date range)
 
 ### Sprint Goals
 
