@@ -4,7 +4,7 @@ permalink: /templates/forms/form-step-minimal
 has-parent: /templates/forms/
 title: Form Step - Minimal
 status: use-with-caution-available
-intro-text: Use the form step - minimal template to create all pages of a minimal form flow except for the introduction, review, and confirmation pages.
+intro-text: Use the form step - minimal template to create all pages of a minimal form flow except for the introduction, and confirmation pages.
 figma-link: https://www.figma.com/design/WzqnYSC2B42aFaSCu7L3Dk/Minimal-Form-Flow-Template?node-id=1-114658&p=f&t=yvI1hQv6TghandYK-11
 anchors:
   - anchor: About
@@ -12,16 +12,18 @@ anchors:
   - anchor: Structure
   - anchor: Research findings
   - anchor: Code considerations
+  - anchor: Related
 ---
 
 ## About
 
 This template is for all internal pages of a digitized form that asks Veterans to enter information, select an option, or upload supporting documents. 
-The form page template uses the minimal header and footer components in a form flow. The header and footer are simpler and don’t show navigation elements. This frees up space on the page and allows the form submitter to focus on the task
+
+The form step - minimal template uses the Minimal header and Footer minimal components in a form flow. The header and footer are simpler and don't show navigation elements. This frees up space on the page and allows the form submitter to focus on the task.
 
 We display the [plain language form name](https://design.va.gov/templates/forms/introduction#title-subtitle-and-intro) in the minimal header without any heading structure. The plain language form name should match what is on the introduction page.
 
-Use the H1 of the question page to describe the information needed or ask the specific question on the form page.
+Use the heading level 1 (H1) of the question page to describe the information needed or ask the specific question on the form page.
 
 ### Examples
 There are two versions of the form page template: 
@@ -41,11 +43,11 @@ The authenticated form page template consists of:
 5. Page header
 6. Form question content (may include page header)
 7. Finish later link
-8. Button (Continue)
+8. [Button]({{ site.baseurl }}/components/button) (Continue)
 9.  [Autosave alert]({{ site.baseurl }}/components/form/autosave)
 10. [Need help? component]({{ site.baseurl }}/components/form/need-help)
 11. [Feedback pattern]({{ site.baseurl }}/patterns/ask-users-for/feedback)
-12. [Minimal footer]({{ site.baseurl }}/components/footer/footer-minimal)
+12. [Footer minimal]({{ site.baseurl }}/components/footer/footer-minimal)
 
 #### Example - Unauthenticated
 
@@ -58,20 +60,22 @@ The unauthenticated question page has these items:
 3. [Progress bar - segmented with step label]({{ site.baseurl }}/components/form/progress-bar-segmented)
 4. Page header
 5. Form question content (may include page header)
-6. Button (Continue)
+6. [Button]({{ site.baseurl }}/components/button) (Continue)
 7. [Need help? component]({{ site.baseurl }}/components/form/need-help)
 8. [Feedback pattern]({{ site.baseurl }}/patterns/ask-users-for/feedback)
-9. [Minimal footer]({{ site.baseurl }}/components/footer/footer-minimal)
+9. [Footer minimal]({{ site.baseurl }}/components/footer/footer-minimal)
 
 ## Usage
 
 ### When to use this template
 
-**All new forms should use this template.** The templates in Figma and in code provide good starting points for new form development. Your forms will have unique `<H1>`'s and be more accessible for users.
+**All new forms should use this template.** The templates in Figma and in code provide good starting points for new form development. Your forms will have unique `<h1>`'s and be more accessible for users. 
+
+This template is for the form pages themselves. The Minimal header and Footer minimal shouldn't be used on the form introduction page or the form confirmation page. Use the full header and footer for those pages. This allows users to logout or navigate to other parts of VA.gov
 
 ### When to consider something else
 
-Teams who want to migrate existing forms to this new template will gain advantages by having unique `<H1>`'s for every form page. However, it can be quite a considerable time investment because nearly every page in a form flow would need to be edited. If forms have already included `<H3>`'s on every form page, the lift will not be as large. 
+Teams who want to migrate existing forms to this new template will gain advantages by having unique `<h1>`'s for every form page. However, it can be quite a considerable time investment because nearly every page in a form flow would need to be edited. If forms have already included heading level 3 (`<h3>`) elements on every form page, the lift won't be as large.
 
 ### Instances of this template in production
 [Request personal records (VA Form 20-10206)](https://staging.va.gov/records/request-personal-records-form-20-10206/introduction)
@@ -96,9 +100,9 @@ Instead of a breadcrumb, we include a back link below the minimal header in this
 
 We use the back link to reassure users that they can go back and change previous answers.
 
-The back link should not break the browser back button. And it should take users to the previous page they were on, in the state they last saw it. 
+The back link shouldn't break the browser back button. And it should take users to the previous page they were on, in the state they last saw it.
 
-Exception: If the form submitter completes an action that they can do only once, like submit the form, the browser back button should still navigate the user to the previous page, but the user should not be able to submit the form again.
+Exception: If the form submitter completes an action that they can do only once, like submit the form, the browser back button should still navigate the user to the previous page, but the user shouldn't be able to submit the form again.
 
 
 ### 3. Progress bar - segmented with step label
@@ -144,7 +148,7 @@ The VA Design system has a number of [components]({{ site.baseurl }}/components/
 * [Ask users for… phone numbers]({{ site.baseurl }}/patterns/ask-users-for/phone-numbers)
 * [Ask users for… relationship to Veteran]({{ site.baseurl }}/patterns/ask-users-for/relationship)
 * [Ask users for… signature]({{ site.baseurl }}/patterns/ask-users-for/signature)
-* [Ask users for ssn]({{ site.baseurl }}/patterns/ask-users-for/social-security-number)
+* [Ask users for… Social Security number]({{ site.baseurl }}/patterns/ask-users-for/social-security-number)
 
 If you need a new component or pattern, you will need to follow the [experimental design process.]({{ site.baseurl }}/about/contributing-to-the-design-system/experimental-components-and-patterns)
 
@@ -239,11 +243,11 @@ The feedback pattern allows VA.gov to collect feedback from users via Medallia.
 [Learn more about the feedback pattern]({{ site.baseurl }}/patterns/ask-users-for/feedback).
 
 
-### 12. Minimal footer
+### 12. Footer minimal
 
-The minimal footer component strips out all of the navigation found in  the full footer that is found on other VA.gov pages. This helps users stay focused on the task at hand. The VA Seal is a link to VA.gov.
+The Footer minimal component strips out all of the navigation found in the full footer that is found on other VA.gov pages. This helps users stay focused on the task at hand. The VA Seal is a link to VA.gov.
 
-[Learn more about the minimal footer component]({{ site.baseurl }}/components/footer/footer-minimal).
+[Learn more about the Footer minimal component]({{ site.baseurl }}/components/footer/footer-minimal).
 
 
 ## Research findings
@@ -256,3 +260,13 @@ This form page layout aims to address pain-points related to the amount of redun
 
 ## Code considerations
 [Minimal header (minimal form flow) pattern documentation](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/patterns/minimal-header/README.md) details how to implement this variation.
+
+## Related
+
+- [Form introduction template]({{ site.baseurl }}/templates/forms/introduction)
+- [Form review template]({{ site.baseurl }}/templates/forms/review)
+- [Form confirmation template]({{ site.baseurl }}/templates/forms/confirmation)
+- [Progress bar - segmented component]({{ site.baseurl }}/components/form/progress-bar-segmented)
+- [Minimal header component]({{ site.baseurl }}/components/header/header-minimal)
+- [Footer minimal component]({{ site.baseurl }}/components/footer/footer-minimal)
+- [Ask users for a single response pattern]({{ site.baseurl }}/patterns/ask-users-for/a-single-response)
