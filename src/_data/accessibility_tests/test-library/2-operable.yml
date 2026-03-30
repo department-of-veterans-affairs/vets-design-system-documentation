@@ -16,6 +16,10 @@ tests:
     description_full: |
       When you access an interactive element using only a keyboard,
       you can navigate to the element, activate it, and navigate away from it.
+    automation_coverage: full
+    automation_notes: >-
+      Custom test needed. Applies when component has interactive elements. Tab to element, press Enter or
+      Space, verify element activates. See subtests for specific element types.
     subtests:
       - id: VADS-211-001
         description_short: |
@@ -23,12 +27,20 @@ tests:
         description_full: |
           When you interact with a link using only a keyboard,
           you can navigate to the link, activate it, and navigate away from it.
+        automation_coverage: full
+        automation_notes: >-
+          Custom test needed. Applies when component contains links. Tab to link, press Enter, verify
+          navigation occurs.
       - id: VADS-211-002
         description_short: |
           Form inputs are fully operable using only a keyboard.
         description_full: |
           When you interact with a form input using only a keyboard,
           you can navigate to the input, update the value, and navigate away from it.
+        automation_coverage: full
+        automation_notes: >-
+          Custom test needed. Applies when component contains form inputs. Tab to input, type value, Tab
+          away, verify value is retained.
   - id: WEB-212
     category: keyboard
     wcag_criterion: 2.1.2
@@ -42,6 +54,10 @@ tests:
     description_full: |
       When you move focus to an interactive element with a keyboard,
       you can move focus away from that element using only standard keyboard keys (Tab, Shift+Tab, arrow keys, or Escape).
+    automation_coverage: full
+    automation_notes: >-
+      Custom test needed. Applies to all interactive components. Tab forward and backward through all
+      focusable elements, verify focus moves freely. See subtests for specific element types.
     subtests:
       - id: VADS-212-001
         description_short: |
@@ -49,12 +65,21 @@ tests:
         description_full: |
           When you navigate to the link using a keyboard,
           you can move focus away from the link using only standard keyboard keys (Tab, Shift+Tab, arrow keys, or Escape).
+        automation_coverage: full
+        automation_notes: >-
+          Custom test needed. Applies when component contains links. Tab to link, then Tab and Shift+Tab
+          away, verify focus moves.
       - id: VADS-212-002
         description_short: |
           Form inputs don't trap keyboard focus.
         description_full: |
           When you navigate to a form input using a keyboard,
           you can move focus away from the input using only standard keyboard keys (Tab, Shift+Tab, arrow keys, or Escape).
+        automation_coverage: full
+        automation_notes: >-
+          Custom test needed. Applies when component contains form inputs. Tab to input, type a value,
+          then Tab and Shift+Tab away, verify focus moves. Clear the value and repeat to check that
+          empty-state validation doesn't trap focus.
   - id: WEB-214
     category: keyboard
     wcag_criterion: 2.1.4
@@ -68,6 +93,7 @@ tests:
     description_full: |
       When you encounter single-character keyboard shortcuts,
       you find they can be turned off, remapped to include modifiers, or are active only when the component has focus.
+    automation_coverage: manual
   - id: WEB-221
     category: general
     wcag_criterion: 2.2.1
@@ -81,6 +107,7 @@ tests:
     description_full: |
       When you encounter a time limit,
       you find it can be disabled, extended (with a 20-second warning and the ability to extend at least ten times), or significantly adjusted unless timing is essential.
+    automation_coverage: manual
   - id: WEB-222
     category: general
     wcag_criterion: 2.2.2
@@ -94,6 +121,7 @@ tests:
     description_full: |
       When you view moving, blinking, scrolling, or auto-updating content that starts automatically and lasts over 5 seconds,
       you find mechanisms to pause, stop, hide, or control its frequency.
+    automation_coverage: manual
   - id: WEB-231
     category: general
     wcag_criterion: 2.3.1
@@ -107,6 +135,7 @@ tests:
     description_full: |
       When you view the page,
       you find no content flashes more than three times per any one-second period.
+    automation_coverage: manual
   - id: WEB-241
     category: general
     wcag_criterion: 2.4.1
@@ -120,6 +149,11 @@ tests:
     description_full: |
       When you navigate the page,
       you find a mechanism to bypass repeated blocks of content such as a skip link or HTML5 landmarks.
+    automation_coverage: full
+    automation_notes: >-
+      Custom test needed for page-level testing. No component-level test needed since bypass mechanisms are a page-level
+      concern. Verify skip link or bypass mechanism exists and functions. See subtests for specific
+      mechanisms.
     subtests:
       - id: VADS-241-001
         description_short: |
@@ -127,6 +161,10 @@ tests:
         description_full: |
           When you navigate the page with a keyboard,
           you find a skip link at the beginning of the page that allows you to bypass repeated content and jump directly to the main content.
+        automation_coverage: full
+        automation_notes: >-
+          Custom test needed for page-level testing. No component-level test needed since skip links are a page-level feature.
+          Focus skip link, activate, verify focus lands on main content area.
   - id: WEB-242
     category: general
     wcag_criterion: 2.4.2
@@ -140,6 +178,11 @@ tests:
     description_full: |
       When you open a new page,
       you find it has a unique and descriptive title reflecting the page's purpose.
+    automation_coverage: full
+    automation_notes: >-
+      Custom test needed for page-level testing. No component-level test needed since the title is set on the document. Assert
+      document.title is non-empty and contains descriptive text. axe-core 'document-title' is disabled
+      in the component-library axeCheck helper because components are tested in isolation.
   - id: WEB-243
     category: keyboard
     wcag_criterion: 2.4.3
@@ -153,6 +196,9 @@ tests:
     description_full: |
       When you navigate the page or component with a keyboard,
       you find focus moves through interactive elements in a meaningful order.
+    automation_coverage: partial
+    automation_notes: >-
+      Parent test. See subtests for specific focus order checks.
     subtests:
       - id: VADS-243-001
         description_short: |
@@ -160,12 +206,20 @@ tests:
         description_full: |
           When you open a modal and press Tab or Shift+Tab,
           you find that focus stays inside the modal and doesn't move to content behind it.
+        automation_coverage: full
+        automation_notes: >-
+          Custom test needed. Applies when component is or contains a modal. Open modal, Tab and Shift+Tab
+          repeatedly, verify focus stays inside modal.
       - id: VADS-243-002
         description_short: |
           Focus returns to the trigger when a modal closes.
         description_full: |
           When you close a modal,
           you find that focus returns to the element that opened it.
+        automation_coverage: full
+        automation_notes: >-
+          Custom test needed. Applies when component is or contains a modal. Open modal, close it, verify
+          focus returns to the trigger element.
   - id: WEB-244
     category: general
     wcag_criterion: 2.4.4
@@ -179,6 +233,7 @@ tests:
     description_full: |
       When you read the link text,
       it is easy to understand both the link's purpose and destination.
+    automation_coverage: manual
   - id: WEB-245
     category: general
     wcag_criterion: 2.4.5
@@ -193,6 +248,7 @@ tests:
       When you navigate the site,
       you find more than one way to access important pages,
       such as through a link in the main navigation and a link within the page content.
+    automation_coverage: manual
   - id: WEB-246
     category: general
     wcag_criterion: 2.4.6
@@ -206,6 +262,7 @@ tests:
     description_full: |
       When you view headings and labels,
       you find they are descriptive of their content and purpose.
+    automation_coverage: manual
     subtests:
       - id: WEB-246-001
         description_short: |
@@ -213,12 +270,14 @@ tests:
         description_full: |
           When you read heading text,
           you find that it accurately describes the topic or purpose of the content that follows.
+        automation_coverage: manual
       - id: WEB-246-002
         description_short: |
           Input labels are descriptive.
         description_full: |
           When you read an input label,
           you find that it accurately describes the purpose of the input field and the expected value.
+        automation_coverage: manual
   - id: WEB-247
     category: keyboard
     wcag_criterion: 2.4.7
@@ -232,6 +291,10 @@ tests:
     description_full: |
       When you navigate to an interactive element with a keyboard,
       you see a clear visual indicator around the element showing that it has focus.
+    automation_coverage: full
+    automation_notes: >-
+      Custom test needed. Applies to all interactive components. Tab to element, assert outline or
+      box-shadow computed style is visible. See subtests for VA-specific focus style.
     subtests:
       - id: VADS-247-001
         category: visual
@@ -240,6 +303,10 @@ tests:
         description_full: |
           When you navigate to an interactive element with a keyboard,
           you see the standard VA Design System focus indicator style.
+        automation_coverage: full
+        automation_notes: >-
+          Custom test needed. Applies to all interactive VADS components. Tab to element, assert focus
+          indicator matches VA Design System focus style CSS values.
   - id: WEB-2410
     category: general
     wcag_criterion: 2.4.10
@@ -253,6 +320,7 @@ tests:
     description_full: |
       When you read content that is organized in sections,
       you find that each section has a descriptive heading that helps you understand the section and what it's about.
+    automation_coverage: manual
   - id: WEB-2411
     category: keyboard
     wcag_criterion: 2.4.11
@@ -267,6 +335,11 @@ tests:
       When you focus on an element with a keyboard,
       you see that the element that has focus remains visible on screen and is not obscured
       by sticky headers, footers, modals, tooltips, or other overlaying content.
+    automation_coverage: partial
+    automation_notes: >-
+      Custom test needed. Applies to all interactive components. Compare focused element bounding rect
+      against sticky/fixed element rects. Manual review still needed for dynamic overlays and real-world
+      scrolling scenarios.
   - id: WEB-251
     category: general
     wcag_criterion: 2.5.1
@@ -281,6 +354,7 @@ tests:
       When you interact with the page using a pointer device, such as a mouse, touchscreen, or stylus,
       you find that all functionality is operable with simple pointer actions like taps or clicks,
       rather than requiring complex gestures like swiping, pinching, or dragging.
+    automation_coverage: manual
   - id: WEB-252
     category: general
     wcag_criterion: 2.5.2
@@ -294,6 +368,7 @@ tests:
     description_full: |
       When you press and hold on an interactive element,
       you can cancel the action by moving your pointer away before releasing.
+    automation_coverage: manual
   - id: WEB-253
     category: voice_control
     wcag_criterion: 2.5.3
@@ -307,6 +382,9 @@ tests:
     description_full: |
       When you use voice control or a screen reader to activate an element that has visible text,
       the spoken or accessible name matches what you see.
+    automation_coverage: partial
+    automation_notes: >-
+      Parent test. See subtests for specific automated checks.
     subtests:
       - id: VADS-253-001
         category: screen_reader
@@ -315,6 +393,11 @@ tests:
         description_full: |
           When you focus on an interactive element with a screen reader,
           you hear an announcement that matches the element's visible text.
+        automation_coverage: partial
+        automation_notes: >-
+          Covered by axeCheck 'label-content-name-mismatch', which catches accessible names that don't
+          contain the element's visible text content. Manual review still needed to verify screen reader
+          announces correctly.
       - id: VADS-253-002
         category: voice_control
         description_short: |
@@ -322,6 +405,7 @@ tests:
         description_full: |
           When you use voice control to say the visible text of an interactive element,
           the element activates as expected.
+        automation_coverage: manual
   - id: WEB-254
     category: mobile
     wcag_criterion: 2.5.4
@@ -335,6 +419,7 @@ tests:
     description_full: |
       When you encounter a feature that responds to device motion like shaking or tilting,
       you find an alternative way to perform the same action and a way to turn off motion activation.
+    automation_coverage: manual
   - id: WEB-257
     category: general
     wcag_criterion: 2.5.7
@@ -348,6 +433,7 @@ tests:
     description_full: |
       When you interact with a component that offers drag functionality,
       you find that functionality is also available through click, keyboard, or other non-dragging methods.
+    automation_coverage: manual
   - id: WEB-258
     category: general
     wcag_criterion: 2.5.8
@@ -361,6 +447,10 @@ tests:
     description_full: |
       When you inspect the size of interactive elements on the page,
       you find that each element has a target size of at least 24x24 pixels.
+    automation_coverage: full
+    automation_notes: >-
+      Custom test needed. Applies to all interactive components. Use getBoundingClientRect() to assert
+      target dimensions >= 24x24 pixels. See subtests for specific element types.
     subtests:
       - id: VADS-258-001
         description_short: |
@@ -368,3 +458,7 @@ tests:
         description_full: |
           When you inspect the size of links on the page,
           you find that each link has a target size of at least 24x24 pixels.
+        automation_coverage: full
+        automation_notes: >-
+          Custom test needed. Applies when component contains links. Use getBoundingClientRect() to assert
+          link target dimensions >= 24x24 pixels.
