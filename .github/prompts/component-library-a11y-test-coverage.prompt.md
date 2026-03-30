@@ -69,14 +69,24 @@ Ask the user which component to audit, or accept it as a parameter. The componen
 
 ## Step 2: Gather inputs
 
+**First, ask the user**: Do you have `vets-design-system-documentation` cloned locally?
+- If **yes**: Use local file paths (reads your current working branch with uncommitted changes)
+- If **no**: Use remote GitHub URLs (reads the `5291-a11y-test-pilot` branch)
+
 You need three data sources:
 
 ### A. The component's test assignments
 
-Fetch the component's accessibility test YAML from the documentation repo:
+Fetch the component's accessibility test YAML:
 
+**Local path**:
 ```
-~Projects/vets-design-system-documentation/src/_data/accessibility_tests/va-[component].yml
+~/Projects/vets-design-system-documentation/src/_data/accessibility_tests/va-[component].yml
+```
+
+**Remote URL**:
+```
+https://raw.githubusercontent.com/department-of-veterans-affairs/vets-design-system-documentation/5291-a11y-test-pilot/src/_data/accessibility_tests/va-[component].yml
 ```
 
 This file lists which test IDs from the library apply to this component. Extract all `id` values from the `tests` array.
@@ -91,13 +101,22 @@ Then stop.
 
 ### B. The test library definitions
 
-Fetch the four test library files to look up each assigned test ID:
+Fetch the four test library files to look up each assigned test ID.
 
+**Local paths**:
 ```
-~Projects/vets-design-system-documentation/src/_data/accessibility_tests/test-library/1-perceivable.yml
-~Projects/vets-design-system-documentation/src/_data/accessibility_tests/test-library/2-operable.yml
-~Projects/vets-design-system-documentation/src/_data/accessibility_tests/test-library/3-understandable.yml
-~Projects/vets-design-system-documentation/src/_data/accessibility_tests/test-library/4-robust.yml
+~/Projects/vets-design-system-documentation/src/_data/accessibility_tests/test-library/1-perceivable.yml
+~/Projects/vets-design-system-documentation/src/_data/accessibility_tests/test-library/2-operable.yml
+~/Projects/vets-design-system-documentation/src/_data/accessibility_tests/test-library/3-understandable.yml
+~/Projects/vets-design-system-documentation/src/_data/accessibility_tests/test-library/4-robust.yml
+```
+
+**Remote URLs**:
+```
+https://raw.githubusercontent.com/department-of-veterans-affairs/vets-design-system-documentation/5291-a11y-test-pilot/src/_data/accessibility_tests/test-library/1-perceivable.yml
+https://raw.githubusercontent.com/department-of-veterans-affairs/vets-design-system-documentation/5291-a11y-test-pilot/src/_data/accessibility_tests/test-library/2-operable.yml
+https://raw.githubusercontent.com/department-of-veterans-affairs/vets-design-system-documentation/5291-a11y-test-pilot/src/_data/accessibility_tests/test-library/3-understandable.yml
+https://raw.githubusercontent.com/department-of-veterans-affairs/vets-design-system-documentation/5291-a11y-test-pilot/src/_data/accessibility_tests/test-library/4-robust.yml
 ```
 
 For each test ID assigned to the component, find its entry in the library and extract:
