@@ -80,6 +80,10 @@
     "maturityCategory": "use",
     "maturityLevel": "deployed"
   },
+  "va-details": {
+    "maturityCategory": "caution",
+    "maturityLevel": "candidate"
+  },
   "va-file-input": {
     "maturityCategory": "caution",
     "maturityLevel": "available"

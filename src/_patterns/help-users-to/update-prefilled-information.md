@@ -4,6 +4,7 @@ title: Update prefilled information
 permalink: /patterns/help-users-to/update-prefilled-information
 sub-section: help-users-to
 intro-text: Follow this pattern to help users update prefilled information in an application.
+github-title: pattern-update-prefill
 research-title: Help users know how their info is updated
 figma-link: https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates--Patterns--and-Forms?m=auto&node-id=21074-4699&t=aDYQ6bZuAQNT5KHl-1
 status: use-with-caution-available
@@ -95,9 +96,9 @@ There may be instances where some information that would usually be prefilled is
 
 {% include component-example.html class="x2" alt="A page showing users they have missing and required information they will need to add." file="/images/patterns/help-users-to/update-prefilled-information/missing-prefilled-info.png" %}
 
-If the user does not provide the required missing information and selects the "Continue" button to try and move forward, they'll get the same page with that status card in an error state and some red error text telling them what information they need to provide. Once they select "Add" and provide the information on an edit page, they will be redirected back to this screen and can continue through the form.
+If the user does not provide the required missing information and selects the "Continue" button to try and move forward, they'll get the same page with that status card in an error state and red error text telling them what information they need to provide. Once they select "Add" and provide the information on an edit page, they will be redirected back to this screen and can continue through the form.
 
-{% include component-example.html class="x2" alt="A page showing users an error alert and error state of the card with missing and required information they need to add." file="/images/patterns/help-users-to/update-prefilled-information/card-with-missing-info-error-state.png" %}
+{% include component-example.html class="x2" alt="A page with a status card in an error state for missing required information the user must add." file="/images/patterns/help-users-to/update-prefilled-information/card-with-missing-info-error-state.png" %}
 
 #### Communicate when and where we'll save updates to prefilled information
 
@@ -164,7 +165,7 @@ Here's an example that tells people to call the VA benefits hotline:
 ### Error messages
 If the information can’t be saved onto profile, but can be used for the form
 
->Error alert: We can’t update your information in your profile. But you can continuing filling out this [form/application] and update your profile information later.
+>Warning alert: We can’t update your information in your profile. But you can continuing filling out this [form/application] and update your profile information later.
 
 
 If the information can’t be saved for profile or for the form
@@ -174,11 +175,10 @@ If the information can’t be saved for profile or for the form
 
 If the required information is missing
 
->Inline error message: Select “Add” to enter your [missing content].
+>Inline error message: You must add your [missing content].
 
 ## Accessibility considerations
 
-- Aria-labels for edit links for cards should include the name of the item that’s being edited. For example: Use “Edit phone number” for an edit link for a phone number card. 
 - Focus should return to the success alert when an item has been updated.
 
 ## Research findings
