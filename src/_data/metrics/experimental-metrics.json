@@ -97,16 +97,16 @@
     },
     {
       "period": "2026-Q1",
-      "issues_opened": 1,
+      "issues_opened": 3,
       "issues_closed": 0
     }
   ],
   "experimental_summary": {
-    "total_experimental_issues": 160,
+    "total_experimental_issues": 162,
     "open_experimental_issues": 0,
     "closed_experimental_this_month": 0,
     "avg_experimental_resolution_days": 0,
-    "last_updated": "2026-03-20T18:18:07.829Z"
+    "last_updated": "2026-03-27T18:24:35.358Z"
   },
-  "generated_at": "2026-03-20T18:18:07.829Z"
+  "generated_at": "2026-03-27T18:24:35.358Z"
 }
