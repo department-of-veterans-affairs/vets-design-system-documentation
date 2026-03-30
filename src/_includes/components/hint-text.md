@@ -18,7 +18,7 @@ This should be used in the case where the needed clarification is very short.
 
 ### With Details
 
-{% include storybook-preview.html story="uswds-va-text-input--with-details" link_text="Label with Details hint text" %}
+{% include storybook-preview.html story="components-va-details--default" link_text="va-details default" %}
 
 Using the [Details]({{ site.baseurl }}/components/details) component should be limited to brief, optional contextual help that some users may not need — for example, up to a short paragraph or a small list.
 
