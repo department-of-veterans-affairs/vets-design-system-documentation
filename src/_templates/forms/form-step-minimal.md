@@ -83,7 +83,7 @@ Teams who want to migrate existing forms to this new template will gain advantag
 ## Structure
 
 ### 1. Header minimal with form title and subtitle
-The form step template and the review page template uses the [Header minimal component]({{ site.baseurl }}/components/header/header-minimal).
+The form step template and the review page template use the [Header minimal component]({{ site.baseurl }}/components/header/header-minimal).
 
 Use the same plain language form title and subtitle as the form introduction and confirmation pages. 
 
