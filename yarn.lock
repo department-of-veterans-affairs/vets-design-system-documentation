@@ -918,13 +918,13 @@
   resolved "https://registry.npmjs.org/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@department-of-veterans-affairs/component-library@^56.2.1":
-  version "56.2.1"
-  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/component-library/-/component-library-56.2.1.tgz#f583daf22be661d107c4dfa57bf0f25a5268646f"
-  integrity sha512-yWKu+U4JC20izQ97s8cQvcSPbeBSintcC2qqIVAoOpEpSk/JiYUJ6LoulfyWJE2/yE9CJ5DGbZoT7yPciGKZ1w==
+"@department-of-veterans-affairs/component-library@^56.3.0":
+  version "56.3.0"
+  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/component-library/-/component-library-56.3.0.tgz#cb5ce19dfaa07ba54f8f0de0bc5f6f0e5078fd8d"
+  integrity sha512-6JVd1BVPWhrBGVDu2e4cHU07FjgLrSo6nlonPYKaC3Jno+sEu6VgeK1VawJcMrPXGVUA/rNeTYfyl6m/2t06nA==
   dependencies:
-    "@department-of-veterans-affairs/react-components" "28.3.1"
-    "@department-of-veterans-affairs/web-components" "24.2.1"
+    "@department-of-veterans-affairs/react-components" "28.4.0"
+    "@department-of-veterans-affairs/web-components" "24.3.0"
     i18next "25.6.0"
     i18next-browser-languagedetector "8.2.0"
     react-focus-on "3.5.4"
@@ -939,10 +939,10 @@
     "@uswds/uswds" "3.9.0"
     rimraf "6.1.2"
 
-"@department-of-veterans-affairs/react-components@28.3.1":
-  version "28.3.1"
-  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/react-components/-/react-components-28.3.1.tgz#cedb2093573632c2355227f8ff7600d50e403b8b"
-  integrity sha512-7/s+2IStiYQq8rM6YecX+Z4V4gzkmhQ3qqT7AfzT+n7IVX/pSIOChtLKQuT9Cove4wFAfM/mbNFA4llnZ7M6rw==
+"@department-of-veterans-affairs/react-components@28.4.0":
+  version "28.4.0"
+  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/react-components/-/react-components-28.4.0.tgz#20a2fb395704b3cbf160a4303bbe5411d3ff6747"
+  integrity sha512-CKS7XGgf1ExmYYaJ7Nsp4bijmH3bemQjCiiEAeoCisu3zGqHZY5NC25o3jrXnGv+YCdcAGRYJh2LtV0FNYCfpA==
   dependencies:
     classnames "2.2.6"
     prop-types "15.6.2"
@@ -951,12 +951,12 @@
     recast "0.14.7"
     util "0.12.5"
 
-"@department-of-veterans-affairs/web-components@24.2.1":
-  version "24.2.1"
-  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/web-components/-/web-components-24.2.1.tgz#13530dade60201b9b102517241c413da0f13dbcf"
-  integrity sha512-C/7TLaru+rH8opC7vUtOp6pDGFiehrxnVzzZhtecJRbHc2zheme9TAACvNYKJGQkrrpr7TgvsqneUud5Nwka/g==
+"@department-of-veterans-affairs/web-components@24.3.0":
+  version "24.3.0"
+  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/web-components/-/web-components-24.3.0.tgz#cb489d3b31d9a7ff8774883d58cf59642c78efe8"
+  integrity sha512-MDoDv1Qd/T5MWkn0EIbd0WJi/fnDfVBXans2h9oltc1Jj6T04ULnKsXKWR7TSC5s2PD+oTa79RXFpYozS+nD6g==
   dependencies:
-    "@stencil/core" "4.43.2"
+    "@stencil/core" "4.20.0"
     aria-hidden "1.1.3"
     body-scroll-lock "4.0.0-beta.0"
     chromatic "11.0.4"
@@ -1230,46 +1230,6 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@rollup/rollup-darwin-arm64@4.44.0":
-  version "4.44.0"
-  resolved "https://registry.yarnpkg.com/@rollup/rollup-darwin-arm64/-/rollup-darwin-arm64-4.44.0.tgz#60a51a61b22b1f4fdf97b4adf5f0f447f492759d"
-  integrity sha512-VGF3wy0Eq1gcEIkSCr8Ke03CWT+Pm2yveKLaDvq51pPpZza3JX/ClxXOCmTYYq3us5MvEuNRTaeyFThCKRQhOA==
-
-"@rollup/rollup-darwin-x64@4.44.0":
-  version "4.44.0"
-  resolved "https://registry.yarnpkg.com/@rollup/rollup-darwin-x64/-/rollup-darwin-x64-4.44.0.tgz#bfe3059440f7032de11e749ece868cd7f232e609"
-  integrity sha512-fBkyrDhwquRvrTxSGH/qqt3/T0w5Rg0L7ZIDypvBPc1/gzjJle6acCpZ36blwuwcKD/u6oCE/sRWlUAcxLWQbQ==
-
-"@rollup/rollup-linux-arm64-gnu@4.44.0":
-  version "4.44.0"
-  resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-arm64-gnu/-/rollup-linux-arm64-gnu-4.44.0.tgz#dbc5036a85e3ca3349887c8bdbebcfd011e460b0"
-  integrity sha512-ZTR2mxBHb4tK4wGf9b8SYg0Y6KQPjGpR4UWwTFdnmjB4qRtoATZ5dWn3KsDwGa5Z2ZBOE7K52L36J9LueKBdOQ==
-
-"@rollup/rollup-linux-arm64-musl@4.44.0":
-  version "4.44.0"
-  resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-arm64-musl/-/rollup-linux-arm64-musl-4.44.0.tgz#72efc633aa0b93531bdfc69d70bcafa88e6152fc"
-  integrity sha512-GFWfAhVhWGd4r6UxmnKRTBwP1qmModHtd5gkraeW2G490BpFOZkFtem8yuX2NyafIP/mGpRJgTJ2PwohQkUY/Q==
-
-"@rollup/rollup-linux-x64-gnu@4.44.0":
-  version "4.44.0"
-  resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-x64-gnu/-/rollup-linux-x64-gnu-4.44.0.tgz#597d40f60d4b15bedbbacf2491a69c5b67a58e93"
-  integrity sha512-iUVJc3c0o8l9Sa/qlDL2Z9UP92UZZW1+EmQ4xfjTc1akr0iUFZNfxrXJ/R1T90h/ILm9iXEY6+iPrmYB3pXKjw==
-
-"@rollup/rollup-linux-x64-musl@4.44.0":
-  version "4.44.0"
-  resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-x64-musl/-/rollup-linux-x64-musl-4.44.0.tgz#0a062d6fee35ec4fbb607b2a9d933a9372ccf63a"
-  integrity sha512-PQUobbhLTQT5yz/SPg116VJBgz+XOtXt8D1ck+sfJJhuEsMj2jSej5yTdp8CvWBSceu+WW+ibVL6dm0ptG5fcA==
-
-"@rollup/rollup-win32-arm64-msvc@4.44.0":
-  version "4.44.0"
-  resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-arm64-msvc/-/rollup-win32-arm64-msvc-4.44.0.tgz#41ffab489857987c75385b0fc8cccf97f7e69d0a"
-  integrity sha512-M0CpcHf8TWn+4oTxJfh7LQuTuaYeXGbk0eageVjQCKzYLsajWS/lFC94qlRqOlyC2KvRT90ZrfXULYmukeIy7w==
-
-"@rollup/rollup-win32-x64-msvc@4.44.0":
-  version "4.44.0"
-  resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.44.0.tgz#a36e79b6ccece1533f777a1bca1f89c13f0c5f62"
-  integrity sha512-Q2Mgwt+D8hd5FIPUuPDsvPR7Bguza6yTkJxspDGkZj7tBRn2y4KSWYuIXpftFSjBra76TbKerCV7rgFPQrn+wQ==
-
 "@sinclair/typebox@^0.27.8":
   version "0.27.8"
   resolved "https://registry.npmjs.org/@sinclair/typebox/-/typebox-0.27.8.tgz"
@@ -1289,19 +1249,10 @@
   dependencies:
     "@sinonjs/commons" "^3.0.0"
 
-"@stencil/core@4.43.2":
-  version "4.43.2"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-4.43.2.tgz#482ef872ace6e4e7b430c8290d12dd92b273ad4a"
-  integrity sha512-hOprMw/n1fyu5OOtZG7N8sqiKxPshR1oss/y1qr6r98cVV9NcVoCMz2x2TT2enkHan6pCMpiQgUU7vmN90lIVw==
-  optionalDependencies:
-    "@rollup/rollup-darwin-arm64" "4.44.0"
-    "@rollup/rollup-darwin-x64" "4.44.0"
-    "@rollup/rollup-linux-arm64-gnu" "4.44.0"
-    "@rollup/rollup-linux-arm64-musl" "4.44.0"
-    "@rollup/rollup-linux-x64-gnu" "4.44.0"
-    "@rollup/rollup-linux-x64-musl" "4.44.0"
-    "@rollup/rollup-win32-arm64-msvc" "4.44.0"
-    "@rollup/rollup-win32-x64-msvc" "4.44.0"
+"@stencil/core@4.20.0":
+  version "4.20.0"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-4.20.0.tgz#221f2b36ab999891560449b02d6915862c435f49"
+  integrity sha512-WPrTHFngvN081RY+dJPneKQLwnOFD60OMCOQGmmSHfCW0f4ujPMzzhwWU1gcSwXPWXz5O+8cBiiCaxAbJU7kAg==
 
 "@testing-library/dom@^9.3.4":
   version "9.3.4"
