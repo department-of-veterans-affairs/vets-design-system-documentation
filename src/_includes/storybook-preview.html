@@ -27,9 +27,17 @@
   ></iframe>
 </div>
 {% else %}
+{% if include.is_mobile %}
+  {% comment %}
+    Default to 352px for mobile if no width is provided, as this becomes 320px when accounting for the iframe padding
+  {% endcomment %}
+  {% assign max_width = include.width | default: '352px' %}
+{% else %}
+  {% assign max_width = include.width | default: '100%' %}
+{% endif %}
 <div
   class="site-showcase"
-  style="max-width: {{ include.width | default: '100%' }}"
+  style="max-width: {{ max_width }}"
 >
   <iframe
     class="storybook-embed"
