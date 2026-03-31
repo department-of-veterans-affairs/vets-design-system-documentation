@@ -9,8 +9,9 @@
 
 {% comment %} Check if we have mobile app component data {% endcomment %}
 {% assign has_mobile_component = false %}
+{% assign mobile_component_tag = include.mobile_component_name | default: include.component_name %}
 {% for mobile_app_component in site.data.mobile-app-component-docs-source.components %}
-  {% if mobile_app_component.tag == include.component_name %}
+  {% if mobile_app_component.tag == mobile_component_tag %}
     {% assign has_mobile_component = true %}
     {% break %}
   {% endif %}
@@ -38,7 +39,7 @@
 
 {% if has_mobile_component and page.mobile-app == true %}
   {% for mobile_app_component in site.data.mobile-app-component-docs-source.components %}
-    {% if mobile_app_component.tag == include.component_name %}
+    {% if mobile_app_component.tag == mobile_component_tag %}
       {% if mobile_app_component.props != empty or mobile_app_component.events != empty %}
         {% assign has_mobile = true %}
       {% endif %}
@@ -107,10 +108,10 @@
 
     <va-tab-item button-text="Mobile app" target-id="panel-2"></va-tab-item>
   <va-tab-panel panel-id="panel-2">
-    {% assign storybook_name = include.component_name | replace: 'va-', '' | replace: '-', '_' %}
+    {% assign storybook_name = mobile_component_tag | replace: 'va-', '' | replace: '-', '_' %}
 
     {% for mobile_app_component in site.data.mobile-app-component-docs-source.components %}
-    {% if mobile_app_component.tag == include.component_name %}
+    {% if mobile_app_component.tag == mobile_component_tag %}
 
     <h3>Mobile app</h3>
 
@@ -219,10 +220,10 @@
 {% comment %} Mobile App Component Documentation - only show if not using tabs {% endcomment %}
 {% if page.mobile-app == true and has_mobile == true %}
 {% unless has_web == true %}
-{% assign storybook_name = include.component_name | replace: 'va-', '' | replace: '-', '_' %}
+{% assign storybook_name = mobile_component_tag | replace: 'va-', '' | replace: '-', '_' %}
 
 {% for mobile_app_component in site.data.mobile-app-component-docs-source.components %}
-{% if mobile_app_component.tag == include.component_name %}
+{% if mobile_app_component.tag == mobile_component_tag %}
 
 <h3>Mobile app</h3>
 

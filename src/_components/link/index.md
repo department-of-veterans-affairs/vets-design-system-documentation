@@ -315,7 +315,7 @@ Review "[Usage](#usage)" for guidance.
     * **[Text (SMS)](#text-sms)**: Open the default messages app.
 * **NOTE:** The Link component currently does not support inline links. A Paragraph component will be created in the future to support inline links, ensuring proper text wrapping and accessibility in React Native.
 
-## Code usage
+{% include component-docs.html component_name=page.web-component %}
 
 ### Links to content in another language
 

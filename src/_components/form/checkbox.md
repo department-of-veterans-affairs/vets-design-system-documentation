@@ -241,7 +241,7 @@ anchors:
   type="secondary"
 ></va-link-action>
 
-{% include component-docs.html component_name=page.web-component %}
+{% include component-docs.html component_name=page.web-component mobile_component_name="va-checkbox" %}
 
 {% include content/using-message-aria-describedby.md %}
 

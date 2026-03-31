@@ -133,7 +133,7 @@ anchors:
   type="secondary"
 ></va-link-action>
 
-{% include component-docs.html component_name=page.web-component %}
+{% include component-docs.html component_name=page.web-component mobile_component_name="va-radio-button" %}
 
 ## Content considerations
 
