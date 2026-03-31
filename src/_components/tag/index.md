@@ -3,7 +3,7 @@ layout: component
 permalink: /components/tag/
 title: Tag
 intro-text: A Tag draws attention to new or important content.
-figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1295%3A9688&mode=design&t=gIDFGH785CqLb8c6-1
+figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=199-1240
 github-title: va-tag
 status: use-deployed
 sub-pages:
