@@ -5,7 +5,7 @@ has-parent: /components/form/
 title: Penalty notice
 intro-text: A required legal notice for all forms.
 research-title: Form controls
-figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1372%3A86436&mode=design&t=h9BoxMWwcHe2DhUd-1
+figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=199-1216
 github-title: va-penalty-notice
 status: use-best-practice
 web: true
