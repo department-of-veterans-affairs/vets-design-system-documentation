@@ -23,6 +23,7 @@ anchors:
 
 ## Examples
 
+{% capture web_content %}
 ### Web
 
 #### Default
@@ -32,7 +33,9 @@ anchors:
 #### Selected item
 
 {% include storybook-preview.html story="va-button-segmented--selected-item" link_text="va-button-segmented--selected-item" %}
+{% endcapture %}
 
+{% capture mobile_content %}
 ### Mobile app
 
 #### 2 segments
@@ -46,6 +49,18 @@ anchors:
 #### 4 segments
 
 {% include storybook-preview.html story="segmented-control--4-segments" link_text="va-mobile_segmented-control--4-segments" is_mobile=true %}
+{% endcapture %}
+
+<va-tabs initially-selected="0" label="Web and Mobile app examples">
+  <va-tab-item button-text="Web" target-id="panel-1"></va-tab-item>
+  <va-tab-panel panel-id="panel-1">
+    {{ web_content | markdownify }}
+  </va-tab-panel>
+  <va-tab-item button-text="Mobile app" target-id="panel-2"></va-tab-item>
+  <va-tab-panel panel-id="panel-2">
+    {{ mobile_content | markdownify }}
+  </va-tab-panel>
+</va-tabs>
 
 ## Usage
 

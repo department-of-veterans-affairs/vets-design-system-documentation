@@ -22,6 +22,7 @@ anchors:
 
 ## Examples - Single
 
+{% capture web_content_single %}
 ### Web
 
 #### Default
@@ -63,7 +64,9 @@ anchors:
 #### Internationalization
 
 {% include storybook-preview.html story="uswds-va-checkbox--internationalization" link_text="va-checkbox internationalization" %}
+{% endcapture %}
 
+{% capture mobile_content_single %}
 ### Mobile app
 
 #### Default
@@ -81,9 +84,22 @@ anchors:
 #### Error
 
 {% include storybook-preview.html height="225px" story="checkbox--error" link_text="va-mobile__checkbox--error" is_mobile=true auto_resize=false %}
+{% endcapture %}
+
+<va-tabs initially-selected="0" label="Web and Mobile app examples">
+  <va-tab-item button-text="Web" target-id="panel-1"></va-tab-item>
+  <va-tab-panel panel-id="panel-1">
+    {{ web_content_single | markdownify }}
+  </va-tab-panel>
+  <va-tab-item button-text="Mobile app" target-id="panel-2"></va-tab-item>
+  <va-tab-panel panel-id="panel-2">
+    {{ mobile_content_single | markdownify }}
+  </va-tab-panel>
+</va-tabs>
 
 ## Examples - Group
 
+{% capture web_content_group %}
 ### Web
 
 #### Default
@@ -133,7 +149,9 @@ anchors:
 #### Indeterminate checkbox state
 
 {% include storybook-preview.html story="uswds-va-checkbox--indeterminate" link_text="Checkbox with indeterminate state" height="300px" %}
+{% endcapture %}
 
+{% capture mobile_content_group %}
 ### Mobile app
 
 #### Default
@@ -147,6 +165,18 @@ anchors:
 #### Error
 
 {% include storybook-preview.html height="475px" story="checkbox-group--error" link_text="va-mobile__checkbox-group--error" is_mobile=true auto_resize=false %}
+{% endcapture %}
+
+<va-tabs initially-selected="0" label="Web and Mobile app examples">
+  <va-tab-item button-text="Web" target-id="panel-3"></va-tab-item>
+  <va-tab-panel panel-id="panel-3">
+    {{ web_content_group | markdownify }}
+  </va-tab-panel>
+  <va-tab-item button-text="Mobile app" target-id="panel-4"></va-tab-item>
+  <va-tab-panel panel-id="panel-4">
+    {{ mobile_content_group | markdownify }}
+  </va-tab-panel>
+</va-tabs>
 
 ## Usage
 

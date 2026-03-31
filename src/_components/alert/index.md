@@ -13,9 +13,7 @@ sub-pages:
   - sub-page: Alert - Expandable
   - sub-page: Alert - Sign-in
 anchors:
-  - anchor: Examples - Standard
-  - anchor: Examples - Standard properties
-  - anchor: Examples - Slim alert
+  - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
@@ -24,69 +22,47 @@ anchors:
   - anchor: Component checklist
 ---
 
-## Examples - Standard
+## Examples
 
-### Web
+{% capture web_content %}
 
-#### Informational alert (aka default)
+### Informational alert (aka default)
 
 {% include storybook-preview.html story="uswds-va-alert--default" link_text="va-alert informational" %}
 
-Used to provide helpful information or something that warrants a user’s attention. Not used for negative consequences.
+Used to provide helpful information or something that warrants a user's attention. Not used for negative consequences.
 
-#### Alert with action link
-
-{% include storybook-preview.html story="uswds-va-alert--with-action-link" link_text="uswds-va-alert--with-action-link" height="220px" %}
-
-Used when an action link is needed in place of a standard link.
-
-#### Warning alert
+### Warning alert
 
 {% include storybook-preview.html story="uswds-va-alert--warning" link_text="va-alert warning" %}
 
 Used to warn a user, such as when there are negative consequences, or when something has gone wrong.
 
-#### Success alert
-
-{% include storybook-preview.html story="uswds-va-alert--success" link_text="va-alert success" %}
-
-Used to indicate success.
-
-#### Error alert
+### Error alert
 
 {% include storybook-preview.html story="uswds-va-alert--error" link_text="va-alert error" height="220px" %}
 
 Used to indicate critical issues, failure states, or items that require immediate attention.
 
-### Mobile app
+### Success alert
 
-#### Informational alert (aka default)
+{% include storybook-preview.html story="uswds-va-alert--success" link_text="va-alert success" %}
 
-{% include storybook-preview.html story="alert--info" link_text="va-mobile__alert--info" is_mobile=true height="400px" auto_resize=false %}
+Used to indicate success.
 
-#### Warning alert
+### Alert with action link
 
-{% include storybook-preview.html story="alert--warning" link_text="va-mobile__alert--warning" is_mobile=true height="400px" auto_resize=false %}
+{% include storybook-preview.html story="uswds-va-alert--with-action-link" link_text="uswds-va-alert--with-action-link" height="220px" %}
 
-#### Success alert
+Used when an action link is needed in place of a standard link.
 
-{% include storybook-preview.html story="alert--success" link_text="va-mobile__alert--success" is_mobile=true height="400px" auto_resize=false %}
-
-#### Error alert
-
-{% include storybook-preview.html story="alert--error" link_text="va-mobile__alert--error" is_mobile=true height="400px" auto_resize=false %}
-
-## Examples - Standard properties
-
-### Web
-
-#### Heading level
+### Heading level
 
 {% include storybook-preview.html story="uswds-va-alert--heading-level" link_text="va-alert heading level" %}
 
 * Standard alerts must contain headings as opposed to Slim alerts which do not contain headings.
 
-#### Dismissible
+### Dismissible
 
 {% include storybook-preview.html story="uswds-va-alert--dismissable" link_text="va-alert dismissible" %}
 
@@ -94,23 +70,56 @@ Used to indicate critical issues, failure states, or items that require immediat
 * Allow a user to dismiss an alert wherever appropriate.
 {% include a11y/dismissable-alerts.md component="alert" %}
 
-### Mobile app
-
-#### Expandable
-
-{% include storybook-preview.html story="alert--info&args=expandable:!true" link_text="va-mobile__alert--info" is_mobile=true %}
-
-* The Alert component in the mobile application can be collapsed and expanded.
-
-## Examples - Slim alert
-
-### Web
+### Slim alert
 
 Any style of alert box can be modified to be a Slim alert. The iconography for Slim alerts is consistent with the way icons are used in standard Alerts.
 
 {% include storybook-preview.html story="uswds-va-alert--slim" height="352px" link_text="va-alert Slim" %}
+{% endcapture %}
 
-## Usage
+{% capture mobile_content %}
+
+### Informational alert (aka default)
+
+{% include storybook-preview.html story="alert--info" link_text="va-mobile__alert--info" is_mobile=true height="400px" auto_resize=false %}
+
+### Warning alert
+
+{% include storybook-preview.html story="alert--warning" link_text="va-mobile__alert--warning" is_mobile=true height="400px" auto_resize=false %}
+
+### Error alert
+
+{% include storybook-preview.html story="alert--error" link_text="va-mobile__alert--error" is_mobile=true height="400px" auto_resize=false %}
+
+### Success alert
+
+{% include storybook-preview.html story="alert--success" link_text="va-mobile__alert--success" is_mobile=true height="400px" auto_resize=false %}
+
+### Dismissible
+
+{% include storybook-preview.html story="alert--dismissible" link_text="va-mobile__alert--dismissable" is_mobile=true height="400px" auto_resize=false %}
+
+* Any alert variation can be dismissible. This example shows an informational alert that can be dismissed.
+* Allow a user to dismiss an alert wherever appropriate.
+
+### Expandable
+
+{% include storybook-preview.html story="alert--info&args=expandable:!true" link_text="va-mobile__alert--info" is_mobile=true %}
+
+* The Alert component in the mobile application can be collapsed and expanded.
+{% endcapture %}
+
+<va-tabs initially-selected="0" label="Web and Mobile app examples">
+  <va-tab-item button-text="Web" target-id="panel-1"></va-tab-item>
+  <va-tab-panel panel-id="panel-1">
+    {{ web_content | markdownify }}
+  </va-tab-panel>
+  <va-tab-item button-text="Mobile app" target-id="panel-2"></va-tab-item>
+  <va-tab-panel panel-id="panel-2">
+    {{ mobile_content | markdownify }}
+  </va-tab-panel>
+</va-tabs>
+
 
 <va-link-action
   href="https://designsystem.digital.gov/components/alert/"

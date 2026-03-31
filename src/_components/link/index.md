@@ -27,6 +27,7 @@ anchors:
 
 ## Examples
 
+{% capture web_content %}
 ### Web
 
 #### Default
@@ -60,7 +61,9 @@ anchors:
 #### Video
 
 {% include storybook-preview.html story="components-va-link--video" link_text="video va-link" height="50px" %}
+{% endcapture %}
 
+{% capture mobile_content %}
 ### Mobile app
 
 ### Default
@@ -94,6 +97,18 @@ anchors:
 ### Text (SMS)
 
 {% include storybook-preview.html height="70px" story="link--text" link_text="va-mobile__link--text" is_mobile=true %}
+{% endcapture %}
+
+<va-tabs initially-selected="0" label="Web and Mobile app examples">
+  <va-tab-item button-text="Web" target-id="panel-1"></va-tab-item>
+  <va-tab-panel panel-id="panel-1">
+    {{ web_content | markdownify }}
+  </va-tab-panel>
+  <va-tab-item button-text="Mobile app" target-id="panel-2"></va-tab-item>
+  <va-tab-panel panel-id="panel-2">
+    {{ mobile_content | markdownify }}
+  </va-tab-panel>
+</va-tabs>
 
 ## Usage
 
