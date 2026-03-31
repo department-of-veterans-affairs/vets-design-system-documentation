@@ -71,6 +71,9 @@
       // Skip if data-auto-resize is explicitly false
       if (iframe.dataset.autoResize === 'false') return;
 
+      // Skip if this iframe has been disabled due to CORS error
+      if (iframe.dataset.resizeDisabled) return;
+
       try {
         const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
         if (!iframeDoc) return;
@@ -82,7 +85,9 @@
           iframe.dataset.lastHeight = newHeight;
         }
       } catch (err) {
+        // CORS error detected - warn once and permanently disable resize checks for this iframe
         console.warn('Cannot access iframe content due to cross-origin restrictions:', err);
+        iframe.dataset.resizeDisabled = 'true';
       }
     });
   }
