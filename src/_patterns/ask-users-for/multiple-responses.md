@@ -16,6 +16,7 @@ research-title: Ask users for multiple responses
 status: use-deployed
 anchors:
   - anchor: Usage
+  - anchor: Examples
   - anchor: How to design and build - Multi-page
   - anchor: How to design and build - Add item
   - anchor: About single page usage
@@ -33,6 +34,14 @@ anchors:
 * **Collecting a single, or limited, response.** For questions in a form that only have one answer, such as "What is the city and state of your birth?", use the [Ask users for a single response]({{ site.baseurl }}/patterns/ask-users-for/a-single-response) pattern.
 * **Inconsistent questions being asked for each item.** Don’t use this pattern if you’re asking different questions for each item. This pattern works best when you need the same information for every item.
 
+## Examples
+
+### Multi-page multiple response pattern
+{% include component-example.html alt="A summary page for the multiple response multi-page pattern variation." file="/images/patterns/ask-users-for/multiple-responses/multiple-response-summary.png" caption="An example of the summary page for a multi-page multiple response pattern in VA Form 21-0995. This summary page reflects the data collected thus far and allows the user to act on that data or add more." class="x2" %}
+
+### Add item multiple response pattern
+{% include component-example.html alt="Form example allowing user to select issues from a list." file="/images/patterns/ask-users-for/multiple-responses/add-item.png" caption="An example of the add item multiple response pattern in VA Form 21-0995." class="x2" %}
+
 ## How to design and build - Multi-page
 
 Use this pattern when users need to add similar information multiple times, such as information about dependents. This method allows more table-like data to be collected following the [One thing per page principle]({{ site.baseurl }}/patterns/ask-users-for/a-single-response).
@@ -43,7 +52,7 @@ Use this pattern when users need to add similar information multiple times, such
 
 ### When to not use multi-page
 
-* **Most of the information being requested is already available.** If we have most of the information being requested already then the "Add item" variation is preferred. If the information we have on file is contact information coming from VA.gov Profile then the "Contact information" variation is preferred.
+* **Most of the information being requested is already available.** If we have most of the information being requested already then the "Add item" variation is preferred. If the information we have on file is contact information coming from VA Profile API then the [Help users to... update prefilled information pattern]({{ site.baseurl }}/patterns/help-users-to/update-prefilled-information) is preferred.
 
 ### Required vs Optional multi-page patterns
 
@@ -53,7 +62,7 @@ There are two types of multiple page patterns with slightly different user flows
 * **[Optional Multi-page Pattern](#optional-multi-page-pattern-user-flow)**<br>
   Use when the step is **completely optional** and users may or may not add items.
 
-{% assign intro_required = "The introduction page provides users with information about the next few screens. If there's a limit to the maximum number of items, see the [code & content considerations](#code--content-considerations) to customize the language. " %}
+{% assign intro_required = "The introduction page provides users with information about the next few screens. If there's a limit to the maximum number of items, see the [content considerations](#content-considerations) to customize the language. " %}
 
 {% assign intro_optional = "The introduction page provides users with information about the next few screens and provides a **Yes/No** choice to provide additional information. If the user selects **Yes** they will proceed into the questions flow. If the user selects **No**, they proceed to the next step."%}
 
@@ -147,7 +156,7 @@ There are two types of multiple page patterns with slightly different user flows
   </div>
 </div>
 
-### Code & content considerations
+### Content considerations
 
 * **Use the built in error and validation messages**.
   * Successful editing of an item
@@ -155,6 +164,7 @@ There are two types of multiple page patterns with slightly different user flows
   * When the maximum number of items have been added
   * When all items in a required loop have been removed
   * When a user wants to cancel adding an item mid-flow
+  * When there is a possible duplicate item added
 * **Use the built in functionality for using the same word for adding an item on question pages, summary cards, and edit pages.** For example:
   * Do you want to add another [dependent]?
   * Review your [dependents]
@@ -162,18 +172,11 @@ There are two types of multiple page patterns with slightly different user flows
   * You have added the maximum number of [dependents]
 * **If at least one item is required, use hint text to let users know.** The pattern must indicate to users that at least one item is required. If all items are removed, return users to the first page of the loop to gather information.
 * **If there are a maximum number of items, make this clear to the user.** You can use hint text to do this. Also, after the user has entered the maximum number allowed the pattern removes the "add another" question, and displays a warning instructing the user that they have entered the maximum allowed and they can either edit, or remove a card if they need to add more information.
+* **Limit the information shown on summary cards.** Summary cards are meant for users to be able to distinguish one unique item entry from another. Try not to show more than 3 lines of details within the card, and choose details that could help users differentiate between similar entries.
 
-<p>
-  For more details
-  <va-link
-    active
-    href="https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/patterns/array-builder/README.md"
-    text="view developer documentation"
-  />
-</p>
+### Code consideration
 
-
-### URL Guidance
+#### URL Guidance
 
 When you design forms that collect several responses, make sure the URL shows which item the user is working on. Put the item’s position in the URL, like `/dependents/0/name` for the first dependent. Don’t use query parameters. This makes it easier for users to find, edit, and share links to specific items.
 
@@ -183,7 +186,7 @@ We include a folder-like path segment that holds the item's position in the list
 
 `/<form-root>/<section>/<array-name>/<index>/<question-path>`
 
-- `<index>` is zero-based: the first item is `/0/`, the second is `/1/`, and so on. This matches how arrays work in code. It keeps routing logic simple and predictable..
+- `<index>` is zero-based: the first item is `/0/`, the second is `/1/`, and so on. This matches how arrays work in code. It keeps routing logic simple and predictable.
 Example:
     - First item: `/app-name/dependents/0/name`
     - Second item: `/app-name/dependents/1/name`
@@ -193,7 +196,7 @@ This structure lets the form deep-link to any item's questions. It also simplifi
 **Tip for labels:** When showing labels to users, use the item’s name, like “Edit John Smith’s information,” not “Edit Dependent 1’s information.”
 
 
-#### Why zero-based in the URL?
+### Why zero-based in the URL?
 - **Matches data structures:** The system stores form data as arrays. Items are numbered 0, 1, 2….
 - **Reduces off-by-one bugs:** Routes, validators, and UI state all point to the same index.
 - **Easier deep links and error recovery:** a validation error can link directly to /…/2/… without translation.
@@ -234,33 +237,37 @@ This structure lets the form deep-link to any item's questions. It also simplifi
 - **Validation links:** Error summaries should link straight to the indexed route (for example, the second dependent’s name error links to /…/dependent/1/name), which takes users to the correct screen for that item in the loop.
 - **Accessibility notes:** Because every looped screen is a normal single-response screen, follow the standard single-response accessibility guidance (clear page heading, field labeling, focus management). The pattern simply repeats those screens for each array index.
 
+<va-link-action
+          href="https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/patterns/array-builder/README.md"
+          text="View developer documentation"
+          type="secondary"
+        ></va-link-action>
 
 ### Accessibility considerations
 
-On the summary page, ensure that the edit links and delete buttons have accessible text so that screen reader users understand what is being edited or deleted.
-
-### Examples in Production
-{% include component-example.html alt="A summary page for the multiple response multi-page pattern variation." file="/images/patterns/ask-users-for/multiple-responses/multiple-response-summary.png" caption="An example of the summary page for a multi-page multiple response pattern. This summary page reflects the data collected thus far and allows the user to act on that data or add more." class="x2" %}
+* Accessibility considerations such as focus management and screen reader aria are built into the codified pattern.
+* On the summary page, ensure that the edit links and delete buttons have accessible text so that screen reader users understand what is being edited or deleted.
 
 ## How to design and build - Add item
 
 This method shows all items on one page in a list with an "Add a new [item]" [Link - Action (primary)]({{ site.baseurl }}/components/link/action#primary) at the bottom of the list that navigates the user to a new page to add the item.
 
-{% include component-example.html alt="Form example allowing user to select issues from a list." file="/images/patterns/ask-users-for/multiple-responses/add-item.png" caption="Form allowing a Veteran to select health issues for review in a claim." class="x2" %}
+{% include component-example.html alt="Form example allowing user to select issues from a list." file="/images/patterns/ask-users-for/multiple-responses/add-item.png" caption="The page pre-populates health issues that the Veteran can select and add health issues for review in a claim." class="x2" %}
 
 * Items are displayed in a list with checkboxes for selecting items.
 * The "Add a new [item]" is displayed using the [Link - Action (primary)]({{ site.baseurl }}/components/link/action#primary) component.
 * The "Add a new [item]" link directs the user to a new page with the form elements for adding an item.
 * Upon completion, a "add" or "update" button returns the user to the original page with the new item added. A "Cancel" button returns the user to the original page without any changes.
 
+### When to use the add item variation
+
+**Most of the information being requested is already available.** If most of the information being requested is already on file then this variation works well because it presents to the user what we have on file and allows them to add items that are missing.
+
+
 ### Code considerations
 
 [How to use "Add item" link in Array Data](https://depo-platform-documentation.scrollhelp.site/developer-docs/va-forms-library-how-to-use-add-item-link-in-array) details how to implement this variation.
 
-### When to use the add item variation
-
-* **Most of the information being requested is already available.** If most of the information being requested is already on file then this variation works well because it presents to the user what we have on file and allows them to add items that are missing.
-* **Information on file is not contact information coming from VA.gov Profile.** If the information on file is not coming from VA.gov Profile then this variation presents the data clearly and is preferred. If the information on file IS coming from VA.gov Profile then the "Contact information" variation is preferred.
 
 ## About single page usage
 While the single-page variation is currently used on VA.gov, it is no longer the preferred variation for this pattern. The <a href="#how-to-design-and-build---multi-page">multi-page pattern</a> is recommended for new designs.
