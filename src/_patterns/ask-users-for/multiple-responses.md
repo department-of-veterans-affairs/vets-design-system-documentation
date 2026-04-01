@@ -40,7 +40,7 @@ anchors:
 {% include component-example.html alt="A summary page for the multiple response multi-page pattern variation." file="/images/patterns/ask-users-for/multiple-responses/multiple-response-summary.png" caption="An example of the summary page for a multi-page multiple response pattern in VA Form 21-0995. This summary page reflects the data collected thus far and allows the user to act on that data or add more." class="x2" %}
 
 ### Add item multiple response pattern
-{% include component-example.html alt="Form example allowing user to select issues from a list." file="/images/patterns/ask-users-for/multiple-responses/add-item.png" caption="An example of the add item multiple response pattern in VA Form 21-0995." class="x2" %}
+{% include component-example.html alt="Form example allowing user to select issues from a list." file="/images/patterns/ask-users-for/multiple-responses/add-item.png" caption="An example of the add item multiple response pattern in VA Form 21-0995.  The page pre-populates health issues that the Veteran can select and add health issues for review in a claim." class="x2" %}
 
 ## How to design and build - Multi-page
 
@@ -252,7 +252,7 @@ This structure lets the form deep-link to any item's questions. It also simplifi
 
 This method shows all items on one page in a list with an "Add a new [item]" [Link - Action (primary)]({{ site.baseurl }}/components/link/action#primary) at the bottom of the list that navigates the user to a new page to add the item.
 
-{% include component-example.html alt="Form example allowing user to select issues from a list." file="/images/patterns/ask-users-for/multiple-responses/add-item.png" caption="The page pre-populates health issues that the Veteran can select and add health issues for review in a claim." class="x2" %}
+{% include component-example.html alt="Form example allowing user to select issues from a list." file="/images/patterns/ask-users-for/multiple-responses/add-item.png" caption="An example of the add item multiple response pattern in VA Form 21-0995. The page pre-populates health issues that the Veteran can select and add health issues for review in a claim." class="x2" %}
 
 * Items are displayed in a list with checkboxes for selecting items.
 * The "Add a new [item]" is displayed using the [Link - Action (primary)]({{ site.baseurl }}/components/link/action#primary) component.
