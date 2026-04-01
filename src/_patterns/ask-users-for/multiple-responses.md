@@ -180,7 +180,7 @@ There are two types of multiple page patterns with slightly different user flows
 
 When you design forms that collect several responses, make sure the URL shows which item the user is working on. Put the item’s position in the URL, like `/dependents/0/name` for the first dependent. Don’t use query parameters. This makes it easier for users to find, edit, and share links to specific items.
 
-#### How we show “which item” in the URL
+##### How we show “which item” in the URL
 
 We include a folder-like path segment that holds the item's position in the list for the current item. This is called the array index.
 
@@ -195,15 +195,14 @@ This structure lets the form deep-link to any item's questions. It also simplifi
 
 **Tip for labels:** When showing labels to users, use the item’s name, like “Edit John Smith’s information,” not “Edit Dependent 1’s information.”
 
-
-### Why zero-based in the URL?
+#### Why zero-based in the URL?
 - **Matches data structures:** The system stores form data as arrays. Items are numbered 0, 1, 2….
 - **Reduces off-by-one bugs:** Routes, validators, and UI state all point to the same index.
 - **Easier deep links and error recovery:** a validation error can link directly to /…/2/… without translation.
 
-#### URL structure examples
+##### URL structure examples
 
-##### Collecting multiple employers
+###### Collecting multiple employers
 ```
 /app-name/employers/0/name-and-address  # First employer
 /app-name/employers/0/dates
@@ -211,7 +210,7 @@ This structure lets the form deep-link to any item's questions. It also simplifi
 /app-name/employers/1/dates
 ```
 
-##### Collecting multiple service periods
+###### Collecting multiple service periods
 
 ```
 /app-name/service-history/0/branch-rank      # First service period
@@ -232,7 +231,7 @@ This structure lets the form deep-link to any item's questions. It also simplifi
 - Don’t renumber the item's position in the URL when items are re-ordered in the UI; treat the number as the item’s position in the current array at render time.
 - Don't refer to the arrays as `<array-name> 1` in visual presentation.
 
-##### Edge cases and tips
+#### Edge cases and tips
 - **Insertions and deletions:** If a user deletes item 1, the remaining items will shift (2 becomes 1). That’s expected—routes always reflect the current state of the array. If you need stable IDs for analytics, store a separate per-item UUID in data. Keep the URL index for navigation.
 - **Validation links:** Error summaries should link straight to the indexed route (for example, the second dependent’s name error links to /…/dependent/1/name), which takes users to the correct screen for that item in the loop.
 - **Accessibility notes:** Because every looped screen is a normal single-response screen, follow the standard single-response accessibility guidance (clear page heading, field labeling, focus management). The pattern simply repeats those screens for each array index.
