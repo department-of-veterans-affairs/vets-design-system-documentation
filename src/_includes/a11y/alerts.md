@@ -35,7 +35,7 @@ Consider the purpose of your graphic and whether alt text will provide any infor
 
 ### Mobile
 
-* **Use appropriate component type.** Alerts should only be used when appropriate to do so. Do not use in-content Alerts when a native alert would be best (i.e. native alert, dialogue, action sheet, snackbar, etc.).
+* **Use appropriate component type.** Alerts should only be used when appropriate to do so. Do not use in-content Alerts when a native alert would be best (i.e., native alert, dialogue, action sheet, snackbar, etc.).
 * **Announce drawer states.** Alerts that have expanded / closed states must be announced by a screen reader.
 * **No disabled buttons.** No buttons should be disabled within an Alert. All interactive elements must be actionable.
 * **Use appropriate labels.** [accessibilityLabel](https://reactnative.dev/docs/accessibility#accessibilitylabel) and [accessibilityLabelledBy](https://reactnative.dev/docs/accessibility#accessibilitylabelledby-android) should be used where appropriate.
