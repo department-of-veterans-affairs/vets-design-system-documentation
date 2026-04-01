@@ -245,7 +245,7 @@ This structure lets the form deep-link to any item's questions. It also simplifi
 
 ### Accessibility considerations
 
-* Accessibility considerations such as focus management and screen reader aria are built into the codified pattern.
+* Accessibility considerations such as focus management and screen reader ARIA attributes are built into the codified pattern.
 * On the summary page, ensure that the edit links and delete buttons have accessible text so that screen reader users understand what is being edited or deleted.
 
 ## How to design and build - Add item
