@@ -174,7 +174,7 @@ There are two types of multiple page patterns with slightly different user flows
 * **If there are a maximum number of items, make this clear to the user.** You can use hint text to do this. Also, after the user has entered the maximum number allowed the pattern removes the "add another" question, and displays a warning instructing the user that they have entered the maximum allowed and they can either edit, or remove a card if they need to add more information.
 * **Limit the information shown on summary cards.** Summary cards are meant for users to be able to distinguish one unique item entry from another. Try not to show more than 3 lines of details within the card, and choose details that could help users differentiate between similar entries.
 
-### Code consideration
+### Code considerations
 
 #### URL Guidance
 
