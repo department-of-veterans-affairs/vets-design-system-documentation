@@ -2,7 +2,7 @@
 layout: default
 index: true
 title: Getting started with design.va.gov
-intro-text: This site provides design guidelines and code to help you quickly create trustworthy, accessible, and consistent digital services on the VA.gov platform. Its primary audience includes content writers, designers, and front-end developers who work on VA.gov.
+intro-text: This site provides design guidelines and code to help you quickly create trustworthy, accessible, and consistent digital services on VA.gov and in the VA mobile app. Its primary audience includes content writers, designers, and developers who work on VA.gov or the VA Health and Benefits mobile application.
 ---
 
 # {{ page.title }}
