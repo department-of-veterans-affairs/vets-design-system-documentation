@@ -51,7 +51,7 @@ This document defines the standardized node types available for Mermaid charts i
 3. **Clean Content**: Include specific details directly without "Example:" labels
 4. **Logical Flow**: Follow the pattern: Start → Question → Answer → Question/Result
 5. **Merge Duplicate Outcomes**: Combine nodes that lead to the same result
-6. **Accessibility**: Always provide text-based alternative using va-additional-info component
+6. **Accessibility**: Always provide text-based alternative using va-details component
 
 ## Template Patterns
 
