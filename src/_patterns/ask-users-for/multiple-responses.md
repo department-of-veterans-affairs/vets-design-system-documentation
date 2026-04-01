@@ -19,7 +19,6 @@ anchors:
   - anchor: Examples
   - anchor: How to design and build - Multi-page
   - anchor: How to design and build - Add item
-  - anchor: About single page usage
 ---
 
 ## Usage
@@ -266,7 +265,3 @@ This method shows all items on one page in a list with an "Add a new [item]" [Li
 ### Code considerations
 
 [How to use "Add item" link in Array Data](https://depo-platform-documentation.scrollhelp.site/developer-docs/va-forms-library-how-to-use-add-item-link-in-array) details how to implement this variation.
-
-
-## About single page usage
-While the single-page variation is currently used on VA.gov, it is no longer the preferred variation for this pattern. The <a href="#how-to-design-and-build---multi-page">multi-page pattern</a> is recommended for new designs.
