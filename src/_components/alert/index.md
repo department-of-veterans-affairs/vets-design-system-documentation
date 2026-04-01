@@ -272,7 +272,7 @@ Displaying multiple alerts should be avoided. However, when you need to display 
 
 * Use standard alerts for most use cases.
 * Use expandable alerts when the information is not a response to user feedback.
-* Use dismissible alerts when the content is informational and not specific to the user or their interaction. For example, displaying “what’s new” content in the app.
+* Use dismissible alerts when the content is informational and not specific to the user or their interaction. For example, displaying "what's new" content in the app.
 
 {% include component-docs.html component_name=page.web-component mobile_component_name="va-alert" %}
 
