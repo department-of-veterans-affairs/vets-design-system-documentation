@@ -154,9 +154,9 @@ Any style of alert box can be modified to be a Slim alert. The iconography for S
 ##### Mobile app only
 
 * **Use native components.** On the mobile app, always consider a native component before using an in-content Alert:
-  * **Action Sheet.** When the user takes an action in which the system needs to clarify their intent, use an action sheet (for both iOS and Android) to offer the user a choice in how to proceed.
-  * **Alert/dialogue.** When the user chooses to do something that has serious consequences, use a native modal alert (for iOS) or dialogue (for Android) to present the user with critical information related to that action.
-  * **Snackbar.** If a user action triggers an API call that is successful or results in an error, consider using a Snackbar in addition to or instead of an Alert. The snackbar may allow users to take an action on the feedback such as trying again or undoing the action.
+  * **Action Sheet.** When the user takes an action in which the system needs to **clarify their intent**, use an [action sheet](https://developer.apple.com/design/human-interface-guidelines/action-sheets) (for both iOS and Android) to **offer the user a choice in how to proceed**.
+  * **Alert/dialogue.** When the user chooses to do something that has **serious consequences**, use a native modal [alert](https://developer.apple.com/design/human-interface-guidelines/alerts) (for iOS) or [dialogue](https://m3.material.io/components/dialogs/overview) (for Android) to **present the user with critical information** related to that action.
+  * **Snackbar.** If a user action **triggers an API call that is successful or results in an error**, consider using a [Snackbar]({{ site.baseurl }}/components/snackbar) in addition to or instead of an Alert. The snackbar may allow users to **take an action on the feedback** such as trying again or undoing the action.
 * **Sub-alerts on the page.** On the mobile app, do not use sub-alerts.
 
 ### When to use a Slim alert
@@ -274,15 +274,15 @@ Displaying multiple alerts should be avoided. However, when you need to display 
 * Use expandable alerts when the information is not a response to user feedback.
 * Use dismissible alerts when the content is informational and not specific to the user or their interaction. For example, displaying “what’s new” content in the app.
 
-{% include component-docs.html component_name=page.web-component %}
+{% include component-docs.html component_name=page.web-component mobile_component_name="va-alert" %}
 
 ## Content considerations
 
 * Keep alert and error message titles (headings) to 50 characters (with spaces) when possible. Titles should follow the general guidelines for page and section titles.<br>
 [Learn more in the Page titles and section titles section of the content style guide](https://design.va.gov/content-style-guide/page-titles-and-section-titles)
 * Keep slim alerts to 100 characters (with spaces) when possible. If you have a slim alert that’s longer than 100 characters, contact the VA.gov content and IA team. The team will work with you to edit the alert or determine if we need to make an exception (up to 150 characters).
-* Acknowledge when an issue is our fault. Don’t place blame on the person, even if the person's actions caused the error.<br>
-**Note:** We no longer say, “please” in alert and error messages when making a request.
+* Acknowledge when an issue is our fault. Don’t place blame on the person, even if the person's actions caused the error.
+* We no longer say, “please” in alert and error messages when making a request.
 * Include brief educational material in your alert and error messages when needed. People may not read documentation, but they’re more likely to read a message that helps them resolve an error.
 * Don’t overdo it with alerts. Too many notifications can overwhelm or annoy the person, who may then ignore the messages.
 * Don’t use jargon or computer code in the message.
@@ -319,5 +319,6 @@ Displaying multiple alerts should be avoided. However, when you need to display 
 
 * [Alert - Expandable]({{ site.baseurl }}/components/alert/alert-expandable/)
 * [Banner]({{ site.baseurl }}/components/banner)
+* [Snackbar]({{ site.baseurl }}/components/snackbar) (Mobile app)
 
 {% include _component-checklist.html component_name=page.web-component %}
