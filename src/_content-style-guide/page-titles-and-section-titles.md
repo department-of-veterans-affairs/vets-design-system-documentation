@@ -1,7 +1,7 @@
 ---
 layout: content-style-guide
 title: Page titles and section titles
-intro-text: Page and section titles do a lot of heavy lifting. A good rule of thumb is to hide all the text on a page, except the page title, section titles, subsection titles, and the primary CTA. If someone can still figure out what they need to do on that page or what that page is about, it's a good sign that the page and section titles are working well.
+intro-text: Page and section titles do a lot of heavy lifting. A good way to test the effectiveness of your page and section titles is to hide all the text on a page, except the page title, section titles, subsection titles, and the primary call to action. If someone can still figure out what they need to do on that page or what that page is about, the page and section titles are likely working well.
 ---  
 
 ## Page titles
