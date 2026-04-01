@@ -2,11 +2,11 @@
 
 When deciding which component to use inside a form, consider how essential the information is and how it relates to nearby content:
 
-* **Essential information for form fields:** Use {% if page.url == '/components/form/label' %}hint text{% else %}[hint text]({{ site.baseurl }}/components/form/label#hint-text){% endif %} for brief, critical information that most users need to complete a field successfully.
-* **Helpful context tied to specific content:** Use {% if page.url == '/components/details' %}Details{% else %}[Details]({{ site.baseurl }}/components/details){% endif %} for brief explanations related to nearby form fields or sections that users can access when needed.
-* **Substantial standalone information:** Use {% if page.url == '/components/accordion' %}Accordion{% else %}[Accordion]({{ site.baseurl }}/components/accordion){% endif %} for lengthy content that deserves its own heading or multiple related topics like FAQ sections.
+* **Essential information for form fields.** Use {% if page.url == '/components/form/label' %}hint text{% else %}[hint text]({{ site.baseurl }}/components/form/label#hint-text){% endif %} for brief, critical information that most users need to complete a field successfully.
+* **Helpful context tied to specific content.** Use {% if page.url == '/components/details' %}Details{% else %}[Details]({{ site.baseurl }}/components/details){% endif %} for brief explanations related to nearby form fields or sections that users can access when needed.
+* **Substantial standalone information.** Use {% if page.url == '/components/accordion' %}Accordion{% else %}[Accordion]({{ site.baseurl }}/components/accordion){% endif %} for lengthy content that deserves its own heading or multiple related topics like FAQ sections.
 
-### Decision tree
+#### Decision tree
 
 <div class="mermaid-width mermaid-comparison">
   <div class="sr-only">
@@ -43,10 +43,12 @@ flowchart TD
 
 <h4>Text-based decision guide</h4>
 
-<ol>
+<ol style="font-size:1rem;">
+<!-- fontsize defined because the details component is resizing this text to 16.96px -->
+
 <li><strong>Is this information essential for completing a form field?</strong>
     <ul>
-    <li><strong>Yes</strong> (Field requirements, input patterns) → <em>Use hint text</em></li>
+    <li><strong>Yes</strong> (Field requirements, input patterns) → Use hint text</li>
     <li><strong>No</strong> (Background context, helpful clarifications) → Continue to question 2</li>
     </ul>
 </li>
@@ -54,14 +56,14 @@ flowchart TD
 <li><strong>Is content related to a nearby form field or section?</strong>
     <ul>
     <li><strong>Yes</strong> (Why we ask questions, field-specific help) → Continue to question 3</li>
-    <li><strong>No</strong> (General information, standalone topics) → <em>Use Accordion</em></li>
+    <li><strong>No</strong> (General information, standalone topics) → Use Accordion</li>
     </ul>
 </li>
 
 <li><strong>Is content brief and doesn't need a heading?</strong>
     <ul>
-    <li><strong>Yes</strong> (Short explanations, simple clarifications) → <em>Use Details</em></li>
-    <li><strong>No</strong> (Long content, complex explanations) → <em>Use Accordion</em></li>
+    <li><strong>Yes</strong> (Short explanations, simple clarifications) → Use Details</li>
+    <li><strong>No</strong> (Long content, complex explanations) → Use Accordion</li>
     </ul>
 </li>
 </ol>
