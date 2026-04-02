@@ -4,43 +4,43 @@ mobile-app-platform-completed: null
 
 maturity:
   - name: guidance
-    web-score: true
+    web-score: "n/a"
     mobile-app-score: true
   - name: research
-    web-score: true
+    web-score: "n/a"
     mobile-app-score: false
   - name: stability
-    web-score: true
+    web-score: "n/a"
     mobile-app-score: false
   - name: adoption
-    web-score: true
+    web-score: "n/a"
     mobile-app-score: false
 code-assets:
   - name: variations 
-    web-score: true
+    web-score: "n/a"
     mobile-app-score: true
   - name: responsive
-    web-score: true
+    web-score: "n/a"
     mobile-app-score: true
   - name: interactive-states
-    web-score: true
-    mobile-app-score: false
+    web-score: "n/a"
+    mobile-app-score: true
   - name: tokens
     web-score: "n/a"
-    mobile-app-score: false
+    mobile-app-score: "n/a"
   - name: internationalization
     web-score: "n/a"
-    mobile-app-score: false
+    mobile-app-score: "n/a"
 visual-assets:
   - name: variations
-    web-score: true
+    web-score: "n/a"
     mobile-app-score: true
   - name: responsive
-    web-score: true
+    web-score: "n/a"
     mobile-app-score: true
   - name: interactive-states
-    web-score: false
-    mobile-app-score: false
+    web-score: "n/a"
+    mobile-app-score: true
   - name: tokens
     web-score: "n/a"
-    mobile-app-score: false
+    mobile-app-score: "n/a"

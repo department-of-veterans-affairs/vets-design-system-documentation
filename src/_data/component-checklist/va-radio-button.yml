@@ -7,7 +7,7 @@ maturity:
     web-score: true
     mobile-app-score: true
   - name: research
-    web-score: true
+    web-score: false
     mobile-app-score: false
   - name: stability
     web-score: true
@@ -24,13 +24,13 @@ code-assets:
     mobile-app-score: true
   - name: interactive-states
     web-score: true
-    mobile-app-score: false
+    mobile-app-score: true
   - name: tokens
     web-score: "n/a"
-    mobile-app-score: false
+    mobile-app-score: "n/a"
   - name: internationalization
     web-score: "n/a"
-    mobile-app-score: false
+    mobile-app-score: "n/a"
 visual-assets:
   - name: variations
     web-score: true
@@ -39,8 +39,8 @@ visual-assets:
     web-score: true
     mobile-app-score: true
   - name: interactive-states
-    web-score: false
-    mobile-app-score: false
+    web-score: true
+    mobile-app-score: true
   - name: tokens
     web-score: "n/a"
-    mobile-app-score: false
+    mobile-app-score: "n/a"

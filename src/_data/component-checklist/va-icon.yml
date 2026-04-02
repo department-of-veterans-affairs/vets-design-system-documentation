@@ -5,7 +5,7 @@ mobile-app-platform-completed: null
 maturity:
   - name: guidance
     web-score: true
-    mobile-app-score: false
+    mobile-app-score: true
   - name: research
     web-score: false
     mobile-app-score: false
@@ -19,10 +19,10 @@ maturity:
 code-assets:
   - name: variations 
     web-score: true
-    mobile-app-score: false
+    mobile-app-score: true
   - name: responsive
     web-score: true
-    mobile-app-score: false
+    mobile-app-score: true
   - name: interactive-states
     web-score: true
     mobile-app-score: false
@@ -35,10 +35,10 @@ code-assets:
 visual-assets:
   - name: variations
     web-score: true
-    mobile-app-score: false
+    mobile-app-score: true
   - name: responsive
     web-score: true
-    mobile-app-score: false
+    mobile-app-score: true
   - name: interactive-states
     web-score: true
     mobile-app-score: false
