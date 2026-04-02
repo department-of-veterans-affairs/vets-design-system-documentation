@@ -208,7 +208,7 @@ If for some reason you do not use a link web-component links must meet the follo
     ActionLink --> ActionConfirm[<b>Show CONFIRMATION</b><br/>Then open relevant app<br/>Phone, Calendar, Maps, etc.]:::node-result-action" %}
 </div>
 
-<va-additional-info trigger="View text-based decision list for link opening behavior" id="link-opening-decision-list">
+<va-details width="2xl" label="View text-based decision list for link opening behavior" id="link-opening-decision-list">
 
 <h4>How should this link open?</h4>
 
@@ -271,7 +271,7 @@ If for some reason you do not use a link web-component links must meet the follo
 </li>
 </ul>
 
-</va-additional-info>
+</va-details>
 
 ### Web
 

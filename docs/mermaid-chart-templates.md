@@ -87,10 +87,10 @@ Systematically replace all bracketed variables with specific content.
 - Always include screen reader alternative text
 
 ### Step 4: Add Accessibility
-Add text-based decision list using va-additional-info component after the chart:
+Add text-based decision list using va-details component after the chart:
 
 ```html
-<va-additional-info trigger="View text-based decision list for [TOPIC]" id="[CHART_ID]-decision-list">
+<va-details label="View text-based decision list for [TOPIC]" id="[CHART_ID]-decision-list">
 
 <h4>[Main Question]</h4>
 
@@ -103,7 +103,7 @@ Add text-based decision list using va-additional-info component after the chart:
 </li>
 </ul>
 
-</va-additional-info>
+</va-details>
 ```
 
 **Critical**: The text alternative must exactly mirror the visual chart - same decision paths, questions, specific details, outcomes, and capitalization. Do not include "Example:" or "Examples:" labels.
