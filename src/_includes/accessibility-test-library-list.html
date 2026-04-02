@@ -67,9 +67,6 @@
               <li>
                 <span class="usa-label">{{ subtest.id }}</span>
               </li>
-              <li>
-                <a href="{{ subtest.wcag_url | default: test.wcag_url }}">WCAG {{ subtest.wcag_criterion | default: test.wcag_criterion }} - {{ subtest.wcag_name | default: test.wcag_name }} (Level {{ subtest.wcag_level | default: test.wcag_level }})</a>
-              </li>
             </ul>
           </li>
           {% endif %}
