@@ -35,6 +35,8 @@ The Review page consists of:
 
 ## Structure
 
+For forms that use the standard form-step template, the Review page should use the standard [Header]({{ site.baseurl }}/components/header/) and [Footer]({{ site.baseurl }}/components/footer/) components. For forms that use the minimal form-step template, the Review page should use the [Header minimal]({{ site.baseurl }}/components/header/header-minimal) and [Footer minimal]({{ site.baseurl }}/components/footer/footer-minimal) components so that the header and footer match the rest of the form flow.
+
 ### Page title and subtitle
 
 The H1 plain language title is in the format:
