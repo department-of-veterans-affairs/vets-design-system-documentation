@@ -1,0 +1,23 @@
+{% comment %}
+  Looks up an environment definition from the grouped environment_definitions config.
+  Searches all groups to find the matching environment by ID.
+
+  Input:  include.env_id — the environment ID to look up (e.g., "mac-safari-voiceover")
+  Output: env_display_name — the display name (falls back to env_id if not found)
+          env_is_required  — true if marked as required, false otherwise
+{% endcomment %}
+{% assign env_display_name = include.env_id %}
+{% assign env_is_required = false %}
+{% assign env_definitions = site.data.accessibility_tests.test-library._config.environment_definitions %}
+
+{% for group in env_definitions %}
+  {% for env in group[1] %}
+    {% if env.id == include.env_id %}
+      {% assign env_display_name = env.name %}
+      {% if env.required %}
+        {% assign env_is_required = true %}
+      {% endif %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}

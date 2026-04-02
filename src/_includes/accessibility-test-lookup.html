@@ -1,0 +1,24 @@
+{% comment %}
+  Looks up a test definition from the test library by ID.
+  Handles both top-level tests and subtests nested under a parent.
+
+  Input:  include.test_id — the test ID to look up
+          test_library    — must already be set (via accessibility-test-library-loader.html)
+  Output: test_def   — the matched test definition (or nil)
+          parent_def — the parent test definition if this is a subtest (or nil)
+{% endcomment %}
+{% assign test_def = test_library | where: "id", include.test_id | first %}
+{% assign parent_def = nil %}
+
+{% unless test_def %}
+  {% for parent in test_library %}
+    {% if parent.subtests %}
+      {% assign subtest = parent.subtests | where: "id", include.test_id | first %}
+      {% if subtest %}
+        {% assign test_def = subtest %}
+        {% assign parent_def = parent %}
+        {% break %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endunless %}

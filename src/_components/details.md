@@ -9,12 +9,13 @@ web-component: va-details
 web: true
 mobile-app: false
 uses_mermaid: true
-anchors:
+anchors: 
   - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
+  - anchor: Accessibility tests
   - anchor: Related
   - anchor: Component checklist
 ---
@@ -85,6 +86,10 @@ You can use Details in these places:
 * **Wrap content in HTML elements.** Place all text content inside `va-details` within an appropriate HTML element such as `<p>`, `<span>`, or `<div>`. Some screen readers, particularly NVDA, may ignore unwrapped plain text. For example, use `<p>This is the content.</p>` instead of placing text directly inside the component without a wrapper element.
 * **Don't add ARIA roles or state attributes.** The Details component uses the `<details>` HTML element that exposes expanded/collapsed state and interactive behavior natively. Adding any `role="button"` or `aria-expanded` is redundant and can create conflicting announcements in assistive technology.
 * **Native keyboard interaction.** Users can tab to the component and toggle it open or closed with Enter or Space. If the component contains interactive elements, the next Tab keypress moves focus to those elements.
+
+## Accessibility tests
+
+{% include accessibility-test-results.html component_name="va-details" %}
 
 ## Related
 

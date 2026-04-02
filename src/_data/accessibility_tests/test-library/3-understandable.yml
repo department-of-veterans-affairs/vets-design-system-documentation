@@ -1,0 +1,355 @@
+# WCAG Principle 3: Understandable
+# Information and the operation of the user interface must be understandable.
+# Tests: WEB-3xx series
+
+tests:
+  - id: WEB-311
+    category: general
+    wcag_criterion: 3.1.1
+    wcag_name: Language of Page
+    wcag_level: A
+    508_severity: Medium
+    governance_severity: Medium
+    wcag_url: https://www.w3.org/TR/WCAG22/#language-of-page
+    description_short: |
+      Page declares its language.
+    description_full: |
+      When you use a screen reader to read the page,
+      it pronounces content in the correct language.
+    automation_coverage: full
+    automation_notes: >-
+      Custom test recommended. Applies to page-level tests, no component-level test needed.
+      Assert html element has lang attribute with valid BCP 47 language tag (e.g., en, es).
+      axe-core 'html-has-lang' is disabled in the component-library axeCheck helper because components
+      are tested in isolation. 'html-lang-valid' checks format but not whether the language code is
+      correct for the actual page content.
+  - id: WEB-312
+    category: general
+    wcag_criterion: 3.1.2
+    wcag_name: Language of Parts
+    wcag_level: AA
+    508_severity: Low
+    governance_severity: Medium
+    wcag_url: https://www.w3.org/TR/WCAG22/#language-of-parts
+    description_short: |
+      Content declares language changes.
+    description_full: |
+      When you encounter text in a different language from the rest of the page,
+      a screen reader pronounces it in the correct language.
+    automation_coverage: partial
+    automation_notes: >-
+      Parent test. See subtests for specific automated checks.
+    subtests:
+      - id: VADS-312-001
+        category: screen_reader
+        description_short: |
+          Screen readers announce language changes.
+        description_full: |
+          When you encounter text in a different language while using a screen reader,
+          you hear an announcement indicating the language change.
+        automation_coverage: manual
+  - id: WEB-321
+    category: keyboard
+    wcag_criterion: 3.2.1
+    wcag_name: On Focus
+    wcag_level: A
+    508_severity: Critical
+    governance_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG22/#on-focus
+    description_short: |
+      Focusing on an element doesn't trigger unexpected changes.
+    description_full: |
+      When you focus on an element,
+      it doesn't trigger a change of context such as opening a new page, displaying a modal, or causing content to appear or disappear.
+    automation_coverage: full
+    automation_notes: >-
+      Custom test needed. Applies to all interactive components. Focus element, assert no unexpected DOM
+      mutations or context changes occur. See subtests for specific input types.
+    subtests:
+      - id: VADS-321-001
+        description_short: |
+          Focusing on an input doesn't trigger unexpected changes.
+        description_full: |
+          When you focus on an input,
+          it doesn't trigger a change of context such as opening a new page, displaying a modal, or causing content to appear or disappear.
+        automation_coverage: full
+        automation_notes: >-
+          Custom test needed. Applies when component contains form inputs. Focus input, assert no unexpected
+          DOM mutations, page navigation, or modal opening occurs.
+  - id: WEB-322
+    category: keyboard
+    wcag_criterion: 3.2.2
+    wcag_name: On Input
+    wcag_level: A
+    508_severity: High
+    governance_severity: High-Critical
+    wcag_url: https://www.w3.org/TR/WCAG22/#on-input
+    description_short: |
+      Changing the input value doesn't trigger unexpected changes.
+    description_full: |
+      When you change a form input value,
+      it doesn't trigger a change of context such as opening a new page, displaying a modal, or causing content to appear or disappear.
+    automation_coverage: full
+    automation_notes: >-
+      Custom test needed. Applies when component contains form inputs. Change input value, assert no
+      unexpected context change like page navigation. See subtests for conditional content.
+    subtests:
+      - id: VADS-322-001
+        description_short: |
+          Conditional content that appears on input doesn't move focus.
+        description_full: |
+          When you select a value that reveals additional content,
+          you find that your focus stays on the current element and doesn't jump to the new content.
+        automation_coverage: full
+        automation_notes: >-
+          Custom test needed. Applies when component reveals content based on input selection. Select value
+          that reveals content, assert document.activeElement remains on the triggering element.
+  - id: WEB-323
+    category: general
+    wcag_criterion: 3.2.3
+    wcag_name: Consistent Navigation
+    wcag_level: AA
+    508_severity: High
+    governance_severity: High
+    wcag_url: https://www.w3.org/TR/WCAG22/#consistent-navigation
+    description_short: |
+      Navigation structure is the same across pages.
+    description_full: |
+      When you navigate between pages,
+      you find navigation menus maintain consistent order and structure.
+    automation_coverage: manual
+  - id: WEB-324
+    category: general
+    wcag_criterion: 3.2.4
+    wcag_name: Consistent Identification
+    wcag_level: AA
+    508_severity: Medium
+    governance_severity: Medium-High
+    wcag_url: https://www.w3.org/TR/WCAG22/#consistent-identification
+    description_short: |
+      Similar features have the same labels across pages.
+    description_full: |
+      When you use components with similar functionality on multiple pages,
+      you find they have identical labels and function identically.
+    automation_coverage: manual
+  - id: WEB-326
+    category: general
+    wcag_criterion: 3.2.6
+    wcag_name: Consistent Help
+    wcag_level: A
+    508_severity: N/A
+    governance_severity: Medium
+    wcag_url: https://www.w3.org/TR/WCAG22/#consistent-help
+    description_short: |
+      Help options appear in the same location across pages.
+    description_full: |
+      When you look for help mechanisms such as contact details, messaging, chat, or self-help options,
+      you find they are in the same relative order across pages.
+    automation_coverage: manual
+  - id: WEB-331
+    category: general
+    wcag_criterion: 3.3.1
+    wcag_name: Error Identification
+    wcag_level: A
+    508_severity: Critical
+    governance_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG22/#error-identification
+    description_short: |
+      Users receive error messages.
+    description_full: |
+      When you enter an invalid value,
+      you receive a descriptive error message that identifies the problem.
+    automation_coverage: partial
+    automation_notes: >-
+      Parent test. Applies when component validates user input. See subtests for specific error checks.
+    subtests:
+      - id: VADS-331-001
+        description_short: |
+          Errors are identified on blur.
+        description_full: |
+          When you enter an invalid value in a form input and move focus away from the input,
+          you receive an error message that identifies the problem.
+        automation_coverage: full
+        automation_notes: >-
+          Custom test needed. Applies when component validates form input. Enter invalid value, blur input,
+          assert error message element appears.
+      - id: VADS-331-002
+        description_short: |
+          Error messages describe the reason for the error.
+        description_full: |
+          When you enter an invalid value in a form input or a required field is left empty,
+          you receive a descriptive error message that identifies the problem.
+        automation_coverage: partial
+        automation_notes: >-
+          Custom test needed. Applies when component displays error messages. Assert error message text is
+          non-empty after triggering error. Manual review still needed for message clarity and usefulness.
+      - id: VADS-331-003
+        description_short: |
+          Invalid inputs display visible error styles.
+        description_full: |
+          When you trigger an error state on a form input,
+          you see a distinct visual style indicating that the input is in error.
+        automation_coverage: full
+        automation_notes: >-
+          Custom test needed. Applies when component displays error states on form inputs. Trigger error
+          state, assert error CSS class is applied to the input element.
+      - id: VADS-331-004
+        category: screen_reader
+        description_short: |
+          Screen readers announce errors when they occur.
+        description_full: |
+          When you use a screen reader and receive an error message,
+          you hear the error message announced without needing to move focus to the message.
+        automation_coverage: partial
+        automation_notes: >-
+          Custom test needed. Applies when component displays error messages. Assert error container has
+          role='alert' or aria-live region. Manual review still needed to verify screen reader announces error
+          at correct timing.
+      - id: VADS-331-005
+        category: visual
+        description_short: |
+          Error messages are visually associated with the invalid element.
+        description_full: |
+          When you receive an error message,
+          you find it appears in a location that visually associates it with the relevant input,
+          or the message clearly indicates which input is in error.
+        automation_coverage: partial
+        automation_notes: >-
+          Custom test needed. Applies when component displays error messages on form inputs. Assert error
+          message element is adjacent to the invalid input in DOM order. Manual review still needed for visual
+          proximity.
+  - id: WEB-332
+    category: general
+    wcag_criterion: 3.3.2
+    wcag_name: Labels or Instructions
+    wcag_level: A
+    508_severity: Critical
+    governance_severity: Medium-Critical
+    wcag_url: https://www.w3.org/TR/WCAG22/#labels-or-instructions
+    description_short: |
+      Form inputs have a persistent label.
+    description_full: |
+      When you interact with a form input,
+      you receive clear, persistent labels or instructions for that input.
+    automation_coverage: partial
+    automation_notes: >-
+      Parent test. Applies when component contains form inputs. See subtests for specific label checks.
+    subtests:
+      - id: WEB-332-001
+        category: visual
+        description_short: |
+          Form inputs display visible labels.
+        description_full: |
+          When you view form inputs,
+          you find persistent, visible labels or instructions that are available for all inputs and input groupings.
+        automation_coverage: full
+        automation_notes: >-
+          Custom test recommended. axe-core 'label' catches inputs without associated labels but doesn't
+          verify the labels are persistently visible (not display:none or sr-only). Applies when component
+          contains form inputs. Assert label elements are visible (not display:none or hidden) and associated
+          with inputs via for/id or wrapping.
+          visible (not display:none or sr-only).
+      - id: WEB-332-002
+        description_short: |
+          Inputs with specific formats include instructions.
+        description_full: |
+          When you view form inputs that require specific formats,
+          you find they provide instructions or examples.
+        automation_coverage: partial
+        automation_notes: >-
+          Custom test needed. Applies when component contains format-sensitive inputs (dates, phone numbers,
+          SSN). Assert hint text element exists adjacent to input. Manual review still needed for instruction
+          clarity.
+      - id: WEB-332-003
+        description_short: |
+          Form inputs clearly mark required fields.
+        description_full: |
+          When you interact with a form input,
+          you find labels or instructions that identify which fields are required and which are optional.
+        automation_coverage: full
+        automation_notes: >-
+          Custom test needed. Applies when component contains required form fields. Assert required field
+          indicator (text, asterisk, or required attribute) is present with each required input.
+  - id: WEB-333
+    category: general
+    wcag_criterion: 3.3.3
+    wcag_name: Error Suggestion
+    wcag_level: AA
+    508_severity: Low
+    governance_severity: Medium-Critical
+    wcag_url: https://www.w3.org/TR/WCAG22/#error-suggestion
+    description_short: |
+      Error messages explain how to fix the error.
+    description_full: |
+      When you receive an error message,
+      you find the message provides clear suggestions for correcting the error.
+    automation_coverage: partial
+    automation_notes: >-
+      Parent test. See subtests for specific automated checks.
+    subtests:
+      - id: VADS-333-001
+        description_short: |
+          Error messages include the expected format.
+        description_full: |
+          When you receive an error on an input that requires a specific format,
+          you find the error message includes the expected format or an example.
+        automation_coverage: partial
+        automation_notes: >-
+          Custom test needed. Applies when component displays format-related errors. Assert error message
+          text contains expected format or example. Manual review still needed for suggestion clarity.
+  - id: WEB-334
+    category: general
+    wcag_criterion: 3.3.4
+    wcag_name: Error Prevention (Legal, Financial, Data)
+    wcag_level: AA
+    508_severity: Critical
+    governance_severity: Critical
+    wcag_url: https://www.w3.org/TR/WCAG22/#error-prevention-legal-financial-data
+    description_short: |
+      Users can review or undo important submissions.
+    description_full: |
+      When you make legal or financial transactions,
+      you find you can review before submission or the action can be reversed.
+    automation_coverage: manual
+  - id: WEB-336
+    category: general
+    wcag_criterion: 3.3.6
+    wcag_name: Error Prevention (All)
+    wcag_level: AAA
+    508_severity: N/A
+    governance_severity: High
+    wcag_url: https://www.w3.org/TR/WCAG22/#error-prevention-all
+    description_short: |
+      Users can review and correct incorrect information.
+    description_full: |
+      When you submit data,
+      you find you can review before submission or the action can be reversed or corrected.
+    automation_coverage: manual
+  - id: WEB-337
+    category: general
+    wcag_criterion: 3.3.7
+    wcag_name: Redundant Entry
+    wcag_level: A
+    508_severity: N/A
+    governance_severity: Medium-High
+    wcag_url: https://www.w3.org/TR/WCAG22/#redundant-entry
+    description_short: |
+      Users don't have to re-enter the same information.
+    description_full: |
+      When you enter information on the site,
+      you find you are not required to refill the same information unless doing so is essential or the original information is no longer valid.
+    automation_coverage: manual
+  - id: WEB-338
+    category: general
+    wcag_criterion: 3.3.8
+    wcag_name: Accessible Authentication (Minimum)
+    wcag_level: AA
+    508_severity: N/A
+    governance_severity: High
+    wcag_url: https://www.w3.org/TR/WCAG22/#accessible-authentication-minimum
+    description_short: |
+      Login doesn't rely solely on remembering information.
+    description_full: |
+      When you log in,
+      you find the process doesn't solely rely on cognitive tests and all steps support methods that don't rely on memory or knowledge.
+    automation_coverage: manual

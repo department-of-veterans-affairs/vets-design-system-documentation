@@ -20,6 +20,7 @@ anchors:
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
+  - anchor: Accessibility tests
   - anchor: Related
   - anchor: Component checklist
 ---
@@ -305,6 +306,10 @@ Displaying multiple alerts should be avoided. However, when you need to display 
 ### Additional accessibility considerations for VA
 
 {% include a11y/alerts.md %}
+
+## Accessibility tests
+
+{% include accessibility-test-results.html component_name="va-alert" %}
 
 ## Related
 

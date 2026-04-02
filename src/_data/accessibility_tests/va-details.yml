@@ -1,0 +1,338 @@
+component: va-details
+component_url: /components/details/
+storybook_url: /storybook/?path=/docs/components-va-details--docs
+
+tests:
+
+  # 1.1.1 - Decorative chevron icon not announced by screen readers
+  - id: WEB-111-003
+    test_results:
+      - version: unreleased (base 56.0.0) 
+        tester: Jeana Clark
+        date: 2026-03-03
+        environments:
+          - name: mac-safari-voiceover
+            result: pass
+          - name: windows-chrome-jaws
+            result: pass
+          - name: windows-edge-nvda
+            result: pass
+          - name: ios-safari-voiceover
+            result: pass
+          - name: android-chrome-talkback
+            result: pass
+        notes: Chrome announces "disclosure triangle" as the role description for the native summary element — this is browser-native behavior, not an announcement of the decorative chevron icon. The icon itself is not announced.
+
+  # 1.3.1 - Expanded/collapsed state conveyed through code, not just visually
+  - id: WEB-131
+    test_results:
+      - version: unreleased (base 56.0.0) 
+        tester: Jeana Clark
+        date: 2026-03-04
+        environments:
+          - name: mac-safari-voiceover
+            result: pass
+          - name: windows-chrome-jaws
+            result: pass
+          - name: windows-edge-nvda
+            result: pass
+          - name: ios-safari-voiceover
+            result: pass
+          - name: android-chrome-talkback
+            result: pass
+
+  # 1.3.4 - Component available in both portrait and landscape orientations
+  - id: WEB-134
+    test_results:
+      - version: unreleased (base 56.0.0) 
+        tester: Jeana Clark
+        date: 2026-03-04
+        environments:
+          - name: android-chrome
+            result: pass
+          - name: ios-safari
+            result: pass
+
+  # 1.4.1 - Interactivity not conveyed by color alone (chevron provides non-color affordance)
+  - id: WEB-141
+    test_results:
+      - version: unreleased (base 56.0.0) 
+        tester: Jeana Clark
+        date: 2026-03-04
+        environments:
+          - name: mac-chrome
+            result: pass
+          - name: mac-safari
+            result: pass
+          - name: windows-chrome
+            result: pass
+          - name: windows-edge
+            result: pass
+
+  # 1.4.3 - Summary label text contrast (4.5:1)
+  - id: WEB-143
+    test_results:
+      - version: unreleased (base 56.0.0) 
+        tester: Jeana Clark
+        date: 2026-03-04
+        environments:
+          - name: mac-chrome
+            result: pass
+          - name: mac-safari
+            result: pass
+          - name: windows-chrome
+            result: pass
+          - name: windows-edge
+            result: pass
+
+  # 1.4.4 - Text resizes to 200% without clipping or loss of content
+  - id: WEB-144
+    test_results:
+      - version: unreleased (base 56.0.0) 
+        tester: Jeana Clark
+        date: 2026-03-04
+        environments:
+          - name: mac-chrome
+            result: pass
+          - name: mac-safari
+            result: pass
+          - name: windows-chrome
+            result: pass
+          - name: windows-edge
+            result: pass
+
+  # 1.4.10 - Reflow at 400% / 1280px viewport
+  - id: WEB-1410
+    test_results:
+      - version: unreleased (base 56.0.0) 
+        tester: Jeana Clark
+        date: 2026-03-04
+        environments:
+          - name: mac-chrome
+            result: pass
+          - name: mac-safari
+            result: pass
+          - name: windows-chrome
+            result: pass
+          - name: windows-edge
+            result: pass
+
+  # 1.4.11 subtest - Chevron icon contrast (3:1)
+  - id: VADS-1411-001
+    test_results:
+      - version: unreleased (base 56.0.0) 
+        tester: Jeana Clark
+        date: 2026-03-04
+        environments:
+          - name: mac-chrome
+            result: pass
+          - name: mac-safari
+            result: pass
+          - name: windows-chrome
+            result: pass
+          - name: windows-edge
+            result: pass
+        notes: Even though the chevron is decorative for screen reader users, it is still visually meaningful for sighted users. Therefore it must have sufficient contrast.
+
+  # 1.4.12 - Text spacing doesn't break or clip content
+  - id: WEB-1412
+    test_results:
+      - version: unreleased (base 56.0.0) 
+        tester: Jeana Clark
+        date: 2026-03-04
+        environments:
+          - name: mac-chrome
+            result: pass
+          - name: mac-safari
+            result: pass
+          - name: windows-chrome
+            result: pass
+          - name: windows-edge
+            result: pass
+
+  # 2.1.1 - Summary fully operable by keyboard (Space/Enter to toggle)
+  - id: WEB-211
+    test_results:
+      - version: unreleased (base 56.0.0) 
+        tester: Jeana Clark
+        date: 2026-03-04
+        environments:
+          - name: mac-chrome
+            result: pass
+          - name: mac-safari
+            result: pass
+          - name: windows-chrome
+            result: pass
+          - name: windows-edge
+            result: pass
+
+  # 2.1.2 - Focus doesn't get trapped inside open details
+  - id: WEB-212
+    test_results:
+      - version: unreleased (base 56.0.0) 
+        tester: Jeana Clark
+        date: 2026-03-04
+        environments:
+          - name: mac-chrome
+            result: pass
+          - name: mac-safari
+            result: pass
+          - name: windows-chrome
+            result: pass
+          - name: windows-edge
+            result: pass
+
+  # 2.4.3 - Focus order is logical (summary before slotted content)
+  - id: WEB-243
+    test_results:
+      - version: unreleased (base 56.0.0) 
+        tester: Jeana Clark
+        date: 2026-03-04
+        environments:
+          - name: mac-chrome
+            result: pass
+          - name: mac-safari
+            result: pass
+          - name: windows-chrome
+            result: pass
+          - name: windows-edge
+            result: pass
+        notes: This has to do with keyboard focus, different than WEB-132 which is about content structure
+
+  # 2.4.7 - Summary has visible focus indicator
+  - id: WEB-247
+    test_results:
+      - version: unreleased (base 56.0.0) 
+        tester: Jeana Clark
+        date: 2026-03-04
+        environments:
+          - name: mac-chrome
+            result: pass
+          - name: mac-safari
+            result: pass
+          - name: windows-chrome
+            result: pass
+          - name: windows-edge
+            result: pass
+
+  # 2.5.2 - Summary toggle executes on pointer up, not pointer down
+  - id: WEB-252
+    test_results:
+      - version: unreleased (base 56.0.0) 
+        tester: Jeana Clark
+        date: 2026-03-04
+        environments:
+          - name: mac-chrome
+            result: pass
+          - name: mac-safari
+            result: pass
+          - name: windows-chrome
+            result: pass
+          - name: windows-edge
+            result: pass
+        notes: This should always pass with native implementation. But if someone tries to change how the component works, this test may fail.
+
+  # 2.5.3 - Accessible name matches visible label text
+  - id: WEB-253
+    test_results:
+      - version: unreleased (base 56.0.0) 
+        tester: Jeana Clark
+        date: 2026-03-04
+        environments:
+          - name: mac-safari-voice-control
+            result: pass
+          - name: windows-edge-voice-recognition
+            result: pass
+
+  # 2.5.8 - Summary touch target at least 24x24px
+  - id: WEB-258
+    test_results:
+      - version: unreleased (base 56.0.0) 
+        tester: Jeana Clark
+        date: 2026-03-04
+        environments:
+          - name: android-chrome
+            result: pass
+          - name: ios-safari
+            result: pass
+
+  # 3.2.1 - Focusing on summary does not automatically expand/collapse details
+  - id: WEB-321
+    test_results:
+      - version: unreleased (base 56.0.0) 
+        tester: Jeana Clark
+        date: 2026-03-04
+        environments:
+          - name: mac-chrome
+            result: pass
+          - name: mac-safari
+            result: pass
+          - name: windows-chrome
+            result: pass
+          - name: windows-edge
+            result: pass
+  
+  # 4.1.2 subtest - Summary has clear accessible name from label prop
+  - id: WEB-412-001
+    test_results:
+      - version: unreleased (base 56.0.0)
+        tester: Jeana Clark
+        date: 2026-03-03
+        environments:
+          - name: mac-safari-voiceover
+            result: pass
+          - name: windows-chrome-jaws
+            result: pass
+          - name: windows-edge-nvda
+            result: pass
+          - name: ios-safari-voiceover
+            result: pass
+        notes: Accessible name is derived from the label prop and is announced correctly across all environments including iOS VoiceOver.
+
+  # 4.1.2 subtest - Screen reader announces expanded/collapsed state
+  - id: WEB-412-002
+    test_results:
+      - version: unreleased (base 56.0.0) 
+        tester: Jeana Clark
+        date: 2026-03-04
+        environments:
+          - name: mac-safari-voiceover
+            result: pass
+          - name: windows-chrome-jaws
+            result: pass
+          - name: windows-edge-nvda
+            result: pass
+          - name: android-chrome-talkback
+            result: pass
+          - name: ios-safari-voiceover
+            result: pass
+        notes: iOS VoiceOver prevents native details interaction in the shadow DOM. We are overriding the default details event handling with manual open attribute management to enable functionality in iOS VoiceOver. Additionally, we added a short timeout to prevent the VoiceOver announcement from getting cut off.
+
+  # Implementation-level tests
+  # 4.1.2 subtest - Summary has clear and unique accessible name from label prop
+  - id: VADS-412-003
+    category: implementation
+    test_results:
+      - version: unreleased (base 56.0.0) 
+        notes: Implementation-level test. Teams using this component are responsible for verifying content sequence in context. When there are multiple instances on a page, each has a unique label
+
+  # 1.3.2 - Content is presented in a logical order 
+  - id: WEB-132
+    category: implementation
+    test_results:
+      - version: unreleased (base 56.0.0) 
+        notes: Implementation-level test. Teams using this component are responsible for verifying content sequence in context. In this test, the Summary is indeed a summary of the content contained within.
+
+  # 2.4.11 - Focused summary not obscured by sticky headers or overlays
+  - id: WEB-2411
+    category: implementation
+    test_results:
+      - version: unreleased (base 56.0.0) 
+        notes: Implementation-level test. Teams using this component are responsible for verifying that the details component is not obscured by sticky headers or overlays.
+
+  # 2.4.6 - Summary label text is descriptive of the content it reveals
+  - id: WEB-246
+    category: implementation
+    test_results:
+      - version: unreleased (base 56.0.0) 
+        notes: Implementation-level test. Teams using this component are responsible for verifying that the summary label is descriptive of the content it reveals

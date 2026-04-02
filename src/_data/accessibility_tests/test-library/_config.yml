@@ -1,0 +1,85 @@
+# VA.gov Accessibility Test Library Configuration
+# Shared configuration for all test files
+# Version: 1.0
+# Last updated: 2026-02-10
+
+# Common environment definitions organized by testing methodology
+# The group key matches the test category where applicable
+# Use "required: true" to mark environments that must be tested for that category
+environment_definitions:
+  # Desktop browsers (used for general, keyboard, structural, visual, and zoom tests)
+  browser:
+    - id: mac-chrome
+      name: macOS Chrome
+    - id: mac-firefox
+      name: macOS Firefox
+    - id: mac-edge
+      name: macOS Edge
+    - id: mac-safari
+      name: macOS Safari
+    - id: windows-chrome
+      name: Windows Chrome
+    - id: windows-firefox
+      name: Windows Firefox
+    - id: windows-edge
+      name: Windows Edge
+  # Mobile browsers
+  mobile:
+    - id: android-chrome
+      name: Android Chrome
+      required: true
+    - id: ios-safari
+      name: iOS Safari
+      required: true
+  # Screen readers
+  screen_reader:
+    - id: mac-safari-voiceover
+      name: macOS Safari/VoiceOver
+      required: true
+    - id: windows-chrome-jaws
+      name: Windows Chrome/JAWS
+      required: true
+    - id: windows-edge-nvda
+      name: Windows Edge/NVDA
+      required: true
+    - id: mac-chrome-voiceover
+      name: macOS Chrome/VoiceOver
+    - id: android-chrome-talkback
+      name: Android Chrome/Talkback
+    - id: ios-safari-voiceover
+      name: iOS Safari/VoiceOver
+  # Voice control
+  voice_control:
+    - id: mac-voice-control
+      name: macOS Voice Control
+    - id: windows-voice-recognition
+      name: Windows Voice Recognition
+
+# Test categories
+categories:
+  - general
+  - keyboard
+  - mobile
+  - screen_reader
+  - structural
+  - visual
+  - voice_control
+  - zoom
+  - implementation
+
+# Metadata
+metadata:
+  version: "1.0"
+  created: "2024-02-05"
+  last_updated: "2026-02-10"
+  total_tests: 55
+  total_subtests: 30
+  test_breakdown:
+    general: 36
+    keyboard: 9
+    screen_reader: 8
+    structural: 2
+    mobile: 2
+    visual: 0
+    voice_control: 0
+    zoom: 0
