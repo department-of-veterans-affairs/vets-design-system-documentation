@@ -23,7 +23,7 @@
   {% assign criterion_test = test_library | where: "wcag_criterion", criterion | first %}
 
   <h3 class="a11y-wcag-criterion-header">
-    <a href="{{ criterion_test.wcag_url }}">WCAG {{ criterion }} - {{ criterion_test.wcag_name }}</a>
+    WCAG {{ criterion }} - {{ criterion_test.wcag_name }}
   </h3>
 
   <ul class="a11y-test-list">
