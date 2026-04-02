@@ -20,11 +20,11 @@ anchors:
 
 ### Default
 
-{% include storybook-preview.html height="100px" story="snackbar--default" link_text="va-mobile_snackbar--default" is_mobile=true auto_resize=false %}
+{% include storybook-preview.html height="100px" story="snackbar--default" link_text="va-mobile__snackbar--default" is_mobile=true auto_resize=false %}
 
 ### With action
 
-{% include storybook-preview.html height="100px" story="snackbar--with-action" link_text="va-mobile_snackbar--with-action" is_mobile=true auto_resize=false %}
+{% include storybook-preview.html height="100px" story="snackbar--with-action" link_text="va-mobile__snackbar--with-action" is_mobile=true auto_resize=false %}
 
 ## Usage
 
@@ -55,7 +55,7 @@ anchors:
 * "Undo" snackbar appears in Messages when moving a message to a folder.
 * "Try again" snackbar appears in Messages when a draft is not saved successfully.
 
-{% include component-docs.html component_name=page.web-component %}
+{% include component-docs.html component_name=page.web-component mobile_component_name="va-snackbar" %}
 
 ## Content considerations
 

@@ -5,6 +5,7 @@ permalink: /components/alert/
 intro-text: "Alerts keep users informed of important and sometimes time-sensitive changes."
 research-title: "Alert boxes"
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A145&mode=design&t=ep6tlGT5gNsbWqGP-1
+figma-link-mobile-app: https://www.figma.com/design/Zzt8z60hCtdEzXx2GFWghH/VA-Mobile---Component-Library
 uswds-v3: default
 web-component: va-alert
 web: true
