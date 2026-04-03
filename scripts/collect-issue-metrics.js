@@ -228,18 +228,18 @@ function calculateClosedMonthTrend(issues) {
     return closed.getMonth() === prevMonth && closed.getFullYear() === prevYear;
   }).length;
   
+  const trend = calculateTrend(closedThisMonth, closedPrevMonth);
+
   // Check for insufficient data periods (early in month + holiday periods)
   if (isInsufficientDataPeriod(now, closedThisMonth)) {
     return {
-      direction: null,
-      percentage: null,
-      value: closedThisMonth - closedPrevMonth,
+      ...trend,
       reliability: "low",
       reason: getInsufficientDataReason(now, closedThisMonth)
     };
   }
-  
-  return calculateTrend(closedThisMonth, closedPrevMonth);
+
+  return trend;
 }
 
 /**

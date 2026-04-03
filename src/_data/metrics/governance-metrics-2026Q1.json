@@ -1,0 +1,22 @@
+{
+  "quarter": "2026Q1",
+  "data": {
+    "period": "2026-Q1",
+    "total_kickoffs": 25,
+    "touchpoints_held": 48,
+    "po_sync_held": 12,
+    "architecture_intent_held": 2,
+    "design_intent_held": 6,
+    "midpoint_review_held": 9,
+    "staging_review_held": 19,
+    "total_staging_issues": 146,
+    "launch_blocking_issues": 12,
+    "launch_blocking_percentage": 8,
+    "total_platform_teams": 61,
+    "unique_teams_in_collab_cycle": 19,
+    "avg_staging_findings_per_team": 7.7
+  },
+  "generated_at": "2026-04-03T18:18:06.826Z",
+  "data_source": "va.gov-team repository",
+  "description": "Governance metrics for 2026Q1"
+}

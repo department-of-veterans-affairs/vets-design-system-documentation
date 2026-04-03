@@ -1,11 +1,6 @@
 {
   "quarterly": [
     {
-      "period": "2024-Q2",
-      "issues_opened": 19,
-      "issues_closed": 6
-    },
-    {
       "period": "2024-Q3",
       "issues_opened": 13,
       "issues_closed": 8
@@ -32,44 +27,49 @@
     },
     {
       "period": "2025-Q4",
-      "issues_opened": 20,
+      "issues_opened": 23,
       "issues_closed": 10
     },
     {
       "period": "2026-Q1",
-      "issues_opened": 0,
-      "issues_closed": 5
+      "issues_opened": 5,
+      "issues_closed": 10
+    },
+    {
+      "period": "2026-Q2",
+      "issues_opened": 2,
+      "issues_closed": 0
     }
   ],
   "by_component": [
     {
       "component": "va-radio",
-      "open": 11,
+      "open": 9,
       "closed": 5,
-      "total": 16
-    },
-    {
-      "component": "va-button-pair",
-      "open": 6,
-      "closed": 7,
-      "total": 13
+      "total": 14
     },
     {
       "component": "va-button",
-      "open": 3,
-      "closed": 7,
-      "total": 10
+      "open": 6,
+      "closed": 8,
+      "total": 14
+    },
+    {
+      "component": "va-button-pair",
+      "open": 4,
+      "closed": 9,
+      "total": 13
+    },
+    {
+      "component": "va-file-input",
+      "open": 10,
+      "closed": 1,
+      "total": 11
     },
     {
       "component": "va-select",
       "open": 7,
       "closed": 3,
-      "total": 10
-    },
-    {
-      "component": "va-file-input",
-      "open": 9,
-      "closed": 1,
       "total": 10
     },
     {
@@ -89,6 +89,12 @@
       "open": 1,
       "closed": 7,
       "total": 8
+    },
+    {
+      "component": "unknown",
+      "open": 6,
+      "closed": 1,
+      "total": 7
     },
     {
       "component": "va-text-input",
@@ -134,8 +140,8 @@
     },
     {
       "component": "va-link",
-      "open": 1,
-      "closed": 1,
+      "open": 0,
+      "closed": 2,
       "total": 2
     },
     {
@@ -200,19 +206,19 @@
     }
   ],
   "summary": {
-    "total_open": 67,
-    "total_closed": 64,
-    "total_issues": 131,
+    "total_open": 72,
+    "total_closed": 69,
+    "total_issues": 141,
     "goal": 150,
-    "progress_percentage": 43,
+    "progress_percentage": 46,
     "closed_trend": {
       "direction": "down",
-      "percentage": 50,
-      "value": -5
+      "percentage": 100,
+      "value": -10
     },
-    "last_updated": "2026-01-29T19:13:21.305Z"
+    "last_updated": "2026-04-03T18:18:22.629Z"
   },
-  "generated_at": "2026-01-30T21:12:54.906Z",
+  "generated_at": "2026-04-03T18:18:22.632Z",
   "data_source": "va.gov-team repository",
   "description": "Imposter component replacement tracking for FY26 KR",
   "instances": {
