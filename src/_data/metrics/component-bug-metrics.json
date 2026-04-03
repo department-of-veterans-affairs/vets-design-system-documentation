@@ -2,66 +2,66 @@
   "by_component": [
     {
       "name": "va-memorable-date",
-      "bug_count": 6,
-      "usage_count": 14,
-      "defect_rate": 42.9,
+      "bug_count": 5,
+      "usage_count": 15,
+      "defect_rate": 33.3,
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-memorable-date"
     },
     {
       "name": "va-radio",
       "bug_count": 5,
-      "usage_count": 135,
-      "defect_rate": 3.7,
+      "usage_count": 140,
+      "defect_rate": 3.6,
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-radio"
     },
     {
       "name": "va-alert",
       "bug_count": 4,
-      "usage_count": 940,
+      "usage_count": 959,
       "defect_rate": 0.4,
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-alert"
     },
     {
-      "name": "va-button",
-      "bug_count": 4,
-      "usage_count": 524,
-      "defect_rate": 0.8,
-      "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-button"
-    },
-    {
-      "name": "va-date",
-      "bug_count": 4,
-      "usage_count": null,
-      "defect_rate": null,
-      "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-date"
-    },
-    {
-      "name": "va-telephone-input",
-      "bug_count": 4,
-      "usage_count": 3,
-      "defect_rate": 133.3,
-      "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-telephone-input"
-    },
-    {
       "name": "va-text-input",
       "bug_count": 4,
-      "usage_count": 138,
+      "usage_count": 137,
       "defect_rate": 2.9,
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-text-input"
     },
     {
       "name": "va-breadcrumbs",
       "bug_count": 3,
-      "usage_count": 86,
-      "defect_rate": 3.5,
+      "usage_count": 87,
+      "defect_rate": 3.4,
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-breadcrumbs"
     },
     {
-      "name": "va-accordion",
+      "name": "va-button",
+      "bug_count": 3,
+      "usage_count": 521,
+      "defect_rate": 0.6,
+      "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-button"
+    },
+    {
+      "name": "va-date",
+      "bug_count": 3,
+      "usage_count": null,
+      "defect_rate": null,
+      "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-date"
+    },
+    {
+      "name": "va-telephone-input",
+      "bug_count": 3,
+      "usage_count": 3,
+      "defect_rate": 100,
+      "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-telephone-input"
+    },
+    {
+      "name": "va-button-icon",
       "bug_count": 2,
-      "usage_count": 142,
-      "defect_rate": 1.4,
-      "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-accordion"
+      "usage_count": 6,
+      "defect_rate": 33.3,
+      "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-button-icon"
     },
     {
       "name": "va-button-pair",
@@ -69,6 +69,13 @@
       "usage_count": null,
       "defect_rate": null,
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-button-pair"
+    },
+    {
+      "name": "va-combo-box",
+      "bug_count": 2,
+      "usage_count": null,
+      "defect_rate": null,
+      "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-combo-box"
     },
     {
       "name": "va-header-minimal",
@@ -106,6 +113,20 @@
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-table"
     },
     {
+      "name": "va-accordion",
+      "bug_count": 1,
+      "usage_count": 145,
+      "defect_rate": 0.7,
+      "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-accordion"
+    },
+    {
+      "name": "va-additional-info",
+      "bug_count": 1,
+      "usage_count": 457,
+      "defect_rate": 0.2,
+      "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-additional-info"
+    },
+    {
       "name": "va-alert-expandable",
       "bug_count": 1,
       "usage_count": 32,
@@ -113,16 +134,9 @@
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-alert-expandable"
     },
     {
-      "name": "va-button-icon",
-      "bug_count": 1,
-      "usage_count": 6,
-      "defect_rate": 16.7,
-      "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-button-icon"
-    },
-    {
       "name": "va-card",
       "bug_count": 1,
-      "usage_count": 175,
+      "usage_count": 176,
       "defect_rate": 0.6,
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-card"
     },
@@ -134,13 +148,6 @@
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-checkbox"
     },
     {
-      "name": "va-combo-box",
-      "bug_count": 1,
-      "usage_count": null,
-      "defect_rate": null,
-      "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-combo-box"
-    },
-    {
       "name": "va-file-input",
       "bug_count": 1,
       "usage_count": 10,
@@ -150,23 +157,16 @@
     {
       "name": "va-icon",
       "bug_count": 1,
-      "usage_count": 369,
+      "usage_count": 373,
       "defect_rate": 0.3,
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-icon"
     },
     {
       "name": "va-link",
       "bug_count": 1,
-      "usage_count": 1320,
+      "usage_count": 1356,
       "defect_rate": 0.1,
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-link"
-    },
-    {
-      "name": "va-on-this-page",
-      "bug_count": 1,
-      "usage_count": 26,
-      "defect_rate": 3.8,
-      "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-on-this-page"
     },
     {
       "name": "va-search-filter",
@@ -178,15 +178,15 @@
     {
       "name": "va-summary-box",
       "bug_count": 1,
-      "usage_count": 42,
-      "defect_rate": 2.4,
+      "usage_count": 40,
+      "defect_rate": 2.5,
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-summary-box"
     },
     {
       "name": "va-tag-status",
       "bug_count": 1,
-      "usage_count": null,
-      "defect_rate": null,
+      "usage_count": 4,
+      "defect_rate": 25,
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-tag-status"
     },
     {
@@ -197,16 +197,9 @@
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-textarea"
     },
     {
-      "name": "va-additional-info",
-      "bug_count": 0,
-      "usage_count": 456,
-      "defect_rate": 0,
-      "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-additional-info"
-    },
-    {
       "name": "va-alert-sign-in",
       "bug_count": 0,
-      "usage_count": 40,
+      "usage_count": 38,
       "defect_rate": 0,
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-alert-sign-in"
     },
@@ -255,9 +248,16 @@
     {
       "name": "va-critical-action",
       "bug_count": 0,
+      "usage_count": 1,
+      "defect_rate": 0,
+      "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-critical-action"
+    },
+    {
+      "name": "va-details",
+      "bug_count": 0,
       "usage_count": null,
       "defect_rate": null,
-      "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-critical-action"
+      "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-details"
     },
     {
       "name": "va-file-input-multiple",
@@ -276,14 +276,14 @@
     {
       "name": "va-link-action",
       "bug_count": 0,
-      "usage_count": 208,
+      "usage_count": 207,
       "defect_rate": 0,
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-link-action"
     },
     {
       "name": "va-loading-indicator",
       "bug_count": 0,
-      "usage_count": 419,
+      "usage_count": 423,
       "defect_rate": 0,
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-loading-indicator"
     },
@@ -297,8 +297,8 @@
     {
       "name": "va-minimal-footer",
       "bug_count": 0,
-      "usage_count": null,
-      "defect_rate": null,
+      "usage_count": 1,
+      "defect_rate": 0,
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-minimal-footer"
     },
     {
@@ -325,14 +325,21 @@
     {
       "name": "va-omb-info",
       "bug_count": 0,
-      "usage_count": 77,
+      "usage_count": 78,
       "defect_rate": 0,
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-omb-info"
     },
     {
+      "name": "va-on-this-page",
+      "bug_count": 0,
+      "usage_count": 26,
+      "defect_rate": 0,
+      "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-on-this-page"
+    },
+    {
       "name": "va-pagination",
       "bug_count": 0,
-      "usage_count": 42,
+      "usage_count": 39,
       "defect_rate": 0,
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-pagination"
     },
@@ -346,7 +353,7 @@
     {
       "name": "va-process-list",
       "bug_count": 0,
-      "usage_count": 105,
+      "usage_count": 114,
       "defect_rate": 0,
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-process-list"
     },
@@ -374,7 +381,7 @@
     {
       "name": "va-select",
       "bug_count": 0,
-      "usage_count": 63,
+      "usage_count": 61,
       "defect_rate": 0,
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-select"
     },
@@ -416,19 +423,19 @@
     {
       "name": "va-telephone",
       "bug_count": 0,
-      "usage_count": 845,
+      "usage_count": 852,
       "defect_rate": 0,
       "github_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is:issue+is:open+label:bug+label:va-telephone"
     }
   ],
   "summary": {
     "total_components_with_bugs": 28,
-    "total_bug_issues": 108,
-    "total_components": 60,
+    "total_bug_issues": 97,
+    "total_components": 61,
     "highest_defect_rate_component": "va-header-minimal",
     "most_bugs_component": "va-memorable-date",
-    "last_updated": "2026-03-19T17:34:20.328Z"
+    "last_updated": "2026-04-03T18:18:24.422Z"
   },
   "data_source": "github-issues",
-  "report_date": "2026-03-19"
+  "report_date": "2026-04-03"
 }
