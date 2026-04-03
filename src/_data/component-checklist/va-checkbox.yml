@@ -1,6 +1,6 @@
 # Global completion tracking
-web-platform-completed: null
-mobile-app-platform-completed: null
+web-platform-completed: 2022-09-29
+mobile-app-platform-completed: 2026-04-03
 
 maturity:
   - name: guidance
@@ -8,10 +8,10 @@ maturity:
     mobile-app-score: true
   - name: research
     web-score: false
-    mobile-app-score: false
+    mobile-app-score: true
   - name: stability
     web-score: true
-    mobile-app-score: false
+    mobile-app-score: true
   - name: adoption
     web-score: true
     mobile-app-score: false

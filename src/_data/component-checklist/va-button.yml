@@ -1,6 +1,6 @@
 # Global completion tracking
-web-platform-completed: "2025-08-15"
-mobile-app-platform-completed: "2025-08-20"
+web-platform-completed: 2025-09-10
+mobile-app-platform-completed: 2026-04-03
 
 maturity:
   - name: guidance
