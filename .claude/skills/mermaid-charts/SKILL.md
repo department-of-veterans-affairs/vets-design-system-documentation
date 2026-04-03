@@ -1,3 +1,15 @@
+---
+name: mermaid-charts
+description: Creates and standardizes Mermaid decision flowcharts in VA Design System documentation, including templates, node types, accessibility alternatives, and the standard Jekyll include pattern.
+triggers:
+  - mermaid chart
+  - decision flowchart
+  - mermaid diagram
+  - flowchart TD
+  - create a chart
+  - add a chart
+---
+
 # SKILL: Mermaid Chart Implementation
 
 ## Overview
