@@ -137,6 +137,8 @@ anchors:
 
 {% include component-example.html alt="Example of a primary button with a secondary link." file="/images/components/button/primary-with-secondary-link.png" caption="An example of a primary button used with a secondary link." reverse=true %}
 
+{% include component-docs.html component_name=page.web-component %}
+
 ## Content considerations
 
 ### Button labels

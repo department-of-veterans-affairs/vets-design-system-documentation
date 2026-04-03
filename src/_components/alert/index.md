@@ -13,9 +13,7 @@ sub-pages:
   - sub-page: Alert - Expandable
   - sub-page: Alert - Sign-in
 anchors:
-  - anchor: Examples - Standard
-  - anchor: Examples - Standard properties
-  - anchor: Examples - Slim alert
+  - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
@@ -24,69 +22,47 @@ anchors:
   - anchor: Component checklist
 ---
 
-## Examples - Standard
+## Examples
 
-### Web
+{% capture web_content %}
 
-#### Informational alert (aka default)
+### Informational alert (aka default)
 
 {% include storybook-preview.html story="uswds-va-alert--default" link_text="va-alert informational" %}
 
-Used to provide helpful information or something that warrants a user’s attention. Not used for negative consequences.
+Used to provide helpful information or something that warrants a user's attention. Not used for negative consequences.
 
-#### Alert with action link
-
-{% include storybook-preview.html story="uswds-va-alert--with-action-link" link_text="uswds-va-alert--with-action-link" height="220px" %}
-
-Used when an action link is needed in place of a standard link.
-
-#### Warning alert
+### Warning alert
 
 {% include storybook-preview.html story="uswds-va-alert--warning" link_text="va-alert warning" %}
 
 Used to warn a user, such as when there are negative consequences, or when something has gone wrong.
 
-#### Success alert
-
-{% include storybook-preview.html story="uswds-va-alert--success" link_text="va-alert success" %}
-
-Used to indicate success.
-
-#### Error alert
+### Error alert
 
 {% include storybook-preview.html story="uswds-va-alert--error" link_text="va-alert error" height="220px" %}
 
 Used to indicate critical issues, failure states, or items that require immediate attention.
 
-### Mobile app
+### Success alert
 
-#### Informational alert (aka default)
+{% include storybook-preview.html story="uswds-va-alert--success" link_text="va-alert success" %}
 
-{% include storybook-preview.html story="alert--info" link_text="va-mobile__alert--info" is_mobile=true height="400px" auto_resize=false %}
+Used to indicate success.
 
-#### Warning alert
+### Alert with action link
 
-{% include storybook-preview.html story="alert--warning" link_text="va-mobile__alert--warning" is_mobile=true height="400px" auto_resize=false %}
+{% include storybook-preview.html story="uswds-va-alert--with-action-link" link_text="uswds-va-alert--with-action-link" height="220px" %}
 
-#### Success alert
+Used when an action link is needed in place of a standard link.
 
-{% include storybook-preview.html story="alert--success" link_text="va-mobile__alert--success" is_mobile=true height="400px" auto_resize=false %}
-
-#### Error alert
-
-{% include storybook-preview.html story="alert--error" link_text="va-mobile__alert--error" is_mobile=true height="400px" auto_resize=false %}
-
-## Examples - Standard properties
-
-### Web
-
-#### Heading level
+### Heading level
 
 {% include storybook-preview.html story="uswds-va-alert--heading-level" link_text="va-alert heading level" %}
 
 * Standard alerts must contain headings as opposed to Slim alerts which do not contain headings.
 
-#### Dismissible
+### Dismissible
 
 {% include storybook-preview.html story="uswds-va-alert--dismissable" link_text="va-alert dismissible" %}
 
@@ -94,23 +70,56 @@ Used to indicate critical issues, failure states, or items that require immediat
 * Allow a user to dismiss an alert wherever appropriate.
 {% include a11y/dismissable-alerts.md component="alert" %}
 
-### Mobile app
-
-#### Expandable
-
-{% include storybook-preview.html story="alert--info&args=expandable:!true" link_text="va-mobile__alert--info" is_mobile=true %}
-
-* The Alert component in the mobile application can be collapsed and expanded.
-
-## Examples - Slim alert
-
-### Web
+### Slim alert
 
 Any style of alert box can be modified to be a Slim alert. The iconography for Slim alerts is consistent with the way icons are used in standard Alerts.
 
 {% include storybook-preview.html story="uswds-va-alert--slim" height="352px" link_text="va-alert Slim" %}
+{% endcapture %}
 
-## Usage
+{% capture mobile_content %}
+
+### Informational alert (aka default)
+
+{% include storybook-preview.html story="alert--info" link_text="va-mobile__alert--info" is_mobile=true height="400px" auto_resize=false %}
+
+### Warning alert
+
+{% include storybook-preview.html story="alert--warning" link_text="va-mobile__alert--warning" is_mobile=true height="400px" auto_resize=false %}
+
+### Error alert
+
+{% include storybook-preview.html story="alert--error" link_text="va-mobile__alert--error" is_mobile=true height="400px" auto_resize=false %}
+
+### Success alert
+
+{% include storybook-preview.html story="alert--success" link_text="va-mobile__alert--success" is_mobile=true height="400px" auto_resize=false %}
+
+### Dismissible
+
+{% include storybook-preview.html story="alert--dismissible" link_text="va-mobile__alert--dismissable" is_mobile=true height="400px" auto_resize=false %}
+
+* Any alert variation can be dismissible. This example shows an informational alert that can be dismissed.
+* Allow a user to dismiss an alert wherever appropriate.
+
+### Expandable
+
+{% include storybook-preview.html story="alert--info&args=expandable:!true" link_text="va-mobile__alert--info" is_mobile=true %}
+
+* The Alert component in the mobile application can be collapsed and expanded.
+{% endcapture %}
+
+<va-tabs initially-selected="0" label="Web and Mobile app examples">
+  <va-tab-item button-text="Web" target-id="panel-1"></va-tab-item>
+  <va-tab-panel panel-id="panel-1">
+    {{ web_content | markdownify }}
+  </va-tab-panel>
+  <va-tab-item button-text="Mobile app" target-id="panel-2"></va-tab-item>
+  <va-tab-panel panel-id="panel-2">
+    {{ mobile_content | markdownify }}
+  </va-tab-panel>
+</va-tabs>
+
 
 <va-link-action
   href="https://designsystem.digital.gov/components/alert/"
@@ -145,9 +154,9 @@ Any style of alert box can be modified to be a Slim alert. The iconography for S
 ##### Mobile app only
 
 * **Use native components.** On the mobile app, always consider a native component before using an in-content Alert:
-  * **Action Sheet.** When the user takes an action in which the system needs to clarify their intent, use an action sheet (for both iOS and Android) to offer the user a choice in how to proceed.
-  * **Alert/dialogue.** When the user chooses to do something that has serious consequences, use a native modal alert (for iOS) or dialogue (for Android) to present the user with critical information related to that action.
-  * **Snackbar.** If a user action triggers an API call that is successful or results in an error, consider using a Snackbar in addition to or instead of an Alert. The snackbar may allow users to take an action on the feedback such as trying again or undoing the action.
+  * **Action Sheet.** When the user takes an action in which the system needs to **clarify their intent**, use an [action sheet](https://developer.apple.com/design/human-interface-guidelines/action-sheets) (for both iOS and Android) to **offer the user a choice in how to proceed**.
+  * **Alert/dialogue.** When the user chooses to do something that has **serious consequences**, use a native modal [alert](https://developer.apple.com/design/human-interface-guidelines/alerts) (for iOS) or [dialogue](https://m3.material.io/components/dialogs/overview) (for Android) to **present the user with critical information** related to that action.
+  * **Snackbar.** If a user action **triggers an API call that is successful or results in an error**, consider using a [Snackbar]({{ site.baseurl }}/components/snackbar) in addition to or instead of an Alert. The snackbar may allow users to **take an action on the feedback** such as trying again or undoing the action.
 * **Sub-alerts on the page.** On the mobile app, do not use sub-alerts.
 
 ### When to use a Slim alert
@@ -263,7 +272,7 @@ Displaying multiple alerts should be avoided. However, when you need to display 
 
 * Use standard alerts for most use cases.
 * Use expandable alerts when the information is not a response to user feedback.
-* Use dismissible alerts when the content is informational and not specific to the user or their interaction. For example, displaying “what’s new” content in the app.
+* Use dismissible alerts when the content is informational and not specific to the user or their interaction. For example, displaying "what's new" content in the app.
 
 {% include component-docs.html component_name=page.web-component %}
 
@@ -272,8 +281,8 @@ Displaying multiple alerts should be avoided. However, when you need to display 
 * Keep alert and error message titles (headings) to 50 characters (with spaces) when possible. Titles should follow the general guidelines for page and section titles.<br>
 [Learn more in the Page titles and section titles section of the content style guide](https://design.va.gov/content-style-guide/page-titles-and-section-titles)
 * Keep slim alerts to 100 characters (with spaces) when possible. If you have a slim alert that’s longer than 100 characters, contact the VA.gov content and IA team. The team will work with you to edit the alert or determine if we need to make an exception (up to 150 characters).
-* Acknowledge when an issue is our fault. Don’t place blame on the person, even if the person's actions caused the error.<br>
-**Note:** We no longer say, “please” in alert and error messages when making a request.
+* Acknowledge when an issue is our fault. Don’t place blame on the person, even if the person's actions caused the error.
+* Don’t say “please” in alert and error messages when making a request.
 * Include brief educational material in your alert and error messages when needed. People may not read documentation, but they’re more likely to read a message that helps them resolve an error.
 * Don’t overdo it with alerts. Too many notifications can overwhelm or annoy the person, who may then ignore the messages.
 * Don’t use jargon or computer code in the message.
@@ -310,5 +319,6 @@ Displaying multiple alerts should be avoided. However, when you need to display 
 
 * [Alert - Expandable]({{ site.baseurl }}/components/alert/alert-expandable/)
 * [Banner]({{ site.baseurl }}/components/banner)
+* [Snackbar]({{ site.baseurl }}/components/snackbar) (Mobile app)
 
 {% include _component-checklist.html component_name=page.web-component %}

@@ -21,6 +21,7 @@ anchors:
 
 ## Examples
 
+{% capture web_content %}
 ### Web
 
 #### Default
@@ -64,7 +65,9 @@ anchors:
 {% include storybook-preview.html height="250px" story="uswds-va-radio--internationalization" link_text="va-radio internationalization" %}
 
 ---
+{% endcapture %}
 
+{% capture mobile_content %}
 ### Mobile app
 
 #### Default
@@ -78,6 +81,18 @@ anchors:
 #### Error
 
 {% include storybook-preview.html height="500px" story="radio-button--error" link_text="va-mobile_radio-button--error" is_mobile=true auto_resize=false %}
+{% endcapture %}
+
+<va-tabs initially-selected="0" label="Web and Mobile app examples">
+  <va-tab-item button-text="Web" target-id="panel-1"></va-tab-item>
+  <va-tab-panel panel-id="panel-1">
+    {{ web_content | markdownify }}
+  </va-tab-panel>
+  <va-tab-item button-text="Mobile app" target-id="panel-2"></va-tab-item>
+  <va-tab-panel panel-id="panel-2">
+    {{ mobile_content | markdownify }}
+  </va-tab-panel>
+</va-tabs>
 
 ## Usage
 

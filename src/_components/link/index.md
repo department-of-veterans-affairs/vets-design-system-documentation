@@ -27,6 +27,7 @@ anchors:
 
 ## Examples
 
+{% capture web_content %}
 ### Web
 
 #### Default
@@ -60,40 +61,54 @@ anchors:
 #### Video
 
 {% include storybook-preview.html story="components-va-link--video" link_text="video va-link" height="50px" %}
+{% endcapture %}
 
+{% capture mobile_content %}
 ### Mobile app
 
-### Default
+#### Default
 
 {% include storybook-preview.html height="70px" story="link--default" link_text="va-mobile__link--default" is_mobile=true %}
 
-### Attachment
+#### Attachment
 
 {% include storybook-preview.html height="70px" story="link--attachment" link_text="va-mobile__link--attachment" is_mobile=true %}
 
-### Calendar
+#### Calendar
 
 {% include storybook-preview.html height="70px" story="link--calendar" link_text="va-mobile__link--calendar" is_mobile=true %}
 
-### Directions
+#### Directions
 
 {% include storybook-preview.html height="70px" story="link--directions" link_text="va-mobile__link--directions" is_mobile=true %}
 
-### External link
+#### External link
 
 {% include storybook-preview.html height="70px" story="link--external" link_text="va-mobile__link--external" is_mobile=true %}
 
-### Phone
+#### Phone
 
 {% include storybook-preview.html height="70px" story="link--phone" link_text="va-mobile__link--phone" is_mobile=true %}
 
-### Phone TTY
+#### Phone TTY
 
 {% include storybook-preview.html height="70px" story="link--phone-tty" link_text="va-mobile__link--phone-tty" is_mobile=true %}
 
-### Text (SMS)
+#### Text (SMS)
 
 {% include storybook-preview.html height="70px" story="link--text" link_text="va-mobile__link--text" is_mobile=true %}
+{% endcapture %}
+
+<va-tabs initially-selected="0" label="Web and Mobile app examples">
+  <va-tab-item button-text="Web" target-id="panel-1"></va-tab-item>
+  <va-tab-panel panel-id="panel-1">
+    {{ web_content | markdownify }}
+  </va-tab-panel>
+  <va-tab-item button-text="Mobile app" target-id="panel-2"></va-tab-item>
+  <va-tab-panel panel-id="panel-2">
+    {{ mobile_content | markdownify }}
+  </va-tab-panel>
+</va-tabs>
 
 ## Usage
 
@@ -139,7 +154,7 @@ anchors:
 
 * **Use buttons for actions.** Use a [Button]({{ site.baseurl }}/components/button) when you want to make a state change or submit a form. Example actions include, but are not limited to, "Add", "Close", "Cancel", or "Save". Buttons **do things**, links **go places**. Refer to guidance on [Links vs. buttons]({{ site.baseurl }}/components/link/action#choose-the-right-element-buttons-vs-links)
 * **Use action links for calls-to-action.** When you want to draw attention to an important call-to-action (CTA) on the page, such as a link that launches a benefit application, use an [Action link]({{ site.baseurl }}/components/link/action). Calls-to-action are not actions themselves (see the previous point). 
-* **Table of contents.** When you want to make a long page of content with two or more H2s easier to navigate, use an [On this page link]({{ site.baseurl }} /components/on-this-page).
+* **Table of contents.** When you want to make a long page of content with two or more H2s easier to navigate, use an [On this page link]({{ site.baseurl }}/components/on-this-page).
 * **Triggering the generation of a PDF.** When using for a PDF, use only for linking directly to a PDF, not as a trigger for a process that generates a PDF. For [generating a PDF, use a button](#links-vs-buttons).
 
 ### How this component works
@@ -300,7 +315,16 @@ Review "[Usage](#usage)" for guidance.
     * **[Text (SMS)](#text-sms)**: Open the default messages app.
 * **NOTE:** The Link component currently does not support inline links. A Paragraph component will be created in the future to support inline links, ensuring proper text wrapping and accessibility in React Native.
 
-## Code usage
+### Platform differences
+
+#### Mobile app
+
+The mobile app includes link variations that address platform-specific needs:
+
+* **Base link style.** The Base link style exists due to mobile app specific needs in dark mode. For example, the v3 Alert component has a colored background for each variation. While working on dark mode, the mobile app team found that the Default link style did not meet color contrast requirements and clashed with the background colors. For this reason, a new Base style was created similar to the USWDS Base style.
+* **Content-specific link variants.** In Storybook, variants are available for content-specific links (add to calendar, get directions, etc.). These variants include the onPress logic for app teams, which ensures that the component always displays a native confirmation message when needed.
+
+{% include component-docs.html component_name=page.web-component mobile_component_name="va-link" %}
 
 ### Links to content in another language
 
