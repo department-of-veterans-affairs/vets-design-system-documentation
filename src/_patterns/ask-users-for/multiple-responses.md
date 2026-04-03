@@ -11,7 +11,7 @@ intro-text: "Choose the most appropriate implementation of this pattern in forms
 example-link-multi-page-required: https://staging.va.gov/mock-form-patterns/treatment-records
 example-link-multi-page-optional: https://staging.va.gov/mock-form-patterns/employers
 figma-link: https://www.figma.com/file/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?type=design&node-id=2988%3A63598&mode=design&t=ocBby0ApctnJJSel-1
-github-title: pattern-multiple-responses
+github-title: pattern-multiple-responses (array / list & loop)"
 research-title: Ask users for multiple responses
 status: use-deployed
 anchors:
