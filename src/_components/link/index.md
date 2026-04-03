@@ -4,7 +4,7 @@ permalink: /components/link/
 title: Link
 intro-text: "A link is a navigation element that can appear alone, inline (embedded), or in a group with other links. A link can trigger a download, but in general links go to internal or external pages when clicked."
 research-title: Links
-figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1312%3A10138&mode=design&t=nYOotVcwdpiMCL5C-1
+figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=199-1226
 web-component: va-link
 uses_mermaid: true
 web: true
@@ -208,7 +208,7 @@ If for some reason you do not use a link web-component links must meet the follo
     ActionLink --> ActionConfirm[<b>Show CONFIRMATION</b><br/>Then open relevant app<br/>Phone, Calendar, Maps, etc.]:::node-result-action" %}
 </div>
 
-<va-additional-info trigger="View text-based decision list for link opening behavior" id="link-opening-decision-list">
+<va-details width="2xl" label="View text-based decision list for link opening behavior" id="link-opening-decision-list">
 
 <h4>How should this link open?</h4>
 
@@ -271,7 +271,7 @@ If for some reason you do not use a link web-component links must meet the follo
 </li>
 </ul>
 
-</va-additional-info>
+</va-details>
 
 ### Web
 

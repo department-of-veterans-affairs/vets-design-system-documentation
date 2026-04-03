@@ -89,7 +89,7 @@ flowchart TD
 
 
 
-<va-additional-info trigger="View text-based decision list for buttons vs. links" id="button-link-decision-list">
+<va-details width="2xl" label="View text-based decision list for buttons vs. links" id="button-link-decision-list">
 
 <h4>Should this be a button or link?</h4>
 
@@ -168,5 +168,5 @@ flowchart TD
 </li>
 </ul>
 
-</va-additional-info>
+</va-details>
 

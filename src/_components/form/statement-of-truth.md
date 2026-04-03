@@ -6,7 +6,7 @@ title: Statement of truth
 contributor: Jeana Clark, Nick Sprinkle
 intro-text: "The Statement of truth allows users to certify that the information they have provided in form is correct and true to the best of their knowledge and belief."
 research-title: Form - Statement of truth
-figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1360%3A85739&mode=design&t=TiJHClaf3VQ6wU6B-1 
+figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=5378-3634
 status: use-deployed
 uswds-v3: default
 web-component: va-statement-of-truth

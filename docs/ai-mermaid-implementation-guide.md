@@ -22,7 +22,7 @@ This guide provides specific instructions for AI tools to efficiently implement 
     Answer --> Result[<b>[FINAL_OUTCOME]</b><br/>[IMPLEMENTATION_DETAILS]]:::node-result-link" %}
 </div>
 
-<va-additional-info trigger="View text-based decision list for [TOPIC]" id="[CHART_ID]-decision-list">
+<va-details label="View text-based decision list for [TOPIC]" id="[CHART_ID]-decision-list">
 
 <h4>[Main Question]</h4>
 
@@ -30,7 +30,7 @@ This guide provides specific instructions for AI tools to efficiently implement 
 [HIERARCHICAL_TEXT_DECISION_TREE]
 </ul>
 
-</va-additional-info>
+</va-details>
 ```
 
 ### Bold Tag Syntax
@@ -60,7 +60,7 @@ This guide provides specific instructions for AI tools to efficiently implement 
 7. Use .mermaid-width-wide for complex charts
 8. Make text bold with <b> tags
 9. Add screen reader alternative text in .sr-only div above chart
-10. Add text-based decision list using va-additional-info component after chart
+10. Add text-based decision list using va-details component after chart
 11. **Ensure text alternative exactly mirrors visual chart** (same decision paths, questions, examples, outcomes, and capitalization)"
 ```
 
@@ -77,7 +77,7 @@ Follow VA Design System patterns:
 - Merge duplicate outcomes into single result nodes
 - Use .mermaid-width-wide wrapper class
 - Include concrete details without "Example:" labels
-- Add text-based alternative using va-additional-info component"
+- Add text-based alternative using va-details component"
 ```
 
 ### Updating Existing Chart
@@ -94,7 +94,7 @@ Apply these improvements:
 - Merge any duplicate result outcomes
 - Ensure proper width class for chart complexity
 - Add accessible alternative text
-- Add text-based decision list using va-additional-info component"
+- Add text-based decision list using va-details component"
 ```
 
 ## Decision Tree for Chart Width
@@ -119,7 +119,7 @@ Before implementation, verify:
 - [ ] Screen reader alternative provided
 - [ ] Chart ID is unique and descriptive
 - [ ] Caption describes chart purpose
-- [ ] Text-based decision list added using va-additional-info component
+- [ ] Text-based decision list added using va-details component
 - [ ] **Text alternative exactly matches visual chart** (same paths, questions, examples, outcomes, capitalization)
 
 ## Common Patterns by Use Case

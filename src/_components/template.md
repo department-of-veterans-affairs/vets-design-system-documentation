@@ -8,7 +8,7 @@ mobile-app: true
 intro-text: "This text provides the overall purpose and function of the component."
 github-title: va-component-name - Only use this if the component is not actually a web component and thus just needs a label that matches that format.
 research-title: Use this to match the label in the research repo. Only use if web-component does not match the label.1
-figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=0%3A1&mode=design&t=3RlM8TiFaDLH4OAE-1
+figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library
 figma-link-mobile-app: https://www.figma.com/design/Zzt8z60hCtdEzXx2GFWghH/VA-Mobile---Component-Library?node-id=224-314
 status: use-with-caution-candidate
 web-component: va-component-name
