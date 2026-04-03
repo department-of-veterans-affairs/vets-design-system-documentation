@@ -48,6 +48,13 @@ anchors:
 
 {% include component-example.html alt="Select input fields with questions about a file" file="/images/patterns/ask-users-for/files/file-upload-with-additional.png" caption="Additional questions about the file are asked outside of the file input component." class="x2" %}
 
+### Examples within a mock form
+Examples of how each of these patterns work can be found in the Form library mock form in staging:
+- [Example asking for a single file](https://staging.va.gov/mock-form-patterns/upload-file)
+- [Example asking for multiple files with no additional questions](https://staging.va.gov/mock-form-patterns/supporting-documents)
+- [Example asking for multiple files with additional info (required multiple response flow)](https://staging.va.gov/mock-form-patterns/supporting-documents-array-required-intro)
+- [Example asking for multiple files with additional info (optional multiple response flow)](https://staging.va.gov/mock-form-patterns/supporting-documents-array-optional)
+
 ## How to design and build
 
 ### Layout details
