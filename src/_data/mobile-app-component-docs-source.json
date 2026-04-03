@@ -1,92 +1,140 @@
 {
-  "_comment": "Mobile app component documentation source data. This file is manually maintained and used to generate mobile-app-component-docs.json during the build process.",
-  "_instructions": "To add a new mobile app component: 1) Add component data here following the existing structure, 2) Run 'npx gulp process-mobile-app-component-docs' to regenerate the processed file.",
-  "_lastUpdated": "2025-09-10",
+  "_comment": "Mobile app component documentation source data. Enhanced API sync with authentication and caching.",
+  "_instructions": "To sync: 'node scripts/sync-mobile-components.js' (with GITHUB_TOKEN for best results), then 'npx gulp process-mobile-app-component-docs'",
+  "_lastUpdated": "2026-04-03",
+  "_syncedFrom": "https://github.com/department-of-veterans-affairs/va-mobile-library",
+  "_syncMethod": "GitHub API with enhanced parsing",
+  "_authStatus": "anonymous",
   "components": [
     {
-      "tag": "va-button",
-      "docs": "A button component for React Native applications. View guidance for the Button component on the VA Design System",
+      "tag": "va-alert",
+      "docs": "An Alert component for React Native applications",
       "props": [
         {
-          "name": "label",
-          "type": "string",
-          "docs": "Text appearing in the button",
+          "name": "variant",
+          "type": "'info' | 'success' | 'warning' | 'error'",
+          "docs": "variant property for Alert",
           "required": true
         },
         {
-          "name": "onPress",
-          "type": "() => void",
-          "docs": "Handler function called when button is pressed",
-          "required": true
-        },
-        {
-          "name": "buttonType",
-          "type": "ButtonVariants",
-          "docs": "Optional button variant. Defaults to primary if none specified. Options: Base, BaseSecondary, Destructive, Primary, Secondary",
-          "default": "Primary",
-          "required": false
-        },
-        {
-          "name": "a11yHint",
+          "name": "headerA11yLabel",
           "type": "string",
-          "docs": "Optional text to use as the accessibility hint",
+          "docs": "headerA11yLabel property for Alert",
           "required": false
         },
         {
-          "name": "a11yLabel",
-          "type": "string", 
-          "docs": "Optional accessibility override label",
+          "name": "description",
+          "type": "string",
+          "docs": "description property for Alert",
+          "required": false
+        },
+        {
+          "name": "descriptionA11yLabel",
+          "type": "string",
+          "docs": "descriptionA11yLabel property for Alert",
+          "required": false
+        },
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "docs": "children property for Alert",
+          "required": false
+        },
+        {
+          "name": "primaryButton",
+          "type": "ButtonProps",
+          "docs": "primaryButton property for Alert",
+          "required": false
+        },
+        {
+          "name": "secondaryButton",
+          "type": "ButtonProps",
+          "docs": "secondaryButton property for Alert",
+          "required": false
+        },
+        {
+          "name": "analytics",
+          "type": "AlertAnalytics",
+          "docs": "analytics property for Alert",
           "required": false
         },
         {
           "name": "testID",
           "type": "string",
-          "docs": "Optional test ID for test suites",
+          "docs": "testID property for Alert",
           "required": false
         },
         {
-          "name": "testOnlyPressed",
-          "type": "boolean",
-          "docs": "Optional pressed state for test suites only",
+          "name": "header",
+          "type": "unknown",
+          "docs": "header property for Alert (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "dismissible",
+          "type": "unknown",
+          "docs": "dismissible property for Alert (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "expandable",
+          "type": "unknown",
+          "docs": "expandable property for Alert (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "initializeExpanded",
+          "type": "unknown",
+          "docs": "initializeExpanded property for Alert (detected from component signature)",
           "required": false
         }
       ],
       "events": []
     },
     {
-      "tag": "va-alert",
-      "docs": "An alert component for displaying important information to users in React Native applications",
+      "tag": "va-button",
+      "docs": "A Button component for React Native applications",
       "props": [
         {
-          "name": "variant",
-          "type": "AlertVariants",
-          "docs": "The type of alert to display. Options: info, success, warning, error",
-          "default": "info",
-          "required": false
-        },
-        {
-          "name": "header",
+          "name": "label",
           "type": "string",
-          "docs": "Optional header text for the alert",
-          "required": false
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "docs": "Main content text for the alert",
+          "docs": "label property for Button",
           "required": true
         },
         {
-          "name": "expandable",
-          "type": "boolean",
-          "docs": "Whether the alert can be expanded to show additional content",
-          "default": "false",
+          "name": "onPress",
+          "type": "() => void",
+          "docs": "onPress property for Button",
+          "required": true
+        },
+        {
+          "name": "a11yHint",
+          "type": "string",
+          "docs": "a11yHint property for Button",
+          "required": false
+        },
+        {
+          "name": "a11yLabel",
+          "type": "string",
+          "docs": "a11yLabel property for Button",
+          "required": false
+        },
+        {
+          "name": "buttonType",
+          "type": "ButtonVariants",
+          "docs": "buttonType property for Button",
           "required": false
         },
         {
           "name": "testID",
           "type": "string",
-          "docs": "Optional test ID for test suites",
+          "docs": "testID property for Button",
+          "required": false
+        },
+        {
+          "name": "testOnlyPressed",
+          "type": "boolean",
+          "docs": "testOnlyPressed property for Button",
           "required": false
         }
       ],
@@ -94,50 +142,145 @@
     },
     {
       "tag": "va-checkbox",
-      "docs": "A checkbox component for React Native applications that allows users to select multiple options",
+      "docs": "A Checkbox component for React Native applications",
       "props": [
         {
-          "name": "label",
-          "type": "string",
-          "docs": "Text label for the checkbox",
-          "required": true
-        },
-        {
-          "name": "checked",
+          "name": "indeterminate",
           "type": "boolean",
-          "docs": "Whether the checkbox is checked",
-          "default": "false",
+          "docs": "indeterminate property for CheckboxOrRadioProps_variant",
           "required": false
         },
         {
-          "name": "onPress",
-          "type": "(checked: boolean) => void",
-          "docs": "Function called when checkbox is pressed, receives new checked state",
-          "required": true
+          "name": "radio",
+          "type": "boolean",
+          "docs": "radio property for CheckboxOrRadioProps_variant",
+          "required": false
         },
         {
-          "name": "error",
-          "type": "string",
-          "docs": "Error message to display",
+          "name": "a11yListPosition",
+          "type": "unknown",
+          "docs": "a11yListPosition property for Checkbox (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "checked",
+          "type": "unknown",
+          "docs": "checked property for Checkbox (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "label",
+          "type": "unknown",
+          "docs": "label property for Checkbox (detected from component signature)",
           "required": false
         },
         {
           "name": "description",
-          "type": "string",
-          "docs": "Additional description text for the checkbox",
+          "type": "unknown",
+          "docs": "description property for Checkbox (detected from component signature)",
           "required": false
         },
         {
-          "name": "tile",
-          "type": "boolean",
-          "docs": "Whether to display as a tile-style checkbox",
-          "default": "false",
+          "name": "error",
+          "type": "unknown",
+          "docs": "error property for Checkbox (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "header",
+          "type": "unknown",
+          "docs": "header property for Checkbox (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "hint",
+          "type": "unknown",
+          "docs": "hint property for Checkbox (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "onPress",
+          "type": "unknown",
+          "docs": "onPress property for Checkbox (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "required",
+          "type": "unknown",
+          "docs": "required property for Checkbox (detected from component signature)",
           "required": false
         },
         {
           "name": "testID",
-          "type": "string",
-          "docs": "Optional test ID for test suites",
+          "type": "unknown",
+          "docs": "testID property for Checkbox (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "tile",
+          "type": "unknown",
+          "docs": "tile property for Checkbox (detected from component signature)",
+          "required": false
+        }
+      ],
+      "events": []
+    },
+    {
+      "tag": "va-checkboxgroup",
+      "docs": "A CheckboxGroup component for React Native applications",
+      "props": [
+        {
+          "name": "items",
+          "type": "unknown",
+          "docs": "items property for CheckboxGroup (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "selectedItems",
+          "type": "unknown",
+          "docs": "selectedItems property for CheckboxGroup (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "error",
+          "type": "unknown",
+          "docs": "error property for CheckboxGroup (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "header",
+          "type": "unknown",
+          "docs": "header property for CheckboxGroup (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "hint",
+          "type": "unknown",
+          "docs": "hint property for CheckboxGroup (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "onSelectionChange",
+          "type": "unknown",
+          "docs": "onSelectionChange property for CheckboxGroup (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "required",
+          "type": "unknown",
+          "docs": "required property for CheckboxGroup (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "testID",
+          "type": "unknown",
+          "docs": "testID property for CheckboxGroup (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "tile",
+          "type": "unknown",
+          "docs": "tile property for CheckboxGroup (detected from component signature)",
           "required": false
         }
       ],
@@ -145,31 +288,60 @@
     },
     {
       "tag": "va-icon",
-      "docs": "An icon component for displaying VA Design System icons in React Native applications",
+      "docs": "An Icon component for React Native applications",
       "props": [
         {
           "name": "name",
-          "type": "string",
-          "docs": "Name of the icon to display from the VA icon library",
-          "required": true
-        },
-        {
-          "name": "size",
-          "type": "number",
-          "docs": "Size of the icon in pixels",
-          "default": "24",
+          "type": "unknown",
+          "docs": "name property for Icon (detected from component signature)",
           "required": false
         },
         {
-          "name": "fill",
-          "type": "string",
-          "docs": "Color to fill the icon",
+          "name": "svg",
+          "type": "unknown",
+          "docs": "svg property for Icon (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "width = 24",
+          "type": "unknown",
+          "docs": "width = 24 property for Icon (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "height = 24",
+          "type": "unknown",
+          "docs": "height = 24 property for Icon (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "alignWithTextLineHeight",
+          "type": "unknown",
+          "docs": "alignWithTextLineHeight property for Icon (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "fill = 'default'",
+          "type": "unknown",
+          "docs": "fill = 'default' property for Icon (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "maxWidth",
+          "type": "unknown",
+          "docs": "maxWidth property for Icon (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "preventScaling",
+          "type": "unknown",
+          "docs": "preventScaling property for Icon (detected from component signature)",
           "required": false
         },
         {
           "name": "testID",
-          "type": "string",
-          "docs": "Optional test ID for test suites",
+          "type": "unknown",
+          "docs": "testID property for Icon (detected from component signature)",
           "required": false
         }
       ],
@@ -177,139 +349,237 @@
     },
     {
       "tag": "va-link",
-      "docs": "A link component for React Native applications with various link types and accessibility support",
+      "docs": "A Link component for React Native applications",
       "props": [
-        {
-          "name": "text",
-          "type": "string",
-          "docs": "Text to display for the link",
-          "required": true
-        },
         {
           "name": "type",
-          "type": "LinkTypes",
-          "docs": "Type of link. Options: url, phone, email, calendar, directions, text",
-          "default": "url",
+          "type": "unknown",
+          "docs": "type property for Link (detected from component signature)",
           "required": false
         },
-        {
-          "name": "url",
-          "type": "string",
-          "docs": "URL or phone number for the link",
-          "required": false
-        },
-        {
-          "name": "icon",
-          "type": "LinkIconTypes",
-          "docs": "Icon to display with the link",
-          "required": false
-        },
-        {
-          "name": "a11yLabel",
-          "type": "string",
-          "docs": "Accessibility label for the link",
-          "required": false
-        },
-        {
-          "name": "testID",
-          "type": "string",
-          "docs": "Optional test ID for test suites",
-          "required": false
-        }
-      ],
-      "events": []
-    },
-    {
-      "tag": "va-loading-indicator",
-      "docs": "A loading indicator component for showing loading states in React Native applications",
-      "props": [
         {
           "name": "text",
-          "type": "string",
-          "docs": "Optional text to display with the loading indicator",
+          "type": "unknown",
+          "docs": "text property for Link (detected from component signature)",
           "required": false
         },
         {
-          "name": "testID",
-          "type": "string",
-          "docs": "Optional test ID for test suites",
-          "required": false
-        }
-      ],
-      "events": []
-    },
-    {
-      "tag": "va-radio-button",
-      "docs": "A radio button component for React Native applications that allows users to select one option from a group",
-      "props": [
-        {
-          "name": "label",
-          "type": "string",
-          "docs": "Text label for the radio button",
-          "required": true
-        },
-        {
-          "name": "selected",
-          "type": "boolean",
-          "docs": "Whether the radio button is selected",
-          "default": "false",
+          "name": "variant = 'default'",
+          "type": "unknown",
+          "docs": "variant = 'default' property for Link (detected from component signature)",
           "required": false
         },
         {
           "name": "onPress",
-          "type": "() => void",
-          "docs": "Function called when radio button is pressed",
-          "required": true
-        },
-        {
-          "name": "description",
-          "type": "string",
-          "docs": "Additional description text for the radio button",
+          "type": "unknown",
+          "docs": "onPress property for Link (detected from component signature)",
           "required": false
         },
         {
-          "name": "tile",
-          "type": "boolean",
-          "docs": "Whether to display as a tile-style radio button",
-          "default": "false",
+          "name": "icon",
+          "type": "unknown",
+          "docs": "icon property for Link (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "a11yLabel",
+          "type": "unknown",
+          "docs": "a11yLabel property for Link (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "a11yHint",
+          "type": "unknown",
+          "docs": "a11yHint property for Link (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "a11yValue",
+          "type": "unknown",
+          "docs": "a11yValue property for Link (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "promptText",
+          "type": "unknown",
+          "docs": "promptText property for Link (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "analytics",
+          "type": "unknown",
+          "docs": "analytics property for Link (detected from component signature)",
           "required": false
         },
         {
           "name": "testID",
-          "type": "string",
-          "docs": "Optional test ID for test suites",
+          "type": "unknown",
+          "docs": "testID property for Link (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "testOnlyPressed",
+          "type": "unknown",
+          "docs": "testOnlyPressed property for Link (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "// Type-specific props\n  locationData",
+          "type": "unknown",
+          "docs": "// Type-specific props\n  locationData property for Link (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "phoneNumber",
+          "type": "unknown",
+          "docs": "phoneNumber property for Link (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "textNumber",
+          "type": "unknown",
+          "docs": "textNumber property for Link (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "TTYnumber",
+          "type": "unknown",
+          "docs": "TTYnumber property for Link (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "url",
+          "type": "unknown",
+          "docs": "url property for Link (detected from component signature)",
           "required": false
         }
       ],
       "events": []
     },
     {
-      "tag": "va-segmented-control",
-      "docs": "A segmented control component for React Native applications that allows users to select from multiple options",
+      "tag": "va-loadingindicator",
+      "docs": "A LoadingIndicator component for React Native applications",
+      "props": [
+        {
+          "name": "a11yLabel",
+          "type": "string",
+          "docs": "a11yLabel property for LoadingIndicator",
+          "required": false
+        },
+        {
+          "name": "text",
+          "type": "unknown",
+          "docs": "text property for LoadingIndicator (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "children",
+          "type": "unknown",
+          "docs": "children property for LoadingIndicator (detected from component signature)",
+          "required": false
+        }
+      ],
+      "events": []
+    },
+    {
+      "tag": "va-radiobutton",
+      "docs": "A RadioButton component for React Native applications",
+      "props": [
+        {
+          "name": "items",
+          "type": "unknown",
+          "docs": "items property for RadioButton (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "selectedItem",
+          "type": "unknown",
+          "docs": "selectedItem property for RadioButton (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "error",
+          "type": "unknown",
+          "docs": "error property for RadioButton (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "header",
+          "type": "unknown",
+          "docs": "header property for RadioButton (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "hint",
+          "type": "unknown",
+          "docs": "hint property for RadioButton (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "onSelectionChange",
+          "type": "unknown",
+          "docs": "onSelectionChange property for RadioButton (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "required",
+          "type": "unknown",
+          "docs": "required property for RadioButton (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "testID",
+          "type": "unknown",
+          "docs": "testID property for RadioButton (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "tile",
+          "type": "unknown",
+          "docs": "tile property for RadioButton (detected from component signature)",
+          "required": false
+        }
+      ],
+      "events": []
+    },
+    {
+      "tag": "va-segmentedcontrol",
+      "docs": "A SegmentedControl component for React Native applications",
       "props": [
         {
           "name": "labels",
           "type": "string[]",
-          "docs": "Array of labels for each segment",
+          "docs": "labels property for SegmentedControl",
           "required": true
-        },
-        {
-          "name": "selectedIndex",
-          "type": "number",
-          "docs": "Index of the currently selected segment",
-          "default": "0",
-          "required": false
         },
         {
           "name": "onChange",
-          "type": "(index: number) => void",
-          "docs": "Function called when segment selection changes",
+          "type": "(selection: number) => void",
+          "docs": "onChange property for SegmentedControl",
           "required": true
         },
         {
-          "name": "testID",
-          "type": "string",
-          "docs": "Optional test ID for test suites",
+          "name": "selected",
+          "type": "number",
+          "docs": "selected property for SegmentedControl",
+          "required": true
+        },
+        {
+          "name": "a11yLabels",
+          "type": "string[]",
+          "docs": "a11yLabels property for SegmentedControl",
+          "required": false
+        },
+        {
+          "name": "a11yHints",
+          "type": "string[]",
+          "docs": "a11yHints property for SegmentedControl",
+          "required": false
+        },
+        {
+          "name": "testIDs",
+          "type": "string[]",
+          "docs": "testIDs property for SegmentedControl",
           "required": false
         }
       ],
@@ -317,26 +587,8 @@
     },
     {
       "tag": "va-snackbar",
-      "docs": "A snackbar component for displaying brief messages at the bottom of the screen in React Native applications",
+      "docs": "A Snackbar component for React Native applications",
       "props": [
-        {
-          "name": "message",
-          "type": "string",
-          "docs": "Message text to display in the snackbar",
-          "required": true
-        },
-        {
-          "name": "actionText",
-          "type": "string",
-          "docs": "Optional action button text",
-          "required": false
-        },
-        {
-          "name": "onActionPress",
-          "type": "() => void",
-          "docs": "Function called when action button is pressed",
-          "required": false
-        },
         {
           "name": "testID",
           "type": "string",
@@ -348,25 +600,18 @@
     },
     {
       "tag": "va-spacer",
-      "docs": "A spacer component for adding consistent spacing between elements in React Native applications",
+      "docs": "A Spacer component for React Native applications",
       "props": [
         {
-          "name": "size",
-          "type": "SpacerSizes",
-          "docs": "Size of the spacer. Options based on VA Design System spacing tokens",
-          "required": true
-        },
-        {
-          "name": "direction",
-          "type": "SpacerDirection",
-          "docs": "Direction of the spacer. Options: horizontal, vertical",
-          "default": "vertical",
+          "name": "size = 'sm'",
+          "type": "unknown",
+          "docs": "size = 'sm' property for Spacer (detected from component signature)",
           "required": false
         },
         {
-          "name": "testID",
-          "type": "string",
-          "docs": "Optional test ID for test suites",
+          "name": "horizontal = false",
+          "type": "unknown",
+          "docs": "horizontal = false property for Spacer (detected from component signature)",
           "required": false
         }
       ],
@@ -374,31 +619,54 @@
     },
     {
       "tag": "va-text",
-      "docs": "A text component for React Native applications that implements VA Design System typography",
+      "docs": "A Text component for React Native applications",
       "props": [
         {
-          "name": "variant",
-          "type": "TextVariants",
-          "docs": "Typography variant. Options: body, heading, display",
-          "default": "body",
+          "name": "a11yLabel",
+          "type": "unknown",
+          "docs": "a11yLabel property for Text (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "bold",
+          "type": "unknown",
+          "docs": "bold property for Text (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "bottomSpacing",
+          "type": "unknown",
+          "docs": "bottomSpacing property for Text (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "center",
+          "type": "unknown",
+          "docs": "center property for Text (detected from component signature)",
           "required": false
         },
         {
           "name": "children",
-          "type": "React.ReactNode",
-          "docs": "Text content to display",
-          "required": true
-        },
-        {
-          "name": "color",
-          "type": "string",
-          "docs": "Text color from VA Design System color tokens",
+          "type": "unknown",
+          "docs": "children property for Text (detected from component signature)",
           "required": false
         },
         {
-          "name": "testID",
-          "type": "string",
-          "docs": "Optional test ID for test suites",
+          "name": "size = 'md'",
+          "type": "unknown",
+          "docs": "size = 'md' property for Text (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "tone = 'default'",
+          "type": "unknown",
+          "docs": "tone = 'default' property for Text (detected from component signature)",
+          "required": false
+        },
+        {
+          "name": "variant = 'body'",
+          "type": "unknown",
+          "docs": "variant = 'body' property for Text (detected from component signature)",
           "required": false
         }
       ],

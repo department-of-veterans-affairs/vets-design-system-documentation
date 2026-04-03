@@ -18,15 +18,15 @@ anchors:
 
 ### Body
 
-{% include storybook-preview.html height="350px" story="text--body" link_text="va-mobile_text--body" is_mobile=true auto_resize=false %}
+{% include storybook-preview.html height="350px" story="text--body" link_text="va-mobile__text--body" is_mobile=true auto_resize=false %}
 
 ### Display
 
-{% include storybook-preview.html height="190px" story="text--display" link_text="va-mobile_text--display" is_mobile=true auto_resize=false %}
+{% include storybook-preview.html height="190px" story="text--display" link_text="va-mobile__text--display" is_mobile=true auto_resize=false %}
 
 ### Heading
 
-{% include storybook-preview.html height="100px" story="text--heading" link_text="va-mobile_text--heading" is_mobile=true auto_resize=false %}
+{% include storybook-preview.html height="100px" story="text--heading" link_text="va-mobile__text--heading" is_mobile=true auto_resize=false %}
 
 ## Usage
 
@@ -54,4 +54,4 @@ There are 9 variations of the Text component.
 * Use a Body variation (large, medium, small, x-small) for body copy.
 * Use the Display variation for larger display text.
 
-{% include component-docs.html component_name=page.web-component %}
+{% include component-docs.html component_name=page.web-component mobile_component_name="va-text" %}

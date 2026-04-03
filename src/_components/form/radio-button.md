@@ -6,6 +6,7 @@ title: Radio button
 research-title: Form controls
 intro-text: Radio buttons allow users to select exactly one choice from a group.
 figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=351-2593
+figma-link-mobile-app: https://www.figma.com/design/Zzt8z60hCtdEzXx2GFWghH/VA-Mobile---Component-Library
 status: use-best-practice
 uswds-v3: default
 web-component: va-radio
@@ -72,15 +73,15 @@ anchors:
 
 #### Default
 
-{% include storybook-preview.html height="440px" story="radio-button--default" link_text="va-mobile_radio-button--default" is_mobile=true auto_resize=false %}
+{% include storybook-preview.html height="440px" story="radio-button--default" link_text="va-mobile__radio-button--default" is_mobile=true auto_resize=false %}
 
 #### Tile
 
-{% include storybook-preview.html height="400px" story="radio-button--tile" link_text="va-mobile_radio-button--tile" is_mobile=true auto_resize=false %}
+{% include storybook-preview.html height="400px" story="radio-button--tile" link_text="va-mobile__radio-button--tile" is_mobile=true auto_resize=false %}
 
 #### Error
 
-{% include storybook-preview.html height="500px" story="radio-button--error" link_text="va-mobile_radio-button--error" is_mobile=true auto_resize=false %}
+{% include storybook-preview.html height="500px" story="radio-button--error" link_text="va-mobile__radio-button--error" is_mobile=true auto_resize=false %}
 {% endcapture %}
 
 <va-tabs initially-selected="0" label="Web and Mobile app examples">

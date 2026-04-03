@@ -3,6 +3,7 @@ layout: component
 title: Telephone
 status: use-best-practice
 figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=199-1241
+figma-link-mobile-app: https://www.figma.com/design/Zzt8z60hCtdEzXx2GFWghH/VA-Mobile---Component-Library
 intro-text: "The telephone component captures the many variations of phone numbers displayed on VA.gov." 
 anchors:
   - anchor: Examples

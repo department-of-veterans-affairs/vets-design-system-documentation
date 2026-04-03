@@ -4,6 +4,7 @@ title: "Loading indicator"
 intro-text: "A loading indicator provides a clue to ongoing activity when the site needs to load additional content."
 research-title: "Loading indicators"
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=35%3A161&mode=design&t=vNilCSI60pQBiKkM-1
+figma-link-mobile-app: https://www.figma.com/design/Zzt8z60hCtdEzXx2GFWghH/VA-Mobile---Component-Library
 status: use-deployed
 web-component: va-loading-indicator
 web: true

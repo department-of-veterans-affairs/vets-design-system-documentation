@@ -5,6 +5,7 @@ has-parent: /components/button/
 title: Button - Segmented
 aka: Segmented button, Segmented control
 figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=28629-138&t=3efQOtruhM1IdGDg-1
+figma-link-mobile-app: https://www.figma.com/design/Zzt8z60hCtdEzXx2GFWghH/VA-Mobile---Component-Library
 research-link: Buttons
 intro-text: The button segmented component presents a set of 2-4 closely related options or filters in a compact, horizontal container. It allows users to switch between different views or sort/filter a single set of content. One option is always active.
 web-component: va-button-segmented
@@ -40,15 +41,15 @@ anchors:
 
 #### 2 segments
 
-{% include storybook-preview.html story="segmented-control--2-segments" link_text="va-mobile_segmented-control--2-segments" is_mobile=true %}
+{% include storybook-preview.html story="segmented-control--2-segments" link_text="va-mobile__segmented-control--2-segments" is_mobile=true %}
 
 #### 3 segments
 
-{% include storybook-preview.html story="segmented-control--3-segments" link_text="va-mobile_segmented-control--3-segments" is_mobile=true %}
+{% include storybook-preview.html story="segmented-control--3-segments" link_text="va-mobile__segmented-control--3-segments" is_mobile=true %}
 
 #### 4 segments
 
-{% include storybook-preview.html story="segmented-control--4-segments" link_text="va-mobile_segmented-control--4-segments" is_mobile=true %}
+{% include storybook-preview.html story="segmented-control--4-segments" link_text="va-mobile__segmented-control--4-segments" is_mobile=true %}
 {% endcapture %}
 
 <va-tabs initially-selected="0" label="Web and Mobile app examples">

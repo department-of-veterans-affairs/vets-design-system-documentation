@@ -1,5 +1,5 @@
 # Global completion tracking
-web-platform-completed: 2025-09-10
+web-platform-completed: 2022-09-29
 mobile-app-platform-completed: 2026-04-03
 
 maturity:
@@ -7,14 +7,14 @@ maturity:
     web-score: true
     mobile-app-score: true
   - name: research
-    web-score: true
+    web-score: false
     mobile-app-score: true
   - name: stability
     web-score: true
     mobile-app-score: true
   - name: adoption
     web-score: true
-    mobile-app-score: false
+    mobile-app-score: true
 code-assets:
   - name: variations 
     web-score: true
@@ -27,7 +27,7 @@ code-assets:
     mobile-app-score: true
   - name: tokens
     web-score: "n/a"
-    mobile-app-score: true
+    mobile-app-score: "n/a"
   - name: internationalization
     web-score: "n/a"
     mobile-app-score: "n/a"
@@ -39,8 +39,8 @@ visual-assets:
     web-score: true
     mobile-app-score: true
   - name: interactive-states
-    web-score: false
+    web-score: true
     mobile-app-score: true
   - name: tokens
     web-score: "n/a"
-    mobile-app-score: true
+    mobile-app-score: "n/a"
