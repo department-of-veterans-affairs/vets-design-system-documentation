@@ -18,13 +18,28 @@ anchors:
 
 ## Example
 
+{% capture web_content %}
 ### Web
 
 {% include storybook-preview.html height="150px" story="components-va-loading-indicator--default" link_text="va-loading-indicator" %}
+{% endcapture %}
 
+{% capture mobile_content %}
 ### Mobile app
 
 {% include storybook-preview.html height="150px" story="loading-indicator--with-text" link_text="va_mobile__loading-indicator--with-text" is_mobile=true %}
+{% endcapture %}
+
+<va-tabs initially-selected="0" label="Web and Mobile app examples">
+  <va-tab-item button-text="Web" target-id="panel-1"></va-tab-item>
+  <va-tab-panel panel-id="panel-1">
+    {{ web_content | markdownify }}
+  </va-tab-panel>
+  <va-tab-item button-text="Mobile app" target-id="panel-2"></va-tab-item>
+  <va-tab-panel panel-id="panel-2">
+    {{ mobile_content | markdownify }}
+  </va-tab-panel>
+</va-tabs>
 
 ## Usage
 
