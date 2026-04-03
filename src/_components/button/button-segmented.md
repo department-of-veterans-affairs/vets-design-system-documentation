@@ -114,7 +114,7 @@ The component is often integrated into the top navigation bar (or just below it)
 
 * **Claims:** Using a control to switch between "Status" and "Details." This groups dissimilar content and should be handled with a different component, like [Tabs]({{ site.baseurl }}/components/tabs).
 
-{% include component-docs.html component_name=page.web-component mobile_component_name="va-segmented-control" %}
+{% include component-docs.html component_name=page.web-component %}
 
 ## Content considerations
 
