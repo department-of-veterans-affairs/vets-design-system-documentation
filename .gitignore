@@ -18,6 +18,7 @@ src/assets/stylesheets/@*/**
 src/formation.min.css
 src/vendor
 src/_data/component-docs.json
+.mobile-components-cache.json
 src/_includes/react
 src/img
 !src/img/sprite.svg
