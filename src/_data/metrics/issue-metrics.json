@@ -1258,8 +1258,8 @@
       "value": -2
     },
     "closed_month_trend": {
-      "direction": null,
-      "percentage": null,
+      "direction": "down",
+      "percentage": 94,
       "value": -204,
       "reliability": "low",
       "reason": "early_month_period"
